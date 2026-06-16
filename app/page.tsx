@@ -1,65 +1,185 @@
-import Image from "next/image";
+import HomeSearch from "@/components/HomeSearch";
+import HomeHero from "@/components/HomeHero";
+import StatsCounter from "@/components/StatsCounter";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      <HomeHero />
+
+      <StatsCounter />
+
+      {/* FEATURED PRODUCTS */}
+
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">Featured Products</h2>
+
+          <div className="product-grid">
+            <div className="product-card">
+              <div className="product-image"></div>
+              <h3>130-9811 Temperature Sensor</h3>
+              <p>CAT • Sensors</p>
+            </div>
+
+            <div className="product-card">
+              <div className="product-image"></div>
+              <h3>5S0484 Oil Filter</h3>
+              <p>CAT • Filters</p>
+            </div>
+
+            <div className="product-card">
+              <div className="product-image"></div>
+              <h3>6.4139C Air Filter Assy</h3>
+              <p>Atlas Copco • Filters</p>
+            </div>
+
+            <div className="product-card">
+              <div className="product-image"></div>
+              <h3>Hydraulic Pump Assembly</h3>
+              <p>Komatsu • Hydraulic Parts</p>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* POPULAR CATEGORIES */}
+
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">Popular Categories</h2>
+
+          <div className="category-grid">
+            <div className="category-card">Filters</div>
+            <div className="category-card">Hydraulic Parts</div>
+            <div className="category-card">Engine Parts</div>
+            <div className="category-card">Electrical Parts</div>
+            <div className="category-card">Sensors</div>
+            <div className="category-card">Undercarriage</div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* INDUSTRIES */}
+
+      <section className="section industry-section">
+        <div className="container">
+          <div className="industry-header">
+            <span className="tagline">Industries We Serve</span>
+
+            <h2>Parts For Every Industry</h2>
+
+            <p>
+              Sparesco helps equipment owners, contractors, fleet operators and vendors
+              source spare parts for construction, mining, lifting and road-building
+              machinery.
+            </p>
+          </div>
+
+          <div className="industry-grid industry-grid-modern">
+            <div className="industry-card industry-card-modern">
+              <h3>Mining</h3>
+              <p>
+                Crushers, conveyors, drilling rigs, haul trucks — every part, any brand.
+              </p>
+            </div>
+
+            <div className="industry-card industry-card-modern">
+              <h3>Construction</h3>
+              <p>
+                Excavators, loaders, compactors, graders — OEM and aftermarket.
+              </p>
+            </div>
+
+            <div className="industry-card industry-card-modern">
+              <h3>Power Systems</h3>
+              <p>
+                Generators, turbines, and industrial engines — filters to injectors.
+              </p>
+            </div>
+
+            <div className="industry-card industry-card-modern">
+              <h3>Heavy Lifts</h3>
+              <p>
+                Mobile, tower, and overhead cranes — slewing rings to control systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+
+      <section className="section dark-cta-section">
+        <div className="container dark-cta-grid">
+          <div className="dark-cta-card">
+            <span>Careers</span>
+            <h3>Join Our Team</h3>
+            <p>
+              Build your career with a fast-growing industrial marketplace serving
+              construction, mining and heavy equipment industries.
+            </p>
+            <button>Apply Now</button>
+          </div>
+
+          <div className="dark-cta-card">
+            <span>Support</span>
+            <h3>Contact Us</h3>
+            <p>
+              Looking for a hard-to-find spare part? Our team can help you connect
+              with genuine vendors and source the right part faster.
+            </p>
+            <button>Contact Us</button>
+          </div>
+        </div>
+      </section>
+
+      {/* SELL WITH SPARESCO */}
+
+      <section className="section partner-section">
+        <div className="container">
+          <div className="partner-heading">
+            <span className="tagline">Partner With Us</span>
+
+            <h2>Sell With Sparesco</h2>
+
+            <p>
+              List your spare parts inventory on Sparesco and reach thousands of
+              verified buyers globally. Fast onboarding, zero upfront fees.
+            </p>
+          </div>
+
+          <form className="partner-form-wide">
+            <input placeholder="First Name *" />
+            <input placeholder="Company Name" />
+            <input placeholder="Email *" />
+            <input placeholder="Phone *" />
+            <textarea placeholder="Products to List *" />
+            <button type="submit">Submit Application</button>
+          </form>
+        </div>
+      </section>
+
+      {/* MARQUEE */}
+      <section className="marquee-section">
+        <div className="container marquee-container">
+          <div className="marquee-label">We Work With :</div>
+
+          <div className="marquee-wrapper">
+            <div className="marquee-track">
+              <span>
+                Dealers | Auctioneers | Manufacturers | Other Equipment Owners |
+                Dealers | Auctioneers | Manufacturers | Equipment Owners |
+              </span>
+
+              <span>
+                Dealers | Auctioneers | Manufacturers | Other Equipment Owners |
+                Dealers | Auctioneers | Manufacturers | Equipment Owners |
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
