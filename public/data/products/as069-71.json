@@ -1,0 +1,77 @@
+{
+  "handle": "as069-71",
+  "title": "AS069 71",
+  "collection": "Argo Hytos",
+  "collectionHandle": "argo-hytos",
+  "category": "Argo Hytos",
+  "tags": [
+    "Argo Hytos",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203525B_56bd2cae-5526-4735-b3b8-27a4fba8f3b9.jpg?v=1755093765",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c564f0f9-ae78-49d0-9581-13b98fcfc8df_6d275d52-908f-4932-baed-28b2517c3c49.jpg?v=1755093765"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec FS130B7T125B Suction Strainer | Replaces the Argo-Hytos AS069-71",
+      "sku": "as069-71-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203525B_56bd2cae-5526-4735-b3b8-27a4fba8f3b9.jpg?v=1755093765",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "FS130B7T125B",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec FS130B7T125B. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the FS130B7T125B provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Suction Strainer",
+        "Media: Wire Mesh",
+        "Efficiency 1: 125µ",
+        "Outer Diameter: 86.0 mm",
+        "Length: 139.0 mm",
+        "Thread: 1 1/2\" BSP",
+        "Bypass Pressure: 0.3 BAR bar",
+        "Δ Collapse Pressure: 1 bar",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 125µ",
+        "Media Type: Wire Mesh",
+        "Flow Direction: OUT-IN",
+        "Bypass Pressure Bypass pressure relieve build-up of pressure within the system and allows medium to bypass the element when pressure increases and reaches a sufficient level.: 0.3 BAR",
+        "Collapse Pressure: 1 BAR"
+      ],
+      "unitWeight": "0.35 kg",
+      "shippingVolume": "0.001 m³"
+    },
+    {
+      "title": "HiFi Filter SH 77531 Suction Strainer | Replaces the Argo-Hytos AS069-71",
+      "sku": "as069-71-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c564f0f9-ae78-49d0-9581-13b98fcfc8df_6d275d52-908f-4932-baed-28b2517c3c49.jpg?v=1755093765",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "SH 77531",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SH 77531 Hydraulic Filter. Engineered to protect and optimize the performance of hydraulic systems, this filter delivers exceptional contamination control. Premium filter media captures fine particles and debris that could compromise system integrity, helping to extend the lifespan of critical hydraulic components. By maintaining fluid cleanliness, it reduces wear and tear while supporting consistent pressure levels throughout the system. Perfect for a wide range of hydraulic applications—from industrial machinery to heavy-duty equipment—this filter provides reliable performance even under high-pressure conditions. Its robust construction ensures long-lasting durability, helping to minimize downtime and maintenance costs while maximizing operational efficiency.",
+      "specifications": [
+        "Style: Suction Strainer",
+        "Media: Wire Mesh",
+        "Efficiency 1: 125µ",
+        "Outer Diameter: 86.0 mm",
+        "Length: 139.0 mm",
+        "Thread: 1 1/2\" BSP",
+        "Bypass Pressure: 0.3 BAR bar",
+        "Δ Collapse Pressure: 1 bar",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 125µ",
+        "Media Type: Wire Mesh",
+        "Flow Direction: OUT-IN",
+        "Bypass Pressure Bypass pressure relieve build-up of pressure within the system and allows medium to bypass the element when pressure increases and reaches a sufficient level.: 0.3 BAR",
+        "Collapse Pressure: 1 BAR"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0014 m³"
+    }
+  ]
+}

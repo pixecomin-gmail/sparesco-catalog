@@ -1,0 +1,54 @@
+{
+  "handle": "sa-8130",
+  "title": "SA 8130",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-50f7fa76-38c8-4140-aa12-e192b72abfd4.jpg?v=1723216249",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25604.jpg?v=1755780909"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8130 Air Filter",
+      "sku": "sa-8130-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-50f7fa76-38c8-4140-aa12-e192b72abfd4.jpg?v=1723216249",
+      "vendor": "",
+      "price": 6800,
+      "partNumber": "SA 8130",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8130 Air Filter. Easy to install and replace, the SA 8130 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 279.0 mm",
+        "Dimension 2 (D2): 175.0 mm",
+        "Height 1 (H1): 465.0 mm",
+        "Height 2 (H2): 460.0 mm",
+        "Height 3 (H3): 452.0 mm"
+      ],
+      "unitWeight": "3.2 kg",
+      "shippingVolume": "0.0482 m³"
+    },
+    {
+      "title": "Fleetguard AF25604 Air Filter | Replaces the HiFi Filter SA 8130",
+      "sku": "sa-8130-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25604.jpg?v=1755780909",
+      "vendor": "",
+      "price": 7000,
+      "partNumber": "AF25604",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Fleetguard® AF25604 spin-on lube filter meets or exceeds OE performance requirements and the new challenges of modern engine technology.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.05 kg",
+      "shippingVolume": "0.0418 m³"
+    }
+  ]
+}

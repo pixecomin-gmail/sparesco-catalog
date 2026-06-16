@@ -1,0 +1,87 @@
+{
+  "handle": "sa-10411",
+  "title": "SA 10411",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-135bb7b0-9ba0-4b71-89cc-3e42b3ccc8e5.jpg?v=1723205752",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p133706.700.700_beec1803-8467-452b-a0cb-de46f2b2270e.jpg?v=1744305974",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/9TK4pWHxDGu8sPi5s986l19DRAuBiOr7m8Rh5kCdMUhrA4aGkU6lyRN1bIwRh_ce63defd-8efb-444a-b455-95dbae40767c.png?v=1751027850",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF461_7ec0c8ee-f259-42d5-8842-3760b64b8f51.jpg?v=1755780794"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10411 Air Filter",
+      "sku": "sa-10411-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-135bb7b0-9ba0-4b71-89cc-3e42b3ccc8e5.jpg?v=1723205752",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "SA 10411",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10411 Air Filter. Easy to install and replace, the SA 10411 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 114.0 mm",
+        "Dimension 2 (D2): 57.0 mm",
+        "Height 1 (H1): 319.0 mm",
+        "Height 2 (H2): 307.0 mm"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0066 m³"
+    },
+    {
+      "title": "Donaldson P133706 Air Filter, Primary Round | Replaces the HiFi Filter SA 10411",
+      "sku": "sa-10411-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p133706.700.700_beec1803-8467-452b-a0cb-de46f2b2270e.jpg?v=1744305974",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "P133706",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.77 kg",
+      "shippingVolume": "0.0078 m³"
+    },
+    {
+      "title": "FIL Filter HP 491 Filter Insert | Replaces the HiFi Filter SA 10411",
+      "sku": "sa-10411-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/9TK4pWHxDGu8sPi5s986l19DRAuBiOr7m8Rh5kCdMUhrA4aGkU6lyRN1bIwRh_ce63defd-8efb-444a-b455-95dbae40767c.png?v=1751027850",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "HP 491",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 491. Easy to install and replace, the HP 491 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF461 Air | Replaces the HiFi Filter SA 10411",
+      "sku": "sa-10411-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF461_7ec0c8ee-f259-42d5-8842-3760b64b8f51.jpg?v=1755780794",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "AF461",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF461 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.61 kg",
+      "shippingVolume": "0.0069 m³"
+    }
+  ]
+}

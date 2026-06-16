@@ -1,0 +1,74 @@
+{
+  "handle": "sa-6068",
+  "title": "SA 6068",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e193f1b-d781-4971-823c-dd9feb88de9e.jpg?v=1723212581",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ab4d9ddd-494c-4bea-adaf-ecc14a8523a1.jpg?v=1743773626",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25841_54d8c808-4cf0-48ef-9dad-2dafc45e3201.jpg?v=1755780893"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6068 Air Filter",
+      "sku": "sa-6068-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e193f1b-d781-4971-823c-dd9feb88de9e.jpg?v=1723212581",
+      "vendor": "",
+      "price": 800,
+      "partNumber": "SA 6068",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6068 Air Filter. Easy to install and replace, the SA 6068 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 280.0 mm",
+        "Dimension 2 (D2): 270.0 mm",
+        "Dimension 3 (D3): 179.0 mm",
+        "Height 1 (H1): 59.0 mm",
+        "Height 2 (H2): 48.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0036 m³"
+    },
+    {
+      "title": "Mann Filter C 28 100 Air Filter | Replaces the HiFi Filter SA 6068",
+      "sku": "sa-6068-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ab4d9ddd-494c-4bea-adaf-ecc14a8523a1.jpg?v=1743773626",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "C 28 100",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 280.0 mm",
+        "Dimension B: 180.0 mm",
+        "Dimension H: 57.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25841 Air Filter Filter - Panel | Replaces the HiFi Filter SA 6068",
+      "sku": "sa-6068-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25841_54d8c808-4cf0-48ef-9dad-2dafc45e3201.jpg?v=1755780893",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "AF25841",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25841 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0046 m³"
+    }
+  ]
+}

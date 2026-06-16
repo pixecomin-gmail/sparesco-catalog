@@ -1,0 +1,49 @@
+{
+  "handle": "sa-16318",
+  "title": "SA 16318",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_40e484e0-87bc-404e-99d7-4ced4c6b1dac.jpg?v=1766021254",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4990_2af13a69-da79-41c6-8c33-dcd7dd37f322.jpg?v=1766021254"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16318 Air Filter",
+      "sku": "sa-16318-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_40e484e0-87bc-404e-99d7-4ced4c6b1dac.jpg?v=1766021254",
+      "vendor": "",
+      "price": 17500,
+      "partNumber": "SA 16318",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16318 Air Filter. Easy to install and replace, the SA 16318 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.96 kg",
+      "shippingVolume": "0.0524 m³"
+    },
+    {
+      "title": "Fleetguard AF4990 Air Filter | Replaces the HiFi Filter SA 16318",
+      "sku": "sa-16318-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4990_2af13a69-da79-41c6-8c33-dcd7dd37f322.jpg?v=1766021254",
+      "vendor": "",
+      "price": 11800,
+      "partNumber": "AF4990",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4990 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.93 kg",
+      "shippingVolume": "0.0499 m³"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "handle": "sa-12503",
+  "title": "SA 12503",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-266a9cee-bd65-49f5-b35c-38c9d0a405f2.jpg?v=1723204050",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_1130_image1.jpg?v=1754909278"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12503 Air Filter",
+      "sku": "sa-12503-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-266a9cee-bd65-49f5-b35c-38c9d0a405f2.jpg?v=1723204050",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "SA 12503",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12503 Air Filter. Easy to install and replace, the SA 12503 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 107.0 mm",
+        "Dimension 2 (D2): 92.0 mm",
+        "Dimension 3 (D3): 90.0 mm",
+        "Height 1 (H1): 80.0 mm",
+        "Height 2 (H2): 6.0 mm"
+      ],
+      "unitWeight": "0.16 kg",
+      "shippingVolume": "0.0012 m³"
+    },
+    {
+      "title": "Mann Filter CP 1130 Air Filter | Replaces the HiFi Filter SA 12503",
+      "sku": "sa-12503-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_1130_image1.jpg?v=1754909278",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "CP 1130",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 107.0 mm",
+        "Dimension D: 107.0 mm",
+        "Dimension H: 80.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

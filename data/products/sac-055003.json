@@ -1,0 +1,71 @@
+{
+  "handle": "sac-055003",
+  "title": "SAC 055003",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e4040ef-9c69-4d61-a1d7-db6329fab278.jpg?v=1723216002",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c055003.700.700_750a9936-4e9e-43cd-ae10-ac2305311177.jpg?v=1744306200",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH19000_a8d67caf-7ce4-4848-bd8a-e658f49dbd37.jpg?v=1755780906"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAC 055003 Air Filter",
+      "sku": "sac-055003-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e4040ef-9c69-4d61-a1d7-db6329fab278.jpg?v=1723216002",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "SAC 055003",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAC 055003 Air Filter. Easy to install and replace, the SAC 055003 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 141.0 mm",
+        "Dimension 2 (D2): 58.0 mm",
+        "Dimension 3 (D3): 46.0 mm",
+        "Height 1 (H1): 136.0 mm",
+        "Height 2 (H2): 102.0 mm"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0032 m³"
+    },
+    {
+      "title": "Donaldson C055003 Air Filter, Primary Duralite | Replaces the HiFi Filter SAC 055003",
+      "sku": "sac-055003-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c055003.700.700_750a9936-4e9e-43cd-ae10-ac2305311177.jpg?v=1744306200",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "C055003",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson DuraLite™ Air Cleaners? Rugged, lightweight, self-supporting, and completely disposable combination air cleaner and filter. • Function well under severe pulsation conditions, particularly two- and three-cylinder engines. • Vibration-resistant media is secured into molded housings of rugged ABS plastic—so they don’t fall apart as other designs might. • Easy to install, durable, and reliable. • Completely disposable — acceptable for normal trash pick-up (DuraLite should not be incinerated).",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0046 m³"
+    },
+    {
+      "title": "Fleetguard AH19000 Air Intake Systems | Replaces the HiFi Filter SAC 055003",
+      "sku": "sac-055003-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH19000_a8d67caf-7ce4-4848-bd8a-e658f49dbd37.jpg?v=1755780906",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "AH19000",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "With over 1,500 different air filtration products, from clamps to air housings to advanced air filters, Fleetguard® provides peace of mind for your air filtration needs. Our Fleetguard® AH19000 air housing is part of the heavy-duty air filtration line, covering your sophisticated air intake system requirements.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0043 m³"
+    }
+  ]
+}

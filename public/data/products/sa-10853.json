@@ -1,0 +1,49 @@
+{
+  "handle": "sa-10853",
+  "title": "SA 10853",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_73c2048c-cb41-417c-b3c5-74161c1a2e12.jpg?v=1766020946",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF903M_fb86317b-77f3-47c2-8dd4-a999c1eb00b7.jpg?v=1766020946"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10853 Air Filter",
+      "sku": "sa-10853-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_73c2048c-cb41-417c-b3c5-74161c1a2e12.jpg?v=1766020946",
+      "vendor": "",
+      "price": 30600,
+      "partNumber": "SA 10853",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10853 Air Filter. Easy to install and replace, the SA 10853 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "5.96 kg",
+      "shippingVolume": "0.0704 m³"
+    },
+    {
+      "title": "Fleetguard AF903M Air Filter, Primary | Replaces the HiFi Filter SA 10853",
+      "sku": "sa-10853-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF903M_fb86317b-77f3-47c2-8dd4-a999c1eb00b7.jpg?v=1766020946",
+      "vendor": "",
+      "price": 22300,
+      "partNumber": "AF903M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF903M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.2 kg",
+      "shippingVolume": "0.0877 m³"
+    }
+  ]
+}

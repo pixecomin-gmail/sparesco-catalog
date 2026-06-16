@@ -1,0 +1,92 @@
+{
+  "handle": "sa-14074",
+  "title": "SA 14074",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2ca3bcd-bae1-4925-bdb6-09af7520ce78.jpg?v=1748456002",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606952.700.700_fec99acb-68b8-4d8f-bfa9-772390b08ca0.jpg?v=1748456002",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_5d27f3e4-4ddf-419d-91b3-92f59faea872.jpg?v=1748456002",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4124_0685e642-02b7-4abf-8477-6f03076f6893.jpg?v=1755780739"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14074 Air Filter",
+      "sku": "sa-14074-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2ca3bcd-bae1-4925-bdb6-09af7520ce78.jpg?v=1748456002",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "SA 14074",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14074 Air Filter. Easy to install and replace, the SA 14074 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 150.0 mm",
+        "Dimension 2 (D2): 89.5 mm",
+        "Dimension 3 (D3): 89.5 mm",
+        "Height 1 (H1): 219.0 mm",
+        "Height 2 (H2): 214.5 mm"
+      ],
+      "unitWeight": "0.72 kg",
+      "shippingVolume": "0.007 m³"
+    },
+    {
+      "title": "Donaldson P606952 Air Filter, Primary Round | Replaces the HiFi Filter SA 14074",
+      "sku": "sa-14074-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606952.700.700_fec99acb-68b8-4d8f-bfa9-772390b08ca0.jpg?v=1748456002",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "P606952",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.61 kg",
+      "shippingVolume": "0.0088 m³"
+    },
+    {
+      "title": "Mann Filter C 15 120 Air Filter | Replaces the HiFi Filter SA 14074",
+      "sku": "sa-14074-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_5d27f3e4-4ddf-419d-91b3-92f59faea872.jpg?v=1748456002",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "C 15 120",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 152.0 mm",
+        "Dimension B: 88.0 mm",
+        "Dimension C: 88.0 mm",
+        "Dimension H: 222.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4124 Air Filter | Replaces the HiFi Filter SA 14074",
+      "sku": "sa-14074-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4124_0685e642-02b7-4abf-8477-6f03076f6893.jpg?v=1755780739",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "AF4124",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Tunisia",
+      "description": "​Fleetguard® AF4124 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.66 kg",
+      "shippingVolume": "0.0064 m³"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "handle": "sao55220",
+  "title": "SAO55220",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b4f38d1-e750-4cda-bdd7-c2ff090fc827_cccb236d-409a-4b3a-84ff-cf56b2cc2919.jpg?v=1730606058",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/imageUnAvailable_a77066c1-217a-438c-bba0-bb6b55551f20.png?v=1741626360",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_4011_x_n23882_i1035845_8147f6f4-5900-4521-be40-85b3f9898c58.png?v=1743777408"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1009 Air/Oil Separator | Replaces the SF Filter SAO55220",
+      "sku": "sao55220-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b4f38d1-e750-4cda-bdd7-c2ff090fc827_cccb236d-409a-4b3a-84ff-cf56b2cc2919.jpg?v=1730606058",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "OA 1009",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1009 Air/Oil Separator is HiFi's replacement to the SF Filter SAO55220. Easy to install and replace, the OA 1009 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.001 m³"
+    },
+    {
+      "title": "Donaldson P782914 Air Oil Separator | Replaces the SF Filter SAO55220",
+      "sku": "sao55220-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/imageUnAvailable_a77066c1-217a-438c-bba0-bb6b55551f20.png?v=1741626360",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "P782914",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P782914 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.23 kg",
+      "shippingVolume": "0.0011 m³"
+    },
+    {
+      "title": "Mann Filter LE 4011 x Compressed Air-Oil Separation | Replaces the SF Filter SAO55220",
+      "sku": "sao55220-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_4011_x_n23882_i1035845_8147f6f4-5900-4521-be40-85b3f9898c58.png?v=1743777408",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "LE 4011 x",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 45.0 mm",
+        "Dimension H: 125.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

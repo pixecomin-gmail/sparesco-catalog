@@ -1,0 +1,49 @@
+{
+  "handle": "sa-10820",
+  "title": "SA 10820",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-703dc1fc-8a98-4e05-a597-043571cb4bf4.jpg?v=1723206148",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181055.700.700_69c66a07-45a0-47e5-89c6-395a80993dbd.jpg?v=1744305981"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10820 Air Filter",
+      "sku": "sa-10820-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-703dc1fc-8a98-4e05-a597-043571cb4bf4.jpg?v=1723206148",
+      "vendor": "",
+      "price": 28100,
+      "partNumber": "SA 10820",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10820 Air Filter. Easy to install and replace, the SA 10820 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "6.78 kg",
+      "shippingVolume": "0.0936 m³"
+    },
+    {
+      "title": "Donaldson P181055 Air Filter, Primary Round | Replaces the HiFi Filter SA 10820",
+      "sku": "sa-10820-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181055.700.700_69c66a07-45a0-47e5-89c6-395a80993dbd.jpg?v=1744305981",
+      "vendor": "",
+      "price": 22400,
+      "partNumber": "P181055",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "6.31 kg",
+      "shippingVolume": "0.1019 m³"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "handle": "sa-17423",
+  "title": "SA 17423",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8789502f-bce0-4017-baa8-0b9eb4894ff2.jpg?v=1723203958",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_dffe109d-5fc5-4dd2-bcbf-c55bc38fb025.jpg?v=1743773454",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26401_640d88b3-5ca5-4ebf-b8d3-497bc31d9588.jpg?v=1755780763"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17423 Air Filter",
+      "sku": "sa-17423-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8789502f-bce0-4017-baa8-0b9eb4894ff2.jpg?v=1723203958",
+      "vendor": "",
+      "price": 14200,
+      "partNumber": "SA 17423",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17423 Air Filter. Easy to install and replace, the SA 17423 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 297.0 mm",
+        "Dimension 2 (D2): 205.0 mm",
+        "Height 1 (H1): 593.0 mm",
+        "Height 2 (H2): 582.0 mm",
+        "Height 3 (H3): 560.0 mm"
+      ],
+      "unitWeight": "3.64 kg",
+      "shippingVolume": "0.0643 m³"
+    },
+    {
+      "title": "Mann Filter C 30 810/2 Air Filter | Replaces the HiFi Filter SA 17423",
+      "sku": "sa-17423-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_dffe109d-5fc5-4dd2-bcbf-c55bc38fb025.jpg?v=1743773454",
+      "vendor": "",
+      "price": 12200,
+      "partNumber": "C 30 810/2",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 298.0 mm",
+        "Dimension B: 205.0 mm",
+        "Dimension H: 596.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26401 Air Filter, Primary | Replaces the HiFi Filter SA 17423",
+      "sku": "sa-17423-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26401_640d88b3-5ca5-4ebf-b8d3-497bc31d9588.jpg?v=1755780763",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "AF26401",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF26401 premium Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.24 kg",
+      "shippingVolume": "0.0572 m³"
+    }
+  ]
+}

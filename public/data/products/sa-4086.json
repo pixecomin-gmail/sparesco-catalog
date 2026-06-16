@@ -1,0 +1,75 @@
+{
+  "handle": "sa-4086",
+  "title": "SA 4086",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d5d8100-e811-4085-a4c0-d5cd7643114b.jpg?v=1723213220",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_f939ae25-f2b3-4009-b9cc-474195ad7539.jpg?v=1743773647",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4401_33711ca5-d140-44c2-aa9a-8bb8478399d5.jpg?v=1755780894"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 4086 Air Filter",
+      "sku": "sa-4086-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d5d8100-e811-4085-a4c0-d5cd7643114b.jpg?v=1723213220",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 4086",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 4086 Air Filter. Easy to install and replace, the SA 4086 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 340.0 mm",
+        "Dimension 2 (D2): 331.0 mm",
+        "Dimension 3 (D3): 145.0 mm",
+        "Height 1 (H1): 85.0 mm",
+        "Height 2 (H2): 70.0 mm",
+        "Height 3 (H3): 60.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0061 m³"
+    },
+    {
+      "title": "Mann Filter C 35 160/1 Air Filter | Replaces the HiFi Filter SA 4086",
+      "sku": "sa-4086-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_f939ae25-f2b3-4009-b9cc-474195ad7539.jpg?v=1743773647",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "C 35 160/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 346.0 mm",
+        "Dimension B: 148.0 mm",
+        "Dimension H: 70.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4401 Air Filter Filter - Panel | Replaces the HiFi Filter SA 4086",
+      "sku": "sa-4086-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4401_33711ca5-d140-44c2-aa9a-8bb8478399d5.jpg?v=1755780894",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "AF4401",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF4401 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.48 kg",
+      "shippingVolume": "0.0054 m³"
+    }
+  ]
+}

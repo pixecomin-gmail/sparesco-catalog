@@ -1,0 +1,54 @@
+{
+  "handle": "sa-16188",
+  "title": "SA 16188",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-00779403-88ef-4229-9293-573a920b881f.jpg?v=1762811491",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1969M_5f97f346-792a-4c2d-be2c-6e2546842f7e.jpg?v=1762811491"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16188 Air Filter",
+      "sku": "sa-16188-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-00779403-88ef-4229-9293-573a920b881f.jpg?v=1762811491",
+      "vendor": "",
+      "price": 14000,
+      "partNumber": "SA 16188",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16188 Air Filter. Easy to install and replace, the SA 16188 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 300.0 mm",
+        "Dimension 2 (D2): 270.0 mm",
+        "Dimension 3 (D3): 170.0 mm",
+        "Height 1 (H1): 723.0 mm",
+        "Height 2 (H2): 711.0 mm"
+      ],
+      "unitWeight": "5.38 kg",
+      "shippingVolume": "0.0912 m³"
+    },
+    {
+      "title": "Fleetguard AF1969M Air Filter, Primary | Replaces the HiFi Filter SA 16188",
+      "sku": "sa-16188-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1969M_5f97f346-792a-4c2d-be2c-6e2546842f7e.jpg?v=1762811491",
+      "vendor": "",
+      "price": 20900,
+      "partNumber": "AF1969M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1969M premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.51 kg",
+      "shippingVolume": "0.1052 m³"
+    }
+  ]
+}

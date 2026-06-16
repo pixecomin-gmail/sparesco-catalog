@@ -1,0 +1,66 @@
+{
+  "handle": "sa-10904",
+  "title": "SA 10904",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12f4fb5c-fc29-412f-bc74-d3380945a03e_84c76699-d59b-42b2-a657-123698f75893.jpg?v=1762811478",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p129396.700.700_342cf2e9-301d-4e7c-a9f5-b485caefaef7.jpg?v=1762811478",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF954M_b6e443a7-0253-4bbc-bea8-7a748fa75eae.jpg?v=1762811478"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10904 Air Filter",
+      "sku": "sa-10904-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12f4fb5c-fc29-412f-bc74-d3380945a03e_84c76699-d59b-42b2-a657-123698f75893.jpg?v=1762811478",
+      "vendor": "",
+      "price": 10600,
+      "partNumber": "SA 10904",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10904 Air Filter. Easy to install and replace, the SA 10904 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "4.74 kg",
+      "shippingVolume": "0.0652 m³"
+    },
+    {
+      "title": "Donaldson P129396 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 10904",
+      "sku": "sa-10904-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p129396.700.700_342cf2e9-301d-4e7c-a9f5-b485caefaef7.jpg?v=1762811478",
+      "vendor": "",
+      "price": 10800,
+      "partNumber": "P129396",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P129396 Air Filter, Primary Konepac is designed to provide reliable performance in air filter, primary konepac applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.62 kg",
+      "shippingVolume": "0.0655 m³"
+    },
+    {
+      "title": "Fleetguard AF954M Air Filter, Primary | Replaces the HiFi Filter SA 10904",
+      "sku": "sa-10904-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF954M_b6e443a7-0253-4bbc-bea8-7a748fa75eae.jpg?v=1762811478",
+      "vendor": "",
+      "price": 11900,
+      "partNumber": "AF954M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF954M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.91 kg",
+      "shippingVolume": "0.0571 m³"
+    }
+  ]
+}

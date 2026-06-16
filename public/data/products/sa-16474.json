@@ -1,0 +1,91 @@
+{
+  "handle": "sa-16474",
+  "title": "SA 16474",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d0e974c-ef7d-4996-b17c-37d69356165c.jpg?v=1748456050",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p608667.700.700_3b5aeb95-8269-4048-838e-b4b098c3dcf9.jpg?v=1748456050",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_19b9a41a-a3be-464a-8386-f380187801d2.jpg?v=1748456050",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4204_6aaa9dfa-267e-4a40-a5c7-0c73437b343d.jpg?v=1755780753"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16474 Air Filter",
+      "sku": "sa-16474-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d0e974c-ef7d-4996-b17c-37d69356165c.jpg?v=1748456050",
+      "vendor": "",
+      "price": 19600,
+      "partNumber": "SA 16474",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16474 Air Filter. Easy to install and replace, the SA 16474 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 402.0 mm",
+        "Dimension 2 (D2): 385.0 mm",
+        "Dimension 3 (D3): 352.0 mm",
+        "Height 1 (H1): 239.0 mm",
+        "Height 2 (H2): 20.0 mm"
+      ],
+      "unitWeight": "2.7 kg",
+      "shippingVolume": "0.0317 m³"
+    },
+    {
+      "title": "Donaldson P608667 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16474",
+      "sku": "sa-16474-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p608667.700.700_3b5aeb95-8269-4048-838e-b4b098c3dcf9.jpg?v=1748456050",
+      "vendor": "",
+      "price": 12100,
+      "partNumber": "P608667",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson PowerCore® filters? Genuine PowerCore filters provide superior protection and performance. • Lower initial restriction protects engine performance and fuel economy. • Greater filter capacity means longer filter life, fewer filter changes and less money spent on maintenance. • PowerCore filters have been meeting original equipment manufacturer specifications for 20+ years. • Reliable, leak resistant Radial Seal™ technology keeps the filter in place – even under heavy vibration.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.96 kg",
+      "shippingVolume": "0.032 m³"
+    },
+    {
+      "title": "Mann Filter C 38 010 Air Filter | Replaces the HiFi Filter SA 16474",
+      "sku": "sa-16474-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_19b9a41a-a3be-464a-8386-f380187801d2.jpg?v=1748456050",
+      "vendor": "",
+      "price": 22200,
+      "partNumber": "C 38 010",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 235.0 mm",
+        "Dimension B: 400.0 mm",
+        "Dimension H: 280.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4204 Air Filter, Primary | Replaces the HiFi Filter SA 16474",
+      "sku": "sa-16474-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4204_6aaa9dfa-267e-4a40-a5c7-0c73437b343d.jpg?v=1755780753",
+      "vendor": "",
+      "price": 15800,
+      "partNumber": "AF4204",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF4204 air filter meets or exceeds the customers’ technical specifications for air filtration systems including factors such as: media fiber size, shape, pore size, thickness, weave and mechanical strength.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.64 kg",
+      "shippingVolume": "0.0275 m³"
+    }
+  ]
+}

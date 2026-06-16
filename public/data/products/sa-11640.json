@@ -1,0 +1,55 @@
+{
+  "handle": "sa-11640",
+  "title": "SA 11640",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-39d11562-fb7b-4cb4-9010-b1e1fdd9b0e2.jpg?v=1723202813",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526407.700.700_e04a2203-0d89-4c36-aaf0-75602e06171f.jpg?v=1744305998"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11640 Air Filter",
+      "sku": "sa-11640-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-39d11562-fb7b-4cb4-9010-b1e1fdd9b0e2.jpg?v=1723202813",
+      "vendor": "",
+      "price": 4800,
+      "partNumber": "SA 11640",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11640 Air Filter. Easy to install and replace, the SA 11640 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 141.0 mm",
+        "Dimension 2 (D2): 139.0 mm",
+        "Dimension 3 (D3): 125.0 mm",
+        "Height 1 (H1): 394.0 mm",
+        "Height 2 (H2): 391.0 mm",
+        "Height 3 (H3): 385.0 mm"
+      ],
+      "unitWeight": "1.08 kg",
+      "shippingVolume": "0.0158 m³"
+    },
+    {
+      "title": "Donaldson P526407 Air Filter, Safety | Replaces the HiFi Filter SA 11640",
+      "sku": "sa-11640-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526407.700.700_e04a2203-0d89-4c36-aaf0-75602e06171f.jpg?v=1744305998",
+      "vendor": "",
+      "price": 4000,
+      "partNumber": "P526407",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.16 kg",
+      "shippingVolume": "0.0164 m³"
+    }
+  ]
+}

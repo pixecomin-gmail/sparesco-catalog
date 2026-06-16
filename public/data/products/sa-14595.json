@@ -1,0 +1,56 @@
+{
+  "handle": "sa-14595",
+  "title": "SA 14595",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6182109e-1a53-4683-a504-2a760e6ec64c.jpg?v=1723205234",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4645_ee25c583-7408-4079-8625-7d881e510147.jpg?v=1755780775"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14595 Air Filter",
+      "sku": "sa-14595-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6182109e-1a53-4683-a504-2a760e6ec64c.jpg?v=1723205234",
+      "vendor": "",
+      "price": 6600,
+      "partNumber": "SA 14595",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14595 Air Filter. Easy to install and replace, the SA 14595 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 259.0 mm",
+        "Dimension 2 (D2): 235.0 mm",
+        "Dimension 3 (D3): 104.0 mm",
+        "Thread 1 (D7): M6X1",
+        "Height 1 (H1): 296.0 mm",
+        "Height 2 (H2): 280.0 mm",
+        "Height 3 (H3): 253.0 mm"
+      ],
+      "unitWeight": "2.26 kg",
+      "shippingVolume": "0.0276 m³"
+    },
+    {
+      "title": "Fleetguard AF4645 Air Filter | Replaces the HiFi Filter SA 14595",
+      "sku": "sa-14595-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4645_ee25c583-7408-4079-8625-7d881e510147.jpg?v=1755780775",
+      "vendor": "",
+      "price": 8400,
+      "partNumber": "AF4645",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4645 air filtration products are designed to effectively reduce the amount of damage-causing dust and dirt particles that make their way into your equipment’s engine.  Every Fleetguard product meets or surpasses the quality and performance standards required by a new engine.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.21 kg",
+      "shippingVolume": "0.0306 m³"
+    }
+  ]
+}

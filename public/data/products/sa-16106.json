@@ -1,0 +1,49 @@
+{
+  "handle": "sa-16106",
+  "title": "SA 16106",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-56f029f4-e3b4-48b3-b2dd-2a9c456dbf34.jpg?v=1723204320",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p533599.700.700_8db8c7ed-828b-419a-9ed6-ec4944250fde.jpg?v=1744306065"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16106 Air Filter",
+      "sku": "sa-16106-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-56f029f4-e3b4-48b3-b2dd-2a9c456dbf34.jpg?v=1723204320",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "SA 16106",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16106 Air Filter. Easy to install and replace, the SA 16106 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.0102 m³"
+    },
+    {
+      "title": "Donaldson P533599 Air Filter, Safety | Replaces the HiFi Filter SA 16106",
+      "sku": "sa-16106-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p533599.700.700_8db8c7ed-828b-419a-9ed6-ec4944250fde.jpg?v=1744306065",
+      "vendor": "",
+      "price": 6900,
+      "partNumber": "P533599",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.96 kg",
+      "shippingVolume": "0.0113 m³"
+    }
+  ]
+}

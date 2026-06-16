@@ -1,0 +1,66 @@
+{
+  "handle": "sa-16096",
+  "title": "SA 16096",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2009600b-b6ed-4847-85c3-07cc30dedbf0.jpg?v=1723202746",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529240.700.700_5ee2099f-b0ce-4f70-9603-07d825424ac8.jpg?v=1744306063",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25764_a01be36e-dde1-4acf-93cf-e6681d8e6337.jpg?v=1755780733"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16096 Air Filter",
+      "sku": "sa-16096-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2009600b-b6ed-4847-85c3-07cc30dedbf0.jpg?v=1723202746",
+      "vendor": "",
+      "price": 5500,
+      "partNumber": "SA 16096",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16096 Air Filter. Easy to install and replace, the SA 16096 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.38 kg",
+      "shippingVolume": "0.0165 m³"
+    },
+    {
+      "title": "Donaldson P529240 Air Filter, Safety | Replaces the HiFi Filter SA 16096",
+      "sku": "sa-16096-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529240.700.700_5ee2099f-b0ce-4f70-9603-07d825424ac8.jpg?v=1744306063",
+      "vendor": "",
+      "price": 6200,
+      "partNumber": "P529240",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.38 kg",
+      "shippingVolume": "0.017 m³"
+    },
+    {
+      "title": "Fleetguard AF25764 Air Filter | Replaces the HiFi Filter SA 16096",
+      "sku": "sa-16096-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25764_a01be36e-dde1-4acf-93cf-e6681d8e6337.jpg?v=1755780733",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "AF25764",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF25764 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.26 kg",
+      "shippingVolume": "0.018 m³"
+    }
+  ]
+}

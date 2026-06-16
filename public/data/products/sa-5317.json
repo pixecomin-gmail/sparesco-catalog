@@ -1,0 +1,53 @@
+{
+  "handle": "sa-5317",
+  "title": "SA 5317",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-584b46fe-eaa1-4ff3-b685-7d8421d6d23b_f112c9c5-4881-49d4-affa-bab079acaa40.jpg?v=1762819106",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2264_a1a3886a-777b-43b1-b653-ea4c80783432.jpg?v=1762819106"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 601 Air/Oil Separator | Replaces the Sakura SA-5317",
+      "sku": "sa-5317-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-584b46fe-eaa1-4ff3-b685-7d8421d6d23b_f112c9c5-4881-49d4-affa-bab079acaa40.jpg?v=1762819106",
+      "vendor": "",
+      "price": 13400,
+      "partNumber": "OS 601",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 601 Air/Oil Separator is HiFi's replacement to the SAKURA SA-5317. Easy to install and replace, the OS 601 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 178.0 mm",
+        "Dimension 2 (D2): 134.0 mm",
+        "Dimension 3 (D3): 88.0 mm",
+        "Height 1 (H1): 301.0 mm"
+      ],
+      "unitWeight": "2.4 kg",
+      "shippingVolume": "0.011 m³"
+    },
+    {
+      "title": "Fleetguard AS2264 Air Filter/Oil Separator | Replaces the Sakura SA-5317",
+      "sku": "sa-5317-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2264_a1a3886a-777b-43b1-b653-ea4c80783432.jpg?v=1762819106",
+      "vendor": "",
+      "price": 20600,
+      "partNumber": "AS2264",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AS2264 air oil separator prevents oil build-up, protects against detonation, and minimizes oil loss which equates to reduced maintenance and more consistent performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.27 kg",
+      "shippingVolume": "0.018 m³"
+    }
+  ]
+}

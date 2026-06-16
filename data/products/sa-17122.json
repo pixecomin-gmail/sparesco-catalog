@@ -1,0 +1,72 @@
+{
+  "handle": "sa-17122",
+  "title": "SA 17122",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c11d70b6-caab-4472-8963-efe58996581e.jpg?v=1723202401",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500207.700.700_07d542d1-3e38-464d-b134-14adb207a628.jpg?v=1744306156",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25312_7c0641f2-0f8d-4d1e-9a4e-ad6c61d8ff2a.jpg?v=1755780719"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17122 Air Filter",
+      "sku": "sa-17122-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c11d70b6-caab-4472-8963-efe58996581e.jpg?v=1723202401",
+      "vendor": "",
+      "price": 18100,
+      "partNumber": "SA 17122",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17122 Air Filter. Easy to install and replace, the SA 17122 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 255.0 mm",
+        "Dimension 2 (D2): 120.0 mm",
+        "Dimension 3 (D3): 115.0 mm",
+        "Height 1 (H1): 704.0 mm",
+        "Height 2 (H2): 659.0 mm",
+        "Height 3 (H3): 5.5 mm"
+      ],
+      "unitWeight": "5.54 kg",
+      "shippingVolume": "0.0538 m³"
+    },
+    {
+      "title": "Donaldson P500207 Air Filter, Primary Round | Replaces the HiFi Filter SA 17122",
+      "sku": "sa-17122-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500207.700.700_07d542d1-3e38-464d-b134-14adb207a628.jpg?v=1744306156",
+      "vendor": "",
+      "price": 15400,
+      "partNumber": "P500207",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P500207 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "7.5 kg",
+      "shippingVolume": "0.0553 m³"
+    },
+    {
+      "title": "Fleetguard AF25312 Air Filter, Primary | Replaces the HiFi Filter SA 17122",
+      "sku": "sa-17122-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25312_7c0641f2-0f8d-4d1e-9a4e-ad6c61d8ff2a.jpg?v=1755780719",
+      "vendor": "",
+      "price": 21500,
+      "partNumber": "AF25312",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25312 air filter offers more filtering surface than standard air filters, is located above the engine to draw cool, clean air, needs less maintenance time and cost, and has easy filter removal.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.58 kg",
+      "shippingVolume": "0.0515 m³"
+    }
+  ]
+}

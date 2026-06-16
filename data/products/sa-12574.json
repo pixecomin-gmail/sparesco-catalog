@@ -1,0 +1,89 @@
+{
+  "handle": "sa-12574",
+  "title": "SA 12574",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b8e9cdb-d2c2-46cf-a412-fe22e90d19f7.jpg?v=1723235419",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CS_51_image1_6f4481a9-36ba-4b05-849f-5bc2f335f7f5.jpg?v=1754909554",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p502518.700.700_a0244744-9f87-475e-bb09-5fc598dd0385.jpg?v=1744306018",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28926_3bbb8ea9-9907-459d-a25b-1fc0cb4e815c.jpg?v=1755780998"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12574 Air Filter",
+      "sku": "sa-12574-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b8e9cdb-d2c2-46cf-a412-fe22e90d19f7.jpg?v=1723235419",
+      "vendor": "",
+      "price": 500,
+      "partNumber": "SA 12574",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12574 Air Filter. Easy to install and replace, the SA 12574 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 48.0 mm",
+        "Dimension 2 (D2): 36.0 mm",
+        "Height 1 (H1): 24.0 mm"
+      ],
+      "unitWeight": "0.0 kg",
+      "shippingVolume": "0.0001 m³"
+    },
+    {
+      "title": "Mann Filter CS 51 Ventilator | Replaces the HiFi Filter SA 12574",
+      "sku": "sa-12574-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CS_51_image1_6f4481a9-36ba-4b05-849f-5bc2f335f7f5.jpg?v=1754909554",
+      "vendor": "",
+      "price": 600,
+      "partNumber": "CS 51",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "For over 70 years, MANN-FILTER has been synonymous with premium filters in original equipment quality worldwide. Benefit from a comprehensive product range and optimum filtration performance to protect drivers, engines and machinery. In the familiar yellow-green packaging, MANN-FILTER offers innovative solutions to new filtration challenges and produces on a global scale in accordance with the latest international production and test standards in the automotive industry.",
+      "specifications": [
+        "Style: Ventilator",
+        "Dimension A: 48.0 mm",
+        "Dimension B: 34.0 mm",
+        "Dimension H: 24.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P502518 Breather, Hydraulic | Replaces the HiFi Filter SA 12574",
+      "sku": "sa-12574-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p502518.700.700_a0244744-9f87-475e-bb09-5fc598dd0385.jpg?v=1744306018",
+      "vendor": "",
+      "price": 600,
+      "partNumber": "P502518",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P502518 Breather, Hydraulic is designed to provide reliable performance in breather, hydraulic applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.01 kg",
+      "shippingVolume": "0.0001 m³"
+    },
+    {
+      "title": "Fleetguard HF28926 Hydraulic Filters | Replaces the HiFi Filter SA 12574",
+      "sku": "sa-12574-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28926_3bbb8ea9-9907-459d-a25b-1fc0cb4e815c.jpg?v=1755780998",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "HF28926",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® HF28926 hydraulic cartridge filter with synthetic media is designed to help keep your precision hydraulic systems running as intended, providing a solution for various applications.  This filter meets or exceeds the equipment OEM quality and performance and is the first aftermarket replacement available on the market today, bringing your operation top-quality performance and an overall unbeatable total cost of ownership.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.02 kg",
+      "shippingVolume": "0.0005 m³"
+    }
+  ]
+}

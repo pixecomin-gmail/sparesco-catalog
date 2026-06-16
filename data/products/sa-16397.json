@@ -1,0 +1,92 @@
+{
+  "handle": "sa-16397",
+  "title": "SA 16397",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f0c9d97a-c9e6-4b07-8cf2-0886e4ff9fd8_3687138a-41fc-4e30-bccf-3df3513c1bfc.jpg?v=1762811533",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p770397.700.700_b64c3cc9-2c59-49de-9729-7898d0644f6f.jpg?v=1762811533",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_1562d879-d9b9-4b64-b6d2-4bee59260ca0.jpg?v=1762811533",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25502K_6cbe2bf9-790d-429e-96cd-ddd55f30ef31.jpg?v=1762811533"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16397 Air Filter",
+      "sku": "sa-16397-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f0c9d97a-c9e6-4b07-8cf2-0886e4ff9fd8_3687138a-41fc-4e30-bccf-3df3513c1bfc.jpg?v=1762811533",
+      "vendor": "",
+      "price": 6800,
+      "partNumber": "SA 16397",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16397 Air Filter. Easy to install and replace, the SA 16397 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 171.0 mm",
+        "Dimension 2 (D2): 160.0 mm",
+        "Dimension 3 (D3): 149.0 mm",
+        "Thread 1 (D7): 7/16\"-20UNF",
+        "Height 1 (H1): 328.0 mm",
+        "Height 2 (H2): 317.0 mm"
+      ],
+      "unitWeight": "1.28 kg",
+      "shippingVolume": "0.0212 m³"
+    },
+    {
+      "title": "Donaldson P770397 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 16397",
+      "sku": "sa-16397-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p770397.700.700_b64c3cc9-2c59-49de-9729-7898d0644f6f.jpg?v=1762811533",
+      "vendor": "",
+      "price": 6200,
+      "partNumber": "P770397",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Genuine Donaldson P770397 Air Filter, Primary Konepac is designed to provide reliable performance in air filter, primary konepac applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.09 kg",
+      "shippingVolume": "0.0034 m³"
+    },
+    {
+      "title": "Mann Filter C 14 010 Air Filter | Replaces the HiFi Filter SA 16397",
+      "sku": "sa-16397-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_1562d879-d9b9-4b64-b6d2-4bee59260ca0.jpg?v=1762811533",
+      "vendor": "",
+      "price": 8100,
+      "partNumber": "C 14 010",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 171.0 mm",
+        "Dimension C: 149.0 mm",
+        "Dimension H: 328.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25502K Air Filter, Primary | Replaces the HiFi Filter SA 16397",
+      "sku": "sa-16397-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25502K_6cbe2bf9-790d-429e-96cd-ddd55f30ef31.jpg?v=1762811533",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "AF25502K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25502K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.4 kg",
+      "shippingVolume": "0.0153 m³"
+    }
+  ]
+}

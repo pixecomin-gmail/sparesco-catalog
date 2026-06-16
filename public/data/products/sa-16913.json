@@ -1,0 +1,54 @@
+{
+  "handle": "sa-16913",
+  "title": "SA 16913",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4559aae3-1d5f-4955-b464-0ffefb724ed2.jpg?v=1723205837",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55030_2fce91b3-edf6-4d7c-81d2-86f25da8cb83.jpg?v=1755780794"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16913 Air Filter",
+      "sku": "sa-16913-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4559aae3-1d5f-4955-b464-0ffefb724ed2.jpg?v=1723205837",
+      "vendor": "",
+      "price": 6000,
+      "partNumber": "SA 16913",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16913 Air Filter. Easy to install and replace, the SA 16913 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 159.0 mm",
+        "Dimension 2 (D2): 157.0 mm",
+        "Dimension 3 (D3): 151.0 mm",
+        "Height 1 (H1): 235.0 mm",
+        "Height 2 (H2): 222.0 mm"
+      ],
+      "unitWeight": "0.82 kg",
+      "shippingVolume": "0.0073 m³"
+    },
+    {
+      "title": "Fleetguard AF55030 Air Filter | Replaces the HiFi Filter SA 16913",
+      "sku": "sa-16913-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55030_2fce91b3-edf6-4d7c-81d2-86f25da8cb83.jpg?v=1755780794",
+      "vendor": "",
+      "price": 7200,
+      "partNumber": "AF55030",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF55030 Direct Flow primary air filter's technology offers better engine protection and lower maintenance costs within a smaller profile than conventional air filtration systems.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.84 kg",
+      "shippingVolume": "0.0064 m³"
+    }
+  ]
+}

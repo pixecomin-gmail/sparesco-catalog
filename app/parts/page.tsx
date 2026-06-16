@@ -1,73 +1,68 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
+import { getAllProducts, getBrands, getCategories } from "@/lib/products";
 
-const products = [
-  {
-    title: "130-9811 Temperature Sensor",
-    brand: "Caterpillar",
-    category: "Sensors",
-  },
-  {
-    title: "5S0484 Oil Filter",
-    brand: "Caterpillar",
-    category: "Filters",
-  },
-  {
-    title: "6.4139C Air Filter Assy",
-    brand: "Atlas Copco",
-    category: "Filters",
-  },
-  {
-    title: "Hydraulic Pump Assembly",
-    brand: "Komatsu",
-    category: "Hydraulic Parts",
-  },
-  {
-    title: "Engine Gasket Kit",
-    brand: "Volvo",
-    category: "Engine Parts",
-  },
-];
-
-const categories = ["Filters", "Sensors", "Hydraulic Parts", "Engine Parts"];
-const brands = ["Caterpillar", "Komatsu", "Volvo", "Atlas Copco"];
+const products = getAllProducts();
+const categories = getCategories();
+const brands = getBrands();
+const PAGE_SIZE = 24;
 
 export default function PartsPage() {
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  function toggleValue(value: string, type: "category" | "brand") {
-    const current = type === "category" ? selectedCategories : selectedBrands;
-    const setter = type === "category" ? setSelectedCategories : setSelectedBrands;
+  const currentPage = Number(searchParams.get("page") || "1");
+  const selectedCategory = searchParams.get("category") || "";
+  const selectedBrand = searchParams.get("brand") || "";
 
-    if (current.includes(value)) {
-      setter(current.filter((item) => item !== value));
+  function updateParam(key: string, value: string) {
+    const params = new URLSearchParams(searchParams.toString());
+
+    if (value) {
+      params.set(key, value);
     } else {
-      setter([...current, value]);
+      params.delete(key);
     }
+
+    params.set("page", "1");
+    router.push(`/parts?${params.toString()}`);
+  }
+
+  function goToPage(page: number) {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("page", String(page));
+    router.push(`/parts?${params.toString()}`);
   }
 
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       const categoryMatch =
-        selectedCategories.length === 0 ||
-        selectedCategories.includes(product.category);
+        !selectedCategory || product.category === selectedCategory;
 
-      const brandMatch =
-        selectedBrands.length === 0 || selectedBrands.includes(product.brand);
+      const brandMatch = !selectedBrand || product.vendor === selectedBrand;
 
       return categoryMatch && brandMatch;
     });
-  }, [selectedCategories, selectedBrands]);
+  }, [selectedCategory, selectedBrand]);
+
+  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
+  const safePage = Math.min(Math.max(currentPage, 1), totalPages);
+
+  const visibleProducts = filteredProducts.slice(
+    (safePage - 1) * PAGE_SIZE,
+    safePage * PAGE_SIZE
+  );
 
   return (
     <main>
-      <section className="section">
+      <section className="section parts-section">
         <div className="container">
           <h1 className="page-title">Browse Spare Parts</h1>
           <p className="page-intro">
-            Explore industrial spare parts by category, sub-category and brand.
+            Explore industrial spare parts by category, collection and brand.
           </p>
 
           <div className="parts-layout">
@@ -77,54 +72,119 @@ export default function PartsPage() {
               <div className="filter-block">
                 <h4>Category</h4>
 
+                <label>
+                  <input
+                    type="radio"
+                    name="category"
+                    checked={!selectedCategory}
+                    onChange={() => updateParam("category", "")}
+                  />
+                  All Categories
+                </label>
+
                 {categories.map((category) => (
                   <label key={category}>
                     <input
-                      type="checkbox"
-                      checked={selectedCategories.includes(category)}
-                      onChange={() => toggleValue(category, "category")}
+                      type="radio"
+                      name="category"
+                      checked={selectedCategory === category}
+                      onChange={() => updateParam("category", category)}
                     />
                     {category}
                   </label>
                 ))}
               </div>
 
-              <div className="filter-block">
-                <h4>Brand</h4>
+              {brands.length > 0 && (
+                <div className="filter-block">
+                  <h4>Brand</h4>
 
-                {brands.map((brand) => (
-                  <label key={brand}>
+                  <label>
                     <input
-                      type="checkbox"
-                      checked={selectedBrands.includes(brand)}
-                      onChange={() => toggleValue(brand, "brand")}
+                      type="radio"
+                      name="brand"
+                      checked={!selectedBrand}
+                      onChange={() => updateParam("brand", "")}
                     />
-                    {brand}
+                    All Brands
                   </label>
-                ))}
-              </div>
+
+                  {brands.slice(0, 20).map((brand) => (
+                    <label key={brand}>
+                      <input
+                        type="radio"
+                        name="brand"
+                        checked={selectedBrand === brand}
+                        onChange={() => updateParam("brand", brand)}
+                      />
+                      {brand}
+                    </label>
+                  ))}
+                </div>
+              )}
             </aside>
 
             <div className="parts-content">
               <div className="parts-topbar">
                 <strong>All Spare Parts</strong>
-                <span>{filteredProducts.length} products found</span>
+                <span>
+                  {filteredProducts.length} products found · Page {safePage} of{" "}
+                  {totalPages}
+                </span>
               </div>
 
-              <div className="product-grid">
-                {filteredProducts.map((product) => (
-                  <div className="product-card" key={product.title}>
-                    <div className="product-image"></div>
-                    <h3>{product.title}</h3>
-                    <p>
-                      {product.brand} • {product.category}
-                    </p>
-                  </div>
+              <div className="parts-product-grid">
+                {visibleProducts.map((product) => (
+                  <Link
+                    href={`/products/${product.handle}`}
+                    className="parts-product-card"
+                    key={product.handle}
+                  >
+                    <div className="parts-product-image">
+                      {product.image ? (
+                        <img src={product.image} alt={product.title} />
+                      ) : (
+                        <span>No Image</span>
+                      )}
+                    </div>
+
+                    <div className="parts-product-info">
+                      <h3>{product.title}</h3>
+                      <p>
+                        {product.collection}
+                        {product.variantCount > 1
+                          ? ` • ${product.variantCount} options`
+                          : ""}
+                      </p>
+                    </div>
+                  </Link>
                 ))}
               </div>
 
               {filteredProducts.length === 0 && (
                 <p className="empty-message">No products found.</p>
+              )}
+
+              {filteredProducts.length > PAGE_SIZE && (
+                <div className="pagination">
+                  <button
+                    disabled={safePage === 1}
+                    onClick={() => goToPage(safePage - 1)}
+                  >
+                    Previous
+                  </button>
+
+                  <span>
+                    Page {safePage} of {totalPages}
+                  </span>
+
+                  <button
+                    disabled={safePage === totalPages}
+                    onClick={() => goToPage(safePage + 1)}
+                  >
+                    Next
+                  </button>
+                </div>
               )}
             </div>
           </div>

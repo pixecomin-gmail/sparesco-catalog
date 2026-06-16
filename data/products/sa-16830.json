@@ -1,0 +1,71 @@
+{
+  "handle": "sa-16830",
+  "title": "SA 16830",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3fd3373e-d566-4a52-8531-0d911817a18e_7a4093e3-81c8-4c3d-bad1-f8a78c846a86.jpg?v=1762811076",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p185290.700.700_d076cabb-be8f-411f-a91d-67acc9f7f7e1.jpg?v=1762811076",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55020_99ee3a03-22db-406f-9da0-2a3882584a21.jpg?v=1762811076"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16830 Air Filter",
+      "sku": "sa-16830-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3fd3373e-d566-4a52-8531-0d911817a18e_7a4093e3-81c8-4c3d-bad1-f8a78c846a86.jpg?v=1762811076",
+      "vendor": "",
+      "price": 9400,
+      "partNumber": "SA 16830",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 16830 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 16830 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 234.0 mm",
+        "Dimension 2 (D2): 193.0 mm",
+        "Dimension 3 (D3): 190.0 mm",
+        "Height 1 (H1): 257.0 mm",
+        "Height 2 (H2): 220.0 mm"
+      ],
+      "unitWeight": "1.56 kg",
+      "shippingVolume": "0.015 m³"
+    },
+    {
+      "title": "Donaldson DBA5290 Air Filter, Primary Donaldson Blue | Replaces the HiFi Filter SA 16830",
+      "sku": "sa-16830-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p185290.700.700_d076cabb-be8f-411f-a91d-67acc9f7f7e1.jpg?v=1762811076",
+      "vendor": "",
+      "price": 10900,
+      "partNumber": "DBA5290",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson Blue® Filters? Donaldson Blue filters with Ultra-Web® media provide superior protection over traditional cellulose filters. • With up to 99.99% efficiency, delivers better protection for high-dust applications. • Sheds dust during equipment vibration for longer filter life and fewer changes. • Performs in extreme temperature and humidity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.46 kg",
+      "shippingVolume": "0.0146 m³"
+    },
+    {
+      "title": "Fleetguard AF55020 Air Filter | Replaces the HiFi Filter SA 16830",
+      "sku": "sa-16830-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55020_99ee3a03-22db-406f-9da0-2a3882584a21.jpg?v=1762811076",
+      "vendor": "",
+      "price": 10500,
+      "partNumber": "AF55020",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF55020 Direct Flow primary air filter's technology offers better engine protection and lower maintenance costs within a smaller profile than conventional air filtration systems.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.59 kg",
+      "shippingVolume": "0.0153 m³"
+    }
+  ]
+}

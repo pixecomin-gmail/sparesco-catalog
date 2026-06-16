@@ -1,0 +1,55 @@
+{
+  "handle": "sa-16874",
+  "title": "SA 16874",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f57857fe-769b-42fc-8e0a-ee900b483757.jpg?v=1723205880",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p953551.700.700_07bed8f4-9e08-403d-a61f-fea452249a7e.jpg?v=1744306144"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16874 Air Filter",
+      "sku": "sa-16874-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f57857fe-769b-42fc-8e0a-ee900b483757.jpg?v=1723205880",
+      "vendor": "",
+      "price": 5400,
+      "partNumber": "SA 16874",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16874 Air Filter. Easy to install and replace, the SA 16874 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 207.5 mm",
+        "Dimension 2 (D2): 206.5 mm",
+        "Dimension 3 (D3): 109.0 mm",
+        "Height 1 (H1): 526.0 mm",
+        "Height 2 (H2): 513.0 mm",
+        "Height 3 (H3): 153.0 mm"
+      ],
+      "unitWeight": "2.64 kg",
+      "shippingVolume": "0.0312 m³"
+    },
+    {
+      "title": "Donaldson P953551 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16874",
+      "sku": "sa-16874-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p953551.700.700_07bed8f4-9e08-403d-a61f-fea452249a7e.jpg?v=1744306144",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "P953551",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Genuine Donaldson P953551 Air Filter, Primary Radialseal features a secure radialseal fit that ensures high-efficiency air filtration while preventing unfiltered air from entering the engine. It captures harmful airborne contaminants, optimizing airflow and enhancing engine performance and longevity. Designed for use in rugged environments, this filter offers excellent durability and a long service life. Its radialseal technology makes installation simple while ensuring a tight, reliable seal that protects your engine under the harshest conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.0 kg",
+      "shippingVolume": "0.0261 m³"
+    }
+  ]
+}

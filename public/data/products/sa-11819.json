@@ -1,0 +1,70 @@
+{
+  "handle": "sa-11819",
+  "title": "SA 11819",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2fb81b8a-66f1-4991-b930-a046b527d53b.jpg?v=1723216798",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p150135.700.700_070b2c0d-961a-4bc4-b189-ab7b47d64f78.jpg?v=1744306007",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1869_d55ff639-479d-4a54-b82d-b3fd0b072812.jpg?v=1755780910"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11819 Air Filter",
+      "sku": "sa-11819-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2fb81b8a-66f1-4991-b930-a046b527d53b.jpg?v=1723216798",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "SA 11819",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11819 Air Filter. Easy to install and replace, the SA 11819 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 380.0 mm",
+        "Dimension 2 (D2): 380.0 mm",
+        "Height 1 (H1): 142.0 mm",
+        "Height 2 (H2): 132.0 mm"
+      ],
+      "unitWeight": "4.18 kg",
+      "shippingVolume": "0.0262 m³"
+    },
+    {
+      "title": "Donaldson P150135 Air Filter, Panel Engine | Replaces the HiFi Filter SA 11819",
+      "sku": "sa-11819-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p150135.700.700_070b2c0d-961a-4bc4-b189-ab7b47d64f78.jpg?v=1744306007",
+      "vendor": "",
+      "price": 11200,
+      "partNumber": "P150135",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P150135 Air Filter, Panel Engine is designed to provide reliable performance in air filter, panel engine applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.12 kg",
+      "shippingVolume": "0.0304 m³"
+    },
+    {
+      "title": "Fleetguard AF1869 Air Filter Filter - Panel | Replaces the HiFi Filter SA 11819",
+      "sku": "sa-11819-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1869_d55ff639-479d-4a54-b82d-b3fd0b072812.jpg?v=1755780910",
+      "vendor": "",
+      "price": 12200,
+      "partNumber": "AF1869",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "​Fleetguard® AF1869 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.51 kg",
+      "shippingVolume": "0.0254 m³"
+    }
+  ]
+}

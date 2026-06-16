@@ -1,0 +1,36 @@
+{
+  "handle": "sap054g1l03ap01",
+  "title": "SAP054G1L03AP01",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-00ae4f42-f1ba-4f39-9923-fac1465082b2_052976af-7485-4c80-944e-39ac1b4bdaff.jpg?v=1730564726"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter FS 105 Breather Filter | Replaces the MP Filtri SAP054G1L03AP01",
+      "sku": "sap054g1l03ap01-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-00ae4f42-f1ba-4f39-9923-fac1465082b2_052976af-7485-4c80-944e-39ac1b4bdaff.jpg?v=1730564726",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "FS 105",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter FS 105 Breather Filter is HiFi's replacement to the MP FILTRI SAP054G1L03AP01. Easy to install and replace, the FS 105 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER",
+        "Dimension 1 (D1): 54.0 mm",
+        "Dimension 2 (D2): 51.0 mm",
+        "Height 1 (H1): 64.0 mm",
+        "Height 2 (H2): 50.0 mm"
+      ],
+      "unitWeight": "0.16 kg",
+      "shippingVolume": "0.0008 m³"
+    }
+  ]
+}

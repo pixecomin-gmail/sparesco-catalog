@@ -1,0 +1,53 @@
+{
+  "handle": "sa-3724",
+  "title": "SA 3724",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8f90edf8-16c3-4acf-8f82-7e9ee13f584c.jpg?v=1723202427",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25386_2cb54b02-0365-429f-9e06-85b965d0a130.jpg?v=1755780718"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 3724 Air Filter",
+      "sku": "sa-3724-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8f90edf8-16c3-4acf-8f82-7e9ee13f584c.jpg?v=1723202427",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 3724",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 3724 Air Filter. Easy to install and replace, the SA 3724 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 160.0 mm",
+        "Dimension 2 (D2): 94.0 mm",
+        "Dimension 3 (D3): 94.0 mm",
+        "Height 1 (H1): 128.0 mm"
+      ],
+      "unitWeight": "0.56 kg",
+      "shippingVolume": "0.0055 m³"
+    },
+    {
+      "title": "Fleetguard AF25386 Air | Replaces the HiFi Filter SA 3724",
+      "sku": "sa-3724-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25386_2cb54b02-0365-429f-9e06-85b965d0a130.jpg?v=1755780718",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "AF25386",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "China",
+      "description": "​Fleetguard® AF25386 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.59 kg",
+      "shippingVolume": "0.0051 m³"
+    }
+  ]
+}

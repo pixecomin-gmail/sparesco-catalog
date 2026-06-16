@@ -1,0 +1,94 @@
+{
+  "handle": "sa-16066",
+  "title": "SA 16066",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8315c6ce-797c-44b0-8d08-573923b0d52f.jpg?v=1723203079",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_aaba471a-80b1-41e6-80fc-736fc0f3a513.jpg?v=1743773442",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500236.700.700_868b19ec-30a6-4341-921b-54e2b349be9e.jpg?v=1744306061",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25703K_f2b54a46-712f-4dfa-8df7-062d9205f50b.jpg?v=1755780734"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16066 Air Filter",
+      "sku": "sa-16066-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8315c6ce-797c-44b0-8d08-573923b0d52f.jpg?v=1723203079",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "SA 16066",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16066 Air Filter. Easy to install and replace, the SA 16066 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 110.0 mm",
+        "Dimension 2 (D2): 83.0 mm",
+        "Dimension 3 (D3): 54.0 mm",
+        "Height 1 (H1): 185.0 mm",
+        "Height 2 (H2): 178.0 mm",
+        "Height 3 (H3): 159.0 mm"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.0029 m³"
+    },
+    {
+      "title": "Mann Filter C 11 005 Air Filter | Replaces the HiFi Filter SA 16066",
+      "sku": "sa-16066-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_aaba471a-80b1-41e6-80fc-736fc0f3a513.jpg?v=1743773442",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "C 11 005",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 83.0 mm",
+        "Dimension B: 54.0 mm",
+        "Dimension D: 83.0 mm",
+        "Dimension E: 109.4 mm",
+        "Dimension H: 186.7 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P500236 Air Filter, Primary Finned | Replaces the HiFi Filter SA 16066",
+      "sku": "sa-16066-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500236.700.700_868b19ec-30a6-4341-921b-54e2b349be9e.jpg?v=1744306061",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "P500236",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P500236 Air Filter, Primary Finned features a finned design that maximizes surface area for enhanced dust-holding capacity and airflow. It effectively filters airborne contaminants, ensuring clean intake air and improving engine performance and longevity. Ideal for engines operating in dusty environments, this primary air filter offers durable construction and long service intervals. Its efficient filtration helps reduce engine wear and supports consistent power output.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0029 m³"
+    },
+    {
+      "title": "Fleetguard AF25703K Air, Primary | Replaces the HiFi Filter SA 16066",
+      "sku": "sa-16066-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25703K_f2b54a46-712f-4dfa-8df7-062d9205f50b.jpg?v=1755780734",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "AF25703K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25703K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.39 kg",
+      "shippingVolume": "0.0028 m³"
+    }
+  ]
+}

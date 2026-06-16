@@ -1,0 +1,53 @@
+{
+  "handle": "sa-19341",
+  "title": "SA 19341",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_6a267be2-9631-4f7f-8bbc-6cde0b9a1c6f.jpg?v=1766021000",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_1344_Crop_5bb47c9f-0352-4c97-9a06-c4056c6faaa3.jpg?v=1766021000"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 19341 Air Filter",
+      "sku": "sa-19341-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_6a267be2-9631-4f7f-8bbc-6cde0b9a1c6f.jpg?v=1766021000",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "SA 19341",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 19341 Air Filter. Easy to install and replace, the SA 19341 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0033 m³"
+    },
+    {
+      "title": "Mann Filter C 1344 Air Filter | Replaces the HiFi Filter SA 19341",
+      "sku": "sa-19341-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_1344_Crop_5bb47c9f-0352-4c97-9a06-c4056c6faaa3.jpg?v=1766021000",
+      "vendor": "",
+      "price": 4800,
+      "partNumber": "C 1344",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 127.0 mm",
+        "Dimension B: 64.0 mm",
+        "Dimension C: 8.5 mm",
+        "Dimension H: 119.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

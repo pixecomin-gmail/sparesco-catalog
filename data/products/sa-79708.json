@@ -1,0 +1,49 @@
+{
+  "handle": "sa-79708",
+  "title": "SA 79708",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-38070377-f0b4-4d1a-9b7b-8f6f200d15b8_0242f305-68ee-491a-ac0f-ff5466ad883b.jpg?v=1730575420",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2388_0f344481-9802-45e4-9622-e5f33e427812.jpg?v=1755782852"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5077 Air/Oil Separator | Replaces the Sakura SA-79708",
+      "sku": "sa-79708-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-38070377-f0b4-4d1a-9b7b-8f6f200d15b8_0242f305-68ee-491a-ac0f-ff5466ad883b.jpg?v=1730575420",
+      "vendor": "",
+      "price": 22200,
+      "partNumber": "OS 5077",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5077 Air/Oil Separator is HiFi's replacement to the SAKURA SA-79708. Easy to install and replace, the OS 5077 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.68 kg",
+      "shippingVolume": "0.0377 m³"
+    },
+    {
+      "title": "Fleetguard AS2388 Air Filter/Oil Separator | Replaces the Sakura SA-79708",
+      "sku": "sa-79708-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2388_0f344481-9802-45e4-9622-e5f33e427812.jpg?v=1755782852",
+      "vendor": "",
+      "price": 20900,
+      "partNumber": "AS2388",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AS2388 air oil separator prevents oil build-up, protects against detonation, and minimizes oil loss which equates to reduced maintenance and more consistent performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.69 kg",
+      "shippingVolume": "0.0476 m³"
+    }
+  ]
+}

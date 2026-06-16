@@ -1,0 +1,49 @@
+{
+  "handle": "sa-11818",
+  "title": "SA 11818",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-409890f7-3d73-4393-b6c9-62b2b2cb564f.jpg?v=1730398726",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1868_d493ead0-9a1e-4718-be9b-5fc12af5d721.jpg?v=1755781008"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11818 Air Filter",
+      "sku": "sa-11818-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-409890f7-3d73-4393-b6c9-62b2b2cb564f.jpg?v=1730398726",
+      "vendor": "",
+      "price": 18900,
+      "partNumber": "SA 11818",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11818 Air Filter. Easy to install and replace, the SA 11818 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.08 kg",
+      "shippingVolume": "0.0691 m³"
+    },
+    {
+      "title": "Fleetguard AF1868 Air | Replaces the HiFi Filter SA 11818",
+      "sku": "sa-11818-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1868_d493ead0-9a1e-4718-be9b-5fc12af5d721.jpg?v=1755781008",
+      "vendor": "",
+      "price": 6900,
+      "partNumber": "AF1868",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF1868 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.07 kg",
+      "shippingVolume": "0.0596 m³"
+    }
+  ]
+}

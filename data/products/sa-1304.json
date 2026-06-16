@@ -1,0 +1,70 @@
+{
+  "handle": "sa-1304",
+  "title": "SA 1304",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-23019137-da48-4726-9f5b-02d0df934c45.jpg?v=1723206628",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526756.700.700_3f3bb890-c83c-46ab-8614-217662ab049a.jpg?v=1744306018",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4509_6cb134a5-bd42-4e9b-a9bf-311882f9b413.jpg?v=1755780807"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 1304 Air Filter",
+      "sku": "sa-1304-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-23019137-da48-4726-9f5b-02d0df934c45.jpg?v=1723206628",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 1304",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 1304 Air Filter. Easy to install and replace, the SA 1304 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 219.0 mm",
+        "Dimension 2 (D2): 108.0 mm",
+        "Dimension 3 (D3): 108.0 mm",
+        "Height 1 (H1): 147.0 mm"
+      ],
+      "unitWeight": "0.92 kg",
+      "shippingVolume": "0.0082 m³"
+    },
+    {
+      "title": "Donaldson P526756 Air Filter, Primary Round | Replaces the HiFi Filter SA 1304",
+      "sku": "sa-1304-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526756.700.700_3f3bb890-c83c-46ab-8614-217662ab049a.jpg?v=1744306018",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "P526756",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.9 kg",
+      "shippingVolume": "0.0081 m³"
+    },
+    {
+      "title": "Fleetguard AF4509 Air | Replaces the HiFi Filter SA 1304",
+      "sku": "sa-1304-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4509_6cb134a5-bd42-4e9b-a9bf-311882f9b413.jpg?v=1755780807",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "AF4509",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "​Fleetguard® AF4509 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.9 kg",
+      "shippingVolume": "0.0088 m³"
+    }
+  ]
+}

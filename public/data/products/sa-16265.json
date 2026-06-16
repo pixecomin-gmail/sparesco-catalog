@@ -1,0 +1,75 @@
+{
+  "handle": "sa-16265",
+  "title": "SA 16265",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e9bdd431-a6ba-46c1-991a-fb961f502ed8.jpg?v=1723203038",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_11412_image1_3fc63993-6f8f-4a18-9e59-717368adf436.jpg?v=1754909271",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25618_c6decd18-a590-4c68-994e-07894a9aa83d.jpg?v=1755780741"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16265 Air Filter",
+      "sku": "sa-16265-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e9bdd431-a6ba-46c1-991a-fb961f502ed8.jpg?v=1723203038",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "SA 16265",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16265 Air Filter. Easy to install and replace, the SA 16265 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 105.0 mm",
+        "Dimension 2 (D2): 100.0 mm",
+        "Dimension 3 (D3): 87.0 mm",
+        "Height 1 (H1): 381.0 mm",
+        "Height 2 (H2): 375.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.005 m³"
+    },
+    {
+      "title": "Mann Filter CF 1141/2 Secondary Element | Replaces the HiFi Filter SA 16265",
+      "sku": "sa-16265-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_11412_image1_3fc63993-6f8f-4a18-9e59-717368adf436.jpg?v=1754909271",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "CF 1141/2",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 106.0 mm",
+        "Dimension B: 88.0 mm",
+        "Dimension D: 102.0 mm",
+        "Dimension H: 386.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25618 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16265",
+      "sku": "sa-16265-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25618_c6decd18-a590-4c68-994e-07894a9aa83d.jpg?v=1755780741",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "AF25618",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® AF25618 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0057 m³"
+    }
+  ]
+}

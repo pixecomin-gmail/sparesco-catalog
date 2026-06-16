@@ -1,0 +1,75 @@
+{
+  "handle": "sa-17524",
+  "title": "SA 17524",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-486a88b7-79b6-443b-813a-fbb839e106ed.jpg?v=1723203614",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_070421bd-e594-47a4-a988-d0fe9d0d7187.jpg?v=1743773448",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p618931.700.700_9c2f691f-08d7-49da-8a66-d068f1d759ea.jpg?v=1744306173"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17524 Air Filter",
+      "sku": "sa-17524-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-486a88b7-79b6-443b-813a-fbb839e106ed.jpg?v=1723203614",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "SA 17524",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17524 Air Filter. Easy to install and replace, the SA 17524 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 320.0 mm",
+        "Dimension 2 (D2): 202.0 mm",
+        "Dimension 3 (D3): 186.0 mm",
+        "Height 1 (H1): 626.0 mm",
+        "Height 2 (H2): 610.0 mm",
+        "Height 3 (H3): 587.0 mm"
+      ],
+      "unitWeight": "5.52 kg",
+      "shippingVolume": "0.088 m³"
+    },
+    {
+      "title": "Mann Filter C 33 2200 Air Filter | Replaces the HiFi Filter SA 17524",
+      "sku": "sa-17524-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_070421bd-e594-47a4-a988-d0fe9d0d7187.jpg?v=1743773448",
+      "vendor": "",
+      "price": 12200,
+      "partNumber": "C 33 2200",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 321.0 mm",
+        "Dimension B: 200.0 mm",
+        "Dimension H: 628.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P618931 Air Filter, Primary Round | Replaces the HiFi Filter SA 17524",
+      "sku": "sa-17524-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p618931.700.700_9c2f691f-08d7-49da-8a66-d068f1d759ea.jpg?v=1744306173",
+      "vendor": "",
+      "price": 12200,
+      "partNumber": "P618931",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.33 kg",
+      "shippingVolume": "0.0745 m³"
+    }
+  ]
+}

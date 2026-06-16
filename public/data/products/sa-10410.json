@@ -1,0 +1,53 @@
+{
+  "handle": "sa-10410",
+  "title": "SA 10410",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e70c0ff1-655b-4a97-94c9-433a8f144a3b.jpg?v=1762811387",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF460_5f8d7327-a219-444c-9aa7-a3969bd2de83.jpg?v=1762811387"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10410 Air Filter",
+      "sku": "sa-10410-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e70c0ff1-655b-4a97-94c9-433a8f144a3b.jpg?v=1762811387",
+      "vendor": "",
+      "price": 33000,
+      "partNumber": "SA 10410",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10410 Air Filter. Easy to install and replace, the SA 10410 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 504.0 mm",
+        "Dimension 2 (D2): 504.0 mm",
+        "Height 1 (H1): 205.0 mm",
+        "Height 2 (H2): 12.0 mm"
+      ],
+      "unitWeight": "7.41 kg",
+      "shippingVolume": "0.0644 m³"
+    },
+    {
+      "title": "Fleetguard AF460 Air Filter Filter - Panel | Replaces the HiFi Filter SA 10410",
+      "sku": "sa-10410-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF460_5f8d7327-a219-444c-9aa7-a3969bd2de83.jpg?v=1762811387",
+      "vendor": "",
+      "price": 21200,
+      "partNumber": "AF460",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF460 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "7.45 kg",
+      "shippingVolume": "0.0597 m³"
+    }
+  ]
+}

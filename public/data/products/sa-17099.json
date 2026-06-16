@@ -1,0 +1,91 @@
+{
+  "handle": "sa-17099",
+  "title": "SA 17099",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3bed035e-ac83-49bb-8435-ca61b1b74544.jpg?v=1723209434",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d2259271-a07e-43f6-93aa-f6e17abcd49b.jpg?v=1742827116",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p622148.700.700_fafbc31b-8bc6-4fc8-81b3-10d9a500e22c.jpg?v=1744306150",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26502_5d5b3cd9-5112-4301-b941-35c41c5fbe08.jpg?v=1755780847"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17099 Air Filter",
+      "sku": "sa-17099-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3bed035e-ac83-49bb-8435-ca61b1b74544.jpg?v=1723209434",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 17099",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17099 Air Filter. Easy to install and replace, the SA 17099 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 224.0 mm",
+        "Dimension 2 (D2): 214.0 mm",
+        "Dimension 3 (D3): 135.0 mm",
+        "Height 1 (H1): 41.0 mm",
+        "Height 2 (H2): 30.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0017 m³"
+    },
+    {
+      "title": "Mann Filter C 2348 Air Filter | Replaces the HiFi Filter SA 17099",
+      "sku": "sa-17099-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d2259271-a07e-43f6-93aa-f6e17abcd49b.jpg?v=1742827116",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "C 2348",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 225.0 mm",
+        "Dimension B: 135.0 mm",
+        "Dimension H: 41.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P622148 Air Filter, Panel | Replaces the HiFi Filter SA 17099",
+      "sku": "sa-17099-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p622148.700.700_fafbc31b-8bc6-4fc8-81b3-10d9a500e22c.jpg?v=1744306150",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "P622148",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Türkiye",
+      "description": "Genuine Donaldson P622148 Air Filter, Panel is designed to provide reliable performance in air filter, panel applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.19 kg",
+      "shippingVolume": "0.0017 m³"
+    },
+    {
+      "title": "Fleetguard AF26502 Air Filter Filter - Panel | Replaces the HiFi Filter SA 17099",
+      "sku": "sa-17099-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26502_5d5b3cd9-5112-4301-b941-35c41c5fbe08.jpg?v=1755780847",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "AF26502",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF26502 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.16 kg",
+      "shippingVolume": "0.0019 m³"
+    }
+  ]
+}

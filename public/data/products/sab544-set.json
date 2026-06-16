@@ -1,0 +1,58 @@
+{
+  "handle": "sab544-set",
+  "title": "SAB544 SET",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_6204_y_KIT_image1_6615984d-40b9-4cf2-af19-b741e8805d12.jpg?v=1755103786",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e52c49b-3bc0-4d09-927b-63f2edc8a8d8_f0733dfc-d5ee-410f-a6f3-ca6a2bedcf35.jpg?v=1755103786"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter U 620/4 y KIT Urea Filter | Replaces the SF Filter SAB544-SET",
+      "sku": "sab544-set-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_6204_y_KIT_image1_6615984d-40b9-4cf2-af19-b741e8805d12.jpg?v=1755103786",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "U 620/4 y KIT",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Germany",
+      "description": "The compact MANN-FILTER urea filters are characterized by high filter fineness, proven suitability for everyday use and a long service life. They protect system components against wear and failure and are resistant to frost and ammonia. MANN-FILTER urea filters are available for leading SCR systems in trucks and buses.",
+      "specifications": [
+        "Style: Urea Filter",
+        "Dimension A: 67.0 mm",
+        "Dimension C: 33.0 mm",
+        "Dimension D: 70.0 mm",
+        "Dimension H: 76.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter SD 70313 Urea Filter | Replaces the SF Filter SAB544-SET",
+      "sku": "sab544-set-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e52c49b-3bc0-4d09-927b-63f2edc8a8d8_f0733dfc-d5ee-410f-a6f3-ca6a2bedcf35.jpg?v=1755103786",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "SD 70313",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SD 70313 Urea Filter is HiFi's replacement to the SF Filter SAB544-SET. Easy to install and replace, the SD 70313 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER",
+        "Dimension 1 (D1): 69.0 mm",
+        "Dimension 2 (D2): 67.0 mm",
+        "Dimension 3 (D3): 33.0 mm",
+        "Height 1 (H1): 76.0 mm",
+        "Height 2 (H2): 67.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0007 m³"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "handle": "sa-1351",
+  "title": "SA 1351",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8fd83064-5532-460c-9e55-817ca7a2639e.jpg?v=1723204344",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_dfd45ba3-504c-41f5-9ff3-68f71a2d96eb.jpg?v=1760359547"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 1351 Air Filter",
+      "sku": "sa-1351-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8fd83064-5532-460c-9e55-817ca7a2639e.jpg?v=1723204344",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 1351",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 1351 Air Filter. Easy to install and replace, the SA 1351 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 272.0 mm",
+        "Dimension 2 (D2): 202.0 mm",
+        "Dimension 3 (D3): 202.0 mm",
+        "Height 1 (H1): 59.0 mm"
+      ],
+      "unitWeight": "0.54 kg",
+      "shippingVolume": "0.005 m³"
+    },
+    {
+      "title": "Fleetguard AF482  | Replaces the HiFi Filter SA 1351",
+      "sku": "sa-1351-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_dfd45ba3-504c-41f5-9ff3-68f71a2d96eb.jpg?v=1760359547",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "AF482",
+      "hsCode": "",
+      "countryOfOrigin": "",
+      "description": "Genuine HiFi Filter SA 1351 Air Filter. Easy to install and replace, the SA 1351 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "handle": "sao55930",
+  "title": "SAO55930",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c687cee6-6eab-4fb5-a25f-a469862c426a_1886e985-9a6a-4198-8f0a-00ee10666801.jpg?v=1748456119",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p784305.700.700_5c054a17-2979-4177-8305-317c423713a8.jpg?v=1748456119"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1104 Air/Oil Separator | Replaces the SF Filter SAO55930",
+      "sku": "sao55930-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c687cee6-6eab-4fb5-a25f-a469862c426a_1886e985-9a6a-4198-8f0a-00ee10666801.jpg?v=1748456119",
+      "vendor": "",
+      "price": 12900,
+      "partNumber": "OA 1104",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1104 Air/Oil Separator is HiFi's replacement to the SF Filter SAO55930. Easy to install and replace, the OA 1104 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.0011 m³"
+    },
+    {
+      "title": "Donaldson P784305 Air Oil Separator | Replaces the SF Filter SAO55930",
+      "sku": "sao55930-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p784305.700.700_5c054a17-2979-4177-8305-317c423713a8.jpg?v=1748456119",
+      "vendor": "",
+      "price": 13400,
+      "partNumber": "P784305",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P784305 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.001 m³"
+    }
+  ]
+}

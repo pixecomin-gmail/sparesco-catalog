@@ -1,0 +1,74 @@
+{
+  "handle": "sa-8296",
+  "title": "SA 8296",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-326e0093-0987-4805-aea2-9f6e0641e690.jpg?v=1723211121",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b0a76105-22cb-4316-bdc6-c2f1f0335b9d.jpg?v=1743773580",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27723_271928c5-dae2-431d-8d10-5c3c64a96fc8.jpg?v=1755780875"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8296 Air Filter",
+      "sku": "sa-8296-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-326e0093-0987-4805-aea2-9f6e0641e690.jpg?v=1723211121",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "SA 8296",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8296 Air Filter. Easy to install and replace, the SA 8296 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 230.0 mm",
+        "Dimension 2 (D2): 222.0 mm",
+        "Dimension 3 (D3): 137.0 mm",
+        "Height 1 (H1): 140.0 mm",
+        "Height 2 (H2): 125.0 mm"
+      ],
+      "unitWeight": "0.58 kg",
+      "shippingVolume": "0.0081 m³"
+    },
+    {
+      "title": "Mann Filter C 22 024 Air Filter | Replaces the HiFi Filter SA 8296",
+      "sku": "sa-8296-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b0a76105-22cb-4316-bdc6-c2f1f0335b9d.jpg?v=1743773580",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "C 22 024",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 222.0 mm",
+        "Dimension B: 135.0 mm",
+        "Dimension H: 138.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF27723 Air Filter | Replaces the HiFi Filter SA 8296",
+      "sku": "sa-8296-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27723_271928c5-dae2-431d-8d10-5c3c64a96fc8.jpg?v=1755780875",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "AF27723",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "​Fleetguard® AF27723 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.84 kg",
+      "shippingVolume": "0.0097 m³"
+    }
+  ]
+}

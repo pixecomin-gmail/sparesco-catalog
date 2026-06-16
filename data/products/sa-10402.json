@@ -1,0 +1,49 @@
+{
+  "handle": "sa-10402",
+  "title": "SA 10402",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7af85093-e768-499e-91db-2ff799800803.jpg?v=1723202710",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF452_1cf1f2be-48ed-467b-84ef-dc03126c8f2f.jpg?v=1755780725"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10402 Air Filter",
+      "sku": "sa-10402-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7af85093-e768-499e-91db-2ff799800803.jpg?v=1723202710",
+      "vendor": "",
+      "price": 14500,
+      "partNumber": "SA 10402",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10402 Air Filter. Easy to install and replace, the SA 10402 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.5 kg",
+      "shippingVolume": "0.0224 m³"
+    },
+    {
+      "title": "Fleetguard AF452 Air Filter - Panel | Replaces the HiFi Filter SA 10402",
+      "sku": "sa-10402-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF452_1cf1f2be-48ed-467b-84ef-dc03126c8f2f.jpg?v=1755780725",
+      "vendor": "",
+      "price": 9100,
+      "partNumber": "AF452",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF452 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.53 kg",
+      "shippingVolume": "0.0219 m³"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "handle": "sa-8000",
+  "title": "SA 8000",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-67ddd215-c0e1-4ccd-8b07-cb723f076200.jpg?v=1723238319"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8000 Air Filter",
+      "sku": "sa-8000-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-67ddd215-c0e1-4ccd-8b07-cb723f076200.jpg?v=1723238319",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 8000",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8000 Air Filter. Easy to install and replace, the SA 8000 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 220.0 mm",
+        "Dimension 2 (D2): 173.0 mm",
+        "Dimension 3 (D3): 96.0 mm",
+        "Height 1 (H1): 140.0 mm",
+        "Height 2 (H2): 134.0 mm"
+      ],
+      "unitWeight": "0.72 kg",
+      "shippingVolume": "0.0069 m³"
+    }
+  ]
+}

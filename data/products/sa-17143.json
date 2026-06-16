@@ -1,0 +1,76 @@
+{
+  "handle": "sa-17143",
+  "title": "SA 17143",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-78b14e4c-45f4-4f5f-a8dd-1d96fde0516e.jpg?v=1723210930",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_15001_image1_06783575-6255-4a98-a7a6-caab330fdb26.jpg?v=1754909416",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25084_c04edde3-b280-4118-a8c6-b48139f26219.jpg?v=1755780873"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17143 Air Filter",
+      "sku": "sa-17143-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-78b14e4c-45f4-4f5f-a8dd-1d96fde0516e.jpg?v=1723210930",
+      "vendor": "",
+      "price": 5600,
+      "partNumber": "SA 17143",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17143 Air Filter. Easy to install and replace, the SA 17143 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 172.0 mm",
+        "Dimension 2 (D2): 147.0 mm",
+        "Dimension 3 (D3): 136.0 mm",
+        "Height 1 (H1): 579.0 mm",
+        "Height 2 (H2): 573.0 mm"
+      ],
+      "unitWeight": "1.26 kg",
+      "shippingVolume": "0.0308 m³"
+    },
+    {
+      "title": "Mann Filter CF 1500/1 Secondary Element | Replaces the HiFi Filter SA 17143",
+      "sku": "sa-17143-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_15001_image1_06783575-6255-4a98-a7a6-caab330fdb26.jpg?v=1754909416",
+      "vendor": "",
+      "price": 8700,
+      "partNumber": "CF 1500/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 172.0 mm",
+        "Dimension B: 137.0 mm",
+        "Dimension C: 10.0 mm",
+        "Dimension D: 148.0 mm",
+        "Dimension H: 578.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25084 Air Filter, Secondary | Replaces the HiFi Filter SA 17143",
+      "sku": "sa-17143-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25084_c04edde3-b280-4118-a8c6-b48139f26219.jpg?v=1755780873",
+      "vendor": "",
+      "price": 8200,
+      "partNumber": "AF25084",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25084 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.09 kg",
+      "shippingVolume": "0.0191 m³"
+    }
+  ]
+}

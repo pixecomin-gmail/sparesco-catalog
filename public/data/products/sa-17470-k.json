@@ -1,0 +1,73 @@
+{
+  "handle": "sa-17470-k",
+  "title": "SA 17470 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73814191-9607-430d-b5fe-b6507e13c167_33f49ca4-44a5-46d2-ba07-e4eae76fa8b8.jpg?v=1762811363",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776360.700.700_a168ddb9-400a-4714-bbbe-2abc5de7b3c6.jpg?v=1762811363",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25540K_185a453d-7f09-4ba6-b243-e22b5f6c5337.jpg?v=1762811363"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17470 K Air Filter",
+      "sku": "sa-17470-k-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73814191-9607-430d-b5fe-b6507e13c167_33f49ca4-44a5-46d2-ba07-e4eae76fa8b8.jpg?v=1762811363",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "SA 17470 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17470 K Air Filter. Easy to install and replace, the SA 17470 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 180.0 mm",
+        "Dimension 2 (D2): 160.0 mm",
+        "Dimension 3 (D3): 131.0 mm",
+        "Thread 1 (D7): M10X1",
+        "5",
+        "Height 1 (H1): 215.0 mm",
+        "Height 2 (H2): 205.0 mm"
+      ],
+      "unitWeight": "1.1 kg",
+      "shippingVolume": "0.0138 m³"
+    },
+    {
+      "title": "Donaldson P776360 Air Filter, Primary Finned | Replaces the HiFi Filter SA 17470 K",
+      "sku": "sa-17470-k-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776360.700.700_a168ddb9-400a-4714-bbbe-2abc5de7b3c6.jpg?v=1762811363",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "P776360",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.08 kg",
+      "shippingVolume": "0.0124 m³"
+    },
+    {
+      "title": "Fleetguard AF25540K Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 17470 K",
+      "sku": "sa-17470-k-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25540K_185a453d-7f09-4ba6-b243-e22b5f6c5337.jpg?v=1762811363",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "AF25540K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25540K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.86 kg",
+      "shippingVolume": "0.0107 m³"
+    }
+  ]
+}

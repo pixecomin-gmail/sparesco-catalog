@@ -1,0 +1,58 @@
+{
+  "handle": "sa-17252",
+  "title": "SA 17252",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edbed5e3-0814-4c05-b162-e6f460f743d7.jpg?v=1723204270",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_1a1560d0-3ab6-4539-841d-d0de87f1b5f4.jpg?v=1743773456"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17252 Air Filter",
+      "sku": "sa-17252-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edbed5e3-0814-4c05-b162-e6f460f743d7.jpg?v=1723204270",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "SA 17252",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17252 Air Filter. Easy to install and replace, the SA 17252 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 83.0 mm",
+        "Dimension 2 (D2): 78.0 mm",
+        "Dimension 3 (D3): 63.5 mm",
+        "Height 1 (H1): 310.0 mm",
+        "Height 2 (H2): 304.0 mm"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.0027 m³"
+    },
+    {
+      "title": "Mann Filter CF 850/2 Secondary Element | Replaces the HiFi Filter SA 17252",
+      "sku": "sa-17252-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_1a1560d0-3ab6-4539-841d-d0de87f1b5f4.jpg?v=1743773456",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "CF 850/2",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 79.0 mm",
+        "Dimension B: 77.0 mm",
+        "Dimension D: 82.0 mm",
+        "Dimension H: 318.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

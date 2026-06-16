@@ -1,0 +1,54 @@
+{
+  "handle": "sao-55430",
+  "title": "SAO 55430",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782915.700.700_be0c6ff1-2084-4a3b-97da-cc1713b06319.jpg?v=1748456115",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-54363eda-5ea1-4094-b467-69e093ac2f1e_95e73279-6ab7-488e-8a38-f98a76edd4ec.jpg?v=1748456115"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P782915 Air Oil Separator | Replaces the SF Filter SAO 55430",
+      "sku": "sao-55430-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782915.700.700_be0c6ff1-2084-4a3b-97da-cc1713b06319.jpg?v=1748456115",
+      "vendor": "",
+      "price": 8900,
+      "partNumber": "P782915",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P782915 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.71 kg",
+      "shippingVolume": "0.0032 m³"
+    },
+    {
+      "title": "HiFi Filter OA 1050 Air/Oil Separator | Replaces the SF Filter SAO 55430",
+      "sku": "sao-55430-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-54363eda-5ea1-4094-b467-69e093ac2f1e_95e73279-6ab7-488e-8a38-f98a76edd4ec.jpg?v=1748456115",
+      "vendor": "",
+      "price": 9200,
+      "partNumber": "OA 1050",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1050 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55430. Easy to install and replace, the OA 1050 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 101.0 mm",
+        "Dimension 2 (D2): 100.0 mm",
+        "Dimension 3 (D3): 50.0 mm",
+        "Height 1 (H1): 156.0 mm",
+        "Height 2 (H2): 10.0 mm"
+      ],
+      "unitWeight": "0.68 kg",
+      "shippingVolume": "0.0032 m³"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "handle": "sa-8440",
+  "title": "SA 8440",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7aa0b54a-6064-45a1-8d67-941c92a1e18e.jpg?v=1723212241",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_c2cd509f-2d15-4e03-83c1-8ef5007a1d29.jpg?v=1743773620",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p506010.700.700_33efe150-d3e8-4b65-8cd6-9c28f6ba1968.jpg?v=1744306197",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26543_9a7ee3d8-3645-4333-b072-77e94a1cd154.jpg?v=1755780889"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8440 Air Filter",
+      "sku": "sa-8440-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7aa0b54a-6064-45a1-8d67-941c92a1e18e.jpg?v=1723212241",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 8440",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8440 Air Filter. Easy to install and replace, the SA 8440 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 240.0 mm",
+        "Dimension 2 (D2): 240.0 mm",
+        "Dimension 3 (D3): 222.0 mm",
+        "Height 1 (H1): 67.0 mm",
+        "Height 2 (H2): 52.0 mm",
+        "Height 3 (H3): 31.0 mm"
+      ],
+      "unitWeight": "0.5 kg",
+      "shippingVolume": "0.0046 m³"
+    },
+    {
+      "title": "Mann Filter C 24 011 Air Filter | Replaces the HiFi Filter SA 8440",
+      "sku": "sa-8440-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_c2cd509f-2d15-4e03-83c1-8ef5007a1d29.jpg?v=1743773620",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "C 24 011",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 239.0 mm",
+        "Dimension B: 241.0 mm",
+        "Dimension H: 67.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P506010 Air Filter, Panel Engine | Replaces the HiFi Filter SA 8440",
+      "sku": "sa-8440-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p506010.700.700_33efe150-d3e8-4b65-8cd6-9c28f6ba1968.jpg?v=1744306197",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "P506010",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P506010 Air Filter, Panel Engine is designed to provide reliable performance in air filter, panel engine applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.37 kg",
+      "shippingVolume": "0.0059 m³"
+    },
+    {
+      "title": "Fleetguard AF26543 Air Filter | Replaces the HiFi Filter SA 8440",
+      "sku": "sa-8440-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26543_9a7ee3d8-3645-4333-b072-77e94a1cd154.jpg?v=1755780889",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "AF26543",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "​Fleetguard® AF26543 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.55 kg",
+      "shippingVolume": "0.005 m³"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "handle": "sa-16187",
+  "title": "SA 16187",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9a4be079-865b-4be9-a847-23a0f44e075b.jpg?v=1723204216",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4548_c85d84f3-9aee-4129-85fb-b6ca5a20a7ba.jpg?v=1755780765"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16187 Air Filter",
+      "sku": "sa-16187-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9a4be079-865b-4be9-a847-23a0f44e075b.jpg?v=1723204216",
+      "vendor": "",
+      "price": 12700,
+      "partNumber": "SA 16187",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16187 Air Filter. Easy to install and replace, the SA 16187 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.46 kg",
+      "shippingVolume": "0.0515 m³"
+    },
+    {
+      "title": "Fleetguard AF4548 Air Filter | Replaces the HiFi Filter SA 16187",
+      "sku": "sa-16187-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4548_c85d84f3-9aee-4129-85fb-b6ca5a20a7ba.jpg?v=1755780765",
+      "vendor": "",
+      "price": 11200,
+      "partNumber": "AF4548",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4548 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.23 kg",
+      "shippingVolume": "0.043 m³"
+    }
+  ]
+}

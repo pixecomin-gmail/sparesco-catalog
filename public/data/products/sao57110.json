@@ -1,0 +1,56 @@
+{
+  "handle": "sao57110",
+  "title": "SAO57110",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0c8b164e-ae72-4b45-b635-be15ad690394_bda8aa1d-2efb-4a45-b3e7-093ce3dbdc31.jpg?v=1762281631",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_9002_X_Crop_c45783bf-3b5c-4257-9215-50a4435b6c2d.jpg?v=1762281631"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5531 Air/Oil Separator | Replaces the SF Filter SAO57110",
+      "sku": "sao57110-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0c8b164e-ae72-4b45-b635-be15ad690394_bda8aa1d-2efb-4a45-b3e7-093ce3dbdc31.jpg?v=1762281631",
+      "vendor": "",
+      "price": 12000,
+      "partNumber": "OS 5531",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5531 Air/Oil Separator is HiFi's replacement to the SF Filter SAO57110. Easy to install and replace, the OS 5531 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 170.0 mm",
+        "Dimension 2 (D2): 136.0 mm",
+        "Dimension 3 (D3): 88.0 mm",
+        "Height 1 (H1): 214.0 mm",
+        "Height 2 (H2): 201.0 mm"
+      ],
+      "unitWeight": "2.16 kg",
+      "shippingVolume": "0.0083 m³"
+    },
+    {
+      "title": "Mann Filter LE 9002 x Compressed Air-Oil Separation | Replaces the SF Filter SAO57110",
+      "sku": "sao57110-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_9002_X_Crop_c45783bf-3b5c-4257-9215-50a4435b6c2d.jpg?v=1762281631",
+      "vendor": "",
+      "price": 10500,
+      "partNumber": "LE 9002 X",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 170.0 mm",
+        "Dimension H: 200.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

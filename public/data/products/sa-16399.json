@@ -1,0 +1,75 @@
+{
+  "handle": "sa-16399",
+  "title": "SA 16399",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3c8da91b-6676-4324-b8a7-f7b92fa821ff.jpg?v=1723202731",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_5001_image1_47cee3ae-4154-4343-b692-b96821d33b51.jpg?v=1754909267",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25151_f6b1fe9e-cd3a-483a-8f03-65108dffad80.jpg?v=1755780732"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16399 Air Filter",
+      "sku": "sa-16399-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3c8da91b-6676-4324-b8a7-f7b92fa821ff.jpg?v=1723202731",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "SA 16399",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16399 Air Filter. Easy to install and replace, the SA 16399 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 42.0 mm",
+        "Dimension 2 (D2): 38.5 mm",
+        "Dimension 3 (D3): 30.5 mm",
+        "Height 1 (H1): 161.0 mm",
+        "Height 2 (H2): 141.5 mm",
+        "Height 3 (H3): 133.5 mm"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0004 m³"
+    },
+    {
+      "title": "Mann Filter CF 5001 Secondary Element | Replaces the HiFi Filter SA 16399",
+      "sku": "sa-16399-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_5001_image1_47cee3ae-4154-4343-b692-b96821d33b51.jpg?v=1754909267",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "CF 5001",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 42.0 mm",
+        "Dimension B: 31.0 mm",
+        "Dimension H: 163.5 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25151 Air Filter | Replaces the HiFi Filter SA 16399",
+      "sku": "sa-16399-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25151_f6b1fe9e-cd3a-483a-8f03-65108dffad80.jpg?v=1755780732",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "AF25151",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF25151 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.09 kg",
+      "shippingVolume": "0.001 m³"
+    }
+  ]
+}

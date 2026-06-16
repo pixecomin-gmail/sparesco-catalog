@@ -1,0 +1,62 @@
+{
+  "handle": "sac-7905",
+  "title": "SAC 7905",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-58cf0312-2ff8-4e8f-ad30-47a2477ce5d1_a683dc14-cb66-4e38-9771-05eaf0c6e4b9.jpg?v=1762819118",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LB_9622_image1_07091dbd-2c5e-46dd-a377-bc742dc78c9d.jpg?v=1762819118"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OV 6073 Air/Oil Separator | Replaces the Sakura SAC-7905",
+      "sku": "sac-7905-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-58cf0312-2ff8-4e8f-ad30-47a2477ce5d1_a683dc14-cb66-4e38-9771-05eaf0c6e4b9.jpg?v=1762819118",
+      "vendor": "",
+      "price": 8000,
+      "partNumber": "OV 6073",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OV 6073 Air/Oil Separator is HiFi's replacement to the SAKURA SAC-7905. Easy to install and replace, the OV 6073 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 98.0 mm",
+        "Dimension 2 (D2): 71.0 mm",
+        "Dimension 3 (D3): 62.0 mm",
+        "Thread 1 (D7): M24X1",
+        "5",
+        "Height 1 (H1): 212.0 mm",
+        "Height 2 (H2): 210.0 mm",
+        "Height 3 (H3): 190.0 mm"
+      ],
+      "unitWeight": "1.06 kg",
+      "shippingVolume": "0.0025 m³"
+    },
+    {
+      "title": "Mann Filter LB 962/2 Compressed Air-Oil Separation | Replaces the Sakura SAC-7905",
+      "sku": "sac-7905-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LB_9622_image1_07091dbd-2c5e-46dd-a377-bc742dc78c9d.jpg?v=1762819118",
+      "vendor": "",
+      "price": 5200,
+      "partNumber": "LB 962/2",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling boxes reliably separate oil from the compressed air in compressors and vacuum pumps. They ensure clean air, prolong the service life of the devices and provide optimal performance. High-quality media for the air deoiling boxes from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 93.0 mm",
+        "Dimension B: 62.0 mm",
+        "Dimension C: 71.0 mm",
+        "Dimension G: M24x1.5",
+        "Dimension H: 212.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

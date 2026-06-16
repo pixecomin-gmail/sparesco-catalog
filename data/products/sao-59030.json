@@ -1,0 +1,52 @@
+{
+  "handle": "sao-59030",
+  "title": "SAO 59030",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_3004_x_Crop_0621e5f6-f912-4781-9151-8c19257e7a6f.jpg?v=1755101413",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OT_25202016_77286559-e1b8-43fe-ab3f-4bd9ac179410.jpg?v=1755101413"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 3004 x Compressed Air-Oil Separation | Replaces the SF Filter SAO 59030",
+      "sku": "sao-59030-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_3004_x_Crop_0621e5f6-f912-4781-9151-8c19257e7a6f.jpg?v=1755101413",
+      "vendor": "",
+      "price": 18300,
+      "partNumber": "LE 3004 x",
+      "hsCode": "7019.90.00",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 135.0 mm",
+        "Dimension D: 160.0 mm",
+        "Dimension H: 65.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OT 2016 Air/Oil Separator | Replaces the SF Filter SAO 59030",
+      "sku": "sao-59030-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OT_25202016_77286559-e1b8-43fe-ab3f-4bd9ac179410.jpg?v=1755101413",
+      "vendor": "",
+      "price": 11900,
+      "partNumber": "OT 2016",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2016 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 59030. Easy to install and replace, the OT 2016 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.02 kg",
+      "shippingVolume": "0.0036 m³"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "handle": "sa-18068",
+  "title": "SA 18068",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f410b90-7cf8-4544-bd87-64c4e897fbb9.jpg?v=1723206392",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p849069.700.700_a0bd43d4-ea1b-41f3-8995-f82cef1576a5.jpg?v=1744306181",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26525_647c2270-6a6a-497b-8db8-14938269b410.jpg?v=1755780810"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18068 Air Filter",
+      "sku": "sa-18068-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f410b90-7cf8-4544-bd87-64c4e897fbb9.jpg?v=1723206392",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "SA 18068",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18068 Air Filter. Easy to install and replace, the SA 18068 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 235.0 mm",
+        "Dimension 2 (D2): 133.0 mm",
+        "Height 1 (H1): 261.0 mm",
+        "Height 2 (H2): 248.0 mm"
+      ],
+      "unitWeight": "1.88 kg",
+      "shippingVolume": "0.022 m³"
+    },
+    {
+      "title": "Donaldson P849069 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 18068",
+      "sku": "sa-18068-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p849069.700.700_a0bd43d4-ea1b-41f3-8995-f82cef1576a5.jpg?v=1744306181",
+      "vendor": "",
+      "price": 11300,
+      "partNumber": "P849069",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Genuine Donaldson P849069 Air Filter, Primary Radialseal features a secure radialseal fit that ensures high-efficiency air filtration while preventing unfiltered air from entering the engine. It captures harmful airborne contaminants, optimizing airflow and enhancing engine performance and longevity. Designed for use in rugged environments, this filter offers excellent durability and a long service life. Its radialseal technology makes installation simple while ensuring a tight, reliable seal that protects your engine under the harshest conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.5 kg",
+      "shippingVolume": "0.0156 m³"
+    },
+    {
+      "title": "Fleetguard AF26525 Air Filter | Replaces the HiFi Filter SA 18068",
+      "sku": "sa-18068-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26525_647c2270-6a6a-497b-8db8-14938269b410.jpg?v=1755780810",
+      "vendor": "",
+      "price": 6100,
+      "partNumber": "AF26525",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "​Fleetguard® AF26525 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.68 kg",
+      "shippingVolume": "0.0188 m³"
+    }
+  ]
+}

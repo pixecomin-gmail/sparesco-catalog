@@ -1,0 +1,92 @@
+{
+  "handle": "sa-17321",
+  "title": "SA 17321",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-39aeb8b0-f986-4e4e-84d7-c9c783c355e6_c5d9502c-4abd-4f91-8b96-e261e1724cfc.jpg?v=1762811060",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785001.700.700_4a87809d-73f7-4553-9e36-23bd8b741300.jpg?v=1762811060",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e4fccfe4-09f5-4235-9ad8-b414889559b8.jpg?v=1762811060",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26262_c9bf0e03-e897-432f-8e50-5e302f06c760.jpg?v=1762811060"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17321 Air Filter",
+      "sku": "sa-17321-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-39aeb8b0-f986-4e4e-84d7-c9c783c355e6_c5d9502c-4abd-4f91-8b96-e261e1724cfc.jpg?v=1762811060",
+      "vendor": "",
+      "price": 7600,
+      "partNumber": "SA 17321",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 17321 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 17321 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 227.0 mm",
+        "Dimension 2 (D2): 130.0 mm",
+        "Dimension 3 (D3): 116.0 mm",
+        "Height 1 (H1): 305.0 mm",
+        "Height 2 (H2): 288.0 mm",
+        "Height 3 (H3): 265.0 mm"
+      ],
+      "unitWeight": "1.66 kg",
+      "shippingVolume": "0.0214 m³"
+    },
+    {
+      "title": "Donaldson P785001 Air Filter, Primary Round | Replaces the HiFi Filter SA 17321",
+      "sku": "sa-17321-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785001.700.700_4a87809d-73f7-4553-9e36-23bd8b741300.jpg?v=1762811060",
+      "vendor": "",
+      "price": 9400,
+      "partNumber": "P785001",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Germany",
+      "description": "Genuine Donaldson P785001 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.52 kg",
+      "shippingVolume": "0.0196 m³"
+    },
+    {
+      "title": "Mann Filter C 23 513/1 Air Filter | Replaces the HiFi Filter SA 17321",
+      "sku": "sa-17321-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e4fccfe4-09f5-4235-9ad8-b414889559b8.jpg?v=1762811060",
+      "vendor": "",
+      "price": 11300,
+      "partNumber": "C 23 513/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 227.0 mm",
+        "Dimension B: 130.0 mm",
+        "Dimension H: 305.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26262 Air, Primary | Replaces the HiFi Filter SA 17321",
+      "sku": "sa-17321-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26262_c9bf0e03-e897-432f-8e50-5e302f06c760.jpg?v=1762811060",
+      "vendor": "",
+      "price": 5800,
+      "partNumber": "AF26262",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF26262 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.56 kg",
+      "shippingVolume": "0.0228 m³"
+    }
+  ]
+}

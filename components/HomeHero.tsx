@@ -2,52 +2,13 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-
-const products = [
-  {
-    title: "130-9811 Temperature Sensor",
-    handle: "130-9811-temperature-sensor",
-    brand: "Caterpillar",
-    category: "Sensors",
-  },
-  {
-    title: "5S0484 Oil Filter",
-    handle: "5s0484-oil-filter",
-    brand: "Caterpillar",
-    category: "Filters",
-  },
-  {
-    title: "6.4139C Air Filter Assy",
-    handle: "6-4139c-air-filter-assy",
-    brand: "Atlas Copco",
-    category: "Filters",
-  },
-  {
-    title: "Hydraulic Pump Assembly",
-    handle: "hydraulic-pump-assembly",
-    brand: "Komatsu",
-    category: "Hydraulic Parts",
-  },
-  {
-    title: "Engine Gasket Kit",
-    handle: "engine-gasket-kit",
-    brand: "Volvo",
-    category: "Engine Parts",
-  },
-];
+import { searchProducts } from "@/lib/products";
 
 export default function HomeHero() {
   const [query, setQuery] = useState("");
 
   const results = useMemo(() => {
-    if (!query.trim()) return [];
-
-    return products
-      .filter((product) => {
-        const text = `${product.title} ${product.brand} ${product.category}`.toLowerCase();
-        return text.includes(query.toLowerCase());
-      })
-      .slice(0, 4);
+    return searchProducts(query, 4);
   }, [query]);
 
   return (
@@ -87,12 +48,19 @@ export default function HomeHero() {
                   className="hero-result-card"
                   key={product.handle}
                 >
-                  <div className="hero-result-image"></div>
+                  <div className="hero-result-image">
+                    {product.image && (
+                      <img src={product.image} alt={product.title} />
+                    )}
+                  </div>
 
                   <div>
                     <strong>{product.title}</strong>
                     <span>
-                      {product.brand} • {product.category}
+                      {product.collection}{" "}
+                      {product.variantCount > 1
+                        ? `• ${product.variantCount} options`
+                        : ""}
                     </span>
                   </div>
                 </Link>

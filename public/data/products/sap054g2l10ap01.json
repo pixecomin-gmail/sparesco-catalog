@@ -1,0 +1,37 @@
+{
+  "handle": "sap054g2l10ap01",
+  "title": "SAP054G2L10AP01",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9eec9358-c255-47ff-bc9c-4abc9dd26c8c_792fa634-1c14-4a7a-b6f6-a2187257e684.jpg?v=1730564750"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter FS 125 Breather Filter | Replaces the MP Filtri SAP054G2L10AP01",
+      "sku": "sap054g2l10ap01-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9eec9358-c255-47ff-bc9c-4abc9dd26c8c_792fa634-1c14-4a7a-b6f6-a2187257e684.jpg?v=1730564750",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "FS 125",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter FS 125 Breather Filter is HiFi's replacement to the MP FILTRI SAP054G2L10AP01. Easy to install and replace, the FS 125 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER",
+        "Dimension 1 (D1): 52.0 mm",
+        "Dimension 2 (D2): 49.0 mm",
+        "Thread 1 (D7): 1/2\"-BSP",
+        "Height 1 (H1): 59.0 mm",
+        "Height 2 (H2): 50.0 mm"
+      ],
+      "unitWeight": "0.08 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

@@ -2,27 +2,13 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-
-const products = [
-  { title: "130-9811 Temperature Sensor", brand: "Caterpillar", category: "Sensors" },
-  { title: "5S0484 Oil Filter", brand: "Caterpillar", category: "Filters" },
-  { title: "6.4139C Air Filter Assy", brand: "Atlas Copco", category: "Filters" },
-  { title: "Hydraulic Pump Assembly", brand: "Komatsu", category: "Hydraulic Parts" },
-  { title: "Engine Gasket Kit", brand: "Volvo", category: "Engine Parts" },
-];
+import { searchProducts } from "@/lib/products";
 
 export default function HomeSearch() {
   const [query, setQuery] = useState("");
 
   const results = useMemo(() => {
-    if (!query.trim()) return [];
-
-    return products
-      .filter((product) => {
-        const text = `${product.title} ${product.brand} ${product.category}`.toLowerCase();
-        return text.includes(query.toLowerCase());
-      })
-      .slice(0, 4);
+    return searchProducts(query, 4);
   }, [query]);
 
   return (
@@ -42,13 +28,25 @@ export default function HomeSearch() {
       {results.length > 0 && (
         <div className="home-search-results">
           {results.map((product) => (
-            <div className="home-search-result" key={product.title}>
+            <Link
+              href={`/products/${product.handle}`}
+              className="home-search-result"
+              key={product.handle}
+            >
               <strong>{product.title}</strong>
-              <span>{product.brand} • {product.category}</span>
-            </div>
+              <span>
+                {product.collection}
+                {product.variantCount > 1
+                  ? ` • ${product.variantCount} options`
+                  : ""}
+              </span>
+            </Link>
           ))}
 
-          <Link href={`/search?q=${encodeURIComponent(query)}`} className="view-all-results">
+          <Link
+            href={`/search?q=${encodeURIComponent(query)}`}
+            className="view-all-results"
+          >
             View all results →
           </Link>
         </div>

@@ -1,0 +1,55 @@
+{
+  "handle": "sa-16846",
+  "title": "SA 16846",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9d31ff41-0342-4c1b-8747-328e4ad52933.jpg?v=1723235210",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26509_a921dda3-b817-447f-b102-7e41e193361c.jpg?v=1755780998"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16846 Air Filter",
+      "sku": "sa-16846-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9d31ff41-0342-4c1b-8747-328e4ad52933.jpg?v=1723235210",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "SA 16846",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16846 Air Filter. Easy to install and replace, the SA 16846 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 162.0 mm",
+        "Dimension 2 (D2): 125.0 mm",
+        "Dimension 3 (D3): 95.0 mm",
+        "Height 1 (H1): 268.0 mm",
+        "Height 2 (H2): 267.0 mm",
+        "Height 3 (H3): 29.0 mm"
+      ],
+      "unitWeight": "0.79 kg",
+      "shippingVolume": "0.0091 m³"
+    },
+    {
+      "title": "Fleetguard AF26509 Air Filter, Primary | Replaces the HiFi Filter SA 16846",
+      "sku": "sa-16846-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26509_a921dda3-b817-447f-b102-7e41e193361c.jpg?v=1755780998",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "AF26509",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "China",
+      "description": "​Fleetguard® AF26509 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.01 kg",
+      "shippingVolume": "0.0098 m³"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "handle": "sa-16561",
+  "title": "SA 16561",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2ffb6f79-a5ea-4278-acc3-fdf81951b128.jpg?v=1748456057",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p609221.700.700_1fb8b445-967d-49a4-bdf6-b647a3696b5e.jpg?v=1748456057",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d0cb496d-c348-433d-9652-331ccc9b8e5e.jpg?v=1748456057",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4214_888248fa-3873-432f-8338-978fb306a0d2.jpg?v=1755780743"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16561 Air Filter",
+      "sku": "sa-16561-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2ffb6f79-a5ea-4278-acc3-fdf81951b128.jpg?v=1748456057",
+      "vendor": "",
+      "price": 4700,
+      "partNumber": "SA 16561",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16561 Air Filter. Easy to install and replace, the SA 16561 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 166.0 mm",
+        "Dimension 2 (D2): 158.0 mm",
+        "Dimension 3 (D3): 150.0 mm",
+        "Height 1 (H1): 330.0 mm",
+        "Height 2 (H2): 323.0 mm",
+        "Height 3 (H3): 318.0 mm"
+      ],
+      "unitWeight": "0.7 kg",
+      "shippingVolume": "0.0106 m³"
+    },
+    {
+      "title": "Donaldson P609221 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 16561",
+      "sku": "sa-16561-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p609221.700.700_1fb8b445-967d-49a4-bdf6-b647a3696b5e.jpg?v=1748456057",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "P609221",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P609221 Air Filter, Primary Konepac is designed to provide reliable performance in air filter, primary konepac applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.75 kg",
+      "shippingVolume": "0.0105 m³"
+    },
+    {
+      "title": "Mann Filter C 15 011 Air Filter | Replaces the HiFi Filter SA 16561",
+      "sku": "sa-16561-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d0cb496d-c348-433d-9652-331ccc9b8e5e.jpg?v=1748456057",
+      "vendor": "",
+      "price": 5600,
+      "partNumber": "C 15 011",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 130.0 mm",
+        "Dimension D: 166.0 mm",
+        "Dimension H: 331.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4214 Air | Replaces the HiFi Filter SA 16561",
+      "sku": "sa-16561-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4214_888248fa-3873-432f-8338-978fb306a0d2.jpg?v=1755780743",
+      "vendor": "",
+      "price": 6600,
+      "partNumber": "AF4214",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4214 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.75 kg",
+      "shippingVolume": "0.013 m³"
+    }
+  ]
+}

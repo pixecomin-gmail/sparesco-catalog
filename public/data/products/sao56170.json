@@ -1,0 +1,52 @@
+{
+  "handle": "sao56170",
+  "title": "SAO56170",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_5008_Crop_27b8df0e-0948-433e-ae0a-77d6fcfae710.jpg?v=1748456120",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OA_25201111_c7d6c284-ddb2-4895-b914-7eaafc279a9f.jpg?v=1748456120"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 5008 Compressed Air-Oil Separation | Replaces the SF Filter SAO56170",
+      "sku": "sao56170-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_5008_Crop_27b8df0e-0948-433e-ae0a-77d6fcfae710.jpg?v=1748456120",
+      "vendor": "",
+      "price": 12000,
+      "partNumber": "LE 5008",
+      "hsCode": "7019.90.00",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 150.0 mm",
+        "Dimension B: 130.0 mm",
+        "Dimension H: 100.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OA 1111 Air/Oil Separator | Replaces the SF Filter SAO56170",
+      "sku": "sao56170-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OA_25201111_c7d6c284-ddb2-4895-b914-7eaafc279a9f.jpg?v=1748456120",
+      "vendor": "",
+      "price": 15000,
+      "partNumber": "OA 1111",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1111 Air/Oil Separator is HiFi's replacement to the SF Filter SAO56170. Easy to install and replace, the OA 1111 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.1 kg",
+      "shippingVolume": "0.0034 m³"
+    }
+  ]
+}

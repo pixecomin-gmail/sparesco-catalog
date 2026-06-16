@@ -1,0 +1,71 @@
+{
+  "handle": "sa-16091",
+  "title": "SA 16091",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0b3bb3b8-4b44-4761-85b4-f5fd8567a8f9.jpg?v=1723202577",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p536941.700.700_1c1e2d21-5da4-42a8-86d5-10902951d1eb.jpg?v=1744306064",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25521_15f47400-a0ec-445f-a066-d12f00f855fb.jpg?v=1755780716"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16091 Air Filter",
+      "sku": "sa-16091-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0b3bb3b8-4b44-4761-85b4-f5fd8567a8f9.jpg?v=1723202577",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "SA 16091",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16091 Air Filter. Easy to install and replace, the SA 16091 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 83.0 mm",
+        "Dimension 2 (D2): 77.0 mm",
+        "Dimension 3 (D3): 63.0 mm",
+        "Height 1 (H1): 377.0 mm",
+        "Height 2 (H2): 373.0 mm"
+      ],
+      "unitWeight": "0.26 kg",
+      "shippingVolume": "0.0053 m³"
+    },
+    {
+      "title": "Donaldson P536941 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16091",
+      "sku": "sa-16091-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p536941.700.700_1c1e2d21-5da4-42a8-86d5-10902951d1eb.jpg?v=1744306064",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "P536941",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.31 kg",
+      "shippingVolume": "0.0045 m³"
+    },
+    {
+      "title": "Fleetguard AF25521 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16091",
+      "sku": "sa-16091-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25521_15f47400-a0ec-445f-a066-d12f00f855fb.jpg?v=1755780716",
+      "vendor": "",
+      "price": 4700,
+      "partNumber": "AF25521",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® AF25521 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.27 kg",
+      "shippingVolume": "0.0056 m³"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "handle": "sa-16550",
+  "title": "SA 16550",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9dda16b-bed6-45c6-8c84-cc3ae6d54522.jpg?v=1748456058",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772553.700.700_8d3749ad-cc50-4ae6-ba2d-271162f1b078.jpg?v=1748456058",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_21_012_image1_ac04a3ca-fa7b-4624-8d83-45c6974291f7.jpg?v=1754909267",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25348K_4049522b-50d0-447d-adc5-c5e808b36e4f.jpg?v=1755780740"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16550 Air Filter",
+      "sku": "sa-16550-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9dda16b-bed6-45c6-8c84-cc3ae6d54522.jpg?v=1748456058",
+      "vendor": "",
+      "price": 6500,
+      "partNumber": "SA 16550",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16550 Air Filter. Easy to install and replace, the SA 16550 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 212.0 mm",
+        "Dimension 2 (D2): 182.0 mm",
+        "Dimension 3 (D3): 158.0 mm",
+        "Thread 1 (D7): 7/16\"-20UNF",
+        "Height 1 (H1): 350.0 mm",
+        "Height 2 (H2): 339.0 mm",
+        "Height 3 (H3): 321.0 mm"
+      ],
+      "unitWeight": "1.41 kg",
+      "shippingVolume": "0.0216 m³"
+    },
+    {
+      "title": "Donaldson P772553 Air Filter, Primary Round | Replaces the HiFi Filter SA 16550",
+      "sku": "sa-16550-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772553.700.700_8d3749ad-cc50-4ae6-ba2d-271162f1b078.jpg?v=1748456058",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "P772553",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.74 kg",
+      "shippingVolume": "0.0217 m³"
+    },
+    {
+      "title": "Mann Filter C 21 012 Air Filter | Replaces the HiFi Filter SA 16550",
+      "sku": "sa-16550-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_21_012_image1_ac04a3ca-fa7b-4624-8d83-45c6974291f7.jpg?v=1754909267",
+      "vendor": "",
+      "price": 6500,
+      "partNumber": "C 21 012",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Czechia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 155.0 mm",
+        "Dimension B: 89.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 215.0 mm",
+        "Dimension E: 210.0 mm",
+        "Dimension H: 341.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25348K Air, Primary | Replaces the HiFi Filter SA 16550",
+      "sku": "sa-16550-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25348K_4049522b-50d0-447d-adc5-c5e808b36e4f.jpg?v=1755780740",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "AF25348K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25348K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.46 kg",
+      "shippingVolume": "0.0201 m³"
+    }
+  ]
+}

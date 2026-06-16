@@ -1,0 +1,72 @@
+{
+  "handle": "sa-17428",
+  "title": "SA 17428",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-354f6bef-6223-47a5-8deb-cf246f37d971.jpg?v=1723204020",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788895.700.700_42852175-fbeb-45e5-8338-e4c655935c3c.jpg?v=1744306170",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4246_c73f807b-6740-4f9e-a055-e74002d9878a.jpg?v=1755780756"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17428 Air Filter",
+      "sku": "sa-17428-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-354f6bef-6223-47a5-8deb-cf246f37d971.jpg?v=1723204020",
+      "vendor": "",
+      "price": 12000,
+      "partNumber": "SA 17428",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17428 Air Filter. Easy to install and replace, the SA 17428 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 263.0 mm",
+        "Dimension 2 (D2): 253.0 mm",
+        "Dimension 3 (D3): 256.0 mm",
+        "Height 1 (H1): 231.0 mm",
+        "Height 2 (H2): 216.0 mm",
+        "Height 3 (H3): 19.0 mm"
+      ],
+      "unitWeight": "1.08 kg",
+      "shippingVolume": "0.015 m³"
+    },
+    {
+      "title": "Donaldson P788895 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 17428",
+      "sku": "sa-17428-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788895.700.700_42852175-fbeb-45e5-8338-e4c655935c3c.jpg?v=1744306170",
+      "vendor": "",
+      "price": 7400,
+      "partNumber": "P788895",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P788895 Air Filter, Primary Obround Powercore is designed to provide reliable performance in air filter, primary obround powercore applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.99 kg",
+      "shippingVolume": "0.0153 m³"
+    },
+    {
+      "title": "Fleetguard AF4246 Air Filter | Replaces the HiFi Filter SA 17428",
+      "sku": "sa-17428-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4246_c73f807b-6740-4f9e-a055-e74002d9878a.jpg?v=1755780756",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "AF4246",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Czech Republic",
+      "description": "​Fleetguard® AF4246 air filter meets or exceeds the customers’ technical specifications for air filtration systems including factors such as: media fiber size, shape, pore size, thickness, weave and mechanical strength.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.07 kg",
+      "shippingVolume": "0.0144 m³"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "handle": "sa-11791",
+  "title": "SA 11791",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2897a710-efd0-422b-b085-934043f1dec4.jpg?v=1748455992",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776696.700.700_227b4d4c-e7a0-419a-8dd2-6626be810f62.jpg?v=1748455992",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1200_image1_67847ab6-7026-4f06-88cb-cea7fd1511f9.jpg?v=1754909302",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1841_0b658640-c750-4723-86f7-c4b0d4d9f172.jpg?v=1755780792"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11791 Air Filter",
+      "sku": "sa-11791-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2897a710-efd0-422b-b085-934043f1dec4.jpg?v=1748455992",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 11791",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11791 Air Filter. Easy to install and replace, the SA 11791 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 120.0 mm",
+        "Dimension 2 (D2): 108.5 mm",
+        "Dimension 3 (D3): 105.0 mm",
+        "Height 1 (H1): 382.0 mm",
+        "Height 2 (H2): 372.0 mm",
+        "Height 3 (H3): 364.0 mm"
+      ],
+      "unitWeight": "0.64 kg",
+      "shippingVolume": "0.0072 m³"
+    },
+    {
+      "title": "Donaldson P776696 Air Filter, Safety | Replaces the HiFi Filter SA 11791",
+      "sku": "sa-11791-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776696.700.700_227b4d4c-e7a0-419a-8dd2-6626be810f62.jpg?v=1748455992",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "P776696",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.55 kg",
+      "shippingVolume": "0.0073 m³"
+    },
+    {
+      "title": "Mann Filter CF 1200 Secondary Element | Replaces the HiFi Filter SA 11791",
+      "sku": "sa-11791-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1200_image1_67847ab6-7026-4f06-88cb-cea7fd1511f9.jpg?v=1754909302",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "CF 1200",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Brazil",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 121.0 mm",
+        "Dimension B: 105.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 112.0 mm",
+        "Dimension H: 381.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF1841 Air Filter, Secondary | Replaces the HiFi Filter SA 11791",
+      "sku": "sa-11791-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1841_0b658640-c750-4723-86f7-c4b0d4d9f172.jpg?v=1755780792",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "AF1841",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF1841 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.37 kg",
+      "shippingVolume": "0.0068 m³"
+    }
+  ]
+}

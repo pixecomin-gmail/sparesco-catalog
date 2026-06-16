@@ -1,0 +1,71 @@
+{
+  "handle": "sa-14710",
+  "title": "SA 14710",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6e4977f9-84fa-4074-af6a-70d7d5e4f1ff.jpg?v=1723203252",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p141278.700.700_78a4102d-1dda-4363-ae15-75f6dbe6bf9b.jpg?v=1744306043",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4760_8f83853f-c003-494a-8622-a5ac7aa5cd1c.jpg?v=1755780746"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14710 Air Filter",
+      "sku": "sa-14710-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6e4977f9-84fa-4074-af6a-70d7d5e4f1ff.jpg?v=1723203252",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "SA 14710",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14710 Air Filter. Easy to install and replace, the SA 14710 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 65.0 mm",
+        "Dimension 2 (D2): 50.0 mm",
+        "Dimension 3 (D3): 17.0 mm",
+        "Height 1 (H1): 231.0 mm",
+        "Height 2 (H2): 222.0 mm"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0027 m³"
+    },
+    {
+      "title": "Donaldson P141278 Air Filter, Safety | Replaces the HiFi Filter SA 14710",
+      "sku": "sa-14710-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p141278.700.700_78a4102d-1dda-4363-ae15-75f6dbe6bf9b.jpg?v=1744306043",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "P141278",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0034 m³"
+    },
+    {
+      "title": "Fleetguard AF4760 Air Filter | Replaces the HiFi Filter SA 14710",
+      "sku": "sa-14710-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4760_8f83853f-c003-494a-8622-a5ac7aa5cd1c.jpg?v=1755780746",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "AF4760",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4760 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.21 kg",
+      "shippingVolume": "0.0033 m³"
+    }
+  ]
+}

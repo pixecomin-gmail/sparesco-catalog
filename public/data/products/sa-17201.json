@@ -1,0 +1,91 @@
+{
+  "handle": "sa-17201",
+  "title": "SA 17201",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73722f91-80ab-4d5a-af3f-15fff0b59cf8.jpg?v=1748456075",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781349.700.700_f35b669e-d75d-46f1-a359-33b72bd178fa.jpg?v=1748456075",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_64_15001_image1_40bfbd25-36aa-483d-991a-8827b7744e12.jpg?v=1754909435",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27816_018d9b76-f262-4c46-88a6-cba2deb15598.jpg?v=1755780888"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17201 Air Filter",
+      "sku": "sa-17201-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73722f91-80ab-4d5a-af3f-15fff0b59cf8.jpg?v=1748456075",
+      "vendor": "",
+      "price": 16700,
+      "partNumber": "SA 17201",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17201 Air Filter. Easy to install and replace, the SA 17201 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 635.0 mm",
+        "Dimension 2 (D2): 570.0 mm",
+        "Dimension 3 (D3): 545.0 mm",
+        "Height 1 (H1): 78.0 mm",
+        "Height 2 (H2): 45.0 mm"
+      ],
+      "unitWeight": "3.88 kg",
+      "shippingVolume": "0.0321 m³"
+    },
+    {
+      "title": "Donaldson P781349 Air Filter, Panel Ventilation | Replaces the HiFi Filter SA 17201",
+      "sku": "sa-17201-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781349.700.700_f35b669e-d75d-46f1-a359-33b72bd178fa.jpg?v=1748456075",
+      "vendor": "",
+      "price": 21500,
+      "partNumber": "P781349",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Türkiye",
+      "description": "Why Choose Donaldson Cabin Air Filters? Filter irritants before they enter the vehicle cab to help operators breathe cleaner air. • High quality construction and tested to industry standards. • Durable, dependable and long-lasting. • Designed as a direct replacement for many OE applications.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.2 kg",
+      "shippingVolume": "0.0303 m³"
+    },
+    {
+      "title": "Mann Filter C 64 1500/1 Air Filter | Replaces the HiFi Filter SA 17201",
+      "sku": "sa-17201-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_64_15001_image1_40bfbd25-36aa-483d-991a-8827b7744e12.jpg?v=1754909435",
+      "vendor": "",
+      "price": 22700,
+      "partNumber": "C 64 1500/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 626.0 mm",
+        "Dimension B: 564.0 mm",
+        "Dimension H: 78.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF27816 Air Filter Filter - Panel | Replaces the HiFi Filter SA 17201",
+      "sku": "sa-17201-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27816_018d9b76-f262-4c46-88a6-cba2deb15598.jpg?v=1755780888",
+      "vendor": "",
+      "price": 34000,
+      "partNumber": "AF27816",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF27816 panel cabin air filter provides clean air in the cab which means a clean work environment.  Breathing cleaner air can lead to longer and more productive working hours.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.17 kg",
+      "shippingVolume": "0.0325 m³"
+    }
+  ]
+}

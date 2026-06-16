@@ -1,0 +1,66 @@
+{
+  "handle": "sa-10389",
+  "title": "SA 10389",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_debbe044-dc13-4a88-aab6-726c87815d46.jpg?v=1766020942",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136828.700.700_ae03f1f0-9e49-4216-9b10-cd619deab413.jpg?v=1766020942",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF439_90e5c128-4a99-45a3-99fd-95ed883172d2.jpg?v=1766020942"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10389 Air Filter",
+      "sku": "sa-10389-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_debbe044-dc13-4a88-aab6-726c87815d46.jpg?v=1766020942",
+      "vendor": "",
+      "price": 58900,
+      "partNumber": "SA 10389",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10389 Air Filter. Easy to install and replace, the SA 10389 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.24 kg",
+      "shippingVolume": "0.0106 m³"
+    },
+    {
+      "title": "Donaldson P136828 Air Filter, Primary Round | Replaces the HiFi Filter SA 10389",
+      "sku": "sa-10389-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136828.700.700_ae03f1f0-9e49-4216-9b10-cd619deab413.jpg?v=1766020942",
+      "vendor": "",
+      "price": 42100,
+      "partNumber": "P136828",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.15 kg",
+      "shippingVolume": "0.0109 m³"
+    },
+    {
+      "title": "Fleetguard AF439 Air | Replaces the HiFi Filter SA 10389",
+      "sku": "sa-10389-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF439_90e5c128-4a99-45a3-99fd-95ed883172d2.jpg?v=1766020942",
+      "vendor": "",
+      "price": 78100,
+      "partNumber": "AF439",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF439 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.18 kg",
+      "shippingVolume": "0.0105 m³"
+    }
+  ]
+}

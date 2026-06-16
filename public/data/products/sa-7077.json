@@ -1,0 +1,74 @@
+{
+  "handle": "sa-7077",
+  "title": "SA 7077",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e71fd572-97f7-43c2-bcbf-df3c7aae0f51_1a199a1c-df12-4f75-bdb2-4037355bc08b.jpg?v=1762811663",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9e02d1bf-64a6-4920-939e-12812b1e6425.jpg?v=1762811663",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4440_6702752e-9b11-4bec-a32e-ed18a326f1fc.jpg?v=1762811663"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7077 Air Filter",
+      "sku": "sa-7077-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e71fd572-97f7-43c2-bcbf-df3c7aae0f51_1a199a1c-df12-4f75-bdb2-4037355bc08b.jpg?v=1762811663",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "SA 7077",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7077 Air Filter. Easy to install and replace, the SA 7077 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 168.0 mm",
+        "Dimension 2 (D2): 95.0 mm",
+        "Dimension 3 (D3): 95.0 mm",
+        "Height 1 (H1): 304.0 mm",
+        "Height 2 (H2): 286.0 mm"
+      ],
+      "unitWeight": "0.78 kg",
+      "shippingVolume": "0.0098 m³"
+    },
+    {
+      "title": "Mann Filter C 17 237 Air Filter | Replaces the HiFi Filter SA 7077",
+      "sku": "sa-7077-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9e02d1bf-64a6-4920-939e-12812b1e6425.jpg?v=1762811663",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "C 17 237",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 169.0 mm",
+        "Dimension B: 97.0 mm",
+        "Dimension H: 303.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4440 Air Filter Cylindrical Primary | Replaces the HiFi Filter SA 7077",
+      "sku": "sa-7077-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4440_6702752e-9b11-4bec-a32e-ed18a326f1fc.jpg?v=1762811663",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "AF4440",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4440 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.77 kg",
+      "shippingVolume": "0.0102 m³"
+    }
+  ]
+}

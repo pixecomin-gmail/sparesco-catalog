@@ -1,0 +1,74 @@
+{
+  "handle": "sa-16254",
+  "title": "SA 16254",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f3650993-f880-44be-b320-7734e721e600.jpg?v=1723202738",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_9002_image1_4ecd6c7a-16ac-4615-af1d-564514d5de4f.jpg?v=1754909263",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25745_999bb230-63af-4ae4-82b3-e6b02abc09f5.jpg?v=1755780732"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16254 Air Filter",
+      "sku": "sa-16254-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f3650993-f880-44be-b320-7734e721e600.jpg?v=1723202738",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "SA 16254",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16254 Air Filter. Easy to install and replace, the SA 16254 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 90.0 mm",
+        "Dimension 2 (D2): 42.0 mm",
+        "Height 1 (H1): 178.0 mm",
+        "Height 2 (H2): 170.0 mm",
+        "Height 3 (H3): 168.0 mm"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": "0.0019 m³"
+    },
+    {
+      "title": "Mann Filter C 9002 Air Filter | Replaces the HiFi Filter SA 16254",
+      "sku": "sa-16254-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_9002_image1_4ecd6c7a-16ac-4615-af1d-564514d5de4f.jpg?v=1754909263",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "C 9002",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 89.0 mm",
+        "Dimension B: 43.0 mm",
+        "Dimension H: 180.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25745 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16254",
+      "sku": "sa-16254-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25745_999bb230-63af-4ae4-82b3-e6b02abc09f5.jpg?v=1755780732",
+      "vendor": "",
+      "price": 6000,
+      "partNumber": "AF25745",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® AF25745 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.39 kg",
+      "shippingVolume": "0.0025 m³"
+    }
+  ]
+}

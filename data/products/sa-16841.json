@@ -1,0 +1,70 @@
+{
+  "handle": "sa-16841",
+  "title": "SA 16841",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c078947d-45eb-4d74-95a4-eca8d4a5656f_00c1677d-2c56-4375-8624-eac5a28e2bb5.jpg?v=1762811443",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p621983.700.700_5cf9229b-bf53-40e7-9ff5-250495a2ccf3.jpg?v=1762811443",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4208_b2856fef-909e-4e89-85a9-f36205489e81.jpg?v=1762811443"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16841 Air Filter",
+      "sku": "sa-16841-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c078947d-45eb-4d74-95a4-eca8d4a5656f_00c1677d-2c56-4375-8624-eac5a28e2bb5.jpg?v=1762811443",
+      "vendor": "",
+      "price": 23400,
+      "partNumber": "SA 16841",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16841 Air Filter. Easy to install and replace, the SA 16841 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 460.0 mm",
+        "Dimension 2 (D2): 440.0 mm",
+        "Dimension 3 (D3): 410.0 mm",
+        "Height 1 (H1): 335.0 mm"
+      ],
+      "unitWeight": "4.34 kg",
+      "shippingVolume": "0.0539 m³"
+    },
+    {
+      "title": "Donaldson P621983 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16841",
+      "sku": "sa-16841-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p621983.700.700_5cf9229b-bf53-40e7-9ff5-250495a2ccf3.jpg?v=1762811443",
+      "vendor": "",
+      "price": 15700,
+      "partNumber": "P621983",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson PowerCore® filters? Genuine PowerCore filters provide superior protection and performance. • Lower initial restriction protects engine performance and fuel economy. • Greater filter capacity means longer filter life, fewer filter changes and less money spent on maintenance. • PowerCore filters have been meeting original equipment manufacturer specifications for 20+ years. • Reliable, leak resistant Radial Seal™ technology keeps the filter in place – even under heavy vibration.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.36 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4208 Air Filter | Replaces the HiFi Filter SA 16841",
+      "sku": "sa-16841-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4208_b2856fef-909e-4e89-85a9-f36205489e81.jpg?v=1762811443",
+      "vendor": "",
+      "price": 30200,
+      "partNumber": "AF4208",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4208 air filter meets or exceeds the customers’ technical specifications for air filtration systems including factors such as: media fiber size, shape, pore size, thickness, weave and mechanical strength.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.98 kg",
+      "shippingVolume": "0.0542 m³"
+    }
+  ]
+}

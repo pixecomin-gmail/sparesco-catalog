@@ -1,0 +1,53 @@
+{
+  "handle": "sa-16383",
+  "title": "SA 16383",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-48800d82-96b3-4be1-9876-9638aa4c3fb5.jpg?v=1723202376",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p783280.700.700_056da039-5e2c-4cad-af6f-78336328ad55.jpg?v=1744306097"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16383 Air Filter",
+      "sku": "sa-16383-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-48800d82-96b3-4be1-9876-9638aa4c3fb5.jpg?v=1723202376",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "SA 16383",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16383 Air Filter. Easy to install and replace, the SA 16383 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 362.0 mm",
+        "Dimension 2 (D2): 228.0 mm",
+        "Height 1 (H1): 523.0 mm",
+        "Height 2 (H2): 510.0 mm"
+      ],
+      "unitWeight": "5.14 kg",
+      "shippingVolume": "0.0787 m³"
+    },
+    {
+      "title": "Donaldson P783280 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16383",
+      "sku": "sa-16383-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p783280.700.700_056da039-5e2c-4cad-af6f-78336328ad55.jpg?v=1744306097",
+      "vendor": "",
+      "price": 10400,
+      "partNumber": "P783280",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.91 kg",
+      "shippingVolume": "0.1033 m³"
+    }
+  ]
+}

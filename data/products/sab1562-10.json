@@ -1,0 +1,54 @@
+{
+  "handle": "sab1562-10",
+  "title": "SAB1562 10",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-93478ec2-5bf8-444d-bee2-996af43c034b_9fbea648-f7c4-488b-b7ac-1e6adaef5a0d.jpg?v=1755103124",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p767029.700.700_cdc76f70-3581-4052-92b7-a77bbee09232.jpg?v=1755103124"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter FS 130 Breather Filter | Replaces the Parker SAB1562-10",
+      "sku": "sab1562-10-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-93478ec2-5bf8-444d-bee2-996af43c034b_9fbea648-f7c4-488b-b7ac-1e6adaef5a0d.jpg?v=1755103124",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "FS 130",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter FS 130 Breather Filter is HiFi's replacement to the Parker SAB1562-10. Easy to install and replace, the FS 130 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER",
+        "Dimension 1 (D1): 70.5 mm",
+        "Thread 1 (D7): 3/4\"-BSP",
+        "Height 1 (H1): 70.5 mm",
+        "Height 2 (H2): 53.0 mm",
+        "Height 3 (H3): 35.0 mm"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.0007 m³"
+    },
+    {
+      "title": "Donaldson P767029 Breather, Trap | Replaces the Parker SAB1562-10",
+      "sku": "sab1562-10-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p767029.700.700_cdc76f70-3581-4052-92b7-a77bbee09232.jpg?v=1755103124",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "P767029",
+      "hsCode": "8421.39.85.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P767029 Breather, Trap is designed to provide reliable performance in breather, trap applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Breather Filter"
+      ],
+      "unitWeight": "0.11 kg",
+      "shippingVolume": "0.0007 m³"
+    }
+  ]
+}

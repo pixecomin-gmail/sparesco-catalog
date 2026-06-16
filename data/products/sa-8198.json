@@ -1,0 +1,91 @@
+{
+  "handle": "sa-8198",
+  "title": "SA 8198",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-84025dd8-7453-4be6-88e7-857b9178ce7c.jpg?v=1748456102",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902609.700.700_ce2277a7-07c8-491f-a731-cdbbb4a17ab3.jpg?v=1748456102",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9b2820cc-aece-4aef-a329-f7e91f33646d.jpg?v=1748456102",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26501_a9016877-7832-4cb2-b86d-f78fc89993d5.jpg?v=1755780872"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8198 Air Filter",
+      "sku": "sa-8198-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-84025dd8-7453-4be6-88e7-857b9178ce7c.jpg?v=1748456102",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "SA 8198",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8198 Air Filter. Easy to install and replace, the SA 8198 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 222.0 mm",
+        "Dimension 2 (D2): 121.0 mm",
+        "Height 1 (H1): 173.0 mm",
+        "Height 2 (H2): 155.0 mm",
+        "Height 3 (H3): 152.0 mm"
+      ],
+      "unitWeight": "0.92 kg",
+      "shippingVolume": "0.0099 m³"
+    },
+    {
+      "title": "Donaldson P902609 Air Filter, Primary Round | Replaces the HiFi Filter SA 8198",
+      "sku": "sa-8198-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902609.700.700_ce2277a7-07c8-491f-a731-cdbbb4a17ab3.jpg?v=1748456102",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "P902609",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P902609 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.2 kg",
+      "shippingVolume": "0.0109 m³"
+    },
+    {
+      "title": "Mann Filter C 23 107 Air Filter | Replaces the HiFi Filter SA 8198",
+      "sku": "sa-8198-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9b2820cc-aece-4aef-a329-f7e91f33646d.jpg?v=1748456102",
+      "vendor": "",
+      "price": 4000,
+      "partNumber": "C 23 107",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 222.0 mm",
+        "Dimension B: 121.0 mm",
+        "Dimension H: 174.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26501 Air Filter, Cartridge | Replaces the HiFi Filter SA 8198",
+      "sku": "sa-8198-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26501_a9016877-7832-4cb2-b86d-f78fc89993d5.jpg?v=1755780872",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "AF26501",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF26501 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.95 kg",
+      "shippingVolume": "0.0158 m³"
+    }
+  ]
+}

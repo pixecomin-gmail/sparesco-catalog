@@ -1,0 +1,52 @@
+{
+  "handle": "sao-53904",
+  "title": "SAO 53904",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8325b0f5-52f8-4f4c-8a6a-cb24e31962d1.jpg?v=1762279190",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OE_25203017_8128b69a-cd5f-40e7-a98f-c5f7d596a2f0.jpg?v=1762279190"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 16 002 Compressed Air-Oil Separation | Replaces the SF Filter SAO 53904",
+      "sku": "sao-53904-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8325b0f5-52f8-4f4c-8a6a-cb24e31962d1.jpg?v=1762279190",
+      "vendor": "",
+      "price": 11500,
+      "partNumber": "LE 16 002",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 210.0 mm",
+        "Dimension C: 160.0 mm",
+        "Dimension H: 305.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OE 3017 Air/Oil Separator | Replaces the SF Filter SAO 53904",
+      "sku": "sao-53904-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OE_25203017_8128b69a-cd5f-40e7-a98f-c5f7d596a2f0.jpg?v=1762279190",
+      "vendor": "",
+      "price": 13600,
+      "partNumber": "OE 3017",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OE 3017 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 53904. Easy to install and replace, the OE 3017 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.92 kg",
+      "shippingVolume": "0.0322 m³"
+    }
+  ]
+}

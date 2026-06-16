@@ -1,0 +1,69 @@
+{
+  "handle": "sao-57770",
+  "title": "SAO 57770",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_88b12541-ad28-4e9d-a8ce-356d2dfa7b76.jpg?v=1755101412",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782916.700.700_3f6a12cb-0d93-4d52-8f10-b9cfd743f794.jpg?v=1755101412",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520779_097757ab-4efd-4e3e-9aa0-320cc1790031.jpg?v=1755101412"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 5025 Compressed Air-Oil Separation | Replaces the SF Filter SAO 57770",
+      "sku": "sao-57770-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_88b12541-ad28-4e9d-a8ce-356d2dfa7b76.jpg?v=1755101412",
+      "vendor": "",
+      "price": 14300,
+      "partNumber": "LE 5025",
+      "hsCode": "7019.90.00",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 112.0 mm",
+        "Dimension C: 73.0 mm",
+        "Dimension H: 220.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P782916 Air Oil Separator | Replaces the SF Filter SAO 57770",
+      "sku": "sao-57770-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782916.700.700_3f6a12cb-0d93-4d52-8f10-b9cfd743f794.jpg?v=1755101412",
+      "vendor": "",
+      "price": 13300,
+      "partNumber": "P782916",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P782916 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.76 kg",
+      "shippingVolume": "0.0042 m³"
+    },
+    {
+      "title": "HiFi Filter OS 779 Air/Oil Separator | Replaces the SF Filter SAO 57770",
+      "sku": "sao-57770-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520779_097757ab-4efd-4e3e-9aa0-320cc1790031.jpg?v=1755101412",
+      "vendor": "",
+      "price": 14800,
+      "partNumber": "OS 779",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 779 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 57770. Easy to install and replace, the OS 779 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0038 m³"
+    }
+  ]
+}

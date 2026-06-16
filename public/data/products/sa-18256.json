@@ -1,0 +1,55 @@
+{
+  "handle": "sa-18256",
+  "title": "SA 18256",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3926bd44-e131-4731-ac13-df27d895cad0.jpg?v=1723202629",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AA90190_da0c9fa4-e9c1-4661-8021-ac1b817f7cf4.jpg?v=1755780722"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18256 Air Filter",
+      "sku": "sa-18256-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3926bd44-e131-4731-ac13-df27d895cad0.jpg?v=1723202629",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 18256",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18256 Air Filter. Easy to install and replace, the SA 18256 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 134.0 mm",
+        "Dimension 2 (D2): 115.0 mm",
+        "Dimension 3 (D3): 85.0 mm",
+        "Height 1 (H1): 377.0 mm",
+        "Height 2 (H2): 365.0 mm",
+        "Height 3 (H3): 344.0 mm"
+      ],
+      "unitWeight": "0.84 kg",
+      "shippingVolume": "0.011 m³"
+    },
+    {
+      "title": "Fleetguard AA90190 Air Intake Systems | Replaces the HiFi Filter SA 18256",
+      "sku": "sa-18256-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AA90190_da0c9fa4-e9c1-4661-8021-ac1b817f7cf4.jpg?v=1755780722",
+      "vendor": "",
+      "price": 12500,
+      "partNumber": "AA90190",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "South Korea",
+      "description": "​Fleetguard® AA90190 dual pack air kit provide a convenient all-in-one solution by including all required filters in one package to speed up a filter change to save time and money.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.29 kg",
+      "shippingVolume": "0.0263 m³"
+    }
+  ]
+}

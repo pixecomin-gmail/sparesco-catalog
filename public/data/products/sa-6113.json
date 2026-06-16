@@ -1,0 +1,53 @@
+{
+  "handle": "sa-6113",
+  "title": "SA 6113",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-18c9b295-9493-469c-b6b8-07c354089578.jpg?v=1723211042",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_12_003_image1.jpg?v=1754909407"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6113 Air Filter",
+      "sku": "sa-6113-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-18c9b295-9493-469c-b6b8-07c354089578.jpg?v=1723211042",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "SA 6113",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6113 Air Filter. Easy to install and replace, the SA 6113 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0063 m³"
+    },
+    {
+      "title": "Mann Filter C 12 003 Air Filter | Replaces the HiFi Filter SA 6113",
+      "sku": "sa-6113-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_12_003_image1.jpg?v=1754909407",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "C 12 003",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bulgaria",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 119.0 mm",
+        "Dimension B: 85.0 mm",
+        "Dimension E: 126.0 mm",
+        "Dimension H: 313.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

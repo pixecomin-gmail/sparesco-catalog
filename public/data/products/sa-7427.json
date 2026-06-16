@@ -1,0 +1,57 @@
+{
+  "handle": "sa-7427",
+  "title": "SA 7427",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dee66e9a-4dd7-46be-bf15-b30880386caa.jpg?v=1723212186",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_35_148_image1.jpg?v=1754909441"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7427 Air Filter",
+      "sku": "sa-7427-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dee66e9a-4dd7-46be-bf15-b30880386caa.jpg?v=1723212186",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 7427",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7427 Air Filter. Easy to install and replace, the SA 7427 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 350.0 mm",
+        "Dimension 2 (D2): 340.0 mm",
+        "Dimension 3 (D3): 185.0 mm",
+        "Height 1 (H1): 50.0 mm",
+        "Height 2 (H2): 41.0 mm"
+      ],
+      "unitWeight": "0.46 kg",
+      "shippingVolume": "0.0079 m³"
+    },
+    {
+      "title": "Mann Filter C 35 148 Air Filter | Replaces the HiFi Filter SA 7427",
+      "sku": "sa-7427-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_35_148_image1.jpg?v=1754909441",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "C 35 148",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 348.0 mm",
+        "Dimension B: 185.0 mm",
+        "Dimension H: 49.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

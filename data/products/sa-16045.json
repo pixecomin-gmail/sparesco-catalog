@@ -1,0 +1,71 @@
+{
+  "handle": "sa-16045",
+  "title": "SA 16045",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0802a9bc-06cf-47b1-bf8b-fdcca4418714.jpg?v=1723203284",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775688.700.700_80e0c369-90bf-463a-ae22-98666a40e094.jpg?v=1744306056",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25200K_8a10b209-6657-4d70-9a9c-f58a458a01b8.jpg?v=1755780748"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16045 Air Filter",
+      "sku": "sa-16045-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0802a9bc-06cf-47b1-bf8b-fdcca4418714.jpg?v=1723203284",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "SA 16045",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16045 Air Filter. Easy to install and replace, the SA 16045 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 126.0 mm",
+        "Dimension 2 (D2): 107.0 mm",
+        "Dimension 3 (D3): 87.0 mm",
+        "Height 1 (H1): 190.0 mm",
+        "Height 2 (H2): 180.0 mm"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0035 m³"
+    },
+    {
+      "title": "Donaldson P775688 Air Filter, Primary Round | Replaces the HiFi Filter SA 16045",
+      "sku": "sa-16045-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775688.700.700_80e0c369-90bf-463a-ae22-98666a40e094.jpg?v=1744306056",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "P775688",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P775688 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.5 kg",
+      "shippingVolume": "0.0041 m³"
+    },
+    {
+      "title": "Fleetguard AF25200K Air Filter | Replaces the HiFi Filter SA 16045",
+      "sku": "sa-16045-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25200K_8a10b209-6657-4d70-9a9c-f58a458a01b8.jpg?v=1755780748",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "AF25200K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "India",
+      "description": "​Fleetguard® AF25200K premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.51 kg",
+      "shippingVolume": "0.004 m³"
+    }
+  ]
+}

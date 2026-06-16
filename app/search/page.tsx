@@ -1,23 +1,17 @@
 "use client";
 
 import { useMemo, useState } from "react";
-
-const products = [
-  { title: "130-9811 Temperature Sensor", brand: "Caterpillar", category: "Sensors" },
-  { title: "5S0484 Oil Filter", brand: "Caterpillar", category: "Filters" },
-  { title: "6.4139C Air Filter Assy", brand: "Atlas Copco", category: "Filters" },
-  { title: "Hydraulic Pump Assembly", brand: "Komatsu", category: "Hydraulic Parts" },
-  { title: "Engine Gasket Kit", brand: "Volvo", category: "Engine Parts" },
-];
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { searchProducts } from "@/lib/products";
 
 export default function SearchPage() {
-  const [query, setQuery] = useState("");
+  const searchParams = useSearchParams();
+  const initialQuery = searchParams.get("q") || "";
+  const [query, setQuery] = useState(initialQuery);
 
   const results = useMemo(() => {
-    return products.filter((product) => {
-      const text = `${product.title} ${product.brand} ${product.category}`.toLowerCase();
-      return text.includes(query.toLowerCase());
-    });
+    return searchProducts(query);
   }, [query]);
 
   return (
@@ -25,17 +19,24 @@ export default function SearchPage() {
       <section className="section">
         <div className="container">
           <h1 className="page-title">Search Spare Parts</h1>
+
           <p className="page-intro">
             Search by part number, product name, brand or category.
           </p>
 
-          <div className="search-row">
+          <div className="home-hero-search">
             <input
-              placeholder="Search 130-9811, oil filter, Caterpillar..."
+              placeholder="Search SA 16056, air filter, Caterpillar..."
               value={query}
               onChange={(event) => setQuery(event.target.value)}
             />
-            <button>Search</button>
+
+            <Link
+              href={`/search?q=${encodeURIComponent(query)}`}
+              className="home-search-link"
+            >
+              Search
+            </Link>
           </div>
 
           <div className="parts-topbar">
@@ -44,18 +45,37 @@ export default function SearchPage() {
           </div>
 
           <div className="product-grid">
-            {results.map((product) => (
-              <div className="product-card" key={product.title}>
-                <div className="product-image"></div>
+            {results.slice(0, 24).map((product) => (
+              <Link
+                href={`/products/${product.handle}`}
+                className="product-card"
+                key={product.handle}
+              >
+                <div className="product-image">
+                  {product.image && (
+                    <img src={product.image} alt={product.title} />
+                  )}
+                </div>
+
                 <h3>{product.title}</h3>
+
                 <p>
-                  {product.brand} • {product.category}
+                  {product.collection}
+                  {product.variantCount > 1
+                    ? ` • ${product.variantCount} options`
+                    : ""}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
 
-          {results.length === 0 && (
+          {query && results.length > 24 && (
+            <p className="empty-message">
+              Showing first 24 results. Refine your search for better matches.
+            </p>
+          )}
+
+          {query && results.length === 0 && (
             <p className="empty-message">No products found.</p>
           )}
         </div>

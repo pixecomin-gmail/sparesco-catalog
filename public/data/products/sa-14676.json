@@ -1,0 +1,71 @@
+{
+  "handle": "sa-14676",
+  "title": "SA 14676",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2da99d7d-6f2e-4d61-b493-64b0057b6b16_2722bfb4-cb41-4b44-a7dd-0c1941d4bee7.jpg?v=1762811645",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776286.700.700_039228c6-7c0a-488b-a968-6617e63e4c07.jpg?v=1762811645",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4726_7822c82f-1c0f-43aa-be8a-9165e204529c.jpg?v=1762811645"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14676 Air Filter",
+      "sku": "sa-14676-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2da99d7d-6f2e-4d61-b493-64b0057b6b16_2722bfb4-cb41-4b44-a7dd-0c1941d4bee7.jpg?v=1762811645",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "SA 14676",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14676 Air Filter. Easy to install and replace, the SA 14676 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 189.0 mm",
+        "Dimension 2 (D2): 162.0 mm",
+        "Dimension 3 (D3): 134.0 mm",
+        "Height 1 (H1): 399.0 mm",
+        "Height 2 (H2): 386.0 mm"
+      ],
+      "unitWeight": "1.32 kg",
+      "shippingVolume": "0.0172 m³"
+    },
+    {
+      "title": "Donaldson P776286 Air Filter, Safety | Replaces the HiFi Filter SA 14676",
+      "sku": "sa-14676-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776286.700.700_039228c6-7c0a-488b-a968-6617e63e4c07.jpg?v=1762811645",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "P776286",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P776286 Air Filter, Safety acts as a crucial secondary layer of defense in your air filtration system, capturing fine dust particles that bypass the primary filter. This extra layer of protection helps prevent engine wear and supports consistent performance, especially in dusty or harsh environments. Compact and durable, this safety air filter operates without restricting airflow, complementing the primary filter for comprehensive engine protection. Itâ€™s essential for maintaining clean air intake and maximizing engine lifespan.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.19 kg",
+      "shippingVolume": "0.018 m³"
+    },
+    {
+      "title": "Fleetguard AF4726 Air Filter, Secondary | Replaces the HiFi Filter SA 14676",
+      "sku": "sa-14676-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4726_7822c82f-1c0f-43aa-be8a-9165e204529c.jpg?v=1762811645",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "AF4726",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4726 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.12 kg",
+      "shippingVolume": "0.0196 m³"
+    }
+  ]
+}

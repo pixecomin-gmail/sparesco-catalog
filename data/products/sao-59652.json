@@ -1,0 +1,53 @@
+{
+  "handle": "sao-59652",
+  "title": "SAO 59652",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5eef5cc-7db6-477c-b238-6e7d0c5efa37.jpg?v=1762814514",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2522_4880ebfb-4a77-408d-b8d5-a2e29e4f3ff9.jpg?v=1762814514"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OT 2120 Air/Oil Separator | Replaces the SF Filter SAO 59652",
+      "sku": "sao-59652-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5eef5cc-7db6-477c-b238-6e7d0c5efa37.jpg?v=1762814514",
+      "vendor": "",
+      "price": 13700,
+      "partNumber": "OT 2120",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2120 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 59652. Easy to install and replace, the OT 2120 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 239.0 mm",
+        "Dimension 2 (D2): 216.0 mm",
+        "Dimension 3 (D3): 130.0 mm",
+        "Height 1 (H1): 186.0 mm"
+      ],
+      "unitWeight": "1.7 kg",
+      "shippingVolume": "0.0195 m³"
+    },
+    {
+      "title": "Fleetguard AS2522 Air Filter/Oil Separator | Replaces the SF Filter SAO 59652",
+      "sku": "sao-59652-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2522_4880ebfb-4a77-408d-b8d5-a2e29e4f3ff9.jpg?v=1762814514",
+      "vendor": "",
+      "price": 10000,
+      "partNumber": "AS2522",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AS2522 air oil separator prevents oil build-up, protects against detonation, and minimizes oil loss which equates to reduced maintenance and more consistent performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.62 kg",
+      "shippingVolume": "0.0186 m³"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "handle": "sao59004",
+  "title": "SAO59004",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OT_25202081_eb97f0ae-96f3-4b46-93e3-7267c01e27c6.jpg?v=1742496247",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_fee905f2-252e-4cc9-b9f1-715f26270188.jpg?v=1755783199"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OT 2081 Air/Oil Separator | Replaces the SF Filter SAO59004",
+      "sku": "sao59004-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OT_25202081_eb97f0ae-96f3-4b46-93e3-7267c01e27c6.jpg?v=1742496247",
+      "vendor": "",
+      "price": 23500,
+      "partNumber": "OT 2081",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2081 Air/Oil Separator is HiFi's replacement to the SF Filter SAO59004. Easy to install and replace, the OT 2081 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.91 kg",
+      "shippingVolume": "0.0244 m³"
+    },
+    {
+      "title": "Fleetguard AS2523 Air Filter/Oil Separator | Replaces the SF Filter SAO59004",
+      "sku": "sao59004-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_fee905f2-252e-4cc9-b9f1-715f26270188.jpg?v=1755783199",
+      "vendor": "",
+      "price": 18800,
+      "partNumber": "AS2523",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AS2523 air oil separator prevents oil build-up, protects against detonation, and minimizes oil loss which equates to reduced maintenance and more consistent performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.96 kg",
+      "shippingVolume": "0.0239 m³"
+    }
+  ]
+}

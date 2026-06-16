@@ -1,0 +1,54 @@
+{
+  "handle": "sa-311",
+  "title": "SA 311",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6dd9b67e-dc2b-4d47-988d-3f29b75a5d3d.jpg?v=1723211274",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1774_2b0d71dc-1af9-4c80-b653-ec27a84aebf3.jpg?v=1755780873"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 311 Air Filter",
+      "sku": "sa-311-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6dd9b67e-dc2b-4d47-988d-3f29b75a5d3d.jpg?v=1723211274",
+      "vendor": "",
+      "price": 1000,
+      "partNumber": "SA 311",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 311 Air Filter. Easy to install and replace, the SA 311 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 336.0 mm",
+        "Dimension 2 (D2): 326.0 mm",
+        "Dimension 3 (D3): 133.0 mm",
+        "Height 1 (H1): 40.0 mm",
+        "Height 2 (H2): 30.0 mm"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": "0.0032 m³"
+    },
+    {
+      "title": "Fleetguard AF1774 Air Filter Filter - Panel | Replaces the HiFi Filter SA 311",
+      "sku": "sa-311-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1774_2b0d71dc-1af9-4c80-b653-ec27a84aebf3.jpg?v=1755780873",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "AF1774",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF1774 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.21 kg",
+      "shippingVolume": "0.0031 m³"
+    }
+  ]
+}

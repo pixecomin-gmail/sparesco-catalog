@@ -1,0 +1,52 @@
+{
+  "handle": "sao55554",
+  "title": "SAO55554",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_1001_image1_94787f95-07d1-4d79-a0f9-09d47f4fda96.jpg?v=1755103792",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_2294d11f-2963-4df1-b551-f6db8fe0553b.jpg?v=1764766711"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 1001 Compressed Air-Oil Separation | Replaces the SF Filter SAO55554",
+      "sku": "sao55554-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_1001_image1_94787f95-07d1-4d79-a0f9-09d47f4fda96.jpg?v=1755103792",
+      "vendor": "",
+      "price": 14100,
+      "partNumber": "LE 1001",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 40.0 mm",
+        "Dimension G: G 1/2",
+        "Dimension H: 82.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter SI 41315 Air/Oil Separator | Replaces the SF Filter SAO55554",
+      "sku": "sao55554-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_2294d11f-2963-4df1-b551-f6db8fe0553b.jpg?v=1764766711",
+      "vendor": "",
+      "price": 19200,
+      "partNumber": "SI 41315",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SI 41315 Air/Oil Separator is HiFi's replacement to the SF Filter SAO55554. Easy to install and replace, the SI 41315 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.08 kg",
+      "shippingVolume": "0.0005 m³"
+    }
+  ]
+}

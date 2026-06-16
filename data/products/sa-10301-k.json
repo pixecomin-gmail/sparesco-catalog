@@ -1,0 +1,54 @@
+{
+  "handle": "sa-10301-k",
+  "title": "SA 10301 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e040c78b-8ad5-4ad8-a881-37ada1aeacf6.jpg?v=1723205995",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF351K_3b6fcb4a-1bcd-4f5b-99b7-eec96d22c46f.jpg?v=1755780797"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10301 K Air Filter",
+      "sku": "sa-10301-k-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e040c78b-8ad5-4ad8-a881-37ada1aeacf6.jpg?v=1723205995",
+      "vendor": "",
+      "price": 7200,
+      "partNumber": "SA 10301 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10301 K Air Filter. Easy to install and replace, the SA 10301 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 347.0 mm",
+        "Dimension 2 (D2): 282.0 mm",
+        "Dimension 3 (D3): 171.0 mm",
+        "Height 1 (H1): 317.0 mm",
+        "Height 2 (H2): 306.0 mm"
+      ],
+      "unitWeight": "2.72 kg",
+      "shippingVolume": "0.043 m³"
+    },
+    {
+      "title": "Fleetguard AF351K Air Filter, Primary | Replaces the HiFi Filter SA 10301 K",
+      "sku": "sa-10301-k-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF351K_3b6fcb4a-1bcd-4f5b-99b7-eec96d22c46f.jpg?v=1755780797",
+      "vendor": "",
+      "price": 7500,
+      "partNumber": "AF351K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF351K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.95 kg",
+      "shippingVolume": "0.0434 m³"
+    }
+  ]
+}

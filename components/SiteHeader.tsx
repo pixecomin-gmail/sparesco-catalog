@@ -1,14 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import Link from "next/link";
 import { useEnquiry } from "@/context/EnquiryContext";
-
-const searchSuggestions = [
-  "130-9811 Temperature Sensor",
-  "5S0484 Oil Filter",
-  "6.4139C Air Filter Assy",
-  "Hydraulic Pump Assembly",
-];
+import { searchProducts } from "@/lib/products";
 
 export default function SiteHeader() {
   const { items, hasLoaded, openDrawer } = useEnquiry();
@@ -18,9 +13,9 @@ export default function SiteHeader() {
 
   const totalItems = items.reduce((total, item) => total + item.quantity, 0);
 
-  const filteredResults = searchSuggestions.filter((item) =>
-    item.toLowerCase().includes(query.toLowerCase())
-  );
+  const filteredResults = useMemo(() => {
+    return searchProducts(query, 4);
+  }, [query]);
 
   const closeSearch = () => {
     setSearchOpen(false);
@@ -41,12 +36,12 @@ export default function SiteHeader() {
             <span></span>
           </button>
 
-          <a href="/" className="logo-link">
+          <Link href="/" className="logo-link">
             <img src="/logo.png" alt="Sparesco" className="site-logo" />
-          </a>
+          </Link>
 
           <nav className="desktop-nav">
-            <a href="/parts">Spare Parts</a>
+            <Link href="/parts">Spare Parts</Link>
             <a>Vendor List</a>
             <a>Spares Hunt</a>
             <a className="nav-button">Sell With Us</a>
@@ -94,7 +89,7 @@ export default function SiteHeader() {
                 <input
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search spare parts..."
+                  placeholder="Search by part number, brand or description..."
                   autoFocus
                 />
 
@@ -111,22 +106,32 @@ export default function SiteHeader() {
               {query && (
                 <div className="header-search-results">
                   {filteredResults.length > 0 ? (
-                    filteredResults.map((item) => (
-                      <a href="/parts" key={item} onClick={closeSearch}>
-                        {item}
-                      </a>
+                    filteredResults.map((product) => (
+                      <Link
+                        href={`/products/${product.handle}`}
+                        key={product.handle}
+                        onClick={closeSearch}
+                      >
+                        <strong>{product.title}</strong>
+                        <span>
+                          {product.collection}
+                          {product.variantCount > 1
+                            ? ` • ${product.variantCount} options`
+                            : ""}
+                        </span>
+                      </Link>
                     ))
                   ) : (
                     <span>No results found</span>
                   )}
 
-                  <a
+                  <Link
                     className="header-view-all"
-                    href={`/parts?search=${encodeURIComponent(query)}`}
+                    href={`/search?q=${encodeURIComponent(query)}`}
                     onClick={closeSearch}
                   >
                     View all results
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
@@ -155,12 +160,11 @@ export default function SiteHeader() {
             </div>
 
             <nav className="mobile-nav">
-              <a href="/parts" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/parts" onClick={() => setMobileMenuOpen(false)}>
                 Spare Parts
-              </a>
+              </Link>
 
               <a onClick={() => setMobileMenuOpen(false)}>Vendor List</a>
-
               <a onClick={() => setMobileMenuOpen(false)}>Spares Hunt</a>
 
               <a

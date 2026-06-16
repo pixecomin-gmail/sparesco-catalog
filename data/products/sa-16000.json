@@ -1,0 +1,70 @@
+{
+  "handle": "sa-16000",
+  "title": "SA 16000",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-91826f31-172f-424b-821a-8a977649a3dd_262d211e-f776-491d-887c-877b2026f708.jpg?v=1762811440",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524838.700.700_bff50897-ba97-4c39-97b3-8f2f1bd5a30b.jpg?v=1762811440",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH1135_88896cea-b26b-4817-9d2d-0719856bba07.jpg?v=1762811440"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16000 Air Filter",
+      "sku": "sa-16000-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-91826f31-172f-424b-821a-8a977649a3dd_262d211e-f776-491d-887c-877b2026f708.jpg?v=1762811440",
+      "vendor": "",
+      "price": 23700,
+      "partNumber": "SA 16000",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16000 Air Filter. Easy to install and replace, the SA 16000 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 342.0 mm",
+        "Dimension 2 (D2): 174.0 mm",
+        "Height 1 (H1): 653.0 mm",
+        "Height 2 (H2): 620.0 mm"
+      ],
+      "unitWeight": "8.5 kg",
+      "shippingVolume": "0.0914 m³"
+    },
+    {
+      "title": "Donaldson P524838 Air Cleaner, Disposable | Replaces the HiFi Filter SA 16000",
+      "sku": "sa-16000-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524838.700.700_bff50897-ba97-4c39-97b3-8f2f1bd5a30b.jpg?v=1762811440",
+      "vendor": "",
+      "price": 24300,
+      "partNumber": "P524838",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P524838 Air Cleaner, Disposable is designed to provide reliable performance in air cleaner, disposable applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "9.63 kg",
+      "shippingVolume": "0.0977 m³"
+    },
+    {
+      "title": "Fleetguard AH1135 Air Intake Systems | Replaces the HiFi Filter SA 16000",
+      "sku": "sa-16000-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH1135_88896cea-b26b-4817-9d2d-0719856bba07.jpg?v=1762811440",
+      "vendor": "",
+      "price": 30900,
+      "partNumber": "AH1135",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "China",
+      "description": "With over 1,500 different air filtration products, from clamps to air housings to advanced air filters, Fleetguard® provides peace of mind for your air filtration needs. Our Fleetguard® AH1135 air housing is part of the heavy-duty air filtration line, covering your sophisticated air intake system requirements.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "9.25 kg",
+      "shippingVolume": "0.0833 m³"
+    }
+  ]
+}

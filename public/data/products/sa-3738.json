@@ -1,0 +1,74 @@
+{
+  "handle": "sa-3738",
+  "title": "SA 3738",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1202a543-393f-4285-aeae-63138bdd821f_98504471-d00a-406f-b49e-8e72fa838653.jpg?v=1762811765",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500063.700.700_a02b4801-1647-4b4b-974c-5a5853475b3d.jpg?v=1762811765",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3fd0ed3c-5fd6-434f-a030-8b8077a6b060.jpg?v=1762811765"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 3738 Air Filter",
+      "sku": "sa-3738-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1202a543-393f-4285-aeae-63138bdd821f_98504471-d00a-406f-b49e-8e72fa838653.jpg?v=1762811765",
+      "vendor": "",
+      "price": 1000,
+      "partNumber": "SA 3738",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 3738 Air Filter. Easy to install and replace, the SA 3738 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 280.0 mm",
+        "Dimension 2 (D2): 265.0 mm",
+        "Dimension 3 (D3): 167.0 mm",
+        "Height 1 (H1): 32.0 mm",
+        "Height 2 (H2): 23.0 mm"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.0033 m³"
+    },
+    {
+      "title": "Donaldson P500063 Air Filter, Panel Engine | Replaces the HiFi Filter SA 3738",
+      "sku": "sa-3738-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500063.700.700_a02b4801-1647-4b4b-974c-5a5853475b3d.jpg?v=1762811765",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "P500063",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P500063 Air Filter, Panel Engine is designed to provide reliable performance in air filter, panel engine applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0024 m³"
+    },
+    {
+      "title": "Mann Filter C 2964 Air Filter | Replaces the HiFi Filter SA 3738",
+      "sku": "sa-3738-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3fd0ed3c-5fd6-434f-a030-8b8077a6b060.jpg?v=1762811765",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "C 2964",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "South Africa",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 281.0 mm",
+        "Dimension B: 168.0 mm",
+        "Dimension H: 35.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

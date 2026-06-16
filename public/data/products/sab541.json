@@ -1,0 +1,77 @@
+{
+  "handle": "sab541",
+  "title": "SAB541",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-19afb1f1-a101-4d62-8f71-968de98a0ebf_9140239e-db0b-40a4-8bfa-b67fa77e9c7d.jpg?v=1755103786",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770734.700.700_2daba460-c837-44b9-9ac2-a894813c8f99.jpg?v=1755103786",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_630_x_KIT_image1_5c565aff-6d7e-49e6-a7f1-eac33da87940.jpg?v=1755103786"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SD 70318 Urea Filter | Replaces the SF Filter SAB541",
+      "sku": "sab541-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-19afb1f1-a101-4d62-8f71-968de98a0ebf_9140239e-db0b-40a4-8bfa-b67fa77e9c7d.jpg?v=1755103786",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "SD 70318",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SD 70318 Urea Filter is HiFi's replacement to the SF Filter SAB541. Easy to install and replace, the SD 70318 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER",
+        "Dimension 1 (D1): 67.0 mm",
+        "Dimension 2 (D2): 24.0 mm",
+        "Dimension 3 (D3): 24.0 mm",
+        "Thread 1 (D7): S15X3",
+        "Thread 2 (D8): S15X3",
+        "Height 1 (H1): 100.0 mm",
+        "Height 2 (H2): 70.0 mm"
+      ],
+      "unitWeight": "0.16 kg",
+      "shippingVolume": "0.0008 m³"
+    },
+    {
+      "title": "Donaldson X770734 Filter Kit | Replaces the SF Filter SAB541",
+      "sku": "sab541-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770734.700.700_2daba460-c837-44b9-9ac2-a894813c8f99.jpg?v=1755103786",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "X770734",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Genuine Donaldson X770734 Filter Kit is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Urea Filter"
+      ],
+      "unitWeight": "0.14 kg",
+      "shippingVolume": "0.0006 m³"
+    },
+    {
+      "title": "Mann Filter U 630 x KIT Urea Filter | Replaces the SF Filter SAB541",
+      "sku": "sab541-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_630_x_KIT_image1_5c565aff-6d7e-49e6-a7f1-eac33da87940.jpg?v=1755103786",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "U 630 x KIT",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Germany",
+      "description": "The compact MANN-FILTER urea filters are characterized by high filter fineness, proven suitability for everyday use and a long service life. They protect system components against wear and failure and are resistant to frost and ammonia. MANN-FILTER urea filters are available for leading SCR systems in trucks and buses.",
+      "specifications": [
+        "Style: Urea Filter",
+        "Dimension A: 66.0 mm",
+        "Dimension C: 23.0 mm",
+        "Dimension D: 66.0 mm",
+        "Dimension H: 99.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

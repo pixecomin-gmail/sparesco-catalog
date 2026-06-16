@@ -1,0 +1,49 @@
+{
+  "handle": "sah-02c03sdp001",
+  "title": "SAH 02C03SDP001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4403072999_Crop_51d65422-f143-4589-9962-4abdca5e9a07.jpg?v=1761217731",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_50e74cb2-086a-4af5-b1b3-e7b55c24c5dd.jpg?v=1764765111"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter 4403072999 Picolino | Replaces the HiFi Filter SAH 02C03SDP001",
+      "sku": "sah-02c03sdp001-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4403072999_Crop_51d65422-f143-4589-9962-4abdca5e9a07.jpg?v=1761217731",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "4403072999",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "Replacement and maintenance parts for the proven filter housings and systems from MANN+HUMMEL.",
+      "specifications": [
+        "Style: MANN+HUMMEL Spare Part"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter SAH 02C03SDP001 Complete Air Filter",
+      "sku": "sah-02c03sdp001-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_50e74cb2-086a-4af5-b1b3-e7b55c24c5dd.jpg?v=1764765111",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "SAH 02C03SDP001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAH 02C03SDP001 Complete Air Filter. Easy to install and replace, the SAH 02C03SDP001 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: COMPLETE AIR FILTER"
+      ],
+      "unitWeight": "0.16 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

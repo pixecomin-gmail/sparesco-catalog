@@ -1,0 +1,75 @@
+{
+  "handle": "sa-4111",
+  "title": "SA 4111",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-38e84800-3b22-4809-9dec-d6dc200ea98a_2955422f-9c73-46ed-a98f-aee5b05ffc04.jpg?v=1762811706",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_30_011_image1_f9d0641d-57bf-4b6e-bbe8-5abda7b19a09.jpg?v=1762811706",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4345_23aa0543-00f8-4982-8fd8-73419a1cdbd6.jpg?v=1762811706"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 4111 Air Filter",
+      "sku": "sa-4111-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-38e84800-3b22-4809-9dec-d6dc200ea98a_2955422f-9c73-46ed-a98f-aee5b05ffc04.jpg?v=1762811706",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "SA 4111",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 4111 Air Filter. Easy to install and replace, the SA 4111 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 290.0 mm",
+        "Dimension 2 (D2): 280.0 mm",
+        "Dimension 3 (D3): 202.0 mm",
+        "Height 1 (H1): 71.0 mm",
+        "Height 2 (H2): 58.0 mm",
+        "Height 3 (H3): 48.0 mm"
+      ],
+      "unitWeight": "0.48 kg",
+      "shippingVolume": "0.0073 m³"
+    },
+    {
+      "title": "Mann Filter C 30 011 Air Filter | Replaces the HiFi Filter SA 4111",
+      "sku": "sa-4111-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_30_011_image1_f9d0641d-57bf-4b6e-bbe8-5abda7b19a09.jpg?v=1762811706",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "C 30 011",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 293.0 mm",
+        "Dimension B: 202.0 mm",
+        "Dimension H: 80.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4345 Panel Air Filter Filter | Replaces the HiFi Filter SA 4111",
+      "sku": "sa-4111-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4345_23aa0543-00f8-4982-8fd8-73419a1cdbd6.jpg?v=1762811706",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "AF4345",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF4345 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.43 kg",
+      "shippingVolume": "0.0049 m³"
+    }
+  ]
+}

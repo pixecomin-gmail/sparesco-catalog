@@ -1,0 +1,52 @@
+{
+  "handle": "sa-4100",
+  "title": "SA 4100",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_a10614d5-7484-4b94-8273-e6d8e70c0711.jpg?v=1761217608",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d7b57270-0e3f-4c7f-980a-57366d0f54a4.jpg?v=1761217608"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter C 28 160/1 Air Filter | Replaces the HiFi Filter SA 4100",
+      "sku": "sa-4100-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_a10614d5-7484-4b94-8273-e6d8e70c0711.jpg?v=1761217608",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "C 28 160/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 279.0 mm",
+        "Dimension B: 167.0 mm",
+        "Dimension H: 70.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter SA 4100 Air Filter",
+      "sku": "sa-4100-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d7b57270-0e3f-4c7f-980a-57366d0f54a4.jpg?v=1761217608",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "SA 4100",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 4100 Air Filter. Easy to install and replace, the SA 4100 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "handle": "sao-58770",
+  "title": "SAO 58770",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p525185.700.700_58346e1b-6649-4a0b-bce5-ffc404905734.jpg?v=1748456128",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e20cd794-38bb-4e8b-96e5-8459ae3d6119.jpg?v=1748456128"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P525185 Air Oil Separator | Replaces the SF Filter SAO 58770",
+      "sku": "sao-58770-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p525185.700.700_58346e1b-6649-4a0b-bce5-ffc404905734.jpg?v=1748456128",
+      "vendor": "",
+      "price": 17200,
+      "partNumber": "P525185",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P525185 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "4.95 kg",
+      "shippingVolume": "0.0563 m³"
+    },
+    {
+      "title": "HiFi Filter OT 2836 Air/Oil Separator | Replaces the SF Filter SAO 58770",
+      "sku": "sao-58770-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e20cd794-38bb-4e8b-96e5-8459ae3d6119.jpg?v=1748456128",
+      "vendor": "",
+      "price": 19300,
+      "partNumber": "OT 2836",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2836 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58770. Easy to install and replace, the OT 2836 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 300.0 mm",
+        "Dimension 2 (D2): 269.0 mm",
+        "Dimension 3 (D3): 169.0 mm",
+        "Thread 1 (D7): M8X1",
+        "25",
+        "Height 1 (H1): 512.0 mm",
+        "Height 2 (H2): 497.0 mm",
+        "Height 3 (H3): 484.0 mm"
+      ],
+      "unitWeight": "4.4 kg",
+      "shippingVolume": "0.0558 m³"
+    }
+  ]
+}

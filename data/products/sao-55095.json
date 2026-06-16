@@ -1,0 +1,49 @@
+{
+  "handle": "sao-55095",
+  "title": "SAO 55095",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785228.700.700_847b0e28-7752-4862-a1b9-92f58c762310.jpg?v=1748456113",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e16180eb-026a-4ae6-9119-8a84a2a79da5_e6c5db46-535e-44d5-945a-73f99e0b49b6.jpg?v=1748456113"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P785228 Air Oil Separator | Replaces the SF Filter SAO 55095",
+      "sku": "sao-55095-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785228.700.700_847b0e28-7752-4862-a1b9-92f58c762310.jpg?v=1748456113",
+      "vendor": "",
+      "price": 11200,
+      "partNumber": "P785228",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P785228 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.31 kg",
+      "shippingVolume": "0.0119 m³"
+    },
+    {
+      "title": "HiFi Filter OA 1039 Air/Oil Separator | Replaces the SF Filter SAO 55095",
+      "sku": "sao-55095-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e16180eb-026a-4ae6-9119-8a84a2a79da5_e6c5db46-535e-44d5-945a-73f99e0b49b6.jpg?v=1748456113",
+      "vendor": "",
+      "price": 11800,
+      "partNumber": "OA 1039",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1039 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55095. Easy to install and replace, the OA 1039 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.32 kg",
+      "shippingVolume": "0.0109 m³"
+    }
+  ]
+}

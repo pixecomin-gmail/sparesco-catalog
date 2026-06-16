@@ -1,0 +1,55 @@
+{
+  "handle": "sao-56090",
+  "title": "SAO 56090",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p783512.700.700_44b8da5e-27d5-4778-be4d-3204a65ab82e.jpg?v=1748456118",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-449840db-6a81-463c-b3da-1143c1be5dd0_63f7f555-b75e-4b66-99aa-19713e013fe2.jpg?v=1748456118"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P783512 Air Oil Separator | Replaces the SF Filter SAO 56090",
+      "sku": "sao-56090-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p783512.700.700_44b8da5e-27d5-4778-be4d-3204a65ab82e.jpg?v=1748456118",
+      "vendor": "",
+      "price": 10700,
+      "partNumber": "P783512",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P783512 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.89 kg",
+      "shippingVolume": "0.0032 m³"
+    },
+    {
+      "title": "HiFi Filter OA 1094 Air/Oil Separator | Replaces the SF Filter SAO 56090",
+      "sku": "sao-56090-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-449840db-6a81-463c-b3da-1143c1be5dd0_63f7f555-b75e-4b66-99aa-19713e013fe2.jpg?v=1748456118",
+      "vendor": "",
+      "price": 14000,
+      "partNumber": "OA 1094",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1094 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 56090. Easy to install and replace, the OA 1094 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 110.0 mm",
+        "Dimension 2 (D2): 62.0 mm",
+        "Dimension 3 (D3): 29.0 mm",
+        "Height 1 (H1): 167.0 mm",
+        "Height 2 (H2): 163.0 mm",
+        "Height 3 (H3): 153.0 mm"
+      ],
+      "unitWeight": "0.9 kg",
+      "shippingVolume": "0.0032 m³"
+    }
+  ]
+}

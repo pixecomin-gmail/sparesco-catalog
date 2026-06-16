@@ -1,0 +1,52 @@
+{
+  "handle": "sao52242",
+  "title": "SAO52242",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_25205185_9acab1fe-25b1-493a-b563-3858e49f9526.jpg?v=1742496210",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9d9e9068-bec7-4434-bd66-b85d58e6e32b.jpg?v=1742829178"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5185 Air/Oil Separator | Replaces the SF Filter SAO52242",
+      "sku": "sao52242-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_25205185_9acab1fe-25b1-493a-b563-3858e49f9526.jpg?v=1742496210",
+      "vendor": "",
+      "price": 12900,
+      "partNumber": "OS 5185",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5185 Air/Oil Separator is HiFi's replacement to the SF Filter SAO52242. Easy to install and replace, the OS 5185 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.46 kg",
+      "shippingVolume": "0.0081 m³"
+    },
+    {
+      "title": "Mann Filter LE 5010 Compressed Air-Oil Separation | Replaces the SF Filter SAO52242",
+      "sku": "sao52242-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9d9e9068-bec7-4434-bd66-b85d58e6e32b.jpg?v=1742829178",
+      "vendor": "",
+      "price": 19100,
+      "partNumber": "LE 5010",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 163.0 mm",
+        "Dimension C: 125.0 mm",
+        "Dimension H: 112.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

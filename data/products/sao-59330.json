@@ -1,0 +1,56 @@
+{
+  "handle": "sao-59330",
+  "title": "SAO 59330",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_7f84a76b-378f-4308-ae6e-6471e5d4050c.jpg?v=1755101416",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b91b2dc-7fcc-4c7c-942c-001c53626486.jpg?v=1755101416"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 6015 Compressed Air-Oil Separation | Replaces the SF Filter SAO 59330",
+      "sku": "sao-59330-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_7f84a76b-378f-4308-ae6e-6471e5d4050c.jpg?v=1755101416",
+      "vendor": "",
+      "price": 30200,
+      "partNumber": "LE 6015",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 170.0 mm",
+        "Dimension C: 125.0 mm",
+        "Dimension H: 140.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OT 2041 Air/Oil Separator | Replaces the SF Filter SAO 59330",
+      "sku": "sao-59330-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b91b2dc-7fcc-4c7c-942c-001c53626486.jpg?v=1755101416",
+      "vendor": "",
+      "price": 29700,
+      "partNumber": "OT 2041",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2041 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 59330. Easy to install and replace, the OT 2041 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 373.0 mm",
+        "Dimension 2 (D2): 335.0 mm",
+        "Dimension 3 (D3): 275.0 mm",
+        "Height 1 (H1): 305.0 mm"
+      ],
+      "unitWeight": "8.24 kg",
+      "shippingVolume": "0.0583 m³"
+    }
+  ]
+}

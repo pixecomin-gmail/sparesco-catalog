@@ -1,0 +1,49 @@
+{
+  "handle": "sa-18140",
+  "title": "SA 18140",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0411cfc3-e874-4a6f-b7e5-f3d8370e841e.jpg?v=1723238201",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4qWnMZsPexa9JL7TQKn2bJ67TVJeETf1r7KgRMw0fmT5AKYJmKbOBRp270HFd_d11e4c04-7ec6-49a2-a272-e67f1300f523.png?v=1751027901"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18140 Air Filter",
+      "sku": "sa-18140-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0411cfc3-e874-4a6f-b7e5-f3d8370e841e.jpg?v=1723238201",
+      "vendor": "",
+      "price": 5600,
+      "partNumber": "SA 18140",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18140 Air Filter. Easy to install and replace, the SA 18140 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.68 kg",
+      "shippingVolume": "0.0354 m³"
+    },
+    {
+      "title": "FIL Filter HP 906 Filter Insert | Replaces the HiFi Filter SA 18140",
+      "sku": "sa-18140-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4qWnMZsPexa9JL7TQKn2bJ67TVJeETf1r7KgRMw0fmT5AKYJmKbOBRp270HFd_d11e4c04-7ec6-49a2-a272-e67f1300f523.png?v=1751027901",
+      "vendor": "",
+      "price": 5400,
+      "partNumber": "HP 906",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 906. Easy to install and replace, the HP 906 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}
