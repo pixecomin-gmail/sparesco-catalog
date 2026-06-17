@@ -1,0 +1,55 @@
+{
+  "handle": "sa16864",
+  "title": "SA 16864",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-01577709-fc8b-4612-8b70-2235609406b4.jpg?v=1723206609",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p958947.700.700_efb1808f-2899-4756-97d5-5b4c10c12579.jpg?v=1744306147"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16864 Air Filter",
+      "sku": "sa-16864-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-01577709-fc8b-4612-8b70-2235609406b4.jpg?v=1723206609",
+      "vendor": "",
+      "price": 15500,
+      "partNumber": "SA 16864",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16864 Air Filter. Easy to install and replace, the SA 16864 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 364.0 mm",
+        "Dimension 2 (D2): 360.0 mm",
+        "Dimension 3 (D3): 229.0 mm",
+        "Height 1 (H1): 569.0 mm",
+        "Height 2 (H2): 554.0 mm",
+        "Height 3 (H3): 95.0 mm"
+      ],
+      "unitWeight": "5.5 kg",
+      "shippingVolume": "0.0874 m³"
+    },
+    {
+      "title": "Donaldson P958947 Air Filter Element, Main | Replaces the HiFi Filter SA 16864",
+      "sku": "sa-16864-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p958947.700.700_efb1808f-2899-4756-97d5-5b4c10c12579.jpg?v=1744306147",
+      "vendor": "",
+      "price": 11600,
+      "partNumber": "P958947",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P958947 Air Filter Element, Main is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.08 kg",
+      "shippingVolume": "0.0924 m³"
+    }
+  ]
+}

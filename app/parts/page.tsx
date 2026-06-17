@@ -135,21 +135,26 @@ export default function PartsPage() {
 
               <div className="parts-product-grid">
                 {visibleProducts.map((product) => (
-                  <Link
-                    href={`/products/${product.handle}`}
-                    className="parts-product-card"
-                    key={product.handle}
-                  >
-                    <div className="parts-product-image">
+                  <article className="parts-product-card" key={product.handle}>
+                    <Link
+                      href={`/products/${product.handle}`}
+                      className="parts-product-image"
+                      aria-label={product.title}
+                    >
                       {product.image ? (
                         <img src={product.image} alt={product.title} />
                       ) : (
                         <span>No Image</span>
                       )}
-                    </div>
+                    </Link>
 
                     <div className="parts-product-info">
-                      <h3>{product.title}</h3>
+                      <h3>
+                        <Link href={`/products/${product.handle}`}>
+                          {product.title}
+                        </Link>
+                      </h3>
+
                       <p>
                         {product.collection}
                         {product.variantCount > 1
@@ -157,7 +162,7 @@ export default function PartsPage() {
                           : ""}
                       </p>
                     </div>
-                  </Link>
+                  </article>
                 ))}
               </div>
 

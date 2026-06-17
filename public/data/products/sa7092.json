@@ -1,0 +1,58 @@
+{
+  "handle": "sa7092",
+  "title": "SA 7092",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-28bbe82d-ae6a-45a9-9cd0-23f0ef20d331.jpg?v=1723212204",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_06a5b019-a0c3-42bc-bb06-eb2b317ac5db.jpg?v=1743773619"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7092 Air Filter",
+      "sku": "sa-7092-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-28bbe82d-ae6a-45a9-9cd0-23f0ef20d331.jpg?v=1723212204",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "SA 7092",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7092 Air Filter. Easy to install and replace, the SA 7092 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 355.0 mm",
+        "Dimension 2 (D2): 267.0 mm",
+        "Dimension 3 (D3): 130.0 mm",
+        "Height 1 (H1): 51.0 mm",
+        "Height 2 (H2): 45.0 mm",
+        "Height 3 (H3): 33.0 mm"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": "0.0037 m³"
+    },
+    {
+      "title": "Mann Filter C 36 006/1 Air Filter | Replaces the HiFi Filter SA 7092",
+      "sku": "sa-7092-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_06a5b019-a0c3-42bc-bb06-eb2b317ac5db.jpg?v=1743773619",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "C 36 006/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 356.0 mm",
+        "Dimension B: 131.0 mm",
+        "Dimension H: 53.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

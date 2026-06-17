@@ -1,0 +1,55 @@
+{
+  "handle": "sa1212",
+  "title": "SA 1212",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4fb5aab4-6d1e-4185-9cdd-bf9264ff7906.jpg?v=1723215857",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4652_85d8dba2-8170-4dc7-ad53-e5f9a42da93c.jpg?v=1755780902"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 1212 Air Filter",
+      "sku": "sa-1212-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4fb5aab4-6d1e-4185-9cdd-bf9264ff7906.jpg?v=1723215857",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 1212",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 1212 Air Filter. Easy to install and replace, the SA 1212 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 224.0 mm",
+        "Dimension 2 (D2): 201.0 mm",
+        "Dimension 3 (D3): 168.0 mm",
+        "Height 1 (H1): 51.0 mm",
+        "Height 2 (H2): 24.0 mm",
+        "Height 3 (H3): 10.0 mm"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0026 m³"
+    },
+    {
+      "title": "Fleetguard AF4652 Air Intake Systems | Replaces the HiFi Filter SA 1212",
+      "sku": "sa-1212-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4652_85d8dba2-8170-4dc7-ad53-e5f9a42da93c.jpg?v=1755780902",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "AF4652",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "China",
+      "description": "​Fleetguard® AF4652 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.46 kg",
+      "shippingVolume": "0.0062 m³"
+    }
+  ]
+}

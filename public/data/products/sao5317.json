@@ -1,0 +1,52 @@
+{
+  "handle": "sao5317",
+  "title": "SAO 5317",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e5479f97-4846-4f50-bf40-0785c252b3d1.jpg?v=1723206803",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LC_7201_x_image1.jpg?v=1754909334"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 5317 Engine Breather Filter",
+      "sku": "sao-5317-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e5479f97-4846-4f50-bf40-0785c252b3d1.jpg?v=1723206803",
+      "vendor": "",
+      "price": 9700,
+      "partNumber": "SAO 5317",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 5317 Engine Breather Filter. Easy to install and replace, the SAO 5317 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Engine Breather Filter"
+      ],
+      "unitWeight": "0.13 kg",
+      "shippingVolume": "0.0008 m³"
+    },
+    {
+      "title": "Mann Filter LC 7201 x Ventilator | Replaces the HiFi Filter SAO 5317",
+      "sku": "sao-5317-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LC_7201_x_image1.jpg?v=1754909334",
+      "vendor": "",
+      "price": 7100,
+      "partNumber": "LC 7201 x",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "For over 70 years, MANN-FILTER has been synonymous with premium filters in original equipment quality worldwide. Benefit from a comprehensive product range and optimum filtration performance to protect drivers, engines and machinery. In the familiar yellow-green packaging, MANN-FILTER offers innovative solutions to new filtration challenges and produces on a global scale in accordance with the latest international production and test standards in the automotive industry.",
+      "specifications": [
+        "Style: Ventilator",
+        "Dimension A: 72.5 mm",
+        "Dimension D: 72.5 mm",
+        "Dimension H: 104.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

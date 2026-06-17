@@ -1,0 +1,53 @@
+{
+  "handle": "sa11932",
+  "title": "SA 11932",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-110ddd17-cd91-4425-bda3-b23c179e457b.jpg?v=1723204907",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p528215.700.700_3cd07cc7-cef9-4daf-8eb2-0175ff144bf1.jpg?v=1744306013"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11932 Air Filter",
+      "sku": "sa-11932-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-110ddd17-cd91-4425-bda3-b23c179e457b.jpg?v=1723204907",
+      "vendor": "",
+      "price": 800,
+      "partNumber": "SA 11932",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11932 Air Filter. Easy to install and replace, the SA 11932 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 152.0 mm",
+        "Dimension 2 (D2): 119.0 mm",
+        "Dimension 3 (D3): 119.0 mm",
+        "Height 1 (H1): 76.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0031 m³"
+    },
+    {
+      "title": "Donaldson P528215 Air Filter, Primary Round | Replaces the HiFi Filter SA 11932",
+      "sku": "sa-11932-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p528215.700.700_3cd07cc7-cef9-4daf-8eb2-0175ff144bf1.jpg?v=1744306013",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "P528215",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.27 kg",
+      "shippingVolume": "0.0027 m³"
+    }
+  ]
+}

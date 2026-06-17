@@ -1,0 +1,74 @@
+{
+  "handle": "sa8559",
+  "title": "SA 8559",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-43079bcf-286b-4a2c-8889-ac82c24ffdb3.jpg?v=1723212399",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_f49b6a79-8d9c-4ce5-be8c-06046b39e684.jpg?v=1743773627",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/7JSK7YuGGN774kyDTzOuqe9zIgK6Nqu1i9itV2tDFwBt4unzSEzrzl72BS1yX_75d7b614-7e11-467c-9587-b631ea250fca.png?v=1751027852"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8559 Air Filter",
+      "sku": "sa-8559-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-43079bcf-286b-4a2c-8889-ac82c24ffdb3.jpg?v=1723212399",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 8559",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8559 Air Filter. Easy to install and replace, the SA 8559 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 221.0 mm",
+        "Dimension 2 (D2): 206.0 mm",
+        "Dimension 3 (D3): 188.0 mm",
+        "Height 1 (H1): 37.0 mm",
+        "Height 2 (H2): 27.0 mm"
+      ],
+      "unitWeight": "0.24 kg",
+      "shippingVolume": "0.0033 m³"
+    },
+    {
+      "title": "Mann Filter C 22 009 Air Filter | Replaces the HiFi Filter SA 8559",
+      "sku": "sa-8559-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_f49b6a79-8d9c-4ce5-be8c-06046b39e684.jpg?v=1743773627",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "C 22 009",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 224.0 mm",
+        "Dimension B: 187.0 mm",
+        "Dimension H: 35.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "FIL Filter HP 2422 Filter Insert | Replaces the HiFi Filter SA 8559",
+      "sku": "sa-8559-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/7JSK7YuGGN774kyDTzOuqe9zIgK6Nqu1i9itV2tDFwBt4unzSEzrzl72BS1yX_75d7b614-7e11-467c-9587-b631ea250fca.png?v=1751027852",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "HP 2422",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 2422. Easy to install and replace, the HP 2422 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

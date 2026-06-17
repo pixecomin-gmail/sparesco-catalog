@@ -1,6 +1,6 @@
 {
   "handle": "v3092408",
-  "title": "V3092408",
+  "title": "V3 0924 08",
   "collection": "Argo Hytos",
   "collectionHandle": "argo-hytos",
   "category": "Argo Hytos",
@@ -9,6 +9,10 @@
     "ff1225"
   ],
   "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WG966_bc7c3065-a06c-427b-b00c-ec598ddf4300.jpg?v=1762276726",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b314b833-d57b-4244-a592-a18df7f57c08_01fddd7f-420f-4d26-8d78-30727732a296.jpg?v=1762276726",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_447c9287-0618-42fd-a120-7720da5f12e0.jpg?v=1762276726",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_37d03913-3e9c-4608-aa1a-0eb619fd29ac.png?v=1762276726",
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WG966_fa466159-b6c6-434c-8c42-9b29ba6d5e07.jpg?v=1762276729",
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b314b833-d57b-4244-a592-a18df7f57c08_e60b4e17-07b3-4c97-8983-bcabbe984efa.jpg?v=1762276729",
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_b2414fe5-4afa-4665-b200-ca7f32024cfd.jpg?v=1762276729",
@@ -16,9 +20,9 @@
   ],
   "variants": [
     {
-      "title": "Filtrec WG985 Special Filter | Replaces the Argo-Hytos V3092408",
-      "sku": "v3092408-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WG966_fa466159-b6c6-434c-8c42-9b29ba6d5e07.jpg?v=1762276729",
+      "title": "Filtrec WG985 Special Filter | Replaces the Argo-Hytos V3.0924-08",
+      "sku": "v3-0924-08-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WG966_bc7c3065-a06c-427b-b00c-ec598ddf4300.jpg?v=1762276726",
       "vendor": "",
       "price": 11000,
       "partNumber": "WG985",
@@ -45,9 +49,9 @@
       "shippingVolume": "0.0031 m³"
     },
     {
-      "title": "HiFi Filter SH 52273 Special Filter | Replaces the Argo-Hytos V3092408",
-      "sku": "v3092408-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b314b833-d57b-4244-a592-a18df7f57c08_e60b4e17-07b3-4c97-8983-bcabbe984efa.jpg?v=1762276729",
+      "title": "HiFi Filter SH 52273 Special Filter | Replaces the Argo-Hytos V3.0924-08",
+      "sku": "v3-0924-08-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b314b833-d57b-4244-a592-a18df7f57c08_01fddd7f-420f-4d26-8d78-30727732a296.jpg?v=1762276726",
       "vendor": "",
       "price": 12300,
       "partNumber": "SH 52273",
@@ -76,8 +80,8 @@
     },
     {
       "title": "Argo Hytos V3.0924-08 Special Filter",
-      "sku": "v3092408-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_b2414fe5-4afa-4665-b200-ca7f32024cfd.jpg?v=1762276729",
+      "sku": "v3-0924-08-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_447c9287-0618-42fd-a120-7720da5f12e0.jpg?v=1762276726",
       "vendor": "",
       "price": 14200,
       "partNumber": "V3.0924-08",
@@ -104,9 +108,9 @@
       "shippingVolume": ""
     },
     {
-      "title": "MicroFit® MFHSP80845 UltraGen III Filter | Replaces the Argo-Hytos V3092408",
-      "sku": "v3092408-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9dca29d2-09d5-4fbe-a887-0c54344bb170.png?v=1762276729",
+      "title": "MicroFit® MFHSP80845 UltraGen III Filter | Replaces the Argo-Hytos V3.0924-08",
+      "sku": "v3-0924-08-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_37d03913-3e9c-4608-aa1a-0eb619fd29ac.png?v=1762276726",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80845",

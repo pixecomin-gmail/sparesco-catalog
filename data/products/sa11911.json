@@ -1,0 +1,54 @@
+{
+  "handle": "sa11911",
+  "title": "SA 11911",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1edf2633-059f-471b-8cfe-7cd5cfe24a47.jpg?v=1723206896",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1961_adf8fefa-7708-43d3-a709-43c575807b2b.jpg?v=1755780812"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11911 Air Filter",
+      "sku": "sa-11911-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1edf2633-059f-471b-8cfe-7cd5cfe24a47.jpg?v=1723206896",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "SA 11911",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11911 Air Filter. Easy to install and replace, the SA 11911 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 67.0 mm",
+        "Dimension 2 (D2): 42.0 mm",
+        "Dimension 3 (D3): 9.0 mm",
+        "Height 1 (H1): 208.0 mm",
+        "Height 2 (H2): 204.0 mm"
+      ],
+      "unitWeight": "0.31 kg",
+      "shippingVolume": "0.0023 m³"
+    },
+    {
+      "title": "Fleetguard AF1961 Air Filter, Secondary | Replaces the HiFi Filter SA 11911",
+      "sku": "sa-11911-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1961_adf8fefa-7708-43d3-a709-43c575807b2b.jpg?v=1755780812",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "AF1961",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF1961 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0022 m³"
+    }
+  ]
+}

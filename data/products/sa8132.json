@@ -1,0 +1,53 @@
+{
+  "handle": "sa8132",
+  "title": "SA 8132",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0b7cca5d-679e-43e1-bf8e-d8a1b8e42357.jpg?v=1723211028",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p901934.700.700_24abdbdf-1883-45a5-86cf-bdb192a774fd.jpg?v=1744306196"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8132 Air Filter",
+      "sku": "sa-8132-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0b7cca5d-679e-43e1-bf8e-d8a1b8e42357.jpg?v=1723211028",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 8132",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8132 Air Filter. Easy to install and replace, the SA 8132 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 220.0 mm",
+        "Dimension 2 (D2): 108.0 mm",
+        "Dimension 3 (D3): 108.0 mm",
+        "Height 1 (H1): 119.0 mm"
+      ],
+      "unitWeight": "0.78 kg",
+      "shippingVolume": "0.0083 m³"
+    },
+    {
+      "title": "Donaldson P901934 Air Filter, Primary Round | Replaces the HiFi Filter SA 8132",
+      "sku": "sa-8132-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p901934.700.700_24abdbdf-1883-45a5-86cf-bdb192a774fd.jpg?v=1744306196",
+      "vendor": "",
+      "price": 11300,
+      "partNumber": "P901934",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Australia",
+      "description": "Genuine Donaldson P901934 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.0 kg",
+      "shippingVolume": "0.0088 m³"
+    }
+  ]
+}

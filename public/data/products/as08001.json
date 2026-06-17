@@ -13,7 +13,11 @@
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a414d2de-6fa5-4320-825f-d321ae512279_718389b2-fe6d-439c-8605-6b3ff1e02131.jpg?v=1755097271",
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HY_10_003_Crop_9aaa3824-49b4-4a43-afdd-b0d801f7b292.jpg?v=1755097271",
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35160_e1fdbd35-9e60-4494-8924-388c20358b38.jpg?v=1755780240",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cf2300d2-9547-410c-a347-6b83e3b90f0d.png?v=1760636694"
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cf2300d2-9547-410c-a347-6b83e3b90f0d.png?v=1760636694",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203553B_051dffb0-2e0c-43d4-92ab-fe78d4216349.jpg?v=1741362066",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a414d2de-6fa5-4320-825f-d321ae512279_056ab917-b8d5-4066-99a6-8ba07e9fa8bb.jpg?v=1741362066",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HY_10_003_Crop_ca968e30-8866-4db5-b782-e6b43b9befd1.jpg?v=1743772656",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35160_26b7a4b4-c328-4672-967d-3a68a44f0d07.jpg?v=1755779647"
   ],
   "variants": [
     {
@@ -157,6 +161,34 @@
       ],
       "unitWeight": "0.76 kg",
       "shippingVolume": ""
+    },
+    {
+      "title": "Filtrec FS176B7T60 Suction Strainer | Replaces the Argo-Hytos AS080-01",
+      "sku": "as080-01-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203553B_051dffb0-2e0c-43d4-92ab-fe78d4216349.jpg?v=1741362066",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "FS176B7T60",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec FS176B7T60. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the FS176B7T60 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Suction Strainer",
+        "Media: Wire Mesh",
+        "Efficiency 1: 60µ",
+        "Outer Diameter: 102.0 mm",
+        "Length: 228.0 mm",
+        "Thread: 1 1/2\" BSP",
+        "Δ Collapse Pressure: 1 bar",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 60µ",
+        "Media Type: Wire Mesh",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 1 BAR"
+      ],
+      "unitWeight": "0.79 kg",
+      "shippingVolume": "0.0024 m³"
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "handle": "sa16867",
+  "title": "SA 16867",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fc0a2b09-f4b1-44b9-8511-709d3bbb2a26.jpg?v=1748456075",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788696.700.700_3bc57874-3d83-427d-bb1d-44fdc7a38aa0.jpg?v=1748456075",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b84693af-56e3-44ad-aa29-3e71a01eb021.jpg?v=1748456075"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16867 Air Filter",
+      "sku": "sa-16867-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fc0a2b09-f4b1-44b9-8511-709d3bbb2a26.jpg?v=1748456075",
+      "vendor": "",
+      "price": 6500,
+      "partNumber": "SA 16867",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16867 Air Filter. Easy to install and replace, the SA 16867 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 280.0 mm",
+        "Dimension 2 (D2): 281.0 mm",
+        "Dimension 3 (D3): 153.0 mm",
+        "Height 1 (H1): 496.0 mm",
+        "Height 2 (H2): 484.0 mm",
+        "Height 3 (H3): 223.0 mm"
+      ],
+      "unitWeight": "3.64 kg",
+      "shippingVolume": "0.0481 m³"
+    },
+    {
+      "title": "Donaldson P788696 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16867",
+      "sku": "sa-16867-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788696.700.700_3bc57874-3d83-427d-bb1d-44fdc7a38aa0.jpg?v=1748456075",
+      "vendor": "",
+      "price": 6400,
+      "partNumber": "P788696",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Genuine Donaldson P788696 Air Filter, Primary Radialseal features a secure radialseal fit that ensures high-efficiency air filtration while preventing unfiltered air from entering the engine. It captures harmful airborne contaminants, optimizing airflow and enhancing engine performance and longevity. Designed for use in rugged environments, this filter offers excellent durability and a long service life. Its radialseal technology makes installation simple while ensuring a tight, reliable seal that protects your engine under the harshest conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.53 kg",
+      "shippingVolume": "0.0519 m³"
+    },
+    {
+      "title": "Mann Filter C 28 137 Air Filter | Replaces the HiFi Filter SA 16867",
+      "sku": "sa-16867-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b84693af-56e3-44ad-aa29-3e71a01eb021.jpg?v=1748456075",
+      "vendor": "",
+      "price": 13400,
+      "partNumber": "C 28 137",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 282.0 mm",
+        "Dimension B: 149.0 mm",
+        "Dimension H: 494.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

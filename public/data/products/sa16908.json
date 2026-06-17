@@ -1,0 +1,72 @@
+{
+  "handle": "sa16908",
+  "title": "SA 16908",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2165ed24-692d-4e7c-9d44-5ea3ae3c5d24.jpg?v=1723203511",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p770908.700.700_beef84d1-9148-4bf2-aa90-6b4dac992cf8.jpg?v=1744306150",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25356_f2397815-1c64-4fd6-9243-e582075bf41c.jpg?v=1755780755"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16908 Air Filter",
+      "sku": "sa-16908-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2165ed24-692d-4e7c-9d44-5ea3ae3c5d24.jpg?v=1723203511",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "SA 16908",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16908 Air Filter. Easy to install and replace, the SA 16908 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 95.0 mm",
+        "Dimension 2 (D2): 85.0 mm",
+        "Dimension 3 (D3): 74.0 mm",
+        "Height 1 (H1): 230.0 mm",
+        "Height 2 (H2): 225.0 mm",
+        "Height 3 (H3): 212.0 mm"
+      ],
+      "unitWeight": "0.29 kg",
+      "shippingVolume": "0.0034 m³"
+    },
+    {
+      "title": "Donaldson P770908 Air Filter, Safety | Replaces the HiFi Filter SA 16908",
+      "sku": "sa-16908-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p770908.700.700_beef84d1-9148-4bf2-aa90-6b4dac992cf8.jpg?v=1744306150",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "P770908",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P770908 Air Filter, Safety acts as a crucial secondary layer of defense in your air filtration system, capturing fine dust particles that bypass the primary filter. This extra layer of protection helps prevent engine wear and supports consistent performance, especially in dusty or harsh environments. Compact and durable, this safety air filter operates without restricting airflow, complementing the primary filter for comprehensive engine protection. Itâ€™s essential for maintaining clean air intake and maximizing engine lifespan.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.24 kg",
+      "shippingVolume": "0.0033 m³"
+    },
+    {
+      "title": "Fleetguard AF25356 Air Filter, Secondary | Replaces the HiFi Filter SA 16908",
+      "sku": "sa-16908-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25356_f2397815-1c64-4fd6-9243-e582075bf41c.jpg?v=1755780755",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "AF25356",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Turkey",
+      "description": "​Fleetguard® AF25356 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.29 kg",
+      "shippingVolume": "0.0026 m³"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "handle": "sa79938",
+  "title": "SA 79938",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p525185.700.700_028333a3-f003-4480-aab5-9988908a5e77.jpg?v=1748456103",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e20cd794-38bb-4e8b-96e5-8459ae3d6119_388db8c3-eb72-4464-b64e-bb5707731954.jpg?v=1748456103",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2201_5203a8b7-b400-4d2f-8b8c-6dcbff3dba81.jpg?v=1755782852"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P525185 Air Oil Separator | Replaces the Sakura SA-79938",
+      "sku": "sa-79938-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p525185.700.700_028333a3-f003-4480-aab5-9988908a5e77.jpg?v=1748456103",
+      "vendor": "",
+      "price": 17200,
+      "partNumber": "P525185",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P525185 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "4.95 kg",
+      "shippingVolume": "0.0563 m³"
+    },
+    {
+      "title": "HiFi Filter OT 2836 Air/Oil Separator | Replaces the Sakura SA-79938",
+      "sku": "sa-79938-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e20cd794-38bb-4e8b-96e5-8459ae3d6119_388db8c3-eb72-4464-b64e-bb5707731954.jpg?v=1748456103",
+      "vendor": "",
+      "price": 19300,
+      "partNumber": "OT 2836",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2836 Air/Oil Separator is HiFi's replacement to the SAKURA SA-79938. Easy to install and replace, the OT 2836 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 300.0 mm",
+        "Dimension 2 (D2): 269.0 mm",
+        "Dimension 3 (D3): 169.0 mm",
+        "Thread 1 (D7): M8X1",
+        "25",
+        "Height 1 (H1): 512.0 mm",
+        "Height 2 (H2): 497.0 mm",
+        "Height 3 (H3): 484.0 mm"
+      ],
+      "unitWeight": "4.4 kg",
+      "shippingVolume": "0.0558 m³"
+    },
+    {
+      "title": "Fleetguard AS2201 Air Filter/Oil Separator | Replaces the Sakura SA-79938",
+      "sku": "sa-79938-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2201_5203a8b7-b400-4d2f-8b8c-6dcbff3dba81.jpg?v=1755782852",
+      "vendor": "",
+      "price": 18700,
+      "partNumber": "AS2201",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AS2201 air oil separator prevents oil build-up, protects against detonation, and minimizes oil loss which equates to reduced maintenance and more consistent performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "4.39 kg",
+      "shippingVolume": "0.0549 m³"
+    }
+  ]
+}

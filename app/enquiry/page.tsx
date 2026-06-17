@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 export default function EnquiryPage() {
-  const { items, increaseQty, decreaseQty, removeItem } = useEnquiry();
+  const { items, increaseQty, decreaseQty, removeItem, closeDrawer } =
+    useEnquiry();
 
   return (
     <main>
@@ -24,42 +26,55 @@ export default function EnquiryPage() {
                 <p className="empty-message">No products added yet.</p>
               )}
 
-              {items.map((item) => (
-                <div className="enquiry-item" key={item.handle}>
-                  <div>
-                    <strong>{item.title}</strong>
-                    <span>
-                      {item.brand} • {item.category}
-                    </span>
-                  </div>
+              <div className="enquiry-page-items">
+                {items.map((item) => (
+                  <div className="enquiry-item enquiry-item-compact" key={item.id}>
+                    <Link
+                      href={`/products/${item.handle}`}
+                      className="enquiry-item-image"
+                    >
+                      {item.image ? <img src={item.image} alt={item.title} /> : null}
+                    </Link>
 
-                  <div className="qty-control">
+                    <div className="enquiry-item-content">
+                      <Link
+                        href={`/products/${item.handle}`}
+                        className="enquiry-item-title"
+                      >
+                        {item.title}
+                      </Link>
+
+                      <div className="enquiry-item-meta">
+                        {item.vendor || "Variant"} |{" "}
+                        {Number(item.price) > 0
+                          ? `₹${Number(item.price).toLocaleString("en-IN")}`
+                          : "Price on Request"}
+                      </div>
+                    </div>
+
+                    <div className="qty-control">
+                      <button type="button" onClick={() => decreaseQty(item.id)}>
+                        -
+                      </button>
+
+                      <span>{item.quantity}</span>
+
+                      <button type="button" onClick={() => increaseQty(item.id)}>
+                        +
+                      </button>
+                    </div>
+
                     <button
                       type="button"
-                      onClick={() => decreaseQty(item.handle)}
+                      className="delete-icon-button"
+                      onClick={() => removeItem(item.id)}
+                      aria-label="Remove item"
                     >
-                      -
-                    </button>
-
-                    <span>{item.quantity}</span>
-
-                    <button
-                      type="button"
-                      onClick={() => increaseQty(item.handle)}
-                    >
-                      +
+                      🗑
                     </button>
                   </div>
-
-                  <button
-                    type="button"
-                    className="remove-button"
-                    onClick={() => removeItem(item.handle)}
-                  >
-                    Remove
-                  </button>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
 
             <form className="enquiry-form">

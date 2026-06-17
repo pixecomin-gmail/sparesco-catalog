@@ -1,0 +1,55 @@
+{
+  "handle": "sa10866",
+  "title": "SA 10866",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-425fdb26-079f-4766-ba68-0b8ac683f15a.jpg?v=1723203266",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF916_e89e6df6-486d-4258-9c62-066131024f16.jpg?v=1755780748"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10866 Air Filter",
+      "sku": "sa-10866-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-425fdb26-079f-4766-ba68-0b8ac683f15a.jpg?v=1723203266",
+      "vendor": "",
+      "price": 21500,
+      "partNumber": "SA 10866",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10866 Air Filter. Easy to install and replace, the SA 10866 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 354.0 mm",
+        "Dimension 2 (D2): 306.0 mm",
+        "Dimension 3 (D3): 194.0 mm",
+        "Height 1 (H1): 521.0 mm",
+        "Height 2 (H2): 510.0 mm",
+        "Height 3 (H3): 494.0 mm"
+      ],
+      "unitWeight": "4.45 kg",
+      "shippingVolume": "0.0752 m³"
+    },
+    {
+      "title": "Fleetguard AF916 Air Filter, Primary | Replaces the HiFi Filter SA 10866",
+      "sku": "sa-10866-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF916_e89e6df6-486d-4258-9c62-066131024f16.jpg?v=1755780748",
+      "vendor": "",
+      "price": 14200,
+      "partNumber": "AF916",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF916 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.77 kg",
+      "shippingVolume": "0.0732 m³"
+    }
+  ]
+}

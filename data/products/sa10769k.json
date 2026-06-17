@@ -1,0 +1,55 @@
+{
+  "handle": "sa10769k",
+  "title": "SA 10769 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-829dc974-3a2f-4d47-bb6b-9c46ec955524.jpg?v=1723205032",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF819KM_bce4df44-b8da-4029-93ee-0edb75bc6b5e.jpg?v=1755780774"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10769 K Air Filter",
+      "sku": "sa-10769-k-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-829dc974-3a2f-4d47-bb6b-9c46ec955524.jpg?v=1723205032",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "SA 10769 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10769 K Air Filter. Easy to install and replace, the SA 10769 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 125.0 mm",
+        "Dimension 2 (D2): 107.0 mm",
+        "Dimension 3 (D3): 62.0 mm",
+        "Height 1 (H1): 239.0 mm",
+        "Height 2 (H2): 229.0 mm",
+        "Height 3 (H3): 211.0 mm"
+      ],
+      "unitWeight": "0.58 kg",
+      "shippingVolume": "0.0097 m³"
+    },
+    {
+      "title": "Fleetguard AF819KM Air Filter | Replaces the HiFi Filter SA 10769 K",
+      "sku": "sa-10769-k-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF819KM_bce4df44-b8da-4029-93ee-0edb75bc6b5e.jpg?v=1755780774",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "AF819KM",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF819KM axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.56 kg",
+      "shippingVolume": "0.0063 m³"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "handle": "sa11815",
+  "title": "SA 11815",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf82bc52-d33d-4923-be2d-15d47e6c6fbc.jpg?v=1723213286",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/8so4czIJVRA7PooN7GXLrq8mK5B39AOyr_1c9f1fe2-6ca9-4fc5-b636-329a5341be44.png?v=1751027850",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1865_3adf8b7a-5fe9-4026-b582-485d1949fb43.jpg?v=1755780897"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11815 Air Filter",
+      "sku": "sa-11815-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf82bc52-d33d-4923-be2d-15d47e6c6fbc.jpg?v=1723213286",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "SA 11815",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11815 Air Filter. Easy to install and replace, the SA 11815 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 179.0 mm",
+        "Dimension 2 (D2): 158.0 mm",
+        "Dimension 3 (D3): 149.0 mm",
+        "Height 1 (H1): 335.0 mm",
+        "Height 2 (H2): 324.0 mm",
+        "Height 3 (H3): 300.0 mm"
+      ],
+      "unitWeight": "1.3 kg",
+      "shippingVolume": "0.0143 m³"
+    },
+    {
+      "title": "FIL Filter HP 4568 Filter Insert | Replaces the HiFi Filter SA 11815",
+      "sku": "sa-11815-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/8so4czIJVRA7PooN7GXLrq8mK5B39AOyr_1c9f1fe2-6ca9-4fc5-b636-329a5341be44.png?v=1751027850",
+      "vendor": "",
+      "price": 6900,
+      "partNumber": "HP 4568",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 4568. Easy to install and replace, the HP 4568 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF1865 Air Filter | Replaces the HiFi Filter SA 11815",
+      "sku": "sa-11815-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1865_3adf8b7a-5fe9-4026-b582-485d1949fb43.jpg?v=1755780897",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "AF1865",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF1865 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.41 kg",
+      "shippingVolume": "0.0191 m³"
+    }
+  ]
+}

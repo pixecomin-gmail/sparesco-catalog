@@ -1,0 +1,70 @@
+{
+  "handle": "sa16341",
+  "title": "SA 16341",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4918b989-2661-4a82-9885-5b5988ba6aee.jpg?v=1723204692",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p527682.700.700_09b78c61-a573-4c82-8a6f-48a3b46c98ab.jpg?v=1744306093",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25139M_2ec3ee3f-4225-4f4a-8e91-c2f078fb0ec5.jpg?v=1755780767"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16341 Air Filter",
+      "sku": "sa-16341-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4918b989-2661-4a82-9885-5b5988ba6aee.jpg?v=1723204692",
+      "vendor": "",
+      "price": 7800,
+      "partNumber": "SA 16341",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16341 Air Filter. Easy to install and replace, the SA 16341 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 332.0 mm",
+        "Dimension 2 (D2): 172.0 mm",
+        "Height 1 (H1): 388.0 mm",
+        "Height 2 (H2): 375.0 mm"
+      ],
+      "unitWeight": "4.18 kg",
+      "shippingVolume": "0.0602 m³"
+    },
+    {
+      "title": "Donaldson P527682 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16341",
+      "sku": "sa-16341-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p527682.700.700_09b78c61-a573-4c82-8a6f-48a3b46c98ab.jpg?v=1744306093",
+      "vendor": "",
+      "price": 8700,
+      "partNumber": "P527682",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.93 kg",
+      "shippingVolume": "0.0481 m³"
+    },
+    {
+      "title": "Fleetguard AF25139M Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16341",
+      "sku": "sa-16341-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25139M_2ec3ee3f-4225-4f4a-8e91-c2f078fb0ec5.jpg?v=1755780767",
+      "vendor": "",
+      "price": 9000,
+      "partNumber": "AF25139M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF25139M premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.46 kg",
+      "shippingVolume": "0.0481 m³"
+    }
+  ]
+}

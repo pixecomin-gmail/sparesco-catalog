@@ -1,0 +1,93 @@
+{
+  "handle": "sa17442",
+  "title": "SA 17442",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1fda9e3b-5012-4dfb-8d89-aa11a99e5def.jpg?v=1748456087",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p954476.700.700_14680300-b593-457b-accb-ea0fe58fb01a.jpg?v=1748456087",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1940_image1_3be5a087-e9eb-4546-bee2-8f70fe3fbdcd.jpg?v=1754909273",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4187_fb0d011d-7f0f-4af1-a652-7ce825f9eb92.jpg?v=1755780732"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17442 Air Filter",
+      "sku": "sa-17442-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1fda9e3b-5012-4dfb-8d89-aa11a99e5def.jpg?v=1748456087",
+      "vendor": "",
+      "price": 6300,
+      "partNumber": "SA 17442",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17442 Air Filter. Easy to install and replace, the SA 17442 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 194.0 mm",
+        "Dimension 2 (D2): 172.0 mm",
+        "Dimension 3 (D3): 40.0 mm",
+        "Thread 1 (D7): S181X6",
+        "Height 1 (H1): 386.0 mm",
+        "Height 2 (H2): 354.0 mm",
+        "Height 3 (H3): 6.0 mm"
+      ],
+      "unitWeight": "0.66 kg",
+      "shippingVolume": "0.0162 m³"
+    },
+    {
+      "title": "Donaldson P954476 Air Filter, Safety | Replaces the HiFi Filter SA 17442",
+      "sku": "sa-17442-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p954476.700.700_14680300-b593-457b-accb-ea0fe58fb01a.jpg?v=1748456087",
+      "vendor": "",
+      "price": 10600,
+      "partNumber": "P954476",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Germany",
+      "description": "Genuine Donaldson P954476 Air Filter, Safety acts as a crucial secondary layer of defense in your air filtration system, capturing fine dust particles that bypass the primary filter. This extra layer of protection helps prevent engine wear and supports consistent performance, especially in dusty or harsh environments. Compact and durable, this safety air filter operates without restricting airflow, complementing the primary filter for comprehensive engine protection. Itâ€™s essential for maintaining clean air intake and maximizing engine lifespan.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.02 kg",
+      "shippingVolume": "0.0181 m³"
+    },
+    {
+      "title": "Mann Filter CF 1940 Secondary Element | Replaces the HiFi Filter SA 17442",
+      "sku": "sa-17442-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1940_image1_3be5a087-e9eb-4546-bee2-8f70fe3fbdcd.jpg?v=1754909273",
+      "vendor": "",
+      "price": 11600,
+      "partNumber": "CF 1940",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 182.0 mm",
+        "Dimension D: 184.0 mm",
+        "Dimension H: 388.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4187 Air Filter, Secondary | Replaces the HiFi Filter SA 17442",
+      "sku": "sa-17442-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4187_fb0d011d-7f0f-4af1-a652-7ce825f9eb92.jpg?v=1755780732",
+      "vendor": "",
+      "price": 8700,
+      "partNumber": "AF4187",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF4187 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.63 kg",
+      "shippingVolume": "0.0164 m³"
+    }
+  ]
+}

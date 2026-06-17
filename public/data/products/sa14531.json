@@ -1,0 +1,72 @@
+{
+  "handle": "sa14531",
+  "title": "SA 14531",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2963bf81-6be8-408c-836a-a316cb4b1e7d.jpg?v=1723202953",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770132.700.700_e3811456-e10a-48f8-b889-c541a838690e.jpg?v=1744306032",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4581_a554a285-279a-428e-a7ca-c771d3e5fb2b.jpg?v=1755780738"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14531 Air Filter",
+      "sku": "sa-14531-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2963bf81-6be8-408c-836a-a316cb4b1e7d.jpg?v=1723202953",
+      "vendor": "",
+      "price": 8000,
+      "partNumber": "SA 14531",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14531 Air Filter. Easy to install and replace, the SA 14531 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 195.0 mm",
+        "Dimension 2 (D2): 106.0 mm",
+        "Dimension 3 (D3): 101.0 mm",
+        "Height 1 (H1): 326.0 mm",
+        "Height 2 (H2): 280.0 mm",
+        "Height 3 (H3): 29.0 mm"
+      ],
+      "unitWeight": "2.18 kg",
+      "shippingVolume": "0.0165 m³"
+    },
+    {
+      "title": "Donaldson X770132 Air Filter Kit | Replaces the HiFi Filter SA 14531",
+      "sku": "sa-14531-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770132.700.700_e3811456-e10a-48f8-b889-c541a838690e.jpg?v=1744306032",
+      "vendor": "",
+      "price": 8100,
+      "partNumber": "X770132",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson X770132 Air Filter Kit includes all necessary components for efficient air filtration, ensuring clean airflow to the engine. It provides reliable protection against airborne contaminants. Suitable for a range of applications, this air filter kit enhances engine performance and extends service intervals.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.0 kg",
+      "shippingVolume": "0.0151 m³"
+    },
+    {
+      "title": "Fleetguard AF4581 Air Filter | Replaces the HiFi Filter SA 14531",
+      "sku": "sa-14531-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4581_a554a285-279a-428e-a7ca-c771d3e5fb2b.jpg?v=1755780738",
+      "vendor": "",
+      "price": 11900,
+      "partNumber": "AF4581",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF4581 air filter is installed in front of the carburetor or intake pipe to remove dust and sand in the air and ensure sufficient and clean air in the cylinder.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.81 kg",
+      "shippingVolume": "0.0137 m³"
+    }
+  ]
+}

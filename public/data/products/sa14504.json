@@ -1,0 +1,89 @@
+{
+  "handle": "sa14504",
+  "title": "SA 14504",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97907334-2a2f-4e28-a474-b79169cb2f00.jpg?v=1723205466",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124866.700.700_b8e3f73a-7c1f-4668-bc2e-2a6697ba28f1.jpg?v=1744306030",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/74sY7Epc74Y4qReJSl2Hjb6YiDQVIqGcf_4a70ab2d-6ad7-44b3-9008-89ceb0e3c27f.png?v=1751027848",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4554M_48d0e744-fc10-4785-90ba-64850b418d67.jpg?v=1755780780"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14504 Air Filter",
+      "sku": "sa-14504-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97907334-2a2f-4e28-a474-b79169cb2f00.jpg?v=1723205466",
+      "vendor": "",
+      "price": 4800,
+      "partNumber": "SA 14504",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14504 Air Filter. Easy to install and replace, the SA 14504 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 219.0 mm",
+        "Dimension 2 (D2): 179.0 mm",
+        "Dimension 3 (D3): 23.0 mm",
+        "Height 1 (H1): 471.0 mm",
+        "Height 2 (H2): 457.0 mm",
+        "Height 3 (H3): 406.0 mm"
+      ],
+      "unitWeight": "2.3 kg",
+      "shippingVolume": "0.0374 m³"
+    },
+    {
+      "title": "Donaldson P124866 Air Filter, Safety | Replaces the HiFi Filter SA 14504",
+      "sku": "sa-14504-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124866.700.700_b8e3f73a-7c1f-4668-bc2e-2a6697ba28f1.jpg?v=1744306030",
+      "vendor": "",
+      "price": 5700,
+      "partNumber": "P124866",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.85 kg",
+      "shippingVolume": "0.0313 m³"
+    },
+    {
+      "title": "FIL Filter HP 468 Filter Insert | Replaces the HiFi Filter SA 14504",
+      "sku": "sa-14504-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/74sY7Epc74Y4qReJSl2Hjb6YiDQVIqGcf_4a70ab2d-6ad7-44b3-9008-89ceb0e3c27f.png?v=1751027848",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "HP 468",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 468. Easy to install and replace, the HP 468 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4554M Air Filter, Secondary | Replaces the HiFi Filter SA 14504",
+      "sku": "sa-14504-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4554M_48d0e744-fc10-4785-90ba-64850b418d67.jpg?v=1755780780",
+      "vendor": "",
+      "price": 6800,
+      "partNumber": "AF4554M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF4554M axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.84 kg",
+      "shippingVolume": "0.0268 m³"
+    }
+  ]
+}

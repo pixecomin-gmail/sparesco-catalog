@@ -1,0 +1,71 @@
+{
+  "handle": "sab125011",
+  "title": "SAB 125011",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ce893e0a-e576-4cf2-bde9-10e52086024c_1d68269e-cd1b-4b1a-bed3-11df306519c9.jpg?v=1762811837",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/b125011.700.700_8af085f6-9078-45d7-95e9-f206bcb59599.jpg?v=1762811837",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH8513_7aa251c6-2ea1-497d-b66c-da75553fba28.jpg?v=1762811837"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAB 125011 Air Filter",
+      "sku": "sab-125011-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ce893e0a-e576-4cf2-bde9-10e52086024c_1d68269e-cd1b-4b1a-bed3-11df306519c9.jpg?v=1762811837",
+      "vendor": "",
+      "price": 7200,
+      "partNumber": "SAB 125011",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAB 125011 Air Filter. Easy to install and replace, the SAB 125011 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 317.0 mm",
+        "Dimension 2 (D2): 138.0 mm",
+        "Dimension 3 (D3): 127.0 mm",
+        "Height 1 (H1): 260.0 mm",
+        "Height 2 (H2): 227.0 mm"
+      ],
+      "unitWeight": "3.24 kg",
+      "shippingVolume": "0.0339 m³"
+    },
+    {
+      "title": "Donaldson B125011 Air Filter, Primary Duralite | Replaces the HiFi Filter SAB 125011",
+      "sku": "sab-125011-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/b125011.700.700_8af085f6-9078-45d7-95e9-f206bcb59599.jpg?v=1762811837",
+      "vendor": "",
+      "price": 8900,
+      "partNumber": "B125011",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson DuraLite™ Air Cleaners? Rugged, lightweight, self-supporting, and completely disposable combination air cleaner and filter. • Function well under severe pulsation conditions, particularly two- and three-cylinder engines. • Vibration-resistant media is secured into molded housings of rugged ABS plastic—so they don’t fall apart as other designs might. • Easy to install, durable, and reliable. • Completely disposable — acceptable for normal trash pick-up (DuraLite should not be incinerated).",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.85 kg",
+      "shippingVolume": "0.0312 m³"
+    },
+    {
+      "title": "Fleetguard AH8513 Air Intake Systems | Replaces the HiFi Filter SAB 125011",
+      "sku": "sab-125011-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH8513_7aa251c6-2ea1-497d-b66c-da75553fba28.jpg?v=1762811837",
+      "vendor": "",
+      "price": 11000,
+      "partNumber": "AH8513",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "China",
+      "description": "With over 1,500 different air filtration products, from clamps to air housings to advanced air filters, Fleetguard® provides peace of mind for your air filtration needs. Our Fleetguard AH8513 air housing is part of the heavy-duty air filtration line, covering your sophisticated air intake system requirements.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.36 kg",
+      "shippingVolume": "0.0218 m³"
+    }
+  ]
+}

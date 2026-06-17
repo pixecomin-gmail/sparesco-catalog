@@ -1,0 +1,55 @@
+{
+  "handle": "sa14519",
+  "title": "SA 14519",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8ba66198-c82f-4228-a831-07586a13440c.jpg?v=1723215868",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4569_d2db782d-c029-45de-a0fa-cd703ec5b234.jpg?v=1755780901"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14519 Air Filter",
+      "sku": "sa-14519-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8ba66198-c82f-4228-a831-07586a13440c.jpg?v=1723215868",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "SA 14519",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14519 Air Filter. Easy to install and replace, the SA 14519 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 136.0 mm",
+        "Dimension 2 (D2): 133.0 mm",
+        "Dimension 3 (D3): 76.0 mm",
+        "Height 1 (H1): 320.0 mm",
+        "Height 2 (H2): 311.0 mm",
+        "Height 3 (H3): 291.0 mm"
+      ],
+      "unitWeight": "1.24 kg",
+      "shippingVolume": "0.0076 m³"
+    },
+    {
+      "title": "Fleetguard AF4569 Air Filter, Primary | Replaces the HiFi Filter SA 14519",
+      "sku": "sa-14519-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4569_d2db782d-c029-45de-a0fa-cd703ec5b234.jpg?v=1755780901",
+      "vendor": "",
+      "price": 5700,
+      "partNumber": "AF4569",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF4569 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.24 kg",
+      "shippingVolume": "0.0074 m³"
+    }
+  ]
+}

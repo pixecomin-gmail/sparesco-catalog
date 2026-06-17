@@ -108,7 +108,11 @@ export default function ProductPage() {
                       }}
                     >
                       <span>{cleanVariantTitle(variant.title)}</span>
-                      <strong>₹{variant.price.toLocaleString("en-IN")}</strong>
+                      <strong>
+                      {variant.price > 0
+                        ? `₹${variant.price.toLocaleString("en-IN")}`
+                        : "Price On Request"}
+                    </strong>
                     </button>
                   ))}
                 </div>
@@ -119,10 +123,13 @@ export default function ProductPage() {
                   className="primary-button"
                   onClick={() =>
                     addItem({
+                      id: `${product.handle}-${activeVariant.partNumber}`,
                       handle: product.handle,
-                      title: `${product.title} - ${activeVariant.partNumber}`,
-                      brand: product.collection,
-                      category: product.category,
+                      title: product.title,
+                      image: activeVariant.image || activeImage || product.images?.[0] || "",
+                      partNumber: activeVariant.partNumber,
+                      vendor: cleanVariantTitle(activeVariant.title),
+                      price: activeVariant.price,
                     })
                   }
                 >

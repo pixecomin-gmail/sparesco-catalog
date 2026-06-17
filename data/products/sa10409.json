@@ -1,0 +1,53 @@
+{
+  "handle": "sa10409",
+  "title": "SA 10409",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ee1db549-f285-449f-857b-1e3a6b3a4a0f_3888f114-a069-4e23-9654-4ba3959531cb.jpg?v=1762811389",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF459_108b2513-2387-496a-a3f3-b138c6db1bc6.jpg?v=1762811389"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10409 Air Filter",
+      "sku": "sa-10409-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ee1db549-f285-449f-857b-1e3a6b3a4a0f_3888f114-a069-4e23-9654-4ba3959531cb.jpg?v=1762811389",
+      "vendor": "",
+      "price": 25000,
+      "partNumber": "SA 10409",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10409 Air Filter. Easy to install and replace, the SA 10409 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 500.0 mm",
+        "Dimension 2 (D2): 382.0 mm",
+        "Height 1 (H1): 210.0 mm",
+        "Height 2 (H2): 10.0 mm"
+      ],
+      "unitWeight": "5.7 kg",
+      "shippingVolume": "0.0488 m³"
+    },
+    {
+      "title": "Fleetguard AF459 Air Filter Filter - Panel | Replaces the HiFi Filter SA 10409",
+      "sku": "sa-10409-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF459_108b2513-2387-496a-a3f3-b138c6db1bc6.jpg?v=1762811389",
+      "vendor": "",
+      "price": 19900,
+      "partNumber": "AF459",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF459 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.8 kg",
+      "shippingVolume": "0.0489 m³"
+    }
+  ]
+}

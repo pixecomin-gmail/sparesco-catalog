@@ -1,0 +1,77 @@
+{
+  "handle": "sa10829",
+  "title": "SA 10829",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66452b7b-756d-4a50-83cb-13e69d65756e.jpg?v=1723206057",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_146cfd65-8096-47bf-b5c3-792387a2f330.jpg?v=1743773500",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF879M_70f130dc-3d8e-4a41-bbb1-5031beb634c3.jpg?v=1755780802"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10829 Air Filter",
+      "sku": "sa-10829-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66452b7b-756d-4a50-83cb-13e69d65756e.jpg?v=1723206057",
+      "vendor": "",
+      "price": 16900,
+      "partNumber": "SA 10829",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10829 Air Filter. Easy to install and replace, the SA 10829 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 462.0 mm",
+        "Dimension 2 (D2): 447.0 mm",
+        "Dimension 3 (D3): 280.0 mm",
+        "Height 1 (H1): 601.0 mm",
+        "Height 2 (H2): 590.0 mm",
+        "Height 3 (H3): 547.0 mm"
+      ],
+      "unitWeight": "8.76 kg",
+      "shippingVolume": "0.1468 m³"
+    },
+    {
+      "title": "Mann Filter C 45 005 x Air Filter | Replaces the HiFi Filter SA 10829",
+      "sku": "sa-10829-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_146cfd65-8096-47bf-b5c3-792387a2f330.jpg?v=1743773500",
+      "vendor": "",
+      "price": 28000,
+      "partNumber": "C 45 005 x",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 447.0 mm",
+        "Dimension B: 282.0 mm",
+        "Dimension C: 22.0 mm",
+        "Dimension D: 458.0 mm",
+        "Dimension H: 603.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF879M Air Filter, Primary | Replaces the HiFi Filter SA 10829",
+      "sku": "sa-10829-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF879M_70f130dc-3d8e-4a41-bbb1-5031beb634c3.jpg?v=1755780802",
+      "vendor": "",
+      "price": 28200,
+      "partNumber": "AF879M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF879M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "11.24 kg",
+      "shippingVolume": "0.1497 m³"
+    }
+  ]
+}

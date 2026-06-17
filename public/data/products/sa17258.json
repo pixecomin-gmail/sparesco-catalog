@@ -1,0 +1,74 @@
+{
+  "handle": "sa17258",
+  "title": "SA 17258",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73500203-6dfd-452f-9e4b-c46312ef40a7.jpg?v=1723205280",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_731da731-ff79-4459-b0ee-4512e065519f.jpg?v=1742827061",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26192_df91aa52-564a-46e9-8f04-21c33387146e.jpg?v=1755780782"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17258 Air Filter",
+      "sku": "sa-17258-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73500203-6dfd-452f-9e4b-c46312ef40a7.jpg?v=1723205280",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "SA 17258",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17258 Air Filter. Easy to install and replace, the SA 17258 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 64.0 mm",
+        "Dimension 2 (D2): 63.0 mm",
+        "Dimension 3 (D3): 53.0 mm",
+        "Height 1 (H1): 283.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0024 m³"
+    },
+    {
+      "title": "Mann Filter CF 7001 Secondary Element | Replaces the HiFi Filter SA 17258",
+      "sku": "sa-17258-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_731da731-ff79-4459-b0ee-4512e065519f.jpg?v=1742827061",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "CF 7001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Austria",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 65.0 mm",
+        "Dimension B: 52.0 mm",
+        "Dimension D: 64.0 mm",
+        "Dimension H: 282.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26192 Air Filter, Secondary | Replaces the HiFi Filter SA 17258",
+      "sku": "sa-17258-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26192_df91aa52-564a-46e9-8f04-21c33387146e.jpg?v=1755780782",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "AF26192",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF26192 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.15 kg",
+      "shippingVolume": "0.0027 m³"
+    }
+  ]
+}

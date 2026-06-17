@@ -1,0 +1,92 @@
+{
+  "handle": "sa16612",
+  "title": "SA 16612",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d1ec7d2-19de-4d0d-9e69-1d7b1f6bec33_94a7ccf1-b24f-4613-84df-cf77caf2e84b.jpg?v=1762811453",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p954411.700.700_1d962ed8-67ef-47d5-81d9-4dc3ce5c8c8a.jpg?v=1762811453",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_6134c5fd-c086-4c41-898e-49b415fb7783.jpg?v=1762811453",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27878_e69a22bd-194b-401d-a221-cddbc4bb08e0.jpg?v=1762811453"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16612 Air Filter",
+      "sku": "sa-16612-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d1ec7d2-19de-4d0d-9e69-1d7b1f6bec33_94a7ccf1-b24f-4613-84df-cf77caf2e84b.jpg?v=1762811453",
+      "vendor": "",
+      "price": 6700,
+      "partNumber": "SA 16612",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16612 Air Filter. Easy to install and replace, the SA 16612 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 247.0 mm",
+        "Dimension 2 (D2): 187.0 mm",
+        "Dimension 3 (D3): 159.0 mm",
+        "Height 1 (H1): 390.0 mm",
+        "Height 2 (H2): 384.0 mm",
+        "Height 3 (H3): 366.0 mm"
+      ],
+      "unitWeight": "2.34 kg",
+      "shippingVolume": "0.025 m³"
+    },
+    {
+      "title": "Donaldson P954411 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16612",
+      "sku": "sa-16612-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p954411.700.700_1d962ed8-67ef-47d5-81d9-4dc3ce5c8c8a.jpg?v=1762811453",
+      "vendor": "",
+      "price": 6100,
+      "partNumber": "P954411",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.79 kg",
+      "shippingVolume": "0.0312 m³"
+    },
+    {
+      "title": "Mann Filter C 26 025 Air Filter | Replaces the HiFi Filter SA 16612",
+      "sku": "sa-16612-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_6134c5fd-c086-4c41-898e-49b415fb7783.jpg?v=1762811453",
+      "vendor": "",
+      "price": 8200,
+      "partNumber": "C 26 025",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 247.0 mm",
+        "Dimension B: 159.0 mm",
+        "Dimension H: 395.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF27878 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16612",
+      "sku": "sa-16612-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27878_e69a22bd-194b-401d-a221-cddbc4bb08e0.jpg?v=1762811453",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "AF27878",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Turkey",
+      "description": "​Fleetguard® AF27878 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.32 kg",
+      "shippingVolume": "0.0339 m³"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "handle": "sa16773",
+  "title": "SA 16773",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-26c0e52d-23cf-413a-bccf-08206f456cd2.jpg?v=1723204295",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p958670.700.700_cb027862-ddc7-4888-b612-08531acf0ee1.jpg?v=1744306138"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16773 Air Filter",
+      "sku": "sa-16773-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-26c0e52d-23cf-413a-bccf-08206f456cd2.jpg?v=1723204295",
+      "vendor": "",
+      "price": 18000,
+      "partNumber": "SA 16773",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16773 Air Filter. Easy to install and replace, the SA 16773 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 339.0 mm",
+        "Dimension 2 (D2): 319.0 mm",
+        "Dimension 3 (D3): 300.0 mm",
+        "Height 1 (H1): 176.0 mm",
+        "Height 2 (H2): 155.0 mm"
+      ],
+      "unitWeight": "1.4 kg",
+      "shippingVolume": "0.0114 m³"
+    },
+    {
+      "title": "Donaldson P958670 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16773",
+      "sku": "sa-16773-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p958670.700.700_cb027862-ddc7-4888-b612-08531acf0ee1.jpg?v=1744306138",
+      "vendor": "",
+      "price": 11600,
+      "partNumber": "P958670",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Why Choose Donaldson PowerCore® filters? Genuine PowerCore filters provide superior protection and performance. • Lower initial restriction protects engine performance and fuel economy. • Greater filter capacity means longer filter life, fewer filter changes and less money spent on maintenance. • PowerCore filters have been meeting original equipment manufacturer specifications for 20+ years. • Reliable, leak resistant Radial Seal™ technology keeps the filter in place – even under heavy vibration.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.42 kg",
+      "shippingVolume": "0.0113 m³"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "handle": "sa10941",
+  "title": "SA 10941",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2189a1e8-d6e5-421e-8047-e34295c84195.jpg?v=1748455987",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771557.700.700_619a3ce8-04ad-4e9e-90a4-d1ce8c42fb3b.jpg?v=1748455987",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ed8ebd64-dff1-4b21-bff4-f7c530d7ed5c.jpg?v=1748455987",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF991_5242d36a-96ea-45c2-8e2a-010e45215355.jpg?v=1755780806"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10941 Air Filter",
+      "sku": "sa-10941-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2189a1e8-d6e5-421e-8047-e34295c84195.jpg?v=1748455987",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "SA 10941",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10941 Air Filter. Easy to install and replace, the SA 10941 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 164.0 mm",
+        "Dimension 2 (D2): 86.0 mm",
+        "Height 1 (H1): 331.0 mm",
+        "Height 2 (H2): 323.0 mm"
+      ],
+      "unitWeight": "1.32 kg",
+      "shippingVolume": "0.0107 m³"
+    },
+    {
+      "title": "Donaldson P771557 Air Filter, Primary Round | Replaces the HiFi Filter SA 10941",
+      "sku": "sa-10941-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771557.700.700_619a3ce8-04ad-4e9e-90a4-d1ce8c42fb3b.jpg?v=1748455987",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "P771557",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.25 kg",
+      "shippingVolume": "0.0116 m³"
+    },
+    {
+      "title": "Mann Filter C 17 250 Air Filter | Replaces the HiFi Filter SA 10941",
+      "sku": "sa-10941-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ed8ebd64-dff1-4b21-bff4-f7c530d7ed5c.jpg?v=1748455987",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "C 17 250",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 165.0 mm",
+        "Dimension B: 86.0 mm",
+        "Dimension H: 331.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF991 Air Filter, Primary | Replaces the HiFi Filter SA 10941",
+      "sku": "sa-10941-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF991_5242d36a-96ea-45c2-8e2a-010e45215355.jpg?v=1755780806",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "AF991",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "India",
+      "description": "​Fleetguard® AF991 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.31 kg",
+      "shippingVolume": "0.0107 m³"
+    }
+  ]
+}

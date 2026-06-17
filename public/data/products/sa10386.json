@@ -1,0 +1,49 @@
+{
+  "handle": "sa10386",
+  "title": "SA 10386",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3baf0a64-e7f2-4f75-8e23-bc7af6ece3e3.jpg?v=1723203007",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF436M_edf7f881-6447-4eed-aab5-ed48dfacb8b8.jpg?v=1755780742"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10386 Air Filter",
+      "sku": "sa-10386-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3baf0a64-e7f2-4f75-8e23-bc7af6ece3e3.jpg?v=1723203007",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 10386",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10386 Air Filter. Easy to install and replace, the SA 10386 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0078 m³"
+    },
+    {
+      "title": "Fleetguard AF436M Air Filter, Primary | Replaces the HiFi Filter SA 10386",
+      "sku": "sa-10386-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF436M_edf7f881-6447-4eed-aab5-ed48dfacb8b8.jpg?v=1755780742",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "AF436M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF436M premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "handle": "sa17239",
+  "title": "SA 17239",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fe618194-5328-4a25-b2ab-2018b3d7103e.jpg?v=1723206544",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d05324db-d8a3-4477-8dcb-c75f66383e05.jpg?v=1743773510"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17239 Air Filter",
+      "sku": "sa-17239-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fe618194-5328-4a25-b2ab-2018b3d7103e.jpg?v=1723206544",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "SA 17239",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17239 Air Filter. Easy to install and replace, the SA 17239 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 185.0 mm",
+        "Dimension 2 (D2): 159.0 mm",
+        "Dimension 3 (D3): 87.5 mm",
+        "Height 1 (H1): 390.0 mm",
+        "Height 2 (H2): 380.0 mm",
+        "Height 3 (H3): 362.0 mm"
+      ],
+      "unitWeight": "1.41 kg",
+      "shippingVolume": "0.0173 m³"
+    },
+    {
+      "title": "Mann Filter C 16 302 Air Filter | Replaces the HiFi Filter SA 17239",
+      "sku": "sa-17239-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d05324db-d8a3-4477-8dcb-c75f66383e05.jpg?v=1743773510",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "C 16 302",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 154.0 mm",
+        "Dimension B: 89.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 154.0 mm",
+        "Dimension E: 200.0 mm",
+        "Dimension H: 392.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "handle": "sa17194",
+  "title": "SA 17194",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0501db07-f7fc-4ed2-8a52-f2568b01ea10.jpg?v=1748456079",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782107.700.700_b709562d-af12-47e6-b1a5-bd1c0177ff59.jpg?v=1748456079",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3b969040-fd93-4bda-8645-685ae0b24240.jpg?v=1748456079",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26398_e2d2a51f-6260-4707-9acb-7ce425132aee.jpg?v=1755780830"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17194 Air Filter",
+      "sku": "sa-17194-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0501db07-f7fc-4ed2-8a52-f2568b01ea10.jpg?v=1748456079",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "SA 17194",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17194 Air Filter. Easy to install and replace, the SA 17194 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 119.0 mm",
+        "Dimension 2 (D2): 114.0 mm",
+        "Dimension 3 (D3): 104.0 mm",
+        "Height 1 (H1): 385.0 mm",
+        "Height 2 (H2): 364.0 mm"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0059 m³"
+    },
+    {
+      "title": "Donaldson P782107 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 17194",
+      "sku": "sa-17194-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782107.700.700_b709562d-af12-47e6-b1a5-bd1c0177ff59.jpg?v=1748456079",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "P782107",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0069 m³"
+    },
+    {
+      "title": "Mann Filter CF 610 Secondary Element | Replaces the HiFi Filter SA 17194",
+      "sku": "sa-17194-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3b969040-fd93-4bda-8645-685ae0b24240.jpg?v=1748456079",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "CF 610",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 117.0 mm",
+        "Dimension H: 387.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26398 Air Filter, Secondary | Replaces the HiFi Filter SA 17194",
+      "sku": "sa-17194-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26398_e2d2a51f-6260-4707-9acb-7ce425132aee.jpg?v=1755780830",
+      "vendor": "",
+      "price": 4700,
+      "partNumber": "AF26398",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF26398 premium Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0057 m³"
+    }
+  ]
+}

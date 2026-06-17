@@ -1,0 +1,54 @@
+{
+  "handle": "sa16077",
+  "title": "SA 16077",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-43028d4f-5dbf-4c15-ad77-6c92b3c816b9.jpg?v=1723203842",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p812801.700.700_553dce33-d58f-49ba-85dd-6d9405dd4b58.jpg?v=1744306060"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16077 Air Filter",
+      "sku": "sa-16077-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-43028d4f-5dbf-4c15-ad77-6c92b3c816b9.jpg?v=1723203842",
+      "vendor": "",
+      "price": 21000,
+      "partNumber": "SA 16077",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16077 Air Filter. Easy to install and replace, the SA 16077 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 220.0 mm",
+        "Dimension 2 (D2): 200.0 mm",
+        "Dimension 3 (D3): 158.0 mm",
+        "Height 1 (H1): 394.0 mm",
+        "Height 2 (H2): 383.0 mm"
+      ],
+      "unitWeight": "2.1 kg",
+      "shippingVolume": "0.0305 m³"
+    },
+    {
+      "title": "Donaldson P812801 Air Filter, Primary Finned | Replaces the HiFi Filter SA 16077",
+      "sku": "sa-16077-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p812801.700.700_553dce33-d58f-49ba-85dd-6d9405dd4b58.jpg?v=1744306060",
+      "vendor": "",
+      "price": 14000,
+      "partNumber": "P812801",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Japan",
+      "description": "Genuine Donaldson P812801 Air Filter, Primary Finned features a finned design that maximizes surface area for enhanced dust-holding capacity and airflow. It effectively filters airborne contaminants, ensuring clean intake air and improving engine performance and longevity. Ideal for engines operating in dusty environments, this primary air filter offers durable construction and long service intervals. Its efficient filtration helps reduce engine wear and supports consistent power output.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.56 kg",
+      "shippingVolume": "0.0297 m³"
+    }
+  ]
+}

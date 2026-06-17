@@ -1,0 +1,38 @@
+{
+  "handle": "sa120",
+  "title": "SA 120",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d265bf4-3bd9-41f0-ba90-47c895db8c7c.jpg?v=1723249434"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 120 Air Filter",
+      "sku": "sa-120-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d265bf4-3bd9-41f0-ba90-47c895db8c7c.jpg?v=1723249434",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "SA 120",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 120 Air Filter. Easy to install and replace, the SA 120 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 190.0 mm",
+        "Dimension 2 (D2): 175.0 mm",
+        "Dimension 3 (D3): 168.0 mm",
+        "Height 1 (H1): 66.0 mm",
+        "Height 2 (H2): 41.0 mm",
+        "Height 3 (H3): 13.0 mm"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0025 m³"
+    }
+  ]
+}

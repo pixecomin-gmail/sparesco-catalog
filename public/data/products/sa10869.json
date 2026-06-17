@@ -1,0 +1,88 @@
+{
+  "handle": "sa10869",
+  "title": "SA 10869",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0225afab-3dae-4663-91de-a48a26ba22e0.jpg?v=1723205241",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131343.700.700_d9595cdb-c01c-46ea-8810-8d2ab24eb5ba.jpg?v=1744305986",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AUT6Zl7m1VE6HaCrwNzxr49tgY5Fc2gG5_967077fc-a4f8-4172-b230-4cd9bcd4f751.png?v=1751027848",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF919_2ccbfff9-7ee4-4a41-9ff8-c22b3a01deb9.jpg?v=1755780777"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10869 Air Filter",
+      "sku": "sa-10869-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0225afab-3dae-4663-91de-a48a26ba22e0.jpg?v=1723205241",
+      "vendor": "",
+      "price": 8600,
+      "partNumber": "SA 10869",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10869 Air Filter. Easy to install and replace, the SA 10869 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 307.0 mm",
+        "Dimension 2 (D2): 196.0 mm",
+        "Dimension 3 (D3): 17.0 mm",
+        "Height 1 (H1): 469.0 mm",
+        "Height 2 (H2): 456.0 mm"
+      ],
+      "unitWeight": "4.5 kg",
+      "shippingVolume": "0.06 m³"
+    },
+    {
+      "title": "Donaldson P131343 Air Filter, Primary Round | Replaces the HiFi Filter SA 10869",
+      "sku": "sa-10869-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131343.700.700_d9595cdb-c01c-46ea-8810-8d2ab24eb5ba.jpg?v=1744305986",
+      "vendor": "",
+      "price": 7100,
+      "partNumber": "P131343",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.22 kg",
+      "shippingVolume": "0.0486 m³"
+    },
+    {
+      "title": "FIL Filter HP 463 | Replaces the HiFi Filter SA 10869",
+      "sku": "sa-10869-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AUT6Zl7m1VE6HaCrwNzxr49tgY5Fc2gG5_967077fc-a4f8-4172-b230-4cd9bcd4f751.png?v=1751027848",
+      "vendor": "",
+      "price": 8200,
+      "partNumber": "HP 463",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 463. Easy to install and replace, the HP 463 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF919 Air Filter, Primary | Replaces the HiFi Filter SA 10869",
+      "sku": "sa-10869-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF919_2ccbfff9-7ee4-4a41-9ff8-c22b3a01deb9.jpg?v=1755780777",
+      "vendor": "",
+      "price": 8200,
+      "partNumber": "AF919",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF919 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.92 kg",
+      "shippingVolume": "0.0481 m³"
+    }
+  ]
+}

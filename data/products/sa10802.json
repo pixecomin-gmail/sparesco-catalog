@@ -1,0 +1,54 @@
+{
+  "handle": "sa10802",
+  "title": "SA 10802",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b36d774d-2adf-483c-b57c-829cb567a678_cf06dbcf-c376-4051-8bc2-64d31e04c064.jpg?v=1762811392",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF852M_5e1e9af6-4df0-4437-b39b-eb529c632438.jpg?v=1762811392"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10802 Air Filter",
+      "sku": "sa-10802-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b36d774d-2adf-483c-b57c-829cb567a678_cf06dbcf-c376-4051-8bc2-64d31e04c064.jpg?v=1762811392",
+      "vendor": "",
+      "price": 12600,
+      "partNumber": "SA 10802",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10802 Air Filter. Easy to install and replace, the SA 10802 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 324.0 mm",
+        "Dimension 2 (D2): 212.0 mm",
+        "Dimension 3 (D3): 5.0 mm",
+        "Height 1 (H1): 584.0 mm",
+        "Height 2 (H2): 560.0 mm"
+      ],
+      "unitWeight": "4.76 kg",
+      "shippingVolume": "0.0756 m³"
+    },
+    {
+      "title": "Fleetguard AF852M Air Filter | Replaces the HiFi Filter SA 10802",
+      "sku": "sa-10802-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF852M_5e1e9af6-4df0-4437-b39b-eb529c632438.jpg?v=1762811392",
+      "vendor": "",
+      "price": 18200,
+      "partNumber": "AF852M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF852M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.46 kg",
+      "shippingVolume": "0.0717 m³"
+    }
+  ]
+}

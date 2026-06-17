@@ -1,0 +1,66 @@
+{
+  "handle": "sa25189",
+  "title": "SA 25189",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8108366f-d1b8-4957-b897-11b404217c62.jpg?v=1723209962",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778778.700.700_e8199627-0c93-4650-95cb-b3154c37317e.jpg?v=1744306190",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25239_11174fa1-212f-40b7-98b4-08a8dfc602c1.jpg?v=1755780852"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 25189 Air Filter",
+      "sku": "sa-25189-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8108366f-d1b8-4957-b897-11b404217c62.jpg?v=1723209962",
+      "vendor": "",
+      "price": 14100,
+      "partNumber": "SA 25189",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 25189 Air Filter. Easy to install and replace, the SA 25189 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "7.12 kg",
+      "shippingVolume": "0.0664 m³"
+    },
+    {
+      "title": "Donaldson P778778 Air Filter, Primary Round | Replaces the HiFi Filter SA 25189",
+      "sku": "sa-25189-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778778.700.700_e8199627-0c93-4650-95cb-b3154c37317e.jpg?v=1744306190",
+      "vendor": "",
+      "price": 18400,
+      "partNumber": "P778778",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.95 kg",
+      "shippingVolume": "0.0852 m³"
+    },
+    {
+      "title": "Fleetguard AF25239 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 25189",
+      "sku": "sa-25189-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25239_11174fa1-212f-40b7-98b4-08a8dfc602c1.jpg?v=1755780852",
+      "vendor": "",
+      "price": 12000,
+      "partNumber": "AF25239",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® AF25239 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.6 kg",
+      "shippingVolume": "0.1072 m³"
+    }
+  ]
+}

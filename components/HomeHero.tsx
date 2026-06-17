@@ -2,14 +2,24 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { searchProducts } from "@/lib/products";
 
 export default function HomeHero() {
+  const router = useRouter();
   const [query, setQuery] = useState("");
 
   const results = useMemo(() => {
     return searchProducts(query, 4);
   }, [query]);
+
+  const submitSearch = () => {
+    const trimmedQuery = query.trim();
+
+    if (!trimmedQuery) return;
+
+    router.push(`/search?q=${encodeURIComponent(trimmedQuery)}`);
+  };
 
   return (
     <section className="home-hero">
@@ -28,15 +38,21 @@ export default function HomeHero() {
             type="text"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                submitSearch();
+              }
+            }}
             placeholder="Search by part number, brand or description..."
           />
 
-          <Link
-            href={`/search?q=${encodeURIComponent(query)}`}
+          <button
+            type="button"
             className="home-search-link"
+            onClick={submitSearch}
           >
             Search
-          </Link>
+          </button>
         </div>
 
         {results.length > 0 && (
@@ -68,7 +84,7 @@ export default function HomeHero() {
             </div>
 
             <Link
-              href={`/search?q=${encodeURIComponent(query)}`}
+              href={`/search?q=${encodeURIComponent(query.trim())}`}
               className="hero-view-all"
             >
               View all results →

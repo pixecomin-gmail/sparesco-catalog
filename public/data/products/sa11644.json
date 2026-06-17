@@ -1,0 +1,49 @@
+{
+  "handle": "sa11644",
+  "title": "SA 11644",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97b70458-6a24-492a-8762-d8c1d4ad272c.jpg?v=1723205667",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1694_871062c1-f04c-4745-bd3d-a3698a2ed44f.jpg?v=1755780783"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11644 Air Filter",
+      "sku": "sa-11644-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97b70458-6a24-492a-8762-d8c1d4ad272c.jpg?v=1723205667",
+      "vendor": "",
+      "price": 11900,
+      "partNumber": "SA 11644",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11644 Air Filter. Easy to install and replace, the SA 11644 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.33 kg",
+      "shippingVolume": "0.0103 m³"
+    },
+    {
+      "title": "Fleetguard AF1694 Air Filter, Primary | Replaces the HiFi Filter SA 11644",
+      "sku": "sa-11644-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1694_871062c1-f04c-4745-bd3d-a3698a2ed44f.jpg?v=1755780783",
+      "vendor": "",
+      "price": 6900,
+      "partNumber": "AF1694",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1694 air filtration products are designed to effectively reduce the amount of damage-causing dust and dirt particles that make their way into your equipment’s engine.  Every Fleetguard product meets or surpasses the quality and performance standards required by a new engine.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.35 kg",
+      "shippingVolume": "0.0095 m³"
+    }
+  ]
+}

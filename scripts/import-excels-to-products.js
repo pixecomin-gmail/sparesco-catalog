@@ -37,11 +37,25 @@ function slugify(value) {
     .replace(/^-+|-+$/g, "");
 }
 
+function normalizeProductHandle(value) {
+  return String(value || "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function normalizeForCompare(value) {
+  return String(value || "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]/g, "");
+}
+
 function clean(value) {
   if (value === undefined || value === null) return "";
   if (typeof value === "number") return String(value);
   const text = String(value).trim();
-  return text === "nan" ? "" : text;
+  return text.toLowerCase() === "nan" ? "" : text;
 }
 
 function splitValue(value) {
@@ -59,38 +73,37 @@ function cleanNumber(value) {
   return Number.isFinite(num) ? num : 0;
 }
 
-function readExcel(filePath, collectionName, collectionHandle, productsMap) {
+function variantQualityScore(variant) {
+  let score = 0;
+
+  if (variant.image) score += 5;
+  if (variant.price > 0) score += 5;
+  if (variant.description) score += variant.description.length;
+  if (variant.specifications?.length) score += variant.specifications.length * 10;
+  if (variant.hsCode) score += 2;
+  if (variant.countryOfOrigin) score += 2;
+  if (variant.unitWeight) score += 2;
+  if (variant.shippingVolume) score += 2;
+
+  return score;
+}
+
+function readExcel(filePath, collectionName, collectionHandle, productsMap, duplicateRows) {
   console.log(`Reading: ${filePath}`);
 
   const workbook = XLSX.readFile(filePath);
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   const rows = XLSX.utils.sheet_to_json(sheet, { defval: "" });
 
-  rows.forEach((row) => {
-    const handle = clean(row[COL.handle]);
+  rows.forEach((row, rowIndex) => {
+    const originalHandle = clean(row[COL.handle]);
+    if (!originalHandle) return;
+
+    const handle = normalizeProductHandle(originalHandle);
     if (!handle) return;
 
-    const productTitle = clean(row[COL.title]) || handle;
+    const productTitle = clean(row[COL.title]) || originalHandle;
     const image = clean(row[COL.variantImage]) || clean(row[COL.imageSrc]);
-
-    if (!productsMap.has(handle)) {
-      productsMap.set(handle, {
-        handle,
-        title: productTitle,
-        collection: collectionName,
-        collectionHandle,
-        category: collectionName,
-        tags: splitValue(row[COL.tags]),
-        images: [],
-        variants: [],
-      });
-    }
-
-    const product = productsMap.get(handle);
-
-    if (image && !product.images.includes(image)) {
-      product.images.push(image);
-    }
 
     const sku = clean(row[COL.sku]);
     const partNumber = clean(row[COL.partNumber]) || sku || productTitle;
@@ -100,7 +113,7 @@ function readExcel(filePath, collectionName, collectionHandle, productsMap) {
 
     const variant = {
       title: variantTitle,
-      sku,
+      sku: sku || `${handle}-${normalizeForCompare(partNumber || variantTitle)}`,
       image,
       vendor: clean(row[COL.vendor]),
       price: cleanNumber(row[COL.price]),
@@ -113,18 +126,89 @@ function readExcel(filePath, collectionName, collectionHandle, productsMap) {
       shippingVolume: clean(row[COL.shippingVolume]),
     };
 
-    const alreadyExists = product.variants.some(
-      (item) => item.sku === variant.sku
-    );
-
-    if (!alreadyExists) {
-      product.variants.push(variant);
+    if (!productsMap.has(handle)) {
+      productsMap.set(handle, {
+        handle,
+        title: productTitle,
+        collection: collectionName,
+        collectionHandle,
+        category: collectionName,
+        tags: splitValue(row[COL.tags]),
+        images: [],
+        variants: [],
+        _variantKeys: new Map(),
+        _sourceHandles: new Set([originalHandle]),
+      });
     }
+
+    const product = productsMap.get(handle);
+
+    if (!product._sourceHandles.has(originalHandle)) {
+      duplicateRows.push({
+        "Duplicate Type": "Handle Normalized",
+        "Original Handle": originalHandle,
+        "Normalized Handle": handle,
+        "Existing Product Title": product.title,
+        "Incoming Product Title": productTitle,
+        "Part Number": partNumber,
+        "Variant Title": variantTitle,
+        "Excel File": filePath,
+        "Excel Row": rowIndex + 2,
+        "Action": "Merged into same product",
+      });
+
+      product._sourceHandles.add(originalHandle);
+    }
+
+    if (image && !product.images.includes(image)) {
+      product.images.push(image);
+    }
+
+    const variantKey = [
+      normalizeForCompare(partNumber),
+      normalizeForCompare(variantTitle),
+    ].join("__");
+
+    if (product._variantKeys.has(variantKey)) {
+      const existingIndex = product._variantKeys.get(variantKey);
+      const existingVariant = product.variants[existingIndex];
+
+      duplicateRows.push({
+        "Duplicate Type": "Duplicate Variant",
+        "Original Handle": originalHandle,
+        "Normalized Handle": handle,
+        "Existing Product Title": product.title,
+        "Incoming Product Title": productTitle,
+        "Part Number": partNumber,
+        "Variant Title": variantTitle,
+        "Excel File": filePath,
+        "Excel Row": rowIndex + 2,
+        "Action": "Duplicate variant skipped or replaced if better",
+      });
+
+      if (variantQualityScore(variant) > variantQualityScore(existingVariant)) {
+        product.variants[existingIndex] = variant;
+      }
+
+      return;
+    }
+
+    product._variantKeys.set(variantKey, product.variants.length);
+    product.variants.push(variant);
   });
 }
 
 const productsMap = new Map();
 const collectionsMap = new Map();
+const duplicateRows = [];
+
+const oldProductFiles = fs
+  .readdirSync(productsDir)
+  .filter((file) => file.endsWith(".json"));
+
+oldProductFiles.forEach((file) => {
+  fs.unlinkSync(path.join(productsDir, file));
+});
 
 const collectionFolders = fs
   .readdirSync(importsDir, { withFileTypes: true })
@@ -150,12 +234,17 @@ collectionFolders.forEach((folder) => {
       path.join(collectionPath, file),
       collectionName,
       collectionHandle,
-      productsMap
+      productsMap,
+      duplicateRows
     );
   });
 });
 
-const products = Array.from(productsMap.values());
+const products = Array.from(productsMap.values()).map((product) => {
+  delete product._variantKeys;
+  delete product._sourceHandles;
+  return product;
+});
 
 products.forEach((product) => {
   const productPath = path.join(productsDir, `${product.handle}.json`);
@@ -195,6 +284,38 @@ fs.writeFileSync(
   "utf8"
 );
 
+const duplicateReportPath = path.join(dataDir, "duplicate-products-report.xlsx");
+
+const duplicateWorkbook = XLSX.utils.book_new();
+const duplicateSheet = XLSX.utils.json_to_sheet(
+  duplicateRows.length
+    ? duplicateRows
+    : [
+        {
+          "Duplicate Type": "No duplicates found",
+          "Original Handle": "",
+          "Normalized Handle": "",
+          "Existing Product Title": "",
+          "Incoming Product Title": "",
+          "Part Number": "",
+          "Variant Title": "",
+          "Excel File": "",
+          "Excel Row": "",
+          "Action": "",
+        },
+      ]
+);
+
+XLSX.utils.book_append_sheet(
+  duplicateWorkbook,
+  duplicateSheet,
+  "Duplicate Report"
+);
+
+XLSX.writeFile(duplicateWorkbook, duplicateReportPath);
+
 console.log(`Generated ${products.length} grouped product files`);
 console.log(`Generated products-index.json`);
 console.log(`Generated collections.json`);
+console.log(`Generated duplicate report: ${duplicateReportPath}`);
+console.log(`Duplicate rows found: ${duplicateRows.length}`);

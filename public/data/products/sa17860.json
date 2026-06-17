@@ -1,0 +1,73 @@
+{
+  "handle": "sa17860",
+  "title": "SA 17860",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a1391f2f-1d0e-4a17-86f3-df22358c3d59.jpg?v=1723206885",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777948.700.700_bd729d44-c7c6-4892-b684-8baaa7238e7e.jpg?v=1744306180",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25237_e8926cac-4ab7-4739-8e8b-046faf9f3f4d.jpg?v=1755780808"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17860 Air Filter",
+      "sku": "sa-17860-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a1391f2f-1d0e-4a17-86f3-df22358c3d59.jpg?v=1723206885",
+      "vendor": "",
+      "price": 7600,
+      "partNumber": "SA 17860",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17860 Air Filter. Easy to install and replace, the SA 17860 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 242.0 mm",
+        "Dimension 2 (D2): 128.0 mm",
+        "Thread 1 (D7): M8X1",
+        "25",
+        "Height 1 (H1): 418.0 mm",
+        "Height 2 (H2): 31.0 mm",
+        "Height 3 (H3): 18.0 mm"
+      ],
+      "unitWeight": "2.8 kg",
+      "shippingVolume": "0.0326 m³"
+    },
+    {
+      "title": "Donaldson P777948 Air Filter, Primary Round | Replaces the HiFi Filter SA 17860",
+      "sku": "sa-17860-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777948.700.700_bd729d44-c7c6-4892-b684-8baaa7238e7e.jpg?v=1744306180",
+      "vendor": "",
+      "price": 7400,
+      "partNumber": "P777948",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P777948 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.43 kg",
+      "shippingVolume": "0.0313 m³"
+    },
+    {
+      "title": "Fleetguard AF25237 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 17860",
+      "sku": "sa-17860-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25237_e8926cac-4ab7-4739-8e8b-046faf9f3f4d.jpg?v=1755780808",
+      "vendor": "",
+      "price": 6300,
+      "partNumber": "AF25237",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25237 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.55 kg",
+      "shippingVolume": "0.0309 m³"
+    }
+  ]
+}

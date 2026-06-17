@@ -1,0 +1,74 @@
+{
+  "handle": "sa10294",
+  "title": "SA 10294",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f4249b4a-7cea-43ff-94ef-a5bb40365dc0.jpg?v=1723205908",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_24_4441_image1_785b05b9-cc60-438e-94c8-8ea5109c7a81.jpg?v=1754909314",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF344M_c89a515e-2a2d-4e82-b7da-b0b46a8d133e.jpg?v=1755780803"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10294 Air Filter",
+      "sku": "sa-10294-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f4249b4a-7cea-43ff-94ef-a5bb40365dc0.jpg?v=1723205908",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "SA 10294",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10294 Air Filter. Easy to install and replace, the SA 10294 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 234.0 mm",
+        "Dimension 2 (D2): 123.0 mm",
+        "Height 1 (H1): 315.0 mm",
+        "Height 2 (H2): 304.0 mm",
+        "Height 3 (H3): 17.0 mm"
+      ],
+      "unitWeight": "2.18 kg",
+      "shippingVolume": "0.0218 m³"
+    },
+    {
+      "title": "Mann Filter C 24 444/1 Air Filter | Replaces the HiFi Filter SA 10294",
+      "sku": "sa-10294-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_24_4441_image1_785b05b9-cc60-438e-94c8-8ea5109c7a81.jpg?v=1754909314",
+      "vendor": "",
+      "price": 5800,
+      "partNumber": "C 24 444/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 234.0 mm",
+        "Dimension B: 126.0 mm",
+        "Dimension H: 318.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF344M Air Filter, Primary | Replaces the HiFi Filter SA 10294",
+      "sku": "sa-10294-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF344M_c89a515e-2a2d-4e82-b7da-b0b46a8d133e.jpg?v=1755780803",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "AF344M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF344M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.16 kg",
+      "shippingVolume": "0.0195 m³"
+    }
+  ]
+}

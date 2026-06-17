@@ -1,0 +1,55 @@
+{
+  "handle": "sa11795k",
+  "title": "SA 11795 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9906992-6308-4f20-8407-568c48edc121.jpg?v=1723212135",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1845K_d2cfa486-af7b-4496-a646-ac72261e8e61.jpg?v=1755780882"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11795 K Air Filter",
+      "sku": "sa-11795-k-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9906992-6308-4f20-8407-568c48edc121.jpg?v=1723212135",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 11795 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11795 K Air Filter. Easy to install and replace, the SA 11795 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 159.0 mm",
+        "Dimension 2 (D2): 133.0 mm",
+        "Dimension 3 (D3): 70.0 mm",
+        "Height 1 (H1): 315.0 mm",
+        "Height 2 (H2): 307.0 mm",
+        "Height 3 (H3): 285.0 mm"
+      ],
+      "unitWeight": "1.12 kg",
+      "shippingVolume": "0.0107 m³"
+    },
+    {
+      "title": "Fleetguard AF1845K Air Filter, Primary | Replaces the HiFi Filter SA 11795 K",
+      "sku": "sa-11795-k-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1845K_d2cfa486-af7b-4496-a646-ac72261e8e61.jpg?v=1755780882",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "AF1845K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF1845K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.91 kg",
+      "shippingVolume": "0.0109 m³"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "handle": "sa6253",
+  "title": "SA 6253",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-26106e5e-7a2b-4638-b527-46968f4adb33.jpg?v=1723234776",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8dd5a0a2-c247-4723-a23a-929edb3c56c2.jpg?v=1743773748",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4354_909f1c2f-be9a-4787-aa43-e4248ebfa152.jpg?v=1755780999"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6253 Air Filter",
+      "sku": "sa-6253-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-26106e5e-7a2b-4638-b527-46968f4adb33.jpg?v=1723234776",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "SA 6253",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6253 Air Filter. Easy to install and replace, the SA 6253 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.004 m³"
+    },
+    {
+      "title": "Mann Filter C 28 050 Air Filter | Replaces the HiFi Filter SA 6253",
+      "sku": "sa-6253-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8dd5a0a2-c247-4723-a23a-929edb3c56c2.jpg?v=1743773748",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "C 28 050",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 281.0 mm",
+        "Dimension B: 181.0 mm",
+        "Dimension H: 67.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4354 Air Filter Filter - Panel | Replaces the HiFi Filter SA 6253",
+      "sku": "sa-6253-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4354_909f1c2f-be9a-4787-aa43-e4248ebfa152.jpg?v=1755780999",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "AF4354",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Spain",
+      "description": "​Fleetguard® AF4354 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.41 kg",
+      "shippingVolume": "0.0038 m³"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "handle": "sa17274",
+  "title": "SA 17274",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f0aafcb-b102-4388-94df-2e4a066ce1f9_473e1d20-a0b6-42f7-a2a4-905211d49d0a.jpg?v=1762811182",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p784198.700.700_e13b790e-2168-4414-ba38-3fe180aa695e.jpg?v=1762811182",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25876_2919d082-851d-461a-af79-e9fb4e18d4c8.jpg?v=1762811182"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17274 Air Filter",
+      "sku": "sa-17274-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f0aafcb-b102-4388-94df-2e4a066ce1f9_473e1d20-a0b6-42f7-a2a4-905211d49d0a.jpg?v=1762811182",
+      "vendor": "",
+      "price": 11800,
+      "partNumber": "SA 17274",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 17274 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 17274 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 245.0 mm",
+        "Dimension 2 (D2): 150.0 mm",
+        "Dimension 3 (D3): 139.0 mm",
+        "Height 1 (H1): 413.0 mm",
+        "Height 2 (H2): 395.0 mm",
+        "Height 3 (H3): 376.0 mm"
+      ],
+      "unitWeight": "2.6 kg",
+      "shippingVolume": "0.0353 m³"
+    },
+    {
+      "title": "Donaldson P784198 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 17274",
+      "sku": "sa-17274-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p784198.700.700_e13b790e-2168-4414-ba38-3fe180aa695e.jpg?v=1762811182",
+      "vendor": "",
+      "price": 7600,
+      "partNumber": "P784198",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Replacement Filters? Replacement filters for Mann+Hummel® Europiclon® Air Cleaners deliver superior performance and proven protection. • High-efficiency cellulose media is a proven performer across a wide range of heavy-duty diesel engine applications. • Unique sawtooth design compresses to cushion and hold the filter in place, providing a secure seal – even in severe environments. • RadialSeal™ design allows for fast filter changes. • Durable structural support protects filters from damage or collapse in heavy vibration applications or humid conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.25 kg",
+      "shippingVolume": "0.0314 m³"
+    },
+    {
+      "title": "Fleetguard AF25876 Air Filter, Primary | Replaces the HiFi Filter SA 17274",
+      "sku": "sa-17274-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25876_2919d082-851d-461a-af79-e9fb4e18d4c8.jpg?v=1762811182",
+      "vendor": "",
+      "price": 8400,
+      "partNumber": "AF25876",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25876 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.28 kg",
+      "shippingVolume": "0.0315 m³"
+    }
+  ]
+}

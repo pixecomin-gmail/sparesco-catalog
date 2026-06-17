@@ -1,0 +1,94 @@
+{
+  "handle": "sa14100",
+  "title": "SA 14100",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8b8503ca-151d-43f2-88b0-eb39bc9afde2.jpg?v=1748456002",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119778.700.700_a70d0078-002d-41f8-8ef2-5790195773a5.jpg?v=1748456002",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1122_image1_ee04bce7-edb9-4c57-ac6a-58d776a8537c.jpg?v=1754909294",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4150_029bd8fe-cdbd-4be3-85db-6ac5166d5074.jpg?v=1755780774"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14100 Air Filter",
+      "sku": "sa-14100-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8b8503ca-151d-43f2-88b0-eb39bc9afde2.jpg?v=1748456002",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "SA 14100",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14100 Air Filter. Easy to install and replace, the SA 14100 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 123.0 mm",
+        "Dimension 2 (D2): 104.0 mm",
+        "Dimension 3 (D3): 92.0 mm",
+        "Height 1 (H1): 381.0 mm",
+        "Height 2 (H2): 376.0 mm",
+        "Height 3 (H3): 364.0 mm"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0063 m³"
+    },
+    {
+      "title": "Donaldson P119778 Air Filter, Safety | Replaces the HiFi Filter SA 14100",
+      "sku": "sa-14100-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119778.700.700_a70d0078-002d-41f8-8ef2-5790195773a5.jpg?v=1748456002",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "P119778",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0078 m³"
+    },
+    {
+      "title": "Mann Filter CF 1122 Secondary Element | Replaces the HiFi Filter SA 14100",
+      "sku": "sa-14100-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1122_image1_ee04bce7-edb9-4c57-ac6a-58d776a8537c.jpg?v=1754909294",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "CF 1122",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Brazil",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 122.0 mm",
+        "Dimension B: 93.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 104.0 mm",
+        "Dimension H: 383.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4150 Air Filter, Secondary | Replaces the HiFi Filter SA 14100",
+      "sku": "sa-14100-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4150_029bd8fe-cdbd-4be3-85db-6ac5166d5074.jpg?v=1755780774",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "AF4150",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Turkey",
+      "description": "​Fleetguard® AF4150 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.57 kg",
+      "shippingVolume": "0.0072 m³"
+    }
+  ]
+}

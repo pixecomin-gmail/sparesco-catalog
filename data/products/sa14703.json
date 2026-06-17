@@ -1,0 +1,73 @@
+{
+  "handle": "sa14703",
+  "title": "SA 14703",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edc7c4a3-b901-4a64-8b78-c5c2edf953a6_e80c52a3-4c3a-477e-ab8f-634f91633187.jpg?v=1762811576",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772524.700.700_447a01a6-2dcf-4b36-b5a1-ff2be8ecd89f.jpg?v=1762811576",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4753M_9246dd9d-7a81-47f3-87c3-32954d526147.jpg?v=1762811576"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14703 Air Filter",
+      "sku": "sa-14703-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edc7c4a3-b901-4a64-8b78-c5c2edf953a6_e80c52a3-4c3a-477e-ab8f-634f91633187.jpg?v=1762811576",
+      "vendor": "",
+      "price": 10600,
+      "partNumber": "SA 14703",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14703 Air Filter. Easy to install and replace, the SA 14703 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 321.0 mm",
+        "Dimension 2 (D2): 264.5 mm",
+        "Dimension 3 (D3): 152.0 mm",
+        "Thread 1 (D7): 7/16\"-20UNF",
+        "Height 1 (H1): 422.0 mm",
+        "Height 2 (H2): 410.0 mm",
+        "Height 3 (H3): 391.0 mm"
+      ],
+      "unitWeight": "3.52 kg",
+      "shippingVolume": "0.0499 m³"
+    },
+    {
+      "title": "Donaldson P771524 Air Filter, Primary Round | Replaces the HiFi Filter SA 14703",
+      "sku": "sa-14703-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772524.700.700_447a01a6-2dcf-4b36-b5a1-ff2be8ecd89f.jpg?v=1762811576",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "P771524",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.58 kg",
+      "shippingVolume": "0.0468 m³"
+    },
+    {
+      "title": "Fleetguard AF4753M Air, Primary | Replaces the HiFi Filter SA 14703",
+      "sku": "sa-14703-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4753M_9246dd9d-7a81-47f3-87c3-32954d526147.jpg?v=1762811576",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "AF4753M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4753M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.08 kg",
+      "shippingVolume": "0.052 m³"
+    }
+  ]
+}

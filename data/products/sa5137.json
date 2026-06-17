@@ -1,0 +1,52 @@
+{
+  "handle": "sa5137",
+  "title": "SA 5137",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-01ac4677-36ac-495f-976c-f57126fa458d.jpg?v=1723212749",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_30_1381_image1.jpg?v=1754909451"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5137 Air Filter",
+      "sku": "sa-5137-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-01ac4677-36ac-495f-976c-f57126fa458d.jpg?v=1723212749",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 5137",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5137 Air Filter. Easy to install and replace, the SA 5137 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0033 m³"
+    },
+    {
+      "title": "Mann Filter C 30 138/1 Air Filter | Replaces the HiFi Filter SA 5137",
+      "sku": "sa-5137-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_30_1381_image1.jpg?v=1754909451",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "C 30 138/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 293.0 mm",
+        "Dimension B: 224.0 mm",
+        "Dimension H: 42.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

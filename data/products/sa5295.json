@@ -1,0 +1,55 @@
+{
+  "handle": "sa5295",
+  "title": "SA 5295",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-56d09f90-e161-409f-b04c-d494a6f7308f.jpg?v=1723203068",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25069_b0d635ce-40d4-4151-8725-a67de45fa05d.jpg?v=1755780733"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5295 Air Filter",
+      "sku": "sa-5295-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-56d09f90-e161-409f-b04c-d494a6f7308f.jpg?v=1723203068",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "SA 5295",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5295 Air Filter. Easy to install and replace, the SA 5295 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 185.0 mm",
+        "Dimension 2 (D2): 165.0 mm",
+        "Dimension 3 (D3): 150.0 mm",
+        "Height 1 (H1): 335.0 mm",
+        "Height 2 (H2): 316.0 mm",
+        "Height 3 (H3): 240.0 mm"
+      ],
+      "unitWeight": "1.58 kg",
+      "shippingVolume": "0.014 m³"
+    },
+    {
+      "title": "Fleetguard AF25069 Air Filter | Replaces the HiFi Filter SA 5295",
+      "sku": "sa-5295-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25069_b0d635ce-40d4-4151-8725-a67de45fa05d.jpg?v=1755780733",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "AF25069",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25069 air filter offers more filtering surface than standard air filters, is located above the engine to draw cool, clean air, needs less maintenance time and cost, and has easy filter removal.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.25 kg",
+      "shippingVolume": "0.0148 m³"
+    }
+  ]
+}

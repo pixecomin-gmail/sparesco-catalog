@@ -1,0 +1,71 @@
+{
+  "handle": "sa10314",
+  "title": "SA 10314",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d40b4e4-830d-42a5-bf19-2682d9956098.jpg?v=1723202802",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524392.700.700_97c6634c-b59f-4897-93cf-7789a63348ad.jpg?v=1744305968",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF364_b4ce0ac0-a7cf-40ee-a50c-59fcc339a97f.jpg?v=1755780736"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10314 Air Filter",
+      "sku": "sa-10314-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d40b4e4-830d-42a5-bf19-2682d9956098.jpg?v=1723202802",
+      "vendor": "",
+      "price": 1200,
+      "partNumber": "SA 10314",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10314 Air Filter. Easy to install and replace, the SA 10314 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 76.0 mm",
+        "Dimension 2 (D2): 39.0 mm",
+        "Dimension 3 (D3): 39.0 mm",
+        "Height 1 (H1): 35.0 mm",
+        "Height 2 (H2): 32.0 mm"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0003 m³"
+    },
+    {
+      "title": "Donaldson P524392 Breather, Air Cylindrical | Replaces the HiFi Filter SA 10314",
+      "sku": "sa-10314-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524392.700.700_97c6634c-b59f-4897-93cf-7789a63348ad.jpg?v=1744305968",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "P524392",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P524392 Breather, Air Cylindrical is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.02 kg",
+      "shippingVolume": "0.0001 m³"
+    },
+    {
+      "title": "Fleetguard AF364 Air Filter | Replaces the HiFi Filter SA 10314",
+      "sku": "sa-10314-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF364_b4ce0ac0-a7cf-40ee-a50c-59fcc339a97f.jpg?v=1755780736",
+      "vendor": "",
+      "price": 1000,
+      "partNumber": "AF364",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "China",
+      "description": "​Fleetguard® AF364 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0004 m³"
+    }
+  ]
+}

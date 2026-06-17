@@ -1,0 +1,74 @@
+{
+  "handle": "sao8545",
+  "title": "SAO 8545",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e6f1ab5-9138-4854-82fd-b7ae94a128e4.jpg?v=1723206870",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LC_7009_x_image1.jpg?v=1754909332",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CV50848_c69e61b9-41de-44db-986e-24b8b8ccd338.jpg?v=1755780811"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 8545 Engine Breather Filter",
+      "sku": "sao-8545-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e6f1ab5-9138-4854-82fd-b7ae94a128e4.jpg?v=1723206870",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "SAO 8545",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 8545 Engine Breather Filter. Easy to install and replace, the SAO 8545 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER",
+        "Dimension 1 (D1): 71.0 mm",
+        "Dimension 2 (D2): 27.0 mm",
+        "Dimension 3 (D3): 27.0 mm",
+        "Height 1 (H1): 76.0 mm",
+        "Height 2 (H2): 72.0 mm"
+      ],
+      "unitWeight": "0.08 kg",
+      "shippingVolume": "0.0006 m³"
+    },
+    {
+      "title": "Mann Filter LC 7009 x Positive Crankcase Ventilation | Replaces the HiFi Filter SAO 8545",
+      "sku": "sao-8545-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LC_7009_x_image1.jpg?v=1754909332",
+      "vendor": "",
+      "price": 5500,
+      "partNumber": "LC 7009 x",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "",
+      "description": "Reliable crankcase ventilation filters from MANN-FILTER efficiently separate oil droplets from the blow-by gasses in the crankcase. This separation protects the intake system from contamination with oil and thus maintains its reliability.",
+      "specifications": [
+        "Style: Positive Crankcase Ventilation",
+        "Dimension A: 71.0 mm",
+        "Dimension B: 26.0 mm",
+        "Dimension H: 76.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard CV50848 Crankcase Ventilation | Replaces the HiFi Filter SAO 8545",
+      "sku": "sao-8545-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CV50848_c69e61b9-41de-44db-986e-24b8b8ccd338.jpg?v=1755780811",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "CV50848",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® CV50848 crankcase ventilation unit features patented technologies that control oil drip and emissions with the highest oil and particle removal efficiency available.",
+      "specifications": [
+        "Style: Engine Breather Filter"
+      ],
+      "unitWeight": "0.09 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "handle": "sao55500",
-  "title": "SAO55500",
+  "title": "SAO 55500",
   "collection": "Air Filters",
   "collectionHandle": "air-filters",
   "category": "Air Filters",
@@ -9,14 +9,16 @@
     "ff1225"
   ],
   "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e354c602-449a-45ff-b812-784dce2e236b.jpg?v=1748456115",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b97bc666-bbdb-4e03-8789-d41e6253dae1_52a07d72-4bda-4974-b2fe-64c28f535ba0.jpg?v=1761656830",
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_0a7665d2-1867-471a-98bb-f82d3a9eeba0.jpg?v=1748456114",
     "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b97bc666-bbdb-4e03-8789-d41e6253dae1_9ab60af6-522a-48c1-b58c-3b2644d6c33b.jpg?v=1761658074"
   ],
   "variants": [
     {
-      "title": "Mann Filter LE 9019 Compressed Air-Oil Separation | Replaces the SF Filter SAO55500",
-      "sku": "sao55500-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_0a7665d2-1867-471a-98bb-f82d3a9eeba0.jpg?v=1748456114",
+      "title": "Mann Filter LE 9019 Compressed Air-Oil Separation | Replaces the SF Filter SAO 55500",
+      "sku": "sao-55500-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e354c602-449a-45ff-b812-784dce2e236b.jpg?v=1748456115",
       "vendor": "",
       "price": 4000,
       "partNumber": "LE 9019",
@@ -34,15 +36,15 @@
       "shippingVolume": ""
     },
     {
-      "title": "HiFi Filter SI 41508 Air/Oil Separator | Replaces the SF Filter SAO55500",
-      "sku": "sao55500-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b97bc666-bbdb-4e03-8789-d41e6253dae1_9ab60af6-522a-48c1-b58c-3b2644d6c33b.jpg?v=1761658074",
+      "title": "HiFi Filter SI 41508 Air/Oil Separator | Replaces the SF Filter SAO 55500",
+      "sku": "sao-55500-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b97bc666-bbdb-4e03-8789-d41e6253dae1_52a07d72-4bda-4974-b2fe-64c28f535ba0.jpg?v=1761656830",
       "vendor": "",
       "price": 5500,
       "partNumber": "SI 41508",
       "hsCode": "8421.99.90",
       "countryOfOrigin": "France",
-      "description": "The genuine HiFi Filter SI 41508 Air/Oil Separator is HiFi's replacement to the SF Filter SAO55500. Easy to install and replace, the SI 41508 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "description": "The genuine HiFi Filter SI 41508 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55500. Easy to install and replace, the SI 41508 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
       "specifications": [
         "Style: AIR/OIL SEPARATOR",
         "Dimension 1 (D1): 72.0 mm",

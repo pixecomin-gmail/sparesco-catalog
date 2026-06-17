@@ -1,0 +1,66 @@
+{
+  "handle": "sa10282",
+  "title": "SA 10282",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e8fd9585-9462-4127-98e9-4be224b28374.jpg?v=1723202484",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181106.700.700_ccb664c6-267b-4bc6-8942-7482e8547ba9.jpg?v=1744305962",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF332_07080d52-f99f-4df2-bf80-b0de77bb6de2.jpg?v=1755780728"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10282 Air Filter",
+      "sku": "sa-10282-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e8fd9585-9462-4127-98e9-4be224b28374.jpg?v=1723202484",
+      "vendor": "",
+      "price": 5700,
+      "partNumber": "SA 10282",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10282 Air Filter. Easy to install and replace, the SA 10282 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.55 kg",
+      "shippingVolume": "0.0276 m³"
+    },
+    {
+      "title": "Donaldson P181106 Air Filter, Primary Round | Replaces the HiFi Filter SA 10282",
+      "sku": "sa-10282-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181106.700.700_ccb664c6-267b-4bc6-8942-7482e8547ba9.jpg?v=1744305962",
+      "vendor": "",
+      "price": 4800,
+      "partNumber": "P181106",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.9 kg",
+      "shippingVolume": "0.0255 m³"
+    },
+    {
+      "title": "Fleetguard AF332 Air Filter, Primary | Replaces the HiFi Filter SA 10282",
+      "sku": "sa-10282-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF332_07080d52-f99f-4df2-bf80-b0de77bb6de2.jpg?v=1755780728",
+      "vendor": "",
+      "price": 6300,
+      "partNumber": "AF332",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF332 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.36 kg",
+      "shippingVolume": "0.0272 m³"
+    }
+  ]
+}

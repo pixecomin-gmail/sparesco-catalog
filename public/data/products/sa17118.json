@@ -1,0 +1,91 @@
+{
+  "handle": "sa17118",
+  "title": "SA 17118",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9b27c17b-2514-4464-9853-f9d0121ae7c7_60338d4b-d5f7-412d-a40c-30da4b8d0f1d.jpg?v=1762811503",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778972.700.700_74ff0c5a-2cd2-4f64-846c-d86caec0fa97.jpg?v=1762811503",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ffcaddc9-c3ee-4b06-adb3-632b3e20dbbf.jpg?v=1762811503",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26393_1f703eb9-f9b4-4a83-8045-3b2344a509b0.jpg?v=1762811503"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17118 Air Filter",
+      "sku": "sa-17118-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9b27c17b-2514-4464-9853-f9d0121ae7c7_60338d4b-d5f7-412d-a40c-30da4b8d0f1d.jpg?v=1762811503",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "SA 17118",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17118 Air Filter. Easy to install and replace, the SA 17118 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 159.0 mm",
+        "Dimension 2 (D2): 101.0 mm",
+        "Height 1 (H1): 377.0 mm",
+        "Height 2 (H2): 366.0 mm",
+        "Height 3 (H3): 21.0 mm"
+      ],
+      "unitWeight": "0.7 kg",
+      "shippingVolume": "0.0102 m³"
+    },
+    {
+      "title": "Donaldson P778972 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 17118",
+      "sku": "sa-17118-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778972.700.700_74ff0c5a-2cd2-4f64-846c-d86caec0fa97.jpg?v=1762811503",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "P778972",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Replacement Filters? Replacement filters for Mann+Hummel® Europiclon® Air Cleaners deliver superior performance and proven protection. • High-efficiency cellulose media is a proven performer across a wide range of heavy-duty diesel engine applications. • Unique sawtooth design compresses to cushion and hold the filter in place, providing a secure seal – even in severe environments. • RadialSeal™ design allows for fast filter changes. • Durable structural support protects filters from damage or collapse in heavy vibration applications or humid conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.0118 m³"
+    },
+    {
+      "title": "Mann Filter C 16 400 Air Filter | Replaces the HiFi Filter SA 17118",
+      "sku": "sa-17118-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ffcaddc9-c3ee-4b06-adb3-632b3e20dbbf.jpg?v=1762811503",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "C 16 400",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 159.0 mm",
+        "Dimension B: 94.0 mm",
+        "Dimension H: 375.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26393 Air Filter, Primary | Replaces the HiFi Filter SA 17118",
+      "sku": "sa-17118-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26393_1f703eb9-f9b4-4a83-8045-3b2344a509b0.jpg?v=1762811503",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "AF26393",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF26393 premium Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.73 kg",
+      "shippingVolume": "0.0114 m³"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "handle": "sa16733",
+  "title": "SA 16733",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-03996670-6ecf-4a9c-bb29-d5f1c7a2edc3.jpg?v=1723203614",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628328.700.700_02843f39-0e87-45e0-84dc-f6aca70dfc73.jpg?v=1744306132"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16733 Air Filter",
+      "sku": "sa-16733-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-03996670-6ecf-4a9c-bb29-d5f1c7a2edc3.jpg?v=1723203614",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "SA 16733",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16733 Air Filter. Easy to install and replace, the SA 16733 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 162.0 mm",
+        "Dimension 2 (D2): 125.0 mm",
+        "Dimension 3 (D3): 95.0 mm",
+        "Height 1 (H1): 257.0 mm",
+        "Height 2 (H2): 256.0 mm",
+        "Height 3 (H3): 29.0 mm"
+      ],
+      "unitWeight": "0.82 kg",
+      "shippingVolume": "0.0086 m³"
+    },
+    {
+      "title": "Donaldson P628328 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16733",
+      "sku": "sa-16733-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628328.700.700_02843f39-0e87-45e0-84dc-f6aca70dfc73.jpg?v=1744306132",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "P628328",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Replacement Filters? Replacement filters for Fleetguard Optiair Air Cleaners deliver superior performance and proven protection. • High-efficiency cellulose media is a proven performer across a wide range of heavy-duty diesel engine applications. • Unique sawtooth design compresses to cushion and hold the filter in place, providing a secure seal – even in severe environments. • RadialSeal™ design allows for fast filter changes. • Durable structural support protects filters from damage or collapse in heavy vibration applications or humid conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.88 kg",
+      "shippingVolume": "0.0105 m³"
+    }
+  ]
+}

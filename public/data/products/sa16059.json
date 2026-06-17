@@ -1,0 +1,90 @@
+{
+  "handle": "sa16059",
+  "title": "SA 16059",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-896dfbdd-840f-4878-87f6-f1a0c80c4fed_de37f7c3-6291-43c3-b9c7-6f3c737f47fa.jpg?v=1762811060",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p822768.700.700_9b27abfe-7409-49af-aa0e-9a96bebe5b9f.jpg?v=1762811060",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_13_1452_image1_518d1a36-0dfc-4785-8665-11f93c0ca43e.jpg?v=1762811060",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25553_61ea106c-529c-4b06-be99-41b66f79c3af.jpg?v=1762811060"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16059 Air Filter",
+      "sku": "sa-16059-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-896dfbdd-840f-4878-87f6-f1a0c80c4fed_de37f7c3-6291-43c3-b9c7-6f3c737f47fa.jpg?v=1762811060",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "SA 16059",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 16059 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 16059 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 126.0 mm",
+        "Dimension 2 (D2): 83.0 mm",
+        "Height 1 (H1): 312.0 mm",
+        "Height 2 (H2): 305.0 mm"
+      ],
+      "unitWeight": "0.7 kg",
+      "shippingVolume": "0.0088 m³"
+    },
+    {
+      "title": "Donaldson P822768 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16059",
+      "sku": "sa-16059-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p822768.700.700_9b27abfe-7409-49af-aa0e-9a96bebe5b9f.jpg?v=1762811060",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "P822768",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.63 kg",
+      "shippingVolume": "0.0094 m³"
+    },
+    {
+      "title": "Mann Filter C 13 145/2 Air Filter | Replaces the HiFi Filter SA 16059",
+      "sku": "sa-16059-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_13_1452_image1_518d1a36-0dfc-4785-8665-11f93c0ca43e.jpg?v=1762811060",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "C 13 145/2",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 129.0 mm",
+        "Dimension B: 81.0 mm",
+        "Dimension H: 313.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25553 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16059",
+      "sku": "sa-16059-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25553_61ea106c-529c-4b06-be99-41b66f79c3af.jpg?v=1762811060",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "AF25553",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF25553 premium Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.7 kg",
+      "shippingVolume": "0.0069 m³"
+    }
+  ]
+}

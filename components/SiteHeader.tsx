@@ -2,10 +2,12 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEnquiry } from "@/context/EnquiryContext";
 import { searchProducts } from "@/lib/products";
 
 export default function SiteHeader() {
+  const router = useRouter();
   const { items, hasLoaded, openDrawer } = useEnquiry();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -20,6 +22,15 @@ export default function SiteHeader() {
   const closeSearch = () => {
     setSearchOpen(false);
     setQuery("");
+  };
+
+  const submitSearch = () => {
+    const trimmedQuery = query.trim();
+
+    if (!trimmedQuery) return;
+
+    router.push(`/search?q=${encodeURIComponent(trimmedQuery)}`);
+    closeSearch();
   };
 
   return (
@@ -89,6 +100,11 @@ export default function SiteHeader() {
                 <input
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      submitSearch();
+                    }
+                  }}
                   placeholder="Search by part number, brand or description..."
                   autoFocus
                 />
@@ -125,13 +141,13 @@ export default function SiteHeader() {
                     <span>No results found</span>
                   )}
 
-                  <Link
+                  <button
+                    type="button"
                     className="header-view-all"
-                    href={`/search?q=${encodeURIComponent(query)}`}
-                    onClick={closeSearch}
+                    onClick={submitSearch}
                   >
                     View all results
-                  </Link>
+                  </button>
                 </div>
               )}
             </div>

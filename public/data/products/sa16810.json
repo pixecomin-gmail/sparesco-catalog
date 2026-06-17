@@ -1,0 +1,49 @@
+{
+  "handle": "sa16810",
+  "title": "SA 16810",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_564bfc3d-3121-43dc-bafa-2ad89237f5db.jpg?v=1766022072",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1002.jpg?v=1766022072"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16810 Air Filter",
+      "sku": "sa-16810-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_564bfc3d-3121-43dc-bafa-2ad89237f5db.jpg?v=1766022072",
+      "vendor": "",
+      "price": 12500,
+      "partNumber": "SA 16810",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16810 Air Filter. Easy to install and replace, the SA 16810 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "5.38 kg",
+      "shippingVolume": "0.1083 m³"
+    },
+    {
+      "title": "Fleetguard AF1002 Air Filter, Primary | Replaces the HiFi Filter SA 16810",
+      "sku": "sa-16810-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1002.jpg?v=1766022072",
+      "vendor": "",
+      "price": 13400,
+      "partNumber": "AF1002",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "South Africa",
+      "description": "​Fleetguard® AF1002 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.24 kg",
+      "shippingVolume": "0.104 m³"
+    }
+  ]
+}

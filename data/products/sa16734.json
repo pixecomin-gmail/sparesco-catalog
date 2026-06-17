@@ -1,0 +1,55 @@
+{
+  "handle": "sa16734",
+  "title": "SA 16734",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49e8a555-1e7d-49cc-b2bb-c7a22e95baec.jpg?v=1723203614",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27999_2159cd0b-d907-403d-9a38-ad3960fd891c.jpg?v=1755780747"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16734 Air Filter",
+      "sku": "sa-16734-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49e8a555-1e7d-49cc-b2bb-c7a22e95baec.jpg?v=1723203614",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 16734",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16734 Air Filter. Easy to install and replace, the SA 16734 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 126.0 mm",
+        "Dimension 2 (D2): 84.0 mm",
+        "Dimension 3 (D3): 73.0 mm",
+        "Height 1 (H1): 236.0 mm",
+        "Height 2 (H2): 232.0 mm",
+        "Height 3 (H3): 22.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.004 m³"
+    },
+    {
+      "title": "Fleetguard AF27999 Air Filter | Replaces the HiFi Filter SA 16734",
+      "sku": "sa-16734-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27999_2159cd0b-d907-403d-9a38-ad3960fd891c.jpg?v=1755780747",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "AF27999",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® OptiAir™ AF27999 secondary air element addresses key design requirements of all equipment manufacturers while outperforming conventional radial seal designs. Resulting in extended service intervals, reduced downtime, and lower maintenance costs.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.33 kg",
+      "shippingVolume": "0.0037 m³"
+    }
+  ]
+}

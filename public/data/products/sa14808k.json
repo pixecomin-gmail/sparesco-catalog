@@ -1,0 +1,55 @@
+{
+  "handle": "sa14808k",
+  "title": "SA 14808 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-93408a94-cf13-40bd-8744-2971e0bb740d.jpg?v=1723210789",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4858KM_7632c5f5-415d-447a-9c9b-f0e8f6b2ea49.jpg?v=1755780865"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14808 K Air Filter",
+      "sku": "sa-14808-k-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-93408a94-cf13-40bd-8744-2971e0bb740d.jpg?v=1723210789",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "SA 14808 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14808 K Air Filter. Easy to install and replace, the SA 14808 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 254.0 mm",
+        "Dimension 2 (D2): 201.0 mm",
+        "Dimension 3 (D3): 135.0 mm",
+        "Height 1 (H1): 342.0 mm",
+        "Height 2 (H2): 330.0 mm",
+        "Height 3 (H3): 297.0 mm"
+      ],
+      "unitWeight": "1.94 kg",
+      "shippingVolume": "0.0254 m³"
+    },
+    {
+      "title": "Fleetguard AF4858KM Air Filter | Replaces the HiFi Filter SA 14808 K",
+      "sku": "sa-14808-k-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4858KM_7632c5f5-415d-447a-9c9b-f0e8f6b2ea49.jpg?v=1755780865",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "AF4858KM",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4858KM axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.76 kg",
+      "shippingVolume": "0.032 m³"
+    }
+  ]
+}

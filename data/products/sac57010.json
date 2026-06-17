@@ -1,0 +1,57 @@
+{
+  "handle": "sac57010",
+  "title": "SAC 57010",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2474_cf8fcc4e-eb45-4d76-b279-0c2c4d639ffc.jpg?v=1762275801",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-60539845-18dc-4fff-85b0-c39aebd6a0e7_ec74475a-0a8e-4af8-9d70-639868754510.jpg?v=1762275801"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AS2474 Air Filter/Oil Separator | Replaces the Sakura SAC-57010",
+      "sku": "sac-57010-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AS2474_cf8fcc4e-eb45-4d76-b279-0c2c4d639ffc.jpg?v=1762275801",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "AS2474",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AS2474 air oil separator prevents oil build-up, protects against detonation, and minimizes oil loss which equates to reduced maintenance and more consistent performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.45 kg",
+      "shippingVolume": "0.0012 m³"
+    },
+    {
+      "title": "HiFi Filter OV 6081 Air/Oil Separator | Replaces the Sakura SAC-57010",
+      "sku": "sac-57010-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-60539845-18dc-4fff-85b0-c39aebd6a0e7_ec74475a-0a8e-4af8-9d70-639868754510.jpg?v=1762275801",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "OV 6081",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OV 6081 Air/Oil Separator is HiFi's replacement to the SAKURA SAC-57010. Easy to install and replace, the OV 6081 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 79.0 mm",
+        "Dimension 2 (D2): 70.5 mm",
+        "Dimension 3 (D3): 63.0 mm",
+        "Thread 1 (D7): M16X1",
+        "5",
+        "Height 1 (H1): 124.0 mm",
+        "Height 2 (H2): 122.0 mm",
+        "Height 3 (H3): 107.0 mm"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.0009 m³"
+    }
+  ]
+}

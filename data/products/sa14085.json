@@ -1,0 +1,76 @@
+{
+  "handle": "sa14085",
+  "title": "SA 14085",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-22f62033-738b-45e9-b008-8042398d8a90.jpg?v=1723202556",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_57a9c698-753f-4159-b1fb-5b012f16d587.jpg?v=1743773434",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4135_22f9f167-7285-4c6f-ac70-db8f304644e7.jpg?v=1755780733"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14085 Air Filter",
+      "sku": "sa-14085-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-22f62033-738b-45e9-b008-8042398d8a90.jpg?v=1723202556",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "SA 14085",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14085 Air Filter. Easy to install and replace, the SA 14085 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 149.5 mm",
+        "Dimension 2 (D2): 70.0 mm",
+        "Dimension 3 (D3): 9.0 mm",
+        "Height 1 (H1): 334.0 mm",
+        "Height 2 (H2): 322.0 mm",
+        "Height 3 (H3): 308.5 mm"
+      ],
+      "unitWeight": "1.14 kg",
+      "shippingVolume": "0.0089 m³"
+    },
+    {
+      "title": "Mann Filter C 15 165/3 Air Filter | Replaces the HiFi Filter SA 14085",
+      "sku": "sa-14085-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_57a9c698-753f-4159-b1fb-5b012f16d587.jpg?v=1743773434",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "C 15 165/3",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 150.0 mm",
+        "Dimension B: 71.0 mm",
+        "Dimension C: 8.5 mm",
+        "Dimension H: 338.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4135 Air Filter, Primary | Replaces the HiFi Filter SA 14085",
+      "sku": "sa-14085-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4135_22f9f167-7285-4c6f-ac70-db8f304644e7.jpg?v=1755780733",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "AF4135",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4135 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.009 m³"
+    }
+  ]
+}

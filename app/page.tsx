@@ -1,61 +1,44 @@
-import HomeSearch from "@/components/HomeSearch";
 import HomeHero from "@/components/HomeHero";
 import StatsCounter from "@/components/StatsCounter";
+import FeaturedProductsSlider from "@/components/FeaturedProductsSlider";
+import featuredCategories from "@/data/featured-categories.json";
 
 export default function Home() {
   return (
     <main>
+      {/* Hero search */}
       <HomeHero />
 
+      {/* Stats counter */}
       <StatsCounter />
 
       {/* FEATURED PRODUCTS */}
-
-      <section className="section">
-        <div className="container">
-          <h2 className="section-title">Featured Products</h2>
-
-          <div className="product-grid">
-            <div className="product-card">
-              <div className="product-image"></div>
-              <h3>130-9811 Temperature Sensor</h3>
-              <p>CAT • Sensors</p>
-            </div>
-
-            <div className="product-card">
-              <div className="product-image"></div>
-              <h3>5S0484 Oil Filter</h3>
-              <p>CAT • Filters</p>
-            </div>
-
-            <div className="product-card">
-              <div className="product-image"></div>
-              <h3>6.4139C Air Filter Assy</h3>
-              <p>Atlas Copco • Filters</p>
-            </div>
-
-            <div className="product-card">
-              <div className="product-image"></div>
-              <h3>Hydraulic Pump Assembly</h3>
-              <p>Komatsu • Hydraulic Parts</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeaturedProductsSlider />
 
       {/* POPULAR CATEGORIES */}
-
-      <section className="section">
+      <section className="section categories-highlight-section">
         <div className="container">
           <h2 className="section-title">Popular Categories</h2>
 
-          <div className="category-grid">
-            <div className="category-card">Filters</div>
-            <div className="category-card">Hydraulic Parts</div>
-            <div className="category-card">Engine Parts</div>
-            <div className="category-card">Electrical Parts</div>
-            <div className="category-card">Sensors</div>
-            <div className="category-card">Undercarriage</div>
+          <div className="popular-categories-grid">
+            {featuredCategories.map((category) => (
+              <a
+                href={category.url}
+                className="popular-category-card"
+                key={category.title}
+              >
+                <div className="popular-category-icon">
+                  <img
+                    src={`/icons/categories/${category.icon}`}
+                    alt={category.title}
+                  />
+                </div>
+
+                <div className="popular-category-content">
+                  <h3>{category.title}</h3>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>

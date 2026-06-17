@@ -1,0 +1,72 @@
+{
+  "handle": "sa16608",
+  "title": "SA 16608",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ad60b19d-344e-41e6-865b-33825b2bc59e.jpg?v=1723204255",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p613522.700.700_a9ca91dd-f942-406d-bbd9-f29f266f36c3.jpg?v=1744306126",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27687_64622742-85af-41e3-9a4d-436ec58cca6e.jpg?v=1755780761"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16608 Air Filter",
+      "sku": "sa-16608-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ad60b19d-344e-41e6-865b-33825b2bc59e.jpg?v=1723204255",
+      "vendor": "",
+      "price": 11700,
+      "partNumber": "SA 16608",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16608 Air Filter. Easy to install and replace, the SA 16608 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 310.0 mm",
+        "Dimension 2 (D2): 303.0 mm",
+        "Dimension 3 (D3): 301.0 mm",
+        "Height 1 (H1): 223.0 mm",
+        "Height 2 (H2): 202.0 mm",
+        "Height 3 (H3): 21.5 mm"
+      ],
+      "unitWeight": "1.18 kg",
+      "shippingVolume": "0.0136 m³"
+    },
+    {
+      "title": "Donaldson P613522 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16608",
+      "sku": "sa-16608-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p613522.700.700_a9ca91dd-f942-406d-bbd9-f29f266f36c3.jpg?v=1744306126",
+      "vendor": "",
+      "price": 7000,
+      "partNumber": "P613522",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson PowerCore® filters? Genuine PowerCore filters provide superior protection and performance. • Lower initial restriction protects engine performance and fuel economy. • Greater filter capacity means longer filter life, fewer filter changes and less money spent on maintenance. • PowerCore filters have been meeting original equipment manufacturer specifications for 20+ years. • Reliable, leak resistant Radial Seal™ technology keeps the filter in place – even under heavy vibration.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.36 kg",
+      "shippingVolume": "0.0134 m³"
+    },
+    {
+      "title": "Fleetguard AF27687 Air Intake Systems | Replaces the HiFi Filter SA 16608",
+      "sku": "sa-16608-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27687_64622742-85af-41e3-9a4d-436ec58cca6e.jpg?v=1755780761",
+      "vendor": "",
+      "price": 7200,
+      "partNumber": "AF27687",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF27687 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.25 kg",
+      "shippingVolume": "0.0169 m³"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "handle": "sao6243",
+  "title": "SAO 6243",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e9adf02-6ecf-4501-860e-d91f93fb1f09.jpg?v=1723246144",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LC_9007_image1_3ebe4c76-b4ce-4762-95d5-1f4f4380bcaa.jpg?v=1754909567",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p613273.700.700_4c45c24e-b843-42ff-879c-f1b6b8cd0016.jpg?v=1744306220"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 6243 Engine Breather Filter",
+      "sku": "sao-6243-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e9adf02-6ecf-4501-860e-d91f93fb1f09.jpg?v=1723246144",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "SAO 6243",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 6243 Engine Breather Filter. Easy to install and replace, the SAO 6243 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER",
+        "Dimension 1 (D1): 88.0 mm",
+        "Dimension 2 (D2): 78.0 mm",
+        "Dimension 3 (D3): 35.0 mm",
+        "Height 1 (H1): 174.0 mm",
+        "Height 2 (H2): 23.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0016 m³"
+    },
+    {
+      "title": "Mann Filter LC 9007 Ventilator | Replaces the HiFi Filter SAO 6243",
+      "sku": "sao-6243-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LC_9007_image1_3ebe4c76-b4ce-4762-95d5-1f4f4380bcaa.jpg?v=1754909567",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "LC 9007",
+      "hsCode": "8421.39.85",
+      "countryOfOrigin": "Taiwan",
+      "description": "For over 70 years, MANN-FILTER has been synonymous with premium filters in original equipment quality worldwide. Benefit from a comprehensive product range and optimum filtration performance to protect drivers, engines and machinery. In the familiar yellow-green packaging, MANN-FILTER offers innovative solutions to new filtration challenges and produces on a global scale in accordance with the latest international production and test standards in the automotive industry.",
+      "specifications": [
+        "Style: Ventilator",
+        "Dimension A: 78.0 mm",
+        "Dimension C: 31.0 mm",
+        "Dimension D: 88.0 mm",
+        "Dimension H: 175.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P613273 Crankcase Ventilation Filter Spiracle | Replaces the HiFi Filter SAO 6243",
+      "sku": "sao-6243-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p613273.700.700_4c45c24e-b843-42ff-879c-f1b6b8cd0016.jpg?v=1744306220",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "P613273",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P613273 Crankcase Ventilation Filter Spiracle is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Engine Breather Filter"
+      ],
+      "unitWeight": "0.19 kg",
+      "shippingVolume": "0.0018 m³"
+    }
+  ]
+}

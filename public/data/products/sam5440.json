@@ -1,0 +1,49 @@
+{
+  "handle": "sam5440",
+  "title": "SAM 5440",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_89853bb2-8983-4b7f-93d5-484cfbf2da1b.jpg?v=1766022977",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4100262122_Crop_8c4ca0d1-950c-45a4-a57d-e90d6057f24a.jpg?v=1766022977"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAM 5440 Filtering Mass",
+      "sku": "sam-5440-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_89853bb2-8983-4b7f-93d5-484cfbf2da1b.jpg?v=1766022977",
+      "vendor": "",
+      "price": 10500,
+      "partNumber": "SAM 5440",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAM 5440 Filtering Mass. Easy to install and replace, the SAM 5440 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: FILTERING MASS"
+      ],
+      "unitWeight": "0.09 kg",
+      "shippingVolume": "0.0002 m³"
+    },
+    {
+      "title": "Mann Filter 4100262122 Oil-Wetted Air Cleaner | Replaces the HiFi Filter SAM 5440",
+      "sku": "sam-5440-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4100262122_Crop_8c4ca0d1-950c-45a4-a57d-e90d6057f24a.jpg?v=1766022977",
+      "vendor": "",
+      "price": 12100,
+      "partNumber": "4100262122",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "Replacement and maintenance parts for the proven filter housings and systems from MANN+HUMMEL.",
+      "specifications": [
+        "Style: MANN+HUMMEL Spare Part"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

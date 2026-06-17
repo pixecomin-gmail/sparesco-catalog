@@ -1,0 +1,95 @@
+{
+  "handle": "sa10890k",
+  "title": "SA 10890 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c6cd245-1b4f-4585-be51-711330944e8a_6d44dbe5-9932-4513-8ad5-c58a38dc64d7.jpg?v=1762811474",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119135.700.700_518b5caf-b8d1-4d9a-80ec-7a789623814b.jpg?v=1762811474",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_190_image1_eac07786-3611-4f85-a1e9-e75dee5444de.jpg?v=1762811474",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF940K_650dfe01-6041-4703-b46f-e400e7ee9806.jpg?v=1762811474"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10890 K Air Filter",
+      "sku": "sa-10890-k-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c6cd245-1b4f-4585-be51-711330944e8a_6d44dbe5-9932-4513-8ad5-c58a38dc64d7.jpg?v=1762811474",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "SA 10890 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10890 K Air Filter. Easy to install and replace, the SA 10890 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 158.0 mm",
+        "Dimension 2 (D2): 133.0 mm",
+        "Dimension 3 (D3): 91.0 mm",
+        "Height 1 (H1): 391.0 mm",
+        "Height 2 (H2): 386.0 mm",
+        "Height 3 (H3): 363.0 mm"
+      ],
+      "unitWeight": "1.12 kg",
+      "shippingVolume": "0.0129 m³"
+    },
+    {
+      "title": "Donaldson P119135 Air Filter, Primary Finned | Replaces the HiFi Filter SA 10890 K",
+      "sku": "sa-10890-k-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119135.700.700_518b5caf-b8d1-4d9a-80ec-7a789623814b.jpg?v=1762811474",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "P119135",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.76 kg",
+      "shippingVolume": "0.0119 m³"
+    },
+    {
+      "title": "Mann Filter C 14 190 Air Filter | Replaces the HiFi Filter SA 10890 K",
+      "sku": "sa-10890-k-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_190_image1_eac07786-3611-4f85-a1e9-e75dee5444de.jpg?v=1762811474",
+      "vendor": "",
+      "price": 5700,
+      "partNumber": "C 14 190",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 133.0 mm",
+        "Dimension B: 92.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 133.0 mm",
+        "Dimension E: 162.0 mm",
+        "Dimension H: 392.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF940K Air Filter, Primary | Replaces the HiFi Filter SA 10890 K",
+      "sku": "sa-10890-k-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF940K_650dfe01-6041-4703-b46f-e400e7ee9806.jpg?v=1762811474",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "AF940K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF940K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.91 kg",
+      "shippingVolume": "0.0128 m³"
+    }
+  ]
+}

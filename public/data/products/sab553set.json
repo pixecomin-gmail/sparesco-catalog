@@ -1,0 +1,60 @@
+{
+  "handle": "sab553set",
+  "title": "SAB553 SET",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6252ecd5-5973-4d6e-9312-a8c3c30362be_1eb02678-927c-41a5-b8ec-823ceb5850cc.jpg?v=1762820523",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_5811_KIT_image1_ebe589a9-59ef-4c1f-944d-1e50660cb301.jpg?v=1762820523",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6252ecd5-5973-4d6e-9312-a8c3c30362be_8675afef-fc99-4a9e-a82f-3f0addd5b1ae.jpg?v=1762814458",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_5811_KIT_image1_6ebfdf26-2e9c-4cb1-bb7f-d3fe885479ae.jpg?v=1762814458"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter KD 70436 Urea Filter Kit | Replaces the SF Filter SAB 553-SET",
+      "sku": "sab-553-set-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6252ecd5-5973-4d6e-9312-a8c3c30362be_8675afef-fc99-4a9e-a82f-3f0addd5b1ae.jpg?v=1762814458",
+      "vendor": "",
+      "price": 8800,
+      "partNumber": "KD 70436",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter KD 70436 Urea Filter Kit is HiFi's replacement to the SF Filter SAB 553-SET. Easy to install and replace, the KD 70436 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER KIT",
+        "Dimension 1 (D1): 75.0 mm",
+        "Dimension 2 (D2): 71.0 mm",
+        "Dimension 3 (D3): 65.0 mm",
+        "Thread 1 (D7): M60X2",
+        "Height 1 (H1): 102.0 mm",
+        "Height 2 (H2): 20.0 mm",
+        "Height 3 (H3): 1.0 mm"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.0024 m³"
+    },
+    {
+      "title": "Mann Filter U 58/11 KIT Urea Filter | Replaces the SF Filter SAB553-SET",
+      "sku": "sab553-set-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_5811_KIT_image1_ebe589a9-59ef-4c1f-944d-1e50660cb301.jpg?v=1762820523",
+      "vendor": "",
+      "price": 11200,
+      "partNumber": "U 58/11 KIT",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Germany",
+      "description": "The compact MANN-FILTER urea filters are characterized by high filter fineness, proven suitability for everyday use and a long service life. They protect system components against wear and failure and are resistant to frost and ammonia. MANN-FILTER urea filters are available for leading SCR systems in trucks and buses.",
+      "specifications": [
+        "Style: Urea Filter",
+        "Dimension A: 75.0 mm",
+        "Dimension H: 104.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

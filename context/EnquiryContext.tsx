@@ -3,10 +3,13 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 export type EnquiryItem = {
+  id: string;
   handle: string;
   title: string;
-  brand: string;
-  category: string;
+  image: string;
+  partNumber: string;
+  vendor: string;
+  price: number;
   quantity: number;
 };
 
@@ -17,9 +20,9 @@ type EnquiryContextType = {
   openDrawer: () => void;
   closeDrawer: () => void;
   addItem: (item: Omit<EnquiryItem, "quantity">) => void;
-  removeItem: (handle: string) => void;
-  increaseQty: (handle: string) => void;
-  decreaseQty: (handle: string) => void;
+  removeItem: (id: string) => void;
+  increaseQty: (id: string) => void;
+  decreaseQty: (id: string) => void;
 };
 
 const STORAGE_KEY = "sparesco_enquiry_items";
@@ -33,11 +36,7 @@ export function EnquiryProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const savedItems = localStorage.getItem(STORAGE_KEY);
-
-    if (savedItems) {
-        setItems(JSON.parse(savedItems));
-    }
-
+    if (savedItems) setItems(JSON.parse(savedItems));
     setHasLoaded(true);
   }, []);
 
@@ -56,12 +55,12 @@ export function EnquiryProvider({ children }: { children: React.ReactNode }) {
   function addItem(item: Omit<EnquiryItem, "quantity">) {
     setItems((currentItems) => {
       const existingItem = currentItems.find(
-        (currentItem) => currentItem.handle === item.handle
+        (currentItem) => currentItem.id === item.id
       );
 
       if (existingItem) {
         return currentItems.map((currentItem) =>
-          currentItem.handle === item.handle
+          currentItem.id === item.id
             ? { ...currentItem, quantity: currentItem.quantity + 1 }
             : currentItem
         );
@@ -73,26 +72,22 @@ export function EnquiryProvider({ children }: { children: React.ReactNode }) {
     openDrawer();
   }
 
-  function removeItem(handle: string) {
-    setItems((currentItems) =>
-      currentItems.filter((item) => item.handle !== handle)
-    );
+  function removeItem(id: string) {
+    setItems((currentItems) => currentItems.filter((item) => item.id !== id));
   }
 
-  function increaseQty(handle: string) {
+  function increaseQty(id: string) {
     setItems((currentItems) =>
       currentItems.map((item) =>
-        item.handle === handle
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
       )
     );
   }
 
-  function decreaseQty(handle: string) {
+  function decreaseQty(id: string) {
     setItems((currentItems) =>
       currentItems.map((item) =>
-        item.handle === handle
+        item.id === id
           ? { ...item, quantity: Math.max(1, item.quantity - 1) }
           : item
       )

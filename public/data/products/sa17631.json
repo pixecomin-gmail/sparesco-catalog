@@ -1,0 +1,56 @@
+{
+  "handle": "sa17631",
+  "title": "SA 17631",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e72fec53-d0a1-4d08-866a-32d2ddc3a4d5.jpg?v=1723206430",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_cfc6a884-5cbc-43c3-a530-c20cfe2cc3e6.jpg?v=1751027845"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17631 Air Filter",
+      "sku": "sa-17631-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e72fec53-d0a1-4d08-866a-32d2ddc3a4d5.jpg?v=1723206430",
+      "vendor": "",
+      "price": 24400,
+      "partNumber": "SA 17631",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17631 Air Filter. Easy to install and replace, the SA 17631 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 203.0 mm",
+        "Dimension 2 (D2): 180.0 mm",
+        "Dimension 3 (D3): 179.0 mm",
+        "Thread 1 (D7): 7\"1/2 BS 4",
+        "Height 1 (H1): 426.0 mm",
+        "Height 2 (H2): 38.0 mm",
+        "Height 3 (H3): 31.0 mm"
+      ],
+      "unitWeight": "1.06 kg",
+      "shippingVolume": "0.0365 m³"
+    },
+    {
+      "title": "FIL Filter HP 2718 Filter Insert | Replaces the HiFi Filter SA 17631",
+      "sku": "sa-17631-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_cfc6a884-5cbc-43c3-a530-c20cfe2cc3e6.jpg?v=1751027845",
+      "vendor": "",
+      "price": 23300,
+      "partNumber": "HP 2718",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 2718. Easy to install and replace, the HP 2718 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

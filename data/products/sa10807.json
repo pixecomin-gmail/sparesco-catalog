@@ -1,0 +1,71 @@
+{
+  "handle": "sa10807",
+  "title": "SA 10807",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f9e8d1c-4854-4e52-804c-10b4cdbb1409_9e61cbda-0832-4059-bc49-ace1cd560655.jpg?v=1762811070",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p115070.700.700_de2d95ee-1bc9-47a9-8c57-59681e31ae0c.jpg?v=1762811070",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF857_bb5356b3-dabd-487a-b6e7-b8fad6e62349.jpg?v=1762811070"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10807 Air Filter",
+      "sku": "sa-10807-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f9e8d1c-4854-4e52-804c-10b4cdbb1409_9e61cbda-0832-4059-bc49-ace1cd560655.jpg?v=1762811070",
+      "vendor": "",
+      "price": 8000,
+      "partNumber": "SA 10807",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 10807 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 10807 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 276.0 mm",
+        "Dimension 2 (D2): 206.0 mm",
+        "Dimension 3 (D3): 22.0 mm",
+        "Height 1 (H1): 562.0 mm",
+        "Height 2 (H2): 550.0 mm"
+      ],
+      "unitWeight": "3.9 kg",
+      "shippingVolume": "0.0632 m³"
+    },
+    {
+      "title": "Donaldson P115070 Air Filter, Safety | Replaces the HiFi Filter SA 10807",
+      "sku": "sa-10807-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p115070.700.700_de2d95ee-1bc9-47a9-8c57-59681e31ae0c.jpg?v=1762811070",
+      "vendor": "",
+      "price": 8400,
+      "partNumber": "P115070",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.85 kg",
+      "shippingVolume": "0.0625 m³"
+    },
+    {
+      "title": "Fleetguard AF857 Air Filter, Secondary | Replaces the HiFi Filter SA 10807",
+      "sku": "sa-10807-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF857_bb5356b3-dabd-487a-b6e7-b8fad6e62349.jpg?v=1762811070",
+      "vendor": "",
+      "price": 7900,
+      "partNumber": "AF857",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF857 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.6 kg",
+      "shippingVolume": "0.0595 m³"
+    }
+  ]
+}

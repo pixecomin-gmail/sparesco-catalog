@@ -1,0 +1,72 @@
+{
+  "handle": "sa16511",
+  "title": "SA 16511",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aa6afb5e-80cd-45a2-baa8-003c5aa45e0c_feb5b6c1-05c9-41a1-a14a-16f066da471a.jpg?v=1762811081",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771511.700.700_0f335fac-8acd-4a09-91dc-6fe593c3273e.jpg?v=1762811081",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25120K_b9423adf-bc04-40ec-9813-4cf58c91ec1c.jpg?v=1762811081"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16511 Air Filter",
+      "sku": "sa-16511-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aa6afb5e-80cd-45a2-baa8-003c5aa45e0c_feb5b6c1-05c9-41a1-a14a-16f066da471a.jpg?v=1762811081",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "SA 16511",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 16511 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 16511 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 250.0 mm",
+        "Dimension 2 (D2): 200.0 mm",
+        "Dimension 3 (D3): 90.0 mm",
+        "Height 1 (H1): 355.5 mm",
+        "Height 2 (H2): 346.0 mm",
+        "Height 3 (H3): 319.0 mm"
+      ],
+      "unitWeight": "2.16 kg",
+      "shippingVolume": "0.0263 m³"
+    },
+    {
+      "title": "Donaldson P771511 Air Filter, Primary Finned | Replaces the HiFi Filter SA 16511",
+      "sku": "sa-16511-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771511.700.700_0f335fac-8acd-4a09-91dc-6fe593c3273e.jpg?v=1762811081",
+      "vendor": "",
+      "price": 5400,
+      "partNumber": "P771511",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.06 kg",
+      "shippingVolume": "0.0321 m³"
+    },
+    {
+      "title": "Fleetguard AF25120K Air Intake Systems | Replaces the HiFi Filter SA 16511",
+      "sku": "sa-16511-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25120K_b9423adf-bc04-40ec-9813-4cf58c91ec1c.jpg?v=1762811081",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "AF25120K",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25120K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.74 kg",
+      "shippingVolume": "0.032 m³"
+    }
+  ]
+}

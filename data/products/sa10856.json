@@ -1,0 +1,72 @@
+{
+  "handle": "sa10856",
+  "title": "SA 10856",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d920d0cd-c258-4c13-a763-4909b64d48d4.jpg?v=1723205090",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p115889.700.700_bccce8e1-632b-4bcc-b17b-c5286a6d61a2.jpg?v=1744305982",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF906_c5ae78fb-2a14-4719-95aa-93eed2fb551d.jpg?v=1755780788"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10856 Air Filter",
+      "sku": "sa-10856-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d920d0cd-c258-4c13-a763-4909b64d48d4.jpg?v=1723205090",
+      "vendor": "",
+      "price": 11300,
+      "partNumber": "SA 10856",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10856 Air Filter. Easy to install and replace, the SA 10856 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 284.0 mm",
+        "Dimension 2 (D2): 264.0 mm",
+        "Dimension 3 (D3): 153.0 mm",
+        "Height 1 (H1): 420.0 mm",
+        "Height 2 (H2): 408.0 mm",
+        "Height 3 (H3): 360.0 mm"
+      ],
+      "unitWeight": "3.5 kg",
+      "shippingVolume": "0.0374 m³"
+    },
+    {
+      "title": "Donaldson P115889 Air Filter, Primary Round | Replaces the HiFi Filter SA 10856",
+      "sku": "sa-10856-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p115889.700.700_bccce8e1-632b-4bcc-b17b-c5286a6d61a2.jpg?v=1744305982",
+      "vendor": "",
+      "price": 11900,
+      "partNumber": "P115889",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.07 kg",
+      "shippingVolume": "0.0428 m³"
+    },
+    {
+      "title": "Fleetguard AF906 Air Filter, Primary | Replaces the HiFi Filter SA 10856",
+      "sku": "sa-10856-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF906_c5ae78fb-2a14-4719-95aa-93eed2fb551d.jpg?v=1755780788",
+      "vendor": "",
+      "price": 11000,
+      "partNumber": "AF906",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF906 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.19 kg",
+      "shippingVolume": "0.0387 m³"
+    }
+  ]
+}

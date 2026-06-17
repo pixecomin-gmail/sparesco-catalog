@@ -1,0 +1,75 @@
+{
+  "handle": "sa7102",
+  "title": "SA 7102",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a274d692-5ec0-4d4e-a177-3f7fc387be7c.jpg?v=1723212430",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_002_image1_5d1dd324-a2e8-4496-ad18-32d84c2f526f.jpg?v=1754909442",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4398_1eecc8cd-f708-4258-89a4-1e9535c23eae.jpg?v=1755780888"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7102 Air Filter",
+      "sku": "sa-7102-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a274d692-5ec0-4d4e-a177-3f7fc387be7c.jpg?v=1723212430",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "SA 7102",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7102 Air Filter. Easy to install and replace, the SA 7102 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 398.0 mm",
+        "Dimension 2 (D2): 317.0 mm",
+        "Dimension 3 (D3): 305.0 mm",
+        "Height 1 (H1): 82.0 mm",
+        "Height 2 (H2): 76.0 mm",
+        "Height 3 (H3): 66.0 mm"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0117 m³"
+    },
+    {
+      "title": "Mann Filter C 40 002 Air Filter | Replaces the HiFi Filter SA 7102",
+      "sku": "sa-7102-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_002_image1_5d1dd324-a2e8-4496-ad18-32d84c2f526f.jpg?v=1754909442",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "C 40 002",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 400.0 mm",
+        "Dimension B: 318.0 mm",
+        "Dimension H: 75.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4398 Air Filter Filter - Panel | Replaces the HiFi Filter SA 7102",
+      "sku": "sa-7102-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4398_1eecc8cd-f708-4258-89a4-1e9535c23eae.jpg?v=1755780888",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "AF4398",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF4398 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0127 m³"
+    }
+  ]
+}

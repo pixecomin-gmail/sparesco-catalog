@@ -1,0 +1,52 @@
+{
+  "handle": "sa5184",
+  "title": "SA 5184",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-11675b74-00e4-440c-beeb-0b989b36683c.jpg?v=1723247238",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9979f6fc-43d4-4472-b946-e05a8a9ad7b5.jpg?v=1742827207"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5184 Air Filter",
+      "sku": "sa-5184-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-11675b74-00e4-440c-beeb-0b989b36683c.jpg?v=1723247238",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "SA 5184",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5184 Air Filter. Easy to install and replace, the SA 5184 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.14 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Mann Filter C 1635 Air Filter | Replaces the HiFi Filter SA 5184",
+      "sku": "sa-5184-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_9979f6fc-43d4-4472-b946-e05a8a9ad7b5.jpg?v=1742827207",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "C 1635",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Argentina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 153.0 mm",
+        "Dimension B: 93.0 mm",
+        "Dimension H: 67.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

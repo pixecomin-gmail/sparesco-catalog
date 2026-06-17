@@ -1,0 +1,71 @@
+{
+  "handle": "sa14495k",
+  "title": "SA 14495 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-58235e36-61ab-4473-a57b-8925a7b32b3e.jpg?v=1723216929",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p122514.700.700_dce90f62-33f5-4a33-847c-1d5ca193a9aa.jpg?v=1744306033",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4545K_99bc301f-8f92-4ed3-9744-ea603eb43e5c.jpg?v=1755780908"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14495 K Air Filter",
+      "sku": "sa-14495-k-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-58235e36-61ab-4473-a57b-8925a7b32b3e.jpg?v=1723216929",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "SA 14495 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14495 K Air Filter. Easy to install and replace, the SA 14495 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 160.0 mm",
+        "Dimension 2 (D2): 132.0 mm",
+        "Dimension 3 (D3): 72.0 mm",
+        "Height 1 (H1): 287.0 mm",
+        "Height 2 (H2): 282.0 mm"
+      ],
+      "unitWeight": "0.72 kg",
+      "shippingVolume": "0.008 m³"
+    },
+    {
+      "title": "Donaldson P122514 Air Filter, Primary Finned | Replaces the HiFi Filter SA 14495 K",
+      "sku": "sa-14495-k-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p122514.700.700_dce90f62-33f5-4a33-847c-1d5ca193a9aa.jpg?v=1744306033",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "P122514",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.01 m³"
+    },
+    {
+      "title": "Fleetguard AF4545K Air Filter | Replaces the HiFi Filter SA 14495 K",
+      "sku": "sa-14495-k-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4545K_99bc301f-8f92-4ed3-9744-ea603eb43e5c.jpg?v=1755780908",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "AF4545K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4545K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.84 kg",
+      "shippingVolume": "0.0098 m³"
+    }
+  ]
+}

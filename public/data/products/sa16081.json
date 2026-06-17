@@ -1,0 +1,94 @@
+{
+  "handle": "sa16081",
+  "title": "SA 16081",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c73b68aa-770b-4ac5-ac59-11975b3e1d94.jpg?v=1748456021",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788888.700.700_4c197c9c-7a03-466f-b7a2-6fdfe2e280b5.jpg?v=1748456021",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_fcf6f214-dc8c-4d63-a239-108f2bbeac7d.jpg?v=1748456021",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25302_a423f25e-1513-4b40-9f0e-44228be511a8.jpg?v=1755780825"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16081 Air Filter",
+      "sku": "sa-16081-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c73b68aa-770b-4ac5-ac59-11975b3e1d94.jpg?v=1748456021",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "SA 16081",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16081 Air Filter. Easy to install and replace, the SA 16081 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 215.0 mm",
+        "Dimension 2 (D2): 189.0 mm",
+        "Dimension 3 (D3): 96.0 mm",
+        "Thread 1 (D7): M10X1",
+        "5",
+        "Height 1 (H1): 341.0 mm",
+        "Height 2 (H2): 328.0 mm"
+      ],
+      "unitWeight": "2.24 kg",
+      "shippingVolume": "0.0192 m³"
+    },
+    {
+      "title": "Donaldson P788888 Air Filter, Primary Round | Replaces the HiFi Filter SA 16081",
+      "sku": "sa-16081-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788888.700.700_4c197c9c-7a03-466f-b7a2-6fdfe2e280b5.jpg?v=1748456021",
+      "vendor": "",
+      "price": 6700,
+      "partNumber": "P788888",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P788888 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.58 kg",
+      "shippingVolume": "0.019 m³"
+    },
+    {
+      "title": "Mann Filter C 20 220 x Air Filter | Replaces the HiFi Filter SA 16081",
+      "sku": "sa-16081-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_fcf6f214-dc8c-4d63-a239-108f2bbeac7d.jpg?v=1748456021",
+      "vendor": "",
+      "price": 9700,
+      "partNumber": "C 20 220 x",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Czechia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 184.0 mm",
+        "Dimension B: 95.0 mm",
+        "Dimension D: 218.0 mm",
+        "Dimension H: 340.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25302 Air Filter, Primary | Replaces the HiFi Filter SA 16081",
+      "sku": "sa-16081-4",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25302_a423f25e-1513-4b40-9f0e-44228be511a8.jpg?v=1755780825",
+      "vendor": "",
+      "price": 7500,
+      "partNumber": "AF25302",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25302 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.04 kg",
+      "shippingVolume": "0.0203 m³"
+    }
+  ]
+}

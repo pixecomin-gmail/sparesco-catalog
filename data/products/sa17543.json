@@ -1,0 +1,53 @@
+{
+  "handle": "sa17543",
+  "title": "SA 17543",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7799a339-b2f3-493d-b24b-3faa0db302fc.jpg?v=1723213971",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25177_a4b82efc-ed8e-4932-8097-2ff17e504276.jpg?v=1755780896"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17543 Air Filter",
+      "sku": "sa-17543-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7799a339-b2f3-493d-b24b-3faa0db302fc.jpg?v=1723213971",
+      "vendor": "",
+      "price": 4000,
+      "partNumber": "SA 17543",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17543 Air Filter. Easy to install and replace, the SA 17543 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 199.0 mm",
+        "Dimension 2 (D2): 94.0 mm",
+        "Height 1 (H1): 387.0 mm",
+        "Height 2 (H2): 382.0 mm"
+      ],
+      "unitWeight": "1.62 kg",
+      "shippingVolume": "0.0177 m³"
+    },
+    {
+      "title": "Fleetguard AF25177 Air Filter, Primary | Replaces the HiFi Filter SA 17543",
+      "sku": "sa-17543-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25177_a4b82efc-ed8e-4932-8097-2ff17e504276.jpg?v=1755780896",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "AF25177",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Brazil",
+      "description": "​Fleetguard® AF25177 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.67 kg",
+      "shippingVolume": "0.0179 m³"
+    }
+  ]
+}

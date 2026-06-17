@@ -1,0 +1,49 @@
+{
+  "handle": "sa16669",
+  "title": "SA 16669",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-bcea8218-0951-4e79-aa36-a5df3654bbe3.jpg?v=1723203325",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25118.jpg?v=1755780740"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16669 Air Filter",
+      "sku": "sa-16669-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-bcea8218-0951-4e79-aa36-a5df3654bbe3.jpg?v=1723203325",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "SA 16669",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16669 Air Filter. Easy to install and replace, the SA 16669 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.18 kg",
+      "shippingVolume": "0.0197 m³"
+    },
+    {
+      "title": "Fleetguard AF25118 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16669",
+      "sku": "sa-16669-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25118.jpg?v=1755780740",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "AF25118",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25118 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.08 kg",
+      "shippingVolume": "0.0204 m³"
+    }
+  ]
+}

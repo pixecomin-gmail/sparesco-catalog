@@ -16,8 +16,8 @@ export default function EnquiryDrawer() {
   if (!isDrawerOpen) return null;
 
   return (
-    <div className="drawer-overlay">
-      <div className="enquiry-drawer">
+    <div className="drawer-overlay" onClick={closeDrawer}>
+      <div className="enquiry-drawer" onClick={(e) => e.stopPropagation()}>
         <div className="enquiry-drawer-header">
           <h3>Enquiry List ({items.length})</h3>
           <button onClick={closeDrawer}>×</button>
@@ -27,25 +27,37 @@ export default function EnquiryDrawer() {
           {items.length === 0 && <p>No products added yet.</p>}
 
           {items.map((item) => (
-            <div className="enquiry-item" key={item.handle}>
-              <div>
-                <strong>{item.title}</strong>
-                <span>
-                  {item.brand} • {item.category}
-                </span>
+            <div className="enquiry-item enquiry-item-compact" key={item.id}>
+              <Link
+                href={`/products/${item.handle}`}
+                className="enquiry-item-image"
+                onClick={closeDrawer}
+              >
+                {item.image ? <img src={item.image} alt={item.title} /> : null}
+              </Link>
+
+              <div className="enquiry-item-content">
+                <Link
+                  href={`/products/${item.handle}`}
+                  className="enquiry-item-title"
+                  onClick={closeDrawer}
+                >
+                  {item.title}
+                </Link>
               </div>
 
               <div className="qty-control">
-                <button onClick={() => decreaseQty(item.handle)}>-</button>
+                <button onClick={() => decreaseQty(item.id)}>-</button>
                 <span>{item.quantity}</span>
-                <button onClick={() => increaseQty(item.handle)}>+</button>
+                <button onClick={() => increaseQty(item.id)}>+</button>
               </div>
 
               <button
-                className="remove-button"
-                onClick={() => removeItem(item.handle)}
+                className="delete-icon-button"
+                onClick={() => removeItem(item.id)}
+                aria-label="Remove item"
               >
-                Remove
+                🗑
               </button>
             </div>
           ))}

@@ -1,0 +1,75 @@
+{
+  "handle": "sa8441",
+  "title": "SA 8441",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c0ad8154-f0eb-496b-a14d-7a1e3d965e7d.jpg?v=1723212151",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_fa8f7716-08b9-4198-a293-ab291ad26e06.jpg?v=1743773621",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55805_6737d041-1de1-4c7b-80e6-382985820799.jpg?v=1755780884"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8441 Air Filter",
+      "sku": "sa-8441-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c0ad8154-f0eb-496b-a14d-7a1e3d965e7d.jpg?v=1723212151",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 8441",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8441 Air Filter. Easy to install and replace, the SA 8441 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 255.0 mm",
+        "Dimension 2 (D2): 236.0 mm",
+        "Dimension 3 (D3): 225.0 mm",
+        "Height 1 (H1): 55.0 mm",
+        "Height 2 (H2): 27.0 mm",
+        "Height 3 (H3): 17.0 mm"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0054 m³"
+    },
+    {
+      "title": "Mann Filter C 26 003 Air Filter | Replaces the HiFi Filter SA 8441",
+      "sku": "sa-8441-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_fa8f7716-08b9-4198-a293-ab291ad26e06.jpg?v=1743773621",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "C 26 003",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 253.0 mm",
+        "Dimension B: 239.0 mm",
+        "Dimension H: 58.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF55805 Air Filter | Replaces the HiFi Filter SA 8441",
+      "sku": "sa-8441-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55805_6737d041-1de1-4c7b-80e6-382985820799.jpg?v=1755780884",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "AF55805",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF55805 panel cabin air filter provides clean air in the cab which means a clean work environment.  Breathing cleaner air can lead to longer and more productive working hours.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.26 kg",
+      "shippingVolume": "0.0034 m³"
+    }
+  ]
+}
