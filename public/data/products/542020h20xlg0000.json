@@ -1,0 +1,73 @@
+{
+  "handle": "542020h20xlg0000",
+  "title": "542020H20XLG0000",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_dfd8f68b-20a9-407e-b435-ee9c617b85b1.png?v=1739379134",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4fe36c22-2aa5-404b-bf77-35be8ece105b.png?v=1760636907",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_3a293c1c-03fe-4c75-bcc9-2678537ed0b5.png?v=1739379139",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_90d265ea-9286-4e17-8434-787c012abe05.png?v=1760636906"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec WG873 Special Filter | Replaces the Eppensteiner 542020H20XLG0000",
+      "sku": "542020h20xlg0000-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_dfd8f68b-20a9-407e-b435-ee9c617b85b1.png?v=1739379134",
+      "vendor": "",
+      "price": 16400,
+      "partNumber": "WG873",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec WG873. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the WG873 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Special Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 150.0 mm",
+        "Inner Diameter: 89.0 mm",
+        "Length: 163.0 mm",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN"
+      ],
+      "unitWeight": "1.28 kg",
+      "shippingVolume": "0.0037 m³"
+    },
+    {
+      "title": "MicroFit® MFHSP80988 UltraGen III Special Filter | Replaces the Eppensteiner 542020H20XLG0000",
+      "sku": "542020h20xlg0000-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4fe36c22-2aa5-404b-bf77-35be8ece105b.png?v=1760636907",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "MFHSP80988",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "MicroFit® MFHSP80988 UltraGen III Special Filter. Engineered and manufactured in Great Britain the MFHLP30166 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MicroFit® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MicroFit® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Special Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 150.0 mm",
+        "Inner Diameter: 89.0 mm",
+        "Length: 163.0 mm",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN"
+      ],
+      "unitWeight": "1.28 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

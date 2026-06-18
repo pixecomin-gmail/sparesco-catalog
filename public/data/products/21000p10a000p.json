@@ -1,0 +1,47 @@
+{
+  "handle": "21000p10a000p",
+  "title": "21000P10A000P",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630A_b1342414-c449-4d59-a67f-0c88c0be10af.jpg?v=1739377151",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630A_9062d4a8-5269-4494-b8b0-4d6dcd673d62.jpg?v=1739376602"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec XD1000C10A DIN Pressure Filter | Replaces the Eppensteiner 21000P10A000P",
+      "sku": "21000p10a000p-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630A_b1342414-c449-4d59-a67f-0c88c0be10af.jpg?v=1739377151",
+      "vendor": "",
+      "price": 22600,
+      "partNumber": "XD1000C10A",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec XD1000C10A. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the XD1000C10A provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: DIN Pressure Filter",
+        "Media: Cellulose",
+        "Efficiency 1: 10µ @ β2",
+        "Outer Diameter: 100.0 mm",
+        "Inner Diameter: 60.2 mm",
+        "Length: 628.0 mm",
+        "Δ Collapse Pressure: 21 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β2",
+        "Media Type: Cellulose",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 21 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "3.81 kg",
+      "shippingVolume": "0.0063 m³"
+    }
+  ]
+}

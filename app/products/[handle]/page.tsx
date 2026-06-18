@@ -22,6 +22,7 @@ export default function ProductPage() {
   const [product, setProduct] = useState<Product | null>(null);
   const [activeImage, setActiveImage] = useState("");
   const [activeVariantIndex, setActiveVariantIndex] = useState(0);
+  const [activeTab, setActiveTab] = useState<"specs" | "description">("specs");
 
   useEffect(() => {
     fetch(`/data/products/${handle}.json`)
@@ -73,6 +74,7 @@ export default function ProductPage() {
                   {product.images.map((image) => (
                     <button
                       key={image}
+                      type="button"
                       className={
                         activeImage === image ? "thumbnail active" : "thumbnail"
                       }
@@ -96,7 +98,8 @@ export default function ProductPage() {
                 <div className="variant-list compact-variant-list">
                   {product.variants.map((variant, index) => (
                     <button
-                      key={variant.sku}
+                      key={variant.sku || `${variant.partNumber}-${index}`}
+                      type="button"
                       className={
                         index === activeVariantIndex
                           ? "variant-card compact-variant-card active"
@@ -109,10 +112,10 @@ export default function ProductPage() {
                     >
                       <span>{cleanVariantTitle(variant.title)}</span>
                       <strong>
-                      {variant.price > 0
-                        ? `₹${variant.price.toLocaleString("en-IN")}`
-                        : "Price On Request"}
-                    </strong>
+                        {variant.price > 0
+                          ? `₹${variant.price.toLocaleString("en-IN")}`
+                          : "Price On Request"}
+                      </strong>
                     </button>
                   ))}
                 </div>
@@ -121,12 +124,17 @@ export default function ProductPage() {
               <div className="product-actions">
                 <button
                   className="primary-button"
+                  type="button"
                   onClick={() =>
                     addItem({
                       id: `${product.handle}-${activeVariant.partNumber}`,
                       handle: product.handle,
                       title: product.title,
-                      image: activeVariant.image || activeImage || product.images?.[0] || "",
+                      image:
+                        activeVariant.image ||
+                        activeImage ||
+                        product.images?.[0] ||
+                        "",
                       partNumber: activeVariant.partNumber,
                       vendor: cleanVariantTitle(activeVariant.title),
                       price: activeVariant.price,
@@ -138,58 +146,106 @@ export default function ProductPage() {
               </div>
             </div>
 
-            <div className="specification-table product-specs-compact">
-              <h2>Technical Specifications</h2>
+            <div className="product-side-panel">
+              <div className="product-tabs product-tabs-side">
+                <button
+                  type="button"
+                  className={activeTab === "specs" ? "active" : ""}
+                  onClick={() => setActiveTab("specs")}
+                >
+                  Technical Specifications
+                </button>
 
-              <div>
-                <strong>Part Number</strong>
-                <span>{activeVariant.partNumber}</span>
+                <button
+                  type="button"
+                  className={activeTab === "description" ? "active" : ""}
+                  onClick={() => setActiveTab("description")}
+                >
+                  Description
+                </button>
               </div>
 
-              {activeVariant.hsCode && (
-                <div>
-                  <strong>HS Code</strong>
-                  <span>{activeVariant.hsCode}</span>
-                </div>
-              )}
-
-              {activeVariant.countryOfOrigin && (
-                <div>
-                  <strong>Country of Origin</strong>
-                  <span>{activeVariant.countryOfOrigin}</span>
-                </div>
-              )}
-
-              {activeVariant.unitWeight && (
-                <div>
-                  <strong>Unit Weight</strong>
-                  <span>{activeVariant.unitWeight}</span>
-                </div>
-              )}
-
-              {activeVariant.shippingVolume && (
-                <div>
-                  <strong>Shipping Volume</strong>
-                  <span>{activeVariant.shippingVolume}</span>
-                </div>
-              )}
-
-              {activeVariant.specifications.map((spec) => {
-                const [label, ...valueParts] = spec.split(":");
-
-                return (
-                  <div key={spec}>
-                    <strong>{label}</strong>
-                    <span>{valueParts.join(":").trim()}</span>
+              {activeTab === "specs" && (
+                <div className="specification-table product-specs-compact">
+                  <div>
+                    <strong>Part Number</strong>
+                    <span>{activeVariant.partNumber}</span>
                   </div>
-                );
-              })}
-            </div>
-          </div>
 
-          <div className="product-description-box product-description-full">
-            <h2>Description</h2>
-            <p>{activeVariant.description || "Description not available."}</p>
+                  {activeVariant.hsCode && (
+                    <div>
+                      <strong>HS Code</strong>
+                      <span>{activeVariant.hsCode}</span>
+                    </div>
+                  )}
+
+                  {activeVariant.countryOfOrigin && (
+                    <div>
+                      <strong>Country of Origin</strong>
+                      <span>{activeVariant.countryOfOrigin}</span>
+                    </div>
+                  )}
+
+                  {activeVariant.unitWeight && (
+                    <div>
+                      <strong>Unit Weight</strong>
+                      <span>{activeVariant.unitWeight}</span>
+                    </div>
+                  )}
+
+                  {activeVariant.shippingVolume && (
+                    <div>
+                      <strong>Shipping Volume</strong>
+                      <span>{activeVariant.shippingVolume}</span>
+                    </div>
+                  )}
+
+                  {activeVariant.specifications
+                    .slice(
+                      0,
+                      activeVariant.specifications.findIndex((spec) => {
+                        if (!spec.includes(":")) return true;
+
+                        const [label, ...valueParts] = spec.split(":");
+                        const cleanLabel = label.trim();
+                        const cleanValue = valueParts.join(":").trim();
+
+                        return !cleanLabel || !cleanValue || cleanLabel.length > 45;
+                      }) === -1
+                        ? activeVariant.specifications.length
+                        : activeVariant.specifications.findIndex((spec) => {
+                            if (!spec.includes(":")) return true;
+
+                            const [label, ...valueParts] = spec.split(":");
+                            const cleanLabel = label.trim();
+                            const cleanValue = valueParts.join(":").trim();
+
+                            return !cleanLabel || !cleanValue || cleanLabel.length > 45;
+                          })
+                    )
+                    .map((spec) => {
+                      const [label, ...valueParts] = spec.split(":");
+                      const cleanLabel = label.trim();
+                      const cleanValue = valueParts.join(":").trim();
+
+                      return (
+                        <div key={spec}>
+                          <strong>{cleanLabel}</strong>
+                          <span>{cleanValue}</span>
+                        </div>
+                      );
+                    })}
+                </div>
+              )}
+
+              {activeTab === "description" && (
+                <div className="product-description-box product-description-full">
+                  <p>
+                    {activeVariant.description || "Description not available."}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>

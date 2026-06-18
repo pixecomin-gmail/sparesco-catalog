@@ -1,0 +1,81 @@
+{
+  "handle": "168400xh20sls000v",
+  "title": "168400XH20SLS000V",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200659B_0832e7ef-b13e-478f-8f07-0723f8a63b04.jpg?v=1741086381",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_1965e0b2-6793-4d7c-a0bc-7103dcde5100.jpg?v=1741086381",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200659B_96bc7dac-bae7-4746-846d-b0fd4551f505.jpg?v=1741086383",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_64667ca0-1804-487d-9c39-f0bc4117ed0c.jpg?v=1741086383"
+  ],
+  "variants": [
+    {
+      "title": "MicroFit® UltraGen III MFHR51503 Return Filter | Replaces the Eppensteiner 16.8400XH20SLS000V",
+      "sku": "16-8400xh20sls000v-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200659B_96bc7dac-bae7-4746-846d-b0fd4551f505.jpg?v=1741086383",
+      "vendor": "",
+      "price": 31200,
+      "partNumber": "MFHR51503",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "The MICROFIT® UltraGen III MFHR51503 is the MICROFIT® approved replacement to the Eppensteiner 16.8400XH20SLS000V. Engineered and manufactured in Great Britain the MFHR51503",
+      "specifications": [
+        "Style: Return Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 152.0 mm",
+        "Inner Diameter: 83.4 mm",
+        "Length: 980.0 mm",
+        "Δ Collapse Pressure: 10 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 10 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "8.9 kg",
+      "shippingVolume": "0.0226 m³"
+    },
+    {
+      "title": "Filtrec R446G25V Return Filter | Replaces the Eppensteiner 168400XH20SLS000V",
+      "sku": "168400xh20sls000v-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_1965e0b2-6793-4d7c-a0bc-7103dcde5100.jpg?v=1741086381",
+      "vendor": "",
+      "price": 35300,
+      "partNumber": "R446G25V",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec R446G25V. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the R446G25V provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Return Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 152.0 mm",
+        "Inner Diameter: 83.4 mm",
+        "Length: 980.0 mm",
+        "Δ Collapse Pressure: 10 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 10 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "4.04 kg",
+      "shippingVolume": "0.0226 m³"
+    }
+  ]
+}

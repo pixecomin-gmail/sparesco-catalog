@@ -1,31 +1,36 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const footerSections = [
   {
-    title: "Catalogue",
-    links: ["Spare Parts", "Popular Categories", "Featured Products"],
-  },
-  {
     title: "Company",
-    links: ["About Us", "Join Our Team", "Contact Us"],
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Contact Us", href: "/contact" },
+      { label: "Sell With Sparesco", href: "/sellwithus" },
+    ],
   },
   {
-    title: "For Vendors",
-    links: ["Sell With Sparesco", "Vendor List", "Spares Hunt"],
+    title: "Legal",
+    links: [
+      { label: "Terms & Conditions", href: "/terms" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Return & Refund Policy", href: "/returns" },
+      { label: "Shipping Policy", href: "/shipping" },
+    ],
   },
 ];
 
 export default function SiteFooter() {
-  const [openSection, setOpenSection] = useState<string | null>("Catalogue");
+  const [openSection, setOpenSection] = useState<string | null>("Company");
 
   return (
     <footer className="site-footer">
       <div className="container footer-main">
         <div className="footer-brand">
           <img src="/logo.png" alt="Sparesco" className="footer-logo" />
-
           <p>
             Trusted industrial spare parts sourcing platform for construction,
             mining, power systems and heavy equipment.
@@ -37,7 +42,9 @@ export default function SiteFooter() {
             <div key={section.title}>
               <h4>{section.title}</h4>
               {section.links.map((link) => (
-                <a key={link}>{link}</a>
+                <Link key={link.label} href={link.href}>
+                  {link.label}
+                </Link>
               ))}
             </div>
           ))}
@@ -60,7 +67,9 @@ export default function SiteFooter() {
                 {isOpen && (
                   <div className="footer-accordion-links">
                     {section.links.map((link) => (
-                      <a key={link}>{link}</a>
+                      <Link key={link.label} href={link.href}>
+                        {link.label}
+                      </Link>
                     ))}
                   </div>
                 )}

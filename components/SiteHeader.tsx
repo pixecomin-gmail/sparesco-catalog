@@ -10,27 +10,18 @@ export default function SiteHeader() {
   const router = useRouter();
   const { items, hasLoaded, openDrawer } = useEnquiry();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState("");
 
   const totalItems = items.reduce((total, item) => total + item.quantity, 0);
 
-  const filteredResults = useMemo(() => {
-    return searchProducts(query, 4);
-  }, [query]);
-
-  const closeSearch = () => {
-    setSearchOpen(false);
-    setQuery("");
-  };
+  const filteredResults = useMemo(() => searchProducts(query, 4), [query]);
 
   const submitSearch = () => {
     const trimmedQuery = query.trim();
-
     if (!trimmedQuery) return;
 
     router.push(`/search?q=${encodeURIComponent(trimmedQuery)}`);
-    closeSearch();
+    setQuery("");
   };
 
   return (
@@ -52,21 +43,28 @@ export default function SiteHeader() {
           </Link>
 
           <nav className="desktop-nav">
+            <Link href="/collections">Categories</Link>
             <Link href="/parts">Spare Parts</Link>
-            <a>Vendor List</a>
-            <a>Spares Hunt</a>
-            <a className="nav-button">Sell With Us</a>
+            <Link href="/spareshunt">Spares Hunt</Link>
+            <Link href="/sellwithus" className="nav-button">
+              Sell With Us
+            </Link>
           </nav>
 
-          <div className="header-icons">
-            <button
-              className="icon-button"
-              onClick={() => setSearchOpen((open) => !open)}
-              aria-label="Search"
-            >
+          <div className="header-search-inline">
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") submitSearch();
+              }}
+              placeholder="Search parts..."
+            />
+
+            <button type="button" onClick={submitSearch} aria-label="Search">
               <svg
-                width="22"
-                height="22"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -79,6 +77,34 @@ export default function SiteHeader() {
               </svg>
             </button>
 
+            {query && (
+              <div className="header-inline-results">
+                {filteredResults.length > 0 ? (
+                  filteredResults.map((product) => (
+                    <Link
+                      href={`/products/${product.handle}`}
+                      key={product.handle}
+                      onClick={() => setQuery("")}
+                    >
+                      <strong>{product.title}</strong>
+                    </Link>
+                  ))
+                ) : (
+                  <span>No results found</span>
+                )}
+
+                <Link
+                  href={`/search?q=${encodeURIComponent(query.trim())}`}
+                  className="header-view-all"
+                  onClick={() => setQuery("")}
+                >
+                  View all results
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <div className="header-icons">
             <button
               className="enquiry-icon-button"
               onClick={openDrawer}
@@ -92,67 +118,6 @@ export default function SiteHeader() {
             </button>
           </div>
         </div>
-
-        {searchOpen && (
-          <div className="header-search-panel">
-            <div className="container">
-              <div className="header-search-top">
-                <input
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                      submitSearch();
-                    }
-                  }}
-                  placeholder="Search by part number, brand or description..."
-                  autoFocus
-                />
-
-                <button
-                  type="button"
-                  className="close-search-button"
-                  onClick={closeSearch}
-                  aria-label="Close search"
-                >
-                  ×
-                </button>
-              </div>
-
-              {query && (
-                <div className="header-search-results">
-                  {filteredResults.length > 0 ? (
-                    filteredResults.map((product) => (
-                      <Link
-                        href={`/products/${product.handle}`}
-                        key={product.handle}
-                        onClick={closeSearch}
-                      >
-                        <strong>{product.title}</strong>
-                        <span>
-                          {product.collection}
-                          {product.variantCount > 1
-                            ? ` • ${product.variantCount} options`
-                            : ""}
-                        </span>
-                      </Link>
-                    ))
-                  ) : (
-                    <span>No results found</span>
-                  )}
-
-                  <button
-                    type="button"
-                    className="header-view-all"
-                    onClick={submitSearch}
-                  >
-                    View all results
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
       </header>
 
       {mobileMenuOpen && (
@@ -176,19 +141,25 @@ export default function SiteHeader() {
             </div>
 
             <nav className="mobile-nav">
+              <Link href="/categories" onClick={() => setMobileMenuOpen(false)}>
+                Categories
+              </Link>
+
               <Link href="/parts" onClick={() => setMobileMenuOpen(false)}>
                 Spare Parts
               </Link>
 
-              <a onClick={() => setMobileMenuOpen(false)}>Vendor List</a>
-              <a onClick={() => setMobileMenuOpen(false)}>Spares Hunt</a>
+              <Link href="/request-part" onClick={() => setMobileMenuOpen(false)}>
+                Spares Hunt
+              </Link>
 
-              <a
+              <Link
+                href="/become-supplier"
                 className="mobile-nav-button"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Sell With Us
-              </a>
+              </Link>
             </nav>
           </div>
         </div>

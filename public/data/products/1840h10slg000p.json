@@ -1,0 +1,81 @@
+{
+  "handle": "1840h10slg000p",
+  "title": "1840H10SLG000P",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202016B_8bbcca88-7dcf-4933-8d37-f3298f112356.jpg?v=1718110481",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_0ceede10-03a7-4fe7-a9e2-3db6e1c1f9cf.jpg?v=1764691114",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202016B_2a8d282f-509b-4681-953d-58a37631318b.jpg?v=1718110478",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_5610ba3e-da15-4276-bb53-7c3acec62de9.jpg?v=1764691115"
+  ],
+  "variants": [
+    {
+      "title": "MicroFit® UltraGen III MFHLP30556 Pressure Filter | Replaces the Eppensteiner 18.40H10SLG000P",
+      "sku": "18-40h10slg000p-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202016B_2a8d282f-509b-4681-953d-58a37631318b.jpg?v=1718110478",
+      "vendor": "",
+      "price": 4700,
+      "partNumber": "MFHLP30556",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "The MICROFIT® UltraGen III MFHLP30556 is the MICROFIT® approved replacement to the Eppensteiner 18.40H10SLG000P. Engineered and manufactured in Great Britain the MFHLP30556 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MICROFIT® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MICROFIT® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 10µ @ β200",
+        "Efficiency 2: 12µ @ β1000",
+        "Outer Diameter: 45.0 mm",
+        "Inner Diameter: 25.4 mm",
+        "Length: 113.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.0002 m³"
+    },
+    {
+      "title": "Filtrec DMD126E10B Pressure Filter | Replaces the Eppensteiner 1840H10SLG000P",
+      "sku": "1840h10slg000p-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_0ceede10-03a7-4fe7-a9e2-3db6e1c1f9cf.jpg?v=1764691114",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "DMD126E10B",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec DMD126E10B. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the DMD126E10B provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 10µ @ β200",
+        "Efficiency 2: 12µ @ β1000",
+        "Outer Diameter: 45.0 mm",
+        "Inner Diameter: 25.4 mm",
+        "Length: 113.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0002 m³"
+    }
+  ]
+}

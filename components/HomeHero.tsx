@@ -64,21 +64,21 @@ export default function HomeHero() {
                   className="hero-result-card"
                   key={product.handle}
                 >
-                  <div className="hero-result-image">
-                    {product.image && (
-                      <img src={product.image} alt={product.title} />
-                    )}
-                  </div>
+                <div className="hero-result-image">
+                  {product.image && (
+                    <img src={product.image} alt={product.title} />
+                  )}
+                </div>
 
-                  <div>
-                    <strong>{product.title}</strong>
-                    <span>
-                      {product.collection}{" "}
-                      {product.variantCount > 1
-                        ? `• ${product.variantCount} options`
-                        : ""}
-                    </span>
-                  </div>
+                <div className="hero-result-content">
+                  <strong>{product.title}</strong>
+                  <span>
+                    {product.collection}
+                    {product.variantCount > 1
+                      ? ` • ${product.variantCount} options`
+                      : ""}
+                  </span>
+                </div>
                 </Link>
               ))}
             </div>

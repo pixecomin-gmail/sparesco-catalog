@@ -31,10 +31,18 @@ export default function PartsPage() {
     router.push(`/parts?${params.toString()}`);
   }
 
+  function clearFilters() {
+    router.push("/parts");
+  }
+
   function goToPage(page: number) {
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", String(page));
     router.push(`/parts?${params.toString()}`);
+  }
+
+  function getCount(key: "category" | "vendor", value: string) {
+    return products.filter((product) => product[key] === value).length;
   }
 
   const filteredProducts = useMemo(() => {
@@ -67,30 +75,42 @@ export default function PartsPage() {
 
           <div className="parts-layout">
             <aside className="filters-sidebar">
-              <h3>Filter By</h3>
+              <div className="filters-header">
+                <h3>Filter By</h3>
+                {(selectedCategory || selectedBrand) && (
+                  <button type="button" onClick={clearFilters}>
+                    Clear all
+                  </button>
+                )}
+              </div>
 
               <div className="filter-block">
                 <h4>Category</h4>
 
-                <label>
+                <label className="filter-option">
                   <input
-                    type="radio"
-                    name="category"
+                    type="checkbox"
                     checked={!selectedCategory}
                     onChange={() => updateParam("category", "")}
                   />
-                  All Categories
+                  <span>All Categories</span>
+                  <em>{products.length}</em>
                 </label>
 
                 {categories.map((category) => (
-                  <label key={category}>
+                  <label className="filter-option" key={category}>
                     <input
-                      type="radio"
-                      name="category"
+                      type="checkbox"
                       checked={selectedCategory === category}
-                      onChange={() => updateParam("category", category)}
+                      onChange={() =>
+                        updateParam(
+                          "category",
+                          selectedCategory === category ? "" : category
+                        )
+                      }
                     />
-                    {category}
+                    <span>{category}</span>
+                    <em>{getCount("category", category)}</em>
                   </label>
                 ))}
               </div>
@@ -99,25 +119,30 @@ export default function PartsPage() {
                 <div className="filter-block">
                   <h4>Brand</h4>
 
-                  <label>
+                  <label className="filter-option">
                     <input
-                      type="radio"
-                      name="brand"
+                      type="checkbox"
                       checked={!selectedBrand}
                       onChange={() => updateParam("brand", "")}
                     />
-                    All Brands
+                    <span>All Brands</span>
+                    <em>{products.length}</em>
                   </label>
 
                   {brands.slice(0, 20).map((brand) => (
-                    <label key={brand}>
+                    <label className="filter-option" key={brand}>
                       <input
-                        type="radio"
-                        name="brand"
+                        type="checkbox"
                         checked={selectedBrand === brand}
-                        onChange={() => updateParam("brand", brand)}
+                        onChange={() =>
+                          updateParam(
+                            "brand",
+                            selectedBrand === brand ? "" : brand
+                          )
+                        }
                       />
-                      {brand}
+                      <span>{brand}</span>
+                      <em>{getCount("vendor", brand)}</em>
                     </label>
                   ))}
                 </div>

@@ -1,0 +1,42 @@
+{
+  "handle": "he30d",
+  "title": "HE30D",
+  "collection": "Compressed Air Filters",
+  "collectionHandle": "compressed-air-filters",
+  "category": "Compressed Air Filters",
+  "tags": [
+    "Compressed Air Filters",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF300389C-R_f77736c8-36df-457d-a4af-cfdfdd53d11e.webp?v=1673369875",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF300389C-R_f3a6c59d-30e4-463b-80aa-4c072cbb3f63.webp?v=1673369874"
+  ],
+  "variants": [
+    {
+      "title": "FilterFinder FF300310C Compressed Air Filter | Replaces the Hi-Line HE30D",
+      "sku": "he30d-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF300389C-R_f77736c8-36df-457d-a4af-cfdfdd53d11e.webp?v=1673369875",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "FF300310C",
+      "hsCode": "",
+      "countryOfOrigin": "",
+      "description": "",
+      "specifications": [
+        "Style: Compressed Air Filter",
+        "Media: Polyester Needle Felt",
+        "Efficiency 1: 3µ",
+        "Seal Material: Nitrile",
+        "Temperature Range: +1 - +80°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 3µ",
+        "Media Type: Polyester Needle Felt",
+        "Flow Direction: IN-OUT",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

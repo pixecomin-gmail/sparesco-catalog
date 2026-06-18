@@ -18,10 +18,13 @@ export default function Home() {
       {/* POPULAR CATEGORIES */}
       <section className="section categories-highlight-section">
         <div className="container">
-          <h2 className="section-title">Popular Categories</h2>
+          <div className="section-header-row">
+            <h2 className="section-title">Popular Categories</h2>
+            <a href="/categories">View all categories →</a>
+          </div>
 
           <div className="popular-categories-grid">
-            {featuredCategories.map((category) => (
+            {featuredCategories.slice(0, 6).map((category) => (
               <a
                 href={category.url}
                 className="popular-category-card"
@@ -34,9 +37,7 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="popular-category-content">
-                  <h3>{category.title}</h3>
-                </div>
+                <h3>{category.title}</h3>
               </a>
             ))}
           </div>

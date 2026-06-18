@@ -1,0 +1,75 @@
+{
+  "handle": "37480p10s000pso",
+  "title": "37480P10S000PSO",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_1dd06042-cdca-45cd-8ef9-ca075e65d8c7.jpg?v=1766009394",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_ca3577f2-66cc-4902-93f2-1dc15a7bd36e.png?v=1766009394",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_21c8fc2d-7aae-4dcf-85a6-2dd10ca76cb8.jpg?v=1766007329",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_0f954286-7750-4d8a-b8bb-5fb15c3c7877.png?v=1766007329"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SH 67167 Special Filter | Replaces the Eppensteiner 37480P10S000PSO",
+      "sku": "37480p10s000pso-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_1dd06042-cdca-45cd-8ef9-ca075e65d8c7.jpg?v=1766009394",
+      "vendor": "",
+      "price": 39000,
+      "partNumber": "SH 67167",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SH 67167. This part is designed to meet high-performance standards, offering reliability and durability across a wide range of applications. Manufactured with precision and quality materials, it ensures optimal compatibility and functionality within your system, helping to maintain efficiency and extend the lifespan of your equipment. Whether used as part of a filtration system, hydraulic setup, or general machinery, this component delivers consistent performance under demanding conditions. Its robust construction and dependable design make it a trusted choice for maintaining system integrity and reducing downtime.",
+      "specifications": [
+        "Style: Special Filter",
+        "Media: Cellulose",
+        "Efficiency 1: 10µ @ β2",
+        "Outer Diameter: 102.0 mm",
+        "Inner Diameter: 62.0 mm",
+        "Length: 502.0 mm",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β2",
+        "Media Type: Cellulose",
+        "Flow Direction: OUT-IN",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "1.82 kg",
+      "shippingVolume": "0.0176 m³"
+    },
+    {
+      "title": "Filtrec WP524 Special Filter | Replaces the Eppensteiner 37480P10S000PSO",
+      "sku": "37480p10s000pso-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_ca3577f2-66cc-4902-93f2-1dc15a7bd36e.png?v=1766009394",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "WP524",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec WP524. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the WP524 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Special Filter",
+        "Media: Cellulose",
+        "Efficiency 1: 10µ @ β2",
+        "Outer Diameter: 102.0 mm",
+        "Inner Diameter: 62.0 mm",
+        "Length: 502.0 mm",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β2",
+        "Media Type: Cellulose",
+        "Flow Direction: OUT-IN",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "2.48 kg",
+      "shippingVolume": "0.0052 m³"
+    }
+  ]
+}

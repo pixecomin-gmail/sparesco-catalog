@@ -1,17 +1,23 @@
-<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="100" height="100" rx="12" fill="#173f4c"/>
-  <g transform="translate(50,50)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="-14" y="-28" width="28" height="52" rx="4"/>
-    <rect x="-8"  y="-36" width="16" height="10" rx="2"/>
-    <rect x="-6"  y="24"  width="12" height="8"  rx="2"/>
-    <rect x="-24" y="-22" width="10" height="8" rx="2"/>
-    <rect x="-24" y="-4"  width="10" height="8" rx="2"/>
-    <rect x="-24" y="14"  width="10" height="8" rx="2"/>
-    <rect x="14"  y="-22" width="10" height="8" rx="2"/>
-    <rect x="14"  y="-4"  width="10" height="8" rx="2"/>
-    <rect x="14"  y="14"  width="10" height="8" rx="2"/>
-    <circle cx="0" cy="-12" r="6"/>
-    <line x1="0" y1="-16" x2="0" y2="-12"/>
-    <line x1="0" y1="-12" x2="4" y2="-10"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84" height="84" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg">
+  <rect width="84" height="84" rx="10" fill="#173f4c"/>
+  <g transform="translate(42, 42)" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <g >
+      <!-- Premium filter housing -->
+      <rect x="-14" y="-20" width="28" height="40" rx="5" stroke-width="2.2"/>
+      <!-- Top connection with threads -->
+      <rect x="-10" y="-26" width="20" height="8" rx="2" stroke-width="2.2"/>
+      <line x1="-8" y1="-24" x2="8" y2="-24" stroke-width="1.5"/>
+      <line x1="-8" y1="-22" x2="8" y2="-22" stroke-width="1.5"/>
+      <!-- Bottom connection -->
+      <rect x="-10" y="20" width="20" height="6" rx="2" stroke-width="2.2"/>
+      <!-- Center element -->
+      <circle cx="0" cy="0" r="8" stroke-width="2.2"/>
+      <!-- Star/quality mark inside -->
+      <path d="M0 -5 L1.5 -1.5 L5 -1.5 L2.5 1 L3.5 5 L0 3 L-3.5 5 L-2.5 1 L-5 -1.5 L-1.5 -1.5 Z" stroke-width="1.8"/>
+      <!-- Side ports -->
+      <circle cx="-18" cy="-6" r="3" stroke-width="2"/>
+      <circle cx="18" cy="-6" r="3" stroke-width="2"/>
+    </g>
   </g>
 </svg>

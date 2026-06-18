@@ -1,12 +1,21 @@
-<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="100" height="100" rx="12" fill="#173f4c"/>
-  <g transform="translate(50,50)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="-8" y="-34" width="16" height="10" rx="2"/>
-    <line x1="-8" y1="-29" x2="8" y2="-29"/>
-    <line x1="-8" y1="-25" x2="8" y2="-25"/>
-    <path d="M-16,-24 L-18,22 Q-18,30 0,32 Q18,30 18,22 L16,-24 Z"/>
-    <line x1="-18" y1="2"  x2="18" y2="2"/>
-    <line x1="-14" y1="-14" x2="14" y2="-14"/>
-    <line x1="-15" y1="-4"  x2="15" y2="-4"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84" height="84" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg">
+  <rect width="84" height="84" rx="10" fill="#173f4c"/>
+  <g transform="translate(42, 42)" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <g >
+      <!-- Spin-on canister body -->
+      <rect x="-14" y="-20" width="28" height="40" rx="5" stroke-width="2.2"/>
+      <!-- Top dome/nut -->
+      <path d="M-14 -20 Q0 -28 14 -20" stroke-width="2.2"/>
+      <!-- Center nut on top -->
+      <circle cx="0" cy="-24" r="4" stroke-width="2.2"/>
+      <!-- Oil drop symbol -->
+      <path d="M0 -4 Q4 0 4 4 Q4 10 0 10 Q-4 10 -4 4 Q-4 0 0 -4" stroke-width="2.2"/>
+      <!-- Bottom thread plate -->
+      <rect x="-16" y="18" width="32" height="5" rx="2" stroke-width="2.2"/>
+      <!-- Thread lines -->
+      <line x1="-12" y1="20" x2="12" y2="20" stroke-width="1.5"/>
+      <line x1="-12" y1="22" x2="12" y2="22" stroke-width="1.5"/>
+    </g>
   </g>
 </svg>

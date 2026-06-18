@@ -1,0 +1,79 @@
+{
+  "handle": "2225p25p",
+  "title": "2225P25P",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_1b7ce3e8-14e9-4b95-91cc-2c5e29cb7472.jpg?v=1739377264",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_b5abfa2f-e4ae-45b1-a4d6-3b8f825499cb.jpg?v=1755779166",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_99fd543b-ee97-45bb-897a-0fa3bfd28f1b.jpg?v=1739376671",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_b81a510c-e68a-4b6d-965b-a2fe6920bd75.jpg?v=1755779163"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec DVD2225K20B Pressure Filter | Replaces the Eppensteiner 2225P25P",
+      "sku": "2225p25p-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_1b7ce3e8-14e9-4b95-91cc-2c5e29cb7472.jpg?v=1739377264",
+      "vendor": "Filtrec",
+      "price": 8500,
+      "partNumber": "DVD2225K20B",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec DVD2225K20B. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the DVD2225K20B provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Cellulose",
+        "Efficiency 1: 25µ @ β2",
+        "Outer Diameter: 74.0 mm",
+        "Inner Diameter: 40.3 mm",
+        "Length: 225.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 25µ @ β2",
+        "Media Type: Cellulose",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.61 kg",
+      "shippingVolume": "0.0012 m³"
+    },
+    {
+      "title": "Fleetguard HF6906 Hydraulic Filters | Replaces the Eppensteiner 2225P25P",
+      "sku": "2225p25p-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_b5abfa2f-e4ae-45b1-a4d6-3b8f825499cb.jpg?v=1755779166",
+      "vendor": "Fleetguard",
+      "price": 3600,
+      "partNumber": "HF6906",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Italy",
+      "description": "Fleetguard® HF6906 premium hydraulic cartridge filter is designed to help keep your precision hydraulic systems running as intended, providing a solution for various applications.  This filter meets or exceeds the equipment OEM quality and performance and is the first aftermarket replacement available on the market today, bringing your operation top-quality performance and an overall unbeatable total cost of ownership.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Cellulose",
+        "Efficiency 1: 25µ @ β2",
+        "Outer Diameter: 74.0 mm",
+        "Inner Diameter: 40.3 mm",
+        "Length: 225.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 25µ @ β2",
+        "Media Type: Cellulose",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.53 kg",
+      "shippingVolume": "0.0017 m³"
+    }
+  ]
+}

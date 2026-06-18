@@ -1,0 +1,144 @@
+/* app/terms/terms.css */
+
+.legal-page {
+  background: #ffffff;
+  color: var(--text);
+}
+
+.legal-body {
+  background: #ffffff;
+  padding: 0;
+}
+
+.legal-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 0;
+  align-items: stretch;
+}
+
+/* LEFT COLUMN */
+
+.legal-summary {
+  background: #f7f5ef;
+  border-right: 1px solid var(--border);
+  position: relative;
+  min-height: 100%;
+}
+
+.legal-summary-inner {
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 60px;
+}
+
+.legal-summary h1 {
+  color: var(--primary);
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.legal-summary p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* RIGHT COLUMN */
+
+.legal-content {
+  max-width: 920px;
+  padding: 48px 64px;
+}
+
+.legal-content section {
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--border);
+}
+
+.legal-content section:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.legal-content h2 {
+  color: var(--primary);
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.legal-content ul {
+  padding-left: 20px;
+}
+
+.legal-content li {
+  margin-bottom: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-summary {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .legal-summary-inner {
+    position: static;
+    transform: none;
+    padding: 36px 24px;
+  }
+
+  .legal-summary h1 {
+    font-size: 32px;
+  }
+
+  .legal-content {
+    padding: 36px 24px;
+  }
+
+  .legal-content h2 {
+    font-size: 22px;
+  }
+
+  .legal-content p,
+  .legal-content li {
+    font-size: 15px;
+  }
+}
+
+.legal-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.legal-content li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.legal-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+}

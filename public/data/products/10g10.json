@@ -1,0 +1,77 @@
+{
+  "handle": "10g10",
+  "title": "10G10",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR10_caf9c6a9-9e08-4016-850f-cd40d2ea61f5.jpg?v=1739374893",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_af39f863-df97-4f63-ace9-51ba1ee6ef9e.png?v=1760632891"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec RVR10B10B Return Filter | Replaces the Eppensteiner 10G10",
+      "sku": "10g10-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR10_caf9c6a9-9e08-4016-850f-cd40d2ea61f5.jpg?v=1739374893",
+      "vendor": "",
+      "price": 7500,
+      "partNumber": "RVR10B10B",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec RVR10B10B. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the RVR10B10B provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Return Filter",
+        "Media: Wire Mesh",
+        "Efficiency 1: 10µ",
+        "Outer Diameter: 41.5 mm",
+        "Inner Diameter: 16.5 mm",
+        "Length: 50.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ",
+        "Media Type: Wire Mesh",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0001 m³"
+    },
+    {
+      "title": "MicroFit® MFHR50240 UltraGen III Return Filter | Replaces the Eppensteiner 10G10",
+      "sku": "10g10-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_af39f863-df97-4f63-ace9-51ba1ee6ef9e.png?v=1760632891",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "MFHR50240",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "MicroFit® MFHR50240 UltraGen III Return Filter. Engineered and manufactured in Great Britain the MFHLP30166 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MicroFit® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MicroFit® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Return Filter",
+        "Media: Wire Mesh",
+        "Efficiency 1: 10µ",
+        "Outer Diameter: 41.5 mm",
+        "Inner Diameter: 16.5 mm",
+        "Length: 50.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ",
+        "Media Type: Wire Mesh",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

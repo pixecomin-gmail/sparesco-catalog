@@ -1,0 +1,330 @@
+/* app/become-supplier/become-supplier.css */
+
+.supplier-hero {
+  background: var(--bg);
+  padding: 34px 0 38px;
+}
+
+.supplier-hero h1 {
+  max-width: 760px;
+  color: var(--primary);
+  font-size: 42px;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.supplier-hero p {
+  max-width: 780px;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+/* STATS */
+
+.supplier-stats {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.supplier-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.supplier-stats strong {
+  display: block;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.supplier-stats span {
+  display: block;
+  color: rgba(255,255,255,0.82);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* WHY SELL */
+
+.sell-benefits {
+  background: #f4f8fb;
+  padding: 48px 0;
+}
+
+.sell-benefits-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 42px;
+  align-items: start;
+}
+
+.sell-benefits-copy h2,
+.supplier-types-content h2 {
+  color: var(--primary);
+  font-size: 30px;
+  line-height: 1.16;
+  letter-spacing: -0.8px;
+  margin: 12px 0;
+}
+
+.sell-benefits-copy p,
+.supplier-types-content p {
+  max-width: 520px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.sell-benefits-list {
+  border-top: 1px solid var(--border);
+}
+
+.sell-benefits-list div {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.sell-benefits-list strong {
+  display: block;
+  color: var(--primary);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.sell-benefits-list p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* PROCESS */
+
+.supplier-process-section {
+  background: #ffffff;
+  padding: 48px 0;
+}
+
+.supplier-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.supplier-process-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 22px;
+  min-height: 190px;
+}
+
+.supplier-process-card span {
+  display: block;
+  color: rgba(23, 63, 76, 0.18);
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.supplier-process-card h3 {
+  color: var(--primary);
+  font-size: 17px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.supplier-process-card p {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* WHO CAN SELL */
+
+.supplier-types-strip {
+  background: #f7f5ef;
+  padding: 42px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.supplier-types-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.supplier-types-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.supplier-types-list span {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  color: var(--primary);
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.supplier-types-list span:hover {
+  border-color: var(--primary);
+  background: #f4f8fb;
+}
+
+/* FORM */
+
+.supplier-form-section {
+  background: #ffffff;
+  padding: 44px 0 52px;
+}
+
+.supplier-form {
+  width: 100%;
+  max-width: 860px;
+}
+
+.supplier-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 12px;
+}
+
+.supplier-form input,
+.supplier-form select,
+.supplier-form textarea {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.supplier-full-width {
+  display: block;
+  margin-top: 10px;
+}
+
+.supplier-form textarea {
+  height: 68px;
+  min-height: 68px;
+  padding: 10px 12px;
+  margin-top: 10px;
+  resize: vertical;
+}
+
+.supplier-form button {
+  width: 100%;
+  height: 44px;
+  margin-top: 12px;
+  background: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .supplier-hero,
+  .sell-benefits,
+  .supplier-process-section,
+  .supplier-types-strip,
+  .supplier-form-section {
+    padding: 38px 0;
+  }
+
+  .supplier-hero h1 {
+    font-size: 31px;
+  }
+
+  .supplier-hero p {
+    font-size: 15px;
+  }
+
+  .supplier-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sell-benefits-layout,
+  .supplier-types-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .supplier-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .supplier-form {
+    max-width: 100%;
+  }
+
+  .supplier-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .supplier-form input,
+  .supplier-form select {
+    height: 46px;
+  }
+}
+
+@media (max-width: 520px) {
+  .supplier-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .supplier-process-card {
+    min-height: auto;
+  }
+}
+
+.supplier-role {
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  padding: 0 12px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.supplier-role label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.supplier-role input {
+  width: auto;
+  height: auto;
+}
+
+.supplier-role small {
+  color: #b42318;
+}

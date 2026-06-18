@@ -1,8 +1,5 @@
-"use client";
-
-import { useMemo } from "react";
 import Link from "next/link";
-import { notFound, useParams, useRouter, useSearchParams } from "next/navigation";
+import { notFound } from "next/navigation";
 import collectionsData from "@/data/collections.json";
 import { getAllProducts } from "@/lib/products";
 
@@ -14,15 +11,17 @@ type CollectionItem = {
 
 const PAGE_SIZE = 24;
 const collections = collectionsData as CollectionItem[];
-const products = getAllProducts();
 
-export default function CollectionDetailPage() {
-  const params = useParams();
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const handle = String(params.handle || "");
-  const currentPage = Number(searchParams.get("page") || "1");
+  export default async function CollectionDetailPage({
+    params,
+    searchParams,
+  }: {
+    params: Promise<{ handle: string }>;
+    searchParams?: Promise<{ page?: string }>;
+  }) {
+    const { handle } = await params;
+    const resolvedSearchParams = searchParams ? await searchParams : {};
+    const currentPage = Number(resolvedSearchParams.page || "1");
 
   const collection = collections.find((item) => item.handle === handle);
 
@@ -30,25 +29,18 @@ export default function CollectionDetailPage() {
     notFound();
   }
 
-  const collectionProducts = useMemo(() => {
-    return products.filter((product) => product.collectionHandle === handle);
-  }, [handle]);
-
-  const totalPages = Math.max(
-    1,
-    Math.ceil(collectionProducts.length / PAGE_SIZE)
+  const products = getAllProducts();
+  const collectionProducts = products.filter(
+    (product) => product.collectionHandle === handle
   );
 
+  const totalPages = Math.max(1, Math.ceil(collectionProducts.length / PAGE_SIZE));
   const safePage = Math.min(Math.max(currentPage, 1), totalPages);
 
   const visibleProducts = collectionProducts.slice(
     (safePage - 1) * PAGE_SIZE,
     safePage * PAGE_SIZE
   );
-
-  function goToPage(page: number) {
-    router.push(`/collections/${handle}?page=${page}`);
-  }
 
   return (
     <main>
@@ -108,23 +100,25 @@ export default function CollectionDetailPage() {
 
             {collectionProducts.length > PAGE_SIZE && (
               <div className="pagination">
-                <button
-                  disabled={safePage === 1}
-                  onClick={() => goToPage(safePage - 1)}
-                >
-                  Previous
-                </button>
+                {safePage > 1 ? (
+                  <Link href={`/collections/${handle}?page=${safePage - 1}`}>
+                    Previous
+                  </Link>
+                ) : (
+                  <span>Previous</span>
+                )}
 
                 <span>
                   Page {safePage} of {totalPages}
                 </span>
 
-                <button
-                  disabled={safePage === totalPages}
-                  onClick={() => goToPage(safePage + 1)}
-                >
-                  Next
-                </button>
+                {safePage < totalPages ? (
+                  <Link href={`/collections/${handle}?page=${safePage + 1}`}>
+                    Next
+                  </Link>
+                ) : (
+                  <span>Next</span>
+                )}
               </div>
             )}
           </div>

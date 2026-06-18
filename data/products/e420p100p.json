@@ -1,0 +1,79 @@
+{
+  "handle": "e420p100p",
+  "title": "E420P100P",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211570B_7bf96a36-4e5d-4b36-9126-9c442ed9a081.jpg?v=1741362698",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_391c8416-7e91-4532-a055-382978dfd6a4.jpg?v=1764762910",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211570B_2b418722-89ef-40ce-8fc9-a81038aa6556.jpg?v=1741362074",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_80dde565-7bdd-479d-a132-393c3f03fb14.jpg?v=1764762760"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec RVR420L10B Return Filter | Replaces the Eppensteiner E420P100P",
+      "sku": "e420p100p-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211570B_7bf96a36-4e5d-4b36-9126-9c442ed9a081.jpg?v=1741362698",
+      "vendor": "",
+      "price": 6400,
+      "partNumber": "RVR420L10B",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec RVR420L10B. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the RVR420L10B provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Return Filter",
+        "Media: Cellulose",
+        "Efficiency 1: 10µ @ β2",
+        "Outer Diameter: 41.5 mm",
+        "Length: 96.0 mm",
+        "Thread: M16x1.5",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β2",
+        "Media Type: Cellulose",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.1 kg",
+      "shippingVolume": "0.0002 m³"
+    },
+    {
+      "title": "HiFi Filter SH 67505 Return Filter | Replaces the Eppensteiner E420P100P",
+      "sku": "e420p100p-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_391c8416-7e91-4532-a055-382978dfd6a4.jpg?v=1764762910",
+      "vendor": "",
+      "price": 8100,
+      "partNumber": "SH 67505",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SH 67505. This part is designed to meet high-performance standards, offering reliability and durability across a wide range of applications. Manufactured with precision and quality materials, it ensures optimal compatibility and functionality within your system, helping to maintain efficiency and extend the lifespan of your equipment. Whether used as part of a filtration system, hydraulic setup, or general machinery, this component delivers consistent performance under demanding conditions. Its robust construction and dependable design make it a trusted choice for maintaining system integrity and reducing downtime.",
+      "specifications": [
+        "Style: Return Filter",
+        "Media: Cellulose",
+        "Efficiency 1: 10µ @ β2",
+        "Outer Diameter: 41.5 mm",
+        "Length: 96.0 mm",
+        "Thread: M16x1.5",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β2",
+        "Media Type: Cellulose",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.1 kg",
+      "shippingVolume": "0.0005 m³"
+    }
+  ]
+}

@@ -202,13 +202,13 @@ const productsMap = new Map();
 const collectionsMap = new Map();
 const duplicateRows = [];
 
-const oldProductFiles = fs
-  .readdirSync(productsDir)
-  .filter((file) => file.endsWith(".json"));
+// const oldProductFiles = fs
+//   .readdirSync(productsDir)
+//   .filter((file) => file.endsWith(".json"));
 
-oldProductFiles.forEach((file) => {
-  fs.unlinkSync(path.join(productsDir, file));
-});
+// oldProductFiles.forEach((file) => {
+//   fs.unlinkSync(path.join(productsDir, file));
+// });
 
 const collectionFolders = fs
   .readdirSync(importsDir, { withFileTypes: true })
@@ -225,13 +225,19 @@ collectionFolders.forEach((folder) => {
     count: 0,
   });
 
+  const excelPath = path.join(collectionPath, "excel");
+
+  const actualExcelPath = fs.existsSync(excelPath)
+    ? excelPath
+    : collectionPath;
+
   const excelFiles = fs
-    .readdirSync(collectionPath)
+    .readdirSync(actualExcelPath)
     .filter((file) => file.toLowerCase().endsWith(".xlsx"));
 
   excelFiles.forEach((file) => {
     readExcel(
-      path.join(collectionPath, file),
+      path.join(actualExcelPath, file),
       collectionName,
       collectionHandle,
       productsMap,
@@ -313,6 +319,29 @@ XLSX.utils.book_append_sheet(
 );
 
 XLSX.writeFile(duplicateWorkbook, duplicateReportPath);
+
+const publicDataDir = path.join(process.cwd(), "public", "data");
+const publicProductsDir = path.join(publicDataDir, "products");
+
+fs.mkdirSync(publicDataDir, { recursive: true });
+fs.mkdirSync(publicProductsDir, { recursive: true });
+
+fs.copyFileSync(
+  path.join(dataDir, "products-index.json"),
+  path.join(publicDataDir, "products-index.json")
+);
+
+fs.copyFileSync(
+  path.join(dataDir, "collections.json"),
+  path.join(publicDataDir, "collections.json")
+);
+
+products.forEach((product) => {
+  fs.copyFileSync(
+    path.join(productsDir, `${product.handle}.json`),
+    path.join(publicProductsDir, `${product.handle}.json`)
+  );
+});
 
 console.log(`Generated ${products.length} grouped product files`);
 console.log(`Generated products-index.json`);

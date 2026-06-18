@@ -1,0 +1,81 @@
+{
+  "handle": "169801th20xlf000v",
+  "title": "169801TH20XLF000V",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200337B-NB_39f437c9-86da-431a-a95d-fba16f89bea5.jpg?v=1741944316",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_748011dd-1cac-4f38-a423-e88d23635ad7.jpg?v=1741944316",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200337B-NB_6b1fe129-dce8-4d91-a3e8-84805bd64f54.jpg?v=1741944304",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_d25e6093-5933-4c8e-a2b8-a7d077dddd17.jpg?v=1741944304"
+  ],
+  "variants": [
+    {
+      "title": "MicroFit® UltraGen III MFHHP40066 Pressure Filter | Replaces the Eppensteiner 16.9801TH20XLF000V",
+      "sku": "16-9801th20xlf000v-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200337B-NB_6b1fe129-dce8-4d91-a3e8-84805bd64f54.jpg?v=1741944304",
+      "vendor": "",
+      "price": 23300,
+      "partNumber": "MFHHP40066",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "The MICROFIT® UltraGen III MFHHP40066 is the MICROFIT® approved replacement to the Eppensteiner 16.9801TH20XLF000V. Engineered and manufactured in Great Britain the MFHHP40066",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 51.0 mm",
+        "Inner Diameter: 23.8 mm",
+        "Length: 330.0 mm",
+        "Δ Collapse Pressure: 210 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 210 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "1.87 kg",
+      "shippingVolume": "0.0009 m³"
+    },
+    {
+      "title": "Filtrec D122G25BV Pressure Filter | Replaces the Eppensteiner 169801TH20XLF000V",
+      "sku": "169801th20xlf000v-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_748011dd-1cac-4f38-a423-e88d23635ad7.jpg?v=1741944316",
+      "vendor": "",
+      "price": 26400,
+      "partNumber": "D122G25BV",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec D122G25BV. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the D122G25BV provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 51.0 mm",
+        "Inner Diameter: 23.8 mm",
+        "Length: 330.0 mm",
+        "Δ Collapse Pressure: 210 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 210 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "0.85 kg",
+      "shippingVolume": "0.0009 m³"
+    }
+  ]
+}
