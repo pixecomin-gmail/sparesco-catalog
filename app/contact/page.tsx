@@ -3,8 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import "./contact.css";
-import "./contact.css";
-import "../sellwithus/sellwithus.css";
 
 const countryCodes = [
   { label: "India +91", code: "+91", min: 10, max: 10 },
@@ -39,9 +37,14 @@ export default function ContactPage() {
 
     if (!form.name.trim()) newErrors.name = "Name is required.";
     if (!form.email.trim()) newErrors.email = "Email is required.";
-    if (!/^\S+@\S+\.\S+$/.test(form.email)) newErrors.email = "Enter a valid email.";
+    if (!/^\S+@\S+\.\S+$/.test(form.email)) {
+      newErrors.email = "Enter a valid email.";
+    }
     if (!phoneDigits) newErrors.phone = "Phone number is required.";
-    if (phoneDigits.length < form.country.min || phoneDigits.length > form.country.max) {
+    if (
+      phoneDigits.length < form.country.min ||
+      phoneDigits.length > form.country.max
+    ) {
       newErrors.phone = `Enter a valid ${form.country.label} phone number.`;
     }
     if (!form.role) newErrors.role = "Please select buyer or seller.";
@@ -70,18 +73,17 @@ export default function ContactPage() {
           <span>Contact Us</span>
         </nav>
 
-        <header className="contact-header">
-          <h1>Contact Us</h1>
-          <p>
-            Need help sourcing spare parts, vendor partnerships or catalogue enquiries?
-            Send us your details and our team will get back to you.
-          </p>
-        </header>
+     <header className="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        Need help sourcing spare parts, vendor partnerships, product
+        availability or catalogue enquiries? Send us your details and our
+        team will get back to you.
+      </p>
+    </header>
 
         <section className="contact-layout">
           <aside className="contact-info">
-            <h2>Contact Information</h2>
-
             <div className="contact-info-item">
               <span>Phone</span>
               <strong>+91 124 456 7890</strong>
@@ -89,16 +91,19 @@ export default function ContactPage() {
             </div>
 
             <div className="contact-info-item">
-              <span>Email</span>
+              <span>Sales &amp; Sourcing</span>
               <strong>sales@sparesco.com</strong>
-              <p>Sales &amp; Sourcing</p>
+              <p>For parts enquiry and procurement support</p>
+            </div>
 
+            <div className="contact-info-item">
+              <span>Vendor Partnerships</span>
               <strong>vendors@sparesco.com</strong>
-              <p>Vendor Partnerships</p>
+              <p>For suppliers, distributors and catalogue onboarding</p>
             </div>
           </aside>
 
-          <form className="supplier-form" onSubmit={submitForm}>
+          <form className="contact-form" onSubmit={submitForm}>
             <div className="contact-grid">
               <label>
                 <input
@@ -124,7 +129,9 @@ export default function ContactPage() {
                 <select
                   value={form.country.code}
                   onChange={(e) => {
-                    const selected = countryCodes.find((c) => c.code === e.target.value)!;
+                    const selected = countryCodes.find(
+                      (country) => country.code === e.target.value
+                    )!;
                     setForm((prev) => ({ ...prev, country: selected }));
                   }}
                 >
@@ -149,7 +156,7 @@ export default function ContactPage() {
               </label>
             </div>
 
-            <div className="supplier-role">
+            <div className="contact-role">
               <span>I am a*</span>
 
               <label>

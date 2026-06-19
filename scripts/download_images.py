@@ -5,7 +5,7 @@ import hashlib
 import requests
 import pandas as pd
 
-COLLECTION_NAME = "Eppensteiner"
+COLLECTION_NAME = "Domnick Hunter"
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 COLLECTION_DIR = BASE_DIR / "imports" / COLLECTION_NAME

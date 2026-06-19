@@ -2,6 +2,7 @@ import HomeHero from "@/components/HomeHero";
 import StatsCounter from "@/components/StatsCounter";
 import FeaturedProductsSlider from "@/components/FeaturedProductsSlider";
 import featuredCategories from "@/data/featured-categories.json";
+import PopularSparePartsList from "@/components/PopularSparePartsList";
 
 export default function Home() {
   return (
@@ -45,7 +46,6 @@ export default function Home() {
       </section>
 
       {/* INDUSTRIES */}
-
       <section className="section industry-section">
         <div className="container">
           <div className="industry-header">
@@ -92,6 +92,8 @@ export default function Home() {
         </div>
       </section>
 
+      <PopularSparePartsList />
+      
       {/* CTA SECTION */}
 
       <section className="section dark-cta-section">

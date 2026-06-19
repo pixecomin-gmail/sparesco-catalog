@@ -41,8 +41,9 @@ export function EnquiryProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
+    if (!hasLoaded) return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
-  }, [items]);
+  }, [items, hasLoaded]);
 
   function openDrawer() {
     setIsDrawerOpen(true);
@@ -59,14 +60,13 @@ export function EnquiryProvider({ children }: { children: React.ReactNode }) {
       );
 
       if (existingItem) {
-        return currentItems.map((currentItem) =>
-          currentItem.id === item.id
-            ? { ...currentItem, quantity: currentItem.quantity + 1 }
-            : currentItem
-        );
+        return [
+          { ...existingItem, quantity: existingItem.quantity + 1 },
+          ...currentItems.filter((currentItem) => currentItem.id !== item.id),
+        ];
       }
 
-      return [...currentItems, { ...item, quantity: 1 }];
+      return [{ ...item, quantity: 1 }, ...currentItems];
     });
 
     openDrawer();

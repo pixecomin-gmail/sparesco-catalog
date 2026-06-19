@@ -260,6 +260,13 @@ products.forEach((product) => {
 const productsIndex = products.map((product) => {
   const firstVariant = product.variants[0];
 
+  const prices = product.variants
+    .map((variant) => Number(variant.price || 0))
+    .filter((price) => price > 0);
+
+  const lowestPrice =
+    prices.length > 0 ? Math.min(...prices) : 0;
+
   return {
     handle: product.handle,
     title: product.title,
@@ -270,6 +277,7 @@ const productsIndex = products.map((product) => {
     partNumber: firstVariant?.partNumber || product.title,
     vendor: firstVariant?.vendor || "",
     variantCount: product.variants.length,
+    price: lowestPrice,
   };
 });
 

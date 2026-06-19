@@ -1,0 +1,67 @@
+{
+  "handle": "p133712",
+  "title": "P133712",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1650_3f636464-b133-4495-9031-321a4b9f9203.jpg?v=1761218328",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p133712.700.700.jpg?v=1761218328"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AF1650 Air Filter | Replaces the Donaldson P133712",
+      "sku": "p133712-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1650_3f636464-b133-4495-9031-321a4b9f9203.jpg?v=1761218328",
+      "vendor": "",
+      "price": 12000,
+      "partNumber": "AF1650",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® AF1650 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 244.6 mm",
+        "Inner Diameter: 129.8 mm",
+        "Length: 294.6 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "2.07 kg",
+      "shippingVolume": "0.0206 m³"
+    },
+    {
+      "title": "Donaldson P133712 Air Primary, Round",
+      "sku": "p133712-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p133712.700.700.jpg?v=1761218328",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P133712",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P133712 Air Primary, Round provides clean, efficient airflow for engines by trapping airborne contaminants. Its round design maximizes filtration surface area while maintaining high airflow rates. Perfect for heavy-duty applications, this air primary filter enhances engine longevity and supports consistent performance.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 244.6 mm",
+        "Inner Diameter: 129.8 mm",
+        "Length: 294.6 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -10,6 +10,7 @@ export type ProductIndexItem = {
   partNumber: string;
   vendor: string;
   variantCount: number;
+  price: number;
 };
 
 export type ProductVariant = {

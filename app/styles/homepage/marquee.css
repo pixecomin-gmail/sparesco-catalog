@@ -1,0 +1,53 @@
+/* MARQUEE */
+
+.marquee-section {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.marquee-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marquee-label {
+  flex: 0 0 auto;
+  color: var(--primary);
+  padding: 16px 24px 16px 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 2;
+  background: #ffffff;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.marquee-track span {
+  display: inline-block;
+  padding-right: 60px;
+  white-space: nowrap;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { Suspense, useMemo } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getAllProducts, getBrands, getCategories } from "@/lib/products";
@@ -10,7 +10,7 @@ const categories = getCategories();
 const brands = getBrands();
 const PAGE_SIZE = 24;
 
-export default function PartsPage() {
+function PartsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -21,11 +21,8 @@ export default function PartsPage() {
   function updateParam(key: string, value: string) {
     const params = new URLSearchParams(searchParams.toString());
 
-    if (value) {
-      params.set(key, value);
-    } else {
-      params.delete(key);
-    }
+    if (value) params.set(key, value);
+    else params.delete(key);
 
     params.set("page", "1");
     router.push(`/parts?${params.toString()}`);
@@ -221,5 +218,13 @@ export default function PartsPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+export default function PartsPage() {
+  return (
+    <Suspense fallback={null}>
+      <PartsContent />
+    </Suspense>
   );
 }

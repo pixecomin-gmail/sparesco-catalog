@@ -1,0 +1,79 @@
+{
+  "handle": "p550023",
+  "title": "P550023",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/PF_1025_image1_f2ab3a50-8389-44ea-9268-8c167aa82f59.jpg?v=1761217601",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p550023.700.700.jpg?v=1761217601",
+    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF5090_4e920315-8004-4673-9c55-a6060fe8daf3.jpg?v=1761217601"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter PF 1025 Oil Filter | Replaces the Donaldson P550023",
+      "sku": "p550023-1",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/PF_1025_image1_f2ab3a50-8389-44ea-9268-8c167aa82f59.jpg?v=1761217601",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "PF 1025",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Czechia",
+      "description": "MANN-FILTER oil filters: Top filtration performance and optimal cleaning protect the engine against wear caused by impurities and combustion residues in the oil. Filter media and high-quality sealing materials that are individually tailored to the intended application offer optimum protection over the entire maintenance interval.",
+      "specifications": [
+        "Style: Oil Filter",
+        "Dimension A: 108.0 mm",
+        "Dimension B: 13.0 mm",
+        "Dimension C: 13.0 mm",
+        "Dimension H: 203.0 mm",
+        "Outer Diameter: 91.9 mm",
+        "Inner Diameter: 15.0 mm",
+        "Length: 134.9 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P550023 Fuel Cartridge",
+      "sku": "p550023-2",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p550023.700.700.jpg?v=1761217601",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P550023",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P550023 Fuel Cartridge is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Fuel Cartridge",
+        "Outer Diameter: 91.9 mm",
+        "Inner Diameter: 15.0 mm",
+        "Length: 134.9 mm"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard FF5090 Fuel Filter, Cartridge | Replaces the Donaldson P550023",
+      "sku": "p550023-3",
+      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF5090_4e920315-8004-4673-9c55-a6060fe8daf3.jpg?v=1761217601",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "FF5090",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® FF5090 spin-on fuel filter delivers superior performance using proven media technology, removing harmful contaminants. Fleetguard fuel filters ensure optimal fuel system protection to meet or exceed OEM specifications.",
+      "specifications": [
+        "Style: Fuel Cartridge",
+        "Outer Diameter: 91.9 mm",
+        "Inner Diameter: 15.0 mm",
+        "Length: 134.9 mm"
+      ],
+      "unitWeight": "0.25 kg",
+      "shippingVolume": "0.0018 m³"
+    }
+  ]
+}
