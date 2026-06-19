@@ -1,9 +1,9 @@
 "use client";
 
 import { Suspense, useMemo } from "react";
-import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getAllProducts, getBrands, getCategories } from "@/lib/products";
+import CollectionProductCard from "@/components/CollectionProductCard";
 
 const products = getAllProducts();
 const categories = getCategories();
@@ -63,9 +63,10 @@ function PartsContent() {
 
   return (
     <main>
-      <section className="section parts-section">
+      <section className="section parts-section parts-page-section">
         <div className="container">
           <h1 className="page-title">Browse Spare Parts</h1>
+
           <p className="page-intro">
             Explore industrial spare parts by category, collection and brand.
           </p>
@@ -74,6 +75,7 @@ function PartsContent() {
             <aside className="filters-sidebar">
               <div className="filters-header">
                 <h3>Filter By</h3>
+
                 {(selectedCategory || selectedBrand) && (
                   <button type="button" onClick={clearFilters}>
                     Clear all
@@ -149,42 +151,16 @@ function PartsContent() {
             <div className="parts-content">
               <div className="parts-topbar">
                 <strong>All Spare Parts</strong>
+
                 <span>
-                  {filteredProducts.length} products found · Page {safePage} of{" "}
-                  {totalPages}
+                  {filteredProducts.length.toLocaleString("en-IN")} products
+                  found · Page {safePage} of {totalPages}
                 </span>
               </div>
 
-              <div className="parts-product-grid">
+              <div className="parts-product-grid parts-product-grid-four">
                 {visibleProducts.map((product) => (
-                  <article className="parts-product-card" key={product.handle}>
-                    <Link
-                      href={`/products/${product.handle}`}
-                      className="parts-product-image"
-                      aria-label={product.title}
-                    >
-                      {product.image ? (
-                        <img src={product.image} alt={product.title} />
-                      ) : (
-                        <span>No Image</span>
-                      )}
-                    </Link>
-
-                    <div className="parts-product-info">
-                      <h3>
-                        <Link href={`/products/${product.handle}`}>
-                          {product.title}
-                        </Link>
-                      </h3>
-
-                      <p>
-                        {product.collection}
-                        {product.variantCount > 1
-                          ? ` • ${product.variantCount} options`
-                          : ""}
-                      </p>
-                    </div>
-                  </article>
+                  <CollectionProductCard product={product} key={product.handle} />
                 ))}
               </div>
 
@@ -201,9 +177,7 @@ function PartsContent() {
                     Previous
                   </button>
 
-                  <span>
-                    Page {safePage} of {totalPages}
-                  </span>
+                  <span>Page {safePage} of {totalPages}</span>
 
                   <button
                     disabled={safePage === totalPages}

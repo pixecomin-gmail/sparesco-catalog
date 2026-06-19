@@ -39,11 +39,9 @@ export default function CollectionProductCard({
       </Link>
 
       <div className="parts-product-info">
-        <div className="parts-product-title-line">
-          <h3>
-            <Link href={`/products/${product.handle}`}>{product.title}</Link>
-          </h3>
-        </div>
+        <h3>
+          <Link href={`/products/${product.handle}`}>{product.title}</Link>
+        </h3>
 
         <p className="parts-product-meta">{metaText}</p>
 
@@ -55,9 +53,9 @@ export default function CollectionProductCard({
               id: product.handle,
               handle: product.handle,
               title: product.title,
-              image: product.image,
+              image: product.image || "",
               partNumber: product.partNumber || product.title,
-              vendor: product.vendor || product.collection,
+              vendor: product.vendor || product.collection || "",
               price: product.price || 0,
             })
           }

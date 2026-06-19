@@ -252,7 +252,7 @@ export default function SiteHeader() {
           <div className="mobile-menu-drawer" onClick={(e) => e.stopPropagation()}>
             <div className="mobile-menu-header">
               {mobileView === "main" && (
-                <span className="mobile-menu-title">Menu</span>
+                <span className="mobile-menu-title"></span>
               )}
 
               {mobileView === "categories" && (
@@ -303,7 +303,7 @@ export default function SiteHeader() {
 
                   <Link
                     href="/sellwithus"
-                    className="mobile-nav-button"
+                    className="mobile-nav-button-new"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Sell With Us

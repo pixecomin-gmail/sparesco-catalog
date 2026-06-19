@@ -44,11 +44,11 @@
 }
 
 .featured-product-card {
+  display: flex;
+  flex-direction: column;
   background: #ffffff;
   border: 1px solid var(--border);
   padding: 8px;
-  display: flex;
-  flex-direction: column;
 }
 
 .featured-product-image {
@@ -84,24 +84,29 @@
 }
 
 .featured-product-info p {
+  margin: 0;
   color: var(--muted);
   font-size: 14px;
-  line-height: 1;
-  margin: 0;
+  line-height: 1.4;
 }
 
-.featured-quote-button {
+.featured-enquiry-button {
   width: 100%;
   height: 42px;
-  margin-top: 16px;
+  margin-top: 14px;
   border: 1px solid var(--primary);
   background: var(--primary);
   color: #ffffff;
   font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.9px;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.featured-enquiry-button:hover {
+  background: transparent;
+  color: var(--primary);
 }
 
 @media (max-width: 1100px) {

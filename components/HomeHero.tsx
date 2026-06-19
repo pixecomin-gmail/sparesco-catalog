@@ -24,7 +24,9 @@ export default function HomeHero() {
   return (
     <section className="home-hero">
       <div className="container">
-        <span className="tagline">Heavy equipment spare parts marketplace</span>
+        <span className="tagline">
+          Heavy equipment spare parts marketplace
+        </span>
 
         <h1>Find any spare part, for any machine.</h1>
 
@@ -33,67 +35,81 @@ export default function HomeHero() {
           hydraulics, engine parts and machinery components.
         </p>
 
-        <div className="home-hero-search">
-          <input
-            type="text"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            onKeyDown={(event) => {
-              if (event.key === "Enter") {
-                submitSearch();
-              }
-            }}
-            placeholder="Search by part number, brand or description..."
-          />
+        <div className="home-hero-search-wrap">
+          <div className="home-hero-search">
+            <input
+              type="text"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") {
+                  submitSearch();
+                }
+              }}
+              placeholder="Search by part number, brand or description..."
+            />
 
-          <button
-            type="button"
-            className="home-search-link"
-            onClick={submitSearch}
-          >
-            Search
-          </button>
-        </div>
+            {query && (
+              <button
+                type="button"
+                className="hero-search-clear"
+                onClick={() => setQuery("")}
+              >
+                ×
+              </button>
+            )}
 
-        {results.length > 0 && (
-          <>
-            <div className="hero-result-list">
-              {results.map((product) => (
-                <Link
-                  href={`/products/${product.handle}`}
-                  className="hero-result-card"
-                  key={product.handle}
-                >
-                <div className="hero-result-image">
-                  {product.image && (
-                    <img src={product.image} alt={product.title} />
-                  )}
-                </div>
-
-                <div className="hero-result-content">
-                  <strong>{product.title}</strong>
-                  <span>
-                    {product.collection}
-                    {product.variantCount > 1
-                      ? ` • ${product.variantCount} options`
-                      : ""}
-                  </span>
-                </div>
-                </Link>
-              ))}
-            </div>
-
-            <Link
-              href={`/search?q=${encodeURIComponent(query.trim())}`}
-              className="hero-view-all"
+            <button
+              type="button"
+              className="home-search-link"
+              onClick={submitSearch}
             >
-              View all results →
-            </Link>
-          </>
-        )}
+              Search
+            </button>
+          </div>
+
+          {results.length > 0 && (
+            <div className="hero-search-dropdown">
+              <div className="hero-result-list">
+                {results.map((product) => (
+                  <Link
+                    href={`/products/${product.handle}`}
+                    className="hero-result-card"
+                    key={product.handle}
+                  >
+                    <div className="hero-result-image">
+                      {product.image && (
+                        <img src={product.image} alt={product.title} />
+                      )}
+                    </div>
+
+                    <div className="hero-result-content">
+                      <strong>{product.title}</strong>
+
+                      <span>
+                        {product.collection}
+                        {product.variantCount > 1
+                          ? ` • ${product.variantCount} options`
+                          : ""}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+
+              <Link
+                href={`/search?q=${encodeURIComponent(query.trim())}`}
+                className="hero-view-all"
+              >
+                View all results →
+              </Link>
+            </div>
+          )}
+        </div>
 
         <div className="button-row">
           <Link href="/parts">Browse All Parts</Link>
+
           <Link href="/enquiry" className="secondary">
             Request a Quote
           </Link>

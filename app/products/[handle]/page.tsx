@@ -14,6 +14,18 @@ function cleanVariantTitle(title: string) {
     .trim();
 }
 
+function getCleanSpecs(specifications: string[]) {
+  return specifications.filter((spec) => {
+    if (!spec.includes(":")) return false;
+
+    const [label, ...valueParts] = spec.split(":");
+    const cleanLabel = label.trim();
+    const cleanValue = valueParts.join(":").trim();
+
+    return cleanLabel && cleanValue && cleanLabel.length <= 45;
+  });
+}
+
 export default function ProductPage() {
   const params = useParams();
   const handle = String(params.handle);
@@ -22,7 +34,8 @@ export default function ProductPage() {
   const [product, setProduct] = useState<Product | null>(null);
   const [activeImage, setActiveImage] = useState("");
   const [activeVariantIndex, setActiveVariantIndex] = useState(0);
-  const [activeTab, setActiveTab] = useState<"specs" | "description">("specs");
+  const [specsOpen, setSpecsOpen] = useState(false);
+  const [descriptionOpen, setDescriptionOpen] = useState(false);
 
   useEffect(() => {
     fetch(`/data/products/${handle}.json`)
@@ -49,29 +62,73 @@ export default function ProductPage() {
     );
   }
 
-  const activeVariant = product.variants[activeVariantIndex];
+  const currentProduct = product;
+  const activeVariant = currentProduct.variants[activeVariantIndex];
+
+  if (!activeVariant) return null;
+
+  const activeVariantTitle = cleanVariantTitle(activeVariant.title);
+
+  const activePrice =
+    activeVariant.price > 0
+      ? `₹${activeVariant.price.toLocaleString("en-IN")}`
+      : "Price On Request";
+
+  const stickyImage =
+    activeVariant.image || activeImage || currentProduct.images?.[0] || "";
+
+  const specs = Array.from(
+    new Set(
+      [
+        `Part Number: ${activeVariant.partNumber}`,
+        activeVariant.hsCode ? `HS Code: ${activeVariant.hsCode}` : "",
+        activeVariant.countryOfOrigin
+          ? `Country of Origin: ${activeVariant.countryOfOrigin}`
+          : "",
+        activeVariant.unitWeight
+          ? `Unit Weight: ${activeVariant.unitWeight}`
+          : "",
+        activeVariant.shippingVolume
+          ? `Shipping Volume: ${activeVariant.shippingVolume}`
+          : "",
+        ...getCleanSpecs(activeVariant.specifications || []),
+      ].filter(Boolean)
+    )
+  );
+
+  function addActiveVariantToEnquiry() {
+    addItem({
+      id: `${currentProduct.handle}-${activeVariant.partNumber}`,
+      handle: currentProduct.handle,
+      title: currentProduct.title,
+      image: stickyImage,
+      partNumber: activeVariant.partNumber,
+      vendor: activeVariantTitle,
+      price: activeVariant.price,
+    });
+  }
 
   return (
     <main>
-      <section className="section">
+      <section className="section product-page-section">
         <div className="container">
           <div className="breadcrumb">
-            Home / Parts / {product.collection} / {product.title}
+            Home / Parts / {currentProduct.collection} / {currentProduct.title}
           </div>
 
-          <div className="product-page-layout product-page-compact-layout">
-            <div className="product-gallery">
+          <div className="product-page-layout product-redesign-layout">
+            <div className="product-gallery product-gallery-sticky">
               <div className="main-product-image">
                 {activeImage ? (
-                  <img src={activeImage} alt={product.title} />
+                  <img src={activeImage} alt={currentProduct.title} />
                 ) : (
                   <span>Product Image</span>
                 )}
               </div>
 
-              {product.images.length > 1 && (
+              {currentProduct.images.length > 1 && (
                 <div className="thumbnail-row">
-                  {product.images.map((image) => (
+                  {currentProduct.images.map((image) => (
                     <button
                       key={image}
                       type="button"
@@ -80,175 +137,141 @@ export default function ProductPage() {
                       }
                       onClick={() => setActiveImage(image)}
                     >
-                      <img src={image} alt={product.title} />
+                      <img src={image} alt={currentProduct.title} />
                     </button>
                   ))}
                 </div>
               )}
             </div>
 
-            <div className="product-details">
-              <div className="selected-variant-name">
-                {cleanVariantTitle(activeVariant.title)}
+            <div className="product-redesign-details">
+              <div className="product-heading-block">
+                <div className="product-title-price-row">
+                  <div className="selected-variant-name">
+                    {activeVariantTitle}
+                  </div>
+
+                  <div className="product-top-price">{activePrice}</div>
+                </div>
+
+                <h1 className="product-title">{currentProduct.title}</h1>
               </div>
 
-              <h1 className="product-title">{product.title}</h1>
-
-              <div className="variant-section product-variant-inline">
-                <div className="variant-list compact-variant-list">
-                  {product.variants.map((variant, index) => (
+              <div className="variant-section">
+                <div className="variant-list variant-list-two-column">
+                  {currentProduct.variants.map((variant, index) => (
                     <button
                       key={variant.sku || `${variant.partNumber}-${index}`}
                       type="button"
                       className={
                         index === activeVariantIndex
-                          ? "variant-card compact-variant-card active"
-                          : "variant-card compact-variant-card"
+                          ? "variant-card variant-card-simple active"
+                          : "variant-card variant-card-simple"
                       }
                       onClick={() => {
                         setActiveVariantIndex(index);
+                        setSpecsOpen(false);
+                        setDescriptionOpen(false);
                         if (variant.image) setActiveImage(variant.image);
                       }}
                     >
                       <span>{cleanVariantTitle(variant.title)}</span>
-                      <strong>
-                        {variant.price > 0
-                          ? `₹${variant.price.toLocaleString("en-IN")}`
-                          : "Price On Request"}
-                      </strong>
                     </button>
                   ))}
                 </div>
               </div>
 
-              <div className="product-actions">
+              <div className="product-specs-panel">
                 <button
-                  className="primary-button"
                   type="button"
-                  onClick={() =>
-                    addItem({
-                      id: `${product.handle}-${activeVariant.partNumber}`,
-                      handle: product.handle,
-                      title: product.title,
-                      image:
-                        activeVariant.image ||
-                        activeImage ||
-                        product.images?.[0] ||
-                        "",
-                      partNumber: activeVariant.partNumber,
-                      vendor: cleanVariantTitle(activeVariant.title),
-                      price: activeVariant.price,
-                    })
+                  className="product-section-header"
+                  onClick={() => setSpecsOpen((current) => !current)}
+                >
+                  <span>Technical Specifications</span>
+                  <strong>{specsOpen ? "−" : "+"}</strong>
+                </button>
+
+                <div
+                  className={
+                    specsOpen
+                      ? "specification-table product-specs-preview open"
+                      : "specification-table product-specs-preview closed"
                   }
                 >
-                  Add To Enquiry
-                </button>
-              </div>
-            </div>
+                  {specs.map((spec) => {
+                    const [label, ...valueParts] = spec.split(":");
+                    const cleanLabel = label.trim();
+                    const cleanValue = valueParts.join(":").trim();
 
-            <div className="product-side-panel">
-              <div className="product-tabs product-tabs-side">
-                <button
-                  type="button"
-                  className={activeTab === "specs" ? "active" : ""}
-                  onClick={() => setActiveTab("specs")}
-                >
-                  Technical Specifications
-                </button>
+                    return (
+                      <div key={spec}>
+                        <strong>{cleanLabel}</strong>
+                        <span>{cleanValue}</span>
+                      </div>
+                    );
+                  })}
 
-                <button
-                  type="button"
-                  className={activeTab === "description" ? "active" : ""}
-                  onClick={() => setActiveTab("description")}
-                >
-                  Description
-                </button>
-              </div>
-
-              {activeTab === "specs" && (
-                <div className="specification-table product-specs-compact">
-                  <div>
-                    <strong>Part Number</strong>
-                    <span>{activeVariant.partNumber}</span>
-                  </div>
-
-                  {activeVariant.hsCode && (
-                    <div>
-                      <strong>HS Code</strong>
-                      <span>{activeVariant.hsCode}</span>
-                    </div>
-                  )}
-
-                  {activeVariant.countryOfOrigin && (
-                    <div>
-                      <strong>Country of Origin</strong>
-                      <span>{activeVariant.countryOfOrigin}</span>
-                    </div>
-                  )}
-
-                  {activeVariant.unitWeight && (
-                    <div>
-                      <strong>Unit Weight</strong>
-                      <span>{activeVariant.unitWeight}</span>
-                    </div>
-                  )}
-
-                  {activeVariant.shippingVolume && (
-                    <div>
-                      <strong>Shipping Volume</strong>
-                      <span>{activeVariant.shippingVolume}</span>
-                    </div>
-                  )}
-
-                  {activeVariant.specifications
-                    .slice(
-                      0,
-                      activeVariant.specifications.findIndex((spec) => {
-                        if (!spec.includes(":")) return true;
-
-                        const [label, ...valueParts] = spec.split(":");
-                        const cleanLabel = label.trim();
-                        const cleanValue = valueParts.join(":").trim();
-
-                        return !cleanLabel || !cleanValue || cleanLabel.length > 45;
-                      }) === -1
-                        ? activeVariant.specifications.length
-                        : activeVariant.specifications.findIndex((spec) => {
-                            if (!spec.includes(":")) return true;
-
-                            const [label, ...valueParts] = spec.split(":");
-                            const cleanLabel = label.trim();
-                            const cleanValue = valueParts.join(":").trim();
-
-                            return !cleanLabel || !cleanValue || cleanLabel.length > 45;
-                          })
-                    )
-                    .map((spec) => {
-                      const [label, ...valueParts] = spec.split(":");
-                      const cleanLabel = label.trim();
-                      const cleanValue = valueParts.join(":").trim();
-
-                      return (
-                        <div key={spec}>
-                          <strong>{cleanLabel}</strong>
-                          <span>{cleanValue}</span>
-                        </div>
-                      );
-                    })}
+                  {!specsOpen && <div className="specs-fade" />}
                 </div>
-              )}
+              </div>
 
-              {activeTab === "description" && (
-                <div className="product-description-box product-description-full">
+              <div className="product-description-accordion">
+                <button
+                  type="button"
+                  className="product-section-header"
+                  onClick={() => setDescriptionOpen((current) => !current)}
+                >
+                  <span>Description</span>
+                  <strong>{descriptionOpen ? "−" : "+"}</strong>
+                </button>
+
+                <div
+                  className={
+                    descriptionOpen
+                      ? "product-description-box open"
+                      : "product-description-box closed"
+                  }
+                >
                   <p>
                     {activeVariant.description || "Description not available."}
                   </p>
+
+                  {!descriptionOpen && <div className="description-fade" />}
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <div className="sticky-enquiry-bar">
+        <div className="sticky-enquiry-inner">
+          <div className="sticky-selected-variant">
+            <div className="sticky-selected-image">
+              {stickyImage ? (
+                <img src={stickyImage} alt={activeVariantTitle} />
+              ) : null}
+            </div>
+
+            <div>
+              <span>Selected Variant</span>
+              <strong>{activeVariantTitle}</strong>
+            </div>
+          </div>
+
+          <div className="sticky-enquiry-actions">
+            <strong>{activePrice}</strong>
+
+            <button
+              type="button"
+              className="primary-button"
+              onClick={addActiveVariantToEnquiry}
+            >
+              Add To Enquiry
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

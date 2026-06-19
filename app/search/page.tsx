@@ -4,6 +4,7 @@ import { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { searchProducts } from "@/lib/products";
+import CollectionProductCard from "@/components/CollectionProductCard";
 
 function SearchContent() {
   const searchParams = useSearchParams();
@@ -16,7 +17,7 @@ function SearchContent() {
 
   return (
     <main>
-      <section className="section">
+      <section className="section parts-section search-page-section">
         <div className="container">
           <h1 className="page-title">Search Spare Parts</h1>
 
@@ -24,7 +25,7 @@ function SearchContent() {
             Search by part number, product name, brand or category.
           </p>
 
-          <div className="home-hero-search">
+          <div className="home-hero-search search-page-search">
             <input
               placeholder="Search SA 16056, air filter, Caterpillar..."
               value={query}
@@ -41,31 +42,12 @@ function SearchContent() {
 
           <div className="parts-topbar">
             <strong>Search Results</strong>
-            <span>{results.length} products found</span>
+            <span>{results.length.toLocaleString("en-IN")} products found</span>
           </div>
 
-          <div className="product-grid">
+          <div className="parts-product-grid search-product-grid">
             {results.slice(0, 24).map((product) => (
-              <Link
-                href={`/products/${product.handle}`}
-                className="product-card"
-                key={product.handle}
-              >
-                <div className="product-image">
-                  {product.image && (
-                    <img src={product.image} alt={product.title} />
-                  )}
-                </div>
-
-                <h3>{product.title}</h3>
-
-                <p>
-                  {product.collection}
-                  {product.variantCount > 1
-                    ? ` • ${product.variantCount} options`
-                    : ""}
-                </p>
-              </Link>
+              <CollectionProductCard product={product} key={product.handle} />
             ))}
           </div>
 

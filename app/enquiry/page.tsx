@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 export default function EnquiryPage() {
-  const { items, increaseQty, decreaseQty, removeItem, closeDrawer } =
-    useEnquiry();
+  const { items, increaseQty, decreaseQty, removeItem } = useEnquiry();
+  const hasItems = items.length > 0;
 
   return (
     <main>
@@ -18,64 +18,79 @@ export default function EnquiryPage() {
             contact you.
           </p>
 
-          <div className="enquiry-page-layout">
-            <div className="enquiry-summary">
-              <h2>Products Summary</h2>
+          <div
+            className={
+              hasItems
+                ? "enquiry-page-layout"
+                : "enquiry-page-layout enquiry-page-layout-no-summary"
+            }
+          >
+            {hasItems && (
+              <div className="enquiry-summary">
+                <h2>Products Summary</h2>
 
-              {items.length === 0 && (
-                <p className="empty-message">No products added yet.</p>
-              )}
-
-              <div className="enquiry-page-items">
-                {items.map((item) => (
-                  <div className="enquiry-item enquiry-item-compact" key={item.id}>
-                    <Link
-                      href={`/products/${item.handle}`}
-                      className="enquiry-item-image"
+                <div className="enquiry-page-items">
+                  {items.map((item) => (
+                    <div
+                      className="enquiry-item enquiry-item-compact"
+                      key={item.id}
                     >
-                      {item.image ? <img src={item.image} alt={item.title} /> : null}
-                    </Link>
-
-                    <div className="enquiry-item-content">
                       <Link
                         href={`/products/${item.handle}`}
-                        className="enquiry-item-title"
+                        className="enquiry-item-image"
                       >
-                        {item.title}
+                        {item.image ? (
+                          <img src={item.image} alt={item.title} />
+                        ) : null}
                       </Link>
 
-                      <div className="enquiry-item-meta">
-                        {item.vendor || "Variant"} |{" "}
-                        {Number(item.price) > 0
-                          ? `₹${Number(item.price).toLocaleString("en-IN")}`
-                          : "Price on Request"}
+                      <div className="enquiry-item-content">
+                        <Link
+                          href={`/products/${item.handle}`}
+                          className="enquiry-item-title"
+                        >
+                          {item.title}
+                        </Link>
+
+                        <div className="enquiry-item-meta">
+                          {item.vendor || "Variant"} |{" "}
+                          {Number(item.price) > 0
+                            ? `₹${Number(item.price).toLocaleString("en-IN")}`
+                            : "Price on Request"}
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="qty-control">
-                      <button type="button" onClick={() => decreaseQty(item.id)}>
-                        -
+                      <div className="qty-control">
+                        <button
+                          type="button"
+                          onClick={() => decreaseQty(item.id)}
+                        >
+                          -
+                        </button>
+
+                        <span>{item.quantity}</span>
+
+                        <button
+                          type="button"
+                          onClick={() => increaseQty(item.id)}
+                        >
+                          +
+                        </button>
+                      </div>
+
+                      <button
+                        type="button"
+                        className="delete-icon-button"
+                        onClick={() => removeItem(item.id)}
+                        aria-label="Remove item"
+                      >
+                        🗑
                       </button>
-
-                      <span>{item.quantity}</span>
-
-                      <button type="button" onClick={() => increaseQty(item.id)}>
-                        +
-                      </button>
                     </div>
-
-                    <button
-                      type="button"
-                      className="delete-icon-button"
-                      onClick={() => removeItem(item.id)}
-                      aria-label="Remove item"
-                    >
-                      🗑
-                    </button>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             <form className="enquiry-form">
               <label className="form-field">

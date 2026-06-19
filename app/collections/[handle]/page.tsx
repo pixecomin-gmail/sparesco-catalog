@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import collectionsData from "@/data/collections.json";
 import { getAllProducts } from "@/lib/products";
@@ -9,7 +10,7 @@ type CollectionItem = {
   count: number;
 };
 
-const PAGE_SIZE = 24;
+const PAGE_SIZE = 25;
 const collections = collectionsData as CollectionItem[];
 
 export default async function CollectionDetailPage({
@@ -34,7 +35,11 @@ export default async function CollectionDetailPage({
     (product) => product.collectionHandle === handle
   );
 
-  const totalPages = Math.max(1, Math.ceil(collectionProducts.length / PAGE_SIZE));
+  const totalPages = Math.max(
+    1,
+    Math.ceil(collectionProducts.length / PAGE_SIZE)
+  );
+
   const safePage = Math.min(Math.max(currentPage, 1), totalPages);
 
   const visibleProducts = collectionProducts.slice(
@@ -46,9 +51,7 @@ export default async function CollectionDetailPage({
     <main>
       <section className="section parts-section">
         <div className="container">
-          <div className="breadcrumb">
-            Home / Categories / {collection.title}
-          </div>
+          <div className="breadcrumb">Home / Categories / {collection.title}</div>
 
           <h1 className="page-title">{collection.title}</h1>
 
@@ -79,23 +82,33 @@ export default async function CollectionDetailPage({
           {collectionProducts.length > PAGE_SIZE && (
             <div className="pagination">
               {safePage > 1 ? (
-                <a href={`/collections/${handle}?page=${safePage - 1}`}>
+                <Link
+                  href={`/collections/${handle}?page=${safePage - 1}`}
+                  className="pagination-button"
+                >
                   Previous
-                </a>
+                </Link>
               ) : (
-                <span>Previous</span>
+                <span className="pagination-button pagination-button-disabled">
+                  Previous
+                </span>
               )}
 
-              <span>
+              <span className="pagination-status">
                 Page {safePage} of {totalPages}
               </span>
 
               {safePage < totalPages ? (
-                <a href={`/collections/${handle}?page=${safePage + 1}`}>
+                <Link
+                  href={`/collections/${handle}?page=${safePage + 1}`}
+                  className="pagination-button"
+                >
                   Next
-                </a>
+                </Link>
               ) : (
-                <span>Next</span>
+                <span className="pagination-button pagination-button-disabled">
+                  Next
+                </span>
               )}
             </div>
           )}

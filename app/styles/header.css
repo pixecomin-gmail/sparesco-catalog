@@ -53,7 +53,7 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 34px;
   min-width: 0;
 }
 

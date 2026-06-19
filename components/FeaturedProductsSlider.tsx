@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import featuredProducts from "@/data/featured-products.json";
 import { getAllProducts } from "@/lib/products";
+import { useEnquiry } from "@/context/EnquiryContext";
 
 type Product = {
   handle: string;
@@ -11,6 +12,9 @@ type Product = {
   image?: string;
   collection?: string;
   variantCount?: number;
+  partNumber?: string;
+  vendor?: string;
+  price?: number;
 };
 
 const products = getAllProducts();
@@ -21,6 +25,7 @@ const featured = featuredProducts
 
 export default function FeaturedProductsSlider() {
   const sliderRef = useRef<HTMLDivElement | null>(null);
+  const { addItem } = useEnquiry();
 
   function scrollSlider(direction: "left" | "right") {
     if (!sliderRef.current) return;
@@ -30,8 +35,15 @@ export default function FeaturedProductsSlider() {
 
     const cardWidth = card.getBoundingClientRect().width;
     const gap = 16;
+
     const visibleCards =
-      window.innerWidth > 1100 ? 6 : window.innerWidth > 900 ? 4 : window.innerWidth > 520 ? 2 : 1;
+      window.innerWidth > 1100
+        ? 6
+        : window.innerWidth > 900
+        ? 4
+        : window.innerWidth > 520
+        ? 2
+        : 1;
 
     sliderRef.current.scrollBy({
       left:
@@ -82,11 +94,32 @@ export default function FeaturedProductsSlider() {
                 </h3>
 
                 <p>
-                  {product.collection}
+                  {typeof product.price === "number" && product.price > 0
+                    ? `From ₹${product.price.toLocaleString("en-IN")}`
+                    : "Price On Request"}
+
                   {(product.variantCount ?? 0) > 1
-                    ? ` • ${product.variantCount} options`
+                    ? ` • ${product.variantCount} Options`
                     : ""}
                 </p>
+
+                <button
+                  type="button"
+                  className="featured-enquiry-button"
+                  onClick={() =>
+                    addItem({
+                      id: product.handle,
+                      handle: product.handle,
+                      title: product.title,
+                      image: product.image || "",
+                      partNumber: product.partNumber || product.title,
+                      vendor: product.vendor || product.collection || "",
+                      price: product.price || 0,
+                    })
+                  }
+                >
+                  Add To Enquiry
+                </button>
               </div>
             </article>
           ))}
