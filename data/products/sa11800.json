@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_73f8a788-7e3b-4d5e-bf3c-df667d5c96ff.jpg?v=1766020875",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p150692.700.700_f547320d-0758-4a93-aafa-9013366a933a.jpg?v=1766020875",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1850_2470b566-a893-4cfa-a2fe-cc87a63b6ef5.jpg?v=1766020875"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009009_7c1d9c7f3383.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009010_f421bb25b3bc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009011_f2d031f4955d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11800 Air Filter",
       "sku": "sa-11800-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_73f8a788-7e3b-4d5e-bf3c-df667d5c96ff.jpg?v=1766020875",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009009_7c1d9c7f3383.jpg",
       "vendor": "",
       "price": 13500,
       "partNumber": "SA 11800",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P150692 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 11800",
       "sku": "sa-11800-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p150692.700.700_f547320d-0758-4a93-aafa-9013366a933a.jpg?v=1766020875",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009010_f421bb25b3bc.jpg",
       "vendor": "",
       "price": 10000,
       "partNumber": "P150692",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF1850 Air Filter, Primary | Replaces the HiFi Filter SA 11800",
       "sku": "sa-11800-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1850_2470b566-a893-4cfa-a2fe-cc87a63b6ef5.jpg?v=1766020875",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009011_f2d031f4955d.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "AF1850",

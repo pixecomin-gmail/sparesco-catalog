@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_4fa3d25d-d882-4186-9a10-baa2de7a5f76.jpg?v=1755095203",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3c9fe2f7-60c1-4068-bdcf-350d6b1ef4c9_cf8d9959-0f07-43a2-9898-78ca1d8a2edb.jpg?v=1755095203",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_a20c4fab-1235-4a0a-a062-51293cad4e7a.jpg?v=1755779886",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_49aefa7e-dc4d-4627-afdf-ba75847cc030.png?v=1760632610",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_c43a9796-27a9-4035-b1c1-9a8ab4a98932.jpg?v=1755094758",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3c9fe2f7-60c1-4068-bdcf-350d6b1ef4c9_e44ca8c3-9c48-45af-a194-9e04b7036aeb.jpg?v=1755094758",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_e5171740-5b5c-4796-b4ca-ef22498ca8cd.jpg?v=1755779763",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d8bcca6c-1655-4666-baa9-9de1e1e2d631.png?v=1760632029"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018552_ecfcd9514e03.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018553_c8e8ca6f15d6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018554_2e35b07cfc7a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018555_ccc0edf54d00.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020230_f768d8b93b42.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020231_db33febb8e2e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020232_04e199ae59d1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020233_f565d7f2c04a.png"
   ],
   "variants": [
     {
       "title": "Filtrec XD160G06B DIN Pressure Filter | Replaces the Eppensteiner 20160H6SLB000P0",
       "sku": "20160h6slb000p0-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_4fa3d25d-d882-4186-9a10-baa2de7a5f76.jpg?v=1755095203",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018552_ecfcd9514e03.jpg",
       "vendor": "",
       "price": 27100,
       "partNumber": "XD160G06B",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 84251 DIN Pressure Filter | Replaces the Eppensteiner 20160H6SLB000P0",
       "sku": "20160h6slb000p0-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3c9fe2f7-60c1-4068-bdcf-350d6b1ef4c9_cf8d9959-0f07-43a2-9898-78ca1d8a2edb.jpg?v=1755095203",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018553_c8e8ca6f15d6.jpg",
       "vendor": "",
       "price": 24000,
       "partNumber": "SH 84251",
@@ -84,7 +84,7 @@
     {
       "title": "Fleetguard ST2192 Hydraulic Filters | Replaces the Eppensteiner 20160H6SLB000P0",
       "sku": "20160h6slb000p0-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_a20c4fab-1235-4a0a-a062-51293cad4e7a.jpg?v=1755779886",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018554_2e35b07cfc7a.jpg",
       "vendor": "",
       "price": 18200,
       "partNumber": "ST2192",
@@ -115,7 +115,7 @@
     {
       "title": "MicroFit® MFHHP40474 UltraGen III DIN Pressure Filter | Replaces the Eppensteiner 20160H6SLB000P0",
       "sku": "20160h6slb000p0-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_49aefa7e-dc4d-4627-afdf-ba75847cc030.png?v=1760632610",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018555_ccc0edf54d00.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40474",

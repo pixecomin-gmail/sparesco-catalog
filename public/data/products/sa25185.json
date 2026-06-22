@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-74b99c1d-8e5f-464b-8ec5-b634949ed6d0_7cf0eaad-e4eb-4e02-ab54-ef9d04d3f5bd.jpg?v=1762811510",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778081.700.700_ac63786c-b7cd-4bbe-9a8d-5ac1230f43c1.jpg?v=1762811510",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3e8963c9-5653-4dca-a360-b3e61f04b74e.jpg?v=1762811510",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25235_a11d71e0-c257-40cc-9a34-f59f1083fd52.jpg?v=1762811510"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007450_3b27a5b3a1db.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007451_eaf87a6bfae1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007452_0d3d66c4141f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007453_f8c3879fa5a2.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 25185 Air Filter",
       "sku": "sa-25185-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-74b99c1d-8e5f-464b-8ec5-b634949ed6d0_7cf0eaad-e4eb-4e02-ab54-ef9d04d3f5bd.jpg?v=1762811510",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007450_3b27a5b3a1db.jpg",
       "vendor": "",
       "price": 9800,
       "partNumber": "SA 25185",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P778081 Air Filter, Primary Round | Replaces the HiFi Filter SA 25185",
       "sku": "sa-25185-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778081.700.700_ac63786c-b7cd-4bbe-9a8d-5ac1230f43c1.jpg?v=1762811510",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007451_eaf87a6bfae1.jpg",
       "vendor": "",
       "price": 10100,
       "partNumber": "P778081",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 33 1600/2 Air Filter | Replaces the HiFi Filter SA 25185",
       "sku": "sa-25185-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3e8963c9-5653-4dca-a360-b3e61f04b74e.jpg?v=1762811510",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007452_0d3d66c4141f.jpg",
       "vendor": "",
       "price": 13700,
       "partNumber": "C 33 1600/2",
@@ -76,7 +76,7 @@
     {
       "title": "Fleetguard AF25235 Air | Replaces the HiFi Filter SA 25185",
       "sku": "sa-25185-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25235_a11d71e0-c257-40cc-9a34-f59f1083fd52.jpg?v=1762811510",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007453_f8c3879fa5a2.jpg",
       "vendor": "",
       "price": 11800,
       "partNumber": "AF25235",

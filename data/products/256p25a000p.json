@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_e389f320-d45b-45d4-b75c-8a93a2e0499c.jpg?v=1741349583",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9cade5c2-8358-4325-9dec-1ebf01e0243c_f8de34d5-aa85-4409-b754-ba04f49d4ee1.jpg?v=1741349583",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_7d82f576-3160-4012-9261-9be61758e312.jpg?v=1741349586",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9cade5c2-8358-4325-9dec-1ebf01e0243c_584873dc-2f07-4e4d-b446-617e029a757c.jpg?v=1741349586"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025800_92c421edd9a5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025801_650571018a19.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025806_cf572fd84ce5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025807_f63ee2d2ee64.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DVD256K20B Pressure Filter | Replaces the Eppensteiner 256P25A000P",
       "sku": "256p25a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_e389f320-d45b-45d4-b75c-8a93a2e0499c.jpg?v=1741349583",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025800_92c421edd9a5.jpg",
       "vendor": "Filtrec",
       "price": 4900,
       "partNumber": "DVD256K20B",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 67550 Pressure Filter | Replaces the Eppensteiner 256P25A000P",
       "sku": "256p25a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9cade5c2-8358-4325-9dec-1ebf01e0243c_f8de34d5-aa85-4409-b754-ba04f49d4ee1.jpg?v=1741349583",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025801_650571018a19.jpg",
       "vendor": "HiFi Filter",
       "price": 5500,
       "partNumber": "SH 67550",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1e76c9f8-c6cb-4769-936b-104f3156b9cb.jpg?v=1723205496",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628182.700.700_5a58ac1f-b15d-4ecc-ba72-0bf66bbb3edd.jpg?v=1744306174",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25174_4fef2cad-2a09-4a90-a36d-6e1100bede34.jpg?v=1755780781"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007952_365577f52837.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007953_0406f1c676cf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007954_46d386442811.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17499 Air Filter",
       "sku": "sa-17499-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1e76c9f8-c6cb-4769-936b-104f3156b9cb.jpg?v=1723205496",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007952_365577f52837.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "SA 17499",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P628182 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 17499",
       "sku": "sa-17499-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628182.700.700_5a58ac1f-b15d-4ecc-ba72-0bf66bbb3edd.jpg?v=1744306174",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007953_0406f1c676cf.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "P628182",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25174 Air Filter, Primary | Replaces the HiFi Filter SA 17499",
       "sku": "sa-17499-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25174_4fef2cad-2a09-4a90-a36d-6e1100bede34.jpg?v=1755780781",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007954_46d386442811.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF25174",

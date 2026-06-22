@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d2e4d6d6-149e-46b7-b4ce-5df4df36929b.jpg?v=1723205536",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/7KumWGklyjs494P8UUqJLEAFwDfJ2K15Z_d8dd73db-f1d9-43d9-946f-5e5476b9c53a.png?v=1751027849",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1830KM_1ce868ec-eeee-4381-a32e-ae3d21482111.jpg?v=1755780784"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007930_c50a0002d121.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007931_424163abb4fa.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007932_6262a659012d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11780 K Air Filter",
       "sku": "sa-11780-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d2e4d6d6-149e-46b7-b4ce-5df4df36929b.jpg?v=1723205536",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007930_c50a0002d121.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "SA 11780 K",
@@ -39,7 +39,7 @@
     {
       "title": "FIL Filter HP 708 K | Replaces the HiFi Filter SA 11780 K",
       "sku": "sa-11780-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/7KumWGklyjs494P8UUqJLEAFwDfJ2K15Z_d8dd73db-f1d9-43d9-946f-5e5476b9c53a.png?v=1751027849",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007931_424163abb4fa.png",
       "vendor": "",
       "price": 2500,
       "partNumber": "HP 708 K",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF1830KM Air Filter, Primary | Replaces the HiFi Filter SA 11780 K",
       "sku": "sa-11780-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1830KM_1ce868ec-eeee-4381-a32e-ae3d21482111.jpg?v=1755780784",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007932_6262a659012d.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "AF1830KM",

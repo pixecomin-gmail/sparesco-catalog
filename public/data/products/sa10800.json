@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a34b6a90-159a-4277-9e77-40be83564f79.jpg?v=1723206304",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p142811.700.700_973b5c01-c245-4242-bd4d-c874bb702051.jpg?v=1744305980",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF850_a0d9fc62-b9d7-4415-a07b-76bedcff0ca9.jpg?v=1755780809"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007623_8500d4a06a0d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007624_2c23902c98ae.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007625_d80e645502f0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10800 Air Filter",
       "sku": "sa-10800-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a34b6a90-159a-4277-9e77-40be83564f79.jpg?v=1723206304",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007623_8500d4a06a0d.jpg",
       "vendor": "",
       "price": 32300,
       "partNumber": "SA 10800",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P142811 Air Filter, Panel Engine | Replaces the HiFi Filter SA 10800",
       "sku": "sa-10800-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p142811.700.700_973b5c01-c245-4242-bd4d-c874bb702051.jpg?v=1744305980",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007624_2c23902c98ae.jpg",
       "vendor": "",
       "price": 30300,
       "partNumber": "P142811",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF850 Air Filter Filter - Panel | Replaces the HiFi Filter SA 10800",
       "sku": "sa-10800-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF850_a0d9fc62-b9d7-4415-a07b-76bedcff0ca9.jpg?v=1755780809",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007625_d80e645502f0.jpg",
       "vendor": "",
       "price": 20700,
       "partNumber": "AF850",

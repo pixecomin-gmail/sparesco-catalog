@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-615494be-28fd-4c8a-8b18-45af2096a04e.jpg?v=1748456087",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p629543.700.700_5dbc217c-3bc8-49ad-9959-68878e7e3442.jpg?v=1748456087",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_21_600_image1.jpg?v=1754909314"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007758_f2daa285562b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007759_81219980fed5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007760_4dfd4582a3bf.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17463 Air Filter",
       "sku": "sa-17463-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-615494be-28fd-4c8a-8b18-45af2096a04e.jpg?v=1748456087",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007758_f2daa285562b.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "SA 17463",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P629543 Air Filter, Primary Round | Replaces the HiFi Filter SA 17463",
       "sku": "sa-17463-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p629543.700.700_5dbc217c-3bc8-49ad-9959-68878e7e3442.jpg?v=1748456087",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007759_81219980fed5.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "P629543",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 21 600 Air Filter | Replaces the HiFi Filter SA 17463",
       "sku": "sa-17463-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_21_600_image1.jpg?v=1754909314",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007760_4dfd4582a3bf.jpg",
       "vendor": "",
       "price": 4800,
       "partNumber": "C 21 600",

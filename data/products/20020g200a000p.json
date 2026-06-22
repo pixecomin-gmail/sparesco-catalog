@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD20020E_3d0b2f7f-b121-4500-bb4f-6cb2df198a81.jpg?v=1764691952",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_aba7fb9d-b0f2-431b-a31d-838ee6a6df29.jpg?v=1764691952",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5fd0a6f-6cee-4413-a09a-53aa17a815e0_dee9a2f7-57e4-4cc0-b1a4-39bdaf757216.jpg?v=1764691952",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD20020E_2f608089-c9c1-4022-b1d4-336b0f813bf4.jpg?v=1764691790",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_a5b5b5f1-1db9-49b3-aded-8697d96b5d9e.jpg?v=1764691790",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5fd0a6f-6cee-4413-a09a-53aa17a815e0_97cafe1f-1d24-4e5b-9cc6-4844ada14939.jpg?v=1764691790"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018756_f24376a3b51c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018757_2a2f04031239.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018758_3f6fa8517c53.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020293_bfff002c6136.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020294_bce4eeffcdf7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020295_238fecdd2f89.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DVD20020B200B Pressure Filter | Replaces the Eppensteiner 20020G200A000P",
       "sku": "20020g200a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD20020E_3d0b2f7f-b121-4500-bb4f-6cb2df198a81.jpg?v=1764691952",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018756_f24376a3b51c.jpg",
       "vendor": "",
       "price": 13300,
       "partNumber": "DVD20020B200B",
@@ -50,7 +50,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP32480 Pressure Filter | Replaces the Eppensteiner 2.0020G200A000P",
       "sku": "2-0020g200a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_a5b5b5f1-1db9-49b3-aded-8697d96b5d9e.jpg?v=1764691790",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020294_bce4eeffcdf7.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "MFHLP32480",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 67705 Pressure Filter | Replaces the Eppensteiner 20020G200A000P",
       "sku": "20020g200a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5fd0a6f-6cee-4413-a09a-53aa17a815e0_dee9a2f7-57e4-4cc0-b1a4-39bdaf757216.jpg?v=1764691952",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018758_3f6fa8517c53.jpg",
       "vendor": "",
       "price": 14000,
       "partNumber": "SH 67705",

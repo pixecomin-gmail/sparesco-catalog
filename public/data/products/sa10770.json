@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-af76f70a-7f27-4d36-a527-68e7f5041766.jpg?v=1748455978",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119373.700.700_173087b0-bde8-4b2d-9682-a3438c1e0a65.jpg?v=1748455978",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_17_149_image1_3a9b1588-86e2-4079-98e6-486c810be1de.jpg?v=1754909271",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF820M_482a8a43-c1a4-4ce2-83c0-a2a4de7b1264.jpg?v=1755780743"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009371_3b5f26290a96.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009372_af96a74a06a3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009373_757eb188c1df.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009374_1f9a500ea56a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10770 Air Filter",
       "sku": "sa-10770-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-af76f70a-7f27-4d36-a527-68e7f5041766.jpg?v=1748455978",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009371_3b5f26290a96.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "SA 10770",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P119373 Air Filter, Safety | Replaces the HiFi Filter SA 10770",
       "sku": "sa-10770-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119373.700.700_173087b0-bde8-4b2d-9682-a3438c1e0a65.jpg?v=1748455978",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009372_af96a74a06a3.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "P119373",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 17 149 Secondary Element | Replaces the HiFi Filter SA 10770",
       "sku": "sa-10770-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_17_149_image1_3a9b1588-86e2-4079-98e6-486c810be1de.jpg?v=1754909271",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009373_757eb188c1df.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "C 17 149",
@@ -76,7 +76,7 @@
     {
       "title": "Fleetguard AF820M Air Filter, Secondary | Replaces the HiFi Filter SA 10770",
       "sku": "sa-10770-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF820M_482a8a43-c1a4-4ce2-83c0-a2a4de7b1264.jpg?v=1755780743",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009374_1f9a500ea56a.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "AF820M",

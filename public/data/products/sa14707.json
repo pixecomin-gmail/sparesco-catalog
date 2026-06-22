@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edd03035-2360-470d-b66a-5ab158c5ada0.jpg?v=1723205681",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p525944.700.700_b1cc6727-36ab-4e21-895d-f19d94564501.jpg?v=1744306046",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_1f84a141-fa6a-461f-b99d-26b7b910e6cb.jpg?v=1751027847",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4757_9413e092-be8c-42ba-99a1-753f12e8eec3.jpg?v=1755780784"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007871_6b05e2956897.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007872_56d382e998f6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007873_b8b8d90e72da.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007874_49de02e5958d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14707 Air Filter",
       "sku": "sa-14707-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edd03035-2360-470d-b66a-5ab158c5ada0.jpg?v=1723205681",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007871_6b05e2956897.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "SA 14707",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P525944 Air Filter, Safety | Replaces the HiFi Filter SA 14707",
       "sku": "sa-14707-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p525944.700.700_b1cc6727-36ab-4e21-895d-f19d94564501.jpg?v=1744306046",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007872_56d382e998f6.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "P525944",
@@ -55,7 +55,7 @@
     {
       "title": "FIL Filter HP 4502 A Filter Insert | Replaces the HiFi Filter SA 14707",
       "sku": "sa-14707-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_1f84a141-fa6a-461f-b99d-26b7b910e6cb.jpg?v=1751027847",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007873_b8b8d90e72da.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "HP 4502 A",
@@ -71,7 +71,7 @@
     {
       "title": "Fleetguard AF4757 Air Filter, Secondary | Replaces the HiFi Filter SA 14707",
       "sku": "sa-14707-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4757_9413e092-be8c-42ba-99a1-753f12e8eec3.jpg?v=1755780784",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007874_49de02e5958d.jpg",
       "vendor": "",
       "price": 4800,
       "partNumber": "AF4757",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c6cd245-1b4f-4585-be51-711330944e8a_6d44dbe5-9932-4513-8ad5-c58a38dc64d7.jpg?v=1762811474",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119135.700.700_518b5caf-b8d1-4d9a-80ec-7a789623814b.jpg?v=1762811474",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_190_image1_eac07786-3611-4f85-a1e9-e75dee5444de.jpg?v=1762811474",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF940K_650dfe01-6041-4703-b46f-e400e7ee9806.jpg?v=1762811474"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007840_fe3c08be407b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007841_028e71302dcc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007842_a1aadda15ebc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007843_fdc26a93b3a2.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10890 K Air Filter",
       "sku": "sa-10890-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c6cd245-1b4f-4585-be51-711330944e8a_6d44dbe5-9932-4513-8ad5-c58a38dc64d7.jpg?v=1762811474",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007840_fe3c08be407b.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "SA 10890 K",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P119135 Air Filter, Primary Finned | Replaces the HiFi Filter SA 10890 K",
       "sku": "sa-10890-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119135.700.700_518b5caf-b8d1-4d9a-80ec-7a789623814b.jpg?v=1762811474",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007841_028e71302dcc.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "P119135",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 14 190 Air Filter | Replaces the HiFi Filter SA 10890 K",
       "sku": "sa-10890-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_190_image1_eac07786-3611-4f85-a1e9-e75dee5444de.jpg?v=1762811474",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007842_a1aadda15ebc.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "C 14 190",
@@ -78,7 +78,7 @@
     {
       "title": "Fleetguard AF940K Air Filter, Primary | Replaces the HiFi Filter SA 10890 K",
       "sku": "sa-10890-k-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF940K_650dfe01-6041-4703-b46f-e400e7ee9806.jpg?v=1762811474",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007843_fdc26a93b3a2.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "AF940K",

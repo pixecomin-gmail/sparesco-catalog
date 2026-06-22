@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b2166d91-c94a-4661-8ca3-14fc7bc55791.jpg?v=1723205438",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124837.700.700_4f963733-d800-4a26-908c-e60dbb53652f.jpg?v=1744305973",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF487_8ebfac4e-b23e-4edb-8717-b440460b3afb.jpg?v=1755780775"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007978_1d9402a5e94d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007979_4b5f944abcd3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007980_bf8a6f4b9ae4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10437 Air Filter",
       "sku": "sa-10437-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b2166d91-c94a-4661-8ca3-14fc7bc55791.jpg?v=1723205438",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007978_1d9402a5e94d.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "SA 10437",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P124837 Air Filter, Safety | Replaces the HiFi Filter SA 10437",
       "sku": "sa-10437-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124837.700.700_4f963733-d800-4a26-908c-e60dbb53652f.jpg?v=1744305973",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007979_4b5f944abcd3.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "P124837",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF487 Air Filter, Secondary | Replaces the HiFi Filter SA 10437",
       "sku": "sa-10437-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF487_8ebfac4e-b23e-4edb-8717-b440460b3afb.jpg?v=1755780775",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007980_bf8a6f4b9ae4.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "AF487",

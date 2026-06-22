@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-416be235-861c-431f-905f-a7479cd4c35b_b3e64ce3-a406-4c5f-89ab-7c26efa891f1.jpg?v=1762811720",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_1396_image1.jpg?v=1762811720",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25351_22f2262d-8064-49d0-8fcf-29374cf50408.jpg?v=1762811720"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005869_faadcaa655af.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005870_e88c0bf13adf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005871_7b1f375ed242.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 12143 Air Filter",
       "sku": "sa-12143-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-416be235-861c-431f-905f-a7479cd4c35b_b3e64ce3-a406-4c5f-89ab-7c26efa891f1.jpg?v=1762811720",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005869_faadcaa655af.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "SA 12143",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 1396 Air Filter | Replaces the HiFi Filter SA 12143",
       "sku": "sa-12143-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_1396_image1.jpg?v=1762811720",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005870_e88c0bf13adf.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "C 1396",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF25351 Air Filter, Primary | Replaces the HiFi Filter SA 12143",
       "sku": "sa-12143-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25351_22f2262d-8064-49d0-8fcf-29374cf50408.jpg?v=1762811720",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005871_7b1f375ed242.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "AF25351",

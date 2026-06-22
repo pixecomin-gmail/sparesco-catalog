@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_f5ccff6a-a930-4828-b2df-32018a1c2ede.jpg?v=1766009342",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1900_706f0bfc-94d2-4465-9f2f-175f6a0a5ee2.jpg?v=1766009342",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8cdc10cc-52e6-4635-9f78-b05fdeec6c87.png?v=1766009342",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_c923e7e7-11bb-44b2-9167-9c9e0070178c.jpg?v=1766007811",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1900_f90abdbf-e5a7-4c9d-8479-430c2d6d421e.jpg?v=1766007811",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a1c6241c-c21a-48d8-8031-771a6d3c3464.png?v=1766007811"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019324_0557bab3987a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019325_166bb92539da.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019326_26fbad768241.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/021142_7e0de97481d9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/021143_c5f2aa0c804c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/021144_8edda58320bf.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67074 Return Filter | Replaces the Eppensteiner 1900K6",
       "sku": "1900k6-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_f5ccff6a-a930-4828-b2df-32018a1c2ede.jpg?v=1766009342",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019324_0557bab3987a.jpg",
       "vendor": "",
       "price": 22700,
       "partNumber": "SH 67074",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec RVR1900E05B Return Filter | Replaces the Eppensteiner 1900K6",
       "sku": "1900k6-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1900_706f0bfc-94d2-4465-9f2f-175f6a0a5ee2.jpg?v=1766009342",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019325_166bb92539da.jpg",
       "vendor": "",
       "price": 20800,
       "partNumber": "RVR1900E05B",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR54527 UltraGen III Filter | Replaces the Eppensteiner 1900K6",
       "sku": "1900k6-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8cdc10cc-52e6-4635-9f78-b05fdeec6c87.png?v=1766009342",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019326_26fbad768241.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR54527",

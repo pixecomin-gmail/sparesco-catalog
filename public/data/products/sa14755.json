@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_e03e9bb0-f302-4e95-a8bb-0ea324bb5d7c.jpg?v=1766020898",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529241.700.700_bfd9f045-3cae-4d2d-8042-15900fe0efda.jpg?v=1766020898",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4805_3e5203fb-2a2c-4f0c-9e3b-bca549f558a1.jpg?v=1766020898"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008203_9bc9c95e67e5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008204_38097f6c40c1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008205_df4cb5dbe51c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14755 Air Filter",
       "sku": "sa-14755-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_e03e9bb0-f302-4e95-a8bb-0ea324bb5d7c.jpg?v=1766020898",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008203_9bc9c95e67e5.jpg",
       "vendor": "",
       "price": 10400,
       "partNumber": "SA 14755",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P529241 Air Filter, Primary Round | Replaces the HiFi Filter SA 14755",
       "sku": "sa-14755-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529241.700.700_bfd9f045-3cae-4d2d-8042-15900fe0efda.jpg?v=1766020898",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008204_38097f6c40c1.jpg",
       "vendor": "",
       "price": 11200,
       "partNumber": "P529241",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF4805 Air Filter | Replaces the HiFi Filter SA 14755",
       "sku": "sa-14755-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4805_3e5203fb-2a2c-4f0c-9e3b-bca549f558a1.jpg?v=1766020898",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008205_df4cb5dbe51c.jpg",
       "vendor": "",
       "price": 9800,
       "partNumber": "AF4805",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fe551722-f30f-41ed-84e6-f2d598a337fb.jpg?v=1723206103",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p182044.700.700_e6713259-6571-4ef0-b4ce-8393f9e365e6.jpg?v=1744305972",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF427M_0a9ff89f-a465-4900-8a12-4d7840cf719a.jpg?v=1755780804"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007684_dc62678ed1a6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007685_276dc2f3f742.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007686_290a5ac55316.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10377 Air Filter",
       "sku": "sa-10377-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fe551722-f30f-41ed-84e6-f2d598a337fb.jpg?v=1723206103",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007684_dc62678ed1a6.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "SA 10377",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P182044 Air Filter, Primary Round | Replaces the HiFi Filter SA 10377",
       "sku": "sa-10377-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p182044.700.700_e6713259-6571-4ef0-b4ce-8393f9e365e6.jpg?v=1744305972",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007685_276dc2f3f742.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "P182044",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF427M Air Filter, Primary | Replaces the HiFi Filter SA 10377",
       "sku": "sa-10377-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF427M_0a9ff89f-a465-4900-8a12-4d7840cf719a.jpg?v=1755780804",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007686_290a5ac55316.jpg",
       "vendor": "",
       "price": 7700,
       "partNumber": "AF427M",

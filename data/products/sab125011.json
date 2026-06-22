@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ce893e0a-e576-4cf2-bde9-10e52086024c_1d68269e-cd1b-4b1a-bed3-11df306519c9.jpg?v=1762811837",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/b125011.700.700_8af085f6-9078-45d7-95e9-f206bcb59599.jpg?v=1762811837",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH8513_7aa251c6-2ea1-497d-b66c-da75553fba28.jpg?v=1762811837"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000028_186d81112118.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000029_5862dfcd99be.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000030_79c7633077d3.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SAB 125011 Air Filter",
       "sku": "sab-125011-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ce893e0a-e576-4cf2-bde9-10e52086024c_1d68269e-cd1b-4b1a-bed3-11df306519c9.jpg?v=1762811837",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000028_186d81112118.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "SAB 125011",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson B125011 Air Filter, Primary Duralite | Replaces the HiFi Filter SAB 125011",
       "sku": "sab-125011-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/b125011.700.700_8af085f6-9078-45d7-95e9-f206bcb59599.jpg?v=1762811837",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000029_5862dfcd99be.jpg",
       "vendor": "",
       "price": 8900,
       "partNumber": "B125011",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AH8513 Air Intake Systems | Replaces the HiFi Filter SAB 125011",
       "sku": "sab-125011-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH8513_7aa251c6-2ea1-497d-b66c-da75553fba28.jpg?v=1762811837",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000030_79c7633077d3.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "AH8513",

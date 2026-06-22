@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-896dfbdd-840f-4878-87f6-f1a0c80c4fed_de37f7c3-6291-43c3-b9c7-6f3c737f47fa.jpg?v=1762811060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p822768.700.700_9b27abfe-7409-49af-aa0e-9a96bebe5b9f.jpg?v=1762811060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_13_1452_image1_518d1a36-0dfc-4785-8665-11f93c0ca43e.jpg?v=1762811060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25553_61ea106c-529c-4b06-be99-41b66f79c3af.jpg?v=1762811060"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000389_01c55eb061e9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000390_e8c18b14593c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000391_5b84c72efb72.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000392_3a0c9a832aad.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16059 Air Filter",
       "sku": "sa-16059-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-896dfbdd-840f-4878-87f6-f1a0c80c4fed_de37f7c3-6291-43c3-b9c7-6f3c737f47fa.jpg?v=1762811060",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000389_01c55eb061e9.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "SA 16059",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P822768 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16059",
       "sku": "sa-16059-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p822768.700.700_9b27abfe-7409-49af-aa0e-9a96bebe5b9f.jpg?v=1762811060",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000390_e8c18b14593c.jpg",
       "vendor": "",
       "price": 2000,
       "partNumber": "P822768",
@@ -54,7 +54,7 @@
     {
       "title": "Mann Filter C 13 145/2 Air Filter | Replaces the HiFi Filter SA 16059",
       "sku": "sa-16059-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_13_1452_image1_518d1a36-0dfc-4785-8665-11f93c0ca43e.jpg?v=1762811060",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000391_5b84c72efb72.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "C 13 145/2",
@@ -73,7 +73,7 @@
     {
       "title": "Fleetguard AF25553 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16059",
       "sku": "sa-16059-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25553_61ea106c-529c-4b06-be99-41b66f79c3af.jpg?v=1762811060",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000392_3a0c9a832aad.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF25553",

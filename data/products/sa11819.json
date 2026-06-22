@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2fb81b8a-66f1-4991-b930-a046b527d53b.jpg?v=1723216798",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p150135.700.700_070b2c0d-961a-4bc4-b189-ab7b47d64f78.jpg?v=1744306007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1869_d55ff639-479d-4a54-b82d-b3fd0b072812.jpg?v=1755780910"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005052_3f7e851d775f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005053_3f84d73cf6c8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005054_140e9035c4a7.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11819 Air Filter",
       "sku": "sa-11819-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2fb81b8a-66f1-4991-b930-a046b527d53b.jpg?v=1723216798",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005052_3f7e851d775f.jpg",
       "vendor": "",
       "price": 10100,
       "partNumber": "SA 11819",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P150135 Air Filter, Panel Engine | Replaces the HiFi Filter SA 11819",
       "sku": "sa-11819-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p150135.700.700_070b2c0d-961a-4bc4-b189-ab7b47d64f78.jpg?v=1744306007",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005053_3f84d73cf6c8.jpg",
       "vendor": "",
       "price": 11200,
       "partNumber": "P150135",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF1869 Air Filter Filter - Panel | Replaces the HiFi Filter SA 11819",
       "sku": "sa-11819-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1869_d55ff639-479d-4a54-b82d-b3fd0b072812.jpg?v=1755780910",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005054_140e9035c4a7.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "AF1869",

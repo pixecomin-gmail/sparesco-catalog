@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2f0903e3-0d9e-4d15-8a25-413453799127.jpg?v=1723212194",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771509.700.700_c66d6105-c921-4f6c-9b8d-84b751df672e.jpg?v=1744306004",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1804_75fa406d-8bc0-42aa-a3fe-6b1792cce5ff.jpg?v=1755780888"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006263_fd7dc2ede044.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006264_a13f7997ee38.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006265_baab15685a35.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11754 Air Filter",
       "sku": "sa-11754-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2f0903e3-0d9e-4d15-8a25-413453799127.jpg?v=1723212194",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006263_fd7dc2ede044.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "SA 11754",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P771509 Air Filter, Primary Round | Replaces the HiFi Filter SA 11754",
       "sku": "sa-11754-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771509.700.700_c66d6105-c921-4f6c-9b8d-84b751df672e.jpg?v=1744306004",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006264_a13f7997ee38.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "P771509",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1804 Air Filter | Replaces the HiFi Filter SA 11754",
       "sku": "sa-11754-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1804_75fa406d-8bc0-42aa-a3fe-6b1792cce5ff.jpg?v=1755780888",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006265_baab15685a35.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "AF1804",

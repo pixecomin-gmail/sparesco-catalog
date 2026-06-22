@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66ec469e-8589-4507-9595-0724918e0ed0.jpg?v=1723212821",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771589.700.700_1b9d7024-6740-4bf8-ad6c-2b55d93001e4.jpg?v=1744306122",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25324K_0d9e47aa-2054-483c-b9d2-eb0779d38d94.jpg?v=1755780897"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005811_650d2e74dd7c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005812_6256b4e607bd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005813_471a3cc29846.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16589 Air Filter",
       "sku": "sa-16589-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66ec469e-8589-4507-9595-0724918e0ed0.jpg?v=1723212821",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005811_650d2e74dd7c.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "SA 16589",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P771589 Air Filter, Primary Round | Replaces the HiFi Filter SA 16589",
       "sku": "sa-16589-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771589.700.700_1b9d7024-6740-4bf8-ad6c-2b55d93001e4.jpg?v=1744306122",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005812_6256b4e607bd.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "P771589",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF25324K Air Filter, Primary | Replaces the HiFi Filter SA 16589",
       "sku": "sa-16589-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25324K_0d9e47aa-2054-483c-b9d2-eb0779d38d94.jpg?v=1755780897",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005813_471a3cc29846.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "AF25324K",

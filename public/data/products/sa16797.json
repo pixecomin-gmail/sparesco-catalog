@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f137e7f-d6a6-4ebf-9dcc-1bcdaa779f26.jpg?v=1723202588",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p185294.700.700_12d7709e-a722-4b10-bceb-8f6176b1b720.jpg?v=1744306140",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55021_2a1778b4-7752-4d24-ac94-cc61cd3c69c0.jpg?v=1755780717"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009789_ebe3c435180c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009790_c9d920dfc044.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009791_0e0079cfbada.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16797 Air Filter",
       "sku": "sa-16797-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f137e7f-d6a6-4ebf-9dcc-1bcdaa779f26.jpg?v=1723202588",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009789_ebe3c435180c.jpg",
       "vendor": "",
       "price": 12000,
       "partNumber": "SA 16797",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson DBA5294 Air Filter, Primary Donaldson Blue | Replaces the HiFi Filter SA 16797",
       "sku": "sa-16797-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p185294.700.700_12d7709e-a722-4b10-bceb-8f6176b1b720.jpg?v=1744306140",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009790_c9d920dfc044.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "DBA5294",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF55021 Air Filter | Replaces the HiFi Filter SA 16797",
       "sku": "sa-16797-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55021_2a1778b4-7752-4d24-ac94-cc61cd3c69c0.jpg?v=1755780717",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009791_0e0079cfbada.jpg",
       "vendor": "",
       "price": 11400,
       "partNumber": "AF55021",

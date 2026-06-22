@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73500203-6dfd-452f-9e4b-c46312ef40a7.jpg?v=1723205280",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_731da731-ff79-4459-b0ee-4512e065519f.jpg?v=1742827061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26192_df91aa52-564a-46e9-8f04-21c33387146e.jpg?v=1755780782"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008055_ea041e9aa870.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008056_3284c8670533.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008057_8559796e0a15.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17258 Air Filter",
       "sku": "sa-17258-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73500203-6dfd-452f-9e4b-c46312ef40a7.jpg?v=1723205280",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008055_ea041e9aa870.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "SA 17258",
@@ -37,7 +37,7 @@
     {
       "title": "Mann Filter CF 7001 Secondary Element | Replaces the HiFi Filter SA 17258",
       "sku": "sa-17258-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_731da731-ff79-4459-b0ee-4512e065519f.jpg?v=1742827061",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008056_3284c8670533.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "CF 7001",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF26192 Air Filter, Secondary | Replaces the HiFi Filter SA 17258",
       "sku": "sa-17258-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26192_df91aa52-564a-46e9-8f04-21c33387146e.jpg?v=1755780782",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008057_8559796e0a15.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF26192",

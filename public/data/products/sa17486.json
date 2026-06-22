@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-41f3d185-a319-4627-bbbb-df7e7c29fa91.jpg?v=1723207987",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780272.700.700_f72ae141-c9d5-4cff-9382-f21ccdc43bd1.jpg?v=1744306173",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4890_52cf3eaa-05a5-425b-85c6-1ad9d728bffe.jpg?v=1755780832"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007019_ea8c785f6d20.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007020_301cb39cfdb0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007021_86f014f54321.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17486 Air Filter",
       "sku": "sa-17486-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-41f3d185-a319-4627-bbbb-df7e7c29fa91.jpg?v=1723207987",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007019_ea8c785f6d20.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "SA 17486",
@@ -41,7 +41,7 @@
     {
       "title": "Donaldson P780272 Air Filter, Primary Round | Replaces the HiFi Filter SA 17486",
       "sku": "sa-17486-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780272.700.700_f72ae141-c9d5-4cff-9382-f21ccdc43bd1.jpg?v=1744306173",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007020_301cb39cfdb0.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "P780272",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF4890 Air Filter, Primary | Replaces the HiFi Filter SA 17486",
       "sku": "sa-17486-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4890_52cf3eaa-05a5-425b-85c6-1ad9d728bffe.jpg?v=1755780832",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007021_86f014f54321.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "AF4890",

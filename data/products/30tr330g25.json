@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201792B_a9cb9c05-4f8b-4d27-b3d5-36de5c1bbcda.jpg?v=1755092651",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-70a6291b-fcb5-429f-b535-6622581dab15_ff70d177-ca45-4229-aff9-15fb1cd3d1f7.jpg?v=1755092651",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6849_70fe3686-33d7-4de8-936c-d049e1f01489.jpg?v=1755779211",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_331f6e6f-714d-4d18-865d-3f2afa5b4d4d.png?v=1760630233"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024686_913ca3ec282f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024687_599f6f84c6db.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024688_c4cc886f774d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024689_c6590ebfc059.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR330B25B Return Filter | Replaces the Eppensteiner 30TR330G25",
       "sku": "30tr330g25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201792B_a9cb9c05-4f8b-4d27-b3d5-36de5c1bbcda.jpg?v=1755092651",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024686_913ca3ec282f.jpg",
       "vendor": "",
       "price": 21000,
       "partNumber": "RHR330B25B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 74026 Return Filter | Replaces the Eppensteiner 30TR330G25",
       "sku": "30tr330g25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-70a6291b-fcb5-429f-b535-6622581dab15_ff70d177-ca45-4229-aff9-15fb1cd3d1f7.jpg?v=1755092651",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024687_599f6f84c6db.jpg",
       "vendor": "",
       "price": 22900,
       "partNumber": "SH 74026",
@@ -83,7 +83,7 @@
     {
       "title": "Fleetguard HF6849 Hydraulic Filters | Replaces the Eppensteiner 30TR330G25",
       "sku": "30tr330g25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6849_70fe3686-33d7-4de8-936c-d049e1f01489.jpg?v=1755779211",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024688_c4cc886f774d.jpg",
       "vendor": "",
       "price": 25900,
       "partNumber": "HF6849",
@@ -115,7 +115,7 @@
     {
       "title": "MicroFit® MFHR50979 UltraGen III Return Filter | Replaces the Eppensteiner 30TR330G25",
       "sku": "30tr330g25-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_331f6e6f-714d-4d18-865d-3f2afa5b4d4d.png?v=1760630233",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024689_c6590ebfc059.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50979",

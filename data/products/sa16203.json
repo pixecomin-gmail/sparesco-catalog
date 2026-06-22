@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5dea7242-dbbb-4ca7-b7d0-80612eaa656f.jpg?v=1723204689",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p821908.700.700_4f4d90b8-578a-4501-a432-3108c307dec3.jpg?v=1744306077",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25413_0fa8b988-8d66-4012-aa45-ae6f2d7c6539.jpg?v=1755780764"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008384_8a6672987c17.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008385_fff1106307e2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008386_2a8f2d0d60cb.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16203 Air Filter",
       "sku": "sa-16203-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5dea7242-dbbb-4ca7-b7d0-80612eaa656f.jpg?v=1723204689",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008384_8a6672987c17.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "SA 16203",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P821908 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16203",
       "sku": "sa-16203-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p821908.700.700_4f4d90b8-578a-4501-a432-3108c307dec3.jpg?v=1744306077",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008385_fff1106307e2.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "P821908",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25413 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16203",
       "sku": "sa-16203-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25413_0fa8b988-8d66-4012-aa45-ae6f2d7c6539.jpg?v=1755780764",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008386_2a8f2d0d60cb.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "AF25413",

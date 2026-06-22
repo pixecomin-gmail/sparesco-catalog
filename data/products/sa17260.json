@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-44bff40d-266e-45a6-bbc8-8a5f47af9b93.jpg?v=1723205318",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_10_001_image1_1793839b-eb1c-4b4b-a7e1-8d4a3e2a4216.jpg?v=1754909306",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26294_56fc354f-1779-4c2c-a964-78ec08d63bb6.jpg?v=1755780782"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008034_49f29392a93a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008035_2eee7d3e3ba4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008036_1faf8d19b426.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17260 Air Filter",
       "sku": "sa-17260-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-44bff40d-266e-45a6-bbc8-8a5f47af9b93.jpg?v=1723205318",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008034_49f29392a93a.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "SA 17260",
@@ -37,7 +37,7 @@
     {
       "title": "Mann Filter CF 10 001 Secondary Element | Replaces the HiFi Filter SA 17260",
       "sku": "sa-17260-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_10_001_image1_1793839b-eb1c-4b4b-a7e1-8d4a3e2a4216.jpg?v=1754909306",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008035_2eee7d3e3ba4.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "CF 10 001",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF26294 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 17260",
       "sku": "sa-17260-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26294_56fc354f-1779-4c2c-a964-78ec08d63bb6.jpg?v=1755780782",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008036_1faf8d19b426.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "AF26294",

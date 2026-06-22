@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0ca72153-91b9-4c6f-8ad0-1f1ca4d671b6.jpg?v=1723204332",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_6903afc8-3c0e-4e40-9ad8-653eeb5ac20b.jpg?v=1742827054",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4jrvu0476Zx6SyPMwJz2kZ6ntapjK5EJp_40841839-5b9d-4b42-9a25-347c8176a887.png?v=1751029269"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008576_bf3e77d36229.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008577_8103cbae6f09.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008578_000d37208081.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 210 Air Filter",
       "sku": "sa-210-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0ca72153-91b9-4c6f-8ad0-1f1ca4d671b6.jpg?v=1723204332",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008576_bf3e77d36229.jpg",
       "vendor": "",
       "price": 1000,
       "partNumber": "SA 210",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 1213 Air Filter | Replaces the HiFi Filter SA 210",
       "sku": "sa-210-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_6903afc8-3c0e-4e40-9ad8-653eeb5ac20b.jpg?v=1742827054",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008577_8103cbae6f09.jpg",
       "vendor": "",
       "price": 1200,
       "partNumber": "C 1213",
@@ -58,7 +58,7 @@
     {
       "title": "FIL Filter HPU 4331 Filter Insert | Replaces the HiFi Filter SA 210",
       "sku": "sa-210-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4jrvu0476Zx6SyPMwJz2kZ6ntapjK5EJp_40841839-5b9d-4b42-9a25-347c8176a887.png?v=1751029269",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008578_000d37208081.png",
       "vendor": "",
       "price": 1000,
       "partNumber": "HPU 4331",

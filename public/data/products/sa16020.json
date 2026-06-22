@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c803d64-ed8a-4a3c-946a-49fcb8ecae1e.jpg?v=1723206929",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p532506.700.700_d00cc0e5-71fb-4863-919e-7fa453c25afb.jpg?v=1744306053",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25136M_e42f1181-b820-4876-b22b-bd4a5ffd963f.jpg?v=1755780815"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007282_d9f399304606.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007283_fef5ae833a3f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007284_87133dcb0adc.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16020 Air Filter",
       "sku": "sa-16020-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c803d64-ed8a-4a3c-946a-49fcb8ecae1e.jpg?v=1723206929",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007282_d9f399304606.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "SA 16020",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P532506 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16020",
       "sku": "sa-16020-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p532506.700.700_d00cc0e5-71fb-4863-919e-7fa453c25afb.jpg?v=1744306053",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007283_fef5ae833a3f.jpg",
       "vendor": "",
       "price": 3300,
       "partNumber": "P532506",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF25136M Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16020",
       "sku": "sa-16020-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25136M_e42f1181-b820-4876-b22b-bd4a5ffd963f.jpg?v=1755780815",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007284_87133dcb0adc.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "AF25136M",

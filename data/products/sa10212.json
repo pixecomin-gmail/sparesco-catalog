@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8ae5827a-0441-4836-bcf5-242cdcdd152b.jpg?v=1723205251",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181134.700.700_b2628de0-8cdd-423b-8d2b-4337a77b29fe.jpg?v=1744305966",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF262_bc0bbf77-db4a-47b2-ab2b-bdbe1cbaf918.jpg?v=1755780780"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008076_b78ce029927f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008077_b17a748034fe.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008078_e9eeaba76936.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10212 Air Filter",
       "sku": "sa-10212-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8ae5827a-0441-4836-bcf5-242cdcdd152b.jpg?v=1723205251",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008076_b78ce029927f.jpg",
       "vendor": "",
       "price": 16700,
       "partNumber": "SA 10212",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P181134 Air Filter, Primary Round | Replaces the HiFi Filter SA 10212",
       "sku": "sa-10212-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181134.700.700_b2628de0-8cdd-423b-8d2b-4337a77b29fe.jpg?v=1744305966",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008077_b17a748034fe.jpg",
       "vendor": "",
       "price": 10600,
       "partNumber": "P181134",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF262 Air Filter, Primary | Replaces the HiFi Filter SA 10212",
       "sku": "sa-10212-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF262_bc0bbf77-db4a-47b2-ab2b-bdbe1cbaf918.jpg?v=1755780780",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008078_e9eeaba76936.jpg",
       "vendor": "",
       "price": 9000,
       "partNumber": "AF262",

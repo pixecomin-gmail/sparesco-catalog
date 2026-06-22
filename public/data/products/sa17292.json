@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c807b300-178c-40fc-bd83-cb26976f416d.jpg?v=1723205292",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3007cf32-5662-40b3-a8c2-85e4e9445f85.jpg?v=1743773480",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27714_5b48f9fe-0052-446e-864b-bc3ae3e7424e.jpg?v=1755780783"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000222_7fc6238f8cc7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000223_16c272c7f5ac.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000224_2c36b7651a55.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17292 Air Filter",
       "sku": "sa-17292-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c807b300-178c-40fc-bd83-cb26976f416d.jpg?v=1723205292",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000222_7fc6238f8cc7.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "SA 17292",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 30 850/3 Air Filter | Replaces the HiFi Filter SA 17292",
       "sku": "sa-17292-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_3007cf32-5662-40b3-a8c2-85e4e9445f85.jpg?v=1743773480",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000223_16c272c7f5ac.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "C 30 850/3",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF27714 Air Filter, Primary | Replaces the HiFi Filter SA 17292",
       "sku": "sa-17292-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27714_5b48f9fe-0052-446e-864b-bc3ae3e7424e.jpg?v=1755780783",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000224_2c36b7651a55.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "AF27714",

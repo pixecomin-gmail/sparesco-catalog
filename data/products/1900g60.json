@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1900_34c297d1-7545-46cc-bf41-74a77f7a7294.jpg?v=1741362888",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-252e28f0-9ff4-47d4-b778-9f34d18280fe_b0123651-bd9e-488c-a578-5254f8bd88d5.jpg?v=1741362888",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d04ec4ca-1e33-4d12-aec9-e8fecd70e19f.png?v=1760633103",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1900_92725fd5-1b3f-4b5b-98d9-91342eee7bcd.jpg?v=1741362121",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-252e28f0-9ff4-47d4-b778-9f34d18280fe_4ca9059a-ccfe-4121-8e1c-6a47fac8a4df.jpg?v=1741362121",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9627046b-191b-40db-b6ac-d84750d3f3a8.png?v=1760631782"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015107_78d4e377a7cf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015108_3973d051e473.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015109_26c0d8ad2d11.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020573_65873e43bb38.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020574_e20f40fc54f8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020575_f8dc74dce0e5.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1900B60B Return Filter | Replaces the Eppensteiner 1900G60",
       "sku": "1900g60-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1900_34c297d1-7545-46cc-bf41-74a77f7a7294.jpg?v=1741362888",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015107_78d4e377a7cf.jpg",
       "vendor": "",
       "price": 29700,
       "partNumber": "RVR1900B60B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67080 Return Filter | Replaces the Eppensteiner 1900G60",
       "sku": "1900g60-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-252e28f0-9ff4-47d4-b778-9f34d18280fe_b0123651-bd9e-488c-a578-5254f8bd88d5.jpg?v=1741362888",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015108_3973d051e473.jpg",
       "vendor": "",
       "price": 37000,
       "partNumber": "SH 67080",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR50457 UltraGen III Return Filter | Replaces the Eppensteiner 1900G60",
       "sku": "1900g60-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d04ec4ca-1e33-4d12-aec9-e8fecd70e19f.png?v=1760633103",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015109_26c0d8ad2d11.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50457",

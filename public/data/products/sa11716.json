@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b497f9ec-0587-4acd-a5eb-813f00a0516f.jpg?v=1723202702",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526501.700.700_bd1d8c38-e3eb-48c4-8d40-93b1f642bc98.jpg?v=1744306002",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1766_bc1c4701-d50a-45b9-b3df-53edc72a2d6e.jpg?v=1755780730"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009710_e18bcfb6f599.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009711_b3b1195c0e14.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009712_13f8c77a60a5.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11716 Air Filter",
       "sku": "sa-11716-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b497f9ec-0587-4acd-a5eb-813f00a0516f.jpg?v=1723202702",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009710_e18bcfb6f599.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SA 11716",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P526501 Air Filter, Safety | Replaces the HiFi Filter SA 11716",
       "sku": "sa-11716-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526501.700.700_bd1d8c38-e3eb-48c4-8d40-93b1f642bc98.jpg?v=1744306002",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009711_b3b1195c0e14.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "P526501",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1766 Air Filter, Secondary | Replaces the HiFi Filter SA 11716",
       "sku": "sa-11716-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1766_bc1c4701-d50a-45b9-b3df-53edc72a2d6e.jpg?v=1755780730",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009712_13f8c77a60a5.jpg",
       "vendor": "",
       "price": 3300,
       "partNumber": "AF1766",

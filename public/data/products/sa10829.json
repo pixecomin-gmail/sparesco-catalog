@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66452b7b-756d-4a50-83cb-13e69d65756e.jpg?v=1723206057",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_146cfd65-8096-47bf-b5c3-792387a2f330.jpg?v=1743773500",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF879M_70f130dc-3d8e-4a41-bbb1-5031beb634c3.jpg?v=1755780802"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007707_41805f7bab96.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007708_e3c9b6e5d7ae.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007709_2f70755651cf.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10829 Air Filter",
       "sku": "sa-10829-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66452b7b-756d-4a50-83cb-13e69d65756e.jpg?v=1723206057",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007707_41805f7bab96.jpg",
       "vendor": "",
       "price": 16900,
       "partNumber": "SA 10829",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 45 005 x Air Filter | Replaces the HiFi Filter SA 10829",
       "sku": "sa-10829-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_146cfd65-8096-47bf-b5c3-792387a2f330.jpg?v=1743773500",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007708_e3c9b6e5d7ae.jpg",
       "vendor": "",
       "price": 28000,
       "partNumber": "C 45 005 x",
@@ -60,7 +60,7 @@
     {
       "title": "Fleetguard AF879M Air Filter, Primary | Replaces the HiFi Filter SA 10829",
       "sku": "sa-10829-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF879M_70f130dc-3d8e-4a41-bbb1-5031beb634c3.jpg?v=1755780802",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007709_2f70755651cf.jpg",
       "vendor": "",
       "price": 28200,
       "partNumber": "AF879M",

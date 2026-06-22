@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-17ca52b6-2ff0-484d-9448-717448306a66.jpg?v=1723205639",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p145700.700.700_2d986cc3-24e3-4b74-9e01-a8df7e1b8732.jpg?v=1744306010",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1905M_eeb96fac-47a8-443d-af4a-151da0a51863.jpg?v=1755780793"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007886_b937c7a52424.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007887_c7c6fbc4fb15.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007888_c446e15cfff4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11855 Air Filter",
       "sku": "sa-11855-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-17ca52b6-2ff0-484d-9448-717448306a66.jpg?v=1723205639",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007886_b937c7a52424.jpg",
       "vendor": "",
       "price": 6200,
       "partNumber": "SA 11855",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P145700 Air Filter, Primary Round | Replaces the HiFi Filter SA 11855",
       "sku": "sa-11855-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p145700.700.700_2d986cc3-24e3-4b74-9e01-a8df7e1b8732.jpg?v=1744306010",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007887_c7c6fbc4fb15.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "P145700",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1905M Air Filter, Primary | Replaces the HiFi Filter SA 11855",
       "sku": "sa-11855-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1905M_eeb96fac-47a8-443d-af4a-151da0a51863.jpg?v=1755780793",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007888_c446e15cfff4.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "AF1905M",

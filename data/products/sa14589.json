@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d5675c02-a841-452c-af7d-cf4002788224.jpg?v=1723205981",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158678.700.700_509030b6-3ef3-48a8-8a3d-6ebd1c41e92a.jpg?v=1744306035",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4639_3dfe5f82-fdc7-4cb6-8f40-b832397ef903.jpg?v=1755780793"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007731_593978e29bf9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007732_5ad768372d2b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007733_0406601c256c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14589 Air Filter",
       "sku": "sa-14589-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d5675c02-a841-452c-af7d-cf4002788224.jpg?v=1723205981",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007731_593978e29bf9.jpg",
       "vendor": "",
       "price": 5200,
       "partNumber": "SA 14589",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P158678 Air Filter, Safety | Replaces the HiFi Filter SA 14589",
       "sku": "sa-14589-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158678.700.700_509030b6-3ef3-48a8-8a3d-6ebd1c41e92a.jpg?v=1744306035",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007732_5ad768372d2b.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "P158678",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4639 Air, Secondary | Replaces the HiFi Filter SA 14589",
       "sku": "sa-14589-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4639_3dfe5f82-fdc7-4cb6-8f40-b832397ef903.jpg?v=1755780793",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007733_0406601c256c.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "AF4639",

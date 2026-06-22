@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c2dab570-d1be-4265-bacb-5da4e6870d8d.jpg?v=1723202502",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524373.700.700_9a430902-d65d-4264-97e4-e8fe44a4bd51.jpg?v=1744305995",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1628_34887712-1f3f-4a21-9791-b1eca89af53c.jpg?v=1755780726"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009872_d02ad907a3fc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009873_1dc866c9febb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009874_241786a27efa.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11578 Air Filter",
       "sku": "sa-11578-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c2dab570-d1be-4265-bacb-5da4e6870d8d.jpg?v=1723202502",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009872_d02ad907a3fc.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "SA 11578",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P524373 Air Filter, Primary Round | Replaces the HiFi Filter SA 11578",
       "sku": "sa-11578-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524373.700.700_9a430902-d65d-4264-97e4-e8fe44a4bd51.jpg?v=1744305995",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009873_1dc866c9febb.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "P524373",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1628 Air Filter | Replaces the HiFi Filter SA 11578",
       "sku": "sa-11578-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1628_34887712-1f3f-4a21-9791-b1eca89af53c.jpg?v=1755780726",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009874_241786a27efa.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "AF1628",

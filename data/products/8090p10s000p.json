@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9b681805-61de-4b81-9a7f-cbdeedf85e83_bb1d2c6d-df71-4c44-8b2c-61be2880fe15.jpg?v=1762276886",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_13742_image1_ca6df043-d302-4610-911c-40c099f589e2.jpg?v=1762276886",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7980_f715288e-319a-4233-ba77-eee03fa84bac.jpg?v=1762276886",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_mg_010_p_n181951_i2373804_e3396631-c054-4347-9739-afba77e7ed9c.jpg?v=1762276886",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9b681805-61de-4b81-9a7f-cbdeedf85e83_d7ffe08a-373e-4ebf-a5dc-709be8f79e7b.jpg?v=1762276888",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_13742_image1_b13da775-58db-48ab-8359-1ab3fbfd51e3.jpg?v=1762276888",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7980_6cee1e8b-e002-476d-91a8-f2c6a3252bd9.jpg?v=1762276888",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_mg_010_p_n181951_i2373804_caa81c52-185a-4127-95c7-7ece8e3c5de9.jpg?v=1762276888"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033745_0c3cf76f071d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033746_00c017b135e4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033747_e9b9e05ac16e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033748_dec1762a75fe.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033751_1d7a20f16a8d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033752_20747cd37533.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033753_8a0ef7378f88.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033754_5e4dad0ec314.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 63161 Spin-On Filter | Replaces the Eppensteiner 8090P10S000P",
       "sku": "8090p10s000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9b681805-61de-4b81-9a7f-cbdeedf85e83_bb1d2c6d-df71-4c44-8b2c-61be2880fe15.jpg?v=1762276886",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033745_0c3cf76f071d.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "SH 63161",
@@ -54,7 +54,7 @@
     {
       "title": "Mann Filter W 1374/2 Hydraulics | Replaces the Eppensteiner 8090P10S000P",
       "sku": "8090p10s000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_13742_image1_ca6df043-d302-4610-911c-40c099f589e2.jpg?v=1762276886",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033746_00c017b135e4.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "W 1374/2",
@@ -84,7 +84,7 @@
     {
       "title": "Fleetguard HF7980 Hydraulic Filters | Replaces the Eppensteiner 8090P10S000P",
       "sku": "8090p10s000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7980_f715288e-319a-4233-ba77-eee03fa84bac.jpg?v=1762276886",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033747_e9b9e05ac16e.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "HF7980",
@@ -113,7 +113,7 @@
     {
       "title": "Hydac 0160 MG 010 P Spin-On Filter | Replaces the Eppensteiner 8090P10S000P",
       "sku": "8090p10s000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_mg_010_p_n181951_i2373804_e3396631-c054-4347-9739-afba77e7ed9c.jpg?v=1762276886",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033748_dec1762a75fe.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "0160 MG 010 P",

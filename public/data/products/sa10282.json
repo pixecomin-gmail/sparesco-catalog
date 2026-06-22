@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e8fd9585-9462-4127-98e9-4be224b28374.jpg?v=1723202484",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181106.700.700_ccb664c6-267b-4bc6-8942-7482e8547ba9.jpg?v=1744305962",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF332_07080d52-f99f-4df2-bf80-b0de77bb6de2.jpg?v=1755780728"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009890_c23e33aaaa8f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009891_f105a1d397b9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009892_4ec5a05732b2.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10282 Air Filter",
       "sku": "sa-10282-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e8fd9585-9462-4127-98e9-4be224b28374.jpg?v=1723202484",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009890_c23e33aaaa8f.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "SA 10282",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P181106 Air Filter, Primary Round | Replaces the HiFi Filter SA 10282",
       "sku": "sa-10282-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181106.700.700_ccb664c6-267b-4bc6-8942-7482e8547ba9.jpg?v=1744305962",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009891_f105a1d397b9.jpg",
       "vendor": "",
       "price": 4800,
       "partNumber": "P181106",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF332 Air Filter, Primary | Replaces the HiFi Filter SA 10282",
       "sku": "sa-10282-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF332_07080d52-f99f-4df2-bf80-b0de77bb6de2.jpg?v=1755780728",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009892_4ec5a05732b2.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "AF332",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-721f96bc-4647-4c6f-ab85-3b9431893894.jpg?v=1748456056",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p608599.700.700_0f78ad5c-fabd-461a-99b3-ddebf7ef186c.jpg?v=1748456056",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_10_002_image1_296a46c5-836f-45ef-8379-20f24158134d.jpg?v=1754909268",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4226_aeb04de7-0757-4919-97da-7fd5090d2bdf.jpg?v=1755780744"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009512_14a39ebc2c1b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009513_c90ee0ba7880.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009514_480864fcf8a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009515_59b333d6f161.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16562 Air Filter",
       "sku": "sa-16562-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-721f96bc-4647-4c6f-ab85-3b9431893894.jpg?v=1748456056",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009512_14a39ebc2c1b.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "SA 16562",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P608599 Air Filter, Safety Konepac | Replaces the HiFi Filter SA 16562",
       "sku": "sa-16562-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p608599.700.700_0f78ad5c-fabd-461a-99b3-ddebf7ef186c.jpg?v=1748456056",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009513_c90ee0ba7880.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "P608599",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CF 10 002 Secondary Element | Replaces the HiFi Filter SA 16562",
       "sku": "sa-16562-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_10_002_image1_296a46c5-836f-45ef-8379-20f24158134d.jpg?v=1754909268",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009514_480864fcf8a1.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "CF 10 002",
@@ -74,7 +74,7 @@
     {
       "title": "Fleetguard AF4226 Air Filter, Secondary | Replaces the HiFi Filter SA 16562",
       "sku": "sa-16562-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4226_aeb04de7-0757-4919-97da-7fd5090d2bdf.jpg?v=1755780744",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009515_59b333d6f161.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "AF4226",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96caea23-9b3b-48ce-a7c8-1ac4c5491ac2.jpg?v=1723204553",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p528231.700.700_fe14f624-3aa4-46f2-8804-713bdcc081dc.jpg?v=1744305979",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF843_83a80c48-f81a-4d33-a4fd-86b9c67b390b.jpg?v=1755780770"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008460_18344c410c39.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008461_49bf4dadb093.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008462_1fecb160436c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10793 Air Filter",
       "sku": "sa-10793-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96caea23-9b3b-48ce-a7c8-1ac4c5491ac2.jpg?v=1723204553",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008460_18344c410c39.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "SA 10793",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P528231 Air Filter, Primary Round | Replaces the HiFi Filter SA 10793",
       "sku": "sa-10793-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p528231.700.700_fe14f624-3aa4-46f2-8804-713bdcc081dc.jpg?v=1744305979",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008461_49bf4dadb093.jpg",
       "vendor": "",
       "price": 1500,
       "partNumber": "P528231",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF843 Air Filter | Replaces the HiFi Filter SA 10793",
       "sku": "sa-10793-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF843_83a80c48-f81a-4d33-a4fd-86b9c67b390b.jpg?v=1755780770",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008462_1fecb160436c.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "AF843",

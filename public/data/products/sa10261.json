@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-87d56631-1e12-44bd-9df8-538c01baa825.jpg?v=1723202371",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524391.700.700_7e61d97a-8e15-454e-b8cf-0949586c7c46.jpg?v=1744305966",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF311_76f5008b-6bf1-43ba-a883-475147619427.jpg?v=1755780718"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009986_6ba4cb7c73d7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009987_13acb9187ad6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009988_e3fc38336b29.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10261 Air Filter",
       "sku": "sa-10261-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-87d56631-1e12-44bd-9df8-538c01baa825.jpg?v=1723202371",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009986_6ba4cb7c73d7.jpg",
       "vendor": "",
       "price": 1100,
       "partNumber": "SA 10261",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P524391 Air Filter, Primary Round | Replaces the HiFi Filter SA 10261",
       "sku": "sa-10261-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524391.700.700_7e61d97a-8e15-454e-b8cf-0949586c7c46.jpg?v=1744305966",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009987_13acb9187ad6.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "P524391",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF311 Air, Primary | Replaces the HiFi Filter SA 10261",
       "sku": "sa-10261-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF311_76f5008b-6bf1-43ba-a883-475147619427.jpg?v=1755780718",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009988_e3fc38336b29.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "AF311",

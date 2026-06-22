@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200318B-NB_759ef232-7bfc-4d4f-9fe4-000efa014b2d.jpg?v=1748450500",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fa9c30c9-704a-4226-b4be-449c3273b8cb_e13589d2-72fa-44c8-ac16-d1576e0f14eb.jpg?v=1748450500",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_55aa06f5-f311-403f-9e2b-dd59b32c464c.jpg?v=1748450500",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200318B-NB_f559c65d-87a3-4b19-b42f-49d6b2924802.jpg?v=1748450507",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fa9c30c9-704a-4226-b4be-449c3273b8cb_6079677d-570b-41b1-a80b-64cbc2d1d676.jpg?v=1748450507",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_b8dbe421-8451-4077-8cfb-9277c79c5b3d.jpg?v=1748450507"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027864_9f868f1b2c00.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027865_b2a45bcd7b5f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027866_0badb0198766.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027875_dcfdae3b1ddb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027876_5ee3555ce084.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027877_a40ccad79fdb.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30040 Pressure Filter | Replaces the Eppensteiner 16.9800H20LL205SP",
       "sku": "16-9800h20ll205sp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200318B-NB_f559c65d-87a3-4b19-b42f-49d6b2924802.jpg?v=1748450507",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027875_dcfdae3b1ddb.jpg",
       "vendor": "MicroFit",
       "price": 4200,
       "partNumber": "MFHLP30040",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 57157 Pressure Filter | Replaces the Eppensteiner 169800H20LL205SP",
       "sku": "169800h20ll205sp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fa9c30c9-704a-4226-b4be-449c3273b8cb_e13589d2-72fa-44c8-ac16-d1576e0f14eb.jpg?v=1748450500",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027865_b2a45bcd7b5f.jpg",
       "vendor": "HiFi Filter",
       "price": 5100,
       "partNumber": "SH 57157",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec D121G25A Pressure Filter | Replaces the Eppensteiner 169800H20LL205SP",
       "sku": "169800h20ll205sp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_55aa06f5-f311-403f-9e2b-dd59b32c464c.jpg?v=1748450500",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027866_0badb0198766.jpg",
       "vendor": "Filtrec",
       "price": 5800,
       "partNumber": "D121G25A",

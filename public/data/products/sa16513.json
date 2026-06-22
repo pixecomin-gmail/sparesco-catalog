@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aa26491a-a272-4e05-bdfe-035b5c218d51.jpg?v=1723202970",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628327.700.700_3e387aff-fa4d-4767-824a-fc5a99d1e3c9.jpg?v=1744306110",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26120_a4c7b9c0-3fb7-4854-911d-99cbfac6f1d2.jpg?v=1755780735"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009553_37eacc27b88e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009554_4f1c16f5f917.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009555_081f564efbab.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16513 Air Filter",
       "sku": "sa-16513-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aa26491a-a272-4e05-bdfe-035b5c218d51.jpg?v=1723202970",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009553_37eacc27b88e.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "SA 16513",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P628327 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16513",
       "sku": "sa-16513-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628327.700.700_3e387aff-fa4d-4767-824a-fc5a99d1e3c9.jpg?v=1744306110",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009554_4f1c16f5f917.jpg",
       "vendor": "",
       "price": 4800,
       "partNumber": "P628327",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF26120 Air Filter, Primary | Replaces the HiFi Filter SA 16513",
       "sku": "sa-16513-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26120_a4c7b9c0-3fb7-4854-911d-99cbfac6f1d2.jpg?v=1755780735",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009555_081f564efbab.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "AF26120",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203706B_14008282-6fba-4ee3-b2b1-d78d5dffe4ea.jpg?v=1764692268",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD040B_5301722f-7907-42af-bc50-986446048045.jpg?v=1764692268",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8f51b780-eef3-4314-ba13-7b2074a313a7_137e5b85-dc71-4b02-87af-5530dc741ea2.jpg?v=1764692268"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000563_abc4795e2aac.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000564_89d0caa5e247.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000565_41720a289d9b.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit MFHHP40489 | Replaces the Argo-Hytos V3052513",
       "sku": "v3052513-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203706B_14008282-6fba-4ee3-b2b1-d78d5dffe4ea.jpg?v=1764692268",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000563_abc4795e2aac.jpg",
       "vendor": "",
       "price": 14400,
       "partNumber": "MFHHP40489",
@@ -48,7 +48,7 @@
     {
       "title": "Filtrec XD100G03B DIN Pressure Filter | Replaces the Argo-Hytos V3052513",
       "sku": "v3052513-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD040B_5301722f-7907-42af-bc50-986446048045.jpg?v=1764692268",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000564_89d0caa5e247.jpg",
       "vendor": "",
       "price": 15700,
       "partNumber": "XD100G03B",
@@ -79,7 +79,7 @@
     {
       "title": "HiFi Filter SH 61170 DIN Pressure Filter | Replaces the Argo-Hytos V3052513",
       "sku": "v3052513-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8f51b780-eef3-4314-ba13-7b2074a313a7_137e5b85-dc71-4b02-87af-5530dc741ea2.jpg?v=1764692268",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000565_41720a289d9b.jpg",
       "vendor": "",
       "price": 18900,
       "partNumber": "SH 61170",

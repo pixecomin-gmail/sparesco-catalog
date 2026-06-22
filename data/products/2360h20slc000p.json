@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_caadfa82-5a37-4c57-940c-ebdd26945831.jpg?v=1762282065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140F_820d13b3-2de7-403e-9038-d248f9dae613.jpg?v=1762282065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_69beffa1-0c1a-46dd-a6b3-baff672ad34c.jpg?v=1764763001",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_172caf7e-978a-479f-81dd-d4a9041e9310.png?v=1762282065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_df78449e-119f-43f0-b94c-e032528ce608.jpg?v=1762282065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140F_4fd52698-6583-4370-ab06-7906961069e3.jpg?v=1762282065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_73944df1-6f9e-4eb4-a890-e9986a3ab1cd.jpg?v=1764762997",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fbf61a04-8298-4f82-aec0-22d1a6355513.png?v=1762282065"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013479_281a5c1e2ced.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013480_b17c9c65421c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013481_f6563420d85a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013482_427f7ff5edad.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013499_f2de0300df28.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013500_31cb09b3b2b8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013501_f4b111dd1946.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013502_798ea139a055.png"
   ],
   "variants": [
     {
       "title": "Fleetguard ST1772 Hydraulic Filters | Replaces the Eppensteiner 2360H20SLC000P",
       "sku": "2360h20slc000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_caadfa82-5a37-4c57-940c-ebdd26945831.jpg?v=1762282065",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013479_281a5c1e2ced.jpg",
       "vendor": "",
       "price": 22200,
       "partNumber": "ST1772",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec DVD2360F20B Pressure Filter | Replaces the Eppensteiner 2360H20SLC000P",
       "sku": "2360h20slc000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140F_820d13b3-2de7-403e-9038-d248f9dae613.jpg?v=1762282065",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013480_b17c9c65421c.jpg",
       "vendor": "",
       "price": 23100,
       "partNumber": "DVD2360F20B",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 67462 Pressure Filter | Replaces the Eppensteiner 2360H20SLC000P",
       "sku": "2360h20slc000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_69beffa1-0c1a-46dd-a6b3-baff672ad34c.jpg?v=1764763001",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013481_f6563420d85a.jpg",
       "vendor": "",
       "price": 30000,
       "partNumber": "SH 67462",
@@ -115,7 +115,7 @@
     {
       "title": "MicroFit® MFHHP40141 UltraGen III Pressure Filter | Replaces the Eppensteiner 2360H20SLC000P",
       "sku": "2360h20slc000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_172caf7e-978a-479f-81dd-d4a9041e9310.png?v=1762282065",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013482_427f7ff5edad.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40141",

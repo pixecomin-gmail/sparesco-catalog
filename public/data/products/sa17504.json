@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c11e72bb-5963-4c8f-9c43-4a3f5426955d.jpg?v=1723205514",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628400.700.700_cfc2901d-85d6-4482-84c6-266154f0a6e4.jpg?v=1744306181",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25176_d0903bba-ffa2-4e7b-b30a-bd59717f9da9.jpg?v=1755780784"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007941_57b17f5c3fa4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007942_22c94b208f42.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007943_f40ae5c56888.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17504 Air Filter",
       "sku": "sa-17504-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c11e72bb-5963-4c8f-9c43-4a3f5426955d.jpg?v=1723205514",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007941_57b17f5c3fa4.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "SA 17504",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P628400 Air Filter, Safety | Replaces the HiFi Filter SA 17504",
       "sku": "sa-17504-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p628400.700.700_cfc2901d-85d6-4482-84c6-266154f0a6e4.jpg?v=1744306181",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007942_22c94b208f42.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "P628400",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF25176 Air Filter, Secondary | Replaces the HiFi Filter SA 17504",
       "sku": "sa-17504-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25176_d0903bba-ffa2-4e7b-b30a-bd59717f9da9.jpg?v=1755780784",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007943_f40ae5c56888.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "AF25176",

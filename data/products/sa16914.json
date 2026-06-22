@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dca12827-a686-46ee-b446-9e66bd5383b7.jpg?v=1723205854",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p636750.700.700_f8dd04c2-c5ff-4ae7-859b-528a17ac392a.jpg?v=1744306148",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55321_8d27aed5-b397-4c65-b17f-d63751a0fb2b.jpg?v=1755780799"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000208_e205c6c954d4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000209_a9c31519aa3b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000210_7fb086723cb2.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16914 Air Filter",
       "sku": "sa-16914-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dca12827-a686-46ee-b446-9e66bd5383b7.jpg?v=1723205854",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000208_e205c6c954d4.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "SA 16914",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P636750 Air Filter, Safety | Replaces the HiFi Filter SA 16914",
       "sku": "sa-16914-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p636750.700.700_f8dd04c2-c5ff-4ae7-859b-528a17ac392a.jpg?v=1744306148",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000209_a9c31519aa3b.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "P636750",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF55321 Air Filter | Replaces the HiFi Filter SA 16914",
       "sku": "sa-16914-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55321_8d27aed5-b397-4c65-b17f-d63751a0fb2b.jpg?v=1755780799",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000210_7fb086723cb2.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "AF55321",

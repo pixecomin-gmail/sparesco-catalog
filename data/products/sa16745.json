@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2e02854-3f46-40b4-be96-8d986c699efa.jpg?v=1723202496",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p633483.700.700_39f867ae-d0e5-4f65-97c3-e951d7de6076.jpg?v=1744306139",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55308_bd83d3c9-a5ff-4030-ab39-31dda4e38309.jpg?v=1755780730"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000313_3092fb2f67a9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000314_fbc2deba38ef.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000315_9181a8555779.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16745 Air Filter",
       "sku": "sa-16745-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2e02854-3f46-40b4-be96-8d986c699efa.jpg?v=1723202496",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000313_3092fb2f67a9.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "SA 16745",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P633483 Air Filter, Safety | Replaces the HiFi Filter SA 16745",
       "sku": "sa-16745-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p633483.700.700_39f867ae-d0e5-4f65-97c3-e951d7de6076.jpg?v=1744306139",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000314_fbc2deba38ef.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "P633483",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF55308 Air Filter, Secondary | Replaces the HiFi Filter SA 16745",
       "sku": "sa-16745-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55308_bd83d3c9-a5ff-4030-ab39-31dda4e38309.jpg?v=1755780730",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000315_9181a8555779.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "AF55308",

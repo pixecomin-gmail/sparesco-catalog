@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR65B_93beeaf8-a5d0-431b-b715-245c3f7d0dcb.jpg?v=1762278919",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a3a24723-7c4d-4c77-8079-47ac1071c074_36720b93-2420-4c77-96b2-5b50cff85f82.jpg?v=1762278919",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_45892fe8-314a-4f20-ac05-7caa5d96430c.png?v=1762278919",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR65B_07dc58f3-bf8e-410c-b736-eff05f79e767.jpg?v=1762278920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a3a24723-7c4d-4c77-8079-47ac1071c074_76e5cc14-008a-44b3-bdca-f5ee72b1a7e2.jpg?v=1762278920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_baa88d3d-b970-4fed-a4bb-5a1a3558cc60.png?v=1762278920"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012139_9790fdc94ccd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012140_6a8f6e42d324.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012141_5a9a2b5a3e59.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012142_e8ba3e1c9471.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012143_92142d2ef9cf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012144_bf8e4f76e09d.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR65B40B Return Filter | Replaces the Eppensteiner 2165G40S004P",
       "sku": "2165g40s004p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR65B_93beeaf8-a5d0-431b-b715-245c3f7d0dcb.jpg?v=1762278919",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012139_9790fdc94ccd.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "RVR65B40B",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 67337 Return Filter | Replaces the Eppensteiner 2165G40S004P",
       "sku": "2165g40s004p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a3a24723-7c4d-4c77-8079-47ac1071c074_36720b93-2420-4c77-96b2-5b50cff85f82.jpg?v=1762278919",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012140_6a8f6e42d324.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "SH 67337",
@@ -84,7 +84,7 @@
     {
       "title": "MicroFit® MFHR50557 UltraGen III Filter | Replaces the Eppensteiner 2165G40S004P",
       "sku": "2165g40s004p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_45892fe8-314a-4f20-ac05-7caa5d96430c.png?v=1762278919",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012141_5a9a2b5a3e59.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50557",

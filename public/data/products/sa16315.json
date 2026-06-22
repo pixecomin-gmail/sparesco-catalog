@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f4d1208d-c2f2-4e49-a34e-104fdea8aebe.jpg?v=1723204370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607370.700.700_f1bccec2-bc9a-40b6-9e86-c5dfcdfcaf7a.jpg?v=1744306086",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4254_dc6c3132-9deb-4c23-b122-cddf4dc33ca9.jpg?v=1755780767"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008540_4cffa002a1f5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008541_f18f21c4f192.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008542_00a256e3edb7.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16315 Air Filter",
       "sku": "sa-16315-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f4d1208d-c2f2-4e49-a34e-104fdea8aebe.jpg?v=1723204370",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008540_4cffa002a1f5.jpg",
       "vendor": "",
       "price": 13300,
       "partNumber": "SA 16315",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P607370 Air Filter, Safety | Replaces the HiFi Filter SA 16315",
       "sku": "sa-16315-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607370.700.700_f1bccec2-bc9a-40b6-9e86-c5dfcdfcaf7a.jpg?v=1744306086",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008541_f18f21c4f192.jpg",
       "vendor": "",
       "price": 13500,
       "partNumber": "P607370",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4254 Air Filter, Secondary | Replaces the HiFi Filter SA 16315",
       "sku": "sa-16315-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4254_dc6c3132-9deb-4c23-b122-cddf4dc33ca9.jpg?v=1755780767",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008542_00a256e3edb7.jpg",
       "vendor": "",
       "price": 12500,
       "partNumber": "AF4254",

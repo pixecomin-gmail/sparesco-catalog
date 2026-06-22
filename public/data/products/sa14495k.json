@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-58235e36-61ab-4473-a57b-8925a7b32b3e.jpg?v=1723216929",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p122514.700.700_dce90f62-33f5-4a33-847c-1d5ca193a9aa.jpg?v=1744306033",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4545K_99bc301f-8f92-4ed3-9744-ea603eb43e5c.jpg?v=1755780908"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005044_01776d3774e1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005045_38c8de3c845b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005046_57dcb015d21e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14495 K Air Filter",
       "sku": "sa-14495-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-58235e36-61ab-4473-a57b-8925a7b32b3e.jpg?v=1723216929",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005044_01776d3774e1.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "SA 14495 K",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P122514 Air Filter, Primary Finned | Replaces the HiFi Filter SA 14495 K",
       "sku": "sa-14495-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p122514.700.700_dce90f62-33f5-4a33-847c-1d5ca193a9aa.jpg?v=1744306033",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005045_38c8de3c845b.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "P122514",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4545K Air Filter | Replaces the HiFi Filter SA 14495 K",
       "sku": "sa-14495-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4545K_99bc301f-8f92-4ed3-9744-ea603eb43e5c.jpg?v=1755780908",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005046_57dcb015d21e.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "AF4545K",

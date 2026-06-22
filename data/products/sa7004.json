@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9a92094-a85f-402d-9e63-1e421ce0bdf2.jpg?v=1748456103",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778509.700.700_6fd02b91-e207-467c-be96-4ec3da5e7732.jpg?v=1748456103",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_219709de-65f5-40bd-9bc4-9f90c110b9c6.jpg?v=1748456103",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25260_b93df3d6-d579-41d7-aec4-628baa24974f.jpg?v=1755780807"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007589_22246f223cc3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007590_98b6d422c439.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007591_4676ab48a128.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007592_531f636f82a3.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 7004 Air Filter",
       "sku": "sa-7004-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9a92094-a85f-402d-9e63-1e421ce0bdf2.jpg?v=1748456103",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007589_22246f223cc3.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "SA 7004",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P778509 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 7004",
       "sku": "sa-7004-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778509.700.700_6fd02b91-e207-467c-be96-4ec3da5e7732.jpg?v=1748456103",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007590_98b6d422c439.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "P778509",
@@ -54,7 +54,7 @@
     {
       "title": "Mann Filter C 16 247/1 Air Filter | Replaces the HiFi Filter SA 7004",
       "sku": "sa-7004-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_219709de-65f5-40bd-9bc4-9f90c110b9c6.jpg?v=1748456103",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007591_4676ab48a128.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "C 16 247/1",
@@ -73,7 +73,7 @@
     {
       "title": "Fleetguard AF25260 Air Filter, Primary | Replaces the HiFi Filter SA 7004",
       "sku": "sa-7004-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25260_b93df3d6-d579-41d7-aec4-628baa24974f.jpg?v=1755780807",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007592_531f636f82a3.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "AF25260",

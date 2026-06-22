@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-617b3d29-ec46-4428-a64a-c2a5bedc45ad.jpg?v=1723212079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_4019_image1_1ee18632-8ff5-4e03-a125-b04a8fd5e3eb.jpg?v=1754909441",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27833_d764bef6-e09c-4651-ba4c-55c774c90641.jpg?v=1755780890"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006358_eacca2c6e1cf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006359_f88451817611.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006360_de45fd58131b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 4062 Air Filter",
       "sku": "sa-4062-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-617b3d29-ec46-4428-a64a-c2a5bedc45ad.jpg?v=1723212079",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006358_eacca2c6e1cf.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "SA 4062",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 4019 Air Filter | Replaces the HiFi Filter SA 4062",
       "sku": "sa-4062-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_4019_image1_1ee18632-8ff5-4e03-a125-b04a8fd5e3eb.jpg?v=1754909441",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006359_f88451817611.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "C 4019",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF27833 Air Filter Filter - Panel | Replaces the HiFi Filter SA 4062",
       "sku": "sa-4062-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27833_d764bef6-e09c-4651-ba4c-55c774c90641.jpg?v=1755780890",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006360_de45fd58131b.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF27833",

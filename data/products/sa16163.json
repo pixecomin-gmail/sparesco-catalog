@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-09220d50-70ef-4299-8334-a88e45de22d6.jpg?v=1723203621",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p786816.700.700_7393f601-22fc-45e3-8a5c-472a6eb84a26.jpg?v=1744306070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25368_59627450-c0d8-4e5b-b96b-c1a58ebf7dd1.jpg?v=1755780750"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009101_489be6bc1bde.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009102_c818115e88cc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009103_009dc809b9d7.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16163 Air Filter",
       "sku": "sa-16163-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-09220d50-70ef-4299-8334-a88e45de22d6.jpg?v=1723203621",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009101_489be6bc1bde.jpg",
       "vendor": "",
       "price": 9800,
       "partNumber": "SA 16163",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P783729 Air Filter, Primary Round | Replaces the HiFi Filter SA 16163",
       "sku": "sa-16163-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p786816.700.700_7393f601-22fc-45e3-8a5c-472a6eb84a26.jpg?v=1744306070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009102_c818115e88cc.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "P783729",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25368 Air Filter, Primary | Replaces the HiFi Filter SA 16163",
       "sku": "sa-16163-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25368_59627450-c0d8-4e5b-b96b-c1a58ebf7dd1.jpg?v=1755780750",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009103_009dc809b9d7.jpg",
       "vendor": "",
       "price": 10500,
       "partNumber": "AF25368",

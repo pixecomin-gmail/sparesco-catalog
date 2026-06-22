@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200530B_1093cf32-bf5f-4297-af7b-81fe2861b51c.jpg?v=1741359724",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_77bcceb2-5433-4459-a176-80ac5104b2bb.jpg?v=1741359724",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ccd5f9b5-35c5-45ac-aea5-e3da2130dced.png?v=1760632851"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000588_fea33666863e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000589_e455174e06d2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000590_47f7ab7bbc9e.png"
   ],
   "variants": [
     {
       "title": "Filtrec R612G03 Return Filter | Replaces the Argo-Hytos V3052053",
       "sku": "v3052053-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200530B_1093cf32-bf5f-4297-af7b-81fe2861b51c.jpg?v=1741359724",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000588_fea33666863e.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "R612G03",
@@ -50,7 +50,7 @@
     {
       "title": "Argo Hytos V3.0520-53 Return Filter",
       "sku": "v3052053-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_77bcceb2-5433-4459-a176-80ac5104b2bb.jpg?v=1741359724",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000589_e455174e06d2.jpg",
       "vendor": "",
       "price": 11400,
       "partNumber": "V3.0520-53",
@@ -83,7 +83,7 @@
     {
       "title": "MicroFit® MFHR50160 UltraGen III Return Filter | Replaces the Argo-Hytos V3052053",
       "sku": "v3052053-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ccd5f9b5-35c5-45ac-aea5-e3da2130dced.png?v=1760632851",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000590_47f7ab7bbc9e.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50160",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e1175949-95b9-4059-8c0a-f8251e294e39.jpg?v=1748455990",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p182042.700.700_f392b841-6e7b-4f5b-9a11-286379660982.jpg?v=1748455990",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b5c7c51a-3338-4827-bf76-27985b2b74dd.jpg?v=1748455990",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1605M_14115d5c-b9b6-48e5-9311-afa435d0505b.jpg?v=1755780898"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005856_25bfc7f60831.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005857_80e711aa03b6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005858_2286058fc985.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005859_f5ac5bfa33f4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11555 Air Filter",
       "sku": "sa-11555-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e1175949-95b9-4059-8c0a-f8251e294e39.jpg?v=1748455990",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005856_25bfc7f60831.jpg",
       "vendor": "",
       "price": 12100,
       "partNumber": "SA 11555",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P182042 Air Filter, Primary Round | Replaces the HiFi Filter SA 11555",
       "sku": "sa-11555-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p182042.700.700_f392b841-6e7b-4f5b-9a11-286379660982.jpg?v=1748455990",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005857_80e711aa03b6.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "P182042",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 38 014 x Air Filter | Replaces the HiFi Filter SA 11555",
       "sku": "sa-11555-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b5c7c51a-3338-4827-bf76-27985b2b74dd.jpg?v=1748455990",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005858_2286058fc985.jpg",
       "vendor": "",
       "price": 16000,
       "partNumber": "C 38 014 x",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF1605M Air Filter, Primary | Replaces the HiFi Filter SA 11555",
       "sku": "sa-11555-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1605M_14115d5c-b9b6-48e5-9311-afa435d0505b.jpg?v=1755780898",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005859_f5ac5bfa33f4.jpg",
       "vendor": "",
       "price": 18400,
       "partNumber": "AF1605M",

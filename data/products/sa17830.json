@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6009a6ea-dbd5-4165-a75e-d24429cd32fd.jpg?v=1723202963",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_655c0b63-59a5-4654-a568-aff421ed7fdf.jpg?v=1742827042",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781352.700.700_5c1faef5-8a11-4ef2-a2f4-1e4a4b51adc7.jpg?v=1744306180",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25425_29ea45ca-abcf-4b37-a382-1efcd481a371.jpg?v=1755780739"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009557_bbf5fea55b16.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009558_e7eee89f2cf9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009559_1895c1048eb8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009560_93705ad9acf6.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17830 Air Filter",
       "sku": "sa-17830-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6009a6ea-dbd5-4165-a75e-d24429cd32fd.jpg?v=1723202963",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009557_bbf5fea55b16.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "SA 17830",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter CF 830 Secondary Element | Replaces the HiFi Filter SA 17830",
       "sku": "sa-17830-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_655c0b63-59a5-4654-a568-aff421ed7fdf.jpg?v=1742827042",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009558_e7eee89f2cf9.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "CF 830",
@@ -59,7 +59,7 @@
     {
       "title": "Donaldson P781352 Air Filter, Safety | Replaces the HiFi Filter SA 17830",
       "sku": "sa-17830-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781352.700.700_5c1faef5-8a11-4ef2-a2f4-1e4a4b51adc7.jpg?v=1744306180",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009559_1895c1048eb8.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "P781352",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF25425 Air Filter, Secondary | Replaces the HiFi Filter SA 17830",
       "sku": "sa-17830-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25425_29ea45ca-abcf-4b37-a382-1efcd481a371.jpg?v=1755780739",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009560_93705ad9acf6.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "AF25425",

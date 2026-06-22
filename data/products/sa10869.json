@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0225afab-3dae-4663-91de-a48a26ba22e0.jpg?v=1723205241",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131343.700.700_d9595cdb-c01c-46ea-8810-8d2ab24eb5ba.jpg?v=1744305986",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AUT6Zl7m1VE6HaCrwNzxr49tgY5Fc2gG5_967077fc-a4f8-4172-b230-4cd9bcd4f751.png?v=1751027848",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF919_2ccbfff9-7ee4-4a41-9ff8-c22b3a01deb9.jpg?v=1755780777"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008087_8b203df26a27.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008088_f77640fb6f69.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008089_b34acd02ec60.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008090_66cb9008643a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10869 Air Filter",
       "sku": "sa-10869-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0225afab-3dae-4663-91de-a48a26ba22e0.jpg?v=1723205241",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008087_8b203df26a27.jpg",
       "vendor": "",
       "price": 8600,
       "partNumber": "SA 10869",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P131343 Air Filter, Primary Round | Replaces the HiFi Filter SA 10869",
       "sku": "sa-10869-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131343.700.700_d9595cdb-c01c-46ea-8810-8d2ab24eb5ba.jpg?v=1744305986",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008088_f77640fb6f69.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "P131343",
@@ -55,7 +55,7 @@
     {
       "title": "FIL Filter HP 463 | Replaces the HiFi Filter SA 10869",
       "sku": "sa-10869-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AUT6Zl7m1VE6HaCrwNzxr49tgY5Fc2gG5_967077fc-a4f8-4172-b230-4cd9bcd4f751.png?v=1751027848",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008089_b34acd02ec60.png",
       "vendor": "",
       "price": 8200,
       "partNumber": "HP 463",
@@ -71,7 +71,7 @@
     {
       "title": "Fleetguard AF919 Air Filter, Primary | Replaces the HiFi Filter SA 10869",
       "sku": "sa-10869-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF919_2ccbfff9-7ee4-4a41-9ff8-c22b3a01deb9.jpg?v=1755780777",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008090_66cb9008643a.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "AF919",

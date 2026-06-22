@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aadeffad-cb4e-47b1-8e0e-a31a07e1754e.jpg?v=1723214594",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775749.700.700_bfb217f5-62b7-4556-b3ad-444daca31080.jpg?v=1744305992",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/9pAzZX2cpIC7ElA2Whu6aL8wyCvcuRYZa8S5mCi1rZ428cZT1pZ1Lx91nnIhZ_a10be960-e020-4613-b701-cfc057ca0647.png?v=1751027900",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4973K_b7fc4d13-a185-47da-9a16-576e6abd3f16.jpg?v=1755780898"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005344_a091491aeda2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005345_854dc897ccee.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005346_bd6d9e4d2f3e.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005347_5970ee93cc93.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11522 K Air Filter",
       "sku": "sa-11522-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aadeffad-cb4e-47b1-8e0e-a31a07e1754e.jpg?v=1723214594",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005344_a091491aeda2.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "SA 11522 K",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P775749 Air Filter, Primary Finned | Replaces the HiFi Filter SA 11522 K",
       "sku": "sa-11522-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775749.700.700_bfb217f5-62b7-4556-b3ad-444daca31080.jpg?v=1744305992",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005345_854dc897ccee.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "P775749",
@@ -55,7 +55,7 @@
     {
       "title": "FIL Filter HP 487 K Filter Insert | Replaces the HiFi Filter SA 11522 K",
       "sku": "sa-11522-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/9pAzZX2cpIC7ElA2Whu6aL8wyCvcuRYZa8S5mCi1rZ428cZT1pZ1Lx91nnIhZ_a10be960-e020-4613-b701-cfc057ca0647.png?v=1751027900",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005346_bd6d9e4d2f3e.png",
       "vendor": "",
       "price": 2100,
       "partNumber": "HP 487 K",
@@ -71,7 +71,7 @@
     {
       "title": "Fleetguard AF4973K Air Filter | Replaces the HiFi Filter SA 11522 K",
       "sku": "sa-11522-k-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4973K_b7fc4d13-a185-47da-9a16-576e6abd3f16.jpg?v=1755780898",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005347_5970ee93cc93.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "AF4973K",

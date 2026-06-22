@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3ce2fb2d-c0ac-4f8d-a14d-91e7156e55c1_d8d43029-4ece-4446-98c9-bc705d9032f9.jpg?v=1762811454",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p528708.700.700_93021ae4-9999-42a2-9d94-33c2b69fc8b2.jpg?v=1762811454",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_9004_image1_7fd04093-4ed8-49f9-9cd9-069f5682a66b.jpg?v=1762811454",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4895_7395b3ae-1547-44fe-9706-129d330ffddd.jpg?v=1762811454"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008515_a5f7554387a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008516_06f284622682.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008517_26be2a2adf58.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008518_44da752eb8b5.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11939 Air Filter",
       "sku": "sa-11939-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3ce2fb2d-c0ac-4f8d-a14d-91e7156e55c1_d8d43029-4ece-4446-98c9-bc705d9032f9.jpg?v=1762811454",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008515_a5f7554387a1.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "SA 11939",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P528708 Breather, Air | Replaces the HiFi Filter SA 11939",
       "sku": "sa-11939-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p528708.700.700_93021ae4-9999-42a2-9d94-33c2b69fc8b2.jpg?v=1762811454",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008516_06f284622682.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "P528708",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 9004 Ventilator | Replaces the HiFi Filter SA 11939",
       "sku": "sa-11939-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_9004_image1_7fd04093-4ed8-49f9-9cd9-069f5682a66b.jpg?v=1762811454",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008517_26be2a2adf58.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "C 9004",
@@ -74,7 +74,7 @@
     {
       "title": "Fleetguard AF4895 Air Filter Breather | Replaces the HiFi Filter SA 11939",
       "sku": "sa-11939-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4895_7395b3ae-1547-44fe-9706-129d330ffddd.jpg?v=1762811454",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008518_44da752eb8b5.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "AF4895",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e4dc4292-700d-4247-a29c-4567b9a84507.jpg?v=1723210851",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p613334.700.700_e6f43308-e012-47b6-93aa-8627ed876ca7.jpg?v=1744306103",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25962_02f879f0-731f-42e3-850f-a73c37022027.jpg?v=1755780870"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006756_11e01b6a6a32.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006757_3c9e1f8a034f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006758_4492f5ad66a6.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16455 Air Filter",
       "sku": "sa-16455-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e4dc4292-700d-4247-a29c-4567b9a84507.jpg?v=1723210851",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006756_11e01b6a6a32.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "SA 16455",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P613334 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16455",
       "sku": "sa-16455-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p613334.700.700_e6f43308-e012-47b6-93aa-8627ed876ca7.jpg?v=1744306103",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006757_3c9e1f8a034f.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "P613334",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF25962 Air Filter, Primary | Replaces the HiFi Filter SA 16455",
       "sku": "sa-16455-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25962_02f879f0-731f-42e3-850f-a73c37022027.jpg?v=1755780870",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006758_4492f5ad66a6.jpg",
       "vendor": "",
       "price": 6500,
       "partNumber": "AF25962",

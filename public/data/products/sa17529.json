@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b38008ee-1629-4795-9777-fbf932542b3c.jpg?v=1723249310",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_372f3d29-23f9-47dc-bf40-29193f69d824.jpg?v=1743773771",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25162_c4d547ad-c2d2-4c45-a64a-960f101b77c8.jpg?v=1755781003"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003565_4dc70774048b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003566_c0586c363c70.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003567_623b0d5b3987.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17529 Air Filter",
       "sku": "sa-17529-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b38008ee-1629-4795-9777-fbf932542b3c.jpg?v=1723249310",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003565_4dc70774048b.jpg",
       "vendor": "",
       "price": 9300,
       "partNumber": "SA 17529",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 25 860/8 Air Filter | Replaces the HiFi Filter SA 17529",
       "sku": "sa-17529-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_372f3d29-23f9-47dc-bf40-29193f69d824.jpg?v=1743773771",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003566_c0586c363c70.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "C 25 860/8",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF25162 Air Filter | Replaces the HiFi Filter SA 17529",
       "sku": "sa-17529-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25162_c4d547ad-c2d2-4c45-a64a-960f101b77c8.jpg?v=1755781003",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003567_623b0d5b3987.jpg",
       "vendor": "",
       "price": 10300,
       "partNumber": "AF25162",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_b631ef29-8ed4-43b9-88a4-f5617c49822c.jpg?v=1766009540",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-TNT-BLU_856bd174-54a7-4e8c-aa03-95dd6a1c6a7f.jpg?v=1766009540",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_35d6d8a9-2532-48f3-9cda-903aba565bbb.png?v=1766009540",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_d99ef0eb-88e7-4684-be99-c9cf39a1f232.jpg?v=1766008692",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-TNT-BLU_f758d084-1cc6-4cb3-830d-7da7bbde77f4.jpg?v=1766008692",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d8a34905-bf4a-4b3e-b9b7-5cd26ea996c9.png?v=1766008692"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000764_0f6a7f6c5bf9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000765_b3f10635fdb8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000766_0562d3741c0a.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000865_eef9f34d9caa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000866_4519c0a9d838.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000867_1283024e91b6.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 74476 V Special Filter | Replaces the Argo-Hytos K3149366",
       "sku": "k3149366-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_b631ef29-8ed4-43b9-88a4-f5617c49822c.jpg?v=1766009540",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000764_0f6a7f6c5bf9.jpg",
       "vendor": "",
       "price": 168000,
       "partNumber": "SH 74476 V",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec RHR2600G10V4/005 Special Filter | Replaces the Argo-Hytos K3149366",
       "sku": "k3149366-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-TNT-BLU_856bd174-54a7-4e8c-aa03-95dd6a1c6a7f.jpg?v=1766009540",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000765_b3f10635fdb8.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "RHR2600G10V4/005",
@@ -86,7 +86,7 @@
     {
       "title": "MicroFit® MFHSP80059 UltraGen III Special Filter | Replaces the Argo-Hytos K3149366",
       "sku": "k3149366-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_35d6d8a9-2532-48f3-9cda-903aba565bbb.png?v=1766009540",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000766_0562d3741c0a.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80059",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2009600b-b6ed-4847-85c3-07cc30dedbf0.jpg?v=1723202746",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529240.700.700_5ee2099f-b0ce-4f70-9603-07d825424ac8.jpg?v=1744306063",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25764_a01be36e-dde1-4acf-93cf-e6681d8e6337.jpg?v=1755780733"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009666_9c601a72c320.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009667_ef30a2288bf0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009668_aaed49afd0f4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16096 Air Filter",
       "sku": "sa-16096-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2009600b-b6ed-4847-85c3-07cc30dedbf0.jpg?v=1723202746",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009666_9c601a72c320.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "SA 16096",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P529240 Air Filter, Safety | Replaces the HiFi Filter SA 16096",
       "sku": "sa-16096-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529240.700.700_5ee2099f-b0ce-4f70-9603-07d825424ac8.jpg?v=1744306063",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009667_ef30a2288bf0.jpg",
       "vendor": "",
       "price": 6200,
       "partNumber": "P529240",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF25764 Air Filter | Replaces the HiFi Filter SA 16096",
       "sku": "sa-16096-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25764_a01be36e-dde1-4acf-93cf-e6681d8e6337.jpg?v=1755780733",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009668_aaed49afd0f4.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "AF25764",

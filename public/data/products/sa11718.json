@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2916200-b9d8-41eb-95eb-b7b4e4d68e56_25fcc6e4-bc19-47ce-8bb3-cc42326f2490.jpg?v=1762811491",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181080.700.700_e21926b4-584e-4027-9817-cd3743b5690d.jpg?v=1762811491",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1768M_cf71e41e-8ba4-44dd-ab0d-dc68f78211bb.jpg?v=1762811491"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007645_070a5e070e7c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007646_178057370e8a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007647_a6d7876fd50d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11718 Air Filter",
       "sku": "sa-11718-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2916200-b9d8-41eb-95eb-b7b4e4d68e56_25fcc6e4-bc19-47ce-8bb3-cc42326f2490.jpg?v=1762811491",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007645_070a5e070e7c.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "SA 11718",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P181080 Air Filter, Primary Round | Replaces the HiFi Filter SA 11718",
       "sku": "sa-11718-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181080.700.700_e21926b4-584e-4027-9817-cd3743b5690d.jpg?v=1762811491",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007646_178057370e8a.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "P181080",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1768M Air Filter, Primary | Replaces the HiFi Filter SA 11718",
       "sku": "sa-11718-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1768M_cf71e41e-8ba4-44dd-ab0d-dc68f78211bb.jpg?v=1762811491",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007647_a6d7876fd50d.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "AF1768M",

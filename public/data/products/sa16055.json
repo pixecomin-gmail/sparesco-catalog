@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-548f7e6c-d848-4de2-8930-51a7e39865eb.jpg?v=1723202572",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780861.700.700_e2b40e54-efd0-456d-9872-88fe2b69233f.jpg?v=1744306059",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4212_a850b790-3534-4f4a-b286-427f2d3deb2d.jpg?v=1755780719"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009801_0c117df25152.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009802_750bf1e4dbbb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009803_684dee880d2d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16055 Air Filter",
       "sku": "sa-16055-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-548f7e6c-d848-4de2-8930-51a7e39865eb.jpg?v=1723202572",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009801_0c117df25152.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "SA 16055",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P780861 Air Filter, Primary Round | Replaces the HiFi Filter SA 16055",
       "sku": "sa-16055-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780861.700.700_e2b40e54-efd0-456d-9872-88fe2b69233f.jpg?v=1744306059",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009802_750bf1e4dbbb.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "P780861",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4212 Air Filter, Primary | Replaces the HiFi Filter SA 16055",
       "sku": "sa-16055-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4212_a850b790-3534-4f4a-b286-427f2d3deb2d.jpg?v=1755780719",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009803_684dee880d2d.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "AF4212",

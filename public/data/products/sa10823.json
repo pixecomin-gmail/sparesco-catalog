@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-985f21b7-3662-44d2-8e43-97585d757a19_6b581579-ef90-4416-93b9-a1175d7a9fbe.jpg?v=1762811679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_321bc563-50c5-4781-a111-837acfe248a9.jpg?v=1762811679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181120.700.700_b49363c5-83da-4985-91ed-38af5c4eed7e.jpg?v=1762811679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF873M_956d0494-3170-4404-b094-5560e4201857.jpg?v=1762811679"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006324_b248d130e94c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006325_6d326636e5e8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006326_fb870515056f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006327_8727cc5b9abd.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10823 Air Filter",
       "sku": "sa-10823-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-985f21b7-3662-44d2-8e43-97585d757a19_6b581579-ef90-4416-93b9-a1175d7a9fbe.jpg?v=1762811679",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006324_b248d130e94c.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "SA 10823",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 32 1160/1 Air Filter | Replaces the HiFi Filter SA 10823",
       "sku": "sa-10823-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_321bc563-50c5-4781-a111-837acfe248a9.jpg?v=1762811679",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006325_6d326636e5e8.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "C 32 1160/1",
@@ -58,7 +58,7 @@
     {
       "title": "Donaldson P181120 Air Filter, Primary Round | Replaces the HiFi Filter SA 10823",
       "sku": "sa-10823-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181120.700.700_b49363c5-83da-4985-91ed-38af5c4eed7e.jpg?v=1762811679",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006326_fb870515056f.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "P181120",
@@ -74,7 +74,7 @@
     {
       "title": "Fleetguard AF873M Air Filter, Primary | Replaces the HiFi Filter SA 10823",
       "sku": "sa-10823-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF873M_956d0494-3170-4404-b094-5560e4201857.jpg?v=1762811679",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006327_8727cc5b9abd.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "AF873M",

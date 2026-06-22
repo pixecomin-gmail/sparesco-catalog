@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5b5f134b-d0d7-43bc-a87a-3aa852489ff5.jpg?v=1723207896",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_10431_image1_511be263-4702-441d-9481-1ccd4059cf76.jpg?v=1754909341",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25670_86679cae-4829-4c34-8085-c87dedf8ee68.jpg?v=1755780828"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007026_57d120b12d56.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007027_15bbfbbeca83.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007028_57017e965585.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10695 Air Filter",
       "sku": "sa-10695-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5b5f134b-d0d7-43bc-a87a-3aa852489ff5.jpg?v=1723207896",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007026_57d120b12d56.jpg",
       "vendor": "",
       "price": 2000,
       "partNumber": "SA 10695",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 1043/1 Air Filter | Replaces the HiFi Filter SA 10695",
       "sku": "sa-10695-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_10431_image1_511be263-4702-441d-9481-1ccd4059cf76.jpg?v=1754909341",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007027_15bbfbbeca83.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "C 1043/1",
@@ -59,7 +59,7 @@
     {
       "title": "Fleetguard AF25670 Air Filter, Primary | Replaces the HiFi Filter SA 10695",
       "sku": "sa-10695-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25670_86679cae-4829-4c34-8085-c87dedf8ee68.jpg?v=1755780828",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007028_57017e965585.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "AF25670",

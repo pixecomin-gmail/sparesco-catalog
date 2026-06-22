@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f7ee8ee-b1bb-40b9-9800-96615fdc7e90.jpg?v=1723206845",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775804.700.700_77fafc6e-7fc2-49ba-8c92-c7a95b5c092c.jpg?v=1744306045",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4841_d5613612-c2c0-4297-91bb-445ad058e0a9.jpg?v=1755780820"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007367_e7ba1f00e8eb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007368_58e25e311229.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007369_90019699260e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14791 Air Filter",
       "sku": "sa-14791-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f7ee8ee-b1bb-40b9-9800-96615fdc7e90.jpg?v=1723206845",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007367_e7ba1f00e8eb.jpg",
       "vendor": "",
       "price": 7800,
       "partNumber": "SA 14791",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P775804 Air Filter, Primary Round | Replaces the HiFi Filter SA 14791",
       "sku": "sa-14791-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775804.700.700_77fafc6e-7fc2-49ba-8c92-c7a95b5c092c.jpg?v=1744306045",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007368_58e25e311229.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "P775804",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4841 Air, Primary | Replaces the HiFi Filter SA 14791",
       "sku": "sa-14791-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4841_d5613612-c2c0-4297-91bb-445ad058e0a9.jpg?v=1755780820",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007369_90019699260e.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "AF4841",

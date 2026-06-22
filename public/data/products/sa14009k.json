@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-df838535-494e-4863-b05e-803cb10b1af1.jpg?v=1723204195",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e4f1e53c-a39d-44f1-b33b-75481b14861f.jpg?v=1743773468",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4059K_0f284804-018a-463d-bfaf-369d3a41931d.jpg?v=1755780766"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008672_084e9c5b1fd4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008673_a893bcacc062.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008674_ac3737ac3afc.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14009 K Air Filter",
       "sku": "sa-14009-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-df838535-494e-4863-b05e-803cb10b1af1.jpg?v=1723204195",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008672_084e9c5b1fd4.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "SA 14009 K",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 16 335 Air Filter | Replaces the HiFi Filter SA 14009 K",
       "sku": "sa-14009-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e4f1e53c-a39d-44f1-b33b-75481b14861f.jpg?v=1743773468",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008673_a893bcacc062.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "C 16 335",
@@ -61,7 +61,7 @@
     {
       "title": "Fleetguard AF4059K Air Filter, Primary | Replaces the HiFi Filter SA 14009 K",
       "sku": "sa-14009-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4059K_0f284804-018a-463d-bfaf-369d3a41931d.jpg?v=1755780766",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008674_ac3737ac3afc.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "AF4059K",

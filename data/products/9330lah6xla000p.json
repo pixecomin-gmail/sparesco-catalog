@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_d4800d8d-4b63-45b0-85bb-871dfb4f5cad.jpg?v=1761218183",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_51e37a91-ad07-4d7c-93b0-bda254559cb9.png?v=1761218183",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-bb8028f3-de0b-40d2-8e12-513229778ec0_47d12547-15da-4087-8f47-f878debc2b26.jpg?v=1761218183",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_273eca35-c9a2-4a50-8b47-b31b6174ee3f.jpg?v=1761218189",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3f0c829d-6fc0-432d-a7b4-5e04fbb547d6.png?v=1761218189",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-bb8028f3-de0b-40d2-8e12-513229778ec0_6993dd7d-f669-4d1a-afbb-8fb499ab5df2.jpg?v=1761218189"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029221_b9332d1991ec.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029222_be47024f9d11.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029223_58b1ac4396e7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029227_2bb480232805.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029228_868625e886fd.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029229_287465b77c00.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD330G05B Pressure Filter | Replaces the Eppensteiner 9330LAH6XLA000P",
       "sku": "9330lah6xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_d4800d8d-4b63-45b0-85bb-871dfb4f5cad.jpg?v=1761218183",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029221_b9332d1991ec.jpg",
       "vendor": "Filtrec",
       "price": 8800,
       "partNumber": "DHD330G05B",
@@ -51,7 +51,7 @@
     {
       "title": "MicroFit® MFHLP32106 UltraGen III Filter | Replaces the Eppensteiner 9330LAH6XLA000P",
       "sku": "9330lah6xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_51e37a91-ad07-4d7c-93b0-bda254559cb9.png?v=1761218183",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029222_be47024f9d11.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP32106",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 75042 Pressure Filter | Replaces the Eppensteiner 9330LAH6XLA000P",
       "sku": "9330lah6xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-bb8028f3-de0b-40d2-8e12-513229778ec0_47d12547-15da-4087-8f47-f878debc2b26.jpg?v=1761218183",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029223_58b1ac4396e7.jpg",
       "vendor": "HiFi Filter",
       "price": 10400,
       "partNumber": "SH 75042",

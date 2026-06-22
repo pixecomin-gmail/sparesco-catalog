@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-10fb3d91-ad71-4bcb-8371-aab4b160db17.jpg?v=1723206445",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d7d4b12a-8791-4cc5-bb74-137746540dca.jpg?v=1743773499",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25296_8088a64f-37fa-44a2-8887-c63118fc6eb3.jpg?v=1755780801"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007573_15f6190527d5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007574_de79b74fbf05.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007575_844fb49514a4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 7007 Air Filter",
       "sku": "sa-7007-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-10fb3d91-ad71-4bcb-8371-aab4b160db17.jpg?v=1723206445",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007573_15f6190527d5.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "SA 7007",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 17 278 Air Filter | Replaces the HiFi Filter SA 7007",
       "sku": "sa-7007-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_d7d4b12a-8791-4cc5-bb74-137746540dca.jpg?v=1743773499",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007574_de79b74fbf05.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "C 17 278",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF25296 Air Filter, Primary | Replaces the HiFi Filter SA 7007",
       "sku": "sa-7007-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25296_8088a64f-37fa-44a2-8887-c63118fc6eb3.jpg?v=1755780801",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007575_844fb49514a4.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "AF25296",

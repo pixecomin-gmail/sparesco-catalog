@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d40b4e4-830d-42a5-bf19-2682d9956098.jpg?v=1723202802",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524392.700.700_97c6634c-b59f-4897-93cf-7789a63348ad.jpg?v=1744305968",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF364_b4ce0ac0-a7cf-40ee-a50c-59fcc339a97f.jpg?v=1755780736"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009641_5f7a920f0126.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009642_a1d8713d3c75.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009643_ac06565b4042.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10314 Air Filter",
       "sku": "sa-10314-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d40b4e4-830d-42a5-bf19-2682d9956098.jpg?v=1723202802",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009641_5f7a920f0126.jpg",
       "vendor": "",
       "price": 1200,
       "partNumber": "SA 10314",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P524392 Breather, Air Cylindrical | Replaces the HiFi Filter SA 10314",
       "sku": "sa-10314-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p524392.700.700_97c6634c-b59f-4897-93cf-7789a63348ad.jpg?v=1744305968",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009642_a1d8713d3c75.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "P524392",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF364 Air Filter | Replaces the HiFi Filter SA 10314",
       "sku": "sa-10314-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF364_b4ce0ac0-a7cf-40ee-a50c-59fcc339a97f.jpg?v=1755780736",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009643_ac06565b4042.jpg",
       "vendor": "",
       "price": 1000,
       "partNumber": "AF364",

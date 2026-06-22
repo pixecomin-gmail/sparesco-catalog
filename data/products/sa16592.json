@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7d0d3661-23e6-4c7a-a51c-0685411a991a.jpg?v=1723203282",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771592.700.700_8a329996-2a8c-4980-91aa-3e60a973f735.jpg?v=1744306121",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4887KM_5ac85008-11dc-48be-a37d-8e6891a6b3c7.jpg?v=1755780755"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009315_cd603886bac3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009316_7be025db7ad2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009317_19996b8336eb.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16592 Air Filter",
       "sku": "sa-16592-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7d0d3661-23e6-4c7a-a51c-0685411a991a.jpg?v=1723203282",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009315_cd603886bac3.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "SA 16592",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P771592 Air Filter, Primary Round | Replaces the HiFi Filter SA 16592",
       "sku": "sa-16592-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771592.700.700_8a329996-2a8c-4980-91aa-3e60a973f735.jpg?v=1744306121",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009316_7be025db7ad2.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "P771592",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4887KM Air Filter, Primary | Replaces the HiFi Filter SA 16592",
       "sku": "sa-16592-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4887KM_5ac85008-11dc-48be-a37d-8e6891a6b3c7.jpg?v=1755780755",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009317_19996b8336eb.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "AF4887KM",

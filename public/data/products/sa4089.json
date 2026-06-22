@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-db557dec-2610-47d7-8be4-b35d67ab68bd.jpg?v=1723211223",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_18_1491_image1_9ee27980-3ce5-47ef-81ed-50c931054ec2.jpg?v=1754909411",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p625546.700.700_ec058843-eb0a-4591-91f9-3dca20c3981d.jpg?v=1744306189",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26475_aca443f5-4050-4ec1-b668-2bad39147999.jpg?v=1755780870"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006615_dabab1d2f65f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006616_9aac3fe4ccf8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006617_bcd45fa83527.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006618_ddfb02611561.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 4089 Air Filter",
       "sku": "sa-4089-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-db557dec-2610-47d7-8be4-b35d67ab68bd.jpg?v=1723211223",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006615_dabab1d2f65f.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "SA 4089",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 18 149/1 Air Filter | Replaces the HiFi Filter SA 4089",
       "sku": "sa-4089-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_18_1491_image1_9ee27980-3ce5-47ef-81ed-50c931054ec2.jpg?v=1754909411",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006616_9aac3fe4ccf8.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "C 18 149/1",
@@ -57,7 +57,7 @@
     {
       "title": "Donaldson P625546 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 4089",
       "sku": "sa-4089-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p625546.700.700_ec058843-eb0a-4591-91f9-3dca20c3981d.jpg?v=1744306189",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006617_bcd45fa83527.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "P625546",
@@ -73,7 +73,7 @@
     {
       "title": "Fleetguard AF26475 Air Filter, Primary | Replaces the HiFi Filter SA 4089",
       "sku": "sa-4089-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26475_aca443f5-4050-4ec1-b668-2bad39147999.jpg?v=1755780870",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006618_ddfb02611561.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "AF26475",

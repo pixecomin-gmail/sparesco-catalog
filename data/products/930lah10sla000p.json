@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-926be269-db13-4e7f-8991-3da5d73ff8cd_dc569a6c-01f9-4b15-9e2c-3fa98f27f23a.jpg?v=1741351401",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200630B_255f2ab1-11a2-49ec-a7e9-8a7d8cd98d50.jpg?v=1741351401",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD30G_92dcd161-889e-430a-a86d-754008f9ee2f.jpg?v=1741351401",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_010_on_n165341_i2372393_e9d195c7-ee79-4c09-b839-115a1ea065af.jpg?v=1760541992",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-926be269-db13-4e7f-8991-3da5d73ff8cd_e6217225-e68b-4eba-817d-01b0f004a2a0.jpg?v=1741351399",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200630B_dcd9f567-6839-4d5a-a242-1fd44e8a259e.jpg?v=1741351399",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD30G_b686eef2-4897-4c68-b144-52e4c7261607.jpg?v=1741351399",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_010_on_n165341_i2372393_b70accfc-7fd1-4d83-930f-aeb09b6a30b7.jpg?v=1760541992"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031179_7bf1614ccba2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031180_c6b6d480bb1d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031181_7608999b98f1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031182_332198b20910.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031187_832a48e5d420.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031188_26bdda309971.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031189_5c50a03fd5af.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031190_cbf9ef5cad2f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 75079 Pressure Filter | Replaces the Eppensteiner 930LAH10SLA000P",
       "sku": "930lah10sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-926be269-db13-4e7f-8991-3da5d73ff8cd_dc569a6c-01f9-4b15-9e2c-3fa98f27f23a.jpg?v=1741351401",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031179_7bf1614ccba2.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "SH 75079",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP30242 Pressure Filter | Replaces the Eppensteiner 9.30LAH10SLA000P",
       "sku": "9-30lah10sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200630B_dcd9f567-6839-4d5a-a242-1fd44e8a259e.jpg?v=1741351399",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031188_26bdda309971.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "MFHLP30242",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec DHD30G10B Pressure Filter | Replaces the Eppensteiner 930LAH10SLA000P",
       "sku": "930lah10sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD30G_92dcd161-889e-430a-a86d-754008f9ee2f.jpg?v=1741351401",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031181_7608999b98f1.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "DHD30G10B",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0030 D 010 ON Optimicron® Pressure Filter | Replaces the Eppensteiner 930LAH10SLA000P",
       "sku": "930lah10sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_010_on_n165341_i2372393_e9d195c7-ee79-4c09-b839-115a1ea065af.jpg?v=1760541992",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/031182_332198b20910.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "0030 D 010 ON",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ac581411-c285-429e-a75a-d21a85b0411d.jpg?v=1723210595",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181105.700.700_abdad9f5-4a89-4f06-8c64-262dda24fda2.jpg?v=1744305965",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF337_93b70356-be20-4f16-a5c7-9c353aa14f75.jpg?v=1755780863"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006790_4710c9a648e6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006791_52f83a5212fb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006792_72a87a4cc862.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10287 Air Filter",
       "sku": "sa-10287-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ac581411-c285-429e-a75a-d21a85b0411d.jpg?v=1723210595",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006790_4710c9a648e6.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "SA 10287",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P181105 Air Filter, Primary Round | Replaces the HiFi Filter SA 10287",
       "sku": "sa-10287-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181105.700.700_abdad9f5-4a89-4f06-8c64-262dda24fda2.jpg?v=1744305965",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006791_52f83a5212fb.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "P181105",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF337 Air, Primary | Replaces the HiFi Filter SA 10287",
       "sku": "sa-10287-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF337_93b70356-be20-4f16-a5c7-9c353aa14f75.jpg?v=1755780863",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006792_72a87a4cc862.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "AF337",

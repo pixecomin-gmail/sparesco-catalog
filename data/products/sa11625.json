@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_6a2011de-3bc4-42a1-9c2e-60b1dffe90f4.jpg?v=1766020852",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526496.700.700_03a2c11d-08b2-4dac-9c31-538f3b49066e.jpg?v=1766020852",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1675_3abf4f22-af1a-48c5-bd36-eeb6fc884ba2.jpg?v=1766020852"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008962_9e7b71448484.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008963_d596982c214c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008964_6664cc2c5e1c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11625 Air Filter",
       "sku": "sa-11625-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_6a2011de-3bc4-42a1-9c2e-60b1dffe90f4.jpg?v=1766020852",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008962_9e7b71448484.jpg",
       "vendor": "",
       "price": 17800,
       "partNumber": "SA 11625",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P526496 Air Filter, Primary Round | Replaces the HiFi Filter SA 11625",
       "sku": "sa-11625-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526496.700.700_03a2c11d-08b2-4dac-9c31-538f3b49066e.jpg?v=1766020852",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008963_d596982c214c.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "P526496",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF1675 Air Filter, Primary | Replaces the HiFi Filter SA 11625",
       "sku": "sa-11625-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1675_3abf4f22-af1a-48c5-bd36-eeb6fc884ba2.jpg?v=1766020852",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008964_6664cc2c5e1c.jpg",
       "vendor": "",
       "price": 11900,
       "partNumber": "AF1675",

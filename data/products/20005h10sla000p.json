@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211749B_95be7a25-159d-4e0a-8c24-287d1b919ed1.jpg?v=1755093100",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66f2dd6c-735f-4832-bde9-1b24904043bc_70aee78e-6584-448f-b0ac-71f3585575ed.jpg?v=1755093100",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_165f7b4c-dd63-4ad9-a8c2-66134f0eb80d.png?v=1760630723",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211749B_6d99c7f1-2914-4d4b-85c2-90fc64e8ba5b.jpg?v=1755093098",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66f2dd6c-735f-4832-bde9-1b24904043bc_36756aa6-bc32-4444-ba94-44121d75d4c3.jpg?v=1755093098",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3669dc7f-e5d0-43a6-b2de-07e0d0ca5aa8.png?v=1760630719"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023040_272df46e687a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023041_9cce7953196c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023042_5d91a1a79c87.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023046_0b19e716be1f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023047_1275d95c5a89.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023048_6716b617c775.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD20005E10B Pressure Filter | Replaces the Eppensteiner 20005H10SLA000P",
       "sku": "20005h10sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211749B_95be7a25-159d-4e0a-8c24-287d1b919ed1.jpg?v=1755093100",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023040_272df46e687a.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "DVD20005E10B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67504 Pressure Filter | Replaces the Eppensteiner 20005H10SLA000P",
       "sku": "20005h10sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66f2dd6c-735f-4832-bde9-1b24904043bc_70aee78e-6584-448f-b0ac-71f3585575ed.jpg?v=1755093100",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023041_9cce7953196c.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "SH 67504",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP31132 UltraGen III Pressure Filter | Replaces the Eppensteiner 20005H10SLA000P",
       "sku": "20005h10sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_165f7b4c-dd63-4ad9-a8c2-66134f0eb80d.png?v=1760630723",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023042_5d91a1a79c87.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31132",

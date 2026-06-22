@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7fdae983-9f2f-49fb-bff8-e8e70e4bb5b7.jpg?v=1748456109",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p954537.700.700_0d89a3c0-ea65-4b7b-a974-5572ccaf79e2.jpg?v=1748456109",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_716_x_image1.jpg?v=1754909321"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007482_a3fac807a52e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007483_d775ccc550a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007484_517f1fbc887b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SAO 5119 Engine Breather Filter",
       "sku": "sao-5119-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7fdae983-9f2f-49fb-bff8-e8e70e4bb5b7.jpg?v=1748456109",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007482_a3fac807a52e.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "SAO 5119",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P954537 Air Oil Separator | Replaces the HiFi Filter SAO 5119",
       "sku": "sao-5119-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p954537.700.700_0d89a3c0-ea65-4b7b-a974-5572ccaf79e2.jpg?v=1748456109",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007483_d775ccc550a1.jpg",
       "vendor": "",
       "price": 4300,
       "partNumber": "P954537",
@@ -54,7 +54,7 @@
     {
       "title": "Mann Filter C 716 x Ventilator | Replaces the HiFi Filter SAO 5119",
       "sku": "sao-5119-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_716_x_image1.jpg?v=1754909321",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007484_517f1fbc887b.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "C 716 x",

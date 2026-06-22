@@ -9,24 +9,24 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c08e1e09-9627-4d48-b346-727f2dc4a1e5_515df758-66f1-47bb-b137-4682080d772d.jpg?v=1762794814",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165877.700.700_5e5a5922-a979-4629-9543-a3d0db570fe7.jpg?v=1762794814",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_12542_x_image1_125555d7-b46f-4ebd-af8f-329f84278b92.jpg?v=1762794814",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_19bdd167-2194-43a3-8750-b213a78ef4f3.jpg?v=1762794814",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6781_367f176a-4707-48fb-9c4d-e5a4a34b4f7e.jpg?v=1762794814",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_ma_020_bn_n184113_i2394934_d3d340a5-d311-4630-b5be-6abf7a0456cf.jpg?v=1762794814",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c08e1e09-9627-4d48-b346-727f2dc4a1e5_4f43a61a-5823-494e-955d-3aa0291eadba.jpg?v=1762794813",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165877.700.700_114f737f-2183-4a3e-8714-26a6d533d096.jpg?v=1762794813",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_12542_x_image1_2b9994ed-20f1-477c-b20e-6baf3e73ed05.jpg?v=1762794813",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_61f4ecd0-66ed-4570-88ea-54b9d6a82178.jpg?v=1762794813",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6781_97b466fa-72ad-4f0e-b200-ecdff0c978a0.jpg?v=1762794813",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_ma_020_bn_n184113_i2394934_a00c8dbb-2f9e-44e2-afac-429ffd058967.jpg?v=1762794813"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033344_57085c5881a4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033345_b990e50d4d19.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033346_0e0405ef55d4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033347_d4982b3e64f8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033348_3df53c382ac9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033349_66e86f1a9bc8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033360_88976ad80f20.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033361_70fd027d4d51.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033362_b4c0475a87c4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033363_5e425bc8571f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033364_00e4084055db.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033365_a4ac37f3ada1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SO 680 Oil Filter | Replaces the Eppensteiner 167500RH20SLS000P",
       "sku": "167500rh20sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c08e1e09-9627-4d48-b346-727f2dc4a1e5_515df758-66f1-47bb-b137-4682080d772d.jpg?v=1762794814",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033344_57085c5881a4.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SO 680",
@@ -57,7 +57,7 @@
     {
       "title": "Donaldson P165877 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 167500RH20SLS000P",
       "sku": "167500rh20sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165877.700.700_5e5a5922-a979-4629-9543-a3d0db570fe7.jpg?v=1762794814",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033345_b990e50d4d19.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "P165877",
@@ -87,7 +87,7 @@
     {
       "title": "Mann Filter W 1254/2 x Hydraulics | Replaces the Eppensteiner 167500RH20SLS000P",
       "sku": "167500rh20sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_12542_x_image1_125555d7-b46f-4ebd-af8f-329f84278b92.jpg?v=1762794814",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033346_0e0405ef55d4.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "W 1254/2 x",
@@ -117,7 +117,7 @@
     {
       "title": "Filtrec A150G25 Spin-On Filter | Replaces the Eppensteiner 167500RH20SLS000P",
       "sku": "167500rh20sls000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_19bdd167-2194-43a3-8750-b213a78ef4f3.jpg?v=1762794814",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033347_d4982b3e64f8.jpg",
       "vendor": "",
       "price": 11100,
       "partNumber": "A150G25",
@@ -147,7 +147,7 @@
     {
       "title": "Fleetguard HF6781 Hydraulic Filters | Replaces the Eppensteiner 167500RH20SLS000P",
       "sku": "167500rh20sls000p-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6781_367f176a-4707-48fb-9c4d-e5a4a34b4f7e.jpg?v=1762794814",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033348_3df53c382ac9.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "HF6781",
@@ -177,7 +177,7 @@
     {
       "title": "Hydac 0160 MA 020 BN Spin-On Filter | Replaces the Eppensteiner 167500RH20SLS000P",
       "sku": "167500rh20sls000p-6",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_ma_020_bn_n184113_i2394934_d3d340a5-d311-4630-b5be-6abf7a0456cf.jpg?v=1762794814",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033349_66e86f1a9bc8.jpg",
       "vendor": "",
       "price": 15700,
       "partNumber": "0160 MA 020 BN",

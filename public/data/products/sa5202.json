@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2c76a129-2e13-4bd2-9776-37671552599a.jpg?v=1723211910",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_2139fdb5-3142-4c5a-80b8-132fac3f7e95.jpg?v=1743773607",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p615748.700.700_c4d56ce7-35a7-4bbb-a9fd-46edddfbbb47.jpg?v=1744306189"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006429_8ac51a425bee.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006430_f90636488a97.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006431_a4585ef9250a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 5202 Air Filter",
       "sku": "sa-5202-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2c76a129-2e13-4bd2-9776-37671552599a.jpg?v=1723211910",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006429_8ac51a425bee.jpg",
       "vendor": "",
       "price": 1500,
       "partNumber": "SA 5202",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 32 191/1 Air Filter | Replaces the HiFi Filter SA 5202",
       "sku": "sa-5202-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_2139fdb5-3142-4c5a-80b8-132fac3f7e95.jpg?v=1743773607",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006430_f90636488a97.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "C 32 191/1",
@@ -58,7 +58,7 @@
     {
       "title": "Donaldson P615748 Air Filter, Panel | Replaces the HiFi Filter SA 5202",
       "sku": "sa-5202-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p615748.700.700_c4d56ce7-35a7-4bbb-a9fd-46edddfbbb47.jpg?v=1744306189",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006431_a4585ef9250a.jpg",
       "vendor": "",
       "price": 7900,
       "partNumber": "P615748",

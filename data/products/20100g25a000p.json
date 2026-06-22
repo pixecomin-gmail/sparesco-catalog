@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203707B_d3a658e8-5068-424f-9758-68ef023ccd4a.jpg?v=1755096459",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9835ab19-61b0-48bc-8fde-d9803a3001ac_c6ce94de-b4a4-4472-b452-a78120701a25.jpg?v=1755096459",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5a55f8a3-2684-46f7-a27a-01f69490d406.png?v=1760634483",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203707B_9d4c8d96-2f9d-4d41-862e-faf5bf694367.jpg?v=1755096463",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9835ab19-61b0-48bc-8fde-d9803a3001ac_40137054-1dc7-457f-b247-b6fd1d4d5781.jpg?v=1755096463",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e2d91a5f-1e7f-4d97-b0bb-728063e6661b.png?v=1760634484"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008693_e11ede02c900.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008694_d7f35d918ff0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008695_b758b05d99ab.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008696_4bea57a8262a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008697_63039402034a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008698_8182c5e44be8.png"
   ],
   "variants": [
     {
       "title": "Filtrec XD100T25A DIN Pressure Filter | Replaces the Eppensteiner 20100G25A000P",
       "sku": "20100g25a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203707B_d3a658e8-5068-424f-9758-68ef023ccd4a.jpg?v=1755096459",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008693_e11ede02c900.jpg",
       "vendor": "",
       "price": 21000,
       "partNumber": "XD100T25A",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 65416 DIN Pressure Filter | Replaces the Eppensteiner 20100G25A000P",
       "sku": "20100g25a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9835ab19-61b0-48bc-8fde-d9803a3001ac_c6ce94de-b4a4-4472-b452-a78120701a25.jpg?v=1755096459",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008694_d7f35d918ff0.jpg",
       "vendor": "",
       "price": 23100,
       "partNumber": "SH 65416",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHLP31918 UltraGen III DIN Pressure Filter | Replaces the Eppensteiner 20100G25A000P",
       "sku": "20100g25a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5a55f8a3-2684-46f7-a27a-01f69490d406.png?v=1760634483",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008695_b758b05d99ab.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31918",

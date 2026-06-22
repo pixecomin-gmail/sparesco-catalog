@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b3fc6c36-b6ca-42cf-83f3-1981015f6a65.jpg?v=1723204388",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500231.700.700_a59f9eac-4933-4114-904d-6a63cd9bef9c.jpg?v=1744306039",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4746_c14d1f0f-a713-43a7-bd87-45cd124c5f06.jpg?v=1755780769"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008534_cd9c7bfed4d0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008535_e7590e80165c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008536_d5da7f17f241.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14696 Air Filter",
       "sku": "sa-14696-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b3fc6c36-b6ca-42cf-83f3-1981015f6a65.jpg?v=1723204388",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008534_cd9c7bfed4d0.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "SA 14696",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P500231 Air Filter, Safety | Replaces the HiFi Filter SA 14696",
       "sku": "sa-14696-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500231.700.700_a59f9eac-4933-4114-904d-6a63cd9bef9c.jpg?v=1744306039",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008535_e7590e80165c.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "P500231",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4746 Air Filter, Secondary | Replaces the HiFi Filter SA 14696",
       "sku": "sa-14696-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4746_c14d1f0f-a713-43a7-bd87-45cd124c5f06.jpg?v=1755780769",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008536_d5da7f17f241.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "AF4746",

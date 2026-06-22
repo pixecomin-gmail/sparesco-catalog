@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201160B_0eb8be4d-bf91-4635-9eda-69c56d3f50f8.jpg?v=1741362964",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2a9d6a47-49fa-409f-aaeb-ce32a0a0098d_f291fb8c-d99b-48e0-bee1-7c6c57cb31d7.jpg?v=1741362964",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_800986ba-0085-457a-b9fd-2c4e301f79c1.png?v=1760633306",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201160B_4e2afdfe-4cec-4b8f-be0f-027ef6ae972b.jpg?v=1741362960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2a9d6a47-49fa-409f-aaeb-ce32a0a0098d_24c4af73-8b1f-4918-9c51-4fc89551e4e4.jpg?v=1741362960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c114638d-81d2-4284-9a35-3113bc4fa8b7.png?v=1760633304"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012403_baf9a66f271c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012404_cfdfc6126284.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012405_21e8feba4c6d.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012421_acca23c1b4cd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012422_b9723b9d452d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012423_ab517f393e99.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD290F10B Pressure Filter | Replaces the Eppensteiner 290H10LL2P",
       "sku": "290h10ll2p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201160B_0eb8be4d-bf91-4635-9eda-69c56d3f50f8.jpg?v=1741362964",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012403_baf9a66f271c.jpg",
       "vendor": "",
       "price": 15700,
       "partNumber": "DVD290F10B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67389 Pressure Filter | Replaces the Eppensteiner 290H10LL2P",
       "sku": "290h10ll2p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2a9d6a47-49fa-409f-aaeb-ce32a0a0098d_f291fb8c-d99b-48e0-bee1-7c6c57cb31d7.jpg?v=1741362964",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012404_cfdfc6126284.jpg",
       "vendor": "",
       "price": 18800,
       "partNumber": "SH 67389",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHHP40154 UltraGen III Pressure Filter | Replaces the Eppensteiner 290H10LL2P",
       "sku": "290h10ll2p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_800986ba-0085-457a-b9fd-2c4e301f79c1.png?v=1760633306",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012405_21e8feba4c6d.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40154",

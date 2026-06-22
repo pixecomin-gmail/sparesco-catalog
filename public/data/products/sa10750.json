@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_bf7ae613-3144-4328-b9bc-694da422d6e5.jpg?v=1766020900",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158665.700.700_f29ce34b-b1d4-460e-8ab2-6489dfc2600c.jpg?v=1766020900",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF800_fb1dd81e-e6f1-453f-b44a-2f58daa416f9.jpg?v=1766020900"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008437_fef98e114a18.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008438_4573843118c4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008439_814d9946a36d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10750 Air Filter",
       "sku": "sa-10750-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_bf7ae613-3144-4328-b9bc-694da422d6e5.jpg?v=1766020900",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008437_fef98e114a18.jpg",
       "vendor": "",
       "price": 14600,
       "partNumber": "SA 10750",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P158665 Air Filter, Safety | Replaces the HiFi Filter SA 10750",
       "sku": "sa-10750-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158665.700.700_f29ce34b-b1d4-460e-8ab2-6489dfc2600c.jpg?v=1766020900",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008438_4573843118c4.jpg",
       "vendor": "",
       "price": 10100,
       "partNumber": "P158665",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF800 Air Filter, Secondary | Replaces the HiFi Filter SA 10750",
       "sku": "sa-10750-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF800_fb1dd81e-e6f1-453f-b44a-2f58daa416f9.jpg?v=1766020900",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008439_814d9946a36d.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "AF800",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-336ec8ca-93d4-424c-98cb-4ac0faf16686.jpg?v=1723212232",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771559.700.700_0e4fdab5-a3dd-47aa-a728-ffb178849691.jpg?v=1744306023",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4061_74ba1f59-8a19-4e13-93d8-265dfa82a8c4.jpg?v=1755780889"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006231_8745c55e8fd2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006232_f27dfe4521a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006233_e387aa63a937.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14011 Air Filter",
       "sku": "sa-14011-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-336ec8ca-93d4-424c-98cb-4ac0faf16686.jpg?v=1723212232",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006231_8745c55e8fd2.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "SA 14011",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P771559 Air Filter, Primary Round | Replaces the HiFi Filter SA 14011",
       "sku": "sa-14011-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771559.700.700_0e4fdab5-a3dd-47aa-a728-ffb178849691.jpg?v=1744306023",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006232_f27dfe4521a1.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "P771559",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4061 Air Filter, Primary | Replaces the HiFi Filter SA 14011",
       "sku": "sa-14011-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4061_74ba1f59-8a19-4e13-93d8-265dfa82a8c4.jpg?v=1755780889",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006233_e387aa63a937.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "AF4061",

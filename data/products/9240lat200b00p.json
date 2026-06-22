@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c9020951-99dd-4d0c-8592-06eee777ee7f_e370913a-dd21-4e9b-b52e-caaa078ebae3.jpg?v=1764691970",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203303B_75298b80-5507-4f9c-a887-22f3a47d8946.jpg?v=1764691970",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330S_a498042a-00ae-4a9f-a8b8-abd1f5b6d22b.jpg?v=1764691970",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c9020951-99dd-4d0c-8592-06eee777ee7f_2f6a0f2f-eb3e-4518-adf6-17510887e006.jpg?v=1764691754",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203303B_e5d93aa8-a231-485c-a8d3-f6d8d9de0d35.jpg?v=1764691754",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330S_fe26b2f8-0dfe-4b65-9744-c08368ad69d0.jpg?v=1764691754"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018028_1481bd5a5bc4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018029_8d61338d1c2c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018030_75f726d7ccf1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020394_fb21e786e532.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020395_f6e4caca7689.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020396_c219a65c8066.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 75258 Pressure Filter | Replaces the Eppensteiner 9240LAT200B00P",
       "sku": "9240lat200b00p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c9020951-99dd-4d0c-8592-06eee777ee7f_e370913a-dd21-4e9b-b52e-caaa078ebae3.jpg?v=1764691970",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018028_1481bd5a5bc4.jpg",
       "vendor": "",
       "price": 22500,
       "partNumber": "SH 75258",
@@ -50,7 +50,7 @@
     {
       "title": "MicroFit® UltraGen III MFHHP40523 Pressure Filter | Replaces the Eppensteiner 9.240LAT200B00P",
       "sku": "9-240lat200b00p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203303B_e5d93aa8-a231-485c-a8d3-f6d8d9de0d35.jpg?v=1764691754",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020395_f6e4caca7689.jpg",
       "vendor": "",
       "price": 19800,
       "partNumber": "MFHHP40523",
@@ -80,7 +80,7 @@
     {
       "title": "Filtrec DHD240T200B Pressure Filter | Replaces the Eppensteiner 9240LAT200B00P",
       "sku": "9240lat200b00p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330S_a498042a-00ae-4a9f-a8b8-abd1f5b6d22b.jpg?v=1764691970",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018030_75f726d7ccf1.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "DHD240T200B",

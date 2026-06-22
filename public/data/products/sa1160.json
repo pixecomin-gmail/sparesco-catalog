@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-437bbdf7-c47c-4761-8ff6-3639cda0ff6d_38a695a2-2d0d-4db3-a617-957ecd468b4c.jpg?v=1762811710",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_34831_image1_d96954e1-d2e5-42dd-bf57-80830030ddb7.jpg?v=1762811710",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4957_61e46373-98ae-4313-aab6-8f4ae64f991f.jpg?v=1762811710"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005663_4389c6106b1a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005664_3a53b394933a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005665_6c96e0b7ff1b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 1160 Air Filter",
       "sku": "sa-1160-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-437bbdf7-c47c-4761-8ff6-3639cda0ff6d_38a695a2-2d0d-4db3-a617-957ecd468b4c.jpg?v=1762811710",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005663_4389c6106b1a.jpg",
       "vendor": "",
       "price": 1000,
       "partNumber": "SA 1160",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 3483/1 Air Filter | Replaces the HiFi Filter SA 1160",
       "sku": "sa-1160-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_34831_image1_d96954e1-d2e5-42dd-bf57-80830030ddb7.jpg?v=1762811710",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005664_3a53b394933a.jpg",
       "vendor": "",
       "price": 1200,
       "partNumber": "C 3483/1",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF4957 Air Filter - Panel | Replaces the HiFi Filter SA 1160",
       "sku": "sa-1160-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4957_61e46373-98ae-4313-aab6-8f4ae64f991f.jpg?v=1762811710",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005665_6c96e0b7ff1b.jpg",
       "vendor": "",
       "price": 2000,
       "partNumber": "AF4957",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e193f1b-d781-4971-823c-dd9feb88de9e.jpg?v=1723212581",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ab4d9ddd-494c-4bea-adaf-ecc14a8523a1.jpg?v=1743773626",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25841_54d8c808-4cf0-48ef-9dad-2dafc45e3201.jpg?v=1755780893"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005965_aac245e412cd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005966_a96279388928.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005967_6b8da2ceba1f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 6068 Air Filter",
       "sku": "sa-6068-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8e193f1b-d781-4971-823c-dd9feb88de9e.jpg?v=1723212581",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005965_aac245e412cd.jpg",
       "vendor": "",
       "price": 800,
       "partNumber": "SA 6068",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 28 100 Air Filter | Replaces the HiFi Filter SA 6068",
       "sku": "sa-6068-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ab4d9ddd-494c-4bea-adaf-ecc14a8523a1.jpg?v=1743773626",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005966_a96279388928.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "C 28 100",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF25841 Air Filter Filter - Panel | Replaces the HiFi Filter SA 6068",
       "sku": "sa-6068-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25841_54d8c808-4cf0-48ef-9dad-2dafc45e3201.jpg?v=1755780893",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005967_6b8da2ceba1f.jpg",
       "vendor": "",
       "price": 1100,
       "partNumber": "AF25841",

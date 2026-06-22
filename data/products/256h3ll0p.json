@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_25f58f5f-dff2-462d-8b5d-a4fc08bcc1cb.jpg?v=1741349575",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3af32a6f-17c1-44b3-abb4-214712f7eea8_96012060-a216-408f-9cae-9bd52ec7401d.jpg?v=1741349575",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_75848d61-81d5-4d8a-9dfb-8b6869641a5f.png?v=1760632609",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_d8666eb9-6e84-4a92-a845-49f7d536dd3b.jpg?v=1741349577",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3af32a6f-17c1-44b3-abb4-214712f7eea8_281ffc3e-f189-4134-9cba-1b397737e1fe.jpg?v=1741349577",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c413b599-ff1a-425f-bac0-f26a1aae0c6a.png?v=1760631577"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018318_94517bf0b50a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018319_122adf74bbb3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018320_7c1bb8647a84.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020866_9aab10226e26.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020867_1910ee8376df.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020868_2ef149d2bc2f.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD256E03B Pressure Filter | Replaces the Eppensteiner 256H3LL0P",
       "sku": "256h3ll0p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_25f58f5f-dff2-462d-8b5d-a4fc08bcc1cb.jpg?v=1741349575",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018318_94517bf0b50a.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "DVD256E03B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67098 Pressure Filter | Replaces the Eppensteiner 256H3LL0P",
       "sku": "256h3ll0p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3af32a6f-17c1-44b3-abb4-214712f7eea8_96012060-a216-408f-9cae-9bd52ec7401d.jpg?v=1741349575",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018319_122adf74bbb3.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "SH 67098",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP30385 UltraGen III Pressure Filter | Replaces the Eppensteiner 256H3LL0P",
       "sku": "256h3ll0p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_75848d61-81d5-4d8a-9dfb-8b6869641a5f.png?v=1760632609",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018320_7c1bb8647a84.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30385",

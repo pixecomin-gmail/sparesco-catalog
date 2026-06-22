@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7ba8fb14-2ad4-4f30-960a-f282b059f78d.jpg?v=1723217193",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526410.700.700_cedf3a9f-60a6-4056-9192-22b0d698bb9c.jpg?v=1744306006",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1847_7d679e11-07b7-4a13-99c4-4caa10c267ac.jpg?v=1755780912"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005001_50531ced723f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005002_f5c9189b4962.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005003_c6fbc527e065.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11797 Air Filter",
       "sku": "sa-11797-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7ba8fb14-2ad4-4f30-960a-f282b059f78d.jpg?v=1723217193",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005001_50531ced723f.jpg",
       "vendor": "",
       "price": 14400,
       "partNumber": "SA 11797",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P526410 Air Filter, Primary Round | Replaces the HiFi Filter SA 11797",
       "sku": "sa-11797-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526410.700.700_cedf3a9f-60a6-4056-9192-22b0d698bb9c.jpg?v=1744306006",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005002_f5c9189b4962.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "P526410",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF1847 Air Filter, Primary | Replaces the HiFi Filter SA 11797",
       "sku": "sa-11797-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1847_7d679e11-07b7-4a13-99c4-4caa10c267ac.jpg?v=1755780912",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005003_c6fbc527e065.jpg",
       "vendor": "",
       "price": 9100,
       "partNumber": "AF1847",

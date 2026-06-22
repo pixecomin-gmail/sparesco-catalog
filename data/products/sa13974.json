@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5a3650be-f1f8-4647-bc7a-9d33c5839a75.jpg?v=1723210867",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_95f25389-5257-42ed-92c9-812b431d1c26.jpg?v=1742827136",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606279.700.700_a5500853-15c7-4de7-a14b-a8d9da18577f.jpg?v=1744306021"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006753_dc805b8bfa4f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006754_4e6f5ba55030.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006755_380f61225301.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 13974 Air Filter",
       "sku": "sa-13974-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5a3650be-f1f8-4647-bc7a-9d33c5839a75.jpg?v=1723210867",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006753_dc805b8bfa4f.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "SA 13974",
@@ -37,7 +37,7 @@
     {
       "title": "Mann Filter C 2170 Air Filter | Replaces the HiFi Filter SA 13974",
       "sku": "sa-13974-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_95f25389-5257-42ed-92c9-812b431d1c26.jpg?v=1742827136",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006754_4e6f5ba55030.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "C 2170",
@@ -57,7 +57,7 @@
     {
       "title": "Donaldson P606279 Air Filter, Primary Round | Replaces the HiFi Filter SA 13974",
       "sku": "sa-13974-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606279.700.700_a5500853-15c7-4de7-a14b-a8d9da18577f.jpg?v=1744306021",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006755_380f61225301.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "P606279",

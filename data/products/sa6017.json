@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-90277b96-5518-4a5c-a241-10aeaa17762a.jpg?v=1723207605",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_db432232-8d58-4bce-9cba-8517993cc755.jpg?v=1743773526",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/7kg38cB7946AQOSuXsyGNF9OJ9DtzAP65_5e6282f8-be17-441f-a65a-773ae9888250.png?v=1751027858"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007066_8b6689360c4c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007067_4cd922dd280a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007068_f1690e590071.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 6017 Air Filter",
       "sku": "sa-6017-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-90277b96-5518-4a5c-a241-10aeaa17762a.jpg?v=1723207605",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007066_8b6689360c4c.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "SA 6017",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 14 160 x Air Filter | Replaces the HiFi Filter SA 6017",
       "sku": "sa-6017-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_db432232-8d58-4bce-9cba-8517993cc755.jpg?v=1743773526",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007067_4cd922dd280a.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "C 14 160 x",
@@ -58,7 +58,7 @@
     {
       "title": "FIL Filter HP 470 C Filter Insert | Replaces the HiFi Filter SA 6017",
       "sku": "sa-6017-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/7kg38cB7946AQOSuXsyGNF9OJ9DtzAP65_5e6282f8-be17-441f-a65a-773ae9888250.png?v=1751027858",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007068_f1690e590071.png",
       "vendor": "",
       "price": 2000,
       "partNumber": "HP 470 C",

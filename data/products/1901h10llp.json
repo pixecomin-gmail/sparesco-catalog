@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5c46ff40-16cc-4269-becc-4f31cfa41bad_a3255b18-1c6d-4d90-88aa-86a3b00a85d2.jpg?v=1762281679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_c1f56e14-c04b-45a2-8b7b-dfda81037511.jpg?v=1762281679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5a5280da-b5cf-4d46-8cb2-af0eeae6c566.png?v=1762281679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5c46ff40-16cc-4269-becc-4f31cfa41bad_3f58c95a-4367-4b93-a8ea-2e27f647f8e2.jpg?v=1762281679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_16d3e9de-ac3e-4d8c-adbb-2b242d6e70b7.jpg?v=1762281679",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4dc40d6f-07b7-47f7-9360-05df3100870e.png?v=1762281679"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014884_140203f52552.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014885_3ed87e4e03c4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014886_fecb014e1e39.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014899_9e5cb1b91b5b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014900_36a9192a0871.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014901_80eaa35e6bac.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67396 Return Filter | Replaces the Eppensteiner 1901H10LLP",
       "sku": "1901h10llp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5c46ff40-16cc-4269-becc-4f31cfa41bad_a3255b18-1c6d-4d90-88aa-86a3b00a85d2.jpg?v=1762281679",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014884_140203f52552.jpg",
       "vendor": "",
       "price": 30800,
       "partNumber": "SH 67396",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec RVR1901E10B Return Filter | Replaces the Eppensteiner 1901H10LLP",
       "sku": "1901h10llp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_c1f56e14-c04b-45a2-8b7b-dfda81037511.jpg?v=1762281679",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014885_3ed87e4e03c4.jpg",
       "vendor": "",
       "price": 22800,
       "partNumber": "RVR1901E10B",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR50471 UltraGen III Return Filter | Replaces the Eppensteiner 1901H10LLP",
       "sku": "1901h10llp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5a5280da-b5cf-4d46-8cb2-af0eeae6c566.png?v=1762281679",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014886_fecb014e1e39.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50471",

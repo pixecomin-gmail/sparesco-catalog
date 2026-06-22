@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a4103835-a47c-42e1-ad75-1307cb6051e8.jpg?v=1723203142",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771073.700.700_f9481956-7b00-42bf-857c-ed540abcb9c0.jpg?v=1744306059",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4970_60a3eea9-d49e-43d2-b038-9a044c5fdd88.jpg?v=1755780737"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009419_69bb00026bd0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009420_486449b33bc2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009421_e8f90fc4d0ac.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16073 Air Filter",
       "sku": "sa-16073-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a4103835-a47c-42e1-ad75-1307cb6051e8.jpg?v=1723203142",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009419_69bb00026bd0.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "SA 16073",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P771073 Air Filter, Safety | Replaces the HiFi Filter SA 16073",
       "sku": "sa-16073-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771073.700.700_f9481956-7b00-42bf-857c-ed540abcb9c0.jpg?v=1744306059",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009420_486449b33bc2.jpg",
       "vendor": "",
       "price": 4300,
       "partNumber": "P771073",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4970 Air Filter, Secondary | Replaces the HiFi Filter SA 16073",
       "sku": "sa-16073-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4970_60a3eea9-d49e-43d2-b038-9a044c5fdd88.jpg?v=1755780737",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009421_e8f90fc4d0ac.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "AF4970",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aa6e5945-136c-46f5-962b-e1f1e15af055.jpg?v=1762811438",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p951850.700.700_5bfae972-4ba2-4421-9d73-8418c2ec1be0.jpg?v=1762811438",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_25_003_image1.jpg?v=1762811438"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008733_8042728a19cf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008734_a4068dd0fb3f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008735_9710555ca17e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16804 Air Filter",
       "sku": "sa-16804-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-aa6e5945-136c-46f5-962b-e1f1e15af055.jpg?v=1762811438",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008733_8042728a19cf.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "SA 16804",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P951850 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16804",
       "sku": "sa-16804-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p951850.700.700_5bfae972-4ba2-4421-9d73-8418c2ec1be0.jpg?v=1762811438",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008734_a4068dd0fb3f.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "P951850",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CP 25 003 Air Filter | Replaces the HiFi Filter SA 16804",
       "sku": "sa-16804-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_25_003_image1.jpg?v=1762811438",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008735_9710555ca17e.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "CP 25 003",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7856c266-e63c-4df4-9e25-452884e07650.jpg?v=1723205739",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p638062.700.700_777c698a-28fa-4ee2-9f2b-d737d5288a24.jpg?v=1744306149",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55320_fbf07dd4-0f0e-4f70-9b7b-938ef5321245.jpg?v=1755780789"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007832_dbf49d6711a4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007833_0e00031cd799.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007834_b5ad291d5df8.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16917 Air Filter",
       "sku": "sa-16917-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7856c266-e63c-4df4-9e25-452884e07650.jpg?v=1723205739",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007832_dbf49d6711a4.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "SA 16917",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P638062 Air Filter, Safety | Replaces the HiFi Filter SA 16917",
       "sku": "sa-16917-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p638062.700.700_777c698a-28fa-4ee2-9f2b-d737d5288a24.jpg?v=1744306149",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007833_0e00031cd799.jpg",
       "vendor": "",
       "price": 5200,
       "partNumber": "P638062",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF55320 Air Filter, Secondary | Replaces the HiFi Filter SA 16917",
       "sku": "sa-16917-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55320_fbf07dd4-0f0e-4f70-9b7b-938ef5321245.jpg?v=1755780789",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007834_b5ad291d5df8.jpg",
       "vendor": "",
       "price": 6500,
       "partNumber": "AF55320",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WT284_8ae41dfd-7f5b-40c9-a3b5-044cfa35e40f.jpg?v=1755095231",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49fadf3a-80c0-4459-b296-5eb4d9c42ea2_e5faa2af-8ec0-4db4-9bc6-a2fdf4100057.jpg?v=1755095231",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7a260a4e-30ff-4ab0-adbf-3188f4884137.png?v=1760632641",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WT284_373b3844-cd9e-4b66-bd63-dedcb2f805a9.jpg?v=1755095059",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49fadf3a-80c0-4459-b296-5eb4d9c42ea2_4206c3dc-f3b6-47b7-b9f4-97e234035128.jpg?v=1755095059",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_01f11f5e-83d5-4237-9f37-5a9e7c7e9e67.png?v=1760632264"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018118_b1c772f64b67.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018119_007d12fa6abd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018120_bf3faa9c43c8.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019803_15f5c7621203.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019804_cd61ec3e84cc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019805_51ad7a9c2559.png"
   ],
   "variants": [
     {
       "title": "Filtrec WT284 Special Filter | Replaces the Eppensteiner 6460G150P",
       "sku": "6460g150p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WT284_8ae41dfd-7f5b-40c9-a3b5-044cfa35e40f.jpg?v=1755095231",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018118_b1c772f64b67.jpg",
       "vendor": "",
       "price": 24900,
       "partNumber": "WT284",
@@ -46,7 +46,7 @@
     {
       "title": "HiFi Filter SH 67170 Special Filter | Replaces the Eppensteiner 6460G150P",
       "sku": "6460g150p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49fadf3a-80c0-4459-b296-5eb4d9c42ea2_e5faa2af-8ec0-4db4-9bc6-a2fdf4100057.jpg?v=1755095231",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018119_007d12fa6abd.jpg",
       "vendor": "",
       "price": 26500,
       "partNumber": "SH 67170",
@@ -72,7 +72,7 @@
     {
       "title": "MicroFit® MFHSP80190 UltraGen III Special Filter | Replaces the Eppensteiner 6460G150P",
       "sku": "6460g150p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7a260a4e-30ff-4ab0-adbf-3188f4884137.png?v=1760632641",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018120_bf3faa9c43c8.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80190",

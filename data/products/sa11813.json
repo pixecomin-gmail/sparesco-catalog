@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-08de3a27-bd20-4c9e-9066-23b12f91134b.jpg?v=1723205782",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/cf_16_158_z_n39178_i565274_ea2314af-b01a-49e3-b641-b733770dcb66.jpg?v=1743773497",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1863M_55ee18da-f5a0-4228-9de4-967be7f939f6.jpg?v=1755780790"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007806_c4fcc7fb8c23.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007807_b090fd932c61.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007808_f37112f7387c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11813 Air Filter",
       "sku": "sa-11813-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-08de3a27-bd20-4c9e-9066-23b12f91134b.jpg?v=1723205782",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007806_c4fcc7fb8c23.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "SA 11813",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter CF 16 158 z Secondary Element | Replaces the HiFi Filter SA 11813",
       "sku": "sa-11813-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/cf_16_158_z_n39178_i565274_ea2314af-b01a-49e3-b641-b733770dcb66.jpg?v=1743773497",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007807_b090fd932c61.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "CF 16 158 z",
@@ -59,7 +59,7 @@
     {
       "title": "Fleetguard AF1863M Air Filter, Secondary | Replaces the HiFi Filter SA 11813",
       "sku": "sa-11813-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1863M_55ee18da-f5a0-4228-9de4-967be7f939f6.jpg?v=1755780790",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007808_f37112f7387c.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "AF1863M",

@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_0f01f082-7abf-453d-91f3-ed36cd5f365f.jpg?v=1748450408",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_bd6a1bae-e4fe-4f7a-88b7-25dfd490ceb2.jpg?v=1748450408",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_62a36594-320f-4d88-bde1-403197a6edb7.jpg?v=1748450408",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_6be35d6f-b158-4322-813a-a51533df9ecd.jpg?v=1764762612",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_d964f000-536a-40c6-9a12-f8e4ba27c825.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_709a086a-d6d2-4a14-b940-7c5655cdf6e9.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_47488176-9211-4a4c-a499-6d1d81694731.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_8b016fc7-00c9-4e1e-aa74-42ce0a571ec6.jpg?v=1764762611"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027195_42b4e3fb0b0f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027196_a0e7e3edf9d8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027197_c4b670f9e1e2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027198_727543b9819d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027203_24f4ab166d71.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027204_5136a68d4ef6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027205_e7933ac3b3f6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027206_3ed759c96595.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50209 Return Filter | Replaces the Eppensteiner 16.8300SH20XLS000V",
       "sku": "16-8300sh20xls000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_d964f000-536a-40c6-9a12-f8e4ba27c825.jpg?v=1748450406",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027203_24f4ab166d71.jpg",
       "vendor": "MicroFit",
       "price": 12700,
       "partNumber": "MFHR50209",
@@ -53,7 +53,7 @@
     {
       "title": "Donaldson P566238 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 168300SH20XLS000V",
       "sku": "168300sh20xls000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_bd6a1bae-e4fe-4f7a-88b7-25dfd490ceb2.jpg?v=1748450408",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027196_a0e7e3edf9d8.jpg",
       "vendor": "Donaldson",
       "price": 19600,
       "partNumber": "P566238",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec R430G25V Return Filter | Replaces the Eppensteiner 168300SH20XLS000V",
       "sku": "168300sh20xls000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_62a36594-320f-4d88-bde1-403197a6edb7.jpg?v=1748450408",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027197_c4b670f9e1e2.jpg",
       "vendor": "Filtrec",
       "price": 25400,
       "partNumber": "R430G25V",
@@ -115,7 +115,7 @@
     {
       "title": "HiFi Filter SH 87021 V Return Filter | Replaces the Eppensteiner 168300SH20XLS000V",
       "sku": "168300sh20xls000v-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_6be35d6f-b158-4322-813a-a51533df9ecd.jpg?v=1764762612",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027198_727543b9819d.jpg",
       "vendor": "HiFi Filter",
       "price": 32400,
       "partNumber": "SH 87021 V",

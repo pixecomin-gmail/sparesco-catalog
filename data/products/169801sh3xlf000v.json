@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200327B_e3d96cce-d5f4-4d5e-98df-676c50f300a8.jpg?v=1764690999",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2f2ecca-fd20-42cc-a4b1-348a1512f1e9_fba0b32e-03ba-4539-961e-6480a5659a96.jpg?v=1764690999",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167414.700.700_7aec5305-4d78-4082-bbb1-aeb43974184a.jpg?v=1764690999",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_854b4031-8783-4eb7-8e5c-b7ff92c3e80f.jpg?v=1764690999",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200327B_971d1cf2-bf37-475c-9279-7f5a7f3ab3e1.jpg?v=1764690998",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2f2ecca-fd20-42cc-a4b1-348a1512f1e9_72be4c90-41c0-47c7-b9e7-b93bfe449f16.jpg?v=1764690998",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167414.700.700_d9b3f353-7b43-4e9d-830a-a9f1eaeeb762.jpg?v=1764690998",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_2e6ab09c-43aa-4c8d-a022-73f69cdafb2f.jpg?v=1764690998"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027677_8b8db69f2d9f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027678_926df54ca899.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027679_57b031c4f3d0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027680_ae5707b9e24a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027685_15ea54b04cc7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027686_e6542bdd9acb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027687_92e7d73c93b7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027688_0783e61bd780.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40053 Pressure Filter | Replaces the Eppensteiner 16.9801SH3XLF000V",
       "sku": "16-9801sh3xlf000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200327B_971d1cf2-bf37-475c-9279-7f5a7f3ab3e1.jpg?v=1764690998",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027685_15ea54b04cc7.jpg",
       "vendor": "MicroFit",
       "price": 12700,
       "partNumber": "MFHHP40053",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 57560 V Pressure Filter | Replaces the Eppensteiner 169801SH3XLF000V",
       "sku": "169801sh3xlf000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e2f2ecca-fd20-42cc-a4b1-348a1512f1e9_fba0b32e-03ba-4539-961e-6480a5659a96.jpg?v=1764690999",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027678_926df54ca899.jpg",
       "vendor": "HiFi Filter",
       "price": 14600,
       "partNumber": "SH 57560 V",
@@ -84,7 +84,7 @@
     {
       "title": "Donaldson P167414 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 169801SH3XLF000V",
       "sku": "169801sh3xlf000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167414.700.700_7aec5305-4d78-4082-bbb1-aeb43974184a.jpg?v=1764690999",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027679_57b031c4f3d0.jpg",
       "vendor": "Donaldson",
       "price": 13800,
       "partNumber": "P167414",
@@ -115,7 +115,7 @@
     {
       "title": "Filtrec D121G03BV Pressure Filter | Replaces the Eppensteiner 169801SH3XLF000V",
       "sku": "169801sh3xlf000v-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_854b4031-8783-4eb7-8e5c-b7ff92c3e80f.jpg?v=1764690999",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027680_ae5707b9e24a.jpg",
       "vendor": "Filtrec",
       "price": 21900,
       "partNumber": "D121G03BV",

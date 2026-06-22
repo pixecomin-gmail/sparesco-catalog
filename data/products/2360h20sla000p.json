@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_b3d5f773-7dc8-45e9-a7f2-5cbae0562955.jpg?v=1755092437",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c7ef701-9a00-435f-9296-c772b0c3699b_86f03384-f282-43d1-a239-3050f49bc271.jpg?v=1755092437",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_67e59b4b-f7cb-4885-8358-2028c9226a6e.jpg?v=1755779165",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_26451b8d-eae3-4ea9-a569-d1bb10657795.png?v=1760629921",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_e8b09e8d-aa72-4342-9d7a-1da63d2c7eac.jpg?v=1755092436",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c7ef701-9a00-435f-9296-c772b0c3699b_02281b3a-ff4f-4952-92b2-53125165a142.jpg?v=1755092436",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_9e0214ff-cc71-4065-acd5-4c3718f74f6b.jpg?v=1755779166",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_41929006-734b-4353-a6df-e3b1e0d111c2.png?v=1760629907"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026082_bd7e28a37dfd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026083_7f19b5dfc21d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026084_996c0c81f491.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026085_bf837df99ecd.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026099_7e08e081e1a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026100_e8b5a57b481e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026101_4d501f2f2d40.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026102_c48182146cac.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD2360E20B Pressure Filter | Replaces the Eppensteiner 2360H20SLA000P",
       "sku": "2360h20sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_b3d5f773-7dc8-45e9-a7f2-5cbae0562955.jpg?v=1755092437",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026082_bd7e28a37dfd.jpg",
       "vendor": "Filtrec",
       "price": 10600,
       "partNumber": "DVD2360E20B",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 67128 Pressure Filter | Replaces the Eppensteiner 2360H20SLA000P",
       "sku": "2360h20sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c7ef701-9a00-435f-9296-c772b0c3699b_86f03384-f282-43d1-a239-3050f49bc271.jpg?v=1755092437",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026083_7f19b5dfc21d.jpg",
       "vendor": "HiFi Filter",
       "price": 8900,
       "partNumber": "SH 67128",
@@ -84,7 +84,7 @@
     {
       "title": "Fleetguard ST1770 Hydraulic Filters | Replaces the Eppensteiner 2360H20SLA000P",
       "sku": "2360h20sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_67e59b4b-f7cb-4885-8358-2028c9226a6e.jpg?v=1755779165",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026084_996c0c81f491.jpg",
       "vendor": "Fleetguard",
       "price": 12900,
       "partNumber": "ST1770",
@@ -115,7 +115,7 @@
     {
       "title": "MicroFit® MFHLP30345 UltraGen III Pressure Filter | Replaces the Eppensteiner 2360H20SLA000P",
       "sku": "2360h20sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_26451b8d-eae3-4ea9-a569-d1bb10657795.png?v=1760629921",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026085_bf837df99ecd.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP30345",

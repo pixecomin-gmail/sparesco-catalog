@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0ea7a124-eeaf-474b-81f1-f9f72bd267f6.jpg?v=1748456090",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959184.700.700_dee9cb1e-59b6-414d-9b87-3fdda5357556.jpg?v=1748456090",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2944_image1_c1599bda-1cd8-46dc-a5af-46f4d0fd9a76.jpg?v=1754909286"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008341_0a87c9768356.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008342_674d50ea6714.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008343_d3f1ccafaa01.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17483 Air Filter",
       "sku": "sa-17483-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0ea7a124-eeaf-474b-81f1-f9f72bd267f6.jpg?v=1748456090",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008341_0a87c9768356.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "SA 17483",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P959184 Air Filter, Safety Obround | Replaces the HiFi Filter SA 17483",
       "sku": "sa-17483-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959184.700.700_dee9cb1e-59b6-414d-9b87-3fdda5357556.jpg?v=1748456090",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008342_674d50ea6714.jpg",
       "vendor": "",
       "price": 5200,
       "partNumber": "P959184",
@@ -54,7 +54,7 @@
     {
       "title": "Mann Filter CF 2944 Secondary Element | Replaces the HiFi Filter SA 17483",
       "sku": "sa-17483-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2944_image1_c1599bda-1cd8-46dc-a5af-46f4d0fd9a76.jpg?v=1754909286",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008343_d3f1ccafaa01.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "CF 2944",

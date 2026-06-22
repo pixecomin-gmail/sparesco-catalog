@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-df42ce5b-b951-4c8f-98b6-e3aa5799953f_26d315cc-6b60-498c-8992-9865c710dfb5.jpg?v=1762811467",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p123160.700.700_cfabef03-8b60-4e22-b22f-e7d2060d55e4.jpg?v=1762811467",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_0b18cffb-5bd9-4e22-93e9-7c188fec163c.jpg?v=1762811467",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1966_265c7dd2-c8b9-426a-83ce-fbbabc1a3f38.jpg?v=1762811467"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000225_51206467c89a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000226_9de30008364c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000227_4944de456402.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000228_b04f3082f65d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11916 Air Filter",
       "sku": "sa-11916-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-df42ce5b-b951-4c8f-98b6-e3aa5799953f_26d315cc-6b60-498c-8992-9865c710dfb5.jpg?v=1762811467",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000225_51206467c89a.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "SA 11916",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P123160 Air Filter, Safety | Replaces the HiFi Filter SA 11916",
       "sku": "sa-11916-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p123160.700.700_cfabef03-8b60-4e22-b22f-e7d2060d55e4.jpg?v=1762811467",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000226_9de30008364c.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "P123160",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter CF 75/1 x Secondary Element | Replaces the HiFi Filter SA 11916",
       "sku": "sa-11916-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_0b18cffb-5bd9-4e22-93e9-7c188fec163c.jpg?v=1762811467",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000227_4944de456402.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "CF 75/1 x",
@@ -77,7 +77,7 @@
     {
       "title": "Fleetguard AF1966 Air Filter, Secondary | Replaces the HiFi Filter SA 11916",
       "sku": "sa-11916-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1966_265c7dd2-c8b9-426a-83ce-fbbabc1a3f38.jpg?v=1762811467",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000228_b04f3082f65d.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "AF1966",

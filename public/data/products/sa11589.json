@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9b1f3fcb-5dc0-470b-8206-9eba31651b00.jpg?v=1723205805",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136401.700.700_17357348-091f-48b1-ac05-aad25cb4426c.jpg?v=1744305999",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1639_2e6f5b41-00e2-4209-80c6-07da2659f8dd.jpg?v=1755780795"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007797_4e4d0ee76f0b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007798_fafc391e13ee.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007799_bfb9499b0bea.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11589 Air Filter",
       "sku": "sa-11589-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9b1f3fcb-5dc0-470b-8206-9eba31651b00.jpg?v=1723205805",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007797_4e4d0ee76f0b.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "SA 11589",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P136401 Air Filter, Safety | Replaces the HiFi Filter SA 11589",
       "sku": "sa-11589-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136401.700.700_17357348-091f-48b1-ac05-aad25cb4426c.jpg?v=1744305999",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007798_fafc391e13ee.jpg",
       "vendor": "",
       "price": 3300,
       "partNumber": "P136401",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1639 Air Filter, Secondary | Replaces the HiFi Filter SA 11589",
       "sku": "sa-11589-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1639_2e6f5b41-00e2-4209-80c6-07da2659f8dd.jpg?v=1755780795",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007799_bfb9499b0bea.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "AF1639",

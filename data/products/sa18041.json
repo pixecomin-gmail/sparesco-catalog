@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f858058-924a-43e8-ba00-9dbc3fa00271.jpg?v=1723202633",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902309.700.700_d9858479-be6f-4966-aa75-2a34b82b858a.jpg?v=1744306187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26285K_1071c155-2ba0-47f6-b4ce-21bbfbc3e764.jpg?v=1755780721"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009749_180890a9a393.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009750_f6b74e57e9c1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009751_be24e20e84c4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 18041 Air Filter",
       "sku": "sa-18041-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f858058-924a-43e8-ba00-9dbc3fa00271.jpg?v=1723202633",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009749_180890a9a393.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "SA 18041",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P902309 Air Filter, Primary Finned | Replaces the HiFi Filter SA 18041",
       "sku": "sa-18041-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902309.700.700_d9858479-be6f-4966-aa75-2a34b82b858a.jpg?v=1744306187",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009750_f6b74e57e9c1.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "P902309",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF26285K Air, Primary | Replaces the HiFi Filter SA 18041",
       "sku": "sa-18041-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26285K_1071c155-2ba0-47f6-b4ce-21bbfbc3e764.jpg?v=1755780721",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009751_be24e20e84c4.jpg",
       "vendor": "",
       "price": 8800,
       "partNumber": "AF26285K",

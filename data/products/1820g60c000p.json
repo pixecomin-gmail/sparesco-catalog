@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_a966395a-e550-4e76-afe2-59b51d2de561.jpg?v=1741363894",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-50dfba1b-9cfa-4538-a89c-6a8f968b0fa7_039b0d01-5341-4a22-8451-712b94ca3650.jpg?v=1741363894",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0d9a16bc-9b52-4e83-8d16-91696ca8ac20.png?v=1760635378",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_7a93fd2b-7c6e-4c3a-87d2-cbfa5a2f49b9.jpg?v=1741363891",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-50dfba1b-9cfa-4538-a89c-6a8f968b0fa7_52b9f27c-8b14-4e0b-ae27-d355cf470b62.jpg?v=1741363891",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8bc74c6a-1a0b-4e09-b4b1-d002e5d5c6ab.png?v=1760635373"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004600_9eddb0e450f7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004601_4c238500d5cb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004602_61dc72aea3e1.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004603_97b92ee4cef4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004604_f4bc8e60e946.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004605_08bb5ee34826.png"
   ],
   "variants": [
     {
       "title": "Filtrec DMD125W60B Pressure Filter | Replaces the Eppensteiner 1820G60C000P",
       "sku": "1820g60c000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_a966395a-e550-4e76-afe2-59b51d2de561.jpg?v=1741363894",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004600_9eddb0e450f7.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "DMD125W60B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 64054 Pressure Filter | Replaces the Eppensteiner 1820G60C000P",
       "sku": "1820g60c000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-50dfba1b-9cfa-4538-a89c-6a8f968b0fa7_039b0d01-5341-4a22-8451-712b94ca3650.jpg?v=1741363894",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004601_4c238500d5cb.jpg",
       "vendor": "",
       "price": 10400,
       "partNumber": "SH 64054",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHHP40639 UltraGen III Pressure Filter | Replaces the Eppensteiner 1820G60C000P",
       "sku": "1820g60c000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0d9a16bc-9b52-4e83-8d16-91696ca8ac20.png?v=1760635378",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004602_61dc72aea3e1.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40639",

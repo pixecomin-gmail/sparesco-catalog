@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0a66a27d-ef34-4f42-ac72-852e00119a74.jpg?v=1723205969",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158677.700.700_72db893b-cdf9-4476-9d5e-2a08921b10a3.jpg?v=1744306005",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1833_ab48bb7c-88f4-4d9c-9bfa-f7540c835c28.jpg?v=1755780793"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007735_09b271348343.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007736_8aff2fadb4b7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007737_6329a2d2f94a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11783 Air Filter",
       "sku": "sa-11783-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0a66a27d-ef34-4f42-ac72-852e00119a74.jpg?v=1723205969",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007735_09b271348343.jpg",
       "vendor": "",
       "price": 8900,
       "partNumber": "SA 11783",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P158677 Air Filter, Safety | Replaces the HiFi Filter SA 11783",
       "sku": "sa-11783-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158677.700.700_72db893b-cdf9-4476-9d5e-2a08921b10a3.jpg?v=1744306005",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007736_8aff2fadb4b7.jpg",
       "vendor": "",
       "price": 9700,
       "partNumber": "P158677",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF1833 Air, Secondary | Replaces the HiFi Filter SA 11783",
       "sku": "sa-11783-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1833_ab48bb7c-88f4-4d9c-9bfa-f7540c835c28.jpg?v=1755780793",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007737_6329a2d2f94a.jpg",
       "vendor": "",
       "price": 16700,
       "partNumber": "AF1833",

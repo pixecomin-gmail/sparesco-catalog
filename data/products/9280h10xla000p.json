@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203305B-NB_a15994bf-1f3e-4ee4-a4e4-1e8f996b5dc6.jpg?v=1742550775",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_a906e82f-7ce2-4ca6-87ab-56e2430de5d7.jpg?v=1742550775",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7632cf0e-fc2a-45dc-b12b-abee1b1dfed9_3969d6f8-8f12-4c73-b32b-4e417b9fcb56.jpg?v=1761655223",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203305B-NB_7babfddb-ee69-44f8-8a2f-ccef34b7c806.jpg?v=1742550775",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_d1968b1a-b1ca-4ac3-813c-5202aaf94623.jpg?v=1742550775",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7632cf0e-fc2a-45dc-b12b-abee1b1dfed9_636c05d6-b578-4757-ba3b-a2f74b36bd8c.jpg?v=1761655222"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023246_a19e0167cf9e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023247_bcc191d52bf0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023248_10c745f7e5a5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023252_5fe7505d10f8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023253_c8944248e3bc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023254_37523b3382b9.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP31098 Pressure Filter | Replaces the Eppensteiner 9.280H10XLA000P",
       "sku": "9-280h10xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203305B-NB_7babfddb-ee69-44f8-8a2f-ccef34b7c806.jpg?v=1742550775",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023252_5fe7505d10f8.jpg",
       "vendor": "",
       "price": 10400,
       "partNumber": "MFHLP31098",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DHD280G10B Pressure Filter | Replaces the Eppensteiner 9280H10XLA000P",
       "sku": "9280h10xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_a906e82f-7ce2-4ca6-87ab-56e2430de5d7.jpg?v=1742550775",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023247_bcc191d52bf0.jpg",
       "vendor": "",
       "price": 11300,
       "partNumber": "DHD280G10B",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 75134 Pressure Filter | Replaces the Eppensteiner 9280H10XLA000P",
       "sku": "9280h10xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7632cf0e-fc2a-45dc-b12b-abee1b1dfed9_3969d6f8-8f12-4c73-b32b-4e417b9fcb56.jpg?v=1761655223",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023248_10c745f7e5a5.jpg",
       "vendor": "",
       "price": 13000,
       "partNumber": "SH 75134",

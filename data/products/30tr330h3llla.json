@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204195B_abf6cf8f-ee18-40e3-b08c-6b16c3b1f562.jpg?v=1742489593",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566982.700.700_c0571921-039a-4a22-9cc5-4bf7e04fb247.jpg?v=1742489593",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3bf7e01a-6721-4ac6-a782-2a1e0ea7dfee_24c86da6-4380-4622-a821-61a92480dd15.jpg?v=1742489593",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_98a73b8b-1abd-4f01-a9a8-1c853361492f.png?v=1760629481",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0330_r_003_sn_n167207_i2483171_690ffd92-02ba-4940-9be5-0dcd4ec5f00c.jpg?v=1760540754"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029127_cbf4b166f043.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029128_9f70c16bc356.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029129_5b8a6c0264a0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029130_21ef3a561f66.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029131_2669ccb0f328.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec RHR330G03B3/AB1 Return Filter | Replaces the Eppensteiner 30TR330H3LLLA",
       "sku": "30tr330h3llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204195B_abf6cf8f-ee18-40e3-b08c-6b16c3b1f562.jpg?v=1742489593",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029127_cbf4b166f043.jpg",
       "vendor": "Filtrec",
       "price": 9700,
       "partNumber": "RHR330G03B3/AB1",
@@ -52,7 +52,7 @@
     {
       "title": "Donaldson P566982 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 30TR330H3LLLA",
       "sku": "30tr330h3llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566982.700.700_c0571921-039a-4a22-9cc5-4bf7e04fb247.jpg?v=1742489593",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029128_9f70c16bc356.jpg",
       "vendor": "Donaldson",
       "price": 15000,
       "partNumber": "P566982",
@@ -85,7 +85,7 @@
     {
       "title": "HiFi Filter SH 74022 Return Filter | Replaces the Eppensteiner 30TR330H3LLLA",
       "sku": "30tr330h3llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3bf7e01a-6721-4ac6-a782-2a1e0ea7dfee_24c86da6-4380-4622-a821-61a92480dd15.jpg?v=1742489593",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029129_5b8a6c0264a0.jpg",
       "vendor": "HiFi Filter",
       "price": 17900,
       "partNumber": "SH 74022",
@@ -118,7 +118,7 @@
     {
       "title": "MicroFit® MFHR54437 UltraGen III Return Filter | Replaces the Eppensteiner 30TR330H3LLLA",
       "sku": "30tr330h3llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_98a73b8b-1abd-4f01-a9a8-1c853361492f.png?v=1760629481",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029130_21ef3a561f66.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR54437",
@@ -151,7 +151,7 @@
     {
       "title": "Hydac 0330 R 003 SN SUSTAINMICRON® Return Filter | Replaces the Eppensteiner 30TR330H3LLLA",
       "sku": "30tr330h3llla-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0330_r_003_sn_n167207_i2483171_690ffd92-02ba-4940-9be5-0dcd4ec5f00c.jpg?v=1760540754",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029131_2669ccb0f328.jpg",
       "vendor": "Hydac",
       "price": 33300,
       "partNumber": "0330 R 003 SN",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f4249b4a-7cea-43ff-94ef-a5bb40365dc0.jpg?v=1723205908",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_24_4441_image1_785b05b9-cc60-438e-94c8-8ea5109c7a81.jpg?v=1754909314",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF344M_c89a515e-2a2d-4e82-b7da-b0b46a8d133e.jpg?v=1755780803"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007763_6d92a3985f8a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007764_1c1806cad1c7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007765_c53df8b76c08.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10294 Air Filter",
       "sku": "sa-10294-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f4249b4a-7cea-43ff-94ef-a5bb40365dc0.jpg?v=1723205908",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007763_6d92a3985f8a.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "SA 10294",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 24 444/1 Air Filter | Replaces the HiFi Filter SA 10294",
       "sku": "sa-10294-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_24_4441_image1_785b05b9-cc60-438e-94c8-8ea5109c7a81.jpg?v=1754909314",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007764_1c1806cad1c7.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "C 24 444/1",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF344M Air Filter, Primary | Replaces the HiFi Filter SA 10294",
       "sku": "sa-10294-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF344M_c89a515e-2a2d-4e82-b7da-b0b46a8d133e.jpg?v=1755780803",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007765_c53df8b76c08.jpg",
       "vendor": "",
       "price": 4300,
       "partNumber": "AF344M",

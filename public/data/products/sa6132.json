@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6edb885e-63bd-4fad-b1d6-a31ac82c7618.jpg?v=1723204240",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p610875.700.700_6125da1f-757f-4958-b0fd-1876486c7436.jpg?v=1744306191",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27860_4666931f-6d52-49d0-8b3d-461ea27e9c63.jpg?v=1755780757"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008642_7668b4235232.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008643_32d4c2e76ce6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008644_0ef295b3d5d1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 6132 Air Filter",
       "sku": "sa-6132-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6edb885e-63bd-4fad-b1d6-a31ac82c7618.jpg?v=1723204240",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008642_7668b4235232.jpg",
       "vendor": "",
       "price": 11800,
       "partNumber": "SA 6132",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P610875 Air Filter, Primary Round Powercore | Replaces the HiFi Filter SA 6132",
       "sku": "sa-6132-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p610875.700.700_6125da1f-757f-4958-b0fd-1876486c7436.jpg?v=1744306191",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008643_32d4c2e76ce6.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "P610875",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF27860 Air Filter | Replaces the HiFi Filter SA 6132",
       "sku": "sa-6132-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27860_4666931f-6d52-49d0-8b3d-461ea27e9c63.jpg?v=1755780757",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008644_0ef295b3d5d1.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "AF27860",

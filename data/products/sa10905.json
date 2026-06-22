@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f8b574a-3cdc-483d-b8de-c6da095bf80f.jpg?v=1723205459",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124862.700.700_79157833-dabd-4709-8578-c0bf7e9bcad9.jpg?v=1744305987",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF955_f35f42d8-78d7-49b4-9b8e-8138781aca4f.jpg?v=1755780782"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007971_912a13c3f165.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007972_f59a78f32f33.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007973_bb7f0c915884.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10905 Air Filter",
       "sku": "sa-10905-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f8b574a-3cdc-483d-b8de-c6da095bf80f.jpg?v=1723205459",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007971_912a13c3f165.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "SA 10905",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P124862 Air Filter, Safety | Replaces the HiFi Filter SA 10905",
       "sku": "sa-10905-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124862.700.700_79157833-dabd-4709-8578-c0bf7e9bcad9.jpg?v=1744305987",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007972_f59a78f32f33.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "P124862",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF955 Air Filter, Secondary | Replaces the HiFi Filter SA 10905",
       "sku": "sa-10905-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF955_f35f42d8-78d7-49b4-9b8e-8138781aca4f.jpg?v=1755780782",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007973_bb7f0c915884.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "AF955",

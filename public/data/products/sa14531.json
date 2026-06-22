@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2963bf81-6be8-408c-836a-a316cb4b1e7d.jpg?v=1723202953",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770132.700.700_e3811456-e10a-48f8-b889-c541a838690e.jpg?v=1744306032",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4581_a554a285-279a-428e-a7ca-c771d3e5fb2b.jpg?v=1755780738"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009567_00a36a6f5831.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009568_3944ec07e684.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009569_5590d8f64738.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14531 Air Filter",
       "sku": "sa-14531-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2963bf81-6be8-408c-836a-a316cb4b1e7d.jpg?v=1723202953",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009567_00a36a6f5831.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "SA 14531",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson X770132 Air Filter Kit | Replaces the HiFi Filter SA 14531",
       "sku": "sa-14531-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770132.700.700_e3811456-e10a-48f8-b889-c541a838690e.jpg?v=1744306032",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009568_3944ec07e684.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "X770132",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4581 Air Filter | Replaces the HiFi Filter SA 14531",
       "sku": "sa-14531-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4581_a554a285-279a-428e-a7ca-c771d3e5fb2b.jpg?v=1755780738",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009569_5590d8f64738.jpg",
       "vendor": "",
       "price": 11900,
       "partNumber": "AF4581",

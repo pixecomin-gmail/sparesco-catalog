@@ -9,22 +9,22 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203794B-NB_9dc67bf1-d646-452b-b887-0b278637d878.jpg?v=1755096190",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-80d50949-68aa-4ca1-89bd-ed36c2182bd7_59b58d98-9962-446c-abf6-afb7c1e1aade.jpg?v=1755096190",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_cfdc2aa6-51ec-4ec6-8b34-36e37eb0643b.jpg?v=1755096190",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_5daa1325-1178-499f-ae2f-3525e5511690.jpg?v=1755780109",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0400_dn_025_bn4hc_n167995_i2373868_d84bf9ba-01f4-4aa7-8b38-ff3e76cfbf67.jpg?v=1760540184",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203794B-NB_69e5df5b-02dd-41bf-b41f-6ca0d49ed300.jpg?v=1755096186",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-80d50949-68aa-4ca1-89bd-ed36c2182bd7_d3a1682f-d33a-4c5b-ac66-209d0be870ad.jpg?v=1755096186",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_7f32a831-af81-404d-93ea-620d9494c627.jpg?v=1755096186",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_cc1c86d9-1c89-4337-943a-0436a10ea97a.jpg?v=1755780110",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0400_dn_025_bn4hc_n167995_i2373868_a65b508d-349d-451f-af1e-1b4f1e9992c9.jpg?v=1760540184"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009505_2bcdd83059a4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009506_b3de2451054f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009507_b82d25d3e7d9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009508_d90e708d1341.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009509_01438c2d098b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009515_218c3ddc8e1b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009516_c75b12c1d016.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009517_3fc03f75b237.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009518_b1d032508505.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009519_ad5655b7a997.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP31171 DIN Pressure Filter | Replaces the Eppensteiner 2.0400H20SLA000P",
       "sku": "2-0400h20sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203794B-NB_69e5df5b-02dd-41bf-b41f-6ca0d49ed300.jpg?v=1755096186",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009515_218c3ddc8e1b.jpg",
       "vendor": "",
       "price": 15600,
       "partNumber": "MFHLP31171",
@@ -55,7 +55,7 @@
     {
       "title": "HiFi Filter SH 84318 DIN Pressure Filter | Replaces the Eppensteiner 20400H20SLA000P",
       "sku": "20400h20sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-80d50949-68aa-4ca1-89bd-ed36c2182bd7_59b58d98-9962-446c-abf6-afb7c1e1aade.jpg?v=1755096190",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009506_b3de2451054f.jpg",
       "vendor": "",
       "price": 16000,
       "partNumber": "SH 84318",
@@ -86,7 +86,7 @@
     {
       "title": "Filtrec XD400G25A DIN Pressure Filter | Replaces the Eppensteiner 20400H20SLA000P",
       "sku": "20400h20sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_cfdc2aa6-51ec-4ec6-8b34-36e37eb0643b.jpg?v=1755096190",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009507_b82d25d3e7d9.jpg",
       "vendor": "",
       "price": 17000,
       "partNumber": "XD400G25A",
@@ -117,7 +117,7 @@
     {
       "title": "Fleetguard ST2178 Hydraulic Filters | Replaces the Eppensteiner 20400H20SLA000P",
       "sku": "20400h20sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_5daa1325-1178-499f-ae2f-3525e5511690.jpg?v=1755780109",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009508_d90e708d1341.jpg",
       "vendor": "",
       "price": 18600,
       "partNumber": "ST2178",
@@ -148,7 +148,7 @@
     {
       "title": "Hydac 0400 DN 025 BN4HC DIN Pressure Filter | Replaces the Eppensteiner 20400H20SLA000P",
       "sku": "20400h20sla000p-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0400_dn_025_bn4hc_n167995_i2373868_d84bf9ba-01f4-4aa7-8b38-ff3e76cfbf67.jpg?v=1760540184",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009509_01438c2d098b.jpg",
       "vendor": "",
       "price": 43500,
       "partNumber": "0400 DN 025 BN4HC",

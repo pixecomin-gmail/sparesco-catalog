@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201751B-NB_eddddd9c-0cf2-42ef-94e5-6671883ae1cc.jpg?v=1755095180",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fc7b4eff-0671-4bc6-80ac-cf144c157257_9b2eb1e7-6d55-431b-8bc5-af4621ee4736.jpg?v=1755095180",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR165G_515a3997-8e11-4285-9d1d-93e68b5d1c38.jpg?v=1755095180",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0165_r_020_on_n167187_i2432332_a6200856-91b6-4bd0-9302-977994cb3930.jpg?v=1760540727",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201751B-NB_d5f96e7f-f64d-4690-a5fb-24a1fa194575.jpg?v=1755094166",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fc7b4eff-0671-4bc6-80ac-cf144c157257_04d687c7-cc96-4ac3-a270-a3e7f58afdbf.jpg?v=1755094166",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR165G_3fbaa36e-5108-4e0c-a954-140183e38d3f.jpg?v=1755094166",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0165_r_020_on_n167187_i2432332_82a37e65-2d31-4ff9-a43c-ef7be4f7a319.jpg?v=1760540713"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019232_cb4bfcb9792d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019233_b5e38f2daeff.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019234_0f5461789838.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019235_d59d92292d21.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020844_fad0daaff748.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020845_e04e9b2cf66b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020846_92e018ac2c2e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020847_e1cbd15aa05e.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50957 Return Filter | Replaces the Eppensteiner 10.165LAH20XLA006P",
       "sku": "10-165lah20xla006p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201751B-NB_d5f96e7f-f64d-4690-a5fb-24a1fa194575.jpg?v=1755094166",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020844_fad0daaff748.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "MFHR50957",
@@ -55,7 +55,7 @@
     {
       "title": "HiFi Filter SH 74114 Return Filter | Replaces the Eppensteiner 10165LAH20XLA006P",
       "sku": "10165lah20xla006p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fc7b4eff-0671-4bc6-80ac-cf144c157257_9b2eb1e7-6d55-431b-8bc5-af4621ee4736.jpg?v=1755095180",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019233_b5e38f2daeff.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "SH 74114",
@@ -88,7 +88,7 @@
     {
       "title": "Filtrec RHR165G20B Return Filter | Replaces the Eppensteiner 10165LAH20XLA006P",
       "sku": "10165lah20xla006p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR165G_515a3997-8e11-4285-9d1d-93e68b5d1c38.jpg?v=1755095180",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019234_0f5461789838.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "RHR165G20B",
@@ -121,7 +121,7 @@
     {
       "title": "Hydac 0165 R 020 ON Optimicron® Return Filter | Replaces the Eppensteiner 10165LAH20XLA006P",
       "sku": "10165lah20xla006p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0165_r_020_on_n167187_i2432332_a6200856-91b6-4bd0-9302-977994cb3930.jpg?v=1760540727",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019235_d59d92292d21.jpg",
       "vendor": "",
       "price": 12000,
       "partNumber": "0165 R 020 ON",

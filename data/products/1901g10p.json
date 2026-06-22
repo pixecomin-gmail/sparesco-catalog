@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_a433cffc-3425-4d73-b8e0-8fd33463732e.jpg?v=1755095635",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_b1718630-d568-40a5-a48a-3398c9b353ab.jpg?v=1764762970",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_585503cf-c389-4a75-a540-327348a73c1a.png?v=1760633108",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_63b32b56-b201-4f12-a71a-d1e94f6bcf9c.jpg?v=1755095622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_dc5499f0-885d-46a5-b59c-8ef3165fdb59.jpg?v=1764762972",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9f9d9f4e-7f48-495a-bb56-43e3ed2ed642.png?v=1760633105"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014942_9a2407e64a24.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014943_671ea2ab916d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014944_6d9036313bbf.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014951_66a7a6b66ee4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014952_3c226a997887.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014953_6790c10b229f.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1901B10B Return Filter | Replaces the Eppensteiner 1901G10P",
       "sku": "1901g10p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_a433cffc-3425-4d73-b8e0-8fd33463732e.jpg?v=1755095635",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014942_9a2407e64a24.jpg",
       "vendor": "",
       "price": 115200,
       "partNumber": "RVR1901B10B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 670371 Return Filter | Replaces the Eppensteiner 1901G10P",
       "sku": "1901g10p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_b1718630-d568-40a5-a48a-3398c9b353ab.jpg?v=1764762970",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014943_671ea2ab916d.jpg",
       "vendor": "",
       "price": 66500,
       "partNumber": "SH 670371",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR50466 UltraGen III Return Filter | Replaces the Eppensteiner 1901G10P",
       "sku": "1901g10p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_585503cf-c389-4a75-a540-327348a73c1a.png?v=1760633108",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/014944_6d9036313bbf.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50466",

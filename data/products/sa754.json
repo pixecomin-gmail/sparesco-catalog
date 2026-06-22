@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-941d4ab8-ad50-420d-8adb-81dddd269f87.jpg?v=1723212386",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_60_345_image1_0f5fb9d6-9fe9-4057-ad2c-8a258fa5864a.jpg?v=1754909441",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p783198.700.700_5cc2a482-3ca9-4f12-9552-f5f59946900e.jpg?v=1744306194",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4916_4fc1368f-5aa7-4f36-99ab-6cc74044999f.jpg?v=1755780889"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006103_5d8e4ec98842.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006104_db8b391942c5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006105_011a0f3620a5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006106_2e2dba21b3aa.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 754 Air Filter",
       "sku": "sa-754-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-941d4ab8-ad50-420d-8adb-81dddd269f87.jpg?v=1723212386",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006103_5d8e4ec98842.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "SA 754",
@@ -40,7 +40,7 @@
     {
       "title": "Mann Filter C 60 345 Air Filter | Replaces the HiFi Filter SA 754",
       "sku": "sa-754-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_60_345_image1_0f5fb9d6-9fe9-4057-ad2c-8a258fa5864a.jpg?v=1754909441",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006104_db8b391942c5.jpg",
       "vendor": "",
       "price": 4300,
       "partNumber": "C 60 345",
@@ -60,7 +60,7 @@
     {
       "title": "Donaldson P783198 Air Filter, Panel Engine | Replaces the HiFi Filter SA 754",
       "sku": "sa-754-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p783198.700.700_5cc2a482-3ca9-4f12-9552-f5f59946900e.jpg?v=1744306194",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006105_011a0f3620a5.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "P783198",
@@ -76,7 +76,7 @@
     {
       "title": "Fleetguard AF4916 Air Filter Filter - Panel | Replaces the HiFi Filter SA 754",
       "sku": "sa-754-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4916_4fc1368f-5aa7-4f36-99ab-6cc74044999f.jpg?v=1755780889",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006106_2e2dba21b3aa.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "AF4916",

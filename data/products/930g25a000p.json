@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3763d380-cab9-4fff-864c-6675a227f1d9_b5e369f0-495f-49ae-b13a-7a36df19402d.jpg?v=1740478829",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203315B_76e1abf9-fab8-496a-9ca4-b826b7ac15a1.jpg?v=1740478829",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_025_w_n182460_i2372573_631c2492-74e7-4854-ae2e-7b8c0cec2c37.jpg?v=1760541966",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_394e8756-6576-4b69-aab7-a69b5b5381ee.png?v=1760637200",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3763d380-cab9-4fff-864c-6675a227f1d9_a51d86ca-c56e-4a6e-99f7-47e9cde343bc.jpg?v=1740478825",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203315B_00d77ac9-61a8-4aa5-9ab5-57c89cb1d980.jpg?v=1740478825",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_025_w_n182460_i2372573_c11e57b3-7565-4776-9192-f8c8c24a16cc.jpg?v=1760541980",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a9cb8c8b-8c7c-4181-8f32-1a078a01ecaa.png?v=1760637201"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000025_22ffbfd1b536.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000026_6d504ec0475f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000027_b384de94cddb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000028_c8444d0edaa6.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000029_e99df2d83173.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000030_c3d7d5c49d87.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000031_8aa022bb86d6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000032_bf6d8fda580a.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 75081 Pressure Filter | Replaces the Eppensteiner 930G25A000P",
       "sku": "930g25a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3763d380-cab9-4fff-864c-6675a227f1d9_b5e369f0-495f-49ae-b13a-7a36df19402d.jpg?v=1740478829",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000025_22ffbfd1b536.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "SH 75081",
@@ -52,7 +52,7 @@
     {
       "title": "Filtrec DHD30S25B Pressure Filter | Replaces the Eppensteiner 930G25A000P",
       "sku": "930g25a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203315B_76e1abf9-fab8-496a-9ca4-b826b7ac15a1.jpg?v=1740478829",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000026_6d504ec0475f.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "DHD30S25B",
@@ -82,7 +82,7 @@
     {
       "title": "Hydac 0030 D 025 W Pressure Filter | Replaces the Eppensteiner 930G25A000P",
       "sku": "930g25a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_025_w_n182460_i2372573_631c2492-74e7-4854-ae2e-7b8c0cec2c37.jpg?v=1760541966",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000027_b384de94cddb.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "0030 D 025 W",
@@ -112,7 +112,7 @@
     {
       "title": "MicroFit® MFHLP31102 UltraGen III Filter | Replaces the Eppensteiner 930G25A000P",
       "sku": "930g25a000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_394e8756-6576-4b69-aab7-a69b5b5381ee.png?v=1760637200",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000028_c8444d0edaa6.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31102",

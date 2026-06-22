@@ -9,19 +9,19 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF208727B_515e4e16-edfc-4023-ab1b-e672ea21564c.jpg?v=1741349694",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8eaeeb16-57aa-4d80-8903-3c8b958ce2ce_cebc0606-bf8f-4b46-a139-79277576a1b1.jpg?v=1741349694",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_be07aced-b205-4314-aadb-f341de22b150.jpg?v=1755779976",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF208727B_06ff6465-2f7b-4d25-97ed-3f889256b4ae.jpg?v=1741362378",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-04509f5c-00fd-4076-b9a5-4c6460d7f056_8e9c069b-8b70-4dea-962b-895a71d2a0ff.jpg?v=1741362378",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_e4fff75e-20b5-4299-8065-c32adf0cc2ac.jpg?v=1755779822",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_16535914-364a-4727-8a1b-1bba396859bd.png?v=1760632229"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012313_2e47578c195d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012314_61d6a56df613.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012315_6fc8f0d9a65c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019880_043bb2f665d7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019881_72b70991fb54.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019882_a1524552949c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019883_e0f2b8d96893.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD290K20B Pressure Filter | Replaces the Eppensteiner 290P25",
       "sku": "290p25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF208727B_515e4e16-edfc-4023-ab1b-e672ea21564c.jpg?v=1741349694",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012313_2e47578c195d.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "DVD290K20B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 670231 Pressure Filter | Replaces the Eppensteiner 290P25",
       "sku": "290p25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8eaeeb16-57aa-4d80-8903-3c8b958ce2ce_cebc0606-bf8f-4b46-a139-79277576a1b1.jpg?v=1741349694",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012314_61d6a56df613.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "SH 670231",
@@ -81,7 +81,7 @@
     {
       "title": "Fleetguard ST2265 Hydraulic Filters | Replaces the Eppensteiner 2.90P25",
       "sku": "2-90p25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_e4fff75e-20b5-4299-8065-c32adf0cc2ac.jpg?v=1755779822",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019882_a1524552949c.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "ST2265",
@@ -112,7 +112,7 @@
     {
       "title": "Filtrec DVD290E20B Pressure Filter | Replaces the Eppensteiner 2.90P25",
       "sku": "2-90p25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF208727B_06ff6465-2f7b-4d25-97ed-3f889256b4ae.jpg?v=1741362378",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019880_043bb2f665d7.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "DVD290E20B",
@@ -143,7 +143,7 @@
     {
       "title": "HiFi Filter SH 67109 Pressure Filter | Replaces the Eppensteiner 2.90P25",
       "sku": "2-90p25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-04509f5c-00fd-4076-b9a5-4c6460d7f056_8e9c069b-8b70-4dea-962b-895a71d2a0ff.jpg?v=1741362378",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019881_72b70991fb54.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "SH 67109",
@@ -174,7 +174,7 @@
     {
       "title": "MicroFit® MFHLP30410 UltraGen III Pressure Filter | Replaces the Eppensteiner 2.90P25",
       "sku": "2-90p25-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_16535914-364a-4727-8a1b-1bba396859bd.png?v=1760632229",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019883_e0f2b8d96893.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30410",

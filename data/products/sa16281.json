@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-00f93c1d-ab6f-4830-9c07-5261c0b0023c.jpg?v=1723203872",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124548.700.700_c6c9555d-5f37-4aee-9ed3-b2388eb7cbb3.jpg?v=1744306084",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1632_b384d658-03e5-4545-b566-90a22754b386.jpg?v=1755780756"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008930_80cf29c0fd20.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008931_b5b35c4f0be5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008932_2a0e3e86bbb5.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16281 Air Filter",
       "sku": "sa-16281-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-00f93c1d-ab6f-4830-9c07-5261c0b0023c.jpg?v=1723203872",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008930_80cf29c0fd20.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "SA 16281",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P124548 Air Filter, Safety | Replaces the HiFi Filter SA 16281",
       "sku": "sa-16281-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p124548.700.700_c6c9555d-5f37-4aee-9ed3-b2388eb7cbb3.jpg?v=1744306084",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008931_b5b35c4f0be5.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "P124548",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1632 Air Filter, Secondary | Replaces the HiFi Filter SA 16281",
       "sku": "sa-16281-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1632_b384d658-03e5-4545-b566-90a22754b386.jpg?v=1755780756",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008932_2a0e3e86bbb5.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "AF1632",

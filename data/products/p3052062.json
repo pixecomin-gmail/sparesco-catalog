@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-192a6c5e-9b9f-4516-a99f-efe65563740a_f6458b02-31cb-49d4-ab48-1457c87d4f82.jpg?v=1748455309",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p175104.700.700_097adee8-79b0-4c55-9b4f-1bb75b8812dd.jpg?v=1748455309",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_5010_image1_f7185734-3c9f-4b9a-8fd7-66f3fba5a35f.jpg?v=1754908767",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_53ebdc72-4e8e-4d8a-966c-509f2ab808fe.png?v=1748455309"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000402_1b1a8285de0d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000403_d58eb5729456.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000404_9cacd9ee036c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000405_eec8eee2fa2e.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52206 Special Filter | Replaces the Argo-Hytos P3052062",
       "sku": "p3052062-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-192a6c5e-9b9f-4516-a99f-efe65563740a_f6458b02-31cb-49d4-ab48-1457c87d4f82.jpg?v=1748455309",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000402_1b1a8285de0d.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "SH 52206",
@@ -49,7 +49,7 @@
     {
       "title": "Donaldson P175104 Hydraulic Filter, Cartridge | Replaces the Argo-Hytos P3052062",
       "sku": "p3052062-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p175104.700.700_097adee8-79b0-4c55-9b4f-1bb75b8812dd.jpg?v=1748455309",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000403_d58eb5729456.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "P175104",
@@ -79,7 +79,7 @@
     {
       "title": "Mann Filter H 5010 Hydraulics | Replaces the Argo-Hytos P3052062",
       "sku": "p3052062-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_5010_image1_f7185734-3c9f-4b9a-8fd7-66f3fba5a35f.jpg?v=1754908767",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000404_9cacd9ee036c.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "H 5010",
@@ -108,7 +108,7 @@
     {
       "title": "Filtrec WP497 Special Filter | Replaces the Argo-Hytos P3052062",
       "sku": "p3052062-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_53ebdc72-4e8e-4d8a-966c-509f2ab808fe.png?v=1748455309",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000405_eec8eee2fa2e.png",
       "vendor": "",
       "price": 0,
       "partNumber": "WP497",

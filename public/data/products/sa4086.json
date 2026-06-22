@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d5d8100-e811-4085-a4c0-d5cd7643114b.jpg?v=1723213220",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_f939ae25-f2b3-4009-b9cc-474195ad7539.jpg?v=1743773647",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4401_33711ca5-d140-44c2-aa9a-8bb8478399d5.jpg?v=1755780894"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005628_226d956be7f4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005629_8cc54e0fbcaa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005630_1c7acd11fe48.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 4086 Air Filter",
       "sku": "sa-4086-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0d5d8100-e811-4085-a4c0-d5cd7643114b.jpg?v=1723213220",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005628_226d956be7f4.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "SA 4086",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 35 160/1 Air Filter | Replaces the HiFi Filter SA 4086",
       "sku": "sa-4086-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_f939ae25-f2b3-4009-b9cc-474195ad7539.jpg?v=1743773647",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005629_8cc54e0fbcaa.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "C 35 160/1",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF4401 Air Filter Filter - Panel | Replaces the HiFi Filter SA 4086",
       "sku": "sa-4086-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4401_33711ca5-d140-44c2-aa9a-8bb8478399d5.jpg?v=1755780894",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005630_1c7acd11fe48.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "AF4401",

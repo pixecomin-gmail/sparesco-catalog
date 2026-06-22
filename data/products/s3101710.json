@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D151A_3cc5959c-584b-48f0-b790-fb8753a315ed.jpg?v=1741364253",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a16a4410-e924-486a-b69f-626eee9f21e5_99ddf9f8-4108-435c-a03b-4f46abcbc41b.jpg?v=1741364253",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_54ba953c-ecbb-4876-a86e-4dabf643f9ba.png?v=1760637130"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000273_327a2bc0c414.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000274_40c40e9f8be1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000275_d290073ed56b.png"
   ],
   "variants": [
     {
       "title": "Filtrec D850T60A Pressure Filter | Replaces the Argo-Hytos S3101710",
       "sku": "s3101710-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D151A_3cc5959c-584b-48f0-b790-fb8753a315ed.jpg?v=1741364253",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000273_327a2bc0c414.jpg",
       "vendor": "",
       "price": 19800,
       "partNumber": "D850T60A",
@@ -47,7 +47,7 @@
     {
       "title": "HiFi Filter SH 52110 Pressure Filter | Replaces the Argo-Hytos S3101710",
       "sku": "s3101710-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a16a4410-e924-486a-b69f-626eee9f21e5_99ddf9f8-4108-435c-a03b-4f46abcbc41b.jpg?v=1741364253",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000274_40c40e9f8be1.jpg",
       "vendor": "",
       "price": 36300,
       "partNumber": "SH 52110",
@@ -77,7 +77,7 @@
     {
       "title": "MicroFit® MFHLP30199 UltraGen III Pressure Filter | Replaces the Argo-Hytos S3101710",
       "sku": "s3101710-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_54ba953c-ecbb-4876-a86e-4dabf643f9ba.png?v=1760637130",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000275_d290073ed56b.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30199",

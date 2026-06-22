@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_e995e697-9caf-4892-bfc2-538de82af640.jpg?v=1755091707",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b2b421f-7232-4551-a54f-5d45d93bb865_564f5d31-ee80-4f64-b515-f129885cdf6c.jpg?v=1755091707",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d00e698e-7dcd-4e85-9ef5-8ffc3657e26d.png?v=1760629639",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_d0edba86-8a6e-48be-a068-105997762002.jpg?v=1755091707",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b2b421f-7232-4551-a54f-5d45d93bb865_4a452ea7-0222-45a3-9650-77bf566fc66d.jpg?v=1755091707",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e2d0871d-5279-4b88-a781-274eb87b8d51.png?v=1760629632"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028569_eca2225807ab.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028570_ac14c6519126.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028571_7f10164ce258.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028575_350a36b0d631.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028576_06959cc2f815.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028577_9935656a0c5d.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR1300G05B3/AB1 Return Filter | Replaces the Eppensteiner 101300H6XL0006P",
       "sku": "101300h6xl0006p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_e995e697-9caf-4892-bfc2-538de82af640.jpg?v=1755091707",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028569_eca2225807ab.jpg",
       "vendor": "Filtrec",
       "price": 33700,
       "partNumber": "RHR1300G05B3/AB1",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 74048 Return Filter | Replaces the Eppensteiner 101300H6XL0006P",
       "sku": "101300h6xl0006p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b2b421f-7232-4551-a54f-5d45d93bb865_564f5d31-ee80-4f64-b515-f129885cdf6c.jpg?v=1755091707",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028570_ac14c6519126.jpg",
       "vendor": "HiFi Filter",
       "price": 35100,
       "partNumber": "SH 74048",
@@ -86,7 +86,7 @@
     {
       "title": "MicroFit® MFHR51056 UltraGen III Return Filter | Replaces the Eppensteiner 101300H6XL0006P",
       "sku": "101300h6xl0006p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d00e698e-7dcd-4e85-9ef5-8ffc3657e26d.png?v=1760629639",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028571_7f10164ce258.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR51056",

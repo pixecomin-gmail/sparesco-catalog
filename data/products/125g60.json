@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR125E_e2738e95-1777-4e5e-98b4-263348dce30a.jpg?v=1762282143",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-83c1be6b-2e17-4b4d-a7b6-c7cd7b82d92a_401b0231-1ae4-4164-978e-b8f4f9d68c35.jpg?v=1762282143",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4b9c9837-6578-40ea-a867-b8256b01845a.png?v=1762282143",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR125E_5aa9f479-64ae-48e7-8f57-ef46ccc021e5.jpg?v=1762282144",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-83c1be6b-2e17-4b4d-a7b6-c7cd7b82d92a_f63aa372-f6ae-4af2-93e2-e14d76412736.jpg?v=1762282144",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_dcef34c3-a8f7-4d4c-8bdc-e4cf70081114.png?v=1762282144"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016311_1f7fe829857f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016312_7c1daef5428a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016313_03669bcaea6b.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016314_f2252a72eb38.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016315_fdd293a7ec3a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016316_99fd189799bc.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR125B60B Return Filter | Replaces the Eppensteiner 125G60",
       "sku": "125g60-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR125E_e2738e95-1777-4e5e-98b4-263348dce30a.jpg?v=1762282143",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016311_1f7fe829857f.jpg",
       "vendor": "",
       "price": 9300,
       "partNumber": "RVR125B60B",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 67470 Return Filter | Replaces the Eppensteiner 125G60",
       "sku": "125g60-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-83c1be6b-2e17-4b4d-a7b6-c7cd7b82d92a_401b0231-1ae4-4164-978e-b8f4f9d68c35.jpg?v=1762282143",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016312_7c1daef5428a.jpg",
       "vendor": "",
       "price": 11500,
       "partNumber": "SH 67470",
@@ -84,7 +84,7 @@
     {
       "title": "MicroFit® MFHR50355 UltraGen III Filter | Replaces the Eppensteiner 125G60",
       "sku": "125g60-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4b9c9837-6578-40ea-a867-b8256b01845a.png?v=1762282143",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016313_03669bcaea6b.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50355",

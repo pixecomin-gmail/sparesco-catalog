@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66f26712-de6a-4021-bd9e-0bb965d9f60f.jpg?v=1723203296",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529552.700.700_3002d4a2-509a-47ed-9ab1-23cfabff695e.jpg?v=1744306066",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4402_142a16e8-19ea-4744-879f-c92f0ec19384.jpg?v=1755780738"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009307_637edc0462ac.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009308_29bcc9ad2768.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009309_d7c18452a742.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16094 Air Filter",
       "sku": "sa-16094-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66f26712-de6a-4021-bd9e-0bb965d9f60f.jpg?v=1723203296",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009307_637edc0462ac.jpg",
       "vendor": "",
       "price": 28000,
       "partNumber": "SA 16094",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P529552 Air Filter, Primary Round | Replaces the HiFi Filter SA 16094",
       "sku": "sa-16094-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p529552.700.700_3002d4a2-509a-47ed-9ab1-23cfabff695e.jpg?v=1744306066",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009308_29bcc9ad2768.jpg",
       "vendor": "",
       "price": 40900,
       "partNumber": "P529552",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4402 Air Filter, Primary | Replaces the HiFi Filter SA 16094",
       "sku": "sa-16094-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4402_142a16e8-19ea-4744-879f-c92f0ec19384.jpg?v=1755780738",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009309_d7c18452a742.jpg",
       "vendor": "",
       "price": 59000,
       "partNumber": "AF4402",

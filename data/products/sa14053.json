@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f7c3a40-34f5-43ee-9202-891201a0b629.jpg?v=1748456007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119410.700.700_a40e228e-d7e8-4a0d-8e34-4238823086fe.jpg?v=1748456007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_922_image1_e2d3ba45-fe9a-4a23-89ab-7bbe98af7ce6.jpg?v=1754909282",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4103_58d2da50-4ea2-49e8-84a1-3b21c034b78c.jpg?v=1755780764"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008584_7fef1cd782a5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008585_fc1cf9e97abd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008586_cf57cd3ac07b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008587_cc0bfc50f6e4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14053 Air Filter",
       "sku": "sa-14053-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f7c3a40-34f5-43ee-9202-891201a0b629.jpg?v=1748456007",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008584_7fef1cd782a5.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "SA 14053",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P119410 Air Filter, Safety | Replaces the HiFi Filter SA 14053",
       "sku": "sa-14053-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119410.700.700_a40e228e-d7e8-4a0d-8e34-4238823086fe.jpg?v=1748456007",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008585_fc1cf9e97abd.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "P119410",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CF 922 Secondary Element | Replaces the HiFi Filter SA 14053",
       "sku": "sa-14053-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_922_image1_e2d3ba45-fe9a-4a23-89ab-7bbe98af7ce6.jpg?v=1754909282",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008586_cf57cd3ac07b.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "CF 922",
@@ -76,7 +76,7 @@
     {
       "title": "Fleetguard AF4103 Air Filter, Secondary | Replaces the HiFi Filter SA 14053",
       "sku": "sa-14053-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4103_58d2da50-4ea2-49e8-84a1-3b21c034b78c.jpg?v=1755780764",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008587_cc0bfc50f6e4.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "AF4103",

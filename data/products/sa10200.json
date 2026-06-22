@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-deb241d7-bc72-458e-bc69-d39dc2fc1ad2.jpg?v=1723203834",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526413.700.700_698bca69-79f6-4e00-b8fb-ea095cf558b8.jpg?v=1744305960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF250_837704a1-c5dd-4115-a5b6-4d634f9378fc.jpg?v=1755780752"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008954_eaf1d4a2c0a6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008955_f0363a59c88d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008956_c595286768a5.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10200 Air Filter",
       "sku": "sa-10200-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-deb241d7-bc72-458e-bc69-d39dc2fc1ad2.jpg?v=1723203834",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008954_eaf1d4a2c0a6.jpg",
       "vendor": "",
       "price": 1500,
       "partNumber": "SA 10200",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P526413 Breather, Air Cylindrical | Replaces the HiFi Filter SA 10200",
       "sku": "sa-10200-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526413.700.700_698bca69-79f6-4e00-b8fb-ea095cf558b8.jpg?v=1744305960",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008955_f0363a59c88d.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "P526413",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF250 Crankcase Breather | Replaces the HiFi Filter SA 10200",
       "sku": "sa-10200-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF250_837704a1-c5dd-4115-a5b6-4d634f9378fc.jpg?v=1755780752",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008956_c595286768a5.jpg",
       "vendor": "",
       "price": 1400,
       "partNumber": "AF250",

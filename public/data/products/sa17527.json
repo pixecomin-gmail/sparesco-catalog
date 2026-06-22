@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9063270e-e510-415f-82fe-9716dd5cdc93.jpg?v=1723203798",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1760_image1_9501434e-7dd7-409d-9c65-a6c035635b2d.jpg?v=1754909273",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4435_8ee7f672-40b9-4728-a73e-fd796d43d1f6.jpg?v=1755780750"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008978_59eaccf60237.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008979_8ffcf8c0ef4c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008980_cfdb5d86a69f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17527 Air Filter",
       "sku": "sa-17527-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9063270e-e510-415f-82fe-9716dd5cdc93.jpg?v=1723203798",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008978_59eaccf60237.jpg",
       "vendor": "",
       "price": 10100,
       "partNumber": "SA 17527",
@@ -40,7 +40,7 @@
     {
       "title": "Mann Filter CF 1760 Secondary Element | Replaces the HiFi Filter SA 17527",
       "sku": "sa-17527-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1760_image1_9501434e-7dd7-409d-9c65-a6c035635b2d.jpg?v=1754909273",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008979_8ffcf8c0ef4c.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "CF 1760",
@@ -59,7 +59,7 @@
     {
       "title": "Fleetguard AF4435 Secondary Air Filter Filter | Replaces the HiFi Filter SA 17527",
       "sku": "sa-17527-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4435_8ee7f672-40b9-4728-a73e-fd796d43d1f6.jpg?v=1755780750",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008980_cfdb5d86a69f.jpg",
       "vendor": "",
       "price": 9300,
       "partNumber": "AF4435",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200596B-NB_3f6e6022-3c1e-4a90-bcf4-f0bd0b2912c2.jpg?v=1742553060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111B_73297e37-b290-47dd-bf8b-2db662bf3553.jpg?v=1742553060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c95bea1-0ceb-47c6-a85a-99216b240828_5985c885-3b87-47eb-99af-51f732d13169.jpg?v=1761655929"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000196_06f87a569223.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000197_546caf6239c1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000198_2ca1834d8680.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40116 Pressure Filter | Replaces the Argo-Hytos S2115005",
       "sku": "s2115005-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200596B-NB_3f6e6022-3c1e-4a90-bcf4-f0bd0b2912c2.jpg?v=1742553060",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000196_06f87a569223.jpg",
       "vendor": "",
       "price": 10300,
       "partNumber": "MFHHP40116",
@@ -48,7 +48,7 @@
     {
       "title": "Filtrec D111G03B Pressure Filter | Replaces the Argo-Hytos S2115005",
       "sku": "s2115005-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111B_73297e37-b290-47dd-bf8b-2db662bf3553.jpg?v=1742553060",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000197_546caf6239c1.jpg",
       "vendor": "",
       "price": 12000,
       "partNumber": "D111G03B",
@@ -79,7 +79,7 @@
     {
       "title": "HiFi Filter SH 87123 Pressure Filter | Replaces the Argo-Hytos S2115005",
       "sku": "s2115005-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c95bea1-0ceb-47c6-a85a-99216b240828_5985c885-3b87-47eb-99af-51f732d13169.jpg?v=1761655929",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000198_2ca1834d8680.jpg",
       "vendor": "",
       "price": 17400,
       "partNumber": "SH 87123",

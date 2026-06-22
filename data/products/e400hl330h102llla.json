@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_3b2bb32b-8525-4fe4-a1b6-b7ba74cb5aa1.jpg?v=1761218488",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bd0d8307-be3b-4d5a-84b8-127685c6c1ff.png?v=1761218488",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f8ec520-7e09-4192-95ef-3b4010100417_ac12bd99-6d6a-419e-b311-7495df6844c4.jpg?v=1761218488"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/030720_01bdc243a5a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/030721_990d542f2f66.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/030722_ee66ba9f3bd1.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD330H10B Pressure Filter | Replaces the Eppensteiner E400HL330H102LLLA",
       "sku": "e400hl330h102llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_3b2bb32b-8525-4fe4-a1b6-b7ba74cb5aa1.jpg?v=1761218488",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/030720_01bdc243a5a1.jpg",
       "vendor": "",
       "price": 18600,
       "partNumber": "DHD330H10B",
@@ -48,7 +48,7 @@
     {
       "title": "MicroFit® MFHHP40585 UltraGen III Filter | Replaces the Eppensteiner E400HL330H102LLLA",
       "sku": "e400hl330h102llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bd0d8307-be3b-4d5a-84b8-127685c6c1ff.png?v=1761218488",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/030721_990d542f2f66.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40585",
@@ -79,7 +79,7 @@
     {
       "title": "HiFi Filter SH 75045 Pressure Filter | Replaces the Eppensteiner E400HL330H102LLLA",
       "sku": "e400hl330h102llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f8ec520-7e09-4192-95ef-3b4010100417_ac12bd99-6d6a-419e-b311-7495df6844c4.jpg?v=1761218488",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/030722_ee66ba9f3bd1.jpg",
       "vendor": "",
       "price": 22300,
       "partNumber": "SH 75045",

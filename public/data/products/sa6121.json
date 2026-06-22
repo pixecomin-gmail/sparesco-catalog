@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-829c6ba9-01a4-4fea-b0d1-0b7cd62dff4f_6ac0da24-6cbc-4b98-8c27-39a3cb42bba5.jpg?v=1762811721",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_a405f1d5-aecc-4b16-b739-adb21664fa75.jpg?v=1762811721",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4442_fc3431fa-1db5-45e1-abc4-b1e3d2227dda.jpg?v=1762811721"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005623_1697489fe96c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005624_bb1b2a8fef1d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005625_eeadbc240ed2.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 6121 Air Filter",
       "sku": "sa-6121-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-829c6ba9-01a4-4fea-b0d1-0b7cd62dff4f_6ac0da24-6cbc-4b98-8c27-39a3cb42bba5.jpg?v=1762811721",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005623_1697489fe96c.jpg",
       "vendor": "",
       "price": 1200,
       "partNumber": "SA 6121",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 27 161 Air Filter | Replaces the HiFi Filter SA 6121",
       "sku": "sa-6121-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_a405f1d5-aecc-4b16-b739-adb21664fa75.jpg?v=1762811721",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005624_bb1b2a8fef1d.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "C 27 161",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF4442 Engine Air Panel | Replaces the HiFi Filter SA 6121",
       "sku": "sa-6121-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4442_fc3431fa-1db5-45e1-abc4-b1e3d2227dda.jpg?v=1762811721",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005625_eeadbc240ed2.jpg",
       "vendor": "",
       "price": 900,
       "partNumber": "AF4442",

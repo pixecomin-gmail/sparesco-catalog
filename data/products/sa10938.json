@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0033d459-1992-4b55-b3be-77715490cd2a.jpg?v=1748455982",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p114500.700.700_4bbbcbbb-4d88-4bdd-9b6d-1e4cbf5a3283.jpg?v=1748455982",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_923_image1_60c43cb1-2919-473d-bb18-729bc1b0b122.jpg?v=1754909301",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF988_dcab81df-a4a3-4a6c-aa9b-889cc76215bb.jpg?v=1755780780"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008186_9e6589d73731.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008187_85a9ea5c5f0d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008188_46025f9049e5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008189_e7b7bf9f0ed3.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10938 Air Filter",
       "sku": "sa-10938-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0033d459-1992-4b55-b3be-77715490cd2a.jpg?v=1748455982",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008186_9e6589d73731.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "SA 10938",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P114500 Air Filter, Safety | Replaces the HiFi Filter SA 10938",
       "sku": "sa-10938-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p114500.700.700_4bbbcbbb-4d88-4bdd-9b6d-1e4cbf5a3283.jpg?v=1748455982",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008187_85a9ea5c5f0d.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "P114500",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter CF 923 Secondary Element | Replaces the HiFi Filter SA 10938",
       "sku": "sa-10938-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_923_image1_60c43cb1-2919-473d-bb18-729bc1b0b122.jpg?v=1754909301",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008188_46025f9049e5.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "CF 923",
@@ -77,7 +77,7 @@
     {
       "title": "Fleetguard AF988 Air Filter, Secondary | Replaces the HiFi Filter SA 10938",
       "sku": "sa-10938-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF988_dcab81df-a4a3-4a6c-aa9b-889cc76215bb.jpg?v=1755780780",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008189_e7b7bf9f0ed3.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "AF988",

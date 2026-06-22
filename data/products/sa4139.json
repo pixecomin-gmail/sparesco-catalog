@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cda59f47-648d-4e38-b738-cc141a637e1a.jpg?v=1723212580",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_75475bab-8157-4096-beb8-7a97d629a86a.jpg?v=1743773628",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4452_f5ba0a9d-422a-46f8-8358-95f65231260c.jpg?v=1755780894"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005962_da4621d47a39.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005963_3391837e77ce.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005964_47e7b91b186e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 4139 Air Filter",
       "sku": "sa-4139-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cda59f47-648d-4e38-b738-cc141a637e1a.jpg?v=1723212580",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005962_da4621d47a39.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "SA 4139",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 26 120 Air Filter | Replaces the HiFi Filter SA 4139",
       "sku": "sa-4139-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_75475bab-8157-4096-beb8-7a97d629a86a.jpg?v=1743773628",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005963_3391837e77ce.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "C 26 120",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF4452 Panel Air Filter Filter | Replaces the HiFi Filter SA 4139",
       "sku": "sa-4139-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4452_f5ba0a9d-422a-46f8-8358-95f65231260c.jpg?v=1755780894",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005964_47e7b91b186e.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "AF4452",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a2eda937-fcce-4fd9-9bc1-99cbac4ce5b5.jpg?v=1723202381",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775945.700.700_c85522fa-32cb-42c8-ad57-d99e2c786b45.jpg?v=1744306033",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4638_9a135439-8f6d-423f-ae2b-11889f95948e.jpg?v=1755780715"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009978_fea91183a1b9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009979_05de311fe577.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009980_15ffae1d3bf8.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14588 Air Filter",
       "sku": "sa-14588-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a2eda937-fcce-4fd9-9bc1-99cbac4ce5b5.jpg?v=1723202381",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009978_fea91183a1b9.jpg",
       "vendor": "",
       "price": 7800,
       "partNumber": "SA 14588",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P775945 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 14588",
       "sku": "sa-14588-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775945.700.700_c85522fa-32cb-42c8-ad57-d99e2c786b45.jpg?v=1744306033",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009979_05de311fe577.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "P775945",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4638 Air Filter | Replaces the HiFi Filter SA 14588",
       "sku": "sa-14588-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4638_9a135439-8f6d-423f-ae2b-11889f95948e.jpg?v=1755780715",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009980_15ffae1d3bf8.jpg",
       "vendor": "",
       "price": 7900,
       "partNumber": "AF4638",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2a971eec-54a5-4706-9cb5-2ee3b7bf49c6.jpg?v=1723211049",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_22a6d624-a418-49b3-bf87-6f2bfea0f1ac.jpg?v=1743773578",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25319_53f538de-4cc7-4ead-b2bf-8697aede69c2.jpg?v=1755780868"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006701_211970850c60.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006702_49061e3ac3b3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006703_a67050a56c8b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 5074 Air Filter",
       "sku": "sa-5074-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2a971eec-54a5-4706-9cb5-2ee3b7bf49c6.jpg?v=1723211049",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006701_211970850c60.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "SA 5074",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 32 338/1 Air Filter | Replaces the HiFi Filter SA 5074",
       "sku": "sa-5074-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_22a6d624-a418-49b3-bf87-6f2bfea0f1ac.jpg?v=1743773578",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006702_49061e3ac3b3.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "C 32 338/1",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF25319 Air Filter Filter - Panel | Replaces the HiFi Filter SA 5074",
       "sku": "sa-5074-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25319_53f538de-4cc7-4ead-b2bf-8697aede69c2.jpg?v=1755780868",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006703_a67050a56c8b.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "AF25319",

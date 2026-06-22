@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b8e9cdb-d2c2-46cf-a412-fe22e90d19f7.jpg?v=1723235419",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CS_51_image1_6f4481a9-36ba-4b05-849f-5bc2f335f7f5.jpg?v=1754909554",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p502518.700.700_a0244744-9f87-475e-bb09-5fc598dd0385.jpg?v=1744306018",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28926_3bbb8ea9-9907-459d-a25b-1fc0cb4e815c.jpg?v=1755780998"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004665_af33db489813.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004666_bd604a5963ba.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004667_77f243a42c58.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004668_b61099b04d5c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 12574 Air Filter",
       "sku": "sa-12574-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7b8e9cdb-d2c2-46cf-a412-fe22e90d19f7.jpg?v=1723235419",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004665_af33db489813.jpg",
       "vendor": "",
       "price": 500,
       "partNumber": "SA 12574",
@@ -37,7 +37,7 @@
     {
       "title": "Mann Filter CS 51 Ventilator | Replaces the HiFi Filter SA 12574",
       "sku": "sa-12574-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CS_51_image1_6f4481a9-36ba-4b05-849f-5bc2f335f7f5.jpg?v=1754909554",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004666_bd604a5963ba.jpg",
       "vendor": "",
       "price": 600,
       "partNumber": "CS 51",
@@ -56,7 +56,7 @@
     {
       "title": "Donaldson P502518 Breather, Hydraulic | Replaces the HiFi Filter SA 12574",
       "sku": "sa-12574-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p502518.700.700_a0244744-9f87-475e-bb09-5fc598dd0385.jpg?v=1744306018",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004667_77f243a42c58.jpg",
       "vendor": "",
       "price": 600,
       "partNumber": "P502518",
@@ -72,7 +72,7 @@
     {
       "title": "Fleetguard HF28926 Hydraulic Filters | Replaces the HiFi Filter SA 12574",
       "sku": "sa-12574-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28926_3bbb8ea9-9907-459d-a25b-1fc0cb4e815c.jpg?v=1755780998",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004668_b61099b04d5c.jpg",
       "vendor": "",
       "price": 1400,
       "partNumber": "HF28926",

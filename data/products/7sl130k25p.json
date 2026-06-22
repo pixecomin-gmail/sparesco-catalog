@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_879c7242-5e24-4764-9733-83869164dfd9.jpg?v=1755092068",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171619.700.700_135aeafa-1b0e-4560-b28a-f2dfa495c9e4.jpg?v=1755092068",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d5729f9c-d416-417d-a9d8-6b833a223627_237929ba-555d-41e5-b79b-e1f850077905.jpg?v=1761655136",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171614.700.700_09c0871c-fc9b-488a-8642-596b510c0e9f.jpg?v=1741350731",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_aff28d71-5064-44e7-8528-274ed41b638e.jpg?v=1741350731",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-540a7536-19d3-4939-824e-3edb5e097f14_8a82443f-eacb-405b-b11d-06ac5930ca13.jpg?v=1741350731"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028016_6c5fb5de1e7f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028017_348f0d6193f5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028018_dff3b4085d1a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028103_032b1583fee4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028104_fce288742318.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028105_98c214fb4171.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec A121G25 Spin-On Filter | Replaces the Eppensteiner 7.SL130K25P",
       "sku": "7-sl130k25p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_879c7242-5e24-4764-9733-83869164dfd9.jpg?v=1755092068",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028016_6c5fb5de1e7f.jpg",
       "vendor": "Filtrec",
       "price": 9100,
       "partNumber": "A121G25",
@@ -50,7 +50,7 @@
     {
       "title": "Donaldson P171619 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 7.SL130K25P",
       "sku": "7-sl130k25p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171619.700.700_135aeafa-1b0e-4560-b28a-f2dfa495c9e4.jpg?v=1755092068",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028017_348f0d6193f5.jpg",
       "vendor": "Donaldson",
       "price": 7600,
       "partNumber": "P171619",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 63710 Spin-On Filter | Replaces the Eppensteiner 7.SL130K25P",
       "sku": "7-sl130k25p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d5729f9c-d416-417d-a9d8-6b833a223627_237929ba-555d-41e5-b79b-e1f850077905.jpg?v=1761655136",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028018_dff3b4085d1a.jpg",
       "vendor": "HiFi Filter",
       "price": 9800,
       "partNumber": "SH 63710",
@@ -113,7 +113,7 @@
     {
       "title": "Donaldson P171614 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 7SL130K25P",
       "sku": "7sl130k25p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171614.700.700_09c0871c-fc9b-488a-8642-596b510c0e9f.jpg?v=1741350731",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028103_032b1583fee4.jpg",
       "vendor": "Donaldson",
       "price": 5900,
       "partNumber": "P171614",
@@ -143,7 +143,7 @@
     {
       "title": "Filtrec A120G25 Spin-On Filter | Replaces the Eppensteiner 7SL130K25P",
       "sku": "7sl130k25p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_aff28d71-5064-44e7-8528-274ed41b638e.jpg?v=1741350731",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028104_fce288742318.jpg",
       "vendor": "Filtrec",
       "price": 7200,
       "partNumber": "A120G25",
@@ -173,7 +173,7 @@
     {
       "title": "HiFi Filter SH 63079 Spin-On Filter | Replaces the Eppensteiner 7SL130K25P",
       "sku": "7sl130k25p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-540a7536-19d3-4939-824e-3edb5e097f14_8a82443f-eacb-405b-b11d-06ac5930ca13.jpg?v=1741350731",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028105_98c214fb4171.jpg",
       "vendor": "HiFi Filter",
       "price": 11100,
       "partNumber": "SH 63079",

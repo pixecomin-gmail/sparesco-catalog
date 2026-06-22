@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_8cc25a00-cdc4-4a5c-8fa7-a85f0640ea1d.jpg?v=1755095598",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3b2b69da-5550-4ada-95a6-61b92b7b293c_79250a27-24c9-49f6-a2c8-8dad080cbdcc.jpg?v=1755095598",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_670f383d-a077-402d-b82e-6f827618cc7d.png?v=1760633029",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_18355445-9ede-46cf-81bf-25154a688e88.jpg?v=1755095601",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3b2b69da-5550-4ada-95a6-61b92b7b293c_f873e935-86b2-4c72-9c09-561e9c76c982.jpg?v=1755095601",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ecce8b51-b847-4acf-9666-554da7c441eb.png?v=1760633032"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015981_b4ca7596496c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015982_c8ba7dd3a879.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015983_e85a9cf65c5e.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015996_ccd4e4167f9c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015997_3228b55b1692.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015998_84255adb9886.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1360E20B Return Filter | Replaces the Eppensteiner 1360H20SLA000P",
       "sku": "1360h20sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_8cc25a00-cdc4-4a5c-8fa7-a85f0640ea1d.jpg?v=1755095598",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015981_b4ca7596496c.jpg",
       "vendor": "",
       "price": 14100,
       "partNumber": "RVR1360E20B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67061 Return Filter | Replaces the Eppensteiner 1360H20SLA000P",
       "sku": "1360h20sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3b2b69da-5550-4ada-95a6-61b92b7b293c_79250a27-24c9-49f6-a2c8-8dad080cbdcc.jpg?v=1755095598",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015982_c8ba7dd3a879.jpg",
       "vendor": "",
       "price": 12300,
       "partNumber": "SH 67061",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR50383 UltraGen III Return Filter | Replaces the Eppensteiner 1360H20SLA000P",
       "sku": "1360h20sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_670f383d-a077-402d-b82e-6f827618cc7d.png?v=1760633029",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015983_e85a9cf65c5e.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50383",

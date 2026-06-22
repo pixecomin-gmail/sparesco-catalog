@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-471baffb-d043-4379-bfea-6a1fdf771263.jpg?v=1723205136",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776386.700.700_8dbb4826-b9b8-4244-9aaa-7335c5af0838.jpg?v=1744306008",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1829_58f079d7-d263-4a88-a63c-27802e4a2280.jpg?v=1755780788"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008144_e7836c8f5b16.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008145_8d9a1eb541c3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008146_b0b44075bb45.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11779 Air Filter",
       "sku": "sa-11779-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-471baffb-d043-4379-bfea-6a1fdf771263.jpg?v=1723205136",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008144_e7836c8f5b16.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "SA 11779",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P776386 Air Filter, Primary Round | Replaces the HiFi Filter SA 11779",
       "sku": "sa-11779-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776386.700.700_8dbb4826-b9b8-4244-9aaa-7335c5af0838.jpg?v=1744306008",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008145_8d9a1eb541c3.jpg",
       "vendor": "",
       "price": 11200,
       "partNumber": "P776386",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF1829 Air Filter | Replaces the HiFi Filter SA 11779",
       "sku": "sa-11779-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1829_58f079d7-d263-4a88-a63c-27802e4a2280.jpg?v=1755780788",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008146_b0b44075bb45.jpg",
       "vendor": "",
       "price": 11400,
       "partNumber": "AF1829",

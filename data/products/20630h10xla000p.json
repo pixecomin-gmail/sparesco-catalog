@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_c10f6048-7e72-4212-95d9-58693d779548.jpg?v=1764690915",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1ecddc3a-bea2-4242-ac5f-3df7b1c478ca_39cf9a13-7b4a-4f99-a0e7-67472f3cb207.jpg?v=1764690915",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203959B_19da39b0-324a-4afc-b60b-d918ea21a8c4.jpg?v=1764690915",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_7880d85f-0899-4adb-950e-f8b01b602bd8.jpg?v=1764690923",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1ecddc3a-bea2-4242-ac5f-3df7b1c478ca_c855ee87-1b39-4c9a-8f76-75ca238b6d4b.jpg?v=1764690923",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203959B_de6eb7d0-5f88-4242-97dc-1bde54fcc460.jpg?v=1764690923"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028227_50183235f0df.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028228_a320c7904bc1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028229_815d98ef96a5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028233_c4572f2b623a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028234_326df26e0731.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028235_6d24addf7eb9.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec XD630G10A DIN Pressure Filter | Replaces the Eppensteiner 20630H10XLA000P",
       "sku": "20630h10xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_c10f6048-7e72-4212-95d9-58693d779548.jpg?v=1764690915",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028227_50183235f0df.jpg",
       "vendor": "Filtrec",
       "price": 29400,
       "partNumber": "XD630G10A",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 84234 DIN Pressure Filter | Replaces the Eppensteiner 20630H10XLA000P",
       "sku": "20630h10xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1ecddc3a-bea2-4242-ac5f-3df7b1c478ca_39cf9a13-7b4a-4f99-a0e7-67472f3cb207.jpg?v=1764690915",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028228_a320c7904bc1.jpg",
       "vendor": "HiFi Filter",
       "price": 29400,
       "partNumber": "SH 84234",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP31172 DIN Pressure Filter | Replaces the Eppensteiner 2.0630H10XLA000P",
       "sku": "2-0630h10xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203959B_de6eb7d0-5f88-4242-97dc-1bde54fcc460.jpg?v=1764690923",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028235_6d24addf7eb9.jpg",
       "vendor": "MicroFit",
       "price": 27100,
       "partNumber": "MFHLP31172",

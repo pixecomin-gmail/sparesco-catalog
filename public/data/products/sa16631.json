@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-142ecbb2-5812-41b1-af0a-fe7688b15028.jpg?v=1723201924",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_783f0dbf-a11c-409b-9d64-8a09a3808b7e.jpg?v=1743773433",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25539_76bb4890-a582-4320-95c8-8152297d750c.jpg?v=1755780703"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000342_8fd07501ffbb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000343_2605e563934c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000344_7f7dbb40a1cc.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16631 Air Filter",
       "sku": "sa-16631-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-142ecbb2-5812-41b1-af0a-fe7688b15028.jpg?v=1723201924",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000342_8fd07501ffbb.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "SA 16631",
@@ -37,7 +37,7 @@
     {
       "title": "Mann Filter C 11 103/2 Air Filter | Replaces the HiFi Filter SA 16631",
       "sku": "sa-16631-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_783f0dbf-a11c-409b-9d64-8a09a3808b7e.jpg?v=1743773433",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000343_2605e563934c.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "C 11 103/2",
@@ -56,7 +56,7 @@
     {
       "title": "Fleetguard AF25539 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16631",
       "sku": "sa-16631-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25539_76bb4890-a582-4320-95c8-8152297d750c.jpg?v=1755780703",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000344_7f7dbb40a1cc.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "AF25539",

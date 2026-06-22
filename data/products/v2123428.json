@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-22fa967e-34fb-4a6c-bd3d-179c9305568a_331c3230-4d82-4c96-a3f6-3ccc0a507309.jpg?v=1755099724",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF212672B_939ea240-8e97-40fa-95e9-49e2c02dbdbb.jpg?v=1755099724",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_5aafbe02-adfe-4588-80c2-5a1588e3a06a.jpg?v=1755099724"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000030_c911fe2e264f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000031_00a24145beb8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000032_6c29b0ca6a62.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52358 Return Filter | Replaces the Argo-Hytos V2123428",
       "sku": "v2123428-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-22fa967e-34fb-4a6c-bd3d-179c9305568a_331c3230-4d82-4c96-a3f6-3ccc0a507309.jpg?v=1755099724",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000030_c911fe2e264f.jpg",
       "vendor": "",
       "price": 29800,
       "partNumber": "SH 52358",
@@ -36,7 +36,7 @@
     {
       "title": "Filtrec R661G15B0 Return Filter | Replaces the Argo-Hytos V2123428",
       "sku": "v2123428-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF212672B_939ea240-8e97-40fa-95e9-49e2c02dbdbb.jpg?v=1755099724",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000031_00a24145beb8.jpg",
       "vendor": "",
       "price": 20200,
       "partNumber": "R661G15B0",
@@ -55,7 +55,7 @@
     {
       "title": "Argo Hytos V2.1234-28 Return Filter",
       "sku": "v2123428-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_5aafbe02-adfe-4588-80c2-5a1588e3a06a.jpg?v=1755099724",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000032_6c29b0ca6a62.jpg",
       "vendor": "",
       "price": 24600,
       "partNumber": "V2.1234-28",

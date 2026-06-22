@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f754f66-5fa5-47b0-a95c-39d2095a5358.jpg?v=1723205605",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_0d7bdabf-979d-47d8-b049-6452305b4f84.jpg?v=1743773489",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4321_fbebe9dd-a81d-4b88-ac81-62e3da794365.jpg?v=1755780793"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007909_59cdcb322334.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007910_8d58dc922b78.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007911_5ec2d7c2c734.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17588 Air Filter",
       "sku": "sa-17588-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9f754f66-5fa5-47b0-a95c-39d2095a5358.jpg?v=1723205605",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007909_59cdcb322334.jpg",
       "vendor": "",
       "price": 11800,
       "partNumber": "SA 17588",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 27 038/1 Air Filter | Replaces the HiFi Filter SA 17588",
       "sku": "sa-17588-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_0d7bdabf-979d-47d8-b049-6452305b4f84.jpg?v=1743773489",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007910_8d58dc922b78.jpg",
       "vendor": "",
       "price": 14400,
       "partNumber": "C 27 038/1",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF4321 Air Filter, Primary | Replaces the HiFi Filter SA 17588",
       "sku": "sa-17588-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4321_fbebe9dd-a81d-4b88-ac81-62e3da794365.jpg?v=1755780793",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007911_5ec2d7c2c734.jpg",
       "vendor": "",
       "price": 12700,
       "partNumber": "AF4321",

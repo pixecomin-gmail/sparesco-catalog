@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202060B_45eb8a2f-9b1a-453d-a18a-a6849ed4694e.jpg?v=1755095207",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p764112.700.700_3feb40fe-60db-46e2-94dd-c6c2e5469b2c.jpg?v=1755095207",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2bfc0083-ad08-497f-bd78-c83d48094a25_28338294-038c-47b4-a391-28da0142c98a.jpg?v=1755095207",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bbbebd2c-3676-4a96-9ecf-386ed0a73940.png?v=1760632606",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202060B_ed90ec96-9f94-4c0d-b7b4-8dde30fb21f4.jpg?v=1755094558",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p764112.700.700_b6f9d8e5-c46c-40a7-b28a-6b0faf9a292c.jpg?v=1755094558",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2bfc0083-ad08-497f-bd78-c83d48094a25_c87bccce-f8a6-48c3-86fd-a20319d7deca.jpg?v=1755094558",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_38f0be3f-d79b-46fd-98a3-8479c36cc0c0.png?v=1760631888"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018901_7bc300a29911.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018902_fd827338f1ca.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018903_55d40bd642a0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018904_e805ff9b2cd4.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020397_a580a62275e3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020398_a293dfd565d6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020399_7d23c53a437a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020400_43e7b0959006.png"
   ],
   "variants": [
     {
       "title": "Filtrec DMD0005E10B Pressure Filter | Replaces the Eppensteiner 183105H20SLE000P",
       "sku": "183105h20sle000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202060B_45eb8a2f-9b1a-453d-a18a-a6849ed4694e.jpg?v=1755095207",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018901_7bc300a29911.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "DMD0005E10B",
@@ -53,7 +53,7 @@
     {
       "title": "Donaldson P764112 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 183105H20SLE000P",
       "sku": "183105h20sle000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p764112.700.700_3feb40fe-60db-46e2-94dd-c6c2e5469b2c.jpg?v=1755095207",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018902_fd827338f1ca.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "P764112",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 84012 Pressure Filter | Replaces the Eppensteiner 183105H20SLE000P",
       "sku": "183105h20sle000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2bfc0083-ad08-497f-bd78-c83d48094a25_28338294-038c-47b4-a391-28da0142c98a.jpg?v=1755095207",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018903_55d40bd642a0.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "SH 84012",
@@ -114,7 +114,7 @@
     {
       "title": "MicroFit® MFHLP30587 UltraGen III Pressure Filter | Replaces the Eppensteiner 183105H20SLE000P",
       "sku": "183105h20sle000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bbbebd2c-3676-4a96-9ecf-386ed0a73940.png?v=1760632606",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018904_e805ff9b2cd4.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30587",

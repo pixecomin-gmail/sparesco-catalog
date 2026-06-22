@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7598fae6-a55f-4a2e-8236-1c1719082b08.jpg?v=1723204207",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_16_219_x_image1_4215eb8b-9331-43b5-a952-6aefc2f497d5.jpg?v=1754909291",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF976_acc2739f-6e51-49da-a6cf-16a23465bcab.jpg?v=1755780769"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008661_4471f88efeff.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008662_b2dbeab91b22.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008663_3b02edf83009.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10926 Air Filter",
       "sku": "sa-10926-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7598fae6-a55f-4a2e-8236-1c1719082b08.jpg?v=1723204207",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008661_4471f88efeff.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "SA 10926",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter CF 16 219 x Secondary Element | Replaces the HiFi Filter SA 10926",
       "sku": "sa-10926-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_16_219_x_image1_4215eb8b-9331-43b5-a952-6aefc2f497d5.jpg?v=1754909291",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008662_b2dbeab91b22.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "CF 16 219 x",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF976 Air Filter, Secondary | Replaces the HiFi Filter SA 10926",
       "sku": "sa-10926-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF976_acc2739f-6e51-49da-a6cf-16a23465bcab.jpg?v=1755780769",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008663_3b02edf83009.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "AF976",

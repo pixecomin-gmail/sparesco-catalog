@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f07a3b35-1d40-4dd1-8f3b-467df281996d.jpg?v=1723204654",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788896.700.700_da7226d3-07ba-4fcc-af97-2cc3f52a81bc.jpg?v=1744306169",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4248_15dcd59e-fdbc-4113-a5a7-160b96660c31.jpg?v=1755780771"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008404_0af1835bacbc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008405_1eb247edf006.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008406_da99bd3b4848.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17435 Air Filter",
       "sku": "sa-17435-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f07a3b35-1d40-4dd1-8f3b-467df281996d.jpg?v=1723204654",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008404_0af1835bacbc.jpg",
       "vendor": "",
       "price": 12800,
       "partNumber": "SA 17435",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P788896 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 17435",
       "sku": "sa-17435-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788896.700.700_da7226d3-07ba-4fcc-af97-2cc3f52a81bc.jpg?v=1744306169",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008405_1eb247edf006.jpg",
       "vendor": "",
       "price": 9100,
       "partNumber": "P788896",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4248 Air Filter | Replaces the HiFi Filter SA 17435",
       "sku": "sa-17435-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4248_15dcd59e-fdbc-4113-a5a7-160b96660c31.jpg?v=1755780771",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008406_da99bd3b4848.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "AF4248",

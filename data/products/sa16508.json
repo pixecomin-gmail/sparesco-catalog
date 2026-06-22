@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf65e4be-2781-4934-8906-d5dd1590a7b8.jpg?v=1748456054",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p601560-5.700.700_af0fbef7-5ce7-4383-9231-c584038fd762.jpg?v=1748456054",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_3240_image1_54544fc0-0bd1-48a2-9652-6e80decb6695.jpg?v=1754909278",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4199_16d41e9b-3cff-4334-872b-ded34e9b845f.jpg?v=1755780763"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008864_3d501d2f5cb7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008865_b3231233e16f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008866_357ec35d165d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008867_d462883cd43f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16508 Air Filter",
       "sku": "sa-16508-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf65e4be-2781-4934-8906-d5dd1590a7b8.jpg?v=1748456054",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008864_3d501d2f5cb7.jpg",
       "vendor": "",
       "price": 5200,
       "partNumber": "SA 16508",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P601560 Air Filter, Safety Obround | Replaces the HiFi Filter SA 16508",
       "sku": "sa-16508-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p601560-5.700.700_af0fbef7-5ce7-4383-9231-c584038fd762.jpg?v=1748456054",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008865_b3231233e16f.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "P601560",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CF 3240 Secondary Element | Replaces the HiFi Filter SA 16508",
       "sku": "sa-16508-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_3240_image1_54544fc0-0bd1-48a2-9652-6e80decb6695.jpg?v=1754909278",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008866_357ec35d165d.jpg",
       "vendor": "",
       "price": 7500,
       "partNumber": "CF 3240",
@@ -74,7 +74,7 @@
     {
       "title": "Fleetguard AF4199 Air, Secondary | Replaces the HiFi Filter SA 16508",
       "sku": "sa-16508-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4199_16d41e9b-3cff-4334-872b-ded34e9b845f.jpg?v=1755780763",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008867_d462883cd43f.jpg",
       "vendor": "",
       "price": 10900,
       "partNumber": "AF4199",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200337B-NB_7fb0e768-da60-4431-9095-8c219450d50d.jpg?v=1748450509",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_26334d3c-1b06-4e2f-8f15-c4d2591926f3.jpg?v=1748450509",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b37813c-f787-4f2e-968a-7a0cf040d89a_b207a162-5c98-4837-8cf0-5c016a61e80e.jpg?v=1748450509",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200337B-NB_f9b3a24a-3c79-4b2e-962c-e02c4e2e3298.jpg?v=1748450504",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_9e095628-fa6c-41ce-85f6-2e22faa4ba05.jpg?v=1748450504",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b37813c-f787-4f2e-968a-7a0cf040d89a_236367d0-c7dd-4e12-a6da-cf495de082ed.jpg?v=1748450504"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005811_24b136f35da3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005812_fef94c705a42.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005813_9a123e39dba2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005817_9511464dc22c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005818_b0713d39360d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005819_50e9d32b60ba.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30112 Pressure Filter | Replaces the Eppensteiner 16.9800TH6XLE000V",
       "sku": "16-9800th6xle000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200337B-NB_f9b3a24a-3c79-4b2e-962c-e02c4e2e3298.jpg?v=1748450504",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005817_9511464dc22c.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "MFHLP30112",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec D122G06AV Pressure Filter | Replaces the Eppensteiner 169800TH6XLE000V",
       "sku": "169800th6xle000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_26334d3c-1b06-4e2f-8f15-c4d2591926f3.jpg?v=1748450509",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005812_fef94c705a42.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "D122G06AV",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 87166 Pressure Filter | Replaces the Eppensteiner 169800TH6XLE000V",
       "sku": "169800th6xle000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b37813c-f787-4f2e-968a-7a0cf040d89a_b207a162-5c98-4837-8cf0-5c016a61e80e.jpg?v=1748450509",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005813_9a123e39dba2.jpg",
       "vendor": "",
       "price": 11200,
       "partNumber": "SH 87166",

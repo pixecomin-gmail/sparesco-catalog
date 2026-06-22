@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12fbf094-5153-4371-b419-254d203f8acc.jpg?v=1723212187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8e5d72a9-5657-45e1-94ff-8dabcd94ec20.jpg?v=1743773620",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/8S8GmZwVUqY5bA9AD42awT8WeB6SlNW4b93SG4v1FmH08S5lYw9XSBJ23eLDJ_cf040e6e-4c63-4139-81e3-d89d7bc303ac.png?v=1751027851"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006271_cb329409aac5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006272_49062b23279d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006273_90c576303253.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 8569 Air Filter",
       "sku": "sa-8569-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12fbf094-5153-4371-b419-254d203f8acc.jpg?v=1723212187",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006271_cb329409aac5.jpg",
       "vendor": "",
       "price": 1400,
       "partNumber": "SA 8569",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 24 010 Air Filter | Replaces the HiFi Filter SA 8569",
       "sku": "sa-8569-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8e5d72a9-5657-45e1-94ff-8dabcd94ec20.jpg?v=1743773620",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006272_49062b23279d.jpg",
       "vendor": "",
       "price": 1400,
       "partNumber": "C 24 010",
@@ -57,7 +57,7 @@
     {
       "title": "FIL Filter HP 5076 Filter Insert | Replaces the HiFi Filter SA 8569",
       "sku": "sa-8569-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/8S8GmZwVUqY5bA9AD42awT8WeB6SlNW4b93SG4v1FmH08S5lYw9XSBJ23eLDJ_cf040e6e-4c63-4139-81e3-d89d7bc303ac.png?v=1751027851",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006273_90c576303253.png",
       "vendor": "",
       "price": 1300,
       "partNumber": "HP 5076",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f105d0d9-05ea-42ff-b850-0cfc3c391677_d9f65e86-1a65-49bd-9f23-9236225f5403.jpg?v=1761217972",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_7b0c91e5-0855-4369-8d34-d23b9742cace.png?v=1761217972",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f105d0d9-05ea-42ff-b850-0cfc3c391677_4dcd4f45-295a-449a-b5f5-a48cbe03f6c7.jpg?v=1761217973",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_9881b3a4-9ce2-43f6-9f50-e5a4eda7a76f.png?v=1761217973"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000985_d63538acc099.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000986_ba4461dac382.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002092_087240d853f8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002093_9a862f4ad458.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter OA 1098 Air/Oil Separator | Replaces the SF Filter SAO 55980",
       "sku": "sao-55980-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f105d0d9-05ea-42ff-b850-0cfc3c391677_4dcd4f45-295a-449a-b5f5-a48cbe03f6c7.jpg?v=1761217973",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002092_087240d853f8.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "OA 1098",
@@ -34,7 +34,7 @@
     {
       "title": "Mann Filter LE 6002 Compressed Air-Oil Separation | Replaces the SF Filter SAO55980",
       "sku": "sao55980-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_7b0c91e5-0855-4369-8d34-d23b9742cace.png?v=1761217972",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000986_ba4461dac382.png",
       "vendor": "",
       "price": 0,
       "partNumber": "LE 6002",

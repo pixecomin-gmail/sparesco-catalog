@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7bdb5039-d6dd-4e5b-b2cb-1a1c12686167.jpg?v=1723202936",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770088.700.700_e074eeb2-523d-41b4-af70-ce119e8e6a52.jpg?v=1744306023",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4100_593ff1d7-028b-4ad9-96b0-428998c80e9d.jpg?v=1755780734"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009584_fa1384dcdce2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009585_7f53ec5a61a0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009586_c628c85d61a1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14050 Air Filter",
       "sku": "sa-14050-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7bdb5039-d6dd-4e5b-b2cb-1a1c12686167.jpg?v=1723202936",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009584_fa1384dcdce2.jpg",
       "vendor": "",
       "price": 10700,
       "partNumber": "SA 14050",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson X770088 Air Filter, Primary Duralite | Replaces the HiFi Filter SA 14050",
       "sku": "sa-14050-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770088.700.700_e074eeb2-523d-41b4-af70-ce119e8e6a52.jpg?v=1744306023",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009585_7f53ec5a61a0.jpg",
       "vendor": "",
       "price": 9700,
       "partNumber": "X770088",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4100 Air Filter | Replaces the HiFi Filter SA 14050",
       "sku": "sa-14050-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4100_593ff1d7-028b-4ad9-96b0-428998c80e9d.jpg?v=1755780734",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009586_c628c85d61a1.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "AF4100",

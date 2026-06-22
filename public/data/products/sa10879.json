@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ec77caa8-7ab4-46db-b673-6d963ee136a9.jpg?v=1723205250",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p122425.700.700_c5ca4158-6962-42a0-aeb4-6f5e35291234.jpg?v=1744305986",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF929_248125f5-d0dc-4443-81f2-5d3f09bef60e.jpg?v=1755780776"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008082_af4704764baa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008083_34c3da054c37.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008084_fa40f1f5108e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10879 Air Filter",
       "sku": "sa-10879-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ec77caa8-7ab4-46db-b673-6d963ee136a9.jpg?v=1723205250",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008082_af4704764baa.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "SA 10879",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P122425 Air Filter, Safety | Replaces the HiFi Filter SA 10879",
       "sku": "sa-10879-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p122425.700.700_c5ca4158-6962-42a0-aeb4-6f5e35291234.jpg?v=1744305986",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008083_34c3da054c37.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "P122425",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF929 Air Filter, Secondary | Replaces the HiFi Filter SA 10879",
       "sku": "sa-10879-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF929_248125f5-d0dc-4443-81f2-5d3f09bef60e.jpg?v=1755780776",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008084_fa40f1f5108e.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "AF929",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d0110b6a-c4d7-49ef-be10-9d73580b5ce4.jpg?v=1723204281",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776356.700.700_d18ca95b-0995-4306-a837-37176ee905d6.jpg?v=1744306177",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25528K_848ac313-c412-46b9-ba95-0befebcff1dd.jpg?v=1755780761"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008614_987c20dca526.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008615_dc46339fe29c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008616_7d48df552e8c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17473 K Air Filter",
       "sku": "sa-17473-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d0110b6a-c4d7-49ef-be10-9d73580b5ce4.jpg?v=1723204281",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008614_987c20dca526.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "SA 17473 K",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P776356 Air Filter, Primary Finned | Replaces the HiFi Filter SA 17473 K",
       "sku": "sa-17473-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776356.700.700_d18ca95b-0995-4306-a837-37176ee905d6.jpg?v=1744306177",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008615_dc46339fe29c.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "P776356",
@@ -56,7 +56,7 @@
     {
       "title": "Fleetguard AF25528K Air Filter, Primary | Replaces the HiFi Filter SA 17473 K",
       "sku": "sa-17473-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25528K_848ac313-c412-46b9-ba95-0befebcff1dd.jpg?v=1755780761",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008616_7d48df552e8c.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "AF25528K",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203959B_9092ae43-3380-4c4d-b8f9-36def815d6a4.jpg?v=1764692403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-873b0f73-9417-4fd6-ba27-b6e7977aa112_48b96882-046f-473d-8ba9-3d4d772db2f1.jpg?v=1764692403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630B_5b0ee90c-afa8-4aaf-b831-6ee2f72a2f91.jpg?v=1764692403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203959B_0fb2ddd4-a37d-43c5-bcd4-221c83c5e768.jpg?v=1764692405",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-873b0f73-9417-4fd6-ba27-b6e7977aa112_eb3969b2-1a87-4e36-b2a4-d65077f57711.jpg?v=1764692405",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630B_df284d6d-9fc3-4d2b-b3bd-92aaf3c06db5.jpg?v=1764692405"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008091_90c08818e051.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008092_94247e3e7980.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008093_1c5c52161e50.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008097_5a4fe3c3383b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008098_9e270f4a1e85.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008099_42e9ae99097d.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40939 DIN Pressure Filter | Replaces the Eppensteiner 2.0630H20SLB000P",
       "sku": "2-0630h20slb000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203959B_0fb2ddd4-a37d-43c5-bcd4-221c83c5e768.jpg?v=1764692405",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008097_5a4fe3c3383b.jpg",
       "vendor": "",
       "price": 46500,
       "partNumber": "MFHHP40939",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 84326 DIN Pressure Filter | Replaces the Eppensteiner 20630H20SLB000P",
       "sku": "20630h20slb000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-873b0f73-9417-4fd6-ba27-b6e7977aa112_48b96882-046f-473d-8ba9-3d4d772db2f1.jpg?v=1764692403",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008092_94247e3e7980.jpg",
       "vendor": "",
       "price": 53500,
       "partNumber": "SH 84326",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec XD630G25B DIN Pressure Filter | Replaces the Eppensteiner 20630H20SLB000P",
       "sku": "20630h20slb000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630B_5b0ee90c-afa8-4aaf-b831-6ee2f72a2f91.jpg?v=1764692403",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008093_1c5c52161e50.jpg",
       "vendor": "",
       "price": 65600,
       "partNumber": "XD630G25B",

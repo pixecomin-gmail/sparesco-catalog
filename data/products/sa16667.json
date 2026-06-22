@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98fa9ca7-ea00-4773-b3be-97c2af666c2e.jpg?v=1723203098",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_23_001_image1_7013fa1b-6210-40cb-99ff-3381196706c4.jpg?v=1754909267",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26491_faf2e592-f434-4f24-8959-fe087fa21612.jpg?v=1755780738"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009451_8405d4dc444d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009452_8f9be7939e3f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009453_28c855b31c6b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16667 Air Filter",
       "sku": "sa-16667-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98fa9ca7-ea00-4773-b3be-97c2af666c2e.jpg?v=1723203098",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009451_8405d4dc444d.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "SA 16667",
@@ -37,7 +37,7 @@
     {
       "title": "Mann Filter CF 23 001 Secondary Element | Replaces the HiFi Filter SA 16667",
       "sku": "sa-16667-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_23_001_image1_7013fa1b-6210-40cb-99ff-3381196706c4.jpg?v=1754909267",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009452_8f9be7939e3f.jpg",
       "vendor": "",
       "price": 8900,
       "partNumber": "CF 23 001",
@@ -56,7 +56,7 @@
     {
       "title": "Fleetguard AF26491 Air Filter, Secondary | Replaces the HiFi Filter SA 16667",
       "sku": "sa-16667-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26491_faf2e592-f434-4f24-8959-fe087fa21612.jpg?v=1755780738",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009453_28c855b31c6b.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "AF26491",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-34c019f4-24a6-4aac-b56a-2f9f74bfe9f7.jpg?v=1723205704",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131397.700.700_2a62497d-321c-4730-aa16-faf8a8ed9115.jpg?v=1744306008",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1887M_bb573095-abd0-4493-a86a-ed9cf6c4164c.jpg?v=1755780792"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007852_bdc4b697d1c1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007853_d7445aa7fd75.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007854_cd379cfa7e36.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11837 Air Filter",
       "sku": "sa-11837-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-34c019f4-24a6-4aac-b56a-2f9f74bfe9f7.jpg?v=1723205704",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007852_bdc4b697d1c1.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "SA 11837",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P131397 Air Filter, Primary Round | Replaces the HiFi Filter SA 11837",
       "sku": "sa-11837-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131397.700.700_2a62497d-321c-4730-aa16-faf8a8ed9115.jpg?v=1744306008",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007853_d7445aa7fd75.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "P131397",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1887M Air Filter, Primary | Replaces the HiFi Filter SA 11837",
       "sku": "sa-11837-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1887M_bb573095-abd0-4493-a86a-ed9cf6c4164c.jpg?v=1755780792",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007854_cd379cfa7e36.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "AF1887M",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4683b882-29cb-4cec-9eb3-c3b930599f5c.jpg?v=1723206565",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_21_431_image1_2a6dd5f7-e399-4763-902c-968586b232dd.jpg?v=1754909326",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF434KM_e04b1d6a-2d86-4869-ace5-b381f885e81c.jpg?v=1755780814"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007523_a680284a7cab.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007524_df7957ed2e6f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007525_7890f0840a4c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10384 K Air Filter",
       "sku": "sa-10384-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4683b882-29cb-4cec-9eb3-c3b930599f5c.jpg?v=1723206565",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007523_a680284a7cab.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "SA 10384 K",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 21 431 Air Filter | Replaces the HiFi Filter SA 10384 K",
       "sku": "sa-10384-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_21_431_image1_2a6dd5f7-e399-4763-902c-968586b232dd.jpg?v=1754909326",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007524_df7957ed2e6f.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "C 21 431",
@@ -60,7 +60,7 @@
     {
       "title": "Fleetguard AF434KM Air Filter, Primary | Replaces the HiFi Filter SA 10384 K",
       "sku": "sa-10384-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF434KM_e04b1d6a-2d86-4869-ace5-b381f885e81c.jpg?v=1755780814",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007525_7890f0840a4c.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "AF434KM",

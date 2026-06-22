@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_ccbbdd24-788b-43e5-8feb-8d1833b3cc09.jpg?v=1766021306",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775732.700.700_d2125d98-d04d-458d-ba69-17ccaf4a3026.jpg?v=1766021306",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1925K_f0474df9-f175-4b5b-a21c-39d17b30e21d.jpg?v=1766021306"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005060_2e62c18f4130.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005061_5570c1b4d554.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005062_eb4302e8f60d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11875 K Air Filter",
       "sku": "sa-11875-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_ccbbdd24-788b-43e5-8feb-8d1833b3cc09.jpg?v=1766021306",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005060_2e62c18f4130.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "SA 11875 K",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P775732 Air Filter, Primary Finned | Replaces the HiFi Filter SA 11875 K",
       "sku": "sa-11875-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p775732.700.700_d2125d98-d04d-458d-ba69-17ccaf4a3026.jpg?v=1766021306",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005061_5570c1b4d554.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "P775732",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF1925K Air Filter | Replaces the HiFi Filter SA 11875 K",
       "sku": "sa-11875-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1925K_f0474df9-f175-4b5b-a21c-39d17b30e21d.jpg?v=1766021306",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005062_eb4302e8f60d.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "AF1925K",

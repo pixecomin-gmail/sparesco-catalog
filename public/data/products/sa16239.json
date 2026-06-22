@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-45c3e1bf-0ce1-445a-b859-74585e0f0c1e.jpg?v=1723203936",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136258.700.700_d68cc67a-dc28-4ee8-a668-d92df0df3926.jpg?v=1744306079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF817K_168b81a6-3d6e-4b14-a0fb-7bf0fe8aa33a.jpg?v=1755780765"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008875_f9fbdc460be2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008876_0a170b8098fa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008877_2322b5d60b48.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16239 Air Filter",
       "sku": "sa-16239-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-45c3e1bf-0ce1-445a-b859-74585e0f0c1e.jpg?v=1723203936",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008875_f9fbdc460be2.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SA 16239",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P136258 Air Filter, Primary Finned | Replaces the HiFi Filter SA 16239",
       "sku": "sa-16239-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136258.700.700_d68cc67a-dc28-4ee8-a668-d92df0df3926.jpg?v=1744306079",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008876_0a170b8098fa.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "P136258",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF817K Air Filter, Primary | Replaces the HiFi Filter SA 16239",
       "sku": "sa-16239-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF817K_168b81a6-3d6e-4b14-a0fb-7bf0fe8aa33a.jpg?v=1755780765",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008877_2322b5d60b48.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "AF817K",

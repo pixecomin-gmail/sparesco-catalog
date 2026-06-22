@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_d4c223da-7d8d-4a16-8dbb-9998d271c4de.jpg?v=1766020831",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p042343.700.700_be6cc88a-6f8f-40d6-9d5b-2528498f428f.jpg?v=1766020831",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF908_8f9b17a1-ea94-48c4-854e-76f432d63463.jpg?v=1766020831"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009653_3876896d25c8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009654_52b1c272938a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009655_38af88286a4f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10858 Air Filter",
       "sku": "sa-10858-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_d4c223da-7d8d-4a16-8dbb-9998d271c4de.jpg?v=1766020831",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009653_3876896d25c8.jpg",
       "vendor": "",
       "price": 38400,
       "partNumber": "SA 10858",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P042343 Air Filter, Primary Round | Replaces the HiFi Filter SA 10858",
       "sku": "sa-10858-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p042343.700.700_be6cc88a-6f8f-40d6-9d5b-2528498f428f.jpg?v=1766020831",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009654_52b1c272938a.jpg",
       "vendor": "",
       "price": 18000,
       "partNumber": "P042343",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF908 Air Filter, Primary | Replaces the HiFi Filter SA 10858",
       "sku": "sa-10858-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF908_8f9b17a1-ea94-48c4-854e-76f432d63463.jpg?v=1766020831",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009655_38af88286a4f.jpg",
       "vendor": "",
       "price": 19100,
       "partNumber": "AF908",

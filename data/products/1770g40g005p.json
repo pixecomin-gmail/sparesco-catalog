@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF207713B_52cd5e1a-e567-44da-9baf-db625303f25a.jpg?v=1741363567",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b05951c4-c460-4fee-a646-dd7e46cfd6c5_25d70ae5-5523-4116-9fd2-2a7df03a0c72.jpg?v=1741363567",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b7c171c7-20a1-4c87-b449-6f74badacb09.png?v=1760634471",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF207713B_4fd4e4ce-5070-4770-a5bd-96810552454c.jpg?v=1741363571",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b05951c4-c460-4fee-a646-dd7e46cfd6c5_a9e30fb5-12a8-417e-a18f-b8d9d0ca3a40.jpg?v=1741363571",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7d31e7c6-5640-4101-a26a-a18c5f8aad4c.png?v=1760634465"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008699_076bb2b724ef.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008700_a2eda9093245.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008701_0a11987704c1.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008702_348f5031650d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008703_b3fbb3385d49.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008704_655e6ed4d013.png"
   ],
   "variants": [
     {
       "title": "Filtrec RLR70B40B Return Filter | Replaces the Eppensteiner 1770G40G005P",
       "sku": "1770g40g005p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF207713B_52cd5e1a-e567-44da-9baf-db625303f25a.jpg?v=1741363567",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008699_076bb2b724ef.jpg",
       "vendor": "",
       "price": 10600,
       "partNumber": "RLR70B40B",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 65030 Return Filter | Replaces the Eppensteiner 1770G40G005P",
       "sku": "1770g40g005p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b05951c4-c460-4fee-a646-dd7e46cfd6c5_25d70ae5-5523-4116-9fd2-2a7df03a0c72.jpg?v=1741363567",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008700_a2eda9093245.jpg",
       "vendor": "",
       "price": 18400,
       "partNumber": "SH 65030",
@@ -84,7 +84,7 @@
     {
       "title": "MicroFit® MFHR53975 UltraGen III Return Filter | Replaces the Eppensteiner 1770G40G005P",
       "sku": "1770g40g005p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b7c171c7-20a1-4c87-b449-6f74badacb09.png?v=1760634471",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008701_0a11987704c1.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR53975",

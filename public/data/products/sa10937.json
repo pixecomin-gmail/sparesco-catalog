@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5a8c8a9b-0ed5-4b86-a448-3ac6d4cc69c7_8f9ed8ff-e5fa-49c4-8907-6a02293dbf74.jpg?v=1762811650",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p137640.700.700_ce608720-6b81-4b59-b8e4-18c27f814495.jpg?v=1762811650",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF987_fd393f24-82e8-4c64-aea4-a72a95b08145.jpg?v=1762811650"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006611_5abbc91e4aa9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006612_6774e074ea69.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006613_508361a0eaca.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10937 Air Filter",
       "sku": "sa-10937-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5a8c8a9b-0ed5-4b86-a448-3ac6d4cc69c7_8f9ed8ff-e5fa-49c4-8907-6a02293dbf74.jpg?v=1762811650",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006611_5abbc91e4aa9.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SA 10937",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P137640 Air Filter, Safety | Replaces the HiFi Filter SA 10937",
       "sku": "sa-10937-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p137640.700.700_ce608720-6b81-4b59-b8e4-18c27f814495.jpg?v=1762811650",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006612_6774e074ea69.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "P137640",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF987 Air Filter, Secondary | Replaces the HiFi Filter SA 10937",
       "sku": "sa-10937-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF987_fd393f24-82e8-4c64-aea4-a72a95b08145.jpg?v=1762811650",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006613_508361a0eaca.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "AF987",

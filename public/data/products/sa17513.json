@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2f139caf-7a0f-478c-b53d-95df0f1e55b1.jpg?v=1748456093",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/dba8629.700.700_9513a0c8-fed1-408b-bfe9-0cc12fb13096.jpg?v=1748456093",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_cb7480e9-8277-47e0-8f5c-148c4d396059.jpg?v=1748456093"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008772_d2b0c947173b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008773_1a78f4b04c67.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008774_f48cf333b2ec.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17513 Air Filter",
       "sku": "sa-17513-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2f139caf-7a0f-478c-b53d-95df0f1e55b1.jpg?v=1748456093",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008772_d2b0c947173b.jpg",
       "vendor": "",
       "price": 18200,
       "partNumber": "SA 17513",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson DBA8629 Air Filter, Primary Round Powercore | Replaces the HiFi Filter SA 17513",
       "sku": "sa-17513-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/dba8629.700.700_9513a0c8-fed1-408b-bfe9-0cc12fb13096.jpg?v=1748456093",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008773_1a78f4b04c67.jpg",
       "vendor": "",
       "price": 10000,
       "partNumber": "DBA8629",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 49 002 Air Filter | Replaces the HiFi Filter SA 17513",
       "sku": "sa-17513-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_cb7480e9-8277-47e0-8f5c-148c4d396059.jpg?v=1748456093",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008774_f48cf333b2ec.jpg",
       "vendor": "",
       "price": 11200,
       "partNumber": "C 49 002",

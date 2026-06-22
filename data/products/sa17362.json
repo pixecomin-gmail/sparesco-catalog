@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e958405b-4472-471b-85c3-6a8af09139c1.jpg?v=1723202518",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_6c7046de-cce3-453f-8c90-eb4bef35a4ab.jpg?v=1743773440",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4408_22e44e04-6ea9-4a50-9ad6-10cb00a0ea60.jpg?v=1755780728"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009856_2a1d718ddf0c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009857_826c67ca6cef.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009858_7518cdbda144.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17362 Air Filter",
       "sku": "sa-17362-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e958405b-4472-471b-85c3-6a8af09139c1.jpg?v=1723202518",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009856_2a1d718ddf0c.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "SA 17362",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 24 820 Air Filter | Replaces the HiFi Filter SA 17362",
       "sku": "sa-17362-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_6c7046de-cce3-453f-8c90-eb4bef35a4ab.jpg?v=1743773440",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009857_826c67ca6cef.jpg",
       "vendor": "",
       "price": 8600,
       "partNumber": "C 24 820",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF4408 Air Filter, Primary | Replaces the HiFi Filter SA 17362",
       "sku": "sa-17362-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4408_22e44e04-6ea9-4a50-9ad6-10cb00a0ea60.jpg?v=1755780728",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009858_7518cdbda144.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "AF4408",

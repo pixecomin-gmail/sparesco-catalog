@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_ffdf30c3-13a6-4712-be7b-6678c506415c.jpg?v=1762277496",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a568b803-b63f-4ce3-bd47-a27e4a9c37c5_ddfb0b14-c060-4582-9d64-58acba6fc6c0.jpg?v=1762277496",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e0101880-4bd7-4d84-9333-56a857ccfd28.png?v=1762277496",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_8ea60227-f123-406f-bf26-5af02e8cf7ff.jpg?v=1762277495",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a568b803-b63f-4ce3-bd47-a27e4a9c37c5_93f7e2f0-f7bc-4f06-8052-a0a04776e235.jpg?v=1762277495",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_f9d1b723-2924-4e76-b766-b31e3acacca2.png?v=1762277495"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028821_8dc0b3dd3c00.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028822_6f22ffdcf39f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028823_29de19be899b.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028827_683d4d057123.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028828_c534367d7803.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028829_2741cda42f3c.png"
   ],
   "variants": [
     {
       "title": "Filtrec DHD660G20B Pressure Filter | Replaces the Eppensteiner 9660H20SLA000P",
       "sku": "9660h20sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_ffdf30c3-13a6-4712-be7b-6678c506415c.jpg?v=1762277496",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028821_8dc0b3dd3c00.jpg",
       "vendor": "Filtrec",
       "price": 17500,
       "partNumber": "DHD660G20B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 75062 Pressure Filter | Replaces the Eppensteiner 9660H20SLA000P",
       "sku": "9660h20sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a568b803-b63f-4ce3-bd47-a27e4a9c37c5_ddfb0b14-c060-4582-9d64-58acba6fc6c0.jpg?v=1762277496",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028822_6f22ffdcf39f.jpg",
       "vendor": "HiFi Filter",
       "price": 10500,
       "partNumber": "SH 75062",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP32195 UltraGen III Filter | Replaces the Eppensteiner 9660H20SLA000P",
       "sku": "9660h20sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e0101880-4bd7-4d84-9333-56a857ccfd28.png?v=1762277496",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028823_29de19be899b.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP32195",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2c4a8a96-ea26-4665-9617-09328115453c.jpg?v=1723203949",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781471.700.700_740316e1-e2a5-41c0-839a-6ce9023a0435.jpg?v=1744306082",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25610_9914afd9-9d86-4324-8b0e-c756985b028f.jpg?v=1755780759"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008857_899616d736ad.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008858_13b9dc07cde0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008859_433484325332.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16276 Air Filter",
       "sku": "sa-16276-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2c4a8a96-ea26-4665-9617-09328115453c.jpg?v=1723203949",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008857_899616d736ad.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "SA 16276",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P781471 Air Filter, Safety | Replaces the HiFi Filter SA 16276",
       "sku": "sa-16276-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781471.700.700_740316e1-e2a5-41c0-839a-6ce9023a0435.jpg?v=1744306082",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008858_13b9dc07cde0.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "P781471",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25610 Air Intake Systems | Replaces the HiFi Filter SA 16276",
       "sku": "sa-16276-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25610_9914afd9-9d86-4324-8b0e-c756985b028f.jpg?v=1755780759",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008859_433484325332.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "AF25610",

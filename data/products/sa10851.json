@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4bf3517e-a918-4114-9d45-f63c4e465aea.jpg?v=1723202703",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131280.700.700_7a228d66-0143-4c1d-b3bc-120f1c5799c3.jpg?v=1744305985",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF901_bce0da60-02b8-47ab-9ff4-6d406765c130.jpg?v=1755780731"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009707_ebbe245fe233.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009708_528a005b1f2d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009709_201ff83330d7.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10851 Air Filter",
       "sku": "sa-10851-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4bf3517e-a918-4114-9d45-f63c4e465aea.jpg?v=1723202703",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009707_ebbe245fe233.jpg",
       "vendor": "",
       "price": 12900,
       "partNumber": "SA 10851",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P131280 Air Filter, Primary Round | Replaces the HiFi Filter SA 10851",
       "sku": "sa-10851-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131280.700.700_7a228d66-0143-4c1d-b3bc-120f1c5799c3.jpg?v=1744305985",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009708_528a005b1f2d.jpg",
       "vendor": "",
       "price": 14200,
       "partNumber": "P131280",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF901 Air Filter, Primary | Replaces the HiFi Filter SA 10851",
       "sku": "sa-10851-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF901_bce0da60-02b8-47ab-9ff4-6d406765c130.jpg?v=1755780731",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009709_201ff83330d7.jpg",
       "vendor": "",
       "price": 12100,
       "partNumber": "AF901",

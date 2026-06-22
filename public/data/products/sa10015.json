@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-38eb5317-8a44-4286-b6a7-7f9e3ceec594.jpg?v=1748455966",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606951.700.700_386462eb-7eca-41c4-99f3-683ae3193140.jpg?v=1748455966",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_1415_image1.jpg?v=1754909307"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000040_380f7a1d522e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000041_2056b1f5330c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000042_8e116346ab28.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10015 Air Filter",
       "sku": "sa-10015-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-38eb5317-8a44-4286-b6a7-7f9e3ceec594.jpg?v=1748455966",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000040_380f7a1d522e.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "SA 10015",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P606951 Air Filter, Primary Round | Replaces the HiFi Filter SA 10015",
       "sku": "sa-10015-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606951.700.700_386462eb-7eca-41c4-99f3-683ae3193140.jpg?v=1748455966",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000041_2056b1f5330c.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "P606951",
@@ -54,7 +54,7 @@
     {
       "title": "Mann Filter C 1415 Air Filter | Replaces the HiFi Filter SA 10015",
       "sku": "sa-10015-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_1415_image1.jpg?v=1754909307",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000042_8e116346ab28.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "C 1415",

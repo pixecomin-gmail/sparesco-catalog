@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/S540_aed82f36-264a-4462-a293-46de1f6942ba.jpg?v=1755097400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6421e62a-52e6-4995-b5f0-5e58ae1ee1ae_b4108c99-0d89-46d3-92d4-ada4a351a9cd.jpg?v=1755097400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5134a3ed-de5a-404c-ab9a-f21a8775e71c.png?v=1760637120"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000303_d80837ce8adb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000304_0fcc40d5486f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000305_9e546924e50b.png"
   ],
   "variants": [
     {
       "title": "Filtrec S540T670 Suction Filter | Replaces the Argo-Hytos S2102308",
       "sku": "s2102308-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/S540_aed82f36-264a-4462-a293-46de1f6942ba.jpg?v=1755097400",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000303_d80837ce8adb.jpg",
       "vendor": "",
       "price": 11100,
       "partNumber": "S540T670",
@@ -45,7 +45,7 @@
     {
       "title": "HiFi Filter SH 52184 Suction Filter | Replaces the Argo-Hytos S2102308",
       "sku": "s2102308-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6421e62a-52e6-4995-b5f0-5e58ae1ee1ae_b4108c99-0d89-46d3-92d4-ada4a351a9cd.jpg?v=1755097400",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000304_0fcc40d5486f.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "SH 52184",
@@ -73,7 +73,7 @@
     {
       "title": "MicroFit® MFHSU70029 UltraGen III Suction Filter | Replaces the Argo-Hytos S2102308",
       "sku": "s2102308-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5134a3ed-de5a-404c-ab9a-f21a8775e71c.png?v=1760637120",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000305_9e546924e50b.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSU70029",

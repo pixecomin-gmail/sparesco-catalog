@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c6b092cd-7999-4b5c-9e25-08093a389570.jpg?v=1723205797",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136255.700.700_6f1aedaf-bfd6-443a-a842-5bea781bc46a.jpg?v=1744305988",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF947_c550f372-ecbb-4d0d-b085-b6069fd93ac2.jpg?v=1755780796"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007801_70c154ba2b3d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007802_27c5ef88559f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007803_414f8994e7d9.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10897 Air Filter",
       "sku": "sa-10897-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c6b092cd-7999-4b5c-9e25-08093a389570.jpg?v=1723205797",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007801_70c154ba2b3d.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "SA 10897",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P136255 Air Filter, Primary Round | Replaces the HiFi Filter SA 10897",
       "sku": "sa-10897-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136255.700.700_6f1aedaf-bfd6-443a-a842-5bea781bc46a.jpg?v=1744305988",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007802_27c5ef88559f.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "P136255",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF947 Air Intake Systems | Replaces the HiFi Filter SA 10897",
       "sku": "sa-10897-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF947_c550f372-ecbb-4d0d-b085-b6069fd93ac2.jpg?v=1755780796",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007803_414f8994e7d9.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "AF947",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eabe41fc-f0ee-4cba-8b00-53764531ff34_83f9e566-b851-4f09-9e7c-d340a3e5f3f2.jpg?v=1762811426",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902312.700.700_93eae330-a823-4be5-839f-da4b908ea84c.jpg?v=1762811426",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27869_2ed611b2-7f4f-426c-bdc9-667b8fa280f6.jpg?v=1762811426"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009060_6830648ae4c9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009061_3c75b0fddb12.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009062_675d31c2c48f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 18033 Air Filter",
       "sku": "sa-18033-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eabe41fc-f0ee-4cba-8b00-53764531ff34_83f9e566-b851-4f09-9e7c-d340a3e5f3f2.jpg?v=1762811426",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009060_6830648ae4c9.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "SA 18033",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P902312 Air Filter, Safety | Replaces the HiFi Filter SA 18033",
       "sku": "sa-18033-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902312.700.700_93eae330-a823-4be5-839f-da4b908ea84c.jpg?v=1762811426",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009061_3c75b0fddb12.jpg",
       "vendor": "",
       "price": 12000,
       "partNumber": "P902312",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF27869 Air Filter, Secondary | Replaces the HiFi Filter SA 18033",
       "sku": "sa-18033-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27869_2ed611b2-7f4f-426c-bdc9-667b8fa280f6.jpg?v=1762811426",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009062_675d31c2c48f.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "AF27869",

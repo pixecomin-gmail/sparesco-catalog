@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-16cf5da7-9c6e-4cca-8b37-f052a6708aa2_9f7ab7a7-36ef-4f3c-87f1-c31b24d0b727.jpg?v=1755095692",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF203373B_ab6cab62-3bab-4a62-b6a2-ccfdf6ef6928.jpg?v=1755095692",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_82004b88-7b6f-41f2-b9bf-d91387127b17.png?v=1760633279",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-16cf5da7-9c6e-4cca-8b37-f052a6708aa2_eea7e1d7-2f8a-4bae-862f-ee9c8139db26.jpg?v=1755095691",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF203373B_65d05be6-75e4-4798-aebe-67955f78dd84.jpg?v=1755095691",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c34c8d7b-a04a-4c74-9980-e8428c92dd61.png?v=1760633269"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012980_bfdcae09384c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012981_aa74f1a3af39.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012982_2fd6a99bd020.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013001_ad9fd2bab4e7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013002_3974ea24331e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013003_f4d2fc944e20.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67140 Pressure Filter | Replaces the Eppensteiner 2560K3P",
       "sku": "2560k3p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-16cf5da7-9c6e-4cca-8b37-f052a6708aa2_9f7ab7a7-36ef-4f3c-87f1-c31b24d0b727.jpg?v=1755095692",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012980_bfdcae09384c.jpg",
       "vendor": "",
       "price": 24400,
       "partNumber": "SH 67140",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DVD2560E03B Pressure Filter | Replaces the Eppensteiner 2560K3P",
       "sku": "2560k3p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF203373B_ab6cab62-3bab-4a62-b6a2-ccfdf6ef6928.jpg?v=1755095692",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012981_aa74f1a3af39.jpg",
       "vendor": "",
       "price": 19900,
       "partNumber": "DVD2560E03B",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP30372 UltraGen III Filter | Replaces the Eppensteiner 2560K3P",
       "sku": "2560k3p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_82004b88-7b6f-41f2-b9bf-d91387127b17.png?v=1760633279",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/012982_2fd6a99bd020.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30372",

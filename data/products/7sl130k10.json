@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171618.700.700_e986d2d9-efbd-47b7-a1c2-4dbeda19bf1d.jpg?v=1741350731",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_1d5f0958-da37-472b-b641-7b59f94a74e6.jpg?v=1741350731",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c69e9dfe-e205-4eb0-b845-546926c13b32_683fd7e4-7a5f-457f-8b4d-65e50f99a473.jpg?v=1741350731"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028019_e8a87c2a5e22.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028020_61f1af76c16d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028021_a261cdffbd9a.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson P171618 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 7SL130K10",
       "sku": "7sl130k10-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171618.700.700_e986d2d9-efbd-47b7-a1c2-4dbeda19bf1d.jpg?v=1741350731",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028019_e8a87c2a5e22.jpg",
       "vendor": "Donaldson",
       "price": 7500,
       "partNumber": "P171618",
@@ -47,7 +47,7 @@
     {
       "title": "Filtrec A121G10 Spin-On Filter | Replaces the Eppensteiner 7SL130K10",
       "sku": "7sl130k10-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_1d5f0958-da37-472b-b641-7b59f94a74e6.jpg?v=1741350731",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028020_61f1af76c16d.jpg",
       "vendor": "Filtrec",
       "price": 9100,
       "partNumber": "A121G10",
@@ -77,7 +77,7 @@
     {
       "title": "HiFi Filter SH 63709 Spin-On Filter | Replaces the Eppensteiner 7SL130K10",
       "sku": "7sl130k10-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c69e9dfe-e205-4eb0-b845-546926c13b32_683fd7e4-7a5f-457f-8b4d-65e50f99a473.jpg?v=1741350731",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028021_a261cdffbd9a.jpg",
       "vendor": "HiFi Filter",
       "price": 11000,
       "partNumber": "SH 63709",

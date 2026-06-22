@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-367e1c70-d3d6-4857-a8bb-c223e2a49b86.jpg?v=1723214936",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p787492.700.700_1d2a8f5e-5555-4f92-a2cf-b55486f02eda.jpg?v=1744306039",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4714_03d9ab27-63d5-4835-bd91-6f39623e4f31.jpg?v=1755780898"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005301_56d370aa3017.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005302_5fc53f403712.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005303_35e2bb1ccc13.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14664 Air Filter",
       "sku": "sa-14664-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-367e1c70-d3d6-4857-a8bb-c223e2a49b86.jpg?v=1723214936",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005301_56d370aa3017.jpg",
       "vendor": "",
       "price": 15400,
       "partNumber": "SA 14664",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P787492 Air Filter, Primary Round | Replaces the HiFi Filter SA 14664",
       "sku": "sa-14664-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p787492.700.700_1d2a8f5e-5555-4f92-a2cf-b55486f02eda.jpg?v=1744306039",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005302_5fc53f403712.jpg",
       "vendor": "",
       "price": 17500,
       "partNumber": "P787492",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4714 Air, Primary | Replaces the HiFi Filter SA 14664",
       "sku": "sa-14664-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4714_03d9ab27-63d5-4835-bd91-6f39623e4f31.jpg?v=1755780898",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005303_35e2bb1ccc13.jpg",
       "vendor": "",
       "price": 18400,
       "partNumber": "AF4714",

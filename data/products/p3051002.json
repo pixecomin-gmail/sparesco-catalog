@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200450B_28aa3a00-6ddd-4547-aeb9-0a8bfb995a86.jpg?v=1755090918",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d1e16bfe-f41e-4f99-a7a4-e6cca43128d3_48d9f849-7365-46eb-9bc7-7c1187725967.jpg?v=1755090918",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_2e039d78-ca1b-4c6f-af22-c910d02bc17d.jpg?v=1755090918",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35268_bc83e7df-4d4d-4bd7-83ea-48b6df397c96.jpg?v=1755778455"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001382_6e76e5f934c3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001383_5150ef20b1be.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001384_6b22d5bf26a4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001385_c6a4b134664e.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec D810C25RA Pressure Filter | Replaces the Argo-Hytos P3051002",
       "sku": "p3051002-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200450B_28aa3a00-6ddd-4547-aeb9-0a8bfb995a86.jpg?v=1755090918",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001382_6e76e5f934c3.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "D810C25RA",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 52512 Pressure Filter | Replaces the Argo-Hytos P3051002",
       "sku": "p3051002-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d1e16bfe-f41e-4f99-a7a4-e6cca43128d3_48d9f849-7365-46eb-9bc7-7c1187725967.jpg?v=1755090918",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001383_5150ef20b1be.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "SH 52512",
@@ -78,7 +78,7 @@
     {
       "title": "Argo Hytos P3.0510-02 Pressure Filter",
       "sku": "p3051002-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_2e039d78-ca1b-4c6f-af22-c910d02bc17d.jpg?v=1755090918",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001384_6b22d5bf26a4.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "P3.0510-02",
@@ -108,7 +108,7 @@
     {
       "title": "Fleetguard HF35268 Hydraulic Filters | Replaces the Argo-Hytos P3051002",
       "sku": "p3051002-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35268_bc83e7df-4d4d-4bd7-83ea-48b6df397c96.jpg?v=1755778455",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001385_c6a4b134664e.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "HF35268",

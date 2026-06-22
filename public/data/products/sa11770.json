@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4107421f-021f-4e8c-a109-a58c8d76f3a4.jpg?v=1723202634",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181123.700.700_4e6d38a9-e3e7-4d4d-b7e7-0f7fc14fc610.jpg?v=1744306003",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1820M_01e5e68c-964b-4a5b-aa52-9b3d3297f18e.jpg?v=1755780724"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009746_5441302295bc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009747_59abe64e8ec1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009748_4fa507001970.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11770 Air Filter",
       "sku": "sa-11770-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4107421f-021f-4e8c-a109-a58c8d76f3a4.jpg?v=1723202634",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009746_5441302295bc.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "SA 11770",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P181123 Air Filter, Primary Round | Replaces the HiFi Filter SA 11770",
       "sku": "sa-11770-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181123.700.700_4e6d38a9-e3e7-4d4d-b7e7-0f7fc14fc610.jpg?v=1744306003",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009747_59abe64e8ec1.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "P181123",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1820M Air Filter, Primary | Replaces the HiFi Filter SA 11770",
       "sku": "sa-11770-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1820M_01e5e68c-964b-4a5b-aa52-9b3d3297f18e.jpg?v=1755780724",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009748_4fa507001970.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "AF1820M",

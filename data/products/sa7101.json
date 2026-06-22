@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7ba0c831-98a2-4f59-9b0c-403774edfed5.jpg?v=1723212424",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_001_image1_04d15cd7-9c3c-41b5-9780-f97b660e6bf7.jpg?v=1754909441",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4432_3b4b2d8d-81a3-4fbd-92a7-872b2303f110.jpg?v=1755780889"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006077_cb34f6b4df99.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006078_919a27ea0013.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006079_5c95458c02ef.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 7101 Air Filter",
       "sku": "sa-7101-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7ba0c831-98a2-4f59-9b0c-403774edfed5.jpg?v=1723212424",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006077_cb34f6b4df99.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "SA 7101",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 40 001 Air Filter | Replaces the HiFi Filter SA 7101",
       "sku": "sa-7101-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_001_image1_04d15cd7-9c3c-41b5-9780-f97b660e6bf7.jpg?v=1754909441",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006078_919a27ea0013.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "C 40 001",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF4432 Panel Air Filter Filter | Replaces the HiFi Filter SA 7101",
       "sku": "sa-7101-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4432_3b4b2d8d-81a3-4fbd-92a7-872b2303f110.jpg?v=1755780889",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006079_5c95458c02ef.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "AF4432",

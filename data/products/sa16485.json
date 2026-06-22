@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1bad8348-d361-4ecf-8264-0a087ff71c44.jpg?v=1723210897",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p538393.700.700_fbb17207-1149-459d-b94e-cb93ae4de39b.jpg?v=1744306104",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27846_18c55cf5-3751-4c33-b416-64a31434fadc.jpg?v=1755780870"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006733_038e815ce548.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006734_f8d14bd926fb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006735_d3aa8bb00a83.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16485 Air Filter",
       "sku": "sa-16485-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1bad8348-d361-4ecf-8264-0a087ff71c44.jpg?v=1723210897",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006733_038e815ce548.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "SA 16485",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P538393 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16485",
       "sku": "sa-16485-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p538393.700.700_fbb17207-1149-459d-b94e-cb93ae4de39b.jpg?v=1744306104",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006734_f8d14bd926fb.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "P538393",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF27846 Air Filter, Secondary | Replaces the HiFi Filter SA 16485",
       "sku": "sa-16485-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27846_18c55cf5-3751-4c33-b416-64a31434fadc.jpg?v=1755780870",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006735_d3aa8bb00a83.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "AF27846",

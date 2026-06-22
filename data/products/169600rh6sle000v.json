@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200396B-NB_af3e9164-0741-4686-83e1-2b77af1b4d6d.jpg?v=1748450478",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566205.700.700_2d4bf03c-efd3-4146-be40-1606ccf45440.jpg?v=1748450478",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_fd9c8cc4-9d71-46d1-a039-fc12bee645e4.jpg?v=1748450478",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7065_da01953b-1a69-4eb4-ade8-152703c76b06.jpg?v=1755779098",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200396B-NB_ed53d575-f80e-49e0-891b-09b64d117db1.jpg?v=1748450479",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566205.700.700_8751180b-586f-4aeb-a984-71f5f4b7e4f4.jpg?v=1748450479",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_4ca6d655-5cbb-468b-b1d6-c713783c40dd.jpg?v=1748450479",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7065_f5841b66-2078-4ad8-a5eb-e7d715ffc9d3.jpg?v=1755779093"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027599_16922400c417.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027600_827b541c32e5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027601_334530239866.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027602_2f807c6c3d42.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027607_467e9965b803.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027608_6f99fc81d741.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027609_6cfeecebad35.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027610_3ec8a2e3ceb6.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30152 Pressure Filter | Replaces the Eppensteiner 16.9600RH6SLE000V",
       "sku": "16-9600rh6sle000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200396B-NB_ed53d575-f80e-49e0-891b-09b64d117db1.jpg?v=1748450479",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027607_467e9965b803.jpg",
       "vendor": "MicroFit",
       "price": 4900,
       "partNumber": "MFHLP30152",
@@ -53,7 +53,7 @@
     {
       "title": "Donaldson P566206 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 169600RH6SLE000V",
       "sku": "169600rh6sle000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566205.700.700_2d4bf03c-efd3-4146-be40-1606ccf45440.jpg?v=1748450478",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027600_827b541c32e5.jpg",
       "vendor": "Donaldson",
       "price": 6000,
       "partNumber": "P566206",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec D140G06AV Pressure Filter | Replaces the Eppensteiner 169600RH6SLE000V",
       "sku": "169600rh6sle000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_fd9c8cc4-9d71-46d1-a039-fc12bee645e4.jpg?v=1748450478",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027601_334530239866.jpg",
       "vendor": "Filtrec",
       "price": 7500,
       "partNumber": "D140G06AV",
@@ -115,7 +115,7 @@
     {
       "title": "Fleetguard HF7065 Hydraulic Filters | Replaces the Eppensteiner 169600RH6SLE000V",
       "sku": "169600rh6sle000v-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7065_da01953b-1a69-4eb4-ade8-152703c76b06.jpg?v=1755779098",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027602_2f807c6c3d42.jpg",
       "vendor": "Fleetguard",
       "price": 3900,
       "partNumber": "HF7065",

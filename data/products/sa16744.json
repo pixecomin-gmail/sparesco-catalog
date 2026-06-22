@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d94d5e26-b76c-42fb-9beb-11ef1fcd79a8.jpg?v=1723202517",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/dba5291.700.700_bfaffe1a-9c45-4120-b126-b9b31dcfc3a6.jpg?v=1744306136",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55005_49a10af9-31d1-4977-8b3e-ac5ec6862fb7.jpg?v=1755780729"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009863_6725f30d7206.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009864_3104219c164e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009865_a220ad4f89dd.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16744 Air Filter",
       "sku": "sa-16744-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d94d5e26-b76c-42fb-9beb-11ef1fcd79a8.jpg?v=1723202517",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009863_6725f30d7206.jpg",
       "vendor": "",
       "price": 10800,
       "partNumber": "SA 16744",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson DBA5291 Air Filter, Primary Powercore Donaldson Blue | Replaces the HiFi Filter SA 16744",
       "sku": "sa-16744-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/dba5291.700.700_bfaffe1a-9c45-4120-b126-b9b31dcfc3a6.jpg?v=1744306136",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009864_3104219c164e.jpg",
       "vendor": "",
       "price": 10800,
       "partNumber": "DBA5291",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF55005 Air Filter, Primary | Replaces the HiFi Filter SA 16744",
       "sku": "sa-16744-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF55005_49a10af9-31d1-4977-8b3e-ac5ec6862fb7.jpg?v=1755780729",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009865_a220ad4f89dd.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "AF55005",

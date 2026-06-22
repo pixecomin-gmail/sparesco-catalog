@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60E_08bba70d-1a1a-4d01-aa46-eaefebe7a02e.jpg?v=1761217847",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_28485893-4ef7-4881-879b-ae0829b68972.png?v=1761217847",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ddb2cbef-618d-48d9-8401-f61fb5a605ab_35b1c839-52eb-4a67-ab5a-a4e02b328e8c.jpg?v=1761217847",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0140_d_020_on_n166576_i2523087_23d6b530-e8a9-437f-acd3-8f59f750dfb5.jpg?v=1761217847",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60E_a213ae7c-f02c-465c-8e00-78640436f723.jpg?v=1761217855",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b3439691-b03a-4864-b5a6-8dd508c6e30e.png?v=1761217855",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ddb2cbef-618d-48d9-8401-f61fb5a605ab_586d61ee-00cf-429e-984f-ebbab581d320.jpg?v=1761217855",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0140_d_020_on_n166576_i2523087_92470622-a27b-4476-af36-5cb3d5260aec.jpg?v=1761217855"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005038_20292645f4b6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005039_9a23386d2d97.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005040_941630e57598.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005041_e0ea7f041e4d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005042_26039569658b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005043_17c32e558f45.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005044_7a167cea83aa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005045_76d4c58eb6fc.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD140G20B Pressure Filter | Replaces the Eppensteiner 9140P20A000P",
       "sku": "9140p20a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60E_08bba70d-1a1a-4d01-aa46-eaefebe7a02e.jpg?v=1761217847",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005038_20292645f4b6.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "DHD140G20B",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® MFHLP31418 UltraGen III Filter | Replaces the Eppensteiner 9140P20A000P",
       "sku": "9140p20a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_28485893-4ef7-4881-879b-ae0829b68972.png?v=1761217847",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005039_9a23386d2d97.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31418",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 75022 Pressure Filter | Replaces the Eppensteiner 9140P20A000P",
       "sku": "9140p20a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ddb2cbef-618d-48d9-8401-f61fb5a605ab_35b1c839-52eb-4a67-ab5a-a4e02b328e8c.jpg?v=1761217847",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005040_941630e57598.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "SH 75022",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0140 D 020 ON Optimicron® Pressure Filter | Replaces the Eppensteiner 9140P20A000P",
       "sku": "9140p20a000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0140_d_020_on_n166576_i2523087_23d6b530-e8a9-437f-acd3-8f59f750dfb5.jpg?v=1761217847",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/005041_e0ea7f041e4d.jpg",
       "vendor": "",
       "price": 11600,
       "partNumber": "0140 D 020 ON",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e4040ef-9c69-4d61-a1d7-db6329fab278.jpg?v=1723216002",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c055003.700.700_750a9936-4e9e-43cd-ae10-ac2305311177.jpg?v=1744306200",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH19000_a8d67caf-7ce4-4848-bd8a-e658f49dbd37.jpg?v=1755780906"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005088_8a579d8c3572.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005089_22cb4d47ad92.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005090_4951a13db475.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SAC 055003 Air Filter",
       "sku": "sac-055003-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e4040ef-9c69-4d61-a1d7-db6329fab278.jpg?v=1723216002",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005088_8a579d8c3572.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "SAC 055003",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson C055003 Air Filter, Primary Duralite | Replaces the HiFi Filter SAC 055003",
       "sku": "sac-055003-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c055003.700.700_750a9936-4e9e-43cd-ae10-ac2305311177.jpg?v=1744306200",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005089_22cb4d47ad92.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "C055003",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AH19000 Air Intake Systems | Replaces the HiFi Filter SAC 055003",
       "sku": "sac-055003-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH19000_a8d67caf-7ce4-4848-bd8a-e658f49dbd37.jpg?v=1755780906",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005090_4951a13db475.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "AH19000",

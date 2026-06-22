@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f8b934eb-049e-452c-ab5c-0c9f777959ec_072b3249-1423-4090-bd65-f4d5790844cc.jpg?v=1755092427",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201059B_6aa1d15f-1d59-48a2-93fd-d34aec7907f6.jpg?v=1755092427",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f8b934eb-049e-452c-ab5c-0c9f777959ec_3f55068a-c2bd-4806-9dfd-b1545f5d24d7.jpg?v=1755092430",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201059B_59767183-d18c-493d-88a1-4666f8f7b70c.jpg?v=1755092430"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026123_da892b5158e9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026124_8db8f577d663.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026129_ecc0acbd1e8a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026130_020f19384373.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67233 Pressure Filter | Replaces the Eppensteiner 232P5A000P",
       "sku": "232p5a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f8b934eb-049e-452c-ab5c-0c9f777959ec_072b3249-1423-4090-bd65-f4d5790844cc.jpg?v=1755092427",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026123_da892b5158e9.jpg",
       "vendor": "HiFi Filter",
       "price": 9000,
       "partNumber": "SH 67233",
@@ -48,7 +48,7 @@
     {
       "title": "Filtrec DVD232K05B Pressure Filter | Replaces the Eppensteiner 232P5A000P",
       "sku": "232p5a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201059B_6aa1d15f-1d59-48a2-93fd-d34aec7907f6.jpg?v=1755092427",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026124_8db8f577d663.jpg",
       "vendor": "Filtrec",
       "price": 7200,
       "partNumber": "DVD232K05B",

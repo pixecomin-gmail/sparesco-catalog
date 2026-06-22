@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-32fe4c7c-22df-4768-bf16-393e00c9c5e4.jpg?v=1748456007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772521.700.700_935f59a0-ef6a-4f9f-81e5-5732106589de.jpg?v=1748456007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_396f912a-c089-4d7b-be07-ecee4994ebf0.jpg?v=1748456007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25249M_2876976e-69d0-46aa-a4b5-ae240ee96134.jpg?v=1755780746"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009267_66e59eb30a4c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009268_99178bec5a1f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009269_50d9236efea1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009270_b36ca6871f34.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14532 Air Filter",
       "sku": "sa-14532-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-32fe4c7c-22df-4768-bf16-393e00c9c5e4.jpg?v=1748456007",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009267_66e59eb30a4c.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "SA 14532",
@@ -34,7 +34,7 @@
     {
       "title": "Donaldson P772521 Air Filter, Primary Round | Replaces the HiFi Filter SA 14532",
       "sku": "sa-14532-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772521.700.700_935f59a0-ef6a-4f9f-81e5-5732106589de.jpg?v=1748456007",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009268_99178bec5a1f.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "P772521",
@@ -50,7 +50,7 @@
     {
       "title": "Mann Filter C 31 013 Air Filter | Replaces the HiFi Filter SA 14532",
       "sku": "sa-14532-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_396f912a-c089-4d7b-be07-ecee4994ebf0.jpg?v=1748456007",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009269_50d9236efea1.jpg",
       "vendor": "",
       "price": 9900,
       "partNumber": "C 31 013",
@@ -70,7 +70,7 @@
     {
       "title": "Fleetguard AF25249M Air Filter, Primary | Replaces the HiFi Filter SA 14532",
       "sku": "sa-14532-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25249M_2876976e-69d0-46aa-a4b5-ae240ee96134.jpg?v=1755780746",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009270_b36ca6871f34.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "AF25249M",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e7c4fc34-f672-42bb-894f-6ec9d1ae3da9_94f98030-b3c7-4c21-a826-d6d39672b230.jpg?v=1762811400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_30_1359_image1.jpg?v=1762811400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_c554857d-17c0-4ea1-a514-b8a6e37fbacb.jpg?v=1762811400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25180_ff902d93-c381-49c7-a5ba-045c3f478ef0.jpg?v=1762811400"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009285_9fbf3f99fd4b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009286_402a2184f265.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009287_75c30463872b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009288_24e72519d97f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16668 Air Filter",
       "sku": "sa-16668-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e7c4fc34-f672-42bb-894f-6ec9d1ae3da9_94f98030-b3c7-4c21-a826-d6d39672b230.jpg?v=1762811400",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009285_9fbf3f99fd4b.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "SA 16668",
@@ -40,7 +40,7 @@
     {
       "title": "Mann Filter C 30 1359 Air Filter | Replaces the HiFi Filter SA 16668",
       "sku": "sa-16668-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_30_1359_image1.jpg?v=1762811400",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009286_402a2184f265.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "C 30 1359",
@@ -60,7 +60,7 @@
     {
       "title": "FIL Filter HP 2628 | Replaces the HiFi Filter SA 16668",
       "sku": "sa-16668-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_c554857d-17c0-4ea1-a514-b8a6e37fbacb.jpg?v=1762811400",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009287_75c30463872b.jpg",
       "vendor": "",
       "price": 9000,
       "partNumber": "HP 2628",
@@ -76,7 +76,7 @@
     {
       "title": "Fleetguard AF25180 Air Filter, Primary | Replaces the HiFi Filter SA 16668",
       "sku": "sa-16668-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25180_ff902d93-c381-49c7-a5ba-045c3f478ef0.jpg?v=1762811400",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009288_24e72519d97f.jpg",
       "vendor": "",
       "price": 7500,
       "partNumber": "AF25180",

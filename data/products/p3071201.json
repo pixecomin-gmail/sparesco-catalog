@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200466B_214a75cb-20d2-47cc-baf8-4cc0223844ed.jpg?v=1740482643",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-300d273f-f824-48e8-b46d-5c47018eb1f0_eb1072be-d641-4b4f-86a4-d2d6751d958e.jpg?v=1740482643",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_c234e623-d178-4a86-86e7-60212ee7836b.jpg?v=1740482643"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000329_e32906d8c424.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000330_62558262d9a2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000331_e8a176501005.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec D830C10A Pressure Filter | Replaces the Argo-Hytos P3071201",
       "sku": "p3071201-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200466B_214a75cb-20d2-47cc-baf8-4cc0223844ed.jpg?v=1740482643",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000329_e32906d8c424.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "D830C10A",
@@ -47,7 +47,7 @@
     {
       "title": "HiFi Filter SH 52701 Pressure Filter | Replaces the Argo-Hytos P3071201",
       "sku": "p3071201-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-300d273f-f824-48e8-b46d-5c47018eb1f0_eb1072be-d641-4b4f-86a4-d2d6751d958e.jpg?v=1740482643",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000330_62558262d9a2.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "SH 52701",
@@ -77,7 +77,7 @@
     {
       "title": "Argo Hytos P3.0712-01 Pressure Filter",
       "sku": "p3071201-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_c234e623-d178-4a86-86e7-60212ee7836b.jpg?v=1740482643",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000331_e8a176501005.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "P3.0712-01",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d3217f4b-7b8a-4565-85ac-2701719873c1.jpg?v=1723202499",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181033.700.700_bcdb4d9b-81b0-4a16-b386-fa96c585c807.jpg?v=1744305967",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF354M_73e4de32-3122-446c-901d-bcdc2078e091.jpg?v=1755780724"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009880_0ca1523d4c4c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009881_262777aba353.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009882_6ae7008a9fae.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10304 Air Filter",
       "sku": "sa-10304-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d3217f4b-7b8a-4565-85ac-2701719873c1.jpg?v=1723202499",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009880_0ca1523d4c4c.jpg",
       "vendor": "",
       "price": 5200,
       "partNumber": "SA 10304",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P181033 Air Filter, Primary Round | Replaces the HiFi Filter SA 10304",
       "sku": "sa-10304-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181033.700.700_bcdb4d9b-81b0-4a16-b386-fa96c585c807.jpg?v=1744305967",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009881_262777aba353.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "P181033",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF354M Air Filter, Primary | Replaces the HiFi Filter SA 10304",
       "sku": "sa-10304-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF354M_73e4de32-3122-446c-901d-bcdc2078e091.jpg?v=1755780724",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009882_6ae7008a9fae.jpg",
       "vendor": "",
       "price": 7700,
       "partNumber": "AF354M",

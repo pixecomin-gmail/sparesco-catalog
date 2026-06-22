@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5109e11e-65b9-4e76-9284-e632908befa4.jpg?v=1723203980",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_5002_image1_04f5e933-40c0-48ed-876c-a59f93c7b61d.jpg?v=1754909279",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25702_7712bbfa-ed95-4e46-a340-45dbed8b313a.jpg?v=1755780752"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008824_f7ddd1bb035a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008825_5d8661e2826a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008826_0e72bded07d1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16210 Air Filter",
       "sku": "sa-16210-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5109e11e-65b9-4e76-9284-e632908befa4.jpg?v=1723203980",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008824_f7ddd1bb035a.jpg",
       "vendor": "",
       "price": 1500,
       "partNumber": "SA 16210",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter CF 5002 Secondary Element | Replaces the HiFi Filter SA 16210",
       "sku": "sa-16210-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_5002_image1_04f5e933-40c0-48ed-876c-a59f93c7b61d.jpg?v=1754909279",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008825_5d8661e2826a.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "CF 5002",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF25702 Air Filter, Secondary | Replaces the HiFi Filter SA 16210",
       "sku": "sa-16210-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25702_7712bbfa-ed95-4e46-a340-45dbed8b313a.jpg?v=1755780752",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008826_0e72bded07d1.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "AF25702",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ff49a950-dca0-49ec-8828-98c5258b393b.jpg?v=1723205740",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p133702.700.700_bff58548-c229-41b9-b483-b7f67b667336.jpg?v=1744305975",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF493_679e93c6-bb20-435b-88ee-698077078027.jpg?v=1755780787"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007829_39323278bf85.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007830_2aa23ad950b5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007831_17b3c599a67a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10443 Air Filter",
       "sku": "sa-10443-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ff49a950-dca0-49ec-8828-98c5258b393b.jpg?v=1723205740",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007829_39323278bf85.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "SA 10443",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P133702 Air Filter, Primary Round | Replaces the HiFi Filter SA 10443",
       "sku": "sa-10443-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p133702.700.700_bff58548-c229-41b9-b483-b7f67b667336.jpg?v=1744305975",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007830_2aa23ad950b5.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "P133702",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF493 Air | Replaces the HiFi Filter SA 10443",
       "sku": "sa-10443-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF493_679e93c6-bb20-435b-88ee-698077078027.jpg?v=1755780787",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007831_17b3c599a67a.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "AF493",

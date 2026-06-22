@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202984B_1a0aac36-e73d-43e9-b7bd-5c263a38a079.jpg?v=1741363325",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7e315074-7c24-43c7-8736-403bc7e36229_0bc44828-1520-48d3-a7f8-165835ccb4d0.jpg?v=1741363325",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0c6d2e5f-22aa-4f9a-9b35-a0336a866254.png?v=1760634057",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202984B_0ce9ace6-2031-41da-b002-c62c41521490.jpg?v=1741363311",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7e315074-7c24-43c7-8736-403bc7e36229_af6d6b99-2482-4a85-a9e3-8026d2fee6c1.jpg?v=1741363311",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_92dc39b1-7d9d-4dcb-9630-4a2ae5bb454e.png?v=1760634062"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009820_7df48794a082.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009821_2dde1cf8a896.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009822_ec03bcc30bc5.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009826_e820e5995eed.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009827_2e73e242f36a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009828_450e7dbecfdf.png"
   ],
   "variants": [
     {
       "title": "Filtrec D181G10AV Pressure Filter | Replaces the Eppensteiner 169100SH10XLE000V",
       "sku": "169100sh10xle000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202984B_1a0aac36-e73d-43e9-b7bd-5c263a38a079.jpg?v=1741363325",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009820_7df48794a082.jpg",
       "vendor": "",
       "price": 9100,
       "partNumber": "D181G10AV",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87305 V Pressure Filter | Replaces the Eppensteiner 169100SH10XLE000V",
       "sku": "169100sh10xle000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7e315074-7c24-43c7-8736-403bc7e36229_0bc44828-1520-48d3-a7f8-165835ccb4d0.jpg?v=1741363325",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009821_2dde1cf8a896.jpg",
       "vendor": "",
       "price": 10800,
       "partNumber": "SH 87305 V",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP30942 UltraGen III Pressure Filter | Replaces the Eppensteiner 169100SH10XLE000V",
       "sku": "169100sh10xle000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0c6d2e5f-22aa-4f9a-9b35-a0336a866254.png?v=1760634057",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009822_ec03bcc30bc5.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30942",

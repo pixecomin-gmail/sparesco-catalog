@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_a830e275-b1d3-4eca-83ef-b745adc5d9d6.jpg?v=1761217961",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3ab3d1bc-9fb6-4309-a0cc-b6a8f0c1c118.png?v=1761217961",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4451b50a-2fe9-446a-ae3a-3ea87e73cee2_d4f2709a-3d97-4cc6-aeb0-2e5afa55cafe.jpg?v=1761217961",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566969.700.700_fa376e36-98dc-4e04-8deb-98b283eadca9.jpg?v=1761217961",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST1255_07b2887c-e362-4156-884e-1b7fcc799a57.jpg?v=1761217961"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024794_e2e679c63e89.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024795_8dbc50209abd.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024796_5c82c63201f0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024797_8dfd071798c3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024798_a45cc9e68422.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec RHR160G03B3/AB1 Return Filter | Replaces the Eppensteiner 30TR160H3LLLA",
       "sku": "30tr160h3llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_a830e275-b1d3-4eca-83ef-b745adc5d9d6.jpg?v=1761217961",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024794_e2e679c63e89.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "RHR160G03B3/AB1",
@@ -52,7 +52,7 @@
     {
       "title": "MicroFit® MFHR50938 UltraGen III Filter | Replaces the Eppensteiner 30TR160H3LLLA",
       "sku": "30tr160h3llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3ab3d1bc-9fb6-4309-a0cc-b6a8f0c1c118.png?v=1761217961",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024795_8dbc50209abd.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50938",
@@ -85,7 +85,7 @@
     {
       "title": "HiFi Filter SH 74000 Return Filter | Replaces the Eppensteiner 30TR160H3LLLA",
       "sku": "30tr160h3llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4451b50a-2fe9-446a-ae3a-3ea87e73cee2_d4f2709a-3d97-4cc6-aeb0-2e5afa55cafe.jpg?v=1761217961",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024796_5c82c63201f0.jpg",
       "vendor": "",
       "price": 11400,
       "partNumber": "SH 74000",
@@ -118,7 +118,7 @@
     {
       "title": "Donaldson P566969 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 30TR160H3LLLA",
       "sku": "30tr160h3llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566969.700.700_fa376e36-98dc-4e04-8deb-98b283eadca9.jpg?v=1761217961",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024797_8dfd071798c3.jpg",
       "vendor": "",
       "price": 11300,
       "partNumber": "P566969",
@@ -151,7 +151,7 @@
     {
       "title": "Fleetguard ST1255 Hydraulic Filters | Replaces the Eppensteiner 30TR160H3LLLA",
       "sku": "30tr160h3llla-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST1255_07b2887c-e362-4156-884e-1b7fcc799a57.jpg?v=1761217961",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/024798_a45cc9e68422.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "ST1255",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-20e595e6-7c47-4d9b-adf0-6069f5ba2e5b.jpg?v=1723210402",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p127308.700.700_f0f4f392-6ff6-46c7-9426-ee8a59c61d05.jpg?v=1744306009",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1921M_827ad8ad-d832-4d50-ad82-12e50c163524.jpg?v=1755780861"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006840_78179d59ca8d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006841_795d1f96c116.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006842_83b29ede0e29.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11871 Air Filter",
       "sku": "sa-11871-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-20e595e6-7c47-4d9b-adf0-6069f5ba2e5b.jpg?v=1723210402",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006840_78179d59ca8d.jpg",
       "vendor": "",
       "price": 14700,
       "partNumber": "SA 11871",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P127308 Air Filter, Primary Round | Replaces the HiFi Filter SA 11871",
       "sku": "sa-11871-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p127308.700.700_f0f4f392-6ff6-46c7-9426-ee8a59c61d05.jpg?v=1744306009",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006841_795d1f96c116.jpg",
       "vendor": "",
       "price": 12900,
       "partNumber": "P127308",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1921M Air Filter, Primary | Replaces the HiFi Filter SA 11871",
       "sku": "sa-11871-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1921M_827ad8ad-d832-4d50-ad82-12e50c163524.jpg?v=1755780861",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006842_83b29ede0e29.jpg",
       "vendor": "",
       "price": 13000,
       "partNumber": "AF1921M",

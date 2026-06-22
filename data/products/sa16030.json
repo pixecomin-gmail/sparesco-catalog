@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-13349ef3-4006-49ef-a863-176fb036794e.jpg?v=1723210409",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p527484.700.700_4301e2ae-97c9-4913-8ea1-bb1c743e11cf.jpg?v=1744306056",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4878_879ad085-0d31-41c1-892f-6483cef5fc10.jpg?v=1755780858"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006835_833854f3bae8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006836_422c53dbb719.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006837_bd97839c6a92.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16030 Air Filter",
       "sku": "sa-16030-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-13349ef3-4006-49ef-a863-176fb036794e.jpg?v=1723210409",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006835_833854f3bae8.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "SA 16030",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P527484 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16030",
       "sku": "sa-16030-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p527484.700.700_4301e2ae-97c9-4913-8ea1-bb1c743e11cf.jpg?v=1744306056",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006836_422c53dbb719.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "P527484",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF4878 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16030",
       "sku": "sa-16030-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4878_879ad085-0d31-41c1-892f-6483cef5fc10.jpg?v=1755780858",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006837_bd97839c6a92.jpg",
       "vendor": "",
       "price": 8600,
       "partNumber": "AF4878",

@@ -9,21 +9,21 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_b84c131b-f82b-442e-8750-1f10ce980a8b.png?v=1755097271",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a414d2de-6fa5-4320-825f-d321ae512279_718389b2-fe6d-439c-8605-6b3ff1e02131.jpg?v=1755097271",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HY_10_003_Crop_9aaa3824-49b4-4a43-afdd-b0d801f7b292.jpg?v=1755097271",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35160_e1fdbd35-9e60-4494-8924-388c20358b38.jpg?v=1755780240",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cf2300d2-9547-410c-a347-6b83e3b90f0d.png?v=1760636694",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203553B_051dffb0-2e0c-43d4-92ab-fe78d4216349.jpg?v=1741362066",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a414d2de-6fa5-4320-825f-d321ae512279_056ab917-b8d5-4066-99a6-8ba07e9fa8bb.jpg?v=1741362066",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HY_10_003_Crop_ca968e30-8866-4db5-b782-e6b43b9befd1.jpg?v=1743772656",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35160_26b7a4b4-c328-4672-967d-3a68a44f0d07.jpg?v=1755779647"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000492_283c0580053d.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000493_aac27c62a60c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000494_41509c3f4ef5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000495_e2182adfc8af.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000496_f5c197209237.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000951_64557dcb47cc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000952_7b387df6223e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000953_5e80cecbb917.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000954_5ec693e89018.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec WT1060 Special Filter | Replaces the Argo-Hytos AS08001",
       "sku": "as08001-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_b84c131b-f82b-442e-8750-1f10ce980a8b.png?v=1755097271",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000492_283c0580053d.png",
       "vendor": "",
       "price": 10500,
       "partNumber": "WT1060",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 77114 Suction Strainer | Replaces the Argo-Hytos AS08001",
       "sku": "as08001-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a414d2de-6fa5-4320-825f-d321ae512279_718389b2-fe6d-439c-8605-6b3ff1e02131.jpg?v=1755097271",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000493_aac27c62a60c.jpg",
       "vendor": "",
       "price": 11400,
       "partNumber": "SH 77114",
@@ -81,7 +81,7 @@
     {
       "title": "Mann Filter HY 10 003 Hydraulics | Replaces the Argo-Hytos AS08001",
       "sku": "as08001-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HY_10_003_Crop_9aaa3824-49b4-4a43-afdd-b0d801f7b292.jpg?v=1755097271",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000494_41509c3f4ef5.jpg",
       "vendor": "",
       "price": 13700,
       "partNumber": "HY 10 003",
@@ -109,7 +109,7 @@
     {
       "title": "Fleetguard HF35160 Hydraulic Filters | Replaces the Argo-Hytos AS08001",
       "sku": "as08001-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35160_e1fdbd35-9e60-4494-8924-388c20358b38.jpg?v=1755780240",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000495_e2182adfc8af.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "HF35160",
@@ -137,7 +137,7 @@
     {
       "title": "MicroFit® MFHSP80814 UltraGen III Special Filter | Replaces the Argo-Hytos AS08001",
       "sku": "as08001-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cf2300d2-9547-410c-a347-6b83e3b90f0d.png?v=1760636694",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000496_f5c197209237.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80814",
@@ -165,7 +165,7 @@
     {
       "title": "Filtrec FS176B7T60 Suction Strainer | Replaces the Argo-Hytos AS080-01",
       "sku": "as080-01-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203553B_051dffb0-2e0c-43d4-92ab-fe78d4216349.jpg?v=1741362066",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000951_64557dcb47cc.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "FS176B7T60",

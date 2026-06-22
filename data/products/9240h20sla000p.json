@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200237B-NB_a3e6cdbc-7944-4a09-ba05-578262593069.jpg?v=1742549279",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_b2b04460-dcaf-4f33-8a23-12a03aef281b.jpg?v=1742549279",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-68a14d61-7e08-4767-9dfc-96ae64ad82d8_99f03b25-4cab-4a62-bf64-c955604af257.jpg?v=1761654720",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0240_d_020_on_n166578_i2372470_3a64aef0-3f1f-4dac-b8ce-d52e45e318c0.jpg?v=1760540537",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200237B-NB_ef6e8f86-b37e-4228-a340-8c40fc087ec3.jpg?v=1742549288",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_14679ea7-55a3-429f-bc91-be6a6af459c6.jpg?v=1742549288",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-68a14d61-7e08-4767-9dfc-96ae64ad82d8_e09cc277-9b50-4941-8af5-4a41aaf2022c.jpg?v=1761654751",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0240_d_020_on_n166578_i2372470_68d8aa1c-5e90-4ea9-af8a-20de91a42ccf.jpg?v=1760540573"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032680_09b4dfb4b613.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032681_99462977b040.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032682_03f1ce6a4d01.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032683_402456989f9f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032688_b27182fa728b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032689_2840fc90fcad.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032690_88663b03c838.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032691_6b6e6b55f81f.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30057 Pressure Filter | Replaces the Eppensteiner 9.240H20SLA000P",
       "sku": "9-240h20sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200237B-NB_ef6e8f86-b37e-4228-a340-8c40fc087ec3.jpg?v=1742549288",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032688_b27182fa728b.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "MFHLP30057",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec DHD240G20B Pressure Filter | Replaces the Eppensteiner 9240H20SLA000P",
       "sku": "9240h20sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_b2b04460-dcaf-4f33-8a23-12a03aef281b.jpg?v=1742549279",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032681_99462977b040.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "DHD240G20B",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 75038 Pressure Filter | Replaces the Eppensteiner 9240H20SLA000P",
       "sku": "9240h20sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-68a14d61-7e08-4767-9dfc-96ae64ad82d8_99f03b25-4cab-4a62-bf64-c955604af257.jpg?v=1761654720",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032682_03f1ce6a4d01.jpg",
       "vendor": "",
       "price": 9000,
       "partNumber": "SH 75038",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0240 D 020 ON Optimicron® Pressure Filter | Replaces the Eppensteiner 9240H20SLA000P",
       "sku": "9240h20sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0240_d_020_on_n166578_i2372470_3a64aef0-3f1f-4dac-b8ce-d52e45e318c0.jpg?v=1760540537",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032683_402456989f9f.jpg",
       "vendor": "",
       "price": 20200,
       "partNumber": "0240 D 020 ON",

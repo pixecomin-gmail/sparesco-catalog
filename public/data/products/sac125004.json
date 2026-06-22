@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0b04fc0b-3b4e-4e14-af5e-87f9505b3033.jpg?v=1723215984",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c125004.700.700_40ba7d25-f00a-4874-abc2-5a7d64001ae2.jpg?v=1744306204",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH19220_df04e91a-01c9-4303-8d69-7093ffaefff4.jpg?v=1755780907"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005095_9d6c92dccec3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005096_e61bc9075b69.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005097_1a8f12663d79.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SAC 125004 Air Filter",
       "sku": "sac-125004-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0b04fc0b-3b4e-4e14-af5e-87f9505b3033.jpg?v=1723215984",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005095_9d6c92dccec3.jpg",
       "vendor": "",
       "price": 12400,
       "partNumber": "SAC 125004",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson C125004 Air Filter, Primary Duralite | Replaces the HiFi Filter SAC 125004",
       "sku": "sac-125004-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c125004.700.700_40ba7d25-f00a-4874-abc2-5a7d64001ae2.jpg?v=1744306204",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005096_e61bc9075b69.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "C125004",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AH19220 Air Intake Systems | Replaces the HiFi Filter SAC 125004",
       "sku": "sac-125004-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH19220_df04e91a-01c9-4303-8d69-7093ffaefff4.jpg?v=1755780907",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005097_1a8f12663d79.jpg",
       "vendor": "",
       "price": 10400,
       "partNumber": "AH19220",

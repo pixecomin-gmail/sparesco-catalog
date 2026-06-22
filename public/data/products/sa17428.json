@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-354f6bef-6223-47a5-8deb-cf246f37d971.jpg?v=1723204020",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788895.700.700_42852175-fbeb-45e5-8338-e4c655935c3c.jpg?v=1744306170",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4246_c73f807b-6740-4f9e-a055-e74002d9878a.jpg?v=1755780756"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008793_6a9ac0d9840b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008794_788945a13460.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008795_89785ee9d4ae.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17428 Air Filter",
       "sku": "sa-17428-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-354f6bef-6223-47a5-8deb-cf246f37d971.jpg?v=1723204020",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008793_6a9ac0d9840b.jpg",
       "vendor": "",
       "price": 12000,
       "partNumber": "SA 17428",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P788895 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 17428",
       "sku": "sa-17428-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p788895.700.700_42852175-fbeb-45e5-8338-e4c655935c3c.jpg?v=1744306170",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008794_788945a13460.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "P788895",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4246 Air Filter | Replaces the HiFi Filter SA 17428",
       "sku": "sa-17428-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4246_c73f807b-6740-4f9e-a055-e74002d9878a.jpg?v=1755780756",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008795_89785ee9d4ae.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "AF4246",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-78b14e4c-45f4-4f5f-a8dd-1d96fde0516e.jpg?v=1723210930",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_15001_image1_06783575-6255-4a98-a7a6-caab330fdb26.jpg?v=1754909416",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25084_c04edde3-b280-4118-a8c6-b48139f26219.jpg?v=1755780873"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006726_ca63cff29c7c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006727_9d724a05e8df.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006728_113ff5089f20.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17143 Air Filter",
       "sku": "sa-17143-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-78b14e4c-45f4-4f5f-a8dd-1d96fde0516e.jpg?v=1723210930",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006726_ca63cff29c7c.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "SA 17143",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter CF 1500/1 Secondary Element | Replaces the HiFi Filter SA 17143",
       "sku": "sa-17143-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_15001_image1_06783575-6255-4a98-a7a6-caab330fdb26.jpg?v=1754909416",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006727_9d724a05e8df.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "CF 1500/1",
@@ -59,7 +59,7 @@
     {
       "title": "Fleetguard AF25084 Air Filter, Secondary | Replaces the HiFi Filter SA 17143",
       "sku": "sa-17143-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25084_c04edde3-b280-4118-a8c6-b48139f26219.jpg?v=1755780873",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006728_113ff5089f20.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "AF25084",

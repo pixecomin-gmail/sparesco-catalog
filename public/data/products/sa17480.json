@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-35ae7917-64de-4fd4-81c6-4dbb93c88547.jpg?v=1748456089",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p639058.700.700_c7830717-a5ac-4800-833c-4fbe2585b195.jpg?v=1748456089",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_627f1abf-9736-4ba6-8580-0e60e9093645.jpg?v=1748456089",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25163_15cf151b-0e27-4772-9fd6-4f2256b2f732.jpg?v=1755780770"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008369_7fc6fc97c81e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008370_7d4a2d024b7e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008371_d2efb4ba24f4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008372_201f4d652a07.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17480 Air Filter",
       "sku": "sa-17480-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-35ae7917-64de-4fd4-81c6-4dbb93c88547.jpg?v=1748456089",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008369_7fc6fc97c81e.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "SA 17480",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P639058 Air Filter, Primary Obround | Replaces the HiFi Filter SA 17480",
       "sku": "sa-17480-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p639058.700.700_c7830717-a5ac-4800-833c-4fbe2585b195.jpg?v=1748456089",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008370_7d4a2d024b7e.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "P639058",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 30 400/1 Air Filter | Replaces the HiFi Filter SA 17480",
       "sku": "sa-17480-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_627f1abf-9736-4ba6-8580-0e60e9093645.jpg?v=1748456089",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008371_d2efb4ba24f4.jpg",
       "vendor": "",
       "price": 9100,
       "partNumber": "C 30 400/1",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF25163 Air Filter, Primary | Replaces the HiFi Filter SA 17480",
       "sku": "sa-17480-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25163_15cf151b-0e27-4772-9fd6-4f2256b2f732.jpg?v=1755780770",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008372_201f4d652a07.jpg",
       "vendor": "",
       "price": 9700,
       "partNumber": "AF25163",

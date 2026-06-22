@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b9f9152-8c66-49f9-91d3-95e350f7231f.jpg?v=1723203155",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500028.700.700_31c5ec39-7559-4b86-9ec3-0192b6fc976f.jpg?v=1744306021",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25380_524176fc-bbf3-4b38-b1b5-529579c91424.jpg?v=1755780741"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009409_511f92acafc8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009410_c4048fca272c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009411_1131c3759539.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 1376 Air Filter",
       "sku": "sa-1376-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b9f9152-8c66-49f9-91d3-95e350f7231f.jpg?v=1723203155",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009409_511f92acafc8.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "SA 1376",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P500028 Air Filter, Primary Round | Replaces the HiFi Filter SA 1376",
       "sku": "sa-1376-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500028.700.700_31c5ec39-7559-4b86-9ec3-0192b6fc976f.jpg?v=1744306021",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009410_c4048fca272c.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "P500028",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25380 Air | Replaces the HiFi Filter SA 1376",
       "sku": "sa-1376-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25380_524176fc-bbf3-4b38-b1b5-529579c91424.jpg?v=1755780741",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009411_1131c3759539.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "AF25380",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf8f7fdb-c415-4ae4-ae2c-e69d5c77dae5.jpg?v=1748456085",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p635903.700.700_faa13ae4-d876-4071-b9b4-8717e3f8d273.jpg?v=1748456085",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_24_420_image1.jpg?v=1754909283"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008375_81fbb577ea3f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008376_662a65a320e9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008377_29fe2b27e357.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17375 Primary Air Filter",
       "sku": "sa-17375-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf8f7fdb-c415-4ae4-ae2c-e69d5c77dae5.jpg?v=1748456085",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008375_81fbb577ea3f.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "SA 17375",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P635903 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 17375",
       "sku": "sa-17375-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p635903.700.700_faa13ae4-d876-4071-b9b4-8717e3f8d273.jpg?v=1748456085",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008376_662a65a320e9.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "P635903",
@@ -49,7 +49,7 @@
     {
       "title": "Mann Filter CP 24 420 Air Filter | Replaces the HiFi Filter SA 17375",
       "sku": "sa-17375-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_24_420_image1.jpg?v=1754909283",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008377_29fe2b27e357.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "CP 24 420",

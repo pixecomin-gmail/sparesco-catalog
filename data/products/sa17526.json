@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-75996828-d8ad-4ac3-95dc-e6c3fcc2c497.jpg?v=1723203795",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_dd280cb1-fc7a-4247-b954-3fe0dc9eb796.jpg?v=1743773452",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4365_e1146cee-8062-4dc5-9242-38827e258c1b.jpg?v=1755780750"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008982_c02cc64b9cfc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008983_5d734d3ce172.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008984_e074d25c23ab.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17526 Air Filter",
       "sku": "sa-17526-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-75996828-d8ad-4ac3-95dc-e6c3fcc2c497.jpg?v=1723203795",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008982_c02cc64b9cfc.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "SA 17526",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 28 1460 Air Filter | Replaces the HiFi Filter SA 17526",
       "sku": "sa-17526-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_dd280cb1-fc7a-4247-b954-3fe0dc9eb796.jpg?v=1743773452",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008983_5d734d3ce172.jpg",
       "vendor": "",
       "price": 15100,
       "partNumber": "C 28 1460",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF4365 Air Filter, Primary | Replaces the HiFi Filter SA 17526",
       "sku": "sa-17526-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4365_e1146cee-8062-4dc5-9242-38827e258c1b.jpg?v=1755780750",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008984_e074d25c23ab.jpg",
       "vendor": "",
       "price": 14000,
       "partNumber": "AF4365",

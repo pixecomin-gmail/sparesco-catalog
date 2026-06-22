@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_2bb30140-c113-4390-a8b0-bdfe06a5e16e.jpg?v=1741361086",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4f56d2b9-a144-48ce-990d-e6ad553baf94_b5715cec-8463-4844-ab54-554e7b546aad.jpg?v=1741361086",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1f0f67ac-2546-4571-9280-cc0058470c54.png?v=1760629848"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026722_0d4d96145291.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026723_08cd986967f8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026724_ea104f3d8372.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1561B40B Return Filter | Replaces the Eppensteiner 1561G40",
       "sku": "1561g40-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_2bb30140-c113-4390-a8b0-bdfe06a5e16e.jpg?v=1741361086",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026722_0d4d96145291.jpg",
       "vendor": "Filtrec",
       "price": 27600,
       "partNumber": "RVR1561B40B",
@@ -47,7 +47,7 @@
     {
       "title": "HiFi Filter SH 67355 Return Filter | Replaces the Eppensteiner 1561G40",
       "sku": "1561g40-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4f56d2b9-a144-48ce-990d-e6ad553baf94_b5715cec-8463-4844-ab54-554e7b546aad.jpg?v=1741361086",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026723_08cd986967f8.jpg",
       "vendor": "HiFi Filter",
       "price": 35800,
       "partNumber": "SH 67355",
@@ -77,7 +77,7 @@
     {
       "title": "MicroFit® MFHR50418 UltraGen III Return Filter | Replaces the Eppensteiner 1561G40",
       "sku": "1561g40-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1f0f67ac-2546-4571-9280-cc0058470c54.png?v=1760629848",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026724_ea104f3d8372.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50418",

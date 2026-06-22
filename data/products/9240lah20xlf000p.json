@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF205512B-NB_446f533f-f685-4918-bfba-874946c421f9.jpg?v=1742550145",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160H_27cc8c81-63b6-47e0-9b97-a06c8cec17bf.jpg?v=1742550145",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b0c26e3e-5503-4521-af68-2e207e3fe1f0_e7322b21-eeb4-470f-ac79-cf458010a3c3.jpg?v=1742550145",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF205512B-NB_2cd1b5fa-c055-4275-9bb3-4ef7c6e25044.jpg?v=1742550150",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160H_bafc9810-458d-4d73-9a13-91a01c6aeb5b.jpg?v=1742550150",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b0c26e3e-5503-4521-af68-2e207e3fe1f0_35da3437-9ff0-4a15-b1f6-d005de4a9083.jpg?v=1742550150"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029315_a050d3d663ae.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029316_ebefb82482ed.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029317_bb8f782f0903.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029321_b25d82970647.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029322_94c1f0bb12d9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029323_af61237bdbec.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40209 Pressure Filter | Replaces the Eppensteiner 9.240LAH20XLF000P",
       "sku": "9-240lah20xlf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF205512B-NB_2cd1b5fa-c055-4275-9bb3-4ef7c6e25044.jpg?v=1742550150",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029321_b25d82970647.jpg",
       "vendor": "MicroFit",
       "price": 13500,
       "partNumber": "MFHHP40209",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DHD240H20B Pressure Filter | Replaces the Eppensteiner 9240LAH20XLF000P",
       "sku": "9240lah20xlf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160H_27cc8c81-63b6-47e0-9b97-a06c8cec17bf.jpg?v=1742550145",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029316_ebefb82482ed.jpg",
       "vendor": "Filtrec",
       "price": 14600,
       "partNumber": "DHD240H20B",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 75039 Pressure Filter | Replaces the Eppensteiner 9240LAH20XLF000P",
       "sku": "9240lah20xlf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b0c26e3e-5503-4521-af68-2e207e3fe1f0_e7322b21-eeb4-470f-ac79-cf458010a3c3.jpg?v=1742550145",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029317_bb8f782f0903.jpg",
       "vendor": "HiFi Filter",
       "price": 21600,
       "partNumber": "SH 75039",

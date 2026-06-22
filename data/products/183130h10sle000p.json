@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200242B_90750502-6c09-43b3-9332-1947801ea6a2.jpg?v=1764690622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c4c6f5b5-ae9d-4824-8e64-77f7f88026ba_dcccf2ae-0913-4ca7-af2b-9a242d11a393.jpg?v=1764690622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p174296.700.700_a9db38a6-3569-45f5-b8b3-0dd34c934f0b.jpg?v=1764690622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD0015E_472557af-c282-4530-836f-863008c8856f.jpg?v=1764690622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200242B_837e8386-4e6a-408a-bb7d-9d53e75ea292.jpg?v=1764690621",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c4c6f5b5-ae9d-4824-8e64-77f7f88026ba_e49f77f5-f18b-4264-8a5a-2dff4c5e2c6b.jpg?v=1764690621",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p174296.700.700_16dd2d6f-e799-45db-abd2-00350a987928.jpg?v=1764690621",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD0015E_dbb66ce8-45c9-4ca8-8d2e-0433f8c1e09b.jpg?v=1764690621"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032587_35b4def988a3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032588_44be07553821.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032589_a694dafe5aa1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032590_f482ea324678.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032594_379abf916371.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032595_b3580006b715.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032596_14f3f460c8fa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032597_58fb4020f89b.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit MFHLP30060 | Replaces the Eppensteiner 183130H10SLE000P",
       "sku": "183130h10sle000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200242B_90750502-6c09-43b3-9332-1947801ea6a2.jpg?v=1764690622",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032587_35b4def988a3.jpg",
       "vendor": "",
       "price": 9300,
       "partNumber": "MFHLP30060",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 84016 Pressure Filter | Replaces the Eppensteiner 183130H10SLE000P",
       "sku": "183130h10sle000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c4c6f5b5-ae9d-4824-8e64-77f7f88026ba_dcccf2ae-0913-4ca7-af2b-9a242d11a393.jpg?v=1764690622",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032588_44be07553821.jpg",
       "vendor": "",
       "price": 9700,
       "partNumber": "SH 84016",
@@ -83,7 +83,7 @@
     {
       "title": "Donaldson P174296 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 183130H10SLE000P",
       "sku": "183130h10sle000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p174296.700.700_a9db38a6-3569-45f5-b8b3-0dd34c934f0b.jpg?v=1764690622",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032589_a694dafe5aa1.jpg",
       "vendor": "",
       "price": 10000,
       "partNumber": "P174296",
@@ -114,7 +114,7 @@
     {
       "title": "Filtrec DMD0030E10B Pressure Filter | Replaces the Eppensteiner 183130H10SLE000P",
       "sku": "183130h10sle000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD0015E_472557af-c282-4530-836f-863008c8856f.jpg?v=1764690622",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032590_f482ea324678.jpg",
       "vendor": "",
       "price": 10100,
       "partNumber": "DMD0030E10B",

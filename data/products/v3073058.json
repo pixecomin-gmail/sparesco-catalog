@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-06ff851d-e83e-4644-baa4-aade31a70030_75f1e301-e69f-4587-803b-9d83e65de817.jpg?v=1755092236",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_7010_image1_da9b14bf-c578-42c5-b77e-228e1ac91bb0.jpg?v=1755092236",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200546B_76b76d89-fa50-4b54-8555-8252a629f53e.jpg?v=1755092236",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF40038_e6cf555c-f350-4ce5-ac45-75db02e57db3.jpg?v=1755779098",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b5a6ee5f-c48a-4a3a-a3bd-0c0eb925a3f9.png?v=1760629807"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001182_da313e361cb1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001183_ce2096cb1589.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001184_6c9a6f5a6c96.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001185_d1d9470864f5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001186_6965d48e7d21.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52058 Return Filter | Replaces the Argo-Hytos V3073058",
       "sku": "v3073058-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-06ff851d-e83e-4644-baa4-aade31a70030_75f1e301-e69f-4587-803b-9d83e65de817.jpg?v=1755092236",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001182_da313e361cb1.jpg",
       "vendor": "",
       "price": 10200,
       "partNumber": "SH 52058",
@@ -53,7 +53,7 @@
     {
       "title": "Mann Filter H 7010 Hydraulics | Replaces the Argo-Hytos V3073058",
       "sku": "v3073058-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_7010_image1_da9b14bf-c578-42c5-b77e-228e1ac91bb0.jpg?v=1755092236",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001183_ce2096cb1589.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "H 7010",
@@ -85,7 +85,7 @@
     {
       "title": "Filtrec R631G25 Return Filter | Replaces the Argo-Hytos V3073058",
       "sku": "v3073058-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200546B_76b76d89-fa50-4b54-8555-8252a629f53e.jpg?v=1755092236",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001184_6c9a6f5a6c96.jpg",
       "vendor": "",
       "price": 10700,
       "partNumber": "R631G25",
@@ -118,7 +118,7 @@
     {
       "title": "Fleetguard HF40038 Hydraulic Filters | Replaces the Argo-Hytos V3073058",
       "sku": "v3073058-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF40038_e6cf555c-f350-4ce5-ac45-75db02e57db3.jpg?v=1755779098",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001185_d1d9470864f5.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "HF40038",
@@ -151,7 +151,7 @@
     {
       "title": "MicroFit® MFHR50167 UltraGen III Filter | Replaces the Argo-Hytos V3073058",
       "sku": "v3073058-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b5a6ee5f-c48a-4a3a-a3bd-0c0eb925a3f9.png?v=1760629807",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001186_6965d48e7d21.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50167",

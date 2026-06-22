@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c078b6e7-5884-43a9-b36e-0371cdb93e72.jpg?v=1723212487",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181091.700.700_e7f1c6d9-fbb2-4ff5-b288-6a3fa8bbf7c9.jpg?v=1744305998",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1643_d7d307fd-6c93-4677-905e-be324f5bbed9.jpg?v=1755780891"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006035_3ad8f13fd3bc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006036_3cb48a62b0b2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006037_e0bf0b217a91.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11593 Air Filter",
       "sku": "sa-11593-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c078b6e7-5884-43a9-b36e-0371cdb93e72.jpg?v=1723212487",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006035_3ad8f13fd3bc.jpg",
       "vendor": "",
       "price": 7500,
       "partNumber": "SA 11593",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P181091 Air Filter, Primary Round | Replaces the HiFi Filter SA 11593",
       "sku": "sa-11593-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181091.700.700_e7f1c6d9-fbb2-4ff5-b288-6a3fa8bbf7c9.jpg?v=1744305998",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006036_3cb48a62b0b2.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "P181091",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF1643 Air Filter | Replaces the HiFi Filter SA 11593",
       "sku": "sa-11593-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1643_d7d307fd-6c93-4677-905e-be324f5bbed9.jpg?v=1755780891",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006037_e0bf0b217a91.jpg",
       "vendor": "",
       "price": 7500,
       "partNumber": "AF1643",

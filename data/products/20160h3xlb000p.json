@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_71693cc8-cff7-49e5-a3d0-56c2793405cb.jpg?v=1755096205",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37d1a996-05cf-47f3-86fd-d6370f028c9f_189c3f02-a5f7-4139-b20d-d2a1d6371248.jpg?v=1755096205",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_f83eb457-2270-41f3-bac6-2abee9b22dc8.png?v=1760634137",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_205b4281-d125-44ee-a316-36835c3b3fa1.jpg?v=1755096210",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37d1a996-05cf-47f3-86fd-d6370f028c9f_112e54a5-9405-49a4-898c-a4b35bf52325.jpg?v=1755096210",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_78e644a0-d9d7-4d2e-a14c-6ec38947fe06.png?v=1760634132"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009416_fd73eb332e64.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009417_56f0469585ae.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009418_847f53c089cc.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009422_aec7d3e9e564.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009423_b7ca7e4ea8ec.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009424_e40044f1a2f0.png"
   ],
   "variants": [
     {
       "title": "Filtrec XD160G03B DIN Pressure Filter | Replaces the Eppensteiner 20160H3XLB000P",
       "sku": "20160h3xlb000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_71693cc8-cff7-49e5-a3d0-56c2793405cb.jpg?v=1755096205",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009416_fd73eb332e64.jpg",
       "vendor": "",
       "price": 27100,
       "partNumber": "XD160G03B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 61202 DIN Pressure Filter | Replaces the Eppensteiner 20160H3XLB000P",
       "sku": "20160h3xlb000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37d1a996-05cf-47f3-86fd-d6370f028c9f_189c3f02-a5f7-4139-b20d-d2a1d6371248.jpg?v=1755096205",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009417_56f0469585ae.jpg",
       "vendor": "",
       "price": 23100,
       "partNumber": "SH 61202",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHHP40471 UltraGen III DIN Pressure Filter | Replaces the Eppensteiner 20160H3XLB000P",
       "sku": "20160h3xlb000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_f83eb457-2270-41f3-bac6-2abee9b22dc8.png?v=1760634137",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/009418_847f53c089cc.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40471",

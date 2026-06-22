@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200534B_62e6f383-da38-43d3-8e1e-f897f1e1a09c.jpg?v=1694506821",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_66_image1_19345e19-ada3-4cb9-93fb-bbfa5891728c.jpg?v=1754907766",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35237_01f53acf-d125-45da-a964-2c4f4169a178.jpg?v=1755778468",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4367880c-16c4-4470-9044-d22d8b75ab94.png?v=1760629096"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001344_bcbc0f953579.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001345_9428d15cfce0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001346_b59e2644e08a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001347_3764655e56d6.png"
   ],
   "variants": [
     {
       "title": "Filtrec D820G10A Pressure Filter | Replaces the Argo-Hytos V3060706",
       "sku": "v3060706-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200534B_62e6f383-da38-43d3-8e1e-f897f1e1a09c.jpg?v=1694506821",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001344_bcbc0f953579.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "D820G10A",
@@ -49,7 +49,7 @@
     {
       "title": "Mann Filter HD 66 Hydraulics | Replaces the Argo-Hytos V3060706",
       "sku": "v3060706-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_66_image1_19345e19-ada3-4cb9-93fb-bbfa5891728c.jpg?v=1754907766",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001345_9428d15cfce0.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "HD 66",
@@ -79,7 +79,7 @@
     {
       "title": "Fleetguard HF35237 Hydraulic Filters | Replaces the Argo-Hytos V3060706",
       "sku": "v3060706-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35237_01f53acf-d125-45da-a964-2c4f4169a178.jpg?v=1755778468",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001346_b59e2644e08a.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "HF35237",
@@ -110,7 +110,7 @@
     {
       "title": "MicroFit® MFHLP30206 UltraGen III Pressure Filter | Replaces the Argo-Hytos V3060706",
       "sku": "v3060706-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4367880c-16c4-4470-9044-d22d8b75ab94.png?v=1760629096",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001347_3764655e56d6.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30206",

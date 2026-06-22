@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a4e51041-a35f-4b35-bbd9-ddef86a184d5.jpg?v=1723256510",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p784863.700.700_1fae482f-bd10-44a9-988d-afec3126bef4.jpg?v=1744306108",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26408_6509f1ef-f695-4086-a50c-e2129547dfcc.jpg?v=1755781004"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003076_73ab89513e75.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003077_38beb6ac811c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003078_86b008dd8fb1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16493 Air Filter",
       "sku": "sa-16493-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a4e51041-a35f-4b35-bbd9-ddef86a184d5.jpg?v=1723256510",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003076_73ab89513e75.jpg",
       "vendor": "",
       "price": 8900,
       "partNumber": "SA 16493",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P784863 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16493",
       "sku": "sa-16493-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p784863.700.700_1fae482f-bd10-44a9-988d-afec3126bef4.jpg?v=1744306108",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003077_38beb6ac811c.jpg",
       "vendor": "",
       "price": 8600,
       "partNumber": "P784863",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF26408 Air Filter, Primary | Replaces the HiFi Filter SA 16493",
       "sku": "sa-16493-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26408_6509f1ef-f695-4086-a50c-e2129547dfcc.jpg?v=1755781004",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003078_86b008dd8fb1.jpg",
       "vendor": "",
       "price": 9200,
       "partNumber": "AF26408",

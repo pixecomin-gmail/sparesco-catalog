@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200424B-NB_c2f1e4a6-178a-49a3-86af-5bc1a2cd9047.jpg?v=1748450497",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-213b7ee2-098c-42d7-b711-4d4b68b9cb45_339637f6-97d6-4bcf-8160-7dda65177e4b.jpg?v=1748450497",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_78615c0f-2af9-48b6-8eca-946fe0f490f5.jpg?v=1748450497",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200424B-NB_01954aae-f93a-4402-a78f-a18a54cb7fee.jpg?v=1748450502",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-213b7ee2-098c-42d7-b711-4d4b68b9cb45_fc337e52-500b-409f-b3cc-023431c4bf22.jpg?v=1748450502",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_337b9e3a-d70d-4120-915b-0242ca418bca.jpg?v=1748450502"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027508_ea120a39d570.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027509_e4196395fab1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027510_1e38b453446a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027517_aca1a9ff2b3d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027518_01c02c8c3c0e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027519_94f143695a3b.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40089 Pressure Filter | Replaces the Eppensteiner 16.9601SH6SLF000P",
       "sku": "16-9601sh6slf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200424B-NB_01954aae-f93a-4402-a78f-a18a54cb7fee.jpg?v=1748450502",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027517_aca1a9ff2b3d.jpg",
       "vendor": "MicroFit",
       "price": 19300,
       "partNumber": "MFHHP40089",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87174 Pressure Filter | Replaces the Eppensteiner 169601SH6SLF000P",
       "sku": "169601sh6slf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-213b7ee2-098c-42d7-b711-4d4b68b9cb45_339637f6-97d6-4bcf-8160-7dda65177e4b.jpg?v=1748450497",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027509_e4196395fab1.jpg",
       "vendor": "HiFi Filter",
       "price": 29200,
       "partNumber": "SH 87174",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec D141G06B Pressure Filter | Replaces the Eppensteiner 169601SH6SLF000P",
       "sku": "169601sh6slf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_78615c0f-2af9-48b6-8eca-946fe0f490f5.jpg?v=1748450497",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027510_1e38b453446a.jpg",
       "vendor": "Filtrec",
       "price": 29800,
       "partNumber": "D141G06B",

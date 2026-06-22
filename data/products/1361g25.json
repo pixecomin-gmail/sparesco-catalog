@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1361_6d4c5aca-c073-4d46-9113-a27442d86285.jpg?v=1741361073",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37e43e26-569b-4b35-9adb-fbe2d8187bf6_dae62b05-6171-4265-8098-e03fe1ca396b.jpg?v=1741361073",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201559B_8b48359f-4c5f-4c12-955a-93214873d338.jpg?v=1741361073"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026788_fdfd98f21464.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026789_089739289f28.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026790_e9b5b08a6f32.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1361B25B Return Filter | Replaces the Eppensteiner 1361G25",
       "sku": "1361g25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1361_6d4c5aca-c073-4d46-9113-a27442d86285.jpg?v=1741361073",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026788_fdfd98f21464.jpg",
       "vendor": "Filtrec",
       "price": 28100,
       "partNumber": "RVR1361B25B",
@@ -47,7 +47,7 @@
     {
       "title": "HiFi Filter SH 67490 Return Filter | Replaces the Eppensteiner 1361G25",
       "sku": "1361g25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37e43e26-569b-4b35-9adb-fbe2d8187bf6_dae62b05-6171-4265-8098-e03fe1ca396b.jpg?v=1741361073",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026789_089739289f28.jpg",
       "vendor": "HiFi Filter",
       "price": 36300,
       "partNumber": "SH 67490",
@@ -77,7 +77,7 @@
     {
       "title": "MicroFit MFHR50391 | Replaces the Eppensteiner 1361G25",
       "sku": "1361g25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201559B_8b48359f-4c5f-4c12-955a-93214873d338.jpg?v=1741361073",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026790_e9b5b08a6f32.jpg",
       "vendor": "MicroFit",
       "price": 25800,
       "partNumber": "MFHR50391",

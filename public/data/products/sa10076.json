@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6459ed32-3f87-4918-b156-3ffcf6086e0d.jpg?v=1723206458",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ec638de6-4f45-491a-887a-13f265af3b75.jpg?v=1742827080",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25376_441cd8d0-d1f1-4001-ae92-6c0ee921912e.jpg?v=1755780804"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007563_96761202d2cb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007564_f4440a9e5e5d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007565_d9c6309c077e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10076 Air Filter",
       "sku": "sa-10076-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6459ed32-3f87-4918-b156-3ffcf6086e0d.jpg?v=1723206458",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007563_96761202d2cb.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "SA 10076",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 1776 Air Filter | Replaces the HiFi Filter SA 10076",
       "sku": "sa-10076-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_ec638de6-4f45-491a-887a-13f265af3b75.jpg?v=1742827080",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007564_f4440a9e5e5d.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "C 1776",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF25376 Air Filter | Replaces the HiFi Filter SA 10076",
       "sku": "sa-10076-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25376_441cd8d0-d1f1-4001-ae92-6c0ee921912e.jpg?v=1755780804",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007565_d9c6309c077e.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "AF25376",

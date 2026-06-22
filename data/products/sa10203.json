@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8b815ae5-42a9-4cc4-8c12-5008fb18668e.jpg?v=1723202403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p015838.700.700_07609b25-3766-4a81-ba66-9dadc201fe3c.jpg?v=1744305961",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF253_a329facf-fcb4-4dc5-a639-fd2021fe07d1.jpg?v=1755780717"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009958_fd0abac96d31.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009959_873f91428ad9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009960_7ad2b02ceeff.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10203 Air Filter",
       "sku": "sa-10203-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8b815ae5-42a9-4cc4-8c12-5008fb18668e.jpg?v=1723202403",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009958_fd0abac96d31.jpg",
       "vendor": "",
       "price": 8600,
       "partNumber": "SA 10203",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P015838 Air Filter, Primary Round | Replaces the HiFi Filter SA 10203",
       "sku": "sa-10203-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p015838.700.700_07609b25-3766-4a81-ba66-9dadc201fe3c.jpg?v=1744305961",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009959_873f91428ad9.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "P015838",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF253 Air Filter, Primary | Replaces the HiFi Filter SA 10203",
       "sku": "sa-10203-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF253_a329facf-fcb4-4dc5-a639-fd2021fe07d1.jpg?v=1755780717",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009960_7ad2b02ceeff.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "AF253",

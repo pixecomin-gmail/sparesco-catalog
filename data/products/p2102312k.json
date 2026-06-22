@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_10592_image1_d1f31751-4756-44f5-bd8a-b816d163d54d.jpg?v=1755099732",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7ed2914d-25d8-4f3e-9632-2ea7cf19119c_8e80a2c5-f5fd-4cfd-8133-f37e48902529.jpg?v=1755099732",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_434f78c2-0d4e-4381-b7f2-4e7ece876ba0.png?v=1755099732"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000111_2e71282d1a02.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000112_ea722126b11d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000113_6981738a4ded.png"
   ],
   "variants": [
     {
       "title": "Mann Filter H 1059/2 Hydraulic Transmission Filter | Replaces the Argo-Hytos P2102312K",
       "sku": "p2102312k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_10592_image1_d1f31751-4756-44f5-bd8a-b816d163d54d.jpg?v=1755099732",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000111_2e71282d1a02.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "H 1059/2",
@@ -46,7 +46,7 @@
     {
       "title": "HiFi Filter SH 52012 Special Filter | Replaces the Argo-Hytos P2102312K",
       "sku": "p2102312k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7ed2914d-25d8-4f3e-9632-2ea7cf19119c_8e80a2c5-f5fd-4cfd-8133-f37e48902529.jpg?v=1755099732",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000112_ea722126b11d.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "SH 52012",
@@ -75,7 +75,7 @@
     {
       "title": "Filtrec WP837 Special Filter | Replaces the Argo-Hytos P2102312K",
       "sku": "p2102312k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_434f78c2-0d4e-4381-b7f2-4e7ece876ba0.png?v=1755099732",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000113_6981738a4ded.png",
       "vendor": "",
       "price": 0,
       "partNumber": "WP837",

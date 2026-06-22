@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dfd73028-107f-407b-834e-78753db21bad.jpg?v=1748456097",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781351.700.700_67f38f5a-5f89-439d-9baa-66a9d9c63a22.jpg?v=1748456097",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2100_image1_ff63141c-b8e7-4189-b9c1-91c4dd0add3e.jpg?v=1754909275",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25230_c2dc01ed-7e45-461d-bc08-0fc5b383759b.jpg?v=1755780751"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008985_740a8c4e9fb6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008986_206c0a072179.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008987_3f515a904c61.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008988_f1c070db186a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 19021 Air Filter",
       "sku": "sa-19021-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dfd73028-107f-407b-834e-78753db21bad.jpg?v=1748456097",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008985_740a8c4e9fb6.jpg",
       "vendor": "",
       "price": 10200,
       "partNumber": "SA 19021",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P781351 Air Filter, Safety | Replaces the HiFi Filter SA 19021",
       "sku": "sa-19021-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781351.700.700_67f38f5a-5f89-439d-9baa-66a9d9c63a22.jpg?v=1748456097",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008986_206c0a072179.jpg",
       "vendor": "",
       "price": 15300,
       "partNumber": "P781351",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter CF 2100 Secondary Element | Replaces the HiFi Filter SA 19021",
       "sku": "sa-19021-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2100_image1_ff63141c-b8e7-4189-b9c1-91c4dd0add3e.jpg?v=1754909275",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008987_3f515a904c61.jpg",
       "vendor": "",
       "price": 20000,
       "partNumber": "CF 2100",
@@ -77,7 +77,7 @@
     {
       "title": "Fleetguard AF25230 Air Filter, Secondary | Replaces the HiFi Filter SA 19021",
       "sku": "sa-19021-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25230_c2dc01ed-7e45-461d-bc08-0fc5b383759b.jpg?v=1755780751",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008988_f1c070db186a.jpg",
       "vendor": "",
       "price": 13900,
       "partNumber": "AF25230",

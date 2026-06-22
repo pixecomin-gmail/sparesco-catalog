@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ab029558-864a-4e79-828d-4ee0468bb4e7.jpg?v=1723214802",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_2d14c35b-bdd4-4928-8f10-b190a1322abc.jpg?v=1743773656",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4448_de638651-fc7d-4490-818e-332c3224b6e8.jpg?v=1755780898"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005327_ab648ef4f16d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005328_4c11ad003e26.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005329_6430bc250418.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 5277 Air Filter",
       "sku": "sa-5277-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ab029558-864a-4e79-828d-4ee0468bb4e7.jpg?v=1723214802",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005327_ab648ef4f16d.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "SA 5277",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 35 009 Air Filter | Replaces the HiFi Filter SA 5277",
       "sku": "sa-5277-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_2d14c35b-bdd4-4928-8f10-b190a1322abc.jpg?v=1743773656",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005328_4c11ad003e26.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "C 35 009",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF4448 Panel Air Filter Filter | Replaces the HiFi Filter SA 5277",
       "sku": "sa-5277-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4448_de638651-fc7d-4490-818e-332c3224b6e8.jpg?v=1755780898",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005329_6430bc250418.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "AF4448",

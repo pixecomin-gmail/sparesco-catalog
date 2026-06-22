@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7aa0b54a-6064-45a1-8d67-941c92a1e18e.jpg?v=1723212241",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_c2cd509f-2d15-4e03-83c1-8ef5007a1d29.jpg?v=1743773620",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p506010.700.700_33efe150-d3e8-4b65-8cd6-9c28f6ba1968.jpg?v=1744306197",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26543_9a7ee3d8-3645-4333-b072-77e94a1cd154.jpg?v=1755780889"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006217_7ac99d194ee4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006218_bd3b45747240.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006219_1c87ec988d68.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006220_fc1cffb82729.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 8440 Air Filter",
       "sku": "sa-8440-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7aa0b54a-6064-45a1-8d67-941c92a1e18e.jpg?v=1723212241",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006217_7ac99d194ee4.jpg",
       "vendor": "",
       "price": 2000,
       "partNumber": "SA 8440",
@@ -40,7 +40,7 @@
     {
       "title": "Mann Filter C 24 011 Air Filter | Replaces the HiFi Filter SA 8440",
       "sku": "sa-8440-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_c2cd509f-2d15-4e03-83c1-8ef5007a1d29.jpg?v=1743773620",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006218_bd3b45747240.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "C 24 011",
@@ -59,7 +59,7 @@
     {
       "title": "Donaldson P506010 Air Filter, Panel Engine | Replaces the HiFi Filter SA 8440",
       "sku": "sa-8440-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p506010.700.700_33efe150-d3e8-4b65-8cd6-9c28f6ba1968.jpg?v=1744306197",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006219_1c87ec988d68.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "P506010",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF26543 Air Filter | Replaces the HiFi Filter SA 8440",
       "sku": "sa-8440-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26543_9a7ee3d8-3645-4333-b072-77e94a1cd154.jpg?v=1755780889",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006220_fc1cffb82729.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "AF26543",

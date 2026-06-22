@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fae81b0e-ea95-401b-a389-002e2dcb48d2.jpg?v=1723215977",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c105004.700.700_a37f5d74-31e6-412a-92ac-54bc014fcbe8.jpg?v=1744306204",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH1196_b9597892-4695-40d9-a1ca-48a577593805.jpg?v=1755780906"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005101_a6914dc9c99d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005102_4e0d9e72976a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005103_840ad7e66d08.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SAC 105004 Air Filter",
       "sku": "sac-105004-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fae81b0e-ea95-401b-a389-002e2dcb48d2.jpg?v=1723215977",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005101_a6914dc9c99d.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "SAC 105004",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson C105004 Air Filter, Primary Duralite | Replaces the HiFi Filter SAC 105004",
       "sku": "sac-105004-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c105004.700.700_a37f5d74-31e6-412a-92ac-54bc014fcbe8.jpg?v=1744306204",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005102_4e0d9e72976a.jpg",
       "vendor": "",
       "price": 7500,
       "partNumber": "C105004",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AH1196 Air Intake Systems | Replaces the HiFi Filter SAC 105004",
       "sku": "sac-105004-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH1196_b9597892-4695-40d9-a1ca-48a577593805.jpg?v=1755780906",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005103_840ad7e66d08.jpg",
       "vendor": "",
       "price": 12100,
       "partNumber": "AH1196",

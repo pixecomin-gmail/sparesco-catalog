@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3e33428f-2415-4bf0-b245-2cf9f9662542.jpg?v=1723204370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p631511.700.700_1336dbdd-fdd1-4920-a5ec-cda9c8990248.jpg?v=1744306145",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4333_0ab6fef3-894a-4437-893c-d809c864e714.jpg?v=1755780767"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008543_8e6edffcb476.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008544_32a6a38d1ea3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008545_7f6453eefc31.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16879 Air Filter",
       "sku": "sa-16879-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3e33428f-2415-4bf0-b245-2cf9f9662542.jpg?v=1723204370",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008543_8e6edffcb476.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "SA 16879",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P631511 Air Filter, Safety | Replaces the HiFi Filter SA 16879",
       "sku": "sa-16879-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p631511.700.700_1336dbdd-fdd1-4920-a5ec-cda9c8990248.jpg?v=1744306145",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008544_32a6a38d1ea3.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "P631511",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF4333 Air Filter, Secondary | Replaces the HiFi Filter SA 16879",
       "sku": "sa-16879-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4333_0ab6fef3-894a-4437-893c-d809c864e714.jpg?v=1755780767",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008545_7f6453eefc31.jpg",
       "vendor": "",
       "price": 14200,
       "partNumber": "AF4333",

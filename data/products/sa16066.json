@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8315c6ce-797c-44b0-8d08-573923b0d52f.jpg?v=1723203079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_aaba471a-80b1-41e6-80fc-736fc0f3a513.jpg?v=1743773442",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500236.700.700_868b19ec-30a6-4341-921b-54e2b349be9e.jpg?v=1744306061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25703K_f2b54a46-712f-4dfa-8df7-062d9205f50b.jpg?v=1755780734"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009466_b300100a5dad.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009467_154bc1d949d5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009468_ad0726aeb6f7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009469_ffcf47f2a4a1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16066 Air Filter",
       "sku": "sa-16066-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8315c6ce-797c-44b0-8d08-573923b0d52f.jpg?v=1723203079",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009466_b300100a5dad.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SA 16066",
@@ -40,7 +40,7 @@
     {
       "title": "Mann Filter C 11 005 Air Filter | Replaces the HiFi Filter SA 16066",
       "sku": "sa-16066-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_aaba471a-80b1-41e6-80fc-736fc0f3a513.jpg?v=1743773442",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009467_154bc1d949d5.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "C 11 005",
@@ -61,7 +61,7 @@
     {
       "title": "Donaldson P500236 Air Filter, Primary Finned | Replaces the HiFi Filter SA 16066",
       "sku": "sa-16066-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500236.700.700_868b19ec-30a6-4341-921b-54e2b349be9e.jpg?v=1744306061",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009468_ad0726aeb6f7.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "P500236",
@@ -77,7 +77,7 @@
     {
       "title": "Fleetguard AF25703K Air, Primary | Replaces the HiFi Filter SA 16066",
       "sku": "sa-16066-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25703K_f2b54a46-712f-4dfa-8df7-062d9205f50b.jpg?v=1755780734",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009469_ffcf47f2a4a1.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "AF25703K",

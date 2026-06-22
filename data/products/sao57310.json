@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782924.700.700_12b41791-715e-42f8-8234-e5980458546f.jpg?v=1755103794",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520101_bcada214-fc13-4d1c-8470-8e4006d764b3.jpg?v=1755103794",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_48_022_image1_d900699e-c0a6-42bb-999a-e8e3539819c0.jpg?v=1755103794",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782924.700.700_0b2e219f-5f1a-4965-9f18-46d9f74c174a.jpg?v=1755101409",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520101_0d752ecf-f6fc-4e21-b9eb-dc926c57cbf1.jpg?v=1755101409",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_48_022_image1_7b5bc11b-11c6-434e-95c6-55be38273553.jpg?v=1755101409"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000768_3a11824e2979.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000769_5c4b9c81e0f0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000770_ed240d0b119d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001875_82b1f495a8ae.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001876_418e076b9ac1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001877_72dfe020b2b7.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson P782924 Air Oil Separator | Replaces the SF Filter SAO57310",
       "sku": "sao57310-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782924.700.700_12b41791-715e-42f8-8234-e5980458546f.jpg?v=1755103794",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000768_3a11824e2979.jpg",
       "vendor": "",
       "price": 38800,
       "partNumber": "P782924",
@@ -36,7 +36,7 @@
     {
       "title": "HiFi Filter OS 101 Air/Oil Separator | Replaces the SF Filter SAO 57310",
       "sku": "sao-57310-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520101_0d752ecf-f6fc-4e21-b9eb-dc926c57cbf1.jpg?v=1755101409",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001876_418e076b9ac1.jpg",
       "vendor": "",
       "price": 37600,
       "partNumber": "OS 101",
@@ -52,7 +52,7 @@
     {
       "title": "Mann Filter LE 48 022 Compressed Air-Oil Separation | Replaces the SF Filter SAO57310",
       "sku": "sao57310-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_48_022_image1_d900699e-c0a6-42bb-999a-e8e3539819c0.jpg?v=1755103794",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000770_ed240d0b119d.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "LE 48 022",

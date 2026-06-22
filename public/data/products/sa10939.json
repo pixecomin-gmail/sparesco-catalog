@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-981d4f23-947f-47ca-a971-7dd015b4d4e9.jpg?v=1723208596",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b52b8f44-0c77-4bd3-bed8-4d44fd21db06.jpg?v=1743773537",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF989_b0ee2f3e-9c2d-4e93-b2d2-4ab4d94b036f.jpg?v=1755780834"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006945_f493acdb4faa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006946_c45e83ba55de.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006947_c53c584f4176.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10939 Air Filter",
       "sku": "sa-10939-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-981d4f23-947f-47ca-a971-7dd015b4d4e9.jpg?v=1723208596",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006945_f493acdb4faa.jpg",
       "vendor": "",
       "price": 7800,
       "partNumber": "SA 10939",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 36 840/3 Air Filter | Replaces the HiFi Filter SA 10939",
       "sku": "sa-10939-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b52b8f44-0c77-4bd3-bed8-4d44fd21db06.jpg?v=1743773537",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006946_c45e83ba55de.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "C 36 840/3",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF989 Air Filter, Primary | Replaces the HiFi Filter SA 10939",
       "sku": "sa-10939-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF989_b0ee2f3e-9c2d-4e93-b2d2-4ab4d94b036f.jpg?v=1755780834",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006947_c53c584f4176.jpg",
       "vendor": "",
       "price": 9200,
       "partNumber": "AF989",

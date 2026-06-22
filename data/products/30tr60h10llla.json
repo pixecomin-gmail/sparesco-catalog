@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-833fa85c-bef5-463f-be9b-746e5c36c5c3_0030a786-fac8-4844-802a-089493b31f17.jpg?v=1755092579",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201584B_e380a157-57b9-4e8a-87e3-6ad2fb1cfcce.jpg?v=1755092579",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6883_3509170b-4c78-499c-a044-b7b48b863176.jpg?v=1755779217",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_r_010_on_n167150_i2523780_7c091441-ef8c-481e-9bd7-3f55e0d2e6e0.jpg?v=1760541910",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_05489239-6038-49aa-8f2b-65f2e4d1f18c.png?v=1760630102"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025092_8d16eb3f38c1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025093_d5cff10200b3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025094_5f656e798285.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025095_530c3fb940f3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025096_5e54bac55816.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 74060 Return Filter | Replaces the Eppensteiner 30TR60H10LLLA",
       "sku": "30tr60h10llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-833fa85c-bef5-463f-be9b-746e5c36c5c3_0030a786-fac8-4844-802a-089493b31f17.jpg?v=1755092579",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025092_8d16eb3f38c1.jpg",
       "vendor": "HiFi Filter",
       "price": 4500,
       "partNumber": "SH 74060",
@@ -54,7 +54,7 @@
     {
       "title": "Filtrec RHR60G10B3/AB1 Return Filter | Replaces the Eppensteiner 30TR60H10LLLA",
       "sku": "30tr60h10llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201584B_e380a157-57b9-4e8a-87e3-6ad2fb1cfcce.jpg?v=1755092579",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025093_d5cff10200b3.jpg",
       "vendor": "Filtrec",
       "price": 3800,
       "partNumber": "RHR60G10B3/AB1",
@@ -87,7 +87,7 @@
     {
       "title": "Fleetguard HF6883 Hydraulic Filters | Replaces the Eppensteiner 30TR60H10LLLA",
       "sku": "30tr60h10llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6883_3509170b-4c78-499c-a044-b7b48b863176.jpg?v=1755779217",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025094_5f656e798285.jpg",
       "vendor": "Fleetguard",
       "price": 4600,
       "partNumber": "HF6883",
@@ -120,7 +120,7 @@
     {
       "title": "Hydac 0060 R 010 ON Optimicron® Return Filter | Replaces the Eppensteiner 30TR60H10LLLA",
       "sku": "30tr60h10llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_r_010_on_n167150_i2523780_7c091441-ef8c-481e-9bd7-3f55e0d2e6e0.jpg?v=1760541910",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025095_530c3fb940f3.jpg",
       "vendor": "Hydac",
       "price": 8100,
       "partNumber": "0060 R 010 ON",
@@ -153,7 +153,7 @@
     {
       "title": "MicroFit® MFHR50911 UltraGen III Filter | Replaces the Eppensteiner 30TR60H10LLLA",
       "sku": "30tr60h10llla-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_05489239-6038-49aa-8f2b-65f2e4d1f18c.png?v=1760630102",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/025096_5e54bac55816.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50911",

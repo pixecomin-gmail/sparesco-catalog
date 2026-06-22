@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e8e257f7-b2d6-4b7b-8fa8-799a9865c597.jpg?v=1723204416",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_21251_image1_d4185dc0-6ea9-43ee-a8b5-561ae7a6542e.jpg?v=1754909289",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4194_2e29b803-4766-4c6e-9c8b-4281bbda0db1.jpg?v=1755780769"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008530_6ec2a731ee79.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008531_83e43332d3e6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008532_ab03739aef7d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17454 Air Filter",
       "sku": "sa-17454-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e8e257f7-b2d6-4b7b-8fa8-799a9865c597.jpg?v=1723204416",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008530_6ec2a731ee79.jpg",
       "vendor": "",
       "price": 4300,
       "partNumber": "SA 17454",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter CF 2125/1 Secondary Element | Replaces the HiFi Filter SA 17454",
       "sku": "sa-17454-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_21251_image1_d4185dc0-6ea9-43ee-a8b5-561ae7a6542e.jpg?v=1754909289",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008531_83e43332d3e6.jpg",
       "vendor": "",
       "price": 6500,
       "partNumber": "CF 2125/1",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF4194 Air Filter, Secondary | Replaces the HiFi Filter SA 17454",
       "sku": "sa-17454-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4194_2e29b803-4766-4c6e-9c8b-4281bbda0db1.jpg?v=1755780769",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008532_ab03739aef7d.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "AF4194",

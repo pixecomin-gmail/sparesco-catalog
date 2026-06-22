@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a1391f2f-1d0e-4a17-86f3-df22358c3d59.jpg?v=1723206885",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777948.700.700_bd729d44-c7c6-4892-b684-8baaa7238e7e.jpg?v=1744306180",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25237_e8926cac-4ab7-4739-8e8b-046faf9f3f4d.jpg?v=1755780808"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007327_0093a510dec8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007328_81da24fded7f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007329_d4b6ffced496.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17860 Air Filter",
       "sku": "sa-17860-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a1391f2f-1d0e-4a17-86f3-df22358c3d59.jpg?v=1723206885",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007327_0093a510dec8.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "SA 17860",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P777948 Air Filter, Primary Round | Replaces the HiFi Filter SA 17860",
       "sku": "sa-17860-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777948.700.700_bd729d44-c7c6-4892-b684-8baaa7238e7e.jpg?v=1744306180",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007328_81da24fded7f.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "P777948",
@@ -56,7 +56,7 @@
     {
       "title": "Fleetguard AF25237 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 17860",
       "sku": "sa-17860-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25237_e8926cac-4ab7-4739-8e8b-046faf9f3f4d.jpg?v=1755780808",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007329_d4b6ffced496.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "AF25237",

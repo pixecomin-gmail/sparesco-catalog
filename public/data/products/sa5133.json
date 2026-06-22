@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-337511d1-b213-4702-b7d9-4b5fffaf9898.jpg?v=1748456099",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785542.700.700_5b4c5547-e87d-4489-8874-483e9bbb0049.jpg?v=1748456099",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_006_image1_e424aa6a-4183-4fcb-8f41-07f6c05d6194.jpg?v=1754909412",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26165_8f1f00e8-1d42-495c-9f43-73b729f0899c.jpg?v=1755780875"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006641_bab9cb122974.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006642_5188bfdd16c6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006643_b84365cdbb64.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006644_6626a6747d14.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 5133 Air Filter",
       "sku": "sa-5133-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-337511d1-b213-4702-b7d9-4b5fffaf9898.jpg?v=1748456099",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006641_bab9cb122974.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "SA 5133",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P785542 Air Filter, Primary Round | Replaces the HiFi Filter SA 5133",
       "sku": "sa-5133-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785542.700.700_5b4c5547-e87d-4489-8874-483e9bbb0049.jpg?v=1748456099",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006642_5188bfdd16c6.jpg",
       "vendor": "",
       "price": 13700,
       "partNumber": "P785542",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 40 006 Air Filter | Replaces the HiFi Filter SA 5133",
       "sku": "sa-5133-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_006_image1_e424aa6a-4183-4fcb-8f41-07f6c05d6194.jpg?v=1754909412",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006643_b84365cdbb64.jpg",
       "vendor": "",
       "price": 14600,
       "partNumber": "C 40 006",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF26165 Air Filter | Replaces the HiFi Filter SA 5133",
       "sku": "sa-5133-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26165_8f1f00e8-1d42-495c-9f43-73b729f0899c.jpg?v=1755780875",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006644_6626a6747d14.jpg",
       "vendor": "",
       "price": 19600,
       "partNumber": "AF26165",

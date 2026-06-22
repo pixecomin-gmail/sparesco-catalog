@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200534B_280f29ab-3ae0-4301-aae6-2c9764d99588.jpg?v=1755097387",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6512bf2e-e0c2-4781-a991-8ce41e8d4588_6a385ea4-0d78-4ae7-8dbf-f8b24eeacb31.jpg?v=1755097387",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200534B_ae78b6cc-3ab7-44d8-a444-9bf7999f11de.jpg?v=1755093775",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6512bf2e-e0c2-4781-a991-8ce41e8d4588_3e0b3d84-4e7d-4320-9d27-aaafefe73d1f.jpg?v=1755093775"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000449_25c1aa938534.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000450_0242fa56b915.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001023_aac07146ec7c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001024_c0231a1a6574.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec D820C10A Pressure Filter | Replaces the Argo-Hytos P3060701",
       "sku": "p3060701-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200534B_280f29ab-3ae0-4301-aae6-2c9764d99588.jpg?v=1755097387",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000449_25c1aa938534.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "D820C10A",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 52224 Pressure Filter | Replaces the Argo-Hytos P3060701",
       "sku": "p3060701-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6512bf2e-e0c2-4781-a991-8ce41e8d4588_6a385ea4-0d78-4ae7-8dbf-f8b24eeacb31.jpg?v=1755097387",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000450_0242fa56b915.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SH 52224",

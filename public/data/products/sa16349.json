@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d6ecce12-3692-42c1-ba44-814f501b144d.jpg?v=1748456041",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p533781.700.700_91cb4c92-865e-4fcc-adf9-472ce6ff4e29.jpg?v=1748456041",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_14_002_image1_a7fd3752-ef7f-4cc2-8086-5c7fa530da10.jpg?v=1754909281",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26114_abfa3db1-d69d-4beb-8a44-84241cd47fab.jpg?v=1755780767"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008552_37cbd4895f7c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008553_c4ef404c8db0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008554_b9027562f3b0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008555_35cab603b0b5.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16349 Air Filter",
       "sku": "sa-16349-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d6ecce12-3692-42c1-ba44-814f501b144d.jpg?v=1748456041",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008552_37cbd4895f7c.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "SA 16349",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P533781 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16349",
       "sku": "sa-16349-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p533781.700.700_91cb4c92-865e-4fcc-adf9-472ce6ff4e29.jpg?v=1748456041",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008553_c4ef404c8db0.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "P533781",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CF 14 002 Secondary Element | Replaces the HiFi Filter SA 16349",
       "sku": "sa-16349-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_14_002_image1_a7fd3752-ef7f-4cc2-8086-5c7fa530da10.jpg?v=1754909281",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008554_b9027562f3b0.jpg",
       "vendor": "",
       "price": 6200,
       "partNumber": "CF 14 002",
@@ -74,7 +74,7 @@
     {
       "title": "Fleetguard AF26114 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16349",
       "sku": "sa-16349-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26114_abfa3db1-d69d-4beb-8a44-84241cd47fab.jpg?v=1755780767",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008555_35cab603b0b5.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "AF26114",

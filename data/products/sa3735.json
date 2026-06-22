@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6981945f-abf2-430e-8d1a-d01fb620066c.jpg?v=1723203933",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p539470.700.700_804df0e4-4625-459e-9fe8-f909ffc164d9.jpg?v=1744306191",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4696_295d0001-e45b-48ae-9b75-1f45c040aeca.jpg?v=1755780760"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008878_517e5edd6843.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008879_938eba2730ab.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008880_8f6db4c9a9d3.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 3735 Air Filter",
       "sku": "sa-3735-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6981945f-abf2-430e-8d1a-d01fb620066c.jpg?v=1723203933",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008878_517e5edd6843.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "SA 3735",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P539470 Air Filter, Primary Round | Replaces the HiFi Filter SA 3735",
       "sku": "sa-3735-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p539470.700.700_804df0e4-4625-459e-9fe8-f909ffc164d9.jpg?v=1744306191",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008879_938eba2730ab.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "P539470",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4696 Air, Primary | Replaces the HiFi Filter SA 3735",
       "sku": "sa-3735-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4696_295d0001-e45b-48ae-9b75-1f45c040aeca.jpg?v=1755780760",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008880_8f6db4c9a9d3.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF4696",

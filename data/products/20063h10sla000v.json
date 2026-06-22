@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF206628B_941516b4-79f6-4ea2-b139-72a8aa829274.jpg?v=1764691959",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_b4e8eff6-63b2-4ccb-8013-af5b6a375eb1.jpg?v=1764691959",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_2972be55-2855-4e9d-b68d-3b5bc61e13b3.jpg?v=1764762900",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF206628B_14e2c12b-8e89-40b8-9c16-9709a8d844e9.jpg?v=1764691681",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_33b1bb26-b216-48ff-9f11-4b7726d2068e.jpg?v=1764691681",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_5a24914e-fabd-421f-9a9c-4f35aa62385b.jpg?v=1764762758"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018674_592e58602460.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018675_303b4fa0103e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018676_ea5aaf9db1ba.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020721_e105b7395571.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020722_4237660ddeb2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020723_7cd828bf6caf.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit MFHLP31758 | Replaces the Eppensteiner 20063H10SLA000V",
       "sku": "20063h10sla000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF206628B_941516b4-79f6-4ea2-b139-72a8aa829274.jpg?v=1764691959",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018674_592e58602460.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "MFHLP31758",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec XD063G10AV DIN Pressure Filter | Replaces the Eppensteiner 20063H10SLA000V",
       "sku": "20063h10sla000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_b4e8eff6-63b2-4ccb-8013-af5b6a375eb1.jpg?v=1764691959",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018675_303b4fa0103e.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "XD063G10AV",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 65408 V DIN Pressure Filter | Replaces the Eppensteiner 20063H10SLA000V",
       "sku": "20063h10sla000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_2972be55-2855-4e9d-b68d-3b5bc61e13b3.jpg?v=1764762900",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018676_ea5aaf9db1ba.jpg",
       "vendor": "",
       "price": 10400,
       "partNumber": "SH 65408 V",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d8c42c24-fb4b-482b-a858-c12499e828a0.jpg?v=1723201987",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_16_190_x_image1_5b61bd7c-1293-41b4-9a97-d79b7515bef5.jpg?v=1754909258",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF409K_c0569ea3-3e63-4957-af94-90f4066c459b.jpg?v=1755780708"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000065_3b244917c1e6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000066_5228b4bf8c7d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000067_a4930ce116dd.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10359 K Air Filter",
       "sku": "sa-10359-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d8c42c24-fb4b-482b-a858-c12499e828a0.jpg?v=1723201987",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000065_3b244917c1e6.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "SA 10359 K",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 16 190 x Air Filter | Replaces the HiFi Filter SA 10359 K",
       "sku": "sa-10359-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_16_190_x_image1_5b61bd7c-1293-41b4-9a97-d79b7515bef5.jpg?v=1754909258",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000066_5228b4bf8c7d.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "C 16 190 x",
@@ -60,7 +60,7 @@
     {
       "title": "Fleetguard AF409K Air Filter, Primary | Replaces the HiFi Filter SA 10359 K",
       "sku": "sa-10359-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF409K_c0569ea3-3e63-4957-af94-90f4066c459b.jpg?v=1755780708",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000067_a4930ce116dd.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "AF409K",

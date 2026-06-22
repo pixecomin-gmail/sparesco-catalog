@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60H_cdb4e714-5726-42b2-8bfe-18190469ed20.jpg?v=1761218052",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d9cd4cfb-eb8a-468f-8af7-1e7b70a73895.png?v=1761218052",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9465c9c7-5262-4281-ab55-e9e19e34366c_3bbe5e7f-9dba-4700-b05e-f679cc4ad6e1.jpg?v=1761654750",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_010_bh4hc_n166081_i2372445_8f14e845-6fd4-4666-8eca-31f3b2b288cf.jpg?v=1761218052"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032610_385dd865fb45.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032611_2b5b279ed608.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032612_e85b1326eb29.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032613_381648131f79.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD60H10B Pressure Filter | Replaces the Eppensteiner E400HL60H102LLLA",
       "sku": "e400hl60h102llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60H_cdb4e714-5726-42b2-8bfe-18190469ed20.jpg?v=1761218052",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032610_385dd865fb45.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "DHD60H10B",
@@ -49,7 +49,7 @@
     {
       "title": "MicroFit® MFHHP40735 UltraGen III Filter | Replaces the Eppensteiner E400HL60H102LLLA",
       "sku": "e400hl60h102llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d9cd4cfb-eb8a-468f-8af7-1e7b70a73895.png?v=1761218052",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032611_2b5b279ed608.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40735",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 75005 Pressure Filter | Replaces the Eppensteiner E400HL60H102LLLA",
       "sku": "e400hl60h102llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9465c9c7-5262-4281-ab55-e9e19e34366c_3bbe5e7f-9dba-4700-b05e-f679cc4ad6e1.jpg?v=1761654750",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032612_e85b1326eb29.jpg",
       "vendor": "",
       "price": 10000,
       "partNumber": "SH 75005",
@@ -111,7 +111,7 @@
     {
       "title": "Hydac 0060 D 010 BH4HC High Pressure Filter | Replaces the Eppensteiner E400HL60H102LLLA",
       "sku": "e400hl60h102llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_010_bh4hc_n166081_i2372445_8f14e845-6fd4-4666-8eca-31f3b2b288cf.jpg?v=1761218052",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032613_381648131f79.jpg",
       "vendor": "",
       "price": 21000,
       "partNumber": "0060 D 010 BH4HC",

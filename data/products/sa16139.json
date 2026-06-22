@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c98caf6-5ff3-486b-8965-dfa787361b9a.jpg?v=1723202905",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p154927.700.700_de7183fa-38d6-4980-9e58-44b6ae70dab9.jpg?v=1744306073",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH1103_bcb93733-51c1-4073-acaa-913ef5b0bc2d.jpg?v=1755780730"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009608_410e9327a798.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009609_ba8ce23bbc96.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009610_6e7aef5c1d17.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16139 Air Filter",
       "sku": "sa-16139-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c98caf6-5ff3-486b-8965-dfa787361b9a.jpg?v=1723202905",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009608_410e9327a798.jpg",
       "vendor": "",
       "price": 17100,
       "partNumber": "SA 16139",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P154927 Air Cleaner, Disposable | Replaces the HiFi Filter SA 16139",
       "sku": "sa-16139-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p154927.700.700_de7183fa-38d6-4980-9e58-44b6ae70dab9.jpg?v=1744306073",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009609_ba8ce23bbc96.jpg",
       "vendor": "",
       "price": 19200,
       "partNumber": "P154927",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AH1103 Air Intake Systems | Replaces the HiFi Filter SA 16139",
       "sku": "sa-16139-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AH1103_bcb93733-51c1-4073-acaa-913ef5b0bc2d.jpg?v=1755780730",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009610_6e7aef5c1d17.jpg",
       "vendor": "",
       "price": 20000,
       "partNumber": "AH1103",

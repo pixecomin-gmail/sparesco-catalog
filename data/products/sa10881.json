@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-959336a5-d4d0-43cc-b93b-e7f593290516.jpg?v=1748455982",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p129472.700.700_e0c46175-fd82-428e-9ec4-667d3a61a10b.jpg?v=1748455982",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_22_835_image1_f9c8a467-d798-424d-8983-de4d47340a7a.jpg?v=1754909282",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF931M_99997c28-3b22-4cc8-bf61-bbd1b6496d91.jpg?v=1755780765"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008608_aacb66643423.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008609_eb0caec099c8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008610_835af5ff79fd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008611_b14086cb40ec.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10881 Air Filter",
       "sku": "sa-10881-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-959336a5-d4d0-43cc-b93b-e7f593290516.jpg?v=1748455982",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008608_aacb66643423.jpg",
       "vendor": "",
       "price": 9100,
       "partNumber": "SA 10881",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P129472 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 10881",
       "sku": "sa-10881-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p129472.700.700_e0c46175-fd82-428e-9ec4-667d3a61a10b.jpg?v=1748455982",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008609_eb0caec099c8.jpg",
       "vendor": "",
       "price": 9100,
       "partNumber": "P129472",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 22 835 Air Filter | Replaces the HiFi Filter SA 10881",
       "sku": "sa-10881-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_22_835_image1_f9c8a467-d798-424d-8983-de4d47340a7a.jpg?v=1754909282",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008610_835af5ff79fd.jpg",
       "vendor": "",
       "price": 11800,
       "partNumber": "C 22 835",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF931M Air, Primary | Replaces the HiFi Filter SA 10881",
       "sku": "sa-10881-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF931M_99997c28-3b22-4cc8-bf61-bbd1b6496d91.jpg?v=1755780765",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008611_b14086cb40ec.jpg",
       "vendor": "",
       "price": 10200,
       "partNumber": "AF931M",

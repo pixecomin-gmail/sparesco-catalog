@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7cf1204d-72c4-4f22-ab98-30dd20b91c70.jpg?v=1723207456",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/r800103.700.700_2403a050-0213-44b7-9746-70dacaadf6cb.jpg?v=1744306033",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4567_bd79d358-58e8-4db2-8fef-4c0a3e019f40.jpg?v=1755780821"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007129_bf54006a6f51.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007130_c8e97bb10279.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007131_1ef7956cbe0c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14517 Air Filter",
       "sku": "sa-14517-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7cf1204d-72c4-4f22-ab98-30dd20b91c70.jpg?v=1723207456",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007129_bf54006a6f51.jpg",
       "vendor": "",
       "price": 7500,
       "partNumber": "SA 14517",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson R800103 Air Filter, Primary Round | Replaces the HiFi Filter SA 14517",
       "sku": "sa-14517-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/r800103.700.700_2403a050-0213-44b7-9746-70dacaadf6cb.jpg?v=1744306033",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007130_c8e97bb10279.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "R800103",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4567 Air, Primary | Replaces the HiFi Filter SA 14517",
       "sku": "sa-14517-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4567_bd79d358-58e8-4db2-8fef-4c0a3e019f40.jpg?v=1755780821",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007131_1ef7956cbe0c.jpg",
       "vendor": "",
       "price": 6200,
       "partNumber": "AF4567",

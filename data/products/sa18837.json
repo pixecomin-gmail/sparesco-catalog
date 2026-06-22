@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-335cd7e3-dbb2-4d87-bf09-39ee24001924.jpg?v=1723203439",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776615.700.700_958adcbd-81be-4a25-9a90-fa54726c7cd1.jpg?v=1744306187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25720K_3f944858-4129-4adc-8d1b-9d195d1a5464.jpg?v=1755780751"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009199_9e4760128be0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009200_cc721664fd0b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009201_d799867dd8d9.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 18837 Air Filter",
       "sku": "sa-18837-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-335cd7e3-dbb2-4d87-bf09-39ee24001924.jpg?v=1723203439",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009199_9e4760128be0.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "SA 18837",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P776615 Air Filter, Primary Finned | Replaces the HiFi Filter SA 18837",
       "sku": "sa-18837-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776615.700.700_958adcbd-81be-4a25-9a90-fa54726c7cd1.jpg?v=1744306187",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009200_cc721664fd0b.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "P776615",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25720K Air Filter, Primary | Replaces the HiFi Filter SA 18837",
       "sku": "sa-18837-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25720K_3f944858-4129-4adc-8d1b-9d195d1a5464.jpg?v=1755780751",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009201_d799867dd8d9.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF25720K",

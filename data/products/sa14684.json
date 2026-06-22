@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3a32a68e-4742-4795-896a-d0e38b63f008.jpg?v=1723202370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p520582.700.700_8391f105-3199-4465-95c9-2dd414ae8f51.jpg?v=1744306040",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27843_dc319be3-bdea-4c50-9791-4b55cc088bf9.jpg?v=1755780715"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009989_6bd9e32ef046.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009990_fbeda2882143.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009991_26faf3c86458.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14684 Air Filter",
       "sku": "sa-14684-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3a32a68e-4742-4795-896a-d0e38b63f008.jpg?v=1723202370",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009989_6bd9e32ef046.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "SA 14684",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P520582 Air Filter, Safety | Replaces the HiFi Filter SA 14684",
       "sku": "sa-14684-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p520582.700.700_8391f105-3199-4465-95c9-2dd414ae8f51.jpg?v=1744306040",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009990_fbeda2882143.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "P520582",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF27843 Air, Secondary | Replaces the HiFi Filter SA 14684",
       "sku": "sa-14684-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27843_dc319be3-bdea-4c50-9791-4b55cc088bf9.jpg?v=1755780715",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009991_26faf3c86458.jpg",
       "vendor": "",
       "price": 7500,
       "partNumber": "AF27843",

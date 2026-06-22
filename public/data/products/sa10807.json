@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f9e8d1c-4854-4e52-804c-10b4cdbb1409_9e61cbda-0832-4059-bc49-ace1cd560655.jpg?v=1762811070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p115070.700.700_de2d95ee-1bc9-47a9-8c57-59681e31ae0c.jpg?v=1762811070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF857_bb5356b3-dabd-487a-b6e7-b8fad6e62349.jpg?v=1762811070"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000380_12b1f4ada223.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000381_b5cd88def819.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000382_9293d081efa4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10807 Air Filter",
       "sku": "sa-10807-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6f9e8d1c-4854-4e52-804c-10b4cdbb1409_9e61cbda-0832-4059-bc49-ace1cd560655.jpg?v=1762811070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000380_12b1f4ada223.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "SA 10807",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P115070 Air Filter, Safety | Replaces the HiFi Filter SA 10807",
       "sku": "sa-10807-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p115070.700.700_de2d95ee-1bc9-47a9-8c57-59681e31ae0c.jpg?v=1762811070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000381_b5cd88def819.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "P115070",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF857 Air Filter, Secondary | Replaces the HiFi Filter SA 10807",
       "sku": "sa-10807-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF857_bb5356b3-dabd-487a-b6e7-b8fad6e62349.jpg?v=1762811070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000382_9293d081efa4.jpg",
       "vendor": "",
       "price": 7900,
       "partNumber": "AF857",

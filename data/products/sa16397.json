@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f0c9d97a-c9e6-4b07-8cf2-0886e4ff9fd8_3687138a-41fc-4e30-bccf-3df3513c1bfc.jpg?v=1762811533",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p770397.700.700_b64c3cc9-2c59-49de-9729-7898d0644f6f.jpg?v=1762811533",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_1562d879-d9b9-4b64-b6d2-4bee59260ca0.jpg?v=1762811533",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25502K_6cbe2bf9-790d-429e-96cd-ddd55f30ef31.jpg?v=1762811533"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007153_081145deee1c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007154_0530fa6735b5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007155_3f6196584ff0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007156_029961a90582.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16397 Air Filter",
       "sku": "sa-16397-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f0c9d97a-c9e6-4b07-8cf2-0886e4ff9fd8_3687138a-41fc-4e30-bccf-3df3513c1bfc.jpg?v=1762811533",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007153_081145deee1c.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "SA 16397",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P770397 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 16397",
       "sku": "sa-16397-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p770397.700.700_b64c3cc9-2c59-49de-9729-7898d0644f6f.jpg?v=1762811533",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007154_0530fa6735b5.jpg",
       "vendor": "",
       "price": 6200,
       "partNumber": "P770397",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 14 010 Air Filter | Replaces the HiFi Filter SA 16397",
       "sku": "sa-16397-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_1562d879-d9b9-4b64-b6d2-4bee59260ca0.jpg?v=1762811533",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007155_3f6196584ff0.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "C 14 010",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF25502K Air Filter, Primary | Replaces the HiFi Filter SA 16397",
       "sku": "sa-16397-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25502K_6cbe2bf9-790d-429e-96cd-ddd55f30ef31.jpg?v=1762811533",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007156_029961a90582.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "AF25502K",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-43eeb7b8-5769-4444-b2c6-750c32c459c9.jpg?v=1723210041",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p621905.700.700_1834ddd1-49e8-4ac7-83b3-85ce70c4226c.jpg?v=1744306168",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_1875eb3a-ce0e-46fb-9444-ea1f550f413d.jpg?v=1755780852"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006869_ebef06e2890a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006870_078880e7697b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006871_bd6d579550be.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17382 Air Filter",
       "sku": "sa-17382-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-43eeb7b8-5769-4444-b2c6-750c32c459c9.jpg?v=1723210041",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006869_ebef06e2890a.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SA 17382",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P621905 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 17382",
       "sku": "sa-17382-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p621905.700.700_1834ddd1-49e8-4ac7-83b3-85ce70c4226c.jpg?v=1744306168",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006870_078880e7697b.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "P621905",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25196 Air Filter, Secondary | Replaces the HiFi Filter SA 17382",
       "sku": "sa-17382-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_1875eb3a-ce0e-46fb-9444-ea1f550f413d.jpg?v=1755780852",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006871_bd6d579550be.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "AF25196",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f3f983d9-7197-4db6-bb1e-6b5db660b472_fc8149df-ce9f-4b08-9fe9-da65a1640835.jpg?v=1762811410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p546641.700.700_684850c6-08ce-43de-b8bd-afec88d0144f.jpg?v=1762811410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/9jtTEOG4IbD7FbxbpJYqjW7FG0ORnlFaH_25f5f44f-801a-4582-baee-355deb8975e5.png?v=1762811410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25477_e93d83e9-71df-4102-8555-abccf9da84ff.jpg?v=1762811410"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009354_ca114a123a06.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009355_6684ab06a35e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009356_280d0e43ce64.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009357_813bdafb3664.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 18000 Air Filter",
       "sku": "sa-18000-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f3f983d9-7197-4db6-bb1e-6b5db660b472_fc8149df-ce9f-4b08-9fe9-da65a1640835.jpg?v=1762811410",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009354_ca114a123a06.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "SA 18000",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P546641 Air Filter, Primary Round | Replaces the HiFi Filter SA 18000",
       "sku": "sa-18000-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p546641.700.700_684850c6-08ce-43de-b8bd-afec88d0144f.jpg?v=1762811410",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009355_6684ab06a35e.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "P546641",
@@ -56,7 +56,7 @@
     {
       "title": "FIL Filter HP 4552 Filter Insert | Replaces the HiFi Filter SA 18000",
       "sku": "sa-18000-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/9jtTEOG4IbD7FbxbpJYqjW7FG0ORnlFaH_25f5f44f-801a-4582-baee-355deb8975e5.png?v=1762811410",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009356_280d0e43ce64.png",
       "vendor": "",
       "price": 2400,
       "partNumber": "HP 4552",
@@ -72,7 +72,7 @@
     {
       "title": "Fleetguard AF25477 Air Filter | Replaces the HiFi Filter SA 18000",
       "sku": "sa-18000-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25477_e93d83e9-71df-4102-8555-abccf9da84ff.jpg?v=1762811410",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009357_813bdafb3664.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF25477",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-22ca5346-8e85-48b9-969f-883d972bb159.jpg?v=1723256516",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p951535.700.700_3b10ebc5-ede4-4317-8eb5-401c3d51af15.jpg?v=1744306127",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27826_f2e462ec-ef0d-4e55-8834-312b471d95bd.jpg?v=1755781006"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003073_c56baf50e733.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003074_6e31126cc042.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003075_0b60d56c0ccc.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16622 Air Filter",
       "sku": "sa-16622-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-22ca5346-8e85-48b9-969f-883d972bb159.jpg?v=1723256516",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003073_c56baf50e733.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "SA 16622",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P951535 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16622",
       "sku": "sa-16622-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p951535.700.700_3b10ebc5-ede4-4317-8eb5-401c3d51af15.jpg?v=1744306127",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003074_6e31126cc042.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "P951535",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF27826 Air, Primary | Replaces the HiFi Filter SA 16622",
       "sku": "sa-16622-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27826_f2e462ec-ef0d-4e55-8834-312b471d95bd.jpg?v=1755781006",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003075_0b60d56c0ccc.jpg",
       "vendor": "",
       "price": 12900,
       "partNumber": "AF27826",

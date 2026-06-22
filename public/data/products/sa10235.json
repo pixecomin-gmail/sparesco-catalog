@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_08fece09-5dee-4ced-8901-358faaedba39.jpg?v=1766020897",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p017665.700.700_eabae677-1252-4450-9fce-73283eaca09f.jpg?v=1766020897",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF285_2f3f06c6-2fec-4ad3-8c65-700bf3819e5f.jpg?v=1766020897"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008213_e9fb5b1fc019.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008214_4e0a476d68a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008215_f9ffb0b0e9a0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10235 Air Filter",
       "sku": "sa-10235-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_08fece09-5dee-4ced-8901-358faaedba39.jpg?v=1766020897",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008213_e9fb5b1fc019.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "SA 10235",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P017665 Air Filter, Primary Round | Replaces the HiFi Filter SA 10235",
       "sku": "sa-10235-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p017665.700.700_eabae677-1252-4450-9fce-73283eaca09f.jpg?v=1766020897",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008214_4e0a476d68a1.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "P017665",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF285 Air Filter, Primary | Replaces the HiFi Filter SA 10235",
       "sku": "sa-10235-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF285_2f3f06c6-2fec-4ad3-8c65-700bf3819e5f.jpg?v=1766020897",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008215_f9ffb0b0e9a0.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "AF285",

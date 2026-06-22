@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb960c6e-1b5f-489f-a54e-0acbdd3970ee.jpg?v=1723206921",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782998.700.700_5af5a3f1-3c29-4dc8-969a-f9d5f850ed66.jpg?v=1744306163",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25899_67253446-0fc0-4af5-8d68-240038d974c8.jpg?v=1755780815"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007294_2ae2cdecb930.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007295_bbd0f4668c79.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007296_8fb1369f5461.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17247 Air Filter",
       "sku": "sa-17247-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb960c6e-1b5f-489f-a54e-0acbdd3970ee.jpg?v=1723206921",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007294_2ae2cdecb930.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "SA 17247",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P782998 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 17247",
       "sku": "sa-17247-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782998.700.700_5af5a3f1-3c29-4dc8-969a-f9d5f850ed66.jpg?v=1744306163",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007295_bbd0f4668c79.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "P782998",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25899 Air Filter, Primary | Replaces the HiFi Filter SA 17247",
       "sku": "sa-17247-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25899_67253446-0fc0-4af5-8d68-240038d974c8.jpg?v=1755780815",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007296_8fb1369f5461.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "AF25899",

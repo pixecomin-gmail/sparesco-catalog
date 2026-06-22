@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ab7f1127-c20b-4528-8b47-6e6d711fa63a_8d29cba0-98f9-4fe8-b92c-434ae019b60a.jpg?v=1762811421",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902311.700.700_8e8c1df9-c110-4b10-b809-2e3b70649164.jpg?v=1762811421",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26439_f735cf24-2e95-4450-a32b-214675d2d212.jpg?v=1762811421"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009070_ce33c1838349.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009071_a5e8227b987e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009072_5329eec3d41c.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 18032 Air Filter",
       "sku": "sa-18032-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ab7f1127-c20b-4528-8b47-6e6d711fa63a_8d29cba0-98f9-4fe8-b92c-434ae019b60a.jpg?v=1762811421",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009070_ce33c1838349.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "SA 18032",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P902311 Air Filter, Primary Round | Replaces the HiFi Filter SA 18032",
       "sku": "sa-18032-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p902311.700.700_8e8c1df9-c110-4b10-b809-2e3b70649164.jpg?v=1762811421",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009071_a5e8227b987e.jpg",
       "vendor": "",
       "price": 17600,
       "partNumber": "P902311",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF26439 Air Filter, Primary | Replaces the HiFi Filter SA 18032",
       "sku": "sa-18032-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26439_f735cf24-2e95-4450-a32b-214675d2d212.jpg?v=1762811421",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009072_5329eec3d41c.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "AF26439",

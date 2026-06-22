@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201267B_43e4fdfc-fa58-4330-b191-60729eaeae61.jpg?v=1761218020",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3ea16cd9-fb44-408e-8ee6-44492c48de6d.png?v=1761218020",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e1c8979b-28b1-4d97-97f6-ef70e9f4626a_11442af3-66e0-4e9a-8a74-e5ce76bfb3a9.jpg?v=1761218020"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029278_dfe044d47371.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029279_a5e970231406.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029280_ab5b1d4f05ee.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec RHR240G03B3/AB1 Return Filter | Replaces the Eppensteiner E30TR240H3",
       "sku": "e30tr240h3-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201267B_43e4fdfc-fa58-4330-b191-60729eaeae61.jpg?v=1761218020",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029278_dfe044d47371.jpg",
       "vendor": "Filtrec",
       "price": 6700,
       "partNumber": "RHR240G03B3/AB1",
@@ -50,7 +50,7 @@
     {
       "title": "MicroFit® MFHR50959 UltraGen III Filter | Replaces the Eppensteiner E30TR240H3",
       "sku": "e30tr240h3-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3ea16cd9-fb44-408e-8ee6-44492c48de6d.png?v=1761218020",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029279_a5e970231406.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50959",
@@ -83,7 +83,7 @@
     {
       "title": "HiFi Filter SH 74017 Return Filter | Replaces the Eppensteiner E30TR240H3",
       "sku": "e30tr240h3-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e1c8979b-28b1-4d97-97f6-ef70e9f4626a_11442af3-66e0-4e9a-8a74-e5ce76bfb3a9.jpg?v=1761218020",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029280_ab5b1d4f05ee.jpg",
       "vendor": "HiFi Filter",
       "price": 8000,
       "partNumber": "SH 74017",

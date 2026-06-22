@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF208399B_b316b5f3-5011-495b-bb2e-5f2d60327e33.jpg?v=1764692608",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e7d90b5e-004f-4a16-90a1-c2a45ad5f8df_7a3791ae-d13d-41de-9ff5-3e7263f4fbcc.jpg?v=1764692608",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160H_aabbcc1e-065c-4574-bdb6-d40f3413c943.jpg?v=1764692608",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_d_010_bh4hc_n166105_i2432322_b8424766-daac-4352-9bd2-acf6245df5b3.jpg?v=1764692608",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF208399B_653b10ff-d0c5-46ad-ae4d-f277bd17dc94.jpg?v=1764692606",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e7d90b5e-004f-4a16-90a1-c2a45ad5f8df_88eda761-a25c-4bf7-9aea-0d847a18bf34.jpg?v=1764692606",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160H_e875f6da-a759-4f2c-be58-edb9aa1c5a29.jpg?v=1764692606",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_d_010_bh4hc_n166105_i2432322_02deacd0-038e-4e96-b002-b43051c043e3.jpg?v=1764692606"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004140_e4347588f245.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004141_52de85f44a71.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004142_89b5332b3e53.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004143_7ba318aa7a6b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004148_7cc788b4d1db.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004149_0d100430a044.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004150_5d20a34bf0be.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004151_d6733e6672e2.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40202 Pressure Filter | Replaces the Eppensteiner 9.160H10XLF000P",
       "sku": "9-160h10xlf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF208399B_653b10ff-d0c5-46ad-ae4d-f277bd17dc94.jpg?v=1764692606",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004148_7cc788b4d1db.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "MFHHP40202",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 75029 Pressure Filter | Replaces the Eppensteiner 9160H10XLF000P",
       "sku": "9160h10xlf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e7d90b5e-004f-4a16-90a1-c2a45ad5f8df_7a3791ae-d13d-41de-9ff5-3e7263f4fbcc.jpg?v=1764692608",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004141_52de85f44a71.jpg",
       "vendor": "",
       "price": 11600,
       "partNumber": "SH 75029",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec DHD160H10B Pressure Filter | Replaces the Eppensteiner 9160H10XLF000P",
       "sku": "9160h10xlf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160H_aabbcc1e-065c-4574-bdb6-d40f3413c943.jpg?v=1764692608",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004142_89b5332b3e53.jpg",
       "vendor": "",
       "price": 12700,
       "partNumber": "DHD160H10B",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0160 D 010 BH4HC High Pressure Filter | Replaces the Eppensteiner 9160H10XLF000P",
       "sku": "9160h10xlf000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_d_010_bh4hc_n166105_i2432322_b8424766-daac-4352-9bd2-acf6245df5b3.jpg?v=1764692608",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/004143_7ba318aa7a6b.jpg",
       "vendor": "",
       "price": 46100,
       "partNumber": "0160 D 010 BH4HC",

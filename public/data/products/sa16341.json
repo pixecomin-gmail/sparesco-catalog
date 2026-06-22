@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4918b989-2661-4a82-9885-5b5988ba6aee.jpg?v=1723204692",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p527682.700.700_09b78c61-a573-4c82-8a6f-48a3b46c98ab.jpg?v=1744306093",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25139M_2ec3ee3f-4225-4f4a-8e91-c2f078fb0ec5.jpg?v=1755780767"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008381_53b7bea66d15.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008382_e6ccddb08df4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008383_b1716e03a4db.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16341 Air Filter",
       "sku": "sa-16341-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4918b989-2661-4a82-9885-5b5988ba6aee.jpg?v=1723204692",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008381_53b7bea66d15.jpg",
       "vendor": "",
       "price": 7800,
       "partNumber": "SA 16341",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P527682 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16341",
       "sku": "sa-16341-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p527682.700.700_09b78c61-a573-4c82-8a6f-48a3b46c98ab.jpg?v=1744306093",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008382_e6ccddb08df4.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "P527682",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF25139M Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16341",
       "sku": "sa-16341-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25139M_2ec3ee3f-4225-4f4a-8e91-c2f078fb0ec5.jpg?v=1755780767",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008383_b1716e03a4db.jpg",
       "vendor": "",
       "price": 9000,
       "partNumber": "AF25139M",

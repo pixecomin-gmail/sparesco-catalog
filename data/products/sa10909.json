@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8d27e79e-6594-416c-9d97-851aa59c25e8.jpg?v=1723202525",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158669.700.700_d630da9f-0192-49a2-9bac-c04e57e6e178.jpg?v=1744305988",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF959_dc2b3893-e4e3-4ef4-9715-b2fdf721b9af.jpg?v=1755780736"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009849_c3a0d4d6551a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009850_9d77853cc68b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009851_1be1e195d20a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10909 Air Filter",
       "sku": "sa-10909-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8d27e79e-6594-416c-9d97-851aa59c25e8.jpg?v=1723202525",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009849_c3a0d4d6551a.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "SA 10909",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P158669 Air Filter, Safety | Replaces the HiFi Filter SA 10909",
       "sku": "sa-10909-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158669.700.700_d630da9f-0192-49a2-9bac-c04e57e6e178.jpg?v=1744305988",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009850_9d77853cc68b.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "P158669",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF959 Air Filter, Secondary | Replaces the HiFi Filter SA 10909",
       "sku": "sa-10909-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF959_dc2b3893-e4e3-4ef4-9715-b2fdf721b9af.jpg?v=1755780736",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009851_1be1e195d20a.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "AF959",

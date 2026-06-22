@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_a8e63e44-de94-4db1-aa30-a9a9146d8af6.jpg?v=1766021156",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181114.700.700_e6a09453-cc60-4bda-a799-07513552a971.jpg?v=1766021156",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF801_a83ee159-85fb-4f94-a9f6-9b93b25dd594.jpg?v=1766021156"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006248_46c2f99ca8f1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006249_0e3ad9ed908e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006250_bd6b436c284f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10751 Air Filter",
       "sku": "sa-10751-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_a8e63e44-de94-4db1-aa30-a9a9146d8af6.jpg?v=1766021156",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006248_46c2f99ca8f1.jpg",
       "vendor": "",
       "price": 18500,
       "partNumber": "SA 10751",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P181114 Air Filter, Primary Round | Replaces the HiFi Filter SA 10751",
       "sku": "sa-10751-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181114.700.700_e6a09453-cc60-4bda-a799-07513552a971.jpg?v=1766021156",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006249_0e3ad9ed908e.jpg",
       "vendor": "",
       "price": 13000,
       "partNumber": "P181114",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF801 Air Filter, Primary | Replaces the HiFi Filter SA 10751",
       "sku": "sa-10751-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF801_a83ee159-85fb-4f94-a9f6-9b93b25dd594.jpg?v=1766021156",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006250_bd6b436c284f.jpg",
       "vendor": "",
       "price": 11100,
       "partNumber": "AF801",

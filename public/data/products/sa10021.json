@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4dfbe227-07a0-43d1-b689-4a456b118b44.jpg?v=1748455968",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778340.700.700_1379e12a-d8f4-43a1-82aa-846e5014bd93.jpg?v=1748455968",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e7478fc6-e8f8-4aca-aa7f-5e39300bb257.jpg?v=1748455968",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4939_814265ea-79ca-4587-8dfc-7c015febd47b.jpg?v=1755780754"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008812_4457bb14411a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008813_b6ef8a73e781.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008814_a9ee07e7ca38.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008815_8ed1c464f179.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10021 Air Filter",
       "sku": "sa-10021-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4dfbe227-07a0-43d1-b689-4a456b118b44.jpg?v=1748455968",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008812_4457bb14411a.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "SA 10021",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P778340 Air Filter, Primary Round | Replaces the HiFi Filter SA 10021",
       "sku": "sa-10021-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p778340.700.700_1379e12a-d8f4-43a1-82aa-846e5014bd93.jpg?v=1748455968",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008813_b6ef8a73e781.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "P778340",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 11 004 Air Filter | Replaces the HiFi Filter SA 10021",
       "sku": "sa-10021-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_e7478fc6-e8f8-4aca-aa7f-5e39300bb257.jpg?v=1748455968",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008814_a9ee07e7ca38.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "C 11 004",
@@ -76,7 +76,7 @@
     {
       "title": "Fleetguard AF4939 Air Filter | Replaces the HiFi Filter SA 10021",
       "sku": "sa-10021-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4939_814265ea-79ca-4587-8dfc-7c015febd47b.jpg?v=1755780754",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008815_8ed1c464f179.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "AF4939",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8b3635cc-30c9-49eb-9435-cbf1c96eb71e.jpg?v=1723204123",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781740.700.700_402a856c-fcd9-4cae-9eaa-bc2e38c1df65.jpg?v=1744306081",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25614_de9b5981-e19c-4a32-92a3-9c072da2c8c2.jpg?v=1755780763"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008729_b630e7d3c2fc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008730_406aeb109daf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008731_5cb8b82199e8.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16241 Air Filter",
       "sku": "sa-16241-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8b3635cc-30c9-49eb-9435-cbf1c96eb71e.jpg?v=1723204123",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008729_b630e7d3c2fc.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "SA 16241",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P781740 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16241",
       "sku": "sa-16241-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p781740.700.700_402a856c-fcd9-4cae-9eaa-bc2e38c1df65.jpg?v=1744306081",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008730_406aeb109daf.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "P781740",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25614 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16241",
       "sku": "sa-16241-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25614_de9b5981-e19c-4a32-92a3-9c072da2c8c2.jpg?v=1755780763",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008731_5cb8b82199e8.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "AF25614",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_bfe005b5-8c02-4de8-bf61-e2182ddd4453.jpg?v=1766010010",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_7d7a539c-7e3d-4f16-8695-849ff0202bb5.jpg?v=1766010010",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7043bd39-9ff7-498b-b9b3-c6a82cc8a397.png?v=1766010010",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_355e8a82-6ddc-459e-9ff9-3e8bf496af51.jpg?v=1766010007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_5135eba0-3347-4bdf-8c00-a51cecbf446c.jpg?v=1766010007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c05ad65e-9a87-4af1-b8d5-7d3631f15ca1.png?v=1766010007"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013308_61252843cc5f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013309_38f645c4033d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013310_fe67263ea5f8.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013326_fb4a9cd2572e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013327_aeb0cf80488d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013328_55d931a50702.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67933 Pressure Filter | Replaces the Eppensteiner 2460H3SLP",
       "sku": "2460h3slp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_bfe005b5-8c02-4de8-bf61-e2182ddd4453.jpg?v=1766010010",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013308_61252843cc5f.jpg",
       "vendor": "",
       "price": 12500,
       "partNumber": "SH 67933",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DVD2460E03B Pressure Filter | Replaces the Eppensteiner 2460H3SLP",
       "sku": "2460h3slp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_7d7a539c-7e3d-4f16-8695-849ff0202bb5.jpg?v=1766010010",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013309_38f645c4033d.jpg",
       "vendor": "",
       "price": 14600,
       "partNumber": "DVD2460E03B",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP30359 UltraGen III Filter | Replaces the Eppensteiner 2460H3SLP",
       "sku": "2460h3slp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7043bd39-9ff7-498b-b9b3-c6a82cc8a397.png?v=1766010010",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/013310_fe67263ea5f8.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30359",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_a155c4de-85f6-4a3c-a9b8-278bc284d61c.jpg?v=1761217774",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1e0b0ca6-9815-4886-b35b-826ff3fb2aab.png?v=1761217774",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0de3a8f1-3300-49fc-91ce-dc3a02bd4ad8_51bfe85e-90b9-4da9-ae52-0363ff24e336.jpg?v=1761217774",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0110_d_020_on_n166575_i2372456_dc3928b6-3434-42ac-bf90-69dbbe8ef2a9.jpg?v=1761217774"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029646_bef2fcf7daf7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029647_595ee48a2fbe.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029648_e899fd4bb323.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029649_4e00e46e63e4.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD110G20B Pressure Filter | Replaces the Eppensteiner E400HL110H20",
       "sku": "e400hl110h20-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_a155c4de-85f6-4a3c-a9b8-278bc284d61c.jpg?v=1761217774",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029646_bef2fcf7daf7.jpg",
       "vendor": "Filtrec",
       "price": 4300,
       "partNumber": "DHD110G20B",
@@ -49,7 +49,7 @@
     {
       "title": "MicroFit® MFHLP32009 UltraGen III Filter | Replaces the Eppensteiner E400HL110H20",
       "sku": "e400hl110h20-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1e0b0ca6-9815-4886-b35b-826ff3fb2aab.png?v=1761217774",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029647_595ee48a2fbe.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP32009",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 75014 Pressure Filter | Replaces the Eppensteiner E400HL110H20",
       "sku": "e400hl110h20-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0de3a8f1-3300-49fc-91ce-dc3a02bd4ad8_51bfe85e-90b9-4da9-ae52-0363ff24e336.jpg?v=1761217774",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029648_e899fd4bb323.jpg",
       "vendor": "HiFi Filter",
       "price": 6500,
       "partNumber": "SH 75014",
@@ -111,7 +111,7 @@
     {
       "title": "Hydac 0110 D 020 ON Optimicron® Pressure Filter | Replaces the Eppensteiner E400HL110H20",
       "sku": "e400hl110h20-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0110_d_020_on_n166575_i2372456_dc3928b6-3434-42ac-bf90-69dbbe8ef2a9.jpg?v=1761217774",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/029649_4e00e46e63e4.jpg",
       "vendor": "Hydac",
       "price": 11000,
       "partNumber": "0110 D 020 ON",

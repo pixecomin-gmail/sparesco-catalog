@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9869455-1d7e-4b99-9efb-509a653c0c99.jpg?v=1723212929",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_42_1921_image1_9275512a-e1d0-4eeb-91f5-fb1d0441163b.jpg?v=1754909448",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4441_3415dafd-a2a4-4ab8-b0df-0ab0cfd91d5f.jpg?v=1755780891"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005751_a5c55993fad1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005752_ce56f1980765.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005753_a2d56ee62e53.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 5136 Air Filter",
       "sku": "sa-5136-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b9869455-1d7e-4b99-9efb-509a653c0c99.jpg?v=1723212929",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005751_a5c55993fad1.jpg",
       "vendor": "",
       "price": 1500,
       "partNumber": "SA 5136",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 42 192/1 Air Filter | Replaces the HiFi Filter SA 5136",
       "sku": "sa-5136-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_42_1921_image1_9275512a-e1d0-4eeb-91f5-fb1d0441163b.jpg?v=1754909448",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005752_ce56f1980765.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "C 42 192/1",
@@ -57,7 +57,7 @@
     {
       "title": "Fleetguard AF4441 Engine Air Filter Panel | Replaces the HiFi Filter SA 5136",
       "sku": "sa-5136-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4441_3415dafd-a2a4-4ab8-b0df-0ab0cfd91d5f.jpg?v=1755780891",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005753_a2d56ee62e53.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "AF4441",

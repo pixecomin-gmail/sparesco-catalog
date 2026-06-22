@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6b0fc8f9-a90c-4b45-b03b-e4d9eb71d41c_fd59c81a-f69c-4c4f-86c9-29a9aa958df7.jpg?v=1740476622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R411_027a0874-3a40-4788-8f48-9e6ddc98ef61.jpg?v=1740476622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_71ed904d-554d-4596-ad48-b3de172e6f05.png?v=1760633826",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6b0fc8f9-a90c-4b45-b03b-e4d9eb71d41c_4698eb39-6e6b-4e34-a609-72fcf6ae0374.jpg?v=1740476630",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R411_95c747f9-5a07-4eb7-a56f-f858971a567d.jpg?v=1740476630",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_73b18056-bc3d-4f31-b5f9-0afcad6ef1a0.png?v=1760633830"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010353_42f626bae696.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010354_f8bff7d433da.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010355_8de037f8df7d.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010359_4286c542a16c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010360_9f6003df7334.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010361_f869ed99f85f.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 87274 Return Filter | Replaces the Eppensteiner 166300VH6XLS000P",
       "sku": "166300vh6xls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6b0fc8f9-a90c-4b45-b03b-e4d9eb71d41c_fd59c81a-f69c-4c4f-86c9-29a9aa958df7.jpg?v=1740476622",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010353_42f626bae696.jpg",
       "vendor": "",
       "price": 27900,
       "partNumber": "SH 87274",
@@ -49,7 +49,7 @@
     {
       "title": "Filtrec R413G06 Return Filter | Replaces the Eppensteiner 166300VH6XLS000P",
       "sku": "166300vh6xls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R411_027a0874-3a40-4788-8f48-9e6ddc98ef61.jpg?v=1740476622",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010354_f8bff7d433da.jpg",
       "vendor": "",
       "price": 27400,
       "partNumber": "R413G06",
@@ -78,7 +78,7 @@
     {
       "title": "MicroFit® MFHR51203 UltraGen III Filter | Replaces the Eppensteiner 166300VH6XLS000P",
       "sku": "166300vh6xls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_71ed904d-554d-4596-ad48-b3de172e6f05.png?v=1760633826",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010355_8de037f8df7d.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR51203",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3508436a-2113-43f2-a960-c9cd6f2283ae_0b3e0c71-7097-4bb6-a0ef-dce0e578a498.jpg?v=1740477489",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566988.700.700_6c9f9487-314b-477d-957d-8044a1800370.jpg?v=1741627527",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204598B_f8ac8cfc-7258-471d-a245-08b5ba2f0f11.jpg?v=1740477489",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6899_36c891cc-60dd-448a-8f2a-131fc3bcc5b2.jpg?v=1755778357",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0aa91c5d-a4f1-476b-aafb-421c00c5957b.png?v=1760629070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0660_r_010_sn_n167233_i2372509_f4b68fe7-2473-4daf-9c20-621c4b0b7351.jpg?v=1760540303"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032354_eb4076ab5166.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032355_95688f7d68fb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032356_2da691d3da4f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032357_92cef4d6383e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032358_487432dcdd5d.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032359_0872f2cf1170.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 74034 Return Filter | Replaces the Eppensteiner 30TR660H10LLLA",
       "sku": "30tr660h10llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3508436a-2113-43f2-a960-c9cd6f2283ae_0b3e0c71-7097-4bb6-a0ef-dce0e578a498.jpg?v=1740477489",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032354_eb4076ab5166.jpg",
       "vendor": "",
       "price": 16200,
       "partNumber": "SH 74034",
@@ -55,7 +55,7 @@
     {
       "title": "Donaldson P566987 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 30TR660H10LLLA",
       "sku": "30tr660h10llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566988.700.700_6c9f9487-314b-477d-957d-8044a1800370.jpg?v=1741627527",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032355_95688f7d68fb.jpg",
       "vendor": "",
       "price": 16700,
       "partNumber": "P566987",
@@ -88,7 +88,7 @@
     {
       "title": "Filtrec RHR660G10B3/AB1 Return Filter | Replaces the Eppensteiner 30TR660H10LLLA",
       "sku": "30tr660h10llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204598B_f8ac8cfc-7258-471d-a245-08b5ba2f0f11.jpg?v=1740477489",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032356_2da691d3da4f.jpg",
       "vendor": "",
       "price": 17800,
       "partNumber": "RHR660G10B3/AB1",
@@ -121,7 +121,7 @@
     {
       "title": "Fleetguard HF6899 Hydraulic Filters | Replaces the Eppensteiner 30TR660H10LLLA",
       "sku": "30tr660h10llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6899_36c891cc-60dd-448a-8f2a-131fc3bcc5b2.jpg?v=1755778357",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032357_92cef4d6383e.jpg",
       "vendor": "",
       "price": 19700,
       "partNumber": "HF6899",
@@ -154,7 +154,7 @@
     {
       "title": "MicroFit® MFHR52648 UltraGen III Filter | Replaces the Eppensteiner 30TR660H10LLLA",
       "sku": "30tr660h10llla-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0aa91c5d-a4f1-476b-aafb-421c00c5957b.png?v=1760629070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032358_487432dcdd5d.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR52648",
@@ -187,7 +187,7 @@
     {
       "title": "Hydac 0660 R 010 SN SUSTAINMICRON® Return Filter | Replaces the Eppensteiner 30TR660H10LLLA",
       "sku": "30tr660h10llla-6",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0660_r_010_sn_n167233_i2372509_f4b68fe7-2473-4daf-9c20-621c4b0b7351.jpg?v=1760540303",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/032359_0872f2cf1170.jpg",
       "vendor": "",
       "price": 39800,
       "partNumber": "0660 R 010 SN",

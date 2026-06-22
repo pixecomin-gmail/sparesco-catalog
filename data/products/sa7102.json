@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a274d692-5ec0-4d4e-a177-3f7fc387be7c.jpg?v=1723212430",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_002_image1_5d1dd324-a2e8-4496-ad18-32d84c2f526f.jpg?v=1754909442",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4398_1eecc8cd-f708-4258-89a4-1e9535c23eae.jpg?v=1755780888"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006072_8b2f170a56b4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006073_f6b696fe9058.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006074_e14d1c8c5fa8.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 7102 Air Filter",
       "sku": "sa-7102-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a274d692-5ec0-4d4e-a177-3f7fc387be7c.jpg?v=1723212430",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006072_8b2f170a56b4.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "SA 7102",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 40 002 Air Filter | Replaces the HiFi Filter SA 7102",
       "sku": "sa-7102-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_40_002_image1_5d1dd324-a2e8-4496-ad18-32d84c2f526f.jpg?v=1754909442",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006073_f6b696fe9058.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "C 40 002",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF4398 Air Filter Filter - Panel | Replaces the HiFi Filter SA 7102",
       "sku": "sa-7102-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4398_1eecc8cd-f708-4258-89a4-1e9535c23eae.jpg?v=1755780888",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006074_e14d1c8c5fa8.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "AF4398",

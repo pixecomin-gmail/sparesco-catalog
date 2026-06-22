@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-be5e718e-3e0f-49e4-9e5c-36b220ab1d6b.jpg?v=1723206266",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p520620.700.700_d981f926-47c6-48f8-aa6f-580c924cc767.jpg?v=1744306012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1907M_724c18a2-3424-4954-a3b3-9a4b4767df46.jpg?v=1755780803"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007630_7a8da008e61d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007631_1be9cc75332a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007632_b1484f02a908.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11857 Air Filter",
       "sku": "sa-11857-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-be5e718e-3e0f-49e4-9e5c-36b220ab1d6b.jpg?v=1723206266",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007630_7a8da008e61d.jpg",
       "vendor": "",
       "price": 12700,
       "partNumber": "SA 11857",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P520620 Air Filter, Primary Round | Replaces the HiFi Filter SA 11857",
       "sku": "sa-11857-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p520620.700.700_d981f926-47c6-48f8-aa6f-580c924cc767.jpg?v=1744306012",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007631_1be9cc75332a.jpg",
       "vendor": "",
       "price": 12500,
       "partNumber": "P520620",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF1907M Air Filter, Primary | Replaces the HiFi Filter SA 11857",
       "sku": "sa-11857-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1907M_724c18a2-3424-4954-a3b3-9a4b4767df46.jpg?v=1755780803",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007632_b1484f02a908.jpg",
       "vendor": "",
       "price": 11100,
       "partNumber": "AF1907M",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3de9a0bf-0153-4b7a-a65d-6b723a06a341_447b9cef-ecd9-43be-b29f-1e1b43bb29ed.jpg?v=1762811364",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_9006_image1_6e9525c4-b275-4522-b690-b13b98ddd4a0.jpg?v=1762811364",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26230_4bb65f38-169c-4b11-b31a-886f7e97de73.jpg?v=1762811364"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000319_553b8bdecf79.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000320_302431a78c42.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000321_d4090b3c8341.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 12169 Air Filter",
       "sku": "sa-12169-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3de9a0bf-0153-4b7a-a65d-6b723a06a341_447b9cef-ecd9-43be-b29f-1e1b43bb29ed.jpg?v=1762811364",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000319_553b8bdecf79.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "SA 12169",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 9006 Air Filter | Replaces the HiFi Filter SA 12169",
       "sku": "sa-12169-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_9006_image1_6e9525c4-b275-4522-b690-b13b98ddd4a0.jpg?v=1762811364",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000320_302431a78c42.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "C 9006",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF26230 Air Filter, Primary | Replaces the HiFi Filter SA 12169",
       "sku": "sa-12169-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26230_4bb65f38-169c-4b11-b31a-886f7e97de73.jpg?v=1762811364",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000321_d4090b3c8341.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "AF26230",

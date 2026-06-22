@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c072b091-52c8-4d3d-95cd-9d97b77f4c89_8696946f-f757-44b8-86c0-00442e75271a.jpg?v=1762811446",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607369.700.700_4d77af13-3a22-4df3-9d0f-e0ff2e21bde7.jpg?v=1762811446",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25187_08bb369d-2b19-43d1-b953-04e5269451a2.jpg?v=1762811446"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008546_db9f5e077d1e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008547_3dbe6d0bdf95.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008548_be77c6190dbd.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16314 Air Filter",
       "sku": "sa-16314-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c072b091-52c8-4d3d-95cd-9d97b77f4c89_8696946f-f757-44b8-86c0-00442e75271a.jpg?v=1762811446",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008546_db9f5e077d1e.jpg",
       "vendor": "",
       "price": 18700,
       "partNumber": "SA 16314",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P607369 Air Filter, Primary Round | Replaces the HiFi Filter SA 16314",
       "sku": "sa-16314-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607369.700.700_4d77af13-3a22-4df3-9d0f-e0ff2e21bde7.jpg?v=1762811446",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008547_3dbe6d0bdf95.jpg",
       "vendor": "",
       "price": 32900,
       "partNumber": "P607369",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25187 Air Filter | Replaces the HiFi Filter SA 16314",
       "sku": "sa-16314-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25187_08bb369d-2b19-43d1-b953-04e5269451a2.jpg?v=1762811446",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008548_be77c6190dbd.jpg",
       "vendor": "",
       "price": 35600,
       "partNumber": "AF25187",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_82994743-c445-4d51-9c5a-c24cf5c3c520.jpg?v=1741362884",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98b54c5d-3d18-4304-9d5b-bcfb7340bdf1_d0693308-5c64-4c88-a387-e7bbd5356d3d.jpg?v=1741362884",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8fa73982-62e2-4855-9316-12d31d56ab63.png?v=1760633060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_9f6f0520-37b6-457d-9ade-200462f66280.jpg?v=1741362877",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98b54c5d-3d18-4304-9d5b-bcfb7340bdf1_19d7dfd7-cb7a-4e74-81c7-50cb0d20ba28.jpg?v=1741362877",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e290a91f-d3f6-4558-a3dc-8caec8f6d348.png?v=1760633057"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015379_7f2a996a4b51.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015380_c3475d3f5a19.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015381_be7a3d3fecaf.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015388_e0652128a509.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015389_77c5cfab2572.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015390_5d2bc16e8dd4.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR156B40B Return Filter | Replaces the Eppensteiner 156G40P",
       "sku": "156g40p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_82994743-c445-4d51-9c5a-c24cf5c3c520.jpg?v=1741362884",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015379_7f2a996a4b51.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "RVR156B40B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67031 Return Filter | Replaces the Eppensteiner 156G40P",
       "sku": "156g40p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98b54c5d-3d18-4304-9d5b-bcfb7340bdf1_d0693308-5c64-4c88-a387-e7bbd5356d3d.jpg?v=1741362884",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015380_c3475d3f5a19.jpg",
       "vendor": "",
       "price": 8600,
       "partNumber": "SH 67031",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR50431 UltraGen III Return Filter | Replaces the Eppensteiner 156G40P",
       "sku": "156g40p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8fa73982-62e2-4855-9316-12d31d56ab63.png?v=1760633060",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/015381_be7a3d3fecaf.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50431",

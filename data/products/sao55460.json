@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d2d7abcc-59d5-4355-bbeb-a31b541d69c5_37e8cc22-755b-4c71-9374-6918862563d9.jpg?v=1755103789",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_12_004_image1_3c4dd4bb-0f4b-4cea-a61c-f53161cceb85.jpg?v=1755103789",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d2d7abcc-59d5-4355-bbeb-a31b541d69c5_d5d5469f-207c-419b-acad-85bfa7d48589.jpg?v=1755101403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_12_004_image1.jpg?v=1755101403"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001084_3080bf35620e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001085_1e4ff96ee91e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002187_b74581062e59.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002188_e2383da89398.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SI 41304 Air/Oil Separator | Replaces the SF Filter SAO 55460",
       "sku": "sao-55460-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d2d7abcc-59d5-4355-bbeb-a31b541d69c5_d5d5469f-207c-419b-acad-85bfa7d48589.jpg?v=1755101403",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002187_b74581062e59.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "SI 41304",
@@ -34,7 +34,7 @@
     {
       "title": "Mann Filter LE 12 004 Compressed Air-Oil Separation | Replaces the SF Filter SAO55460",
       "sku": "sao55460-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/LE_12_004_image1_3c4dd4bb-0f4b-4cea-a61c-f53161cceb85.jpg?v=1755103789",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001085_1e4ff96ee91e.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "LE 12 004",

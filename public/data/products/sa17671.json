@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-db04cf6e-a992-44f5-b58d-22bfc82bb2f9.jpg?v=1748456095",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782879.700.700_53d2c9cb-5738-47ee-920d-ca086bd04d7d.jpg?v=1748456095",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_03d8a132-0a94-4de9-94de-64e8cf38a5db.png?v=1748456095"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008297_28b5b67bd6c3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008298_b763d72343dd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008299_e8e78d61468b.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17671 Air Filter",
       "sku": "sa-17671-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-db04cf6e-a992-44f5-b58d-22bfc82bb2f9.jpg?v=1748456095",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008297_28b5b67bd6c3.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "SA 17671",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P782879 Air Filter, Primary Round | Replaces the HiFi Filter SA 17671",
       "sku": "sa-17671-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782879.700.700_53d2c9cb-5738-47ee-920d-ca086bd04d7d.jpg?v=1748456095",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008298_b763d72343dd.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "P782879",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 17 035 Air Filter | Replaces the HiFi Filter SA 17671",
       "sku": "sa-17671-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_03d8a132-0a94-4de9-94de-64e8cf38a5db.png?v=1748456095",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008299_e8e78d61468b.png",
       "vendor": "",
       "price": 0,
       "partNumber": "C 17 035",

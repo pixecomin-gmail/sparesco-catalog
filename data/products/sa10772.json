@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4f440463-4840-4891-ae50-cf03015c3312.jpg?v=1723205140",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119371.700.700_48f6df5a-bc59-4a39-96d3-81ca2ad48efe.jpg?v=1744305979",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF822M_496148b2-c04b-4ead-b5de-149ad9bb30aa.jpg?v=1755780790"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008141_24b69f457948.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008142_41e9135d24f8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008143_4c6ef654e1cb.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10772 Air Filter",
       "sku": "sa-10772-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4f440463-4840-4891-ae50-cf03015c3312.jpg?v=1723205140",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008141_24b69f457948.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "SA 10772",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P119371 Air Filter, Safety | Replaces the HiFi Filter SA 10772",
       "sku": "sa-10772-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119371.700.700_48f6df5a-bc59-4a39-96d3-81ca2ad48efe.jpg?v=1744305979",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008142_41e9135d24f8.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "P119371",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF822M Air Filter, Secondary | Replaces the HiFi Filter SA 10772",
       "sku": "sa-10772-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF822M_496148b2-c04b-4ead-b5de-149ad9bb30aa.jpg?v=1755780790",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008143_4c6ef654e1cb.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "AF822M",

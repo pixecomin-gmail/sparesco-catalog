@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630A_5bcfc34d-cce8-4f24-90dd-fd66d56be902.jpg?v=1755097282",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb84ac3d-1efe-4d46-ba46-87a150cc5a1c_35115ab1-8434-4dcb-9176-5e1af6f4d58d.jpg?v=1755097282",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630A_f4af034f-6cdb-4f1a-a243-301c685fbf92.jpg?v=1755097279",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb84ac3d-1efe-4d46-ba46-87a150cc5a1c_c4f13730-89d6-4e3d-90c1-40fcaacb5569.jpg?v=1755097279",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202387B_017d0650-fbc3-43a9-9ae3-8a76b115626f.jpg?v=1755097279"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002325_92c273f943c7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002326_dce5a5b64838.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002330_23c47a76f7ac.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002331_e85fa4a134f3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002332_822786fb163e.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec XD1000G25A DIN Pressure Filter | Replaces the Eppensteiner 21000H20XLA000P",
       "sku": "21000h20xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD630A_5bcfc34d-cce8-4f24-90dd-fd66d56be902.jpg?v=1755097282",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002325_92c273f943c7.jpg",
       "vendor": "",
       "price": 40100,
       "partNumber": "XD1000G25A",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 84186 DIN Pressure Filter | Replaces the Eppensteiner 21000H20XLA000P",
       "sku": "21000h20xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb84ac3d-1efe-4d46-ba46-87a150cc5a1c_35115ab1-8434-4dcb-9176-5e1af6f4d58d.jpg?v=1755097282",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002326_dce5a5b64838.jpg",
       "vendor": "",
       "price": 40100,
       "partNumber": "SH 84186",
@@ -81,7 +81,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP33303 DIN Pressure Filter | Replaces the Eppensteiner 2.1000H20XLA000P",
       "sku": "2-1000h20xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202387B_017d0650-fbc3-43a9-9ae3-8a76b115626f.jpg?v=1755097279",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/002332_822786fb163e.jpg",
       "vendor": "",
       "price": 36800,
       "partNumber": "MFHLP33303",

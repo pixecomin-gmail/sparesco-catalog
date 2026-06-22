@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c30d4f3-0301-4a8a-99eb-c63bfd60c0c1.jpg?v=1748456070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780024-1.700.700_b1dbcceb-139f-4d7d-a535-f1649cb7b9be.jpg?v=1748456070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_200_image1_d7de38d4-0691-496c-9f95-6d270519f9b4.jpg?v=1754909332",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26390_28ebaae4-d839-4f84-8e7a-d48c936bfa2f.jpg?v=1755780813"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000178_2bc44a80b48e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000179_b75fed3f42e9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000180_ca0c2a0f5449.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000181_ca479038d8b6.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17105 Air Filter",
       "sku": "sa-17105-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c30d4f3-0301-4a8a-99eb-c63bfd60c0c1.jpg?v=1748456070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000178_2bc44a80b48e.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "SA 17105",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P780024 Air Filter, Safety | Replaces the HiFi Filter SA 17105",
       "sku": "sa-17105-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780024-1.700.700_b1dbcceb-139f-4d7d-a535-f1649cb7b9be.jpg?v=1748456070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000179_b75fed3f42e9.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "P780024",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CF 200 Secondary Element | Replaces the HiFi Filter SA 17105",
       "sku": "sa-17105-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_200_image1_d7de38d4-0691-496c-9f95-6d270519f9b4.jpg?v=1754909332",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000180_ca0c2a0f5449.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "CF 200",
@@ -73,7 +73,7 @@
     {
       "title": "Fleetguard AF26390 Air Filter, Secondary | Replaces the HiFi Filter SA 17105",
       "sku": "sa-17105-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26390_28ebaae4-d839-4f84-8e7a-d48c936bfa2f.jpg?v=1755780813",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000181_ca479038d8b6.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "AF26390",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_2329d2e1-df29-45db-a053-ac8dcb1f8f33.jpg?v=1741348699",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8a148365-966e-46d2-8f8d-c10858021c8c_a0cdc84b-4024-414d-862a-a4dc50b8c1ba.jpg?v=1741348699",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5f046eef-a4a7-4ef7-a94c-42b35be92ec1.png?v=1760633012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_f8331e96-1b2d-4b18-97fe-12759424a2c4.jpg?v=1741348698",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8a148365-966e-46d2-8f8d-c10858021c8c_73f0ec9d-d710-424b-b7ae-e30e5a16ec6a.jpg?v=1741348698",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fb09b9a3-4c47-44e1-b5f5-33954f78231b.png?v=1760633014"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016074_95c13293daca.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016075_ffcbe74947b0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016076_b9cd22490a29.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016083_e07b2a652040.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016084_09471ea44786.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016085_ba31bbfacf93.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1360B100B Return Filter | Replaces the Eppensteiner 1360G100P",
       "sku": "1360g100p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_2329d2e1-df29-45db-a053-ac8dcb1f8f33.jpg?v=1741348699",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016074_95c13293daca.jpg",
       "vendor": "",
       "price": 16300,
       "partNumber": "RVR1360B100B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67064 Return Filter | Replaces the Eppensteiner 1360G100P",
       "sku": "1360g100p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8a148365-966e-46d2-8f8d-c10858021c8c_a0cdc84b-4024-414d-862a-a4dc50b8c1ba.jpg?v=1741348699",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016075_ffcbe74947b0.jpg",
       "vendor": "",
       "price": 18500,
       "partNumber": "SH 67064",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR50378 UltraGen III Return Filter | Replaces the Eppensteiner 1360G100P",
       "sku": "1360g100p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5f046eef-a4a7-4ef7-a94c-42b35be92ec1.png?v=1760633012",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/016076_b9cd22490a29.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50378",

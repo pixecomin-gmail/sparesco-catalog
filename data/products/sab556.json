@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e40e3326-b3a3-459c-b6eb-fc1b37a79fdf_c818de91-bc0d-44d7-8a66-545e9528b0e8.jpg?v=1730605859",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_1005_image1_b4ff0cae-c595-4463-a8de-d356750db339.jpg?v=1754913233",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e40e3326-b3a3-459c-b6eb-fc1b37a79fdf_1cd34d39-7d3c-4bd3-8f60-b96d9efd25c9.jpg?v=1730431222",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_1005_image1_6641438b-0321-4500-abbe-c895671a3f47.jpg?v=1754909938"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001278_eb24d7c1f52b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001279_e5fd49ec9b0b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002380_088caf63e706.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002381_fa39e9bb628d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SD 70382 Urea Filter | Replaces the SF Filter SAB 556",
       "sku": "sab-556-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e40e3326-b3a3-459c-b6eb-fc1b37a79fdf_1cd34d39-7d3c-4bd3-8f60-b96d9efd25c9.jpg?v=1730431222",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002380_088caf63e706.jpg",
       "vendor": "",
       "price": 1100,
       "partNumber": "SD 70382",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter U 1005 Urea Filter | Replaces the SF Filter SAB556",
       "sku": "sab556-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_1005_image1_b4ff0cae-c595-4463-a8de-d356750db339.jpg?v=1754913233",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001279_e5fd49ec9b0b.jpg",
       "vendor": "",
       "price": 1100,
       "partNumber": "U 1005",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202136B_e013c0a7-4dbe-4c79-9347-e559c0c1c6d0.jpg?v=1764692101",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3fb68fb9-c0ef-4b29-8e56-ad1dc2a564f5_c8169c75-d371-4ac8-8ea7-65fe515d5d0c.jpg?v=1764692101",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD034E_f3ec1dd0-ae8d-474f-b567-92f79112ab4e.jpg?v=1764692101",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202136B_bf5aae1c-e3e8-469b-99a4-89374d4d8509.jpg?v=1764692100",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3fb68fb9-c0ef-4b29-8e56-ad1dc2a564f5_7fd4ec48-48a4-48eb-9181-529d9462ecba.jpg?v=1764692100",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD034E_5ba3de87-3f27-4d33-b075-9654ad3c4bb2.jpg?v=1764692100"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011420_8ac2d1a80f1e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011421_73e39d31b043.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011422_8849f893863d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011426_b52c68afc753.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011427_5bb1ba4eab3c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011428_f246a73308cf.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit MFHHP40238 | Replaces the Eppensteiner 18140H3SLC000P",
       "sku": "18140h3slc000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202136B_e013c0a7-4dbe-4c79-9347-e559c0c1c6d0.jpg?v=1764692101",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011420_8ac2d1a80f1e.jpg",
       "vendor": "",
       "price": 16500,
       "partNumber": "MFHHP40238",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 64007 Pressure Filter | Replaces the Eppensteiner 18140H3SLC000P",
       "sku": "18140h3slc000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3fb68fb9-c0ef-4b29-8e56-ad1dc2a564f5_c8169c75-d371-4ac8-8ea7-65fe515d5d0c.jpg?v=1764692101",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011421_73e39d31b043.jpg",
       "vendor": "",
       "price": 19800,
       "partNumber": "SH 64007",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec DMD034F03B Pressure Filter | Replaces the Eppensteiner 18140H3SLC000P",
       "sku": "18140h3slc000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD034E_f3ec1dd0-ae8d-474f-b567-92f79112ab4e.jpg?v=1764692101",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011422_8849f893863d.jpg",
       "vendor": "",
       "price": 17900,
       "partNumber": "DMD034F03B",

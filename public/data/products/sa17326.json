@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-36070072-294c-48b5-9cb7-695bad474bda.jpg?v=1723204105",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_a60b1598-e072-4244-b35d-79690fda7c7e.jpg?v=1743773460",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25161_4378815b-9da9-4ca0-bde1-7ba6e7b3cfed.jpg?v=1755780758"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008745_a7ca6a2cf4b1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008746_3864248cb220.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008747_4ca10a002a9b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17326 Air Filter",
       "sku": "sa-17326-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-36070072-294c-48b5-9cb7-695bad474bda.jpg?v=1723204105",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008745_a7ca6a2cf4b1.jpg",
       "vendor": "",
       "price": 9300,
       "partNumber": "SA 17326",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 22 526/1 Air Filter | Replaces the HiFi Filter SA 17326",
       "sku": "sa-17326-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_a60b1598-e072-4244-b35d-79690fda7c7e.jpg?v=1743773460",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008746_3864248cb220.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "C 22 526/1",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF25161 Air Filter, Primary | Replaces the HiFi Filter SA 17326",
       "sku": "sa-17326-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25161_4378815b-9da9-4ca0-bde1-7ba6e7b3cfed.jpg?v=1755780758",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008747_4ca10a002a9b.jpg",
       "vendor": "",
       "price": 8800,
       "partNumber": "AF25161",

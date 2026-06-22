@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-87edf179-fd15-4013-8729-f5f3ffd7c48d_688e9f0f-a810-4360-972b-41c3da1288b9.jpg?v=1762811479",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p134353.700.700_f2b7a740-688a-4bd8-b673-641e2920b16b.jpg?v=1762811479",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c_28_960_z_n21223_i565996_2e1ebaa0-ece7-4ccc-ad13-e030b2885748.jpg?v=1762811479",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1862M_0b293114-f586-4641-87bb-438300a579a9.jpg?v=1762811479"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007811_519546aa7c41.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007812_98d0da516503.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007813_462033be6040.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007814_0976b89236ec.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11812 Air Filter",
       "sku": "sa-11812-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-87edf179-fd15-4013-8729-f5f3ffd7c48d_688e9f0f-a810-4360-972b-41c3da1288b9.jpg?v=1762811479",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007811_519546aa7c41.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "SA 11812",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P134353 Air Filter, Primary Round | Replaces the HiFi Filter SA 11812",
       "sku": "sa-11812-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p134353.700.700_f2b7a740-688a-4bd8-b673-641e2920b16b.jpg?v=1762811479",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007812_98d0da516503.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "P134353",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter C 28 960 z Air Filter | Replaces the HiFi Filter SA 11812",
       "sku": "sa-11812-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/c_28_960_z_n21223_i565996_2e1ebaa0-ece7-4ccc-ad13-e030b2885748.jpg?v=1762811479",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007813_462033be6040.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "C 28 960 z",
@@ -74,7 +74,7 @@
     {
       "title": "Fleetguard AF1862M Air Intake Systems | Replaces the HiFi Filter SA 11812",
       "sku": "sa-11812-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1862M_0b293114-f586-4641-87bb-438300a579a9.jpg?v=1762811479",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007814_0976b89236ec.jpg",
       "vendor": "",
       "price": 12800,
       "partNumber": "AF1862M",

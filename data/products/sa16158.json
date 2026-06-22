@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b46270da-af4c-4328-8317-d642598beafd.jpg?v=1723203192",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p137957.700.700_25821581-6290-4e83-8883-adc5751fa351.jpg?v=1744306071",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1896M_324ef8ad-1d1f-4752-b559-c31dfe841fab.jpg?v=1755780742"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009386_951056b936e4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009387_dfc9061309e6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009388_f4a74213ecb0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16158 Air Filter",
       "sku": "sa-16158-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b46270da-af4c-4328-8317-d642598beafd.jpg?v=1723203192",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009386_951056b936e4.jpg",
       "vendor": "",
       "price": 11500,
       "partNumber": "SA 16158",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P137957 Air Filter, Primary Round | Replaces the HiFi Filter SA 16158",
       "sku": "sa-16158-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p137957.700.700_25821581-6290-4e83-8883-adc5751fa351.jpg?v=1744306071",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009387_dfc9061309e6.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "P137957",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1896M Air Filter, Primary | Replaces the HiFi Filter SA 16158",
       "sku": "sa-16158-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1896M_324ef8ad-1d1f-4752-b559-c31dfe841fab.jpg?v=1755780742",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009388_f4a74213ecb0.jpg",
       "vendor": "",
       "price": 7900,
       "partNumber": "AF1896M",

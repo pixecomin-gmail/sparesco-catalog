@@ -9,21 +9,21 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_3e6996e4-2545-4747-ba49-9bf250dcee10.jpg?v=1764692367",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b10421b2-f277-4032-bc3f-5105f7922ad1_264a2d8e-b444-4e77-8ac7-7cc03c23bb61.jpg?v=1764692367",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203717B_ead0ec2e-9e02-4b9e-b929-216ff05bd621.jpg?v=1764692367",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_c4790a62-75e5-40d4-8b9e-48c50cff52b0.jpg?v=1764692370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b10421b2-f277-4032-bc3f-5105f7922ad1_f198a973-0d3c-4ac1-b43d-c23fe1fd7d74.jpg?v=1764692370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203717B_8f687cc1-4a6c-4a9d-87ef-16981ed34e60.jpg?v=1764692370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_b02f9505-bdd1-4bb2-a7a0-69e9e0676c2d.jpg?v=1764691850",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b10421b2-f277-4032-bc3f-5105f7922ad1_8c6a0ee7-2f3c-441d-80f2-d41e3c2f010c.jpg?v=1764691850",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203717B_53f5fb87-1b38-48f2-8f4c-2ff52fc693f2.jpg?v=1764691850"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008681_f7b36d22bea8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008682_8f6ad79c1a38.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008683_1e3a1374f00b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008684_900a9086a61e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008685_4d993df9fa66.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008686_b984f23a07a9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020020_cfaf9f900196.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020021_44d16b158e2d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020022_f08d9dbedd74.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec XD250T100A DIN Pressure Filter | Replaces the Eppensteiner 20250G100A000P",
       "sku": "20250g100a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_3e6996e4-2545-4747-ba49-9bf250dcee10.jpg?v=1764692367",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008681_f7b36d22bea8.jpg",
       "vendor": "",
       "price": 15400,
       "partNumber": "XD250T100A",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 65543 DIN Pressure Filter | Replaces the Eppensteiner 20250G100A000P",
       "sku": "20250g100a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b10421b2-f277-4032-bc3f-5105f7922ad1_264a2d8e-b444-4e77-8ac7-7cc03c23bb61.jpg?v=1764692367",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008682_8f6ad79c1a38.jpg",
       "vendor": "",
       "price": 14500,
       "partNumber": "SH 65543",
@@ -83,7 +83,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP31922 DIN Pressure Filter | Replaces the Eppensteiner 2.0250G100A000P",
       "sku": "2-0250g100a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203717B_8f687cc1-4a6c-4a9d-87ef-16981ed34e60.jpg?v=1764692370",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/008686_b984f23a07a9.jpg",
       "vendor": "",
       "price": 12600,
       "partNumber": "MFHLP31922",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-035cd5f0-2e72-4c1c-a78f-257d3338478e_809fbc3a-4e8d-41a3-8a34-dd37d4e4c3f5.jpg?v=1762811433",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500235.700.700_d1a7b432-c73f-4f0e-b1cc-422ca7d40fe8.jpg?v=1762811433",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4966_4402c143-d262-4bbc-b1bf-4a29c32be02c.jpg?v=1762811433"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008510_d4d615e29f13.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008511_2d70970032fb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008512_436b4b108861.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14916 Air Filter",
       "sku": "sa-14916-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-035cd5f0-2e72-4c1c-a78f-257d3338478e_809fbc3a-4e8d-41a3-8a34-dd37d4e4c3f5.jpg?v=1762811433",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008510_d4d615e29f13.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "SA 14916",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P500235 Breather, Air | Replaces the HiFi Filter SA 14916",
       "sku": "sa-14916-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500235.700.700_d1a7b432-c73f-4f0e-b1cc-422ca7d40fe8.jpg?v=1762811433",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008511_2d70970032fb.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "P500235",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4966 Crankcase Breather | Replaces the HiFi Filter SA 14916",
       "sku": "sa-14916-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4966_4402c143-d262-4bbc-b1bf-4a29c32be02c.jpg?v=1762811433",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008512_436b4b108861.jpg",
       "vendor": "",
       "price": 3300,
       "partNumber": "AF4966",

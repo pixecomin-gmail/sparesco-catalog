@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200443B_b6ce3062-b7fa-4096-8de7-7106806a260c.jpg?v=1755097351",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-928bf6f4-476e-43be-8c35-bfa12cbddbec_529128b2-6747-470c-8870-7b50430299d7.jpg?v=1755097351",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_22f9dbe3-bcce-4a98-a5a0-e8fd79bee8b8.png?v=1760636988"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000479_edbe5125295e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000480_f91bffc23eb4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000481_fd2beed9ffec.png"
   ],
   "variants": [
     {
       "title": "Filtrec R650G03 Return Filter | Replaces the Argo-Hytos V2092003",
       "sku": "v2092003-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200443B_b6ce3062-b7fa-4096-8de7-7106806a260c.jpg?v=1755097351",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000479_edbe5125295e.jpg",
       "vendor": "",
       "price": 11100,
       "partNumber": "R650G03",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 52201 Return Filter | Replaces the Argo-Hytos V2092003",
       "sku": "v2092003-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-928bf6f4-476e-43be-8c35-bfa12cbddbec_529128b2-6747-470c-8870-7b50430299d7.jpg?v=1755097351",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000480_f91bffc23eb4.jpg",
       "vendor": "",
       "price": 11500,
       "partNumber": "SH 52201",
@@ -79,7 +79,7 @@
     {
       "title": "MicroFit® MFHR50152 UltraGen III Return Filter | Replaces the Argo-Hytos V2092003",
       "sku": "v2092003-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_22f9dbe3-bcce-4a98-a5a0-e8fd79bee8b8.png?v=1760636988",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000481_fd2beed9ffec.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50152",

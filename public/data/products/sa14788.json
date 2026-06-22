@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3236c199-7932-4838-a0a3-75cbd5729dd0.jpg?v=1723210715",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181191.700.700_b3ce742a-8bfb-4cf0-95d7-4dd84da93b5d.jpg?v=1744306044",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4838_cca923ed-4a48-4b1f-b799-d22c58041b96.jpg?v=1755780869"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006777_405f19048a2f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006778_4db1864d554f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006779_5d5f994ec22a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14788 Air Filter",
       "sku": "sa-14788-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3236c199-7932-4838-a0a3-75cbd5729dd0.jpg?v=1723210715",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006777_405f19048a2f.jpg",
       "vendor": "",
       "price": 7900,
       "partNumber": "SA 14788",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P181191 Air Filter, Primary Round | Replaces the HiFi Filter SA 14788",
       "sku": "sa-14788-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181191.700.700_b3ce742a-8bfb-4cf0-95d7-4dd84da93b5d.jpg?v=1744306044",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006778_4db1864d554f.jpg",
       "vendor": "",
       "price": 10300,
       "partNumber": "P181191",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4838 Air Filter, Primary | Replaces the HiFi Filter SA 14788",
       "sku": "sa-14788-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4838_cca923ed-4a48-4b1f-b799-d22c58041b96.jpg?v=1755780869",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006779_5d5f994ec22a.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "AF4838",

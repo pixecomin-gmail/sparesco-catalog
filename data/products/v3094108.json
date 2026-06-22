@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF206272B_e11c24a9-1312-403b-aabc-c4b6cae663d6.jpg?v=1741359771",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_9de745e9-49ec-4a9b-b114-6bfd72c29bdb.jpg?v=1741359771",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c4dba38f-2d61-4c2c-987f-b2ab4b38a7ed.png?v=1760637093"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000015_1147634f8e80.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000016_b05801991f77.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000017_8581402fe3c6.png"
   ],
   "variants": [
     {
       "title": "Filtrec WG967 Special Filter | Replaces the Argo-Hytos V3094108",
       "sku": "v3094108-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF206272B_e11c24a9-1312-403b-aabc-c4b6cae663d6.jpg?v=1741359771",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000015_1147634f8e80.jpg",
       "vendor": "",
       "price": 11300,
       "partNumber": "WG967",
@@ -46,7 +46,7 @@
     {
       "title": "Argo Hytos V3.0941-08 Special Filter",
       "sku": "v3094108-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_9de745e9-49ec-4a9b-b114-6bfd72c29bdb.jpg?v=1741359771",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000016_b05801991f77.jpg",
       "vendor": "",
       "price": 21300,
       "partNumber": "V3.0941-08",
@@ -75,7 +75,7 @@
     {
       "title": "MicroFit® MFHSP80848 UltraGen III Special Filter | Replaces the Argo-Hytos V3094108",
       "sku": "v3094108-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c4dba38f-2d61-4c2c-987f-b2ab4b38a7ed.png?v=1760637093",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000017_8581402fe3c6.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80848",

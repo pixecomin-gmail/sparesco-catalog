@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e92183f6-2e7c-4b2f-b178-13885c8db46a.jpg?v=1748456065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p953211.700.700_613609a6-4226-4633-9414-92aa55cd4eba.jpg?v=1748456065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b24ee5e0-9e50-4668-b96f-f20c3d52ba56.jpg?v=1748456065",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27940_aeb48b90-a7bb-43c4-a6b0-b80457e96813.jpg?v=1755780755"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009066_13bf40eade4b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009067_9bd3ac20101b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009068_395d60d0adcf.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009069_64045b896478.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16697 Air Filter",
       "sku": "sa-16697-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e92183f6-2e7c-4b2f-b178-13885c8db46a.jpg?v=1748456065",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009066_13bf40eade4b.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "SA 16697",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P953211 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16697",
       "sku": "sa-16697-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p953211.700.700_613609a6-4226-4633-9414-92aa55cd4eba.jpg?v=1748456065",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009067_9bd3ac20101b.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "P953211",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 31 016 Air Filter | Replaces the HiFi Filter SA 16697",
       "sku": "sa-16697-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_b24ee5e0-9e50-4668-b96f-f20c3d52ba56.jpg?v=1748456065",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009068_395d60d0adcf.jpg",
       "vendor": "",
       "price": 10000,
       "partNumber": "C 31 016",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF27940 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16697",
       "sku": "sa-16697-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27940_aeb48b90-a7bb-43c4-a6b0-b80457e96813.jpg?v=1755780755",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009069_64045b896478.jpg",
       "vendor": "",
       "price": 7800,
       "partNumber": "AF27940",

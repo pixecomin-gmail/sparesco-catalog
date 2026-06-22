@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0c39c512-70b8-4165-8b61-ceb4e795ff2b.jpg?v=1723205554",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p130764.700.700_e2024d2b-746c-433f-93aa-c4ff46aa3542.jpg?v=1744305986",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF932_d0f726d2-0af7-40fc-b9e3-654ba6a827cc.jpg?v=1755780786"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007925_cfd01392ace0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007926_1f0556f44ec4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007927_576eefe364e6.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10882 Air Filter",
       "sku": "sa-10882-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0c39c512-70b8-4165-8b61-ceb4e795ff2b.jpg?v=1723205554",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007925_cfd01392ace0.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "SA 10882",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P130764 Air Filter, Primary Round | Replaces the HiFi Filter SA 10882",
       "sku": "sa-10882-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p130764.700.700_e2024d2b-746c-433f-93aa-c4ff46aa3542.jpg?v=1744305986",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007926_1f0556f44ec4.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "P130764",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF932 Air, Primary | Replaces the HiFi Filter SA 10882",
       "sku": "sa-10882-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF932_d0f726d2-0af7-40fc-b9e3-654ba6a827cc.jpg?v=1755780786",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007927_576eefe364e6.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "AF932",

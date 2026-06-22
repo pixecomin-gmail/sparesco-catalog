@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e6101e6-1fc9-48d5-8b06-ea0ce62dbe62.jpg?v=1723203740",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_924_image1_d345586c-eda2-4c01-8153-fae10ba133ca.jpg?v=1754909273",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131394.700.700_66368062-082b-404b-b840-89cfe197c072.jpg?v=1744306013",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1980_98586a55-d43b-4579-be87-e40f78e0560d.jpg?v=1755780757"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009014_8074e40efa6a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009015_8d620ff75866.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009016_834876f82f38.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009017_7ddd7349dc2d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11930 Air Filter",
       "sku": "sa-11930-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4e6101e6-1fc9-48d5-8b06-ea0ce62dbe62.jpg?v=1723203740",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009014_8074e40efa6a.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "SA 11930",
@@ -40,7 +40,7 @@
     {
       "title": "Mann Filter CF 924 Secondary Element | Replaces the HiFi Filter SA 11930",
       "sku": "sa-11930-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_924_image1_d345586c-eda2-4c01-8153-fae10ba133ca.jpg?v=1754909273",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009015_8d620ff75866.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "CF 924",
@@ -61,7 +61,7 @@
     {
       "title": "Donaldson P131394 Air Filter, Safety | Replaces the HiFi Filter SA 11930",
       "sku": "sa-11930-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p131394.700.700_66368062-082b-404b-b840-89cfe197c072.jpg?v=1744306013",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009016_834876f82f38.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "P131394",
@@ -77,7 +77,7 @@
     {
       "title": "Fleetguard AF1980 Air Filter, Secondary | Replaces the HiFi Filter SA 11930",
       "sku": "sa-11930-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1980_98586a55-d43b-4579-be87-e40f78e0560d.jpg?v=1755780757",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009017_7ddd7349dc2d.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "AF1980",

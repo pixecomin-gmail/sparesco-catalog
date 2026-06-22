@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF216031B_d63b2c40-ee83-45d3-9048-1f473aeb9efc.jpg?v=1764692747",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD20015E_33b800d7-7411-44d1-8b6d-f23a96b55bee.jpg?v=1764692747",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p561353.700.700_bbaf6a99-8a7d-4b33-abd1-23e8b2e57833.jpg?v=1764692747",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_abbf3e4f-913f-4c28-ae11-38346820ba55.jpg?v=1764763404",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF216031B_cebbda09-9ca4-495b-80b6-c88043f33638.jpg?v=1764692748",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD20015E_078cbe30-64e9-4f6f-92fc-bdb1bd2112f8.jpg?v=1764692748",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p561353.700.700_d25b9a58-cbf4-4f59-a08c-66e0d5b834c9.jpg?v=1764692748",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_c06bebf9-6b9d-466f-9363-1095cdef97ae.jpg?v=1764763405"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001595_2af20d8ffe34.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001596_206c9dc55456.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001597_58588016d664.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001598_6f40cc965aac.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001603_75796c6a7d71.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001604_db757b3b29df.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001605_247188ba27c9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001606_78e66a8bf1d0.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP33354 Pressure Filter | Replaces the Eppensteiner 2.0018H20SLA000P",
       "sku": "2-0018h20sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF216031B_cebbda09-9ca4-495b-80b6-c88043f33638.jpg?v=1764692748",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001603_75796c6a7d71.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "MFHLP33354",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec DVD20018E20B Pressure Filter | Replaces the Eppensteiner 20018H20SLA000P",
       "sku": "20018h20sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD20015E_33b800d7-7411-44d1-8b6d-f23a96b55bee.jpg?v=1764692747",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001596_206c9dc55456.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "DVD20018E20B",
@@ -84,7 +84,7 @@
     {
       "title": "Donaldson P561353 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 20018H20SLA000P",
       "sku": "20018h20sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p561353.700.700_bbaf6a99-8a7d-4b33-abd1-23e8b2e57833.jpg?v=1764692747",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001597_58588016d664.jpg",
       "vendor": "",
       "price": 16000,
       "partNumber": "P561353",
@@ -115,7 +115,7 @@
     {
       "title": "HiFi Filter SH 67825 Pressure Filter | Replaces the Eppensteiner 20018H20SLA000P",
       "sku": "20018h20sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_abbf3e4f-913f-4c28-ae11-38346820ba55.jpg?v=1764763404",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/001598_6f40cc965aac.jpg",
       "vendor": "",
       "price": 24800,
       "partNumber": "SH 67825",

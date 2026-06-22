@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ea5e048e-2835-4a46-9b0f-497e10b9c476.jpg?v=1723225576",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_10_050_image1_d42efe43-1890-46c4-9239-052d56483335.jpg?v=1754909538",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4328_ce7cf694-6702-433d-9786-19a0ff240c51.jpg?v=1755780965"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000123_5ecc02434568.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000124_09eb1ff82447.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000125_01fd3281fd98.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17334 Air Filter",
       "sku": "sa-17334-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ea5e048e-2835-4a46-9b0f-497e10b9c476.jpg?v=1723225576",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000123_5ecc02434568.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "SA 17334",
@@ -36,7 +36,7 @@
     {
       "title": "Mann Filter C 10 050 Air Filter | Replaces the HiFi Filter SA 17334",
       "sku": "sa-17334-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_10_050_image1_d42efe43-1890-46c4-9239-052d56483335.jpg?v=1754909538",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000124_09eb1ff82447.jpg",
       "vendor": "",
       "price": 2100,
       "partNumber": "C 10 050",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4328 Air Filter, Primary | Replaces the HiFi Filter SA 17334",
       "sku": "sa-17334-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4328_ce7cf694-6702-433d-9786-19a0ff240c51.jpg?v=1755780965",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000125_01fd3281fd98.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "AF4328",

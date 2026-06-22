@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6e4977f9-84fa-4074-af6a-70d7d5e4f1ff.jpg?v=1723203252",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p141278.700.700_78a4102d-1dda-4363-ae15-75f6dbe6bf9b.jpg?v=1744306043",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4760_8f83853f-c003-494a-8622-a5ac7aa5cd1c.jpg?v=1755780746"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000290_7ffed32c73fd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000291_7b3d3ebd33ac.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000292_112dc9aa7a09.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14710 Air Filter",
       "sku": "sa-14710-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6e4977f9-84fa-4074-af6a-70d7d5e4f1ff.jpg?v=1723203252",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000290_7ffed32c73fd.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "SA 14710",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P141278 Air Filter, Safety | Replaces the HiFi Filter SA 14710",
       "sku": "sa-14710-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p141278.700.700_78a4102d-1dda-4363-ae15-75f6dbe6bf9b.jpg?v=1744306043",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000291_7b3d3ebd33ac.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "P141278",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4760 Air Filter | Replaces the HiFi Filter SA 14710",
       "sku": "sa-14710-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4760_8f83853f-c003-494a-8622-a5ac7aa5cd1c.jpg?v=1755780746",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000292_112dc9aa7a09.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "AF4760",

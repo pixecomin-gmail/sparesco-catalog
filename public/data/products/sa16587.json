@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f46f5f1f-cf74-4223-9395-01b1f22f12bb.jpg?v=1723212602",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772587.700.700_85948582-26cd-4ced-9bbe-5e0f3ee69cbe.jpg?v=1744306123",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25315K_53b6ef30-c674-495a-a54d-9ebc29bec38d.jpg?v=1755780891"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005950_6e1097eff1e6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005951_b29da2fd1070.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005952_daf7eb7632fc.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16587 Air Filter",
       "sku": "sa-16587-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f46f5f1f-cf74-4223-9395-01b1f22f12bb.jpg?v=1723212602",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005950_6e1097eff1e6.jpg",
       "vendor": "",
       "price": 7800,
       "partNumber": "SA 16587",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P772587 Air Filter, Primary Finned | Replaces the HiFi Filter SA 16587",
       "sku": "sa-16587-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p772587.700.700_85948582-26cd-4ced-9bbe-5e0f3ee69cbe.jpg?v=1744306123",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005951_b29da2fd1070.jpg",
       "vendor": "",
       "price": 10100,
       "partNumber": "P772587",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF25315K Air Filter, Primary | Replaces the HiFi Filter SA 16587",
       "sku": "sa-16587-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25315K_53b6ef30-c674-495a-a54d-9ebc29bec38d.jpg?v=1755780891",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005952_daf7eb7632fc.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "AF25315K",

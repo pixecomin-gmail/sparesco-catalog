@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8a8c5c8e-a7ad-4e6d-aa82-1abbb8251907.jpg?v=1723203504",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158671.700.700_8e0ea175-d2be-49c9-9d7c-3eeabfae17ce.jpg?v=1744305985",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF922_e142fbe0-c58d-4d6f-8c1d-7aa691cbfdaf.jpg?v=1755780754"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000283_f39766dc2c54.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000284_c4f782012ad1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000285_9e93a815e230.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10872 Air Filter",
       "sku": "sa-10872-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8a8c5c8e-a7ad-4e6d-aa82-1abbb8251907.jpg?v=1723203504",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000283_f39766dc2c54.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "SA 10872",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P158671 Air Filter, Safety | Replaces the HiFi Filter SA 10872",
       "sku": "sa-10872-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158671.700.700_8e0ea175-d2be-49c9-9d7c-3eeabfae17ce.jpg?v=1744305985",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000284_c4f782012ad1.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "P158671",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF922 Air Filter, Secondary | Replaces the HiFi Filter SA 10872",
       "sku": "sa-10872-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF922_e142fbe0-c58d-4d6f-8c1d-7aa691cbfdaf.jpg?v=1755780754",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000285_9e93a815e230.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "AF922",

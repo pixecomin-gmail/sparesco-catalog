@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73814191-9607-430d-b5fe-b6507e13c167_33f49ca4-44a5-46d2-ba07-e4eae76fa8b8.jpg?v=1762811363",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776360.700.700_a168ddb9-400a-4714-bbbe-2abc5de7b3c6.jpg?v=1762811363",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25540K_185a453d-7f09-4ba6-b243-e22b5f6c5337.jpg?v=1762811363"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009996_8f711872df45.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009997_1e6ed5f7e6ba.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009998_aa909ac2b7f0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17470 K Air Filter",
       "sku": "sa-17470-k-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73814191-9607-430d-b5fe-b6507e13c167_33f49ca4-44a5-46d2-ba07-e4eae76fa8b8.jpg?v=1762811363",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009996_8f711872df45.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "SA 17470 K",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P776360 Air Filter, Primary Finned | Replaces the HiFi Filter SA 17470 K",
       "sku": "sa-17470-k-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776360.700.700_a168ddb9-400a-4714-bbbe-2abc5de7b3c6.jpg?v=1762811363",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009997_1e6ed5f7e6ba.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "P776360",
@@ -56,7 +56,7 @@
     {
       "title": "Fleetguard AF25540K Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 17470 K",
       "sku": "sa-17470-k-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25540K_185a453d-7f09-4ba6-b243-e22b5f6c5337.jpg?v=1762811363",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009998_aa909ac2b7f0.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "AF25540K",

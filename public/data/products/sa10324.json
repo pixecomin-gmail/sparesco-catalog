@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7dd0c090-817b-4472-a004-e9be849d1907.jpg?v=1723205613",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136837.700.700_c12234c1-a1fd-48e5-a83b-b509999b365e.jpg?v=1744305971",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF374_0b5a1072-cda5-40a9-9e5c-043e43085f93.jpg?v=1755780790"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007905_d618d1d833de.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007906_eaa090fa8c69.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007907_be5028e7afc3.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10324 Air Filter",
       "sku": "sa-10324-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7dd0c090-817b-4472-a004-e9be849d1907.jpg?v=1723205613",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007905_d618d1d833de.jpg",
       "vendor": "",
       "price": 14600,
       "partNumber": "SA 10324",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P136837 Air Filter, Primary Round | Replaces the HiFi Filter SA 10324",
       "sku": "sa-10324-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p136837.700.700_c12234c1-a1fd-48e5-a83b-b509999b365e.jpg?v=1744305971",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007906_eaa090fa8c69.jpg",
       "vendor": "",
       "price": 15500,
       "partNumber": "P136837",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF374 Air Filter, Primary | Replaces the HiFi Filter SA 10324",
       "sku": "sa-10324-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF374_0b5a1072-cda5-40a9-9e5c-043e43085f93.jpg?v=1755780790",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007907_be5028e7afc3.jpg",
       "vendor": "",
       "price": 14900,
       "partNumber": "AF374",

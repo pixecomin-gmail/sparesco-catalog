@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200242B_982bb009-3737-45bc-83ec-6948f833276e.jpg?v=1755092807",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c4c091fe-fb51-44f9-8a94-c5f50987d0e3_1a65b64e-46bd-449a-a9f1-5219a4d259a8.jpg?v=1755092807",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_2f4f3a61-8cf1-4ce4-ad20-1ee413e72571.png?v=1760630465",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200242B_2e054e64-6d27-4fdb-a160-e8ff94b5e1fa.jpg?v=1755092803",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c4c091fe-fb51-44f9-8a94-c5f50987d0e3_9608170d-9b27-4662-aaed-6eb3a0d89ada.jpg?v=1755092803",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_f62a0fdf-a69a-4504-adf5-499adcb7fcf4.png?v=1760630456"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023752_f7ec90329a64.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023753_8e9aef2676ea.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023754_5344ac7bf25c.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023758_5c693d3b4cb9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023759_93b248cea2d4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023760_1249457ce95a.png"
   ],
   "variants": [
     {
       "title": "Filtrec DMD0030F05B Pressure Filter | Replaces the Eppensteiner 185230H6SLF000P",
       "sku": "185230h6slf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200242B_982bb009-3737-45bc-83ec-6948f833276e.jpg?v=1755092807",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023752_f7ec90329a64.jpg",
       "vendor": "",
       "price": 27300,
       "partNumber": "DMD0030F05B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 84152 Pressure Filter | Replaces the Eppensteiner 185230H6SLF000P",
       "sku": "185230h6slf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c4c091fe-fb51-44f9-8a94-c5f50987d0e3_1a65b64e-46bd-449a-a9f1-5219a4d259a8.jpg?v=1755092807",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023753_8e9aef2676ea.jpg",
       "vendor": "",
       "price": 27400,
       "partNumber": "SH 84152",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHHP40288 UltraGen III Pressure Filter | Replaces the Eppensteiner 185230H6SLF000P",
       "sku": "185230h6slf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_2f4f3a61-8cf1-4ce4-ad20-1ee413e72571.png?v=1760630465",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/023754_5344ac7bf25c.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40288",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6edad6d9-fae9-436d-9987-cd4a87b1f525.jpg?v=1748456079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780012.700.700_94602363-6f87-4cb2-b08c-e4b6dac3ba15.jpg?v=1748456079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_400_image1_fb16ad8a-89cc-49eb-ad16-06feb13b7d92.jpg?v=1754909330",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26394_e88a67a4-f533-4fe5-82fa-d08012541be3.jpg?v=1755780818"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007200_88f17a254620.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007201_2970547f3151.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007202_fde15dca8b77.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007203_0fc2abef5d8e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17119 Air Filter",
       "sku": "sa-17119-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6edad6d9-fae9-436d-9987-cd4a87b1f525.jpg?v=1748456079",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007200_88f17a254620.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "SA 17119",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P780012 Air Filter, Safety | Replaces the HiFi Filter SA 17119",
       "sku": "sa-17119-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p780012.700.700_94602363-6f87-4cb2-b08c-e4b6dac3ba15.jpg?v=1748456079",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007201_2970547f3151.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "P780012",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CF 400 Secondary Element | Replaces the HiFi Filter SA 17119",
       "sku": "sa-17119-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_400_image1_fb16ad8a-89cc-49eb-ad16-06feb13b7d92.jpg?v=1754909330",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007202_fde15dca8b77.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "CF 400",
@@ -73,7 +73,7 @@
     {
       "title": "Fleetguard AF26394 Air Filter, Secondary | Replaces the HiFi Filter SA 17119",
       "sku": "sa-17119-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26394_e88a67a4-f533-4fe5-82fa-d08012541be3.jpg?v=1755780818",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007203_0fc2abef5d8e.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF26394",

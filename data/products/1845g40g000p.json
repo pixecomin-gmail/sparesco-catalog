@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4f8f1de6-720a-4b77-86fc-6dd39d8dd3ef_f9093836-5cbf-467c-b2e0-0b2a3fa98eb6.jpg?v=1755095955",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202196B_bea46faf-7ce5-46c6-ac39-3ba8d4a024f8.jpg?v=1755095955",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9fff0e11-375a-4fc9-8476-47d853a7dae4.png?v=1760633742",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4f8f1de6-720a-4b77-86fc-6dd39d8dd3ef_7e70185d-5571-41ca-835f-0f0c52807817.jpg?v=1755095957",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202196B_1fe5e463-16fa-440c-a07e-d3ad4f8f428f.jpg?v=1755095957",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_78729859-9350-4456-846e-46a95144df03.png?v=1760633743"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010543_56edf0eecf94.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010544_164ac4a4b5a9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010545_8c4046fbe0f3.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010546_c880602d9699.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010547_ca06c9117db8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010548_a9ce2c57b341.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 64144 Return Filter | Replaces the Eppensteiner 1845G40G000P",
       "sku": "1845g40g000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4f8f1de6-720a-4b77-86fc-6dd39d8dd3ef_f9093836-5cbf-467c-b2e0-0b2a3fa98eb6.jpg?v=1755095955",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010543_56edf0eecf94.jpg",
       "vendor": "",
       "price": 10200,
       "partNumber": "SH 64144",
@@ -50,7 +50,7 @@
     {
       "title": "Filtrec RMR443B40B Return Filter | Replaces the Eppensteiner 1845G40G000P",
       "sku": "1845g40g000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202196B_bea46faf-7ce5-46c6-ac39-3ba8d4a024f8.jpg?v=1755095955",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010544_164ac4a4b5a9.jpg",
       "vendor": "",
       "price": 7800,
       "partNumber": "RMR443B40B",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR51142 UltraGen III Filter | Replaces the Eppensteiner 1845G40G000P",
       "sku": "1845g40g000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9fff0e11-375a-4fc9-8476-47d853a7dae4.png?v=1760633742",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010545_8c4046fbe0f3.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR51142",

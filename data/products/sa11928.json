@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3efb7e9f-2dd8-4211-a0ca-3bad49811bdf_5d012191-60f6-4f8a-b0e6-c554c3eb4066.jpg?v=1762811053",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_49986af8-2ce1-4a20-8cb7-7971ba2b3cc8.jpg?v=1762811053",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1978_bf5f481f-b9a0-4202-acc7-d1a50877eca0.jpg?v=1762811053"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000074_292640a52057.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000075_36a9b61dfd0f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000076_9255caec6fd3.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11928 Air Filter",
       "sku": "sa-11928-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3efb7e9f-2dd8-4211-a0ca-3bad49811bdf_5d012191-60f6-4f8a-b0e6-c554c3eb4066.jpg?v=1762811053",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000074_292640a52057.jpg",
       "vendor": "",
       "price": 1500,
       "partNumber": "SA 11928",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 1450 Air Filter | Replaces the HiFi Filter SA 11928",
       "sku": "sa-11928-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_49986af8-2ce1-4a20-8cb7-7971ba2b3cc8.jpg?v=1762811053",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000075_36a9b61dfd0f.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "C 1450",
@@ -58,7 +58,7 @@
     {
       "title": "Fleetguard AF1978 Air Filter | Replaces the HiFi Filter SA 11928",
       "sku": "sa-11928-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1978_bf5f481f-b9a0-4202-acc7-d1a50877eca0.jpg?v=1762811053",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000076_9255caec6fd3.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "AF1978",

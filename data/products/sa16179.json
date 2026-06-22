@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0a341b41-05f4-4796-95d8-a60c28eef36a.jpg?v=1723204906",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p538456.700.700_d92b9e2f-c0bc-4afa-a99f-7e0b2418c738.jpg?v=1744306075",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_08e8be47-e876-42c7-af4b-2b6939670f3a.jpg?v=1751027841",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25360_27ec4113-5168-4d5e-af4c-c308121fc6a1.jpg?v=1755780779"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008276_39cb660801bc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008277_30c5f788cea9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008278_cc6dbe15ef27.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008279_595851c4a8e1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16179 Air Filter",
       "sku": "sa-16179-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0a341b41-05f4-4796-95d8-a60c28eef36a.jpg?v=1723204906",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008276_39cb660801bc.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "SA 16179",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P538456 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16179",
       "sku": "sa-16179-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p538456.700.700_d92b9e2f-c0bc-4afa-a99f-7e0b2418c738.jpg?v=1744306075",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008277_30c5f788cea9.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "P538456",
@@ -55,7 +55,7 @@
     {
       "title": "FIL Filter HP 2705 | Replaces the HiFi Filter SA 16179",
       "sku": "sa-16179-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_08e8be47-e876-42c7-af4b-2b6939670f3a.jpg?v=1751027841",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008278_cc6dbe15ef27.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "HP 2705",
@@ -71,7 +71,7 @@
     {
       "title": "Fleetguard AF25360 Air, Secondary Magnum Rs | Replaces the HiFi Filter SA 16179",
       "sku": "sa-16179-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25360_27ec4113-5168-4d5e-af4c-c308121fc6a1.jpg?v=1755780779",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008279_595851c4a8e1.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AF25360",

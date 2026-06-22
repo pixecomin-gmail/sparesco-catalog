@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_847b5f2b-48f5-475e-acd8-cf8bf1a7e7c1.jpg?v=1755092078",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171619.700.700_a3275ed7-a3a9-44a9-b710-aac994ee6f6f.jpg?v=1755092078",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d5729f9c-d416-417d-a9d8-6b833a223627_37eac57b-86f8-41eb-96ab-38d21004799a.jpg?v=1761655136",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_73decd53-a8e2-4e76-9c66-64ca8d14bc61.jpg?v=1755092068",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171619.700.700_c13f12cb-22f0-4bcf-92c9-938242e65ab8.jpg?v=1755092068",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d5729f9c-d416-417d-a9d8-6b833a223627_d0036e05-1c3e-442e-8d99-0acfa1eaf3ce.jpg?v=1761655132"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027980_2788d5a9d3b1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027981_b02750086f82.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027982_5e1783340d8a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028010_4732c21cce38.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028011_36ab1e95a786.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/028012_642970e493e9.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec A121G25 Spin-On Filter | Replaces the Eppensteiner 87SL260H20LLP",
       "sku": "87sl260h20llp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_847b5f2b-48f5-475e-acd8-cf8bf1a7e7c1.jpg?v=1755092078",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027980_2788d5a9d3b1.jpg",
       "vendor": "Filtrec",
       "price": 9100,
       "partNumber": "A121G25",
@@ -50,7 +50,7 @@
     {
       "title": "Donaldson P171619 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 87SL260H20LLP",
       "sku": "87sl260h20llp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171619.700.700_a3275ed7-a3a9-44a9-b710-aac994ee6f6f.jpg?v=1755092078",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027981_b02750086f82.jpg",
       "vendor": "Donaldson",
       "price": 7600,
       "partNumber": "P171619",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 63710 Spin-On Filter | Replaces the Eppensteiner 87SL260H20LLP",
       "sku": "87sl260h20llp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d5729f9c-d416-417d-a9d8-6b833a223627_37eac57b-86f8-41eb-96ab-38d21004799a.jpg?v=1761655136",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027982_5e1783340d8a.jpg",
       "vendor": "HiFi Filter",
       "price": 9800,
       "partNumber": "SH 63710",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-55845817-012a-447b-86b1-7f6f3a9491ff.jpg?v=1748456045",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606120.700.700_263a3151-ccf8-4366-ba1c-5c3658218019.jpg?v=1748456045",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_33_530_image1_1b647cb2-a9ce-4fec-b1d1-f8339d219948.jpg?v=1754909274",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26156_0db6b742-89ff-40af-8835-e53e951ab9a8.jpg?v=1755780762"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008916_4d282fc20064.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008917_7c3f60133f29.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008918_5deb0b1c453f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008919_abfd3cadee0e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16403 Air Filter",
       "sku": "sa-16403-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-55845817-012a-447b-86b1-7f6f3a9491ff.jpg?v=1748456045",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008916_4d282fc20064.jpg",
       "vendor": "",
       "price": 9900,
       "partNumber": "SA 16403",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P606120 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16403",
       "sku": "sa-16403-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p606120.700.700_263a3151-ccf8-4366-ba1c-5c3658218019.jpg?v=1748456045",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008917_7c3f60133f29.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "P606120",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter CP 33 530 Air Filter | Replaces the HiFi Filter SA 16403",
       "sku": "sa-16403-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CP_33_530_image1_1b647cb2-a9ce-4fec-b1d1-f8339d219948.jpg?v=1754909274",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008918_5deb0b1c453f.jpg",
       "vendor": "",
       "price": 10300,
       "partNumber": "CP 33 530",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF26156 Air Filter, Primary | Replaces the HiFi Filter SA 16403",
       "sku": "sa-16403-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26156_0db6b742-89ff-40af-8835-e53e951ab9a8.jpg?v=1755780762",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008919_abfd3cadee0e.jpg",
       "vendor": "",
       "price": 11500,
       "partNumber": "AF26156",

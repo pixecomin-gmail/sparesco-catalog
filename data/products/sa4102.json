@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d70f9ea4-58f8-4ed3-b57e-d6922c5e921d.jpg?v=1723211993",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_3495_image1.jpg?v=1754909436",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/79QwJwK0udv3jBRp0gEAEt6SGhHPLiX8v_5217265a-c76f-4dce-919c-28be1448a63b.png?v=1751027851"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006400_3eb5c7307ac9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006401_3129755d1390.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006402_603144228cdd.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 4102 Air Filter",
       "sku": "sa-4102-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d70f9ea4-58f8-4ed3-b57e-d6922c5e921d.jpg?v=1723211993",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006400_3eb5c7307ac9.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "SA 4102",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 3495 Air Filter | Replaces the HiFi Filter SA 4102",
       "sku": "sa-4102-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_3495_image1.jpg?v=1754909436",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006401_3129755d1390.jpg",
       "vendor": "",
       "price": 1700,
       "partNumber": "C 3495",
@@ -57,7 +57,7 @@
     {
       "title": "FIL Filter HP 2234 Filter Insert | Replaces the HiFi Filter SA 4102",
       "sku": "sa-4102-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/79QwJwK0udv3jBRp0gEAEt6SGhHPLiX8v_5217265a-c76f-4dce-919c-28be1448a63b.png?v=1751027851",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006402_603144228cdd.png",
       "vendor": "",
       "price": 1200,
       "partNumber": "HP 2234",

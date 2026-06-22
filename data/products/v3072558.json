@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1211d72d-687d-478d-af93-e8bebae79061_45659b68-bcbf-489c-9884-01daee030d6e.jpg?v=1761218408",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_2e1ea228-8115-4400-b75e-6723f8114d8f.png?v=1761218408",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_07b7a6ee-1be0-4efd-be96-4dca52e92a9b.png?v=1761218408"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000358_6c0ae11f0c5a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000359_34634a396fd1.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000360_f0d791601252.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52073 Special Filter | Replaces the Argo-Hytos V3072558",
       "sku": "v3072558-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1211d72d-687d-478d-af93-e8bebae79061_45659b68-bcbf-489c-9884-01daee030d6e.jpg?v=1761218408",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000358_6c0ae11f0c5a.jpg",
       "vendor": "",
       "price": 14100,
       "partNumber": "SH 52073",
@@ -48,7 +48,7 @@
     {
       "title": "Filtrec WG259 Special Filter | Replaces the Argo-Hytos V3072558",
       "sku": "v3072558-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_2e1ea228-8115-4400-b75e-6723f8114d8f.png?v=1761218408",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000359_34634a396fd1.png",
       "vendor": "",
       "price": 0,
       "partNumber": "WG259",
@@ -79,7 +79,7 @@
     {
       "title": "MicroFit® MFHSP80843 UltraGen III Special Filter | Replaces the Argo-Hytos V3072558",
       "sku": "v3072558-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_07b7a6ee-1be0-4efd-be96-4dca52e92a9b.png?v=1761218408",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000360_f0d791601252.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80843",

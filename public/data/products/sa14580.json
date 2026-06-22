@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12a0b0b8-d3c7-486e-be4a-121eb5cf8a72.jpg?v=1723206863",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771575.700.700_cc75c975-1d25-4525-884e-80ee5ff7667b.jpg?v=1744306034",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4VAmRhTdplj4OybwwTL5gj9jXU7DFiLPh_dd2d8f85-2ed1-42d1-a2f2-f800945b74b5.png?v=1751027847",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25066_f94adb4a-1fe6-46ae-963e-6692f371f9da.jpg?v=1755780811"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007346_4e44f89bf3cb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007347_990bc91481dd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007348_7e8b661f4fbc.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007349_adafca433cd0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14580 Air Filter",
       "sku": "sa-14580-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12a0b0b8-d3c7-486e-be4a-121eb5cf8a72.jpg?v=1723206863",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007346_4e44f89bf3cb.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "SA 14580",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P771575 Air Filter, Primary Round | Replaces the HiFi Filter SA 14580",
       "sku": "sa-14580-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p771575.700.700_cc75c975-1d25-4525-884e-80ee5ff7667b.jpg?v=1744306034",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007347_990bc91481dd.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "P771575",
@@ -55,7 +55,7 @@
     {
       "title": "FIL Filter HP 916 A Filter Insert | Replaces the HiFi Filter SA 14580",
       "sku": "sa-14580-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/4VAmRhTdplj4OybwwTL5gj9jXU7DFiLPh_dd2d8f85-2ed1-42d1-a2f2-f800945b74b5.png?v=1751027847",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007348_7e8b661f4fbc.png",
       "vendor": "",
       "price": 5500,
       "partNumber": "HP 916 A",
@@ -71,7 +71,7 @@
     {
       "title": "Fleetguard AF25066 Air Filter, Primary | Replaces the HiFi Filter SA 14580",
       "sku": "sa-14580-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25066_f94adb4a-1fe6-46ae-963e-6692f371f9da.jpg?v=1755780811",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007349_adafca433cd0.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "AF25066",

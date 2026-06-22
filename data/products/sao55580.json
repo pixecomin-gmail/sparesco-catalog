@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b0bbcaf-56fb-407c-b5ce-802a9a6c6567_41fdc45d-ec75-468b-afec-bd5b7ffab24e.jpg?v=1730606129",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_3001_n68115_i2396887_1920x1920_ba756343-403b-4b49-8938-faa66445e1ba.jpg?v=1743777402",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b0bbcaf-56fb-407c-b5ce-802a9a6c6567_c937d56a-0043-4742-93da-545f857bb298.jpg?v=1730431532",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_3001_n68115_i2396887_1920x1920_912dda1c-07ac-481f-a733-849cc61ea71c.jpg?v=1743774104"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001046_e779439b5ab1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001047_fc501bcde491.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002153_0094905d6ae9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002154_6b7b74d064b0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SI 41510 Air/Oil Separator | Replaces the SF Filter SAO 55580",
       "sku": "sao-55580-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4b0bbcaf-56fb-407c-b5ce-802a9a6c6567_c937d56a-0043-4742-93da-545f857bb298.jpg?v=1730431532",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002153_0094905d6ae9.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "SI 41510",
@@ -34,7 +34,7 @@
     {
       "title": "Mann Filter LE 3001 Compressed Air-Oil Separation | Replaces the SF Filter SAO55580",
       "sku": "sao55580-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_3001_n68115_i2396887_1920x1920_ba756343-403b-4b49-8938-faa66445e1ba.jpg?v=1743777402",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001047_fc501bcde491.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "LE 3001",

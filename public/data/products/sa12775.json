@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d26b7f70-06ca-45e2-b5d8-53f0029a1b20.jpg?v=1723208356",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777240.700.700_e5e2beab-0cdd-4413-baf1-3ab3ed364717.jpg?v=1744306020",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4991_0b827c7b-854f-46fb-83e4-6d46fddfd686.jpg?v=1755780832"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000166_d5791ae2b7d4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000167_0c062c0c356c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000168_2c501004ec1e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 12775 Air Filter",
       "sku": "sa-12775-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d26b7f70-06ca-45e2-b5d8-53f0029a1b20.jpg?v=1723208356",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000166_d5791ae2b7d4.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "SA 12775",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P777240 Air Filter, Primary Round | Replaces the HiFi Filter SA 12775",
       "sku": "sa-12775-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777240.700.700_e5e2beab-0cdd-4413-baf1-3ab3ed364717.jpg?v=1744306020",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000167_0c062c0c356c.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "P777240",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4991 Air Filter | Replaces the HiFi Filter SA 12775",
       "sku": "sa-12775-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4991_0b827c7b-854f-46fb-83e4-6d46fddfd686.jpg?v=1755780832",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000168_2c501004ec1e.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "AF4991",

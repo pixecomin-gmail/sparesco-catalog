@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_1f4aba38-1828-4f57-9d08-35250a99b02c.jpg?v=1755092333",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66b87c6b-b739-4c11-bae3-6d70282f46ea_a78d0827-28d7-4a25-a281-414db67b8289.jpg?v=1755092333",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_9b9f1dcf-0aef-4efe-8307-f9f5db5b7967.jpg?v=1755092333",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_1eaf83e2-8ee8-4304-8991-d90ac6a61dd4.jpg?v=1755092327",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66b87c6b-b739-4c11-bae3-6d70282f46ea_6266af1c-7007-461c-93da-df464d4f135d.jpg?v=1755092327",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_3913aaf5-975b-41a5-9b7b-4c5133d8dec1.jpg?v=1755092327"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027079_1db44ea6e462.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027080_dfcd57f18072.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027081_de268db05a81.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027085_04b283001fe5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027086_0b50f5d9198c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027087_f59f5a441650.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50216 Return Filter | Replaces the Eppensteiner 16.8500VH10XLS000P",
       "sku": "16-8500vh10xls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_1eaf83e2-8ee8-4304-8991-d90ac6a61dd4.jpg?v=1755092327",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027085_04b283001fe5.jpg",
       "vendor": "MicroFit",
       "price": 22500,
       "partNumber": "MFHR50216",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87063 Return Filter | Replaces the Eppensteiner 168500VH10XLS000P",
       "sku": "168500vh10xls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-66b87c6b-b739-4c11-bae3-6d70282f46ea_a78d0827-28d7-4a25-a281-414db67b8289.jpg?v=1755092333",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027080_dfcd57f18072.jpg",
       "vendor": "HiFi Filter",
       "price": 26000,
       "partNumber": "SH 87063",
@@ -78,7 +78,7 @@
     {
       "title": "Filtrec R454G10 Return Filter | Replaces the Eppensteiner 168500VH10XLS000P",
       "sku": "168500vh10xls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_9b9f1dcf-0aef-4efe-8307-f9f5db5b7967.jpg?v=1755092333",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027081_de268db05a81.jpg",
       "vendor": "Filtrec",
       "price": 31300,
       "partNumber": "R454G10",

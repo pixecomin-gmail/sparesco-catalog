@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-26dad249-070a-4e55-9264-f6ec2bd37331.jpg?v=1748456105",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500125.700.700_8671744a-5cb0-4a28-912f-1f6eb902fd04.jpg?v=1748456105",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_22_267_image1_50b16d13-7307-4ca7-9192-b2ae2ad1e09e.jpg?v=1754909407",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25584M_1ef59a09-5d8e-44c4-8218-cef9d8bff40e.jpg?v=1755780870"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006710_2a8e43d9c6be.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006711_8e13d09d5466.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006712_cc02baaa1232.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006713_41b244dec652.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 8041 Air Filter",
       "sku": "sa-8041-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-26dad249-070a-4e55-9264-f6ec2bd37331.jpg?v=1748456105",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006710_2a8e43d9c6be.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "SA 8041",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P500125 Air Filter, Primary Round | Replaces the HiFi Filter SA 8041",
       "sku": "sa-8041-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500125.700.700_8671744a-5cb0-4a28-912f-1f6eb902fd04.jpg?v=1748456105",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006711_8e13d09d5466.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "P500125",
@@ -54,7 +54,7 @@
     {
       "title": "Mann Filter C 22 267 Air Filter | Replaces the HiFi Filter SA 8041",
       "sku": "sa-8041-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_22_267_image1_50b16d13-7307-4ca7-9192-b2ae2ad1e09e.jpg?v=1754909407",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006712_cc02baaa1232.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "C 22 267",
@@ -73,7 +73,7 @@
     {
       "title": "Fleetguard AF25584M Air Filter, Magnum Rs | Replaces the HiFi Filter SA 8041",
       "sku": "sa-8041-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25584M_1ef59a09-5d8e-44c4-8218-cef9d8bff40e.jpg?v=1755780870",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006713_41b244dec652.jpg",
       "vendor": "",
       "price": 5800,
       "partNumber": "AF25584M",

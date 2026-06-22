@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f410b90-7cf8-4544-bd87-64c4e897fbb9.jpg?v=1723206392",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p849069.700.700_a0bd43d4-ea1b-41f3-8995-f82cef1576a5.jpg?v=1744306181",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26525_647c2270-6a6a-497b-8db8-14938269b410.jpg?v=1755780810"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007602_658180fe2019.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007603_6bcaa24dedf3.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007604_0a0491db6d72.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 18068 Air Filter",
       "sku": "sa-18068-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f410b90-7cf8-4544-bd87-64c4e897fbb9.jpg?v=1723206392",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007602_658180fe2019.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "SA 18068",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P849069 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 18068",
       "sku": "sa-18068-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p849069.700.700_a0bd43d4-ea1b-41f3-8995-f82cef1576a5.jpg?v=1744306181",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007603_6bcaa24dedf3.jpg",
       "vendor": "",
       "price": 11300,
       "partNumber": "P849069",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF26525 Air Filter | Replaces the HiFi Filter SA 18068",
       "sku": "sa-18068-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF26525_647c2270-6a6a-497b-8db8-14938269b410.jpg?v=1755780810",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007604_0a0491db6d72.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "AF26525",

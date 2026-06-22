@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WP375_de2908c8-e4ea-4c8c-8be0-e1cec189cef9.jpg?v=1762279209",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5b2e96a4-2401-4e0b-9aaa-070976489d47_9957ac86-fa20-4ca9-92d6-2a07dea7e99c.jpg?v=1762279209",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1bd70e42-e825-4733-922b-6d65487c3e5f.png?v=1762279209",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WP375_6bbb10a0-5800-434d-8984-6d68c2f22368.jpg?v=1762279209",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5b2e96a4-2401-4e0b-9aaa-070976489d47_2c1789ab-cbe2-478a-a2ac-045125db4709.jpg?v=1762279209",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_34b4879a-0951-4103-a278-2f3ae375c10e.png?v=1762279209"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000454_505dd5d7b3a6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000455_55ea6c5600f9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000456_5712a2da58e7.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000457_337de6dd8e18.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000458_86c5e1bad15c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000459_68282cd724af.png"
   ],
   "variants": [
     {
       "title": "Filtrec WG531 Special Filter | Replaces the Eppensteiner 20330H10SLS004P",
       "sku": "20330h10sls004p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WP375_de2908c8-e4ea-4c8c-8be0-e1cec189cef9.jpg?v=1762279209",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000454_505dd5d7b3a6.jpg",
       "vendor": "",
       "price": 12500,
       "partNumber": "WG531",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 670079 Special Filter | Replaces the Eppensteiner 20330H10SLS004P",
       "sku": "20330h10sls004p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5b2e96a4-2401-4e0b-9aaa-070976489d47_9957ac86-fa20-4ca9-92d6-2a07dea7e99c.jpg?v=1762279209",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000455_55ea6c5600f9.jpg",
       "vendor": "",
       "price": 19400,
       "partNumber": "SH 670079",
@@ -86,7 +86,7 @@
     {
       "title": "MicroFit® MFHSP80971 UltraGen III Filter | Replaces the Eppensteiner 20330H10SLS004P",
       "sku": "20330h10sls004p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1bd70e42-e825-4733-922b-6d65487c3e5f.png?v=1762279209",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/000456_5712a2da58e7.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80971",

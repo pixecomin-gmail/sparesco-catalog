@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e944343a-ee27-4ffb-9c57-f08371c740b4_b64051c5-0632-4f37-8225-468ceb76e8ce.jpg?v=1755095272",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WH_9452_image1_b477bb70-9ca0-4f9c-bcec-5565e188c8dc.jpg?v=1755095272",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203196B_d47bb063-73d9-4945-b3ca-88b62dacf7bc.jpg?v=1755095272",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p764367.700.700_53371466-8f01-4c5e-bd3e-b1fdbb78104f.jpg?v=1755095272",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e944343a-ee27-4ffb-9c57-f08371c740b4_c8587f54-67e4-4595-af38-d9f7f8493634.jpg?v=1755094920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WH_9452_image1_13d21a5d-c4a7-4c0e-89e6-4247f5afde9a.jpg?v=1755094920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203196B_af0ba5cb-4e70-46ba-992f-9a2197b75a19.jpg?v=1755094920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p764367.700.700_99dfd9c3-1757-408f-8eb5-4ba31aa24d51.jpg?v=1755094920"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018101_1cd3ac53d9bb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018102_aabe10b01002.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018103_c3e107002d78.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018104_3d14be515171.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020005_ef4229127bd6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020006_17711c64de45.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020007_d956c90eaf0b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020008_a18eb20de160.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 66375 Spin-On Filter | Replaces the Eppensteiner 850SL45DH15",
       "sku": "850sl45dh15-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e944343a-ee27-4ffb-9c57-f08371c740b4_b64051c5-0632-4f37-8225-468ceb76e8ce.jpg?v=1755095272",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018101_1cd3ac53d9bb.jpg",
       "vendor": "",
       "price": 4800,
       "partNumber": "SH 66375",
@@ -52,7 +52,7 @@
     {
       "title": "Mann Filter WH 945/2 Hydraulics | Replaces the Eppensteiner 850SL45DH15",
       "sku": "850sl45dh15-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WH_9452_image1_b477bb70-9ca0-4f9c-bcec-5565e188c8dc.jpg?v=1755095272",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018102_aabe10b01002.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "WH 945/2",
@@ -81,7 +81,7 @@
     {
       "title": "Filtrec A-4-12-G25 Spin-On Filter | Replaces the Eppensteiner 850SL45DH15",
       "sku": "850sl45dh15-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203196B_d47bb063-73d9-4945-b3ca-88b62dacf7bc.jpg?v=1755095272",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018103_c3e107002d78.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "A-4-12-G25",
@@ -109,7 +109,7 @@
     {
       "title": "Donaldson P764367 Hydraulic Filter, Spin-On Duramax | Replaces the Eppensteiner 850SL45DH15",
       "sku": "850sl45dh15-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p764367.700.700_53371466-8f01-4c5e-bd3e-b1fdbb78104f.jpg?v=1755095272",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/018104_3d14be515171.jpg",
       "vendor": "",
       "price": 6500,
       "partNumber": "P764367",

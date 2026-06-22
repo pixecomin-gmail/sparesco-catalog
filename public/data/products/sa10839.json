@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e9a765f6-bc4c-4644-a90d-84192105b5fe.jpg?v=1723205116",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p118216.700.700_8ae572b9-1267-4254-8a30-9e18a4965eb4.jpg?v=1744305981",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF889_80c4c536-bfa0-48c2-b6a0-1f86e5b21c17.jpg?v=1755780787"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008155_8d9ba02bd9dd.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008156_b4dc1ada8396.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008157_765568dc0d7a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10839 Air Filter",
       "sku": "sa-10839-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e9a765f6-bc4c-4644-a90d-84192105b5fe.jpg?v=1723205116",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008155_8d9ba02bd9dd.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "SA 10839",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P118216 Air Filter, Safety | Replaces the HiFi Filter SA 10839",
       "sku": "sa-10839-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p118216.700.700_8ae572b9-1267-4254-8a30-9e18a4965eb4.jpg?v=1744305981",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008156_b4dc1ada8396.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "P118216",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF889 Air Filter, Secondary | Replaces the HiFi Filter SA 10839",
       "sku": "sa-10839-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF889_80c4c536-bfa0-48c2-b6a0-1f86e5b21c17.jpg?v=1755780787",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008157_765568dc0d7a.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "AF889",

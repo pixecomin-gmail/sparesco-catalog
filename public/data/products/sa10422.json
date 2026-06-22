@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-108e42b5-f1d3-48c4-9e66-dc26cb66228c.jpg?v=1723206022",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p182002.700.700_dd925904-d563-46e8-ba81-ebafa2dd18f9.jpg?v=1744305972",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF472M_490da641-13c2-4aed-8d4a-3089720ade7d.jpg?v=1755780801"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007718_2fcced52ef5b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007719_fa3c1687a362.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007720_d90cf5244f99.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10422 Air Filter",
       "sku": "sa-10422-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-108e42b5-f1d3-48c4-9e66-dc26cb66228c.jpg?v=1723206022",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007718_2fcced52ef5b.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "SA 10422",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P182002 Air Filter, Primary Round | Replaces the HiFi Filter SA 10422",
       "sku": "sa-10422-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p182002.700.700_dd925904-d563-46e8-ba81-ebafa2dd18f9.jpg?v=1744305972",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007719_fa3c1687a362.jpg",
       "vendor": "",
       "price": 8900,
       "partNumber": "P182002",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF472M Air Filter, Primary | Replaces the HiFi Filter SA 10422",
       "sku": "sa-10422-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF472M_490da641-13c2-4aed-8d4a-3089720ade7d.jpg?v=1755780801",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007720_d90cf5244f99.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "AF472M",

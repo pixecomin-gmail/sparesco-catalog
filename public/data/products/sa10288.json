@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5400e533-142f-4c98-84db-65eee2aadda7.jpg?v=1723202524",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158662-2.700.700_0bef8c7c-5b2b-4aac-8d68-6325d60c7a31.jpg?v=1744305965",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF338_ce642d3a-1d2a-45ef-ae7e-b75c8a07d6eb.jpg?v=1755780728"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009852_aa46ad49d5ac.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009853_579c5c6ab9b8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009854_4d9514edf328.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10288 Air Filter",
       "sku": "sa-10288-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5400e533-142f-4c98-84db-65eee2aadda7.jpg?v=1723202524",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009852_aa46ad49d5ac.jpg",
       "vendor": "",
       "price": 7400,
       "partNumber": "SA 10288",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P158662 Air Filter, Safety | Replaces the HiFi Filter SA 10288",
       "sku": "sa-10288-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p158662-2.700.700_0bef8c7c-5b2b-4aac-8d68-6325d60c7a31.jpg?v=1744305965",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009853_579c5c6ab9b8.jpg",
       "vendor": "",
       "price": 8500,
       "partNumber": "P158662",
@@ -56,7 +56,7 @@
     {
       "title": "Fleetguard AF338 Air Filter, Secondary | Replaces the HiFi Filter SA 10288",
       "sku": "sa-10288-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF338_ce642d3a-1d2a-45ef-ae7e-b75c8a07d6eb.jpg?v=1755780728",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009854_4d9514edf328.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "AF338",

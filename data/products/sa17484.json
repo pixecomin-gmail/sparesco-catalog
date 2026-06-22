@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eedebc27-44d4-41b9-9bf7-0512c28cd5a0.jpg?v=1723202656",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_950_image1_1f07dedb-d2c3-4f2a-967d-4279ec5611b7.jpg?v=1754909263",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4882_87fc881e-3a82-4b53-bd37-fccc65c775a1.jpg?v=1755780723"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009738_ec929a306866.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009739_28bf00cd43bc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009740_02000d33de1f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17484 Air Filter",
       "sku": "sa-17484-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eedebc27-44d4-41b9-9bf7-0512c28cd5a0.jpg?v=1723202656",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009738_ec929a306866.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "SA 17484",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter CF 950 Secondary Element | Replaces the HiFi Filter SA 17484",
       "sku": "sa-17484-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_950_image1_1f07dedb-d2c3-4f2a-967d-4279ec5611b7.jpg?v=1754909263",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009739_28bf00cd43bc.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "CF 950",
@@ -60,7 +60,7 @@
     {
       "title": "Fleetguard AF4882 Air Filter, Secondary | Replaces the HiFi Filter SA 17484",
       "sku": "sa-17484-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4882_87fc881e-3a82-4b53-bd37-fccc65c775a1.jpg?v=1755780723",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009740_02000d33de1f.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "AF4882",

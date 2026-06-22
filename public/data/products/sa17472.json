@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-baf2e1cf-9e91-44be-af57-2e6ff85f764b.jpg?v=1723204337",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776357.700.700_06c21587-afe7-441a-9f81-8c7efe579230.jpg?v=1744306172",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25527_59416630-4b01-4cd8-a7af-8312965f3ae2.jpg?v=1755780763"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000247_1079497f400c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000248_109d2d7ce2d6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000249_5fef46ee1489.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17472 Air Filter",
       "sku": "sa-17472-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-baf2e1cf-9e91-44be-af57-2e6ff85f764b.jpg?v=1723204337",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000247_1079497f400c.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "SA 17472",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P776357 Air Filter, Safety | Replaces the HiFi Filter SA 17472",
       "sku": "sa-17472-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776357.700.700_06c21587-afe7-441a-9f81-8c7efe579230.jpg?v=1744306172",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000248_109d2d7ce2d6.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "P776357",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF25527 Air Filter, Secondary | Replaces the HiFi Filter SA 17472",
       "sku": "sa-17472-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25527_59416630-4b01-4cd8-a7af-8312965f3ae2.jpg?v=1755780763",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000249_5fef46ee1489.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "AF25527",

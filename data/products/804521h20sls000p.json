@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A110_490036ac-67d8-4945-89fb-248a3b72ee55.jpg?v=1755090345",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171604.700.700_6bb16735-2e2d-4500-b092-46170f2aff9c.jpg?v=1755090345",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-79596fcd-1cae-4b66-8a3b-3b528268660e_37d22d08-1355-4b35-9c41-1b3a74e4ba83.jpg?v=1755090345",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0080_mg_020_bn_n182051_i2464429_3d1ea562-8c6b-4ad9-8268-5d3713611469.jpg?v=1760540865",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A110_cecb95c4-666c-4f34-bef1-d74e2429c9c0.jpg?v=1755090339",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171604.700.700_4bc98b77-fcff-4245-985e-b5439a8373cb.jpg?v=1755090339",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-79596fcd-1cae-4b66-8a3b-3b528268660e_d640f97a-586e-4da2-b72c-6bfedc3841e6.jpg?v=1755090339",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0080_mg_020_bn_n182051_i2464429_8f32ee1b-0867-488d-9ab2-1cc71ff9ec50.jpg?v=1760540866"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033800_7e824cb7eb82.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033801_bec5ad0fa2e4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033802_da6b66f745cc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033803_e79cf101dcb4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033812_1c2a28da8d91.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033813_f61a82cac072.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033814_8240563c6b4f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033815_c1fbdf20f77e.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec A110G25 Spin-On Filter | Replaces the Eppensteiner 804521H20SLS000P",
       "sku": "804521h20sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A110_490036ac-67d8-4945-89fb-248a3b72ee55.jpg?v=1755090345",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033800_7e824cb7eb82.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "A110G25",
@@ -52,7 +52,7 @@
     {
       "title": "Donaldson P171604 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 804521H20SLS000P",
       "sku": "804521h20sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171604.700.700_6bb16735-2e2d-4500-b092-46170f2aff9c.jpg?v=1755090345",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033801_bec5ad0fa2e4.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "P171604",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 63711 Spin-On Filter | Replaces the Eppensteiner 804521H20SLS000P",
       "sku": "804521h20sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-79596fcd-1cae-4b66-8a3b-3b528268660e_37d22d08-1355-4b35-9c41-1b3a74e4ba83.jpg?v=1755090345",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033802_da6b66f745cc.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "SH 63711",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0080 MG 020 BN Spin-On Filter | Replaces the Eppensteiner 804521H20SLS000P",
       "sku": "804521h20sls000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0080_mg_020_bn_n182051_i2464429_3d1ea562-8c6b-4ad9-8268-5d3713611469.jpg?v=1760540865",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033803_e79cf101dcb4.jpg",
       "vendor": "",
       "price": 15700,
       "partNumber": "0080 MG 020 BN",

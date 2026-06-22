@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-23019137-da48-4726-9f5b-02d0df934c45.jpg?v=1723206628",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526756.700.700_3f3bb890-c83c-46ab-8614-217662ab049a.jpg?v=1744306018",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4509_6cb134a5-bd42-4e9b-a9bf-311882f9b413.jpg?v=1755780807"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007501_fbd1358143c5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007502_42c677a357a2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007503_d6077aeb6450.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 1304 Air Filter",
       "sku": "sa-1304-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-23019137-da48-4726-9f5b-02d0df934c45.jpg?v=1723206628",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007501_fbd1358143c5.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "SA 1304",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P526756 Air Filter, Primary Round | Replaces the HiFi Filter SA 1304",
       "sku": "sa-1304-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526756.700.700_3f3bb890-c83c-46ab-8614-217662ab049a.jpg?v=1744306018",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007502_42c677a357a2.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "P526756",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF4509 Air | Replaces the HiFi Filter SA 1304",
       "sku": "sa-1304-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4509_6cb134a5-bd42-4e9b-a9bf-311882f9b413.jpg?v=1755780807",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007503_d6077aeb6450.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "AF4509",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e738f1f3-72e0-4186-8bdb-536be652ab9b.jpg?v=1723212175",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119417.700.700_d30d18bf-64e9-4904-9d65-96b20b25bd7e.jpg?v=1744305965",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF289M_57c18b55-76f3-4750-bc53-f95b7bd1ae2f.jpg?v=1755780887"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006283_70d9c1df3f6c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006284_b918c7b907cc.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006285_375d55966390.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10239 Air Filter",
       "sku": "sa-10239-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e738f1f3-72e0-4186-8bdb-536be652ab9b.jpg?v=1723212175",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006283_70d9c1df3f6c.jpg",
       "vendor": "",
       "price": 9800,
       "partNumber": "SA 10239",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P119417 Air Filter, Primary Round | Replaces the HiFi Filter SA 10239",
       "sku": "sa-10239-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119417.700.700_d30d18bf-64e9-4904-9d65-96b20b25bd7e.jpg?v=1744305965",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006284_b918c7b907cc.jpg",
       "vendor": "",
       "price": 11500,
       "partNumber": "P119417",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF289M Air Filter, Primary | Replaces the HiFi Filter SA 10239",
       "sku": "sa-10239-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF289M_57c18b55-76f3-4750-bc53-f95b7bd1ae2f.jpg?v=1755780887",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006285_375d55966390.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "AF289M",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9bf77c59-002d-4a9f-8ee9-e8370ce043a9.jpg?v=1723215870",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181036.700.700_59232cb9-f45d-4d28-8995-980e644898ae.jpg?v=1744305969",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF361_8d71fe1e-a3bc-4e2c-add1-c86db4812920.jpg?v=1755780903"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005141_be612d9e7d69.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005142_1e60007024d0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005143_ee540a7139db.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10311 Air Filter",
       "sku": "sa-10311-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9bf77c59-002d-4a9f-8ee9-e8370ce043a9.jpg?v=1723215870",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005141_be612d9e7d69.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "SA 10311",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P181036 Air Filter, Primary Round | Replaces the HiFi Filter SA 10311",
       "sku": "sa-10311-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181036.700.700_59232cb9-f45d-4d28-8995-980e644898ae.jpg?v=1744305969",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005142_1e60007024d0.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "P181036",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF361 Air Filter, Primary | Replaces the HiFi Filter SA 10311",
       "sku": "sa-10311-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF361_8d71fe1e-a3bc-4e2c-add1-c86db4812920.jpg?v=1755780903",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005143_ee540a7139db.jpg",
       "vendor": "",
       "price": 9800,
       "partNumber": "AF361",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_c3822237-dd7e-40e3-b0d7-68d752f3649a.jpg?v=1766020920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181009.700.700_fdd60e7f-e6c1-4032-9532-ff2e1cf34efd.jpg?v=1766020920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF865_caeeb2a8-6ef5-4661-b360-c3471074d590.jpg?v=1766020920"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008118_21dc32ae1f73.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008119_42421367b151.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008120_366263f9206d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10815 Air Filter",
       "sku": "sa-10815-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_c3822237-dd7e-40e3-b0d7-68d752f3649a.jpg?v=1766020920",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008118_21dc32ae1f73.jpg",
       "vendor": "",
       "price": 26900,
       "partNumber": "SA 10815",
@@ -33,7 +33,7 @@
     {
       "title": "Donaldson P181009 Air Filter, Primary Round | Replaces the HiFi Filter SA 10815",
       "sku": "sa-10815-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181009.700.700_fdd60e7f-e6c1-4032-9532-ff2e1cf34efd.jpg?v=1766020920",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008119_42421367b151.jpg",
       "vendor": "",
       "price": 15200,
       "partNumber": "P181009",
@@ -49,7 +49,7 @@
     {
       "title": "Fleetguard AF865 Air Filter | Replaces the HiFi Filter SA 10815",
       "sku": "sa-10815-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF865_caeeb2a8-6ef5-4661-b360-c3471074d590.jpg?v=1766020920",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008120_366263f9206d.jpg",
       "vendor": "",
       "price": 14200,
       "partNumber": "AF865",

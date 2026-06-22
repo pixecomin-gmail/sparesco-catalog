@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-71d11c85-9b39-40de-a6b7-edea51558941.jpg?v=1723211234",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776158.700.700_be73ffeb-e9ce-4d23-a520-cba7d045fe4a.jpg?v=1744306004",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1811_4632d59d-273c-467b-853f-aa059b13347f.jpg?v=1755780870"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006605_caec4c97be94.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006606_0dab153cec73.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006607_06bd0daf0a90.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11761 Air Filter",
       "sku": "sa-11761-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-71d11c85-9b39-40de-a6b7-edea51558941.jpg?v=1723211234",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006605_caec4c97be94.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "SA 11761",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P776158 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 11761",
       "sku": "sa-11761-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776158.700.700_be73ffeb-e9ce-4d23-a520-cba7d045fe4a.jpg?v=1744306004",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006606_0dab153cec73.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "P776158",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF1811 Air Intake Systems | Replaces the HiFi Filter SA 11761",
       "sku": "sa-11761-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1811_4632d59d-273c-467b-853f-aa059b13347f.jpg?v=1755780870",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006607_06bd0daf0a90.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "AF1811",

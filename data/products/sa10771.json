@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-936b45b6-21f8-4df4-b546-a159bd3774c1.jpg?v=1723205132",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119370.700.700_9ad6b384-5a37-4db7-b3e1-20cf7490534b.jpg?v=1744305977",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF821M_0cfd2f41-8208-4b71-b71b-104d0964a63c.jpg?v=1755780787"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008147_5ee60af15a24.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008148_382fbecc78b2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008149_ea0b317b6619.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10771 Air Filter",
       "sku": "sa-10771-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-936b45b6-21f8-4df4-b546-a159bd3774c1.jpg?v=1723205132",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008147_5ee60af15a24.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "SA 10771",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P119370 Air Filter, Safety | Replaces the HiFi Filter SA 10771",
       "sku": "sa-10771-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p119370.700.700_9ad6b384-5a37-4db7-b3e1-20cf7490534b.jpg?v=1744305977",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008148_382fbecc78b2.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "P119370",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF821M Air Filter, Secondary | Replaces the HiFi Filter SA 10771",
       "sku": "sa-10771-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF821M_0cfd2f41-8208-4b71-b71b-104d0964a63c.jpg?v=1755780787",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008149_ea0b317b6619.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "AF821M",

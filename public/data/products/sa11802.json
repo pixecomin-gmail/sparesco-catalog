@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d37ad691-5a2c-499f-bed5-9073c70f91d2.jpg?v=1723214110",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777483.700.700_e555ae07-8b1b-4f2b-99a1-7c5b08028896.jpg?v=1744306011",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1852_b907b08a-6e01-490b-bda6-212f931eee23.jpg?v=1755780897"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005399_ecabd24b3a1e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005400_6761f34f5d39.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005401_ef6e74c4a831.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 11802 Air Filter",
       "sku": "sa-11802-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d37ad691-5a2c-499f-bed5-9073c70f91d2.jpg?v=1723214110",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005399_ecabd24b3a1e.jpg",
       "vendor": "",
       "price": 1000,
       "partNumber": "SA 11802",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P777483 Air Filter, Primary Round | Replaces the HiFi Filter SA 11802",
       "sku": "sa-11802-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777483.700.700_e555ae07-8b1b-4f2b-99a1-7c5b08028896.jpg?v=1744306011",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005400_6761f34f5d39.jpg",
       "vendor": "",
       "price": 1000,
       "partNumber": "P777483",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF1852 Air Filter, Primary | Replaces the HiFi Filter SA 11802",
       "sku": "sa-11802-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF1852_b907b08a-6e01-490b-bda6-212f931eee23.jpg?v=1755780897",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/005401_ef6e74c4a831.jpg",
       "vendor": "",
       "price": 1400,
       "partNumber": "AF1852",

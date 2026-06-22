@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200528B_3acf60f5-be67-49ba-9406-6cfb4446beb4.jpg?v=1741362274",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e05f3426-cdc4-4f04-89a3-cdf4828f5615_8a917e68-e3b5-4889-abf5-6002c4c95dc2.jpg?v=1741362274",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35319_5d71e199-afe3-41b3-a2fb-36114e33e33d.jpg?v=1755779766",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200528B_9c1b10e3-d1b0-40f8-948f-cdeabfeae1ec.jpg?v=1741360998",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e05f3426-cdc4-4f04-89a3-cdf4828f5615_5320c235-9b8f-42b4-9c8a-3a0b6cf8d44c.jpg?v=1741360998",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35319_1c65be35-68cd-42fd-9b68-a8f07d5db9bf.jpg?v=1755779109"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000868_b7aef07231e8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000869_cc26fa0ed60b.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000870_09ada931a76f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001273_8fd73ccdf2e7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001274_8389e36f7c22.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/001275_831dd293f8d3.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec D811C10RA Pressure Filter | Replaces the Argo-Hytos P3.0520-01",
       "sku": "p3-0520-01-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200528B_3acf60f5-be67-49ba-9406-6cfb4446beb4.jpg?v=1741362274",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000868_b7aef07231e8.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "D811C10RA",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 52521 Pressure Filter | Replaces the Argo-Hytos P3.0520-01",
       "sku": "p3-0520-01-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e05f3426-cdc4-4f04-89a3-cdf4828f5615_8a917e68-e3b5-4889-abf5-6002c4c95dc2.jpg?v=1741362274",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000869_cc26fa0ed60b.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "SH 52521",
@@ -82,7 +82,7 @@
     {
       "title": "Fleetguard HF35319 Hydraulic Filters | Replaces the Argo-Hytos P3.0520-01",
       "sku": "p3-0520-01-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35319_5d71e199-afe3-41b3-a2fb-36114e33e33d.jpg?v=1755779766",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000870_09ada931a76f.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "HF35319",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ada192c5-7b02-4457-b4c4-da0f72a21247.jpg?v=1723206163",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181056.700.700_8436e186-fe92-457b-9a0a-d5e3eb01fd38.jpg?v=1744305987",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF928M_178c8261-40ee-4c7d-8498-91f62f0c5be6.jpg?v=1755780807"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007662_8a6c67a23317.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007663_9696a183e922.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007664_62f21d9fb3ea.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10878 Air Filter",
       "sku": "sa-10878-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ada192c5-7b02-4457-b4c4-da0f72a21247.jpg?v=1723206163",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007662_8a6c67a23317.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "SA 10878",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P181056 Air Filter, Primary Round | Replaces the HiFi Filter SA 10878",
       "sku": "sa-10878-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181056.700.700_8436e186-fe92-457b-9a0a-d5e3eb01fd38.jpg?v=1744305987",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007663_9696a183e922.jpg",
       "vendor": "",
       "price": 9700,
       "partNumber": "P181056",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF928M Air Filter, Primary | Replaces the HiFi Filter SA 10878",
       "sku": "sa-10878-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF928M_178c8261-40ee-4c7d-8498-91f62f0c5be6.jpg?v=1755780807",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007664_62f21d9fb3ea.jpg",
       "vendor": "",
       "price": 12500,
       "partNumber": "AF928M",

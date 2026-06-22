@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-76cb74c0-9f5b-44d9-94bb-73f545b7a224_daabcc96-14a6-43c8-a3fb-8098a4668333.jpg?v=1755095167",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_0e4bf31f-b181-4a5a-8d0f-fecb318dd44e.png?v=1755095167",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_7020_image1_81368d27-38a1-4108-a905-852c61ebfe3b.jpg?v=1755095167",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_dcd385de-18e5-416d-aa03-3b2c92fdff06.png?v=1760632561",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-76cb74c0-9f5b-44d9-94bb-73f545b7a224_e99c56b0-983c-4bfd-af8d-8f5a1ce2a5be.jpg?v=1755094264",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_666e6314-b13c-45b4-9bac-713932b82b5a.png?v=1755094264",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_7020_image1_469f2fab-c72c-41d2-8057-31af739fd8ea.jpg?v=1755094264",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cb6963be-8510-48a3-8592-e99ebc0a425b.png?v=1760631646"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019655_6ba0b817e343.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019656_e76ff8023960.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019657_b153e56c11aa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019658_5207fc915194.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020748_7ec26be9b5a1.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020749_030021c1b06d.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020750_15dd591e6b0d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/020751_f4dd37ca3054.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52031 Special Filter | Replaces the Eppensteiner 10010H10SLA005P",
       "sku": "10010h10sla005p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-76cb74c0-9f5b-44d9-94bb-73f545b7a224_daabcc96-14a6-43c8-a3fb-8098a4668333.jpg?v=1755095167",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019655_6ba0b817e343.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "SH 52031",
@@ -55,7 +55,7 @@
     {
       "title": "Filtrec WG132 Special Filter | Replaces the Eppensteiner 10010H10SLA005P",
       "sku": "10010h10sla005p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_0e4bf31f-b181-4a5a-8d0f-fecb318dd44e.png?v=1755095167",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019656_e76ff8023960.png",
       "vendor": "",
       "price": 4000,
       "partNumber": "WG132",
@@ -86,7 +86,7 @@
     {
       "title": "Mann Filter H 7020 Hydraulics | Replaces the Eppensteiner 10010H10SLA005P",
       "sku": "10010h10sla005p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_7020_image1_81368d27-38a1-4108-a905-852c61ebfe3b.jpg?v=1755095167",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019657_b153e56c11aa.jpg",
       "vendor": "",
       "price": 5600,
       "partNumber": "H 7020",
@@ -116,7 +116,7 @@
     {
       "title": "MicroFit® MFHSP80256 UltraGen III Filter | Replaces the Eppensteiner 10010H10SLA005P",
       "sku": "10010h10sla005p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_dcd385de-18e5-416d-aa03-3b2c92fdff06.png?v=1760632561",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/019658_5207fc915194.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80256",

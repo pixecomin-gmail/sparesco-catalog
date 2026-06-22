@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_56e4d498-522b-4547-a97b-7e2ac941f141.jpg?v=1766010313",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_59ce4595-85d6-49a9-b024-ba4937dd13cb.jpg?v=1766010313",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_76ddb0df-9684-4b0c-a650-dd3f30dd4723.png?v=1766010313",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_b545dd84-f0a0-4be8-9fc9-e3d3850c2ba0.jpg?v=1766010316",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_7d2500ef-dd28-424c-bb36-294f16f9b130.jpg?v=1766010316",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bf01c2b9-058a-4d8a-b595-769d2a74d97f.png?v=1766010316"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011363_79d9226aff61.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011364_a1e7f3182636.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011365_b9f7affea661.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011366_7e1639055669.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011367_2f815cb3fc65.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011368_feccbeda3472.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 64055 Pressure Filter | Replaces the Eppensteiner 1820G100G000P",
       "sku": "1820g100g000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_56e4d498-522b-4547-a97b-7e2ac941f141.jpg?v=1766010313",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011363_79d9226aff61.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "SH 64055",
@@ -50,7 +50,7 @@
     {
       "title": "Filtrec DMD125B100B Pressure Filter | Replaces the Eppensteiner 1820G100G000P",
       "sku": "1820g100g000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_59ce4595-85d6-49a9-b024-ba4937dd13cb.jpg?v=1766010313",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011364_a1e7f3182636.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "DMD125B100B",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHLP30546 UltraGen III Filter | Replaces the Eppensteiner 1820G100G000P",
       "sku": "1820g100g000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_76ddb0df-9684-4b0c-a650-dd3f30dd4723.png?v=1766010313",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/011365_b9f7affea661.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30546",

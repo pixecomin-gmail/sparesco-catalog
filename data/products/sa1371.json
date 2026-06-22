@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6021ceba-3fc5-4e1d-8512-2806e10a00b4.jpg?v=1723212443",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_4e6598d5-0a24-4996-9226-cb7d13ab7750.jpg?v=1743773625",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607332.700.700_9bbfada4-0851-4104-95c8-be02634792f4.jpg?v=1744306023"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006060_aabced270fba.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006061_329504a440aa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006062_12ec202da2c4.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 1371 Air Filter",
       "sku": "sa-1371-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6021ceba-3fc5-4e1d-8512-2806e10a00b4.jpg?v=1723212443",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006060_aabced270fba.jpg",
       "vendor": "",
       "price": 1200,
       "partNumber": "SA 1371",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter C 31 101/1 Air Filter | Replaces the HiFi Filter SA 1371",
       "sku": "sa-1371-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_4e6598d5-0a24-4996-9226-cb7d13ab7750.jpg?v=1743773625",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006061_329504a440aa.jpg",
       "vendor": "",
       "price": 1300,
       "partNumber": "C 31 101/1",
@@ -57,7 +57,7 @@
     {
       "title": "Donaldson P607332 Air Filter, Panel Ventilation | Replaces the HiFi Filter SA 1371",
       "sku": "sa-1371-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607332.700.700_9bbfada4-0851-4104-95c8-be02634792f4.jpg?v=1744306023",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006062_12ec202da2c4.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "P607332",

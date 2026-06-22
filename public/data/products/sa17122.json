@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c11d70b6-caab-4472-8963-efe58996581e.jpg?v=1723202401",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500207.700.700_07d542d1-3e38-464d-b134-14adb207a628.jpg?v=1744306156",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25312_7c0641f2-0f8d-4d1e-9a4e-ad6c61d8ff2a.jpg?v=1755780719"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009955_326fc5c1c5aa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009956_67fd5c65454f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009957_c4d36d9d3bf8.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17122 Air Filter",
       "sku": "sa-17122-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c11d70b6-caab-4472-8963-efe58996581e.jpg?v=1723202401",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009955_326fc5c1c5aa.jpg",
       "vendor": "",
       "price": 18100,
       "partNumber": "SA 17122",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P500207 Air Filter, Primary Round | Replaces the HiFi Filter SA 17122",
       "sku": "sa-17122-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500207.700.700_07d542d1-3e38-464d-b134-14adb207a628.jpg?v=1744306156",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009956_67fd5c65454f.jpg",
       "vendor": "",
       "price": 15400,
       "partNumber": "P500207",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF25312 Air Filter, Primary | Replaces the HiFi Filter SA 17122",
       "sku": "sa-17122-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25312_7c0641f2-0f8d-4d1e-9a4e-ad6c61d8ff2a.jpg?v=1755780719",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009957_c4d36d9d3bf8.jpg",
       "vendor": "",
       "price": 21500,
       "partNumber": "AF25312",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-53360fbf-a70d-4869-8849-a90e32c71372.jpg?v=1748456088",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959052.700.700_30e4b81d-58b7-4b37-b4fa-5a93d0384457.jpg?v=1748456088",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2631_image1_695d503f-273a-421c-9883-85d98ec7e4ec.jpg?v=1754909278",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4457_53685958-bde9-41eb-b540-e906a8351851.jpg?v=1755780772"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008360_185af32c1cfa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008361_4126751ebd1d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008362_d8baac19d834.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008363_43f895336ec9.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17481 Air Filter",
       "sku": "sa-17481-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-53360fbf-a70d-4869-8849-a90e32c71372.jpg?v=1748456088",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008360_185af32c1cfa.jpg",
       "vendor": "",
       "price": 4700,
       "partNumber": "SA 17481",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P959052 Air Filter, Safety Obround | Replaces the HiFi Filter SA 17481",
       "sku": "sa-17481-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959052.700.700_30e4b81d-58b7-4b37-b4fa-5a93d0384457.jpg?v=1748456088",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008361_4126751ebd1d.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "P959052",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter CF 2631 Secondary Element | Replaces the HiFi Filter SA 17481",
       "sku": "sa-17481-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2631_image1_695d503f-273a-421c-9883-85d98ec7e4ec.jpg?v=1754909278",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008362_d8baac19d834.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "CF 2631",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard AF4457 Air Filter | Replaces the HiFi Filter SA 17481",
       "sku": "sa-17481-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4457_53685958-bde9-41eb-b540-e906a8351851.jpg?v=1755780772",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008363_43f895336ec9.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "AF4457",

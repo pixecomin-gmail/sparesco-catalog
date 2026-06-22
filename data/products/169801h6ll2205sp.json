@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200327B_33af7b13-ff1c-49b7-8898-21986cc46c70.jpg?v=1764690996",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f470ebae-a391-4f1c-b9b9-10012c4e1f1a_33b8e8b6-4e42-44b0-943a-9f745352fae6.jpg?v=1764690996",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_086faad0-3d61-44a6-b70d-f79fbd93c284.jpg?v=1764690996",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200327B_d36e996d-af10-4d94-9320-22a7849635b6.jpg?v=1764690994",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f470ebae-a391-4f1c-b9b9-10012c4e1f1a_b2eda30b-5c9f-4bb3-8542-54b628169ecf.jpg?v=1764690994",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_e13fcbab-c3ef-48cc-bf34-533c301d96b4.jpg?v=1764690994"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027665_8062c811727d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027666_b1904293e707.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027667_2eb38c86eaaa.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027674_0ccdc01890eb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027675_32a46ab8caef.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027676_f10d1f5367f8.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40054 Pressure Filter | Replaces the Eppensteiner 16.9801H6LL2205SP",
       "sku": "16-9801h6ll2205sp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200327B_d36e996d-af10-4d94-9320-22a7849635b6.jpg?v=1764690994",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027674_0ccdc01890eb.jpg",
       "vendor": "MicroFit",
       "price": 20000,
       "partNumber": "MFHHP40054",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87226 Pressure Filter | Replaces the Eppensteiner 169801H6LL2205SP",
       "sku": "169801h6ll2205sp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f470ebae-a391-4f1c-b9b9-10012c4e1f1a_33b8e8b6-4e42-44b0-943a-9f745352fae6.jpg?v=1764690996",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027666_b1904293e707.jpg",
       "vendor": "HiFi Filter",
       "price": 12300,
       "partNumber": "SH 87226",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec D121G06B Pressure Filter | Replaces the Eppensteiner 169801H6LL2205SP",
       "sku": "169801h6ll2205sp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120B_086faad0-3d61-44a6-b70d-f79fbd93c284.jpg?v=1764690996",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/027667_2eb38c86eaaa.jpg",
       "vendor": "Filtrec",
       "price": 21800,
       "partNumber": "D121G06B",

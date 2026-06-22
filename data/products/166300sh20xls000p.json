@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_846_image1_ef45414e-c35a-4c91-b0ca-f258eaf3c3a6.jpg?v=1755096021",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8f19ee3e-e8a8-4085-9b34-37662c413411_49921009-b622-4d0d-b3ff-a762547c0eb1.jpg?v=1755096021",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R411_a028cde8-8360-4c99-ac3b-347e4dd2b064.jpg?v=1755096021",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_91e1b0fa-2a55-4872-9b7a-4145eb9c296c.png?v=1760633879",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_846_image1_cb07174b-144d-4612-b8d9-e097625764b8.jpg?v=1755096022",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8f19ee3e-e8a8-4085-9b34-37662c413411_cf97df57-b2fd-4e09-954c-37991bb4f7ef.jpg?v=1755096022",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R411_185125d8-90b5-45a2-b944-9eb9b8a47de1.jpg?v=1755096022",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fe7c87a1-2a7d-42d5-9760-488fa44030f6.png?v=1760633872"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010233_94604a91ace2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010234_15024acef2db.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010235_f34e21bccdd9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010236_2a3f155898ca.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010241_12803df802b0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010242_7bf90f50319e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010243_fa7506d82648.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010244_e8a50cfa7dc0.png"
   ],
   "variants": [
     {
       "title": "Mann Filter HD 846 Hydraulics | Replaces the Eppensteiner 166300SH20XLS000P",
       "sku": "166300sh20xls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_846_image1_ef45414e-c35a-4c91-b0ca-f258eaf3c3a6.jpg?v=1755096021",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010233_94604a91ace2.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "HD 846",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87265 Return Filter | Replaces the Eppensteiner 166300SH20XLS000P",
       "sku": "166300sh20xls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8f19ee3e-e8a8-4085-9b34-37662c413411_49921009-b622-4d0d-b3ff-a762547c0eb1.jpg?v=1755096021",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010234_15024acef2db.jpg",
       "vendor": "",
       "price": 13200,
       "partNumber": "SH 87265",
@@ -80,7 +80,7 @@
     {
       "title": "Filtrec R410G25 Return Filter | Replaces the Eppensteiner 166300SH20XLS000P",
       "sku": "166300sh20xls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R411_a028cde8-8360-4c99-ac3b-347e4dd2b064.jpg?v=1755096021",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010235_f34e21bccdd9.jpg",
       "vendor": "",
       "price": 15400,
       "partNumber": "R410G25",
@@ -109,7 +109,7 @@
     {
       "title": "MicroFit® MFHR51215 UltraGen III Filter | Replaces the Eppensteiner 166300SH20XLS000P",
       "sku": "166300sh20xls000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_91e1b0fa-2a55-4872-9b7a-4145eb9c296c.png?v=1760633879",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/010236_2a3f155898ca.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR51215",

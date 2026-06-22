@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e674a27b-8676-43e6-9f86-9dce43e99f70.jpg?v=1723227393",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607240.700.700_d7e134e4-0d2d-450c-aadb-8cc5858909f1.jpg?v=1744306192",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25530_c4cbf500-8a1d-4605-a334-cea82c160f91.jpg?v=1755780975"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000025_20032f399421.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000026_44155cf35462.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000027_dd061871054b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 6001 Air Filter",
       "sku": "sa-6001-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e674a27b-8676-43e6-9f86-9dce43e99f70.jpg?v=1723227393",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000025_20032f399421.jpg",
       "vendor": "",
       "price": 900,
       "partNumber": "SA 6001",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P607240 Air Filter, Primary Round | Replaces the HiFi Filter SA 6001",
       "sku": "sa-6001-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p607240.700.700_d7e134e4-0d2d-450c-aadb-8cc5858909f1.jpg?v=1744306192",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000026_44155cf35462.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "P607240",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF25530 Air Intake Systems | Replaces the HiFi Filter SA 6001",
       "sku": "sa-6001-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25530_c4cbf500-8a1d-4605-a334-cea82c160f91.jpg?v=1755780975",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000027_dd061871054b.jpg",
       "vendor": "",
       "price": 1500,
       "partNumber": "AF25530",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ae72a9fb-4587-45fb-81b4-904bd2f14a0a.jpg?v=1723246288",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p611857.700.700_49fa2624-ade8-436b-b6cd-5e851528c1a3.jpg?v=1744306104",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27683_6d66b8d6-9cd1-4ff0-adc8-1f2f9d4db77c.jpg?v=1755781002"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003857_5e149da3db28.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003858_80a3592df122.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003859_45d1d2dbc324.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16446 Air Filter",
       "sku": "sa-16446-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ae72a9fb-4587-45fb-81b4-904bd2f14a0a.jpg?v=1723246288",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003857_5e149da3db28.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "SA 16446",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P611857 Air Filter, Safety | Replaces the HiFi Filter SA 16446",
       "sku": "sa-16446-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p611857.700.700_49fa2624-ade8-436b-b6cd-5e851528c1a3.jpg?v=1744306104",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003858_80a3592df122.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "P611857",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF27683 Air Filter, Secondary | Replaces the HiFi Filter SA 16446",
       "sku": "sa-16446-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF27683_6d66b8d6-9cd1-4ff0-adc8-1f2f9d4db77c.jpg?v=1755781002",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/003859_45d1d2dbc324.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "AF27683",

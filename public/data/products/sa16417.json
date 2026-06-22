@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-992b5d5e-129e-43c6-b7f8-894380094c7c.jpg?v=1723233803",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777868.700.700_b290da06-b6de-4543-9b67-7c1d9a37e93e.jpg?v=1744306097",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_24ab2abb-1c9b-4490-8ba6-e1374fe3b975.jpg?v=1751027896"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004918_186c2ca024bb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004919_62d248a5d45d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004920_49ddb427df91.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16417 Air Filter",
       "sku": "sa-16417-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-992b5d5e-129e-43c6-b7f8-894380094c7c.jpg?v=1723233803",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004918_186c2ca024bb.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "SA 16417",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P777868 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16417",
       "sku": "sa-16417-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p777868.700.700_b290da06-b6de-4543-9b67-7c1d9a37e93e.jpg?v=1744306097",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004919_62d248a5d45d.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "P777868",
@@ -53,7 +53,7 @@
     {
       "title": "FIL Filter HP 2584 A | Replaces the HiFi Filter SA 16417",
       "sku": "sa-16417-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Fil-Filter-Placeholder-600x600_24ab2abb-1c9b-4490-8ba6-e1374fe3b975.jpg?v=1751027896",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004920_49ddb427df91.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "HP 2584 A",

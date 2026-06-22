@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eedabcdc-8044-41b7-a556-d22f84f65b02_2e1520dc-8444-4569-be71-82fa645ad58c.jpg?v=1762811070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p140131.700.700_da6cc670-2489-437f-9d5b-f40167fa3a9c.jpg?v=1762811070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_13_1144_image1_d852fe61-ef30-4e56-a495-64155840976d.jpg?v=1762811070",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4067_43d11086-86c7-4d25-954e-be222c3be148.jpg?v=1762811070"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000400_bdfe92c676a2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000401_d866fdd04add.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000402_84a21164b7bb.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000403_0c20e1478a9a.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14017 Air Filter",
       "sku": "sa-14017-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eedabcdc-8044-41b7-a556-d22f84f65b02_2e1520dc-8444-4569-be71-82fa645ad58c.jpg?v=1762811070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000400_bdfe92c676a2.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "SA 14017",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P140131 Air Filter, Primary Round | Replaces the HiFi Filter SA 14017",
       "sku": "sa-14017-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p140131.700.700_da6cc670-2489-437f-9d5b-f40167fa3a9c.jpg?v=1762811070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000401_d866fdd04add.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "P140131",
@@ -56,7 +56,7 @@
     {
       "title": "Mann Filter C 13 114/4 Air Filter | Replaces the HiFi Filter SA 14017",
       "sku": "sa-14017-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_13_1144_image1_d852fe61-ef30-4e56-a495-64155840976d.jpg?v=1762811070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000402_84a21164b7bb.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "C 13 114/4",
@@ -76,7 +76,7 @@
     {
       "title": "Fleetguard AF4067 Air Filter, Primary | Replaces the HiFi Filter SA 14017",
       "sku": "sa-14017-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4067_43d11086-86c7-4d25-954e-be222c3be148.jpg?v=1762811070",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/000403_0c20e1478a9a.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "AF4067",

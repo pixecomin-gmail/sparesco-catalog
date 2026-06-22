@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d95529f3-3008-4e70-9bab-42d5393288ba.jpg?v=1748456092",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959383-3.700.700_b297dc12-166f-43a9-9048-2ea25bcacae1.jpg?v=1748456092",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1280_image1.jpg?v=1754909558"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004502_eb8ccf799b13.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004503_ad74a73bf093.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004504_556392173e27.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17464 Air Filter",
       "sku": "sa-17464-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d95529f3-3008-4e70-9bab-42d5393288ba.jpg?v=1748456092",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004502_eb8ccf799b13.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "SA 17464",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P959383 Air Filter, Safety | Replaces the HiFi Filter SA 17464",
       "sku": "sa-17464-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959383-3.700.700_b297dc12-166f-43a9-9048-2ea25bcacae1.jpg?v=1748456092",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004503_ad74a73bf093.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "P959383",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CF 1280 Secondary Element | Replaces the HiFi Filter SA 17464",
       "sku": "sa-17464-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_1280_image1.jpg?v=1754909558",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/004504_556392173e27.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "CF 1280",

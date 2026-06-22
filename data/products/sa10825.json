@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9e9d0f50-8e00-4f87-9fa3-899d3b69e013_65535661-8b7f-45ab-a425-55f2fed4b8c7.jpg?v=1762811694",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181118.700.700_e4b09132-5cfb-4c62-a9d6-44d0963799a5.jpg?v=1762811694",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF875M_a686831a-7b2b-4660-a96d-5369d704c39c.jpg?v=1762811694"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006251_abd58b724a3d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006252_69e67a362055.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006253_cfa93fb17157.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10825 Air Filter",
       "sku": "sa-10825-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9e9d0f50-8e00-4f87-9fa3-899d3b69e013_65535661-8b7f-45ab-a425-55f2fed4b8c7.jpg?v=1762811694",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006251_abd58b724a3d.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "SA 10825",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P181118 Air Filter, Primary Round | Replaces the HiFi Filter SA 10825",
       "sku": "sa-10825-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p181118.700.700_e4b09132-5cfb-4c62-a9d6-44d0963799a5.jpg?v=1762811694",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006252_69e67a362055.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "P181118",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF875M Air, Primary | Replaces the HiFi Filter SA 10825",
       "sku": "sa-10825-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF875M_a686831a-7b2b-4660-a96d-5369d704c39c.jpg?v=1762811694",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/006253_cfa93fb17157.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "AF875M",

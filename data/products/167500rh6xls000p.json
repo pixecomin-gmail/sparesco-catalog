@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d1a1c48-1f37-46fe-a671-2e727eb84e91_b5771658-c5a3-462b-baea-15926e1774f3.jpg?v=1748450396",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WD_13_011_x_image1_f5b78457-bb68-411d-a29a-43780317806c.jpg?v=1754907542",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_c50aa286-ebb0-4fce-b235-30bb67eb9df8.jpg?v=1748450396",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d1a1c48-1f37-46fe-a671-2e727eb84e91_8087bd58-e7f9-473f-906a-5f27c8a1f957.jpg?v=1748450400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WD_13_011_x_image1_5f4de9e3-01d7-41a7-b1f0-d5c39c2b5dd2.jpg?v=1754907546",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_26ec9b1d-0504-441c-af80-13a95b2e70f7.jpg?v=1748450400"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033399_aef1c6580aae.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033400_42f9809501db.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033401_0f82e04267be.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033409_b53e485e56e6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033410_d06ba0e3d73a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033411_f401051d854d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 56756 Spin-On Filter | Replaces the Eppensteiner 167500RH6XLS000P",
       "sku": "167500rh6xls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3d1a1c48-1f37-46fe-a671-2e727eb84e91_b5771658-c5a3-462b-baea-15926e1774f3.jpg?v=1748450396",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033399_aef1c6580aae.jpg",
       "vendor": "",
       "price": 10700,
       "partNumber": "SH 56756",
@@ -53,7 +53,7 @@
     {
       "title": "Mann Filter WD 13 011 x Hydraulics | Replaces the Eppensteiner 167500RH6XLS000P",
       "sku": "167500rh6xls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WD_13_011_x_image1_f5b78457-bb68-411d-a29a-43780317806c.jpg?v=1754907542",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033400_42f9809501db.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "WD 13 011 x",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec A150G06 Spin-On Filter | Replaces the Eppensteiner 167500RH6XLS000P",
       "sku": "167500rh6xls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_c50aa286-ebb0-4fce-b235-30bb67eb9df8.jpg?v=1748450396",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/033401_0f82e04267be.jpg",
       "vendor": "",
       "price": 11200,
       "partNumber": "A150G06",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8fc02278-9d6e-49b7-9304-3223faa753e3.jpg?v=1723204647",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2550_image1.jpg?v=1754909291",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p635979.700.700_af3edcb9-fc39-495b-b8d7-c58d58503639.jpg?v=1744306171"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008410_ab325a57802f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008411_de012e25c4b0.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008412_f175f22ffdc0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17376 Safety Air Filter",
       "sku": "sa-17376-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8fc02278-9d6e-49b7-9304-3223faa753e3.jpg?v=1723204647",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008410_ab325a57802f.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "SA 17376",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter CF 2550 Secondary Element | Replaces the HiFi Filter SA 17376",
       "sku": "sa-17376-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CF_2550_image1.jpg?v=1754909291",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008411_de012e25c4b0.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "CF 2550",
@@ -57,7 +57,7 @@
     {
       "title": "Donaldson P635979 Air Filter, Safety Obround | Replaces the HiFi Filter SA 17376",
       "sku": "sa-17376-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p635979.700.700_af3edcb9-fc39-495b-b8d7-c58d58503639.jpg?v=1744306171",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008412_f175f22ffdc0.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "P635979",

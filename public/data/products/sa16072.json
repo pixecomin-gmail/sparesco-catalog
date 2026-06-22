@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-146bfcb7-71d2-4c72-9900-70e22706c4e8.jpg?v=1723207055",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526839.700.700_d79a610e-bc40-4aad-968a-27be73dad467.jpg?v=1744306058",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4996_354ecda4-3641-4720-b948-5eb2f2ceb96a.jpg?v=1755780820"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007220_b5e00c000425.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007221_2f3f3f61804d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007222_68fed663bad7.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16072 Air Filter",
       "sku": "sa-16072-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-146bfcb7-71d2-4c72-9900-70e22706c4e8.jpg?v=1723207055",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007220_b5e00c000425.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "SA 16072",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P526839 Air Filter, Safety | Replaces the HiFi Filter SA 16072",
       "sku": "sa-16072-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p526839.700.700_d79a610e-bc40-4aad-968a-27be73dad467.jpg?v=1744306058",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007221_2f3f3f61804d.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "P526839",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4996 Air Filter, Secondary | Replaces the HiFi Filter SA 16072",
       "sku": "sa-16072-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4996_354ecda4-3641-4720-b948-5eb2f2ceb96a.jpg?v=1755780820",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007222_68fed663bad7.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "AF4996",

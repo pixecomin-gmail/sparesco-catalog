@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6c4b0482-08db-47aa-8d63-271d45109b19_006f98e1-c2e6-4d53-89be-829e0acf522b.jpg?v=1748455305",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200455B_64306113-bec0-4294-8858-9cbcc2955169.jpg?v=1748455305",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35270_d41d0b88-e3a7-4d8f-84fd-d76ef1190f68.jpg?v=1755780264"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000204_f291a11874e2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000205_57793ac4cac6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000206_a5abaae394f2.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52550 Return Filter | Replaces the Argo-Hytos P3051052",
       "sku": "p3051052-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6c4b0482-08db-47aa-8d63-271d45109b19_006f98e1-c2e6-4d53-89be-829e0acf522b.jpg?v=1748455305",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000204_f291a11874e2.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "SH 52550",
@@ -49,7 +49,7 @@
     {
       "title": "Filtrec R611C25R Return Filter | Replaces the Argo-Hytos P3051052",
       "sku": "p3051052-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200455B_64306113-bec0-4294-8858-9cbcc2955169.jpg?v=1748455305",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000205_57793ac4cac6.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "R611C25R",
@@ -81,7 +81,7 @@
     {
       "title": "Fleetguard HF35270 Hydraulic Filters | Replaces the Argo-Hytos P3051052",
       "sku": "p3051052-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35270_d41d0b88-e3a7-4d8f-84fd-d76ef1190f68.jpg?v=1755780264",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/argo-hytos/000206_a5abaae394f2.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "HF35270",

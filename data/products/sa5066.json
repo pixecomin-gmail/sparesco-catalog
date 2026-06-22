@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-76a2e49c-7c2d-4f66-a9a3-ec0ce4c132bb.jpg?v=1748456095",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782811.700.700_f25f2702-9972-4b52-83c5-6b52ce79d82b.jpg?v=1748456095",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CU_2184_image1_8754ed94-3b48-4d20-a956-e078f8f2b4af.jpg?v=1754909339",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25305_b5ec8e35-f6ce-4516-ae58-caa3639235be.jpg?v=1755780825"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007168_7383fb6f678c.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007169_5d4b3f91915f.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007170_00d058a4949e.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007171_d48873751c52.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 5066 Air Filter",
       "sku": "sa-5066-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-76a2e49c-7c2d-4f66-a9a3-ec0ce4c132bb.jpg?v=1748456095",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007168_7383fb6f678c.jpg",
       "vendor": "",
       "price": 1200,
       "partNumber": "SA 5066",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P782811 Air Filter, Panel Ventilation | Replaces the HiFi Filter SA 5066",
       "sku": "sa-5066-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782811.700.700_f25f2702-9972-4b52-83c5-6b52ce79d82b.jpg?v=1748456095",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007169_5d4b3f91915f.jpg",
       "vendor": "",
       "price": 1200,
       "partNumber": "P782811",
@@ -55,7 +55,7 @@
     {
       "title": "Mann Filter CU 2184 Cabin Air Filter | Replaces the HiFi Filter SA 5066",
       "sku": "sa-5066-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/CU_2184_image1_8754ed94-3b48-4d20-a956-e078f8f2b4af.jpg?v=1754909339",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007170_00d058a4949e.jpg",
       "vendor": "",
       "price": 1400,
       "partNumber": "CU 2184",
@@ -74,7 +74,7 @@
     {
       "title": "Fleetguard AF25305 Cabin Air Filter Filter | Replaces the HiFi Filter SA 5066",
       "sku": "sa-5066-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25305_b5ec8e35-f6ce-4516-ae58-caa3639235be.jpg?v=1755780825",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007171_d48873751c52.jpg",
       "vendor": "",
       "price": 1600,
       "partNumber": "AF25305",

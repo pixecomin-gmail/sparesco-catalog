@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3e083987-5a44-47a8-9d14-b889dd79651a.jpg?v=1723203604",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p822686.700.700_e47f9f8c-01ca-4ae4-b08f-de8389bd5916.jpg?v=1744306081",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25550_810d8f83-5a65-4914-917b-1bf35b9e5560.jpg?v=1755780749"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009112_74f7131e47c7.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009113_6fb65208d80d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009114_660dcec8448d.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16263 Air Filter",
       "sku": "sa-16263-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3e083987-5a44-47a8-9d14-b889dd79651a.jpg?v=1723203604",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009112_74f7131e47c7.jpg",
       "vendor": "",
       "price": 2800,
       "partNumber": "SA 16263",
@@ -37,7 +37,7 @@
     {
       "title": "Donaldson P822686 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16263",
       "sku": "sa-16263-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p822686.700.700_e47f9f8c-01ca-4ae4-b08f-de8389bd5916.jpg?v=1744306081",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009113_6fb65208d80d.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "P822686",
@@ -53,7 +53,7 @@
     {
       "title": "Fleetguard AF25550 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16263",
       "sku": "sa-16263-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25550_810d8f83-5a65-4914-917b-1bf35b9e5560.jpg?v=1755780749",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009114_660dcec8448d.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "AF25550",

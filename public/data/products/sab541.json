@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-19afb1f1-a101-4d62-8f71-968de98a0ebf_9140239e-db0b-40a4-8bfa-b67fa77e9c7d.jpg?v=1755103786",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770734.700.700_2daba460-c837-44b9-9ac2-a894813c8f99.jpg?v=1755103786",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_630_x_KIT_image1_5c565aff-6d7e-49e6-a7f1-eac33da87940.jpg?v=1755103786",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-19afb1f1-a101-4d62-8f71-968de98a0ebf_88aa073f-1b42-4f25-a262-97eedcea0b72.jpg?v=1755101404",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770734.700.700_114afdf0-1053-4aba-877c-5e5d7b4635dd.jpg?v=1755101404",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_630_x_KIT_image1_6c4901cd-be0d-4224-af6f-37ca90a8dbce.jpg?v=1755101404"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001301_7d26e73b3e3a.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001302_3a4af602dbba.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001303_8cb5305f3874.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002403_41adab2473f2.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002404_571838b3bb47.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002405_20454a618a03.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SD 70318 Urea Filter | Replaces the SF Filter SAB 541",
       "sku": "sab-541-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-19afb1f1-a101-4d62-8f71-968de98a0ebf_88aa073f-1b42-4f25-a262-97eedcea0b72.jpg?v=1755101404",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/002403_41adab2473f2.jpg",
       "vendor": "",
       "price": 4300,
       "partNumber": "SD 70318",
@@ -43,7 +43,7 @@
     {
       "title": "Donaldson X770734 Filter Kit | Replaces the SF Filter SAB541",
       "sku": "sab541-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/x770734.700.700_2daba460-c837-44b9-9ac2-a894813c8f99.jpg?v=1755103786",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001302_3a4af602dbba.jpg",
       "vendor": "",
       "price": 4300,
       "partNumber": "X770734",
@@ -59,7 +59,7 @@
     {
       "title": "Mann Filter U 630 x KIT Urea Filter | Replaces the SF Filter SAB541",
       "sku": "sab541-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U_630_x_KIT_image1_5c565aff-6d7e-49e6-a7f1-eac33da87940.jpg?v=1755103786",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/001303_8cb5305f3874.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "U 630 x KIT",

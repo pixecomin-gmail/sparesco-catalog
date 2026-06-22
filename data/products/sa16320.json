@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4a4ccaf0-4193-467a-ada8-8cadf075c15e.jpg?v=1723204870",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p539473.700.700_97ff08af-a48f-4451-8ce8-119e4ba94692.jpg?v=1744306089",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4754_1b69850f-3652-42b2-a884-416fca2b81a1.jpg?v=1755780783"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008290_e81bdf5b27f4.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008291_ce28983b5f0d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008292_857cb2dd6905.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16320 Air Filter",
       "sku": "sa-16320-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4a4ccaf0-4193-467a-ada8-8cadf075c15e.jpg?v=1723204870",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008290_e81bdf5b27f4.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "SA 16320",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P539473 Air Filter, Primary Round | Replaces the HiFi Filter SA 16320",
       "sku": "sa-16320-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p539473.700.700_97ff08af-a48f-4451-8ce8-119e4ba94692.jpg?v=1744306089",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008291_ce28983b5f0d.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "P539473",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4754 Air Filter, Primary | Replaces the HiFi Filter SA 16320",
       "sku": "sa-16320-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4754_1b69850f-3652-42b2-a884-416fca2b81a1.jpg?v=1755780783",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008292_857cb2dd6905.jpg",
       "vendor": "",
       "price": 9800,
       "partNumber": "AF4754",

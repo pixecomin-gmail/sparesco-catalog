@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-74abc7cb-0f6e-42c3-a1f7-235df64926b2.jpg?v=1723203661",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500096.700.700_359750b3-1f34-48a0-bfd3-5e41794ad6fd.jpg?v=1744306043",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4744_f2f05b0f-b96c-4016-ae65-5a7126b7ac5e.jpg?v=1755780752"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009077_99a2a23d2102.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009078_192f5b541856.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009079_ef8f72aa2a3b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 14694 Air Filter",
       "sku": "sa-14694-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-74abc7cb-0f6e-42c3-a1f7-235df64926b2.jpg?v=1723203661",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009077_99a2a23d2102.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "SA 14694",
@@ -38,7 +38,7 @@
     {
       "title": "Donaldson P500096 Air Filter, Safety | Replaces the HiFi Filter SA 14694",
       "sku": "sa-14694-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p500096.700.700_359750b3-1f34-48a0-bfd3-5e41794ad6fd.jpg?v=1744306043",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009078_192f5b541856.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "P500096",
@@ -54,7 +54,7 @@
     {
       "title": "Fleetguard AF4744 Air Filter, Secondary | Replaces the HiFi Filter SA 14694",
       "sku": "sa-14694-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4744_f2f05b0f-b96c-4016-ae65-5a7126b7ac5e.jpg?v=1755780752",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009079_ef8f72aa2a3b.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "AF4744",

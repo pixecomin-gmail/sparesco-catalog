@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200992B_01392a2a-e720-45ff-b0bd-f22603effb40.jpg?v=1741349399",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb0f2be8-213b-499d-9b62-959843d25b78_d21a9cd2-dfca-497f-9105-8bbcfe4d9f6a.jpg?v=1741349399",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ae8e676c-ffce-46af-8821-ca9391ca1a7f.png?v=1760629878",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200992B_80e135d2-78a7-4b27-b600-798bd355b417.jpg?v=1741349410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb0f2be8-213b-499d-9b62-959843d25b78_0ce43815-cf90-43f2-b0b3-7fe51f7aa021.jpg?v=1741349410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_41a6020d-1b06-4a83-a64b-5a09aaa774b9.png?v=1760629884"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026612_69d62227cec8.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026613_c5f3ab152545.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026614_20a3fd5a71c0.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026621_43b4a9c61174.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026622_e08ec3d23221.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026623_1e9fc5845cbe.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD210B25B Pressure Filter | Replaces the Eppensteiner 210G25A000P",
       "sku": "210g25a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200992B_01392a2a-e720-45ff-b0bd-f22603effb40.jpg?v=1741349399",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026612_69d62227cec8.jpg",
       "vendor": "Filtrec",
       "price": 7700,
       "partNumber": "DVD210B25B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67182 Pressure Filter | Replaces the Eppensteiner 210G25A000P",
       "sku": "210g25a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fb0f2be8-213b-499d-9b62-959843d25b78_d21a9cd2-dfca-497f-9105-8bbcfe4d9f6a.jpg?v=1741349399",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026613_c5f3ab152545.jpg",
       "vendor": "HiFi Filter",
       "price": 8900,
       "partNumber": "SH 67182",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHLP30277 UltraGen III Pressure Filter | Replaces the Eppensteiner 210G25A000P",
       "sku": "210g25a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ae8e676c-ffce-46af-8821-ca9391ca1a7f.png?v=1760629878",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026614_20a3fd5a71c0.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP30277",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf427347-8b3d-419f-a707-c1ad33577796.jpg?v=1723202543",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785426.700.700_4a08ba0b-cca4-48d8-8412-7514cd569c7b.jpg?v=1744306127",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4271_edde1507-ab17-4ff4-a58e-1cd78f09acf0.jpg?v=1755780730"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009829_ecfd4f42e698.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009830_7f720e227ab5.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009831_bf09f59ea154.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 16651 Air Filter",
       "sku": "sa-16651-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-cf427347-8b3d-419f-a707-c1ad33577796.jpg?v=1723202543",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009829_ecfd4f42e698.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "SA 16651",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P785426 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16651",
       "sku": "sa-16651-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p785426.700.700_4a08ba0b-cca4-48d8-8412-7514cd569c7b.jpg?v=1744306127",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009830_7f720e227ab5.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "P785426",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF4271 Air Intake Systems | Replaces the HiFi Filter SA 16651",
       "sku": "sa-16651-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4271_edde1507-ab17-4ff4-a58e-1cd78f09acf0.jpg?v=1755780730",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/009831_bf09f59ea154.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "AF4271",

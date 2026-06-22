@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-748f41a6-6428-4328-8ff5-513b33730995.jpg?v=1723207416",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p773605.700.700_ca4260f3-815e-47bf-8c24-4d227737806f.jpg?v=1744306162",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4892K_6e0ee4db-5b28-41a4-afd0-5ef8c487c550.jpg?v=1755780820"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007145_72d7573ef212.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007146_d1f2f87f74a6.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007147_9beae8f9b0ce.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 17267 Air Filter",
       "sku": "sa-17267-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-748f41a6-6428-4328-8ff5-513b33730995.jpg?v=1723207416",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007145_72d7573ef212.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "SA 17267",
@@ -40,7 +40,7 @@
     {
       "title": "Donaldson P773605 Air Filter, Primary Finned | Replaces the HiFi Filter SA 17267",
       "sku": "sa-17267-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p773605.700.700_ca4260f3-815e-47bf-8c24-4d227737806f.jpg?v=1744306162",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007146_d1f2f87f74a6.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "P773605",
@@ -56,7 +56,7 @@
     {
       "title": "Fleetguard AF4892K Air Filter, Primary | Replaces the HiFi Filter SA 17267",
       "sku": "sa-17267-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4892K_6e0ee4db-5b28-41a4-afd0-5ef8c487c550.jpg?v=1755780820",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/007147_9beae8f9b0ce.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "AF4892K",

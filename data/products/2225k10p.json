@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_778ad14b-6967-4484-b54b-074f52f02bf3.jpg?v=1755092413",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d95da51b-ab56-438d-afbf-a6cd1a7f27a0_09bc571a-1763-4de2-bda0-de6a2878794f.jpg?v=1755092413",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5b7b0770-ffa9-4e36-9cb8-887c49556913.png?v=1760629872",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_a34cc4a4-4912-4005-9913-e798a2b8af32.jpg?v=1755092416",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d95da51b-ab56-438d-afbf-a6cd1a7f27a0_22773adf-a0d9-4cdf-8f27-6780b771ab40.jpg?v=1755092416",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e605ee55-248c-4639-ac3f-3c019da94d80.png?v=1760629865"
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026383_b701de6d6cad.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026384_310ebfa259c9.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026385_1d17617817c5.png",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026406_63966645017d.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026407_7a013a8a2f37.jpg",
+    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026408_efa36f6aad3e.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD2225E10B Pressure Filter | Replaces the Eppensteiner 2225K10P",
       "sku": "2225k10p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_778ad14b-6967-4484-b54b-074f52f02bf3.jpg?v=1755092413",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026383_b701de6d6cad.jpg",
       "vendor": "Filtrec",
       "price": 16500,
       "partNumber": "DVD2225E10B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67014 Pressure Filter | Replaces the Eppensteiner 2225K10P",
       "sku": "2225k10p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d95da51b-ab56-438d-afbf-a6cd1a7f27a0_09bc571a-1763-4de2-bda0-de6a2878794f.jpg?v=1755092413",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026384_310ebfa259c9.jpg",
       "vendor": "HiFi Filter",
       "price": 11600,
       "partNumber": "SH 67014",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP30319 UltraGen III Pressure Filter | Replaces the Eppensteiner 2225K10P",
       "sku": "2225k10p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5b7b0770-ffa9-4e36-9cb8-887c49556913.png?v=1760629872",
+      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/eppensteiner/026385_1d17617817c5.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP30319",
