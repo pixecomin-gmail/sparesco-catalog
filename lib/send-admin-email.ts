@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
 
 function escapeHtml(value: unknown) {
   return String(value ?? "")
@@ -99,7 +101,7 @@ export async function sendAdminEmail({
   if (!process.env.RESEND_API_KEY || !notifyEmails) return;
 
   try {
-    await resend.emails.send({
+    await resend?.emails.send({
       from,
       to: notifyEmails.split(",").map((email) => email.trim()),
       subject,
