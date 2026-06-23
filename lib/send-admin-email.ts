@@ -133,7 +133,7 @@ export async function sendUserEmail({
   if (!process.env.RESEND_API_KEY || !to) return;
 
   try {
-    await resend.emails.send({
+    await resend?.emails.send({
       from,
       to,
       subject,
