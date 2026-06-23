@@ -4,6 +4,8 @@ import type { Product } from "@/lib/products";
 import { productsIndex } from "@/lib/products";
 import ProductPageClient from "@/components/ProductPageClient";
 
+export const runtime = "edge";
+
 type ProductPageProps = {
   params: Promise<{ handle: string }>;
 };

@@ -98,7 +98,7 @@ export async function sendAdminEmail({
 
   if (!process.env.RESEND_API_KEY || !notifyEmails) return;
 
-  await resend.emails.send({
+  await resend?.emails.send({
     from,
     to: notifyEmails.split(",").map((email) => email.trim()),
     subject,
@@ -126,7 +126,7 @@ export async function sendUserEmail({
 
   if (!process.env.RESEND_API_KEY || !to) return;
 
-  await resend.emails.send({
+  await resend?.emails.send({
     from,
     to,
     subject,

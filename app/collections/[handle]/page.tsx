@@ -5,6 +5,8 @@ import collectionsData from "@/data/collections.json";
 import { getAllProducts } from "@/lib/products";
 import CollectionProductCard from "@/components/CollectionProductCard";
 
+export const runtime = "edge";
+
 type CollectionItem = {
   title: string;
   handle: string;

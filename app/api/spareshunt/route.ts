@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { sendAdminEmail, sendUserEmail } from "@/lib/send-admin-email";
 
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseServiceKey = process.env.SUPABASE_SECRET_KEY;
