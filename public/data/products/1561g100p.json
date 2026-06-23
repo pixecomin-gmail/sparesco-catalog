@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_c8c4a153-ea48-415e-bf5a-58f1e32a583c.jpg?v=1741361091",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_415b4b54-2854-4c3d-81a9-2ed751dae0f3.jpg?v=1764762618",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7c46d953-d0f0-44a6-aa7c-ee8d2caaca69.png?v=1760629847",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_28f9b22d-f75a-4fbe-b2b6-a29741eb1237.jpg?v=1741361088",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_4c94ef3e-43da-4ebf-9b18-588b521a94bf.jpg?v=1764762620",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a3ddbd60-d96d-44ce-85fc-c73f2f9f5929.png?v=1760629845"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026732_a846941eb856.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026733_a6de61fc1644.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026734_dab8740a66c3.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026742_8d2b40531ee1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026743_30e2819ea0be.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026744_bd19f490b2bd.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1561B100B Return Filter | Replaces the Eppensteiner 1561G100P",
       "sku": "1561g100p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_c8c4a153-ea48-415e-bf5a-58f1e32a583c.jpg?v=1741361091",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026732_a846941eb856.jpg",
       "vendor": "Filtrec",
       "price": 25600,
       "partNumber": "RVR1561B100B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67973 Return Filter | Replaces the Eppensteiner 1561G100P",
       "sku": "1561g100p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_415b4b54-2854-4c3d-81a9-2ed751dae0f3.jpg?v=1764762618",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026733_a6de61fc1644.jpg",
       "vendor": "HiFi Filter",
       "price": 74800,
       "partNumber": "SH 67973",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR50416 UltraGen III Return Filter | Replaces the Eppensteiner 1561G100P",
       "sku": "1561g100p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7c46d953-d0f0-44a6-aa7c-ee8d2caaca69.png?v=1760629847",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026734_dab8740a66c3.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50416",

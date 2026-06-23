@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d3792737-7693-4546-9bfc-dc703bb2000e_128809b4-4b53-4040-a00f-af8faa74b86c.jpg?v=1761218376",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7bb999d8-1d1e-4dd8-a098-af597749f52b.png?v=1761218376",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_f7f1fbd0-3b49-4ef2-9175-4826a8d30c81.jpg?v=1761218376"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024435_94fe6bd4b4af.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024436_acb9e4ac3ae6.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024437_e66843589b32.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 75058 Pressure Filter | Replaces the Eppensteiner E400HL660H6LLLA",
       "sku": "e400hl660h6llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d3792737-7693-4546-9bfc-dc703bb2000e_128809b4-4b53-4040-a00f-af8faa74b86c.jpg?v=1761218376",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024435_94fe6bd4b4af.jpg",
       "vendor": "",
       "price": 12700,
       "partNumber": "SH 75058",
@@ -48,7 +48,7 @@
     {
       "title": "MicroFit® MFHLP31474 UltraGen III Filter | Replaces the Eppensteiner E400HL660H6LLLA",
       "sku": "e400hl660h6llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7bb999d8-1d1e-4dd8-a098-af597749f52b.png?v=1761218376",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024436_acb9e4ac3ae6.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31474",
@@ -79,7 +79,7 @@
     {
       "title": "Filtrec DHD660G05B Pressure Filter | Replaces the Eppensteiner E400HL660H6LLLA",
       "sku": "e400hl660h6llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_f7f1fbd0-3b49-4ef2-9175-4826a8d30c81.jpg?v=1761218376",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024437_e66843589b32.jpg",
       "vendor": "",
       "price": 17900,
       "partNumber": "DHD660G05B",

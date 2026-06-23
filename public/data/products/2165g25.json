@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR65B_61e6c9e2-fbcb-4870-b00e-d544e9e9df96.jpg?v=1741362667",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a0a0ed25-5d1c-4afd-85b0-93251ec67022_e75d261c-9cdd-4b77-90c3-77bcbc54d5e5.jpg?v=1741362667",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d4b26f5e-765a-4b31-a337-49c668b5d750.png?v=1760632619",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR65B_a82d1021-523d-4be4-b849-61712dd653e8.jpg?v=1741361735",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a0a0ed25-5d1c-4afd-85b0-93251ec67022_7c5b334d-7a2c-4def-9be2-f9838db8de5c.jpg?v=1741361735",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_637ac62a-f728-4a49-ab5c-c3f8f4a9df2b.png?v=1760630999"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018423_e527c47c1c9e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018424_598d826c2cd0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018425_716fde332251.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021817_b0401c841393.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021818_9ab74bdff7c1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021819_a7f70b0d364d.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR65B25B Return Filter | Replaces the Eppensteiner 2165G25",
       "sku": "2165g25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR65B_61e6c9e2-fbcb-4870-b00e-d544e9e9df96.jpg?v=1741362667",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018423_e527c47c1c9e.jpg",
       "vendor": "",
       "price": 9000,
       "partNumber": "RVR65B25B",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 67278 Return Filter | Replaces the Eppensteiner 2165G25",
       "sku": "2165g25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a0a0ed25-5d1c-4afd-85b0-93251ec67022_e75d261c-9cdd-4b77-90c3-77bcbc54d5e5.jpg?v=1741362667",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018424_598d826c2cd0.jpg",
       "vendor": "",
       "price": 16100,
       "partNumber": "SH 67278",
@@ -84,7 +84,7 @@
     {
       "title": "MicroFit® MFHR50556 UltraGen III Return Filter | Replaces the Eppensteiner 2165G25",
       "sku": "2165g25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d4b26f5e-765a-4b31-a337-49c668b5d750.png?v=1760632619",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018425_716fde332251.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50556",

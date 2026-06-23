@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_f408c942-96bb-49e9-a153-f68dfd8afa1f.jpg?v=1748450407",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_15e8abe9-5ad2-43b4-a789-b0d40487a39e.jpg?v=1748450407",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_8b7cddc2-bd68-4e32-8b2e-2a29f497643b.jpg?v=1748450407",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_35006c39-c182-40d6-8a22-41eadec0c73f.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_c5c647a8-5a23-4afd-91c6-ef31fcd046b4.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_e91c34d9-eb5d-4429-9468-6ff1a34962aa.jpg?v=1748450406"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027211_095134dd34b4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027212_e728e521cb41.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027213_c9c9b8802579.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027217_c6672ffff9fd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027218_ab35b9976095.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027219_04b9eded6b44.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50208 Return Filter | Replaces the Eppensteiner 16.8300SH10XLS000V",
       "sku": "16-8300sh10xls000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_35006c39-c182-40d6-8a22-41eadec0c73f.jpg?v=1748450406",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027217_c6672ffff9fd.jpg",
       "vendor": "MicroFit",
       "price": 13300,
       "partNumber": "MFHR50208",
@@ -51,7 +51,7 @@
     {
       "title": "Donaldson P566237 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 168300SH10XLS000V",
       "sku": "168300sh10xls000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_15e8abe9-5ad2-43b4-a789-b0d40487a39e.jpg?v=1748450407",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027212_e728e521cb41.jpg",
       "vendor": "Donaldson",
       "price": 16600,
       "partNumber": "P566237",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec R430G10V Return Filter | Replaces the Eppensteiner 168300SH10XLS000V",
       "sku": "168300sh10xls000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_8b7cddc2-bd68-4e32-8b2e-2a29f497643b.jpg?v=1748450407",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027213_c9c9b8802579.jpg",
       "vendor": "Filtrec",
       "price": 25400,
       "partNumber": "R430G10V",

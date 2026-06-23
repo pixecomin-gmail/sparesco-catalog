@@ -1,11 +1,92 @@
 "use client";
 
+import { FormEvent, useState } from "react";
 import Link from "next/link";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 export default function EnquiryPage() {
   const { items, increaseQty, decreaseQty, removeItem } = useEnquiry();
   const hasItems = items.length > 0;
+
+  const [phone, setPhone] = useState<string | undefined>("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const submitEnquiry = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+
+    setSuccessMessage("");
+    setErrorMessage("");
+
+    if (!hasItems) {
+      setErrorMessage("Please add at least one product to enquiry.");
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    const name = String(formData.get("name") || "").trim();
+    const company = String(formData.get("company") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    if (!name || !company || !email || !phone) {
+      setErrorMessage("Please fill all required fields.");
+      return;
+    }
+
+    if (!isValidPhoneNumber(phone)) {
+      setErrorMessage("Please enter a valid phone number.");
+      return;
+    }
+
+    const payload = {
+      name,
+      company,
+      email,
+      phone,
+      message,
+      items,
+    };
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || "Unable to submit enquiry.");
+      }
+
+      setSuccessMessage(
+        "Enquiry submitted successfully. Our team will contact you soon."
+      );
+
+      form.reset();
+      setPhone("");
+    } catch (error) {
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : "Unable to submit enquiry. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <main>
@@ -92,34 +173,57 @@ export default function EnquiryPage() {
               </div>
             )}
 
-            <form className="enquiry-form">
-              <label className="form-field">
-                Name *
-                <input placeholder="Your full name" />
-              </label>
+            <form className="enquiry-form" onSubmit={submitEnquiry}>
+              <div className="form-row">
+                <label className="form-field">
+                  Name *
+                  <input name="name" placeholder="Your full name" />
+                </label>
 
-              <label className="form-field">
-                Company *
-                <input placeholder="Company name" />
-              </label>
+                <label className="form-field">
+                  Email *
+                  <input name="email" type="email" placeholder="Email address" />
+                </label>
+              </div>
 
-              <label className="form-field">
-                Email *
-                <input placeholder="Email address" />
-              </label>
+              <div className="form-row">
+                <label className="form-field">
+                  Company *
+                  <input name="company" placeholder="Company name" />
+                </label>
 
-              <label className="form-field">
-                Phone *
-                <input placeholder="Phone number" />
-              </label>
+                <label className="form-field">
+                  Phone *
+                  <PhoneInput
+                    international
+                    defaultCountry="IN"
+                    value={phone}
+                    onChange={setPhone}
+                    placeholder="Phone number"
+                    className="phone-input-row"
+                  />
+                </label>
+              </div>
 
               <label className="form-field">
                 Message
-                <textarea placeholder="Additional message" />
+                <textarea name="message" placeholder="Additional message" />
               </label>
 
-              <button type="submit" className="primary-button">
-                Submit Enquiry
+              {successMessage ? (
+                <p className="form-success-message">{successMessage}</p>
+              ) : null}
+
+              {errorMessage ? (
+                <p className="form-error-message">{errorMessage}</p>
+              ) : null}
+
+              <button
+                type="submit"
+                className="primary-button"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Submitting..." : "Submit Enquiry"}
               </button>
             </form>
           </div>

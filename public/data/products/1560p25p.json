@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_9b11d8ad-dec1-4566-9a2d-305318095a7a.jpg?v=1741362867",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a58f3b96-a978-4137-bd2d-20c6b3d5fad7_93242d00-5db6-4378-a92c-3cf4d3369cf5.jpg?v=1741362867",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_16f4090e-2261-4dfa-97cf-fe202144cbb6.jpg?v=1741362872",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a58f3b96-a978-4137-bd2d-20c6b3d5fad7_83a1a9e8-7f66-4444-8db7-43a7a0aa4488.jpg?v=1741362872"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/015560_b60cb3e37bce.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/015561_a9f5cfacf429.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/015566_b39ad8007457.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/015567_5b82be849039.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1560K20B Return Filter | Replaces the Eppensteiner 1560P25P",
       "sku": "1560p25p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200894B_9b11d8ad-dec1-4566-9a2d-305318095a7a.jpg?v=1741362867",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/015560_b60cb3e37bce.jpg",
       "vendor": "",
       "price": 13600,
       "partNumber": "RVR1560K20B",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 67613 Return Filter | Replaces the Eppensteiner 1560P25P",
       "sku": "1560p25p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a58f3b96-a978-4137-bd2d-20c6b3d5fad7_93242d00-5db6-4378-a92c-3cf4d3369cf5.jpg?v=1741362867",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/015561_a9f5cfacf429.jpg",
       "vendor": "",
       "price": 18300,
       "partNumber": "SH 67613",

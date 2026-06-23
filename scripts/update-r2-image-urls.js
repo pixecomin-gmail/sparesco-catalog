@@ -1,11 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 
-const R2_BASE_URL = "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev";
+const R2_BASE_URL = "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev";
 
 const COLLECTIONS = [
   { title: "Air Filters", handle: "air-filters" },
   { title: "Argo Hytos", handle: "argo-hytos" },
+  { title: "Compressed Air Filters", handle: "compressed-air-filters" },
+  { title: "Domnick Hunter", handle: "domnick-hunter" },
+  { title: "Donaldson", handle: "donaldson" },
   { title: "Eppensteiner", handle: "eppensteiner" },
 ];
 

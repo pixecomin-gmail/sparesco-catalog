@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_e9fc01f2-e163-4b23-97b7-44d2e176d1f2.jpg?v=1741361108",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fd7d3ed2-6401-4eeb-a225-9f8635c991f1_a428c201-1e67-49c8-a32d-d244f000533c.jpg?v=1741361108",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_eb7639b3-c417-4d1a-a69f-23f3f855cc90.jpg?v=1741361113",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fd7d3ed2-6401-4eeb-a225-9f8635c991f1_8e952261-96db-4efc-bd30-fd324467ba1e.jpg?v=1741361113"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025808_29f82266fa55.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025809_200057b49d44.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025814_7a0e3a3ffdef.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025815_0099d84f9a3a.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DVD256K10B Pressure Filter | Replaces the Eppensteiner 256P10P",
       "sku": "256p10p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_e9fc01f2-e163-4b23-97b7-44d2e176d1f2.jpg?v=1741361108",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025808_29f82266fa55.jpg",
       "vendor": "Filtrec",
       "price": 4900,
       "partNumber": "DVD256K10B",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 67019 Pressure Filter | Replaces the Eppensteiner 256P10P",
       "sku": "256p10p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-fd7d3ed2-6401-4eeb-a225-9f8635c991f1_a428c201-1e67-49c8-a32d-d244f000533c.jpg?v=1741361108",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025809_200057b49d44.jpg",
       "vendor": "HiFi Filter",
       "price": 5700,
       "partNumber": "SH 67019",

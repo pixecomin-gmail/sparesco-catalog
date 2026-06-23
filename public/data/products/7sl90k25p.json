@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171614.700.700_c90a4d7b-9955-448a-911e-24d646382da0.jpg?v=1741350733",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_ad75cda8-44fc-434d-8554-1e2063c78a4e.jpg?v=1741350733",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-540a7536-19d3-4939-824e-3edb5e097f14_5cef115f-3edd-4982-a005-347dd96c7eb1.jpg?v=1741350733",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171614.700.700_1b0deae9-a28f-4f6a-b2e6-691a7f6f30ec.jpg?v=1741350734",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_38cb5cb4-d40c-42cb-b169-64c4d1a90713.jpg?v=1741350734",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-540a7536-19d3-4939-824e-3edb5e097f14_1208bedc-2003-4f1d-8928-134fe1a216cd.jpg?v=1741350734"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028100_e94dc5f88d50.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028101_527856b4eba5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028102_38dac37b726c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028106_b7539f3c2d46.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028107_de363c390ea7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028108_109802db592e.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson P171614 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 7SL90K25P",
       "sku": "7sl90k25p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171614.700.700_c90a4d7b-9955-448a-911e-24d646382da0.jpg?v=1741350733",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028100_e94dc5f88d50.jpg",
       "vendor": "Donaldson",
       "price": 5900,
       "partNumber": "P171614",
@@ -50,7 +50,7 @@
     {
       "title": "Filtrec A120G25 Spin-On Filter | Replaces the Eppensteiner 7SL90K25P",
       "sku": "7sl90k25p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_ad75cda8-44fc-434d-8554-1e2063c78a4e.jpg?v=1741350733",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028101_527856b4eba5.jpg",
       "vendor": "Filtrec",
       "price": 7200,
       "partNumber": "A120G25",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 63079 Spin-On Filter | Replaces the Eppensteiner 7SL90K25P",
       "sku": "7sl90k25p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-540a7536-19d3-4939-824e-3edb5e097f14_5cef115f-3edd-4982-a005-347dd96c7eb1.jpg?v=1741350733",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028102_38dac37b726c.jpg",
       "vendor": "HiFi Filter",
       "price": 11100,
       "partNumber": "SH 63079",

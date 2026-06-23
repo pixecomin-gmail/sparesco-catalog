@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF207937B_66e5bdc0-49c2-4c58-b621-0c55b4a0c0a0.jpg?v=1741348302",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-586f6c9e-7e11-4848-baf8-43843edb4111_6865d5d1-ce66-4bc9-b304-6d25eabd51e8.jpg?v=1741348302",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a8f8f1bc-1dd8-445e-b072-d1068802e51d.png?v=1760634336",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF207937B_611724a2-4de4-4b35-a375-552c451182dd.jpg?v=1741348300",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-586f6c9e-7e11-4848-baf8-43843edb4111_a928160a-450c-4161-91d4-59196c15c013.jpg?v=1741348300",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_00c9338c-ee28-40b9-8a77-d723f8b6fb7f.png?v=1760634337"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008791_da4ca359023c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008792_a90446d3bbe3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008793_f85847628587.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008797_edc5551dae06.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008798_efec39c3b1ca.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008799_18b36717650c.png"
   ],
   "variants": [
     {
       "title": "Filtrec XR100G06B0 DIN Return Filter | Replaces the Eppensteiner 10100H6SLA000P",
       "sku": "10100h6sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF207937B_66e5bdc0-49c2-4c58-b621-0c55b4a0c0a0.jpg?v=1741348302",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008791_da4ca359023c.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "XR100G06B0",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 84125 DIN Return Filter | Replaces the Eppensteiner 10100H6SLA000P",
       "sku": "10100h6sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-586f6c9e-7e11-4848-baf8-43843edb4111_6865d5d1-ce66-4bc9-b304-6d25eabd51e8.jpg?v=1741348302",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008792_a90446d3bbe3.jpg",
       "vendor": "",
       "price": 10500,
       "partNumber": "SH 84125",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR53391 UltraGen III DIN Return Filter | Replaces the Eppensteiner 10100H6SLA000P",
       "sku": "10100h6sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a8f8f1bc-1dd8-445e-b072-d1068802e51d.png?v=1760634336",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008793_f85847628587.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR53391",

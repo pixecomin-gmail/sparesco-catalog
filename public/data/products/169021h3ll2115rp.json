@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200596B-NB_08ad6dbf-d180-4148-9a73-cc5ef87437a1.jpg?v=1755096755",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201300B_df548a55-d799-40bd-ad74-f005b3aba8ab.jpg?v=1755096755",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c95bea1-0ceb-47c6-a85a-99216b240828_26b53d8e-478b-43fa-b358-a946260a700a.jpg?v=1761655737",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30426_db9cd4c6-adcb-4340-8d1a-111d3753b3ab.jpg?v=1755780167",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200596B-NB_e7ecc85a-9b9c-45ff-bf85-be1ca7a3d3c7.jpg?v=1741943405",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111B_4b64f640-deae-4a94-8fbe-d5a487e24299.jpg?v=1741943405",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c95bea1-0ceb-47c6-a85a-99216b240828_cfcf475e-b9eb-4753-a794-1f41f297d659.jpg?v=1761654843",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30426_310694b0-ea04-42ac-aa2b-7082c6548936.jpg?v=1755778487"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005306_54fd0acddf64.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005307_dc28d99ef232.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005308_67aab071a93b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005309_d6465f886e47.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031528_1a1e45783525.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031529_7ea3069b61eb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031530_ec527352bee1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031531_d1e93bd33197.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40116 Pressure Filter | Replaces the Eppensteiner 16.9021H3LL2115RP",
       "sku": "16-9021h3ll2115rp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200596B-NB_e7ecc85a-9b9c-45ff-bf85-be1ca7a3d3c7.jpg?v=1741943405",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031528_1a1e45783525.jpg",
       "vendor": "",
       "price": 10300,
       "partNumber": "MFHHP40116",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec R460G25V Return Filter | Replaces the Eppensteiner 169021H3LL2115RP",
       "sku": "169021h3ll2115rp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201300B_df548a55-d799-40bd-ad74-f005b3aba8ab.jpg?v=1755096755",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005307_dc28d99ef232.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "R460G25V",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 87123 Pressure Filter | Replaces the Eppensteiner 169021H3LL2115RP",
       "sku": "169021h3ll2115rp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-8c95bea1-0ceb-47c6-a85a-99216b240828_26b53d8e-478b-43fa-b358-a946260a700a.jpg?v=1761655737",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005308_67aab071a93b.jpg",
       "vendor": "",
       "price": 17400,
       "partNumber": "SH 87123",
@@ -114,7 +114,7 @@
     {
       "title": "Fleetguard HF30426 Hydraulic Filters | Replaces the Eppensteiner 169021H3LL2115RP",
       "sku": "169021h3ll2115rp-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30426_db9cd4c6-adcb-4340-8d1a-111d3753b3ab.jpg?v=1755780167",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005309_d6465f886e47.jpg",
       "vendor": "",
       "price": 22500,
       "partNumber": "HF30426",
@@ -145,7 +145,7 @@
     {
       "title": "Filtrec D111G03B Pressure Filter | Replaces the Eppensteiner 16.9021H3LL2115RP",
       "sku": "16-9021h3ll2115rp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111B_4b64f640-deae-4a94-8fbe-d5a487e24299.jpg?v=1741943405",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031529_7ea3069b61eb.jpg",
       "vendor": "",
       "price": 12000,
       "partNumber": "D111G03B",

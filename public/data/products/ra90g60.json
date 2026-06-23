@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_d970e1aa-fb87-4b2f-b849-2a7862ba3c1c.jpg?v=1741362906",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_72663b3e-0162-481b-a69d-c9d31dadf2fc.jpg?v=1764762983",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1d2691a9-3267-4249-b147-c43050b38a7f.png?v=1760633132"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/014732_f1126f613e25.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/014733_7f7ca7c51902.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/014734_17071f3425d7.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR190B60B Return Filter | Replaces the Eppensteiner RA90G60",
       "sku": "ra90g60-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_d970e1aa-fb87-4b2f-b849-2a7862ba3c1c.jpg?v=1741362906",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/014732_f1126f613e25.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "RVR190B60B",
@@ -47,7 +47,7 @@
     {
       "title": "HiFi Filter SH 67040 Return Filter | Replaces the Eppensteiner RA90G60",
       "sku": "ra90g60-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_72663b3e-0162-481b-a69d-c9d31dadf2fc.jpg?v=1764762983",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/014733_7f7ca7c51902.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "SH 67040",
@@ -77,7 +77,7 @@
     {
       "title": "MicroFit® MFHR50483 UltraGen III Return Filter | Replaces the Eppensteiner RA90G60",
       "sku": "ra90g60-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1d2691a9-3267-4249-b147-c43050b38a7f.png?v=1760633132",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/014734_17071f3425d7.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50483",

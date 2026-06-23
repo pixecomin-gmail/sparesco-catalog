@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1ee239bb-11e5-42b2-a390-9f65233f8749_8f91f0e9-9b0e-44b8-82ee-197b8e8fae7c.jpg?v=1762800242",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p175112.700.700_dec4c6b8-0413-4983-acb3-adec18983176.jpg?v=1762800242",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF214869B_4a096bec-eec5-48de-bc5b-1dc450f529a4.jpg?v=1762800242",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_44fe8696-dae6-4baa-854c-ce8bc23d18d1.png?v=1762800242",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1ee239bb-11e5-42b2-a390-9f65233f8749_bae08024-5311-4f41-84be-55729d6ed273.jpg?v=1762798298",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p175112.700.700_12ae93a1-80ab-4228-8332-d6d516d1d9b7.jpg?v=1762798298",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF214869B_3f82049b-3e36-4489-a8bc-772a29380313.jpg?v=1762798298",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0978439d-856e-4510-a16a-85dc1b67cfe1.png?v=1762798298"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000628_fef09332724d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000629_83d28934683b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000630_e7578273a5ff.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000631_97a87be447d2.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001027_2200dfb7a7ac.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001028_635bf6fd20c6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001029_0d3542d60f1c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001030_86e95b0a017f.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52008 Filter | Replaces the Argo-Hytos W3072308",
       "sku": "w3072308-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1ee239bb-11e5-42b2-a390-9f65233f8749_8f91f0e9-9b0e-44b8-82ee-197b8e8fae7c.jpg?v=1762800242",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000628_fef09332724d.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "SH 52008",
@@ -52,7 +52,7 @@
     {
       "title": "Donaldson P175112 Hydraulic Filter, Cartridge | Replaces the Argo-Hytos W3072308",
       "sku": "w3072308-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p175112.700.700_dec4c6b8-0413-4983-acb3-adec18983176.jpg?v=1762800242",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000629_83d28934683b.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "P175112",
@@ -81,7 +81,7 @@
     {
       "title": "Filtrec H311G25B Filter | Replaces the Argo-Hytos W3072308",
       "sku": "w3072308-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF214869B_4a096bec-eec5-48de-bc5b-1dc450f529a4.jpg?v=1762800242",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000630_e7578273a5ff.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "H311G25B",
@@ -110,7 +110,7 @@
     {
       "title": "MicroFit® MFHLP33140 UltraGen III Filter | Replaces the Argo-Hytos W3072308",
       "sku": "w3072308-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_44fe8696-dae6-4baa-854c-ce8bc23d18d1.png?v=1762800242",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000631_97a87be447d2.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP33140",

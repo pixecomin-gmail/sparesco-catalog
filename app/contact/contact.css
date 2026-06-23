@@ -254,3 +254,37 @@
     font-size: 34px;
   }
 }
+
+.contact-phone-field {
+  grid-column: 1 / -1;
+}
+
+.contact-phone-input {
+  width: 100%;
+  border: 1px solid var(--border);
+  height: 44px;
+  padding: 0 14px;
+}
+
+.contact-phone-input .PhoneInputInput {
+  border: none;
+  height: 42px;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-phone-input .PhoneInputCountry {
+  margin-right: 12px;
+}
+
+.form-success-message {
+  color: #0f7a3b;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.form-error-message {
+  color: #b42318;
+  font-weight: 700;
+  margin-top: 16px;
+}

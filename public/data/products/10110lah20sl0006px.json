@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204150B_93777323-140e-4bc9-92bf-04ddcc2efdb9.jpg?v=1741362659",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1b9d49a9-cddb-4f33-b1bc-58c837c9e606_71429656-afbf-4f81-aedc-826edcdd03a4.jpg?v=1741362659",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d8b0ff29-1e5a-4aa7-b601-6d94b8096e38.png?v=1760632580",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204150B_cee57e38-4a18-45a0-8e27-b87f8ebb8363.jpg?v=1741361841",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1b9d49a9-cddb-4f33-b1bc-58c837c9e606_7448d1d2-bbe5-47b7-b460-ca26193a4abe.jpg?v=1741361841",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b6aa1451-22a5-4004-8973-eb7586d83553.png?v=1760631230"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019271_da791be8e35c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019272_cee34e4d0149.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019273_353336ef4a52.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021452_779afab0bbc6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021453_7a902349a954.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021454_8ad4460fe3cc.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR110G20B3/AB1 Return Filter | Replaces the Eppensteiner 10110LAH20SL0006PX",
       "sku": "10110lah20sl0006px-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204150B_93777323-140e-4bc9-92bf-04ddcc2efdb9.jpg?v=1741362659",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019271_da791be8e35c.jpg",
       "vendor": "",
       "price": 4900,
       "partNumber": "RHR110G20B3/AB1",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 74066 Return Filter | Replaces the Eppensteiner 10110LAH20SL0006PX",
       "sku": "10110lah20sl0006px-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1b9d49a9-cddb-4f33-b1bc-58c837c9e606_71429656-afbf-4f81-aedc-826edcdd03a4.jpg?v=1741362659",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019272_cee34e4d0149.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "SH 74066",
@@ -88,7 +88,7 @@
     {
       "title": "MicroFit® MFHR50929 UltraGen III Return Filter | Replaces the Eppensteiner 10110LAH20SL0006PX",
       "sku": "10110lah20sl0006px-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d8b0ff29-1e5a-4aa7-b601-6d94b8096e38.png?v=1760632580",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019273_353336ef4a52.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50929",

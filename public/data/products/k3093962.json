@@ -9,22 +9,22 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96883773-5c1e-4127-b129-df61a88a9098_633452e5-2d43-4683-8ff9-8b05bc77f8b7.jpg?v=1748454548",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p767969.700.700_02c95866-d3c5-44b4-8b9c-537d656116e9.jpg?v=1748454548",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_9005_image1_72606ff8-a9ff-49d8-bcec-5c6d8e9ce714.jpg?v=1754908762",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_339e883d-d051-401f-86b8-7a22e39bdda0.png?v=1748454548",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35483_355e02b6-13ab-434e-b90d-f7e4ed378a93.jpg?v=1755780249",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96883773-5c1e-4127-b129-df61a88a9098_8a80d51e-04ab-40fc-a9aa-00816255de97.jpg?v=1748454558",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p767969.700.700_e7297a97-e033-45a5-8abb-83a0b5cb2c11.jpg?v=1748454558",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_9005_image1_4055c514-79ed-4bd4-9f99-57de05a4054e.jpg?v=1754908581",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_a9d62d1b-894b-4390-abb9-0fdfb3912d73.png?v=1748454558",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35483_6a68bf8d-4df1-4700-a41f-6ded18451dbb.jpg?v=1755779797"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000424_7c7e859dbce2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000425_0ba921947194.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000426_4b9ab09325a7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000427_2fd036a36660.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000428_78b1ff433cfa.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000844_cbbafd36641b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000845_92e40b9ea793.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000846_06b98310f3f8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000847_b6b3fc6c2edf.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000848_5809873ac042.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52229 Special Filter | Replaces the Argo-Hytos K3093962",
       "sku": "k3093962-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96883773-5c1e-4127-b129-df61a88a9098_633452e5-2d43-4683-8ff9-8b05bc77f8b7.jpg?v=1748454548",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000424_7c7e859dbce2.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "SH 52229",
@@ -55,7 +55,7 @@
     {
       "title": "Donaldson P767969 Hydraulic Filter, Cartridge | Replaces the Argo-Hytos K3093962",
       "sku": "k3093962-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p767969.700.700_02c95866-d3c5-44b4-8b9c-537d656116e9.jpg?v=1748454548",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000425_0ba921947194.jpg",
       "vendor": "",
       "price": 8300,
       "partNumber": "P767969",
@@ -85,7 +85,7 @@
     {
       "title": "Mann Filter H 9005 Hydraulics | Replaces the Argo-Hytos K3093962",
       "sku": "k3093962-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_9005_image1_72606ff8-a9ff-49d8-bcec-5c6d8e9ce714.jpg?v=1754908762",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000426_4b9ab09325a7.jpg",
       "vendor": "",
       "price": 10100,
       "partNumber": "H 9005",
@@ -114,7 +114,7 @@
     {
       "title": "Filtrec WP734 Special Filter | Replaces the Argo-Hytos K3093962",
       "sku": "k3093962-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_339e883d-d051-401f-86b8-7a22e39bdda0.png?v=1748454548",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000427_2fd036a36660.png",
       "vendor": "",
       "price": 0,
       "partNumber": "WP734",
@@ -144,7 +144,7 @@
     {
       "title": "Fleetguard HF35483 Hydraulic Filters | Replaces the Argo-Hytos K3093962",
       "sku": "k3093962-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35483_355e02b6-13ab-434e-b90d-f7e4ed378a93.jpg?v=1755780249",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000428_78b1ff433cfa.jpg",
       "vendor": "",
       "price": 9200,
       "partNumber": "HF35483",

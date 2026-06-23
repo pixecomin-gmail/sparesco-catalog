@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_82f08239-8988-44e6-944b-2389cf5341cc.jpg?v=1761218175",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8673020a-e0e0-46e4-a9dd-2ca8848c96dc.png?v=1761218175",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-92cbe8f4-dad1-4401-b248-fa0350385949_ae8db428-e662-4dc6-b0ff-bb7f14d89570.jpg?v=1761654975",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0330_d_010_sn_n165346_i2372408_0c5fbfab-a794-4ca5-8901-2166e8e2583b.jpg?v=1761218175",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_f5e55696-0134-4159-a40b-03af855b1db2.jpg?v=1761218177",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_280a9557-99eb-472f-940f-91ead795972d.png?v=1761218177",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-92cbe8f4-dad1-4401-b248-fa0350385949_84bd72b8-641d-43cd-8c9a-8aacd4f0c570.jpg?v=1761654976",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0330_d_010_sn_n165346_i2372408_174367f1-078a-4391-889e-7405710bac7e.jpg?v=1761218177"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030260_429796cfcbe7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030261_d5b9b1c6ea8f.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030262_635a2f2694b4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030263_7428b8977ff6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030268_a13862034466.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030269_a42282b6ed87.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030270_357e2625cd51.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030271_a6b20c53a263.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD330G10B Pressure Filter | Replaces the Eppensteiner 9330H10SLA000P",
       "sku": "9330h10sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_82f08239-8988-44e6-944b-2389cf5341cc.jpg?v=1761218175",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030260_429796cfcbe7.jpg",
       "vendor": "",
       "price": 8800,
       "partNumber": "DHD330G10B",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® MFHLP32118 UltraGen III Filter | Replaces the Eppensteiner 9330H10SLA000P",
       "sku": "9330h10sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8673020a-e0e0-46e4-a9dd-2ca8848c96dc.png?v=1761218175",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030261_d5b9b1c6ea8f.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP32118",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 75044 Pressure Filter | Replaces the Eppensteiner 9330H10SLA000P",
       "sku": "9330h10sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-92cbe8f4-dad1-4401-b248-fa0350385949_ae8db428-e662-4dc6-b0ff-bb7f14d89570.jpg?v=1761654975",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030262_635a2f2694b4.jpg",
       "vendor": "",
       "price": 11500,
       "partNumber": "SH 75044",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0330 D 010 SN SUSTAINMICRON® Pressure Filter | Replaces the Eppensteiner 9330H10SLA000P",
       "sku": "9330h10sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0330_d_010_sn_n165346_i2372408_0c5fbfab-a794-4ca5-8901-2166e8e2583b.jpg?v=1761218175",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030263_7428b8977ff6.jpg",
       "vendor": "",
       "price": 28000,
       "partNumber": "0330 D 010 SN",

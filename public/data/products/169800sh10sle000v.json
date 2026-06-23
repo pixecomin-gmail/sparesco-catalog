@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200318B-NB_d7eedce2-80eb-4642-8cc1-2d44096e66cf.jpg?v=1748450497",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-199180d3-3b3a-43d3-9b52-17358eca0abd_5da3661c-3b4d-4633-926a-5dc573103879.jpg?v=1748450497",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_17e220e6-8c8b-456f-9498-57a7668b1414.jpg?v=1748450497",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200318B-NB_59bb18dd-02b7-4342-aaa7-4fd53cde90c3.jpg?v=1748450501",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-199180d3-3b3a-43d3-9b52-17358eca0abd_63697c26-c767-423c-85c8-b3d6e9a1b2e7.jpg?v=1748450501",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_fca4ea4d-96e5-4a7f-bca0-0db2e72a116b.jpg?v=1748450501"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027650_83ccc1804ed6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027651_929c0173cac7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027652_8ebbe20e0098.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027656_50f90e239550.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027657_ae6c1bba701f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027658_6979cc89101e.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30103 Pressure Filter | Replaces the Eppensteiner 16.9800SH10SLE000V",
       "sku": "16-9800sh10sle000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200318B-NB_59bb18dd-02b7-4342-aaa7-4fd53cde90c3.jpg?v=1748450501",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027656_50f90e239550.jpg",
       "vendor": "MicroFit",
       "price": 4400,
       "partNumber": "MFHLP30103",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 57156 V Pressure Filter | Replaces the Eppensteiner 169800SH10SLE000V",
       "sku": "169800sh10sle000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-199180d3-3b3a-43d3-9b52-17358eca0abd_5da3661c-3b4d-4633-926a-5dc573103879.jpg?v=1748450497",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027651_929c0173cac7.jpg",
       "vendor": "HiFi Filter",
       "price": 5200,
       "partNumber": "SH 57156 V",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec D121G10AV Pressure Filter | Replaces the Eppensteiner 169800SH10SLE000V",
       "sku": "169800sh10sle000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D120A_17e220e6-8c8b-456f-9498-57a7668b1414.jpg?v=1748450497",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027652_8ebbe20e0098.jpg",
       "vendor": "Filtrec",
       "price": 6000,
       "partNumber": "D121G10AV",

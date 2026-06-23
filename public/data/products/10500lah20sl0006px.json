@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c74f918c-ec53-4985-b571-f1960a764432_4c1230a3-597b-4889-8e55-cef2cc2b2f28.jpg?v=1740476221",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204204B_3faec16d-0519-4f2d-991b-052c38f760ae.jpg?v=1740476221",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_10601_image1_77549067-10d3-439c-9db4-dbb218118286.jpg?v=1754908641",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8fbe0926-9a47-4fba-b3e2-4e493f650d72.png?v=1760632593",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c74f918c-ec53-4985-b571-f1960a764432_6e722de3-8732-42e5-9dfb-e145f974c8ca.jpg?v=1740476222",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204204B_726a074f-2f74-4cf3-9c13-d920b52b0383.jpg?v=1740476222",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_10601_image1_42a90785-d420-445d-8d20-ea0d5a92661c.jpg?v=1754908486",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_6ed52116-6b46-4037-a6a2-c0b7024a9139.png?v=1760631804"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019166_83029279bc00.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019167_637ab205e576.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019168_2ec82d6e07f4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019169_eeecd48e52bf.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020532_93a23130ac67.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020533_3591264e2d77.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020534_4c9752cdada1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020535_b97cc3dcb347.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 74030 Return Filter | Replaces the Eppensteiner 10500LAH20SL0006PX",
       "sku": "10500lah20sl0006px-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c74f918c-ec53-4985-b571-f1960a764432_4c1230a3-597b-4889-8e55-cef2cc2b2f28.jpg?v=1740476221",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019166_83029279bc00.jpg",
       "vendor": "",
       "price": 9400,
       "partNumber": "SH 74030",
@@ -57,7 +57,7 @@
     {
       "title": "Filtrec RHR500G20B3/AB1 Return Filter | Replaces the Eppensteiner 10500LAH20SL0006PX",
       "sku": "10500lah20sl0006px-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204204B_3faec16d-0519-4f2d-991b-052c38f760ae.jpg?v=1740476221",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019167_637ab205e576.jpg",
       "vendor": "",
       "price": 11400,
       "partNumber": "RHR500G20B3/AB1",
@@ -90,7 +90,7 @@
     {
       "title": "Mann Filter HD 1060/1 Hydraulics | Replaces the Eppensteiner 10500LAH20SL0006PX",
       "sku": "10500lah20sl0006px-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_10601_image1_77549067-10d3-439c-9db4-dbb218118286.jpg?v=1754908641",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019168_2ec82d6e07f4.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "HD 1060/1",
@@ -122,7 +122,7 @@
     {
       "title": "MicroFit® MFHR52650 UltraGen III Filter | Replaces the Eppensteiner 10500LAH20SL0006PX",
       "sku": "10500lah20sl0006px-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8fbe0926-9a47-4fba-b3e2-4e493f650d72.png?v=1760632593",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019169_eeecd48e52bf.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR52650",

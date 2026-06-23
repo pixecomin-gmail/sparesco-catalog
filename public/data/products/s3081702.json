@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97ca0d97-d05d-4a38-afab-877a580d9cb5_641550a1-d1bb-4bfb-823e-d500ae61cd96.jpg?v=1755097372",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200227B-NB_1e4dd58c-c6ff-4f1a-b0ff-44a782530b09.jpg?v=1755097372",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D151A_b5422216-c56f-428c-bb50-5e6c19f6b0f2.jpg?v=1755097372"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000459_babe347a64ff.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000460_ac6032cc2e1f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000461_978e36a1e201.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52139 Pressure Filter | Replaces the Argo-Hytos S3081702",
       "sku": "s3081702-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97ca0d97-d05d-4a38-afab-877a580d9cb5_641550a1-d1bb-4bfb-823e-d500ae61cd96.jpg?v=1755097372",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000459_babe347a64ff.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "SH 52139",
@@ -47,7 +47,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP32323 Pressure Filter | Replaces the Argo-Hytos S3081702",
       "sku": "s3081702-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200227B-NB_1e4dd58c-c6ff-4f1a-b0ff-44a782530b09.jpg?v=1755097372",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000460_ac6032cc2e1f.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "MFHLP32323",
@@ -77,7 +77,7 @@
     {
       "title": "Filtrec D840T200A Pressure Filter | Replaces the Argo-Hytos S3081702",
       "sku": "s3081702-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D151A_b5422216-c56f-428c-bb50-5e6c19f6b0f2.jpg?v=1755097372",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000461_978e36a1e201.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "D840T200A",

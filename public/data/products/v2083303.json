@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200510B_f844baf1-06e7-44c9-a6ff-ca7c4d28d39b.jpg?v=1764692780",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_fdecf6a8-ad18-424b-9bcc-2442e52f134a.jpg?v=1764763432",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R640G_bd523723-3483-4486-9041-af03007cf5b3.jpg?v=1764692780"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000267_a70796562273.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000268_faf675973379.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000269_61753d452532.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50149 Return Filter | Replaces the Argo-Hytos V2083303",
       "sku": "v2083303-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200510B_f844baf1-06e7-44c9-a6ff-ca7c4d28d39b.jpg?v=1764692780",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000267_a70796562273.jpg",
       "vendor": "",
       "price": 11900,
       "partNumber": "MFHR50149",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 52333 Return Filter | Replaces the Argo-Hytos V2083303",
       "sku": "v2083303-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_fdecf6a8-ad18-424b-9bcc-2442e52f134a.jpg?v=1764763432",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000268_faf675973379.jpg",
       "vendor": "",
       "price": 11600,
       "partNumber": "SH 52333",
@@ -79,7 +79,7 @@
     {
       "title": "Filtrec R640G03 Return Filter | Replaces the Argo-Hytos V2083303",
       "sku": "v2083303-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R640G_bd523723-3483-4486-9041-af03007cf5b3.jpg?v=1764692780",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000269_61753d452532.jpg",
       "vendor": "",
       "price": 12900,
       "partNumber": "R640G03",

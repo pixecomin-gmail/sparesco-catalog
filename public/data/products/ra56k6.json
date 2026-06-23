@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_fcc41064-eb65-43a3-affe-2a1065d0e9e9.jpg?v=1741363641",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_cbae2e7a-fa61-4a78-84bc-3da86ac7ca5d.jpg?v=1764763181",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_39c03677-597b-4dc0-8f39-5c0602b43602.png?v=1760634522"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008378_d39da1dd307a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008379_97d3e243b475.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008380_01a7aea271f1.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR156E05B Return Filter | Replaces the Eppensteiner RA56K6",
       "sku": "ra56k6-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_fcc41064-eb65-43a3-affe-2a1065d0e9e9.jpg?v=1741363641",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008378_d39da1dd307a.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "RVR156E05B",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 67027 Return Filter | Replaces the Eppensteiner RA56K6",
       "sku": "ra56k6-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_cbae2e7a-fa61-4a78-84bc-3da86ac7ca5d.jpg?v=1764763181",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008379_97d3e243b475.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "SH 67027",
@@ -79,7 +79,7 @@
     {
       "title": "MicroFit® MFHR54524 UltraGen III Return Filter | Replaces the Eppensteiner RA56K6",
       "sku": "ra56k6-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_39c03677-597b-4dc0-8f39-5c0602b43602.png?v=1760634522",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008380_01a7aea271f1.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR54524",

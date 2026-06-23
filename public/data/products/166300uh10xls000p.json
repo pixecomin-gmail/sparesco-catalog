@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202367B_d60ee8ef-f17d-4d15-9b64-a7eda72d5edb.jpg?v=1741363231",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73ff1558-a0a1-45a5-8ac4-8afc8065dac5_1af978ed-7b5c-4532-b0af-9d7fa065ddb7.jpg?v=1741363231",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4bf541ed-85c8-4c6e-8ee9-b34f54565bdb.png?v=1760633836",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202367B_e4313386-feda-4fc9-86d4-d468df808a48.jpg?v=1741363226",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73ff1558-a0a1-45a5-8ac4-8afc8065dac5_5f7664b1-8849-48b6-afa9-962cf01abfe5.jpg?v=1741363226",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d14b59de-0068-4f8a-a4e1-bad359830d24.png?v=1760633835"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010277_38273966b40f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010278_c587190a1e66.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010279_5969da2fed4b.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010283_4e1d8a6a6b5d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010284_d7f0cd2ceac7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010285_a57816e4a2e8.png"
   ],
   "variants": [
     {
       "title": "Filtrec R412G10 Return Filter | Replaces the Eppensteiner 166300UH10XLS000P",
       "sku": "166300uh10xls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF202367B_d60ee8ef-f17d-4d15-9b64-a7eda72d5edb.jpg?v=1741363231",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010277_38273966b40f.jpg",
       "vendor": "",
       "price": 22900,
       "partNumber": "R412G10",
@@ -49,7 +49,7 @@
     {
       "title": "HiFi Filter SH 87271 Return Filter | Replaces the Eppensteiner 166300UH10XLS000P",
       "sku": "166300uh10xls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-73ff1558-a0a1-45a5-8ac4-8afc8065dac5_1af978ed-7b5c-4532-b0af-9d7fa065ddb7.jpg?v=1741363231",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010278_c587190a1e66.jpg",
       "vendor": "",
       "price": 28500,
       "partNumber": "SH 87271",
@@ -78,7 +78,7 @@
     {
       "title": "MicroFit® MFHR51210 UltraGen III Return Filter | Replaces the Eppensteiner 166300UH10XLS000P",
       "sku": "166300uh10xls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4bf541ed-85c8-4c6e-8ee9-b34f54565bdb.png?v=1760633836",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010279_5969da2fed4b.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR51210",

@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_6143_image1_9cd27b5f-63d5-499d-9f90-b233a267112e.jpg?v=1755093507",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_275cac09-6fbe-4bbd-bb36-823aaf1660a1.jpg?v=1755093507",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203618B_fb68e226-43f7-440b-8f5a-09a717e1cd40.jpg?v=1755093507",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28796_d483dcd4-7350-423c-8115-2da72f1134bd.jpg?v=1755779469",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_6143_image1_8a5c2684-b8b5-4880-9bf4-71972fc71c82.jpg?v=1755092212",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_37f4f952-14d3-4e98-90a8-9c4ed3afe75d.jpg?v=1755092212",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203618B_89eb03ab-b590-457a-99e1-6aca79ea087f.jpg?v=1755092212",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28796_7dc5ec0a-a717-49f5-85f6-c7f183383375.jpg?v=1755779100"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000037_1c6a2352ca51.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000038_33a340538c0c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000039_5045891d6da1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000040_6f88c562767b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001260_6f9324472f1f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001261_1afa98fb2818.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001262_6c8699d416a4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001263_a6fd92132cd2.jpg"
   ],
   "variants": [
     {
       "title": "Mann Filter H 614/3 Hydraulics | Replaces the Argo-Hytos P3062051",
       "sku": "p3062051-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_6143_image1_8a5c2684-b8b5-4880-9bf4-71972fc71c82.jpg?v=1755092212",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001260_6f9324472f1f.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "H 614/3",
@@ -54,7 +54,7 @@
     {
       "title": "Argo Hytos P3.0620-51 Return Filter",
       "sku": "p3062051-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_37f4f952-14d3-4e98-90a8-9c4ed3afe75d.jpg?v=1755092212",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001261_1afa98fb2818.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "P3.0620-51",
@@ -87,7 +87,7 @@
     {
       "title": "Filtrec R623C10R Return Filter | Replaces the Argo-Hytos P3062051",
       "sku": "p3062051-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203618B_89eb03ab-b590-457a-99e1-6aca79ea087f.jpg?v=1755092212",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001262_6c8699d416a4.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "R623C10R",
@@ -120,7 +120,7 @@
     {
       "title": "Fleetguard HF28796 Hydraulic Filters | Replaces the Argo-Hytos P3062051",
       "sku": "p3062051-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28796_7dc5ec0a-a717-49f5-85f6-c7f183383375.jpg?v=1755779100",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001263_a6fd92132cd2.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "HF28796",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201587B_31da3ccf-4cb0-4649-a23c-42a3a41caa0f.jpg?v=1764691079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD0015E_27664461-6e45-4b71-b148-481d049c30d2.jpg?v=1764691079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-72b7d17b-afe4-4dc8-84be-2d08d119959d_21ccf7ea-1471-4644-9406-3a396068d576.jpg?v=1764691079",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201587B_f9261cc8-3476-4560-b5c1-fae9036ccf5d.jpg?v=1764691086",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD0015E_4cf43027-f6bf-4e12-976c-ea480e1ac949.jpg?v=1764691086",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-72b7d17b-afe4-4dc8-84be-2d08d119959d_5e0034f2-59a9-4ed2-93c2-ef2374273ac6.jpg?v=1764691086"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025387_e5c05d746401.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025388_4d1964e10291.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025389_b28fb635089f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025393_66cdf5b826b0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025394_98e465ddb77b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025395_2770689cda8b.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit MFHLP30444 | Replaces the Eppensteiner 182115H3XLE000P",
       "sku": "182115h3xle000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201587B_31da3ccf-4cb0-4649-a23c-42a3a41caa0f.jpg?v=1764691079",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025387_e5c05d746401.jpg",
       "vendor": "MicroFit",
       "price": 6900,
       "partNumber": "MFHLP30444",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DMD0015E03B Pressure Filter | Replaces the Eppensteiner 182115H3XLE000P",
       "sku": "182115h3xle000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD0015E_27664461-6e45-4b71-b148-481d049c30d2.jpg?v=1764691079",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025388_4d1964e10291.jpg",
       "vendor": "Filtrec",
       "price": 7500,
       "partNumber": "DMD0015E03B",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 84003 Pressure Filter | Replaces the Eppensteiner 182115H3XLE000P",
       "sku": "182115h3xle000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-72b7d17b-afe4-4dc8-84be-2d08d119959d_21ccf7ea-1471-4644-9406-3a396068d576.jpg?v=1764691079",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025389_b28fb635089f.jpg",
       "vendor": "HiFi Filter",
       "price": 9200,
       "partNumber": "SH 84003",

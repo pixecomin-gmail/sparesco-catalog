@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p551021.700.700.jpg?v=1714670178",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WDK_11_1022_image1_f791f386-366e-44c5-97e1-c5be87b322b4.jpg?v=1754909187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF5633_97bd7130-18b0-4bba-94bd-5dba4db3706f.jpg?v=1755780646"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000516_a5afe9b12d7d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000517_6b07b88a659f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000518_c12f21bf5cb3.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson P551021 Fuel Spin-On",
       "sku": "p551021-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p551021.700.700.jpg?v=1714670178",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000516_a5afe9b12d7d.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "P551021",
@@ -41,7 +41,7 @@
     {
       "title": "Mann Filter WDK 11 102/2 Fuel Filter | Replaces the Donaldson P551021",
       "sku": "p551021-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WDK_11_1022_image1_f791f386-366e-44c5-97e1-c5be87b322b4.jpg?v=1754909187",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000517_6b07b88a659f.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "WDK 11 102/2",
@@ -68,7 +68,7 @@
     {
       "title": "Fleetguard FF5633 Fuel Filter, Spin-On | Replaces the Donaldson P551021",
       "sku": "p551021-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF5633_97bd7130-18b0-4bba-94bd-5dba4db3706f.jpg?v=1755780646",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000518_c12f21bf5cb3.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "FF5633",

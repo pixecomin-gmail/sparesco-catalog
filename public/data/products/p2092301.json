@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-40eacd81-938d-49a0-becf-05e88ad1c3da_672d4bd4-186e-48de-84ac-7c098c091669.jpg?v=1755090920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p173489.700.700_595e0ddb-a07d-4b06-b80c-5cf110317694.jpg?v=1755090920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200445B_81c14bbe-8b3e-4856-9c2d-5fd1f55e3848.jpg?v=1755090920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_7314b316-51fc-40bc-bd11-981d02d479f4.jpg?v=1755090920",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28794_c2846f47-c660-41af-9b5b-d26b74007eed.jpg?v=1755778465"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001403_d97dbe16c02b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001404_5f84bb42fae6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001405_d03d769c0ddf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001406_ea2fcb1b3b15.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001407_201c7379433e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52301 Suction Filter | Replaces the Argo-Hytos P2092301",
       "sku": "p2092301-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-40eacd81-938d-49a0-becf-05e88ad1c3da_672d4bd4-186e-48de-84ac-7c098c091669.jpg?v=1755090920",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001403_d97dbe16c02b.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "SH 52301",
@@ -48,7 +48,7 @@
     {
       "title": "Donaldson P173489 Lube Filter, Cartridge | Replaces the Argo-Hytos P2092301",
       "sku": "p2092301-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p173489.700.700_595e0ddb-a07d-4b06-b80c-5cf110317694.jpg?v=1755090920",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001404_5f84bb42fae6.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "P173489",
@@ -76,7 +76,7 @@
     {
       "title": "Filtrec S531C10 Suction Filter | Replaces the Argo-Hytos P2092301",
       "sku": "p2092301-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200445B_81c14bbe-8b3e-4856-9c2d-5fd1f55e3848.jpg?v=1755090920",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001405_d03d769c0ddf.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "S531C10",
@@ -104,7 +104,7 @@
     {
       "title": "Argo Hytos P3.1130-01 | Replaces the Argo-Hytos P2092301",
       "sku": "p2092301-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_7314b316-51fc-40bc-bd11-981d02d479f4.jpg?v=1755090920",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001406_ea2fcb1b3b15.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "P3.1130-01",
@@ -132,7 +132,7 @@
     {
       "title": "Fleetguard HF28794 Hydraulic Filters | Replaces the Argo-Hytos P2092301",
       "sku": "p2092301-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28794_c2846f47-c660-41af-9b5b-d26b74007eed.jpg?v=1755778465",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001407_201c7379433e.jpg",
       "vendor": "",
       "price": 2600,
       "partNumber": "HF28794",

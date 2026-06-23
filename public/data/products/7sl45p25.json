@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_94051_image1_33340441-a57d-41c7-81b6-36bdead2b97a.jpg?v=1755090352",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959194.700.700_e3c25862-7b07-4560-896a-07ad72995de7.jpg?v=1755090352",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_766eaf9d-694d-42a2-b0b3-7851fda094f8.png?v=1755090352",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0080_mg_010_p_n184137_i2373801_bc0acf61-30ca-4195-b06f-6c54fb9a4598.jpg?v=1760541094",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_561e5a41-b9d8-43c9-92f6-a21f87aaef0b.png?v=1760628984"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033871_26988a133edd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033872_8cfaa997ba1d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033873_c37a107f57db.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033874_c631af0dd7f5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033875_29ecaf64880d.png"
   ],
   "variants": [
     {
       "title": "Mann Filter W 940/51 Hydraulics | Replaces the Eppensteiner 7SL45P25",
       "sku": "7sl45p25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_94051_image1_33340441-a57d-41c7-81b6-36bdead2b97a.jpg?v=1755090352",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033871_26988a133edd.jpg",
       "vendor": "",
       "price": 2200,
       "partNumber": "W 940/51",
@@ -52,7 +52,7 @@
     {
       "title": "Donaldson P959194 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 7SL45P25",
       "sku": "7sl45p25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p959194.700.700_e3c25862-7b07-4560-896a-07ad72995de7.jpg?v=1755090352",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033872_8cfaa997ba1d.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "P959194",
@@ -83,7 +83,7 @@
     {
       "title": "Filtrec WG515 Special Filter | Replaces the Eppensteiner 7SL45P25",
       "sku": "7sl45p25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_766eaf9d-694d-42a2-b0b3-7851fda094f8.png?v=1755090352",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033873_c37a107f57db.png",
       "vendor": "",
       "price": 0,
       "partNumber": "WG515",
@@ -114,7 +114,7 @@
     {
       "title": "Hydac 0080 MG 010 P Spin-On Filter | Replaces the Eppensteiner 7SL45P25",
       "sku": "7sl45p25-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0080_mg_010_p_n184137_i2373801_bc0acf61-30ca-4195-b06f-6c54fb9a4598.jpg?v=1760541094",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033874_c631af0dd7f5.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "0080 MG 010 P",
@@ -145,7 +145,7 @@
     {
       "title": "MicroFit® MFHSP80011 UltraGen III Special Filter | Replaces the Eppensteiner 7SL45P25",
       "sku": "7sl45p25-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_561e5a41-b9d8-43c9-92f6-a21f87aaef0b.png?v=1760628984",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033875_29ecaf64880d.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80011",

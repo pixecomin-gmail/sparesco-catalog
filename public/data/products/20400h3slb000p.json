@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p571380.700.700_b228d7fb-c041-4d27-8753-5cdd373223f4.jpg?v=1762279389",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD250B_eb6a0472-9c4d-408a-9d4e-3171f83c7566.jpg?v=1762279389",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3cb6001d-39b3-43d4-9267-35e08b435f61_6bad153e-6364-42aa-bd9c-9b3fa54ffaa6.jpg?v=1762279389",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_965ce42d-4918-4e64-8e1c-ee08a2dc3be8.png?v=1762279389",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p571380.700.700_d1448f4b-d018-4253-b69f-2fe2ddd142c4.jpg?v=1762279391",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD250B_e9615df0-97b7-48c9-9c08-7dd1edd8e38e.jpg?v=1762279391",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3cb6001d-39b3-43d4-9267-35e08b435f61_a15b4703-69f7-49d9-9052-03e5d111b10f.jpg?v=1762279391",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c7d8b72b-0d3c-4992-bbf6-7d2207e9136e.png?v=1762279391"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009380_226893fc6f1d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009381_8b14c96bb8cf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009382_771e39d40a52.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009383_f5559c9e23e6.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009388_71f000cec443.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009389_951fb5fd4004.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009390_81494d0eea63.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009391_34f0f021995d.png"
   ],
   "variants": [
     {
       "title": "Donaldson P571377 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 20400H3SLB000P",
       "sku": "20400h3slb000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p571380.700.700_b228d7fb-c041-4d27-8753-5cdd373223f4.jpg?v=1762279389",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009380_226893fc6f1d.jpg",
       "vendor": "",
       "price": 22000,
       "partNumber": "P571377",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec XD400G03B DIN Pressure Filter | Replaces the Eppensteiner 20400H3SLB000P",
       "sku": "20400h3slb000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD250B_eb6a0472-9c4d-408a-9d4e-3171f83c7566.jpg?v=1762279389",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009381_8b14c96bb8cf.jpg",
       "vendor": "",
       "price": 48100,
       "partNumber": "XD400G03B",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 61145 DIN Pressure Filter | Replaces the Eppensteiner 20400H3SLB000P",
       "sku": "20400h3slb000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3cb6001d-39b3-43d4-9267-35e08b435f61_6bad153e-6364-42aa-bd9c-9b3fa54ffaa6.jpg?v=1762279389",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009382_771e39d40a52.jpg",
       "vendor": "",
       "price": 35000,
       "partNumber": "SH 61145",
@@ -115,7 +115,7 @@
     {
       "title": "MicroFit® MFHHP40479 UltraGen III DIN Pressure Filter | Replaces the Eppensteiner 20400H3SLB000P",
       "sku": "20400h3slb000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_965ce42d-4918-4e64-8e1c-ee08a2dc3be8.png?v=1762279389",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009383_f5559c9e23e6.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40479",

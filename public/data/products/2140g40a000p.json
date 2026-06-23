@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201005B_3d5c4ca7-5251-4a66-acc3-7920e02b16db.jpg?v=1741361100",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dfe70d05-6552-49c5-8747-6a8fd6c2a036_0e6ff62d-a49e-4bbe-81e3-3f3dce3e7f7b.jpg?v=1741361100",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3dcdb4ab-3444-4f34-8f4c-dab74834626f.png?v=1760629886",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201005B_9718891f-0fe1-4eca-aa47-e7cdac6f61c5.jpg?v=1741361092",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dfe70d05-6552-49c5-8747-6a8fd6c2a036_0ff7535d-b2f7-4797-b964-1d8002d1dc08.jpg?v=1741361092",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e2e65cf5-5702-4cc9-9aab-d0e2825d91ef.png?v=1760629882"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026504_02b81f08ca14.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026505_69bfbec870e3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026506_5bcfa8fc4927.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026516_24365ddaef3b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026517_a535ca026d51.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026518_b7bb0cdc210d.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD2140B40B Pressure Filter | Replaces the Eppensteiner 2140G40A000P",
       "sku": "2140g40a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201005B_3d5c4ca7-5251-4a66-acc3-7920e02b16db.jpg?v=1741361100",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026504_02b81f08ca14.jpg",
       "vendor": "Filtrec",
       "price": 11500,
       "partNumber": "DVD2140B40B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67003 Pressure Filter | Replaces the Eppensteiner 2140G40A000P",
       "sku": "2140g40a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-dfe70d05-6552-49c5-8747-6a8fd6c2a036_0e6ff62d-a49e-4bbe-81e3-3f3dce3e7f7b.jpg?v=1741361100",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026505_69bfbec870e3.jpg",
       "vendor": "HiFi Filter",
       "price": 14300,
       "partNumber": "SH 67003",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHLP30291 UltraGen III Pressure Filter | Replaces the Eppensteiner 2140G40A000P",
       "sku": "2140g40a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3dcdb4ab-3444-4f34-8f4c-dab74834626f.png?v=1760629886",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026506_5bcfa8fc4927.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP30291",

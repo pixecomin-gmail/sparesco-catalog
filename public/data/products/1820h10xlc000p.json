@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98f47a57-d320-4a4d-a3bd-9f5a6f36db98_b03945c1-c3a3-4188-aa4d-264f692ecca6.jpg?v=1740476819",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_e6be61a8-93e5-4550-8b5d-470be6092954.jpg?v=1740476819",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_f5096187-d65a-40cd-bbeb-f74bbc1153ec.png?v=1760633590",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98f47a57-d320-4a4d-a3bd-9f5a6f36db98_7e8caf50-7b7f-4698-873e-7bf8f30bf558.jpg?v=1740476816",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_5067daea-cff4-45a2-adc1-78452a07ceee.jpg?v=1740476816",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_713ee8a7-f1c5-4e9f-a0cc-3b64775a453a.png?v=1760633594"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011345_f4c7c2dce221.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011346_e12353aee2dd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011347_839cf51f4df7.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011351_a2968fae4021.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011352_448ae0ca10e1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011353_54a10917c0b0.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 64045 Pressure Filter | Replaces the Eppensteiner 1820H10XLC000P",
       "sku": "1820h10xlc000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-98f47a57-d320-4a4d-a3bd-9f5a6f36db98_b03945c1-c3a3-4188-aa4d-264f692ecca6.jpg?v=1740476819",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011345_f4c7c2dce221.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "SH 64045",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DMD125F10B Pressure Filter | Replaces the Eppensteiner 1820H10XLC000P",
       "sku": "1820h10xlc000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200625B_e6be61a8-93e5-4550-8b5d-470be6092954.jpg?v=1740476819",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011346_e12353aee2dd.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "DMD125F10B",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHHP40239 UltraGen III Filter | Replaces the Eppensteiner 1820H10XLC000P",
       "sku": "1820h10xlc000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_f5096187-d65a-40cd-bbeb-f74bbc1153ec.png?v=1760633590",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/011347_839cf51f4df7.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40239",

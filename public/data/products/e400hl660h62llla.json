@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_669e56a6-78a3-4811-8a02-1814c72f9a3a.jpg?v=1762277689",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5ab8e12-e476-4703-9a91-8d76e9439312_ef8b6ca1-382f-4e70-a4da-127f8bb239f5.jpg?v=1762277689",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1bc8f53c-ff66-4462-aa45-fad197d6af6c.png?v=1762277689"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028885_49110e7d0250.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028886_d64502812750.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028887_20064d5049ab.png"
   ],
   "variants": [
     {
       "title": "Filtrec DHD660H05B Pressure Filter | Replaces the Eppensteiner E400HL660H62LLLA",
       "sku": "e400hl660h62llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_669e56a6-78a3-4811-8a02-1814c72f9a3a.jpg?v=1762277689",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028885_49110e7d0250.jpg",
       "vendor": "Filtrec",
       "price": 40700,
       "partNumber": "DHD660H05B",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 75059 Pressure Filter | Replaces the Eppensteiner E400HL660H62LLLA",
       "sku": "e400hl660h62llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5ab8e12-e476-4703-9a91-8d76e9439312_ef8b6ca1-382f-4e70-a4da-127f8bb239f5.jpg?v=1762277689",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028886_d64502812750.jpg",
       "vendor": "HiFi Filter",
       "price": 42300,
       "partNumber": "SH 75059",
@@ -79,7 +79,7 @@
     {
       "title": "MicroFit® MFHHP40959 UltraGen III Filter | Replaces the Eppensteiner E400HL660H62LLLA",
       "sku": "e400hl660h62llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1bc8f53c-ff66-4462-aa45-fad197d6af6c.png?v=1762277689",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028887_20064d5049ab.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHHP40959",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4204_458350cf-604f-46f4-8e55-f16c0a966328.jpg?v=1762280843",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8268db92-660e-4f30-b29c-e12f01f43e06.jpg?v=1762280843",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p622091.700.700.jpg?v=1762280843"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000198_22ca67da400d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000199_666020e834e9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000200_44c390593fbc.jpg"
   ],
   "variants": [
     {
       "title": "Fleetguard AF4204 Air Filter, Primary | Replaces the Donaldson P622091",
       "sku": "p622091-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4204_458350cf-604f-46f4-8e55-f16c0a966328.jpg?v=1762280843",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000198_22ca67da400d.jpg",
       "vendor": "",
       "price": 16800,
       "partNumber": "AF4204",
@@ -39,7 +39,7 @@
     {
       "title": "Mann Filter C 38 010 Air Filter | Replaces the Donaldson P622091",
       "sku": "p622091-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_8268db92-660e-4f30-b29c-e12f01f43e06.jpg?v=1762280843",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000199_666020e834e9.jpg",
       "vendor": "",
       "price": 24800,
       "partNumber": "C 38 010",
@@ -62,7 +62,7 @@
     {
       "title": "Donaldson P622091 Air Primary Powercore",
       "sku": "p622091-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p622091.700.700.jpg?v=1762280843",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000200_44c390593fbc.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "P622091",

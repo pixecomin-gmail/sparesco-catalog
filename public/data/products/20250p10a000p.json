@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_e583e520-c42a-486a-a529-5eff6d57b2d4.png?v=1739376784",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203713B_d9c6b8e5-0b6f-49b4-b8f1-1f61f3ff2b86.jpg?v=1741363581",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49b8c5ed-f593-4497-84b4-dbe84bc7389c_4494fcdd-534e-45b3-a29a-3a3d4013f977.jpg?v=1741363581",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203713B_2e7415ba-5943-45a9-a589-f0151377cdeb.jpg?v=1741363581",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49b8c5ed-f593-4497-84b4-dbe84bc7389c_82a03bcb-3c09-4006-ba9d-461eac9c4a74.jpg?v=1741363581"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000462_18a006f46888.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008677_03467c7b0886.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008678_fd785030712c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008679_3d67f8546390.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008680_0112b40bf737.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec WP796 Special Filter | Replaces the Eppensteiner 20.250P10A000P",
       "sku": "20-250p10a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_e583e520-c42a-486a-a529-5eff6d57b2d4.png?v=1739376784",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000462_18a006f46888.png",
       "vendor": "",
       "price": 11000,
       "partNumber": "WP796",
@@ -49,7 +49,7 @@
     {
       "title": "Filtrec XD250C10A DIN Pressure Filter | Replaces the Eppensteiner 20250P10A000P",
       "sku": "20250p10a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203713B_d9c6b8e5-0b6f-49b4-b8f1-1f61f3ff2b86.jpg?v=1741363581",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008677_03467c7b0886.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "XD250C10A",
@@ -79,7 +79,7 @@
     {
       "title": "HiFi Filter SH 65590 DIN Pressure Filter | Replaces the Eppensteiner 20250P10A000P",
       "sku": "20250p10a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-49b8c5ed-f593-4497-84b4-dbe84bc7389c_4494fcdd-534e-45b3-a29a-3a3d4013f977.jpg?v=1741363581",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008678_fd785030712c.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "SH 65590",

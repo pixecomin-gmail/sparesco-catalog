@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_27c0a172-9e6f-461a-9c3b-1b0dd5a776e6.jpg?v=1761217656",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_561a43a2-6c6f-4282-ab7d-40e0ada49ff1.png?v=1761217656",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96ca91d7-44e0-4c95-a582-db2dd4f0343b_ae5be93c-4da7-40b0-a7e0-01f53c8d438a.jpg?v=1761217656",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_020_on_n166574_i2372451_d53b3acc-6da5-4509-b4d0-2522d870c6d4.jpg?v=1761217656",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_27a1f503-ccd7-416b-a488-44d463d2e26e.jpg?v=1761217641",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1f77bb69-5b25-4eb4-915c-0f497c5665e4.png?v=1761217641",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96ca91d7-44e0-4c95-a582-db2dd4f0343b_e61400a0-6a77-4f3d-9f35-d30e9697d5d0.jpg?v=1761217641",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_020_on_n166574_i2372451_f52f5688-2084-4c9b-b2a1-f38ea46d76c2.jpg?v=1761217641"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000734_5c13b45f9523.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000735_bedf9565b2ba.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000736_27dc22c4ccf2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000737_31562405bc39.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001019_c195e631c0f2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001020_7173ed71ac67.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001021_eb760901ecbd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001022_61e4073ec3ef.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD60G20B Pressure Filter | Replaces the Argo-Hytos R3050908",
       "sku": "r3050908-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_27c0a172-9e6f-461a-9c3b-1b0dd5a776e6.jpg?v=1761217656",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000734_5c13b45f9523.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "DHD60G20B",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® MFHLP31751 UltraGen III Filter | Replaces the Argo-Hytos R3050908",
       "sku": "r3050908-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_561a43a2-6c6f-4282-ab7d-40e0ada49ff1.png?v=1761217656",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000735_bedf9565b2ba.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31751",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 75006 Pressure Filter | Replaces the Argo-Hytos R3050908",
       "sku": "r3050908-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-96ca91d7-44e0-4c95-a582-db2dd4f0343b_ae5be93c-4da7-40b0-a7e0-01f53c8d438a.jpg?v=1761217656",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000736_27dc22c4ccf2.jpg",
       "vendor": "",
       "price": 3100,
       "partNumber": "SH 75006",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0060 D 020 ON Optimicron® Pressure Filter | Replaces the Argo-Hytos R3050908",
       "sku": "r3050908-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_020_on_n166574_i2372451_d53b3acc-6da5-4509-b4d0-2522d870c6d4.jpg?v=1761217656",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000737_31562405bc39.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "0060 D 020 ON",

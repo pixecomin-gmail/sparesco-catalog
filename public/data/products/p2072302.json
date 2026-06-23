@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R6100C_a94cb1d4-961f-4a53-a50c-9459cbadb50c.jpg?v=1755097391",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p175111.700.700_1ed1c01e-8a55-44d8-8440-6c5cd3eb1ce6.jpg?v=1755097391",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35262_b0783781-04e3-4c5f-8f90-d382d988e386.jpg?v=1755780244"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000412_a52b22eee3f3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000413_fdc890a0f3a6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000414_aa7d52841373.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec R6100C25M Return Filter | Replaces the Argo-Hytos P2072302",
       "sku": "p2072302-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R6100C_a94cb1d4-961f-4a53-a50c-9459cbadb50c.jpg?v=1755097391",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000412_a52b22eee3f3.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "R6100C25M",
@@ -45,7 +45,7 @@
     {
       "title": "Donaldson P175111 Hydraulic Filter, Cartridge | Replaces the Argo-Hytos P2072302",
       "sku": "p2072302-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p175111.700.700_1ed1c01e-8a55-44d8-8440-6c5cd3eb1ce6.jpg?v=1755097391",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000413_fdc890a0f3a6.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "P175111",
@@ -73,7 +73,7 @@
     {
       "title": "Fleetguard HF35262 Hydraulic Filters | Replaces the Argo-Hytos P2072302",
       "sku": "p2072302-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35262_b0783781-04e3-4c5f-8f90-d382d988e386.jpg?v=1755780244",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000414_aa7d52841373.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "HF35262",

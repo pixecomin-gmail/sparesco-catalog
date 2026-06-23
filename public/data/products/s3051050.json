@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200522B_38668297-6c47-4b9d-a55c-ff43f4379209.jpg?v=1741363483",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a1f18272-519c-41cd-92c4-aeca27d12ea5_016839b5-073d-488e-b54d-f881ffbaa933.jpg?v=1741363483",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_45e6dd0a-fea1-46d6-a84a-d8ccf66490f1.png?v=1760634304"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000554_c7696fb0c7ef.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000555_852d452fe48f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000556_13d2cdf518d5.png"
   ],
   "variants": [
     {
       "title": "Filtrec R611T60 Return Filter | Replaces the Argo-Hytos S3051050",
       "sku": "s3051050-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200522B_38668297-6c47-4b9d-a55c-ff43f4379209.jpg?v=1741363483",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000554_c7696fb0c7ef.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "R611T60",
@@ -49,7 +49,7 @@
     {
       "title": "HiFi Filter SH 52134 Return Filter | Replaces the Argo-Hytos S3051050",
       "sku": "s3051050-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a1f18272-519c-41cd-92c4-aeca27d12ea5_016839b5-073d-488e-b54d-f881ffbaa933.jpg?v=1741363483",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000555_852d452fe48f.jpg",
       "vendor": "",
       "price": 13400,
       "partNumber": "SH 52134",
@@ -81,7 +81,7 @@
     {
       "title": "MicroFit® MFHR52977 UltraGen III Return Filter | Replaces the Argo-Hytos S3051050",
       "sku": "s3051050-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_45e6dd0a-fea1-46d6-a84a-d8ccf66490f1.png?v=1760634304",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000556_13d2cdf518d5.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR52977",

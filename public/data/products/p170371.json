@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WH_9803_image1_a16e6047-cc09-4805-b77e-b31ffdfdf127.jpg?v=1761217900",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Donaldson_Placeholder_7a5f4108-d799-40ab-b9e6-e2318a77a9b1.jpg?v=1761217900",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6553_51c11daf-9ad5-4387-bb98-73ed697febc4.jpg?v=1761217900"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000899_b7edbbd382ad.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000900_44cd1a0052a7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000901_e723473754a7.jpg"
   ],
   "variants": [
     {
       "title": "Mann Filter WH 980/3 Hydraulic Transmission Filter | Replaces the Donaldson P170371",
       "sku": "p170371-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WH_9803_image1_a16e6047-cc09-4805-b77e-b31ffdfdf127.jpg?v=1761217900",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000899_b7edbbd382ad.jpg",
       "vendor": "",
       "price": 5200,
       "partNumber": "WH 980/3",
@@ -45,7 +45,7 @@
     {
       "title": "Donaldson P170371 Hydraulic Spin-On",
       "sku": "p170371-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Donaldson_Placeholder_7a5f4108-d799-40ab-b9e6-e2318a77a9b1.jpg?v=1761217900",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000900_44cd1a0052a7.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "P170371",
@@ -71,7 +71,7 @@
     {
       "title": "Fleetguard HF6553 Hydraulic Filters | Replaces the Donaldson P170371",
       "sku": "p170371-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6553_51c11daf-9ad5-4387-bb98-73ed697febc4.jpg?v=1761217900",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000901_e723473754a7.jpg",
       "vendor": "",
       "price": 4800,
       "partNumber": "HF6553",

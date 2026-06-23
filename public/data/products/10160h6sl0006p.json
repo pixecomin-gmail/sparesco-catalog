@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_5ba9c99c-b286-4c65-8807-7c144cc73f1c.jpg?v=1761217940",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ca763d7a-f494-4390-a0ea-7fb6e11e5f76.png?v=1761217940",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c1f5a876-da12-4bd1-b6b9-99c0288ba076_bd9b4f0d-4fc4-467e-964f-b23ff8b1cad6.jpg?v=1761217940",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_005_on_n167173_i2394892_c8e86144-3501-4a85-ac23-17d27cdf55b1.jpg?v=1761217940",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_dd6d837a-82ee-47d5-a37e-90dc7503ea29.jpg?v=1761217945",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_0be026fe-30e5-48b3-95c4-b764bc596051.png?v=1761217945",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c1f5a876-da12-4bd1-b6b9-99c0288ba076_7208d676-a30f-4cda-86eb-06f89a6d780d.jpg?v=1761217945",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_005_on_n167173_i2394892_042373d3-301d-48d1-b9d1-27bac34ee467.jpg?v=1761217945"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024738_1ee005400e53.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024739_7919c25db893.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024740_c5b794feaa3a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024741_3584f3526568.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024746_1ed32f69a71f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024747_83e2b9550793.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024748_e198846de1bd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024749_83950488195d.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec RHR160G05B3/AB1 Return Filter | Replaces the Eppensteiner 10160H6SL0006P",
       "sku": "10160h6sl0006p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_5ba9c99c-b286-4c65-8807-7c144cc73f1c.jpg?v=1761217940",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024738_1ee005400e53.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "RHR160G05B3/AB1",
@@ -55,7 +55,7 @@
     {
       "title": "MicroFit® MFHR50941 UltraGen III Filter | Replaces the Eppensteiner 10160H6SL0006P",
       "sku": "10160h6sl0006p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ca763d7a-f494-4390-a0ea-7fb6e11e5f76.png?v=1761217940",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024739_7919c25db893.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50941",
@@ -88,7 +88,7 @@
     {
       "title": "HiFi Filter SH 74001 Return Filter | Replaces the Eppensteiner 10160H6SL0006P",
       "sku": "10160h6sl0006p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c1f5a876-da12-4bd1-b6b9-99c0288ba076_bd9b4f0d-4fc4-467e-964f-b23ff8b1cad6.jpg?v=1761217940",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024740_c5b794feaa3a.jpg",
       "vendor": "",
       "price": 10400,
       "partNumber": "SH 74001",
@@ -121,7 +121,7 @@
     {
       "title": "Hydac 0160 R 005 ON Optimicron® Return Filter | Replaces the Eppensteiner 10160H6SL0006P",
       "sku": "10160h6sl0006p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_005_on_n167173_i2394892_c8e86144-3501-4a85-ac23-17d27cdf55b1.jpg?v=1761217940",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024741_3584f3526568.jpg",
       "vendor": "",
       "price": 14500,
       "partNumber": "0160 R 005 ON",

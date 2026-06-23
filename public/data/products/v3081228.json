@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200396B-NB_4ec9019c-0387-41f1-ba95-42c9376468d8.jpg?v=1748457011",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2615d893-3f4a-47a5-844f-bacef8165f9d_ab310e9b-efa0-4da3-89f9-7d017f3a103f.jpg?v=1761655701",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_e43a0857-fd62-4aa9-80c9-f049b553c069.jpg?v=1748457011",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_8009_image1_4e0cf0e7-0ed4-4c2e-b3c5-9199c0fbf8a7.jpg?v=1754908686",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200396B-NB_4991ab97-557d-4caf-980f-eec6a14d60d8.jpg?v=1748457007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2615d893-3f4a-47a5-844f-bacef8165f9d_24214381-9c21-496e-9e09-405dce9cb7cf.jpg?v=1761655410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_e64915c2-d126-4f37-ae71-ec5824e63de7.jpg?v=1748457007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_8009_image1_986e6483-9cef-4055-aa52-cd55626d728f.jpg?v=1754908420"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000668_32bfedd6a47f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000669_0051bf195fc5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000670_885947ca6ca2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000671_453ce24c42a3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000976_ae7c25c282f4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000977_c0faf1988a5b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000978_8e5de1485d35.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000979_853ec6461dee.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30154 Pressure Filter | Replaces the Argo-Hytos V3.0812-28",
       "sku": "v3-0812-28-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200396B-NB_4991ab97-557d-4caf-980f-eec6a14d60d8.jpg?v=1748457007",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000976_ae7c25c282f4.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "MFHLP30154",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 57117 Pressure Filter | Replaces the Argo-Hytos V3081228",
       "sku": "v3081228-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2615d893-3f4a-47a5-844f-bacef8165f9d_ab310e9b-efa0-4da3-89f9-7d017f3a103f.jpg?v=1761655701",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000669_0051bf195fc5.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "SH 57117",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec D140G25A Pressure Filter | Replaces the Argo-Hytos V3081228",
       "sku": "v3081228-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_e43a0857-fd62-4aa9-80c9-f049b553c069.jpg?v=1748457011",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000670_885947ca6ca2.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "D140G25A",
@@ -115,7 +115,7 @@
     {
       "title": "Mann Filter HD 8009 Hydraulics | Replaces the Argo-Hytos V3081228",
       "sku": "v3081228-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_8009_image1_4e0cf0e7-0ed4-4c2e-b3c5-9199c0fbf8a7.jpg?v=1754908686",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000671_453ce24c42a3.jpg",
       "vendor": "",
       "price": 6300,
       "partNumber": "HD 8009",

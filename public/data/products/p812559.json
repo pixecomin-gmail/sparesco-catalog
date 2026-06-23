@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_2e0efd0e-acaf-48ca-a979-7cb18370c42a.jpg?v=1761218200",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Donaldson_Placeholder_3501fb69-5593-4b60-9563-e9090c176da8.jpg?v=1761218200",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25454_031298a6-5e58-4f76-9e62-5913deb9f14e.jpg?v=1761218200"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000244_cdc29fe6d26e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000245_c3a77720edee.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000246_dddf1570ead4.jpg"
   ],
   "variants": [
     {
       "title": "Mann Filter C 32 1700/2 Air Filter | Replaces the Donaldson P812559",
       "sku": "p812559-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_2e0efd0e-acaf-48ca-a979-7cb18370c42a.jpg?v=1761218200",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000244_cdc29fe6d26e.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "C 32 1700/2",
@@ -42,7 +42,7 @@
     {
       "title": "Donaldson P812559 Air Primary, Radialseal",
       "sku": "p812559-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Donaldson_Placeholder_3501fb69-5593-4b60-9563-e9090c176da8.jpg?v=1761218200",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000245_c3a77720edee.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "P812559",
@@ -67,7 +67,7 @@
     {
       "title": "Fleetguard AF25454 Air Filter, Primary Magnum Rs | Replaces the Donaldson P812559",
       "sku": "p812559-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25454_031298a6-5e58-4f76-9e62-5913deb9f14e.jpg?v=1761218200",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000246_dddf1570ead4.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "AF25454",

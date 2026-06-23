@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_5c9ca3c6-6c0d-4d06-94be-7c5833ed6363.jpg?v=1755103797",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782916.700.700_439e7ad5-1271-42f5-8ba2-29ba3e9f05bf.jpg?v=1755103797",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520779_418fa22f-6af8-4abb-ab98-b79de73219cd.jpg?v=1755103797",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_88b12541-ad28-4e9d-a8ce-356d2dfa7b76.jpg?v=1755101412",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782916.700.700_3f6a12cb-0d93-4d52-8f10-b9cfd743f794.jpg?v=1755101412",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520779_097757ab-4efd-4e3e-9aa0-320cc1790031.jpg?v=1755101412"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000700_a1fb9ce6abc1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000701_d3210978055d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000702_74da5b0c7fde.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001807_0eb2de1a3b7b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001808_248fa1e7f4e6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001809_737efd160e71.jpg"
   ],
   "variants": [
     {
       "title": "Mann Filter LE 5025 Compressed Air-Oil Separation | Replaces the SF Filter SAO57770",
       "sku": "sao57770-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/image_5c9ca3c6-6c0d-4d06-94be-7c5833ed6363.jpg?v=1755103797",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000700_a1fb9ce6abc1.jpg",
       "vendor": "",
       "price": 14300,
       "partNumber": "LE 5025",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P782916 Air Oil Separator | Replaces the SF Filter SAO57770",
       "sku": "sao57770-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p782916.700.700_439e7ad5-1271-42f5-8ba2-29ba3e9f05bf.jpg?v=1755103797",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000701_d3210978055d.jpg",
       "vendor": "",
       "price": 13300,
       "partNumber": "P782916",
@@ -55,7 +55,7 @@
     {
       "title": "HiFi Filter OS 779 Air/Oil Separator | Replaces the SF Filter SAO 57770",
       "sku": "sao-57770-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/OS_2520779_097757ab-4efd-4e3e-9aa0-320cc1790031.jpg?v=1755101412",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001809_737efd160e71.jpg",
       "vendor": "",
       "price": 14800,
       "partNumber": "OS 779",

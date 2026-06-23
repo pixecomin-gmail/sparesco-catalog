@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_181df5ec-d2a8-4e2b-b649-42052a04d73e.jpg?v=1748450429",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_119f8997-5cc6-4084-8a33-ab79ff1e3341.jpg?v=1748450429",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f120e196-586e-46a6-962f-6442be7ab886_39fd351f-65e7-4105-883e-eb4932953250.jpg?v=1748450429",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_559ea2d2-097f-48a2-95fd-17c30abf88e7.jpg?v=1748450430",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_cb0819a0-77a0-4f3b-b091-0010b202cf94.jpg?v=1748450430",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f120e196-586e-46a6-962f-6442be7ab886_f4c51da1-4198-4417-bd2b-a520b9695834.jpg?v=1748450430"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027094_b5a410188827.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027095_f0ba4018d9df.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027096_a00a035a1f6c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027100_6693bc92f39c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027101_de272baea39a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027102_ea9c90829e0c.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50214 Return Filter | Replaces the Eppensteiner 16.8500SH10SLS000P",
       "sku": "16-8500sh10sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_559ea2d2-097f-48a2-95fd-17c30abf88e7.jpg?v=1748450430",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027100_6693bc92f39c.jpg",
       "vendor": "MicroFit",
       "price": 9200,
       "partNumber": "MFHR50214",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec R450G10 Return Filter | Replaces the Eppensteiner 168500SH10SLS000P",
       "sku": "168500sh10sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_119f8997-5cc6-4084-8a33-ab79ff1e3341.jpg?v=1748450429",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027095_f0ba4018d9df.jpg",
       "vendor": "Filtrec",
       "price": 13900,
       "partNumber": "R450G10",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 57080 Return Filter | Replaces the Eppensteiner 168500SH10SLS000P",
       "sku": "168500sh10sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f120e196-586e-46a6-962f-6442be7ab886_39fd351f-65e7-4105-883e-eb4932953250.jpg?v=1748450429",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027096_a00a035a1f6c.jpg",
       "vendor": "HiFi Filter",
       "price": 20200,
       "partNumber": "SH 57080",

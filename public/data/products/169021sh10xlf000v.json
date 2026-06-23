@@ -9,22 +9,22 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200272B_33cda3f6-adf5-4571-ab5c-85557db80824.jpg?v=1764690988",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167182.700.700_e5c458ae-7916-47ad-9e05-841148acafe3.jpg?v=1764690988",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-51d2bd6a-fe28-4ba4-8c63-228f91dc7b57_ace58479-860a-45d2-98fe-13aca3de431e.jpg?v=1764690988",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111B_7164bd9e-e718-4196-b9ce-2363ee8ab044.jpg?v=1764690988",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30566_4407f160-1edc-40e6-b04a-6bf97fd6089d.jpg?v=1764690988",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200272B_a4d6730f-1a9e-4b21-bb7f-865e94cede04.jpg?v=1764690990",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167182.700.700_f89cd74c-3206-426d-baf9-6d629e4a2b87.jpg?v=1764690990",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-51d2bd6a-fe28-4ba4-8c63-228f91dc7b57_c6a10f5e-657d-4976-a875-b27b483b6bf4.jpg?v=1764690990",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111B_06733d58-4012-40ad-b94b-395feb834514.jpg?v=1764690990",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30566_1a0fdc27-7369-4679-8780-0f184db9dade.jpg?v=1764690990"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027773_fd41ac6f6f2f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027774_c4a927cde062.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027775_e1cb4c001751.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027776_6eaee8dc2644.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027777_dfb83a600df3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027783_d01d348d76ac.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027784_840cb6c53e0f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027785_8bf004b649ef.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027786_65ecbefa78a7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027787_b6b75c85f44a.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40039 Pressure Filter | Replaces the Eppensteiner 16.9021SH10XLF000V",
       "sku": "16-9021sh10xlf000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200272B_a4d6730f-1a9e-4b21-bb7f-865e94cede04.jpg?v=1764690990",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027783_d01d348d76ac.jpg",
       "vendor": "MicroFit",
       "price": 9000,
       "partNumber": "MFHHP40039",
@@ -55,7 +55,7 @@
     {
       "title": "Donaldson P167183 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 169021SH10XLF000V",
       "sku": "169021sh10xlf000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167182.700.700_e5c458ae-7916-47ad-9e05-841148acafe3.jpg?v=1764690988",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027774_c4a927cde062.jpg",
       "vendor": "Donaldson",
       "price": 10100,
       "partNumber": "P167183",
@@ -86,7 +86,7 @@
     {
       "title": "HiFi Filter SH 63812 V Pressure Filter | Replaces the Eppensteiner 169021SH10XLF000V",
       "sku": "169021sh10xlf000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-51d2bd6a-fe28-4ba4-8c63-228f91dc7b57_ace58479-860a-45d2-98fe-13aca3de431e.jpg?v=1764690988",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027775_e1cb4c001751.jpg",
       "vendor": "HiFi Filter",
       "price": 13400,
       "partNumber": "SH 63812 V",
@@ -117,7 +117,7 @@
     {
       "title": "Filtrec D112G10BV Pressure Filter | Replaces the Eppensteiner 169021SH10XLF000V",
       "sku": "169021sh10xlf000v-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111B_7164bd9e-e718-4196-b9ce-2363ee8ab044.jpg?v=1764690988",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027776_6eaee8dc2644.jpg",
       "vendor": "Filtrec",
       "price": 14900,
       "partNumber": "D112G10BV",
@@ -148,7 +148,7 @@
     {
       "title": "Fleetguard HF30566 Hydraulic Filters | Replaces the Eppensteiner 169021SH10XLF000V",
       "sku": "169021sh10xlf000v-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30566_4407f160-1edc-40e6-b04a-6bf97fd6089d.jpg?v=1764690988",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027777_dfb83a600df3.jpg",
       "vendor": "Fleetguard",
       "price": 29800,
       "partNumber": "HF30566",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200104B_4c7fbd9a-c327-4f1a-b9c8-ebce1c61f014.jpg?v=1755092056",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171609.700.700_f7a5a3e8-5a27-4dbc-87a7-bd479c76ec4d.jpg?v=1755092056",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d84db9c8-87a5-42cd-b5ce-94e94fa4acdf_7af5faee-b111-4d0c-8447-8f557664fcbc.jpg?v=1761655118",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200104B_f2b78c3c-57de-4db3-8ce6-b0b22a43eaba.jpg?v=1755092061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171609.700.700_623e1256-a566-4c98-8c4d-6d1256ac911d.jpg?v=1755092061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d84db9c8-87a5-42cd-b5ce-94e94fa4acdf_4a5887ea-3710-4af9-888e-f119a9e23050.jpg?v=1761655119"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028118_6bab3e502f7c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028119_feb8c4c6c827.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028120_1bf739ab2295.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028127_f89d629d3801.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028128_e062323c55f1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028129_a7dd6d8d3c71.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec A111G25 Spin-On Filter | Replaces the Eppensteiner 806021H20SLS000",
       "sku": "806021h20sls000-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200104B_4c7fbd9a-c327-4f1a-b9c8-ebce1c61f014.jpg?v=1755092056",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028118_6bab3e502f7c.jpg",
       "vendor": "Filtrec",
       "price": 5800,
       "partNumber": "A111G25",
@@ -50,7 +50,7 @@
     {
       "title": "Donaldson P171609 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 806021H20SLS000",
       "sku": "806021h20sls000-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171609.700.700_f7a5a3e8-5a27-4dbc-87a7-bd479c76ec4d.jpg?v=1755092056",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028119_feb8c4c6c827.jpg",
       "vendor": "Donaldson",
       "price": 5200,
       "partNumber": "P171609",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 63073 Spin-On Filter | Replaces the Eppensteiner 806021H20SLS000",
       "sku": "806021h20sls000-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d84db9c8-87a5-42cd-b5ce-94e94fa4acdf_7af5faee-b111-4d0c-8447-8f557664fcbc.jpg?v=1761655118",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028120_1bf739ab2295.jpg",
       "vendor": "HiFi Filter",
       "price": 7300,
       "partNumber": "SH 63073",

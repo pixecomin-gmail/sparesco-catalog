@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202189B_fc761cfc-f132-422d-ad3c-2b0751011de3.jpg?v=1741363187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-87f5a4a4-c193-4bf2-87a7-98ba7d1af25e_28561c4e-78a3-43af-a6a1-ca37c0f7bb5c.jpg?v=1741363187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b55a85b1-a9f3-44ff-965b-e183a0beed32.png?v=1760633738",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202189B_e67a6156-a143-4877-85b2-3587ef753a0c.jpg?v=1741363189",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-87f5a4a4-c193-4bf2-87a7-98ba7d1af25e_bfa2d12f-49e6-4423-ad98-a9a8aae543a8.jpg?v=1741363189",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_64b6ea5c-8b61-48cf-8e20-91256c316440.png?v=1760633736"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010558_889d4e8c4785.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010559_010b6a4dd8b2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010560_6a9ada77fe70.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010564_7e02c9ba8bdd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010565_4bec320eeb33.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010566_2a47d08c420c.png"
   ],
   "variants": [
     {
       "title": "Filtrec RMR439E20B Return Filter | Replaces the Eppensteiner 18180H20SLG000P",
       "sku": "18180h20slg000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF202189B_fc761cfc-f132-422d-ad3c-2b0751011de3.jpg?v=1741363187",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010558_889d4e8c4785.jpg",
       "vendor": "",
       "price": 14500,
       "partNumber": "RMR439E20B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 64142 Return Filter | Replaces the Eppensteiner 18180H20SLG000P",
       "sku": "18180h20slg000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-87f5a4a4-c193-4bf2-87a7-98ba7d1af25e_28561c4e-78a3-43af-a6a1-ca37c0f7bb5c.jpg?v=1741363187",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010559_010b6a4dd8b2.jpg",
       "vendor": "",
       "price": 20100,
       "partNumber": "SH 64142",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR51140 UltraGen III Return Filter | Replaces the Eppensteiner 18180H20SLG000P",
       "sku": "18180h20slg000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b55a85b1-a9f3-44ff-965b-e183a0beed32.png?v=1760633738",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/010560_6a9ada77fe70.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR51140",

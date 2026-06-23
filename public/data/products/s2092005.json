@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200484B_f0d12399-9fdb-42aa-8c14-213d1d00917f.jpg?v=1755095522",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d2bedc17-876f-474a-ac9f-d519309955b2_729d86fb-6e76-42f9-96ce-cf257b184f61.jpg?v=1755095522",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_a05b17e1-628f-4914-94ab-68dc9fd7c54b.jpg?v=1755095522",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35273_f7599c22-f9f1-4bde-91ce-dbf12126a65e.jpg?v=1755779949",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bb2caee3-b264-4940-a635-186715e8d7c0.png?v=1760632855"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000610_d5b169aaedf4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000611_69f303128a9b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000612_9d2898ee87d2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000613_b849e48dbcba.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000614_841afcd37c3d.png"
   ],
   "variants": [
     {
       "title": "Filtrec S530T40 Suction Filter | Replaces the Argo-Hytos S2092005",
       "sku": "s2092005-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200484B_f0d12399-9fdb-42aa-8c14-213d1d00917f.jpg?v=1755095522",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000610_d5b169aaedf4.jpg",
       "vendor": "",
       "price": 10600,
       "partNumber": "S530T40",
@@ -47,7 +47,7 @@
     {
       "title": "HiFi Filter SH 52905 Suction Filter | Replaces the Argo-Hytos S2092005",
       "sku": "s2092005-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d2bedc17-876f-474a-ac9f-d519309955b2_729d86fb-6e76-42f9-96ce-cf257b184f61.jpg?v=1755095522",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000611_69f303128a9b.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "SH 52905",
@@ -75,7 +75,7 @@
     {
       "title": "Argo Hytos S2.0920-05 Suction Filter",
       "sku": "s2092005-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_a05b17e1-628f-4914-94ab-68dc9fd7c54b.jpg?v=1755095522",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000612_9d2898ee87d2.jpg",
       "vendor": "",
       "price": 24400,
       "partNumber": "S2.0920-05",
@@ -103,7 +103,7 @@
     {
       "title": "Fleetguard HF35273 Hydraulic Filters | Replaces the Argo-Hytos S2092005",
       "sku": "s2092005-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35273_f7599c22-f9f1-4bde-91ce-dbf12126a65e.jpg?v=1755779949",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000613_b849e48dbcba.jpg",
       "vendor": "",
       "price": 5200,
       "partNumber": "HF35273",
@@ -131,7 +131,7 @@
     {
       "title": "MicroFit® MFHSU70024 UltraGen III Suction Filter | Replaces the Argo-Hytos S2092005",
       "sku": "s2092005-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bb2caee3-b264-4940-a635-186715e8d7c0.png?v=1760632855",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000614_841afcd37c3d.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSU70024",

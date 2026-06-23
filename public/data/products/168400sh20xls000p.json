@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200650B_750d4cfc-2192-4ac6-85d0-e5fc63ce9a57.jpg?v=1764691010",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-29474c87-9f13-4d7b-b522-3b3120d0dfb4_6d76e9b9-f14a-4af4-aaa1-3f53a0790f75.jpg?v=1764691010",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_f07fe74f-f068-4647-ad02-85b835385781.jpg?v=1764691010",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200650B_8e610502-d3a3-4d6d-9fb4-cad8b68846b8.jpg?v=1764691007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-29474c87-9f13-4d7b-b522-3b3120d0dfb4_4abc371c-10d2-4129-a698-8864e1780ff5.jpg?v=1764691007",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_a8159861-258d-4545-9a6d-782227c23357.jpg?v=1764691007"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027425_9d819098e453.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027426_10c33d8e7f19.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027427_be118dc9ca39.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027432_11f89974428d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027433_b4ee057ec92f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027434_aceb471a193a.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50184 Return Filter | Replaces the Eppensteiner 16.8400SH20XLS000P",
       "sku": "16-8400sh20xls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200650B_8e610502-d3a3-4d6d-9fb4-cad8b68846b8.jpg?v=1764691007",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027432_11f89974428d.jpg",
       "vendor": "MicroFit",
       "price": 13400,
       "partNumber": "MFHR50184",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87040 Return Filter | Replaces the Eppensteiner 168400SH20XLS000P",
       "sku": "168400sh20xls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-29474c87-9f13-4d7b-b522-3b3120d0dfb4_6d76e9b9-f14a-4af4-aaa1-3f53a0790f75.jpg?v=1764691010",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027426_10c33d8e7f19.jpg",
       "vendor": "HiFi Filter",
       "price": 21300,
       "partNumber": "SH 87040",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec R440G25 Return Filter | Replaces the Eppensteiner 168400SH20XLS000P",
       "sku": "168400sh20xls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_f07fe74f-f068-4647-ad02-85b835385781.jpg?v=1764691010",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027427_be118dc9ca39.jpg",
       "vendor": "Filtrec",
       "price": 25500,
       "partNumber": "R440G25",

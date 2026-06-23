@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_98704128-9575-4f29-b14a-53603dbb2695.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_1a7c3809-0c0d-450d-a472-d942d274975d.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_efc4f306-e481-47dd-816b-96721216b052.jpg?v=1748450406",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35183_55421afa-9c78-4d13-9942-9329c925e84d.jpg?v=1755779144",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_87bce2cb-84cb-44f5-8d17-700ff3d22d9c.jpg?v=1748450409",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_8575fe9c-1458-4fdb-ae6b-83b2d6a5aa73.jpg?v=1748450409",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_9b5ae118-afb7-4714-9667-b5f3ab752a7b.jpg?v=1748450409",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35183_36e4903b-38ba-4730-a137-0ad703d76795.jpg?v=1755779139"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027147_8064ecabff9a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027148_1cba5421aef7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027149_55811fed2612.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027150_e4b4cfca207a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027155_42c8d1f337b1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027156_d756bee73b27.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027157_a65face7580f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027158_b4b20d7516c1.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50211 Return Filter | Replaces the Eppensteiner 16.8300SH6XLS000V",
       "sku": "16-8300sh6xls000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200580B-NB_87bce2cb-84cb-44f5-8d17-700ff3d22d9c.jpg?v=1748450409",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027155_42c8d1f337b1.jpg",
       "vendor": "MicroFit",
       "price": 14000,
       "partNumber": "MFHR50211",
@@ -53,7 +53,7 @@
     {
       "title": "Donaldson P566236 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 168300SH6XLS000V",
       "sku": "168300sh6xls000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566237.700.700_1a7c3809-0c0d-450d-a472-d942d274975d.jpg?v=1748450406",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027148_1cba5421aef7.jpg",
       "vendor": "Donaldson",
       "price": 20000,
       "partNumber": "P566236",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec R430G06V Return Filter | Replaces the Eppensteiner 168300SH6XLS000V",
       "sku": "168300sh6xls000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R430_efc4f306-e481-47dd-816b-96721216b052.jpg?v=1748450406",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027149_55811fed2612.jpg",
       "vendor": "Filtrec",
       "price": 25800,
       "partNumber": "R430G06V",
@@ -115,7 +115,7 @@
     {
       "title": "Fleetguard HF35183 Hydraulic Filters | Replaces the Eppensteiner 168300SH6XLS000V",
       "sku": "168300sh6xls000v-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35183_55421afa-9c78-4d13-9942-9329c925e84d.jpg?v=1755779144",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027150_e4b4cfca207a.jpg",
       "vendor": "Fleetguard",
       "price": 23300,
       "partNumber": "HF35183",

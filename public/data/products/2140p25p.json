@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-94414bf6-ee98-407d-91b7-2185db6bdbcb_5b88d5b2-564e-4834-ab05-63f3db14004c.jpg?v=1740477148",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201013B_bd504ce5-d0e3-4e26-8a07-29cd7d08ff0a.jpg?v=1740477148",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-94414bf6-ee98-407d-91b7-2185db6bdbcb_5698711a-bb7a-4684-ba2e-0ff51f95cce1.jpg?v=1740477149",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201013B_60f725ba-9ea6-416f-9ebd-f7d37761a6a0.jpg?v=1740477149"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026491_0b657bacc546.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026492_dcd8146279a0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026499_efe83a5186b4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026500_f7253407f11b.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67201 Pressure Filter | Replaces the Eppensteiner 2140P25P",
       "sku": "2140p25p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-94414bf6-ee98-407d-91b7-2185db6bdbcb_5b88d5b2-564e-4834-ab05-63f3db14004c.jpg?v=1740477148",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026491_0b657bacc546.jpg",
       "vendor": "HiFi Filter",
       "price": 7700,
       "partNumber": "SH 67201",
@@ -48,7 +48,7 @@
     {
       "title": "Filtrec DVD2140K20B Pressure Filter | Replaces the Eppensteiner 2140P25P",
       "sku": "2140p25p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201013B_bd504ce5-d0e3-4e26-8a07-29cd7d08ff0a.jpg?v=1740477148",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026492_dcd8146279a0.jpg",
       "vendor": "Filtrec",
       "price": 7800,
       "partNumber": "DVD2140K20B",

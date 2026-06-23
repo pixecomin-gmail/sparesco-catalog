@@ -9,24 +9,24 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204075B_2a0e2c50-63d1-4c04-9917-5266ee6b2895.jpg?v=1748457012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p765308.700.700_24bc447a-0c4b-44b1-bbeb-10a8ba14c829.jpg?v=1748457012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_9462_image1_02b45774-7e9d-4cbb-b19a-ebcef944fe9d.jpg?v=1754908711",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f39c3ac3-91e0-42cf-894f-df6b030001f4_7de84493-22b1-479e-a422-3d65df776b84.jpg?v=1748457012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28809_0b8e8afd-5c8c-4597-b036-2788f6fd5377.jpg?v=1755780125",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3d4772a6-4d9f-409d-97df-0467638f9bae.png?v=1760634185",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204075B_ea2070b6-f5ef-4894-9c48-85d6830691db.jpg?v=1748457009",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p765308.700.700_0bf48cbe-54d8-4e48-84a8-fde180b0d9d6.jpg?v=1748457009",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_9462_image1_033b9bcd-179d-4a5c-b341-642bff0dd761.jpg?v=1754908489",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f39c3ac3-91e0-42cf-894f-df6b030001f4_e786c230-2e7c-4cc7-87a1-2f0deb55fd99.jpg?v=1748457009",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28809_ea3c945f-50fc-4b26-988d-2f84029e3c78.jpg?v=1755779695",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_95f2a860-8ce4-43ec-a0be-9765848c39f6.png?v=1760631816"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000557_a55bc4f7a12b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000558_3970ddb7dddd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000559_7b25e1c4cc0b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000560_676d0464a921.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000561_b6c492904eb9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000562_fff772a853e5.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000912_68f0ecc36253.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000913_d1ce666fbb3b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000914_06186ece5bff.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000915_03854a379ebb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000916_2e759d6f821d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000917_9470a6c7d0c3.png"
   ],
   "variants": [
     {
       "title": "Filtrec H322G25B Filter | Replaces the Argo-Hytos V3093308",
       "sku": "v3093308-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204075B_2a0e2c50-63d1-4c04-9917-5266ee6b2895.jpg?v=1748457012",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000557_a55bc4f7a12b.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "H322G25B",
@@ -55,7 +55,7 @@
     {
       "title": "Donaldson P765308 Hydraulic Filter, Cartridge | Replaces the Argo-Hytos V3093308",
       "sku": "v3093308-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p765308.700.700_24bc447a-0c4b-44b1-bbeb-10a8ba14c829.jpg?v=1748457012",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000558_3970ddb7dddd.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "P765308",
@@ -84,7 +84,7 @@
     {
       "title": "Mann Filter HD 946/2 Hydraulics | Replaces the Argo-Hytos V3093308",
       "sku": "v3093308-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_9462_image1_02b45774-7e9d-4cbb-b19a-ebcef944fe9d.jpg?v=1754908711",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000559_7b25e1c4cc0b.jpg",
       "vendor": "",
       "price": 9100,
       "partNumber": "HD 946/2",
@@ -113,7 +113,7 @@
     {
       "title": "HiFi Filter SH 52309 Filter | Replaces the Argo-Hytos V3093308",
       "sku": "v3093308-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f39c3ac3-91e0-42cf-894f-df6b030001f4_7de84493-22b1-479e-a422-3d65df776b84.jpg?v=1748457012",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000560_676d0464a921.jpg",
       "vendor": "",
       "price": 12200,
       "partNumber": "SH 52309",
@@ -143,7 +143,7 @@
     {
       "title": "Fleetguard HF28809 Hydraulic Filters | Replaces the Argo-Hytos V3093308",
       "sku": "v3093308-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28809_0b8e8afd-5c8c-4597-b036-2788f6fd5377.jpg?v=1755780125",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000561_b6c492904eb9.jpg",
       "vendor": "",
       "price": 10500,
       "partNumber": "HF28809",
@@ -172,7 +172,7 @@
     {
       "title": "MicroFit® MFHLP31275 UltraGen III Filter | Replaces the Argo-Hytos V3093308",
       "sku": "v3093308-6",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_3d4772a6-4d9f-409d-97df-0467638f9bae.png?v=1760634185",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000562_fff772a853e5.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31275",

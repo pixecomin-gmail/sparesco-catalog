@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_82720818-6572-4a7f-ad2a-cd3d2aabfecd.jpg?v=1741349458",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ebd9b4a3-ecb7-4030-a9d0-21af56d00560_ce0aeb29-5d25-4b73-9712-62a319aa4eaa.jpg?v=1748420734",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_65624337-d357-4e5c-9564-365b5725e9fa.jpg?v=1755779162",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e472957d-16bf-4493-88cd-b2c3d6b733a4.png?v=1760629884"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026324_12c28e4572d3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026325_cc2c5d7cfa4c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026326_13774a33b1cc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026327_1af726c9d7e4.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD2225E20B Pressure Filter | Replaces the Eppensteiner 2225H20LL",
       "sku": "2225h20ll-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_82720818-6572-4a7f-ad2a-cd3d2aabfecd.jpg?v=1741349458",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026324_12c28e4572d3.jpg",
       "vendor": "Filtrec",
       "price": 10300,
       "partNumber": "DVD2225E20B",
@@ -49,7 +49,7 @@
     {
       "title": "HiFi Filter SH 67121 Pressure Filter | Replaces the Eppensteiner 2225H20LL",
       "sku": "2225h20ll-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ebd9b4a3-ecb7-4030-a9d0-21af56d00560_ce0aeb29-5d25-4b73-9712-62a319aa4eaa.jpg?v=1748420734",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026325_cc2c5d7cfa4c.jpg",
       "vendor": "HiFi Filter",
       "price": 11600,
       "partNumber": "SH 67121",
@@ -80,7 +80,7 @@
     {
       "title": "Fleetguard ST1789 Hydraulic Filters | Replaces the Eppensteiner 2225H20LL",
       "sku": "2225h20ll-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_65624337-d357-4e5c-9564-365b5725e9fa.jpg?v=1755779162",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026326_13774a33b1cc.jpg",
       "vendor": "Fleetguard",
       "price": 9400,
       "partNumber": "ST1789",
@@ -111,7 +111,7 @@
     {
       "title": "MicroFit® MFHLP30320 UltraGen III Pressure Filter | Replaces the Eppensteiner 2225H20LL",
       "sku": "2225h20ll-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e472957d-16bf-4493-88cd-b2c3d6b733a4.png?v=1760629884",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026327_1af726c9d7e4.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP30320",

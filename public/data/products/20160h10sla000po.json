@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_aeddcee2-f444-42eb-9201-ec76cce88cfe.jpg?v=1764691960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-68325070-139d-4bf3-bb4b-a935369caa3e_89e9ba53-14ae-44be-b57f-701a3b30f6e6.jpg?v=1764691960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_a078a8ed-b1c9-4fbe-9edb-8286ef70cdb6.jpg?v=1764691960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_dn_010_bn4hc_n168768_i2373807_0d7cf7d1-efb8-4fde-a066-d6f9b2d3b704.jpg?v=1764691960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_428769d0-3616-46e6-bae6-e0e16bbe55cc.jpg?v=1764691484",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-68325070-139d-4bf3-bb4b-a935369caa3e_30a2448c-acf7-4e7f-9449-9de4c520fc5a.jpg?v=1764691484",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_69af58bf-9699-49fe-b3ed-8ce43c4b96ee.jpg?v=1764691484",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_dn_010_bn4hc_n168768_i2373807_f45f9b05-dbf0-45b7-8401-9bdcc25d4ee5.jpg?v=1764691484"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018591_8e2e9a295732.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018592_d3dfd1aaf5c5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018593_242a9effe866.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018594_6dba6f74188c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021696_d5942a49ce12.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021697_bdbc7d3e9f5d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021698_4d1830f7f479.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021699_a5b9d9eaeb86.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP31163 DIN Pressure Filter | Replaces the Eppensteiner 2.0160H10SLA000PO",
       "sku": "2-0160h10sla000po-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203710B_428769d0-3616-46e6-bae6-e0e16bbe55cc.jpg?v=1764691484",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021696_d5942a49ce12.jpg",
       "vendor": "",
       "price": 7900,
       "partNumber": "MFHLP31163",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 84188 DIN Pressure Filter | Replaces the Eppensteiner 20160H10SLA000PO",
       "sku": "20160h10sla000po-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-68325070-139d-4bf3-bb4b-a935369caa3e_89e9ba53-14ae-44be-b57f-701a3b30f6e6.jpg?v=1764691960",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018592_d3dfd1aaf5c5.jpg",
       "vendor": "",
       "price": 9200,
       "partNumber": "SH 84188",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec XD160G10A DIN Pressure Filter | Replaces the Eppensteiner 20160H10SLA000PO",
       "sku": "20160h10sla000po-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_a078a8ed-b1c9-4fbe-9edb-8286ef70cdb6.jpg?v=1764691960",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018593_242a9effe866.jpg",
       "vendor": "",
       "price": 8600,
       "partNumber": "XD160G10A",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0160 DN 010 BN4HC DIN Pressure Filter | Replaces the Eppensteiner 20160H10SLA000PO",
       "sku": "20160h10sla000po-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_dn_010_bn4hc_n168768_i2373807_0d7cf7d1-efb8-4fde-a066-d6f9b2d3b704.jpg?v=1764691960",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018594_6dba6f74188c.jpg",
       "vendor": "",
       "price": 19600,
       "partNumber": "0160 DN 010 BN4HC",

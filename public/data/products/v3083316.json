@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200526B_4ecdaaa7-b87f-4ef9-ac25-5c96f384d572.jpg?v=1755097400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-be4941ee-e55d-4a65-85c4-6a4f1f961225_31bdeea0-137b-408a-a5ed-6c58ae8d4d8c.jpg?v=1755097400",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_64f237ac-ffe3-4e29-9370-a1e0e4ff3e6d.jpg?v=1755097400"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000212_1aa0b3e09af8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000213_72724117df36.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000214_d0921fa6bd1b.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40112 Pressure Filter | Replaces the Argo-Hytos V3083316",
       "sku": "v3083316-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200526B_4ecdaaa7-b87f-4ef9-ac25-5c96f384d572.jpg?v=1755097400",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000212_1aa0b3e09af8.jpg",
       "vendor": "",
       "price": 35000,
       "partNumber": "MFHHP40112",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 52833 Pressure Filter | Replaces the Argo-Hytos V3083316",
       "sku": "v3083316-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-be4941ee-e55d-4a65-85c4-6a4f1f961225_31bdeea0-137b-408a-a5ed-6c58ae8d4d8c.jpg?v=1755097400",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000213_72724117df36.jpg",
       "vendor": "",
       "price": 34600,
       "partNumber": "SH 52833",
@@ -79,7 +79,7 @@
     {
       "title": "Filtrec D842G10B Pressure Filter | Replaces the Argo-Hytos V3083316",
       "sku": "v3083316-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_64f237ac-ffe3-4e29-9370-a1e0e4ff3e6d.jpg?v=1755097400",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000214_d0921fa6bd1b.jpg",
       "vendor": "",
       "price": 38100,
       "partNumber": "D842G10B",

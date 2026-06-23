@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171618.700.700_ed46a8b2-bf04-4390-92b3-40e464b86d38.jpg?v=1741350729",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_3486de84-530f-41c0-8401-ea29dd7188dd.jpg?v=1741350729",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c69e9dfe-e205-4eb0-b845-546926c13b32_386fa05d-abaf-4dc0-9df0-35959c2de057.jpg?v=1741350729",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_b56dd16d-e783-4f86-acbd-0c1c8a922b96.jpg?v=1755090403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171613.700.700_784d1b99-3e3f-4cd9-b701-a9536da24375.jpg?v=1755090403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b1316ab2-91ad-4e48-98b2-3ee53067454b_853c7385-41f5-4949-a623-dc55925e9eed.jpg?v=1755090403"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028058_59ee1ebeedfa.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028059_80741c8c3fb5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028060_b34c000ae7be.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033631_2173eca34e83.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033632_477bce83f7e5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033633_cabca67dc08e.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson P171618 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 7.SL130K10P",
       "sku": "7-sl130k10p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171618.700.700_ed46a8b2-bf04-4390-92b3-40e464b86d38.jpg?v=1741350729",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028058_59ee1ebeedfa.jpg",
       "vendor": "Donaldson",
       "price": 7500,
       "partNumber": "P171618",
@@ -50,7 +50,7 @@
     {
       "title": "Filtrec A121G10 Spin-On Filter | Replaces the Eppensteiner 7.SL130K10P",
       "sku": "7-sl130k10p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200111B_3486de84-530f-41c0-8401-ea29dd7188dd.jpg?v=1741350729",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028059_80741c8c3fb5.jpg",
       "vendor": "Filtrec",
       "price": 9100,
       "partNumber": "A121G10",
@@ -80,7 +80,7 @@
     {
       "title": "HiFi Filter SH 63709 Spin-On Filter | Replaces the Eppensteiner 7.SL130K10P",
       "sku": "7-sl130k10p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c69e9dfe-e205-4eb0-b845-546926c13b32_386fa05d-abaf-4dc0-9df0-35959c2de057.jpg?v=1741350729",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028060_b34c000ae7be.jpg",
       "vendor": "HiFi Filter",
       "price": 11000,
       "partNumber": "SH 63709",
@@ -113,7 +113,7 @@
     {
       "title": "Filtrec A120G10 Spin-On Filter | Replaces the Eppensteiner 7SL130K10P",
       "sku": "7sl130k10p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_b56dd16d-e783-4f86-acbd-0c1c8a922b96.jpg?v=1755090403",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033631_2173eca34e83.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "A120G10",
@@ -143,7 +143,7 @@
     {
       "title": "Donaldson P171613 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 7SL130K10P",
       "sku": "7sl130k10p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171613.700.700_784d1b99-3e3f-4cd9-b701-a9536da24375.jpg?v=1755090403",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033632_477bce83f7e5.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "P171613",
@@ -173,7 +173,7 @@
     {
       "title": "HiFi Filter SH 76955 Spin-On Filter | Replaces the Eppensteiner 7SL130K10P",
       "sku": "7sl130k10p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b1316ab2-91ad-4e48-98b2-3ee53067454b_853c7385-41f5-4949-a623-dc55925e9eed.jpg?v=1755090403",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033633_cabca67dc08e.jpg",
       "vendor": "",
       "price": 10200,
       "partNumber": "SH 76955",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_179_x_image1_478c921b-a2ef-427e-ab6b-352cd0bfee39.jpg?v=1761217722",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Donaldson_Placeholder_e5780866-b01a-406e-814a-33ecf7701f4d.jpg?v=1761217722",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25070K_0baa006d-85a3-4e82-9b7e-26de1d3a6d3b.jpg?v=1761217722"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000296_747cd608ec89.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000297_37449e525be0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000298_10846c713f83.jpg"
   ],
   "variants": [
     {
       "title": "Mann Filter C 14 179 x Air Filter | Replaces the Donaldson P500123",
       "sku": "p500123-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_179_x_image1_478c921b-a2ef-427e-ab6b-352cd0bfee39.jpg?v=1761217722",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000296_747cd608ec89.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "C 14 179 x",
@@ -45,7 +45,7 @@
     {
       "title": "Donaldson P500123 Air Primary, Round",
       "sku": "p500123-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Donaldson_Placeholder_e5780866-b01a-406e-814a-33ecf7701f4d.jpg?v=1761217722",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000297_37449e525be0.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "P500123",
@@ -70,7 +70,7 @@
     {
       "title": "Fleetguard AF25070K Air Filter | Replaces the Donaldson P500123",
       "sku": "p500123-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF25070K_0baa006d-85a3-4e82-9b7e-26de1d3a6d3b.jpg?v=1761217722",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000298_10846c713f83.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "AF25070K",

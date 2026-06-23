@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_eff7cc3b-695d-436a-a403-d47831b8334a.jpg?v=1741360586",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-864797a3-6fee-4f3d-b4a7-b8708bd1b9fa_167328c7-c140-4e6d-980a-6886a4d0acc2.jpg?v=1741360586",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6855_14f3f358-1b5c-4291-9bbc-5af2629509ab.jpg?v=1755778583",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ee5c00cf-e6b5-41fc-888e-0e3cf81e89cb.png?v=1760629152",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_568fd095-2343-4ccc-a49c-d974d1addb00.jpg?v=1741360588",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-864797a3-6fee-4f3d-b4a7-b8708bd1b9fa_b6645e14-2081-4a83-b4ec-060d708d0bf8.jpg?v=1741360588",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6855_3611a2be-97c2-47c3-9220-6d0a54c4bd0f.jpg?v=1755778585",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a2c184e8-cc30-43b0-886f-9dcbf366f6c5.png?v=1760629147"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030504_ba5af91a2d2c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030505_f6882836b2f5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030506_3ba8b44c70d5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030507_10c711a244e1.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030512_375c0aaf49a2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030513_24d501d7ad61.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030514_8bd580c988c6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030515_cea9b447b5b1.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR1300G20B3/AB1 Return Filter | Replaces the Eppensteiner 101300LAH20SL0006P",
       "sku": "101300lah20sl0006p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_eff7cc3b-695d-436a-a403-d47831b8334a.jpg?v=1741360586",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030504_ba5af91a2d2c.jpg",
       "vendor": "",
       "price": 33400,
       "partNumber": "RHR1300G20B3/AB1",
@@ -55,7 +55,7 @@
     {
       "title": "HiFi Filter SH 74050 Return Filter | Replaces the Eppensteiner 101300LAH20SL0006P",
       "sku": "101300lah20sl0006p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-864797a3-6fee-4f3d-b4a7-b8708bd1b9fa_167328c7-c140-4e6d-980a-6886a4d0acc2.jpg?v=1741360586",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030505_f6882836b2f5.jpg",
       "vendor": "",
       "price": 47200,
       "partNumber": "SH 74050",
@@ -88,7 +88,7 @@
     {
       "title": "Fleetguard HF6855 Hydraulic Filters | Replaces the Eppensteiner 101300LAH20SL0006P",
       "sku": "101300lah20sl0006p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6855_14f3f358-1b5c-4291-9bbc-5af2629509ab.jpg?v=1755778583",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030506_3ba8b44c70d5.jpg",
       "vendor": "",
       "price": 44200,
       "partNumber": "HF6855",
@@ -121,7 +121,7 @@
     {
       "title": "MicroFit® MFHR50606 UltraGen III Return Filter | Replaces the Eppensteiner 101300LAH20SL0006P",
       "sku": "101300lah20sl0006p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ee5c00cf-e6b5-41fc-888e-0e3cf81e89cb.png?v=1760629152",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030507_10c711a244e1.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50606",

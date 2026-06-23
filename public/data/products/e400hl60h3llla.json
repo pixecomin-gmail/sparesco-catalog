@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_17d09d7b-1f2b-4d84-9506-93027f719ff2.jpg?v=1761217640",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cd705aec-bb4d-4f14-8602-c248dd25558c.png?v=1761217640",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f026133-79d5-458c-ae05-4b8da2e591ca_d6104f63-9c17-46db-84ec-ad819ae5004f.jpg?v=1761217640"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025167_b2b05b2b077c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025168_4ff0a4475973.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025169_ade5eeb12d09.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD60G03B Pressure Filter | Replaces the Eppensteiner E400HL60H3LLLA",
       "sku": "e400hl60h3llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_17d09d7b-1f2b-4d84-9506-93027f719ff2.jpg?v=1761217640",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025167_b2b05b2b077c.jpg",
       "vendor": "Filtrec",
       "price": 2400,
       "partNumber": "DHD60G03B",
@@ -48,7 +48,7 @@
     {
       "title": "MicroFit® MFHLP31731 UltraGen III Filter | Replaces the Eppensteiner E400HL60H3LLLA",
       "sku": "e400hl60h3llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cd705aec-bb4d-4f14-8602-c248dd25558c.png?v=1761217640",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025168_4ff0a4475973.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP31731",
@@ -79,7 +79,7 @@
     {
       "title": "HiFi Filter SH 75000 Pressure Filter | Replaces the Eppensteiner E400HL60H3LLLA",
       "sku": "e400hl60h3llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3f026133-79d5-458c-ae05-4b8da2e591ca_d6104f63-9c17-46db-84ec-ad819ae5004f.jpg?v=1761217640",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025169_ade5eeb12d09.jpg",
       "vendor": "HiFi Filter",
       "price": 5600,
       "partNumber": "SH 75000",

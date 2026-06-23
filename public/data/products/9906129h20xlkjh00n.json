@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD362E_5810f278-a39c-4c02-8c4a-f53b33b2d098.jpg?v=1741364200",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5898273c-8432-4e68-b55e-42f0065a0cbf_c3870bec-0bae-4412-b712-62a360abb5fe.jpg?v=1741364200",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e83cf286-440b-47a1-8a12-9c56a2c6b270.png?v=1760636913",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD362E_ab8f6815-7a79-4914-b000-8d35423df20d.jpg?v=1741364197",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5898273c-8432-4e68-b55e-42f0065a0cbf_b015b507-2934-4d16-932d-f9b4f23278ea.jpg?v=1741364197",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_f5ea5348-0d46-4dc0-816c-784ecbab9a68.png?v=1760636911"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000050_aceea00f7dcf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000051_fd955c31f078.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000052_87d3e2ad7ccd.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000053_1e97d9cbe086.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000054_6336c803967b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000055_f06bb4992cab.png"
   ],
   "variants": [
     {
       "title": "Filtrec WG655 Special Filter | Replaces the Eppensteiner 99.06129H20XLKJH00N",
       "sku": "99-06129h20xlkjh00n-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DMD362E_5810f278-a39c-4c02-8c4a-f53b33b2d098.jpg?v=1741364200",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000050_aceea00f7dcf.jpg",
       "vendor": "",
       "price": 31600,
       "partNumber": "WG655",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 62177 Special Filter | Replaces the Eppensteiner 99.06129H20XLKJH00N",
       "sku": "99-06129h20xlkjh00n-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5898273c-8432-4e68-b55e-42f0065a0cbf_c3870bec-0bae-4412-b712-62a360abb5fe.jpg?v=1741364200",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000051_fd955c31f078.jpg",
       "vendor": "",
       "price": 40000,
       "partNumber": "SH 62177",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHSP81015 UltraGen III Special Filter | Replaces the Eppensteiner 99.06129H20XLKJH00N",
       "sku": "99-06129h20xlkjh00n-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e83cf286-440b-47a1-8a12-9c56a2c6b270.png?v=1760636913",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000052_87d3e2ad7ccd.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP81015",

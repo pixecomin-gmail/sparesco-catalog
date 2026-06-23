@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0169a35a-9bfa-4978-9c3a-4689d9afa201_c2d8b676-5ecf-451c-8baa-1e9bcc94973d.jpg?v=1755096370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200770B_a62bc227-af1b-4ded-b8aa-008c0f4b7604.jpg?v=1755096370",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ff2d4654-f9ea-45a4-a5f6-142728a17b59.png?v=1760634292",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0169a35a-9bfa-4978-9c3a-4689d9afa201_0ae0c163-2d25-470f-93a7-9ce9c63ba6ff.jpg?v=1755096372",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200770B_17e0d947-beff-48fb-8fee-5f6028071af8.jpg?v=1755096372",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_71fefb88-c47d-47e2-9b69-9b98e7784281.png?v=1760634293"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009025_c2eb0358b6a6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009026_3f44c47c8950.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009027_07087ed9a1e6.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009037_09170e2359e2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009038_ef212531f932.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009039_b574ae38e2e2.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67043 Return Filter | Replaces the Eppensteiner 1140H6SLA0000",
       "sku": "1140h6sla0000-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-0169a35a-9bfa-4978-9c3a-4689d9afa201_c2d8b676-5ecf-451c-8baa-1e9bcc94973d.jpg?v=1755096370",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009025_c2eb0358b6a6.jpg",
       "vendor": "",
       "price": 9000,
       "partNumber": "SH 67043",
@@ -49,7 +49,7 @@
     {
       "title": "Filtrec RVR1140E05B Return Filter | Replaces the Eppensteiner 1140H6SLA0000",
       "sku": "1140h6sla0000-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200770B_a62bc227-af1b-4ded-b8aa-008c0f4b7604.jpg?v=1755096370",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009026_3f44c47c8950.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "RVR1140E05B",
@@ -78,7 +78,7 @@
     {
       "title": "MicroFit® MFHR53071 UltraGen III Filter | Replaces the Eppensteiner 1140H6SLA0000",
       "sku": "1140h6sla0000-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ff2d4654-f9ea-45a4-a5f6-142728a17b59.png?v=1760634292",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009027_07087ed9a1e6.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR53071",

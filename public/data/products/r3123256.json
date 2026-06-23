@@ -9,22 +9,22 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3508436a-2113-43f2-a960-c9cd6f2283ae_93ffd5c1-dc37-4efa-8243-890448b0a500.jpg?v=1740483034",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204598B_e0eb2622-fa72-48fe-bf6a-297b660c6dee.jpg?v=1740483034",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_1288_image1_91928937-cf25-4576-a509-88d0acbca6a6.jpg?v=1754908681",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_30012c5e-41f8-48fc-b084-31ad19c3fbd8.png?v=1760632765",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0660_r_010_sn_n167233_i2372509_6d5ca24b-a728-452d-9921-97bae9a9fe4d.jpg?v=1760540282",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3508436a-2113-43f2-a960-c9cd6f2283ae_7c90f68d-ac24-4d6d-b99b-0d2d5c271b5f.jpg?v=1740483032",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204598B_d80ab804-95c0-43d7-bbc6-2512eb263c63.jpg?v=1740483032",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_1288_image1_7f2dd152-8493-4caa-8f29-f1e7f8a05750.jpg?v=1754908271",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5a49b7e0-b34d-4bd1-b68d-bd6f38815c58.png?v=1760630991",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0660_r_010_sn_n167233_i2372509_fe65d8ed-2755-4a97-90ef-b3c6901ec12f.jpg?v=1760540284"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000716_a31e500dbfdc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000717_76a579179251.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000718_64ca5fe104c5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000719_e1490a6db235.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000720_0cb0525a88b7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001102_b93d044d209a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001103_6d60cbfc47a2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001104_f0fdfbe55f81.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001105_1ea47e79c2b6.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001106_18c9152648c0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 74034 Return Filter | Replaces the Argo-Hytos R3123256",
       "sku": "r3123256-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3508436a-2113-43f2-a960-c9cd6f2283ae_93ffd5c1-dc37-4efa-8243-890448b0a500.jpg?v=1740483034",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000716_a31e500dbfdc.jpg",
       "vendor": "",
       "price": 16200,
       "partNumber": "SH 74034",
@@ -59,7 +59,7 @@
     {
       "title": "Filtrec RHR660G10B3/AB1 Return Filter | Replaces the Argo-Hytos R3123256",
       "sku": "r3123256-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204598B_e0eb2622-fa72-48fe-bf6a-297b660c6dee.jpg?v=1740483034",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000717_76a579179251.jpg",
       "vendor": "",
       "price": 17700,
       "partNumber": "RHR660G10B3/AB1",
@@ -92,7 +92,7 @@
     {
       "title": "Mann Filter HD 1288 Hydraulics | Replaces the Argo-Hytos R3123256",
       "sku": "r3123256-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_1288_image1_91928937-cf25-4576-a509-88d0acbca6a6.jpg?v=1754908681",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000718_64ca5fe104c5.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "HD 1288",
@@ -124,7 +124,7 @@
     {
       "title": "MicroFit® MFHR52648 UltraGen III Filter | Replaces the Argo-Hytos R3123256",
       "sku": "r3123256-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_30012c5e-41f8-48fc-b084-31ad19c3fbd8.png?v=1760632765",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000719_e1490a6db235.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR52648",
@@ -157,7 +157,7 @@
     {
       "title": "Hydac 0660 R 010 SN SUSTAINMICRON® Return Filter | Replaces the Argo-Hytos R3123256",
       "sku": "r3123256-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0660_r_010_sn_n167233_i2372509_6d5ca24b-a728-452d-9921-97bae9a9fe4d.jpg?v=1760540282",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000720_0cb0525a88b7.jpg",
       "vendor": "",
       "price": 39700,
       "partNumber": "0660 R 010 SN",

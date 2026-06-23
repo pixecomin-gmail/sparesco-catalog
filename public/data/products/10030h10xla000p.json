@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF210339B_7ceaf76a-6dbf-4a9f-afca-08324bf2b880.jpg?v=1762279222",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-948d6d73-0b8a-48f9-a344-c2487d0313e9_c44e88bb-6f1b-4a06-9cf9-3d8958f1d65a.jpg?v=1762279222",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c4eca5ae-b811-482a-a263-ea9068ca6a0d.png?v=1762279222",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF210339B_fe8701bc-f084-4898-a79c-328bb7238770.jpg?v=1762279224",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-948d6d73-0b8a-48f9-a344-c2487d0313e9_b0beb1b0-023b-481c-a0e8-03498cdb0bad.jpg?v=1762279224",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_507d2e6b-7c47-4b6f-acfa-ce016201efd3.png?v=1762279224"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007548_ec7962d7c0ad.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007549_ad40566639eb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007550_d27f2d995441.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007554_35a54d2f0361.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007555_6562632f5159.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007556_4c06275db2ac.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR10030E10B Return Filter | Replaces the Eppensteiner 10030H10XLA000P",
       "sku": "10030h10xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF210339B_7ceaf76a-6dbf-4a9f-afca-08324bf2b880.jpg?v=1762279222",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007548_ec7962d7c0ad.jpg",
       "vendor": "",
       "price": 12800,
       "partNumber": "RVR10030E10B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67567 Return Filter | Replaces the Eppensteiner 10030H10XLA000P",
       "sku": "10030h10xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-948d6d73-0b8a-48f9-a344-c2487d0313e9_c44e88bb-6f1b-4a06-9cf9-3d8958f1d65a.jpg?v=1762279222",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007549_ad40566639eb.jpg",
       "vendor": "",
       "price": 15400,
       "partNumber": "SH 67567",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR55256 UltraGen III Filter | Replaces the Eppensteiner 10030H10XLA000P",
       "sku": "10030h10xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_c4eca5ae-b811-482a-a263-ea9068ca6a0d.png?v=1762279222",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/007550_d27f2d995441.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR55256",

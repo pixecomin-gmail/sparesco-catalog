@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_b2aa3eb3-f310-440b-82e1-86d9b9cb4c2e.jpg?v=1741363639",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_3e4bc98b-0ba5-4319-9407-263477f49bab.jpg?v=1764763178",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_45da699e-b7b3-416b-8162-a20e53bd9d18.png?v=1760634521",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_0e571ea7-519d-4259-890f-3a0eb1a7eae0.jpg?v=1741363636",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_086849d1-f52a-484e-80ba-c48f0cd46150.jpg?v=1764763177",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_eef2ce56-d4ed-41b7-a140-37b51924d91b.png?v=1760634520"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008381_006b4ff2f61a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008382_0c8cab748322.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008383_17eb482a256c.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008393_ad1bf4d12fc7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008394_28e752b81dd9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008395_04aa9c54b49c.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR156E05B Return Filter | Replaces the Eppensteiner 156K6P",
       "sku": "156k6p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR156_b2aa3eb3-f310-440b-82e1-86d9b9cb4c2e.jpg?v=1741363639",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008381_006b4ff2f61a.jpg",
       "vendor": "",
       "price": 5700,
       "partNumber": "RVR156E05B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67027 Return Filter | Replaces the Eppensteiner 156K6P",
       "sku": "156k6p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_3e4bc98b-0ba5-4319-9407-263477f49bab.jpg?v=1764763178",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008382_0c8cab748322.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "SH 67027",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR54524 UltraGen III Return Filter | Replaces the Eppensteiner 156K6P",
       "sku": "156k6p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_45da699e-b7b3-416b-8162-a20e53bd9d18.png?v=1760634521",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/008383_17eb482a256c.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR54524",

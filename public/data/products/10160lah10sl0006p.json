@@ -9,22 +9,22 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-09f2542a-4f2b-4d23-9d5f-ef38d95e7210_4d6ad996-9482-46e3-87f6-0ac283f86b08.jpg?v=1761217912",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_de4e0e64-ec21-4f5d-acbc-b67267881202.png?v=1761217912",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_034507aa-370d-454c-babc-9fbe80385648.jpg?v=1761217912",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6887_ae46ace2-898e-41f8-aa68-01009dca39d4.jpg?v=1761217912",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_010_sn_n188614_i2523105_b5a7a211-d7f9-4e2b-910b-0e0599ff2dbe.jpg?v=1761217912",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-09f2542a-4f2b-4d23-9d5f-ef38d95e7210_02c18ee0-14ed-4574-aa10-498d93509f1c.jpg?v=1761217913",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ea916388-ed61-4820-b2ac-67c33a322ab4.png?v=1761217913",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_c8d1039a-9636-40f6-89fb-520b9781629d.jpg?v=1761217913",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6887_b12cb6a1-ecf0-4393-a4b9-f842882c471f.jpg?v=1761217913",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_010_sn_n188614_i2523105_fb578dd3-0130-4c89-9e38-a521f8eda799.jpg?v=1761217913"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032490_f1539bb486d3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032491_c8a4b961e861.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032492_befee6903512.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032493_06d82ff373c0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032494_ceb3bbd8a2c8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032500_b2e557c32b5a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032501_92733f627526.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032502_6f42ea86bb41.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032503_58fbeb5791d9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032504_62eed9ab26b1.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 74002 Return Filter | Replaces the Eppensteiner 10160LAH10SL0006P",
       "sku": "10160lah10sl0006p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-09f2542a-4f2b-4d23-9d5f-ef38d95e7210_4d6ad996-9482-46e3-87f6-0ac283f86b08.jpg?v=1761217912",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032490_f1539bb486d3.jpg",
       "vendor": "",
       "price": 5300,
       "partNumber": "SH 74002",
@@ -59,7 +59,7 @@
     {
       "title": "MicroFit® MFHR50117 UltraGen III Filter | Replaces the Eppensteiner 10160LAH10SL0006P",
       "sku": "10160lah10sl0006p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_de4e0e64-ec21-4f5d-acbc-b67267881202.png?v=1761217912",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032491_c8a4b961e861.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50117",
@@ -92,7 +92,7 @@
     {
       "title": "Filtrec RHR160G10B3/AB1 Return Filter | Replaces the Eppensteiner 10160LAH10SL0006P",
       "sku": "10160lah10sl0006p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_034507aa-370d-454c-babc-9fbe80385648.jpg?v=1761217912",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032492_befee6903512.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "RHR160G10B3/AB1",
@@ -125,7 +125,7 @@
     {
       "title": "Fleetguard HF6887 Hydraulic Filters | Replaces the Eppensteiner 10160LAH10SL0006P",
       "sku": "10160lah10sl0006p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6887_ae46ace2-898e-41f8-aa68-01009dca39d4.jpg?v=1761217912",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032493_06d82ff373c0.jpg",
       "vendor": "",
       "price": 7000,
       "partNumber": "HF6887",
@@ -158,7 +158,7 @@
     {
       "title": "Hydac 0160 R 010 SN SUSTAINMICRON® Return Filter | Replaces the Eppensteiner 10160LAH10SL0006P",
       "sku": "10160lah10sl0006p-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_010_sn_n188614_i2523105_b5a7a211-d7f9-4e2b-910b-0e0599ff2dbe.jpg?v=1761217912",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032494_ceb3bbd8a2c8.jpg",
       "vendor": "",
       "price": 15400,
       "partNumber": "0160 R 010 SN",

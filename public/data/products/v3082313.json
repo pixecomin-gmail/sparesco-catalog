@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200526B_1e3d85d4-8ea4-4330-a029-43dc9d451907.jpg?v=1748457013",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-93dba9e6-f565-46ed-b8e0-8bdab62a4624_5b37b64e-1ba5-4cf9-9002-88495a16acab.jpg?v=1748457013",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_4843cea4-b86a-4876-a0b5-c99f2404b580.jpg?v=1748457013",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200526B_e0be7a79-279c-486a-9b83-c9538f0d41c9.jpg?v=1748457011",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-93dba9e6-f565-46ed-b8e0-8bdab62a4624_fffd5d8e-c77d-416b-a090-1d52218a66d7.jpg?v=1748457011",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_293054e5-64cd-4d5a-938b-2576b60d692c.jpg?v=1748457011"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000218_4ac6d6c96cf3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000219_cb3fd9b9b9d5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000220_ad391247ee8f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001070_deddd5f2565b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001071_dfb3d93fdf5f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001072_fc039bab956d.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40108 Pressure Filter | Replaces the Argo-Hytos V3.0823-13",
       "sku": "v3-0823-13-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200526B_e0be7a79-279c-486a-9b83-c9538f0d41c9.jpg?v=1748457011",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001070_deddd5f2565b.jpg",
       "vendor": "",
       "price": 21900,
       "partNumber": "MFHHP40108",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 52258 Pressure Filter | Replaces the Argo-Hytos V3082313",
       "sku": "v3082313-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-93dba9e6-f565-46ed-b8e0-8bdab62a4624_5b37b64e-1ba5-4cf9-9002-88495a16acab.jpg?v=1748457013",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000219_cb3fd9b9b9d5.jpg",
       "vendor": "",
       "price": 24900,
       "partNumber": "SH 52258",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec D841G03B Pressure Filter | Replaces the Argo-Hytos V3082313",
       "sku": "v3082313-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_4843cea4-b86a-4876-a0b5-c99f2404b580.jpg?v=1748457013",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000220_ad391247ee8f.jpg",
       "vendor": "",
       "price": 28900,
       "partNumber": "D841G03B",

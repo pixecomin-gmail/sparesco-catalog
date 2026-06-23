@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_d6763964-c94e-44cf-9f79-fd9129178758.jpg?v=1766009371",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_a649df9f-0950-46dc-9d57-21128d34a1e0.jpg?v=1766009371",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8cec6a6c-70f1-4049-a239-a5abcae6adff.png?v=1766009371",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_fc3fed22-40fb-4bb4-bdf3-eeb5846bd1e8.jpg?v=1766007616",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_ce8e24ab-133d-47cc-bb08-23ac2c72357f.jpg?v=1766007616",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fe0fba24-8d6b-48c9-880b-67bcdecdab74.png?v=1766007616"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018330_e0d3178550a0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018331_9d5a027ee567.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018332_adef9e7c0f71.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021399_2073db1055c4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021400_3a7f9fb659a6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021401_04c4835b5b43.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 670466 Pressure Filter | Replaces the Eppensteiner 256G130A000P",
       "sku": "256g130a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_d6763964-c94e-44cf-9f79-fd9129178758.jpg?v=1766009371",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018330_e0d3178550a0.jpg",
       "vendor": "",
       "price": 7300,
       "partNumber": "SH 670466",
@@ -50,7 +50,7 @@
     {
       "title": "Filtrec DVD256B130B Pressure Filter | Replaces the Eppensteiner 256G130A000P",
       "sku": "256g130a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201127B_a649df9f-0950-46dc-9d57-21128d34a1e0.jpg?v=1766009371",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018331_9d5a027ee567.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "DVD256B130B",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHLP32512 UltraGen III Pressure Filter | Replaces the Eppensteiner 256G130A000P",
       "sku": "256g130a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_8cec6a6c-70f1-4049-a239-a5abcae6adff.png?v=1766009371",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018332_adef9e7c0f71.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP32512",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_94c76ac6-1ce2-488f-baed-78295f4f01f0.jpg?v=1762277475",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-48e881eb-78dd-4520-8cbe-d682a6ad0b91_0560f5b2-c5b3-4352-8df1-71777737b999.jpg?v=1762277475",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_06067bda-0622-46ae-89ff-40609297fe44.png?v=1762277475",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_1d454bb4-f055-41d1-9abc-fe5b85ce49f1.jpg?v=1762277475",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-48e881eb-78dd-4520-8cbe-d682a6ad0b91_d263cbe1-44a5-4938-9f6a-7ae2c1b5c58c.jpg?v=1762277475",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_79e462bf-b622-491d-a235-59f833ed53b6.png?v=1762277475"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026801_8acb3edb0a96.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026802_605620bced66.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026803_a9249e3639b3.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026810_fc006a0811d3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026811_d7befff9ddf8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026812_2777056f196f.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1360B60B Return Filter | Replaces the Eppensteiner 1360G60P",
       "sku": "1360g60p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1360_94c76ac6-1ce2-488f-baed-78295f4f01f0.jpg?v=1762277475",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026801_8acb3edb0a96.jpg",
       "vendor": "Filtrec",
       "price": 16300,
       "partNumber": "RVR1360B60B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67063 Return Filter | Replaces the Eppensteiner 1360G60P",
       "sku": "1360g60p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-48e881eb-78dd-4520-8cbe-d682a6ad0b91_0560f5b2-c5b3-4352-8df1-71777737b999.jpg?v=1762277475",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026802_605620bced66.jpg",
       "vendor": "HiFi Filter",
       "price": 20300,
       "partNumber": "SH 67063",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR50381 UltraGen III Filter | Replaces the Eppensteiner 1360G60P",
       "sku": "1360g60p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_06067bda-0622-46ae-89ff-40609297fe44.png?v=1762277475",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026803_a9249e3639b3.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50381",

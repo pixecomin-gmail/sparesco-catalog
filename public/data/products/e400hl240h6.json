@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200237B-NB_49e2e2b6-ef07-4f94-b0bf-7286c85c5539.jpg?v=1755091634",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eaf6a9ba-4d12-40a7-b4ca-32d5f123f141_86db671f-ccac-43cc-9bd9-8b86f32f7dea.jpg?v=1755091634",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_21b341c5-6be6-4bb2-a651-d38b7a0a5b9b.jpg?v=1755091634",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0240_d_005_on_n166587_i2372477_231fdaad-95df-4267-a4a1-6611b1b147d6.jpg?v=1760540574"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029327_e72e9327e9d1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029328_8421bd9c819a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029329_777c7c1bb4b6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029330_4d942b64829b.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30488 Pressure Filter | Replaces the Eppensteiner E400HL240H6",
       "sku": "e400hl240h6-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200237B-NB_49e2e2b6-ef07-4f94-b0bf-7286c85c5539.jpg?v=1755091634",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029327_e72e9327e9d1.jpg",
       "vendor": "MicroFit",
       "price": 6300,
       "partNumber": "MFHLP30488",
@@ -49,7 +49,7 @@
     {
       "title": "HiFi Filter SH 75034 Pressure Filter | Replaces the Eppensteiner E400HL240H6",
       "sku": "e400hl240h6-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-eaf6a9ba-4d12-40a7-b4ca-32d5f123f141_86db671f-ccac-43cc-9bd9-8b86f32f7dea.jpg?v=1755091634",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029328_8421bd9c819a.jpg",
       "vendor": "HiFi Filter",
       "price": 6200,
       "partNumber": "SH 75034",
@@ -80,7 +80,7 @@
     {
       "title": "Filtrec DHD240G05B Pressure Filter | Replaces the Eppensteiner E400HL240H6",
       "sku": "e400hl240h6-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_21b341c5-6be6-4bb2-a651-d38b7a0a5b9b.jpg?v=1755091634",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029329_777c7c1bb4b6.jpg",
       "vendor": "Filtrec",
       "price": 6900,
       "partNumber": "DHD240G05B",
@@ -111,7 +111,7 @@
     {
       "title": "Hydac 0240 D 005 ON Optimicron® Pressure Filter | Replaces the Eppensteiner E400HL240H6",
       "sku": "e400hl240h6-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0240_d_005_on_n166587_i2372477_231fdaad-95df-4267-a4a1-6611b1b147d6.jpg?v=1760540574",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029330_4d942b64829b.jpg",
       "vendor": "Hydac",
       "price": 22100,
       "partNumber": "0240 D 005 ON",

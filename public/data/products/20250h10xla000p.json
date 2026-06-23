@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-59e22ea9-d54b-476b-bbdd-eb616ba353f2_3c13dcfa-89fb-4619-acbd-8425ca2aa86e.jpg?v=1764690926",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203713B_f89bc122-ef5b-4be1-90df-aeb3d826152d.jpg?v=1764690926",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_22953abf-a678-469a-94c4-b99f000617f0.jpg?v=1764690926",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST2123_f904b0a2-e603-406d-8334-bc35317dcd20.jpg?v=1764690926",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-59e22ea9-d54b-476b-bbdd-eb616ba353f2_9f668db1-5ac9-491a-bb61-2d680c7612c6.jpg?v=1764690922",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203713B_e5cf655e-e78a-4016-a883-f2624d779f80.jpg?v=1764690922",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_36440f96-2056-4e36-a593-8acc6eb6845d.jpg?v=1764690922",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST2123_5807441c-148f-4e90-90a0-6136a5fb40eb.jpg?v=1764690922"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028263_2a5f13b3e0c5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028264_7aed7f231641.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028265_493ffe285e9a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028266_090974a0306d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028271_1eb0dd8cdd84.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028272_4d396ebf7c92.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028273_3921843f3642.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028274_d13f48b4d557.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 84190 DIN Pressure Filter | Replaces the Eppensteiner 20250H10XLA000P",
       "sku": "20250h10xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-59e22ea9-d54b-476b-bbdd-eb616ba353f2_3c13dcfa-89fb-4619-acbd-8425ca2aa86e.jpg?v=1764690926",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028263_2a5f13b3e0c5.jpg",
       "vendor": "HiFi Filter",
       "price": 8800,
       "partNumber": "SH 84190",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP31166 DIN Pressure Filter | Replaces the Eppensteiner 2.0250H10XLA000P",
       "sku": "2-0250h10xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203713B_e5cf655e-e78a-4016-a883-f2624d779f80.jpg?v=1764690922",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028272_4d396ebf7c92.jpg",
       "vendor": "MicroFit",
       "price": 8700,
       "partNumber": "MFHLP31166",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec XD250G10A DIN Pressure Filter | Replaces the Eppensteiner 20250H10XLA000P",
       "sku": "20250h10xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_22953abf-a678-469a-94c4-b99f000617f0.jpg?v=1764690926",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028265_493ffe285e9a.jpg",
       "vendor": "Filtrec",
       "price": 9400,
       "partNumber": "XD250G10A",
@@ -115,7 +115,7 @@
     {
       "title": "Fleetguard ST2123 Hydraulic Filters | Replaces the Eppensteiner 20250H10XLA000P",
       "sku": "20250h10xla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST2123_f904b0a2-e603-406d-8334-bc35317dcd20.jpg?v=1764690926",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028266_090974a0306d.jpg",
       "vendor": "Fleetguard",
       "price": 13500,
       "partNumber": "ST2123",

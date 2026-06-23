@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_ab800b74-5bc5-4259-bc1d-4ddbf49710bc.jpg?v=1762277691",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5ab8e12-e476-4703-9a91-8d76e9439312_38992197-ac44-49cc-927a-902c98a705ab.jpg?v=1762277691",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_54752a19-8c06-46fa-a4a5-9dfa9575a504.png?v=1762277691",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_ad7af566-fb50-4682-af81-a74643e56cab.jpg?v=1762277690",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5ab8e12-e476-4703-9a91-8d76e9439312_4d7a7cfd-9a38-4ca6-b10c-736f6f9a6c41.jpg?v=1762277690",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_2a2e242b-c9fb-4bd4-a2d5-475644faf0d2.png?v=1762277690"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028891_6340399c1ab0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028892_0beaa68693b7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028893_8bc1636ab160.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028897_6728f138de6d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028898_566522c6c35f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028899_a5f77bb2b992.png"
   ],
   "variants": [
     {
       "title": "Filtrec DHD660H05B Pressure Filter | Replaces the Eppensteiner 9660LAH6SLF000P",
       "sku": "9660lah6slf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_ab800b74-5bc5-4259-bc1d-4ddbf49710bc.jpg?v=1762277691",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028891_6340399c1ab0.jpg",
       "vendor": "Filtrec",
       "price": 40700,
       "partNumber": "DHD660H05B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 75059 Pressure Filter | Replaces the Eppensteiner 9660LAH6SLF000P",
       "sku": "9660lah6slf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c5ab8e12-e476-4703-9a91-8d76e9439312_38992197-ac44-49cc-927a-902c98a705ab.jpg?v=1762277691",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028892_0beaa68693b7.jpg",
       "vendor": "HiFi Filter",
       "price": 42300,
       "partNumber": "SH 75059",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHHP40959 UltraGen III Filter | Replaces the Eppensteiner 9660LAH6SLF000P",
       "sku": "9660lah6slf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_54752a19-8c06-46fa-a4a5-9dfa9575a504.png?v=1762277691",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028893_8bc1636ab160.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHHP40959",

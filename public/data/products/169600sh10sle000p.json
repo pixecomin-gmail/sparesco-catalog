@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p164166.700.700_7a784e30-0cd7-401f-87e0-d2016d6c532d.jpg?v=1742549226",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200227B-NB_246da94a-b1c4-4992-ae32-254044f7c7a2.jpg?v=1742549226",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_f10de41d-7eb0-4af7-bed9-d9f21bbed292.jpg?v=1742549226",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30262_d0680e64-120b-4e86-8dd3-f97b9affbc29.jpg?v=1755778301",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p164166.700.700_d03d0a61-5553-4589-a913-3670fbd87327.jpg?v=1748450484",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200227B-NB_d97ca5bc-63e3-447b-87ef-fb44dab1d7df.jpg?v=1748450484",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_65e2cd57-7c8e-4337-aa24-bf81ef6f3aa0.jpg?v=1748450484",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30262_5bcb40be-7286-40e6-bfe0-03d1a9b77446.jpg?v=1755778302"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032907_4d43146aa512.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032908_c65d9472798e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032909_8252db62b2e2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032910_31172bcf2fa7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032918_ba4abb0616e0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032919_9c4d75248d26.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032920_630288c3df0a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032921_080b9311d64e.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson P164166 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 169600SH10SLE000P",
       "sku": "169600sh10sle000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p164166.700.700_7a784e30-0cd7-401f-87e0-d2016d6c532d.jpg?v=1742549226",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032907_4d43146aa512.jpg",
       "vendor": "",
       "price": 4500,
       "partNumber": "P164166",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP30046 Pressure Filter | Replaces the Eppensteiner 16.9600SH10SLE000P",
       "sku": "16-9600sh10sle000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200227B-NB_d97ca5bc-63e3-447b-87ef-fb44dab1d7df.jpg?v=1748450484",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032919_9c4d75248d26.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "MFHLP30046",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec D141G10A Pressure Filter | Replaces the Eppensteiner 169600SH10SLE000P",
       "sku": "169600sh10sle000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D141A_f10de41d-7eb0-4af7-bed9-d9f21bbed292.jpg?v=1742549226",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032909_8252db62b2e2.jpg",
       "vendor": "",
       "price": 9500,
       "partNumber": "D141G10A",
@@ -115,7 +115,7 @@
     {
       "title": "Fleetguard HF30262 Hydraulic Filters | Replaces the Eppensteiner 169600SH10SLE000P",
       "sku": "169600sh10sle000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30262_d0680e64-120b-4e86-8dd3-f97b9affbc29.jpg?v=1755778301",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/032910_31172bcf2fa7.jpg",
       "vendor": "",
       "price": 11000,
       "partNumber": "HF30262",

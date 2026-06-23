@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_8f8f5f19-7f2f-452a-81e6-b52ffb2871cc.jpg?v=1761218180",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1ee73934-be5d-4624-bfec-fe98bc287193.png?v=1761218180",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-bb8028f3-de0b-40d2-8e12-513229778ec0_69cbff73-f97c-46a8-8cd9-7897e2394ee4.jpg?v=1761218180"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029203_39ffe5b369b6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029204_6f76b4f1cc64.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029205_4455b44703f3.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD330G05B Pressure Filter | Replaces the Eppensteiner E400HL330H6",
       "sku": "e400hl330h6-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330G_8f8f5f19-7f2f-452a-81e6-b52ffb2871cc.jpg?v=1761218180",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029203_39ffe5b369b6.jpg",
       "vendor": "Filtrec",
       "price": 8800,
       "partNumber": "DHD330G05B",
@@ -48,7 +48,7 @@
     {
       "title": "MicroFit® MFHLP32106 UltraGen III Filter | Replaces the Eppensteiner E400HL330H6",
       "sku": "e400hl330h6-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1ee73934-be5d-4624-bfec-fe98bc287193.png?v=1761218180",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029204_6f76b4f1cc64.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP32106",
@@ -79,7 +79,7 @@
     {
       "title": "HiFi Filter SH 75042 Pressure Filter | Replaces the Eppensteiner E400HL330H6",
       "sku": "e400hl330h6-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-bb8028f3-de0b-40d2-8e12-513229778ec0_69cbff73-f97c-46a8-8cd9-7897e2394ee4.jpg?v=1761218180",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029205_4455b44703f3.jpg",
       "vendor": "HiFi Filter",
       "price": 10400,
       "partNumber": "SH 75042",

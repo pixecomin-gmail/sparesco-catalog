@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97e8271e-dc86-41f8-98b1-0e8472034977_f5e95c60-96f6-490b-b331-8a467aad4c7c.jpg?v=1730606074",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_3012_n53193_i939839_045d49f3-69ea-413d-aaaf-5a36f2985cdd.png?v=1743777405",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97e8271e-dc86-41f8-98b1-0e8472034977_0deb333c-51a1-451a-96b3-449c158553bc.jpg?v=1730431469",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_3012_n53193_i939839_0fdb5797-f8f7-44e6-809e-8ff566e2602a.png?v=1743774104"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001103_99557cb9836a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001104_b80393755ac4.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002206_1160a9bd8c2f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002207_0f95dc7dec58.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter OA 1010 Air/Oil Separator | Replaces the SF Filter SAO 55310",
       "sku": "sao-55310-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97e8271e-dc86-41f8-98b1-0e8472034977_0deb333c-51a1-451a-96b3-449c158553bc.jpg?v=1730431469",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002206_1160a9bd8c2f.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "OA 1010",
@@ -34,7 +34,7 @@
     {
       "title": "Mann Filter LE 3012 Compressed Air-Oil Separation | Replaces the SF Filter SAO55310",
       "sku": "sao55310-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/le_3012_n53193_i939839_045d49f3-69ea-413d-aaaf-5a36f2985cdd.png?v=1743777405",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001104_b80393755ac4.png",
       "vendor": "",
       "price": 7200,
       "partNumber": "LE 3012",

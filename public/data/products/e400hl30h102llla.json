@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204260B_2d38221c-61e5-4608-9804-4a3f8b0d2623.jpg?v=1741352780",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-61eb7d18-10d8-4c01-9264-164a15a20f79_093b499c-e998-4557-9460-1a1fd22b6c20.jpg?v=1761655235",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_010_bh4hc_n167383_i2404624_77ee3ea4-4a16-4c31-872d-dba215a827a3.jpg?v=1760541926",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d0e38252-59fd-4674-8568-87935a9bf33d.png?v=1760630710"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023087_99a22ba41b9c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023088_9728a2be90a1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023089_e8fae0b87372.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023090_1177b5d34fdb.png"
   ],
   "variants": [
     {
       "title": "Filtrec DHD30H10B Pressure Filter | Replaces the Eppensteiner E400HL30H102LLLA",
       "sku": "e400hl30h102llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204260B_2d38221c-61e5-4608-9804-4a3f8b0d2623.jpg?v=1741352780",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023087_99a22ba41b9c.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "DHD30H10B",
@@ -49,7 +49,7 @@
     {
       "title": "HiFi Filter SH 75075 Pressure Filter | Replaces the Eppensteiner E400HL30H102LLLA",
       "sku": "e400hl30h102llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-61eb7d18-10d8-4c01-9264-164a15a20f79_093b499c-e998-4557-9460-1a1fd22b6c20.jpg?v=1761655235",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023088_9728a2be90a1.jpg",
       "vendor": "",
       "price": 6000,
       "partNumber": "SH 75075",
@@ -80,7 +80,7 @@
     {
       "title": "Hydac 0030 D 010 BH4HC High Pressure Filter | Replaces the Eppensteiner E400HL30H102LLLA",
       "sku": "e400hl30h102llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_010_bh4hc_n167383_i2404624_77ee3ea4-4a16-4c31-872d-dba215a827a3.jpg?v=1760541926",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023089_e8fae0b87372.jpg",
       "vendor": "",
       "price": 12400,
       "partNumber": "0030 D 010 BH4HC",
@@ -111,7 +111,7 @@
     {
       "title": "MicroFit® MFHHP40438 UltraGen III Pressure Filter | Replaces the Eppensteiner E400HL30H102LLLA",
       "sku": "e400hl30h102llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d0e38252-59fd-4674-8568-87935a9bf33d.png?v=1760630710",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023090_1177b5d34fdb.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40438",

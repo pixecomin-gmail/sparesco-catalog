@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF203520B_0993cfba-9c06-4c01-ae89-ab374ffff300.jpg?v=1762275859",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ead133b0-35b1-4d4e-99bd-0ca39f12dc1e_693f0a27-fc54-4fd6-9238-49eb45e9c244.jpg?v=1762275859",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_6128d68d-b7fe-4cd1-94a4-bb2afae3d87c.jpg?v=1762275859",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0025_s_125_w_n165585_i2372437_7728e68b-bf8c-4d88-84d9-771ed139f2a9.jpg?v=1762275859",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF203520B_2792b4a9-ea4b-4ab4-bd53-2e8426d69250.jpg?v=1762275856",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ead133b0-35b1-4d4e-99bd-0ca39f12dc1e_42cf2fc6-8749-49b5-8e24-0f9e38f315d7.jpg?v=1762275856",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_2c74e0fd-88a7-45d4-81a6-9fd71db5072e.jpg?v=1762275856",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0025_s_125_w_n165585_i2372437_54eabc50-8f5a-4f88-a2c5-0767c9f6390e.jpg?v=1762275856"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000045_5065e9223520.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000046_fd968f376c21.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000047_f400324670c9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000048_85b28860437c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000984_098583d70a19.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000985_409a7f1de1e5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000986_2623b072b793.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000987_f37535e6c962.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec FS120B4T125 Suction Strainer | Replaces the Argo-Hytos AS02501",
       "sku": "as02501-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF203520B_0993cfba-9c06-4c01-ae89-ab374ffff300.jpg?v=1762275859",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000045_5065e9223520.jpg",
       "vendor": "",
       "price": 1900,
       "partNumber": "FS120B4T125",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 77007 Suction Strainer | Replaces the Argo-Hytos AS02501",
       "sku": "as02501-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ead133b0-35b1-4d4e-99bd-0ca39f12dc1e_693f0a27-fc54-4fd6-9238-49eb45e9c244.jpg?v=1762275859",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000046_fd968f376c21.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "SH 77007",
@@ -80,7 +80,7 @@
     {
       "title": "Argo Hytos AS02501 Suction Strainer",
       "sku": "as02501-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_6128d68d-b7fe-4cd1-94a4-bb2afae3d87c.jpg?v=1762275859",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000047_f400324670c9.jpg",
       "vendor": "",
       "price": 3600,
       "partNumber": "AS02501",
@@ -108,7 +108,7 @@
     {
       "title": "Hydac 0025 S 125 W Suction Strainer | Replaces the Argo-Hytos AS02501",
       "sku": "as02501-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0025_s_125_w_n165585_i2372437_7728e68b-bf8c-4d88-84d9-771ed139f2a9.jpg?v=1762275859",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000048_85b28860437c.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "0025 S 125 W",

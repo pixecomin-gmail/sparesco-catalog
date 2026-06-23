@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_a3cd45bb-ecd8-40b8-9c99-3378601121a9.jpg?v=1741361104",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-10d9a759-ec67-46cd-89b8-fe596fe81fdc_2475aec3-aaa1-4dca-9d16-4ae795d45a3c.jpg?v=1741361104",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_db6f8ce2-3da1-41d3-a094-d4317cd8c55b.jpg?v=1755779164",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_a33a55e9-ab8c-495f-b176-8f93466e3055.jpg?v=1741361099",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-10d9a759-ec67-46cd-89b8-fe596fe81fdc_73e7dadf-f8c3-4167-a41c-1d6c454ddeb5.jpg?v=1741361099",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_58e6dbf7-7e53-41a7-827c-c3a58ea784e4.jpg?v=1755779163"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026258_6c9b387e7f60.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026259_6eb12aa10d47.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026260_90474df74bb7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026266_6f6d3c08d240.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026267_e1a45b1199ac.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026268_681939db09a1.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DVD2225K10B Pressure Filter | Replaces the Eppensteiner 2225P10A000P",
       "sku": "2225p10a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_a3cd45bb-ecd8-40b8-9c99-3378601121a9.jpg?v=1741361104",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026258_6c9b387e7f60.jpg",
       "vendor": "Filtrec",
       "price": 8500,
       "partNumber": "DVD2225K10B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67022 Pressure Filter | Replaces the Eppensteiner 2225P10A000P",
       "sku": "2225p10a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-10d9a759-ec67-46cd-89b8-fe596fe81fdc_2475aec3-aaa1-4dca-9d16-4ae795d45a3c.jpg?v=1741361104",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026259_6eb12aa10d47.jpg",
       "vendor": "HiFi Filter",
       "price": 10000,
       "partNumber": "SH 67022",
@@ -80,7 +80,7 @@
     {
       "title": "Fleetguard HF6906 Hydraulic Filters | Replaces the Eppensteiner 2225P10A000P",
       "sku": "2225p10a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_db6f8ce2-3da1-41d3-a094-d4317cd8c55b.jpg?v=1755779164",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026260_90474df74bb7.jpg",
       "vendor": "Fleetguard",
       "price": 3600,
       "partNumber": "HF6906",

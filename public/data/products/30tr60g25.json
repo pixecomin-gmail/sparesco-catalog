@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201584B_338e5832-2e2f-454a-b5c6-2137d18b69ac.jpg?v=1691611516",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST1094_bb2e8b07-41b6-4d42-b481-01fa08739e70.jpg?v=1755779208",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_r_025_w__-w_n183820_i2529343_8953a54a-a47e-4afe-a828-9b003b78dba9.jpg?v=1760541974",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d3616e8c-c00b-481b-83e1-7d8cd903639e.png?v=1760630148"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025054_2321ea2e00ec.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025055_369829bb1fc0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025056_53fee6ad0b31.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025057_d7b206530ccb.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR60B25B3/AB1 Return Filter | Replaces the Eppensteiner 30TR60G25",
       "sku": "30tr60g25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF201584B_338e5832-2e2f-454a-b5c6-2137d18b69ac.jpg?v=1691611516",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025054_2321ea2e00ec.jpg",
       "vendor": "Filtrec",
       "price": 5300,
       "partNumber": "RHR60B25B3/AB1",
@@ -50,7 +50,7 @@
     {
       "title": "Fleetguard ST1094 Hydraulic Filters | Replaces the Eppensteiner 30TR60G25",
       "sku": "30tr60g25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST1094_bb2e8b07-41b6-4d42-b481-01fa08739e70.jpg?v=1755779208",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025055_369829bb1fc0.jpg",
       "vendor": "Fleetguard",
       "price": 8500,
       "partNumber": "ST1094",
@@ -82,7 +82,7 @@
     {
       "title": "Hydac 0060 R 025 W /-W Return Filter | Replaces the Eppensteiner 30TR60G25",
       "sku": "30tr60g25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_r_025_w__-w_n183820_i2529343_8953a54a-a47e-4afe-a828-9b003b78dba9.jpg?v=1760541974",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025056_53fee6ad0b31.jpg",
       "vendor": "Hydac",
       "price": 25800,
       "partNumber": "0060 R 025 W /-W",
@@ -114,7 +114,7 @@
     {
       "title": "MicroFit® MFHR50917 UltraGen III Return Filter | Replaces the Eppensteiner 30TR60G25",
       "sku": "30tr60g25-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_d3616e8c-c00b-481b-83e1-7d8cd903639e.png?v=1760630148",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025057_d7b206530ccb.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50917",

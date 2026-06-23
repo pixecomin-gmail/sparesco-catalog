@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_92c571ef-ce77-4f7c-bfda-b98da1350787.jpg?v=1761218509",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1ff73d3e-f1d4-4cdb-994f-ab2ef8d5a8dc.png?v=1761218509",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-59358192-4eda-4553-a8d5-eba79b81f007_5605fe14-685b-4032-b254-ca6becfc1951.jpg?v=1761218509"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/004103_cdc7311b2029.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/004104_d6925e954eb6.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/004105_c833cc4ad5ed.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD330H05B Pressure Filter | Replaces the Eppensteiner E400HL330H62",
       "sku": "e400hl330h62-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD330H_92c571ef-ce77-4f7c-bfda-b98da1350787.jpg?v=1761218509",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/004103_cdc7311b2029.jpg",
       "vendor": "",
       "price": 18600,
       "partNumber": "DHD330H05B",
@@ -48,7 +48,7 @@
     {
       "title": "MicroFit® MFHHP40920 UltraGen III Filter | Replaces the Eppensteiner E400HL330H62",
       "sku": "e400hl330h62-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1ff73d3e-f1d4-4cdb-994f-ab2ef8d5a8dc.png?v=1761218509",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/004104_d6925e954eb6.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40920",
@@ -79,7 +79,7 @@
     {
       "title": "HiFi Filter SH 75043 Pressure Filter | Replaces the Eppensteiner E400HL330H62",
       "sku": "e400hl330h62-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-59358192-4eda-4553-a8d5-eba79b81f007_5605fe14-685b-4032-b254-ca6becfc1951.jpg?v=1761218509",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/004105_c833cc4ad5ed.jpg",
       "vendor": "",
       "price": 27300,
       "partNumber": "SH 75043",

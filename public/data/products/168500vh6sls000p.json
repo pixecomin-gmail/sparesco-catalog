@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203752B_16535ed1-b4f7-4c81-bbfd-0832e9771fb2.jpg?v=1762277630",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203749B_02581d67-8302-4966-9c6d-55ce5af01c81.jpg?v=1762277630",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p571366.700.700_8cc85249-7344-4d78-aca3-1c8143ce690e.jpg?v=1762277630",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ffbdde9d-c081-4eec-a120-1acf1ba0dd22_75182651-29c3-4c1d-bb4d-582c81370c1f.jpg?v=1762277630",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_b6a17f9e-2864-4b72-9579-20f0393b1257.jpg?v=1755090960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p571366.700.700_4e7581e6-d8e6-4f04-8f8c-586cd2edcef5.jpg?v=1755090960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3b4a2612-3947-4c75-b183-815bb6c20474_e9687956-008d-460e-8475-af1c94dedf32.jpg?v=1755090960",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_4a507da2-d4be-40cb-afb6-1a52d323a538.jpg?v=1755090960"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022357_1f3eb8bb30ea.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022358_31a9aab9caf8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022359_3e61425f5dfe.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022360_dd735c24ca68.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031557_b4b0eadf1e90.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031558_18adac1c93e6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031559_ea9b410ff08f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031560_27c07d120b86.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec XR630G03B0 DIN Return Filter | Replaces the Eppensteiner 168500VH6SLS000P",
       "sku": "168500vh6sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203752B_16535ed1-b4f7-4c81-bbfd-0832e9771fb2.jpg?v=1762277630",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022357_1f3eb8bb30ea.jpg",
       "vendor": "",
       "price": 31000,
       "partNumber": "XR630G03B0",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® MFHR51470 UltraGen III DIN Return Filter | Replaces the Eppensteiner 168500VH6SLS000P",
       "sku": "168500vh6sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203749B_02581d67-8302-4966-9c6d-55ce5af01c81.jpg?v=1762277630",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022358_31a9aab9caf8.jpg",
       "vendor": "",
       "price": 28600,
       "partNumber": "MFHR51470",
@@ -84,7 +84,7 @@
     {
       "title": "Donaldson P571365 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 168500VH6SLS000P",
       "sku": "168500vh6sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p571366.700.700_8cc85249-7344-4d78-aca3-1c8143ce690e.jpg?v=1762277630",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022359_3e61425f5dfe.jpg",
       "vendor": "",
       "price": 18300,
       "partNumber": "P571365",
@@ -115,7 +115,7 @@
     {
       "title": "HiFi Filter SH 84167 DIN Return Filter | Replaces the Eppensteiner 168500VH6SLS000P",
       "sku": "168500vh6sls000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ffbdde9d-c081-4eec-a120-1acf1ba0dd22_75182651-29c3-4c1d-bb4d-582c81370c1f.jpg?v=1762277630",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022360_dd735c24ca68.jpg",
       "vendor": "",
       "price": 45000,
       "partNumber": "SH 84167",
@@ -146,7 +146,7 @@
     {
       "title": "MicroFit® UltraGen III MFHR50191 Return Filter | Replaces the Eppensteiner 16.8500VH6SLS000P",
       "sku": "16-8500vh6sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_b6a17f9e-2864-4b72-9579-20f0393b1257.jpg?v=1755090960",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031557_b4b0eadf1e90.jpg",
       "vendor": "",
       "price": 25100,
       "partNumber": "MFHR50191",
@@ -177,7 +177,7 @@
     {
       "title": "HiFi Filter SH 87062 Return Filter | Replaces the Eppensteiner 16.8500VH6SLS000P",
       "sku": "16-8500vh6sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3b4a2612-3947-4c75-b183-815bb6c20474_e9687956-008d-460e-8475-af1c94dedf32.jpg?v=1755090960",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031559_ea9b410ff08f.jpg",
       "vendor": "",
       "price": 31500,
       "partNumber": "SH 87062",
@@ -210,7 +210,7 @@
     {
       "title": "Filtrec R454G06 Return Filter | Replaces the Eppensteiner 16.8500VH6SLS000P",
       "sku": "16-8500vh6sls000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_4a507da2-d4be-40cb-afb6-1a52d323a538.jpg?v=1755090960",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031560_27c07d120b86.jpg",
       "vendor": "",
       "price": 32200,
       "partNumber": "R454G06",

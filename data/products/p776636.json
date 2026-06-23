@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF437K_7bf4d715-1192-41aa-aee2-a551749a3a13.jpg?v=1762276259",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_179_x_image1_43ef8229-5c92-44b8-bfd4-1077022133bf.jpg?v=1762276259",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776636.700.700.jpg?v=1762276259"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000039_f84657617243.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000040_aa84898e5cb4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000041_cf6ceb507e76.jpg"
   ],
   "variants": [
     {
       "title": "Fleetguard AF437K Air Filter, Primary | Replaces the Donaldson P776636",
       "sku": "p776636-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF437K_7bf4d715-1192-41aa-aee2-a551749a3a13.jpg?v=1762276259",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000039_f84657617243.jpg",
       "vendor": "",
       "price": 3300,
       "partNumber": "AF437K",
@@ -42,7 +42,7 @@
     {
       "title": "Mann Filter C 14 179 x Air Filter | Replaces the Donaldson P776636",
       "sku": "p776636-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_14_179_x_image1_43ef8229-5c92-44b8-bfd4-1077022133bf.jpg?v=1762276259",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000040_aa84898e5cb4.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "C 14 179 x",
@@ -70,7 +70,7 @@
     {
       "title": "Donaldson P776636 Air Filter, Primary Finned",
       "sku": "p776636-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p776636.700.700.jpg?v=1762276259",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000041_cf6ceb507e76.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "P776636",

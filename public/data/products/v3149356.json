@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-DIAM.114-TNT-BY-PASS-3BAR-GIALLO_b6bd4648-68a9-403b-85b1-e712dad631b9.jpg?v=1755095444",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p567001.700.700_18cc4521-4ae0-4db2-bb01-889ac12e4374.jpg?v=1755095444",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a67ab9bc-5e6f-4ac3-928b-f2bcf93f5c25_d80d1b44-3121-40a4-914a-ec0d3cd1c48b.jpg?v=1755095444",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_117842be-8500-46a7-9ff0-0a3e866d992c.png?v=1760632786",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-DIAM.114-TNT-BY-PASS-3BAR-GIALLO_10c61859-1194-4ffa-a552-10bfd6a2c41a.jpg?v=1755094524",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p567001.700.700_2f557641-9d1c-4b40-8af8-f6489ad27f7f.jpg?v=1755094524",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a67ab9bc-5e6f-4ac3-928b-f2bcf93f5c25_91e77ec3-3212-40d8-b01f-b0bc91202922.jpg?v=1755094524",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_34660043-2264-47aa-ad19-9ffe25eed87a.png?v=1760631862"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000638_c7aeba1c5759.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000639_dbd6c16d5d5c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000640_ab92d777f054.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000641_80c8ac7fe322.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000904_249c2a523860.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000905_6957198c02b3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000906_6d1bfaa35b80.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000907_99c7050a47f3.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR2600G10B3/AB1 Return Filter | Replaces the Argo-Hytos V3149356",
       "sku": "v3149356-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-DIAM.114-TNT-BY-PASS-3BAR-GIALLO_b6bd4648-68a9-403b-85b1-e712dad631b9.jpg?v=1755095444",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000638_c7aeba1c5759.jpg",
       "vendor": "",
       "price": 49000,
       "partNumber": "RHR2600G10B3/AB1",
@@ -55,7 +55,7 @@
     {
       "title": "Donaldson P567003 Hydraulic Filter, Cartridge Dt | Replaces the Argo-Hytos V3149356",
       "sku": "v3149356-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p567001.700.700_18cc4521-4ae0-4db2-bb01-889ac12e4374.jpg?v=1755095444",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000639_dbd6c16d5d5c.jpg",
       "vendor": "",
       "price": 34100,
       "partNumber": "P567003",
@@ -88,7 +88,7 @@
     {
       "title": "HiFi Filter SH 74116 Return Filter | Replaces the Argo-Hytos V3149356",
       "sku": "v3149356-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a67ab9bc-5e6f-4ac3-928b-f2bcf93f5c25_d80d1b44-3121-40a4-914a-ec0d3cd1c48b.jpg?v=1755095444",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000640_ab92d777f054.jpg",
       "vendor": "",
       "price": 74200,
       "partNumber": "SH 74116",
@@ -121,7 +121,7 @@
     {
       "title": "MicroFit® MFHR50885 UltraGen III Return Filter | Replaces the Argo-Hytos V3149356",
       "sku": "v3149356-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_117842be-8500-46a7-9ff0-0a3e866d992c.png?v=1760632786",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000641_80c8ac7fe322.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50885",

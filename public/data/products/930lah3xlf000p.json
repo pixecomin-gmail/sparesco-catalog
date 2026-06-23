@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204260B_2c0bda67-289c-4b4c-b055-8dca9a7cd07c.jpg?v=1741361458",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97b6ee68-03e5-4e87-9341-d7922d9eadbd_b2377b34-aabd-4042-8130-9c7d345d4214.jpg?v=1741361458",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e266da5a-1706-4499-a0cb-a2bcb04f1092.png?v=1760630685",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204260B_86cd4430-1c9f-4086-ac78-1cd4d4d73054.jpg?v=1741361459",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97b6ee68-03e5-4e87-9341-d7922d9eadbd_77f087c5-3d78-4dad-8b47-63f3284b27b0.jpg?v=1741361459",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b2a5f49b-65ac-4c17-a425-8910e2e6c833.png?v=1760630683"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023147_15cbef42b2f0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023148_b9beb129dab5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023149_e9a10aa7aee4.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023153_b807346ddc27.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023154_1cbc03899131.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023155_f64dcf84300b.png"
   ],
   "variants": [
     {
       "title": "Filtrec DHD30H03B Pressure Filter | Replaces the Eppensteiner 930LAH3XLF000P",
       "sku": "930lah3xlf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204260B_2c0bda67-289c-4b4c-b055-8dca9a7cd07c.jpg?v=1741361458",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023147_15cbef42b2f0.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "DHD30H03B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 75073 Pressure Filter | Replaces the Eppensteiner 930LAH3XLF000P",
       "sku": "930lah3xlf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-97b6ee68-03e5-4e87-9341-d7922d9eadbd_b2377b34-aabd-4042-8130-9c7d345d4214.jpg?v=1741361458",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023148_b9beb129dab5.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "SH 75073",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHHP40435 UltraGen III Pressure Filter | Replaces the Eppensteiner 930LAH3XLF000P",
       "sku": "930lah3xlf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_e266da5a-1706-4499-a0cb-a2bcb04f1092.png?v=1760630685",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/023149_e9a10aa7aee4.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40435",

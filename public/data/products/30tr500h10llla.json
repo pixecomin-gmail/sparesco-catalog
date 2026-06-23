@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204204B_57d3f457-0c6f-4278-8a8f-c6c935a089a1.jpg?v=1742489608",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p573285.700.700_268ba964-7a5a-44c6-90a3-ca5ffe451051.jpg?v=1742489608",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c9f0261a-9d64-4977-bb65-75e0276118b9_ecdcf927-68cb-4e5a-bd55-aefc43950676.jpg?v=1742489608",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6896_244f49b8-fb31-4e9e-aed5-5f365c5a9d99.jpg?v=1755778817",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fc36b5c5-3717-4966-b576-fabc2c9ec63a.png?v=1760629565"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028933_8f6f46c6c8dc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028934_4c3a6903e96b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028935_4a4c21eead34.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028936_1f41cae5e932.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028937_175685744e49.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR500G10B3/AB1 Return Filter | Replaces the Eppensteiner 30TR500H10LLLA",
       "sku": "30tr500h10llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF204204B_57d3f457-0c6f-4278-8a8f-c6c935a089a1.jpg?v=1742489608",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028933_8f6f46c6c8dc.jpg",
       "vendor": "Filtrec",
       "price": 11400,
       "partNumber": "RHR500G10B3/AB1",
@@ -52,7 +52,7 @@
     {
       "title": "Donaldson P573285 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 30TR500H10LLLA",
       "sku": "30tr500h10llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p573285.700.700_268ba964-7a5a-44c6-90a3-ca5ffe451051.jpg?v=1742489608",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028934_4c3a6903e96b.jpg",
       "vendor": "Donaldson",
       "price": 13700,
       "partNumber": "P573285",
@@ -85,7 +85,7 @@
     {
       "title": "HiFi Filter SH 74029 Return Filter | Replaces the Eppensteiner 30TR500H10LLLA",
       "sku": "30tr500h10llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c9f0261a-9d64-4977-bb65-75e0276118b9_ecdcf927-68cb-4e5a-bd55-aefc43950676.jpg?v=1742489608",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028935_4a4c21eead34.jpg",
       "vendor": "HiFi Filter",
       "price": 18100,
       "partNumber": "SH 74029",
@@ -120,7 +120,7 @@
     {
       "title": "Fleetguard HF6896 Hydraulic Filters | Replaces the Eppensteiner 30TR500H10LLLA",
       "sku": "30tr500h10llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6896_244f49b8-fb31-4e9e-aed5-5f365c5a9d99.jpg?v=1755778817",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028936_1f41cae5e932.jpg",
       "vendor": "Fleetguard",
       "price": 15100,
       "partNumber": "HF6896",
@@ -153,7 +153,7 @@
     {
       "title": "MicroFit® MFHR54439 UltraGen III Return Filter | Replaces the Eppensteiner 30TR500H10LLLA",
       "sku": "30tr500h10llla-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fc36b5c5-3717-4966-b576-fabc2c9ec63a.png?v=1760629565",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028937_175685744e49.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR54439",

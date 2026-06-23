@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201049B_e571e445-260a-4f55-b564-4d43b2b60ab1.jpg?v=1755094595",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ea09a24d-6db1-40cd-bd9b-a6fb7074a3bf_f737964b-6878-43de-99d7-bba3023aef04.jpg?v=1755094595",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p561421.700.700_f4d9bfb3-0a6a-4a0a-bb6c-2a541c534209.jpg?v=1755094595",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7adaf898-5465-4da4-8722-caa39066f89d.png?v=1760631905",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201049B_5c1b196d-33db-4107-a716-8f7acd6de20f.jpg?v=1755092421",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ea09a24d-6db1-40cd-bd9b-a6fb7074a3bf_3013c3a6-2275-4ec0-b038-407530daa957.jpg?v=1755092421",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p561421.700.700_03d585b7-83a4-434d-9502-f4d601852ed9.jpg?v=1755092421",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_4be3d258-51ab-43a7-89a9-7b6f794e6f35.png?v=1760629883"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020379_f0eab5d9378d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020380_c1681102dc5a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020381_fa608f968a03.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020382_b442e90ddcdb.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026214_0c3499b0d810.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026215_7edff913397e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026216_3a6024d15f6f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026217_6dbdafe26fc7.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD232B25B Pressure Filter | Replaces the Eppensteiner 2.32G25",
       "sku": "2-32g25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201049B_e571e445-260a-4f55-b564-4d43b2b60ab1.jpg?v=1755094595",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020379_f0eab5d9378d.jpg",
       "vendor": "",
       "price": 9600,
       "partNumber": "DVD232B25B",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 67165 Pressure Filter | Replaces the Eppensteiner 2.32G25",
       "sku": "2-32g25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ea09a24d-6db1-40cd-bd9b-a6fb7074a3bf_f737964b-6878-43de-99d7-bba3023aef04.jpg?v=1755094595",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020380_c1681102dc5a.jpg",
       "vendor": "",
       "price": 7900,
       "partNumber": "SH 67165",
@@ -82,7 +82,7 @@
     {
       "title": "Donaldson P561421 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 2.32G25",
       "sku": "2-32g25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p561421.700.700_f4d9bfb3-0a6a-4a0a-bb6c-2a541c534209.jpg?v=1755094595",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020381_fa608f968a03.jpg",
       "vendor": "",
       "price": 11300,
       "partNumber": "P561421",
@@ -112,7 +112,7 @@
     {
       "title": "MicroFit® MFHLP30329 UltraGen III Pressure Filter | Replaces the Eppensteiner 2.32G25",
       "sku": "2-32g25-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_7adaf898-5465-4da4-8722-caa39066f89d.png?v=1760631905",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020382_b442e90ddcdb.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30329",

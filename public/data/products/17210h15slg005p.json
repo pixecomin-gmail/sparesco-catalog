@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203657B_8a888fc7-c99c-4447-ba47-6226f48c9b5a.jpg?v=1741364164",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ca4dd080-19bc-476e-9651-87a72ea5a093_9425b7fd-d2e0-4f8e-babd-b4ca002713c2.jpg?v=1741364164",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a13e276b-eb17-4e06-acb3-4b67f844e250.png?v=1760636759",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203657B_fc6084e9-bbaa-4231-bd7f-dddaccc4e5c5.jpg?v=1741364164",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ca4dd080-19bc-476e-9651-87a72ea5a093_d68b6743-b24d-475e-a0a8-f56c7e76e243.jpg?v=1741364164",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9cfbbb82-1095-4b18-bab1-8596c64a16bb.png?v=1760636754"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000001_947aeb2d852e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000002_d51d952cf56f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000003_20838ff0d5e9.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/002244_464024aee7c7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/002245_c5031c778e96.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/002246_126d02c555fe.png"
   ],
   "variants": [
     {
       "title": "Filtrec RLR210E15B Return Filter | Replaces the Eppensteiner 17210H15SLG005P",
       "sku": "17210h15slg005p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203657B_8a888fc7-c99c-4447-ba47-6226f48c9b5a.jpg?v=1741364164",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000001_947aeb2d852e.jpg",
       "vendor": "",
       "price": 7600,
       "partNumber": "RLR210E15B",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 65557 Return Filter | Replaces the Eppensteiner 17210H15SLG005P",
       "sku": "17210h15slg005p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ca4dd080-19bc-476e-9651-87a72ea5a093_9425b7fd-d2e0-4f8e-babd-b4ca002713c2.jpg?v=1741364164",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000002_d51d952cf56f.jpg",
       "vendor": "",
       "price": 12300,
       "partNumber": "SH 65557",
@@ -87,7 +87,7 @@
     {
       "title": "MicroFit® MFHR57277 UltraGen III Return Filter | Replaces the Eppensteiner 17210H15SLG005P",
       "sku": "17210h15slg005p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_a13e276b-eb17-4e06-acb3-4b67f844e250.png?v=1760636759",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000003_20838ff0d5e9.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR57277",

@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XR160_329d0088-e723-46f2-bf04-7e1827f98184.jpg?v=1764691350",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ce2183b2-5706-436f-9c5b-5af22b414052_45c6499e-b7ad-459f-93d9-c78c6c1494ba.jpg?v=1764691350",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203744B_3c16776d-f59f-454f-bd3d-7af79ee9e757.jpg?v=1764691350",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0250_rn_010_bn4hc_n184736_i2523093_ec6d70b5-a9d3-4223-aed8-1709eff15de2.jpg?v=1764691350",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XR160_8b8a838f-2042-4046-ac12-54210ddf5b09.jpg?v=1764691353",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ce2183b2-5706-436f-9c5b-5af22b414052_049fb766-faf2-4ad1-ae6c-d30554e37e2d.jpg?v=1764691353",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203744B_f0fd62d9-f143-47a5-b23b-6d25e34804bf.jpg?v=1764691353",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0250_rn_010_bn4hc_n184736_i2523093_548aba75-e77c-4780-a8f2-40141073074b.jpg?v=1764691353"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022419_1666fda2cfb5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022420_4d337e119770.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022421_a9ea005814ff.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022422_1c98e4a4848c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022427_2d076b0b0a98.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022428_fcc777cdc2e0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022429_ea6a97d9ffd3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022430_937ba883c3ff.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec XR250G10B0 DIN Return Filter | Replaces the Eppensteiner 10250H10SLA000P",
       "sku": "10250h10sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XR160_329d0088-e723-46f2-bf04-7e1827f98184.jpg?v=1764691350",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022419_1666fda2cfb5.jpg",
       "vendor": "",
       "price": 22400,
       "partNumber": "XR250G10B0",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 84115 DIN Return Filter | Replaces the Eppensteiner 10250H10SLA000P",
       "sku": "10250h10sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-ce2183b2-5706-436f-9c5b-5af22b414052_45c6499e-b7ad-459f-93d9-c78c6c1494ba.jpg?v=1764691350",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022420_4d337e119770.jpg",
       "vendor": "",
       "price": 13300,
       "partNumber": "SH 84115",
@@ -84,7 +84,7 @@
     {
       "title": "MicroFit® UltraGen III MFHR51464 DIN Return Filter | Replaces the Eppensteiner 1.0250H10SLA000P",
       "sku": "1-0250h10sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203744B_f0fd62d9-f143-47a5-b23b-6d25e34804bf.jpg?v=1764691353",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022429_ea6a97d9ffd3.jpg",
       "vendor": "",
       "price": 17900,
       "partNumber": "MFHR51464",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0250 RN 010 BN4HC DIN Return Filter | Replaces the Eppensteiner 10250H10SLA000P",
       "sku": "10250h10sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0250_rn_010_bn4hc_n184736_i2523093_ec6d70b5-a9d3-4223-aed8-1709eff15de2.jpg?v=1764691350",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022422_1c98e4a4848c.jpg",
       "vendor": "",
       "price": 31200,
       "partNumber": "0250 RN 010 BN4HC",

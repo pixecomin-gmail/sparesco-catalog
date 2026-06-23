@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201297B_b23cec07-3e60-4aa6-819e-3ffcb6fee774.jpg?v=1764691049",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f95dd094-bd2c-43f8-873c-c1f2a8e7ca3b_d05fc954-38b9-4b4d-8415-7fbd66c68e5a.jpg?v=1764691049",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_558a74b2-8689-430e-b35b-33234cf80bf5.jpg?v=1764691049",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201297B_627b7bb9-5826-4838-ab92-429aadcd4de2.jpg?v=1764691048",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f95dd094-bd2c-43f8-873c-c1f2a8e7ca3b_efa1e400-6d07-4c19-a2b4-0881a10e0f7d.jpg?v=1764691048",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_d05619d1-2782-4ab9-b212-51a8e7cb7e26.jpg?v=1764691048"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025465_84e3bc9d9127.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025466_a453f4876b27.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025467_083681016f0f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025471_d19704594df9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025472_83f7bf98b134.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025473_bcc125d85f3f.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40166 Pressure Filter | Replaces the Eppensteiner 16.9601UH10XLF000P",
       "sku": "16-9601uh10xlf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201297B_627b7bb9-5826-4838-ab92-429aadcd4de2.jpg?v=1764691048",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025471_d19704594df9.jpg",
       "vendor": "MicroFit",
       "price": 30300,
       "partNumber": "MFHHP40166",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87180 Pressure Filter | Replaces the Eppensteiner 169601UH10XLF000P",
       "sku": "169601uh10xlf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f95dd094-bd2c-43f8-873c-c1f2a8e7ca3b_d05fc954-38b9-4b4d-8415-7fbd66c68e5a.jpg?v=1764691049",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025466_a453f4876b27.jpg",
       "vendor": "HiFi Filter",
       "price": 32600,
       "partNumber": "SH 87180",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec D143G10B Pressure Filter | Replaces the Eppensteiner 169601UH10XLF000P",
       "sku": "169601uh10xlf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_558a74b2-8689-430e-b35b-33234cf80bf5.jpg?v=1764691049",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025467_083681016f0f.jpg",
       "vendor": "Filtrec",
       "price": 46900,
       "partNumber": "D143G10B",

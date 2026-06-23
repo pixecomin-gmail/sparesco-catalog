@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_4f78990e-e899-4de1-bc2b-5db1fe4006fd.png?v=1755097391",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9adec9dd-0f6a-4a1b-86ce-d75ab5a86cbd_66d6a8b9-b07b-4e7f-a993-548d755da6eb.jpg?v=1755097391",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35328_940135c2-d3bf-46e4-aa61-99088c207058.jpg?v=1755780246",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_05706faf-302e-4800-9565-2b9698c5d537.png?v=1755093928",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9adec9dd-0f6a-4a1b-86ce-d75ab5a86cbd_10437871-ad99-4d01-b0be-5ad2f03b9fe5.jpg?v=1755093928",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35328_100f4c7b-4668-482f-a565-a0155fcd4f32.jpg?v=1755779570"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000439_ba922dd0f908.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000440_488e5620cc0a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000441_926dac7a4863.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001001_b9d2a662f0b7.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001002_624fb97eaa3f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001003_6ad88a00f5da.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec WG582 Special Filter | Replaces the Argo-Hytos V5124006",
       "sku": "v5124006-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_4f78990e-e899-4de1-bc2b-5db1fe4006fd.png?v=1755097391",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000439_ba922dd0f908.png",
       "vendor": "",
       "price": 25000,
       "partNumber": "WG582",
@@ -40,7 +40,7 @@
     {
       "title": "HiFi Filter SH 52245 Special Filter | Replaces the Argo-Hytos V5124006",
       "sku": "v5124006-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9adec9dd-0f6a-4a1b-86ce-d75ab5a86cbd_66d6a8b9-b07b-4e7f-a993-548d755da6eb.jpg?v=1755097391",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000440_488e5620cc0a.jpg",
       "vendor": "",
       "price": 16100,
       "partNumber": "SH 52245",
@@ -65,7 +65,7 @@
     {
       "title": "Fleetguard HF35328 Hydraulic Filters | Replaces the Argo-Hytos V5124006",
       "sku": "v5124006-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35328_940135c2-d3bf-46e4-aa61-99088c207058.jpg?v=1755780246",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000441_926dac7a4863.jpg",
       "vendor": "",
       "price": 14100,
       "partNumber": "HF35328",

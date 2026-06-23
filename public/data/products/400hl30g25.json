@@ -9,22 +9,22 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3763d380-cab9-4fff-864c-6675a227f1d9_f097e4c5-e516-4469-8ad7-c0c13be4402c.jpg?v=1740477718",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203315B_29773153-38a8-4983-8359-8f397014536e.jpg?v=1740477718",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST1058_3e899ec4-9cf7-4007-b48a-345018a943b7.jpg?v=1755780107",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_025_w_n182460_i2372573_f3842dbe-e288-4e80-b6fe-e95280646d79.jpg?v=1760541968",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ef072f34-1986-49a6-8d4a-133142076527.png?v=1760634124",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3763d380-cab9-4fff-864c-6675a227f1d9_c69e7e1a-c10d-46f2-b69a-4253d98cc932.jpg?v=1740477724",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203315B_4e32a8b8-7318-4e0c-9621-4aff7d37cb53.jpg?v=1740477724",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST1058_03ac1200-dc22-45dd-8920-0778701ce10c.jpg?v=1755780107",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_025_w_n182460_i2372573_5685fdcb-8560-4792-81bc-b3786fa60e45.jpg?v=1760541969",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_2bab35b1-5048-4365-8679-34fa21e3091b.png?v=1760634123"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009652_e296caf19e8e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009653_17778a21688d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009654_d4c3588af4c3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009655_9ddf5cb9e117.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009656_d57a6881ac9a.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009657_29906bf64628.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009658_7e7d64029a1c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009659_ae7cf6937d22.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009660_1441e5f0e63c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009661_ed9153d6ab96.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 75081 Pressure Filter | Replaces the Eppensteiner 400HL30G25",
       "sku": "400hl30g25-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-3763d380-cab9-4fff-864c-6675a227f1d9_f097e4c5-e516-4469-8ad7-c0c13be4402c.jpg?v=1740477718",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009652_e296caf19e8e.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "SH 75081",
@@ -54,7 +54,7 @@
     {
       "title": "Filtrec DHD30S25B Pressure Filter | Replaces the Eppensteiner 400HL30G25",
       "sku": "400hl30g25-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203315B_29773153-38a8-4983-8359-8f397014536e.jpg?v=1740477718",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009653_17778a21688d.jpg",
       "vendor": "",
       "price": 6100,
       "partNumber": "DHD30S25B",
@@ -84,7 +84,7 @@
     {
       "title": "Fleetguard ST1058 Hydraulic Filters | Replaces the Eppensteiner 400HL30G25",
       "sku": "400hl30g25-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/ST1058_3e899ec4-9cf7-4007-b48a-345018a943b7.jpg?v=1755780107",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009654_d4c3588af4c3.jpg",
       "vendor": "",
       "price": 6900,
       "partNumber": "ST1058",
@@ -114,7 +114,7 @@
     {
       "title": "Hydac 0030 D 025 W Pressure Filter | Replaces the Eppensteiner 400HL30G25",
       "sku": "400hl30g25-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0030_d_025_w_n182460_i2372573_f3842dbe-e288-4e80-b6fe-e95280646d79.jpg?v=1760541968",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009655_9ddf5cb9e117.jpg",
       "vendor": "",
       "price": 11700,
       "partNumber": "0030 D 025 W",
@@ -144,7 +144,7 @@
     {
       "title": "MicroFit® MFHLP31102 UltraGen III Filter | Replaces the Eppensteiner 400HL30G25",
       "sku": "400hl30g25-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_ef072f34-1986-49a6-8d4a-133142076527.png?v=1760634124",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009656_d57a6881ac9a.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP31102",

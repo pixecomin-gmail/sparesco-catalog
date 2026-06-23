@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9cb70493-5ba2-4fc9-a738-edfa807f73f3_d5d059cb-7b39-4ce3-8168-2259c7b34c45.jpg?v=1740484256",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p580286.700.700_7dc116a1-15e6-4955-aa71-0d7977dcd795.jpg?v=1740484256",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D821GA_153145ac-7f20-4013-bd6a-42910a340c16.jpg?v=1740484256",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF29131_bd2012a4-d16d-4c4d-9ef1-4916329bc11f.jpg?v=1755779074",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b6fe019a-8a7b-4fc4-b906-cba47460b177.png?v=1760629792"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001297_c6729925aee5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001298_43c6abb5719b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001299_00f1dc5b7682.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001300_56dc98b5b592.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001301_3adff1943013.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52606 Pressure Filter | Replaces the Argo-Hytos V3062306",
       "sku": "v3062306-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9cb70493-5ba2-4fc9-a738-edfa807f73f3_d5d059cb-7b39-4ce3-8168-2259c7b34c45.jpg?v=1740484256",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001297_c6729925aee5.jpg",
       "vendor": "",
       "price": 6600,
       "partNumber": "SH 52606",
@@ -50,7 +50,7 @@
     {
       "title": "Donaldson P580286 Hydraulic Filter, Cartridge | Replaces the Argo-Hytos V3062306",
       "sku": "v3062306-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p580286.700.700_7dc116a1-15e6-4955-aa71-0d7977dcd795.jpg?v=1740484256",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001298_43c6abb5719b.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "P580286",
@@ -81,7 +81,7 @@
     {
       "title": "Filtrec D821G10A Pressure Filter | Replaces the Argo-Hytos V3062306",
       "sku": "v3062306-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D821GA_153145ac-7f20-4013-bd6a-42910a340c16.jpg?v=1740484256",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001299_00f1dc5b7682.jpg",
       "vendor": "",
       "price": 8700,
       "partNumber": "D821G10A",
@@ -112,7 +112,7 @@
     {
       "title": "Fleetguard HF29131 Hydraulic Filters | Replaces the Argo-Hytos V3062306",
       "sku": "v3062306-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF29131_bd2012a4-d16d-4c4d-9ef1-4916329bc11f.jpg?v=1755779074",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001300_56dc98b5b592.jpg",
       "vendor": "",
       "price": 11200,
       "partNumber": "HF29131",
@@ -143,7 +143,7 @@
     {
       "title": "MicroFit® MFHLP30052 UltraGen III Filter | Replaces the Argo-Hytos V3062306",
       "sku": "v3062306-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_b6fe019a-8a7b-4fc4-b906-cba47460b177.png?v=1760629792",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001301_3adff1943013.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHLP30052",

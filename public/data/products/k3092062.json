@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b210caf5-872b-4662-a374-ddcd62104fb3_008dff18-4447-4c98-abfb-4903a81d7b3d.jpg?v=1761217750",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_4b1a6c3c-888f-4207-addd-e84c2121ef51.png?v=1761217750",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35366_57441510-7b58-409a-ab25-fec0c83ed125.jpg?v=1761217750",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b210caf5-872b-4662-a374-ddcd62104fb3_ca89a276-a90b-4177-a8d1-b7ec4ec85f46.jpg?v=1761217753",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_ae1876a5-9bb6-475f-9b32-1e591950896f.png?v=1761217753",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35366_2e5826b6-1893-4cfe-b9e1-ab1df61ead8a.jpg?v=1761217753"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000536_da4933974b28.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000537_6830a23b6e48.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000538_307d7ecc0e68.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000901_618bf3e0df65.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000902_32276cff339f.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000903_3820584b3cc6.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52004 Special Filter | Replaces the Argo-Hytos K3092062",
       "sku": "k3092062-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b210caf5-872b-4662-a374-ddcd62104fb3_008dff18-4447-4c98-abfb-4903a81d7b3d.jpg?v=1761217750",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000536_da4933974b28.jpg",
       "vendor": "",
       "price": 4200,
       "partNumber": "SH 52004",
@@ -50,7 +50,7 @@
     {
       "title": "Filtrec WP457 Special Filter | Replaces the Argo-Hytos K3092062",
       "sku": "k3092062-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_4b1a6c3c-888f-4207-addd-e84c2121ef51.png?v=1761217750",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000537_6830a23b6e48.png",
       "vendor": "",
       "price": 0,
       "partNumber": "WP457",
@@ -78,7 +78,7 @@
     {
       "title": "Fleetguard HF35366 Hydraulic Filters | Replaces the Argo-Hytos K3092062",
       "sku": "k3092062-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35366_57441510-7b58-409a-ab25-fec0c83ed125.jpg?v=1761217750",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000538_307d7ecc0e68.jpg",
       "vendor": "",
       "price": 3900,
       "partNumber": "HF35366",

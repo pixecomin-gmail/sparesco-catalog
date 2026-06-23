@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211570B_23327308-8da0-4c0f-8416-b6a288fa234a.jpg?v=1741363757",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a6cbb17b-b3ec-48d3-8439-b68eaa1d7127_d0bb4d23-59a3-431b-b0bb-5dd6db9a2e3b.jpg?v=1741363757",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_29e70a79-3e3b-422e-8279-dfd7514e62d9.png?v=1760634720",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211570B_6fca2d48-8bd7-49a8-be22-24148e2786ec.jpg?v=1741363758",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a6cbb17b-b3ec-48d3-8439-b68eaa1d7127_68715a2a-6a03-4963-b085-3ad0573ec37a.jpg?v=1741363758",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_17612498-a168-4499-ba4b-e4965e47d0e6.png?v=1760634722"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006462_0191f747edc7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006463_31c9b815e6c8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006464_96b757020dde.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006465_ca25654b9fdd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006466_a21706c33cae.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006467_a59e64290953.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR410B25B Return Filter | Replaces the Eppensteiner 410G25A000P",
       "sku": "410g25a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF211570B_23327308-8da0-4c0f-8416-b6a288fa234a.jpg?v=1741363757",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006462_0191f747edc7.jpg",
       "vendor": "",
       "price": 8200,
       "partNumber": "RVR410B25B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67522 Return Filter | Replaces the Eppensteiner 410G25A000P",
       "sku": "410g25a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a6cbb17b-b3ec-48d3-8439-b68eaa1d7127_d0bb4d23-59a3-431b-b0bb-5dd6db9a2e3b.jpg?v=1741363757",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006463_31c9b815e6c8.jpg",
       "vendor": "",
       "price": 10600,
       "partNumber": "SH 67522",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR55937 UltraGen III Return Filter | Replaces the Eppensteiner 410G25A000P",
       "sku": "410g25a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_29e70a79-3e3b-422e-8279-dfd7514e62d9.png?v=1760634720",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/006464_96b757020dde.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR55937",

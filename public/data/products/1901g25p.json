@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_93d802b0-334f-4a68-8eb6-63ae36282378.jpg?v=1755092411",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7e50462b-4de3-406d-a7b2-886777fa4e98_688e7db3-6faa-430f-8d22-fc9f156eb12a.jpg?v=1755092411",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_38f20beb-a6a0-4987-a14c-90461c71ba9d.png?v=1760629860",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_08da3c58-01f6-4067-8176-d83eef1e466c.jpg?v=1755092416",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7e50462b-4de3-406d-a7b2-886777fa4e98_a5ac7635-457f-44da-b84b-a57e73e7c72a.jpg?v=1755092416",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cf354311-fc2d-44f8-8bcc-b346c260e2de.png?v=1760629863"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026656_a7648fe03b3f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026657_f4a8847845f3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026658_32cbd8feee60.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026666_cded2db72bb9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026667_495ae41db9a5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026668_6bdca30bad5b.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR1901B25B Return Filter | Replaces the Eppensteiner 1901G25P",
       "sku": "1901g25p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RVR1901_93d802b0-334f-4a68-8eb6-63ae36282378.jpg?v=1755092411",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026656_a7648fe03b3f.jpg",
       "vendor": "Filtrec",
       "price": 60700,
       "partNumber": "RVR1901B25B",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 67000 Return Filter | Replaces the Eppensteiner 1901G25P",
       "sku": "1901g25p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-7e50462b-4de3-406d-a7b2-886777fa4e98_688e7db3-6faa-430f-8d22-fc9f156eb12a.jpg?v=1755092411",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026657_f4a8847845f3.jpg",
       "vendor": "HiFi Filter",
       "price": 59100,
       "partNumber": "SH 67000",
@@ -80,7 +80,7 @@
     {
       "title": "MicroFit® MFHR50468 UltraGen III Return Filter | Replaces the Eppensteiner 1901G25P",
       "sku": "1901g25p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_38f20beb-a6a0-4987-a14c-90461c71ba9d.png?v=1760629860",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026658_32cbd8feee60.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50468",

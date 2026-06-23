@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d40b5161-95bd-4e78-925e-9a0afb64fca1_2f96c3ad-226f-4366-8670-78254c0b1a9b.jpg?v=1762281698",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200659B_a372f1f8-02ef-4a43-940f-741c2e57785e.jpg?v=1762281698",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_8ee93937-8737-4fc3-9e8e-b4578315a37a.jpg?v=1762281698",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165144.700.700_bdd9b965-c992-47c0-9b8b-c1f30d7a74c0.jpg?v=1762281698",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d40b5161-95bd-4e78-925e-9a0afb64fca1_58fab0b7-9a48-48f6-9a90-8b725328e659.jpg?v=1762281699",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200659B_af862eb4-8a6f-4885-8467-301abc4e9026.jpg?v=1762281699",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_043308ad-7ebd-4e72-a4e5-93b056045044.jpg?v=1762281699",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165144.700.700_56588864-c11c-4955-8b72-2591af98cde1.jpg?v=1762281699"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026944_f11473889bb3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026945_53662f0f9536.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026946_0582ff43ec84.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026947_8a6d8e96923b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026951_cadfeff1b01e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026952_148516be47e2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026953_1ff0f56d8ca1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026954_6b44d1ce025e.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 87045 Return Filter | Replaces the Eppensteiner 168400VH3SLS000P",
       "sku": "168400vh3sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d40b5161-95bd-4e78-925e-9a0afb64fca1_2f96c3ad-226f-4366-8670-78254c0b1a9b.jpg?v=1762281698",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026944_f11473889bb3.jpg",
       "vendor": "HiFi Filter",
       "price": 76600,
       "partNumber": "SH 87045",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® UltraGen III MFHR50229 Return Filter | Replaces the Eppensteiner 16.8400VH3SLS000P",
       "sku": "16-8400vh3sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200659B_af862eb4-8a6f-4885-8467-301abc4e9026.jpg?v=1762281699",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026952_148516be47e2.jpg",
       "vendor": "MicroFit",
       "price": 31000,
       "partNumber": "MFHR50229",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec R444G03 Return Filter | Replaces the Eppensteiner 168400VH3SLS000P",
       "sku": "168400vh3sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R44X-G_8ee93937-8737-4fc3-9e8e-b4578315a37a.jpg?v=1762281698",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026946_0582ff43ec84.jpg",
       "vendor": "Filtrec",
       "price": 53100,
       "partNumber": "R444G03",
@@ -115,7 +115,7 @@
     {
       "title": "Donaldson P165144 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 168400VH3SLS000P",
       "sku": "168400vh3sls000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165144.700.700_bdd9b965-c992-47c0-9b8b-c1f30d7a74c0.jpg?v=1762281698",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026947_8a6d8e96923b.jpg",
       "vendor": "Donaldson",
       "price": 53300,
       "partNumber": "P165144",

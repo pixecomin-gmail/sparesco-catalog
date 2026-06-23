@@ -371,3 +371,51 @@
     grid-template-columns: 1fr;
   }
 }
+
+.hunt-phone-input {
+  width: 100%;
+  border: 1px solid var(--border);
+  height: 44px;
+  padding: 0 14px;
+}
+
+.hunt-phone-input .PhoneInputInput {
+  border: none;
+  height: 42px;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+}
+
+.hunt-phone-input .PhoneInputCountry {
+  margin-right: 12px;
+}
+
+.upload-placeholder {
+  cursor: pointer;
+  position: relative;
+}
+
+.upload-placeholder input {
+  display: none;
+}
+
+.upload-placeholder span {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.hunt-success-message,
+.hunt-error-message {
+  margin: 14px 28px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hunt-success-message {
+  color: #0f7a3b;
+}
+
+.hunt-error-message {
+  color: #b42318;
+}

@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201653B-NB_81e84132-79ad-435c-81e0-78203880974f.jpg?v=1748452187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_32ebe120-d7be-435d-b471-8dd0e881620b.jpg?v=1748452187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6cc0c4e1-a55a-417a-aba3-7cebc8af3985_248d5410-d390-4e96-8749-2fbb91c8f11c.jpg?v=1748452187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566651.700.700_35e8cb8f-1d05-42b5-88e8-1aef7a74bfc1.jpg?v=1748452187",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201653B-NB_f2c15102-2ac4-498f-a792-6de3a121ab7a.jpg?v=1748452188",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_f83b00d6-8093-49e5-842d-d9f0d3c10913.jpg?v=1748452188",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6cc0c4e1-a55a-417a-aba3-7cebc8af3985_2e800c12-e71c-4faf-9f93-8f689fc74493.jpg?v=1748452188",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566651.700.700_8918c1e0-2d55-4899-ab35-16903e7b7a29.jpg?v=1748452188"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/017991_2d6422b086c7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/017992_90349acf3f8f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/017993_233b051ab1cf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/017994_608530943760.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020432_305ea0b6003d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020433_5a309a60dba6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020434_d9606f39a768.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020435_c94b3eb683df.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP31472 Pressure Filter | Replaces the Eppensteiner 9.60LAH10SLA000V",
       "sku": "9-60lah10sla000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201653B-NB_f2c15102-2ac4-498f-a792-6de3a121ab7a.jpg?v=1748452188",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020432_305ea0b6003d.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "MFHLP31472",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec DHD60G20V Pressure Filter | Replaces the Eppensteiner 960LAH10SLA000V",
       "sku": "960lah10sla000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60G_32ebe120-d7be-435d-b471-8dd0e881620b.jpg?v=1748452187",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/017992_90349acf3f8f.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "DHD60G20V",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 75006 V Pressure Filter | Replaces the Eppensteiner 960LAH10SLA000V",
       "sku": "960lah10sla000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-6cc0c4e1-a55a-417a-aba3-7cebc8af3985_248d5410-d390-4e96-8749-2fbb91c8f11c.jpg?v=1748452187",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/017993_233b051ab1cf.jpg",
       "vendor": "",
       "price": 3700,
       "partNumber": "SH 75006 V",
@@ -115,7 +115,7 @@
     {
       "title": "Donaldson P566653 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 960LAH10SLA000V",
       "sku": "960lah10sla000v-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566651.700.700_35e8cb8f-1d05-42b5-88e8-1aef7a74bfc1.jpg?v=1748452187",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/017994_608530943760.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "P566653",

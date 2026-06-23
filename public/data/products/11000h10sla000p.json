@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5eda44a2-593f-4e23-81be-0574e6ec4c49_8936df71-ba8e-4c9d-9c0d-8c4dc71b1fef.jpg?v=1740476255",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF207946B_0438c405-fc48-4c72-b73a-6785151bece4.jpg?v=1740476255",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_f3bd2691-38a4-4782-9986-dcf567511efc.jpg?v=1755779390",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_645dfed7-88fa-4caa-ad59-82b94038f56d.png?v=1760630798",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5eda44a2-593f-4e23-81be-0574e6ec4c49_c8a96ca7-e415-49d6-bdd5-c96f867c149b.jpg?v=1740476256",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF207946B_a81006b9-1a6f-4fd5-b3d7-d246289facbb.jpg?v=1740476256",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_d63c04da-8287-4ab9-a071-758f958618be.jpg?v=1755779390",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_808504c2-0004-45f7-9c22-2cfa77c7be6f.png?v=1760630795"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022514_cb2645cdc297.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022515_54d5be8a84e3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022516_9142dc37f2b0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022517_7df7ee6af020.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022525_bd95a2caf5ef.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022526_efdec3921d6e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022527_cc235b52ece2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022528_ab2f05399875.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 84117 DIN Return Filter | Replaces the Eppensteiner 11000H10SLA000P",
       "sku": "11000h10sla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-5eda44a2-593f-4e23-81be-0574e6ec4c49_8936df71-ba8e-4c9d-9c0d-8c4dc71b1fef.jpg?v=1740476255",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022514_cb2645cdc297.jpg",
       "vendor": "",
       "price": 30200,
       "partNumber": "SH 84117",
@@ -53,7 +53,7 @@
     {
       "title": "Filtrec XR1000G10B0 DIN Return Filter | Replaces the Eppensteiner 11000H10SLA000P",
       "sku": "11000h10sla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF207946B_0438c405-fc48-4c72-b73a-6785151bece4.jpg?v=1740476255",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022515_54d5be8a84e3.jpg",
       "vendor": "",
       "price": 43900,
       "partNumber": "XR1000G10B0",
@@ -84,7 +84,7 @@
     {
       "title": "Fleetguard ST2243 Hydraulic Filters | Replaces the Eppensteiner 11000H10SLA000P",
       "sku": "11000h10sla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_f3bd2691-38a4-4782-9986-dcf567511efc.jpg?v=1755779390",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022516_9142dc37f2b0.jpg",
       "vendor": "",
       "price": 42500,
       "partNumber": "ST2243",
@@ -115,7 +115,7 @@
     {
       "title": "MicroFit® MFHR51451 UltraGen III Filter | Replaces the Eppensteiner 11000H10SLA000P",
       "sku": "11000h10sla000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_645dfed7-88fa-4caa-ad59-82b94038f56d.png?v=1760630798",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022517_7df7ee6af020.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR51451",

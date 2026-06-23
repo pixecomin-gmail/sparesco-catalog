@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201727B-NB_51b50747-e5e8-409f-bee7-a33733e3480d.jpg?v=1744035390",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_4d254e46-d1cf-4a56-a7f3-58899fe3651f.jpg?v=1744035390",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1e8ac748-f660-466a-ace1-64c994c8fe73_7ea8faf8-6c2b-4d52-9bc6-8faa0efff252.jpg?v=1744035390",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201727B-NB_f43ebfe9-1dfa-4b22-a3ff-56d656b84c7c.jpg?v=1744035390",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_17cbc9a5-4fc1-4a56-b092-db7669cc3dcb.jpg?v=1744035390",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1e8ac748-f660-466a-ace1-64c994c8fe73_811f2c99-00fb-4db7-82ba-36016f8028da.jpg?v=1744035390"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029536_73ceaaca25ee.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029537_da5226bfbfaf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029538_e3b5c81bb389.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029542_ac14f830fd12.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029543_1095c0d75f8f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029544_f0e7f4199277.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30481 Pressure Filter | Replaces the Eppensteiner 9.160H3XLA000P",
       "sku": "9-160h3xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201727B-NB_f43ebfe9-1dfa-4b22-a3ff-56d656b84c7c.jpg?v=1744035390",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029542_ac14f830fd12.jpg",
       "vendor": "MicroFit",
       "price": 5400,
       "partNumber": "MFHLP30481",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DHD160G03B Pressure Filter | Replaces the Eppensteiner 9160H3XLA000P",
       "sku": "9160h3xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD160G_4d254e46-d1cf-4a56-a7f3-58899fe3651f.jpg?v=1744035390",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029537_da5226bfbfaf.jpg",
       "vendor": "Filtrec",
       "price": 5900,
       "partNumber": "DHD160G03B",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 75024 Pressure Filter | Replaces the Eppensteiner 9160H3XLA000P",
       "sku": "9160h3xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1e8ac748-f660-466a-ace1-64c994c8fe73_7ea8faf8-6c2b-4d52-9bc6-8faa0efff252.jpg?v=1744035390",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/029538_e3b5c81bb389.jpg",
       "vendor": "HiFi Filter",
       "price": 9400,
       "partNumber": "SH 75024",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4308eb9f-8dc3-41c4-975b-b5c8c7f6caf3_c7e8086d-b65a-455b-8b9f-f9886f6d6b4f.jpg?v=1762820548",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_95adcdf6-6abb-4638-b3cc-08c8772e91ff.png?v=1762820548",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4308eb9f-8dc3-41c4-975b-b5c8c7f6caf3.jpg?v=1762814472",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_bf9de98d-1089-4bd3-b53d-7306daa89350.png?v=1762814472"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001195_193218da9727.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001196_6f89e112a2db.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002298_976a77dde037.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002299_67ba0c35f4dc.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter OT 2094 Air/Oil Separator | Replaces the SF Filter SAO 54058",
       "sku": "sao-54058-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4308eb9f-8dc3-41c4-975b-b5c8c7f6caf3.jpg?v=1762814472",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002298_976a77dde037.jpg",
       "vendor": "",
       "price": 11800,
       "partNumber": "OT 2094",
@@ -38,7 +38,7 @@
     {
       "title": "Mann Filter LE 6003 x Compressed Air-Oil Separation | Replaces the SF Filter SAO54058",
       "sku": "sao54058-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/mann-filter-catalog-product-with-no-image_95adcdf6-6abb-4638-b3cc-08c8772e91ff.png?v=1762820548",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001196_6f89e112a2db.png",
       "vendor": "",
       "price": 0,
       "partNumber": "LE 6003 x",

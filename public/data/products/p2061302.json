@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35264_e44f8069-690b-47b0-9c26-16c4c1c000aa.jpg?v=1762278142",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200477B_6b2062e7-abe0-41fd-bbc2-595c7138cf93.jpg?v=1762278142",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b85dbc98-c9d8-48f9-a6f5-e97d0f373915_f11583d3-578d-447d-9da4-80e6920e7ad5.jpg?v=1762278142"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000415_e3fb0d9a8bfd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000416_0c6dc0f2185a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000417_54e55537eb19.jpg"
   ],
   "variants": [
     {
       "title": "Fleetguard HF35264 Hydraulic Filters | Replaces the Argo-Hytos P2061302",
       "sku": "p2061302-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35264_e44f8069-690b-47b0-9c26-16c4c1c000aa.jpg?v=1762278142",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000415_e3fb0d9a8bfd.jpg",
       "vendor": "",
       "price": 1800,
       "partNumber": "HF35264",
@@ -47,7 +47,7 @@
     {
       "title": "Filtrec R692C25M Return Filter | Replaces the Argo-Hytos P2061302",
       "sku": "p2061302-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200477B_6b2062e7-abe0-41fd-bbc2-595c7138cf93.jpg?v=1762278142",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000416_0c6dc0f2185a.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "R692C25M",
@@ -77,7 +77,7 @@
     {
       "title": "HiFi Filter SH 52613 Return Filter | Replaces the Argo-Hytos P2061302",
       "sku": "p2061302-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b85dbc98-c9d8-48f9-a6f5-e97d0f373915_f11583d3-578d-447d-9da4-80e6920e7ad5.jpg?v=1762278142",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000417_54e55537eb19.jpg",
       "vendor": "",
       "price": 2300,
       "partNumber": "SH 52613",

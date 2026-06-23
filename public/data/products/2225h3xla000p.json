@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-35c60f63-aa5d-4800-9214-922b204a0f8b_a82d0bac-d491-4bcd-b588-6f8264e5cb2d.jpg?v=1755092432",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_aee20137-662f-4127-b11d-ff4aad1a4f38.jpg?v=1755092432",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cacbff26-ef10-4aa4-acc5-fff4a3872901.png?v=1760629895",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-35c60f63-aa5d-4800-9214-922b204a0f8b_d95773f7-861e-4c19-aea3-ee97e0c5cab3.jpg?v=1755092426",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_7929e40e-53f4-442d-aedf-39718030d9d5.jpg?v=1755092426",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_2886c3dd-327f-41d5-ad93-6a58aafa8246.png?v=1760629894"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026275_f759421f4099.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026276_b63044f1eba0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026277_40c64b731762.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026293_524881d613d3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026294_d438cdf0d54b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026295_112ae565f699.png"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 67118 Pressure Filter | Replaces the Eppensteiner 2225H3XLA000P",
       "sku": "2225h3xla000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-35c60f63-aa5d-4800-9214-922b204a0f8b_a82d0bac-d491-4bcd-b588-6f8264e5cb2d.jpg?v=1755092432",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026275_f759421f4099.jpg",
       "vendor": "HiFi Filter",
       "price": 11700,
       "partNumber": "SH 67118",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec DVD2225E03B Pressure Filter | Replaces the Eppensteiner 2225H3XLA000P",
       "sku": "2225h3xla000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD2140E_aee20137-662f-4127-b11d-ff4aad1a4f38.jpg?v=1755092432",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026276_b63044f1eba0.jpg",
       "vendor": "Filtrec",
       "price": 10300,
       "partNumber": "DVD2225E03B",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP30321 UltraGen III Filter | Replaces the Eppensteiner 2225H3XLA000P",
       "sku": "2225h3xla000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_cacbff26-ef10-4aa4-acc5-fff4a3872901.png?v=1760629895",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026277_40c64b731762.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP30321",

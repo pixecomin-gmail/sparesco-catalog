@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167162.700.700_00a8e56f-5fd8-411b-bfb9-a20123dbd31f.jpg?v=1741943145",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4a5e571d-b85c-4a3d-a050-98a969db33cf_16edb268-9ad1-455a-9a8a-9d46193cbb78.jpg?v=1741943145",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_ba7ddf92-e540-487e-982c-eb06401aa5ab.jpg?v=1741943145",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6700_22f1b1c7-29c2-4a9b-a39d-d02f15777898.jpg?v=1755778167",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167162.700.700_e1b581ca-d171-4144-9b70-149bac736a5e.jpg?v=1748450403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4a5e571d-b85c-4a3d-a050-98a969db33cf_492bd471-6776-4059-b40a-0edd07bfce26.jpg?v=1748450403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_82bf528c-bc07-45c4-a1f8-e03d3de1fcbc.jpg?v=1748450403",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6700_333aa2ab-d29b-436c-8f1f-4f2ecb960b9e.jpg?v=1755778167"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033425_b54c2067ba81.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033426_2a4dcfee9ab0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033427_4b0617935012.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033428_746d0b5dfe8c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033435_1124f1e5a9cc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033436_6da7eec73921.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033437_9999739172b8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033438_d90ff31696d8.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson P167162 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 167500H3LL113RP",
       "sku": "167500h3ll113rp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p167162.700.700_00a8e56f-5fd8-411b-bfb9-a20123dbd31f.jpg?v=1741943145",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033425_b54c2067ba81.jpg",
       "vendor": "",
       "price": 7100,
       "partNumber": "P167162",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 56753 Spin-On Filter | Replaces the Eppensteiner 167500H3LL113RP",
       "sku": "167500h3ll113rp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-4a5e571d-b85c-4a3d-a050-98a969db33cf_16edb268-9ad1-455a-9a8a-9d46193cbb78.jpg?v=1741943145",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033426_2a4dcfee9ab0.jpg",
       "vendor": "",
       "price": 11600,
       "partNumber": "SH 56753",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec A150G03 Spin-On Filter | Replaces the Eppensteiner 167500H3LL113RP",
       "sku": "167500h3ll113rp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200132B_ba7ddf92-e540-487e-982c-eb06401aa5ab.jpg?v=1741943145",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033427_4b0617935012.jpg",
       "vendor": "",
       "price": 14200,
       "partNumber": "A150G03",
@@ -114,7 +114,7 @@
     {
       "title": "Fleetguard HF6700 Hydraulic Filters | Replaces the Eppensteiner 167500H3LL113RP",
       "sku": "167500h3ll113rp-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6700_22f1b1c7-29c2-4a9b-a39d-d02f15777898.jpg?v=1755778167",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033428_746d0b5dfe8c.jpg",
       "vendor": "",
       "price": 3500,
       "partNumber": "HF6700",

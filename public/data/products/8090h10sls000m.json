@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_8c412def-2538-4cd4-b6bc-ffe9dc9c9688.jpg?v=1755095269",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171613.700.700_718cc0e9-3529-4891-af19-13a399ff4833.jpg?v=1755095269",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_1226_image1_0ee1cec4-6253-44a9-be70-08427c098269.jpg?v=1755095269",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b1316ab2-91ad-4e48-98b2-3ee53067454b_90489b14-228e-4bde-af44-726aa0664255.jpg?v=1755095269",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_ea0c5fdb-2ad9-44a2-aa6d-ce2b9cf27865.jpg?v=1755093636",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171613.700.700_7c01f4a2-9d2e-4cb2-8daf-efb3bfea9016.jpg?v=1755093636",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_1226_image1_24f2ffab-90cb-474b-b1a1-0e876c617ab4.jpg?v=1755093636",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b1316ab2-91ad-4e48-98b2-3ee53067454b_a9a1ea44-91fc-477c-91de-2a282626ffb1.jpg?v=1755093636"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018090_ed5da1ac0814.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018091_f87ae6ba791c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018092_421bb10bb489.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018093_4f0bb64dd0b1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021535_936bcb986223.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021536_82c233d40f3f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021537_2f8c4e16d792.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021538_d149610ee2ea.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec A120G10 Spin-On Filter | Replaces the Eppensteiner 8090H10SLS000M",
       "sku": "8090h10sls000m-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/A120_8c412def-2538-4cd4-b6bc-ffe9dc9c9688.jpg?v=1755095269",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018090_ed5da1ac0814.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "A120G10",
@@ -52,7 +52,7 @@
     {
       "title": "Donaldson P171613 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 8090H10SLS000M",
       "sku": "8090h10sls000m-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p171613.700.700_718cc0e9-3529-4891-af19-13a399ff4833.jpg?v=1755095269",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018091_f87ae6ba791c.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "P171613",
@@ -82,7 +82,7 @@
     {
       "title": "Mann Filter W 1226 Hydraulics | Replaces the Eppensteiner 8090H10SLS000M",
       "sku": "8090h10sls000m-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/W_1226_image1_0ee1cec4-6253-44a9-be70-08427c098269.jpg?v=1755095269",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018092_421bb10bb489.jpg",
       "vendor": "",
       "price": 6700,
       "partNumber": "W 1226",
@@ -113,7 +113,7 @@
     {
       "title": "HiFi Filter SH 76955 Spin-On Filter | Replaces the Eppensteiner 8090H10SLS000M",
       "sku": "8090h10sls000m-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b1316ab2-91ad-4e48-98b2-3ee53067454b_90489b14-228e-4bde-af44-726aa0664255.jpg?v=1755095269",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018093_4f0bb64dd0b1.jpg",
       "vendor": "",
       "price": 10200,
       "partNumber": "SH 76955",

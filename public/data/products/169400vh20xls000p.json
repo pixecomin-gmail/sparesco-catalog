@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200668B_14222eb8-5cb7-494f-bff5-e022eadb283c.jpg?v=1764691031",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D620_2107d76c-ffe8-491f-85da-bf050b7ad4b1.jpg?v=1764691031",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_23d02b0b-bbad-4059-8371-9b306e8b2ca3.jpg?v=1764762613",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200668B_e017a70d-8237-4f76-b2ea-a5e7b44c778c.jpg?v=1764691028",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D620_2892e0d9-f6af-46aa-8812-ca64c075ce03.jpg?v=1764691028",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_7caf149d-e37c-43a5-b7c4-d54788f2e3b8.jpg?v=1764762614"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027255_4f5d6042beff.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027256_6ca40b8d562f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027257_0e5d87796536.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027262_33b3081577eb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027263_08c74ca93510.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027264_f50d14be945a.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30244 Pressure Filter | Replaces the Eppensteiner 16.9400VH20XLS000P",
       "sku": "16-9400vh20xls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200668B_e017a70d-8237-4f76-b2ea-a5e7b44c778c.jpg?v=1764691028",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027262_33b3081577eb.jpg",
       "vendor": "MicroFit",
       "price": 16100,
       "partNumber": "MFHLP30244",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec D622G25 Pressure Filter | Replaces the Eppensteiner 169400VH20XLS000P",
       "sku": "169400vh20xls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D620_2107d76c-ffe8-491f-85da-bf050b7ad4b1.jpg?v=1764691031",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027256_6ca40b8d562f.jpg",
       "vendor": "Filtrec",
       "price": 22700,
       "partNumber": "D622G25",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 87140 Pressure Filter | Replaces the Eppensteiner 169400VH20XLS000P",
       "sku": "169400vh20xls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_23d02b0b-bbad-4059-8371-9b306e8b2ca3.jpg?v=1764762613",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/027257_0e5d87796536.jpg",
       "vendor": "HiFi Filter",
       "price": 58400,
       "partNumber": "SH 87140",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200522B_221235fb-3faa-4ae4-854f-f4515d5fff00.jpg?v=1740484237",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d45b415b-5acb-4f8d-94aa-607cc57baff7_cc89eeeb-209b-489f-a554-2c089bae4b70.jpg?v=1740484237",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_c6b0ecb5-8255-44cd-86a3-f91271ae3d61.jpg?v=1740484237",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_23b1c49a-f76e-4279-bad3-9301135aa596.png?v=1760629814"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000041_1d5a8bf99f8d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000042_ebbb90788a79.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000043_2c99f8e8aea0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000044_5b7bd5864802.png"
   ],
   "variants": [
     {
       "title": "Filtrec R611G25 Return Filter | Replaces the Argo-Hytos V3051058",
       "sku": "v3051058-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200522B_221235fb-3faa-4ae4-854f-f4515d5fff00.jpg?v=1740484237",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000041_1d5a8bf99f8d.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "R611G25",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 52140 Return Filter | Replaces the Argo-Hytos V3051058",
       "sku": "v3051058-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d45b415b-5acb-4f8d-94aa-607cc57baff7_cc89eeeb-209b-489f-a554-2c089bae4b70.jpg?v=1740484237",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000042_ebbb90788a79.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "SH 52140",
@@ -84,7 +84,7 @@
     {
       "title": "Argo Hytos V3.0510-58 Return Filter",
       "sku": "v3051058-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_c6b0ecb5-8255-44cd-86a3-f91271ae3d61.jpg?v=1740484237",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000043_2c99f8e8aea0.jpg",
       "vendor": "",
       "price": 6800,
       "partNumber": "V3.0510-58",
@@ -117,7 +117,7 @@
     {
       "title": "MicroFit® MFHR50159 UltraGen III Return Filter | Replaces the Argo-Hytos V3051058",
       "sku": "v3051058-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_23b1c49a-f76e-4279-bad3-9301135aa596.png?v=1760629814",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000044_5b7bd5864802.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50159",

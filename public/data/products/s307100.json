@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7999_ead3373e-231d-4678-be8c-21bc29971acb.jpg?v=1762280351",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p762756.700.700_1b814fed-7529-4093-9bc1-49663f1664dc.jpg?v=1762280351",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WT1170_5c616021-343e-4701-a72a-b106df1c05a1.jpg?v=1762280351",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2e201acc-be3e-4f9f-8438-2bcc259f10ad_c42560fb-cfd6-402c-8a3c-6b848a2800dc.jpg?v=1762280351",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_47727ce1-7a18-4fcf-b48d-6a9b05254260.png?v=1762280351"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000502_3734296508b2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000503_8c06f86a2677.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000504_aa964e2e6d32.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000505_ad130a6a40e3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000506_3411412cbbe8.png"
   ],
   "variants": [
     {
       "title": "Fleetguard HF7999 Hydraulic Filters | Replaces the Argo-Hytos S307100",
       "sku": "s307100-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF7999_ead3373e-231d-4678-be8c-21bc29971acb.jpg?v=1762280351",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000502_3734296508b2.jpg",
       "vendor": "",
       "price": 2900,
       "partNumber": "HF7999",
@@ -47,7 +47,7 @@
     {
       "title": "Donaldson P762756 Hydraulic Filter, Cartridge | Replaces the Argo-Hytos S307100",
       "sku": "s307100-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p762756.700.700_1b814fed-7529-4093-9bc1-49663f1664dc.jpg?v=1762280351",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000503_8c06f86a2677.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "P762756",
@@ -75,7 +75,7 @@
     {
       "title": "Filtrec WT780 Special Filter | Replaces the Argo-Hytos S307100",
       "sku": "s307100-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/WT1170_5c616021-343e-4701-a72a-b106df1c05a1.jpg?v=1762280351",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000504_aa964e2e6d32.jpg",
       "vendor": "",
       "price": 4600,
       "partNumber": "WT780",
@@ -103,7 +103,7 @@
     {
       "title": "HiFi Filter SH 52710 V Special Filter | Replaces the Argo-Hytos S307100",
       "sku": "s307100-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-2e201acc-be3e-4f9f-8438-2bcc259f10ad_c42560fb-cfd6-402c-8a3c-6b848a2800dc.jpg?v=1762280351",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000505_ad130a6a40e3.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "SH 52710 V",
@@ -132,7 +132,7 @@
     {
       "title": "MicroFit® MFHSP80758 UltraGen III Filter | Replaces the Argo-Hytos S307100",
       "sku": "s307100-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_47727ce1-7a18-4fcf-b48d-6a9b05254260.png?v=1762280351",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000506_3411412cbbe8.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHSP80758",

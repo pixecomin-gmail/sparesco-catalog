@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1e15cef6-10d0-4a98-a054-6f5c5c79f11c_ce62370b-1e11-403d-9781-392fea03352a.jpg?v=1761217709",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_8b868968-8829-481d-a823-6d02230eb913.png?v=1761217709",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35444_8df11b1f-d76c-4747-a4f3-98506dc77cdf.jpg?v=1761217709"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000429_e4c9095fbad5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000430_f305caa98630.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000431_ec4d6579db2f.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 52052 Special Filter | Replaces the Argo-Hytos K3092072",
       "sku": "k3092072-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-1e15cef6-10d0-4a98-a054-6f5c5c79f11c_ce62370b-1e11-403d-9781-392fea03352a.jpg?v=1761217709",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000429_e4c9095fbad5.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "SH 52052",
@@ -47,7 +47,7 @@
     {
       "title": "Filtrec WP768 Special Filter | Replaces the Argo-Hytos K3092072",
       "sku": "k3092072-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/placeholder_8b868968-8829-481d-a823-6d02230eb913.png?v=1761217709",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000430_f305caa98630.png",
       "vendor": "",
       "price": 0,
       "partNumber": "WP768",
@@ -75,7 +75,7 @@
     {
       "title": "Fleetguard HF35444 Hydraulic Filters | Replaces the Argo-Hytos K3092072",
       "sku": "k3092072-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35444_8df11b1f-d76c-4747-a4f3-98506dc77cdf.jpg?v=1761217709",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000431_ec4d6579db2f.jpg",
       "vendor": "",
       "price": 4000,
       "partNumber": "HF35444",

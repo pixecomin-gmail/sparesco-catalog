@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204260B_88e3d051-3c4e-45f3-83dc-2afad08e52fc.jpg?v=1755096235",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9d7cbe00-e29a-453a-94b7-e479f2f772e9_12bb8006-7d97-47f4-9f76-cc5a94b1eda8.jpg?v=1755096235",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1183e136-2e8e-48a6-b776-7587a2c5fcd9.png?v=1760634165"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009273_ee089efcba2d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009274_52442c022ae5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009275_375c1335f5bd.png"
   ],
   "variants": [
     {
       "title": "Filtrec DHD30H20B Pressure Filter | Replaces the Eppensteiner E400HL30H202LLLA",
       "sku": "e400hl30h202llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204260B_88e3d051-3c4e-45f3-83dc-2afad08e52fc.jpg?v=1755096235",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009273_ee089efcba2d.jpg",
       "vendor": "",
       "price": 5400,
       "partNumber": "DHD30H20B",
@@ -48,7 +48,7 @@
     {
       "title": "HiFi Filter SH 75076 Pressure Filter | Replaces the Eppensteiner E400HL30H202LLLA",
       "sku": "e400hl30h202llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9d7cbe00-e29a-453a-94b7-e479f2f772e9_12bb8006-7d97-47f4-9f76-cc5a94b1eda8.jpg?v=1755096235",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009274_52442c022ae5.jpg",
       "vendor": "",
       "price": 5500,
       "partNumber": "SH 75076",
@@ -79,7 +79,7 @@
     {
       "title": "MicroFit® MFHHP40497 UltraGen III Pressure Filter | Replaces the Eppensteiner E400HL30H202LLLA",
       "sku": "e400hl30h202llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_1183e136-2e8e-48a6-b776-7587a2c5fcd9.png?v=1760634165",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009275_375c1335f5bd.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHHP40497",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203717B_55542419-45bb-4f53-a802-c6becb19897f.jpg?v=1764692316",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e0ad81e0-fa18-4180-a164-bbd1b08df0e1_c7dd2b48-3476-4313-a3d6-8bd763b74c7c.jpg?v=1764692316",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_ba4a3314-b8c2-4b96-9d94-5d4ff80a0f7d.jpg?v=1764692316",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203717B_810eb84e-30c2-4461-b26e-cc41e0b9880f.jpg?v=1764692314",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e0ad81e0-fa18-4180-a164-bbd1b08df0e1_790bda37-0cb1-4177-b3cd-d2954378ad65.jpg?v=1764692314",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_5f199ccc-8ab4-47c5-aa58-878c8fbd9465.jpg?v=1764692314"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009061_d066b2e5e2df.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009062_251c9f7cf24e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009063_0d4d655efa75.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009064_91c242eee8d4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009065_46726686cdcd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009066_39acf8d83c47.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP31539 DIN Pressure Filter | Replaces the Eppensteiner 2.0250G25A000P",
       "sku": "2-0250g25a000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203717B_810eb84e-30c2-4461-b26e-cc41e0b9880f.jpg?v=1764692314",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009064_91c242eee8d4.jpg",
       "vendor": "",
       "price": 41800,
       "partNumber": "MFHLP31539",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 65422 DIN Pressure Filter | Replaces the Eppensteiner 20250G25A000P",
       "sku": "20250g25a000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-e0ad81e0-fa18-4180-a164-bbd1b08df0e1_c7dd2b48-3476-4313-a3d6-8bd763b74c7c.jpg?v=1764692316",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009062_251c9f7cf24e.jpg",
       "vendor": "",
       "price": 28100,
       "partNumber": "SH 65422",
@@ -80,7 +80,7 @@
     {
       "title": "Filtrec XD250T25A DIN Pressure Filter | Replaces the Eppensteiner 20250G25A000P",
       "sku": "20250g25a000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD-250_ba4a3314-b8c2-4b96-9d94-5d4ff80a0f7d.jpg?v=1764692316",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009063_0d4d655efa75.jpg",
       "vendor": "",
       "price": 45500,
       "partNumber": "XD250T25A",

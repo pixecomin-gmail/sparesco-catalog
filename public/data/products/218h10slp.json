@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD232E_5a35acae-ca9c-4a0c-bdde-3c7be004eb15.jpg?v=1741361097",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_dbee8f28-a08d-47bc-b8f8-f1c530953062.jpg?v=1764762623",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_04a21792-8430-4657-8c5c-e192c41ba86b.png?v=1760629893",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD232E_d1eff915-7379-4824-80be-6a4256b1b841.jpg?v=1741361092",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_394ebbf7-c8e8-4895-8caa-a676c683b7cb.jpg?v=1764762622",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_50e16c62-4d19-42ff-917a-2d46c3e7eba4.png?v=1760629895"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026464_cce85d0bee5a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026465_59fcf8bea42c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026466_c5f00d91e78d.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026485_95ebf0c84183.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026486_aa3c6f5bfc0d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026487_bf77727815f4.png"
   ],
   "variants": [
     {
       "title": "Filtrec DVD218E10B Pressure Filter | Replaces the Eppensteiner 218H10SLP",
       "sku": "218h10slp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DVD232E_5a35acae-ca9c-4a0c-bdde-3c7be004eb15.jpg?v=1741361097",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026464_cce85d0bee5a.jpg",
       "vendor": "Filtrec",
       "price": 7200,
       "partNumber": "DVD218E10B",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67537 Pressure Filter | Replaces the Eppensteiner 218H10SLP",
       "sku": "218h10slp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HiFi-No-Img-800x800_dbee8f28-a08d-47bc-b8f8-f1c530953062.jpg?v=1764762623",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026465_59fcf8bea42c.jpg",
       "vendor": "HiFi Filter",
       "price": 8400,
       "partNumber": "SH 67537",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHLP30306 UltraGen III Pressure Filter | Replaces the Eppensteiner 218H10SLP",
       "sku": "218h10slp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_04a21792-8430-4657-8c5c-e192c41ba86b.png?v=1760629893",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026466_c5f00d91e78d.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHLP30306",

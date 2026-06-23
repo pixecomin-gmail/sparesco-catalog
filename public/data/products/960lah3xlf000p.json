@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60H_772c5541-f4c3-4cb1-a98a-8d37f2c65418.jpg?v=1761218061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9f535284-a4a6-4b81-989f-73b5577f8f99.png?v=1761218061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a0c00298-8a21-48fd-85e9-a8674ce5705f_100d7e23-1d07-4741-bdda-7a547e14dd35.jpg?v=1761218061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_005_on_n166584_i2460530_63124033-618c-4748-abf4-859294e44e4b.jpg?v=1761218061",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60H_434f78d6-5c55-443a-b5db-a88b4f9831de.jpg?v=1761218060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_578aa77e-3047-42aa-ba84-c8ff94f1e08f.png?v=1761218060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a0c00298-8a21-48fd-85e9-a8674ce5705f_c6757b2a-5258-43bc-8e75-0a64e6a0dcf2.jpg?v=1761218060",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_005_on_n166584_i2460530_c9d1d8c4-52e5-4f70-8b9a-9e66204b2830.jpg?v=1761218060"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025186_0ce99c1dd739.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025187_ebe962301a8a.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025188_955402c56a81.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025189_4c76a9c1b802.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025194_e04481ac5c07.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025195_fc5bca5abba8.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025196_692bbc0163dd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025197_1f930fbc702d.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec DHD60H03B Pressure Filter | Replaces the Eppensteiner 960LAH3XLF000P",
       "sku": "960lah3xlf000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/DHD60H_772c5541-f4c3-4cb1-a98a-8d37f2c65418.jpg?v=1761218061",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025186_0ce99c1dd739.jpg",
       "vendor": "Filtrec",
       "price": 7100,
       "partNumber": "DHD60H03B",
@@ -53,7 +53,7 @@
     {
       "title": "MicroFit® MFHHP40731 UltraGen III Filter | Replaces the Eppensteiner 960LAH3XLF000P",
       "sku": "960lah3xlf000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_9f535284-a4a6-4b81-989f-73b5577f8f99.png?v=1761218061",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025187_ebe962301a8a.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHHP40731",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 75001 Pressure Filter | Replaces the Eppensteiner 960LAH3XLF000P",
       "sku": "960lah3xlf000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a0c00298-8a21-48fd-85e9-a8674ce5705f_100d7e23-1d07-4741-bdda-7a547e14dd35.jpg?v=1761218061",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025188_955402c56a81.jpg",
       "vendor": "HiFi Filter",
       "price": 14900,
       "partNumber": "SH 75001",
@@ -115,7 +115,7 @@
     {
       "title": "Hydac 0060 D 003 BH4HC High Pressure Filter | Replaces the Eppensteiner 960LAH3XLF000P",
       "sku": "960lah3xlf000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0060_d_005_on_n166584_i2460530_63124033-618c-4748-abf4-859294e44e4b.jpg?v=1761218061",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025189_4c76a9c1b802.jpg",
       "vendor": "Hydac",
       "price": 32400,
       "partNumber": "0060 D 003 BH4HC",

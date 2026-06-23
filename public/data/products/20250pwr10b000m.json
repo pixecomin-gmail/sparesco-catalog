@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d7f95e54-a0a3-4a4b-bcdf-7861b959efb7_39647aa9-d663-4c5d-aca5-18d6b45f65a7.jpg?v=1764691963",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD250B_31d92e59-1146-4e34-843f-0cd0155d3e1b.jpg?v=1764691963",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203932B_1562767d-4796-44e6-882e-c78ade678237.jpg?v=1764691963",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d7f95e54-a0a3-4a4b-bcdf-7861b959efb7_b16077fd-bb33-4695-87fc-60a87b594bb6.jpg?v=1764691492",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD250B_eb890179-e8db-4084-bdea-d4c9bf763e52.jpg?v=1764691492",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203932B_6e0f34b4-a320-4aa9-842d-7ec92c1c4a1f.jpg?v=1764691492"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018514_f9965d8fcd8c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018515_d6b7e5ae11b9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018516_d87f79c1c558.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021664_fc5306b3a7c3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021665_7884937fe649.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021666_c5fde1ec2cf0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SH 84220 DIN Pressure Filter | Replaces the Eppensteiner 20250PWR10B000M",
       "sku": "20250pwr10b000m-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-d7f95e54-a0a3-4a4b-bcdf-7861b959efb7_39647aa9-d663-4c5d-aca5-18d6b45f65a7.jpg?v=1764691963",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018514_f9965d8fcd8c.jpg",
       "vendor": "",
       "price": 20300,
       "partNumber": "SH 84220",
@@ -50,7 +50,7 @@
     {
       "title": "Filtrec XD250G10B DIN Pressure Filter | Replaces the Eppensteiner 20250PWR10B000M",
       "sku": "20250pwr10b000m-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/XD250B_31d92e59-1146-4e34-843f-0cd0155d3e1b.jpg?v=1764691963",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018515_d6b7e5ae11b9.jpg",
       "vendor": "",
       "price": 36200,
       "partNumber": "XD250G10B",
@@ -81,7 +81,7 @@
     {
       "title": "MicroFit MFHHP40467 | Replaces the Eppensteiner 20250PWR10B000M",
       "sku": "20250pwr10b000m-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF203932B_1562767d-4796-44e6-882e-c78ade678237.jpg?v=1764691963",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/018516_d87f79c1c558.jpg",
       "vendor": "",
       "price": 33300,
       "partNumber": "MFHHP40467",

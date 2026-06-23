@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008123_39db59b1ef3b.jpg",
-    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008124_a18d6a4752f3.jpg",
-    "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008125_21125990d3d0.jpg"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008123_39db59b1ef3b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008124_a18d6a4752f3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008125_21125990d3d0.jpg"
   ],
   "variants": [
     {
       "title": "HiFi Filter SA 10253 Air Filter",
       "sku": "sa-10253-1",
-      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008123_39db59b1ef3b.jpg",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008123_39db59b1ef3b.jpg",
       "vendor": "",
       "price": 8400,
       "partNumber": "SA 10253",
@@ -39,7 +39,7 @@
     {
       "title": "Donaldson P119596 Air Filter, Primary Round | Replaces the HiFi Filter SA 10253",
       "sku": "sa-10253-2",
-      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008124_a18d6a4752f3.jpg",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008124_a18d6a4752f3.jpg",
       "vendor": "",
       "price": 8900,
       "partNumber": "P119596",
@@ -55,7 +55,7 @@
     {
       "title": "Fleetguard AF303 Air Filter, Primary | Replaces the HiFi Filter SA 10253",
       "sku": "sa-10253-3",
-      "image": "https://pub-b8cf8833c33242d391ce938e51d3c590.r2.dev/air-filters/008125_21125990d3d0.jpg",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008125_21125990d3d0.jpg",
       "vendor": "",
       "price": 10000,
       "partNumber": "AF303",

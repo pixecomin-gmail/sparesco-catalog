@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204848B_2f7a5ecf-53f1-4436-8f0c-20d3be304cda.jpg?v=1755093212",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p164225.700.700_c93d1aa7-01af-417d-8f6a-f639295e57bc.jpg?v=1755093212",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C212_cca711b7-d5c2-4c30-b64d-9bc1ab9e1e28.jpg?v=1755093212",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30768_ad1980c0-5067-46d6-9577-de6969a7a637.jpg?v=1755779405",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200599B-NB_9339df5a-18fa-4ef3-b5b3-b739396b441d.jpg?v=1762277160",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D620_d4a642dc-ac75-4e70-95d3-9ac2bdb3b064.jpg?v=1762277160",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p164225.700.700_386e0399-df1c-4727-9f60-c6098a0ee833.jpg?v=1762277160",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30768_05414cf7-bdd0-4def-be53-7e5bc8aae7c7.jpg?v=1762277160"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022298_0a3a8d9fd397.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022299_cd9395800f80.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022300_fd57d599caba.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022301_8e69a56d5d2c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031518_7ee8f9950dbf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031519_2005bbf42871.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031520_0c97804612db.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031521_5ae85c8823b7.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHC60174 Coreless Filter | Replaces the Eppensteiner 169400H20LL325TP",
       "sku": "169400h20ll325tp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204848B_2f7a5ecf-53f1-4436-8f0c-20d3be304cda.jpg?v=1755093212",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022298_0a3a8d9fd397.jpg",
       "vendor": "",
       "price": 16200,
       "partNumber": "MFHC60174",
@@ -53,7 +53,7 @@
     {
       "title": "Donaldson P164225 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 169400H20LL325TP",
       "sku": "169400h20ll325tp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p164225.700.700_c93d1aa7-01af-417d-8f6a-f639295e57bc.jpg?v=1755093212",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022299_cd9395800f80.jpg",
       "vendor": "",
       "price": 13000,
       "partNumber": "P164225",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec C212G25 Coreless Filter | Replaces the Eppensteiner 169400H20LL325TP",
       "sku": "169400h20ll325tp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C212_cca711b7-d5c2-4c30-b64d-9bc1ab9e1e28.jpg?v=1755093212",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022300_fd57d599caba.jpg",
       "vendor": "",
       "price": 22200,
       "partNumber": "C212G25",
@@ -115,7 +115,7 @@
     {
       "title": "Fleetguard HF30768 Hydraulic Filters | Replaces the Eppensteiner 169400H20LL325TP",
       "sku": "169400h20ll325tp-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30768_ad1980c0-5067-46d6-9577-de6969a7a637.jpg?v=1755779405",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/022301_8e69a56d5d2c.jpg",
       "vendor": "",
       "price": 14100,
       "partNumber": "HF30768",
@@ -146,7 +146,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP30224 Pressure Filter | Replaces the Eppensteiner 16.9400H20LL325TP",
       "sku": "16-9400h20ll325tp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200599B-NB_9339df5a-18fa-4ef3-b5b3-b739396b441d.jpg?v=1762277160",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031518_7ee8f9950dbf.jpg",
       "vendor": "",
       "price": 8000,
       "partNumber": "MFHLP30224",
@@ -177,7 +177,7 @@
     {
       "title": "Filtrec D620G25 Pressure Filter | Replaces the Eppensteiner 16.9400H20LL325TP",
       "sku": "16-9400h20ll325tp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D620_d4a642dc-ac75-4e70-95d3-9ac2bdb3b064.jpg?v=1762277160",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031519_2005bbf42871.jpg",
       "vendor": "",
       "price": 12600,
       "partNumber": "D620G25",

@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_7f161176-8e14-4eb6-9f3f-1b662d9679e3.jpg?v=1748450438",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12f91d78-e896-4072-a025-fc1d64a1e0e0_73e4c1f8-4026-4926-9ecc-d7167ccb6d33.jpg?v=1748450438",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_9df274fc-5f96-4534-b41f-d59d1656f97b.jpg?v=1748450438",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_0299e831-d04b-4a92-93bf-1e54aced3a01.jpg?v=1748450440",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12f91d78-e896-4072-a025-fc1d64a1e0e0_e2b8e721-a33e-4dba-92b4-282f227813a9.jpg?v=1748450440",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_f0dc16e1-801c-4325-84ff-e2b44aad25aa.jpg?v=1748450440"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026932_219a8af3da80.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026933_b6e43eb4a76f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026934_60ea8e110d89.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026938_0c3ba8877388.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026939_dc017b2816bc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026940_9cc47e25d18d.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHR50232 Return Filter | Replaces the Eppensteiner 16.8500VH3SLS000P",
       "sku": "16-8500vh3sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200682B_0299e831-d04b-4a92-93bf-1e54aced3a01.jpg?v=1748450440",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026938_0c3ba8877388.jpg",
       "vendor": "MicroFit",
       "price": 26400,
       "partNumber": "MFHR50232",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 87061 Return Filter | Replaces the Eppensteiner 168500VH3SLS000P",
       "sku": "168500vh3sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-12f91d78-e896-4072-a025-fc1d64a1e0e0_73e4c1f8-4026-4926-9ecc-d7167ccb6d33.jpg?v=1748450438",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026933_b6e43eb4a76f.jpg",
       "vendor": "HiFi Filter",
       "price": 34600,
       "partNumber": "SH 87061",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec R454G03 Return Filter | Replaces the Eppensteiner 168500VH3SLS000P",
       "sku": "168500vh3sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/R450_9df274fc-5f96-4534-b41f-d59d1656f97b.jpg?v=1748450438",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/026934_60ea8e110d89.jpg",
       "vendor": "Filtrec",
       "price": 32200,
       "partNumber": "R454G03",

@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200516B_2d13cf8e-4c65-4017-8732-094497760b17.jpg?v=1755095381",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f669e243-e7be-48fc-bc7d-1792f1a0aa0b_747b8a23-362d-4b2f-a2d9-030dd05d7d9a.jpg?v=1755095381",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_12901_image1_4995747e-86fc-4da9-b504-3e398f90292b.jpg?v=1755095381",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6325_f3ab2a4b-7e79-450e-8189-35d21fe50fca.jpg?v=1755779926",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200516B_65560684-3990-4621-ad2c-9e7370057f87.jpg?v=1755093809",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f669e243-e7be-48fc-bc7d-1792f1a0aa0b_1d6baec8-7d2c-4830-b1a0-6184e1055231.jpg?v=1755093809",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_12901_image1_06d8b084-7268-415e-b993-fb09233ed02a.jpg?v=1755093809",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6325_66b3e8f1-7cc3-4bc0-b25f-981fe0be6d2d.jpg?v=1755779537"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000750_fa473b8553d5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000751_54cd546bfc9b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000752_514d2d1a4300.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000753_90b4135e0b97.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001015_7a0c677fa05d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001016_f08b4bfd49a4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001017_9829612a5897.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001018_f1a8869dcd7c.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec R660C25 Return Filter | Replaces the Argo-Hytos P2121702",
       "sku": "p2121702-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200516B_2d13cf8e-4c65-4017-8732-094497760b17.jpg?v=1755095381",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000750_fa473b8553d5.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "R660C25",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 56374 Return Filter | Replaces the Argo-Hytos P2121702",
       "sku": "p2121702-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-f669e243-e7be-48fc-bc7d-1792f1a0aa0b_747b8a23-362d-4b2f-a2d9-030dd05d7d9a.jpg?v=1755095381",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000751_54cd546bfc9b.jpg",
       "vendor": "",
       "price": 2400,
       "partNumber": "SH 56374",
@@ -83,7 +83,7 @@
     {
       "title": "Mann Filter H 1290/1 Hydraulics | Replaces the Argo-Hytos P2121702",
       "sku": "p2121702-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/H_12901_image1_4995747e-86fc-4da9-b504-3e398f90292b.jpg?v=1755095381",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000752_514d2d1a4300.jpg",
       "vendor": "",
       "price": 0,
       "partNumber": "H 1290/1",
@@ -113,7 +113,7 @@
     {
       "title": "Fleetguard HF6325 Hydraulic Filters | Replaces the Argo-Hytos P2121702",
       "sku": "p2121702-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6325_f3ab2a4b-7e79-450e-8189-35d21fe50fca.jpg?v=1755779926",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000753_90b4135e0b97.jpg",
       "vendor": "",
       "price": 4400,
       "partNumber": "HF6325",

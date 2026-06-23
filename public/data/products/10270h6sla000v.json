@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF210520B_21344fd6-baba-4c09-b7f3-0f5f8440ed59.jpg?v=1741362652",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/5a4744c5-f2ce-4620-8a2e-6d433af5b4cc_46df5db2-3367-48a6-a11a-a9c99b273e78.jpg?v=1764322842",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_36b28934-8820-48da-807f-e1efe6ac8467.png?v=1760632577",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF210520B_59ecba67-b2ed-4987-91af-6e76d183b753.jpg?v=1741361910",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/5a4744c5-f2ce-4620-8a2e-6d433af5b4cc_bf7d792a-23d5-4b01-bdd6-1df57c5a0e16.jpg?v=1764322820",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_17612f7e-c537-4888-85c2-19fe85a392d6.png?v=1760631371"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019463_ab9451d41b9e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019464_3277845b619b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019465_9025d7f5c5f7.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021221_8db839fca095.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021222_9573ab121953.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/021223_8caa9efa0e77.png"
   ],
   "variants": [
     {
       "title": "Filtrec RVR10270E05V Return Filter | Replaces the Eppensteiner 10270H6SLA000V",
       "sku": "10270h6sla000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF210520B_21344fd6-baba-4c09-b7f3-0f5f8440ed59.jpg?v=1741362652",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019463_ab9451d41b9e.jpg",
       "vendor": "",
       "price": 47400,
       "partNumber": "RVR10270E05V",
@@ -51,7 +51,7 @@
     {
       "title": "HiFi Filter SH 67380 V Return Filter | Replaces the Eppensteiner 10270H6SLA000V",
       "sku": "10270h6sla000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/5a4744c5-f2ce-4620-8a2e-6d433af5b4cc_46df5db2-3367-48a6-a11a-a9c99b273e78.jpg?v=1764322842",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019464_3277845b619b.jpg",
       "vendor": "",
       "price": 57400,
       "partNumber": "SH 67380 V",
@@ -82,7 +82,7 @@
     {
       "title": "MicroFit® MFHR55478 UltraGen III Return Filter | Replaces the Eppensteiner 10270H6SLA000V",
       "sku": "10270h6sla000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_36b28934-8820-48da-807f-e1efe6ac8467.png?v=1760632577",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019465_9025d7f5c5f7.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR55478",

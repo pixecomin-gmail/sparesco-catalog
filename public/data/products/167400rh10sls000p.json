@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200127B_ab7c5080-ac22-4968-8d6e-8e03b0526e78.jpg?v=1755090410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566921.700.700_65dc8672-38f8-4efe-b5c5-2539a7e8e752.jpg?v=1755090410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37fd714a-0c84-4685-81e9-c530a98a0da5_e393007a-a346-4c72-9684-ed49e9eae03e.jpg?v=1755090410",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30014_308d8e9e-2e2c-4f79-b6be-6349b67a700c.jpg?v=1755778156",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200127B_7f186b30-ff8f-40cc-be1f-352663a9a6ee.jpg?v=1755090414",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566921.700.700_cf254b8d-1c4d-469b-8d20-fbf3e2904c3e.jpg?v=1755090414",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37fd714a-0c84-4685-81e9-c530a98a0da5_d3ca65b6-3a9f-463c-a06b-9faa42b71b09.jpg?v=1755090414",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30014_88e2a55b-c340-4f05-a333-ca0125e0e538.jpg?v=1755778162"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033505_9e25d7d74f9f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033506_ef5d9049947c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033507_740dc4537764.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033508_6e855a6ef099.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033515_6c359a4e300a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033516_23aa317e789e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033517_ca266fca7129.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033518_9aa37ed2cc91.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec A140G10 Spin-On Filter | Replaces the Eppensteiner 167400RH10SLS000P",
       "sku": "167400rh10sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200127B_ab7c5080-ac22-4968-8d6e-8e03b0526e78.jpg?v=1755090410",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033505_9e25d7d74f9f.jpg",
       "vendor": "",
       "price": 10800,
       "partNumber": "A140G10",
@@ -52,7 +52,7 @@
     {
       "title": "Donaldson P566921 Hydraulic Filter, Spin-On | Replaces the Eppensteiner 167400RH10SLS000P",
       "sku": "167400rh10sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p566921.700.700_65dc8672-38f8-4efe-b5c5-2539a7e8e752.jpg?v=1755090410",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033506_ef5d9049947c.jpg",
       "vendor": "",
       "price": 6400,
       "partNumber": "P566921",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 87001 Spin-On Filter | Replaces the Eppensteiner 167400RH10SLS000P",
       "sku": "167400rh10sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-37fd714a-0c84-4685-81e9-c530a98a0da5_e393007a-a346-4c72-9684-ed49e9eae03e.jpg?v=1755090410",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033507_740dc4537764.jpg",
       "vendor": "",
       "price": 9000,
       "partNumber": "SH 87001",
@@ -115,7 +115,7 @@
     {
       "title": "Fleetguard HF30014 Hydraulic Filters | Replaces the Eppensteiner 167400RH10SLS000P",
       "sku": "167400rh10sls000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30014_308d8e9e-2e2c-4f79-b6be-6349b67a700c.jpg?v=1755778156",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033508_6e855a6ef099.jpg",
       "vendor": "",
       "price": 6500,
       "partNumber": "HF30014",

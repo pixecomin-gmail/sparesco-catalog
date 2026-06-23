@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200199B-NB_4144ec33-fd41-4524-b004-3c1f4f4238cc.jpg?v=1748450451",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165006.700.700_899f1e7e-d064-4a06-808e-9f1924f6fa0f.jpg?v=1748450451",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_0457e321-a01b-4021-9f1e-7f370b5c4bd8.jpg?v=1748450451",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_55_image1_22ef9bbb-5a40-4cde-b67f-5b22c799e1be.jpg?v=1754907612",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200199B-NB_a709bae0-ecfd-4423-bd8a-ff93f7f5e959.jpg?v=1748450453",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165006.700.700_0630f027-f035-4b78-9061-37f9cfb30039.jpg?v=1748450453",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_ff732344-784d-4c15-ac12-0140dc6c920d.jpg?v=1748450453",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_55_image1_b367d9ed-52cc-4faf-bac3-109f61a0d36d.jpg?v=1754907613"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033236_0f5b2332bdaa.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033237_9c6786bc7c6b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033238_689dff857424.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033239_9e75749fb0cd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033245_0eb33643b759.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033246_78fea3e26cbe.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033247_a65ac2cf4899.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033248_0ba9373a4c5c.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30023 Pressure Filter | Replaces the Eppensteiner 16.9020H10LL115RP",
       "sku": "16-9020h10ll115rp-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200199B-NB_a709bae0-ecfd-4423-bd8a-ff93f7f5e959.jpg?v=1748450453",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033245_0eb33643b759.jpg",
       "vendor": "",
       "price": 3000,
       "partNumber": "MFHLP30023",
@@ -53,7 +53,7 @@
     {
       "title": "Donaldson P165006 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 169020H10LL115RP",
       "sku": "169020h10ll115rp-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165006.700.700_899f1e7e-d064-4a06-808e-9f1924f6fa0f.jpg?v=1748450451",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033237_9c6786bc7c6b.jpg",
       "vendor": "",
       "price": 3300,
       "partNumber": "P165006",
@@ -84,7 +84,7 @@
     {
       "title": "Filtrec D111G10A Pressure Filter | Replaces the Eppensteiner 169020H10LL115RP",
       "sku": "169020h10ll115rp-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_0457e321-a01b-4021-9f1e-7f370b5c4bd8.jpg?v=1748450451",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033238_689dff857424.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "D111G10A",
@@ -115,7 +115,7 @@
     {
       "title": "Mann Filter HD 55 Hydraulic Steering Filter | Replaces the Eppensteiner 169020H10LL115RP",
       "sku": "169020h10ll115rp-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HD_55_image1_22ef9bbb-5a40-4cde-b67f-5b22c799e1be.jpg?v=1754907612",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/033239_9e75749fb0cd.jpg",
       "vendor": "",
       "price": 5100,
       "partNumber": "HD 55",

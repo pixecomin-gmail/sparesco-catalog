@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204848B_d19bc1e4-07d6-430b-9a3e-d388eb2e7d2c.jpg?v=1755096207",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165041.700.700_545a752b-bdab-451f-a70f-1875030f85a0.jpg?v=1755096207",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U131_62ffdaf5-b171-48e2-8a73-671f43602365.jpg?v=1755096207",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30383_40a64fc7-5048-47ff-8d51-71762ca4da38.jpg?v=1755780114",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200199B-NB_96d88553-eb8d-4dd4-b494-eef8d2eb9251.jpg?v=1748450452",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165041.700.700_263c4ff8-129f-49b3-83a3-27e9bdbcca97.jpg?v=1748450452",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_a7e45072-1d4c-461a-976c-6d492a60d9d6.jpg?v=1748450452",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30383_60f0e0d7-66a3-44c8-a89a-97668b5b6f4e.jpg?v=1755778487"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009465_6149c2a910f0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009466_2d5402388ded.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009467_3a85c8e947bc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009468_3e9497c9f369.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031547_82e48d09a9f6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031548_6b95f30ce9b1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031549_b46036e6b89d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031550_31990f5ad53b.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHSU70158 Suction Filter | Replaces the Eppensteiner 169020RH3SLE000P",
       "sku": "169020rh3sle000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF204848B_d19bc1e4-07d6-430b-9a3e-d388eb2e7d2c.jpg?v=1755096207",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009465_6149c2a910f0.jpg",
       "vendor": "",
       "price": 16000,
       "partNumber": "MFHSU70158",
@@ -51,7 +51,7 @@
     {
       "title": "Donaldson P165041 Hydraulic Filter, Cartridge | Replaces the Eppensteiner 16.9020RH3SLE000P",
       "sku": "16-9020rh3sle000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p165041.700.700_263c4ff8-129f-49b3-83a3-27e9bdbcca97.jpg?v=1748450452",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031548_6b95f30ce9b1.jpg",
       "vendor": "",
       "price": 3400,
       "partNumber": "P165041",
@@ -82,7 +82,7 @@
     {
       "title": "Filtrec U132G25/ESD Suction Filter | Replaces the Eppensteiner 169020RH3SLE000P",
       "sku": "169020rh3sle000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/U131_62ffdaf5-b171-48e2-8a73-671f43602365.jpg?v=1755096207",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/009467_3a85c8e947bc.jpg",
       "vendor": "",
       "price": 21900,
       "partNumber": "U132G25/ESD",
@@ -111,7 +111,7 @@
     {
       "title": "Fleetguard HF30383 Hydraulic Filters | Replaces the Eppensteiner 16.9020RH3SLE000P",
       "sku": "16-9020rh3sle000p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF30383_60f0e0d7-66a3-44c8-a89a-97668b5b6f4e.jpg?v=1755778487",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031550_31990f5ad53b.jpg",
       "vendor": "",
       "price": 7200,
       "partNumber": "HF30383",
@@ -142,7 +142,7 @@
     {
       "title": "MicroFit® UltraGen III MFHLP30220 Pressure Filter | Replaces the Eppensteiner 16.9020RH3SLE000P",
       "sku": "16-9020rh3sle000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200199B-NB_96d88553-eb8d-4dd4-b494-eef8d2eb9251.jpg?v=1748450452",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031547_82e48d09a9f6.jpg",
       "vendor": "",
       "price": 3200,
       "partNumber": "MFHLP30220",
@@ -173,7 +173,7 @@
     {
       "title": "Filtrec D111G03A Pressure Filter | Replaces the Eppensteiner 16.9020RH3SLE000P",
       "sku": "16-9020rh3sle000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D111A_a7e45072-1d4c-461a-976c-6d492a60d9d6.jpg?v=1748450452",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/031549_b46036e6b89d.jpg",
       "vendor": "",
       "price": 3800,
       "partNumber": "D111G03A",

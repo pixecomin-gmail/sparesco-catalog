@@ -9,17 +9,17 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_03ad6a62-886d-4390-9e32-5ae78cfac23b.jpg?v=1755091718",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-56e42ddb-955b-4789-a748-4b51882f5d77_d8f3bb35-01e5-4e9a-9fa8-de099014d48b.jpg?v=1755091718",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p570313.700.700_d948c6af-620e-4637-adb6-08e68994a581.jpg?v=1755091718",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6856_158aa873-bc14-432f-9b02-afd161a1e7d7.jpg?v=1755778827",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_92843b35-b1b0-4955-a22d-8c2da0a2e9f4.png?v=1760629659"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028535_1039f1f75b43.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028536_6d6b0411b9fb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028537_8bd02e989097.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028538_23a18814fec3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028539_7e08102cf30e.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR1300G10B3/AB1 Return Filter | Replaces the Eppensteiner 30TR1300H10LLLA",
       "sku": "30tr1300h10llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201903B_03ad6a62-886d-4390-9e32-5ae78cfac23b.jpg?v=1755091718",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028535_1039f1f75b43.jpg",
       "vendor": "Filtrec",
       "price": 32600,
       "partNumber": "RHR1300G10B3/AB1",
@@ -52,7 +52,7 @@
     {
       "title": "HiFi Filter SH 74049 Return Filter | Replaces the Eppensteiner 30TR1300H10LLLA",
       "sku": "30tr1300h10llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-56e42ddb-955b-4789-a748-4b51882f5d77_d8f3bb35-01e5-4e9a-9fa8-de099014d48b.jpg?v=1755091718",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028536_6d6b0411b9fb.jpg",
       "vendor": "HiFi Filter",
       "price": 22300,
       "partNumber": "SH 74049",
@@ -87,7 +87,7 @@
     {
       "title": "Donaldson P566999 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 30TR1300H10LLLA",
       "sku": "30tr1300h10llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p570313.700.700_d948c6af-620e-4637-adb6-08e68994a581.jpg?v=1755091718",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028537_8bd02e989097.jpg",
       "vendor": "Donaldson",
       "price": 29900,
       "partNumber": "P566999",
@@ -120,7 +120,7 @@
     {
       "title": "Fleetguard HF6856 Hydraulic Filters | Replaces the Eppensteiner 30TR1300H10LLLA",
       "sku": "30tr1300h10llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF6856_158aa873-bc14-432f-9b02-afd161a1e7d7.jpg?v=1755778827",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028538_23a18814fec3.jpg",
       "vendor": "Fleetguard",
       "price": 40000,
       "partNumber": "HF6856",
@@ -153,7 +153,7 @@
     {
       "title": "MicroFit® MFHR51058 UltraGen III Return Filter | Replaces the Eppensteiner 30TR1300H10LLLA",
       "sku": "30tr1300h10llla-5",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_92843b35-b1b0-4955-a22d-8c2da0a2e9f4.png?v=1760629659",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/028539_7e08102cf30e.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR51058",

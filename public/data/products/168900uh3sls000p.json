@@ -9,18 +9,18 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200676B-NB_d057ba8c-3f2e-4d09-9c91-7f0c5e9bd1ca.jpg?v=1741943603",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D610_c4d626d6-521a-45b7-8eaa-e5c8b24429c5.jpg?v=1741943603",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edf96e61-df2d-447a-a55e-5f1e5fc0c1b2_cdc20d2a-0339-41e2-a675-31a09ab4170c.jpg?v=1741943603",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200676B-NB_9b515c2d-eb44-4cb7-931f-69c1866abf3a.jpg?v=1741943586",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D610_32cc0efb-4f73-4c21-bf20-1815a8b95904.jpg?v=1741943586",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edf96e61-df2d-447a-a55e-5f1e5fc0c1b2_dd98e9cc-342e-4685-a650-3aa0b272a08c.jpg?v=1741943586"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030021_aa696874a08f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030022_7a21e127bce8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030023_850ed28071df.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030030_e4b93c1937ad.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030031_1a342c2a2377.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030032_df8e1b537fc2.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHLP30456 Pressure Filter | Replaces the Eppensteiner 16.8900UH3SLS000P",
       "sku": "16-8900uh3sls000p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200676B-NB_9b515c2d-eb44-4cb7-931f-69c1866abf3a.jpg?v=1741943586",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030030_e4b93c1937ad.jpg",
       "vendor": "",
       "price": 12000,
       "partNumber": "MFHLP30456",
@@ -51,7 +51,7 @@
     {
       "title": "Filtrec D614G03 Pressure Filter | Replaces the Eppensteiner 168900UH3SLS000P",
       "sku": "168900uh3sls000p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D610_c4d626d6-521a-45b7-8eaa-e5c8b24429c5.jpg?v=1741943603",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030022_7a21e127bce8.jpg",
       "vendor": "",
       "price": 16500,
       "partNumber": "D614G03",
@@ -82,7 +82,7 @@
     {
       "title": "HiFi Filter SH 87099 Pressure Filter | Replaces the Eppensteiner 168900UH3SLS000P",
       "sku": "168900uh3sls000p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-edf96e61-df2d-447a-a55e-5f1e5fc0c1b2_cdc20d2a-0339-41e2-a675-31a09ab4170c.jpg?v=1741943603",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/030023_850ed28071df.jpg",
       "vendor": "",
       "price": 19800,
       "partNumber": "SH 87099",

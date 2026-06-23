@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF207946B_8a0d90eb-d5f4-42bf-9b66-f8742ffde30b.jpg?v=1755095183",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b524d0ac-2fa9-4f49-a129-138f7eb98079_9993088a-cdc7-47ec-b186-0e28e6a24855.jpg?v=1755095183",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_6c96c5b0-b1ff-442d-b8d2-905d847d7c39.jpg?v=1755779881",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fac460d5-a1a4-40af-a4a5-3904939b0c73.png?v=1760632590",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF207946B_68e774c3-7f55-4799-8e92-187521a3e5e8.jpg?v=1755094813",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b524d0ac-2fa9-4f49-a129-138f7eb98079_976957d7-44b3-499a-a3d0-ed9d50686004.jpg?v=1755094813",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_d9905f0f-ca46-4546-944a-1f183d8bcb74.jpg?v=1755779778",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_5fe86353-0288-46de-bafd-d9d5cf2519da.png?v=1760632081"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019421_3ddacf754dd6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019422_bd671015fea9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019423_31946c5a1e0c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019424_5131a46dd3b2.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020147_8e4f2c47f039.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020148_e7f33d052fa0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020149_6aeb2b8b178a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/020150_0c1d019ce57d.png"
   ],
   "variants": [
     {
       "title": "Filtrec XR1000G10V0 DIN Return Filter | Replaces the Eppensteiner 11000H6SLA000V",
       "sku": "11000h6sla000v-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF207946B_8a0d90eb-d5f4-42bf-9b66-f8742ffde30b.jpg?v=1755095183",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019421_3ddacf754dd6.jpg",
       "vendor": "",
       "price": 40100,
       "partNumber": "XR1000G10V0",
@@ -53,7 +53,7 @@
     {
       "title": "HiFi Filter SH 84117 V DIN Return Filter | Replaces the Eppensteiner 11000H6SLA000V",
       "sku": "11000h6sla000v-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-b524d0ac-2fa9-4f49-a129-138f7eb98079_9993088a-cdc7-47ec-b186-0e28e6a24855.jpg?v=1755095183",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019422_bd671015fea9.jpg",
       "vendor": "",
       "price": 31400,
       "partNumber": "SH 84117 V",
@@ -84,7 +84,7 @@
     {
       "title": "Fleetguard ST2242 Hydraulic Filters | Replaces the Eppensteiner 11000H6SLA000V",
       "sku": "11000h6sla000v-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Photo-Not-Available_6c96c5b0-b1ff-442d-b8d2-905d847d7c39.jpg?v=1755779881",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019423_31946c5a1e0c.jpg",
       "vendor": "",
       "price": 43300,
       "partNumber": "ST2242",
@@ -115,7 +115,7 @@
     {
       "title": "MicroFit® MFHR54021 UltraGen III DIN Return Filter | Replaces the Eppensteiner 11000H6SLA000V",
       "sku": "11000h6sla000v-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_fac460d5-a1a4-40af-a4a5-3904939b0c73.png?v=1760632590",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/019424_5131a46dd3b2.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR54021",

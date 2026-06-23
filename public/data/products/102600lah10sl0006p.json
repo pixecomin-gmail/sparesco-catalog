@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-DIAM.114-TNT-BY-PASS-3BAR-GIALLO_11d82e4b-90c6-4f11-a121-2904f95a47d9.jpg?v=1755092539",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p567001.700.700_46004311-983b-45dc-a4be-73a6f01eee4e.jpg?v=1755092539",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a67ab9bc-5e6f-4ac3-928b-f2bcf93f5c25_a8f7e8eb-9ae3-47b1-97a8-39855ebbaeeb.jpg?v=1755092539",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_52daab1d-9564-4d2f-8cae-0e6e52832275.png?v=1760630054",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-DIAM.114-TNT-BY-PASS-3BAR-GIALLO_7b2760b2-a512-4241-9f35-13a678d3054e.jpg?v=1755092540",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p567001.700.700_03239960-0b72-484d-a11f-bde674513fc5.jpg?v=1755092540",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a67ab9bc-5e6f-4ac3-928b-f2bcf93f5c25_d2b526d2-90d4-46b2-927a-5b7ab254775c.jpg?v=1755092540",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_bd6aa465-4f09-4af8-bb48-09ea4208dd81.png?v=1760630055"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025333_e4cfe6f2dead.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025334_195943cfb54d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025335_4cc7d930a967.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025336_bc8a771498c9.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025341_2dd03e0ca48f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025342_c601cd78cef5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025343_45e92d2d1d52.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025344_badf93ab2a02.png"
   ],
   "variants": [
     {
       "title": "Filtrec RHR2600G10B3/AB1 Return Filter | Replaces the Eppensteiner 102600LAH10SL0006P",
       "sku": "102600lah10sl0006p-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/RHR-DIAM.114-TNT-BY-PASS-3BAR-GIALLO_11d82e4b-90c6-4f11-a121-2904f95a47d9.jpg?v=1755092539",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025333_e4cfe6f2dead.jpg",
       "vendor": "Filtrec",
       "price": 49100,
       "partNumber": "RHR2600G10B3/AB1",
@@ -55,7 +55,7 @@
     {
       "title": "Donaldson P567003 Hydraulic Filter, Cartridge Dt | Replaces the Eppensteiner 102600LAH10SL0006P",
       "sku": "102600lah10sl0006p-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/p567001.700.700_46004311-983b-45dc-a4be-73a6f01eee4e.jpg?v=1755092539",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025334_195943cfb54d.jpg",
       "vendor": "Donaldson",
       "price": 35500,
       "partNumber": "P567003",
@@ -88,7 +88,7 @@
     {
       "title": "HiFi Filter SH 74116 Return Filter | Replaces the Eppensteiner 102600LAH10SL0006P",
       "sku": "102600lah10sl0006p-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-a67ab9bc-5e6f-4ac3-928b-f2bcf93f5c25_a8f7e8eb-9ae3-47b1-97a8-39855ebbaeeb.jpg?v=1755092539",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025335_4cc7d930a967.jpg",
       "vendor": "HiFi Filter",
       "price": 74300,
       "partNumber": "SH 74116",
@@ -121,7 +121,7 @@
     {
       "title": "MicroFit® MFHR50885 UltraGen III Return Filter | Replaces the Eppensteiner 102600LAH10SL0006P",
       "sku": "102600lah10sl0006p-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_52daab1d-9564-4d2f-8cae-0e6e52832275.png?v=1760630054",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/025336_bc8a771498c9.png",
       "vendor": "MicroFit",
       "price": 0,
       "partNumber": "MFHR50885",

@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200528B_c3ea0ac9-0366-4aba-a41e-b95c15522d09.jpg?v=1741364243",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-01ec0a88-f4f2-419f-9221-ec7b93d534f9_f7ace863-d80c-4013-a6da-3e0bff803e20.jpg?v=1741364243",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35259_79c9d568-8450-4ce0-960a-14a11e0d6746.jpg?v=1755780250"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000334_199e52ef6386.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000335_3026dd3b5c05.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000336_2d83e245c7ef.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec D811C10A Pressure Filter | Replaces the Argo-Hytos P3052000",
       "sku": "p3052000-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200528B_c3ea0ac9-0366-4aba-a41e-b95c15522d09.jpg?v=1741364243",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000334_199e52ef6386.jpg",
       "vendor": "",
       "price": 2700,
       "partNumber": "D811C10A",
@@ -47,7 +47,7 @@
     {
       "title": "HiFi Filter SH 52502 Pressure Filter | Replaces the Argo-Hytos P3052000",
       "sku": "p3052000-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-01ec0a88-f4f2-419f-9221-ec7b93d534f9_f7ace863-d80c-4013-a6da-3e0bff803e20.jpg?v=1741364243",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000335_3026dd3b5c05.jpg",
       "vendor": "",
       "price": 4800,
       "partNumber": "SH 52502",
@@ -77,7 +77,7 @@
     {
       "title": "Fleetguard HF35259 Hydraulic Filters | Replaces the Argo-Hytos P3052000",
       "sku": "p3052000-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35259_79c9d568-8450-4ce0-960a-14a11e0d6746.jpg?v=1755780250",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/000336_2d83e245c7ef.jpg",
       "vendor": "",
       "price": 2500,
       "partNumber": "HF35259",

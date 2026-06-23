@@ -9,20 +9,20 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200446B_44a1116d-33bd-448d-81ee-55d62ea2f2a6.jpg?v=1740482619",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9877a229-609a-4f26-a5c1-fe8828a4ca7d_41afd924-2261-48c8-a007-e84354b1b973.jpg?v=1740482619",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_65258285-5799-4d9e-9fb9-1fcce0677b9e.jpg?v=1740482619",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28858_7c285e25-1946-40a8-9130-743abf8e0ad5.jpg?v=1755779493",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200446B_021463d6-756e-47a4-91bb-c81c9f1984c5.jpg?v=1740482624",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9877a229-609a-4f26-a5c1-fe8828a4ca7d_02a28c05-9dcb-4e18-8d61-9edbaf2b5ee7.jpg?v=1740482624",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_dea4398e-38be-4ea8-99d5-675d491698c6.jpg?v=1740482624",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28858_0f6c22c6-c8d3-4b4b-a4a6-8afa09f9f2b4.jpg?v=1755779104"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001044_04c25f8b7f04.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001045_50014b849c22.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001046_a04be11a1181.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001047_8d4aa7d69a0b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001283_bc4823cd1dd4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001284_03073a4337bf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001285_0a565ef643a4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001286_4ecf6ccf891a.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec S550C25 Suction Filter | Replaces the Argo-Hytos P2.0933-02",
       "sku": "p2-0933-02-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/products/FF200446B_44a1116d-33bd-448d-81ee-55d62ea2f2a6.jpg?v=1740482619",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001044_04c25f8b7f04.jpg",
       "vendor": "",
       "price": 5000,
       "partNumber": "S550C25",
@@ -50,7 +50,7 @@
     {
       "title": "HiFi Filter SH 52330 Suction Filter | Replaces the Argo-Hytos P2.0933-02",
       "sku": "p2-0933-02-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-9877a229-609a-4f26-a5c1-fe8828a4ca7d_41afd924-2261-48c8-a007-e84354b1b973.jpg?v=1740482619",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001045_50014b849c22.jpg",
       "vendor": "",
       "price": 6200,
       "partNumber": "SH 52330",
@@ -79,7 +79,7 @@
     {
       "title": "Argo Hytos P2.0933-02 Suction Filter",
       "sku": "p2-0933-02-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/Argo-Hytos_Placeholder_65258285-5799-4d9e-9fb9-1fcce0677b9e.jpg?v=1740482619",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001046_a04be11a1181.jpg",
       "vendor": "",
       "price": 8100,
       "partNumber": "P2.0933-02",
@@ -107,7 +107,7 @@
     {
       "title": "Fleetguard HF28858 Hydraulic Filters | Replaces the Argo-Hytos P2.0933-02",
       "sku": "p2-0933-02-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF28858_7c285e25-1946-40a8-9130-743abf8e0ad5.jpg?v=1755779493",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001047_8d4aa7d69a0b.jpg",
       "vendor": "",
       "price": 4100,
       "partNumber": "HF28858",

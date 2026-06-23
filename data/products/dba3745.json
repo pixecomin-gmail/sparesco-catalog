@@ -9,15 +9,15 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/dba3745.700.700.jpg?v=1714673541",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_50_005_image1_40376462-6f85-4007-b5ec-a45dcd616fbf.jpg?v=1754909193",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4249.jpg?v=1755780657"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000011_3053fed34338.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000012_150fc1c9e165.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000013_7426d3c55682.jpg"
   ],
   "variants": [
     {
       "title": "Donaldson DBA3745 Actros",
       "sku": "dba3745-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/dba3745.700.700.jpg?v=1714673541",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000011_3053fed34338.jpg",
       "vendor": "",
       "price": 14100,
       "partNumber": "DBA3745",
@@ -37,7 +37,7 @@
     {
       "title": "Mann Filter C 50 005 Air Filter | Replaces the Donaldson DBA3745",
       "sku": "dba3745-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/C_50_005_image1_40376462-6f85-4007-b5ec-a45dcd616fbf.jpg?v=1754909193",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000012_150fc1c9e165.jpg",
       "vendor": "",
       "price": 15100,
       "partNumber": "C 50 005",
@@ -59,7 +59,7 @@
     {
       "title": "Fleetguard AF4249 Air Filter | Replaces the Donaldson DBA3745",
       "sku": "dba3745-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/AF4249.jpg?v=1755780657",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000013_7426d3c55682.jpg",
       "vendor": "",
       "price": 16600,
       "partNumber": "AF4249",

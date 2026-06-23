@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200526B_465a90be-d01a-48e7-a198-4ff6e70e76fe.jpg?v=1748457012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-50df47a0-00e2-4a26-88af-06458e358708_2c3a5132-3802-470d-a244-9dee1fed85b3.jpg?v=1748457012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_54058e63-5037-4d00-8978-030207655628.jpg?v=1748457012",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35316_11992256-ba61-42ed-8f14-ce8294a2494e.jpg?v=1755779101"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001175_6f5c372aab60.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001176_2f67875e4b81.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001177_bdf0d70a4ad8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001178_1e4b89258d52.jpg"
   ],
   "variants": [
     {
       "title": "MicroFit® UltraGen III MFHHP40110 Pressure Filter | Replaces the Argo-Hytos V3082318",
       "sku": "v3082318-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF200526B_465a90be-d01a-48e7-a198-4ff6e70e76fe.jpg?v=1748457012",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001175_6f5c372aab60.jpg",
       "vendor": "",
       "price": 18100,
       "partNumber": "MFHHP40110",
@@ -49,7 +49,7 @@
     {
       "title": "HiFi Filter SH 52126 Pressure Filter | Replaces the Argo-Hytos V3082318",
       "sku": "v3082318-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-50df47a0-00e2-4a26-88af-06458e358708_2c3a5132-3802-470d-a244-9dee1fed85b3.jpg?v=1748457012",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001176_2f67875e4b81.jpg",
       "vendor": "",
       "price": 20600,
       "partNumber": "SH 52126",
@@ -80,7 +80,7 @@
     {
       "title": "Filtrec D841G25B Pressure Filter | Replaces the Argo-Hytos V3082318",
       "sku": "v3082318-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/D150B_54058e63-5037-4d00-8978-030207655628.jpg?v=1748457012",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001177_bdf0d70a4ad8.jpg",
       "vendor": "",
       "price": 28900,
       "partNumber": "D841G25B",
@@ -111,7 +111,7 @@
     {
       "title": "Fleetguard HF35316 Hydraulic Filters | Replaces the Argo-Hytos V3082318",
       "sku": "v3082318-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/HF35316_11992256-ba61-42ed-8f14-ce8294a2494e.jpg?v=1755779101",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/argo-hytos/001178_1e4b89258d52.jpg",
       "vendor": "",
       "price": 19500,
       "partNumber": "HF35316",

@@ -9,16 +9,16 @@
     "ff1225"
   ],
   "images": [
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_3e1c3ecb-049f-445f-bf23-2d15e2c462f5.jpg?v=1761217944",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_320ad1b5-a5fd-42d9-95b6-abdf9aaa4926.png?v=1761217944",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c1f5a876-da12-4bd1-b6b9-99c0288ba076_a406c187-0dff-444f-8e73-b1e7ae382bf0.jpg?v=1761217944",
-    "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_005_on_n167173_i2394892_ed861a9b-2ce5-4413-80b0-52662f8df386.jpg?v=1761217944"
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024750_f0eb8e3f066b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024751_772990c5c202.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024752_bec06ad18be6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024753_dba9b84f6976.jpg"
   ],
   "variants": [
     {
       "title": "Filtrec RHR160G05B3/AB1 Return Filter | Replaces the Eppensteiner E30TR160H6LLLA",
       "sku": "e30tr160h6llla-1",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/FF201739B_3e1c3ecb-049f-445f-bf23-2d15e2c462f5.jpg?v=1761217944",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024750_f0eb8e3f066b.jpg",
       "vendor": "",
       "price": 5900,
       "partNumber": "RHR160G05B3/AB1",
@@ -51,7 +51,7 @@
     {
       "title": "MicroFit® MFHR50941 UltraGen III Filter | Replaces the Eppensteiner E30TR160H6LLLA",
       "sku": "e30tr160h6llla-2",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/MicroFit-Placeholder-600x600_320ad1b5-a5fd-42d9-95b6-abdf9aaa4926.png?v=1761217944",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024751_772990c5c202.png",
       "vendor": "",
       "price": 0,
       "partNumber": "MFHR50941",
@@ -84,7 +84,7 @@
     {
       "title": "HiFi Filter SH 74001 Return Filter | Replaces the Eppensteiner E30TR160H6LLLA",
       "sku": "e30tr160h6llla-3",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/md-c1f5a876-da12-4bd1-b6b9-99c0288ba076_a406c187-0dff-444f-8e73-b1e7ae382bf0.jpg?v=1761217944",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024752_bec06ad18be6.jpg",
       "vendor": "",
       "price": 10400,
       "partNumber": "SH 74001",
@@ -117,7 +117,7 @@
     {
       "title": "Hydac 0160 R 005 ON Optimicron® Return Filter | Replaces the Eppensteiner E30TR160H6LLLA",
       "sku": "e30tr160h6llla-4",
-      "image": "https://cdn.shopify.com/s/files/1/0592/2648/8986/files/0160_r_005_on_n167173_i2394892_ed861a9b-2ce5-4413-80b0-52662f8df386.jpg?v=1761217944",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/024753_dba9b84f6976.jpg",
       "vendor": "",
       "price": 14500,
       "partNumber": "0160 R 005 ON",
