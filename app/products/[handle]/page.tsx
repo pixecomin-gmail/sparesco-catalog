@@ -2,7 +2,7 @@ export const runtime = "edge";
 
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import type { Product } from "@/lib/products";
+import type { Product } from "@/types/product";
 import ProductPageClient from "@/components/ProductPageClient";
 
 type ProductPageProps = {

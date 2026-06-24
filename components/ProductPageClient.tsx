@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Product } from "@/lib/products";
+import type { Product } from "@/types/product";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 function cleanVariantTitle(title: string) {
