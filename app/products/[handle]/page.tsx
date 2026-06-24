@@ -24,8 +24,13 @@ function cleanMetaText(text: string) {
 
 async function getProductJson(handle: string): Promise<Product | null> {
   try {
-    const product = await import(`@/data/products/${handle}.json`);
-    return product.default as Product;
+    const res = await fetch(`/data/products/${handle}.json`);
+
+    if (!res.ok) {
+      return null;
+    }
+
+    return (await res.json()) as Product;
   } catch {
     return null;
   }
