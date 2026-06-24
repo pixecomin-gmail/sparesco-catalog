@@ -24,7 +24,10 @@ function cleanMetaText(text: string) {
 
 async function getProductJson(handle: string): Promise<Product | null> {
   try {
-    const res = await fetch(`/data/products/${handle}.json`);
+    const baseUrl =
+      process.env.CF_PAGES_URL || "https://40c55169.sparesco-catalog.pages.dev";
+
+    const res = await fetch(`${baseUrl}/data/products/${handle}.json`);
 
     if (!res.ok) {
       return null;
