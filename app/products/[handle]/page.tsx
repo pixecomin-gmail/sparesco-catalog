@@ -1,9 +1,8 @@
-export const dynamic = "force-static";
-export const dynamicParams = true;
+export const runtime = "edge";
+
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { Product } from "@/lib/products";
-import { productsIndex } from "@/lib/products";
 import ProductPageClient from "@/components/ProductPageClient";
 
 type ProductPageProps = {
@@ -36,21 +35,19 @@ export async function generateMetadata({
   params,
 }: ProductPageProps): Promise<Metadata> {
   const { handle } = await params;
-
-  const productIndex = productsIndex.find((item) => item.handle === handle);
   const product = await getProductJson(handle);
 
-  if (!productIndex && !product) {
+  if (!product) {
     return {
       title: "Product Not Found",
     };
   }
 
-  const productTitle = product?.title || productIndex?.title || "";
-  const collection = product?.collection || productIndex?.collection || "Spare Parts";
-  const image = product?.images?.[0] || productIndex?.image || "";
+  const productTitle = product.title || "";
+  const collection = product.collection || "Spare Parts";
+  const image = product.images?.[0] || "";
 
-  const primaryVariant = product?.variants?.[0];
+  const primaryVariant = product.variants?.[0];
   const primaryVariantTitle = primaryVariant
     ? cleanTitle(primaryVariant.title)
         .replace(/\s+Air Filter$/i, "")
@@ -60,7 +57,7 @@ export async function generateMetadata({
     : productTitle;
 
   const alternativePartNumbers =
-    product?.variants
+    product.variants
       ?.slice(1)
       .map((variant) =>
         cleanTitle(variant.title)
@@ -107,7 +104,7 @@ export async function generateMetadata({
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { handle } = await params;
-  const product = productsIndex.find((item) => item.handle === handle);
+  const product = await getProductJson(handle);
 
   if (!product) {
     notFound();
