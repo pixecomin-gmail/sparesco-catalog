@@ -1,28 +1,60 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import popularSpareParts from "@/data/popular-spare-parts.json";
-import { getAllProducts } from "@/lib/products";
 import { useEnquiry } from "@/context/EnquiryContext";
 
-type Product = ReturnType<typeof getAllProducts>[number];
-
-function isProduct(product: Product | undefined): product is Product {
-  return Boolean(product);
-}
+type Product = {
+  handle: string;
+  title: string;
+  image?: string;
+  collection?: string;
+  variantCount?: number;
+  partNumber?: string;
+  vendor?: string;
+  price?: number;
+};
 
 export default function PopularSparePartsList() {
   const { addItem } = useEnquiry();
-  const allProducts = getAllProducts();
+  const [products, setProducts] = useState<Product[]>([]);
 
-  const featuredMatches: Product[] = (popularSpareParts as string[])
-    .map((handle) => allProducts.find((product) => product.handle === handle))
-    .filter(isProduct);
+  useEffect(() => {
+    async function loadPopularProducts() {
+      const handles = (popularSpareParts as string[]).slice(0, 5);
 
-  const products: Product[] =
-    featuredMatches.length > 0
-      ? featuredMatches.slice(0, 5)
-      : allProducts.slice(0, 5);
+      const loadedProducts = await Promise.all(
+        handles.map(async (handle) => {
+          const res = await fetch(`/data/products/${handle}.json`);
+          if (!res.ok) return null;
+
+          const product = await res.json();
+
+          return {
+            handle: product.handle,
+            title: product.title,
+            image: product.images?.[0] || "",
+            collection: product.collection,
+            variantCount: product.variants?.length || 1,
+            partNumber: product.variants?.[0]?.partNumber || product.title,
+            vendor: product.variants?.[0]?.vendor || product.collection || "",
+            price: product.variants?.[0]?.price || 0,
+          } as Product;
+        })
+      );
+
+      setProducts(
+        loadedProducts.filter(
+          (product): product is Product => product !== null
+        )
+      );
+    }
+
+    loadPopularProducts();
+  }, []);
+
+  if (!products.length) return null;
 
   return (
     <section className="popular-parts-section section">
@@ -34,17 +66,7 @@ export default function PopularSparePartsList() {
 
         <div className="popular-parts-list">
           {products.map((product, index) => {
-            const safeProduct = product as any;
-
-            const image =
-              safeProduct.image ||
-              safeProduct.images?.[0] ||
-              safeProduct.variants?.[0]?.image ||
-              "";
-
-            const brand = safeProduct.collection || safeProduct.vendor || "Sparesco";
-
-            const firstVariant = safeProduct.variants?.[0];
+            const brand = product.collection || product.vendor || "Sparesco";
 
             return (
               <article className="popular-part-row" key={product.handle}>
@@ -53,8 +75,8 @@ export default function PopularSparePartsList() {
                   className="popular-part-main"
                 >
                   <div className="popular-part-image">
-                    {image ? (
-                      <img src={image} alt={product.title} />
+                    {product.image ? (
+                      <img src={product.image} alt={product.title} />
                     ) : (
                       <span>Part</span>
                     )}
@@ -82,15 +104,15 @@ export default function PopularSparePartsList() {
                   className="popular-quote-button"
                   onClick={() =>
                     addItem({
-                      id: firstVariant?.partNumber
-                        ? `${product.handle}-${firstVariant.partNumber}`
+                      id: product.partNumber
+                        ? `${product.handle}-${product.partNumber}`
                         : product.handle,
                       handle: product.handle,
                       title: product.title,
-                      image,
-                      partNumber: firstVariant?.partNumber || product.title,
+                      image: product.image || "",
+                      partNumber: product.partNumber || product.title,
                       vendor: brand,
-                      price: firstVariant?.price || 0,
+                      price: product.price || 0,
                     })
                   }
                 >

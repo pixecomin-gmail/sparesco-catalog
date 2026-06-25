@@ -4,22 +4,19 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 import collectionsData from "@/data/collections.json";
-import productsIndex from "@/data/products-index.json";
 
 type CollectionItem = {
   title: string;
   handle: string;
 };
 
-type ProductItem = {
-  title: string;
-  handle: string;
+type ProductBreadcrumbInfo = {
+  title?: string;
   collection?: string;
   collectionHandle?: string;
 };
 
 const collections = collectionsData as CollectionItem[];
-const products = productsIndex as ProductItem[];
 
 function formatSlug(slug: string) {
   return slug
@@ -27,59 +24,64 @@ function formatSlug(slug: string) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function getProductCollection(product?: ProductItem) {
-  if (!product) return null;
+function getCollectionByHandle(handle?: string) {
+  if (!handle) return null;
+  return collections.find((item) => item.handle === handle) || null;
+}
 
-  if (product.collectionHandle) {
-    const matched = collections.find(
-      (item) => item.handle === product.collectionHandle
-    );
+function getCollectionByTitle(title?: string) {
+  if (!title) return null;
+  return (
+    collections.find(
+      (item) => item.title.toLowerCase() === title.toLowerCase()
+    ) || null
+  );
+}
 
-    if (matched) {
-      return {
-        title: matched.title,
-        href: `/collections/${matched.handle}`,
-      };
-    }
-  }
+function getStaticLabel(segment: string) {
+  if (segment === "spareshunt") return "Spares Hunt";
+  if (segment === "sellwithus") return "Sell With Us";
+  if (segment === "parts") return "Spare Parts";
+  if (segment === "products") return "Products";
 
-  if (product.collection) {
-    const matched = collections.find(
-      (item) =>
-        item.title.toLowerCase() === product.collection?.toLowerCase()
-    );
+  const collection = getCollectionByHandle(segment);
+  if (collection) return collection.title;
 
-    if (matched) {
-      return {
-        title: matched.title,
-        href: `/collections/${matched.handle}`,
-      };
-    }
-
-    return {
-      title: product.collection,
-      href: "/collections",
-    };
-  }
-
-  return null;
+  return formatSlug(segment);
 }
 
 export default function Breadcrumb() {
   const pathname = usePathname();
-  const [cameFromCollection, setCameFromCollection] = useState(false);
+  const [productInfo, setProductInfo] = useState<ProductBreadcrumbInfo | null>(
+    null
+  );
 
   useEffect(() => {
-    try {
-      const referrerPath = document.referrer
-        ? new URL(document.referrer).pathname
-        : "";
+    async function loadProductBreadcrumb() {
+      const segments = pathname.split("/").filter(Boolean);
 
-      setCameFromCollection(referrerPath.startsWith("/collections/"));
-    } catch {
-      setCameFromCollection(false);
+      if (segments[0] !== "products" || !segments[1]) {
+        setProductInfo(null);
+        return;
+      }
+
+      try {
+        const res = await fetch(`/data/products/${segments[1]}.json`);
+
+        if (!res.ok) {
+          setProductInfo(null);
+          return;
+        }
+
+        const product = (await res.json()) as ProductBreadcrumbInfo;
+        setProductInfo(product);
+      } catch {
+        setProductInfo(null);
+      }
     }
-  }, []);
+
+    loadProductBreadcrumb();
+  }, [pathname]);
 
   const items = useMemo(() => {
     if (pathname === "/") return [];
@@ -87,51 +89,40 @@ export default function Breadcrumb() {
     const segments = pathname.split("/").filter(Boolean);
 
     if (segments[0] === "products" && segments[1]) {
-      const product = products.find((item) => item.handle === segments[1]);
-      const productCollection = getProductCollection(product);
+      const collection =
+        getCollectionByHandle(productInfo?.collectionHandle) ||
+        getCollectionByTitle(productInfo?.collection);
 
-      if (productCollection) {
+      if (collection) {
         return [
           { label: "Home", href: "/" },
           { label: "Collections", href: "/collections" },
           {
-            label: productCollection.title,
-            href: productCollection.href,
+            label: collection.title,
+            href: `/collections/${collection.handle}`,
           },
-          { label: product?.title || formatSlug(segments[1]) },
+          { label: productInfo?.title || formatSlug(segments[1]) },
         ];
       }
 
       return [
         { label: "Home", href: "/" },
         { label: "Spare Parts", href: "/parts" },
-        { label: product?.title || formatSlug(segments[1]) },
+        { label: productInfo?.title || formatSlug(segments[1]) },
       ];
     }
 
     return [
       { label: "Home", href: "/" },
-      ...segments.map((segment, index) => {
-        const href =
+      ...segments.map((segment, index) => ({
+        label: getStaticLabel(segment),
+        href:
           index === segments.length - 1
             ? undefined
-            : "/" + segments.slice(0, index + 1).join("/");
-
-        const collection = collections.find((item) => item.handle === segment);
-
-        return {
-          label:
-            collection?.title ||
-            (segment === "spareshunt"
-              ? "Spares Hunt"
-              : segment === "sellwithus"
-                ? "Sell With Us"
-                : formatSlug(segment)),
-          href,
-        };
-      }),
+            : "/" + segments.slice(0, index + 1).join("/"),
+      })),
     ];
-  }, [pathname, cameFromCollection]);
+  }, [pathname, productInfo]);
 
   if (!items.length) return null;
 

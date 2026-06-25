@@ -1,9 +1,8 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import featuredProducts from "@/data/featured-products.json";
-import { getAllProducts } from "@/lib/products";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 type Product = {
@@ -17,15 +16,38 @@ type Product = {
   price?: number;
 };
 
-const products = getAllProducts();
-
-const featured = featuredProducts
-  .map((handle) => products.find((product) => product.handle === handle))
-  .filter(Boolean) as Product[];
-
 export default function FeaturedProductsSlider() {
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const { addItem } = useEnquiry();
+  const [featured, setFeatured] = useState<Product[]>([]);
+
+  useEffect(() => {
+    async function loadFeatured() {
+      const products = await Promise.all(
+        featuredProducts.map(async (handle) => {
+          const res = await fetch(`/data/products/${handle}.json`);
+          if (!res.ok) return null;
+
+          const product = await res.json();
+
+          return {
+            handle: product.handle,
+            title: product.title,
+            image: product.images?.[0] || "",
+            collection: product.collection,
+            variantCount: product.variants?.length || 1,
+            partNumber: product.variants?.[0]?.partNumber || product.title,
+            vendor: product.variants?.[0]?.vendor || product.collection || "",
+            price: product.variants?.[0]?.price || 0,
+          } as Product;
+        })
+      );
+
+      setFeatured(products.filter(Boolean) as Product[]);
+    }
+
+    loadFeatured();
+  }, []);
 
   function scrollSlider(direction: "left" | "right") {
     if (!sliderRef.current) return;
@@ -40,10 +62,10 @@ export default function FeaturedProductsSlider() {
       window.innerWidth > 1100
         ? 6
         : window.innerWidth > 900
-        ? 4
-        : window.innerWidth > 520
-        ? 2
-        : 1;
+          ? 4
+          : window.innerWidth > 520
+            ? 2
+            : 1;
 
     sliderRef.current.scrollBy({
       left:
@@ -53,6 +75,8 @@ export default function FeaturedProductsSlider() {
       behavior: "smooth",
     });
   }
+
+  if (!featured.length) return null;
 
   return (
     <section className="section featured-products-section">
@@ -64,7 +88,6 @@ export default function FeaturedProductsSlider() {
             <button type="button" onClick={() => scrollSlider("left")}>
               ←
             </button>
-
             <button type="button" onClick={() => scrollSlider("right")}>
               →
             </button>
@@ -94,10 +117,9 @@ export default function FeaturedProductsSlider() {
                 </h3>
 
                 <p>
-                  {typeof product.price === "number" && product.price > 0
+                  {product.price && product.price > 0
                     ? `From ₹${product.price.toLocaleString("en-IN")}`
                     : "Price On Request"}
-
                   {(product.variantCount ?? 0) > 1
                     ? ` • ${product.variantCount} Options`
                     : ""}

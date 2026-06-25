@@ -1,18 +1,39 @@
 "use client";
 
-import { Suspense, useMemo } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { getAllProducts, getBrands, getCategories } from "@/lib/products";
 import CollectionProductCard from "@/components/CollectionProductCard";
+import type { ProductIndexItem } from "@/lib/products";
 
-const products = getAllProducts();
-const categories = getCategories();
-const brands = getBrands();
 const PAGE_SIZE = 24;
 
 function PartsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+
+  const [products, setProducts] = useState<ProductIndexItem[]>([]);
+
+  useEffect(() => {
+    async function loadProducts() {
+      const res = await fetch("/data/products-index.json");
+      const data = (await res.json()) as ProductIndexItem[];
+      setProducts(data);
+    }
+
+    loadProducts();
+  }, []);
+
+  const categories = useMemo(() => {
+    return Array.from(
+      new Set(products.map((product) => product.category).filter(Boolean))
+    );
+  }, [products]);
+
+  const brands = useMemo(() => {
+    return Array.from(
+      new Set(products.map((product) => product.vendor).filter(Boolean))
+    );
+  }, [products]);
 
   const currentPage = Number(searchParams.get("page") || "1");
   const selectedCategory = searchParams.get("category") || "";
@@ -51,7 +72,7 @@ function PartsContent() {
 
       return categoryMatch && brandMatch;
     });
-  }, [selectedCategory, selectedBrand]);
+  }, [products, selectedCategory, selectedBrand]);
 
   const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
   const safePage = Math.min(Math.max(currentPage, 1), totalPages);
@@ -160,7 +181,10 @@ function PartsContent() {
 
               <div className="parts-product-grid parts-product-grid-four">
                 {visibleProducts.map((product) => (
-                  <CollectionProductCard product={product} key={product.handle} />
+                  <CollectionProductCard
+                    product={product}
+                    key={product.handle}
+                  />
                 ))}
               </div>
 

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { getAllProducts } from "@/lib/products";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 type Product = {
@@ -21,7 +20,6 @@ type Props = {
 };
 
 const STORAGE_KEY = "sparesco_recently_viewed";
-const products = getAllProducts();
 
 export default function RecentlyViewedSlider({ currentHandle }: Props) {
   const sliderRef = useRef<HTMLDivElement | null>(null);
@@ -29,24 +27,47 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
   const [recentProducts, setRecentProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    const savedHandles = JSON.parse(
-      localStorage.getItem(STORAGE_KEY) || "[]"
-    ) as string[];
+    async function loadRecentlyViewed() {
+      const savedHandles = JSON.parse(
+        localStorage.getItem(STORAGE_KEY) || "[]"
+      ) as string[];
 
-    const items = savedHandles
-      .filter((handle) => handle !== currentHandle)
-      .map((handle) => products.find((product) => product.handle === handle))
-      .filter(Boolean)
-      .slice(0, 10) as Product[];
+      const productRequests = savedHandles
+        .filter((handle) => handle !== currentHandle)
+        .slice(0, 10)
+        .map(async (handle) => {
+          const res = await fetch(`/data/products/${handle}.json`);
+          if (!res.ok) return null;
 
-    setRecentProducts(items);
+          const product = await res.json();
 
-    const updatedHandles = [
-      currentHandle,
-      ...savedHandles.filter((handle) => handle !== currentHandle),
-    ].slice(0, 12);
+          return {
+            handle: product.handle,
+            title: product.title,
+            image: product.images?.[0] || "",
+            collection: product.collection,
+            variantCount: product.variants?.length || 1,
+            partNumber: product.variants?.[0]?.partNumber || product.title,
+            vendor: product.variants?.[0]?.vendor || product.collection || "",
+            price: product.variants?.[0]?.price || 0,
+          } as Product;
+      });
+      
+      const items = (await Promise.all(productRequests)).filter(
+        (product): product is Product => product !== null
+      );
 
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedHandles));
+      setRecentProducts(items);
+
+      const updatedHandles = [
+        currentHandle,
+        ...savedHandles.filter((handle) => handle !== currentHandle),
+      ].slice(0, 12);
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedHandles));
+    }
+
+    loadRecentlyViewed();
   }, [currentHandle]);
 
   function scrollSlider(direction: "left" | "right") {
