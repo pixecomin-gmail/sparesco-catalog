@@ -1,0 +1,37 @@
+{
+  "handle": "sa288",
+  "title": "SA 288",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006467_a2e376c76e7c.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 288 Air Filter",
+      "sku": "sa-288-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006467_a2e376c76e7c.jpg",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 288",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 288 Air Filter. Easy to install and replace, the SA 288 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 210.0 mm",
+        "Dimension 2 (D2): 165.0 mm",
+        "Dimension 3 (D3): 165.0 mm",
+        "Height 1 (H1): 69.5 mm",
+        "Height 2 (H2): 63.0 mm"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.0079 m³"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "handle": "he45ac",
+  "title": "HE45AC",
+  "collection": "Compressed Air Filters",
+  "collectionHandle": "compressed-air-filters",
+  "category": "Compressed Air Filters",
+  "tags": [
+    "Compressed Air Filters",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000123_cea83d73eae5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000248_7898389b91f8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "FilterFinder FF300314C Compressed Air Filter | Replaces the Hi-Line HE45AC",
+      "sku": "he45ac-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000123_cea83d73eae5.jpg",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "FF300314C",
+      "hsCode": "",
+      "countryOfOrigin": "",
+      "description": "",
+      "specifications": [
+        "Style: Compressed Air Filter",
+        "Media: Polyester Needle Felt",
+        "Efficiency 1: 0.003µ",
+        "Seal Material: Nitrile",
+        "Temperature Range: +1 - +80°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 0.003µ",
+        "Media Type: Polyester Needle Felt",
+        "Flow Direction: IN-OUT",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

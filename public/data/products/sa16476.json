@@ -1,0 +1,36 @@
+{
+  "handle": "sa16476",
+  "title": "SA 16476",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003340_0b8a7435ef4d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16476 Air Filter",
+      "sku": "sa-16476-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003340_0b8a7435ef4d.jpg",
+      "vendor": "",
+      "price": 4800,
+      "partNumber": "SA 16476",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16476 Air Filter. Easy to install and replace, the SA 16476 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 207.0 mm",
+        "Dimension 2 (D2): 107.0 mm",
+        "Height 1 (H1): 419.0 mm",
+        "Height 2 (H2): 405.0 mm"
+      ],
+      "unitWeight": "1.94 kg",
+      "shippingVolume": "0.0267 m³"
+    }
+  ]
+}

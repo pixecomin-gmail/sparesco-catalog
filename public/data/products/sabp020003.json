@@ -1,0 +1,37 @@
+{
+  "handle": "sabp020003",
+  "title": "SABP 020003",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004093_214f6e92e09a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SABP 020003 Glass For Cyclone",
+      "sku": "sabp-020003-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004093_214f6e92e09a.jpg",
+      "vendor": "",
+      "price": 10400,
+      "partNumber": "SABP 020003",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SABP 020003 Glass For Cyclone. Easy to install and replace, the SABP 020003 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: GLASS FOR CYCLONE",
+        "Dimension 1 (D1): 210.0 mm",
+        "Dimension 2 (D2): 206.0 mm",
+        "Dimension 3 (D3): 199.0 mm",
+        "Height 1 (H1): 131.0 mm",
+        "Height 2 (H2): 94.0 mm"
+      ],
+      "unitWeight": "0.68 kg",
+      "shippingVolume": "0.0139 m³"
+    }
+  ]
+}

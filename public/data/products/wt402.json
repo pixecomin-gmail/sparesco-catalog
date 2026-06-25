@@ -1,0 +1,33 @@
+{
+  "handle": "wt402",
+  "title": "WT402",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt402-as1475-874d219fd21f.png"
+  ],
+  "variants": [
+    {
+      "title": "WT402",
+      "sku": "wt402-1",
+      "option1Value": "Filtrec AS1475 Spin-On Filter | Replaces the Filtrec WT402",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt402-as1475-874d219fd21f.png",
+      "vendor": "Filtrec",
+      "price": 0,
+      "partNumber": "AS1475",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec AS1475. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the AS1475 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Spin-On Filter, Media: Wire Mesh, Efficiency 1: 40µ, Outer Diameter: 85.0 mm, Inner Diameter: 65.0 mm, Length: 152.0 mm, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 40µ, Media Type: Wire Mesh"
+      ],
+      "unitWeight": "0.57 kg",
+      "shippingVolume": "0.0011 m³"
+    }
+  ]
+}

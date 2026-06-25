@@ -1,0 +1,32 @@
+{
+  "handle": "sa5197",
+  "title": "SA 5197",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004773_6bbf796088f5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5197 Air Filter",
+      "sku": "sa-5197-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004773_6bbf796088f5.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "SA 5197",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5197 Air Filter. Easy to install and replace, the SA 5197 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0015 m³"
+    }
+  ]
+}

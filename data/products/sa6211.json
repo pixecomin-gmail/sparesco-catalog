@@ -1,0 +1,37 @@
+{
+  "handle": "sa6211",
+  "title": "SA 6211",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001496_af9bf388d6f6.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6211 Air Filter",
+      "sku": "sa-6211-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001496_af9bf388d6f6.jpg",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "SA 6211",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6211 Air Filter. Easy to install and replace, the SA 6211 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 190.0 mm",
+        "Dimension 2 (D2): 155.0 mm",
+        "Dimension 3 (D3): 145.0 mm",
+        "Height 1 (H1): 230.0 mm",
+        "Height 2 (H2): 205.0 mm"
+      ],
+      "unitWeight": "0.76 kg",
+      "shippingVolume": "0.011 m³"
+    }
+  ]
+}

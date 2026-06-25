@@ -1,0 +1,33 @@
+{
+  "handle": "sao55750",
+  "title": "SAO55750",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001024_4b22f962717c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002131_2da8ca152974.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1107 Air/Oil Separator | Replaces the SF Filter SAO 55750",
+      "sku": "sao-55750-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002131_2da8ca152974.jpg",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "OA 1107",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1107 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55750. Easy to install and replace, the OA 1107 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0013 m³"
+    }
+  ]
+}

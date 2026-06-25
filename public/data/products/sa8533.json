@@ -1,0 +1,37 @@
+{
+  "handle": "sa8533",
+  "title": "SA 8533",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005197_6e4948e36210.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8533 Air Filter",
+      "sku": "sa-8533-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005197_6e4948e36210.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "SA 8533",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8533 Air Filter. Easy to install and replace, the SA 8533 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 235.0 mm",
+        "Dimension 2 (D2): 235.0 mm",
+        "Dimension 3 (D3): 211.0 mm",
+        "Height 1 (H1): 53.0 mm",
+        "Height 2 (H2): 50.0 mm"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0059 m³"
+    }
+  ]
+}

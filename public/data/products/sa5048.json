@@ -1,0 +1,32 @@
+{
+  "handle": "sa5048",
+  "title": "SA 5048",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006894_c05c84eab064.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5048 Air Filter",
+      "sku": "sa-5048-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006894_c05c84eab064.jpg",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "SA 5048",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5048 Air Filter. Easy to install and replace, the SA 5048 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0017 m³"
+    }
+  ]
+}

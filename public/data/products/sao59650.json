@@ -1,0 +1,51 @@
+{
+  "handle": "sao59650",
+  "title": "SAO59650",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000470_20009d39d18b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000471_f3b368e8806c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001577_b5fed0939054.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001578_50d1e87ee641.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P782911 Air Oil Separator | Replaces the SF Filter SAO59650",
+      "sku": "sao59650-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000470_20009d39d18b.jpg",
+      "vendor": "",
+      "price": 32600,
+      "partNumber": "P782911",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P782911 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "6.88 kg",
+      "shippingVolume": "0.0564 m³"
+    },
+    {
+      "title": "HiFi Filter OT 2062 Air/Oil Separator | Replaces the SF Filter SAO 59650",
+      "sku": "sao-59650-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001578_50d1e87ee641.jpg",
+      "vendor": "",
+      "price": 40200,
+      "partNumber": "OT 2062",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2062 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 59650. Easy to install and replace, the OT 2062 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "7.0 kg",
+      "shippingVolume": "0.0585 m³"
+    }
+  ]
+}

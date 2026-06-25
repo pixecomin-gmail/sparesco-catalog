@@ -1,0 +1,51 @@
+{
+  "handle": "sao58200",
+  "title": "SAO58200",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000656_cd41a7b81dbd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000657_f6cb26c34b76.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001763_481f81d2ae98.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001764_99321c1214f0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5215 Air/Oil Separator | Replaces the SF Filter SAO 58200",
+      "sku": "sao-58200-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001763_481f81d2ae98.jpg",
+      "vendor": "",
+      "price": 20000,
+      "partNumber": "OS 5215",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5215 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58200. Easy to install and replace, the OS 5215 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "3.14 kg",
+      "shippingVolume": "0.0225 m³"
+    },
+    {
+      "title": "Fleetguard AS2530  | Replaces the SF Filter SAO 58200",
+      "sku": "sao-58200-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001764_99321c1214f0.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "AS2530",
+      "hsCode": "",
+      "countryOfOrigin": "",
+      "description": "The genuine HiFi Filter OS 5215 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58200. Easy to install and replace, the OS 5215 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

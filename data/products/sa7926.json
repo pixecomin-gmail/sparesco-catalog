@@ -1,0 +1,32 @@
+{
+  "handle": "sa7926",
+  "title": "SA 7926",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004307_7d3111ca20eb.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7926 Air Filter",
+      "sku": "sa-7926-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004307_7d3111ca20eb.jpg",
+      "vendor": "",
+      "price": 5400,
+      "partNumber": "SA 7926",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7926 Air Filter. Easy to install and replace, the SA 7926 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.0025 m³"
+    }
+  ]
+}

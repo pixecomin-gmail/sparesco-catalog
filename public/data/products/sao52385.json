@@ -1,0 +1,37 @@
+{
+  "handle": "sao52385",
+  "title": "SAO52385",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001224_7f56b84d4273.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002326_169fcdb1a73c.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5154 Air/Oil Separator | Replaces the SF Filter SAO 52385",
+      "sku": "sao-52385-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002326_169fcdb1a73c.jpg",
+      "vendor": "",
+      "price": 14600,
+      "partNumber": "OS 5154",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5154 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 52385. Easy to install and replace, the OS 5154 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 178.0 mm",
+        "Dimension 2 (D2): 134.0 mm",
+        "Dimension 3 (D3): 75.0 mm",
+        "Height 1 (H1): 302.0 mm"
+      ],
+      "unitWeight": "2.22 kg",
+      "shippingVolume": "0.0162 m³"
+    }
+  ]
+}

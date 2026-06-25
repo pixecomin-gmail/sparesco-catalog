@@ -1,0 +1,92 @@
+{
+  "handle": "sa17279",
+  "title": "SA 17279",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007372_4bf78a7b79d3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007373_98f40a3e416a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007374_7a66d8ec9362.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007375_16d6c1567eb9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17279 Air Filter",
+      "sku": "sa-17279-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007372_4bf78a7b79d3.jpg",
+      "vendor": "",
+      "price": 5500,
+      "partNumber": "SA 17279",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17279 Air Filter. Easy to install and replace, the SA 17279 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 245.0 mm",
+        "Dimension 2 (D2): 148.0 mm",
+        "Dimension 3 (D3): 140.0 mm",
+        "Height 1 (H1): 332.0 mm",
+        "Height 2 (H2): 315.0 mm",
+        "Height 3 (H3): 292.0 mm"
+      ],
+      "unitWeight": "1.96 kg",
+      "shippingVolume": "0.0286 m³"
+    },
+    {
+      "title": "Mann Filter C 25 660/2 Air Filter | Replaces the HiFi Filter SA 17279",
+      "sku": "sa-17279-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007373_98f40a3e416a.jpg",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "C 25 660/2",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 248.0 mm",
+        "Dimension B: 150.0 mm",
+        "Dimension H: 334.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P782881 Air Filter, Primary Round | Replaces the HiFi Filter SA 17279",
+      "sku": "sa-17279-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007374_7a66d8ec9362.jpg",
+      "vendor": "",
+      "price": 6900,
+      "partNumber": "P782881",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P782881 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.87 kg",
+      "shippingVolume": "0.0306 m³"
+    },
+    {
+      "title": "Fleetguard AF25875 Air Filter, Primary | Replaces the HiFi Filter SA 17279",
+      "sku": "sa-17279-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007375_16d6c1567eb9.jpg",
+      "vendor": "",
+      "price": 6900,
+      "partNumber": "AF25875",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25875 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.89 kg",
+      "shippingVolume": "0.028 m³"
+    }
+  ]
+}

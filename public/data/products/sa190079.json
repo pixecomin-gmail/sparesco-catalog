@@ -1,0 +1,36 @@
+{
+  "handle": "sa190079",
+  "title": "SA 190079",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009013_c9dbfb3465b4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 190079 Air Filter",
+      "sku": "sa-190079-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009013_c9dbfb3465b4.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 190079",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 190079 Air Filter. Easy to install and replace, the SA 190079 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 133.0 mm",
+        "Dimension 2 (D2): 82.0 mm",
+        "Height 1 (H1): 88.0 mm",
+        "Height 2 (H2): 86.0 mm"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0022 m³"
+    }
+  ]
+}

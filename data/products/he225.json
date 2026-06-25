@@ -1,0 +1,42 @@
+{
+  "handle": "he225",
+  "title": "HE225",
+  "collection": "Compressed Air Filters",
+  "collectionHandle": "compressed-air-filters",
+  "category": "Compressed Air Filters",
+  "tags": [
+    "Compressed Air Filters",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000058_0fbc538a5653.webp",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000182_7be6a4abdcf4.webp"
+  ],
+  "variants": [
+    {
+      "title": "FilterFinder FF300382C Compressed Air Filter | Replaces the Hi-Line HE225",
+      "sku": "he225-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000058_0fbc538a5653.webp",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "FF300382C",
+      "hsCode": "",
+      "countryOfOrigin": "",
+      "description": "",
+      "specifications": [
+        "Style: Compressed Air Filter",
+        "Media: Polyester Needle Felt",
+        "Outer Diameter: 50.0 mm",
+        "Inner Diameter: 24.0 mm",
+        "Length: 60.0 mm",
+        "Seal Material: Nitrile",
+        "Temperature Range: +1 - +80°C",
+        "Media Type: Polyester Needle Felt",
+        "Flow Direction: IN-OUT",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

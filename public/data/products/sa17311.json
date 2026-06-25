@@ -1,0 +1,93 @@
+{
+  "handle": "sa17311",
+  "title": "SA 17311",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004828_dbfa109790ca.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004829_ccdbd443e960.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004830_6f6b7ffc2dd0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004831_63f15b5a596f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17311 Air Filter",
+      "sku": "sa-17311-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004828_dbfa109790ca.jpg",
+      "vendor": "",
+      "price": 8600,
+      "partNumber": "SA 17311",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17311 Air Filter. Easy to install and replace, the SA 17311 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 181.0 mm",
+        "Dimension 2 (D2): 163.0 mm",
+        "Dimension 3 (D3): 108.0 mm",
+        "Thread 1 (D7): S 172X6",
+        "Height 1 (H1): 603.0 mm",
+        "Height 2 (H2): 565.0 mm",
+        "Height 3 (H3): 51.0 mm"
+      ],
+      "unitWeight": "1.62 kg",
+      "shippingVolume": "0.025 m³"
+    },
+    {
+      "title": "Mann Filter CF 1840 Secondary Element | Replaces the HiFi Filter SA 17311",
+      "sku": "sa-17311-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004829_ccdbd443e960.jpg",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "CF 1840",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 167.0 mm",
+        "Dimension D: 181.0 mm",
+        "Dimension H: 605.5 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P618932 Air Filter, Safety | Replaces the HiFi Filter SA 17311",
+      "sku": "sa-17311-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004830_6f6b7ffc2dd0.jpg",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "P618932",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Germany",
+      "description": "Genuine Donaldson P618932 Air Filter, Safety acts as a crucial secondary layer of defense in your air filtration system, capturing fine dust particles that bypass the primary filter. This extra layer of protection helps prevent engine wear and supports consistent performance, especially in dusty or harsh environments. Compact and durable, this safety air filter operates without restricting airflow, complementing the primary filter for comprehensive engine protection. Itâ€™s essential for maintaining clean air intake and maximizing engine lifespan.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.97 kg",
+      "shippingVolume": "0.0225 m³"
+    },
+    {
+      "title": "Fleetguard AF26438 Air, Secondary | Replaces the HiFi Filter SA 17311",
+      "sku": "sa-17311-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004831_63f15b5a596f.jpg",
+      "vendor": "",
+      "price": 14600,
+      "partNumber": "AF26438",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF26438 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.0222 m³"
+    }
+  ]
+}

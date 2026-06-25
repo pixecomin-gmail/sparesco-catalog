@@ -1,0 +1,38 @@
+{
+  "handle": "sa6182",
+  "title": "SA 6182",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004547_5cc22ba6c306.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6182 Air Filter",
+      "sku": "sa-6182-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004547_5cc22ba6c306.jpg",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "SA 6182",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6182 Air Filter. Easy to install and replace, the SA 6182 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 372.0 mm",
+        "Dimension 2 (D2): 356.0 mm",
+        "Dimension 3 (D3): 241.0 mm",
+        "Height 1 (H1): 30.0 mm",
+        "Height 2 (H2): 12.0 mm",
+        "Height 3 (H3): 12.0 mm"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0075 m³"
+    }
+  ]
+}

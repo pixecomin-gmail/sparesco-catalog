@@ -1,0 +1,61 @@
+{
+  "handle": "p553240",
+  "title": "P553240",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000545_ddedb42c5cf0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000546_e5d8924c7dc1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard FF5114 Fuel Filter, Spin-On | Replaces the Donaldson P553240",
+      "sku": "p553240-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000545_ddedb42c5cf0.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "FF5114",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Mexico",
+      "description": "Fleetguard® FF5114 spin-on fuel filter delivers superior performance using proven media technology, removing harmful contaminants. Fleetguard fuel filters ensure optimal fuel system protection to meet or exceed OEM specifications.",
+      "specifications": [
+        "Style: Fuel/Water Separator Spin-On",
+        "Efficiency 1: 22µ @ β100",
+        "Outer Diameter: 76.0 mm",
+        "Length: 88.0 mm",
+        "Thread: 3/4-16 UN",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 22µ @ β100"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0012 m³"
+    },
+    {
+      "title": "Donaldson P553240 Fuel/Water Separator Spin-On",
+      "sku": "p553240-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000546_e5d8924c7dc1.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P553240",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P553240 Fuel/Water Separator Spin-On is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Fuel/Water Separator Spin-On",
+        "Efficiency 1: 22µ @ β100",
+        "Outer Diameter: 76.0 mm",
+        "Length: 88.0 mm",
+        "Thread: 3/4-16 UN",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 22µ @ β100"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

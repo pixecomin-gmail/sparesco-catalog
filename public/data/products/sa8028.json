@@ -1,0 +1,38 @@
+{
+  "handle": "sa8028",
+  "title": "SA 8028",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005106_0b001abc247d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8028 Air Filter",
+      "sku": "sa-8028-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005106_0b001abc247d.jpg",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 8028",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8028 Air Filter. Easy to install and replace, the SA 8028 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 148.0 mm",
+        "Dimension 2 (D2): 74.0 mm",
+        "Dimension 3 (D3): 74.0 mm",
+        "Height 1 (H1): 225.0 mm",
+        "Height 2 (H2): 222.0 mm",
+        "Height 3 (H3): 2.0 mm"
+      ],
+      "unitWeight": "0.6 kg",
+      "shippingVolume": "0.0064 m³"
+    }
+  ]
+}

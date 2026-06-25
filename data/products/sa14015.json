@@ -1,0 +1,72 @@
+{
+  "handle": "sa14015",
+  "title": "SA 14015",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006228_8b4d8929b862.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006229_48b542b74475.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006230_c354e3c8b48d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14015 Air Filter",
+      "sku": "sa-14015-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006228_8b4d8929b862.jpg",
+      "vendor": "",
+      "price": 10200,
+      "partNumber": "SA 14015",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14015 Air Filter. Easy to install and replace, the SA 14015 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 151.0 mm",
+        "Dimension 2 (D2): 139.0 mm",
+        "Dimension 3 (D3): 138.0 mm",
+        "Height 1 (H1): 405.0 mm",
+        "Height 2 (H2): 393.0 mm",
+        "Height 3 (H3): 378.0 mm"
+      ],
+      "unitWeight": "1.16 kg",
+      "shippingVolume": "0.0194 m³"
+    },
+    {
+      "title": "Donaldson P114249 Air Filter, Primary Round | Replaces the HiFi Filter SA 14015",
+      "sku": "sa-14015-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006229_48b542b74475.jpg",
+      "vendor": "",
+      "price": 6500,
+      "partNumber": "P114249",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P114249 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.25 kg",
+      "shippingVolume": "0.0203 m³"
+    },
+    {
+      "title": "Fleetguard AF4065 Air Filter, Primary | Replaces the HiFi Filter SA 14015",
+      "sku": "sa-14015-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006230_c354e3c8b48d.jpg",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "AF4065",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4065 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.28 kg",
+      "shippingVolume": "0.0166 m³"
+    }
+  ]
+}

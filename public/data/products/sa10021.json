@@ -1,0 +1,93 @@
+{
+  "handle": "sa10021",
+  "title": "SA 10021",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008812_4457bb14411a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008813_b6ef8a73e781.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008814_a9ee07e7ca38.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008815_8ed1c464f179.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10021 Air Filter",
+      "sku": "sa-10021-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008812_4457bb14411a.jpg",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "SA 10021",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10021 Air Filter. Easy to install and replace, the SA 10021 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 146.0 mm",
+        "Dimension 2 (D2): 104.0 mm",
+        "Dimension 3 (D3): 63.0 mm",
+        "Height 1 (H1): 267.5 mm",
+        "Height 2 (H2): 258.0 mm",
+        "Height 3 (H3): 257.5 mm"
+      ],
+      "unitWeight": "0.64 kg",
+      "shippingVolume": "0.007 m³"
+    },
+    {
+      "title": "Donaldson P778340 Air Filter, Primary Round | Replaces the HiFi Filter SA 10021",
+      "sku": "sa-10021-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008813_b6ef8a73e781.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "P778340",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P778340 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.64 kg",
+      "shippingVolume": "0.0081 m³"
+    },
+    {
+      "title": "Mann Filter C 11 004 Air Filter | Replaces the HiFi Filter SA 10021",
+      "sku": "sa-10021-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008814_a9ee07e7ca38.jpg",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "C 11 004",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 104.0 mm",
+        "Dimension B: 63.0 mm",
+        "Dimension D: 150.0 mm",
+        "Dimension H: 264.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4939 Air Filter | Replaces the HiFi Filter SA 10021",
+      "sku": "sa-10021-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008815_8ed1c464f179.jpg",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "AF4939",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "China",
+      "description": "​Fleetguard® AF4939 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.97 kg",
+      "shippingVolume": "0.0086 m³"
+    }
+  ]
+}

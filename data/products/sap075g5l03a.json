@@ -1,0 +1,37 @@
+{
+  "handle": "sap075g5l03a",
+  "title": "SAP075G5L03A",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001388_a56c95d35c1f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter FS 340 Breather Filter | Replaces the MP Filtri SAP075G5L03A",
+      "sku": "sap075g5l03a-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001388_a56c95d35c1f.jpg",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "FS 340",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter FS 340 Breather Filter is HiFi's replacement to the MP FILTRI SAP075G5L03A. Easy to install and replace, the FS 340 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER",
+        "Dimension 1 (D1): 72.0 mm",
+        "Dimension 2 (D2): 68.5 mm",
+        "Thread 1 (D7): 3/4\"-NPT",
+        "Height 1 (H1): 80.5 mm",
+        "Height 2 (H2): 61.5 mm"
+      ],
+      "unitWeight": "0.12 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "handle": "sa842",
+  "title": "SA 842",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005376_48d973875e2a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 842 Air Filter",
+      "sku": "sa-842-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005376_48d973875e2a.jpg",
+      "vendor": "",
+      "price": 900,
+      "partNumber": "SA 842",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 842 Air Filter. Easy to install and replace, the SA 842 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 297.0 mm",
+        "Dimension 2 (D2): 270.0 mm",
+        "Dimension 3 (D3): 158.0 mm",
+        "Height 1 (H1): 36.5 mm",
+        "Height 2 (H2): 26.5 mm"
+      ],
+      "unitWeight": "0.26 kg",
+      "shippingVolume": "0.0031 m³"
+    }
+  ]
+}

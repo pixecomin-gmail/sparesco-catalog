@@ -1,0 +1,33 @@
+{
+  "handle": "sao55030",
+  "title": "SAO55030",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001141_543675e219b6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002244_fc7594f5c29b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 3380 Air/Oil Separator | Replaces the SF Filter SAO 55030",
+      "sku": "sao-55030-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002244_fc7594f5c29b.jpg",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "OA 3380",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 3380 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55030. Easy to install and replace, the OA 3380 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.54 kg",
+      "shippingVolume": "0.006 m³"
+    }
+  ]
+}

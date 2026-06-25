@@ -1,0 +1,32 @@
+{
+  "handle": "sa6102",
+  "title": "SA 6102",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006323_5396fc1ba546.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6102 Air Filter",
+      "sku": "sa-6102-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006323_5396fc1ba546.jpg",
+      "vendor": "",
+      "price": 1000,
+      "partNumber": "SA 6102",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6102 Air Filter. Easy to install and replace, the SA 6102 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.26 kg",
+      "shippingVolume": "0.0036 m³"
+    }
+  ]
+}

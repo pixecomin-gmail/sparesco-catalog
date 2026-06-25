@@ -1,0 +1,49 @@
+{
+  "handle": "sa11787",
+  "title": "SA 11787",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002825_4e04f6aa5151.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002826_ffd91af48506.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11787 Air Filter",
+      "sku": "sa-11787-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002825_4e04f6aa5151.jpg",
+      "vendor": "",
+      "price": 17700,
+      "partNumber": "SA 11787",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11787 Air Filter. Easy to install and replace, the SA 11787 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.2 kg",
+      "shippingVolume": "0.0421 m³"
+    },
+    {
+      "title": "Fleetguard AF1837 Air Filter, Primary | Replaces the HiFi Filter SA 11787",
+      "sku": "sa-11787-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002826_ffd91af48506.jpg",
+      "vendor": "",
+      "price": 11900,
+      "partNumber": "AF1837",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1837 air filtration products are designed to effectively reduce the amount of damage-causing dust and dirt particles that make their way into your equipment’s engine.  Every Fleetguard product meets or surpasses the quality and performance standards required by a new engine.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.97 kg",
+      "shippingVolume": "0.0398 m³"
+    }
+  ]
+}

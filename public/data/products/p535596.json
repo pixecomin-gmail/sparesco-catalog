@@ -1,0 +1,67 @@
+{
+  "handle": "p535596",
+  "title": "P535596",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000271_ae2ec44baa3e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000272_b2c170e9d97b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AF25415 Air Filter, Primary Magnum Rs | Replaces the Donaldson P535596",
+      "sku": "p535596-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000271_ae2ec44baa3e.jpg",
+      "vendor": "",
+      "price": 7900,
+      "partNumber": "AF25415",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF25415 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 234.0 mm",
+        "Inner Diameter: 123.0 mm",
+        "Length: 457.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "2.72 kg",
+      "shippingVolume": "0.0288 m³"
+    },
+    {
+      "title": "Donaldson P535596 Air Primary, Round",
+      "sku": "p535596-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000272_b2c170e9d97b.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P535596",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P535596 Air Primary, Round provides clean, efficient airflow for engines by trapping airborne contaminants. Its round design maximizes filtration surface area while maintaining high airflow rates. Perfect for heavy-duty applications, this air primary filter enhances engine longevity and supports consistent performance.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 234.0 mm",
+        "Inner Diameter: 123.0 mm",
+        "Length: 457.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

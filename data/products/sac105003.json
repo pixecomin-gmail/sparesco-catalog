@@ -1,0 +1,54 @@
+{
+  "handle": "sac105003",
+  "title": "SAC 105003",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005091_609d5869a075.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005092_9c7d5c559ef9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAC 105003 Air Filter",
+      "sku": "sac-105003-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005091_609d5869a075.jpg",
+      "vendor": "",
+      "price": 7100,
+      "partNumber": "SAC 105003",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAC 105003 Air Filter. Easy to install and replace, the SAC 105003 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 267.0 mm",
+        "Dimension 2 (D2): 113.0 mm",
+        "Dimension 3 (D3): 102.0 mm",
+        "Height 1 (H1): 187.0 mm",
+        "Height 2 (H2): 153.0 mm"
+      ],
+      "unitWeight": "1.62 kg",
+      "shippingVolume": "0.0191 m³"
+    },
+    {
+      "title": "Donaldson C105003 Air Filter, Primary Duralite | Replaces the HiFi Filter SAC 105003",
+      "sku": "sac-105003-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005092_9c7d5c559ef9.jpg",
+      "vendor": "",
+      "price": 6600,
+      "partNumber": "C105003",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson DuraLite™ Air Cleaners? Rugged, lightweight, self-supporting, and completely disposable combination air cleaner and filter. • Function well under severe pulsation conditions, particularly two- and three-cylinder engines. • Vibration-resistant media is secured into molded housings of rugged ABS plastic—so they don’t fall apart as other designs might. • Easy to install, durable, and reliable. • Completely disposable — acceptable for normal trash pick-up (DuraLite should not be incinerated).",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.4 kg",
+      "shippingVolume": "0.0165 m³"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "handle": "sa17504",
+  "title": "SA 17504",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007941_57b17f5c3fa4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007942_22c94b208f42.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007943_f40ae5c56888.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17504 Air Filter",
+      "sku": "sa-17504-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007941_57b17f5c3fa4.jpg",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "SA 17504",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17504 Air Filter. Easy to install and replace, the SA 17504 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 100.0 mm",
+        "Dimension 2 (D2): 98.0 mm",
+        "Dimension 3 (D3): 81.0 mm",
+        "Height 1 (H1): 340.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0063 m³"
+    },
+    {
+      "title": "Donaldson P628400 Air Filter, Safety | Replaces the HiFi Filter SA 17504",
+      "sku": "sa-17504-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007942_22c94b208f42.jpg",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "P628400",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Brazil",
+      "description": "Genuine Donaldson P628400 Air Filter, Safety acts as a crucial secondary layer of defense in your air filtration system, capturing fine dust particles that bypass the primary filter. This extra layer of protection helps prevent engine wear and supports consistent performance, especially in dusty or harsh environments. Compact and durable, this safety air filter operates without restricting airflow, complementing the primary filter for comprehensive engine protection. Itâ€™s essential for maintaining clean air intake and maximizing engine lifespan.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.37 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25176 Air Filter, Secondary | Replaces the HiFi Filter SA 17504",
+      "sku": "sa-17504-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007943_f40ae5c56888.jpg",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "AF25176",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Argentina",
+      "description": "​Fleetguard® AF25176 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.0048 m³"
+    }
+  ]
+}

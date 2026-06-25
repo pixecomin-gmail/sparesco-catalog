@@ -1,0 +1,37 @@
+{
+  "handle": "sa16981",
+  "title": "SA 16981",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002767_ed66b61e2e70.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16981 Air Filter",
+      "sku": "sa-16981-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002767_ed66b61e2e70.jpg",
+      "vendor": "",
+      "price": 14200,
+      "partNumber": "SA 16981",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16981 Air Filter. Easy to install and replace, the SA 16981 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 280.0 mm",
+        "Dimension 2 (D2): 150.0 mm",
+        "Height 1 (H1): 418.0 mm",
+        "Height 2 (H2): 411.0 mm",
+        "Height 3 (H3): 404.0 mm"
+      ],
+      "unitWeight": "3.48 kg",
+      "shippingVolume": "0.0396 m³"
+    }
+  ]
+}

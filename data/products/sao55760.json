@@ -1,0 +1,38 @@
+{
+  "handle": "sao55760",
+  "title": "SAO55760",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001023_f1e6195c641f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002130_e34dd1d89f72.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1086 Air/Oil Separator | Replaces the SF Filter SAO 55760",
+      "sku": "sao-55760-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002130_e34dd1d89f72.jpg",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "OA 1086",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1086 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55760. Easy to install and replace, the OA 1086 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 70.0 mm",
+        "Dimension 2 (D2): 41.0 mm",
+        "Dimension 3 (D3): 27.0 mm",
+        "Height 1 (H1): 85.5 mm",
+        "Height 2 (H2): 75.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0008 m³"
+    }
+  ]
+}

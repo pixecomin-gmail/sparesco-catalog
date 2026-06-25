@@ -1,0 +1,37 @@
+{
+  "handle": "sa6064",
+  "title": "SA 6064",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009494_ada1c100b83e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6064 Air Filter",
+      "sku": "sa-6064-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009494_ada1c100b83e.jpg",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "SA 6064",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6064 Air Filter. Easy to install and replace, the SA 6064 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 160.0 mm",
+        "Dimension 2 (D2): 152.0 mm",
+        "Dimension 3 (D3): 88.0 mm",
+        "Height 1 (H1): 68.0 mm",
+        "Height 2 (H2): 66.0 mm"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0034 m³"
+    }
+  ]
+}

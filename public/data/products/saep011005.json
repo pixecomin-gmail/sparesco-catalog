@@ -1,0 +1,32 @@
+{
+  "handle": "saep011005",
+  "title": "SAEP 011005",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003906_e003750b071d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAEP 011005 Vacuator Valve",
+      "sku": "saep-011005-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003906_e003750b071d.jpg",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "SAEP 011005",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAEP 011005 Vacuator Valve. Easy to install and replace, the SAEP 011005 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: VACUATOR VALVE"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0005 m³"
+    }
+  ]
+}

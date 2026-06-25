@@ -1,0 +1,49 @@
+{
+  "handle": "sa16381",
+  "title": "SA 16381",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002796_7300490f8c6a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002797_3e373a00aa5b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16381 Air Filter",
+      "sku": "sa-16381-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002796_7300490f8c6a.jpg",
+      "vendor": "",
+      "price": 21900,
+      "partNumber": "SA 16381",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16381 Air Filter. Easy to install and replace, the SA 16381 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.98 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P781909 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16381",
+      "sku": "sa-16381-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002797_3e373a00aa5b.jpg",
+      "vendor": "",
+      "price": 14700,
+      "partNumber": "P781909",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P781909 Air Filter, Primary Radialseal features a secure radialseal fit that ensures high-efficiency air filtration while preventing unfiltered air from entering the engine. It captures harmful airborne contaminants, optimizing airflow and enhancing engine performance and longevity. Designed for use in rugged environments, this filter offers excellent durability and a long service life. Its radialseal technology makes installation simple while ensuring a tight, reliable seal that protects your engine under the harshest conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": "0.0643 m³"
+    }
+  ]
+}

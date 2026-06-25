@@ -1,0 +1,37 @@
+{
+  "handle": "sa190546",
+  "title": "SA 190546",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004909_4912bdb7b908.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 190546 Breather Filter",
+      "sku": "sa-190546-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004909_4912bdb7b908.jpg",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "SA 190546",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 190546 Breather Filter. Easy to install and replace, the SA 190546 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER",
+        "Dimension 1 (D1): 143.0 mm",
+        "Dimension 2 (D2): 97.0 mm",
+        "Dimension 3 (D3): 97.0 mm",
+        "Height 1 (H1): 101.0 mm",
+        "Height 2 (H2): 93.0 mm"
+      ],
+      "unitWeight": "0.46 kg",
+      "shippingVolume": "0.0039 m³"
+    }
+  ]
+}

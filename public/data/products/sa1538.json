@@ -1,0 +1,37 @@
+{
+  "handle": "sa1538",
+  "title": "SA 1538",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009393_90c8d5e532d5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 1538 Air Filter",
+      "sku": "sa-1538-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009393_90c8d5e532d5.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 1538",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 1538 Air Filter. Easy to install and replace, the SA 1538 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 163.0 mm",
+        "Dimension 2 (D2): 95.0 mm",
+        "Dimension 3 (D3): 95.0 mm",
+        "Height 1 (H1): 238.0 mm",
+        "Height 2 (H2): 222.0 mm"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0071 m³"
+    }
+  ]
+}

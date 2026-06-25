@@ -1,0 +1,90 @@
+{
+  "handle": "sa16074",
+  "title": "SA 16074",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000018_f9c626f7517d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000019_371904291cb6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000020_53a4d7d94808.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000021_ebf7eb1ef3d8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16074 Air Filter",
+      "sku": "sa-16074-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000018_f9c626f7517d.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "SA 16074",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 16074 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 16074 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 105.0 mm",
+        "Dimension 2 (D2): 62.5 mm",
+        "Height 1 (H1): 274.0 mm",
+        "Height 2 (H2): 267.0 mm"
+      ],
+      "unitWeight": "0.46 kg",
+      "shippingVolume": "0.0042 m³"
+    },
+    {
+      "title": "Donaldson P821575 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16074",
+      "sku": "sa-16074-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000019_371904291cb6.jpg",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "P821575",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.46 kg",
+      "shippingVolume": "0.0056 m³"
+    },
+    {
+      "title": "Mann Filter C 1196/2 Air Filter | Replaces the HiFi Filter SA 16074",
+      "sku": "sa-16074-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000020_53a4d7d94808.jpg",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "C 1196/2",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 106.0 mm",
+        "Dimension B: 60.0 mm",
+        "Dimension H: 274.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25551 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16074",
+      "sku": "sa-16074-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000021_ebf7eb1ef3d8.jpg",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "AF25551",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF25551 premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.48 kg",
+      "shippingVolume": "0.0048 m³"
+    }
+  ]
+}

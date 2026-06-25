@@ -1,0 +1,36 @@
+{
+  "handle": "sain02ef045001",
+  "title": "SAIN 02EF045001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004338_08affece76b1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAIN 02EF045001 Clogging Indicator",
+      "sku": "sain-02ef045001-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004338_08affece76b1.jpg",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "SAIN 02EF045001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAIN 02EF045001 Clogging Indicator. Easy to install and replace, the SAIN 02EF045001 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: CLOGGING INDICATOR",
+        "Dimension 1 (D1): 49.0 mm",
+        "Thread 1 (D7): M10X1",
+        "Height 1 (H1): 35.0 mm",
+        "No. Bypass Valves: 1"
+      ],
+      "unitWeight": "0.02 kg",
+      "shippingVolume": "0.0001 m³"
+    }
+  ]
+}

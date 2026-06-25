@@ -1,0 +1,54 @@
+{
+  "handle": "sa5468",
+  "title": "SA 5468",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005475_71d2d41f1178.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005476_ee55339ed906.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5468 Air Filter",
+      "sku": "sa-5468-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005475_71d2d41f1178.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "SA 5468",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5468 Air Filter. Easy to install and replace, the SA 5468 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Mann Filter C 3090/1 Air Filter | Replaces the HiFi Filter SA 5468",
+      "sku": "sa-5468-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005476_ee55339ed906.jpg",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "C 3090/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 230.0 mm",
+        "Dimension B: 295.0 mm",
+        "Dimension C: 171.0 mm",
+        "Dimension D: 75.0 mm",
+        "Dimension H: 38.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

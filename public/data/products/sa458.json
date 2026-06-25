@@ -1,0 +1,36 @@
+{
+  "handle": "sa458",
+  "title": "SA 458",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006320_efddfde7cac5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 458 Air Filter",
+      "sku": "sa-458-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006320_efddfde7cac5.jpg",
+      "vendor": "",
+      "price": 7900,
+      "partNumber": "SA 458",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 458 Air Filter. Easy to install and replace, the SA 458 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 276.0 mm",
+        "Dimension 2 (D2): 251.0 mm",
+        "Dimension 3 (D3): 120.0 mm",
+        "Height 1 (H1): 82.0 mm"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.0027 m³"
+    }
+  ]
+}

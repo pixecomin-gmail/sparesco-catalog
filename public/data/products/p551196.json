@@ -1,0 +1,55 @@
+{
+  "handle": "p551196",
+  "title": "P551196",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000716_a873a9a1e272.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000717_86a7348eaab8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard HF6066 Hydraulic Filters | Replaces the Donaldson P551196",
+      "sku": "p551196-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000716_a873a9a1e272.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "HF6066",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® HF6066 hydraulic cartridge filter is designed to help keep your precision hydraulic systems running as intended, providing a solution for various applications.  This filter meets or exceeds the equipment OEM quality and performance and is the first aftermarket replacement available on the market today, bringing your operation top-quality performance and an overall unbeatable total cost of ownership.",
+      "specifications": [
+        "Style: Hydraulic Cartridge",
+        "Outer Diameter: 183.9 mm",
+        "Inner Diameter: 37.8 mm",
+        "Length: 63.0 mm"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0042 m³"
+    },
+    {
+      "title": "Donaldson P551196 Hydraulic Cartridge",
+      "sku": "p551196-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000717_86a7348eaab8.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P551196",
+      "hsCode": "8421.29.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P551196 Hydraulic Cartridge offers superior filtration performance, effectively removing contaminants from hydraulic fluids. Its high-capacity design helps maintain fluid cleanliness and system efficiency. Constructed from durable materials, this hydraulic cartridge is suitable for a wide range of industrial and heavy-duty hydraulic systems.",
+      "specifications": [
+        "Style: Hydraulic Cartridge",
+        "Outer Diameter: 183.9 mm",
+        "Inner Diameter: 37.8 mm",
+        "Length: 63.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

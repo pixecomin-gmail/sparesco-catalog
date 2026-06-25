@@ -1,0 +1,54 @@
+{
+  "handle": "sa16027",
+  "title": "SA 16027",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008325_6e826a38a009.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008326_ce6e3c76bb42.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16027 Air Filter",
+      "sku": "sa-16027-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008325_6e826a38a009.jpg",
+      "vendor": "",
+      "price": 19900,
+      "partNumber": "SA 16027",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16027 Air Filter. Easy to install and replace, the SA 16027 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 353.0 mm",
+        "Dimension 2 (D2): 190.0 mm",
+        "Dimension 3 (D3): 17.0 mm",
+        "Height 1 (H1): 185.0 mm",
+        "Height 2 (H2): 175.0 mm"
+      ],
+      "unitWeight": "3.34 kg",
+      "shippingVolume": "0.0283 m³"
+    },
+    {
+      "title": "Fleetguard AF1693 Air Filter, Primary | Replaces the HiFi Filter SA 16027",
+      "sku": "sa-16027-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008326_ce6e3c76bb42.jpg",
+      "vendor": "",
+      "price": 7900,
+      "partNumber": "AF1693",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1693 air filtration products are designed to effectively reduce the amount of damage-causing dust and dirt particles that make their way into your equipment’s engine.  Every Fleetguard product meets or surpasses the quality and performance standards required by a new engine.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.32 kg",
+      "shippingVolume": "0.0292 m³"
+    }
+  ]
+}

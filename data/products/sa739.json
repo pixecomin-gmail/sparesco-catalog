@@ -1,0 +1,36 @@
+{
+  "handle": "sa739",
+  "title": "SA 739",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008399_ead8b9a6ed29.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 739 Air Filter",
+      "sku": "sa-739-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008399_ead8b9a6ed29.jpg",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "SA 739",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 739 Air Filter. Easy to install and replace, the SA 739 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 127.0 mm",
+        "Dimension 2 (D2): 74.0 mm",
+        "Dimension 3 (D3): 74.0 mm",
+        "Height 1 (H1): 290.0 mm"
+      ],
+      "unitWeight": "0.56 kg",
+      "shippingVolume": "0.0071 m³"
+    }
+  ]
+}

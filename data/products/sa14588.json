@@ -1,0 +1,72 @@
+{
+  "handle": "sa14588",
+  "title": "SA 14588",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009978_fea91183a1b9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009979_05de311fe577.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009980_15ffae1d3bf8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14588 Air Filter",
+      "sku": "sa-14588-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009978_fea91183a1b9.jpg",
+      "vendor": "",
+      "price": 7800,
+      "partNumber": "SA 14588",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14588 Air Filter. Easy to install and replace, the SA 14588 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 206.0 mm",
+        "Dimension 2 (D2): 188.0 mm",
+        "Dimension 3 (D3): 159.0 mm",
+        "Height 1 (H1): 585.0 mm",
+        "Height 2 (H2): 575.0 mm",
+        "Height 3 (H3): 561.0 mm"
+      ],
+      "unitWeight": "2.62 kg",
+      "shippingVolume": "0.0289 m³"
+    },
+    {
+      "title": "Donaldson P775945 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 14588",
+      "sku": "sa-14588-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009979_05de311fe577.jpg",
+      "vendor": "",
+      "price": 7400,
+      "partNumber": "P775945",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Genuine Donaldson P775945 Air Filter, Primary Konepac is designed to provide reliable performance in air filter, primary konepac applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.76 kg",
+      "shippingVolume": "0.0329 m³"
+    },
+    {
+      "title": "Fleetguard AF4638 Air Filter | Replaces the HiFi Filter SA 14588",
+      "sku": "sa-14588-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009980_15ffae1d3bf8.jpg",
+      "vendor": "",
+      "price": 7900,
+      "partNumber": "AF4638",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4638 air filtration products are designed to effectively reduce the amount of damage-causing dust and dirt particles that make their way into your equipment’s engine.  Every Fleetguard product meets or surpasses the quality and performance standards required by a new engine.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.05 kg",
+      "shippingVolume": "0.0315 m³"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "handle": "sa11735",
+  "title": "SA 11735",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009509_8fa1561f8f17.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11735 Air Filter",
+      "sku": "sa-11735-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009509_8fa1561f8f17.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 11735",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11735 Air Filter. Easy to install and replace, the SA 11735 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 215.0 mm",
+        "Dimension 2 (D2): 177.0 mm",
+        "Dimension 3 (D3): 177.0 mm",
+        "Height 1 (H1): 62.5 mm"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.0048 m³"
+    }
+  ]
+}

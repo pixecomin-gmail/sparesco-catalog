@@ -1,0 +1,87 @@
+{
+  "handle": "sa12560",
+  "title": "SA 12560",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000070_88746a2da33d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000071_5162ca18b098.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000072_98fc44badc32.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000073_9defed1cc201.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12560 Air Filter",
+      "sku": "sa-12560-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000070_88746a2da33d.jpg",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "SA 12560",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 12560 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 12560 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 133.0 mm",
+        "Dimension 2 (D2): 94.0 mm",
+        "Dimension 3 (D3): 94.0 mm",
+        "Height 1 (H1): 73.0 mm"
+      ],
+      "unitWeight": "0.14 kg",
+      "shippingVolume": "0.0016 m³"
+    },
+    {
+      "title": "Donaldson P575151 Breather, Hydraulic | Replaces the HiFi Filter SA 12560",
+      "sku": "sa-12560-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000071_5162ca18b098.jpg",
+      "vendor": "",
+      "price": 11400,
+      "partNumber": "P575151",
+      "hsCode": "8421.39.25.80",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P575151 Breather, Hydraulic is designed to provide reliable performance in breather, hydraulic applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.59 kg",
+      "shippingVolume": "0.0045 m³"
+    },
+    {
+      "title": "Fleetguard HF35506 Hydraulic Filters | Replaces the HiFi Filter SA 12560",
+      "sku": "sa-12560-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000072_98fc44badc32.jpg",
+      "vendor": "",
+      "price": 12900,
+      "partNumber": "HF35506",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® HF35506 hydraulic cartridge filter with synthetic media is designed to help keep your precision hydraulic systems running as intended, providing a solution for various applications.  This filter meets or exceeds the equipment OEM quality and performance and is the first aftermarket replacement available on the market today, bringing your operation top-quality performance and an overall unbeatable total cost of ownership.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.67 kg",
+      "shippingVolume": "0.0021 m³"
+    },
+    {
+      "title": "Hydac 0005 L 003 P Breather Filter | Replaces the HiFi Filter SA 12560",
+      "sku": "sa-12560-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000073_9defed1cc201.jpg",
+      "vendor": "",
+      "price": 9600,
+      "partNumber": "0005 L 003 P",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "Genuine Hydac 0005 L 003 P Breather Filter. Built to HYDAC’s OEM specifications and quality standards, this genuine part offers reliable performance, long service life and a precise fit. It’s suitable for a wide range of hydraulic and process applications, helping protect equipment, reduce downtime and maintain system cleanliness. For best results, match the part code to your equipment manual and verify key dimensions and ratings (size, connection, filtration grade/flow) before installation.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

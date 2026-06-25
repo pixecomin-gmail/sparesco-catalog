@@ -1,0 +1,78 @@
+{
+  "handle": "sab542",
+  "title": "SAB542",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001298_e3f2cb4cb71f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001299_397ffe4937de.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001300_0d6f4cce7ff3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002400_a52cdf251518.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002401_efcfd59901db.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002402_ca5905dee372.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter KD 70322 Urea Filter Kit | Replaces the SF Filter SAB 542",
+      "sku": "sab-542-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002400_a52cdf251518.jpg",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "KD 70322",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter KD 70322 Urea Filter Kit is HiFi's replacement to the SF Filter SAB 542. Easy to install and replace, the KD 70322 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER KIT",
+        "Dimension 1 (D1): 72.0 mm",
+        "Dimension 2 (D2): 59.0 mm",
+        "Dimension 3 (D3): 57.0 mm",
+        "Thread 1 (D7): 2\"1/2-12UNF",
+        "Height 1 (H1): 99.0 mm",
+        "Height 2 (H2): 82.0 mm",
+        "Height 3 (H3): 8.0 mm"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0006 m³"
+    },
+    {
+      "title": "Donaldson X773036 Fuel Filter Kit | Replaces the SF Filter SAB542",
+      "sku": "sab542-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001299_397ffe4937de.png",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "X773036",
+      "hsCode": "8421.23.00.90",
+      "countryOfOrigin": "China",
+      "description": "Genuine Donaldson X773036 Fuel Filter Kit is designed to provide reliable performance in fuel filter kit applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Urea Filter Kit"
+      ],
+      "unitWeight": "0.15 kg",
+      "shippingVolume": "0.0011 m³"
+    },
+    {
+      "title": "Mann Filter U 58/1 KIT Urea Filter | Replaces the SF Filter SAB542",
+      "sku": "sab542-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001300_0d6f4cce7ff3.jpg",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "U 58/1 KIT",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Germany",
+      "description": "The compact MANN-FILTER urea filters are characterized by high filter fineness, proven suitability for everyday use and a long service life. They protect system components against wear and failure and are resistant to frost and ammonia. MANN-FILTER urea filters are available for leading SCR systems in trucks and buses.",
+      "specifications": [
+        "Style: Urea Filter",
+        "Dimension A: 71.0 mm",
+        "Dimension H: 100.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "handle": "sap050g3l03a1p01",
+  "title": "SAP050G3L03A1P01",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001409_5cbd3841565d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter FS 182 Breather Filter | Replaces the MP Filtri SAP050G3L03A1P01",
+      "sku": "sap050g3l03a1p01-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001409_5cbd3841565d.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "FS 182",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter FS 182 Breather Filter is HiFi's replacement to the MP FILTRI SAP050G3L03A1P01. Easy to install and replace, the FS 182 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0005 m³"
+    }
+  ]
+}

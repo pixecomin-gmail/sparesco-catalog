@@ -1,0 +1,92 @@
+{
+  "handle": "sa16432",
+  "title": "SA 16432",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000032_35c86cfac721.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000033_8d3a23712503.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000034_7960b25cd87b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000035_a29a24db29b9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16432 Air Filter",
+      "sku": "sa-16432-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000032_35c86cfac721.jpg",
+      "vendor": "",
+      "price": 6000,
+      "partNumber": "SA 16432",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16432 Air Filter. Easy to install and replace, the SA 16432 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 265.0 mm",
+        "Dimension 2 (D2): 170.0 mm",
+        "Dimension 3 (D3): 155.0 mm",
+        "Height 1 (H1): 420.0 mm",
+        "Height 2 (H2): 405.0 mm",
+        "Height 3 (H3): 378.0 mm"
+      ],
+      "unitWeight": "2.64 kg",
+      "shippingVolume": "0.0364 m³"
+    },
+    {
+      "title": "Mann Filter C 27 998/3 Air Filter | Replaces the HiFi Filter SA 16432",
+      "sku": "sa-16432-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000033_8d3a23712503.jpg",
+      "vendor": "",
+      "price": 7400,
+      "partNumber": "C 27 998/3",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 267.0 mm",
+        "Dimension B: 170.0 mm",
+        "Dimension H: 420.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P785353 Air Filter, Primary Round | Replaces the HiFi Filter SA 16432",
+      "sku": "sa-16432-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000034_7960b25cd87b.jpg",
+      "vendor": "",
+      "price": 11200,
+      "partNumber": "P785353",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.53 kg",
+      "shippingVolume": "0.0345 m³"
+    },
+    {
+      "title": "Fleetguard AF25976 Air Filter, Primary | Replaces the HiFi Filter SA 16432",
+      "sku": "sa-16432-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000035_a29a24db29b9.jpg",
+      "vendor": "",
+      "price": 10300,
+      "partNumber": "AF25976",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25976 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.46 kg",
+      "shippingVolume": "0.0383 m³"
+    }
+  ]
+}

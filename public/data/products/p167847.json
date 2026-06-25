@@ -1,0 +1,69 @@
+{
+  "handle": "p167847",
+  "title": "P167847",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000766_a7d19135a581.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000767_85b83cf0a065.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P167847 Hydraulic Cartridge",
+      "sku": "p167847-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000766_a7d19135a581.jpg",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "P167847",
+      "hsCode": "8421.29.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P167847 Hydraulic Cartridge offers superior filtration performance, effectively removing contaminants from hydraulic fluids. Its high-capacity design helps maintain fluid cleanliness and system efficiency. Constructed from durable materials, this hydraulic cartridge is suitable for a wide range of industrial and heavy-duty hydraulic systems.",
+      "specifications": [
+        "Style: Hydraulic Cartridge",
+        "Media: Synthetic",
+        "Efficiency 1: 23µ @ β1000",
+        "Outer Diameter: 73.7 mm",
+        "Inner Diameter: 28.6 mm",
+        "Length: 187.7 mm",
+        "Δ Collapse Pressure: 6 bar",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 23µ @ β1000",
+        "Media Type: Synthetic",
+        "Collapse Pressure: 6.9 BAR"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard HF6208 Hydraulic Filters | Replaces the Donaldson P167847",
+      "sku": "p167847-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000767_85b83cf0a065.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "HF6208",
+      "hsCode": "8421.29.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® HF6208 hydraulic cartridge filter with synthetic media is designed to help keep your precision hydraulic systems running as intended, providing a solution for various applications.  This filter meets or exceeds the equipment OEM quality and performance and is the first aftermarket replacement available on the market today, bringing your operation top-quality performance and an overall unbeatable total cost of ownership.",
+      "specifications": [
+        "Style: Hydraulic Cartridge",
+        "Media: Synthetic",
+        "Efficiency 1: 23µ @ β1000",
+        "Outer Diameter: 73.7 mm",
+        "Inner Diameter: 28.6 mm",
+        "Length: 187.7 mm",
+        "Δ Collapse Pressure: 6 bar",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 23µ @ β1000",
+        "Media Type: Synthetic",
+        "Collapse Pressure: 6.9 BAR"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

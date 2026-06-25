@@ -1,0 +1,93 @@
+{
+  "handle": "sa754",
+  "title": "SA 754",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006103_5d8e4ec98842.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006104_db8b391942c5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006105_011a0f3620a5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006106_2e2dba21b3aa.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 754 Air Filter",
+      "sku": "sa-754-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006103_5d8e4ec98842.jpg",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "SA 754",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 754 Air Filter. Easy to install and replace, the SA 754 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 596.0 mm",
+        "Dimension 2 (D2): 589.0 mm",
+        "Dimension 3 (D3): 170.0 mm",
+        "Height 1 (H1): 81.0 mm",
+        "Height 2 (H2): 70.0 mm",
+        "Height 3 (H3): 61.0 mm"
+      ],
+      "unitWeight": "1.08 kg",
+      "shippingVolume": "0.0097 m³"
+    },
+    {
+      "title": "Mann Filter C 60 345 Air Filter | Replaces the HiFi Filter SA 754",
+      "sku": "sa-754-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006104_db8b391942c5.jpg",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "C 60 345",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 598.0 mm",
+        "Dimension B: 170.0 mm",
+        "Dimension D: 81.0 mm",
+        "Dimension H: 70.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P783198 Air Filter, Panel Engine | Replaces the HiFi Filter SA 754",
+      "sku": "sa-754-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006105_011a0f3620a5.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "P783198",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P783198 Air Filter, Panel Engine is designed to provide reliable performance in air filter, panel engine applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.05 kg",
+      "shippingVolume": "0.0122 m³"
+    },
+    {
+      "title": "Fleetguard AF4916 Air Filter Filter - Panel | Replaces the HiFi Filter SA 754",
+      "sku": "sa-754-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006106_2e2dba21b3aa.jpg",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "AF4916",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF4916 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.97 kg",
+      "shippingVolume": "0.0106 m³"
+    }
+  ]
+}

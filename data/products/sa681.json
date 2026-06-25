@@ -1,0 +1,38 @@
+{
+  "handle": "sa681",
+  "title": "SA 681",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008448_450dcd41ebc1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 681 Air Filter",
+      "sku": "sa-681-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008448_450dcd41ebc1.jpg",
+      "vendor": "",
+      "price": 10400,
+      "partNumber": "SA 681",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 681 Air Filter. Easy to install and replace, the SA 681 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 98.0 mm",
+        "Dimension 2 (D2): 72.0 mm",
+        "Thread 1 (D7): M10X1",
+        "25",
+        "Height 1 (H1): 293.0 mm",
+        "Height 2 (H2): 285.0 mm"
+      ],
+      "unitWeight": "0.72 kg",
+      "shippingVolume": "0.0045 m³"
+    }
+  ]
+}

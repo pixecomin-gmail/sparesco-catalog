@@ -1,0 +1,33 @@
+{
+  "handle": "sao58660",
+  "title": "SAO58660",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000606_7fcd6b6fda0b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001713_8fd8c5ad7914.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 3109 Air/Oil Separator | Replaces the SF Filter SAO 58660",
+      "sku": "sao-58660-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001713_8fd8c5ad7914.jpg",
+      "vendor": "",
+      "price": 37500,
+      "partNumber": "OS 3109",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 3109 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58660. Easy to install and replace, the OS 3109 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "7.66 kg",
+      "shippingVolume": "0.0595 m³"
+    }
+  ]
+}

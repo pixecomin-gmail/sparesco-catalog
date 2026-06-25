@@ -1,0 +1,77 @@
+{
+  "handle": "sa16293",
+  "title": "SA 16293",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007789_90068f7cabcb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007790_168c037d73e4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007791_7982ae50ba99.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16293 Air Filter",
+      "sku": "sa-16293-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007789_90068f7cabcb.jpg",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "SA 16293",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16293 Air Filter. Easy to install and replace, the SA 16293 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 195.0 mm",
+        "Dimension 2 (D2): 180.0 mm",
+        "Dimension 3 (D3): 160.0 mm",
+        "Height 1 (H1): 330.0 mm",
+        "Height 2 (H2): 316.0 mm",
+        "Height 3 (H3): 305.0 mm"
+      ],
+      "unitWeight": "1.68 kg",
+      "shippingVolume": "0.0161 m³"
+    },
+    {
+      "title": "Mann Filter CF 1200 Secondary Element | Replaces the HiFi Filter SA 16293",
+      "sku": "sa-16293-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007790_168c037d73e4.jpg",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "CF 1200",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Brazil",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 121.0 mm",
+        "Dimension B: 105.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 112.0 mm",
+        "Dimension H: 381.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P137293 Air Filter, Primary Konepac | Replaces the HiFi Filter SA 16293",
+      "sku": "sa-16293-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007791_7982ae50ba99.jpg",
+      "vendor": "",
+      "price": 6500,
+      "partNumber": "P137293",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Genuine Donaldson P137293 Air Filter, Primary Konepac is designed to provide reliable performance in air filter, primary konepac applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.2 kg",
+      "shippingVolume": "0.0155 m³"
+    }
+  ]
+}

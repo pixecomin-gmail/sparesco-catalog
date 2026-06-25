@@ -1,0 +1,51 @@
+{
+  "handle": "rhr660m08b-esd",
+  "title": "RHR660M08B ESD",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/rhr660m08b-esd-rhr660m08b-esd-f853c7b0755c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/rhr660m08b-esd-mfhr54840-02801e8a7673.jpg"
+  ],
+  "variants": [
+    {
+      "title": "RHR660M08B ESD",
+      "sku": "rhr660m08b-esd-1",
+      "option1Value": "Filtrec RHR660M08B/ESD Return Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/rhr660m08b-esd-rhr660m08b-esd-f853c7b0755c.jpg",
+      "vendor": "Filtrec",
+      "price": 0,
+      "partNumber": "RHR660M08B/ESD",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec RHR660M08B/ESD. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the RHR660M08B/ESD provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Return Filter, Media: Glass Fiber (Anti-Static), Efficiency 1: 10µ @ β200, Efficiency 2: 12µ @ β1000, Outer Diameter: 114.0 mm, Inner Diameter: 68.5 mm, Length: 333.0 mm, Bypass Pressure: 3.0 BAR bar, Δ Collapse Pressure: 20 bar, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200, Media Type: Glass Fiber (Anti-Static), Flow Direction: OUT-IN, Bypass Pressure Bypass pressure relieve build-up of pressure within the system and allows medium to bypass the element when pressure increases and reaches a sufficient level.: 3.0 BAR, Collapse Pressure: 20 BAR, Seal: Nitrile"
+      ],
+      "unitWeight": "2.1 kg",
+      "shippingVolume": "0.0043 m³"
+    },
+    {
+      "title": "RHR660M08B ESD",
+      "sku": "rhr660m08b-esd-2",
+      "option1Value": "MicroFit MFHR54840 | Replaces the Filtrec RHR660M08B/ESD",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/rhr660m08b-esd-mfhr54840-02801e8a7673.jpg",
+      "vendor": "MicroFit",
+      "price": 0,
+      "partNumber": "MFHR54840",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Genuine MicroFit® UltraGen III MFHR54840 filter. Engineered and manufactured in Great Britain the MFHR54840 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MicroFit® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MicroFit® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Return Filter, Media: Glass Fiber (Anti-Static), Efficiency 1: 10µ @ β200, Efficiency 2: 12µ @ β1000, Outer Diameter: 114.0 mm, Inner Diameter: 68.5 mm, Length: 333.0 mm, Bypass Pressure: 3.0 BAR bar, Δ Collapse Pressure: 20 bar, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200, Media Type: Glass Fiber (Anti-Static), Flow Direction: OUT-IN, Bypass Pressure Bypass pressure relieve build-up of pressure within the system and allows medium to bypass the element when pressure increases and reaches a sufficient level.: 3.0 BAR, Collapse Pressure: 20 BAR, Seal: Nitrile"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

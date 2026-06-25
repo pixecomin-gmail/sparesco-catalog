@@ -1,0 +1,67 @@
+{
+  "handle": "p181007",
+  "title": "P181007",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000307_ef609c1f18cb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000308_1acb7f8dd351.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P181007 Air Primary, Round",
+      "sku": "p181007-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000307_ef609c1f18cb.jpg",
+      "vendor": "",
+      "price": 6700,
+      "partNumber": "P181007",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P181007 Air Primary, Round provides clean, efficient airflow for engines by trapping airborne contaminants. Its round design maximizes filtration surface area while maintaining high airflow rates. Perfect for heavy-duty applications, this air primary filter enhances engine longevity and supports consistent performance.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 264.3 mm",
+        "Inner Diameter: 153.3 mm",
+        "Length: 554.2 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF853 Air Filter | Replaces the Donaldson P181007",
+      "sku": "p181007-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000308_1acb7f8dd351.jpg",
+      "vendor": "",
+      "price": 7600,
+      "partNumber": "AF853",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF853 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 264.3 mm",
+        "Inner Diameter: 153.3 mm",
+        "Length: 554.2 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

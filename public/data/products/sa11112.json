@@ -1,0 +1,91 @@
+{
+  "handle": "sa11112",
+  "title": "SA 11112",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006924_0d1a20b42ba1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006925_ea830115f614.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006926_f7a8ea0742bd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006927_d789f3b750e1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11112 Air Filter",
+      "sku": "sa-11112-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006924_0d1a20b42ba1.jpg",
+      "vendor": "",
+      "price": 800,
+      "partNumber": "SA 11112",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11112 Air Filter. Easy to install and replace, the SA 11112 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 97.5 mm",
+        "Dimension 2 (D2): 60.0 mm",
+        "Dimension 3 (D3): 60.0 mm",
+        "Height 1 (H1): 70.0 mm"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0009 m³"
+    },
+    {
+      "title": "Mann Filter C 1112 Air Filter | Replaces the HiFi Filter SA 11112",
+      "sku": "sa-11112-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006925_ea830115f614.jpg",
+      "vendor": "",
+      "price": 800,
+      "partNumber": "C 1112",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 98.0 mm",
+        "Dimension B: 60.0 mm",
+        "Dimension C: 60.0 mm",
+        "Dimension H: 70.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P530645 Air Filter, Primary Round | Replaces the HiFi Filter SA 11112",
+      "sku": "sa-11112-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006926_f7a8ea0742bd.jpg",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "P530645",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.21 kg",
+      "shippingVolume": "0.0017 m³"
+    },
+    {
+      "title": "Fleetguard AF4525 Air Filter | Replaces the HiFi Filter SA 11112",
+      "sku": "sa-11112-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006927_d789f3b750e1.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "AF4525",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF4525 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0009 m³"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "handle": "2560g10p",
+  "title": "2560G10P",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/013205_588f0141a5b5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/013206_e18f76fc1970.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/013211_fd500087075a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/013212_cd3679d554e3.png"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec DVD2560B10B Pressure Filter | Replaces the Eppensteiner 2560G10P",
+      "sku": "2560g10p-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/013205_588f0141a5b5.jpg",
+      "vendor": "",
+      "price": 68000,
+      "partNumber": "DVD2560B10B",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec DVD2560B10B. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the DVD2560B10B provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Wire Mesh",
+        "Efficiency 1: 10µ",
+        "Outer Diameter: 100.0 mm",
+        "Inner Diameter: 60.2 mm",
+        "Length: 227.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ",
+        "Media Type: Wire Mesh",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0023 m³"
+    },
+    {
+      "title": "MicroFit® MFHLP30365 UltraGen III Pressure Filter | Replaces the Eppensteiner 2560G10P",
+      "sku": "2560g10p-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/013206_e18f76fc1970.png",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "MFHLP30365",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "MicroFit® MFHLP30365 UltraGen III Pressure Filter. Engineered and manufactured in Great Britain the MFHLP30166 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MicroFit® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MicroFit® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Wire Mesh",
+        "Efficiency 1: 10µ",
+        "Outer Diameter: 100.0 mm",
+        "Inner Diameter: 60.2 mm",
+        "Length: 227.0 mm",
+        "Δ Collapse Pressure: 30 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ",
+        "Media Type: Wire Mesh",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 30 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

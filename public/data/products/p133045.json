@@ -1,0 +1,65 @@
+{
+  "handle": "p133045",
+  "title": "P133045",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000385_b768f21c22eb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000386_b6122de140a8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AF1854 Air Filter, Secondary | Replaces the Donaldson P133045",
+      "sku": "p133045-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000385_b768f21c22eb.jpg",
+      "vendor": "",
+      "price": 4700,
+      "partNumber": "AF1854",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1854 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Safety",
+        "Media: Safety",
+        "Efficiency 1: ISO 5011",
+        "Outer Diameter: 219.5 mm",
+        "Inner Diameter: 179.3 mm",
+        "Length: 524.8 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: ISO 5011",
+        "Media Type: Safety"
+      ],
+      "unitWeight": "2.24 kg",
+      "shippingVolume": "0.0294 m³"
+    },
+    {
+      "title": "Donaldson P133045 Air Safety",
+      "sku": "p133045-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000386_b6122de140a8.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P133045",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P133045 Air Safety is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Safety",
+        "Media: Safety",
+        "Efficiency 1: ISO 5011",
+        "Outer Diameter: 219.5 mm",
+        "Inner Diameter: 179.3 mm",
+        "Length: 524.8 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: ISO 5011",
+        "Media Type: Safety"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

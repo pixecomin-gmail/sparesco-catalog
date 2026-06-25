@@ -1,0 +1,36 @@
+{
+  "handle": "sa16274",
+  "title": "SA 16274",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009475_5e990a60f3e3.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16274 Air Filter",
+      "sku": "sa-16274-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009475_5e990a60f3e3.jpg",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "SA 16274",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16274 Air Filter. Easy to install and replace, the SA 16274 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 253.0 mm",
+        "Dimension 2 (D2): 218.0 mm",
+        "Dimension 3 (D3): 218.0 mm",
+        "Height 1 (H1): 63.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0062 m³"
+    }
+  ]
+}

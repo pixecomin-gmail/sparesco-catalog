@@ -1,0 +1,32 @@
+{
+  "handle": "sacv04001",
+  "title": "SACV 04001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002722_4ccfcd693f32.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SACV 04001 Cover",
+      "sku": "sacv-04001-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002722_4ccfcd693f32.jpg",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "SACV 04001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SACV 04001 Cover. Easy to install and replace, the SACV 04001 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: COVER"
+      ],
+      "unitWeight": "0.46 kg",
+      "shippingVolume": "0.0071 m³"
+    }
+  ]
+}

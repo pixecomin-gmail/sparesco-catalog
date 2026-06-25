@@ -1,0 +1,53 @@
+{
+  "handle": "sao58700",
+  "title": "SAO58700",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000603_2547b68a536a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000604_b33f4ac26730.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001710_3ebff4a649cd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001711_4436ca5cb9f3.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 17 009 x Compressed Air-Oil Separation | Replaces the SF Filter SAO58700",
+      "sku": "sao58700-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000603_2547b68a536a.jpg",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "LE 17 009 x",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 200.0 mm",
+        "Dimension H: 305.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OT 5861 Air/Oil Separator | Replaces the SF Filter SAO 58700",
+      "sku": "sao-58700-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001711_4436ca5cb9f3.jpg",
+      "vendor": "",
+      "price": 17300,
+      "partNumber": "OT 5861",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 5861 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58700. Easy to install and replace, the OT 5861 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

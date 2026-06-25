@@ -1,0 +1,51 @@
+{
+  "handle": "ft8c10-1",
+  "title": "FT8C10 1",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft8c10-1-ft8c10-1-d6379c61ffd9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft8c10-1-tco-514-9f2976f7a696.jpg"
+  ],
+  "variants": [
+    {
+      "title": "FT8C10 1",
+      "sku": "ft8c10-1-1",
+      "option1Value": "Filtrec FT8C10/1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft8c10-1-ft8c10-1-d6379c61ffd9.jpg",
+      "vendor": "Filtrec",
+      "price": 1700,
+      "partNumber": "FT8C10/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec FT8C10/1. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the FT8C10/1 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Temperature Range: -25 - +120°C"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "FT8C10 1",
+      "sku": "ft8c10-1-2",
+      "option1Value": "HiFi Filter TCO 514 | Replaces the Filtrec FT8C10/1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft8c10-1-tco-514-9f2976f7a696.jpg",
+      "vendor": "HiFi Filter",
+      "price": 3000,
+      "partNumber": "TCO 514",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter TCO 514 Tank Cap. More than just a secure seal, this tank cap is designed to protect hydraulic and fuel systems from external contaminants. It effectively seals tank openings, preventing dust, dirt, and moisture from entering, which helps maintain fluid cleanliness and supports optimal system performance. Many versions also feature integrated breather elements, allowing controlled airflow while maintaining proper pressure balance inside the tank. Built for durability and reliability, these caps are ideal for a wide range of applications, from industrial machinery to agricultural equipment.",
+      "specifications": [
+        "Style: TANK CAP, Dimension 1 (D1): 84.0 mm, Dimension 2 (D2): 72.0 mm, Dimension 3 (D3): 49.0 mm, Height 1 (H1): 137.0 mm, Height 2 (H2): 83.5 mm, Temperature Range: -25 - +120°C"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.0013 m³"
+    }
+  ]
+}

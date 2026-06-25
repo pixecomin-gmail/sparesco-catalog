@@ -1,0 +1,58 @@
+{
+  "handle": "sa160073",
+  "title": "SA 160073",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007521_7423193226b3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007522_fbdf67debc5b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 160073 Air Filter",
+      "sku": "sa-160073-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007521_7423193226b3.jpg",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "SA 160073",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 160073 Air Filter. Easy to install and replace, the SA 160073 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 165.0 mm",
+        "Dimension 2 (D2): 149.0 mm",
+        "Dimension 3 (D3): 130.0 mm",
+        "Height 1 (H1): 477.0 mm",
+        "Height 2 (H2): 472.0 mm"
+      ],
+      "unitWeight": "0.86 kg",
+      "shippingVolume": "0.0205 m³"
+    },
+    {
+      "title": "Mann Filter CF 16 004 Secondary Element | Replaces the HiFi Filter SA 160073",
+      "sku": "sa-160073-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007522_fbdf67debc5b.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "CF 16 004",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 163.0 mm",
+        "Dimension B: 134.0 mm",
+        "Dimension D: 152.0 mm",
+        "Dimension H: 472.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

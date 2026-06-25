@@ -1,0 +1,32 @@
+{
+  "handle": "sa12673",
+  "title": "SA 12673",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003195_af3964aaff48.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12673 Air Filter",
+      "sku": "sa-12673-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003195_af3964aaff48.jpg",
+      "vendor": "",
+      "price": 70400,
+      "partNumber": "SA 12673",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12673 Air Filter. Easy to install and replace, the SA 12673 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.64 kg",
+      "shippingVolume": "0.0082 m³"
+    }
+  ]
+}

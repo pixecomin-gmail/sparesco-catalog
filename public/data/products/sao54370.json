@@ -1,0 +1,33 @@
+{
+  "handle": "sao54370",
+  "title": "SAO54370",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001147_f60d351dacbc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002248_68e66a807769.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5075 Air/Oil Separator | Replaces the SF Filter SAO 54370",
+      "sku": "sao-54370-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002248_68e66a807769.jpg",
+      "vendor": "",
+      "price": 40000,
+      "partNumber": "OS 5075",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5075 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 54370. Easy to install and replace, the OS 5075 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "8.31 kg",
+      "shippingVolume": "0.0594 m³"
+    }
+  ]
+}

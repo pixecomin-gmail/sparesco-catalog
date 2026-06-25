@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84" height="84" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg">
+  <rect width="84" height="84" rx="10" fill="#173f4c"/>
+  <g transform="translate(42, 42)" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <g >
+      <!-- Main housing -->
+      <rect x="-12" y="-22" width="24" height="44" rx="4" stroke-width="2.2"/>
+      <!-- Inlet left -->
+      <rect x="-22" y="-16" width="12" height="7" rx="2" stroke-width="2.2"/>
+      <!-- Outlet right -->
+      <rect x="10" y="-16" width="12" height="7" rx="2" stroke-width="2.2"/>
+      <!-- Pressure gauge on front -->
+      <circle cx="0" cy="-2" r="9" stroke-width="2.2"/>
+      <!-- Gauge needle -->
+      <line x1="0" y1="-2" x2="5" y2="-7" stroke-width="2"/>
+      <!-- Gauge center dot -->
+      <circle cx="0" cy="-2" r="1.5" fill="white" stroke="none"/>
+      <!-- Air flow arrow right -->
+      <path d="M16 6 L24 6 M20 2 L24 6 L20 10" stroke-width="2.2"/>
+      <!-- Moisture drain at bottom -->
+      <path d="M-4 22 L4 22 L0 28 Z" stroke-width="2.2"/>
+    </g>
+  </g>
+</svg>

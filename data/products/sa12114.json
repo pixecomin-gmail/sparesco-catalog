@@ -1,0 +1,37 @@
+{
+  "handle": "sa12114",
+  "title": "SA 12114",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004608_d7fc1d15e4a4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12114 Air Filter",
+      "sku": "sa-12114-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004608_d7fc1d15e4a4.jpg",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "SA 12114",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12114 Air Filter. Easy to install and replace, the SA 12114 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 185.0 mm",
+        "Dimension 2 (D2): 170.0 mm",
+        "Dimension 3 (D3): 116.0 mm",
+        "Height 1 (H1): 45.5 mm",
+        "Height 2 (H2): 23.0 mm"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0017 m³"
+    }
+  ]
+}

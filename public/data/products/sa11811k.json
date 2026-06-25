@@ -1,0 +1,94 @@
+{
+  "handle": "sa11811k",
+  "title": "SA 11811 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007819_4a1a6a0e6d40.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007820_a89fb594b561.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007821_5797e577a6de.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007822_a8c67301ba5f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11811 K Air Filter",
+      "sku": "sa-11811-k-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007819_4a1a6a0e6d40.jpg",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "SA 11811 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11811 K Air Filter. Easy to install and replace, the SA 11811 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 192.0 mm",
+        "Dimension 2 (D2): 155.0 mm",
+        "Dimension 3 (D3): 90.0 mm",
+        "Height 1 (H1): 292.0 mm",
+        "Height 2 (H2): 280.0 mm"
+      ],
+      "unitWeight": "1.27 kg",
+      "shippingVolume": "0.0129 m³"
+    },
+    {
+      "title": "Donaldson P181093 Air Filter, Primary Finned | Replaces the HiFi Filter SA 11811 K",
+      "sku": "sa-11811-k-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007820_a89fb594b561.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "P181093",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.25 kg",
+      "shippingVolume": "0.0156 m³"
+    },
+    {
+      "title": "Mann Filter C 16 210 Air Filter | Replaces the HiFi Filter SA 11811 K",
+      "sku": "sa-11811-k-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007821_5797e577a6de.jpg",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "C 16 210",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 154.0 mm",
+        "Dimension B: 89.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 154.0 mm",
+        "Dimension E: 200.0 mm",
+        "Dimension H: 290.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF1861K Air Filter | Replaces the HiFi Filter SA 11811 K",
+      "sku": "sa-11811-k-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007822_a8c67301ba5f.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "AF1861K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF1861K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.26 kg",
+      "shippingVolume": "0.015 m³"
+    }
+  ]
+}

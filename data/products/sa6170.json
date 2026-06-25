@@ -1,0 +1,57 @@
+{
+  "handle": "sa6170",
+  "title": "SA 6170",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006156_396a43ba3cc5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006157_f352c2607034.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6170 Air Filter",
+      "sku": "sa-6170-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006156_396a43ba3cc5.jpg",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 6170",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6170 Air Filter. Easy to install and replace, the SA 6170 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 285.0 mm",
+        "Dimension 2 (D2): 275.0 mm",
+        "Dimension 3 (D3): 210.0 mm",
+        "Height 1 (H1): 58.0 mm",
+        "Height 2 (H2): 49.0 mm"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.0041 m³"
+    },
+    {
+      "title": "Mann Filter C 29 006 Air Filter | Replaces the HiFi Filter SA 6170",
+      "sku": "sa-6170-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006157_f352c2607034.jpg",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "C 29 006",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 179.0 mm",
+        "Dimension B: 290.0 mm",
+        "Dimension H: 58.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

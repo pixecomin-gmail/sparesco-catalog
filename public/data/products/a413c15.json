@@ -1,0 +1,51 @@
+{
+  "handle": "a413c15",
+  "title": "A413C15",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a413c15-a413c15-4c360ac3d7cd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a413c15-wh-980-28e15a5ee9fe.jpg"
+  ],
+  "variants": [
+    {
+      "title": "A413C15",
+      "sku": "a413c15-1",
+      "option1Value": "Filtrec A413C15 Spin-On Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a413c15-a413c15-4c360ac3d7cd.jpg",
+      "vendor": "Filtrec",
+      "price": 6100,
+      "partNumber": "A413C15",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec A413C15. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the A413C15 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Spin-On Filter, Media: Cellulose, Efficiency 1: 30µ @ β2, Efficiency 2: 30µ @ β1000, Outer Diameter: 95.0 mm, Length: 241.5 mm, Thread: 1 3/8\"-12 UNF 2B, Δ Collapse Pressure: 34 bar, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 30µ @ β2, Media Type: Cellulose, Collapse Pressure: 34.5 BAR, Seal: Nitrile"
+      ],
+      "unitWeight": "1.12 kg",
+      "shippingVolume": "0.0022 m³"
+    },
+    {
+      "title": "A413C15",
+      "sku": "a413c15-2",
+      "option1Value": "Mann Filter WH 980 Hydraulics | Replaces the Filtrec A413C15",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a413c15-wh-980-28e15a5ee9fe.jpg",
+      "vendor": "Mann Filter",
+      "price": 5900,
+      "partNumber": "WH 980",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER spin-on hydraulic filters offer maximum filtration performance and thus ensure trouble-free operation of the hydraulic system. Thanks to the filter medium, which is specially adapted to the intended use, the finest impurities are separated from the hydraulic fluid.",
+      "specifications": [
+        "Style: Hydraulics, Dimension A: 94.0 mm, Dimension B: 62.0 mm, Dimension C: 71.0 mm, Dimension G: 1 3/8-12 UNF, Dimension H: 240.0 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 30µ @ β2, Efficiency 2: 30µ @ β1000, Outer Diameter: 95.0 mm, Length: 241.5 mm, Media Type: Cellulose, Thread: 1 3/8\"-12 UNF 2B, Collapse Pressure: 34.5 BAR, Seal: Nitrile, Temperature Range: -30 - +100°C"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

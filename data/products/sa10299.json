@@ -1,0 +1,72 @@
+{
+  "handle": "sa10299",
+  "title": "SA 10299",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009967_6407964b8d63.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009968_1d4857e78379.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009969_2084faa099f1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10299 Air Filter",
+      "sku": "sa-10299-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009967_6407964b8d63.jpg",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "SA 10299",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10299 Air Filter. Easy to install and replace, the SA 10299 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 213.0 mm",
+        "Dimension 2 (D2): 145.0 mm",
+        "Dimension 3 (D3): 13.5 mm",
+        "Height 1 (H1): 280.0 mm",
+        "Height 2 (H2): 235.5 mm",
+        "Height 3 (H3): 45.0 mm"
+      ],
+      "unitWeight": "1.56 kg",
+      "shippingVolume": "0.0235 m³"
+    },
+    {
+      "title": "FIL Filter HP 481 Filter Insert | Replaces the HiFi Filter SA 10299",
+      "sku": "sa-10299-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009968_1d4857e78379.png",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "HP 481",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 481. Easy to install and replace, the HP 481 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF349M Air Filter, Primary | Replaces the HiFi Filter SA 10299",
+      "sku": "sa-10299-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009969_2084faa099f1.jpg",
+      "vendor": "",
+      "price": 4700,
+      "partNumber": "AF349M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF349M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.39 kg",
+      "shippingVolume": "0.0155 m³"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "handle": "sa17091",
+  "title": "SA 17091",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005042_8e53a68fdb6f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17091 Air Filter",
+      "sku": "sa-17091-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005042_8e53a68fdb6f.jpg",
+      "vendor": "",
+      "price": 12200,
+      "partNumber": "SA 17091",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17091 Air Filter. Easy to install and replace, the SA 17091 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 182.0 mm",
+        "Dimension 2 (D2): 165.0 mm",
+        "Dimension 3 (D3): 116.0 mm",
+        "Height 1 (H1): 458.0 mm"
+      ],
+      "unitWeight": "0.9 kg",
+      "shippingVolume": "0.0009 m³"
+    }
+  ]
+}

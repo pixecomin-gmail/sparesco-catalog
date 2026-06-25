@@ -1,0 +1,37 @@
+{
+  "handle": "sa280",
+  "title": "SA 280",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006561_bc14f8c33aae.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 280 Air Filter",
+      "sku": "sa-280-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006561_bc14f8c33aae.jpg",
+      "vendor": "",
+      "price": 6000,
+      "partNumber": "SA 280",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 280 Air Filter. Easy to install and replace, the SA 280 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 240.0 mm",
+        "Dimension 2 (D2): 205.0 mm",
+        "Dimension 3 (D3): 186.0 mm",
+        "Height 1 (H1): 54.0 mm",
+        "Height 2 (H2): 48.0 mm"
+      ],
+      "unitWeight": "0.48 kg",
+      "shippingVolume": "0.0128 m³"
+    }
+  ]
+}

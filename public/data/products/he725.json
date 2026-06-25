@@ -1,0 +1,42 @@
+{
+  "handle": "he725",
+  "title": "HE725",
+  "collection": "Compressed Air Filters",
+  "collectionHandle": "compressed-air-filters",
+  "category": "Compressed Air Filters",
+  "tags": [
+    "Compressed Air Filters",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000049_c490b3fe55d8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000169_7c5d23838d3b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "FilterFinder FF300399C Compressed Air Filter | Replaces the Hi-Line HE725",
+      "sku": "he725-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/compressed-air-filters/000049_c490b3fe55d8.jpg",
+      "vendor": "",
+      "price": 9200,
+      "partNumber": "FF300399C",
+      "hsCode": "",
+      "countryOfOrigin": "",
+      "description": "",
+      "specifications": [
+        "Style: Compressed Air Filter",
+        "Media: Polyester Needle Felt",
+        "Outer Diameter: 50.0 mm",
+        "Inner Diameter: 24.0 mm",
+        "Length: 144.0 mm",
+        "Seal Material: Nitrile",
+        "Temperature Range: +1 - +80°C",
+        "Media Type: Polyester Needle Felt",
+        "Flow Direction: IN-OUT",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

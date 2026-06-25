@@ -1,0 +1,38 @@
+{
+  "handle": "sa104100750",
+  "title": "SA1041 00750",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001312_8d893321bda3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001313_1b329ed48442.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SH 59099 Hydraulic Filter | Replaces the Volvo SA1041-00750",
+      "sku": "sa1041-00750-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001312_8d893321bda3.jpg",
+      "vendor": "",
+      "price": 8600,
+      "partNumber": "SH 59099",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SH 59099 Hydraulic Filter is HiFi's replacement to the Volvo SA1041-00750. Easy to install and replace, the SH 59099 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: HYDRAULIC FILTER",
+        "Dimension 1 (D1): 130.0 mm",
+        "Dimension 2 (D2): 108.0 mm",
+        "Dimension 3 (D3): 74.0 mm",
+        "Height 1 (H1): 130.0 mm",
+        "Height 2 (H2): 125.0 mm"
+      ],
+      "unitWeight": "0.24 kg",
+      "shippingVolume": "0.0038 m³"
+    }
+  ]
+}

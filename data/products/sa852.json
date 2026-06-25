@@ -1,0 +1,32 @@
+{
+  "handle": "sa852",
+  "title": "SA 852",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005379_0e87041b434e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 852 Air Filter",
+      "sku": "sa-852-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005379_0e87041b434e.jpg",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 852",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 852 Air Filter. Easy to install and replace, the SA 852 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.48 kg",
+      "shippingVolume": "0.0064 m³"
+    }
+  ]
+}

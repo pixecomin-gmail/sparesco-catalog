@@ -1,0 +1,54 @@
+{
+  "handle": "sa1762",
+  "title": "SA 1762",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005359_e34cb738a68d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005360_1f3ba25bc0c4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 1762 Air Filter",
+      "sku": "sa-1762-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005359_e34cb738a68d.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "SA 1762",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 1762 Air Filter. Easy to install and replace, the SA 1762 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 325.0 mm",
+        "Height 1 (H1): 84.0 mm"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0104 m³"
+    },
+    {
+      "title": "Mann Filter C 41 173 Air Filter | Replaces the HiFi Filter SA 1762",
+      "sku": "sa-1762-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005360_1f3ba25bc0c4.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "C 41 173",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 408.0 mm",
+        "Dimension B: 326.0 mm",
+        "Dimension H: 84.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

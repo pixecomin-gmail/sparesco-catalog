@@ -1,0 +1,9 @@
+@import "./styles/variables.css";
+@import "./styles/base.css";
+@import "./styles/header.css";
+@import "./styles/homepage.css";
+@import "./styles/collections.css";
+@import "./styles/product.css";
+@import "./styles/enquiry.css";
+@import "./styles/footer.css";
+@import "./styles/about.css";

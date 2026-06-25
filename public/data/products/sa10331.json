@@ -1,0 +1,36 @@
+{
+  "handle": "sa10331",
+  "title": "SA 10331",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006919_08a16382c887.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10331 Air Filter",
+      "sku": "sa-10331-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006919_08a16382c887.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 10331",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10331 Air Filter. Easy to install and replace, the SA 10331 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 110.0 mm",
+        "Dimension 2 (D2): 76.0 mm",
+        "Dimension 3 (D3): 76.0 mm",
+        "Height 1 (H1): 83.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0016 m³"
+    }
+  ]
+}

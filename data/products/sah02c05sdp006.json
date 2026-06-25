@@ -1,0 +1,49 @@
+{
+  "handle": "sah02c05sdp006",
+  "title": "SAH 02C05SDP006",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002568_45c458af1968.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002569_5b3f38e897c0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAH 02C05SDP006 Complete Air Filter",
+      "sku": "sah-02c05sdp006-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002568_45c458af1968.jpg",
+      "vendor": "",
+      "price": 7600,
+      "partNumber": "SAH 02C05SDP006",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAH 02C05SDP006 Complete Air Filter. Easy to install and replace, the SAH 02C05SDP006 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: COMPLETE AIR FILTER"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0039 m³"
+    },
+    {
+      "title": "Mann Filter 4404082999 Picolino | Replaces the HiFi Filter SAH 02C05SDP006",
+      "sku": "sah-02c05sdp006-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002569_5b3f38e897c0.jpg",
+      "vendor": "",
+      "price": 5500,
+      "partNumber": "4404082999",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "Replacement and maintenance parts for the proven filter housings and systems from MANN+HUMMEL.",
+      "specifications": [
+        "Style: MANN+HUMMEL Spare Part"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

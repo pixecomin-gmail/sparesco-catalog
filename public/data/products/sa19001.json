@@ -1,0 +1,32 @@
+{
+  "handle": "sa19001",
+  "title": "SA 19001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003305_4d8dbc82938e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 19001 Air Filter",
+      "sku": "sa-19001-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003305_4d8dbc82938e.jpg",
+      "vendor": "",
+      "price": 13300,
+      "partNumber": "SA 19001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 19001 Air Filter. Easy to install and replace, the SA 19001 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.07 kg",
+      "shippingVolume": "0.0381 m³"
+    }
+  ]
+}

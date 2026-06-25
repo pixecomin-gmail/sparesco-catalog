@@ -1,0 +1,32 @@
+{
+  "handle": "sa8530",
+  "title": "SA 8530",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001325_ec9a394075ec.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5245 Air/Oil Separator | Replaces the Sakura SA-8530",
+      "sku": "sa-8530-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001325_ec9a394075ec.jpg",
+      "vendor": "",
+      "price": 16000,
+      "partNumber": "OS 5245",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5245 Air/Oil Separator is HiFi's replacement to the SAKURA SA-8530. Easy to install and replace, the OS 5245 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "3.58 kg",
+      "shippingVolume": "0.0244 m³"
+    }
+  ]
+}

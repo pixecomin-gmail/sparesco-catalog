@@ -1,0 +1,51 @@
+{
+  "handle": "u164g10-esd",
+  "title": "U164G10 ESD",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/u164g10-esd-u164g10-esd-b34445489530.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/u164g10-esd-mfhsu70342-79caebe656e7.jpg"
+  ],
+  "variants": [
+    {
+      "title": "U164G10 ESD",
+      "sku": "u164g10-esd-1",
+      "option1Value": "Filtrec U164G10/ESD Suction Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/u164g10-esd-u164g10-esd-b34445489530.jpg",
+      "vendor": "Filtrec",
+      "price": 138000,
+      "partNumber": "U164G10/ESD",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec U164G10/ESD. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the U164G10/ESD provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Suction Filter, Media: Glass Fiber (Anti-Static), Efficiency 1: 10µ @ β200, Efficiency 2: 12µ @ β1000, Outer Diameter: 152.5 mm, Inner Diameter: 146.0 mm, Length: 1055.0 mm, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200, Media Type: Glass Fiber (Anti-Static), Flow Direction: IN-OUT, Seal: Nitrile"
+      ],
+      "unitWeight": "6.23 kg",
+      "shippingVolume": "0.0244 m³"
+    },
+    {
+      "title": "U164G10 ESD",
+      "sku": "u164g10-esd-2",
+      "option1Value": "MicroFit® UltraGen III MFHSU70342 Suction Filter | Replaces the Filtrec U164G10/ESD",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/u164g10-esd-mfhsu70342-79caebe656e7.jpg",
+      "vendor": "MicroFit",
+      "price": 100700,
+      "partNumber": "MFHSU70342",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Genuine MICROFIT® UltraGen III MFHSU70342. Engineered and manufactured in Great Britain the MFHSU70342 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MICROFIT® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MICROFIT® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Suction Filter, Media: Glass Fiber (Anti-Static), Efficiency 1: 10µ @ β200, Efficiency 2: 12µ @ β1000, Outer Diameter: 152.5 mm, Inner Diameter: 146.0 mm, Length: 1055.0 mm, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200, Media Type: Glass Fiber (Anti-Static), Flow Direction: IN-OUT, Seal: Nitrile"
+      ],
+      "unitWeight": "13.71 kg",
+      "shippingVolume": "0.0245 m³"
+    }
+  ]
+}

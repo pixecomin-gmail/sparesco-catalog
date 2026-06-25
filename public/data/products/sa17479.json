@@ -1,0 +1,92 @@
+{
+  "handle": "sa17479",
+  "title": "SA 17479",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008351_85c060fdc449.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008352_620cf6207ae7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008353_d94a7f7b700c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008354_db507fdc127f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17479 Air Filter",
+      "sku": "sa-17479-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008351_85c060fdc449.jpg",
+      "vendor": "",
+      "price": 6200,
+      "partNumber": "SA 17479",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17479 Air Filter. Easy to install and replace, the SA 17479 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 338.0 mm",
+        "Dimension 2 (D2): 320.0 mm",
+        "Dimension 3 (D3): 203.0 mm",
+        "Height 1 (H1): 214.0 mm",
+        "Height 2 (H2): 202.0 mm",
+        "Height 3 (H3): 198.0 mm"
+      ],
+      "unitWeight": "1.5 kg",
+      "shippingVolume": "0.0117 m³"
+    },
+    {
+      "title": "Donaldson P636408 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 17479",
+      "sku": "sa-17479-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008352_620cf6207ae7.jpg",
+      "vendor": "",
+      "price": 7100,
+      "partNumber": "P636408",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson PowerCore® filters? Genuine PowerCore filters provide superior protection and performance. • Lower initial restriction protects engine performance and fuel economy. • Greater filter capacity means longer filter life, fewer filter changes and less money spent on maintenance. • PowerCore filters have been meeting original equipment manufacturer specifications for 20+ years. • Reliable, leak resistant Radial Seal™ technology keeps the filter in place – even under heavy vibration.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.74 kg",
+      "shippingVolume": "0.0187 m³"
+    },
+    {
+      "title": "Mann Filter C 34 540/1 Air Filter | Replaces the HiFi Filter SA 17479",
+      "sku": "sa-17479-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008353_d94a7f7b700c.jpg",
+      "vendor": "",
+      "price": 7800,
+      "partNumber": "C 34 540/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Mexico",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 211.5 mm",
+        "Dimension B: 336.0 mm",
+        "Dimension H: 203.6 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4243 Air Filter, Primary | Replaces the HiFi Filter SA 17479",
+      "sku": "sa-17479-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008354_db507fdc127f.jpg",
+      "vendor": "",
+      "price": 8900,
+      "partNumber": "AF4243",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF4243 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.25 kg",
+      "shippingVolume": "0.0323 m³"
+    }
+  ]
+}

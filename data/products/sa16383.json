@@ -1,0 +1,53 @@
+{
+  "handle": "sa16383",
+  "title": "SA 16383",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009982_3bb4acf8abc3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009983_3d18ec819a27.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16383 Air Filter",
+      "sku": "sa-16383-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009982_3bb4acf8abc3.jpg",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "SA 16383",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16383 Air Filter. Easy to install and replace, the SA 16383 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 362.0 mm",
+        "Dimension 2 (D2): 228.0 mm",
+        "Height 1 (H1): 523.0 mm",
+        "Height 2 (H2): 510.0 mm"
+      ],
+      "unitWeight": "5.14 kg",
+      "shippingVolume": "0.0787 m³"
+    },
+    {
+      "title": "Donaldson P783280 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16383",
+      "sku": "sa-16383-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009983_3d18ec819a27.jpg",
+      "vendor": "",
+      "price": 10400,
+      "partNumber": "P783280",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.91 kg",
+      "shippingVolume": "0.1033 m³"
+    }
+  ]
+}

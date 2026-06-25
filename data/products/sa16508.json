@@ -1,0 +1,91 @@
+{
+  "handle": "sa16508",
+  "title": "SA 16508",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008864_3d501d2f5cb7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008865_b3231233e16f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008866_357ec35d165d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008867_d462883cd43f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16508 Air Filter",
+      "sku": "sa-16508-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008864_3d501d2f5cb7.jpg",
+      "vendor": "",
+      "price": 5200,
+      "partNumber": "SA 16508",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16508 Air Filter. Easy to install and replace, the SA 16508 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 330.0 mm",
+        "Dimension 2 (D2): 316.0 mm",
+        "Dimension 3 (D3): 303.0 mm",
+        "Height 1 (H1): 60.0 mm",
+        "Height 2 (H2): 40.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0046 m³"
+    },
+    {
+      "title": "Donaldson P601560 Air Filter, Safety Obround | Replaces the HiFi Filter SA 16508",
+      "sku": "sa-16508-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008865_b3231233e16f.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "P601560",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.007 m³"
+    },
+    {
+      "title": "Mann Filter CF 3240 Secondary Element | Replaces the HiFi Filter SA 16508",
+      "sku": "sa-16508-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008866_357ec35d165d.jpg",
+      "vendor": "",
+      "price": 7500,
+      "partNumber": "CF 3240",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 317.0 mm",
+        "Dimension B: 190.0 mm",
+        "Dimension H: 40.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4199 Air, Secondary | Replaces the HiFi Filter SA 16508",
+      "sku": "sa-16508-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008867_d462883cd43f.jpg",
+      "vendor": "",
+      "price": 10900,
+      "partNumber": "AF4199",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4199 air filter meets or exceeds the customers’ technical specifications for air filtration systems including factors such as: media fiber size, shape, pore size, thickness, weave and mechanical strength.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.0068 m³"
+    }
+  ]
+}

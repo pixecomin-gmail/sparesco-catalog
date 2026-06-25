@@ -1,0 +1,71 @@
+{
+  "handle": "sa16368",
+  "title": "SA 16368",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006448_3f2665ec0856.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006449_d638c7955940.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006450_11b47543d716.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16368 Air Filter",
+      "sku": "sa-16368-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006448_3f2665ec0856.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "SA 16368",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16368 Air Filter. Easy to install and replace, the SA 16368 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 214.0 mm",
+        "Dimension 2 (D2): 124.0 mm",
+        "Height 1 (H1): 339.0 mm",
+        "Height 2 (H2): 326.0 mm",
+        "Height 3 (H3): 320.0 mm"
+      ],
+      "unitWeight": "1.88 kg",
+      "shippingVolume": "0.0201 m³"
+    },
+    {
+      "title": "Donaldson P783871 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16368",
+      "sku": "sa-16368-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006449_d638c7955940.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "P783871",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Genuine Donaldson P783871 Air Filter, Primary Radialseal features a secure radialseal fit that ensures high-efficiency air filtration while preventing unfiltered air from entering the engine. It captures harmful airborne contaminants, optimizing airflow and enhancing engine performance and longevity. Designed for use in rugged environments, this filter offers excellent durability and a long service life. Its radialseal technology makes installation simple while ensuring a tight, reliable seal that protects your engine under the harshest conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.39 kg",
+      "shippingVolume": "0.019 m³"
+    },
+    {
+      "title": "Fleetguard AF25872 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 16368",
+      "sku": "sa-16368-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006450_11b47543d716.jpg",
+      "vendor": "",
+      "price": 6300,
+      "partNumber": "AF25872",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® AF25872 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.74 kg",
+      "shippingVolume": "0.0197 m³"
+    }
+  ]
+}

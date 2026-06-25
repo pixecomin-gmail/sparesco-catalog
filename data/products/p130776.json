@@ -1,0 +1,88 @@
+{
+  "handle": "p130776",
+  "title": "P130776",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000387_e5083cc6faf3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000388_f56fd724fed0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000389_e68cbc5d5f0a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter CF 840 Secondary Element | Replaces the Donaldson P130776",
+      "sku": "p130776-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000387_e5083cc6faf3.jpg",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "CF 840",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Brazil",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 93.0 mm",
+        "Dimension B: 63.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 74.0 mm",
+        "Dimension H: 283.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: ISO 5011",
+        "Outer Diameter: 76.2 mm",
+        "Inner Diameter: 61.0 mm",
+        "Length: 279.4 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P130776 Air Safety",
+      "sku": "p130776-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000388_f56fd724fed0.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P130776",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P130776 Air Safety is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Safety",
+        "Efficiency 1: ISO 5011",
+        "Outer Diameter: 76.2 mm",
+        "Inner Diameter: 61.0 mm",
+        "Length: 279.4 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: ISO 5011"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF1839 Air Filter, Secondary | Replaces the Donaldson P130776",
+      "sku": "p130776-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000389_e68cbc5d5f0a.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "AF1839",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Turkey",
+      "description": "​Fleetguard® AF1839 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Safety",
+        "Efficiency 1: ISO 5011",
+        "Outer Diameter: 76.2 mm",
+        "Inner Diameter: 61.0 mm",
+        "Length: 279.4 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: ISO 5011"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0032 m³"
+    }
+  ]
+}

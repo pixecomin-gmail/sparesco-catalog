@@ -1,0 +1,55 @@
+{
+  "handle": "sao58100",
+  "title": "SAO58100",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000668_f994bb7d3b53.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000669_6b29a79d0cf8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001775_6938ec20207a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001776_6669c48bf2c7.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P538611 Air Oil Separator | Replaces the SF Filter SAO58100",
+      "sku": "sao58100-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000668_f994bb7d3b53.jpg",
+      "vendor": "",
+      "price": 30600,
+      "partNumber": "P538611",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P538611 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "4.42 kg",
+      "shippingVolume": "0.0393 m³"
+    },
+    {
+      "title": "HiFi Filter OS 5099 Air/Oil Separator | Replaces the SF Filter SAO 58100",
+      "sku": "sao-58100-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001776_6669c48bf2c7.jpg",
+      "vendor": "",
+      "price": 29700,
+      "partNumber": "OS 5099",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5099 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58100. Easy to install and replace, the OS 5099 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 300.0 mm",
+        "Dimension 2 (D2): 220.0 mm",
+        "Dimension 3 (D3): 157.0 mm",
+        "Height 1 (H1): 330.0 mm"
+      ],
+      "unitWeight": "5.51 kg",
+      "shippingVolume": "0.037 m³"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "handle": "p118342",
+  "title": "P118342",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000336_14034d51dbb9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000337_c5d1c94c8013.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AF436M Air Filter, Primary | Replaces the Donaldson P118342",
+      "sku": "p118342-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000336_14034d51dbb9.jpg",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "AF436M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF436M premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 133.4 mm",
+        "Inner Diameter: 66.6 mm",
+        "Length: 203.2 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P118342 Air Primary, Round",
+      "sku": "p118342-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000337_c5d1c94c8013.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P118342",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P118342 Air Primary, Round provides clean, efficient airflow for engines by trapping airborne contaminants. Its round design maximizes filtration surface area while maintaining high airflow rates. Perfect for heavy-duty applications, this air primary filter enhances engine longevity and supports consistent performance.",
+      "specifications": [
+        "Style: Air Primary",
+        "Round",
+        "Media: Cellulose",
+        "Efficiency 1: 99.9%",
+        "Outer Diameter: 133.4 mm",
+        "Inner Diameter: 66.6 mm",
+        "Length: 203.2 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.9%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "handle": "p551049",
+  "title": "P551049",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000459_0cfa2d153d53.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000460_fe2ea50eae2c.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard FS1209 Fuel Filter/Water Sep. Cart. | Replaces the Donaldson P551049",
+      "sku": "p551049-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000459_0cfa2d153d53.jpg",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "FS1209",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® FS1209 fuel water separator cartridge filter works to remove water and other particulates and ensures clean fuel is delivered to your engine.",
+      "specifications": [
+        "Style: Fuel Box Primary",
+        "Length: 160.3 mm"
+      ],
+      "unitWeight": "0.39 kg",
+      "shippingVolume": "0.0017 m³"
+    },
+    {
+      "title": "Donaldson P551049 Fuel Box Primary",
+      "sku": "p551049-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000460_fe2ea50eae2c.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P551049",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Bulgaria",
+      "description": "Genuine Donaldson P551049 Fuel Box Primary is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Fuel Box Primary",
+        "Length: 160.3 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "handle": "sao8618",
+  "title": "SAO 8618",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007423_f055e86d02cb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007424_e68430f085ea.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 8618 Engine Breather Filter",
+      "sku": "sao-8618-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007423_f055e86d02cb.jpg",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "SAO 8618",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 8618 Engine Breather Filter. Easy to install and replace, the SAO 8618 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER",
+        "Dimension 1 (D1): 71.0 mm",
+        "Dimension 2 (D2): 27.0 mm",
+        "Dimension 3 (D3): 27.0 mm",
+        "Height 1 (H1): 52.0 mm",
+        "Height 2 (H2): 48.0 mm"
+      ],
+      "unitWeight": "0.08 kg",
+      "shippingVolume": "0.0005 m³"
+    },
+    {
+      "title": "Donaldson P903615 Crankcase Ventilation Filter | Replaces the HiFi Filter SAO 8618",
+      "sku": "sao-8618-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007424_e68430f085ea.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "P903615",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P903615 Crankcase Ventilation Filter is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Engine Breather Filter"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

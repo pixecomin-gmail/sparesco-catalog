@@ -1,0 +1,33 @@
+{
+  "handle": "sao55210",
+  "title": "SAO55210",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001118_6d730ee549eb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002221_d8cd1d65e850.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1008 Air/Oil Separator | Replaces the SF Filter SAO 55210",
+      "sku": "sao-55210-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002221_d8cd1d65e850.jpg",
+      "vendor": "",
+      "price": 24800,
+      "partNumber": "OA 1008",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1008 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55210. Easy to install and replace, the OA 1008 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "4.59 kg",
+      "shippingVolume": "0.0161 m³"
+    }
+  ]
+}

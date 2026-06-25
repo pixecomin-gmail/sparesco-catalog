@@ -1,0 +1,35 @@
+{
+  "handle": "sa22834",
+  "title": "SA 22834",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003063_89cc4f90c429.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 22834 Air Filter",
+      "sku": "sa-22834-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003063_89cc4f90c429.jpg",
+      "vendor": "",
+      "price": 200,
+      "partNumber": "SA 22834",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 22834 Air Filter. Easy to install and replace, the SA 22834 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 190.0 mm",
+        "Height 1 (H1): 53.0 mm",
+        "Height 2 (H2): 6.0 mm"
+      ],
+      "unitWeight": "0.01 kg",
+      "shippingVolume": "0.0002 m³"
+    }
+  ]
+}

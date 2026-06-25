@@ -1,0 +1,69 @@
+{
+  "handle": "as1869",
+  "title": "AS1869",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/as1869-as1869-8d4efa76c6f2.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/as1869-sh-63018-ecfda09e260b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/as1869-hd-5004-4f0bac6902fd.jpg"
+  ],
+  "variants": [
+    {
+      "title": "AS1869",
+      "sku": "as1869-1",
+      "option1Value": "Filtrec AS1869 Spin-On Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/as1869-as1869-8d4efa76c6f2.png",
+      "vendor": "Filtrec",
+      "price": 4300,
+      "partNumber": "AS1869",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec AS1869. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the AS1869 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Spin-On Filter, Media: Wire Mesh, Efficiency 1: 100µ, Outer Diameter: 45.0 mm, Inner Diameter: 25.0 mm, Length: 97.0 mm, Seal Material: Nitrile, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 100µ, Media Type: Wire Mesh, Seal: Nitrile"
+      ],
+      "unitWeight": "",
+      "shippingVolume": "0.0002 m³"
+    },
+    {
+      "title": "AS1869",
+      "sku": "as1869-2",
+      "option1Value": "HiFi Filter SH 63018 Spin-On Filter | Replaces the Filtrec AS1869",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/as1869-sh-63018-ecfda09e260b.jpg",
+      "vendor": "HiFi Filter",
+      "price": 2000,
+      "partNumber": "SH 63018",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SH 63018 Hydraulic Filter. Engineered to protect and optimize the performance of hydraulic systems, this filter delivers exceptional contamination control. Premium filter media captures fine particles and debris that could compromise system integrity, helping to extend the lifespan of critical hydraulic components. By maintaining fluid cleanliness, it reduces wear and tear while supporting consistent pressure levels throughout the system. Perfect for a wide range of hydraulic applications—from industrial machinery to heavy-duty equipment—this filter provides reliable performance even under high-pressure conditions. Its robust construction ensures long-lasting durability, helping to minimize downtime and maintenance costs while maximizing operational efficiency.",
+      "specifications": [
+        "Style: HYDRAULIC FILTER, Dimension 1 (D1): 45.0 mm, Dimension 2 (D2): 25.0 mm, Height 1 (H1): 100.0 mm, Height 2 (H2): 97.0 mm, Height 3 (H3): 13.0 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 100µ, Outer Diameter: 45.0 mm, Inner Diameter: 25.0 mm, Length: 97.0 mm, Media Type: Wire Mesh, Seal: Nitrile, Temperature Range: -25 - +120°C"
+      ],
+      "unitWeight": "0.14 kg",
+      "shippingVolume": "0.0003 m³"
+    },
+    {
+      "title": "AS1869",
+      "sku": "as1869-3",
+      "option1Value": "Mann Filter HD 5004 Hydraulic Steering Filter | Replaces the Filtrec AS1869",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/as1869-hd-5004-4f0bac6902fd.jpg",
+      "vendor": "Mann Filter",
+      "price": 2500,
+      "partNumber": "HD 5004",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "MANN-FILTER hydraulic filter elements offer maximum filtration performance and ensure trouble-free operation of the hydraulic system. Thanks to the filter medium, which is specially adapted to the intended use, the finest impurities are separated from the hydraulic fluid.",
+      "specifications": [
+        "Style: Hydraulic Steering Filter, Dimension A: 47.0 mm, Dimension B: 25.0 mm, Dimension H: 100.0 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 100µ, Outer Diameter: 45.0 mm, Inner Diameter: 25.0 mm, Length: 97.0 mm, Media Type: Wire Mesh, Seal: Nitrile, Temperature Range: -25 - +120°C"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "handle": "sa16222",
+  "title": "SA 16222",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009743_d393aa0e6d62.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009744_ae653e6da958.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16222 Air Filter",
+      "sku": "sa-16222-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009743_d393aa0e6d62.jpg",
+      "vendor": "",
+      "price": 12100,
+      "partNumber": "SA 16222",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16222 Air Filter. Easy to install and replace, the SA 16222 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.08 kg",
+      "shippingVolume": "0.0363 m³"
+    },
+    {
+      "title": "Fleetguard AF810K Air Intake Systems | Replaces the HiFi Filter SA 16222",
+      "sku": "sa-16222-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009744_ae653e6da958.jpg",
+      "vendor": "",
+      "price": 8200,
+      "partNumber": "AF810K",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF810K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.95 kg",
+      "shippingVolume": "0.0307 m³"
+    }
+  ]
+}

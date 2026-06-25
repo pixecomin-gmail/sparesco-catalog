@@ -1,0 +1,38 @@
+{
+  "handle": "sa888",
+  "title": "SA 888",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006152_2fb391c7b910.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 888 Air Filter",
+      "sku": "sa-888-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/006152_2fb391c7b910.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 888",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 888 Air Filter. Easy to install and replace, the SA 888 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 378.0 mm",
+        "Dimension 2 (D2): 364.0 mm",
+        "Dimension 3 (D3): 140.0 mm",
+        "Height 1 (H1): 41.0 mm",
+        "Height 2 (H2): 30.0 mm",
+        "Height 3 (H3): 1.0 mm"
+      ],
+      "unitWeight": "0.24 kg",
+      "shippingVolume": "0.0046 m³"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "handle": "168900sh20sls000v",
+  "title": "168900SH20SLS000V",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005104_ec9b2e351022.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005105_796c64c4310e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005108_c8e20d0d21aa.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005109_f4b2323e062d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "MicroFit® UltraGen III MFHLP31216 Pressure Filter | Replaces the Eppensteiner 16.8900SH20SLS000V",
+      "sku": "16-8900sh20sls000v-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005108_c8e20d0d21aa.jpg",
+      "vendor": "",
+      "price": 5500,
+      "partNumber": "MFHLP31216",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "The MICROFIT® UltraGen III MFHLP31216 is the MICROFIT® approved replacement to the Eppensteiner 16.8900SH20SLS000V. Engineered and manufactured in Great Britain the MFHLP31216 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MICROFIT® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MICROFIT® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 96.0 mm",
+        "Inner Diameter: 56.5 mm",
+        "Length: 206.0 mm",
+        "Δ Collapse Pressure: 25 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 25 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "1.87 kg",
+      "shippingVolume": "0.0019 m³"
+    },
+    {
+      "title": "Filtrec D610G25V Pressure Filter | Replaces the Eppensteiner 168900SH20SLS000V",
+      "sku": "168900sh20sls000v-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/005105_796c64c4310e.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "D610G25V",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec D610G25V. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the D610G25V provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Pressure Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 20µ @ β200",
+        "Efficiency 2: 22µ @ β1000",
+        "Outer Diameter: 96.0 mm",
+        "Inner Diameter: 56.5 mm",
+        "Length: 206.0 mm",
+        "Δ Collapse Pressure: 25 bar",
+        "Seal Material: Viton",
+        "Temperature Range: -25 - +120°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β200",
+        "Media Type: Glass Fiber",
+        "Flow Direction: OUT-IN",
+        "Collapse Pressure: 25 BAR",
+        "Seal: Viton"
+      ],
+      "unitWeight": "0.85 kg",
+      "shippingVolume": "0.0019 m³"
+    }
+  ]
+}

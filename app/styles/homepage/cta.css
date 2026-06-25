@@ -1,0 +1,48 @@
+/* CTA */
+
+.dark-cta-section {
+  background: #ffffff;
+  padding: 48px 0;
+}
+
+.dark-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.dark-cta-card {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 34px;
+}
+
+.dark-cta-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.dark-cta-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.dark-cta-card p {
+  color: rgba(255,255,255,0.86);
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.dark-cta-card button {
+  background: #ffffff;
+  color: var(--primary);
+  border: none;
+  padding: 12px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}

@@ -1,0 +1,61 @@
+{
+  "handle": "sab546set",
+  "title": "SAB546 SET",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001291_7bf4790a8b25.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001292_1d7f437135bc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002393_8948e102d503.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002394_47567bc3f942.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SD 70380 Urea Filter | Replaces the SF Filter SAB 546-SET",
+      "sku": "sab-546-set-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002393_8948e102d503.jpg",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "SD 70380",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SD 70380 Urea Filter is HiFi's replacement to the SF Filter SAB 546-SET. Easy to install and replace, the SD 70380 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER",
+        "Dimension 1 (D1): 50.0 mm",
+        "Dimension 2 (D2): 45.0 mm",
+        "Dimension 3 (D3): 23.0 mm",
+        "Height 1 (H1): 93.0 mm",
+        "Height 2 (H2): 85.0 mm"
+      ],
+      "unitWeight": "0.1 kg",
+      "shippingVolume": "0.0009 m³"
+    },
+    {
+      "title": "Mann Filter U 5001 KIT Urea Filter | Replaces the SF Filter SAB546-SET",
+      "sku": "sab546-set-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001292_1d7f437135bc.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "U 5001 KIT",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Germany",
+      "description": "The compact MANN-FILTER urea filters are characterized by high filter fineness, proven suitability for everyday use and a long service life. They protect system components against wear and failure and are resistant to frost and ammonia. MANN-FILTER urea filters are available for leading SCR systems in trucks and buses.",
+      "specifications": [
+        "Style: Urea Filter",
+        "Dimension A: 45.0 mm",
+        "Dimension B: 21.0 mm",
+        "Dimension C: 24.0 mm",
+        "Dimension D: 48.0 mm",
+        "Dimension H: 93.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

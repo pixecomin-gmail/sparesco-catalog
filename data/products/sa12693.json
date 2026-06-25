@@ -1,0 +1,37 @@
+{
+  "handle": "sa12693",
+  "title": "SA 12693",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002971_65b3c0aed4f8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12693 Air Filter",
+      "sku": "sa-12693-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002971_65b3c0aed4f8.jpg",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 12693",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12693 Air Filter. Easy to install and replace, the SA 12693 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 40.0 mm",
+        "Dimension 2 (D2): 25.0 mm",
+        "Dimension 3 (D3): 25.0 mm",
+        "Height 1 (H1): 43.0 mm",
+        "Height 2 (H2): 40.0 mm"
+      ],
+      "unitWeight": "0.03 kg",
+      "shippingVolume": "0.0001 m³"
+    }
+  ]
+}

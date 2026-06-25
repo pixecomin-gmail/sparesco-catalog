@@ -1,0 +1,283 @@
+/* POPULAR SPARE PARTS */
+
+.popular-parts-section {
+  background: #f7f5ef;
+  padding: 34px 0 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+.popular-parts-list {
+  background: #ffffff;
+}
+
+.popular-parts-heading {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.popular-parts-heading .section-title {
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.4px;
+}
+
+.popular-parts-heading a {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.popular-parts-list {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popular-part-row {
+  display: grid;
+   grid-template-columns:
+    minmax(0, 2fr)
+    140px
+    110px
+    140px;
+  align-items: center;
+  gap: 34px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  min-height: 74px;
+}
+
+.popular-part-row:last-child {
+  border-bottom: 0;
+}
+
+.popular-part-row:hover {
+  background: #fbfaf7;
+}
+
+.popular-part-main {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  align-items: center;
+  gap: 34px;
+  min-width: 0;
+}
+
+.popular-part-image {
+  width: 50px;
+  height: 50px;
+  background: #f7f5ef;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.popular-part-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popular-part-image span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.popular-part-info {
+  min-width: 0;
+}
+
+.popular-part-info h3 {
+  color: var(--primary);
+  font-size: 15px;
+  line-height: 1.25;
+  margin: 0 0 2px;
+  font-weight: 600;
+}
+
+.popular-part-info p,
+.popular-part-brand {
+  color: #667085;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.popular-stock-badge {
+  width: max-content;
+  background: #ecfdf3;
+  color: var(--primary);
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+.popular-stock-badge.low {
+  background: #fff7e6;
+  color: #a34700;
+}
+
+.popular-quote-button {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.popular-quote-button:hover {
+  opacity: 0.92;
+}
+
+@media (max-width: 900px) {
+  .popular-parts-section {
+    padding: 30px 0 38px;
+  }
+
+  .popular-part-row {
+    grid-template-columns: minmax(0, 1fr) 92px;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .popular-part-main {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .popular-part-image {
+    width: 46px;
+    height: 46px;
+  }
+
+  .popular-part-brand,
+  .popular-stock-badge {
+    display: none;
+  }
+
+  .popular-quote-button {
+    width: 92px;
+    height: 36px;
+  }
+
+  .popular-part-info h3 {
+    font-size: 14px;
+  }
+
+  .popular-part-info p {
+    font-size: 12px;
+  }
+}
+
+.popular-parts-list,
+.popular-part-row,
+.popular-part-info,
+.popular-part-info h3,
+.popular-part-brand {
+  user-select: text;
+}
+
+@media (max-width: 900px) {
+  .popular-parts-heading {
+    align-items: self-end;
+  }
+
+  .popular-parts-heading .section-title {
+    font-size: 24px;
+    max-width: 240px;
+  }
+
+  .popular-parts-heading a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .popular-part-row {
+    grid-template-columns: 56px 1fr 112px;
+    gap: 10px;
+    padding: 12px;
+    min-height: 72px;
+  }
+
+  .popular-part-main {
+    display: contents;
+  }
+
+  .popular-part-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .popular-part-info h3 {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .popular-part-info p,
+  .popular-part-brand,
+  .popular-stock-badge {
+    display: none;
+  }
+
+  .popular-quote-button {
+    width: 112px;
+    height: 42px;
+    font-size: 12px;
+    line-height: 1.15;
+    padding: 0 8px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .home-hero { padding: 32px 0 38px; }
+  .tagline { font-size: 11px; padding: 8px 12px; margin-bottom: 18px; }
+  .home-hero h1 { font-size: 31px; line-height: 1.16; }
+  .home-hero p { font-size: 15px; }
+  .home-hero-search {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 100%;
+  }
+  .home-hero-search input,
+  .home-search-link { width: 100%; height: 54px; }
+  .hero-result-list,
+  .product-grid,
+  .industry-grid,
+  .dark-cta-grid,
+  .partner-form-wide { grid-template-columns: 1fr; }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .industry-header h2,
+  .partner-heading h2 { font-size: 28px; }
+  .button-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .button-row a { width: 100%; height: 54px; }
+  .partner-form-wide textarea,
+  .partner-form-wide button { grid-column: span 1; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .stats-item { text-align: left; }
+  .stats-inner strong { font-size: 24px; line-height: 1; margin-bottom: 6px; }
+  .stats-inner span { font-size: 10px; line-height: 1.4; letter-spacing: 1px; }
+  .marquee-container { flex-direction: row; align-items: center; }
+  .marquee-label { padding: 12px 14px 12px 0; font-size: 11px; }
+  .marquee-track span { font-size: 12px; letter-spacing: 1.2px; }
+}
+@media (max-width: 480px) {
+  .home-hero h1 { font-size: 28px; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .category-grid { grid-template-columns: 1fr; }
+  .product-image { height: 145px; }
+}

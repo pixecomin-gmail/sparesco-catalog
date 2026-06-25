@@ -1,0 +1,30 @@
+/* STATS */
+
+.stats-strip {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.stats-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+
+.stats-inner strong {
+  display: block;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.stats-inner span {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}

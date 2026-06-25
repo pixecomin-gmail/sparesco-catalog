@@ -1,0 +1,49 @@
+{
+  "handle": "sa10386",
+  "title": "SA 10386",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009521_c10830d65dbd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009522_eb1595ed8a5a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10386 Air Filter",
+      "sku": "sa-10386-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009521_c10830d65dbd.jpg",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 10386",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10386 Air Filter. Easy to install and replace, the SA 10386 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0078 m³"
+    },
+    {
+      "title": "Fleetguard AF436M Air Filter, Primary | Replaces the HiFi Filter SA 10386",
+      "sku": "sa-10386-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009522_eb1595ed8a5a.jpg",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "AF436M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF436M premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

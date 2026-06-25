@@ -1,0 +1,38 @@
+{
+  "handle": "sa18283",
+  "title": "SA 18283",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004726_ac23cd76e510.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18283 Air Filter",
+      "sku": "sa-18283-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004726_ac23cd76e510.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 18283",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18283 Air Filter. Easy to install and replace, the SA 18283 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 124.0 mm",
+        "Dimension 2 (D2): 92.0 mm",
+        "Dimension 3 (D3): 87.0 mm",
+        "Height 1 (H1): 263.0 mm",
+        "Height 2 (H2): 257.0 mm",
+        "Height 3 (H3): 254.0 mm"
+      ],
+      "unitWeight": "0.56 kg",
+      "shippingVolume": "0.0049 m³"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "handle": "p552253",
+  "title": "P552253",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000521_1985c4206152.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000522_b5b1f897639d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard FF192 Fuel Filter, Spin-On | Replaces the Donaldson P552253",
+      "sku": "p552253-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000521_1985c4206152.jpg",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "FF192",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® FF192 premium spin-on fuel filter delivers superior performance using proven media technology, removing harmful contaminants. Fleetguard fuel filters ensure optimal fuel system protection to meet or exceed OEM specifications.",
+      "specifications": [
+        "Style: Fuel Spin-On Secondary",
+        "Media: Cellulose",
+        "Efficiency 1: 15µ @ β100",
+        "Outer Diameter: 93.7 mm",
+        "Length: 220.7 mm",
+        "Thread: '1-14 UN",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 15µ @ β100",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0022 m³"
+    },
+    {
+      "title": "Donaldson P552253 Fuel Spin-On Secondary",
+      "sku": "p552253-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000522_b5b1f897639d.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P552253",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P552253 Fuel Spin-On Secondary is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Fuel Spin-On Secondary",
+        "Media: Cellulose",
+        "Efficiency 1: 15µ @ β100",
+        "Outer Diameter: 93.7 mm",
+        "Length: 220.7 mm",
+        "Thread: '1-14 UN",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 15µ @ β100",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

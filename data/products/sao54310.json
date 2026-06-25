@@ -1,0 +1,33 @@
+{
+  "handle": "sao54310",
+  "title": "SAO54310",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001169_dde18dc69da3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002272_e8ba42d2e0be.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SI 40000 Air/Oil Separator | Replaces the SF Filter SAO 54310",
+      "sku": "sao-54310-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002272_e8ba42d2e0be.jpg",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SI 40000",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SI 40000 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 54310. Easy to install and replace, the SI 40000 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0001 m³"
+    }
+  ]
+}

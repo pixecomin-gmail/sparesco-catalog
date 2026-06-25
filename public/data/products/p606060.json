@@ -1,0 +1,62 @@
+{
+  "handle": "p606060",
+  "title": "P606060",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000061_776aa9ee013d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000062_8352570687bc.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter C 2535 Air Filter | Replaces the Donaldson P606060",
+      "sku": "p606060-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000061_776aa9ee013d.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "C 2535",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 249.0 mm",
+        "Dimension B: 169.0 mm",
+        "Dimension H: 51.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 96%",
+        "Length: 249.2 mm",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P606060 Air Panel",
+      "sku": "p606060-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000062_8352570687bc.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P606060",
+      "hsCode": "8421.39.01",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P606060 Air Panel is designed to provide reliable performance in air panel applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Panel",
+        "Media: Cellulose",
+        "Efficiency 1: 96%",
+        "Length: 249.2 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 96%",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

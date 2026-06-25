@@ -1,0 +1,91 @@
+{
+  "handle": "sa8676",
+  "title": "SA 8676",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004458_df2f18afa5ad.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004459_eafe1dfd2c1c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004460_cdcdb15d89e8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004461_958a4c95d0d4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8676 Air Filter",
+      "sku": "sa-8676-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004458_df2f18afa5ad.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "SA 8676",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8676 Air Filter. Easy to install and replace, the SA 8676 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 324.0 mm",
+        "Dimension 2 (D2): 307.0 mm",
+        "Dimension 3 (D3): 239.0 mm",
+        "Height 1 (H1): 55.0 mm",
+        "Height 2 (H2): 46.0 mm"
+      ],
+      "unitWeight": "0.62 kg",
+      "shippingVolume": "0.0053 m³"
+    },
+    {
+      "title": "Mann Filter C 33 017 Air Filter | Replaces the HiFi Filter SA 8676",
+      "sku": "sa-8676-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004459_eafe1dfd2c1c.jpg",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "C 33 017",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 323.0 mm",
+        "Dimension B: 240.0 mm",
+        "Dimension H: 58.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P903541 Air Filter, Panel | Replaces the HiFi Filter SA 8676",
+      "sku": "sa-8676-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004460_cdcdb15d89e8.jpg",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "P903541",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P903541 Air Filter, Panel is designed to provide reliable performance in air filter, panel applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.6 kg",
+      "shippingVolume": "0.0081 m³"
+    },
+    {
+      "title": "Fleetguard AF4276 Air Filter Filter - Panel | Replaces the HiFi Filter SA 8676",
+      "sku": "sa-8676-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004461_958a4c95d0d4.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "AF4276",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "​Fleetguard® AF4276 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.69 kg",
+      "shippingVolume": "0.0062 m³"
+    }
+  ]
+}

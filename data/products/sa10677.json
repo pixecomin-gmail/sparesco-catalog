@@ -1,0 +1,37 @@
+{
+  "handle": "sa10677",
+  "title": "SA 10677",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009443_7d41b19af9c5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10677 Air Filter",
+      "sku": "sa-10677-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009443_7d41b19af9c5.jpg",
+      "vendor": "",
+      "price": 3800,
+      "partNumber": "SA 10677",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10677 Air Filter. Easy to install and replace, the SA 10677 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 165.0 mm",
+        "Dimension 2 (D2): 86.0 mm",
+        "Dimension 3 (D3): 9.0 mm",
+        "Height 1 (H1): 250.0 mm",
+        "Height 2 (H2): 238.0 mm"
+      ],
+      "unitWeight": "1.16 kg",
+      "shippingVolume": "0.0103 m³"
+    }
+  ]
+}

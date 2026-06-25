@@ -1,0 +1,56 @@
+{
+  "handle": "sao57925",
+  "title": "SAO57925",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000685_83e4c57b9fbd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000686_d2efaff26e64.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001793_fbd7e4857d05.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001794_cd755715c89c.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LB 962/21 Compressed Air-Oil Separation | Replaces the SF Filter SAO57925",
+      "sku": "sao57925-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000685_83e4c57b9fbd.jpg",
+      "vendor": "",
+      "price": 7600,
+      "partNumber": "LB 962/21",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling boxes reliably separate oil from the compressed air in compressors and vacuum pumps. They ensure clean air, prolong the service life of the devices and provide optimal performance. High-quality media for the air deoiling boxes from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 93.0 mm",
+        "Dimension B: 62.0 mm",
+        "Dimension C: 71.0 mm",
+        "Dimension G: 1-12 UNF-1B",
+        "Dimension H: 212.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OV 6016 Air/Oil Separator | Replaces the SF Filter SAO 57925",
+      "sku": "sao-57925-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001794_cd755715c89c.jpg",
+      "vendor": "",
+      "price": 7300,
+      "partNumber": "OV 6016",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OV 6016 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 57925. Easy to install and replace, the OV 6016 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.24 kg",
+      "shippingVolume": "0.0023 m³"
+    }
+  ]
+}

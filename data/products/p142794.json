@@ -1,0 +1,63 @@
+{
+  "handle": "p142794",
+  "title": "P142794",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000114_c93e3f9e5b92.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000115_b0a89e0697bc.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AF446 Air Filter - Panel | Replaces the Donaldson P142794",
+      "sku": "p142794-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000114_c93e3f9e5b92.jpg",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "AF446",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF446 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Panel",
+        "Engine",
+        "Media: Cellulose",
+        "Efficiency 1: ISO 5011",
+        "Length: 209.6 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: ISO 5011",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "0.23 kg",
+      "shippingVolume": "0.0013 m³"
+    },
+    {
+      "title": "Donaldson P142794 Air Panel, Engine",
+      "sku": "p142794-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000115_b0a89e0697bc.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P142794",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P142794 Air Panel, Engine is designed to provide reliable performance in air panel, engine applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Panel",
+        "Engine",
+        "Media: Cellulose",
+        "Efficiency 1: ISO 5011",
+        "Length: 209.6 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: ISO 5011",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "handle": "sa7609",
+  "title": "SA 7609",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008779_b3ad753a45fa.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7609 Air Filter",
+      "sku": "sa-7609-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008779_b3ad753a45fa.jpg",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 7609",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7609 Air Filter. Easy to install and replace, the SA 7609 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 241.0 mm",
+        "Dimension 2 (D2): 164.0 mm",
+        "Dimension 3 (D3): 152.0 mm",
+        "Height 1 (H1): 146.0 mm",
+        "Height 2 (H2): 135.0 mm"
+      ],
+      "unitWeight": "0.82 kg",
+      "shippingVolume": "0.0067 m³"
+    }
+  ]
+}

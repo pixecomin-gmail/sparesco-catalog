@@ -1,0 +1,38 @@
+{
+  "handle": "sao7100",
+  "title": "SAO 7100",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003555_d4266a8eb2ac.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 7100 Engine Breather Filter",
+      "sku": "sao-7100-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003555_d4266a8eb2ac.jpg",
+      "vendor": "",
+      "price": 4800,
+      "partNumber": "SAO 7100",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 7100 Engine Breather Filter. Easy to install and replace, the SAO 7100 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER",
+        "Dimension 1 (D1): 143.0 mm",
+        "Dimension 2 (D2): 108.0 mm",
+        "Dimension 3 (D3): 102.0 mm",
+        "Height 1 (H1): 67.0 mm",
+        "Height 2 (H2): 41.0 mm",
+        "Height 3 (H3): 23.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0012 m³"
+    }
+  ]
+}

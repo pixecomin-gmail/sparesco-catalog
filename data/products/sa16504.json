@@ -1,0 +1,49 @@
+{
+  "handle": "sa16504",
+  "title": "SA 16504",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008495_7ab0c7d624a6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008496_61f82bf44a3b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16504 Air Filter",
+      "sku": "sa-16504-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008495_7ab0c7d624a6.jpg",
+      "vendor": "",
+      "price": 13800,
+      "partNumber": "SA 16504",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16504 Air Filter. Easy to install and replace, the SA 16504 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.58 kg",
+      "shippingVolume": "0.0283 m³"
+    },
+    {
+      "title": "Donaldson P772504 Air Filter, Primary Round | Replaces the HiFi Filter SA 16504",
+      "sku": "sa-16504-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008496_61f82bf44a3b.jpg",
+      "vendor": "",
+      "price": 8600,
+      "partNumber": "P772504",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P772504 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.67 kg",
+      "shippingVolume": "0.0281 m³"
+    }
+  ]
+}

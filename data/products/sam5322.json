@@ -1,0 +1,35 @@
+{
+  "handle": "sam5322",
+  "title": "SAM 5322",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003884_9029a0c5e6e9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAM 5322 Filtering Mass",
+      "sku": "sam-5322-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003884_9029a0c5e6e9.jpg",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "SAM 5322",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAM 5322 Filtering Mass. Easy to install and replace, the SAM 5322 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: FILTERING MASS",
+        "Dimension 1 (D1): 150.0 mm",
+        "Dimension 2 (D2): 50.0 mm",
+        "Height 1 (H1): 80.0 mm"
+      ],
+      "unitWeight": "0.12 kg",
+      "shippingVolume": "0.0018 m³"
+    }
+  ]
+}

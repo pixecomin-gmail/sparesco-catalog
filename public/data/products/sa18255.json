@@ -1,0 +1,55 @@
+{
+  "handle": "sa18255",
+  "title": "SA 18255",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009761_f345c01a1f6c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009762_db45406866f1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18255 Air Filter",
+      "sku": "sa-18255-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009761_f345c01a1f6c.jpg",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "SA 18255",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18255 Air Filter. Easy to install and replace, the SA 18255 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 215.0 mm",
+        "Dimension 2 (D2): 124.0 mm",
+        "Dimension 3 (D3): 12.0 mm",
+        "Height 1 (H1): 408.0 mm",
+        "Height 2 (H2): 397.0 mm",
+        "Height 3 (H3): 370.0 mm"
+      ],
+      "unitWeight": "2.26 kg",
+      "shippingVolume": "0.0272 m³"
+    },
+    {
+      "title": "Fleetguard AA90190 Air Intake Systems | Replaces the HiFi Filter SA 18255",
+      "sku": "sa-18255-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009762_db45406866f1.jpg",
+      "vendor": "",
+      "price": 12500,
+      "partNumber": "AA90190",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "South Korea",
+      "description": "​Fleetguard® AA90190 dual pack air kit provide a convenient all-in-one solution by including all required filters in one package to speed up a filter change to save time and money.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.29 kg",
+      "shippingVolume": "0.0263 m³"
+    }
+  ]
+}

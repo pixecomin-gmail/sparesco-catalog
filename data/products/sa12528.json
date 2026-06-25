@@ -1,0 +1,54 @@
+{
+  "handle": "sa12528",
+  "title": "SA 12528",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004873_26c37f476ded.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004874_2f0b332a62fe.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12528 Air Filter",
+      "sku": "sa-12528-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004873_26c37f476ded.jpg",
+      "vendor": "",
+      "price": 1000,
+      "partNumber": "SA 12528",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12528 Air Filter. Easy to install and replace, the SA 12528 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 38.0 mm",
+        "Dimension 2 (D2): 22.0 mm",
+        "Dimension 3 (D3): 22.0 mm",
+        "Height 1 (H1): 34.0 mm",
+        "Height 2 (H2): 32.0 mm"
+      ],
+      "unitWeight": "0.02 kg",
+      "shippingVolume": "0.0 m³"
+    },
+    {
+      "title": "Donaldson P172433 Hydraulic Filter, Cartridge | Replaces the HiFi Filter SA 12528",
+      "sku": "sa-12528-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004874_2f0b332a62fe.jpg",
+      "vendor": "",
+      "price": 500,
+      "partNumber": "P172433",
+      "hsCode": "8421.29.80.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P172433 Hydraulic Filter, Cartridge is designed to provide superior protection for your hydraulic system, effectively capturing contaminants to ensure clean fluid circulation. With high-quality filtration media, it extends equipment life, improves operational efficiency, and maintains fluid cleanliness even in the most demanding environments. Built for industrial, agricultural, and heavy-duty applications, this filter offers excellent dirt-holding capacity and flow efficiency. Its easy installation and maintenance help reduce downtime, making it a reliable choice for keeping hydraulic systems running smoothly.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.01 kg",
+      "shippingVolume": "0.0001 m³"
+    }
+  ]
+}

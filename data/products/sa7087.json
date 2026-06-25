@@ -1,0 +1,38 @@
+{
+  "handle": "sa7087",
+  "title": "SA 7087",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008312_32287445ca7b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7087 Air Filter",
+      "sku": "sa-7087-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008312_32287445ca7b.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 7087",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7087 Air Filter. Easy to install and replace, the SA 7087 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 280.0 mm",
+        "Dimension 2 (D2): 270.0 mm",
+        "Dimension 3 (D3): 212.0 mm",
+        "Height 1 (H1): 65.0 mm",
+        "Height 2 (H2): 58.0 mm",
+        "Height 3 (H3): 48.0 mm"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0033 m³"
+    }
+  ]
+}

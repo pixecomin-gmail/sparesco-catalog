@@ -1,0 +1,51 @@
+{
+  "handle": "wg826",
+  "title": "WG826",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wg826-sh-74240-v-72b4c2fcf97f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wg826-wg826-61348d46ddea.png"
+  ],
+  "variants": [
+    {
+      "title": "WG826",
+      "sku": "wg826-1",
+      "option1Value": "HiFi Filter SH 74240 V Special Filter | Replaces the Filtrec WG826",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wg826-sh-74240-v-72b4c2fcf97f.jpg",
+      "vendor": "HiFi Filter",
+      "price": 13000,
+      "partNumber": "SH 74240 V",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SH 74240 V Hydraulic Filter. Engineered to protect and optimize the performance of hydraulic systems, this filter delivers exceptional contamination control. Premium filter media captures fine particles and debris that could compromise system integrity, helping to extend the lifespan of critical hydraulic components. By maintaining fluid cleanliness, it reduces wear and tear while supporting consistent pressure levels throughout the system. Perfect for a wide range of hydraulic applications—from industrial machinery to heavy-duty equipment—this filter provides reliable performance even under high-pressure conditions. Its robust construction ensures long-lasting durability, helping to minimize downtime and maintenance costs while maximizing operational efficiency.",
+      "specifications": [
+        "Style: HYDRAULIC FILTER, Dimension 1 (D1): 94.5 mm, Dimension 2 (D2): 48.0 mm, Dimension 3 (D3): 48.0 mm, Height 1 (H1): 403.0 mm, Height 2 (H2): 357.0 mm, Height 3 (H3): 352.0 mm, No. Bypass Valves: 1, Outer Diameter: 48.2 mm, Inner Diameter: 94.5 mm, Length: 402.0 mm, Seal: Viton, Temperature Range: -25 - +120°C"
+      ],
+      "unitWeight": "0.72 kg",
+      "shippingVolume": "0.0069 m³"
+    },
+    {
+      "title": "WG826",
+      "sku": "wg826-2",
+      "option1Value": "Filtrec WG826 Special Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wg826-wg826-61348d46ddea.png",
+      "vendor": "Filtrec",
+      "price": 8000,
+      "partNumber": "WG826",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec WG826. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the WG826 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Special Filter, Outer Diameter: 48.2 mm, Inner Diameter: 94.5 mm, Length: 402.0 mm, Seal Material: Viton, Temperature Range: -25 - +120°C, Seal: Viton"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

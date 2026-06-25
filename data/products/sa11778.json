@@ -1,0 +1,55 @@
+{
+  "handle": "sa11778",
+  "title": "SA 11778",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007692_4ababaed2cfd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007693_8cc11b2daee9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11778 Air Filter",
+      "sku": "sa-11778-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007692_4ababaed2cfd.jpg",
+      "vendor": "",
+      "price": 12300,
+      "partNumber": "SA 11778",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11778 Air Filter. Easy to install and replace, the SA 11778 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 323.0 mm",
+        "Dimension 2 (D2): 308.0 mm",
+        "Dimension 3 (D3): 196.0 mm",
+        "Height 1 (H1): 524.0 mm",
+        "Height 2 (H2): 514.0 mm",
+        "Height 3 (H3): 466.0 mm"
+      ],
+      "unitWeight": "5.1 kg",
+      "shippingVolume": "0.0577 m³"
+    },
+    {
+      "title": "Fleetguard AF1828 Air Filter, Primary | Replaces the HiFi Filter SA 11778",
+      "sku": "sa-11778-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007693_8cc11b2daee9.jpg",
+      "vendor": "",
+      "price": 15600,
+      "partNumber": "AF1828",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF1828 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.47 kg",
+      "shippingVolume": "0.0599 m³"
+    }
+  ]
+}

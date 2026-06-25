@@ -1,0 +1,54 @@
+{
+  "handle": "sa10301k",
+  "title": "SA 10301 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007725_db7541b7c57d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007726_a9fc3bb23a8e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10301 K Air Filter",
+      "sku": "sa-10301-k-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007725_db7541b7c57d.jpg",
+      "vendor": "",
+      "price": 7200,
+      "partNumber": "SA 10301 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10301 K Air Filter. Easy to install and replace, the SA 10301 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 347.0 mm",
+        "Dimension 2 (D2): 282.0 mm",
+        "Dimension 3 (D3): 171.0 mm",
+        "Height 1 (H1): 317.0 mm",
+        "Height 2 (H2): 306.0 mm"
+      ],
+      "unitWeight": "2.72 kg",
+      "shippingVolume": "0.043 m³"
+    },
+    {
+      "title": "Fleetguard AF351K Air Filter, Primary | Replaces the HiFi Filter SA 10301 K",
+      "sku": "sa-10301-k-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007726_a9fc3bb23a8e.jpg",
+      "vendor": "",
+      "price": 7500,
+      "partNumber": "AF351K",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF351K axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.95 kg",
+      "shippingVolume": "0.0434 m³"
+    }
+  ]
+}

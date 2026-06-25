@@ -1,0 +1,47 @@
+{
+  "handle": "81130h6xls000p",
+  "title": "81130H6XLS000P",
+  "collection": "Eppensteiner",
+  "collectionHandle": "eppensteiner",
+  "category": "Eppensteiner",
+  "tags": [
+    "Eppensteiner",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000096_fb945ce667b4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000100_bd4a6d8d8947.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec A121G06/2 Spin-On Filter | Replaces the Eppensteiner 81130H6XLS000P",
+      "sku": "81130h6xls000p-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/eppensteiner/000096_fb945ce667b4.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "A121G06/2",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec A121G06/2. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the A121G06/2 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Spin-On Filter",
+        "Media: Glass Fiber",
+        "Efficiency 1: 5µ @ β200",
+        "Efficiency 2: 7µ @ β1000",
+        "Outer Diameter: 129.0 mm",
+        "Length: 228.0 mm",
+        "Thread: M42x2",
+        "Δ Collapse Pressure: 12 bar",
+        "Seal Material: Nitrile",
+        "Temperature Range: -30 - +100°C",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 5µ @ β200",
+        "Media Type: Glass Fiber",
+        "Collapse Pressure: 12 BAR",
+        "Seal: Nitrile"
+      ],
+      "unitWeight": "1.95 kg",
+      "shippingVolume": "0.0038 m³"
+    }
+  ]
+}

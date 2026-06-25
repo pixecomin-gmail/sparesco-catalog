@@ -1,0 +1,49 @@
+{
+  "handle": "sah02c06adp008",
+  "title": "SAH 02C06ADP008",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002884_e66b48cd8067.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002885_c59ba247ed54.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAH 02C06ADP008 Complete Air Filter",
+      "sku": "sah-02c06adp008-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002884_e66b48cd8067.jpg",
+      "vendor": "",
+      "price": 20100,
+      "partNumber": "SAH 02C06ADP008",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAH 02C06ADP008 Complete Air Filter. Easy to install and replace, the SAH 02C06ADP008 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: COMPLETE AIR FILTER"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Mann Filter 4513292910 ENTARON HD 4 | Replaces the HiFi Filter SAH 02C06ADP008",
+      "sku": "sah-02c06adp008-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002885_c59ba247ed54.jpg",
+      "vendor": "",
+      "price": 14400,
+      "partNumber": "4513292910",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "Replacement and maintenance parts for the proven filter housings and systems from MANN+HUMMEL.",
+      "specifications": [
+        "Style: MANN+HUMMEL Spare Part"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

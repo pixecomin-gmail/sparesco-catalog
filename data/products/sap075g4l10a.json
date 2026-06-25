@@ -1,0 +1,32 @@
+{
+  "handle": "sap075g4l10a",
+  "title": "SAP075G4L10A",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001390_fc40506aa639.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter FS 337 Breather Filter | Replaces the MP Filtri SAP075G4L10A",
+      "sku": "sap075g4l10a-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001390_fc40506aa639.jpg",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "FS 337",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter FS 337 Breather Filter is HiFi's replacement to the MP FILTRI SAP075G4L10A. Easy to install and replace, the FS 337 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

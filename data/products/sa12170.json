@@ -1,0 +1,32 @@
+{
+  "handle": "sa12170",
+  "title": "SA 12170",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004882_c5d1e15b6c63.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12170 Air Filter",
+      "sku": "sa-12170-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004882_c5d1e15b6c63.jpg",
+      "vendor": "",
+      "price": 800,
+      "partNumber": "SA 12170",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12170 Air Filter. Easy to install and replace, the SA 12170 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

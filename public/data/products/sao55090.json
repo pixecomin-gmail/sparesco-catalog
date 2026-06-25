@@ -1,0 +1,33 @@
+{
+  "handle": "sao55090",
+  "title": "SAO55090",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001135_2be1ec08945c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002238_9f35c21ee472.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1014 Air/Oil Separator | Replaces the SF Filter SAO 55090",
+      "sku": "sao-55090-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002238_9f35c21ee472.jpg",
+      "vendor": "",
+      "price": 7700,
+      "partNumber": "OA 1014",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1014 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55090. Easy to install and replace, the OA 1014 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.36 kg",
+      "shippingVolume": "0.0079 m³"
+    }
+  ]
+}

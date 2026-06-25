@@ -1,0 +1,88 @@
+{
+  "handle": "p550361",
+  "title": "P550361",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001018_95aab44f0406.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001019_71888513e709.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001020_16d660e15b08.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter PF 1050/1 n Oil Filter | Replaces the Donaldson P550361",
+      "sku": "p550361-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001018_95aab44f0406.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "PF 1050/1 n",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Ukraine",
+      "description": "MANN-FILTER oil filters: Top filtration performance and optimal cleaning protect the engine against wear caused by impurities and combustion residues in the oil. Filter media and high-quality sealing materials that are individually tailored to the intended application offer optimum protection over the entire maintenance interval.",
+      "specifications": [
+        "Style: Oil Filter",
+        "Dimension A: 90.0 mm",
+        "Dimension B: 12.0 mm",
+        "Dimension C: 25.0 mm",
+        "Dimension D: 92.0 mm",
+        "Dimension H: 169.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 40µ @ β100",
+        "Outer Diameter: 90.9 mm",
+        "Inner Diameter: 11.9 mm",
+        "Length: 163.1 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P550361 Lube Cartridge Combination",
+      "sku": "p550361-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001019_71888513e709.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P550361",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P550361 Lube Cartridge Combination is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Lube Cartridge Combination",
+        "Efficiency 1: 40µ @ β100",
+        "Outer Diameter: 90.9 mm",
+        "Inner Diameter: 11.9 mm",
+        "Length: 163.1 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 40µ @ β100"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard LF3584 Lube Filter, Cartridge | Replaces the Donaldson P550361",
+      "sku": "p550361-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001020_16d660e15b08.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "LF3584",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Fleetguard® LF3584 cartridge oil filter is enviromentally friendly and features technology advances to achieve the high flow rates required by today’s modern engine designs.",
+      "specifications": [
+        "Style: Lube Cartridge Combination",
+        "Efficiency 1: 40µ @ β100",
+        "Outer Diameter: 90.9 mm",
+        "Inner Diameter: 11.9 mm",
+        "Length: 163.1 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 40µ @ β100"
+      ],
+      "unitWeight": "0.48 kg",
+      "shippingVolume": "0.0025 m³"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "handle": "sa16708",
+  "title": "SA 16708",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008732_0ca826c5a6b4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16708 Air Filter",
+      "sku": "sa-16708-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008732_0ca826c5a6b4.jpg",
+      "vendor": "",
+      "price": 27000,
+      "partNumber": "SA 16708",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16708 Air Filter. Easy to install and replace, the SA 16708 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 552.0 mm",
+        "Dimension 2 (D2): 503.0 mm",
+        "Dimension 3 (D3): 474.0 mm",
+        "Height 1 (H1): 301.0 mm",
+        "Height 2 (H2): 281.0 mm"
+      ],
+      "unitWeight": "9.32 kg",
+      "shippingVolume": "0.1173 m³"
+    }
+  ]
+}

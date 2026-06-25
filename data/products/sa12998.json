@@ -1,0 +1,38 @@
+{
+  "handle": "sa12998",
+  "title": "SA 12998",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004854_cd748111584d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12998 Air Filter",
+      "sku": "sa-12998-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004854_cd748111584d.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 12998",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12998 Air Filter. Easy to install and replace, the SA 12998 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 111.0 mm",
+        "Dimension 2 (D2): 81.0 mm",
+        "Dimension 3 (D3): 55.5 mm",
+        "Height 1 (H1): 64.0 mm",
+        "Height 2 (H2): 58.0 mm",
+        "Height 3 (H3): 55.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0011 m³"
+    }
+  ]
+}

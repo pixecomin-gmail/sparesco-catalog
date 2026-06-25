@@ -1,0 +1,53 @@
+{
+  "handle": "p955635",
+  "title": "P955635",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000035_950e6c9adcc8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000036_0b7f8e68907d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AF25954 Cabin Air Filter Filter | Replaces the Donaldson P955635",
+      "sku": "p955635-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000035_950e6c9adcc8.jpg",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "AF25954",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25954 panel cabin air filter provides clean air in the cab which means a clean work environment.  Breathing cleaner air can lead to longer and more productive working hours.",
+      "specifications": [
+        "Style: Air Filter",
+        "Panel",
+        "Length: 460.0 mm"
+      ],
+      "unitWeight": "0.12 kg",
+      "shippingVolume": "0.0038 m³"
+    },
+    {
+      "title": "Donaldson P955635 Air Filter, Panel",
+      "sku": "p955635-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000036_0b7f8e68907d.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P955635",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P955635 Air Filter, Panel is designed to provide reliable performance in air filter, panel applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter",
+        "Panel",
+        "Length: 460.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

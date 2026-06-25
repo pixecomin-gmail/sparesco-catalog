@@ -1,0 +1,36 @@
+{
+  "handle": "sa12361",
+  "title": "SA 12361",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009142_d7735331add3.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12361 Air Filter",
+      "sku": "sa-12361-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009142_d7735331add3.jpg",
+      "vendor": "",
+      "price": 400,
+      "partNumber": "SA 12361",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12361 Air Filter. Easy to install and replace, the SA 12361 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 102.0 mm",
+        "Dimension 2 (D2): 85.0 mm",
+        "Dimension 3 (D3): 70.0 mm",
+        "Height 1 (H1): 15.0 mm"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.0001 m³"
+    }
+  ]
+}

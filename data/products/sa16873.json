@@ -1,0 +1,54 @@
+{
+  "handle": "sa16873",
+  "title": "SA 16873",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008683_5c99b8409ac7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008684_d33e2b976fae.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16873 Air Filter",
+      "sku": "sa-16873-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008683_5c99b8409ac7.jpg",
+      "vendor": "",
+      "price": 7900,
+      "partNumber": "SA 16873",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16873 Air Filter. Easy to install and replace, the SA 16873 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 183.0 mm",
+        "Dimension 2 (D2): 152.0 mm",
+        "Dimension 3 (D3): 146.0 mm",
+        "Height 1 (H1): 730.0 mm",
+        "Height 2 (H2): 726.0 mm"
+      ],
+      "unitWeight": "1.42 kg",
+      "shippingVolume": "0.0341 m³"
+    },
+    {
+      "title": "Donaldson P638609 Air Filter, Safety | Replaces the HiFi Filter SA 16873",
+      "sku": "sa-16873-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008684_d33e2b976fae.jpg",
+      "vendor": "",
+      "price": 8500,
+      "partNumber": "P638609",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.34 kg",
+      "shippingVolume": "0.0296 m³"
+    }
+  ]
+}

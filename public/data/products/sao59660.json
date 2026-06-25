@@ -1,0 +1,33 @@
+{
+  "handle": "sao59660",
+  "title": "SAO59660",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000466_7c12640c489b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001573_3469d1a8269e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5077 Air/Oil Separator | Replaces the SF Filter SAO 59660",
+      "sku": "sao-59660-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001573_3469d1a8269e.jpg",
+      "vendor": "",
+      "price": 22200,
+      "partNumber": "OS 5077",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5077 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 59660. Easy to install and replace, the OS 5077 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.68 kg",
+      "shippingVolume": "0.0377 m³"
+    }
+  ]
+}

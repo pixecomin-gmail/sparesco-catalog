@@ -1,0 +1,51 @@
+{
+  "handle": "e3632pt",
+  "title": "E3632PT",
+  "collection": "Hengst",
+  "collectionHandle": "hengst",
+  "category": "Hengst",
+  "tags": [
+    "Hengst",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/hengst/e3632pt-h-15-190-6-n-9420a19701b5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/hengst/e3632pt-wp430-99e7ed8868ae.png"
+  ],
+  "variants": [
+    {
+      "title": "E3632PT",
+      "sku": "e3632pt-1",
+      "option1Value": "Mann Filter H 15 190/6 n EDM Filter | Replaces the Hengst E3632PT",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/hengst/e3632pt-h-15-190-6-n-9420a19701b5.jpg",
+      "vendor": "Mann Filter",
+      "price": 9100,
+      "partNumber": "H 15 190/6 n",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Spain",
+      "description": "MANN-FILTER spark erosion filters effectively separate particles and impurities from the dielectric during the machining process, thus making them indispensable for demanding manufacturing processes. Tailored to your needs, our spark erosion filters are impressive with their excellent dirt holding capacity and corrosion resistance. Their long service life leads to short machine downtimes and thus to lower acquisition costs.",
+      "specifications": [
+        "Style: EDM Filter, Dimension A: 150.0 mm, Dimension B: 31.0 mm, Dimension C: 31.0 mm, Dimension H: 364.0 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 5µ @ β2, Outer Diameter: 150.0 mm, Inner Diameter: 31.5 mm, Length: 360.0 mm, Media Type: Cellulose, Flow Direction: OUT-IN, Seal: Nitrile, Temperature Range: -30 - +100°C"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "E3632PT",
+      "sku": "e3632pt-2",
+      "option1Value": "Filtrec WP430 Special Filter | Replaces the Hengst E3632PT",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/hengst/e3632pt-wp430-99e7ed8868ae.png",
+      "vendor": "Filtrec",
+      "price": 0,
+      "partNumber": "WP430",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec WP430. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the WP430 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Special Filter, Media: Cellulose, Efficiency 1: 5µ @ β2, Outer Diameter: 150.0 mm, Inner Diameter: 31.5 mm, Length: 360.0 mm, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 5µ @ β2, Media Type: Cellulose, Flow Direction: OUT-IN, Seal: Nitrile"
+      ],
+      "unitWeight": "2.23 kg",
+      "shippingVolume": "0.0081 m³"
+    }
+  ]
+}

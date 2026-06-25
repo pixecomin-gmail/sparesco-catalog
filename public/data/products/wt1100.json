@@ -1,0 +1,69 @@
+{
+  "handle": "wt1100",
+  "title": "WT1100",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt1100-wt1100-d38b45f8c718.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt1100-p502178-010e84e68428.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt1100-mfhsp80736-f668a7ea77df.png"
+  ],
+  "variants": [
+    {
+      "title": "WT1100",
+      "sku": "wt1100-1",
+      "option1Value": "Filtrec WT1100 Special Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt1100-wt1100-d38b45f8c718.png",
+      "vendor": "Filtrec",
+      "price": 8700,
+      "partNumber": "WT1100",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec WT1100. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the WT1100 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Special Filter, Media: Wire Mesh, Efficiency 1: 200µ, Outer Diameter: 83.0 mm, Inner Diameter: 46.0 mm, Length: 232.0 mm, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 200µ, Media Type: Wire Mesh, Flow Direction: IN-OUT"
+      ],
+      "unitWeight": "0.76 kg",
+      "shippingVolume": "0.0016 m³"
+    },
+    {
+      "title": "WT1100",
+      "sku": "wt1100-2",
+      "option1Value": "Donaldson P502178 Hydraulic Filter, Cartridge | Replaces the Filtrec WT1100",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt1100-p502178-010e84e68428.jpg",
+      "vendor": "Donaldson",
+      "price": 2100,
+      "partNumber": "P502178",
+      "hsCode": "8421.29.80.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P502178 Hydraulic Filter, Cartridge is designed to provide superior protection for your hydraulic system, effectively capturing contaminants to ensure clean fluid circulation. With high-quality filtration media, it extends equipment life, improves operational efficiency, and maintains fluid cleanliness even in the most demanding environments. Built for industrial, agricultural, and heavy-duty applications, this filter offers excellent dirt-holding capacity and flow efficiency. Its easy installation and maintenance help reduce downtime, making it a reliable choice for keeping hydraulic systems running smoothly.",
+      "specifications": [
+        "Style: Special Filter, Media: Wire Mesh, Efficiency 1: 200µ, Outer Diameter: 83.0 mm, Inner Diameter: 46.0 mm, Length: 232.0 mm, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 200µ, Media Type: Wire Mesh, Flow Direction: IN-OUT"
+      ],
+      "unitWeight": "0.33 kg",
+      "shippingVolume": "0.0027 m³"
+    },
+    {
+      "title": "WT1100",
+      "sku": "wt1100-3",
+      "option1Value": "MicroFit® MFHSP80736 UltraGen III Filter | Replaces the Filtrec WT1100",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/wt1100-mfhsp80736-f668a7ea77df.png",
+      "vendor": "MicroFit",
+      "price": 0,
+      "partNumber": "MFHSP80736",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "MicroFit® MFHSP80736 UltraGen III Filter. Engineered and manufactured in Great Britain the MFHLP30166 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MicroFit® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MicroFit® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Special Filter, Media: Wire Mesh, Efficiency 1: 200µ, Outer Diameter: 83.0 mm, Inner Diameter: 46.0 mm, Length: 232.0 mm, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 200µ, Media Type: Wire Mesh, Flow Direction: IN-OUT"
+      ],
+      "unitWeight": "0.76 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

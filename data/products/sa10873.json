@@ -1,0 +1,49 @@
+{
+  "handle": "sa10873",
+  "title": "SA 10873",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009271_8ad256d2c9bf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009272_f37d1136e698.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10873 Air Filter",
+      "sku": "sa-10873-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009271_8ad256d2c9bf.jpg",
+      "vendor": "",
+      "price": 15100,
+      "partNumber": "SA 10873",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10873 Air Filter. Easy to install and replace, the SA 10873 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "2.34 kg",
+      "shippingVolume": "0.0281 m³"
+    },
+    {
+      "title": "Fleetguard AF923M Air Filter, Primary | Replaces the HiFi Filter SA 10873",
+      "sku": "sa-10873-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009272_f37d1136e698.jpg",
+      "vendor": "",
+      "price": 9700,
+      "partNumber": "AF923M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF923M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.34 kg",
+      "shippingVolume": "0.0273 m³"
+    }
+  ]
+}

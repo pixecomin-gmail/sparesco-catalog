@@ -1,0 +1,32 @@
+{
+  "handle": "sajc03001",
+  "title": "SAJC 03001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005558_4c63c0e9a0f8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAJC 03001 Gasket",
+      "sku": "sajc-03001-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005558_4c63c0e9a0f8.jpg",
+      "vendor": "",
+      "price": 200,
+      "partNumber": "SAJC 03001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAJC 03001 Gasket. Easy to install and replace, the SAJC 03001 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: GASKET"
+      ],
+      "unitWeight": "0.1 kg",
+      "shippingVolume": "0.0025 m³"
+    }
+  ]
+}

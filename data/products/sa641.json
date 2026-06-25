@@ -1,0 +1,32 @@
+{
+  "handle": "sa641",
+  "title": "SA 641",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005586_0aac2de56507.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 641 Air Filter",
+      "sku": "sa-641-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005586_0aac2de56507.jpg",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 641",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 641 Air Filter. Easy to install and replace, the SA 641 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0043 m³"
+    }
+  ]
+}

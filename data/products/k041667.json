@@ -1,0 +1,38 @@
+{
+  "handle": "k041667",
+  "title": "K041667",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000663_ae143d9ccf03.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson K041667 Hydraulic Assembly",
+      "sku": "k041667-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000663_ae143d9ccf03.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "K041667",
+      "hsCode": "8421.29.00",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson K041667 Hydraulic Assembly is designed to provide reliable performance in hydraulic assembly applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Hydraulic Assembly",
+        "Efficiency 1: 11µ @ β200",
+        "Length: 575.0 mm",
+        "Bypass Pressure: 2.5 BAR bar",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 11µ @ β200",
+        "Bypass Pressure Bypass pressure relieve build-up of pressure within the system and allows medium to bypass the element when pressure increases and reaches a sufficient level.: 2.5 BAR"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

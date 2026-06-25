@@ -1,0 +1,58 @@
+{
+  "handle": "sao57320",
+  "title": "SAO57320",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000766_ebf5c130dbaa.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000767_09a9e6b6a811.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001873_d07a33f6e951.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001874_e553bf52bf6c.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 38 006 x Compressed Air-Oil Separation | Replaces the SF Filter SAO57320",
+      "sku": "sao57320-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000766_ebf5c130dbaa.jpg",
+      "vendor": "",
+      "price": 28300,
+      "partNumber": "LE 38 006 x",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation",
+        "Dimension A: 355.0 mm",
+        "Dimension D: 300.0 mm",
+        "Dimension H: 400.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OS 5002 Air/Oil Separator | Replaces the SF Filter SAO 57320",
+      "sku": "sao-57320-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001874_e553bf52bf6c.jpg",
+      "vendor": "",
+      "price": 50500,
+      "partNumber": "OS 5002",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5002 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 57320. Easy to install and replace, the OS 5002 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 355.0 mm",
+        "Dimension 2 (D2): 298.0 mm",
+        "Dimension 3 (D3): 219.0 mm",
+        "Height 1 (H1): 498.0 mm"
+      ],
+      "unitWeight": "10.66 kg",
+      "shippingVolume": "0.0802 m³"
+    }
+  ]
+}

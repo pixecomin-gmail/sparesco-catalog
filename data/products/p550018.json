@@ -1,0 +1,59 @@
+{
+  "handle": "p550018",
+  "title": "P550018",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001014_a659a6ea1097.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001015_cfeaefce52e1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard LF3431 Lube Filter, Cartridge | Replaces the Donaldson P550018",
+      "sku": "p550018-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001014_a659a6ea1097.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "LF3431",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Fleetguard® LF3431 cartridge oil filter is enviromentally friendly and features technology advances to achieve the high flow rates required by today’s modern engine designs.",
+      "specifications": [
+        "Style: Lube Cartridge",
+        "Media: Cellulose",
+        "Outer Diameter: 106.0 mm",
+        "Inner Diameter: 50.0 mm",
+        "Length: 185.0 mm",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "0.39 kg",
+      "shippingVolume": "0.0025 m³"
+    },
+    {
+      "title": "Donaldson P550018 Lube Cartridge",
+      "sku": "p550018-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001015_cfeaefce52e1.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P550018",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P550018 Lube Cartridge is designed to provide reliable performance in lube cartridge applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Lube Cartridge",
+        "Media: Cellulose",
+        "Outer Diameter: 106.0 mm",
+        "Inner Diameter: 50.0 mm",
+        "Length: 185.0 mm",
+        "Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

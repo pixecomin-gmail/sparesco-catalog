@@ -1,0 +1,53 @@
+{
+  "handle": "sa19965",
+  "title": "SA 19965",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007611_4ba63b5c0846.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007612_d1f6eda54980.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 19965 Air Filter",
+      "sku": "sa-19965-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007611_4ba63b5c0846.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 19965",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 19965 Air Filter. Easy to install and replace, the SA 19965 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0009 m³"
+    },
+    {
+      "title": "Mann Filter C 718 Air Filter | Replaces the HiFi Filter SA 19965",
+      "sku": "sa-19965-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007612_d1f6eda54980.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "C 718",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 65.0 mm",
+        "Dimension B: 38.0 mm",
+        "Dimension C: 10.0 mm",
+        "Dimension H: 171.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

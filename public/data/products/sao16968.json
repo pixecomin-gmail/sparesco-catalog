@@ -1,0 +1,38 @@
+{
+  "handle": "sao16968",
+  "title": "SAO 16968",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002734_fd9c9d184ff9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 16968 Engine Breather Filter",
+      "sku": "sao-16968-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002734_fd9c9d184ff9.jpg",
+      "vendor": "",
+      "price": 17000,
+      "partNumber": "SAO 16968",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 16968 Engine Breather Filter. Easy to install and replace, the SAO 16968 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER",
+        "Dimension 1 (D1): 119.0 mm",
+        "Dimension 2 (D2): 80.0 mm",
+        "Dimension 3 (D3): 51.0 mm",
+        "Height 1 (H1): 69.0 mm",
+        "Height 2 (H2): 53.0 mm",
+        "Height 3 (H3): 51.0 mm"
+      ],
+      "unitWeight": "0.26 kg",
+      "shippingVolume": "0.0011 m³"
+    }
+  ]
+}

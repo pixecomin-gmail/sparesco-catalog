@@ -1,0 +1,32 @@
+{
+  "handle": "sa837",
+  "title": "SA 837",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005378_8ca0b90febdb.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 837 Air Filter",
+      "sku": "sa-837-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005378_8ca0b90febdb.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "SA 837",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 837 Air Filter. Easy to install and replace, the SA 837 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0033 m³"
+    }
+  ]
+}

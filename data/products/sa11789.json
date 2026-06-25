@@ -1,0 +1,94 @@
+{
+  "handle": "sa11789",
+  "title": "SA 11789",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007957_0c90f5f4b5e6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007958_6f3c1657b223.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007959_b9c6e0f4fcb6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007960_e1569caf5598.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11789 Air Filter",
+      "sku": "sa-11789-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007957_0c90f5f4b5e6.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "SA 11789",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11789 Air Filter. Easy to install and replace, the SA 11789 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 92.0 mm",
+        "Dimension 2 (D2): 74.0 mm",
+        "Dimension 3 (D3): 62.0 mm",
+        "Height 1 (H1): 288.0 mm",
+        "Height 2 (H2): 279.0 mm",
+        "Height 3 (H3): 266.0 mm"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": "0.0038 m³"
+    },
+    {
+      "title": "Donaldson P126984 Air Filter, Safety | Replaces the HiFi Filter SA 11789",
+      "sku": "sa-11789-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007958_6f3c1657b223.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "P126984",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P126984 Air Filter, Safety acts as a crucial secondary layer of defense in your air filtration system, capturing fine dust particles that bypass the primary filter. This extra layer of protection helps prevent engine wear and supports consistent performance, especially in dusty or harsh environments. Compact and durable, this safety air filter operates without restricting airflow, complementing the primary filter for comprehensive engine protection. Itâ€™s essential for maintaining clean air intake and maximizing engine lifespan.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": "0.0039 m³"
+    },
+    {
+      "title": "Mann Filter CF 840 Secondary Element | Replaces the HiFi Filter SA 11789",
+      "sku": "sa-11789-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007959_b9c6e0f4fcb6.jpg",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "CF 840",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Brazil",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element",
+        "Dimension A: 93.0 mm",
+        "Dimension B: 63.0 mm",
+        "Dimension C: 17.0 mm",
+        "Dimension D: 74.0 mm",
+        "Dimension H: 283.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF1839 Air Filter, Secondary | Replaces the HiFi Filter SA 11789",
+      "sku": "sa-11789-4",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007960_e1569caf5598.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "AF1839",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Turkey",
+      "description": "​Fleetguard® AF1839 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0032 m³"
+    }
+  ]
+}

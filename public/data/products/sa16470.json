@@ -1,0 +1,36 @@
+{
+  "handle": "sa16470",
+  "title": "SA 16470",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007518_f68fd396116a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16470 Air Filter",
+      "sku": "sa-16470-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/007518_f68fd396116a.jpg",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 16470",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16470 Air Filter. Easy to install and replace, the SA 16470 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 162.0 mm",
+        "Dimension 2 (D2): 92.0 mm",
+        "Height 1 (H1): 352.0 mm",
+        "Height 2 (H2): 344.0 mm"
+      ],
+      "unitWeight": "1.2 kg",
+      "shippingVolume": "0.0106 m³"
+    }
+  ]
+}

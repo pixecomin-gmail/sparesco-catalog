@@ -1,0 +1,51 @@
+{
+  "handle": "a405g10",
+  "title": "A405G10",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a405g10-a405g10-8d8bdb21d025.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a405g10-wh-10-006-6f26f926a19e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "A405G10",
+      "sku": "a405g10-1",
+      "option1Value": "Filtrec A405G10 Spin-On Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a405g10-a405g10-8d8bdb21d025.jpg",
+      "vendor": "Filtrec",
+      "price": 5400,
+      "partNumber": "A405G10",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec A405G10. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the A405G10 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Spin-On Filter, Media: Glass Fiber, Efficiency 1: 10µ @ β200, Efficiency 2: 12µ @ β1000, Outer Diameter: 95.0 mm, Length: 101.0 mm, Thread: 1 3/8\"-12 UNF 2B, Δ Collapse Pressure: 34 bar, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200, Media Type: Glass Fiber, Collapse Pressure: 34.5 BAR, Seal: Nitrile"
+      ],
+      "unitWeight": "0.76 kg",
+      "shippingVolume": "0.0009 m³"
+    },
+    {
+      "title": "A405G10",
+      "sku": "a405g10-2",
+      "option1Value": "Mann Filter WH 10 006 Hydraulics | Replaces the Filtrec A405G10",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a405g10-wh-10-006-6f26f926a19e.jpg",
+      "vendor": "Mann Filter",
+      "price": 8100,
+      "partNumber": "WH 10 006",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER spin-on hydraulic filters offer maximum filtration performance and thus ensure trouble-free operation of the hydraulic system. Thanks to the filter medium, which is specially adapted to the intended use, the finest impurities are separated from the hydraulic fluid.",
+      "specifications": [
+        "Style: Hydraulics, Dimension A: 97.0 mm, Dimension G: 1 3/8-12 UNF, Dimension H: 100.0 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 10µ @ β200, Efficiency 2: 12µ @ β1000, Outer Diameter: 95.0 mm, Length: 101.0 mm, Media Type: Glass Fiber, Thread: 1 3/8\"-12 UNF 2B, Collapse Pressure: 34.5 BAR, Seal: Nitrile, Temperature Range: -30 - +100°C"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

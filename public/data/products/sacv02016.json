@@ -1,0 +1,38 @@
+{
+  "handle": "sacv02016",
+  "title": "SACV 02016",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004213_35b075c4481b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SACV 02016 Cover",
+      "sku": "sacv-02016-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004213_35b075c4481b.jpg",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "SACV 02016",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SACV 02016 Cover. Easy to install and replace, the SACV 02016 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: COVER",
+        "Dimension 1 (D1): 254.0 mm",
+        "Dimension 2 (D2): 242.0 mm",
+        "Dimension 3 (D3): 220.0 mm",
+        "Height 1 (H1): 156.0 mm",
+        "Height 2 (H2): 148.0 mm",
+        "Height 3 (H3): 142.0 mm"
+      ],
+      "unitWeight": "0.5 kg",
+      "shippingVolume": "0.0105 m³"
+    }
+  ]
+}

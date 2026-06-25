@@ -1,0 +1,38 @@
+{
+  "handle": "sa6063",
+  "title": "SA 6063",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008941_282ac70eb2be.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6063 Air Filter",
+      "sku": "sa-6063-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/008941_282ac70eb2be.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "SA 6063",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6063 Air Filter. Easy to install and replace, the SA 6063 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 176.0 mm",
+        "Dimension 2 (D2): 146.0 mm",
+        "Dimension 3 (D3): 80.0 mm",
+        "Height 1 (H1): 200.0 mm",
+        "Height 2 (H2): 144.0 mm",
+        "Height 3 (H3): 11.0 mm"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0068 m³"
+    }
+  ]
+}

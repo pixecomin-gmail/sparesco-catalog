@@ -1,0 +1,36 @@
+{
+  "handle": "sa12932",
+  "title": "SA 12932",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004823_5b458f12ff1e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12932 Air Filter",
+      "sku": "sa-12932-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/004823_5b458f12ff1e.jpg",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "SA 12932",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12932 Air Filter. Easy to install and replace, the SA 12932 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 87.0 mm",
+        "Dimension 2 (D2): 63.0 mm",
+        "Dimension 3 (D3): 63.0 mm",
+        "Height 1 (H1): 61.0 mm"
+      ],
+      "unitWeight": "0.06 kg",
+      "shippingVolume": "0.0007 m³"
+    }
+  ]
+}

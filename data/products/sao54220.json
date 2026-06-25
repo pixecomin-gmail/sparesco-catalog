@@ -1,0 +1,37 @@
+{
+  "handle": "sao54220",
+  "title": "SAO54220",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001172_b7ebfdbddecc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002273_6c28ffce9a5b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OE 3012 Air/Oil Separator | Replaces the SF Filter SAO 54220",
+      "sku": "sao-54220-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002273_6c28ffce9a5b.jpg",
+      "vendor": "",
+      "price": 13200,
+      "partNumber": "OE 3012",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OE 3012 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 54220. Easy to install and replace, the OE 3012 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 170.0 mm",
+        "Dimension 2 (D2): 155.0 mm",
+        "Dimension 3 (D3): 134.0 mm",
+        "Height 1 (H1): 175.0 mm"
+      ],
+      "unitWeight": "1.62 kg",
+      "shippingVolume": "0.0085 m³"
+    }
+  ]
+}

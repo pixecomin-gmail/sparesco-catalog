@@ -1,0 +1,32 @@
+{
+  "handle": "sa18154",
+  "title": "SA 18154",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003706_442f4bca786b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18154 Air Filter",
+      "sku": "sa-18154-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003706_442f4bca786b.jpg",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 18154",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18154 Air Filter. Easy to install and replace, the SA 18154 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.0015 m³"
+    }
+  ]
+}

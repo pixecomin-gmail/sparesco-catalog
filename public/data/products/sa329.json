@@ -1,0 +1,37 @@
+{
+  "handle": "sa329",
+  "title": "SA 329",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009032_06a0babf903d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 329 Air Filter",
+      "sku": "sa-329-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009032_06a0babf903d.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 329",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 329 Air Filter. Easy to install and replace, the SA 329 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 303.0 mm",
+        "Dimension 2 (D2): 224.0 mm",
+        "Dimension 3 (D3): 224.0 mm",
+        "Height 1 (H1): 86.0 mm",
+        "Height 2 (H2): 80.0 mm"
+      ],
+      "unitWeight": "0.43 kg",
+      "shippingVolume": "0.0072 m³"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "handle": "sa160177",
+  "title": "SA 160177",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003103_f8f6c7564914.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003104_46f527b3b04a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 160177 Air Filter",
+      "sku": "sa-160177-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003103_f8f6c7564914.jpg",
+      "vendor": "",
+      "price": 34200,
+      "partNumber": "SA 160177",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 160177 Air Filter. Easy to install and replace, the SA 160177 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.5 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P959783 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 160177",
+      "sku": "sa-160177-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003104_46f527b3b04a.jpg",
+      "vendor": "",
+      "price": 20400,
+      "partNumber": "P959783",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P959783 Air Filter, Primary Obround Powercore is designed to provide reliable performance in air filter, primary obround powercore applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.28 kg",
+      "shippingVolume": "0.0299 m³"
+    }
+  ]
+}

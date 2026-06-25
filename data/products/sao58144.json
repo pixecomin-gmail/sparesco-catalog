@@ -1,0 +1,33 @@
+{
+  "handle": "sao58144",
+  "title": "SAO58144",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000664_c551dbece1cb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001771_da7d8103a3b5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1178 Air/Oil Separator | Replaces the SF Filter SAO 58144",
+      "sku": "sao-58144-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001771_da7d8103a3b5.jpg",
+      "vendor": "",
+      "price": 13500,
+      "partNumber": "OA 1178",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1178 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58144. Easy to install and replace, the OA 1178 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.54 kg",
+      "shippingVolume": "0.004 m³"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "handle": "sa120009",
+  "title": "SA 120009",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002946_bd6c40c89777.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 120009 Air Filter",
+      "sku": "sa-120009-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002946_bd6c40c89777.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "SA 120009",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 120009 Air Filter. Easy to install and replace, the SA 120009 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 77.0 mm",
+        "Dimension 2 (D2): 76.0 mm",
+        "Dimension 3 (D3): 37.0 mm",
+        "Height 1 (H1): 122.0 mm",
+        "Height 2 (H2): 103.0 mm",
+        "Height 3 (H3): 100.0 mm"
+      ],
+      "unitWeight": "0.24 kg",
+      "shippingVolume": "0.0026 m³"
+    }
+  ]
+}

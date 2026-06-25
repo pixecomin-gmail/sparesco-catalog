@@ -1,0 +1,53 @@
+{
+  "handle": "sa16099",
+  "title": "SA 16099",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009330_a43c9d401da9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009331_a2d3a0703300.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16099 Air Filter",
+      "sku": "sa-16099-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009330_a43c9d401da9.jpg",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "SA 16099",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16099 Air Filter. Easy to install and replace, the SA 16099 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 168.0 mm",
+        "Dimension 2 (D2): 56.0 mm",
+        "Height 1 (H1): 292.0 mm",
+        "Height 2 (H2): 258.0 mm"
+      ],
+      "unitWeight": "1.2 kg",
+      "shippingVolume": "0.0106 m³"
+    },
+    {
+      "title": "Fleetguard AH1189 Air Intake Systems | Replaces the HiFi Filter SA 16099",
+      "sku": "sa-16099-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/009331_a2d3a0703300.jpg",
+      "vendor": "",
+      "price": 5900,
+      "partNumber": "AH1189",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "With over 1,500 different air filtration products, from clamps to air housings to advanced air filters, Fleetguard® provides peace of mind for your air filtration needs. Our Fleetguard AH1189 air housing is part of the heavy-duty air filtration line, covering your sophisticated air intake system requirements.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.41 kg",
+      "shippingVolume": "0.0092 m³"
+    }
+  ]
+}

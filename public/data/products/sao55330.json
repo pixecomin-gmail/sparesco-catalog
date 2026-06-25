@@ -1,0 +1,37 @@
+{
+  "handle": "sao55330",
+  "title": "SAO55330",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001100_03d031713c19.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002203_db88f2c5c4ab.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1000 Air/Oil Separator | Replaces the SF Filter SAO 55330",
+      "sku": "sao-55330-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002203_db88f2c5c4ab.jpg",
+      "vendor": "",
+      "price": 5800,
+      "partNumber": "OA 1000",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1000 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55330. Easy to install and replace, the OA 1000 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR",
+        "Dimension 1 (D1): 79.5 mm",
+        "Dimension 2 (D2): 48.0 mm",
+        "Dimension 3 (D3): 48.0 mm",
+        "Height 1 (H1): 158.5 mm"
+      ],
+      "unitWeight": "0.54 kg",
+      "shippingVolume": "0.0018 m³"
+    }
+  ]
+}

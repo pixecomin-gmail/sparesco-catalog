@@ -1,0 +1,37 @@
+{
+  "handle": "sa12921",
+  "title": "SA 12921",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005534_8763410e32d4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12921 Air Filter",
+      "sku": "sa-12921-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005534_8763410e32d4.jpg",
+      "vendor": "",
+      "price": 1000,
+      "partNumber": "SA 12921",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12921 Air Filter. Easy to install and replace, the SA 12921 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 142.0 mm",
+        "Dimension 2 (D2): 136.0 mm",
+        "Dimension 3 (D3): 65.0 mm",
+        "Height 1 (H1): 41.0 mm",
+        "Height 2 (H2): 30.0 mm"
+      ],
+      "unitWeight": "0.08 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

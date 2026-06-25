@@ -1,0 +1,65 @@
+{
+  "handle": "p166564",
+  "title": "P166564",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001056_224bbeb2c7ba.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001057_2ba48183e272.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard LF3488 Lube Filter, Spin-On | Replaces the Donaldson P166564",
+      "sku": "p166564-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001056_224bbeb2c7ba.jpg",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "LF3488",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® LF3488 premium spin-on lube filter meets or exceeds OE performance requirements and the new challenges of modern engine technology.",
+      "specifications": [
+        "Style: Lube Spin-On Full Flow",
+        "Media: Synthetic",
+        "Efficiency 1: 22µ @ β100",
+        "Outer Diameter: 94.7 mm",
+        "Length: 136.4 mm",
+        "Thread: 13/16-16 UN",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 22µ @ β100",
+        "Media Type: Synthetic"
+      ],
+      "unitWeight": "0.62 kg",
+      "shippingVolume": "0.0019 m³"
+    },
+    {
+      "title": "Donaldson P166564 Lube Spin-On Full Flow",
+      "sku": "p166564-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/001057_2ba48183e272.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P166564",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P166564 Lube Spin-On Full Flow is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Lube Spin-On Full Flow",
+        "Media: Synthetic",
+        "Efficiency 1: 22µ @ β100",
+        "Outer Diameter: 94.7 mm",
+        "Length: 136.4 mm",
+        "Thread: 13/16-16 UN",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 22µ @ β100",
+        "Media Type: Synthetic"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

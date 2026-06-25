@@ -1,0 +1,37 @@
+{
+  "handle": "sample10946",
+  "title": "SAMPLE10946",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000410_d7f0ca3be2f8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SH 76604 Hydraulic Filter | Replaces the Sofima SAMPLE10946",
+      "sku": "sample10946-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000410_d7f0ca3be2f8.jpg",
+      "vendor": "",
+      "price": 12600,
+      "partNumber": "SH 76604",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SH 76604 Hydraulic Filter is HiFi's replacement to the Sofima SAMPLE10946. Easy to install and replace, the SH 76604 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: HYDRAULIC FILTER",
+        "Dimension 1 (D1): 85.0 mm",
+        "Dimension 2 (D2): 45.0 mm",
+        "Dimension 3 (D3): 45.0 mm",
+        "Height 1 (H1): 159.0 mm",
+        "Height 2 (H2): 156.0 mm"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0018 m³"
+    }
+  ]
+}

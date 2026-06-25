@@ -1,0 +1,32 @@
+{
+  "handle": "sa7168",
+  "title": "SA 7168",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005874_82ee95f3d03b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7168 Air Filter",
+      "sku": "sa-7168-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005874_82ee95f3d03b.jpg",
+      "vendor": "",
+      "price": 30500,
+      "partNumber": "SA 7168",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7168 Air Filter. Easy to install and replace, the SA 7168 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "11.2 kg",
+      "shippingVolume": "0.2118 m³"
+    }
+  ]
+}

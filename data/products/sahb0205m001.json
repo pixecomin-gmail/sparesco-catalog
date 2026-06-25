@@ -1,0 +1,49 @@
+{
+  "handle": "sahb0205m001",
+  "title": "SAHB 0205M001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002521_0b4ad3a665ed.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002522_2e34d8107e3f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter 3907638970 Bracket | Replaces the HiFi Filter SAHB 0205M001",
+      "sku": "sahb-0205m001-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002521_0b4ad3a665ed.jpg",
+      "vendor": "",
+      "price": 23100,
+      "partNumber": "3907638970",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "Replacement and maintenance parts for the proven filter housings and systems from MANN+HUMMEL.",
+      "specifications": [
+        "Style: MANN+HUMMEL Spare Part"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter SAHB 0205M001 Clamp",
+      "sku": "sahb-0205m001-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/002522_2e34d8107e3f.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "SAHB 0205M001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAHB 0205M001 Clamp. Easy to install and replace, the SAHB 0205M001 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: CLAMP"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

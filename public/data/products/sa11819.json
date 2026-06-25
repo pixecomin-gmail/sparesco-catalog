@@ -1,0 +1,70 @@
+{
+  "handle": "sa11819",
+  "title": "SA 11819",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005052_3f7e851d775f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005053_3f84d73cf6c8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005054_140e9035c4a7.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11819 Air Filter",
+      "sku": "sa-11819-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005052_3f7e851d775f.jpg",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "SA 11819",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11819 Air Filter. Easy to install and replace, the SA 11819 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER",
+        "Dimension 1 (D1): 380.0 mm",
+        "Dimension 2 (D2): 380.0 mm",
+        "Height 1 (H1): 142.0 mm",
+        "Height 2 (H2): 132.0 mm"
+      ],
+      "unitWeight": "4.18 kg",
+      "shippingVolume": "0.0262 m³"
+    },
+    {
+      "title": "Donaldson P150135 Air Filter, Panel Engine | Replaces the HiFi Filter SA 11819",
+      "sku": "sa-11819-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005053_3f84d73cf6c8.jpg",
+      "vendor": "",
+      "price": 11200,
+      "partNumber": "P150135",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P150135 Air Filter, Panel Engine is designed to provide reliable performance in air filter, panel engine applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.12 kg",
+      "shippingVolume": "0.0304 m³"
+    },
+    {
+      "title": "Fleetguard AF1869 Air Filter Filter - Panel | Replaces the HiFi Filter SA 11819",
+      "sku": "sa-11819-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/005054_140e9035c4a7.jpg",
+      "vendor": "",
+      "price": 12200,
+      "partNumber": "AF1869",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "​Fleetguard® AF1869 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.51 kg",
+      "shippingVolume": "0.0254 m³"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "handle": "sacl01001",
+  "title": "SACL 01001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003990_c323562dac3a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SACL 01001 Clip Nut",
+      "sku": "sacl-01001-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/003990_c323562dac3a.jpg",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "SACL 01001",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SACL 01001 Clip Nut. Easy to install and replace, the SACL 01001 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: CLIP NUT"
+      ],
+      "unitWeight": "0.03 kg",
+      "shippingVolume": "0.0001 m³"
+    }
+  ]
+}

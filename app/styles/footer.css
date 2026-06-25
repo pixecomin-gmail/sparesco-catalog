@@ -1,0 +1,108 @@
+/* FOOTER */
+
+.site-footer {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 100px;
+  padding: 34px 24px;
+  align-items: start;
+}
+
+.footer-brand {
+  max-width: 320px;
+}
+
+.footer-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: rgba(255,255,255,0.78);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 240px));
+  justify-content: start;
+  gap: 70px;
+}
+
+.footer-links h4 {
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 14px;
+  color: rgba(255,255,255,0.75);
+}
+
+.footer-bottom-new {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255,255,255,0.65);
+  font-size: 14px;
+}
+
+.footer-accordion {
+  display: none;
+}
+
+
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 18px;
+  }
+  .footer-links-desktop { display: none; }
+  .footer-accordion {
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.14);
+  }
+  .footer-accordion-item { border-bottom: 1px solid rgba(255,255,255,0.14); }
+  .footer-accordion-item button {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .footer-accordion-links { padding-bottom: 14px; }
+  .footer-accordion-links a {
+    display: block;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 10px;
+  }
+  .footer-bottom-new {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+}

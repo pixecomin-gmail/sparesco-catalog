@@ -1,0 +1,80 @@
+{
+  "handle": "dba3746",
+  "title": "DBA3746",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000008_9a15875e1392.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000009_336a9ae51b7f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000010_d00b53620e34.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson DBA3746 Actros",
+      "sku": "dba3746-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000008_9a15875e1392.jpg",
+      "vendor": "",
+      "price": 16100,
+      "partNumber": "DBA3746",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson DBA3746 Actros is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Actros",
+        "Efficiency 1: 99.95 --%",
+        "Length: 490.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.95 --%"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Mann Filter C 50 004/1 Air Filter | Replaces the Donaldson DBA3746",
+      "sku": "dba3746-2",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000009_336a9ae51b7f.jpg",
+      "vendor": "",
+      "price": 18200,
+      "partNumber": "C 50 004/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter",
+        "Dimension A: 491.0 mm",
+        "Dimension D: 209.0 mm",
+        "Dimension H: 295.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.95 --%",
+        "Length: 490.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4250 Air Filter | Replaces the Donaldson DBA3746",
+      "sku": "dba3746-3",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/000010_d00b53620e34.jpg",
+      "vendor": "",
+      "price": 18400,
+      "partNumber": "AF4250",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4250 air filter meets or exceeds the customers’ technical specifications for air filtration systems including factors such as: media fiber size, shape, pore size, thickness, weave and mechanical strength.",
+      "specifications": [
+        "Style: Actros",
+        "Efficiency 1: 99.95 --%",
+        "Length: 490.0 mm",
+        "Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency",
+        "calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 99.95 --%"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

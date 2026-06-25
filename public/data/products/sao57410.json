@@ -1,0 +1,33 @@
+{
+  "handle": "sao57410",
+  "title": "SAO57410",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/000756_705de4b132f2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001863_f7ae6c808dcd.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 775 Air/Oil Separator | Replaces the SF Filter SAO 57410",
+      "sku": "sao-57410-1",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/001863_f7ae6c808dcd.jpg",
+      "vendor": "",
+      "price": 19600,
+      "partNumber": "OS 775",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 775 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 57410. Easy to install and replace, the OS 775 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "3.5 kg",
+      "shippingVolume": "0.0248 m³"
+    }
+  ]
+}
