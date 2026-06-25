@@ -1,15 +1,28 @@
 export const runtime = "edge";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import collectionsData from "@/data/collections.json";
-import { getAllProducts } from "@/lib/products";
 import CollectionProductCard from "@/components/CollectionProductCard";
 
 type CollectionItem = {
   title: string;
   handle: string;
   count: number;
+};
+
+type Product = {
+  handle: string;
+  title: string;
+  image: string;
+  collection: string;
+  collectionHandle: string;
+  category: string;
+  vendor: string;
+  partNumber: string;
+  variantCount: number;
+  price: number;
 };
 
 const PAGE_SIZE = 25;
@@ -24,8 +37,22 @@ function cleanMetaText(text: string) {
   return text.replace(/\s+/g, " ").trim();
 }
 
-function uniqueValues(values: string[], limit = 6) {
-  return Array.from(new Set(values.filter(Boolean))).slice(0, limit);
+function uniqueValues(values: Array<string | undefined>, limit = 6) {
+  return Array.from(new Set(values.filter(Boolean) as string[])).slice(0, limit);
+}
+
+async function getProductsIndex(): Promise<Product[]> {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+  const res = await fetch(`${baseUrl}/data/products-index.json`, {
+    cache: "force-cache",
+  });
+
+  if (!res.ok) {
+    return [];
+  }
+
+  return res.json();
 }
 
 function getCollectionSeoDescription({
@@ -90,7 +117,7 @@ export async function generateMetadata({
     };
   }
 
-  const products = getAllProducts();
+  const products = await getProductsIndex();
   const collectionProducts = products.filter(
     (product) => product.collectionHandle === handle
   );
@@ -152,7 +179,7 @@ export default async function CollectionDetailPage({
     notFound();
   }
 
-  const products = getAllProducts();
+  const products = await getProductsIndex();
   const collectionProducts = products.filter(
     (product) => product.collectionHandle === handle
   );
@@ -173,7 +200,6 @@ export default async function CollectionDetailPage({
     <main>
       <section className="section parts-section">
         <div className="container">
-
           <h1 className="page-title">{collection.title}</h1>
 
           <p className="page-intro">
