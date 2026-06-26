@@ -24,9 +24,11 @@ function cleanMetaText(text: string) {
 
 async function getProductJson(handle: string): Promise<Product | null> {
   try {
-    const baseUrl = process.env.CF_PAGES_URL
-      ? `https://${process.env.CF_PAGES_URL}`
-      : "http://localhost:3000";
+    const baseUrl =
+      process.env.NEXT_PUBLIC_SITE_URL ||
+      (process.env.CF_PAGES_URL
+        ? `https://${process.env.CF_PAGES_URL}`
+        : "http://localhost:3000");
 
     const res = await fetch(`${baseUrl}/data/products/${handle}.json`);
 
