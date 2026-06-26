@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import ProductPageClient from "@/components/ProductPageClient";
 
 type ProductPageProps = {
