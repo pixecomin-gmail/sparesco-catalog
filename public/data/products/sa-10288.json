@@ -1,0 +1,69 @@
+{
+  "handle": "sa-10288",
+  "title": "SA 10288",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10288-sa-10288-aa46ad49d5ac.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10288-p158662-579c5c6ab9b8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10288-af338-4d9514edf328.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10288 Air Filter",
+      "sku": "sa-10288-1",
+      "option1Value": "HiFi Filter SA 10288 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10288-sa-10288-aa46ad49d5ac.jpg",
+      "vendor": "",
+      "price": 7400,
+      "partNumber": "SA 10288",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10288 Air Filter. Easy to install and replace, the SA 10288 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 231.0 mm, Dimension 2 (D2): 194.0 mm, Dimension 3 (D3): 160.0 mm, Thread 1 (D7): 3/8\"-16UNF, Height 1 (H1): 358.0 mm, Height 2 (H2): 329.0 mm, Height 3 (H3): 15.0 mm"
+      ],
+      "unitWeight": "1.98 kg",
+      "shippingVolume": "0.0248 m³"
+    },
+    {
+      "title": "Donaldson P158662 Air Filter, Safety | Replaces the HiFi Filter SA 10288",
+      "sku": "sa-10288-2",
+      "option1Value": "Donaldson P158662 Air Filter, Safety | Replaces the HiFi Filter SA 10288",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10288-p158662-579c5c6ab9b8.jpg",
+      "vendor": "",
+      "price": 8500,
+      "partNumber": "P158662",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P158662 Air Filter, Safety acts as a crucial secondary layer of defense in your air filtration system, capturing fine dust particles that bypass the primary filter. This extra layer of protection helps prevent engine wear and supports consistent performance, especially in dusty or harsh environments. Compact and durable, this safety air filter operates without restricting airflow, complementing the primary filter for comprehensive engine protection. Itâ€™s essential for maintaining clean air intake and maximizing engine lifespan.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.11 kg",
+      "shippingVolume": "0.0256 m³"
+    },
+    {
+      "title": "Fleetguard AF338 Air Filter, Secondary | Replaces the HiFi Filter SA 10288",
+      "sku": "sa-10288-3",
+      "option1Value": "Fleetguard AF338 Air Filter, Secondary | Replaces the HiFi Filter SA 10288",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10288-af338-4d9514edf328.jpg",
+      "vendor": "",
+      "price": 6300,
+      "partNumber": "AF338",
+      "hsCode": "8421.39.35",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF338 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.08 kg",
+      "shippingVolume": "0.0212 m³"
+    }
+  ]
+}

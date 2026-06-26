@@ -1,0 +1,33 @@
+{
+  "handle": "sa-7081",
+  "title": "SA 7081",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7081-sa-7081-851d9edc50a4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7081 Air Filter",
+      "sku": "sa-7081-1",
+      "option1Value": "HiFi Filter SA 7081 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7081-sa-7081-851d9edc50a4.jpg",
+      "vendor": "",
+      "price": 2700,
+      "partNumber": "SA 7081",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7081 Air Filter. Easy to install and replace, the SA 7081 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 166.0 mm, Dimension 2 (D2): 98.0 mm, Dimension 3 (D3): 98.0 mm, Height 1 (H1): 305.0 mm, Height 2 (H2): 288.0 mm"
+      ],
+      "unitWeight": "1.1 kg",
+      "shippingVolume": "0.018 m³"
+    }
+  ]
+}

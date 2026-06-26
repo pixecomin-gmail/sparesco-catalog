@@ -1,0 +1,33 @@
+{
+  "handle": "sao-56060",
+  "title": "SAO 56060",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56060-oa-1089-6143368c9950.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1089 Air/Oil Separator | Replaces the SF Filter SAO 56060",
+      "sku": "sao-56060-1",
+      "option1Value": "HiFi Filter OA 1089 Air/Oil Separator | Replaces the SF Filter SAO 56060",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56060-oa-1089-6143368c9950.jpg",
+      "vendor": "",
+      "price": 5200,
+      "partNumber": "OA 1089",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1089 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 56060. Easy to install and replace, the OA 1089 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.0012 m³"
+    }
+  ]
+}

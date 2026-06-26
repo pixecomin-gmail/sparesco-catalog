@@ -1,0 +1,51 @@
+{
+  "handle": "sao-56670",
+  "title": "SAO 56670",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56670-le-31-003-x-327bb6a652d5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56670-os-1402-e536a2ad62d6.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 31 003 x Compressed Air-Oil Separation | Replaces the SF Filter SAO 56670",
+      "sku": "sao-56670-1",
+      "option1Value": "Mann Filter LE 31 003 x Compressed Air-Oil Separation | Replaces the SF Filter SAO 56670",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56670-le-31-003-x-327bb6a652d5.jpg",
+      "vendor": "",
+      "price": 18200,
+      "partNumber": "LE 31 003 x",
+      "hsCode": "7019.90.00",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation, Dimension A: 274.0 mm, Dimension C: 220.0 mm, Dimension H: 435.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OS 1402 Air/Oil Separator | Replaces the SF Filter SAO 56670",
+      "sku": "sao-56670-2",
+      "option1Value": "HiFi Filter OS 1402 Air/Oil Separator | Replaces the SF Filter SAO 56670",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56670-os-1402-e536a2ad62d6.jpg",
+      "vendor": "",
+      "price": 24300,
+      "partNumber": "OS 1402",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 1402 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 56670. Easy to install and replace, the OS 1402 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 273.0 mm, Dimension 2 (D2): 220.0 mm, Dimension 3 (D3): 165.0 mm, Height 1 (H1): 440.0 mm, Height 2 (H2): 430.0 mm"
+      ],
+      "unitWeight": "6.8 kg",
+      "shippingVolume": "0.0442 m³"
+    }
+  ]
+}

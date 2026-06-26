@@ -1,0 +1,33 @@
+{
+  "handle": "sao-55230",
+  "title": "SAO 55230",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55230-oa-1031-ec5b9d39594e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1031 Air/Oil Separator | Replaces the SF Filter SAO 55230",
+      "sku": "sao-55230-1",
+      "option1Value": "HiFi Filter OA 1031 Air/Oil Separator | Replaces the SF Filter SAO 55230",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55230-oa-1031-ec5b9d39594e.jpg",
+      "vendor": "",
+      "price": 8000,
+      "partNumber": "OA 1031",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1031 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55230. Easy to install and replace, the OA 1031 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.77 kg",
+      "shippingVolume": "0.0042 m³"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "handle": "sa-10076",
+  "title": "SA 10076",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10076-sa-10076-96761202d2cb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10076-c-1776-f4440a9e5e5d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10076-af25376-d9c6309c077e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10076 Air Filter",
+      "sku": "sa-10076-1",
+      "option1Value": "HiFi Filter SA 10076 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10076-sa-10076-96761202d2cb.jpg",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "SA 10076",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10076 Air Filter. Easy to install and replace, the SA 10076 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 165.0 mm, Dimension 2 (D2): 88.0 mm, Dimension 3 (D3): 88.0 mm, Height 1 (H1): 93.0 mm, Height 2 (H2): 82.0 mm"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.003 m³"
+    },
+    {
+      "title": "Mann Filter C 1776 Air Filter | Replaces the HiFi Filter SA 10076",
+      "sku": "sa-10076-2",
+      "option1Value": "Mann Filter C 1776 Air Filter | Replaces the HiFi Filter SA 10076",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10076-c-1776-f4440a9e5e5d.jpg",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "C 1776",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 165.0 mm, Dimension B: 88.0 mm, Dimension C: 88.0 mm, Dimension H: 93.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25376 Air Filter | Replaces the HiFi Filter SA 10076",
+      "sku": "sa-10076-3",
+      "option1Value": "Fleetguard AF25376 Air Filter | Replaces the HiFi Filter SA 10076",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10076-af25376-d9c6309c077e.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "AF25376",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Germany",
+      "description": "​Fleetguard® AF25376 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.31 kg",
+      "shippingVolume": "0.0026 m³"
+    }
+  ]
+}

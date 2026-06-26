@@ -1,0 +1,87 @@
+{
+  "handle": "sa-18000",
+  "title": "SA 18000",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-sa-18000-ca114a123a06.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-p546641-6684ab06a35e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-hp-4552-280d0e43ce64.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-af25477-813bdafb3664.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18000 Air Filter",
+      "sku": "sa-18000-1",
+      "option1Value": "HiFi Filter SA 18000 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-sa-18000-ca114a123a06.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "SA 18000",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18000 Air Filter. Easy to install and replace, the SA 18000 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 157.0 mm, Dimension 2 (D2): 110.0 mm, Dimension 3 (D3): 59.0 mm, Height 1 (H1): 227.0 mm, Height 2 (H2): 218.0 mm, Height 3 (H3): 196.0 mm"
+      ],
+      "unitWeight": "0.62 kg",
+      "shippingVolume": "0.0067 m³"
+    },
+    {
+      "title": "Donaldson P546641 Air Filter, Primary Round | Replaces the HiFi Filter SA 18000",
+      "sku": "sa-18000-2",
+      "option1Value": "Donaldson P546641 Air Filter, Primary Round | Replaces the HiFi Filter SA 18000",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-p546641-6684ab06a35e.jpg",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "P546641",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.68 kg",
+      "shippingVolume": "0.0081 m³"
+    },
+    {
+      "title": "FIL Filter HP 4552 Filter Insert | Replaces the HiFi Filter SA 18000",
+      "sku": "sa-18000-3",
+      "option1Value": "FIL Filter HP 4552 Filter Insert | Replaces the HiFi Filter SA 18000",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-hp-4552-280d0e43ce64.png",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "HP 4552",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 4552. Easy to install and replace, the HP 4552 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25477 Air Filter | Replaces the HiFi Filter SA 18000",
+      "sku": "sa-18000-4",
+      "option1Value": "Fleetguard AF25477 Air Filter | Replaces the HiFi Filter SA 18000",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18000-af25477-813bdafb3664.jpg",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "AF25477",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF25477 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.75 kg",
+      "shippingVolume": "0.0067 m³"
+    }
+  ]
+}

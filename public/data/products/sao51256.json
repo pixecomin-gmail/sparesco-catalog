@@ -1,0 +1,51 @@
+{
+  "handle": "sao51256",
+  "title": "SAO51256",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao51256-le-6013-1f984bd67ab5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao51256-oa-1073-23792ea30c60.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 6013 Compressed Air-Oil Separation | Replaces the SF Filter SAO51256",
+      "sku": "sao51256-1",
+      "option1Value": "Mann Filter LE 6013 Compressed Air-Oil Separation | Replaces the SF Filter SAO51256",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao51256-le-6013-1f984bd67ab5.jpg",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "LE 6013",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation, Dimension A: 70.0 mm, Dimension B: 53.0 mm, Dimension C: 41.0 mm, Dimension H: 227.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OA 1073 Air/Oil Separator | Replaces the SF Filter SAO51256",
+      "sku": "sao51256-2",
+      "option1Value": "HiFi Filter OA 1073 Air/Oil Separator | Replaces the SF Filter SAO51256",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao51256-oa-1073-23792ea30c60.jpg",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "OA 1073",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1073 Air/Oil Separator is HiFi's replacement to the SF Filter SAO51256. Easy to install and replace, the OA 1073 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": "0.0011 m³"
+    }
+  ]
+}

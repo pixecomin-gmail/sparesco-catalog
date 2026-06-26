@@ -1,0 +1,33 @@
+{
+  "handle": "pi8330drg40v2a",
+  "title": "PI8330DRG40V2A",
+  "collection": "Filtration Group",
+  "collectionHandle": "filtration-group",
+  "category": "Filtration Group",
+  "tags": [
+    "Filtration",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtration-group/pi8330drg40v2a-wt1432-daa0702ed0bd.png"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec WT1432 Special Filter | Replaces the Mahle PI8330DRG40V2A",
+      "sku": "pi8330drg40v2a-1",
+      "option1Value": "Filtrec WT1432 Special Filter | Replaces the Mahle PI8330DRG40V2A",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtration-group/pi8330drg40v2a-wt1432-daa0702ed0bd.png",
+      "vendor": "Filtrec",
+      "price": 0,
+      "partNumber": "WT1432",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec WT1432. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the WT1432 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Special Filter, Outer Diameter: 83.0 mm, Inner Diameter: 47.5 mm, Length: 255.0 mm, Temperature Range: -25 - +120°C, Flow Direction: OUT-IN"
+      ],
+      "unitWeight": "0.84 kg",
+      "shippingVolume": "0.0018 m³"
+    }
+  ]
+}

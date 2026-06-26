@@ -1,0 +1,87 @@
+{
+  "handle": "sa-16684",
+  "title": "SA 16684",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-sa-16684-d0fb14ca4211.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-p628324-530bc5c0ae06.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-c-16-501-186810f69624.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-af26364-ca1039764071.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16684 Air Filter",
+      "sku": "sa-16684-1",
+      "option1Value": "HiFi Filter SA 16684 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-sa-16684-d0fb14ca4211.jpg",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "SA 16684",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16684 Air Filter. Easy to install and replace, the SA 16684 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 163.0 mm, Dimension 2 (D2): 126.0 mm, Dimension 3 (D3): 95.0 mm, Height 1 (H1): 306.0 mm, Height 2 (H2): 305.0 mm, Height 3 (H3): 29.5 mm"
+      ],
+      "unitWeight": "0.92 kg",
+      "shippingVolume": "0.0089 m³"
+    },
+    {
+      "title": "Donaldson P628324 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16684",
+      "sku": "sa-16684-2",
+      "option1Value": "Donaldson P628324 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16684",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-p628324-530bc5c0ae06.jpg",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "P628324",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Replacement Filters? Replacement filters for Fleetguard Optiair Air Cleaners deliver superior performance and proven protection. • High-efficiency cellulose media is a proven performer across a wide range of heavy-duty diesel engine applications. • Unique sawtooth design compresses to cushion and hold the filter in place, providing a secure seal – even in severe environments. • RadialSeal™ design allows for fast filter changes. • Durable structural support protects filters from damage or collapse in heavy vibration applications or humid conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.03 kg",
+      "shippingVolume": "0.0131 m³"
+    },
+    {
+      "title": "Mann Filter C 16 501 Air Filter | Replaces the HiFi Filter SA 16684",
+      "sku": "sa-16684-3",
+      "option1Value": "Mann Filter C 16 501 Air Filter | Replaces the HiFi Filter SA 16684",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-c-16-501-186810f69624.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "C 16 501",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 165.0 mm, Dimension B: 129.0 mm, Dimension H: 309.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26364 Air Filter, Primary | Replaces the HiFi Filter SA 16684",
+      "sku": "sa-16684-4",
+      "option1Value": "Fleetguard AF26364 Air Filter, Primary | Replaces the HiFi Filter SA 16684",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16684-af26364-ca1039764071.jpg",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "AF26364",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® OptiAir™ AF26364 primary air element addresses key design requirements of all equipment manufacturers while outperforming conventional radial seal designs. Resulting in extended service intervals, reduced downtime, and lower maintenance costs.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.01 kg",
+      "shippingVolume": "0.0103 m³"
+    }
+  ]
+}

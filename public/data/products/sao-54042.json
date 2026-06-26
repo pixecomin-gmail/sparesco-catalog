@@ -1,0 +1,33 @@
+{
+  "handle": "sao-54042",
+  "title": "SAO 54042",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54042-os-5110-24b8f6651a56.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5110 Air/Oil Separator | Replaces the SF Filter SAO 54042",
+      "sku": "sao-54042-1",
+      "option1Value": "HiFi Filter OS 5110 Air/Oil Separator | Replaces the SF Filter SAO 54042",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54042-os-5110-24b8f6651a56.jpg",
+      "vendor": "",
+      "price": 17000,
+      "partNumber": "OS 5110",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5110 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 54042. Easy to install and replace, the OS 5110 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 180.0 mm, Dimension 2 (D2): 145.0 mm, Dimension 3 (D3): 93.0 mm, Height 1 (H1): 290.0 mm"
+      ],
+      "unitWeight": "2.78 kg",
+      "shippingVolume": "0.0161 m³"
+    }
+  ]
+}

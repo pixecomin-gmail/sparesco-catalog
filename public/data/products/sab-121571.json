@@ -1,0 +1,51 @@
+{
+  "handle": "sab-121571",
+  "title": "SAB 121571",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-121571-sab-121571-05231cfc2f0f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-121571-b120572-5d9fd86288f8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAB 121571 Air Filter",
+      "sku": "sab-121571-1",
+      "option1Value": "HiFi Filter SAB 121571 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-121571-sab-121571-05231cfc2f0f.jpg",
+      "vendor": "",
+      "price": 10800,
+      "partNumber": "SAB 121571",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAB 121571 Air Filter. Easy to install and replace, the SAB 121571 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 317.0 mm, Dimension 2 (D2): 163.0 mm, Dimension 3 (D3): 152.0 mm, Height 1 (H1): 236.0 mm, Height 2 (H2): 203.0 mm"
+      ],
+      "unitWeight": "2.56 kg",
+      "shippingVolume": "0.0301 m³"
+    },
+    {
+      "title": "Donaldson B120572 Air Filter, Primary Duralite | Replaces the HiFi Filter SAB 121571",
+      "sku": "sab-121571-2",
+      "option1Value": "Donaldson B120572 Air Filter, Primary Duralite | Replaces the HiFi Filter SAB 121571",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-121571-b120572-5d9fd86288f8.jpg",
+      "vendor": "",
+      "price": 13700,
+      "partNumber": "B120572",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson B120572 Air Filter, Primary Duralite is engineered for high-efficiency filtration in heavy-duty air intake systems, capturing dust and debris to protect engine components. Its durable construction ensures long service life. Ideal for use in trucks, construction machinery, and agricultural equipment, this air filter promotes optimal airflow and engine performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.38 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

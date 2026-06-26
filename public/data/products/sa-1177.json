@@ -1,0 +1,51 @@
+{
+  "handle": "sa-1177",
+  "title": "SA 1177",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-1177-sa-1177-351a9fe4ab30.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-1177-c-3055-a541454c5412.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 1177 Air Filter",
+      "sku": "sa-1177-1",
+      "option1Value": "HiFi Filter SA 1177 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-1177-sa-1177-351a9fe4ab30.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 1177",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 1177 Air Filter. Easy to install and replace, the SA 1177 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 308.0 mm, Dimension 2 (D2): 240.0 mm, Dimension 3 (D3): 240.0 mm, Height 1 (H1): 62.0 mm, Height 2 (H2): 57.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.008 m³"
+    },
+    {
+      "title": "Mann Filter C 3055 Air Filter | Replaces the HiFi Filter SA 1177",
+      "sku": "sa-1177-2",
+      "option1Value": "Mann Filter C 3055 Air Filter | Replaces the HiFi Filter SA 1177",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-1177-c-3055-a541454c5412.jpg",
+      "vendor": "",
+      "price": 1700,
+      "partNumber": "C 3055",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 302.0 mm, Dimension B: 245.0 mm, Dimension C: 245.0 mm, Dimension H: 62.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

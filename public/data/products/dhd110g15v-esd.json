@@ -1,0 +1,51 @@
+{
+  "handle": "dhd110g15v-esd",
+  "title": "DHD110G15V ESD",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd110g15v-esd-dhd110g15v-esd-314012b159b1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd110g15v-esd-mfhlp32008-3029a86b1e6f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec DHD110G15V/ESD Pressure Filter",
+      "sku": "dhd110g15v-esd-1",
+      "option1Value": "Filtrec DHD110G15V/ESD Pressure Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd110g15v-esd-dhd110g15v-esd-314012b159b1.jpg",
+      "vendor": "Filtrec",
+      "price": 0,
+      "partNumber": "DHD110G15V/ESD",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec DHD110G15V/ESD. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the DHD110G15V/ESD provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Pressure Filter, Media: Glass Fiber (Anti-Static), Efficiency 1: 15µ @ β200, Efficiency 2: 17µ @ β1000, Outer Diameter: 47.0 mm, Inner Diameter: 22.4 mm, Length: 153.0 mm, Δ Collapse Pressure: 20 bar, Seal Material: Viton, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 15µ @ β200, Media Type: Glass Fiber (Anti-Static), Flow Direction: OUT-IN, Collapse Pressure: 20 BAR, Seal: Viton"
+      ],
+      "unitWeight": "0.24 kg",
+      "shippingVolume": "0.0003 m³"
+    },
+    {
+      "title": "MicroFit® UltraGen III MFHLP32008 Pressure Filter | Replaces the Filtrec DHD110G15V/ESD",
+      "sku": "dhd110g15v-esd-2",
+      "option1Value": "MicroFit® UltraGen III MFHLP32008 Pressure Filter | Replaces the Filtrec DHD110G15V/ESD",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd110g15v-esd-mfhlp32008-3029a86b1e6f.jpg",
+      "vendor": "MicroFit",
+      "price": 0,
+      "partNumber": "MFHLP32008",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "The MICROFIT® UltraGen III MFHLP32008 is the MICROFIT® approved replacement to the Filtrec DHD110G15V/ESD. Engineered and manufactured in Great Britain the MFHLP32008 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MICROFIT® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MICROFIT® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Pressure Filter, Media: Glass Fiber (Anti-Static), Efficiency 1: 15µ @ β200, Efficiency 2: 17µ @ β1000, Outer Diameter: 47.0 mm, Inner Diameter: 22.4 mm, Length: 153.0 mm, Δ Collapse Pressure: 20 bar, Seal Material: Viton, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 15µ @ β200, Media Type: Glass Fiber (Anti-Static), Flow Direction: OUT-IN, Collapse Pressure: 20 BAR, Seal: Viton"
+      ],
+      "unitWeight": "0.51 kg",
+      "shippingVolume": "0.0003 m³"
+    }
+  ]
+}

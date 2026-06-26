@@ -1,0 +1,51 @@
+{
+  "handle": "sa-17373",
+  "title": "SA 17373",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17373-sa-17373-bde8958d3831.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17373-c-14-179-1-2e40710aca17.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17373 Air Filter",
+      "sku": "sa-17373-1",
+      "option1Value": "HiFi Filter SA 17373 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17373-sa-17373-bde8958d3831.jpg",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "SA 17373",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17373 Air Filter. Easy to install and replace, the SA 17373 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 158.0 mm, Dimension 2 (D2): 133.0 mm, Dimension 3 (D3): 92.0 mm, Height 1 (H1): 312.0 mm, Height 2 (H2): 303.0 mm, Height 3 (H3): 283.0 mm"
+      ],
+      "unitWeight": "1.0 kg",
+      "shippingVolume": "0.0102 m³"
+    },
+    {
+      "title": "Mann Filter C 14 179/1 Air Filter | Replaces the HiFi Filter SA 17373",
+      "sku": "sa-17373-2",
+      "option1Value": "Mann Filter C 14 179/1 Air Filter | Replaces the HiFi Filter SA 17373",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17373-c-14-179-1-2e40710aca17.jpg",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "C 14 179/1",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 134.0 mm, Dimension B: 83.0 mm, Dimension C: 17.0 mm, Dimension D: 134.0 mm, Dimension E: 162.0 mm, Dimension H: 316.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

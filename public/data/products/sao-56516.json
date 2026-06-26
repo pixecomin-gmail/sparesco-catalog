@@ -1,0 +1,33 @@
+{
+  "handle": "sao-56516",
+  "title": "SAO 56516",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56516-oa-1234-babbaa4aa960.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1234 Air/Oil Separator | Replaces the SF Filter SAO 56516",
+      "sku": "sao-56516-1",
+      "option1Value": "HiFi Filter OA 1234 Air/Oil Separator | Replaces the SF Filter SAO 56516",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56516-oa-1234-babbaa4aa960.jpg",
+      "vendor": "",
+      "price": 6100,
+      "partNumber": "OA 1234",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1234 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 56516. Easy to install and replace, the OA 1234 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0018 m³"
+    }
+  ]
+}

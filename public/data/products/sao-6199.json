@@ -1,0 +1,51 @@
+{
+  "handle": "sao-6199",
+  "title": "SAO 6199",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-6199-sao-6199-e5c6fc37402d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-6199-p786905-3fdd7f229d39.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 6199 Engine Breather Filter",
+      "sku": "sao-6199-1",
+      "option1Value": "HiFi Filter SAO 6199 Engine Breather Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-6199-sao-6199-e5c6fc37402d.jpg",
+      "vendor": "",
+      "price": 11700,
+      "partNumber": "SAO 6199",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 6199 Engine Breather Filter. Easy to install and replace, the SAO 6199 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER, Dimension 1 (D1): 159.0 mm, Dimension 2 (D2): 131.0 mm, Dimension 3 (D3): 127.0 mm, Height 1 (H1): 159.0 mm, Height 2 (H2): 157.0 mm, Height 3 (H3): 24.0 mm"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.0049 m³"
+    },
+    {
+      "title": "Donaldson P786905 Crankcase Ventilation Filter Spiracle | Replaces the HiFi Filter SAO 6199",
+      "sku": "sao-6199-2",
+      "option1Value": "Donaldson P786905 Crankcase Ventilation Filter Spiracle | Replaces the HiFi Filter SAO 6199",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-6199-p786905-3fdd7f229d39.jpg",
+      "vendor": "",
+      "price": 6000,
+      "partNumber": "P786905",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Genuine Donaldson P786905 Crankcase Ventilation Filter Spiracle is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Engine Breather Filter"
+      ],
+      "unitWeight": "0.61 kg",
+      "shippingVolume": "0.0076 m³"
+    }
+  ]
+}

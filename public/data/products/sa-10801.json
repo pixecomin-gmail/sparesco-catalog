@@ -1,0 +1,87 @@
+{
+  "handle": "sa-10801",
+  "title": "SA 10801",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-sa-10801-ab32f8457c0b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-p182039-a95907870985.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-c-36-1142-a1ed6ddd9b01.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-af851m-0ffc3875fa0c.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10801 Air Filter",
+      "sku": "sa-10801-1",
+      "option1Value": "HiFi Filter SA 10801 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-sa-10801-ab32f8457c0b.jpg",
+      "vendor": "",
+      "price": 9800,
+      "partNumber": "SA 10801",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10801 Air Filter. Easy to install and replace, the SA 10801 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 350.0 mm, Dimension 2 (D2): 240.0 mm, Dimension 3 (D3): 23.0 mm, Height 1 (H1): 471.0 mm, Height 2 (H2): 459.0 mm"
+      ],
+      "unitWeight": "5.04 kg",
+      "shippingVolume": "0.0705 m³"
+    },
+    {
+      "title": "Donaldson P182039 Air Filter, Primary Round | Replaces the HiFi Filter SA 10801",
+      "sku": "sa-10801-2",
+      "option1Value": "Donaldson P182039 Air Filter, Primary Round | Replaces the HiFi Filter SA 10801",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-p182039-a95907870985.jpg",
+      "vendor": "",
+      "price": 8900,
+      "partNumber": "P182039",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Extended Life Air Filters? Strong, reliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • More media pleats deliver higher dust-holding capacity and longer filter life. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.19 kg",
+      "shippingVolume": "0.0622 m³"
+    },
+    {
+      "title": "Mann Filter C 36 1142 Air Filter | Replaces the HiFi Filter SA 10801",
+      "sku": "sa-10801-3",
+      "option1Value": "Mann Filter C 36 1142 Air Filter | Replaces the HiFi Filter SA 10801",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-c-36-1142-a1ed6ddd9b01.jpg",
+      "vendor": "",
+      "price": 11000,
+      "partNumber": "C 36 1142",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Czechia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 351.0 mm, Dimension B: 241.0 mm, Dimension C: 23.0 mm, Dimension H: 470.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF851M Air Filter, Primary | Replaces the HiFi Filter SA 10801",
+      "sku": "sa-10801-4",
+      "option1Value": "Fleetguard AF851M Air Filter, Primary | Replaces the HiFi Filter SA 10801",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10801-af851m-0ffc3875fa0c.jpg",
+      "vendor": "",
+      "price": 11200,
+      "partNumber": "AF851M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF851M premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.6 kg",
+      "shippingVolume": "0.0851 m³"
+    }
+  ]
+}

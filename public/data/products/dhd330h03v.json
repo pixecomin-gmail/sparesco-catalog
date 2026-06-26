@@ -1,0 +1,51 @@
+{
+  "handle": "dhd330h03v",
+  "title": "DHD330H03V",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd330h03v-dhd330h03v-0075caade172.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd330h03v-mfhhp40573-44dd2c9dda2d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec DHD330H03V Pressure Filter",
+      "sku": "dhd330h03v-1",
+      "option1Value": "Filtrec DHD330H03V Pressure Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd330h03v-dhd330h03v-0075caade172.jpg",
+      "vendor": "Filtrec",
+      "price": 19100,
+      "partNumber": "DHD330H03V",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec DHD330H03V. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the DHD330H03V provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Pressure Filter, Media: Glass Fiber, Efficiency 1: 3µ @ β200, Efficiency 2: 5µ @ β1000, Outer Diameter: 90.5 mm, Inner Diameter: 48.1 mm, Length: 162.0 mm, Δ Collapse Pressure: 210 bar, Seal Material: Viton, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 3µ @ β200, Media Type: Glass Fiber, Flow Direction: OUT-IN, Collapse Pressure: 210 BAR, Seal: Viton"
+      ],
+      "unitWeight": "1.32 kg",
+      "shippingVolume": "0.0013 m³"
+    },
+    {
+      "title": "MicroFit® UltraGen III MFHHP40573 Pressure Filter | Replaces the Filtrec DHD330H03V",
+      "sku": "dhd330h03v-2",
+      "option1Value": "MicroFit® UltraGen III MFHHP40573 Pressure Filter | Replaces the Filtrec DHD330H03V",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/dhd330h03v-mfhhp40573-44dd2c9dda2d.jpg",
+      "vendor": "MicroFit",
+      "price": 17600,
+      "partNumber": "MFHHP40573",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "The MICROFIT® UltraGen III MFHHP40573 is the MICROFIT® approved replacement to the Filtrec DHD330H03V. Engineered and manufactured in Great Britain the MFHHP40573",
+      "specifications": [
+        "Style: Pressure Filter, Media: Glass Fiber, Efficiency 1: 3µ @ β200, Efficiency 2: 5µ @ β1000, Outer Diameter: 90.5 mm, Inner Diameter: 48.1 mm, Length: 162.0 mm, Δ Collapse Pressure: 210 bar, Seal Material: Viton, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 3µ @ β200, Media Type: Glass Fiber, Flow Direction: OUT-IN, Collapse Pressure: 210 BAR, Seal: Viton"
+      ],
+      "unitWeight": "2.89 kg",
+      "shippingVolume": "0.0013 m³"
+    }
+  ]
+}

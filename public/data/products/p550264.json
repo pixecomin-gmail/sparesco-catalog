@@ -1,0 +1,51 @@
+{
+  "handle": "p550264",
+  "title": "P550264",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550264-hf6194-0c6021cd76a6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550264-p550264-74e619fe8cd6.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard HF6194 Hydraulic Filters | Replaces the Donaldson P550264",
+      "sku": "p550264-1",
+      "option1Value": "Fleetguard HF6194 Hydraulic Filters | Replaces the Donaldson P550264",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550264-hf6194-0c6021cd76a6.jpg",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "HF6194",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Mexico",
+      "description": "Fleetguard® HF6194 hydraulic cartridge filter is designed to help keep your precision hydraulic systems running as intended, providing a solution for various applications.  This filter meets or exceeds the equipment OEM quality and performance and is the first aftermarket replacement available on the market today, bringing your operation top-quality performance and an overall unbeatable total cost of ownership.",
+      "specifications": [
+        "Style: Hydraulic Cartridge, Media: Cellulose, Efficiency 1: 9µ @ β2, Outer Diameter: 79.0 mm, Inner Diameter: 47.2 mm, Length: 203.2 mm, Δ Collapse Pressure: 6 bar, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 9µ @ β2, Media Type: Cellulose, Collapse Pressure: 6.9 BAR"
+      ],
+      "unitWeight": "0.45 kg",
+      "shippingVolume": "0.0024 m³"
+    },
+    {
+      "title": "Donaldson P550264 Hydraulic Cartridge",
+      "sku": "p550264-2",
+      "option1Value": "Donaldson P550264 Hydraulic Cartridge",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550264-p550264-74e619fe8cd6.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P550264",
+      "hsCode": "8421.29.00",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P550264 Hydraulic Cartridge offers superior filtration performance, effectively removing contaminants from hydraulic fluids. Its high-capacity design helps maintain fluid cleanliness and system efficiency. Constructed from durable materials, this hydraulic cartridge is suitable for a wide range of industrial and heavy-duty hydraulic systems.",
+      "specifications": [
+        "Style: Hydraulic Cartridge, Media: Cellulose, Efficiency 1: 9µ @ β2, Outer Diameter: 79.0 mm, Inner Diameter: 47.2 mm, Length: 203.2 mm, Δ Collapse Pressure: 6 bar, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 9µ @ β2, Media Type: Cellulose, Collapse Pressure: 6.9 BAR"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

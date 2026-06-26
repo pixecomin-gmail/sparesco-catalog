@@ -1,0 +1,51 @@
+{
+  "handle": "ft5c10",
+  "title": "FT5C10",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft5c10-ft5c10-ed20e8343692.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft5c10-p171848-54343f487973.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec FT5C10",
+      "sku": "ft5c10-1",
+      "option1Value": "Filtrec FT5C10",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft5c10-ft5c10-ed20e8343692.jpg",
+      "vendor": "Filtrec",
+      "price": 1400,
+      "partNumber": "FT5C10",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec FT5C10. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the FT5C10 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Seal Material: Viton, Temperature Range: -25 - +120°C, Seal: Viton"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P171848 Hydraulic Filler Cap | Replaces the Filtrec FT5C10",
+      "sku": "ft5c10-2",
+      "option1Value": "Donaldson P171848 Hydraulic Filler Cap | Replaces the Filtrec FT5C10",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/ft5c10-p171848-54343f487973.jpg",
+      "vendor": "Donaldson",
+      "price": 1400,
+      "partNumber": "P171848",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P171848 Hydraulic Filler Cap is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Seal Material: Viton, Temperature Range: -25 - +120°C, Seal: Viton"
+      ],
+      "unitWeight": "0.11 kg",
+      "shippingVolume": "0.0004 m³"
+    }
+  ]
+}

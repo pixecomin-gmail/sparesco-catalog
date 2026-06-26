@@ -1,0 +1,33 @@
+{
+  "handle": "sab-563",
+  "title": "SAB 563",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-563-sd-40911-ca7686466505.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SD 40911 Urea Filter | Replaces the SF Filter SAB 563",
+      "sku": "sab-563-1",
+      "option1Value": "HiFi Filter SD 40911 Urea Filter | Replaces the SF Filter SAB 563",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-563-sd-40911-ca7686466505.jpg",
+      "vendor": "",
+      "price": 2900,
+      "partNumber": "SD 40911",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SD 40911 Urea Filter is HiFi's replacement to the SF Filter SAB 563. Easy to install and replace, the SD 40911 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Urea Filter"
+      ],
+      "unitWeight": "0.1 kg",
+      "shippingVolume": "0.0037 m³"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "handle": "sa-8210",
+  "title": "SA 8210",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8210-sa-8210-c0d5b34c0306.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8210 Air Filter",
+      "sku": "sa-8210-1",
+      "option1Value": "HiFi Filter SA 8210 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8210-sa-8210-c0d5b34c0306.jpg",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "SA 8210",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8210 Air Filter. Easy to install and replace, the SA 8210 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.76 kg",
+      "shippingVolume": "0.0084 m³"
+    }
+  ]
+}

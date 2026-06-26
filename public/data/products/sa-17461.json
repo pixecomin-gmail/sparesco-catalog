@@ -1,0 +1,51 @@
+{
+  "handle": "sa-17461",
+  "title": "SA 17461",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17461-sa-17461-f7bb93b8fddb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17461-cf-1350-1110144704f9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17461 Air Filter",
+      "sku": "sa-17461-1",
+      "option1Value": "HiFi Filter SA 17461 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17461-sa-17461-f7bb93b8fddb.jpg",
+      "vendor": "",
+      "price": 6600,
+      "partNumber": "SA 17461",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17461 Air Filter. Easy to install and replace, the SA 17461 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 135.0 mm, Dimension 2 (D2): 135.0 mm, Dimension 3 (D3): 118.0 mm, Thread 1 (D7): S122X6, Height 1 (H1): 441.0 mm, Height 2 (H2): 47.0 mm, Height 3 (H3): 40.0 mm"
+      ],
+      "unitWeight": "0.73 kg",
+      "shippingVolume": "0.012 m³"
+    },
+    {
+      "title": "Mann Filter CF 1350 Secondary Element | Replaces the HiFi Filter SA 17461",
+      "sku": "sa-17461-2",
+      "option1Value": "Mann Filter CF 1350 Secondary Element | Replaces the HiFi Filter SA 17461",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17461-cf-1350-1110144704f9.jpg",
+      "vendor": "",
+      "price": 8200,
+      "partNumber": "CF 1350",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element, Dimension A: 117.0 mm, Dimension D: 136.0 mm, Dimension H: 400.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

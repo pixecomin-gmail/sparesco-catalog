@@ -1,0 +1,51 @@
+{
+  "handle": "sa-17448",
+  "title": "SA 17448",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17448-sa-17448-a52020c8d0b1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17448-hp-2653-ab32d5408cb3.png"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17448 Air Filter",
+      "sku": "sa-17448-1",
+      "option1Value": "HiFi Filter SA 17448 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17448-sa-17448-a52020c8d0b1.jpg",
+      "vendor": "",
+      "price": 9400,
+      "partNumber": "SA 17448",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17448 Air Filter. Easy to install and replace, the SA 17448 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.44 kg",
+      "shippingVolume": "0.0621 m³"
+    },
+    {
+      "title": "FIL Filter HP 2653 Filter Insert | Replaces the HiFi Filter SA 17448",
+      "sku": "sa-17448-2",
+      "option1Value": "FIL Filter HP 2653 Filter Insert | Replaces the HiFi Filter SA 17448",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17448-hp-2653-ab32d5408cb3.png",
+      "vendor": "",
+      "price": 9100,
+      "partNumber": "HP 2653",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 2653. Easy to install and replace, the HP 2653 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

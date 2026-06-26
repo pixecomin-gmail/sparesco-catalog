@@ -1,0 +1,33 @@
+{
+  "handle": "sao-58340",
+  "title": "SAO 58340",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58340-os-5200-370798d62031.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5200 Air/Oil Separator | Replaces the SF Filter SAO 58340",
+      "sku": "sao-58340-1",
+      "option1Value": "HiFi Filter OS 5200 Air/Oil Separator | Replaces the SF Filter SAO 58340",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58340-os-5200-370798d62031.jpg",
+      "vendor": "",
+      "price": 45500,
+      "partNumber": "OS 5200",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5200 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58340. Easy to install and replace, the OS 5200 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "11.3 kg",
+      "shippingVolume": "0.1166 m³"
+    }
+  ]
+}

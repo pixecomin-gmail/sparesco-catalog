@@ -1,0 +1,69 @@
+{
+  "handle": "p550179",
+  "title": "P550179",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550179-pf-915-n-974b091d3fb7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550179-p550179-4ed4b9327d7d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550179-lf568-4ff832dfb7f5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter PF 915 n Oil Filter | Replaces the Donaldson P550179",
+      "sku": "p550179-1",
+      "option1Value": "Mann Filter PF 915 n Oil Filter | Replaces the Donaldson P550179",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550179-pf-915-n-974b091d3fb7.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "PF 915 n",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Czechia",
+      "description": "MANN-FILTER oil filters: Top filtration performance and optimal cleaning protect the engine against wear caused by impurities and combustion residues in the oil. Filter media and high-quality sealing materials that are individually tailored to the intended application offer optimum protection over the entire maintenance interval.",
+      "specifications": [
+        "Style: Oil Filter, Dimension A: 90.0 mm, Dimension B: 14.0 mm, Dimension C: 14.0 mm, Dimension H: 110.0 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β20, Outer Diameter: 89.4 mm, Inner Diameter: 17.5 mm, Length: 105.7 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P550179 Lube Cartridge",
+      "sku": "p550179-2",
+      "option1Value": "Donaldson P550179 Lube Cartridge",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550179-p550179-4ed4b9327d7d.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "P550179",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P550179 Lube Cartridge is designed to provide reliable performance in lube cartridge applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Lube Cartridge, Efficiency 1: 20µ @ β20, Outer Diameter: 89.4 mm, Inner Diameter: 17.5 mm, Length: 105.7 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β20"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard LF568 Lube Filter, Cartridge | Replaces the Donaldson P550179",
+      "sku": "p550179-3",
+      "option1Value": "Fleetguard LF568 Lube Filter, Cartridge | Replaces the Donaldson P550179",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550179-lf568-4ff832dfb7f5.jpg",
+      "vendor": "",
+      "price": 5200,
+      "partNumber": "LF568",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® LF568 cartridge oil filter is enviromentally friendly and features technology advances to achieve the high flow rates required by today’s modern engine designs.",
+      "specifications": [
+        "Style: Lube Cartridge, Efficiency 1: 20µ @ β20, Outer Diameter: 89.4 mm, Inner Diameter: 17.5 mm, Length: 105.7 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 20µ @ β20"
+      ],
+      "unitWeight": "0.22 kg",
+      "shippingVolume": "0.0015 m³"
+    }
+  ]
+}

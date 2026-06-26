@@ -1,0 +1,51 @@
+{
+  "handle": "sa-17348",
+  "title": "SA 17348",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17348-sa-17348-f7f56739322c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17348-c-17-190-09c2b3132ac7.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17348 Air Filter",
+      "sku": "sa-17348-1",
+      "option1Value": "HiFi Filter SA 17348 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17348-sa-17348-f7f56739322c.jpg",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 17348",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17348 Air Filter. Easy to install and replace, the SA 17348 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 166.0 mm, Dimension 2 (D2): 87.0 mm, Dimension 3 (D3): 87.0 mm, Height 1 (H1): 240.0 mm, Height 2 (H2): 220.0 mm"
+      ],
+      "unitWeight": "1.0 kg",
+      "shippingVolume": "0.0077 m³"
+    },
+    {
+      "title": "Mann Filter C 17 190 Air Filter | Replaces the HiFi Filter SA 17348",
+      "sku": "sa-17348-2",
+      "option1Value": "Mann Filter C 17 190 Air Filter | Replaces the HiFi Filter SA 17348",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17348-c-17-190-09c2b3132ac7.jpg",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "C 17 190",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 164.0 mm, Dimension B: 105.0 mm, Dimension H: 242.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

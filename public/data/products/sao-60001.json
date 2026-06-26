@@ -1,0 +1,33 @@
+{
+  "handle": "sao-60001",
+  "title": "SAO 60001",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-60001-si-41108-96f92f2ac3cb.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SI 41108 Air/Oil Separator | Replaces the SF Filter SAO 60001",
+      "sku": "sao-60001-1",
+      "option1Value": "HiFi Filter SI 41108 Air/Oil Separator | Replaces the SF Filter SAO 60001",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-60001-si-41108-96f92f2ac3cb.jpg",
+      "vendor": "",
+      "price": 16000,
+      "partNumber": "SI 41108",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SI 41108 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 60001. Easy to install and replace, the SI 41108 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.36 kg",
+      "shippingVolume": "0.0025 m³"
+    }
+  ]
+}

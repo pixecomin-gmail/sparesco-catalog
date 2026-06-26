@@ -1,0 +1,51 @@
+{
+  "handle": "sa-5188",
+  "title": "SA 5188",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5188-sa-5188-1c5291e5292e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5188-c-1652-d274dd0dc0e0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5188 Air Filter",
+      "sku": "sa-5188-1",
+      "option1Value": "HiFi Filter SA 5188 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5188-sa-5188-1c5291e5292e.jpg",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "SA 5188",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5188 Air Filter. Easy to install and replace, the SA 5188 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0048 m³"
+    },
+    {
+      "title": "Mann Filter C 1652 Air Filter | Replaces the HiFi Filter SA 5188",
+      "sku": "sa-5188-2",
+      "option1Value": "Mann Filter C 1652 Air Filter | Replaces the HiFi Filter SA 5188",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5188-c-1652-d274dd0dc0e0.jpg",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "C 1652",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 152.0 mm, Dimension B: 89.0 mm, Dimension C: 89.0 mm, Dimension H: 185.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

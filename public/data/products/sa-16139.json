@@ -1,0 +1,69 @@
+{
+  "handle": "sa-16139",
+  "title": "SA 16139",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16139-sa-16139-410e9327a798.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16139-p154927-ba8ce23bbc96.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16139-ah1103-6e7aef5c1d17.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16139 Air Filter",
+      "sku": "sa-16139-1",
+      "option1Value": "HiFi Filter SA 16139 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16139-sa-16139-410e9327a798.jpg",
+      "vendor": "",
+      "price": 17100,
+      "partNumber": "SA 16139",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16139 Air Filter. Easy to install and replace, the SA 16139 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 280.0 mm, Dimension 2 (D2): 178.0 mm, Height 1 (H1): 655.0 mm, Height 2 (H2): 610.0 mm"
+      ],
+      "unitWeight": "6.16 kg",
+      "shippingVolume": "0.0607 m³"
+    },
+    {
+      "title": "Donaldson P154927 Air Cleaner, Disposable | Replaces the HiFi Filter SA 16139",
+      "sku": "sa-16139-2",
+      "option1Value": "Donaldson P154927 Air Cleaner, Disposable | Replaces the HiFi Filter SA 16139",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16139-p154927-ba8ce23bbc96.jpg",
+      "vendor": "",
+      "price": 19200,
+      "partNumber": "P154927",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P154927 Air Cleaner, Disposable is designed to provide reliable performance in air cleaner, disposable applications. Built with high-quality materials, it ensures consistent functionality and durability. Ideal for industrial, automotive, or heavy-duty environments, this component enhances system performance and longevity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "7.53 kg",
+      "shippingVolume": "0.0697 m³"
+    },
+    {
+      "title": "Fleetguard AH1103 Air Intake Systems | Replaces the HiFi Filter SA 16139",
+      "sku": "sa-16139-3",
+      "option1Value": "Fleetguard AH1103 Air Intake Systems | Replaces the HiFi Filter SA 16139",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16139-ah1103-6e7aef5c1d17.jpg",
+      "vendor": "",
+      "price": 20000,
+      "partNumber": "AH1103",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "China",
+      "description": "With over 1,500 different air filtration products, from clamps to air housings to advanced air filters, Fleetguard® provides peace of mind for your air filtration needs. Our Fleetguard AH1103 air housing is part of the heavy-duty air filtration line, covering your sophisticated air intake system requirements.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "6.99 kg",
+      "shippingVolume": "0.0572 m³"
+    }
+  ]
+}

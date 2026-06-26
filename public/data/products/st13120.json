@@ -1,0 +1,51 @@
+{
+  "handle": "st13120",
+  "title": "ST13120",
+  "collection": "Fairey Arlon",
+  "collectionHandle": "fairey-arlon",
+  "category": "Fairey Arlon",
+  "tags": [
+    "Fairey Arlon",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/fairey-arlon/st13120-r743t120-455e9335f940.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/fairey-arlon/st13120-mfhr50656-b3beb4bd1b05.png"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec R743T120 Return Filter | Replaces the Fairey Arlon ST13120",
+      "sku": "st13120-1",
+      "option1Value": "Filtrec R743T120 Return Filter | Replaces the Fairey Arlon ST13120",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/fairey-arlon/st13120-r743t120-455e9335f940.jpg",
+      "vendor": "",
+      "price": 42700,
+      "partNumber": "R743T120",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec R743T120. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the R743T120 provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Return Filter, Media: Wire Mesh, Efficiency 1: 120µ, Outer Diameter: 202.0 mm, Inner Diameter: 157.0 mm, Length: 825.0 mm, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 120µ, Media Type: Wire Mesh, Flow Direction: IN-OUT, Seal: Nitrile"
+      ],
+      "unitWeight": "13.02 kg",
+      "shippingVolume": "0.0337 m³"
+    },
+    {
+      "title": "MicroFit® MFHR50656 UltraGen III Return Filter | Replaces the Fairey Arlon ST13120",
+      "sku": "st13120-2",
+      "option1Value": "MicroFit® MFHR50656 UltraGen III Return Filter | Replaces the Fairey Arlon ST13120",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/fairey-arlon/st13120-mfhr50656-b3beb4bd1b05.png",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "MFHR50656",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "MicroFit® MFHR50656 UltraGen III Return Filter. Engineered and manufactured in Great Britain the MFHLP30166 is designed to meet or exceed the quality and performance of OEM quality standards, ensuring superior filtration performance and the longest possible filter life. Building on over 50 years of filtration expertise, the UltraGen III series is the third generation of MicroFit® filter media, delivering exceptional efficiency and reliability. FilterFinder is an approved distributor of MicroFit® filters. With expert product knowledge, dedicated support, and a large stock availability, FilterFinder ensures you receive the parts you need when you need them, every time.",
+      "specifications": [
+        "Style: Return Filter, Media: Wire Mesh, Efficiency 1: 120µ, Outer Diameter: 202.0 mm, Inner Diameter: 157.0 mm, Length: 825.0 mm, Seal Material: Nitrile, Temperature Range: -30 - +100°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 120µ, Media Type: Wire Mesh, Flow Direction: IN-OUT, Seal: Nitrile"
+      ],
+      "unitWeight": "13.02 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

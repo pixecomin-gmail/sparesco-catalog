@@ -1,0 +1,69 @@
+{
+  "handle": "sa-11597",
+  "title": "SA 11597",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11597-sa-11597-18b82f37ab86.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11597-p181109-1c3f0ab2d48e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11597-af1647m-6ccb4736d42a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11597 Air Filter",
+      "sku": "sa-11597-1",
+      "option1Value": "HiFi Filter SA 11597 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11597-sa-11597-18b82f37ab86.jpg",
+      "vendor": "",
+      "price": 20300,
+      "partNumber": "SA 11597",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11597 Air Filter. Easy to install and replace, the SA 11597 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.62 kg",
+      "shippingVolume": "0.0647 m³"
+    },
+    {
+      "title": "Donaldson P181109 Air Filter, Primary Round | Replaces the HiFi Filter SA 11597",
+      "sku": "sa-11597-2",
+      "option1Value": "Donaldson P181109 Air Filter, Primary Round | Replaces the HiFi Filter SA 11597",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11597-p181109-1c3f0ab2d48e.jpg",
+      "vendor": "",
+      "price": 12400,
+      "partNumber": "P181109",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.68 kg",
+      "shippingVolume": "0.0635 m³"
+    },
+    {
+      "title": "Fleetguard AF1647M Air Filter, Primary | Replaces the HiFi Filter SA 11597",
+      "sku": "sa-11597-3",
+      "option1Value": "Fleetguard AF1647M Air Filter, Primary | Replaces the HiFi Filter SA 11597",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11597-af1647m-6ccb4736d42a.jpg",
+      "vendor": "",
+      "price": 12200,
+      "partNumber": "AF1647M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1647M premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.1 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

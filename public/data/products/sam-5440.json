@@ -1,0 +1,51 @@
+{
+  "handle": "sam-5440",
+  "title": "SAM 5440",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sam-5440-sam-5440-b02bab5b1e77.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sam-5440-4100262122-76266570af98.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAM 5440 Filtering Mass",
+      "sku": "sam-5440-1",
+      "option1Value": "HiFi Filter SAM 5440 Filtering Mass",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sam-5440-sam-5440-b02bab5b1e77.jpg",
+      "vendor": "",
+      "price": 10500,
+      "partNumber": "SAM 5440",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAM 5440 Filtering Mass. Easy to install and replace, the SAM 5440 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: FILTERING MASS"
+      ],
+      "unitWeight": "0.09 kg",
+      "shippingVolume": "0.0002 m³"
+    },
+    {
+      "title": "Mann Filter 4100262122 Oil-Wetted Air Cleaner | Replaces the HiFi Filter SAM 5440",
+      "sku": "sam-5440-2",
+      "option1Value": "Mann Filter 4100262122 Oil-Wetted Air Cleaner | Replaces the HiFi Filter SAM 5440",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sam-5440-4100262122-76266570af98.jpg",
+      "vendor": "",
+      "price": 12100,
+      "partNumber": "4100262122",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "Replacement and maintenance parts for the proven filter housings and systems from MANN+HUMMEL.",
+      "specifications": [
+        "Style: MANN+HUMMEL Spare Part"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

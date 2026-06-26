@@ -1,0 +1,69 @@
+{
+  "handle": "sab-548",
+  "title": "SAB 548",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-548-sd-70382-fa8b0c432e1d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-548-u-1005-c13ad6153f42.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-548-uf119-10a3b1f9a5ed.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SD 70382 Urea Filter | Replaces the SF Filter SAB 548",
+      "sku": "sab-548-1",
+      "option1Value": "HiFi Filter SD 70382 Urea Filter | Replaces the SF Filter SAB 548",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-548-sd-70382-fa8b0c432e1d.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "SD 70382",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SD 70382 Urea Filter is HiFi's replacement to the SF Filter SAB 548. Easy to install and replace, the SD 70382 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER, Dimension 1 (D1): 6.6 mm, Dimension 2 (D2): 4.5 mm, Dimension 3 (D3): 1.5 mm, Height 1 (H1): 35.0 mm, Height 2 (H2): 3.0 mm"
+      ],
+      "unitWeight": "0.0 kg",
+      "shippingVolume": "0.0 m³"
+    },
+    {
+      "title": "Mann Filter U 1005 Urea Filter | Replaces the SF Filter SAB 548",
+      "sku": "sab-548-2",
+      "option1Value": "Mann Filter U 1005 Urea Filter | Replaces the SF Filter SAB 548",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-548-u-1005-c13ad6153f42.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "U 1005",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Austria",
+      "description": "The compact MANN-FILTER urea filters are characterized by high filter fineness, proven suitability for everyday use and a long service life. They protect system components against wear and failure and are resistant to frost and ammonia. MANN-FILTER urea filters are available for leading SCR systems in trucks and buses.",
+      "specifications": [
+        "Style: Urea Filter, Dimension A: 4.0 mm, Dimension D: 7.0 mm, Dimension H: 30.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard UF119 Scr Urea | Replaces the SF Filter SAB 548",
+      "sku": "sab-548-3",
+      "option1Value": "Fleetguard UF119 Scr Urea | Replaces the SF Filter SAB 548",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab-548-uf119-10a3b1f9a5ed.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "UF119",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "China",
+      "description": "Fleetguard® UF119 Diesel Exhaust Fluid (DEF) filter is part of the range of DEF filters offered for Cummins and non-Cummins engine applications for medium-duty and heavy-duty truck applications that are designed to meet or exceed EPA emission standards.",
+      "specifications": [
+        "Style: Urea Filter"
+      ],
+      "unitWeight": "0.0 kg",
+      "shippingVolume": "0.0 m³"
+    }
+  ]
+}

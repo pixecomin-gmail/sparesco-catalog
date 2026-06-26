@@ -1,0 +1,51 @@
+{
+  "handle": "sa-10906",
+  "title": "SA 10906",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10906-sa-10906-b4b2dcdc87e5.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10906-af956m-c5fc3000ef4a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10906 Air Filter",
+      "sku": "sa-10906-1",
+      "option1Value": "HiFi Filter SA 10906 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10906-sa-10906-b4b2dcdc87e5.jpg",
+      "vendor": "",
+      "price": 13200,
+      "partNumber": "SA 10906",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10906 Air Filter. Easy to install and replace, the SA 10906 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 320.0 mm, Dimension 2 (D2): 307.0 mm, Dimension 3 (D3): 196.0 mm, Height 1 (H1): 600.0 mm, Height 2 (H2): 590.0 mm, Height 3 (H3): 539.0 mm"
+      ],
+      "unitWeight": "5.48 kg",
+      "shippingVolume": "0.0741 m³"
+    },
+    {
+      "title": "Fleetguard AF956M Air Filter, Primary | Replaces the HiFi Filter SA 10906",
+      "sku": "sa-10906-2",
+      "option1Value": "Fleetguard AF956M Air Filter, Primary | Replaces the HiFi Filter SA 10906",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10906-af956m-c5fc3000ef4a.jpg",
+      "vendor": "",
+      "price": 15100,
+      "partNumber": "AF956M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF956M axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.95 kg",
+      "shippingVolume": "0.0756 m³"
+    }
+  ]
+}

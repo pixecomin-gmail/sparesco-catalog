@@ -1,0 +1,33 @@
+{
+  "handle": "sao-57780",
+  "title": "SAO 57780",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-57780-os-5087-a71036a70e54.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5087 Air/Oil Separator | Replaces the SF Filter SAO 57780",
+      "sku": "sao-57780-1",
+      "option1Value": "HiFi Filter OS 5087 Air/Oil Separator | Replaces the SF Filter SAO 57780",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-57780-os-5087-a71036a70e54.jpg",
+      "vendor": "",
+      "price": 14200,
+      "partNumber": "OS 5087",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5087 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 57780. Easy to install and replace, the OS 5087 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 177.0 mm, Dimension 2 (D2): 135.0 mm, Dimension 3 (D3): 88.0 mm, Height 1 (H1): 303.0 mm"
+      ],
+      "unitWeight": "2.46 kg",
+      "shippingVolume": "0.0111 m³"
+    }
+  ]
+}

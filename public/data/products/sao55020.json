@@ -1,0 +1,51 @@
+{
+  "handle": "sao55020",
+  "title": "SAO55020",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao55020-le-6007-57fa4d52fcfc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao55020-oa-2380-fb3af344a2ee.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LE 6007 Compressed Air-Oil Separation | Replaces the SF Filter SAO55020",
+      "sku": "sao55020-1",
+      "option1Value": "Mann Filter LE 6007 Compressed Air-Oil Separation | Replaces the SF Filter SAO55020",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao55020-le-6007-57fa4d52fcfc.jpg",
+      "vendor": "",
+      "price": 6800,
+      "partNumber": "LE 6007",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling elements reliably separate oil from the compressed air in compressors and vacuum pumps. This is how they ensure clean air, prolong the service life of the equipment and provide optimum performance. High-quality media for air deoiling elements from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation, Dimension A: 115.0 mm, Dimension B: 65.0 mm, Dimension H: 165.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OA 2380 Air/Oil Separator | Replaces the SF Filter SAO55020",
+      "sku": "sao55020-2",
+      "option1Value": "HiFi Filter OA 2380 Air/Oil Separator | Replaces the SF Filter SAO55020",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao55020-oa-2380-fb3af344a2ee.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "OA 2380",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 2380 Air/Oil Separator is HiFi's replacement to the SF Filter SAO55020. Easy to install and replace, the OA 2380 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.08 kg",
+      "shippingVolume": "0.0031 m³"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "handle": "sa-11844",
+  "title": "SA 11844",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11844-sa-11844-bba970fd634c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11844-af1894m-84865df890d0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11844 Air Filter",
+      "sku": "sa-11844-1",
+      "option1Value": "HiFi Filter SA 11844 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11844-sa-11844-bba970fd634c.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "SA 11844",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11844 Air Filter. Easy to install and replace, the SA 11844 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 195.0 mm, Dimension 2 (D2): 153.0 mm, Dimension 3 (D3): 23.0 mm, Height 1 (H1): 469.0 mm, Height 2 (H2): 458.0 mm, Height 3 (H3): 405.0 mm"
+      ],
+      "unitWeight": "1.92 kg",
+      "shippingVolume": "0.0258 m³"
+    },
+    {
+      "title": "Fleetguard AF1894M Air Filter, Secondary | Replaces the HiFi Filter SA 11844",
+      "sku": "sa-11844-2",
+      "option1Value": "Fleetguard AF1894M Air Filter, Secondary | Replaces the HiFi Filter SA 11844",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11844-af1894m-84865df890d0.jpg",
+      "vendor": "",
+      "price": 5200,
+      "partNumber": "AF1894M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF1894M axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.69 kg",
+      "shippingVolume": "0.0199 m³"
+    }
+  ]
+}

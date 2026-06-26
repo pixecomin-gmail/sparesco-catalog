@@ -1,0 +1,51 @@
+{
+  "handle": "sab558",
+  "title": "SAB558",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab558-sd-70439-a22622c39309.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab558-u-5010-f22fee4a7a43.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SD 70439 Urea Filter | Replaces the SF Filter SAB558",
+      "sku": "sab558-1",
+      "option1Value": "HiFi Filter SD 70439 Urea Filter | Replaces the SF Filter SAB558",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab558-sd-70439-a22622c39309.jpg",
+      "vendor": "",
+      "price": 7300,
+      "partNumber": "SD 70439",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SD 70439 Urea Filter is HiFi's replacement to the SF Filter SAB558. Easy to install and replace, the SD 70439 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER, Dimension 1 (D1): 46.0 mm, Dimension 2 (D2): 40.0 mm, Dimension 3 (D3): 24.0 mm, Height 1 (H1): 191.0 mm, Height 2 (H2): 186.0 mm, Height 3 (H3): 183.0 mm"
+      ],
+      "unitWeight": "0.08 kg",
+      "shippingVolume": "0.0004 m³"
+    },
+    {
+      "title": "Mann Filter U 5010 Ventilator | Replaces the SF Filter SAB558",
+      "sku": "sab558-2",
+      "option1Value": "Mann Filter U 5010 Ventilator | Replaces the SF Filter SAB558",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab558-u-5010-f22fee4a7a43.jpg",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "U 5010",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "For over 70 years, MANN-FILTER has been synonymous with premium filters in original equipment quality worldwide. Benefit from a comprehensive product range and optimum filtration performance to protect drivers, engines and machinery. In the familiar yellow-green packaging, MANN-FILTER offers innovative solutions to new filtration challenges and produces on a global scale in accordance with the latest international production and test standards in the automotive industry.",
+      "specifications": [
+        "Style: Ventilator, Dimension A: 24.0 mm, Dimension D: 46.0 mm, Dimension H: 191.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

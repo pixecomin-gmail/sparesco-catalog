@@ -1,0 +1,87 @@
+{
+  "handle": "sa-5133",
+  "title": "SA 5133",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-sa-5133-bab9cb122974.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-p785542-5188bfdd16c6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-c-40-006-b84365cdbb64.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-af26165-6626a6747d14.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5133 Air Filter",
+      "sku": "sa-5133-1",
+      "option1Value": "HiFi Filter SA 5133 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-sa-5133-bab9cb122974.jpg",
+      "vendor": "",
+      "price": 11000,
+      "partNumber": "SA 5133",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5133 Air Filter. Easy to install and replace, the SA 5133 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 538.0 mm, Dimension 2 (D2): 518.0 mm, Dimension 3 (D3): 399.0 mm, Height 1 (H1): 345.0 mm, Height 2 (H2): 332.0 mm, Height 3 (H3): 120.0 mm"
+      ],
+      "unitWeight": "7.92 kg",
+      "shippingVolume": "0.1135 m³"
+    },
+    {
+      "title": "Donaldson P785542 Air Filter, Primary Round | Replaces the HiFi Filter SA 5133",
+      "sku": "sa-5133-2",
+      "option1Value": "Donaldson P785542 Air Filter, Primary Round | Replaces the HiFi Filter SA 5133",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-p785542-5188bfdd16c6.jpg",
+      "vendor": "",
+      "price": 13700,
+      "partNumber": "P785542",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "7.93 kg",
+      "shippingVolume": "0.1184 m³"
+    },
+    {
+      "title": "Mann Filter C 40 006 Air Filter | Replaces the HiFi Filter SA 5133",
+      "sku": "sa-5133-3",
+      "option1Value": "Mann Filter C 40 006 Air Filter | Replaces the HiFi Filter SA 5133",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-c-40-006-b84365cdbb64.jpg",
+      "vendor": "",
+      "price": 14600,
+      "partNumber": "C 40 006",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 400.0 mm, Dimension B: 222.0 mm, Dimension H: 351.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF26165 Air Filter | Replaces the HiFi Filter SA 5133",
+      "sku": "sa-5133-4",
+      "option1Value": "Fleetguard AF26165 Air Filter | Replaces the HiFi Filter SA 5133",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5133-af26165-6626a6747d14.jpg",
+      "vendor": "",
+      "price": 19600,
+      "partNumber": "AF26165",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Tunisia",
+      "description": "​Fleetguard® AF26165 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "6.85 kg",
+      "shippingVolume": "0.1068 m³"
+    }
+  ]
+}

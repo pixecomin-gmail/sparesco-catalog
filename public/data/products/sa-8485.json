@@ -1,0 +1,33 @@
+{
+  "handle": "sa-8485",
+  "title": "SA 8485",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8485-sa-8485-7231ba394c64.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8485 Air Filter",
+      "sku": "sa-8485-1",
+      "option1Value": "HiFi Filter SA 8485 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8485-sa-8485-7231ba394c64.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 8485",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8485 Air Filter. Easy to install and replace, the SA 8485 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 264.0 mm, Dimension 2 (D2): 239.0 mm, Dimension 3 (D3): 188.0 mm, Height 1 (H1): 45.0 mm, Height 2 (H2): 18.0 mm, Height 3 (H3): 11.0 mm"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.003 m³"
+    }
+  ]
+}

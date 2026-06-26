@@ -1,0 +1,51 @@
+{
+  "handle": "sac-7904",
+  "title": "SAC 7904",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-7904-lb-1374-2-acb6df6390cc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-7904-ov-6074-e8ed3fca70c2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LB 1374/2 Compressed Air-Oil Separation | Replaces the Sakura SAC-7904",
+      "sku": "sac-7904-1",
+      "option1Value": "Mann Filter LB 1374/2 Compressed Air-Oil Separation | Replaces the Sakura SAC-7904",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-7904-lb-1374-2-acb6df6390cc.jpg",
+      "vendor": "",
+      "price": 8400,
+      "partNumber": "LB 1374/2",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER air deoiling boxes reliably separate oil from the compressed air in compressors and vacuum pumps. They ensure clean air, prolong the service life of the devices and provide optimal performance. High-quality media for the air deoiling boxes from the technology leader MANN-FILTER ensure a high separation rate and a low residual oil content. This minimizes oil loss and leads to low energy and oil consumption over the entire service life.",
+      "specifications": [
+        "Style: Compressed Air-Oil Separation, Dimension A: 136.0 mm, Dimension B: 100.0 mm, Dimension C: 111.0 mm, Dimension G: M39x1.5, Dimension H: 177.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter OV 6074 Air/Oil Separator | Replaces the Sakura SAC-7904",
+      "sku": "sac-7904-2",
+      "option1Value": "HiFi Filter OV 6074 Air/Oil Separator | Replaces the Sakura SAC-7904",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-7904-ov-6074-e8ed3fca70c2.jpg",
+      "vendor": "",
+      "price": 10800,
+      "partNumber": "OV 6074",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OV 6074 Air/Oil Separator is HiFi's replacement to the SAKURA SAC-7904. Easy to install and replace, the OV 6074 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 140.0 mm, Dimension 2 (D2): 108.0 mm, Dimension 3 (D3): 98.0 mm, Thread 1 (D7): M39X1,5, Height 1 (H1): 182.0 mm, Height 2 (H2): 180.0 mm, Height 3 (H3): 143.0 mm"
+      ],
+      "unitWeight": "2.18 kg",
+      "shippingVolume": "0.0043 m³"
+    }
+  ]
+}

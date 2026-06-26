@@ -1,0 +1,51 @@
+{
+  "handle": "sao56672",
+  "title": "SAO56672",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao56672-os-5231-913fff5f4ff4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao56672-p525199-0ebc6f268fa3.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5231 Air/Oil Separator | Replaces the SF Filter SAO56672",
+      "sku": "sao56672-1",
+      "option1Value": "HiFi Filter OS 5231 Air/Oil Separator | Replaces the SF Filter SAO56672",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao56672-os-5231-913fff5f4ff4.jpg",
+      "vendor": "",
+      "price": 19100,
+      "partNumber": "OS 5231",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5231 Air/Oil Separator is HiFi's replacement to the SF Filter SAO56672. Easy to install and replace, the OS 5231 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "4.08 kg",
+      "shippingVolume": "0.0368 m³"
+    },
+    {
+      "title": "Donaldson P525199 Air Oil Separator | Replaces the SF Filter SAO56672",
+      "sku": "sao56672-2",
+      "option1Value": "Donaldson P525199 Air Oil Separator | Replaces the SF Filter SAO56672",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao56672-p525199-0ebc6f268fa3.jpg",
+      "vendor": "",
+      "price": 20700,
+      "partNumber": "P525199",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P525199 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "3.48 kg",
+      "shippingVolume": "0.0222 m³"
+    }
+  ]
+}

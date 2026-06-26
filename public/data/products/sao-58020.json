@@ -1,0 +1,33 @@
+{
+  "handle": "sao-58020",
+  "title": "SAO 58020",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58020-os-5256-c43a0571b04b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 5256 Air/Oil Separator | Replaces the SF Filter SAO 58020",
+      "sku": "sao-58020-1",
+      "option1Value": "HiFi Filter OS 5256 Air/Oil Separator | Replaces the SF Filter SAO 58020",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58020-os-5256-c43a0571b04b.jpg",
+      "vendor": "",
+      "price": 38300,
+      "partNumber": "OS 5256",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 5256 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58020. Easy to install and replace, the OS 5256 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "7.96 kg",
+      "shippingVolume": "0.0584 m³"
+    }
+  ]
+}

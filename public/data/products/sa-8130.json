@@ -1,0 +1,51 @@
+{
+  "handle": "sa-8130",
+  "title": "SA 8130",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8130-sa-8130-6bf08cf8d5cc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8130-af25604-09395d4f57ea.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8130 Air Filter",
+      "sku": "sa-8130-1",
+      "option1Value": "HiFi Filter SA 8130 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8130-sa-8130-6bf08cf8d5cc.jpg",
+      "vendor": "",
+      "price": 6800,
+      "partNumber": "SA 8130",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8130 Air Filter. Easy to install and replace, the SA 8130 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 279.0 mm, Dimension 2 (D2): 175.0 mm, Height 1 (H1): 465.0 mm, Height 2 (H2): 460.0 mm, Height 3 (H3): 452.0 mm"
+      ],
+      "unitWeight": "3.2 kg",
+      "shippingVolume": "0.0482 m³"
+    },
+    {
+      "title": "Fleetguard AF25604 Air Filter | Replaces the HiFi Filter SA 8130",
+      "sku": "sa-8130-2",
+      "option1Value": "Fleetguard AF25604 Air Filter | Replaces the HiFi Filter SA 8130",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8130-af25604-09395d4f57ea.jpg",
+      "vendor": "",
+      "price": 7000,
+      "partNumber": "AF25604",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Fleetguard® AF25604 spin-on lube filter meets or exceeds OE performance requirements and the new challenges of modern engine technology.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.05 kg",
+      "shippingVolume": "0.0418 m³"
+    }
+  ]
+}

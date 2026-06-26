@@ -1,0 +1,51 @@
+{
+  "handle": "sa-69028",
+  "title": "SA 69028",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-69028-os-883-4c5f8790c17b.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-69028-p782918-79bd5666b7de.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 883 Air/Oil Separator | Replaces the Sakura SA-69028",
+      "sku": "sa-69028-1",
+      "option1Value": "HiFi Filter OS 883 Air/Oil Separator | Replaces the Sakura SA-69028",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-69028-os-883-4c5f8790c17b.jpg",
+      "vendor": "",
+      "price": 12500,
+      "partNumber": "OS 883",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 883 Air/Oil Separator is HiFi's replacement to the SAKURA SA-69028. Easy to install and replace, the OS 883 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 165.0 mm, Dimension 2 (D2): 133.0 mm, Dimension 3 (D3): 88.0 mm, Height 1 (H1): 248.0 mm"
+      ],
+      "unitWeight": "2.04 kg",
+      "shippingVolume": "0.0111 m³"
+    },
+    {
+      "title": "Donaldson P782918 Air Oil Separator | Replaces the Sakura SA-69028",
+      "sku": "sa-69028-2",
+      "option1Value": "Donaldson P782918 Air Oil Separator | Replaces the Sakura SA-69028",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-69028-p782918-79bd5666b7de.jpg",
+      "vendor": "",
+      "price": 11300,
+      "partNumber": "P782918",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P782918 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.16 kg",
+      "shippingVolume": "0.0107 m³"
+    }
+  ]
+}

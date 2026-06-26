@@ -1,0 +1,51 @@
+{
+  "handle": "sa2047",
+  "title": "SA2047",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2047-sa-16335-15dd7d79afad.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2047-p536431-041274e43114.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16335 Air Filter | Replaces the Baldwin SA2047",
+      "sku": "sa2047-1",
+      "option1Value": "HiFi Filter SA 16335 Air Filter | Replaces the Baldwin SA2047",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2047-sa-16335-15dd7d79afad.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "SA 16335",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SA 16335 Air Filter is HiFi's replacement to the Baldwin SA2047. Easy to install and replace, the SA 16335 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.02 kg",
+      "shippingVolume": "0.0005 m³"
+    },
+    {
+      "title": "Donaldson P536431 Breather, Air Special | Replaces the Baldwin SA2047",
+      "sku": "sa2047-2",
+      "option1Value": "Donaldson P536431 Breather, Air Special | Replaces the Baldwin SA2047",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2047-p536431-041274e43114.jpg",
+      "vendor": "",
+      "price": 800,
+      "partNumber": "P536431",
+      "hsCode": "8421.39.85.90",
+      "countryOfOrigin": "United States",
+      "description": "Genuine Donaldson P536431 Breather, Air Special is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.01 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

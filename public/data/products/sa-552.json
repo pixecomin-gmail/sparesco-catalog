@@ -1,0 +1,33 @@
+{
+  "handle": "sa-552",
+  "title": "SA 552",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-552-sa-552-7faaa917ef68.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 552 Air Filter",
+      "sku": "sa-552-1",
+      "option1Value": "HiFi Filter SA 552 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-552-sa-552-7faaa917ef68.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 552",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 552 Air Filter. Easy to install and replace, the SA 552 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 118.0 mm, Dimension 2 (D2): 89.0 mm, Dimension 3 (D3): 89.0 mm, Height 1 (H1): 203.0 mm, Height 2 (H2): 196.0 mm"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0033 m³"
+    }
+  ]
+}

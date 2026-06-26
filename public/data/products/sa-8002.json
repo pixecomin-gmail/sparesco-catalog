@@ -1,0 +1,51 @@
+{
+  "handle": "sa-8002",
+  "title": "SA 8002",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8002-sa-8002-1fc6a56047a1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8002-p607300-f1eebd75c4bc.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8002 Air Filter",
+      "sku": "sa-8002-1",
+      "option1Value": "HiFi Filter SA 8002 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8002-sa-8002-1fc6a56047a1.jpg",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "SA 8002",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8002 Air Filter. Easy to install and replace, the SA 8002 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 309.0 mm, Dimension 2 (D2): 289.0 mm, Dimension 3 (D3): 187.0 mm, Height 1 (H1): 42.0 mm, Height 2 (H2): 11.0 mm"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0027 m³"
+    },
+    {
+      "title": "Donaldson P607300 Air Filter, Panel Ventilation | Replaces the HiFi Filter SA 8002",
+      "sku": "sa-8002-2",
+      "option1Value": "Donaldson P607300 Air Filter, Panel Ventilation | Replaces the HiFi Filter SA 8002",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8002-p607300-f1eebd75c4bc.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "P607300",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "South Korea",
+      "description": "Why Choose Donaldson Cabin Air Filters? Filter irritants before they enter the vehicle cab to help operators breathe cleaner air. • High quality construction and tested to industry standards. • Durable, dependable and long-lasting. • Designed as a direct replacement for many OE applications.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.44 kg",
+      "shippingVolume": "0.0114 m³"
+    }
+  ]
+}

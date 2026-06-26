@@ -1,0 +1,51 @@
+{
+  "handle": "sa-8194",
+  "title": "SA 8194",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8194-sa-8194-e7e44e06c2c2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8194-c-25-654-048e3b137d52.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8194 Air Filter",
+      "sku": "sa-8194-1",
+      "option1Value": "HiFi Filter SA 8194 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8194-sa-8194-e7e44e06c2c2.jpg",
+      "vendor": "",
+      "price": 1200,
+      "partNumber": "SA 8194",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8194 Air Filter. Easy to install and replace, the SA 8194 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 257.0 mm, Dimension 2 (D2): 232.0 mm, Dimension 3 (D3): 208.0 mm, Height 1 (H1): 52.0 mm, Height 2 (H2): 43.0 mm, Height 3 (H3): 35.0 mm"
+      ],
+      "unitWeight": "0.2 kg",
+      "shippingVolume": "0.0036 m³"
+    },
+    {
+      "title": "Mann Filter C 25 654 Air Filter | Replaces the HiFi Filter SA 8194",
+      "sku": "sa-8194-2",
+      "option1Value": "Mann Filter C 25 654 Air Filter | Replaces the HiFi Filter SA 8194",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8194-c-25-654-048e3b137d52.jpg",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "C 25 654",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 256.0 mm, Dimension B: 207.0 mm, Dimension H: 56.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

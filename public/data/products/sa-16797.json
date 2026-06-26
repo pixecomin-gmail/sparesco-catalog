@@ -1,0 +1,69 @@
+{
+  "handle": "sa-16797",
+  "title": "SA 16797",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16797-sa-16797-ebe3c435180c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16797-dba5294-c9d920dfc044.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16797-af55021-0e0079cfbada.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16797 Air Filter",
+      "sku": "sa-16797-1",
+      "option1Value": "HiFi Filter SA 16797 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16797-sa-16797-ebe3c435180c.jpg",
+      "vendor": "",
+      "price": 12000,
+      "partNumber": "SA 16797",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16797 Air Filter. Easy to install and replace, the SA 16797 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 235.0 mm, Dimension 2 (D2): 193.0 mm, Dimension 3 (D3): 191.0 mm, Height 1 (H1): 358.0 mm, Height 2 (H2): 321.0 mm"
+      ],
+      "unitWeight": "2.02 kg",
+      "shippingVolume": "0.0205 m³"
+    },
+    {
+      "title": "Donaldson DBA5294 Air Filter, Primary Donaldson Blue | Replaces the HiFi Filter SA 16797",
+      "sku": "sa-16797-2",
+      "option1Value": "Donaldson DBA5294 Air Filter, Primary Donaldson Blue | Replaces the HiFi Filter SA 16797",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16797-dba5294-c9d920dfc044.jpg",
+      "vendor": "",
+      "price": 11000,
+      "partNumber": "DBA5294",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson Blue® Filters? Donaldson Blue filters with Ultra-Web® media provide superior protection over traditional cellulose filters. • With up to 99.99% efficiency, delivers better protection for high-dust applications. • Sheds dust during equipment vibration for longer filter life and fewer changes. • Performs in extreme temperature and humidity.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.88 kg",
+      "shippingVolume": "0.0196 m³"
+    },
+    {
+      "title": "Fleetguard AF55021 Air Filter | Replaces the HiFi Filter SA 16797",
+      "sku": "sa-16797-3",
+      "option1Value": "Fleetguard AF55021 Air Filter | Replaces the HiFi Filter SA 16797",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16797-af55021-0e0079cfbada.jpg",
+      "vendor": "",
+      "price": 11400,
+      "partNumber": "AF55021",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF55021 Direct Flow primary air filter's technology offers better engine protection and lower maintenance costs within a smaller profile than conventional air filtration systems.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.98 kg",
+      "shippingVolume": "0.0193 m³"
+    }
+  ]
+}

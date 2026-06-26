@@ -1,0 +1,87 @@
+{
+  "handle": "sa-10385-k",
+  "title": "SA 10385 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-sa-10385-k-6d4005fcfeda.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-p182050-27390d592ecc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-c-1188-x-aad3e5f2db61.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-af435km-86c6645f6f2e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10385 K Air Filter",
+      "sku": "sa-10385-k-1",
+      "option1Value": "HiFi Filter SA 10385 K Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-sa-10385-k-6d4005fcfeda.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 10385 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10385 K Air Filter. Easy to install and replace, the SA 10385 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 126.0 mm, Dimension 2 (D2): 104.0 mm, Dimension 3 (D3): 64.0 mm, Height 1 (H1): 263.0 mm, Height 2 (H2): 256.0 mm, Height 3 (H3): 234.0 mm"
+      ],
+      "unitWeight": "0.5 kg",
+      "shippingVolume": "0.0053 m³"
+    },
+    {
+      "title": "Donaldson P182050 Air Filter, Primary Finned | Replaces the HiFi Filter SA 10385 K",
+      "sku": "sa-10385-k-2",
+      "option1Value": "Donaldson P182050 Air Filter, Primary Finned | Replaces the HiFi Filter SA 10385 K",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-p182050-27390d592ecc.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "P182050",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Extended Life Air Filters? Strong, reliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • More media pleats deliver higher dust-holding capacity and longer filter life. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.6 kg",
+      "shippingVolume": "0.0059 m³"
+    },
+    {
+      "title": "Mann Filter C 1188 x Air Filter | Replaces the HiFi Filter SA 10385 K",
+      "sku": "sa-10385-k-3",
+      "option1Value": "Mann Filter C 1188 x Air Filter | Replaces the HiFi Filter SA 10385 K",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-c-1188-x-aad3e5f2db61.jpg",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "C 1188 x",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "United States",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 104.0 mm, Dimension B: 63.0 mm, Dimension C: 17.0 mm, Dimension D: 104.0 mm, Dimension E: 132.0 mm, Dimension H: 264.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF435KM Air Filter, Primary | Replaces the HiFi Filter SA 10385 K",
+      "sku": "sa-10385-k-4",
+      "option1Value": "Fleetguard AF435KM Air Filter, Primary | Replaces the HiFi Filter SA 10385 K",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10385-k-af435km-86c6645f6f2e.jpg",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "AF435KM",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF435KM premium axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.59 kg",
+      "shippingVolume": "0.0066 m³"
+    }
+  ]
+}

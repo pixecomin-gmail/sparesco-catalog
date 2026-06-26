@@ -1,0 +1,51 @@
+{
+  "handle": "sa-8475",
+  "title": "SA 8475",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8475-sa-8475-b3ae4496264a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8475-c-24-150-b96ac5acc762.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8475 Air Filter",
+      "sku": "sa-8475-1",
+      "option1Value": "HiFi Filter SA 8475 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8475-sa-8475-b3ae4496264a.jpg",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "SA 8475",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8475 Air Filter. Easy to install and replace, the SA 8475 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 243.0 mm, Dimension 2 (D2): 236.0 mm, Dimension 3 (D3): 103.0 mm, Height 1 (H1): 79.0 mm, Height 2 (H2): 74.0 mm, Height 3 (H3): 17.0 mm"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0055 m³"
+    },
+    {
+      "title": "Mann Filter C 24 150 Air Filter | Replaces the HiFi Filter SA 8475",
+      "sku": "sa-8475-2",
+      "option1Value": "Mann Filter C 24 150 Air Filter | Replaces the HiFi Filter SA 8475",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8475-c-24-150-b96ac5acc762.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "C 24 150",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 232.0 mm, Dimension B: 231.0 mm, Dimension C: 173.0 mm, Dimension D: 148.0 mm, Dimension H: 55.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

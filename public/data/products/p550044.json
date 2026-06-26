@@ -1,0 +1,51 @@
+{
+  "handle": "p550044",
+  "title": "P550044",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550044-p550044-72cf09dc5b9d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550044-ff5086-9a83252978e1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P550044 Fuel Cartridge",
+      "sku": "p550044-1",
+      "option1Value": "Donaldson P550044 Fuel Cartridge",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550044-p550044-72cf09dc5b9d.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "P550044",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P550044 Fuel Cartridge is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Fuel Cartridge, Media: Cellulose, Efficiency 1: 30µ @ β100, Outer Diameter: 89.9 mm, Inner Diameter: 14.5 mm, Length: 140.2 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 30µ @ β100, Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard FF5086 Fuel Filter, Cartridge | Replaces the Donaldson P550044",
+      "sku": "p550044-2",
+      "option1Value": "Fleetguard FF5086 Fuel Filter, Cartridge | Replaces the Donaldson P550044",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550044-ff5086-9a83252978e1.jpg",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "FF5086",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Fleetguard® FF5086 fuel filter cartridge reduces contamination, trapping dirt particles and preventing them from reaching the moving parts in your engine supporting longer service intervals.",
+      "specifications": [
+        "Style: Fuel Cartridge, Media: Cellulose, Efficiency 1: 30µ @ β100, Outer Diameter: 89.9 mm, Inner Diameter: 14.5 mm, Length: 140.2 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 30µ @ β100, Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

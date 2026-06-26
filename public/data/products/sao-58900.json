@@ -1,0 +1,51 @@
+{
+  "handle": "sao-58900",
+  "title": "SAO 58900",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58900-p525187-330817a6688c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58900-ot-6313-7c419d26129b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P525187 Air Oil Separator | Replaces the SF Filter SAO 58900",
+      "sku": "sao-58900-1",
+      "option1Value": "Donaldson P525187 Air Oil Separator | Replaces the SF Filter SAO 58900",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58900-p525187-330817a6688c.jpg",
+      "vendor": "",
+      "price": 35200,
+      "partNumber": "P525187",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P525187 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "15.0 kg",
+      "shippingVolume": "0.1517 m³"
+    },
+    {
+      "title": "HiFi Filter OT 6313 Air/Oil Separator | Replaces the SF Filter SAO 58900",
+      "sku": "sao-58900-2",
+      "option1Value": "HiFi Filter OT 6313 Air/Oil Separator | Replaces the SF Filter SAO 58900",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-58900-ot-6313-7c419d26129b.jpg",
+      "vendor": "",
+      "price": 47100,
+      "partNumber": "OT 6313",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 6313 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 58900. Easy to install and replace, the OT 6313 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 400.0 mm, Dimension 2 (D2): 390.0 mm, Dimension 3 (D3): 355.0 mm, Height 1 (H1): 821.0 mm, Height 2 (H2): 820.0 mm"
+      ],
+      "unitWeight": "15.48 kg",
+      "shippingVolume": "0.1489 m³"
+    }
+  ]
+}

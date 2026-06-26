@@ -1,0 +1,33 @@
+{
+  "handle": "sap075g5l10a",
+  "title": "SAP075G5L10A",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sap075g5l10a-fs-604-dec2995c751d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter FS 604 Breather Filter | Replaces the MP Filtri SAP075G5L10A",
+      "sku": "sap075g5l10a-1",
+      "option1Value": "HiFi Filter FS 604 Breather Filter | Replaces the MP Filtri SAP075G5L10A",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sap075g5l10a-fs-604-dec2995c751d.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "FS 604",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter FS 604 Breather Filter is HiFi's replacement to the MP FILTRI SAP075G5L10A. Easy to install and replace, the FS 604 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: BREATHER FILTER, Dimension 1 (D1): 71.5 mm, Dimension 2 (D2): 68.0 mm, Thread 1 (D7): 3/4\"-NPT, Height 1 (H1): 80.0 mm, Height 2 (H2): 62.0 mm"
+      ],
+      "unitWeight": "0.24 kg",
+      "shippingVolume": "0.0006 m³"
+    }
+  ]
+}

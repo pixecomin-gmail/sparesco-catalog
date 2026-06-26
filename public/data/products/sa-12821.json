@@ -1,0 +1,87 @@
+{
+  "handle": "sa-12821",
+  "title": "SA 12821",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-sa-12821-845faf027f8c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-p786889-5a6d61437b25.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-c-10-015-75efdb7f8c03.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-af25472-00737dd5913a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 12821 Air Filter",
+      "sku": "sa-12821-1",
+      "option1Value": "HiFi Filter SA 12821 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-sa-12821-845faf027f8c.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 12821",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 12821 Air Filter. Easy to install and replace, the SA 12821 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 101.0 mm, Dimension 2 (D2): 73.0 mm, Dimension 3 (D3): 33.0 mm, Height 1 (H1): 70.0 mm, Height 2 (H2): 62.0 mm, Height 3 (H3): 3.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.001 m³"
+    },
+    {
+      "title": "Donaldson P786889 Air Filter, Primary Obround | Replaces the HiFi Filter SA 12821",
+      "sku": "sa-12821-2",
+      "option1Value": "Donaldson P786889 Air Filter, Primary Obround | Replaces the HiFi Filter SA 12821",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-p786889-5a6d61437b25.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "P786889",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Cyprus",
+      "description": "Genuine Donaldson P786889 Air Filter, Primary Obround is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.17 kg",
+      "shippingVolume": "0.0009 m³"
+    },
+    {
+      "title": "Mann Filter C 10 015 Air Filter | Replaces the HiFi Filter SA 12821",
+      "sku": "sa-12821-3",
+      "option1Value": "Mann Filter C 10 015 Air Filter | Replaces the HiFi Filter SA 12821",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-c-10-015-75efdb7f8c03.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "C 10 015",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 102.0 mm, Dimension D: 74.0 mm, Dimension H: 70.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25472 Air Filter, Primary | Replaces the HiFi Filter SA 12821",
+      "sku": "sa-12821-4",
+      "option1Value": "Fleetguard AF25472 Air Filter, Primary | Replaces the HiFi Filter SA 12821",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-12821-af25472-00737dd5913a.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "AF25472",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25472 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.16 kg",
+      "shippingVolume": "0.0012 m³"
+    }
+  ]
+}

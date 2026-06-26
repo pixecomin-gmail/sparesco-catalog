@@ -1,0 +1,69 @@
+{
+  "handle": "sa-17483",
+  "title": "SA 17483",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17483-sa-17483-0a87c9768356.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17483-p959184-674d50ea6714.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17483-cf-2944-d3f1ccafaa01.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17483 Air Filter",
+      "sku": "sa-17483-1",
+      "option1Value": "HiFi Filter SA 17483 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17483-sa-17483-0a87c9768356.jpg",
+      "vendor": "",
+      "price": 5400,
+      "partNumber": "SA 17483",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17483 Air Filter. Easy to install and replace, the SA 17483 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 295.0 mm, Dimension 2 (D2): 283.0 mm, Dimension 3 (D3): 168.0 mm, Height 1 (H1): 40.0 mm, Height 2 (H2): 25.0 mm"
+      ],
+      "unitWeight": "0.26 kg",
+      "shippingVolume": "0.003 m³"
+    },
+    {
+      "title": "Donaldson P959184 Air Filter, Safety Obround | Replaces the HiFi Filter SA 17483",
+      "sku": "sa-17483-2",
+      "option1Value": "Donaldson P959184 Air Filter, Safety Obround | Replaces the HiFi Filter SA 17483",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17483-p959184-674d50ea6714.jpg",
+      "vendor": "",
+      "price": 5200,
+      "partNumber": "P959184",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Genuine Donaldson P959184 Air Filter, Safety Obround is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.0036 m³"
+    },
+    {
+      "title": "Mann Filter CF 2944 Secondary Element | Replaces the HiFi Filter SA 17483",
+      "sku": "sa-17483-3",
+      "option1Value": "Mann Filter CF 2944 Secondary Element | Replaces the HiFi Filter SA 17483",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17483-cf-2944-d3f1ccafaa01.jpg",
+      "vendor": "",
+      "price": 5300,
+      "partNumber": "CF 2944",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Mexico",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element, Dimension A: 296.0 mm, Dimension B: 168.0 mm, Dimension H: 38.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

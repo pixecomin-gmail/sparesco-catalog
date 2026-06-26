@@ -1,0 +1,87 @@
+{
+  "handle": "sa-16726",
+  "title": "SA 16726",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-sa-16726-08f62e911068.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-cf-924-f6d5e045e7cc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-p789382-2c0bcc1c54d7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-af1980-5d267fa6ef8a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16726 Air Filter",
+      "sku": "sa-16726-1",
+      "option1Value": "HiFi Filter SA 16726 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-sa-16726-08f62e911068.jpg",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "SA 16726",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16726 Air Filter. Easy to install and replace, the SA 16726 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 105.0 mm, Dimension 2 (D2): 86.0 mm, Dimension 3 (D3): 73.0 mm, Height 1 (H1): 285.0 mm, Height 2 (H2): 281.0 mm, Height 3 (H3): 268.0 mm"
+      ],
+      "unitWeight": "0.29 kg",
+      "shippingVolume": "0.004 m³"
+    },
+    {
+      "title": "Mann Filter CF 924 Secondary Element | Replaces the HiFi Filter SA 16726",
+      "sku": "sa-16726-2",
+      "option1Value": "Mann Filter CF 924 Secondary Element | Replaces the HiFi Filter SA 16726",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-cf-924-f6d5e045e7cc.jpg",
+      "vendor": "",
+      "price": 2300,
+      "partNumber": "CF 924",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Brazil",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element, Dimension A: 107.0 mm, Dimension B: 73.0 mm, Dimension C: 18.0 mm, Dimension D: 87.0 mm, Dimension H: 280.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P789382 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16726",
+      "sku": "sa-16726-3",
+      "option1Value": "Donaldson P789382 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 16726",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-p789382-2c0bcc1c54d7.jpg",
+      "vendor": "",
+      "price": 2500,
+      "partNumber": "P789382",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.004 m³"
+    },
+    {
+      "title": "Fleetguard AF1980 Air Filter, Secondary | Replaces the HiFi Filter SA 16726",
+      "sku": "sa-16726-4",
+      "option1Value": "Fleetguard AF1980 Air Filter, Secondary | Replaces the HiFi Filter SA 16726",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16726-af1980-5d267fa6ef8a.jpg",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "AF1980",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1980 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.39 kg",
+      "shippingVolume": "0.0046 m³"
+    }
+  ]
+}

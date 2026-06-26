@@ -1,0 +1,51 @@
+{
+  "handle": "p550672",
+  "title": "P550672",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550672-p550672-bad0168e4bd0.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550672-ff218-e9e7910f5847.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P550672 Fuel Cartridge",
+      "sku": "p550672-1",
+      "option1Value": "Donaldson P550672 Fuel Cartridge",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550672-p550672-bad0168e4bd0.jpg",
+      "vendor": "",
+      "price": 2800,
+      "partNumber": "P550672",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P550672 Fuel Cartridge is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Fuel Cartridge, Media: Cellulose, Efficiency 1: 25µ @ β100, Outer Diameter: 74.4 mm, Inner Diameter: 15.7 mm, Length: 104.4 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 25µ @ β100, Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard FF218 Fuel Filter, Cartridge | Replaces the Donaldson P550672",
+      "sku": "p550672-2",
+      "option1Value": "Fleetguard FF218 Fuel Filter, Cartridge | Replaces the Donaldson P550672",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/p550672-ff218-e9e7910f5847.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "FF218",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "Indonesia",
+      "description": "Fleetguard® FF218 premium fuel filter cartridge reduces contamination, trapping dirt particles and preventing them from reaching the moving parts in your engine supporting longer service intervals.",
+      "specifications": [
+        "Style: Fuel Cartridge, Media: Cellulose, Efficiency 1: 25µ @ β100, Outer Diameter: 74.4 mm, Inner Diameter: 15.7 mm, Length: 104.4 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 25µ @ β100, Media Type: Cellulose"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

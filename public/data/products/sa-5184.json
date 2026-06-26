@@ -1,0 +1,51 @@
+{
+  "handle": "sa-5184",
+  "title": "SA 5184",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5184-sa-5184-67f1d6c73c96.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5184-c-1635-c55df2763ded.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5184 Air Filter",
+      "sku": "sa-5184-1",
+      "option1Value": "HiFi Filter SA 5184 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5184-sa-5184-67f1d6c73c96.jpg",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "SA 5184",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5184 Air Filter. Easy to install and replace, the SA 5184 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.14 kg",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Mann Filter C 1635 Air Filter | Replaces the HiFi Filter SA 5184",
+      "sku": "sa-5184-2",
+      "option1Value": "Mann Filter C 1635 Air Filter | Replaces the HiFi Filter SA 5184",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5184-c-1635-c55df2763ded.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "C 1635",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Argentina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 153.0 mm, Dimension B: 93.0 mm, Dimension H: 67.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "handle": "sa-16637",
+  "title": "SA 16637",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16637-sa-16637-9bd08ceb54c8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16637-p114637-2981734f700d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16637 Air Filter",
+      "sku": "sa-16637-1",
+      "option1Value": "HiFi Filter SA 16637 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16637-sa-16637-9bd08ceb54c8.jpg",
+      "vendor": "",
+      "price": 7500,
+      "partNumber": "SA 16637",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16637 Air Filter. Easy to install and replace, the SA 16637 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 131.0 mm, Dimension 2 (D2): 115.0 mm, Dimension 3 (D3): 65.0 mm, Height 1 (H1): 375.0 mm, Height 2 (H2): 369.0 mm, Height 3 (H3): 354.0 mm"
+      ],
+      "unitWeight": "0.84 kg",
+      "shippingVolume": "0.0103 m³"
+    },
+    {
+      "title": "Donaldson P114637 Air Filter, Primary Round | Replaces the HiFi Filter SA 16637",
+      "sku": "sa-16637-2",
+      "option1Value": "Donaldson P114637 Air Filter, Primary Round | Replaces the HiFi Filter SA 16637",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16637-p114637-2981734f700d.jpg",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "P114637",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P114637 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.9 kg",
+      "shippingVolume": "0.0098 m³"
+    }
+  ]
+}

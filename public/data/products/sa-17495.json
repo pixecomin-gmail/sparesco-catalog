@@ -1,0 +1,51 @@
+{
+  "handle": "sa-17495",
+  "title": "SA 17495",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17495-sa-17495-e9f3b5fb2bf2.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17495-c-35-1820-35aeb2fd3896.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17495 Air Filter",
+      "sku": "sa-17495-1",
+      "option1Value": "HiFi Filter SA 17495 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17495-sa-17495-e9f3b5fb2bf2.jpg",
+      "vendor": "",
+      "price": 16200,
+      "partNumber": "SA 17495",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17495 Air Filter. Easy to install and replace, the SA 17495 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 349.0 mm, Dimension 2 (D2): 240.0 mm, Dimension 3 (D3): 240.0 mm, Height 1 (H1): 609.0 mm, Height 2 (H2): 590.0 mm"
+      ],
+      "unitWeight": "5.28 kg",
+      "shippingVolume": "0.094 m³"
+    },
+    {
+      "title": "Mann Filter C 35 1820 Air Filter | Replaces the HiFi Filter SA 17495",
+      "sku": "sa-17495-2",
+      "option1Value": "Mann Filter C 35 1820 Air Filter | Replaces the HiFi Filter SA 17495",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17495-c-35-1820-35aeb2fd3896.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "C 35 1820",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 350.0 mm, Dimension B: 240.0 mm, Dimension C: 240.0 mm, Dimension H: 612.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

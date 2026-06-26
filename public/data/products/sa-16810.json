@@ -1,0 +1,51 @@
+{
+  "handle": "sa-16810",
+  "title": "SA 16810",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16810-sa-16810-1d269645fed7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16810-af1002-593140df310a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16810 Air Filter",
+      "sku": "sa-16810-1",
+      "option1Value": "HiFi Filter SA 16810 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16810-sa-16810-1d269645fed7.jpg",
+      "vendor": "",
+      "price": 12500,
+      "partNumber": "SA 16810",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16810 Air Filter. Easy to install and replace, the SA 16810 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "5.38 kg",
+      "shippingVolume": "0.1083 m³"
+    },
+    {
+      "title": "Fleetguard AF1002 Air Filter, Primary | Replaces the HiFi Filter SA 16810",
+      "sku": "sa-16810-2",
+      "option1Value": "Fleetguard AF1002 Air Filter, Primary | Replaces the HiFi Filter SA 16810",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16810-af1002-593140df310a.jpg",
+      "vendor": "",
+      "price": 13400,
+      "partNumber": "AF1002",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "South Africa",
+      "description": "​Fleetguard® AF1002 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "5.24 kg",
+      "shippingVolume": "0.104 m³"
+    }
+  ]
+}

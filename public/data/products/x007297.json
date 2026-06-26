@@ -1,0 +1,51 @@
+{
+  "handle": "x007297",
+  "title": "X007297",
+  "collection": "Donaldson",
+  "collectionHandle": "donaldson",
+  "category": "Donaldson",
+  "tags": [
+    "Donaldson",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/x007297-x007297-d3fb82348bfc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/x007297-af490m-cf0245e1ff3c.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson X007297 Air Filter Kit",
+      "sku": "x007297-1",
+      "option1Value": "Donaldson X007297 Air Filter Kit",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/x007297-x007297-d3fb82348bfc.jpg",
+      "vendor": "",
+      "price": 14100,
+      "partNumber": "X007297",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Czech Republic",
+      "description": "Genuine Donaldson X007297 Air Filter Kit includes all necessary components for efficient air filtration, ensuring clean airflow to the engine. It provides reliable protection against airborne contaminants. Suitable for a range of applications, this air filter kit enhances engine performance and extends service intervals.",
+      "specifications": [
+        "Style: Air Filter Kit"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF490M Air, Secondary | Replaces the Donaldson X007297",
+      "sku": "x007297-2",
+      "option1Value": "Fleetguard AF490M Air, Secondary | Replaces the Donaldson X007297",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/donaldson/x007297-af490m-cf0245e1ff3c.jpg",
+      "vendor": "",
+      "price": 3600,
+      "partNumber": "AF490M",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Czech Republic",
+      "description": "​Fleetguard® AF490M radial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter Kit"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

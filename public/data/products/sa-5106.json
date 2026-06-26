@@ -1,0 +1,51 @@
+{
+  "handle": "sa-5106",
+  "title": "SA 5106",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5106-sa-5106-698429098f02.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5106-c-2295-3-e6aa5e1ca6fd.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 5106 Air Filter",
+      "sku": "sa-5106-1",
+      "option1Value": "HiFi Filter SA 5106 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5106-sa-5106-698429098f02.jpg",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "SA 5106",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 5106 Air Filter. Easy to install and replace, the SA 5106 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 218.0 mm, Dimension 2 (D2): 212.0 mm, Dimension 3 (D3): 125.0 mm, Height 1 (H1): 70.0 mm, Height 2 (H2): 60.0 mm"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0047 m³"
+    },
+    {
+      "title": "Mann Filter C 2295/3 Air Filter | Replaces the HiFi Filter SA 5106",
+      "sku": "sa-5106-2",
+      "option1Value": "Mann Filter C 2295/3 Air Filter | Replaces the HiFi Filter SA 5106",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-5106-c-2295-3-e6aa5e1ca6fd.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "C 2295/3",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 213.0 mm, Dimension B: 219.0 mm, Dimension H: 70.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "handle": "sa-16417",
+  "title": "SA 16417",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16417-sa-16417-186c2ca024bb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16417-p777868-62d248a5d45d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16417-hp-2584-a-49ddb427df91.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16417 Air Filter",
+      "sku": "sa-16417-1",
+      "option1Value": "HiFi Filter SA 16417 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16417-sa-16417-186c2ca024bb.jpg",
+      "vendor": "",
+      "price": 8300,
+      "partNumber": "SA 16417",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16417 Air Filter. Easy to install and replace, the SA 16417 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 312.0 mm, Dimension 2 (D2): 180.0 mm, Height 1 (H1): 522.0 mm, Height 2 (H2): 510.0 mm"
+      ],
+      "unitWeight": "4.72 kg",
+      "shippingVolume": "0.0687 m³"
+    },
+    {
+      "title": "Donaldson P777868 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16417",
+      "sku": "sa-16417-2",
+      "option1Value": "Donaldson P777868 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16417",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16417-p777868-62d248a5d45d.jpg",
+      "vendor": "",
+      "price": 7300,
+      "partNumber": "P777868",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Why Choose Donaldson RadialSeal™ Filters? Reliable, leak- resistant Radial Seal™ keeps filters in place – even under heavy vibration. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.89 kg",
+      "shippingVolume": "0.0588 m³"
+    },
+    {
+      "title": "FIL Filter HP 2584 A | Replaces the HiFi Filter SA 16417",
+      "sku": "sa-16417-3",
+      "option1Value": "FIL Filter HP 2584 A | Replaces the HiFi Filter SA 16417",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16417-hp-2584-a-49ddb427df91.jpg",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "HP 2584 A",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 2584 A. Easy to install and replace, the HP 2584 A is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

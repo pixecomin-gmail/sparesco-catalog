@@ -1,0 +1,51 @@
+{
+  "handle": "sao-56250",
+  "title": "SAO 56250",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56250-oa-1109-2fb7b6f9aa45.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56250-p783513-bb6997012126.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1109 Air/Oil Separator | Replaces the SF Filter SAO 56250",
+      "sku": "sao-56250-1",
+      "option1Value": "HiFi Filter OA 1109 Air/Oil Separator | Replaces the SF Filter SAO 56250",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56250-oa-1109-2fb7b6f9aa45.jpg",
+      "vendor": "",
+      "price": 13200,
+      "partNumber": "OA 1109",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1109 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 56250. Easy to install and replace, the OA 1109 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 126.0 mm, Dimension 2 (D2): 80.0 mm, Dimension 3 (D3): 29.0 mm, Height 1 (H1): 198.0 mm, Height 2 (H2): 194.0 mm, Height 3 (H3): 184.0 mm"
+      ],
+      "unitWeight": "1.18 kg",
+      "shippingVolume": "0.004 m³"
+    },
+    {
+      "title": "Donaldson P783513 Air Oil Separator | Replaces the SF Filter SAO 56250",
+      "sku": "sao-56250-2",
+      "option1Value": "Donaldson P783513 Air Oil Separator | Replaces the SF Filter SAO 56250",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56250-p783513-bb6997012126.jpg",
+      "vendor": "",
+      "price": 11700,
+      "partNumber": "P783513",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P783513 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.26 kg",
+      "shippingVolume": "0.0043 m³"
+    }
+  ]
+}

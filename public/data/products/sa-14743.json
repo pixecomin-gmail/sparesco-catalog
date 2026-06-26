@@ -1,0 +1,51 @@
+{
+  "handle": "sa-14743",
+  "title": "SA 14743",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14743-sa-14743-4924c832d471.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14743-af4793-34b84f3c68c6.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14743 Air Filter",
+      "sku": "sa-14743-1",
+      "option1Value": "HiFi Filter SA 14743 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14743-sa-14743-4924c832d471.jpg",
+      "vendor": "",
+      "price": 14100,
+      "partNumber": "SA 14743",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14743 Air Filter. Easy to install and replace, the SA 14743 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "7.04 kg",
+      "shippingVolume": "0.0857 m³"
+    },
+    {
+      "title": "Fleetguard AF4793 Air Filter | Replaces the HiFi Filter SA 14743",
+      "sku": "sa-14743-2",
+      "option1Value": "Fleetguard AF4793 Air Filter | Replaces the HiFi Filter SA 14743",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14743-af4793-34b84f3c68c6.jpg",
+      "vendor": "",
+      "price": 24200,
+      "partNumber": "AF4793",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF4793 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "7.17 kg",
+      "shippingVolume": "0.1549 m³"
+    }
+  ]
+}

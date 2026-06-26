@@ -1,0 +1,51 @@
+{
+  "handle": "sa-10765",
+  "title": "SA 10765",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10765-sa-10765-3a0dc6692307.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10765-af815-39a0821fa7a2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10765 Air Filter",
+      "sku": "sa-10765-1",
+      "option1Value": "HiFi Filter SA 10765 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10765-sa-10765-3a0dc6692307.jpg",
+      "vendor": "",
+      "price": 8500,
+      "partNumber": "SA 10765",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10765 Air Filter. Easy to install and replace, the SA 10765 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 132.0 mm, Dimension 2 (D2): 103.0 mm, Dimension 3 (D3): 17.0 mm, Height 1 (H1): 339.0 mm, Height 2 (H2): 331.0 mm"
+      ],
+      "unitWeight": "0.8 kg",
+      "shippingVolume": "0.0169 m³"
+    },
+    {
+      "title": "Fleetguard AF815 Air, Secondary | Replaces the HiFi Filter SA 10765",
+      "sku": "sa-10765-2",
+      "option1Value": "Fleetguard AF815 Air, Secondary | Replaces the HiFi Filter SA 10765",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10765-af815-39a0821fa7a2.jpg",
+      "vendor": "",
+      "price": 5800,
+      "partNumber": "AF815",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF815 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.8 kg",
+      "shippingVolume": "0.0101 m³"
+    }
+  ]
+}

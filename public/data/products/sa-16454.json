@@ -1,0 +1,69 @@
+{
+  "handle": "sa-16454",
+  "title": "SA 16454",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16454-sa-16454-7f62c8df672c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16454-p613335-59007df5bc3f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16454-af25963-c65af1068c0d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16454 Air Filter",
+      "sku": "sa-16454-1",
+      "option1Value": "HiFi Filter SA 16454 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16454-sa-16454-7f62c8df672c.jpg",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "SA 16454",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16454 Air Filter. Easy to install and replace, the SA 16454 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 182.0 mm, Dimension 2 (D2): 121.0 mm, Dimension 3 (D3): 94.0 mm, Height 1 (H1): 406.0 mm, Height 2 (H2): 404.0 mm, Height 3 (H3): 20.0 mm"
+      ],
+      "unitWeight": "1.02 kg",
+      "shippingVolume": "0.0181 m³"
+    },
+    {
+      "title": "Donaldson P613335 Air Filter, Safety | Replaces the HiFi Filter SA 16454",
+      "sku": "sa-16454-2",
+      "option1Value": "Donaldson P613335 Air Filter, Safety | Replaces the HiFi Filter SA 16454",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16454-p613335-59007df5bc3f.jpg",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "P613335",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.0234 m³"
+    },
+    {
+      "title": "Fleetguard AF25963 Air Filter, Secondary | Replaces the HiFi Filter SA 16454",
+      "sku": "sa-16454-3",
+      "option1Value": "Fleetguard AF25963 Air Filter, Secondary | Replaces the HiFi Filter SA 16454",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16454-af25963-c65af1068c0d.jpg",
+      "vendor": "",
+      "price": 4500,
+      "partNumber": "AF25963",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® OptiAir™ AF25963 secondary air element addresses key design requirements of all equipment manufacturers while outperforming conventional radial seal designs. Resulting in extended service intervals, reduced downtime, and lower maintenance costs.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.17 kg",
+      "shippingVolume": "0.0172 m³"
+    }
+  ]
+}

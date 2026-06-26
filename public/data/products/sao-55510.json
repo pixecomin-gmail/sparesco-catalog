@@ -1,0 +1,51 @@
+{
+  "handle": "sao-55510",
+  "title": "SAO 55510",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55510-p784290-cb1bc189576f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55510-si-41507-de725003556e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P784290 Air Oil Separator | Replaces the SF Filter SAO 55510",
+      "sku": "sao-55510-1",
+      "option1Value": "Donaldson P784290 Air Oil Separator | Replaces the SF Filter SAO 55510",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55510-p784290-cb1bc189576f.jpg",
+      "vendor": "",
+      "price": 7300,
+      "partNumber": "P784290",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P784290 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.69 kg",
+      "shippingVolume": "0.0067 m³"
+    },
+    {
+      "title": "HiFi Filter SI 41507 Air/Oil Separator | Replaces the SF Filter SAO 55510",
+      "sku": "sao-55510-2",
+      "option1Value": "HiFi Filter SI 41507 Air/Oil Separator | Replaces the SF Filter SAO 55510",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55510-si-41507-de725003556e.jpg",
+      "vendor": "",
+      "price": 8500,
+      "partNumber": "SI 41507",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SI 41507 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55510. Easy to install and replace, the SI 41507 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.64 kg",
+      "shippingVolume": "0.0027 m³"
+    }
+  ]
+}

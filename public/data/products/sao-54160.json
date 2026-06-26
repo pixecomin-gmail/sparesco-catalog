@@ -1,0 +1,33 @@
+{
+  "handle": "sao-54160",
+  "title": "SAO 54160",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54160-oe-3005-55d93b06b0d3.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OE 3005 Air/Oil Separator | Replaces the SF Filter SAO 54160",
+      "sku": "sao-54160-1",
+      "option1Value": "HiFi Filter OE 3005 Air/Oil Separator | Replaces the SF Filter SAO 54160",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54160-oe-3005-55d93b06b0d3.jpg",
+      "vendor": "",
+      "price": 62600,
+      "partNumber": "OE 3005",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OE 3005 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 54160. Easy to install and replace, the OE 3005 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "16.5 kg",
+      "shippingVolume": "0.0928 m³"
+    }
+  ]
+}

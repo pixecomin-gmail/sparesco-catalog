@@ -1,0 +1,33 @@
+{
+  "handle": "sao-55110",
+  "title": "SAO 55110",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55110-oa-1006-67ebb618edf3.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1006 Air/Oil Separator | Replaces the SF Filter SAO 55110",
+      "sku": "sao-55110-1",
+      "option1Value": "HiFi Filter OA 1006 Air/Oil Separator | Replaces the SF Filter SAO 55110",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-55110-oa-1006-67ebb618edf3.jpg",
+      "vendor": "",
+      "price": 3400,
+      "partNumber": "OA 1006",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1006 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 55110. Easy to install and replace, the OA 1006 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0015 m³"
+    }
+  ]
+}

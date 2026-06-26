@@ -1,0 +1,33 @@
+{
+  "handle": "sao-56110",
+  "title": "SAO 56110",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56110-oa-1114-6073578333a2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OA 1114 Air/Oil Separator | Replaces the SF Filter SAO 56110",
+      "sku": "sao-56110-1",
+      "option1Value": "HiFi Filter OA 1114 Air/Oil Separator | Replaces the SF Filter SAO 56110",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-56110-oa-1114-6073578333a2.jpg",
+      "vendor": "",
+      "price": 23500,
+      "partNumber": "OA 1114",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OA 1114 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 56110. Easy to install and replace, the OA 1114 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 275.0 mm, Dimension 2 (D2): 215.0 mm, Dimension 3 (D3): 215.0 mm, Height 1 (H1): 312.0 mm, Height 2 (H2): 308.0 mm"
+      ],
+      "unitWeight": "5.36 kg",
+      "shippingVolume": "0.0367 m³"
+    }
+  ]
+}

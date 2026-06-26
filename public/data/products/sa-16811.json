@@ -1,0 +1,51 @@
+{
+  "handle": "sa-16811",
+  "title": "SA 16811",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16811-sa-16811-2ca586e9d8fd.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16811-af27968-65f2be41dac9.webp"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16811 Air Filter",
+      "sku": "sa-16811-1",
+      "option1Value": "HiFi Filter SA 16811 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16811-sa-16811-2ca586e9d8fd.jpg",
+      "vendor": "",
+      "price": 6100,
+      "partNumber": "SA 16811",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16811 Air Filter. Easy to install and replace, the SA 16811 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "2.22 kg",
+      "shippingVolume": "0.0413 m³"
+    },
+    {
+      "title": "Fleetguard AF27968  | Replaces the HiFi Filter SA 16811",
+      "sku": "sa-16811-2",
+      "option1Value": "Fleetguard AF27968  | Replaces the HiFi Filter SA 16811",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16811-af27968-65f2be41dac9.webp",
+      "vendor": "",
+      "price": 0,
+      "partNumber": "AF27968",
+      "hsCode": "",
+      "countryOfOrigin": "",
+      "description": "Genuine HiFi Filter SA 16811 Air Filter. Easy to install and replace, the SA 16811 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

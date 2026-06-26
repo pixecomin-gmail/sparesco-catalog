@@ -1,0 +1,69 @@
+{
+  "handle": "sa-18066",
+  "title": "SA 18066",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18066-sa-18066-06f339b75167.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18066-p500186-08dc67df4b57.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18066-af25268-695c74de8fd2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18066 Air Filter",
+      "sku": "sa-18066-1",
+      "option1Value": "HiFi Filter SA 18066 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18066-sa-18066-06f339b75167.jpg",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "SA 18066",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18066 Air Filter. Easy to install and replace, the SA 18066 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 210.0 mm, Dimension 2 (D2): 130.0 mm, Dimension 3 (D3): 9.0 mm, Height 1 (H1): 375.0 mm, Height 2 (H2): 365.0 mm"
+      ],
+      "unitWeight": "1.98 kg",
+      "shippingVolume": "0.0261 m³"
+    },
+    {
+      "title": "Donaldson P500186 Air Filter, Primary Round | Replaces the HiFi Filter SA 18066",
+      "sku": "sa-18066-2",
+      "option1Value": "Donaldson P500186 Air Filter, Primary Round | Replaces the HiFi Filter SA 18066",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18066-p500186-08dc67df4b57.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "P500186",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P500186 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.6 kg",
+      "shippingVolume": "0.0212 m³"
+    },
+    {
+      "title": "Fleetguard AF25268 Air Filter, Primary | Replaces the HiFi Filter SA 18066",
+      "sku": "sa-18066-3",
+      "option1Value": "Fleetguard AF25268 Air Filter, Primary | Replaces the HiFi Filter SA 18066",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18066-af25268-695c74de8fd2.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "AF25268",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "China",
+      "description": "​Fleetguard® AF25268 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.05 kg",
+      "shippingVolume": "0.0224 m³"
+    }
+  ]
+}

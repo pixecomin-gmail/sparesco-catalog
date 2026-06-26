@@ -1,0 +1,87 @@
+{
+  "handle": "sa-19021",
+  "title": "SA 19021",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-sa-19021-740a8c4e9fb6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-p781351-206c0a072179.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-cf-2100-3f515a904c61.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-af25230-f1c070db186a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 19021 Air Filter",
+      "sku": "sa-19021-1",
+      "option1Value": "HiFi Filter SA 19021 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-sa-19021-740a8c4e9fb6.jpg",
+      "vendor": "",
+      "price": 10200,
+      "partNumber": "SA 19021",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 19021 Air Filter. Easy to install and replace, the SA 19021 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 210.0 mm, Dimension 2 (D2): 199.0 mm, Dimension 3 (D3): 193.0 mm, Height 1 (H1): 610.0 mm, Height 2 (H2): 599.0 mm, Height 3 (H3): 588.0 mm"
+      ],
+      "unitWeight": "1.7 kg",
+      "shippingVolume": "0.0399 m³"
+    },
+    {
+      "title": "Donaldson P781351 Air Filter, Safety | Replaces the HiFi Filter SA 19021",
+      "sku": "sa-19021-2",
+      "option1Value": "Donaldson P781351 Air Filter, Safety | Replaces the HiFi Filter SA 19021",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-p781351-206c0a072179.jpg",
+      "vendor": "",
+      "price": 15300,
+      "partNumber": "P781351",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Türkiye",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.3 kg",
+      "shippingVolume": "0.0283 m³"
+    },
+    {
+      "title": "Mann Filter CF 2100 Secondary Element | Replaces the HiFi Filter SA 19021",
+      "sku": "sa-19021-3",
+      "option1Value": "Mann Filter CF 2100 Secondary Element | Replaces the HiFi Filter SA 19021",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-cf-2100-3f515a904c61.jpg",
+      "vendor": "",
+      "price": 20000,
+      "partNumber": "CF 2100",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element, Dimension A: 211.0 mm, Dimension B: 195.0 mm, Dimension C: 17.0 mm, Dimension D: 201.0 mm, Dimension H: 609.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25230 Air Filter, Secondary | Replaces the HiFi Filter SA 19021",
+      "sku": "sa-19021-4",
+      "option1Value": "Fleetguard AF25230 Air Filter, Secondary | Replaces the HiFi Filter SA 19021",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-19021-af25230-f1c070db186a.jpg",
+      "vendor": "",
+      "price": 13900,
+      "partNumber": "AF25230",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25230 axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.4 kg",
+      "shippingVolume": "0.0291 m³"
+    }
+  ]
+}

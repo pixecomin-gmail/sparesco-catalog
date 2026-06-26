@@ -1,0 +1,69 @@
+{
+  "handle": "sao-7084",
+  "title": "SAO 7084",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-7084-sao-7084-a2c0d4e96836.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-7084-p959122-93e4ab058dfc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-7084-lc-9005-0e940680946e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 7084 Engine Breather Filter",
+      "sku": "sao-7084-1",
+      "option1Value": "HiFi Filter SAO 7084 Engine Breather Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-7084-sao-7084-a2c0d4e96836.jpg",
+      "vendor": "",
+      "price": 4300,
+      "partNumber": "SAO 7084",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 7084 Engine Breather Filter. Easy to install and replace, the SAO 7084 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER, Dimension 1 (D1): 92.0 mm, Dimension 2 (D2): 42.5 mm, Dimension 3 (D3): 35.5 mm, Height 1 (H1): 30.0 mm, Height 2 (H2): 29.0 mm"
+      ],
+      "unitWeight": "0.1 kg",
+      "shippingVolume": "0.0004 m³"
+    },
+    {
+      "title": "Donaldson P959122 Crankcase Ventilation Filter | Replaces the HiFi Filter SAO 7084",
+      "sku": "sao-7084-2",
+      "option1Value": "Donaldson P959122 Crankcase Ventilation Filter | Replaces the HiFi Filter SAO 7084",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-7084-p959122-93e4ab058dfc.jpg",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "P959122",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Tunisia",
+      "description": "Genuine Donaldson P959122 Crankcase Ventilation Filter is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Engine Breather Filter"
+      ],
+      "unitWeight": "0.11 kg",
+      "shippingVolume": "0.0004 m³"
+    },
+    {
+      "title": "Mann Filter LC 9005 Positive Crankcase Ventilation | Replaces the HiFi Filter SAO 7084",
+      "sku": "sao-7084-3",
+      "option1Value": "Mann Filter LC 9005 Positive Crankcase Ventilation | Replaces the HiFi Filter SAO 7084",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-7084-lc-9005-0e940680946e.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "LC 9005",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Tunisia",
+      "description": "Reliable crankcase ventilation filters from MANN-FILTER efficiently separate oil droplets from the blow-by gasses in the crankcase. This separation protects the intake system from contamination with oil and thus maintains its reliability.",
+      "specifications": [
+        "Style: Positive Crankcase Ventilation, Dimension A: 92.0 mm, Dimension C: 44.0 mm, Dimension H: 30.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

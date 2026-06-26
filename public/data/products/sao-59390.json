@@ -1,0 +1,51 @@
+{
+  "handle": "sao-59390",
+  "title": "SAO 59390",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-59390-p785226-6072fe39ff2e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-59390-ot-2045-cb11bfd7d8d2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P785226 Air Oil Separator | Replaces the SF Filter SAO 59390",
+      "sku": "sao-59390-1",
+      "option1Value": "Donaldson P785226 Air Oil Separator | Replaces the SF Filter SAO 59390",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-59390-p785226-6072fe39ff2e.jpg",
+      "vendor": "",
+      "price": 13900,
+      "partNumber": "P785226",
+      "hsCode": "8421.39.25.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P785226 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.74 kg",
+      "shippingVolume": "0.0127 m³"
+    },
+    {
+      "title": "HiFi Filter OT 2045 Air/Oil Separator | Replaces the SF Filter SAO 59390",
+      "sku": "sao-59390-2",
+      "option1Value": "HiFi Filter OT 2045 Air/Oil Separator | Replaces the SF Filter SAO 59390",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-59390-ot-2045-cb11bfd7d8d2.jpg",
+      "vendor": "",
+      "price": 16800,
+      "partNumber": "OT 2045",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 2045 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 59390. Easy to install and replace, the OT 2045 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "1.66 kg",
+      "shippingVolume": "0.0133 m³"
+    }
+  ]
+}

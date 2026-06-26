@@ -1,0 +1,33 @@
+{
+  "handle": "sa-652",
+  "title": "SA 652",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-652-sa-652-aa1a12a58c79.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 652 Air Filter",
+      "sku": "sa-652-1",
+      "option1Value": "HiFi Filter SA 652 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-652-sa-652-aa1a12a58c79.jpg",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 652",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 652 Air Filter. Easy to install and replace, the SA 652 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.0071 m³"
+    }
+  ]
+}

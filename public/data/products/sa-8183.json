@@ -1,0 +1,33 @@
+{
+  "handle": "sa-8183",
+  "title": "SA 8183",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8183-sa-8183-f11dbf973511.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8183 Air Filter",
+      "sku": "sa-8183-1",
+      "option1Value": "HiFi Filter SA 8183 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8183-sa-8183-f11dbf973511.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 8183",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8183 Air Filter. Easy to install and replace, the SA 8183 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.5 kg",
+      "shippingVolume": "0.0036 m³"
+    }
+  ]
+}

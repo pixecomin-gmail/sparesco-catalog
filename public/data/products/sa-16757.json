@@ -1,0 +1,51 @@
+{
+  "handle": "sa-16757",
+  "title": "SA 16757",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16757-sa-16757-e46ccf35b452.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16757-p613337-076049a7daf2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16757 Air Filter",
+      "sku": "sa-16757-1",
+      "option1Value": "HiFi Filter SA 16757 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16757-sa-16757-e46ccf35b452.jpg",
+      "vendor": "",
+      "price": 9000,
+      "partNumber": "SA 16757",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16757 Air Filter. Easy to install and replace, the SA 16757 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.36 kg",
+      "shippingVolume": "0.0339 m³"
+    },
+    {
+      "title": "Donaldson P613337 Air Filter, Safety | Replaces the HiFi Filter SA 16757",
+      "sku": "sa-16757-2",
+      "option1Value": "Donaldson P613337 Air Filter, Safety | Replaces the HiFi Filter SA 16757",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16757-p613337-076049a7daf2.jpg",
+      "vendor": "",
+      "price": 5500,
+      "partNumber": "P613337",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Mexico",
+      "description": "Why Choose Donaldson Safety Filters? Safety filters have two functions: to act as a backup to the primary filter and to protect the engine during primary filter servicing. • Serve as a backup filter in case of primary filter damage or improper installation. • Prevent contaminants from entering the clean side of the air intake system during primary filter servicing. • Designed to plug rapidly if contamination finds its way past the primary filter, alerting operators about an issue. • Recommend that safety filters are replaced with every third primary filter change unless there has been a failure of the primary filter.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.67 kg",
+      "shippingVolume": "0.0349 m³"
+    }
+  ]
+}

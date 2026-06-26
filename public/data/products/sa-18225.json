@@ -1,0 +1,33 @@
+{
+  "handle": "sa-18225",
+  "title": "SA 18225",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18225-sa-18225-555d008b4cee.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18225 Air Filter",
+      "sku": "sa-18225-1",
+      "option1Value": "HiFi Filter SA 18225 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18225-sa-18225-555d008b4cee.jpg",
+      "vendor": "",
+      "price": 5400,
+      "partNumber": "SA 18225",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18225 Air Filter. Easy to install and replace, the SA 18225 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 209.0 mm, Dimension 2 (D2): 192.0 mm, Dimension 3 (D3): 158.0 mm, Height 1 (H1): 482.0 mm"
+      ],
+      "unitWeight": "1.46 kg",
+      "shippingVolume": "0.0232 m³"
+    }
+  ]
+}

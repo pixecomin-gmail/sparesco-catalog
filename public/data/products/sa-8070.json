@@ -1,0 +1,33 @@
+{
+  "handle": "sa-8070",
+  "title": "SA 8070",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8070-sa-8070-e6a4a3a75807.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8070 Air Filter",
+      "sku": "sa-8070-1",
+      "option1Value": "HiFi Filter SA 8070 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8070-sa-8070-e6a4a3a75807.jpg",
+      "vendor": "",
+      "price": 900,
+      "partNumber": "SA 8070",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8070 Air Filter. Easy to install and replace, the SA 8070 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 334.0 mm, Dimension 2 (D2): 326.0 mm, Dimension 3 (D3): 170.0 mm, Height 1 (H1): 36.0 mm, Height 2 (H2): 27.0 mm"
+      ],
+      "unitWeight": "0.28 kg",
+      "shippingVolume": "0.0029 m³"
+    }
+  ]
+}

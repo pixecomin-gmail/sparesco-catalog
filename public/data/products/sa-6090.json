@@ -1,0 +1,33 @@
+{
+  "handle": "sa-6090",
+  "title": "SA 6090",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6090-sa-6090-ed2cb75bb173.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6090 Air Filter",
+      "sku": "sa-6090-1",
+      "option1Value": "HiFi Filter SA 6090 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6090-sa-6090-ed2cb75bb173.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 6090",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6090 Air Filter. Easy to install and replace, the SA 6090 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 125.0 mm, Dimension 2 (D2): 82.0 mm, Height 1 (H1): 158.0 mm, Height 2 (H2): 148.0 mm"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0031 m³"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "handle": "sa-16194",
+  "title": "SA 16194",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16194-sa-16194-d8ade7bcc6e9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16194-af25624-a53b34079591.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16194 Air Filter",
+      "sku": "sa-16194-1",
+      "option1Value": "HiFi Filter SA 16194 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16194-sa-16194-d8ade7bcc6e9.jpg",
+      "vendor": "",
+      "price": 3700,
+      "partNumber": "SA 16194",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16194 Air Filter. Easy to install and replace, the SA 16194 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 132.0 mm, Dimension 2 (D2): 122.0 mm, Dimension 3 (D3): 95.0 mm, Height 1 (H1): 328.0 mm, Height 2 (H2): 323.0 mm"
+      ],
+      "unitWeight": "0.68 kg",
+      "shippingVolume": "0.008 m³"
+    },
+    {
+      "title": "Fleetguard AF25624 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16194",
+      "sku": "sa-16194-2",
+      "option1Value": "Fleetguard AF25624 Air Filter, Secondary Magnum Rs | Replaces the HiFi Filter SA 16194",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16194-af25624-a53b34079591.jpg",
+      "vendor": "",
+      "price": 4200,
+      "partNumber": "AF25624",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF25624 Magnum RS™ radial seal secondary air elements is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.52 kg",
+      "shippingVolume": "0.009 m³"
+    }
+  ]
+}

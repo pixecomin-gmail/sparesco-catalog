@@ -1,0 +1,51 @@
+{
+  "handle": "a421g15v",
+  "title": "A421G15V",
+  "collection": "Filtrec",
+  "collectionHandle": "filtrec",
+  "category": "Filtrec",
+  "tags": [
+    "Filtrec",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a421g15v-a421g15v-068efaefc43e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a421g15v-wh-1257-4-5a841b327a8a.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Filtrec A421G15V Spin-On Filter",
+      "sku": "a421g15v-1",
+      "option1Value": "Filtrec A421G15V Spin-On Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a421g15v-a421g15v-068efaefc43e.jpg",
+      "vendor": "Filtrec",
+      "price": 11700,
+      "partNumber": "A421G15V",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Filtrec A421G15V. This Filtrec element is designed to meet or exceed the quality and performance of brand OEM’s ensuring superior filtration performance and long-lasting durability. Engineered with their high performance media and a durable design, the A421G15V provides reliable and consistent performance over its lifespan, even in harsh operating environments. When you order from FilterFinder, you can trust that you are getting a reliable and high-quality replacement filter that will keep your system running smoothly.",
+      "specifications": [
+        "Style: Spin-On Filter, Media: Glass Fiber, Efficiency 1: 15µ @ β200, Efficiency 2: 17µ @ β1000, Outer Diameter: 117.0 mm, Length: 297.5 mm, Thread: 1 3/4\"-12 UN 2B, Δ Collapse Pressure: 24 bar, Seal Material: Viton, Temperature Range: -25 - +120°C, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 15µ @ β200, Media Type: Glass Fiber, Collapse Pressure: 24 BAR, Seal: Viton"
+      ],
+      "unitWeight": "2.34 kg",
+      "shippingVolume": "0.0041 m³"
+    },
+    {
+      "title": "Mann Filter WH 1257/4 Hydraulics | Replaces the Filtrec A421G15V",
+      "sku": "a421g15v-2",
+      "option1Value": "Mann Filter WH 1257/4 Hydraulics | Replaces the Filtrec A421G15V",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/filtrec/a421g15v-wh-1257-4-5a841b327a8a.jpg",
+      "vendor": "Mann Filter",
+      "price": 0,
+      "partNumber": "WH 1257/4",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "MANN-FILTER spin-on hydraulic filters offer maximum filtration performance and thus ensure trouble-free operation of the hydraulic system. Thanks to the filter medium, which is specially adapted to the intended use, the finest impurities are separated from the hydraulic fluid.",
+      "specifications": [
+        "Style: Hydraulics, Dimension A: 117.0 mm, Dimension B: 78.0 mm, Dimension C: 86.0 mm, Dimension G: 1 3/4-12 UN, Dimension H: 296.0 mm, Efficiency 1 The efficiency of the element is shown using the Micron (µ) and Beta (β) ratings. The micron rating indicates the size of the particle being filtered and the beta rating the efficiency , calculated as 1/β. E.g. a rating of β200 will be 99.5% efficient whereas β1000 would be 99.9%.: 15µ @ β200, Efficiency 2: 17µ @ β1000, Outer Diameter: 117.0 mm, Length: 297.5 mm, Media Type: Glass Fiber, Thread: 1 3/4\"-12 UN 2B, Collapse Pressure: 24 BAR, Seal: Viton, Temperature Range: -25 - +120°C"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

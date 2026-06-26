@@ -1,0 +1,51 @@
+{
+  "handle": "sa-16036",
+  "title": "SA 16036",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16036-sa-16036-9ca0e4433823.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16036-af26188-7881b1d19d9b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16036 Air Filter",
+      "sku": "sa-16036-1",
+      "option1Value": "HiFi Filter SA 16036 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16036-sa-16036-9ca0e4433823.jpg",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "SA 16036",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16036 Air Filter. Easy to install and replace, the SA 16036 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 85.0 mm, Dimension 2 (D2): 42.0 mm, Height 1 (H1): 163.0 mm, Height 2 (H2): 153.0 mm"
+      ],
+      "unitWeight": "0.42 kg",
+      "shippingVolume": "0.0015 m³"
+    },
+    {
+      "title": "Fleetguard AF26188 Air Filter Breather | Replaces the HiFi Filter SA 16036",
+      "sku": "sa-16036-2",
+      "option1Value": "Fleetguard AF26188 Air Filter Breather | Replaces the HiFi Filter SA 16036",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16036-af26188-7881b1d19d9b.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "AF26188",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "Fleetguard® AF26188 air breather is designed to filter out contaminants before they reach your engine.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.0016 m³"
+    }
+  ]
+}

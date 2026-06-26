@@ -1,0 +1,33 @@
+{
+  "handle": "sa-556",
+  "title": "SA 556",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-556-sa-556-2ed9820b504f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 556 Air Filter",
+      "sku": "sa-556-1",
+      "option1Value": "HiFi Filter SA 556 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-556-sa-556-2ed9820b504f.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 556",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 556 Air Filter. Easy to install and replace, the SA 556 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER"
+      ],
+      "unitWeight": "0.74 kg",
+      "shippingVolume": "0.0083 m³"
+    }
+  ]
+}

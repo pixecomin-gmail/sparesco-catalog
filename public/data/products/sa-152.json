@@ -1,0 +1,33 @@
+{
+  "handle": "sa-152",
+  "title": "SA 152",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-152-sa-152-fcec7171e8dc.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 152 Air Filter",
+      "sku": "sa-152-1",
+      "option1Value": "HiFi Filter SA 152 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-152-sa-152-fcec7171e8dc.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "SA 152",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 152 Air Filter. Easy to install and replace, the SA 152 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.33 kg",
+      "shippingVolume": "0.0036 m³"
+    }
+  ]
+}

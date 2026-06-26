@@ -1,0 +1,51 @@
+{
+  "handle": "sa-17603",
+  "title": "SA 17603",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17603-sa-17603-322512d85a67.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17603-cf-510-dfe7c0626bb9.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17603 Air Filter",
+      "sku": "sa-17603-1",
+      "option1Value": "HiFi Filter SA 17603 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17603-sa-17603-322512d85a67.jpg",
+      "vendor": "",
+      "price": 3900,
+      "partNumber": "SA 17603",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17603 Air Filter. Easy to install and replace, the SA 17603 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 112.0 mm, Dimension 2 (D2): 110.0 mm, Dimension 3 (D3): 105.0 mm, Height 1 (H1): 360.0 mm, Height 2 (H2): 339.0 mm"
+      ],
+      "unitWeight": "0.34 kg",
+      "shippingVolume": "0.0063 m³"
+    },
+    {
+      "title": "Mann Filter CF 510 Secondary Element | Replaces the HiFi Filter SA 17603",
+      "sku": "sa-17603-2",
+      "option1Value": "Mann Filter CF 510 Secondary Element | Replaces the HiFi Filter SA 17603",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17603-cf-510-dfe7c0626bb9.jpg",
+      "vendor": "",
+      "price": 4700,
+      "partNumber": "CF 510",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element, Dimension A: 105.0 mm, Dimension H: 360.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

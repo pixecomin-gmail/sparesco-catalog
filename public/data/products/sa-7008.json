@@ -1,0 +1,87 @@
+{
+  "handle": "sa-7008",
+  "title": "SA 7008",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-sa-7008-48ebd150fe42.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-p778507-b07958c21bcc.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-c-16-182-1958297e84f4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-af25246-53cf9fb852b5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 7008 Air Filter",
+      "sku": "sa-7008-1",
+      "option1Value": "HiFi Filter SA 7008 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-sa-7008-48ebd150fe42.jpg",
+      "vendor": "",
+      "price": 3000,
+      "partNumber": "SA 7008",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 7008 Air Filter. Easy to install and replace, the SA 7008 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 154.0 mm, Dimension 2 (D2): 80.0 mm, Height 1 (H1): 247.0 mm, Height 2 (H2): 239.0 mm"
+      ],
+      "unitWeight": "0.94 kg",
+      "shippingVolume": "0.009 m³"
+    },
+    {
+      "title": "Donaldson P778507 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 7008",
+      "sku": "sa-7008-2",
+      "option1Value": "Donaldson P778507 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 7008",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-p778507-b07958c21bcc.jpg",
+      "vendor": "",
+      "price": 3200,
+      "partNumber": "P778507",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Poland",
+      "description": "Genuine Donaldson P778507 Air Filter, Primary Radialseal features a secure radialseal fit that ensures high-efficiency air filtration while preventing unfiltered air from entering the engine. It captures harmful airborne contaminants, optimizing airflow and enhancing engine performance and longevity. Designed for use in rugged environments, this filter offers excellent durability and a long service life. Its radialseal technology makes installation simple while ensuring a tight, reliable seal that protects your engine under the harshest conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.73 kg",
+      "shippingVolume": "0.0081 m³"
+    },
+    {
+      "title": "Mann Filter C 16 182 Air Filter | Replaces the HiFi Filter SA 7008",
+      "sku": "sa-7008-3",
+      "option1Value": "Mann Filter C 16 182 Air Filter | Replaces the HiFi Filter SA 7008",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-c-16-182-1958297e84f4.jpg",
+      "vendor": "",
+      "price": 3300,
+      "partNumber": "C 16 182",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 155.0 mm, Dimension B: 78.0 mm, Dimension C: 78.0 mm, Dimension H: 250.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25246 Air Filter, Primary | Replaces the HiFi Filter SA 7008",
+      "sku": "sa-7008-4",
+      "option1Value": "Fleetguard AF25246 Air Filter, Primary | Replaces the HiFi Filter SA 7008",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-7008-af25246-53cf9fb852b5.jpg",
+      "vendor": "",
+      "price": 3100,
+      "partNumber": "AF25246",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF25246 air filtration products are designed to effectively reduce the amount of damage-causing dust and dirt particles that make their way into your equipment’s engine.  Every Fleetguard product meets or surpasses the quality and performance standards required by a new engine.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.93 kg",
+      "shippingVolume": "0.0076 m³"
+    }
+  ]
+}

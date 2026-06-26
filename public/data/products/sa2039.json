@@ -1,0 +1,51 @@
+{
+  "handle": "sa2039",
+  "title": "SA2039",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2039-af1673-58c412cc8eef.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2039-sa-11671-c937dfed5096.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Fleetguard AF1673 Crankcase Breather | Replaces the Baldwin SA2039",
+      "sku": "sa2039-1",
+      "option1Value": "Fleetguard AF1673 Crankcase Breather | Replaces the Baldwin SA2039",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2039-af1673-58c412cc8eef.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "AF1673",
+      "hsCode": "8421.39.25",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® AF1673 crankcase ventilation unit features patented technologies that control oil drip and emissions with the highest oil and particle removal efficiency available.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.02 kg",
+      "shippingVolume": "0.0003 m³"
+    },
+    {
+      "title": "HiFi Filter SA 11671 Air Filter | Replaces the Baldwin SA2039",
+      "sku": "sa2039-2",
+      "option1Value": "HiFi Filter SA 11671 Air Filter | Replaces the Baldwin SA2039",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa2039-sa-11671-c937dfed5096.jpg",
+      "vendor": "",
+      "price": 900,
+      "partNumber": "SA 11671",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SA 11671 Air Filter is HiFi's replacement to the Baldwin SA2039. Easy to install and replace, the SA 11671 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.04 kg",
+      "shippingVolume": "0.0005 m³"
+    }
+  ]
+}

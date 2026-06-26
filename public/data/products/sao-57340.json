@@ -1,0 +1,33 @@
+{
+  "handle": "sao-57340",
+  "title": "SAO 57340",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-57340-os-8020-9a46cb24e15b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter OS 8020 Air/Oil Separator | Replaces the SF Filter SAO 57340",
+      "sku": "sao-57340-1",
+      "option1Value": "HiFi Filter OS 8020 Air/Oil Separator | Replaces the SF Filter SAO 57340",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-57340-os-8020-9a46cb24e15b.jpg",
+      "vendor": "",
+      "price": 56500,
+      "partNumber": "OS 8020",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OS 8020 Air/Oil Separator is HiFi's replacement to the SF Filter SAO 57340. Easy to install and replace, the OS 8020 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 447.0 mm, Dimension 2 (D2): 398.0 mm, Dimension 3 (D3): 314.0 mm, Height 1 (H1): 635.0 mm, Height 2 (H2): 632.0 mm"
+      ],
+      "unitWeight": "25.56 kg",
+      "shippingVolume": "0.1801 m³"
+    }
+  ]
+}

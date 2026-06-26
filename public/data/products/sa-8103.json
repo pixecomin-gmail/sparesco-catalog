@@ -1,0 +1,33 @@
+{
+  "handle": "sa-8103",
+  "title": "SA 8103",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8103-sa-8103-5f073b3ea005.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 8103 Air Filter",
+      "sku": "sa-8103-1",
+      "option1Value": "HiFi Filter SA 8103 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-8103-sa-8103-5f073b3ea005.jpg",
+      "vendor": "",
+      "price": 1900,
+      "partNumber": "SA 8103",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 8103 Air Filter. Easy to install and replace, the SA 8103 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 179.0 mm, Dimension 2 (D2): 92.0 mm, Dimension 3 (D3): 92.0 mm, Height 1 (H1): 148.0 mm, Height 2 (H2): 128.0 mm"
+      ],
+      "unitWeight": "0.72 kg",
+      "shippingVolume": "0.0058 m³"
+    }
+  ]
+}

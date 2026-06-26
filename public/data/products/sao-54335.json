@@ -1,0 +1,51 @@
+{
+  "handle": "sao-54335",
+  "title": "SAO 54335",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54335-lc-10-007-x-eef688fb13e4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54335-sao-5448-a884eb5de634.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter LC 10 007 x Ventilator | Replaces the SF Filter SAO 54335",
+      "sku": "sao-54335-1",
+      "option1Value": "Mann Filter LC 10 007 x Ventilator | Replaces the SF Filter SAO 54335",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54335-lc-10-007-x-eef688fb13e4.jpg",
+      "vendor": "",
+      "price": 8800,
+      "partNumber": "LC 10 007 x",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "For over 70 years, MANN-FILTER has been synonymous with premium filters in original equipment quality worldwide. Benefit from a comprehensive product range and optimum filtration performance to protect drivers, engines and machinery. In the familiar yellow-green packaging, MANN-FILTER offers innovative solutions to new filtration challenges and produces on a global scale in accordance with the latest international production and test standards in the automotive industry.",
+      "specifications": [
+        "Style: Ventilator, Dimension A: 97.0 mm, Dimension B: 65.0 mm, Dimension H: 90.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter SAO 5448 Engine Breather Filter | Replaces the SF Filter SAO 54335",
+      "sku": "sao-54335-2",
+      "option1Value": "HiFi Filter SAO 5448 Engine Breather Filter | Replaces the SF Filter SAO 54335",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-54335-sao-5448-a884eb5de634.jpg",
+      "vendor": "",
+      "price": 14500,
+      "partNumber": "SAO 5448",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SAO 5448 Engine Breather Filter is HiFi's replacement to the SF Filter SAO 54335. Easy to install and replace, the SAO 5448 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

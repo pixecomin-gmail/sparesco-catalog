@@ -1,0 +1,69 @@
+{
+  "handle": "sa-10200",
+  "title": "SA 10200",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10200-sa-10200-eaf1d4a2c0a6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10200-p526413-f0363a59c88d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10200-af250-c595286768a5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10200 Air Filter",
+      "sku": "sa-10200-1",
+      "option1Value": "HiFi Filter SA 10200 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10200-sa-10200-eaf1d4a2c0a6.jpg",
+      "vendor": "",
+      "price": 1500,
+      "partNumber": "SA 10200",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10200 Air Filter. Easy to install and replace, the SA 10200 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 75.0 mm, Dimension 2 (D2): 37.0 mm, Dimension 3 (D3): 37.0 mm, Height 1 (H1): 68.0 mm"
+      ],
+      "unitWeight": "0.16 kg",
+      "shippingVolume": "0.0006 m³"
+    },
+    {
+      "title": "Donaldson P526413 Breather, Air Cylindrical | Replaces the HiFi Filter SA 10200",
+      "sku": "sa-10200-2",
+      "option1Value": "Donaldson P526413 Breather, Air Cylindrical | Replaces the HiFi Filter SA 10200",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10200-p526413-f0363a59c88d.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "P526413",
+      "hsCode": "8421.39.85.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P526413 Breather, Air Cylindrical is engineered to deliver reliable performance and durability across a wide range of applications. Designed with high-quality materials, it ensures consistent functionality while meeting demanding operational requirements. Whether used in industrial, automotive, or heavy-duty settings, this component offers dependable operation and longevity. Its versatile design makes it suitable for various uses, supporting system efficiency and overall performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.12 kg",
+      "shippingVolume": "0.001 m³"
+    },
+    {
+      "title": "Fleetguard AF250 Crankcase Breather | Replaces the HiFi Filter SA 10200",
+      "sku": "sa-10200-3",
+      "option1Value": "Fleetguard AF250 Crankcase Breather | Replaces the HiFi Filter SA 10200",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10200-af250-c595286768a5.jpg",
+      "vendor": "",
+      "price": 1400,
+      "partNumber": "AF250",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "Fleetguard® AF250 crankcase ventilation unit features patented technologies that control oil drip and emissions with the highest oil and particle removal efficiency available.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.08 kg",
+      "shippingVolume": ""
+    }
+  ]
+}

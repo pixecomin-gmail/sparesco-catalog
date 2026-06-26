@@ -1,0 +1,87 @@
+{
+  "handle": "sa-25188",
+  "title": "SA 25188",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-sa-25188-8da175307ddf.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-c-32-1500-c0380ca990f1.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-hp-774-a-8544c98dd1c7.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-af25238-d190ab7a56b1.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 25188 Air Filter",
+      "sku": "sa-25188-1",
+      "option1Value": "HiFi Filter SA 25188 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-sa-25188-8da175307ddf.jpg",
+      "vendor": "",
+      "price": 9800,
+      "partNumber": "SA 25188",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 25188 Air Filter. Easy to install and replace, the SA 25188 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 355.0 mm, Dimension 2 (D2): 330.0 mm, Dimension 3 (D3): 200.0 mm, Height 1 (H1): 423.0 mm, Height 2 (H2): 415.0 mm, Height 3 (H3): 379.0 mm"
+      ],
+      "unitWeight": "5.38 kg",
+      "shippingVolume": "0.0893 m³"
+    },
+    {
+      "title": "Mann Filter C 32 1500 Air Filter | Replaces the HiFi Filter SA 25188",
+      "sku": "sa-25188-2",
+      "option1Value": "Mann Filter C 32 1500 Air Filter | Replaces the HiFi Filter SA 25188",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-c-32-1500-c0380ca990f1.jpg",
+      "vendor": "",
+      "price": 15300,
+      "partNumber": "C 32 1500",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 332.0 mm, Dimension B: 176.0 mm, Dimension C: 203.0 mm, Dimension D: 400.0 mm, Dimension H: 416.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "FIL Filter HP 774 A | Replaces the HiFi Filter SA 25188",
+      "sku": "sa-25188-3",
+      "option1Value": "FIL Filter HP 774 A | Replaces the HiFi Filter SA 25188",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-hp-774-a-8544c98dd1c7.png",
+      "vendor": "",
+      "price": 9300,
+      "partNumber": "HP 774 A",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 774 A. Easy to install and replace, the HP 774 A is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF25238 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 25188",
+      "sku": "sa-25188-4",
+      "option1Value": "Fleetguard AF25238 Air Filter, Primary Magnum Rs | Replaces the HiFi Filter SA 25188",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-25188-af25238-d190ab7a56b1.jpg",
+      "vendor": "",
+      "price": 9500,
+      "partNumber": "AF25238",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "Fleetguard® AF25238 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "3.81 kg",
+      "shippingVolume": "0.0709 m³"
+    }
+  ]
+}

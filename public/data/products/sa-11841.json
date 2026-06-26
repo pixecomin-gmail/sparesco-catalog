@@ -1,0 +1,51 @@
+{
+  "handle": "sa-11841",
+  "title": "SA 11841",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11841-sa-11841-6a861d66fb02.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11841-af1891-62454d6704b0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 11841 Air Filter",
+      "sku": "sa-11841-1",
+      "option1Value": "HiFi Filter SA 11841 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11841-sa-11841-6a861d66fb02.jpg",
+      "vendor": "",
+      "price": 5500,
+      "partNumber": "SA 11841",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 11841 Air Filter. Easy to install and replace, the SA 11841 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 170.0 mm, Dimension 2 (D2): 133.0 mm, Dimension 3 (D3): 100.5 mm, Thread 1 (D7): 3/8\"-16UNF, Height 1 (H1): 158.0 mm, Height 2 (H2): 130.0 mm, Height 3 (H3): 12.0 mm"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.0066 m³"
+    },
+    {
+      "title": "Fleetguard AF1891 Air Filter, Secondary | Replaces the HiFi Filter SA 11841",
+      "sku": "sa-11841-2",
+      "option1Value": "Fleetguard AF1891 Air Filter, Secondary | Replaces the HiFi Filter SA 11841",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-11841-af1891-62454d6704b0.jpg",
+      "vendor": "",
+      "price": 10500,
+      "partNumber": "AF1891",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "United States",
+      "description": "​Fleetguard® AF1891 premium axial seal secondary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.11 kg",
+      "shippingVolume": "0.0091 m³"
+    }
+  ]
+}

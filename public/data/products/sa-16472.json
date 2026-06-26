@@ -1,0 +1,87 @@
+{
+  "handle": "sa-16472",
+  "title": "SA 16472",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-sa-16472-102b5a317675.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-p608666-ef45f9e02499.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-cp-34-360-39775d5b225d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-af27876-4dc038957ded.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16472 Air Filter",
+      "sku": "sa-16472-1",
+      "option1Value": "HiFi Filter SA 16472 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-sa-16472-102b5a317675.jpg",
+      "vendor": "",
+      "price": 11300,
+      "partNumber": "SA 16472",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16472 Air Filter. Easy to install and replace, the SA 16472 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 331.0 mm, Dimension 2 (D2): 298.0 mm, Dimension 3 (D3): 205.0 mm, Height 1 (H1): 187.0 mm, Height 2 (H2): 20.0 mm"
+      ],
+      "unitWeight": "1.78 kg",
+      "shippingVolume": "0.018 m³"
+    },
+    {
+      "title": "Donaldson P608666 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16472",
+      "sku": "sa-16472-2",
+      "option1Value": "Donaldson P608666 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 16472",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-p608666-ef45f9e02499.jpg",
+      "vendor": "",
+      "price": 8000,
+      "partNumber": "P608666",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson PowerCore® filters? Genuine PowerCore filters provide superior protection and performance. • Lower initial restriction protects engine performance and fuel economy. • Greater filter capacity means longer filter life, fewer filter changes and less money spent on maintenance. • PowerCore filters have been meeting original equipment manufacturer specifications for 20+ years. • Reliable, leak resistant Radial Seal™ technology keeps the filter in place – even under heavy vibration.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.5 kg",
+      "shippingVolume": "0.0192 m³"
+    },
+    {
+      "title": "Mann Filter CP 34 360 Air Filter | Replaces the HiFi Filter SA 16472",
+      "sku": "sa-16472-3",
+      "option1Value": "Mann Filter CP 34 360 Air Filter | Replaces the HiFi Filter SA 16472",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-cp-34-360-39775d5b225d.jpg",
+      "vendor": "",
+      "price": 13100,
+      "partNumber": "CP 34 360",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Czechia",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 187.0 mm, Dimension B: 340.0 mm, Dimension H: 211.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF27876 Air Filter, Primary | Replaces the HiFi Filter SA 16472",
+      "sku": "sa-16472-4",
+      "option1Value": "Fleetguard AF27876 Air Filter, Primary | Replaces the HiFi Filter SA 16472",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16472-af27876-4dc038957ded.jpg",
+      "vendor": "",
+      "price": 9800,
+      "partNumber": "AF27876",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF27876 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "1.63 kg",
+      "shippingVolume": "0.0178 m³"
+    }
+  ]
+}

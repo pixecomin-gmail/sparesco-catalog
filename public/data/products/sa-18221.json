@@ -1,0 +1,51 @@
+{
+  "handle": "sa-18221",
+  "title": "SA 18221",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18221-sa-18221-76912b7d2934.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18221-af4327-76cbbc930d01.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18221 Air Filter",
+      "sku": "sa-18221-1",
+      "option1Value": "HiFi Filter SA 18221 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18221-sa-18221-76912b7d2934.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "SA 18221",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18221 Air Filter. Easy to install and replace, the SA 18221 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 155.0 mm, Dimension 2 (D2): 86.0 mm, Dimension 3 (D3): 15.0 mm, Height 1 (H1): 245.0 mm, Height 2 (H2): 234.0 mm, Height 3 (H3): 215.0 mm"
+      ],
+      "unitWeight": "0.86 kg",
+      "shippingVolume": "0.0072 m³"
+    },
+    {
+      "title": "Fleetguard AF4327 Air Filter, Primary | Replaces the HiFi Filter SA 18221",
+      "sku": "sa-18221-2",
+      "option1Value": "Fleetguard AF4327 Air Filter, Primary | Replaces the HiFi Filter SA 18221",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18221-af4327-76cbbc930d01.jpg",
+      "vendor": "",
+      "price": 1800,
+      "partNumber": "AF4327",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "South Korea",
+      "description": "​Fleetguard® AF4327 Magnum RS™ radial seal primary air element is designed to meet the rugged demands of equipment operating in the harshest environments.  The Magnum RS offers unique features that provide significant benefits for longer service life and optimum performance when the job demands it.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.97 kg",
+      "shippingVolume": "0.0087 m³"
+    }
+  ]
+}

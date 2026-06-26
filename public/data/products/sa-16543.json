@@ -1,0 +1,51 @@
+{
+  "handle": "sa-16543",
+  "title": "SA 16543",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16543-sa-16543-a0eaeedc868f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16543-p952740-287b1ebf07db.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 16543 Air Filter",
+      "sku": "sa-16543-1",
+      "option1Value": "HiFi Filter SA 16543 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16543-sa-16543-a0eaeedc868f.jpg",
+      "vendor": "",
+      "price": 6200,
+      "partNumber": "SA 16543",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 16543 Air Filter. Easy to install and replace, the SA 16543 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 240.0 mm, Dimension 2 (D2): 122.0 mm, Height 1 (H1): 495.0 mm, Height 2 (H2): 482.0 mm"
+      ],
+      "unitWeight": "3.0 kg",
+      "shippingVolume": "0.0312 m³"
+    },
+    {
+      "title": "Donaldson P952740 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16543",
+      "sku": "sa-16543-2",
+      "option1Value": "Donaldson P952740 Air Filter, Primary Radialseal | Replaces the HiFi Filter SA 16543",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-16543-p952740-287b1ebf07db.jpg",
+      "vendor": "",
+      "price": 4800,
+      "partNumber": "P952740",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P952740 Air Filter, Primary Radialseal features a secure radialseal fit that ensures high-efficiency air filtration while preventing unfiltered air from entering the engine. It captures harmful airborne contaminants, optimizing airflow and enhancing engine performance and longevity. Designed for use in rugged environments, this filter offers excellent durability and a long service life. Its radialseal technology makes installation simple while ensuring a tight, reliable seal that protects your engine under the harshest conditions.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.07 kg",
+      "shippingVolume": "0.0386 m³"
+    }
+  ]
+}

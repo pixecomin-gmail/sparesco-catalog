@@ -1,0 +1,87 @@
+{
+  "handle": "sa-14087",
+  "title": "SA 14087",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-sa-14087-6238a54d94b3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-p771594-c05c53368d7e.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-c-17-134-a5b06eabf9ae.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-af4137-d208ea3769f0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14087 Air Filter",
+      "sku": "sa-14087-1",
+      "option1Value": "HiFi Filter SA 14087 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-sa-14087-6238a54d94b3.jpg",
+      "vendor": "",
+      "price": 2200,
+      "partNumber": "SA 14087",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14087 Air Filter. Easy to install and replace, the SA 14087 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 164.0 mm, Dimension 2 (D2): 86.0 mm, Height 1 (H1): 210.0 mm, Height 2 (H2): 200.0 mm"
+      ],
+      "unitWeight": "0.96 kg",
+      "shippingVolume": "0.0094 m³"
+    },
+    {
+      "title": "Donaldson P771594 Air Filter, Primary Round | Replaces the HiFi Filter SA 14087",
+      "sku": "sa-14087-2",
+      "option1Value": "Donaldson P771594 Air Filter, Primary Round | Replaces the HiFi Filter SA 14087",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-p771594-c05c53368d7e.jpg",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "P771594",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.93 kg",
+      "shippingVolume": "0.0061 m³"
+    },
+    {
+      "title": "Mann Filter C 17 134 Air Filter | Replaces the HiFi Filter SA 14087",
+      "sku": "sa-14087-3",
+      "option1Value": "Mann Filter C 17 134 Air Filter | Replaces the HiFi Filter SA 14087",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-c-17-134-a5b06eabf9ae.jpg",
+      "vendor": "",
+      "price": 2600,
+      "partNumber": "C 17 134",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 165.0 mm, Dimension B: 86.0 mm, Dimension H: 210.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4137 Air Filter, Primary | Replaces the HiFi Filter SA 14087",
+      "sku": "sa-14087-4",
+      "option1Value": "Fleetguard AF4137 Air Filter, Primary | Replaces the HiFi Filter SA 14087",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14087-af4137-d208ea3769f0.jpg",
+      "vendor": "",
+      "price": 2400,
+      "partNumber": "AF4137",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "India",
+      "description": "​Fleetguard® AF4137 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.98 kg",
+      "shippingVolume": "0.007 m³"
+    }
+  ]
+}

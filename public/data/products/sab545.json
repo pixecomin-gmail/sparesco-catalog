@@ -1,0 +1,51 @@
+{
+  "handle": "sab545",
+  "title": "SAB545",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab545-u-1003-10-f663b51002f7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab545-sd-80600-c689a258c5f0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Mann Filter U 1003 (10) Urea Filter | Replaces the SF Filter SAB545",
+      "sku": "sab545-1",
+      "option1Value": "Mann Filter U 1003 (10) Urea Filter | Replaces the SF Filter SAB545",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab545-u-1003-10-f663b51002f7.jpg",
+      "vendor": "",
+      "price": 600,
+      "partNumber": "U 1003 (10)",
+      "hsCode": "8421.29.80",
+      "countryOfOrigin": "Germany",
+      "description": "The compact MANN-FILTER urea filters are characterized by high filter fineness, proven suitability for everyday use and a long service life. They protect system components against wear and failure and are resistant to frost and ammonia. MANN-FILTER urea filters are available for leading SCR systems in trucks and buses.",
+      "specifications": [
+        "Style: Urea Filter, Dimension A: 12.0 mm, Dimension H: 14.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "HiFi Filter SD 80600 Urea Filter | Replaces the SF Filter SAB545",
+      "sku": "sab545-2",
+      "option1Value": "HiFi Filter SD 80600 Urea Filter | Replaces the SF Filter SAB545",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sab545-sd-80600-c689a258c5f0.jpg",
+      "vendor": "",
+      "price": 800,
+      "partNumber": "SD 80600",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter SD 80600 Urea Filter is HiFi's replacement to the SF Filter SAB545. Easy to install and replace, the SD 80600 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: UREA FILTER, Dimension 1 (D1): 13.5 mm, Dimension 2 (D2): 8.0 mm, Height 1 (H1): 11.5 mm, Height 2 (H2): 3.0 mm"
+      ],
+      "unitWeight": "0.01 kg",
+      "shippingVolume": "0.0 m³"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "handle": "sa-137",
+  "title": "SA 137",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-137-sa-137-49591402a0c4.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 137 Air Filter",
+      "sku": "sa-137-1",
+      "option1Value": "HiFi Filter SA 137 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-137-sa-137-49591402a0c4.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "SA 137",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 137 Air Filter. Easy to install and replace, the SA 137 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 140.0 mm, Dimension 2 (D2): 95.0 mm, Dimension 3 (D3): 95.0 mm, Height 1 (H1): 76.0 mm, Height 2 (H2): 67.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0026 m³"
+    }
+  ]
+}

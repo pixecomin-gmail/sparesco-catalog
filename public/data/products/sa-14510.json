@@ -1,0 +1,87 @@
+{
+  "handle": "sa-14510",
+  "title": "SA 14510",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-sa-14510-e17427a58906.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-c-35-1592-739c483db4ed.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-p778605-055e4c472965.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-af4560-4f2849edeef3.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14510 Air Filter",
+      "sku": "sa-14510-1",
+      "option1Value": "HiFi Filter SA 14510 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-sa-14510-e17427a58906.jpg",
+      "vendor": "",
+      "price": 10100,
+      "partNumber": "SA 14510",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14510 Air Filter. Easy to install and replace, the SA 14510 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 350.0 mm, Dimension 2 (D2): 210.0 mm, Dimension 3 (D3): 10.0 mm, Height 1 (H1): 368.0 mm, Height 2 (H2): 358.0 mm"
+      ],
+      "unitWeight": "5.88 kg",
+      "shippingVolume": "0.056 m³"
+    },
+    {
+      "title": "Mann Filter C 35 1592 Air Filter | Replaces the HiFi Filter SA 14510",
+      "sku": "sa-14510-2",
+      "option1Value": "Mann Filter C 35 1592 Air Filter | Replaces the HiFi Filter SA 14510",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-c-35-1592-739c483db4ed.jpg",
+      "vendor": "",
+      "price": 10300,
+      "partNumber": "C 35 1592",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 350.0 mm, Dimension B: 210.0 mm, Dimension C: 10.3 mm, Dimension H: 370.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Donaldson P778605 Air Filter, Primary Round | Replaces the HiFi Filter SA 14510",
+      "sku": "sa-14510-3",
+      "option1Value": "Donaldson P778605 Air Filter, Primary Round | Replaces the HiFi Filter SA 14510",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-p778605-055e4c472965.jpg",
+      "vendor": "",
+      "price": 10400,
+      "partNumber": "P778605",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United Kingdom",
+      "description": "Genuine Donaldson P778605 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.95 kg",
+      "shippingVolume": "0.0556 m³"
+    },
+    {
+      "title": "Fleetguard AF4560 Air Filter | Replaces the HiFi Filter SA 14510",
+      "sku": "sa-14510-4",
+      "option1Value": "Fleetguard AF4560 Air Filter | Replaces the HiFi Filter SA 14510",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14510-af4560-4f2849edeef3.jpg",
+      "vendor": "",
+      "price": 9600,
+      "partNumber": "AF4560",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4560 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.34 kg",
+      "shippingVolume": "0.0656 m³"
+    }
+  ]
+}

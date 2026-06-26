@@ -1,0 +1,69 @@
+{
+  "handle": "sa-17375",
+  "title": "SA 17375",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17375-sa-17375-81fbb577ea3f.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17375-p635903-662a65a320e9.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17375-cp-24-420-29fe2b27e357.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17375 Primary Air Filter",
+      "sku": "sa-17375-1",
+      "option1Value": "HiFi Filter SA 17375 Primary Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17375-sa-17375-81fbb577ea3f.jpg",
+      "vendor": "",
+      "price": 6000,
+      "partNumber": "SA 17375",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17375 Primary Air Filter. Easy to install and replace, the SA 17375 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Primary Air Filter"
+      ],
+      "unitWeight": "1.14 kg",
+      "shippingVolume": "0.013 m³"
+    },
+    {
+      "title": "Donaldson P635903 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 17375",
+      "sku": "sa-17375-2",
+      "option1Value": "Donaldson P635903 Air Filter, Primary Obround Powercore | Replaces the HiFi Filter SA 17375",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17375-p635903-662a65a320e9.jpg",
+      "vendor": "",
+      "price": 7000,
+      "partNumber": "P635903",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "United States",
+      "description": "Why Choose Donaldson PowerCore® filters? Genuine PowerCore filters provide superior protection and performance. • Lower initial restriction protects engine performance and fuel economy. • Greater filter capacity means longer filter life, fewer filter changes and less money spent on maintenance. • PowerCore filters have been meeting original equipment manufacturer specifications for 20+ years. • Reliable, leak resistant Radial Seal™ technology keeps the filter in place – even under heavy vibration.",
+      "specifications": [
+        "Style: Primary Air Filter"
+      ],
+      "unitWeight": "1.25 kg",
+      "shippingVolume": "0.0179 m³"
+    },
+    {
+      "title": "Mann Filter CP 24 420 Air Filter | Replaces the HiFi Filter SA 17375",
+      "sku": "sa-17375-3",
+      "option1Value": "Mann Filter CP 24 420 Air Filter | Replaces the HiFi Filter SA 17375",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17375-cp-24-420-29fe2b27e357.jpg",
+      "vendor": "",
+      "price": 7300,
+      "partNumber": "CP 24 420",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 269.0 mm, Dimension D: 202.0 mm, Dimension H: 194.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "handle": "sao-5300",
+  "title": "SAO 5300",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-5300-sao-5300-771b44fced9d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-5300-lc-16-001-x-8d2ce98eebbc.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAO 5300 Engine Breather Filter",
+      "sku": "sao-5300-1",
+      "option1Value": "HiFi Filter SAO 5300 Engine Breather Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-5300-sao-5300-771b44fced9d.jpg",
+      "vendor": "",
+      "price": 20600,
+      "partNumber": "SAO 5300",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAO 5300 Engine Breather Filter. Easy to install and replace, the SAO 5300 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: ENGINE BREATHER FILTER, Dimension 1 (D1): 153.0 mm, Dimension 2 (D2): 50.0 mm, Dimension 3 (D3): 26.0 mm, Height 1 (H1): 209.0 mm, Height 2 (H2): 207.0 mm"
+      ],
+      "unitWeight": "0.58 kg",
+      "shippingVolume": "0.0075 m³"
+    },
+    {
+      "title": "Mann Filter LC 16 001 x Ventilator | Replaces the HiFi Filter SAO 5300",
+      "sku": "sao-5300-2",
+      "option1Value": "Mann Filter LC 16 001 x Ventilator | Replaces the HiFi Filter SAO 5300",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao-5300-lc-16-001-x-8d2ce98eebbc.jpg",
+      "vendor": "",
+      "price": 13800,
+      "partNumber": "LC 16 001 x",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "For over 70 years, MANN-FILTER has been synonymous with premium filters in original equipment quality worldwide. Benefit from a comprehensive product range and optimum filtration performance to protect drivers, engines and machinery. In the familiar yellow-green packaging, MANN-FILTER offers innovative solutions to new filtration challenges and produces on a global scale in accordance with the latest international production and test standards in the automotive industry.",
+      "specifications": [
+        "Style: Ventilator, Dimension A: 153.0 mm, Dimension D: 153.0 mm, Dimension H: 206.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

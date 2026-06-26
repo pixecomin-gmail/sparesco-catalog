@@ -1,0 +1,51 @@
+{
+  "handle": "sac-065002",
+  "title": "SAC 065002",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-065002-sac-065002-df46b83a8db8.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-065002-ah19232-ffea917f648f.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SAC 065002 Air Filter",
+      "sku": "sac-065002-1",
+      "option1Value": "HiFi Filter SAC 065002 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-065002-sac-065002-df46b83a8db8.jpg",
+      "vendor": "",
+      "price": 4600,
+      "partNumber": "SAC 065002",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SAC 065002 Air Filter. Easy to install and replace, the SAC 065002 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.78 kg",
+      "shippingVolume": "0.0076 m³"
+    },
+    {
+      "title": "Fleetguard AH19232 Air Intake Systems | Replaces the HiFi Filter SAC 065002",
+      "sku": "sac-065002-2",
+      "option1Value": "Fleetguard AH19232 Air Intake Systems | Replaces the HiFi Filter SAC 065002",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sac-065002-ah19232-ffea917f648f.jpg",
+      "vendor": "",
+      "price": 5700,
+      "partNumber": "AH19232",
+      "hsCode": "8421.23.00",
+      "countryOfOrigin": "United States",
+      "description": "With over 1,500 different air filtration products, from clamps to air housings to advanced air filters, Fleetguard® provides peace of mind for your air filtration needs. Our Fleetguard® AH19232 air housing is part of the heavy-duty air filtration line, covering your sophisticated air intake system requirements.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.75 kg",
+      "shippingVolume": "0.0074 m³"
+    }
+  ]
+}

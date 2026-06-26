@@ -1,0 +1,87 @@
+{
+  "handle": "sa-14922",
+  "title": "SA 14922",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-sa-14922-ba2534e6131a.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-p776260-2dec668f5832.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-c-24-393-0683e3cacdeb.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-af4972-8b2c2e83e3f8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 14922 Air Filter",
+      "sku": "sa-14922-1",
+      "option1Value": "HiFi Filter SA 14922 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-sa-14922-ba2534e6131a.jpg",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "SA 14922",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 14922 Air Filter. Easy to install and replace, the SA 14922 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 242.0 mm, Dimension 2 (D2): 132.0 mm, Dimension 3 (D3): 10.5 mm, Height 1 (H1): 296.0 mm, Height 2 (H2): 286.0 mm"
+      ],
+      "unitWeight": "2.3 kg",
+      "shippingVolume": "0.0262 m³"
+    },
+    {
+      "title": "Donaldson P776260 Air Filter, Primary Round | Replaces the HiFi Filter SA 14922",
+      "sku": "sa-14922-2",
+      "option1Value": "Donaldson P776260 Air Filter, Primary Round | Replaces the HiFi Filter SA 14922",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-p776260-2dec668f5832.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "P776260",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Genuine Donaldson P776260 Air Filter, Primary Round is crafted to provide outstanding engine protection by filtering out dust, dirt, and debris before they reach the combustion chamber. Its round design maximizes airflow while maintaining exceptional filtration efficiency, supporting better fuel economy and engine performance. Perfect for trucks, heavy machinery, and industrial equipment, this filter is built to withstand harsh conditions. Its durable construction extends service intervals, reducing maintenance frequency and ensuring long-lasting engine health.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.34 kg",
+      "shippingVolume": "0.021 m³"
+    },
+    {
+      "title": "Mann Filter C 24 393 Air Filter | Replaces the HiFi Filter SA 14922",
+      "sku": "sa-14922-3",
+      "option1Value": "Mann Filter C 24 393 Air Filter | Replaces the HiFi Filter SA 14922",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-c-24-393-0683e3cacdeb.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "C 24 393",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 241.0 mm, Dimension B: 132.0 mm, Dimension C: 10.6 mm, Dimension H: 298.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4972 Air Filter | Replaces the HiFi Filter SA 14922",
+      "sku": "sa-14922-4",
+      "option1Value": "Fleetguard AF4972 Air Filter | Replaces the HiFi Filter SA 14922",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-14922-af4972-8b2c2e83e3f8.jpg",
+      "vendor": "",
+      "price": 4900,
+      "partNumber": "AF4972",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Mexico",
+      "description": "​Fleetguard® AF4972 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.26 kg",
+      "shippingVolume": "0.0224 m³"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "handle": "sao58730",
+  "title": "SAO58730",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao58730-p525186-235fd02f6eb4.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao58730-ot-5498-f162d838e2fb.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Donaldson P525186 Air Oil Separator | Replaces the SF Filter SAO58730",
+      "sku": "sao58730-1",
+      "option1Value": "Donaldson P525186 Air Oil Separator | Replaces the SF Filter SAO58730",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao58730-p525186-235fd02f6eb4.jpg",
+      "vendor": "",
+      "price": 10600,
+      "partNumber": "P525186",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Italy",
+      "description": "Genuine Donaldson P525186 Air Oil Separator is designed to separate oil from compressed air systems, reducing oil carryover and improving air quality. It enhances system efficiency and protects downstream equipment. Built with durable materials, this separator ensures reliable operation in industrial and automotive applications.",
+      "specifications": [
+        "Style: Air/Oil Separator"
+      ],
+      "unitWeight": "2.43 kg",
+      "shippingVolume": "0.0197 m³"
+    },
+    {
+      "title": "HiFi Filter OT 5498 Air/Oil Separator | Replaces the SF Filter SAO58730",
+      "sku": "sao58730-2",
+      "option1Value": "HiFi Filter OT 5498 Air/Oil Separator | Replaces the SF Filter SAO58730",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sao58730-ot-5498-f162d838e2fb.jpg",
+      "vendor": "",
+      "price": 11400,
+      "partNumber": "OT 5498",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "The genuine HiFi Filter OT 5498 Air/Oil Separator is HiFi's replacement to the SF Filter SAO58730. Easy to install and replace, the OT 5498 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR/OIL SEPARATOR, Dimension 1 (D1): 220.0 mm, Dimension 2 (D2): 190.0 mm, Dimension 3 (D3): 168.0 mm, Thread 1 (D7): M8X1,25, Height 1 (H1): 255.0 mm, Height 2 (H2): 242.0 mm, Height 3 (H3): 230.0 mm"
+      ],
+      "unitWeight": "2.32 kg",
+      "shippingVolume": "0.0192 m³"
+    }
+  ]
+}

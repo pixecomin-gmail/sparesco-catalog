@@ -1,0 +1,69 @@
+{
+  "handle": "sa-10303-k",
+  "title": "SA 10303 K",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10303-k-sa-10303-k-b14dd5d909ce.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10303-k-p181035-07a133670b25.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10303-k-hp-402-k-1ddf6ed9a8f3.png"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 10303 K Air Filter",
+      "sku": "sa-10303-k-1",
+      "option1Value": "HiFi Filter SA 10303 K Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10303-k-sa-10303-k-b14dd5d909ce.jpg",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "SA 10303 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 10303 K Air Filter. Easy to install and replace, the SA 10303 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 288.0 mm, Dimension 2 (D2): 234.0 mm, Dimension 3 (D3): 123.0 mm, Height 1 (H1): 268.0 mm, Height 2 (H2): 257.0 mm, Height 3 (H3): 228.5 mm"
+      ],
+      "unitWeight": "2.35 kg",
+      "shippingVolume": "0.0314 m³"
+    },
+    {
+      "title": "Donaldson P181035 Air Filter, Primary Finned | Replaces the HiFi Filter SA 10303 K",
+      "sku": "sa-10303-k-2",
+      "option1Value": "Donaldson P181035 Air Filter, Primary Finned | Replaces the HiFi Filter SA 10303 K",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10303-k-p181035-07a133670b25.jpg",
+      "vendor": "",
+      "price": 4400,
+      "partNumber": "P181035",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Czechia",
+      "description": "Why Choose Donaldson Air Filters? Strong, pliable gasket is compressed against the air cleaner housing to create a tight seal. • High-efficiency cellulose media performs across a wide range of heavy-duty engine applications. • Corrosion resistant, coated steel liners support media during operation and help maximize airflow. • Pleatloc™ feature ensures uniform pleat spacing and prevents media from bunching to promote longer service life.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "2.12 kg",
+      "shippingVolume": "0.0317 m³"
+    },
+    {
+      "title": "FIL Filter HP 402 K Filter Insert | Replaces the HiFi Filter SA 10303 K",
+      "sku": "sa-10303-k-3",
+      "option1Value": "FIL Filter HP 402 K Filter Insert | Replaces the HiFi Filter SA 10303 K",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-10303-k-hp-402-k-1ddf6ed9a8f3.png",
+      "vendor": "",
+      "price": 4100,
+      "partNumber": "HP 402 K",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Turkey",
+      "description": "Genuine FIL Filter HP 402 K. Easy to install and replace, the HP 402 K is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

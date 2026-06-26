@@ -1,0 +1,51 @@
+{
+  "handle": "sa-6416",
+  "title": "SA 6416",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6416-sa-6416-4b29a8c0ecb6.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6416-af25372-35c5a2bc6ea2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6416 Air Filter",
+      "sku": "sa-6416-1",
+      "option1Value": "HiFi Filter SA 6416 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6416-sa-6416-4b29a8c0ecb6.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "SA 6416",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6416 Air Filter. Easy to install and replace, the SA 6416 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 154.0 mm, Dimension 2 (D2): 132.0 mm, Dimension 3 (D3): 112.0 mm, Height 1 (H1): 161.0 mm, Height 2 (H2): 158.5 mm, Height 3 (H3): 149.0 mm"
+      ],
+      "unitWeight": "0.66 kg",
+      "shippingVolume": "0.0043 m³"
+    },
+    {
+      "title": "Fleetguard AF25372 Air Filter, Primary | Replaces the HiFi Filter SA 6416",
+      "sku": "sa-6416-2",
+      "option1Value": "Fleetguard AF25372 Air Filter, Primary | Replaces the HiFi Filter SA 6416",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6416-af25372-35c5a2bc6ea2.jpg",
+      "vendor": "",
+      "price": 5100,
+      "partNumber": "AF25372",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Australia",
+      "description": "​Fleetguard® AF25372 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.92 kg",
+      "shippingVolume": "0.0059 m³"
+    }
+  ]
+}

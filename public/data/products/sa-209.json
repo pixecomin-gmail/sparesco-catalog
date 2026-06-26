@@ -1,0 +1,51 @@
+{
+  "handle": "sa-209",
+  "title": "SA 209",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-209-sa-209-c4b571c557f3.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-209-c-2263-e5c295135c4b.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 209 Air Filter",
+      "sku": "sa-209-1",
+      "option1Value": "HiFi Filter SA 209 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-209-sa-209-c4b571c557f3.jpg",
+      "vendor": "",
+      "price": 1100,
+      "partNumber": "SA 209",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Poland",
+      "description": "The HiFi Filter SA 209 air filter is designed to provide superior filtration and enhance the performance of your machinery. Constructed with premium materials, this air filter effectively captures dust, dirt, and other airborne contaminants, ensuring that your engine remains clean and operates efficiently. Easy to install and replace, the SA 209 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining optimal engine health and performance. By ordering with FilterFinder you benefit from our 1-year manufacturer warranty, as well as no quibble 45-day returns and a full inspection of the parts by our engineers, making sure you get both peace of mind and exceptional value for your investment.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 202.0 mm, Dimension 2 (D2): 144.0 mm, Dimension 3 (D3): 144.0 mm, Height 1 (H1): 81.0 mm, Height 2 (H2): 74.0 mm"
+      ],
+      "unitWeight": "0.32 kg",
+      "shippingVolume": "0.0038 m³"
+    },
+    {
+      "title": "Mann Filter C 2263 Air Filter | Replaces the HiFi Filter SA 209",
+      "sku": "sa-209-2",
+      "option1Value": "Mann Filter C 2263 Air Filter | Replaces the HiFi Filter SA 209",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-209-c-2263-e5c295135c4b.jpg",
+      "vendor": "",
+      "price": 1300,
+      "partNumber": "C 2263",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Bosnia & Herzegovina",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 212.0 mm, Dimension B: 142.0 mm, Dimension C: 142.0 mm, Dimension H: 78.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

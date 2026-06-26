@@ -1,0 +1,33 @@
+{
+  "handle": "sa-911",
+  "title": "SA 911",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-911-sa-911-e2c4bfcbc809.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 911 Air Filter",
+      "sku": "sa-911-1",
+      "option1Value": "HiFi Filter SA 911 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-911-sa-911-e2c4bfcbc809.jpg",
+      "vendor": "",
+      "price": 1000,
+      "partNumber": "SA 911",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 911 Air Filter. Easy to install and replace, the SA 911 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 130.0 mm, Dimension 2 (D2): 91.5 mm, Dimension 3 (D3): 91.5 mm, Height 1 (H1): 268.0 mm"
+      ],
+      "unitWeight": "0.5 kg",
+      "shippingVolume": "0.0075 m³"
+    }
+  ]
+}

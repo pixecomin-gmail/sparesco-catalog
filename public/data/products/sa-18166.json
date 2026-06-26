@@ -1,0 +1,69 @@
+{
+  "handle": "sa-18166",
+  "title": "SA 18166",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18166-sa-18166-23e1ab7e8463.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18166-p500280-3f15a4034f8a.png",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18166-cf-701-01eee18ee90e.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 18166 Air Filter",
+      "sku": "sa-18166-1",
+      "option1Value": "HiFi Filter SA 18166 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18166-sa-18166-23e1ab7e8463.jpg",
+      "vendor": "",
+      "price": 2000,
+      "partNumber": "SA 18166",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 18166 Air Filter. Easy to install and replace, the SA 18166 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 62.0 mm, Dimension 2 (D2): 58.0 mm, Dimension 3 (D3): 50.5 mm, Height 1 (H1): 235.0 mm, Height 2 (H2): 212.0 mm, Height 3 (H3): 205.0 mm"
+      ],
+      "unitWeight": "0.12 kg",
+      "shippingVolume": "0.0011 m³"
+    },
+    {
+      "title": "Donaldson P500280 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 18166",
+      "sku": "sa-18166-2",
+      "option1Value": "Donaldson P500280 Air Filter, Safety Radialseal | Replaces the HiFi Filter SA 18166",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18166-p500280-3f15a4034f8a.png",
+      "vendor": "",
+      "price": 2100,
+      "partNumber": "P500280",
+      "hsCode": "8421.31.00.90",
+      "countryOfOrigin": "Indonesia",
+      "description": "Genuine Donaldson P500280 Air Filter, Safety Radialseal features a durable radialseal design that provides a secure, leak-resistant fit while delivering high-efficiency filtration. It captures fine dust and debris, ensuring clean airflow and protecting engine components from premature wear. Ideal for demanding environments, this safety air filter adds an extra layer of protection in conjunction with a primary filter. Its radialseal construction allows for easy installation and removal without sacrificing sealing performance.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.3 kg",
+      "shippingVolume": "0.0018 m³"
+    },
+    {
+      "title": "Mann Filter CF 701 Secondary Element | Replaces the HiFi Filter SA 18166",
+      "sku": "sa-18166-3",
+      "option1Value": "Mann Filter CF 701 Secondary Element | Replaces the HiFi Filter SA 18166",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-18166-cf-701-01eee18ee90e.jpg",
+      "vendor": "",
+      "price": 3500,
+      "partNumber": "CF 701",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "",
+      "description": "High-quality MANN-FILTER air filter secondary elements offer a comprehensive protection against wear / Engine is protected even if the main filter component is replaced or damaged. While the main element is being replaced, extreme or dusty operating conditions can sometimes occur - the secondary element continues to provide optimum protection for a clean air.",
+      "specifications": [
+        "Style: Secondary Element, Dimension A: 58.0 mm, Dimension D: 60.0 mm, Dimension H: 236.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    }
+  ]
+}

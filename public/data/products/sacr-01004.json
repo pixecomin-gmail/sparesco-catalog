@@ -1,0 +1,33 @@
+{
+  "handle": "sacr-01004",
+  "title": "SACR 01004",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sacr-01004-sacr-01004-8a844aaff21d.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SACR 01004 Latch",
+      "sku": "sacr-01004-1",
+      "option1Value": "HiFi Filter SACR 01004 Latch",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sacr-01004-sacr-01004-8a844aaff21d.jpg",
+      "vendor": "",
+      "price": 700,
+      "partNumber": "SACR 01004",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SACR 01004 Latch. Easy to install and replace, the SACR 01004 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: LATCH"
+      ],
+      "unitWeight": "0.02 kg",
+      "shippingVolume": "0.0 m³"
+    }
+  ]
+}

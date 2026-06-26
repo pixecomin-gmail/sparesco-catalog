@@ -1,0 +1,69 @@
+{
+  "handle": "sa-17292",
+  "title": "SA 17292",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17292-sa-17292-7fc6238f8cc7.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17292-c-30-850-3-16c272c7f5ac.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17292-af27714-2c36b7651a55.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 17292 Air Filter",
+      "sku": "sa-17292-1",
+      "option1Value": "HiFi Filter SA 17292 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17292-sa-17292-7fc6238f8cc7.jpg",
+      "vendor": "",
+      "price": 5000,
+      "partNumber": "SA 17292",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 17292 Air Filter. Easy to install and replace, the SA 17292 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 68.0 mm, Dimension 2 (D2): 67.0 mm, Dimension 3 (D3): 57.0 mm, Height 1 (H1): 325.0 mm, Height 2 (H2): 325.0 mm"
+      ],
+      "unitWeight": "0.18 kg",
+      "shippingVolume": "0.0019 m³"
+    },
+    {
+      "title": "Mann Filter C 30 850/3 Air Filter | Replaces the HiFi Filter SA 17292",
+      "sku": "sa-17292-2",
+      "option1Value": "Mann Filter C 30 850/3 Air Filter | Replaces the HiFi Filter SA 17292",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17292-c-30-850-3-16c272c7f5ac.jpg",
+      "vendor": "",
+      "price": 9600,
+      "partNumber": "C 30 850/3",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Germany",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 303.0 mm, Dimension B: 191.0 mm, Dimension C: 9.0 mm, Dimension H: 476.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF27714 Air Filter, Primary | Replaces the HiFi Filter SA 17292",
+      "sku": "sa-17292-3",
+      "option1Value": "Fleetguard AF27714 Air Filter, Primary | Replaces the HiFi Filter SA 17292",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-17292-af27714-2c36b7651a55.jpg",
+      "vendor": "",
+      "price": 11700,
+      "partNumber": "AF27714",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "Italy",
+      "description": "​Fleetguard® AF27714 axial seal primary air filter ensures a proper seal and prevent leaks to prevent airborne contaminants from reaching the combustion chamber.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "4.23 kg",
+      "shippingVolume": "0.0476 m³"
+    }
+  ]
+}

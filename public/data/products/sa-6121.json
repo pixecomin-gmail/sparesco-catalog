@@ -1,0 +1,69 @@
+{
+  "handle": "sa-6121",
+  "title": "SA 6121",
+  "collection": "Air Filters",
+  "collectionHandle": "air-filters",
+  "category": "Air Filters",
+  "tags": [
+    "Filter",
+    "ff1225"
+  ],
+  "images": [
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6121-sa-6121-1697489fe96c.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6121-c-27-161-bb1b2a8fef1d.jpg",
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6121-af4442-eeadbc240ed2.jpg"
+  ],
+  "variants": [
+    {
+      "title": "HiFi Filter SA 6121 Air Filter",
+      "sku": "sa-6121-1",
+      "option1Value": "HiFi Filter SA 6121 Air Filter",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6121-sa-6121-1697489fe96c.jpg",
+      "vendor": "",
+      "price": 1200,
+      "partNumber": "SA 6121",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "France",
+      "description": "Genuine HiFi Filter SA 6121 Air Filter. Easy to install and replace, the SA 6121 is built to withstand demanding environments, offering long-lasting protection and reliability. Whether used in automotive, agricultural, construction, or industrial applications, this filter is an essential component for maintaining system health and performance.",
+      "specifications": [
+        "Style: AIR FILTER, Dimension 1 (D1): 271.0 mm, Dimension 2 (D2): 261.0 mm, Dimension 3 (D3): 249.0 mm, Height 1 (H1): 44.0 mm, Height 2 (H2): 34.0 mm"
+      ],
+      "unitWeight": "0.38 kg",
+      "shippingVolume": "0.0035 m³"
+    },
+    {
+      "title": "Mann Filter C 27 161 Air Filter | Replaces the HiFi Filter SA 6121",
+      "sku": "sa-6121-2",
+      "option1Value": "Mann Filter C 27 161 Air Filter | Replaces the HiFi Filter SA 6121",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6121-c-27-161-bb1b2a8fef1d.jpg",
+      "vendor": "",
+      "price": 1600,
+      "partNumber": "C 27 161",
+      "hsCode": "8421.99.90",
+      "countryOfOrigin": "Spain",
+      "description": "High-quality MANN-FILTER air filters for clean air intake and optimum protection for your engine, mass air flow sensor & other sensitive components / They meet requirements of modern engine technology. Highest dirt holding capacity and dirt separation efficiency, low flow resistance and high pleat stability ensure functional reliability during the entire service interval.",
+      "specifications": [
+        "Style: Air Filter, Dimension A: 270.0 mm, Dimension B: 250.0 mm, Dimension H: 46.0 mm"
+      ],
+      "unitWeight": "",
+      "shippingVolume": ""
+    },
+    {
+      "title": "Fleetguard AF4442 Engine Air Panel | Replaces the HiFi Filter SA 6121",
+      "sku": "sa-6121-3",
+      "option1Value": "Fleetguard AF4442 Engine Air Panel | Replaces the HiFi Filter SA 6121",
+      "image": "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev/air-filters/sa-6121-af4442-eeadbc240ed2.jpg",
+      "vendor": "",
+      "price": 900,
+      "partNumber": "AF4442",
+      "hsCode": "8421.31.00",
+      "countryOfOrigin": "France",
+      "description": "​Fleetguard® AF4442 panel air filter provides optimized airflow designed with OEM requirements. Protect your investment and extend the life of your equipment with a filter that delivers superior protection.",
+      "specifications": [
+        "Style: Air Filter"
+      ],
+      "unitWeight": "0.4 kg",
+      "shippingVolume": "0.0036 m³"
+    }
+  ]
+}
