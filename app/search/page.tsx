@@ -1,9 +1,9 @@
 "use client";
 
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { searchProducts } from "@/lib/products";
+import { useSearchResults } from "@/hooks/useSearchIndex";
 import CollectionProductCard from "@/components/CollectionProductCard";
 
 function SearchContent() {
@@ -11,9 +11,7 @@ function SearchContent() {
   const initialQuery = searchParams.get("q") || "";
   const [query, setQuery] = useState(initialQuery);
 
-  const results = useMemo(() => {
-    return searchProducts(query);
-  }, [query]);
+  const results = useSearchResults(query);
 
   return (
     <main>

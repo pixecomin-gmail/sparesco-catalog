@@ -26,8 +26,9 @@ function validateEnvironment() {
 function validateFolders() {
   const folders = [
     CONSTANTS.IMPORTS_DIR,
-    CONSTANTS.DATA_PRODUCTS_DIR,
+    CONSTANTS.PUBLIC_DATA_DIR,
     CONSTANTS.PUBLIC_PRODUCTS_DIR,
+    CONSTANTS.PUBLIC_COLLECTION_PRODUCTS_DIR,
   ];
 
   const missing = folders.filter((folder) => !fs.existsSync(folder));

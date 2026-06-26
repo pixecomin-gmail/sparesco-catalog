@@ -1,5 +1,3 @@
-import productsIndexData from "@/data/products-index.json";
-
 export type ProductIndexItem = {
   handle: string;
   title: string;
@@ -39,36 +37,20 @@ export type Product = {
   variants: ProductVariant[];
 };
 
-export const productsIndex = productsIndexData as ProductIndexItem[];
-
-export function getAllProducts() {
-  return productsIndex;
+export function normalizeSearchText(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
-export function getCategories() {
-  return Array.from(
-    new Set(productsIndex.map((product) => product.category).filter(Boolean))
-  );
-}
-
-export function getBrands() {
-  return Array.from(
-    new Set(productsIndex.map((product) => product.vendor).filter(Boolean))
-  );
-}
-
-function normalizeSearchText(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9]/g, "");
-}
-
-export function searchProducts(query: string, limit?: number) {
+export function searchProductList(
+  products: ProductIndexItem[],
+  query: string,
+  limit?: number
+) {
   const normalizedQuery = normalizeSearchText(query);
 
   if (!normalizedQuery) return [];
 
-  const results = productsIndex.filter((product) => {
+  const results = products.filter((product) => {
     const text = [
       product.title,
       product.partNumber,

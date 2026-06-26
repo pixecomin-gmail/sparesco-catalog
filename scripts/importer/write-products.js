@@ -123,7 +123,6 @@ function mergeProduct(existing, incoming, stats) {
 }
 
 function writeProduct(product) {
-  ensureFolder(CONSTANTS.DATA_PRODUCTS_DIR);
   ensureFolder(CONSTANTS.PUBLIC_PRODUCTS_DIR);
 
   const cleanProduct = JSON.parse(JSON.stringify(product));
@@ -133,12 +132,6 @@ function writeProduct(product) {
   }
 
   const json = JSON.stringify(cleanProduct, null, 2);
-
-  fs.writeFileSync(
-    path.join(CONSTANTS.DATA_PRODUCTS_DIR, `${cleanProduct.handle}.json`),
-    json,
-    "utf8"
-  );
 
   fs.writeFileSync(
     path.join(CONSTANTS.PUBLIC_PRODUCTS_DIR, `${cleanProduct.handle}.json`),
@@ -159,7 +152,7 @@ function mergeOnly(products) {
   const mergedProducts = [];
 
   for (const incoming of products) {
-    const file = path.join(CONSTANTS.DATA_PRODUCTS_DIR, `${incoming.handle}.json`);
+    const file = path.join(CONSTANTS.PUBLIC_PRODUCTS_DIR, `${incoming.handle}.json`);
     const existing = readJson(file);
     const merged = mergeProduct(existing, incoming, stats);
     mergedProducts.push(merged);

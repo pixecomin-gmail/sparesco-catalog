@@ -1,17 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { searchProducts } from "@/lib/products";
+import { useSearchResults } from "@/hooks/useSearchIndex";
 
 export default function HomeHero() {
   const router = useRouter();
   const [query, setQuery] = useState("");
 
-  const results = useMemo(() => {
-    return searchProducts(query, 4);
-  }, [query]);
+  const results = useSearchResults(query, 4);
 
   const submitSearch = () => {
     const trimmedQuery = query.trim();

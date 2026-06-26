@@ -2,12 +2,14 @@ const XLSX = require("xlsx");
 const fs = require("fs");
 const path = require("path");
 
-const importsDir = path.join(process.cwd(), "imports");
-const dataDir = path.join(process.cwd(), "data");
-const productsDir = path.join(dataDir, "products");
+const root = process.cwd();
 
-fs.mkdirSync(dataDir, { recursive: true });
-fs.mkdirSync(productsDir, { recursive: true });
+const importsDir = path.join(root, "imports");
+
+const publicDataDir = path.join(root, "public", "data");
+
+const productsDir = path.join(publicDataDir, "products");
+const collectionProductsDir = path.join(publicDataDir, "collection-products");
 
 const COL = {
   handle: "Handle",
@@ -27,6 +29,19 @@ const COL = {
   shippingVolume: "Variant Metafield: custom.shipping_volume [single_line_text_field]",
   vendor: "Variant Metafield: custom.vendor [single_line_text_field]",
 };
+
+function ensureDir(dir) {
+  fs.mkdirSync(dir, { recursive: true });
+}
+
+function emptyDir(dir) {
+  fs.rmSync(dir, { recursive: true, force: true });
+  ensureDir(dir);
+}
+
+function writeJson(filePath, data) {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf8");
+}
 
 function slugify(value) {
   return String(value || "")
@@ -154,10 +169,12 @@ function readExcel(filePath, collectionName, collectionHandle, productsMap, dupl
         "Variant Title": variantTitle,
         "Excel File": filePath,
         "Excel Row": rowIndex + 2,
-        "Action": "Merged into same product",
+        Action: "Merged into same product",
       });
 
       product._sourceHandles.add(originalHandle);
+    } else {
+      return;
     }
 
     if (image && !product.images.includes(image)) {
@@ -165,6 +182,7 @@ function readExcel(filePath, collectionName, collectionHandle, productsMap, dupl
     }
 
     const variantKey = [
+      normalizeForCompare(sku),
       normalizeForCompare(partNumber),
       normalizeForCompare(variantTitle),
     ].join("__");
@@ -183,7 +201,7 @@ function readExcel(filePath, collectionName, collectionHandle, productsMap, dupl
         "Variant Title": variantTitle,
         "Excel File": filePath,
         "Excel Row": rowIndex + 2,
-        "Action": "Duplicate variant skipped or replaced if better",
+        Action: "Duplicate variant skipped or replaced if better",
       });
 
       if (variantQualityScore(variant) > variantQualityScore(existingVariant)) {
@@ -198,21 +216,25 @@ function readExcel(filePath, collectionName, collectionHandle, productsMap, dupl
   });
 }
 
+emptyDir(productsDir);
+emptyDir(collectionProductsDir);
+ensureDir(publicDataDir);
+
 const productsMap = new Map();
 const collectionsMap = new Map();
 const duplicateRows = [];
 
-// const oldProductFiles = fs
-//   .readdirSync(productsDir)
-//   .filter((file) => file.endsWith(".json"));
-
-// oldProductFiles.forEach((file) => {
-//   fs.unlinkSync(path.join(productsDir, file));
-// });
+const COLLECTIONS = [
+  "Hengst",
+];
 
 const collectionFolders = fs
   .readdirSync(importsDir, { withFileTypes: true })
-  .filter((item) => item.isDirectory());
+  .filter(
+    (item) =>
+      item.isDirectory() &&
+      COLLECTIONS.includes(item.name)
+  );
 
 collectionFolders.forEach((folder) => {
   const collectionName = folder.name;
@@ -226,10 +248,7 @@ collectionFolders.forEach((folder) => {
   });
 
   const excelPath = path.join(collectionPath, "excel");
-
-  const actualExcelPath = fs.existsSync(excelPath)
-    ? excelPath
-    : collectionPath;
+  const actualExcelPath = fs.existsSync(excelPath) ? excelPath : collectionPath;
 
   const excelFiles = fs
     .readdirSync(actualExcelPath)
@@ -253,8 +272,7 @@ const products = Array.from(productsMap.values()).map((product) => {
 });
 
 products.forEach((product) => {
-  const productPath = path.join(productsDir, `${product.handle}.json`);
-  fs.writeFileSync(productPath, JSON.stringify(product, null, 2), "utf8");
+  writeJson(path.join(productsDir, `${product.handle}.json`), product);
 });
 
 const productsIndex = products.map((product) => {
@@ -264,8 +282,7 @@ const productsIndex = products.map((product) => {
     .map((variant) => Number(variant.price || 0))
     .filter((price) => price > 0);
 
-  const lowestPrice =
-    prices.length > 0 ? Math.min(...prices) : 0;
+  const lowestPrice = prices.length > 0 ? Math.min(...prices) : 0;
 
   return {
     handle: product.handle,
@@ -286,19 +303,45 @@ productsIndex.forEach((product) => {
   if (collection) collection.count += 1;
 });
 
-fs.writeFileSync(
-  path.join(dataDir, "products-index.json"),
-  JSON.stringify(productsIndex, null, 2),
-  "utf8"
+const searchIndex = productsIndex.map((product) => ({
+  handle: product.handle,
+  title: product.title,
+  partNumber: product.partNumber,
+  vendor: product.vendor,
+  category: product.category,
+  collection: product.collection,
+  collectionHandle: product.collectionHandle,
+  image: product.image,
+  price: product.price,
+  variantCount: product.variantCount,
+}));
+
+const collectionGroups = new Map();
+
+productsIndex.forEach((product) => {
+  if (!collectionGroups.has(product.collectionHandle)) {
+    collectionGroups.set(product.collectionHandle, []);
+  }
+
+  collectionGroups.get(product.collectionHandle).push(product);
+});
+
+collectionGroups.forEach((items, collectionHandle) => {
+  writeJson(path.join(collectionProductsDir, `${collectionHandle}.json`), items);
+});
+
+const collections = Array.from(collectionsMap.values()).sort((a, b) =>
+  a.title.localeCompare(b.title)
 );
 
-fs.writeFileSync(
-  path.join(dataDir, "collections.json"),
-  JSON.stringify(Array.from(collectionsMap.values()), null, 2),
-  "utf8"
-);
+writeJson(path.join(publicDataDir, "products-index.json"), productsIndex);
+writeJson(path.join(publicDataDir, "search-index.json"), searchIndex);
+writeJson(path.join(publicDataDir, "collections.json"), collections);
 
-const duplicateReportPath = path.join(dataDir, "duplicate-products-report.xlsx");
+const duplicateReportPath = path.join(
+  publicDataDir,
+  "duplicate-products-report.xlsx"
+);
 
 const duplicateWorkbook = XLSX.utils.book_new();
 const duplicateSheet = XLSX.utils.json_to_sheet(
@@ -315,7 +358,7 @@ const duplicateSheet = XLSX.utils.json_to_sheet(
           "Variant Title": "",
           "Excel File": "",
           "Excel Row": "",
-          "Action": "",
+          Action: "",
         },
       ]
 );
@@ -328,31 +371,10 @@ XLSX.utils.book_append_sheet(
 
 XLSX.writeFile(duplicateWorkbook, duplicateReportPath);
 
-const publicDataDir = path.join(process.cwd(), "public", "data");
-const publicProductsDir = path.join(publicDataDir, "products");
-
-fs.mkdirSync(publicDataDir, { recursive: true });
-fs.mkdirSync(publicProductsDir, { recursive: true });
-
-fs.copyFileSync(
-  path.join(dataDir, "products-index.json"),
-  path.join(publicDataDir, "products-index.json")
-);
-
-fs.copyFileSync(
-  path.join(dataDir, "collections.json"),
-  path.join(publicDataDir, "collections.json")
-);
-
-products.forEach((product) => {
-  fs.copyFileSync(
-    path.join(productsDir, `${product.handle}.json`),
-    path.join(publicProductsDir, `${product.handle}.json`)
-  );
-});
-
-console.log(`Generated ${products.length} grouped product files`);
+console.log(`Generated ${products.length} product files`);
+console.log(`Generated ${collectionGroups.size} collection product files`);
 console.log(`Generated products-index.json`);
+console.log(`Generated search-index.json`);
 console.log(`Generated collections.json`);
 console.log(`Generated duplicate report: ${duplicateReportPath}`);
 console.log(`Duplicate rows found: ${duplicateRows.length}`);

@@ -1,15 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { searchProducts } from "@/lib/products";
+import { useSearchResults } from "@/hooks/useSearchIndex";
 
 export default function HomeSearch() {
   const [query, setQuery] = useState("");
 
-  const results = useMemo(() => {
-    return searchProducts(query, 4);
-  }, [query]);
+  const results = useSearchResults(query, 4);
 
   return (
     <div className="home-search-wrap">

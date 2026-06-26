@@ -1,7 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import collectionsData from "@/data/collections.json";
 
 type CollectionItem = {
   title: string;
@@ -9,11 +9,22 @@ type CollectionItem = {
   count?: number;
 };
 
-const collections = (collectionsData as CollectionItem[])
-  .filter((collection) => collection.title && collection.handle)
-  .sort((a, b) => a.title.localeCompare(b.title));
-
 export default function CollectionsPage() {
+  const [collections, setCollections] = useState<CollectionItem[]>([]);
+
+  useEffect(() => {
+    fetch("/data/collections.json")
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data: CollectionItem[]) =>
+        setCollections(
+          data
+            .filter((collection) => collection.title && collection.handle)
+            .sort((a, b) => a.title.localeCompare(b.title))
+        )
+      )
+      .catch(() => setCollections([]));
+  }, []);
+
   return (
     <main className="collections-temp-page">
       <section className="collections-temp-hero">

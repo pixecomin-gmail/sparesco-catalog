@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEnquiry } from "@/context/EnquiryContext";
-import { searchProducts } from "@/lib/products";
+import { useSearchResults } from "@/hooks/useSearchIndex";
 
 const megaMenuGroups = [
   {
@@ -77,7 +77,7 @@ export default function SiteHeader() {
   const [activeGroup, setActiveGroup] = useState<(typeof megaMenuGroups)[0] | null>(null);
 
   const totalItems = items.reduce((total, item) => total + item.quantity, 0);
-  const filteredResults = useMemo(() => searchProducts(query, 4), [query]);
+  const filteredResults = useSearchResults(query, 4);
 
   const submitSearch = () => {
     const trimmedQuery = query.trim();

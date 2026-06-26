@@ -3,8 +3,8 @@ export const runtime = "edge";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import collectionsData from "@/data/collections.json";
 import CollectionProductCard from "@/components/CollectionProductCard";
+import type { ProductIndexItem } from "@/lib/products";
 
 type CollectionItem = {
   title: string;
@@ -12,47 +12,58 @@ type CollectionItem = {
   count: number;
 };
 
-type Product = {
-  handle: string;
-  title: string;
-  image: string;
-  collection: string;
-  collectionHandle: string;
-  category: string;
-  vendor: string;
-  partNumber: string;
-  variantCount: number;
-  price: number;
-};
-
 const PAGE_SIZE = 25;
-const collections = collectionsData as CollectionItem[];
 
 type CollectionPageProps = {
   params: Promise<{ handle: string }>;
   searchParams?: Promise<{ page?: string }>;
 };
 
+function getBaseUrl() {
+  if (process.env.CF_PAGES_URL) {
+    return `https://${process.env.CF_PAGES_URL}`;
+  }
+
+  return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+}
+
+async function getCollections(): Promise<CollectionItem[]> {
+  try {
+    const res = await fetch(`${getBaseUrl()}/data/collections.json`, {
+      cache: "force-cache",
+    });
+
+    if (!res.ok) return [];
+
+    return res.json();
+  } catch {
+    return [];
+  }
+}
+
+async function getCollectionProducts(
+  handle: string
+): Promise<ProductIndexItem[]> {
+  try {
+    const res = await fetch(
+      `${getBaseUrl()}/data/collection-products/${handle}.json`,
+      { cache: "force-cache" }
+    );
+
+    if (!res.ok) return [];
+
+    return res.json();
+  } catch {
+    return [];
+  }
+}
+
 function cleanMetaText(text: string) {
   return text.replace(/\s+/g, " ").trim();
 }
 
-function uniqueValues(values: Array<string | undefined>, limit = 6) {
-  return Array.from(new Set(values.filter(Boolean) as string[])).slice(0, limit);
-}
-
-async function getProductsIndex(): Promise<Product[]> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-
-  const res = await fetch(`${baseUrl}/data/products-index.json`, {
-    cache: "force-cache",
-  });
-
-  if (!res.ok) {
-    return [];
-  }
-
-  return res.json();
+function uniqueValues(values: string[], limit = 6) {
+  return Array.from(new Set(values.filter(Boolean))).slice(0, limit);
 }
 
 function getCollectionSeoDescription({
@@ -77,29 +88,6 @@ function getCollectionSeoDescription({
       ? ` Product types include ${categories.join(", ")}.`
       : "";
 
-  if (title.toLowerCase().includes("air filter")) {
-    return cleanMetaText(
-      `Browse ${countText} ${title.toLowerCase()} for construction, mining, agricultural and industrial equipment.${brandText}${categoryText} Compare part numbers, dimensions, specifications and compatible replacement options on Sparesco.`
-    );
-  }
-
-  if (title.toLowerCase().includes("compressed air")) {
-    return cleanMetaText(
-      `Browse ${countText} ${title.toLowerCase()} for compressors, pneumatic systems and industrial air applications.${brandText}${categoryText} Compare specifications, replacement part numbers and submit enquiries through Sparesco.`
-    );
-  }
-
-  if (
-    title.toLowerCase().includes("donaldson") ||
-    title.toLowerCase().includes("eppensteiner") ||
-    title.toLowerCase().includes("argo") ||
-    title.toLowerCase().includes("domnick")
-  ) {
-    return cleanMetaText(
-      `Browse ${countText} ${title} spare parts and replacement filter elements for industrial, hydraulic, compressor and heavy equipment applications.${categoryText} Compare part numbers, technical specifications and compatible replacements on Sparesco.`
-    );
-  }
-
   return cleanMetaText(
     `Browse ${countText} ${title.toLowerCase()} spare parts for construction, mining and industrial equipment.${brandText}${categoryText} Compare product specifications, replacement part numbers and submit enquiries through Sparesco.`
   );
@@ -109,6 +97,8 @@ export async function generateMetadata({
   params,
 }: CollectionPageProps): Promise<Metadata> {
   const { handle } = await params;
+
+  const collections = await getCollections();
   const collection = collections.find((item) => item.handle === handle);
 
   if (!collection) {
@@ -117,10 +107,7 @@ export async function generateMetadata({
     };
   }
 
-  const products = await getProductsIndex();
-  const collectionProducts = products.filter(
-    (product) => product.collectionHandle === handle
-  );
+  const collectionProducts = await getCollectionProducts(handle);
 
   const brands = uniqueValues(
     collectionProducts.map((product) => product.vendor),
@@ -173,16 +160,14 @@ export default async function CollectionDetailPage({
   const resolvedSearchParams = searchParams ? await searchParams : {};
   const currentPage = Number(resolvedSearchParams.page || "1");
 
+  const collections = await getCollections();
   const collection = collections.find((item) => item.handle === handle);
 
   if (!collection) {
     notFound();
   }
 
-  const products = await getProductsIndex();
-  const collectionProducts = products.filter(
-    (product) => product.collectionHandle === handle
-  );
+  const collectionProducts = await getCollectionProducts(handle);
 
   const totalPages = Math.max(
     1,

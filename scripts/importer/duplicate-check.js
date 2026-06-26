@@ -5,7 +5,7 @@ const CONSTANTS = require("./constants");
 function productExists(handle) {
   return fs.existsSync(
     path.join(
-      CONSTANTS.DATA_PRODUCTS_DIR,
+      CONSTANTS.PUBLIC_PRODUCTS_DIR,
       `${handle}.json`
     )
   );

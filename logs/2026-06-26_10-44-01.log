@@ -1,0 +1,12 @@
+[10:44:01 AM] SPARESCO IMPORTER
+[10:44:01 AM] Environment OK
+[10:44:01 AM] Folders OK
+[10:44:01 AM] 10 collection(s) found
+[10:44:04 AM] Importing Hengst
+[10:44:05 AM] 242 rows
+[10:44:05 AM] 54 products
+[10:44:05 AM] 242 variants
+[10:44:15 AM] 242 images uploaded
+[10:44:15 AM] Cannot find module './update-search-index'
+Require stack:
+- C:\Users\dhwan\Desktop\sparesco-catalog\scripts\importer\add-collection.js

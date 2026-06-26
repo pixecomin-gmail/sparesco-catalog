@@ -16,11 +16,11 @@ function update() {
   const map = new Map();
 
   const files = fs
-    .readdirSync(CONSTANTS.DATA_PRODUCTS_DIR)
+    .readdirSync(CONSTANTS.PUBLIC_PRODUCTS_DIR)
     .filter((file) => file.endsWith(".json"));
 
   for (const file of files) {
-    const product = readJson(path.join(CONSTANTS.DATA_PRODUCTS_DIR, file));
+    const product = readJson(path.join(CONSTANTS.PUBLIC_PRODUCTS_DIR, file));
     if (!product) continue;
 
     const handle = product.collectionHandle;

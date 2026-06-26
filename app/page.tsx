@@ -1,51 +1,20 @@
 import HomeHero from "@/components/HomeHero";
 import StatsCounter from "@/components/StatsCounter";
 import FeaturedProductsSlider from "@/components/FeaturedProductsSlider";
-import featuredCategories from "@/data/featured-categories.json";
 import PopularSparePartsList from "@/components/PopularSparePartsList";
+import HomePopularCategories from "@/components/HomePopularCategories";
 
 export default function Home() {
   return (
     <main>
-      {/* Hero search */}
       <HomeHero />
 
-      {/* Stats counter */}
       <StatsCounter />
 
-      {/* FEATURED PRODUCTS */}
       <FeaturedProductsSlider />
 
-      {/* POPULAR CATEGORIES */}
-      <section className="section categories-highlight-section">
-        <div className="container">
-          <div className="section-header-row">
-            <h2 className="section-title">Popular Categories</h2>
-            <a href="/categories">View all categories →</a>
-          </div>
+      <HomePopularCategories />
 
-          <div className="popular-categories-grid">
-            {featuredCategories.slice(0, 6).map((category) => (
-              <a
-                href={category.url}
-                className="popular-category-card"
-                key={category.title}
-              >
-                <div className="popular-category-icon">
-                  <img
-                    src={`/icons/categories/${category.icon}`}
-                    alt={category.title}
-                  />
-                </div>
-
-                <h3>{category.title}</h3>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* INDUSTRIES */}
       <section className="section industry-section">
         <div className="container">
           <div className="industry-header">
@@ -54,9 +23,9 @@ export default function Home() {
             <h2>Parts For Every Industry</h2>
 
             <p>
-              Sparesco helps equipment owners, contractors, fleet operators and vendors
-              source spare parts for construction, mining, lifting and road-building
-              machinery.
+              Sparesco helps equipment owners, contractors, fleet operators and
+              vendors source spare parts for construction, mining, lifting and
+              road-building machinery.
             </p>
           </div>
 
@@ -64,7 +33,8 @@ export default function Home() {
             <div className="industry-card industry-card-modern">
               <h3>Mining</h3>
               <p>
-                Crushers, conveyors, drilling rigs, haul trucks — every part, any brand.
+                Crushers, conveyors, drilling rigs, haul trucks — every part,
+                any brand.
               </p>
             </div>
 
@@ -78,14 +48,16 @@ export default function Home() {
             <div className="industry-card industry-card-modern">
               <h3>Power Systems</h3>
               <p>
-                Generators, turbines, and industrial engines — filters to injectors.
+                Generators, turbines, and industrial engines — filters to
+                injectors.
               </p>
             </div>
 
             <div className="industry-card industry-card-modern">
               <h3>Heavy Lifts</h3>
               <p>
-                Mobile, tower, and overhead cranes — slewing rings to control systems.
+                Mobile, tower, and overhead cranes — slewing rings to control
+                systems.
               </p>
             </div>
           </div>
@@ -93,8 +65,6 @@ export default function Home() {
       </section>
 
       <PopularSparePartsList />
-      
-      {/* CTA SECTION */}
 
       <section className="section dark-cta-section">
         <div className="container dark-cta-grid">
@@ -102,8 +72,8 @@ export default function Home() {
             <span>Careers</span>
             <h3>Join Our Team</h3>
             <p>
-              Build your career with a fast-growing industrial marketplace serving
-              construction, mining and heavy equipment industries.
+              Build your career with a fast-growing industrial marketplace
+              serving construction, mining and heavy equipment industries.
             </p>
             <button>Apply Now</button>
           </div>
@@ -112,15 +82,13 @@ export default function Home() {
             <span>Support</span>
             <h3>Contact Us</h3>
             <p>
-              Looking for a hard-to-find spare part? Our team can help you connect
-              with genuine vendors and source the right part faster.
+              Looking for a hard-to-find spare part? Our team can help you
+              connect with genuine vendors and source the right part faster.
             </p>
             <button>Contact Us</button>
           </div>
         </div>
       </section>
-
-      {/* SELL WITH SPARESCO */}
 
       <section className="section partner-section">
         <div className="container">
@@ -146,7 +114,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MARQUEE */}
       <section className="marquee-section">
         <div className="container marquee-container">
           <div className="marquee-label">We Work With :</div>
@@ -154,13 +121,13 @@ export default function Home() {
           <div className="marquee-wrapper">
             <div className="marquee-track">
               <span>
-                Dealers | Auctioneers | Manufacturers | Other Equipment Owners |
-                Dealers | Auctioneers | Manufacturers | Equipment Owners |
+                Dealers | Auctioneers | Manufacturers | Other Equipment Owners
+                | Dealers | Auctioneers | Manufacturers | Equipment Owners |
               </span>
 
               <span>
-                Dealers | Auctioneers | Manufacturers | Other Equipment Owners |
-                Dealers | Auctioneers | Manufacturers | Equipment Owners |
+                Dealers | Auctioneers | Manufacturers | Other Equipment Owners
+                | Dealers | Auctioneers | Manufacturers | Equipment Owners |
               </span>
             </div>
           </div>

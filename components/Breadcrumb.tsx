@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
-import collectionsData from "@/data/collections.json";
 
 type CollectionItem = {
   title: string;
@@ -16,21 +15,26 @@ type ProductBreadcrumbInfo = {
   collectionHandle?: string;
 };
 
-const collections = collectionsData as CollectionItem[];
-
 function formatSlug(slug: string) {
   return slug
     .replace(/-/g, " ")
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function getCollectionByHandle(handle?: string) {
+function getCollectionByHandle(
+  collections: CollectionItem[],
+  handle?: string
+) {
   if (!handle) return null;
   return collections.find((item) => item.handle === handle) || null;
 }
 
-function getCollectionByTitle(title?: string) {
+function getCollectionByTitle(
+  collections: CollectionItem[],
+  title?: string
+) {
   if (!title) return null;
+
   return (
     collections.find(
       (item) => item.title.toLowerCase() === title.toLowerCase()
@@ -38,13 +42,13 @@ function getCollectionByTitle(title?: string) {
   );
 }
 
-function getStaticLabel(segment: string) {
+function getStaticLabel(collections: CollectionItem[], segment: string) {
   if (segment === "spareshunt") return "Spares Hunt";
   if (segment === "sellwithus") return "Sell With Us";
   if (segment === "parts") return "Spare Parts";
   if (segment === "products") return "Products";
 
-  const collection = getCollectionByHandle(segment);
+  const collection = getCollectionByHandle(collections, segment);
   if (collection) return collection.title;
 
   return formatSlug(segment);
@@ -52,9 +56,18 @@ function getStaticLabel(segment: string) {
 
 export default function Breadcrumb() {
   const pathname = usePathname();
+
+  const [collections, setCollections] = useState<CollectionItem[]>([]);
   const [productInfo, setProductInfo] = useState<ProductBreadcrumbInfo | null>(
     null
   );
+
+  useEffect(() => {
+    fetch("/data/collections.json")
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data: CollectionItem[]) => setCollections(data))
+      .catch(() => setCollections([]));
+  }, []);
 
   useEffect(() => {
     async function loadProductBreadcrumb() {
@@ -90,8 +103,8 @@ export default function Breadcrumb() {
 
     if (segments[0] === "products" && segments[1]) {
       const collection =
-        getCollectionByHandle(productInfo?.collectionHandle) ||
-        getCollectionByTitle(productInfo?.collection);
+        getCollectionByHandle(collections, productInfo?.collectionHandle) ||
+        getCollectionByTitle(collections, productInfo?.collection);
 
       if (collection) {
         return [
@@ -115,14 +128,14 @@ export default function Breadcrumb() {
     return [
       { label: "Home", href: "/" },
       ...segments.map((segment, index) => ({
-        label: getStaticLabel(segment),
+        label: getStaticLabel(collections, segment),
         href:
           index === segments.length - 1
             ? undefined
             : "/" + segments.slice(0, index + 1).join("/"),
       })),
     ];
-  }, [pathname, productInfo]);
+  }, [pathname, productInfo, collections]);
 
   if (!items.length) return null;
 

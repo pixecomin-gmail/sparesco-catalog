@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import popularSpareParts from "@/data/popular-spare-parts.json";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 type Product = {
@@ -22,7 +21,10 @@ export default function PopularSparePartsList() {
 
   useEffect(() => {
     async function loadPopularProducts() {
-      const handles = (popularSpareParts as string[]).slice(0, 5);
+      const handlesRes = await fetch("/data/site/popular-spare-parts.json");
+      if (!handlesRes.ok) return;
+
+      const handles = ((await handlesRes.json()) as string[]).slice(0, 5);
 
       const loadedProducts = await Promise.all(
         handles.map(async (handle) => {

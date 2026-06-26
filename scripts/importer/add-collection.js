@@ -202,9 +202,17 @@ async function importCollection(collection) {
     writeResult.products
   );
 
+  progress.step("Updating Search Index");
+
+  require("./update-search-index").update();
+
   progress.step("Updating Collections");
 
   const collectionsResult = updateCollections.update();
+
+  progress.step("Updating Collection Products");
+
+  require("./update-collection-products").update();
 
   progress.step("Creating Report");
 
@@ -287,7 +295,7 @@ async function main() {
 
   config.initializeFolders();
 
-  progress.start(7);
+  progress.start(9);
 
   progress.step("Environment");
   validator.validateEnvironment();

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import featuredProducts from "@/data/featured-products.json";
 import { useEnquiry } from "@/context/EnquiryContext";
 
 type Product = {
@@ -23,8 +22,13 @@ export default function FeaturedProductsSlider() {
 
   useEffect(() => {
     async function loadFeatured() {
+      const handlesRes = await fetch("/data/site/featured-products.json");
+      if (!handlesRes.ok) return;
+
+      const handles = (await handlesRes.json()) as string[];
+
       const products = await Promise.all(
-        featuredProducts.map(async (handle) => {
+        handles.map(async (handle) => {
           const res = await fetch(`/data/products/${handle}.json`);
           if (!res.ok) return null;
 

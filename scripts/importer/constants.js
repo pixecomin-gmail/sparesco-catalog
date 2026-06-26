@@ -13,21 +13,41 @@ module.exports = {
   REPORTS_DIR: path.join(ROOT, "reports"),
   LOGS_DIR: path.join(ROOT, "logs"),
 
-  DATA_DIR: path.join(ROOT, "data"),
   PUBLIC_DIR: path.join(ROOT, "public"),
+  PUBLIC_DATA_DIR: path.join(ROOT, "public", "data"),
 
-  DATA_PRODUCTS_DIR: path.join(ROOT, "data", "products"),
-  PUBLIC_PRODUCTS_DIR: path.join(ROOT, "public", "data", "products"),
+  PUBLIC_PRODUCTS_DIR: path.join(
+    ROOT,
+    "public",
+    "data",
+    "products"
+  ),
+
+  PUBLIC_COLLECTION_PRODUCTS_DIR: path.join(
+    ROOT,
+    "public",
+    "data",
+    "collection-products"
+  ),
 
   // Files
   PRODUCTS_INDEX_FILE: path.join(
     ROOT,
+    "public",
     "data",
     "products-index.json"
   ),
 
+  SEARCH_INDEX_FILE: path.join(
+    ROOT,
+    "public",
+    "data",
+    "search-index.json"
+  ),
+
   COLLECTIONS_FILE: path.join(
     ROOT,
+    "public",
     "data",
     "collections.json"
   ),
