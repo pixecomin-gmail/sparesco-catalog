@@ -71,7 +71,12 @@ function build(groupedProducts, collectionName) {
       }
 
       productJson.variants.push({
-        title: clean(row["Title"]) || productJson.title,
+       title:
+        clean(row["Option1 Value"]) ||
+        clean(row["Variant SKU"]) ||
+        clean(row["Variant Metafield: custom.part_number [single_line_text_field]"]) ||
+        clean(row["Title"]) ||
+        productJson.title,
         sku: clean(row["Variant SKU"]),
         option1Value: clean(row["Option1 Value"]),
         image,

@@ -66,7 +66,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
 
   if (!activeVariant) return null;
 
-  const activeVariantTitle = cleanVariantTitle(activeVariant.title);
+  const activeVariantTitle = activeVariant.title;
 
   const activePrice =
     activeVariant.price > 0

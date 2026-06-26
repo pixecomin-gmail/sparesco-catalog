@@ -1,9 +1,8 @@
-export const runtime = "edge";
+"use client";
 
-import type { Metadata } from "next";
-import { headers } from "next/headers";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import CollectionProductCard from "@/components/CollectionProductCard";
 import type { ProductIndexItem } from "@/lib/products";
 
@@ -15,179 +14,71 @@ type CollectionItem = {
 
 const PAGE_SIZE = 25;
 
-type CollectionPageProps = {
-  params: Promise<{ handle: string }>;
-  searchParams?: Promise<{ page?: string }>;
-};
+function CollectionContent() {
+  const params = useParams<{ handle: string }>();
+  const searchParams = useSearchParams();
 
-async function getBaseUrl() {
-  const headersList = await headers();
-  const host = headersList.get("host");
+  const handle = params.handle;
+  const currentPage = Number(searchParams.get("page") || "1");
 
-  if (host) {
-    return `https://${host}`;
-  }
+  const [collections, setCollections] = useState<CollectionItem[]>([]);
+  const [products, setProducts] = useState<ProductIndexItem[]>([]);
+  const [loaded, setLoaded] = useState(false);
 
-  return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-}
+  useEffect(() => {
+    async function loadCollection() {
+      try {
+        const [collectionsRes, productsRes] = await Promise.all([
+          fetch("/data/collections.json"),
+          fetch(`/data/collection-products/${handle}.json`),
+        ]);
 
-async function getCollections(): Promise<CollectionItem[]> {
-  try {
-    const baseUrl = await getBaseUrl();
+        const collectionsData = collectionsRes.ok
+          ? ((await collectionsRes.json()) as CollectionItem[])
+          : [];
 
-    const res = await fetch(`${baseUrl}/data/collections.json`, {
-      cache: "force-cache",
-    });
+        const productsData = productsRes.ok
+          ? ((await productsRes.json()) as ProductIndexItem[])
+          : [];
 
-    if (!res.ok) return [];
+        setCollections(collectionsData);
+        setProducts(productsData);
+      } catch {
+        setCollections([]);
+        setProducts([]);
+      } finally {
+        setLoaded(true);
+      }
+    }
 
-    return res.json();
-  } catch {
-    return [];
-  }
-}
+    loadCollection();
+  }, [handle]);
 
-async function getCollectionProducts(
-  handle: string
-): Promise<ProductIndexItem[]> {
-  try {
-    const baseUrl = await getBaseUrl();
+  const collection = useMemo(() => {
+    return collections.find((item) => item.handle === handle) || null;
+  }, [collections, handle]);
 
-    const res = await fetch(
-      `${baseUrl}/data/collection-products/${handle}.json`,
-      { cache: "force-cache" }
-    );
-
-    if (!res.ok) return [];
-
-    return res.json();
-  } catch {
-    return [];
-  }
-}
-
-function cleanMetaText(text: string) {
-  return text.replace(/\s+/g, " ").trim();
-}
-
-function uniqueValues(values: string[], limit = 6) {
-  return Array.from(new Set(values.filter(Boolean))).slice(0, limit);
-}
-
-function getCollectionSeoDescription({
-  collection,
-  productCount,
-  brands,
-  categories,
-}: {
-  collection: CollectionItem;
-  productCount: number;
-  brands: string[];
-  categories: string[];
-}) {
-  const countText = productCount.toLocaleString("en-IN");
-  const title = collection.title;
-
-  const brandText =
-    brands.length > 0 ? ` Brands include ${brands.join(", ")}.` : "";
-
-  const categoryText =
-    categories.length > 0
-      ? ` Product types include ${categories.join(", ")}.`
-      : "";
-
-  return cleanMetaText(
-    `Browse ${countText} ${title.toLowerCase()} spare parts for construction, mining and industrial equipment.${brandText}${categoryText} Compare product specifications, replacement part numbers and submit enquiries through Sparesco.`
-  );
-}
-
-export async function generateMetadata({
-  params,
-}: CollectionPageProps): Promise<Metadata> {
-  const { handle } = await params;
-
-  const collections = await getCollections();
-  const collection = collections.find((item) => item.handle === handle);
-
-  if (!collection) {
-    return {
-      title: "Collection Not Found",
-    };
-  }
-
-  const collectionProducts = await getCollectionProducts(handle);
-
-  const brands = uniqueValues(
-    collectionProducts.map((product) => product.vendor),
-    5
-  );
-
-  const categories = uniqueValues(
-    collectionProducts.map((product) => product.category),
-    4
-  );
-
-  const productCount = collectionProducts.length || collection.count;
-
-  const title = `${collection.title} Spare Parts Catalogue | ${productCount.toLocaleString(
-    "en-IN"
-  )} Products`;
-
-  const description = getCollectionSeoDescription({
-    collection,
-    productCount,
-    brands,
-    categories,
-  });
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `/collections/${collection.handle}`,
-    },
-    openGraph: {
-      title,
-      description,
-      url: `/collections/${collection.handle}`,
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
-  };
-}
-
-export default async function CollectionDetailPage({
-  params,
-  searchParams,
-}: CollectionPageProps) {
-  const { handle } = await params;
-  const resolvedSearchParams = searchParams ? await searchParams : {};
-  const currentPage = Number(resolvedSearchParams.page || "1");
-
-  const collections = await getCollections();
-  const collection = collections.find((item) => item.handle === handle);
-
-  if (!collection) {
-    notFound();
-  }
-
-  const collectionProducts = await getCollectionProducts(handle);
-
-  const totalPages = Math.max(
-    1,
-    Math.ceil(collectionProducts.length / PAGE_SIZE)
-  );
-
+  const totalPages = Math.max(1, Math.ceil(products.length / PAGE_SIZE));
   const safePage = Math.min(Math.max(currentPage, 1), totalPages);
 
-  const visibleProducts = collectionProducts.slice(
+  const visibleProducts = products.slice(
     (safePage - 1) * PAGE_SIZE,
     safePage * PAGE_SIZE
   );
+
+  if (!loaded) return null;
+
+  if (!collection) {
+    return (
+      <main>
+        <section className="section parts-section">
+          <div className="container">
+            <h1 className="page-title">Collection Not Found</h1>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   return (
     <main>
@@ -196,7 +87,7 @@ export default async function CollectionDetailPage({
           <h1 className="page-title">{collection.title}</h1>
 
           <p className="page-intro">
-            Browse {collectionProducts.length.toLocaleString("en-IN")}{" "}
+            Browse {products.length.toLocaleString("en-IN")}{" "}
             {collection.title.toLowerCase()} spare parts for construction,
             mining and industrial equipment.
           </p>
@@ -204,8 +95,8 @@ export default async function CollectionDetailPage({
           <div className="parts-topbar">
             <strong>All Products</strong>
             <span>
-              {collectionProducts.length.toLocaleString("en-IN")} products found
-              · Page {safePage} of {totalPages}
+              {products.length.toLocaleString("en-IN")} products found · Page{" "}
+              {safePage} of {totalPages}
             </span>
           </div>
 
@@ -215,11 +106,11 @@ export default async function CollectionDetailPage({
             ))}
           </div>
 
-          {collectionProducts.length === 0 && (
+          {products.length === 0 && (
             <p className="empty-message">No products found.</p>
           )}
 
-          {collectionProducts.length > PAGE_SIZE && (
+          {products.length > PAGE_SIZE && (
             <div className="pagination">
               {safePage > 1 ? (
                 <Link
@@ -255,5 +146,13 @@ export default async function CollectionDetailPage({
         </div>
       </section>
     </main>
+  );
+}
+
+export default function CollectionDetailPage() {
+  return (
+    <Suspense fallback={null}>
+      <CollectionContent />
+    </Suspense>
   );
 }

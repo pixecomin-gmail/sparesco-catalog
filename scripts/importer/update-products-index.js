@@ -9,9 +9,7 @@ function readIndex() {
   }
 
   try {
-    return JSON.parse(
-      fs.readFileSync(CONSTANTS.PRODUCTS_INDEX_FILE, "utf8")
-    );
+    return JSON.parse(fs.readFileSync(CONSTANTS.PRODUCTS_INDEX_FILE, "utf8"));
   } catch {
     return [];
   }
@@ -23,6 +21,14 @@ function writeIndex(index) {
     JSON.stringify(index, null, 2),
     "utf8"
   );
+}
+
+function getLowestPrice(variants) {
+  const prices = (variants || [])
+    .map((variant) => Number(variant.price || 0))
+    .filter((price) => price > 0);
+
+  return prices.length ? Math.min(...prices) : 0;
 }
 
 function update(products) {
@@ -39,7 +45,6 @@ function update(products) {
 
   for (const product of products) {
     const key = product.handle.toLowerCase();
-
     const firstVariant = product.variants[0] || {};
 
     const record = {
@@ -52,7 +57,7 @@ function update(products) {
       partNumber: firstVariant.partNumber || "",
       vendor: firstVariant.vendor || "",
       variantCount: product.variants.length,
-      price: firstVariant.price || 0,
+      price: getLowestPrice(product.variants),
     };
 
     if (map.has(key)) {
@@ -78,6 +83,7 @@ function update(products) {
     },
   };
 }
+
 module.exports = {
   update,
 };

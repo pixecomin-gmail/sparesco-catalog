@@ -40,7 +40,9 @@ export default function CollectionProductCard({
 
       <div className="parts-product-info">
         <h3>
-          <Link href={`/products/${product.handle}`}>{product.title}</Link>
+          <Link href={`/products/${product.handle}`}>
+            {product.partNumber || product.title}
+          </Link>
         </h3>
 
         <p className="parts-product-meta">{metaText}</p>

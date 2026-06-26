@@ -37,11 +37,15 @@ function preferNew(oldValue, newValue) {
 }
 
 function variantKey(variant) {
-  return (
-    clean(variant.partNumber) ||
-    clean(variant.option1Value) ||
-    clean(variant.title)
-  ).toLowerCase();
+  return [
+    clean(variant.sku),
+    clean(variant.partNumber),
+    clean(variant.title),
+  ]
+    .filter(Boolean)
+    .join("__")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
 }
 
 function mergeVariant(existing, incoming, stats) {

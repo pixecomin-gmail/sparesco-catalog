@@ -70,6 +70,10 @@ async function uploadImages(products) {
     for (const variant of product.variants) {
       if (!variant.image) continue;
       if (variant.__skipImageUpload) continue;
+      if (String(variant.image).includes(process.env.NEXT_PUBLIC_R2_PUBLIC_URL)) {
+        variant.__skipImageUpload = true;
+        continue;
+      }
 
       tasks.push({ product, variant });
     }
