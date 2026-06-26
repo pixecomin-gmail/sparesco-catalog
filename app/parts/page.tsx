@@ -12,12 +12,17 @@ function PartsContent() {
   const searchParams = useSearchParams();
 
   const [products, setProducts] = useState<ProductIndexItem[]>([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     async function loadProducts() {
-      const res = await fetch("/data/products-index.json");
-      const data = (await res.json()) as ProductIndexItem[];
-      setProducts(data);
+      try {
+        const res = await fetch("/data/products-index.json");
+        const data = (await res.json()) as ProductIndexItem[];
+        setProducts(data);
+      } finally {
+        setLoaded(true);
+      }
     }
 
     loadProducts();
@@ -68,19 +73,50 @@ function PartsContent() {
       const categoryMatch =
         !selectedCategory || product.category === selectedCategory;
 
-      const brandMatch = !selectedBrand || product.vendor === selectedBrand;
+      const brandMatch =
+        !selectedBrand || product.vendor === selectedBrand;
 
       return categoryMatch && brandMatch;
     });
   }, [products, selectedCategory, selectedBrand]);
 
-  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredProducts.length / PAGE_SIZE)
+  );
+
   const safePage = Math.min(Math.max(currentPage, 1), totalPages);
 
   const visibleProducts = filteredProducts.slice(
     (safePage - 1) * PAGE_SIZE,
     safePage * PAGE_SIZE
   );
+
+  // IMPORTANT: Loading UI comes AFTER all hooks
+  if (!loaded) {
+    return (
+      <main>
+        <section className="section parts-section">
+          <div className="container">
+            <div className="skeleton-line skeleton-title" />
+            <div className="skeleton-line" />
+
+            <div className="parts-product-grid parts-product-grid-four">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <article className="parts-product-card" key={i}>
+                  <div className="skeleton-box skeleton-product-image" />
+                  <div style={{ padding: 16 }}>
+                    <div className="skeleton-line" />
+                    <div className="skeleton-line skeleton-short" />
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   return (
     <main>
@@ -182,8 +218,8 @@ function PartsContent() {
               <div className="parts-product-grid parts-product-grid-four">
                 {visibleProducts.map((product) => (
                   <CollectionProductCard
-                    product={product}
                     key={product.handle}
+                    product={product}
                   />
                 ))}
               </div>
@@ -201,7 +237,9 @@ function PartsContent() {
                     Previous
                   </button>
 
-                  <span>Page {safePage} of {totalPages}</span>
+                  <span>
+                    Page {safePage} of {totalPages}
+                  </span>
 
                   <button
                     disabled={safePage === totalPages}

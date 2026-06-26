@@ -28,6 +28,11 @@ function CollectionContent() {
 
   useEffect(() => {
     async function loadCollection() {
+      if (!handle) return;
+
+      setLoaded(false);
+      setProducts([]);
+
       try {
         const [collectionsRes, productsRes] = await Promise.all([
           fetch("/data/collections.json"),
@@ -48,7 +53,9 @@ function CollectionContent() {
         setCollections([]);
         setProducts([]);
       } finally {
-        setLoaded(true);
+        setTimeout(() => {
+          setLoaded(true);
+        }, 250);
       }
     }
 
@@ -67,7 +74,34 @@ function CollectionContent() {
     safePage * PAGE_SIZE
   );
 
-  if (!loaded) return null;
+  if (!loaded) {
+    return (
+      <main>
+        <section className="section parts-section">
+          <div className="container">
+            <div className="skeleton-line skeleton-title" />
+            <div className="skeleton-line" />
+
+            <div className="parts-product-grid">
+              {Array.from({ length: 10 }).map((_, index) => (
+                <article className="parts-product-card" key={index}>
+                  <div className="skeleton-box skeleton-product-image" />
+
+                  <div style={{ padding: 16 }}>
+                    <div className="skeleton-line" />
+                    <div
+                      className="skeleton-line skeleton-short"
+                      style={{ marginBottom: 0 }}
+                    />
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   if (!collection) {
     return (

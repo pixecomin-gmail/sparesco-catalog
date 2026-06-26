@@ -5,6 +5,7 @@ import type { Product } from "@/types/product";
 import { useEnquiry } from "@/context/EnquiryContext";
 import ProductFaqTrustSection from "@/components/ProductFaqTrustSection";
 import RecentlyViewed from "@/components/RecentlyViewed";
+import { productJsonUrl } from "@/lib/r2";
 
 function cleanVariantTitle(title: string) {
   return title
@@ -31,13 +32,14 @@ export default function ProductPageClient({ handle }: { handle: string }) {
   const { addItem } = useEnquiry();
 
   const [product, setProduct] = useState<Product | null>(null);
+  const [loaded, setLoaded] = useState(false);
   const [activeImage, setActiveImage] = useState("");
   const [activeVariantIndex, setActiveVariantIndex] = useState(0);
   const [specsOpen, setSpecsOpen] = useState(false);
   const [descriptionOpen, setDescriptionOpen] = useState(false);
 
   useEffect(() => {
-    fetch(`/data/products/${handle}.json`)
+    fetch(productJsonUrl(handle))
       .then((res) => {
         if (!res.ok) throw new Error("Product not found");
         return res.json();
@@ -46,8 +48,32 @@ export default function ProductPageClient({ handle }: { handle: string }) {
         setProduct(data);
         setActiveImage(data.images?.[0] || "");
       })
-      .catch(() => setProduct(null));
+      .catch(() => setProduct(null))
+      .finally(() => setLoaded(true));
   }, [handle]);
+
+  if (!loaded) {
+    return (
+      <main>
+        <section className="section product-page-section">
+          <div className="container">
+            <div className="product-page-layout product-redesign-layout">
+              <div className="product-gallery product-gallery-sticky">
+                <div className="main-product-image skeleton-box skeleton-pdp-image" />
+              </div>
+
+              <div className="product-redesign-details">
+                <div className="skeleton-line skeleton-title" />
+                <div className="skeleton-line" />
+                <div className="skeleton-line" />
+                <div className="skeleton-line skeleton-short" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   if (!product) {
     return (

@@ -23,31 +23,20 @@ export default function FeaturedProductsSlider() {
   useEffect(() => {
     async function loadFeatured() {
       const handlesRes = await fetch("/data/site/featured-products.json");
-      if (!handlesRes.ok) return;
+        if (!handlesRes.ok) return;
 
-      const handles = (await handlesRes.json()) as string[];
+        const handles = (await handlesRes.json()) as string[];
 
-      const products = await Promise.all(
-        handles.map(async (handle) => {
-          const res = await fetch(`/data/products/${handle}.json`);
-          if (!res.ok) return null;
+        const indexRes = await fetch("/data/products-index.json");
+        if (!indexRes.ok) return;
 
-          const product = await res.json();
+        const index = (await indexRes.json()) as Product[];
 
-          return {
-            handle: product.handle,
-            title: product.title,
-            image: product.images?.[0] || "",
-            collection: product.collection,
-            variantCount: product.variants?.length || 1,
-            partNumber: product.variants?.[0]?.partNumber || product.title,
-            vendor: product.variants?.[0]?.vendor || product.collection || "",
-            price: product.variants?.[0]?.price || 0,
-          } as Product;
-        })
-      );
-
-      setFeatured(products.filter(Boolean) as Product[]);
+        setFeatured(
+          handles
+            .map((handle) => index.find((p) => p.handle === handle))
+            .filter(Boolean) as Product[]
+        );
     }
 
     loadFeatured();
@@ -80,7 +69,37 @@ export default function FeaturedProductsSlider() {
     });
   }
 
-  if (!featured.length) return null;
+  if (!featured.length) {
+    return (
+      <section className="section featured-products-section">
+        <div className="container">
+          <div className="section-heading-row">
+            <h2 className="section-title">Featured Products</h2>
+          </div>
+
+          <div className="featured-products-viewport">
+            {Array.from({ length: 6 }).map((_, index) => (
+              <article
+                className="featured-product-card featured-product-slide"
+                key={index}
+              >
+                <div className="skeleton-box skeleton-featured-image" />
+
+                <div className="featured-product-info">
+                  <div className="skeleton-line" />
+                  <div className="skeleton-line skeleton-short" />
+                  <div
+                    className="skeleton-line"
+                    style={{ height: 42, marginTop: 18 }}
+                  />
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="section featured-products-section">

@@ -21,42 +21,62 @@ export default function PopularSparePartsList() {
 
   useEffect(() => {
     async function loadPopularProducts() {
-      const handlesRes = await fetch("/data/site/popular-spare-parts.json");
-      if (!handlesRes.ok) return;
+      const indexRes = await fetch("/data/products-index.json");
+      if (!indexRes.ok) return;
 
-      const handles = ((await handlesRes.json()) as string[]).slice(0, 5);
-
-      const loadedProducts = await Promise.all(
-        handles.map(async (handle) => {
-          const res = await fetch(`/data/products/${handle}.json`);
-          if (!res.ok) return null;
-
-          const product = await res.json();
-
-          return {
-            handle: product.handle,
-            title: product.title,
-            image: product.images?.[0] || "",
-            collection: product.collection,
-            variantCount: product.variants?.length || 1,
-            partNumber: product.variants?.[0]?.partNumber || product.title,
-            vendor: product.variants?.[0]?.vendor || product.collection || "",
-            price: product.variants?.[0]?.price || 0,
-          } as Product;
-        })
-      );
-
-      setProducts(
-        loadedProducts.filter(
-          (product): product is Product => product !== null
-        )
-      );
+      const index = (await indexRes.json()) as Product[];
+      setProducts(index.slice(0, 5));
     }
 
     loadPopularProducts();
   }, []);
 
-  if (!products.length) return null;
+  if (!products.length) {
+    return (
+      <section className="popular-parts-section section">
+        <div className="container">
+          <div className="section-heading-row popular-parts-heading">
+            <h2 className="section-title">Popular Spare Parts</h2>
+          </div>
+
+          <div className="popular-parts-list">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <article className="popular-part-row" key={index}>
+                <div className="popular-part-main">
+                  <div className="skeleton-box skeleton-popular-image" />
+
+                  <div
+                    style={{
+                      flex: 1,
+                      marginLeft: 16,
+                    }}
+                  >
+                    <div className="skeleton-line" />
+                    <div className="skeleton-line skeleton-short" />
+                  </div>
+                </div>
+
+                <div
+                  className="skeleton-line"
+                  style={{ width: 80, marginBottom: 0 }}
+                />
+
+                <div
+                  className="skeleton-line"
+                  style={{ width: 90, marginBottom: 0 }}
+                />
+
+                <div
+                  className="skeleton-line"
+                  style={{ width: 130, height: 40, marginBottom: 0 }}
+                />
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="popular-parts-section section">

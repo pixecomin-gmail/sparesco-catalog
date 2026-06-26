@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useEnquiry } from "@/context/EnquiryContext";
+import { productJsonUrl } from "@/lib/r2";
 
 type Product = {
   handle: string;
@@ -36,7 +37,7 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
         .filter((handle) => handle !== currentHandle)
         .slice(0, 10)
         .map(async (handle) => {
-          const res = await fetch(`/data/products/${handle}.json`);
+          const res = await fetch(productJsonUrl(handle));
           if (!res.ok) return null;
 
           const product = await res.json();
