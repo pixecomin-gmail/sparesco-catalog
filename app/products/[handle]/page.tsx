@@ -1,9 +1,10 @@
 export const runtime = "edge";
 
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
-import type { Product } from "@/types/product";
 import ProductPageClient from "@/components/ProductPageClient";
+import type { Product } from "@/types/product";
 
 type ProductPageProps = {
   params: Promise<{ handle: string }>;
@@ -22,15 +23,24 @@ function cleanMetaText(text: string) {
   return text.replace(/\s+/g, " ").trim();
 }
 
+async function getBaseUrl() {
+  const headersList = await headers();
+  const host = headersList.get("host");
+
+  if (host) {
+    return `https://${host}`;
+  }
+
+  return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+}
+
 async function getProductJson(handle: string): Promise<Product | null> {
   try {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_SITE_URL ||
-      (process.env.CF_PAGES_URL
-        ? `https://${process.env.CF_PAGES_URL}`
-        : "http://localhost:3000");
+    const baseUrl = await getBaseUrl();
 
-    const res = await fetch(`${baseUrl}/data/products/${handle}.json`);
+    const res = await fetch(`${baseUrl}/data/products/${handle}.json`, {
+      cache: "force-cache",
+    });
 
     if (!res.ok) {
       return null;
@@ -54,18 +64,18 @@ export async function generateMetadata({
     };
   }
 
-  const productTitle = product.title || "";
   const collection = product.collection || "Spare Parts";
   const image = product.images?.[0] || "";
 
   const primaryVariant = product.variants?.[0];
+
   const primaryVariantTitle = primaryVariant
     ? cleanTitle(primaryVariant.title)
         .replace(/\s+Air Filter$/i, "")
         .replace(/\s+Oil Filter$/i, "")
         .replace(/\s+Hydraulic Filter$/i, "")
         .trim()
-    : productTitle;
+    : product.title;
 
   const alternativePartNumbers =
     product.variants

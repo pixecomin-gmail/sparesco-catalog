@@ -1,6 +1,7 @@
 export const runtime = "edge";
 
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CollectionProductCard from "@/components/CollectionProductCard";
@@ -19,18 +20,22 @@ type CollectionPageProps = {
   searchParams?: Promise<{ page?: string }>;
 };
 
-function getBaseUrl() {
-  return (
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.CF_PAGES_URL
-      ? `https://${process.env.CF_PAGES_URL}`
-      : "http://localhost:3000")
-  );
+async function getBaseUrl() {
+  const headersList = await headers();
+  const host = headersList.get("host");
+
+  if (host) {
+    return `https://${host}`;
+  }
+
+  return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 }
 
 async function getCollections(): Promise<CollectionItem[]> {
   try {
-    const res = await fetch(`${getBaseUrl()}/data/collections.json`, {
+    const baseUrl = await getBaseUrl();
+
+    const res = await fetch(`${baseUrl}/data/collections.json`, {
       cache: "force-cache",
     });
 
@@ -46,8 +51,10 @@ async function getCollectionProducts(
   handle: string
 ): Promise<ProductIndexItem[]> {
   try {
+    const baseUrl = await getBaseUrl();
+
     const res = await fetch(
-      `${getBaseUrl()}/data/collection-products/${handle}.json`,
+      `${baseUrl}/data/collection-products/${handle}.json`,
       { cache: "force-cache" }
     );
 
