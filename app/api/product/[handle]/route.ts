@@ -1,21 +1,33 @@
 export const runtime = "edge";
 
 type RouteContext = {
-  params: { handle: string };
+  params: Promise<{ handle: string }>;
 };
 
-const R2_PUBLIC_URL = "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev";
+export async function GET(
+  _request: Request,
+  { params }: RouteContext
+) {
+  const { handle } = await params;
 
-export async function GET(_request: Request, context: RouteContext) {
+  const r2Base =
+    process.env.NEXT_PUBLIC_R2_PUBLIC_URL ??
+    "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev";
+
+  const url = `${r2Base.replace(/\/$/, "")}/data/products/${handle}.json`;
+
   try {
-    const handle = context.params.handle;
-    const url = `${R2_PUBLIC_URL}/data/products/${handle}.json`;
-
-    const res = await fetch(url);
+    const res = await fetch(url, {
+      cache: "force-cache",
+    });
 
     if (!res.ok) {
       return Response.json(
-        { error: "Product not found", status: res.status, url },
+        {
+          error: "Product not found",
+          status: res.status,
+          url,
+        },
         { status: 404 }
       );
     }
@@ -26,14 +38,16 @@ export async function GET(_request: Request, context: RouteContext) {
       status: 200,
       headers: {
         "content-type": "application/json",
-        "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+        "cache-control":
+          "public, max-age=86400, stale-while-revalidate=604800",
       },
     });
-  } catch (error) {
+  } catch (err) {
     return Response.json(
       {
-        error: "Product API crashed",
-        message: error instanceof Error ? error.message : String(error),
+        error: "Fetch failed",
+        message: err instanceof Error ? err.message : String(err),
+        url,
       },
       { status: 500 }
     );
