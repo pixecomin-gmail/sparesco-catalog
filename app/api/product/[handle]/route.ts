@@ -4,19 +4,12 @@ type RouteContext = {
   params: Promise<{ handle: string }>;
 };
 
+const R2_PUBLIC_URL = "https://pub-f66ad83430274d9284d9172bc855e8cd.r2.dev";
+
 export async function GET(_request: Request, { params }: RouteContext) {
   const { handle } = await params;
 
-  const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
-
-  if (!r2Base) {
-    return Response.json(
-      { error: "R2 URL missing" },
-      { status: 500 }
-    );
-  }
-
-  const url = `${r2Base.replace(/\/$/, "")}/data/products/${handle}.json`;
+  const url = `${R2_PUBLIC_URL}/data/products/${handle}.json`;
 
   const res = await fetch(url, {
     cache: "force-cache",
@@ -24,7 +17,7 @@ export async function GET(_request: Request, { params }: RouteContext) {
 
   if (!res.ok) {
     return Response.json(
-      { error: "Product not found" },
+      { error: "Product not found", url },
       { status: 404 }
     );
   }
