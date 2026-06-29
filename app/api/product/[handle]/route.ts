@@ -17,9 +17,7 @@ export async function GET(
   const url = `${r2Base.replace(/\/$/, "")}/data/products/${handle}.json`;
 
   try {
-    const res = await fetch(url, {
-      cache: "force-cache",
-    });
+    const res = await fetch(url);
 
     if (!res.ok) {
       return Response.json(
