@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
+import "@/app/styles/breadcrumb.css";
 
 type CollectionItem = {
   title: string;
@@ -29,10 +30,7 @@ function getCollectionByHandle(
   return collections.find((item) => item.handle === handle) || null;
 }
 
-function getCollectionByTitle(
-  collections: CollectionItem[],
-  title?: string
-) {
+function getCollectionByTitle(collections: CollectionItem[], title?: string) {
   if (!title) return null;
 
   return (
@@ -158,44 +156,6 @@ export default function Breadcrumb() {
           );
         })}
       </div>
-
-      <style>{`
-        .breadcrumb-wrap {
-          background: #ffffff;
-          border-bottom: 1px solid var(--border);
-        }
-
-        .breadcrumb-inner {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          min-height: 42px;
-          font-size: 13px;
-          overflow-x: auto;
-          white-space: nowrap;
-        }
-
-        .breadcrumb-inner a {
-          color: var(--accent);
-          text-decoration: none;
-          font-weight: 700;
-        }
-
-        .breadcrumb-current {
-          color: #6b7280;
-          font-weight: 700;
-        }
-
-        .breadcrumb-separator {
-          color: #9ca3af;
-        }
-
-        .breadcrumb-item {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-        }
-      `}</style>
     </nav>
   );
 }

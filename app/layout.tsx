@@ -7,7 +7,8 @@ import EnquiryDrawer from "@/components/EnquiryDrawer";
 import SiteHeader from "@/components/SiteHeader";
 import Breadcrumb from "@/components/Breadcrumb";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     "mining equipment parts",
   ],
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
   openGraph: {
     title: "Sparesco | Heavy Equipment & Industrial Spare Parts Catalogue",

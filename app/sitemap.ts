@@ -8,15 +8,12 @@ type ProductIndexItem = {
   handle: string;
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
 
 async function getJson<T>(path: string): Promise<T[]> {
   try {
-    const baseUrl = process.env.CF_PAGES_URL
-      ? `https://${process.env.CF_PAGES_URL}`
-      : siteUrl;
-
-    const res = await fetch(`${baseUrl}${path}`, {
+    const res = await fetch(`${siteUrl}${path}`, {
       cache: "force-cache",
     });
 
@@ -36,9 +33,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getJson<ProductIndexItem>("/data/products-index.json"),
   ]);
 
-  const staticPages: MetadataRoute.Sitemap = [
+  return [
     {
-      url: `${siteUrl}`,
+      url: siteUrl,
       lastModified: now,
       changeFrequency: "daily",
       priority: 1,
@@ -79,23 +76,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.6,
     },
-  ];
-
-  const collectionPages: MetadataRoute.Sitemap = collectionsData.map(
-    (collection) => ({
+    ...collectionsData.map((collection) => ({
       url: `${siteUrl}/collections/${collection.handle}`,
       lastModified: now,
-      changeFrequency: "weekly",
+      changeFrequency: "weekly" as const,
       priority: 0.8,
-    })
-  );
-
-  const productPages: MetadataRoute.Sitemap = productsIndex.map((product) => ({
-    url: `${siteUrl}/products/${product.handle}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.75,
-  }));
-
-  return [...staticPages, ...collectionPages, ...productPages];
+    })),
+    ...productsIndex.map((product) => ({
+      url: `${siteUrl}/products/${product.handle}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+  ];
 }
