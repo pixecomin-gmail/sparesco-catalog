@@ -24,8 +24,7 @@ const COL = {
   specification: "Variant Metafield: custom.specification [list.single_line_text_field]",
   partNumber: "Variant Metafield: custom.part_number [single_line_text_field]",
   unitWeight: "Variant Metafield: custom.unit_weight [single_line_text_field]",
-  shippingVolume: "Variant Metafield: custom.shipping_volume [single_line_text_field]",
-  vendor: "Variant Metafield: custom.vendor [single_line_text_field]",
+  shippingVolume: "Variant Metafield: custom.shipping_volume [single_line_text_field]"
 };
 
 function slugify(value) {
@@ -115,7 +114,6 @@ function readExcel(filePath, collectionName, collectionHandle, productsMap, dupl
       title: variantTitle,
       sku: sku || `${handle}-${normalizeForCompare(partNumber || variantTitle)}`,
       image,
-      vendor: clean(row[COL.vendor]),
       price: cleanNumber(row[COL.price]),
       partNumber,
       hsCode: clean(row[COL.hsCode]),
@@ -275,7 +273,6 @@ const productsIndex = products.map((product) => {
     collectionHandle: product.collectionHandle,
     image: product.images[0] || "",
     partNumber: firstVariant?.partNumber || product.title,
-    vendor: firstVariant?.vendor || "",
     variantCount: product.variants.length,
     price: lowestPrice,
   };

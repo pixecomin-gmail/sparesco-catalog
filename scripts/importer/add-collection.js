@@ -186,7 +186,19 @@ async function importCollection(collection) {
 
   progress.step("Merging Products");
 
-  const writeResult = writer.mergeOnly(products);
+  const writeResult = {
+    products,
+    stats: {
+      newProducts: products.length,
+      updatedProducts: 0,
+      newVariants: products.reduce(
+        (sum, product) => sum + product.variants.length,
+        0
+      ),
+      updatedVariants: 0,
+      written: 0,
+    },
+  };
 
   progress.step("Uploading Images");
 

@@ -31,8 +31,16 @@ function validateColumns(rows) {
 
   const columns = Object.keys(rows[0]);
 
+  const optionalColumns = [
+    "Variant Metafield: custom.vendor [single_line_text_field]",
+    "Variant Metafield: custom.hs_code [single_line_text_field]",
+    "Variant Metafield: custom.country_of_origin [single_line_text_field]",
+  ];
+
   const missing = CONSTANTS.REQUIRED_COLUMNS.filter(
-    (column) => !columns.includes(column)
+    (column) =>
+      !optionalColumns.includes(column) &&
+      !columns.includes(column)
   );
 
   if (missing.length) {

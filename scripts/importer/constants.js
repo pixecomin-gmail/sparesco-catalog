@@ -69,7 +69,6 @@ module.exports = {
   REQUIRED_COLUMNS: [
     "Handle",
     "Title",
-    "Vendor",
     "Category",
     "Tags",
     "Image Src",
@@ -82,8 +81,7 @@ module.exports = {
     "Variant Metafield: custom.brand_description [multi_line_text_field]",
     "Variant Metafield: custom.specification [list.single_line_text_field]",
     "Variant Metafield: custom.unit_weight [single_line_text_field]",
-    "Variant Metafield: custom.shipping_volume [single_line_text_field]",
-    "Variant Metafield: custom.vendor [single_line_text_field]",
+    "Variant Metafield: custom.shipping_volume [single_line_text_field]"
   ],
 
   IMAGE_EXTENSIONS: [
