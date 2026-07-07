@@ -1,27 +1,20 @@
 export const runtime = "edge";
 
-type RouteContext = {
-  params: Promise<{ handle: string }>;
-};
-
 function productFolder(handle: string) {
-  const safeHandle = handle.toLowerCase().trim();
   let hash = 0;
 
-  for (let i = 0; i < safeHandle.length; i++) {
-    hash = (hash * 31 + safeHandle.charCodeAt(i)) >>> 0;
+  for (let i = 0; i < handle.length; i++) {
+    hash = (hash * 31 + handle.charCodeAt(i)) >>> 0;
   }
 
-  return hash.toString(16).padStart(2, "0").slice(0, 2);
+  return (hash % 256).toString(16).padStart(2, "0");
 }
 
 export async function GET(
   _request: Request,
-  { params }: RouteContext
+  { params }: { params: Promise<{ handle: string }> }
 ) {
   const { handle } = await params;
-  const safeHandle = handle.toLowerCase().trim();
-
   const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
   if (!r2Base) {
@@ -31,47 +24,38 @@ export async function GET(
     );
   }
 
-  const folder = productFolder(safeHandle);
+  const base = r2Base.replace(/\/$/, "");
+  const folder = productFolder(handle);
 
-  const url = `${r2Base.replace(
-    /\/$/,
-    ""
-  )}/catalog/products/${folder}/${safeHandle}.json`;
+  const urls = [
+    `${base}/catalog/products/${folder}/${handle}.json`,
+    `${base}/catalog/products/${handle}.json`,
+  ];
 
-  try {
+  for (const url of urls) {
     const res = await fetch(url, {
       cache: "no-store",
     });
 
-    if (!res.ok) {
-      return Response.json(
-        {
-          error: "Product not found",
-          status: res.status,
-          url,
+    if (res.ok) {
+      const data = await res.text();
+
+      return new Response(data, {
+        headers: {
+          "content-type": "application/json",
+          "cache-control": "public, max-age=300, stale-while-revalidate=86400",
         },
-        { status: 404 }
-      );
+      });
     }
-
-    const data = await res.text();
-
-    return new Response(data, {
-      status: 200,
-      headers: {
-        "content-type": "application/json",
-        "cache-control":
-          "public, max-age=300, stale-while-revalidate=86400",
-      },
-    });
-  } catch (err) {
-    return Response.json(
-      {
-        error: "Fetch failed",
-        message: err instanceof Error ? err.message : String(err),
-        url,
-      },
-      { status: 500 }
-    );
   }
+
+  return Response.json(
+    {
+      error: "Product not found",
+      handle,
+      folder,
+      tried: urls,
+    },
+    { status: 404 }
+  );
 }

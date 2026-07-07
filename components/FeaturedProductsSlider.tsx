@@ -8,166 +8,159 @@ type Product = {
   handle: string;
   title: string;
   image?: string;
+  images?: string[];
   collection?: string;
+  collectionTitle?: string;
   variantCount?: number;
   partNumber?: string;
   vendor?: string;
   price?: number;
 };
 
+const R2_BASE = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "";
+
+function getProductImage(product: Product) {
+  const image = product.image || product.images?.[0];
+
+  if (!image) return "";
+  if (image.startsWith("http")) return image;
+
+  return `${R2_BASE.replace(/\/$/, "")}/catalog/images/${
+    product.collection || "products"
+  }/${image.replace(/^\/+/, "")}`;
+}
+
+function formatPrice(price?: number) {
+  if (!price) return "Price On Request";
+  return `From ₹${price.toLocaleString("en-IN")}`;
+}
+
 export default function FeaturedProductsSlider() {
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const { addItem } = useEnquiry();
-  const [featured, setFeatured] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    async function loadFeatured() {
-      const handlesRes = await fetch("/data/site/featured-products.json");
-        if (!handlesRes.ok) return;
+    async function loadProducts() {
+      try {
+        const res = await fetch("/api/featured-products", {
+          cache: "no-store",
+        });
 
-        const handles = (await handlesRes.json()) as string[];
+        if (!res.ok) {
+          setLoaded(true);
+          return;
+        }
 
-        const indexRes = await fetch("/data/products-index.json");
-        if (!indexRes.ok) return;
-
-        const index = (await indexRes.json()) as Product[];
-
-        setFeatured(
-          handles
-            .map((handle) => index.find((p) => p.handle === handle))
-            .filter(Boolean) as Product[]
-        );
+        const data = await res.json();
+        setProducts(Array.isArray(data) ? data : []);
+      } finally {
+        setLoaded(true);
+      }
     }
 
-    loadFeatured();
+    loadProducts();
   }, []);
 
   function scrollSlider(direction: "left" | "right") {
     if (!sliderRef.current) return;
 
-    const card = sliderRef.current.querySelector(".featured-product-slide");
-    if (!card) return;
-
-    const cardWidth = card.getBoundingClientRect().width;
-    const gap = 16;
-
-    const visibleCards =
-      window.innerWidth > 1100
-        ? 6
-        : window.innerWidth > 900
-          ? 4
-          : window.innerWidth > 520
-            ? 2
-            : 1;
-
     sliderRef.current.scrollBy({
-      left:
-        direction === "right"
-          ? (cardWidth + gap) * visibleCards
-          : -(cardWidth + gap) * visibleCards,
+      left: direction === "left" ? -320 : 320,
       behavior: "smooth",
     });
   }
 
-  if (!featured.length) {
-    return (
-      <section className="section featured-products-section">
-        <div className="container">
-          <div className="section-heading-row">
-            <h2 className="section-title">Featured Products</h2>
-          </div>
-
-          <div className="featured-products-viewport">
-            {Array.from({ length: 6 }).map((_, index) => (
-              <article
-                className="featured-product-card featured-product-slide"
-                key={index}
-              >
-                <div className="skeleton-box skeleton-featured-image" />
-
-                <div className="featured-product-info">
-                  <div className="skeleton-line" />
-                  <div className="skeleton-line skeleton-short" />
-                  <div
-                    className="skeleton-line"
-                    style={{ height: 42, marginTop: 18 }}
-                  />
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  }
+  if (!loaded) return null;
+  if (!products.length) return null;
 
   return (
-    <section className="section featured-products-section">
-      <div className="container">
-        <div className="section-heading-row">
-          <h2 className="section-title">Featured Products</h2>
+    <section className="featured-products-section">
+      <div className="featured-products-container">
+        <div className="featured-products-top">
+          <div>
+            <p className="featured-products-eyebrow">Featured Products</p>
+            <h2>Popular Spare Parts</h2>
+          </div>
 
-          <div className="slider-arrows">
-            <button type="button" onClick={() => scrollSlider("left")}>
+          <div className="featured-products-controls">
+            <button
+              type="button"
+              onClick={() => scrollSlider("left")}
+              aria-label="Scroll left"
+            >
               ←
             </button>
-            <button type="button" onClick={() => scrollSlider("right")}>
+
+            <button
+              type="button"
+              onClick={() => scrollSlider("right")}
+              aria-label="Scroll right"
+            >
               →
             </button>
           </div>
         </div>
 
-        <div className="featured-products-viewport" ref={sliderRef}>
-          {featured.map((product) => (
-            <article
-              className="featured-product-card featured-product-slide"
-              key={product.handle}
-            >
-              <Link
-                href={`/products/${product.handle}`}
-                className="featured-product-image"
-              >
-                {product.image ? (
-                  <img src={product.image} alt={product.title} />
-                ) : null}
-              </Link>
+        <div className="featured-products-slider" ref={sliderRef}>
+          {products.map((product) => {
+            const image = getProductImage(product);
+            const title = product.partNumber || product.title;
 
-              <div className="featured-product-info">
-                <h3>
-                  <Link href={`/products/${product.handle}`}>
-                    {product.title}
-                  </Link>
-                </h3>
-
-                <p>
-                  {product.price && product.price > 0
-                    ? `From ₹${product.price.toLocaleString("en-IN")}`
-                    : "Price On Request"}
-                  {(product.variantCount ?? 0) > 1
-                    ? ` • ${product.variantCount} Options`
-                    : ""}
-                </p>
-
-                <button
-                  type="button"
-                  className="featured-enquiry-button"
-                  onClick={() =>
-                    addItem({
-                      id: product.handle,
-                      handle: product.handle,
-                      title: product.title,
-                      image: product.image || "",
-                      partNumber: product.partNumber || product.title,
-                      vendor: product.vendor || product.collection || "",
-                      price: product.price || 0,
-                    })
-                  }
+            return (
+              <article key={product.handle} className="featured-product-card">
+                <Link
+                  href={`/products/${product.handle}`}
+                  className="featured-product-image"
                 >
-                  Add To Enquiry
-                </button>
-              </div>
-            </article>
-          ))}
+                  {image ? <img src={image} alt={product.title} /> : null}
+                </Link>
+
+                <div className="featured-product-body">
+                  <p className="featured-product-brand">
+                    {product.collectionTitle ||
+                      product.vendor ||
+                      product.collection ||
+                      "Sparesco"}
+                  </p>
+
+                  <h3>
+                    <Link href={`/products/${product.handle}`}>{title}</Link>
+                  </h3>
+
+                  <p className="featured-product-price">
+                    {formatPrice(product.price)}
+                    {product.variantCount
+                      ? ` • ${product.variantCount} Options`
+                      : ""}
+                  </p>
+
+                  <button
+                    type="button"
+                    className="featured-product-enquiry"
+                    onClick={() =>
+                      addItem({
+                        id: product.handle,
+                        handle: product.handle,
+                        title: product.title,
+                        image,
+                        partNumber: product.partNumber || product.title,
+                        vendor:
+                          product.vendor ||
+                          product.collectionTitle ||
+                          product.collection ||
+                          "Sparesco",
+                        price: product.price || 0,
+                      })
+                    }
+                  >
+                    Add to Enquiry
+                  </button>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

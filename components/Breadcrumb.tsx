@@ -61,7 +61,7 @@ export default function Breadcrumb() {
   );
 
   useEffect(() => {
-    fetch("/data/collections.json")
+    fetch("/api/collections")
       .then((res) => (res.ok ? res.json() : []))
       .then((data: CollectionItem[]) => setCollections(data))
       .catch(() => setCollections([]));
@@ -77,15 +77,28 @@ export default function Breadcrumb() {
       }
 
       try {
-        const res = await fetch(`/data/products/${segments[1]}.json`);
-
+        const res = await fetch("/api/catalog-page?file=0001");
         if (!res.ok) {
           setProductInfo(null);
           return;
         }
 
-        const product = (await res.json()) as ProductBreadcrumbInfo;
-        setProductInfo(product);
+        const data = await res.json();
+
+        const product = data.find(
+          (p: any) => p.handle === segments[1]
+        );
+
+        if (!product) {
+          setProductInfo(null);
+          return;
+        }
+
+        setProductInfo({
+          title: product.title,
+          collection: product.collectionTitle || product.collection,
+          collectionHandle: product.collection,
+        });
       } catch {
         setProductInfo(null);
       }

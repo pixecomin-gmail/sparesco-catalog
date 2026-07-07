@@ -1,40 +1,8 @@
-// scripts/importer/image-uploader.js
-
-const crypto = require("crypto");
-const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-
-let client = null;
-let bucket = "";
-let publicBase = "";
-
-function initialize(env) {
-  bucket = env.bucket;
-  publicBase = env.publicUrl.replace(/\/$/, "");
-
-  client = new S3Client({
-    region: "auto",
-    endpoint: `https://${env.accountId}.r2.cloudflarestorage.com`,
-    credentials: {
-      accessKeyId: env.accessKey,
-      secretAccessKey: env.secretKey,
-    },
-  });
-}
-
-function clean(value) {
-  return String(value || "").trim();
-}
-
-function slugify(value) {
-  return clean(value)
-    .toLowerCase()
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
+const { uploadBuffer, exists } = require("./r2-client");
+const { imageKey } = require("./utils");
 
 function extensionFromUrl(url, contentType) {
-  const cleanUrl = String(url).split("?")[0].toLowerCase();
+  const cleanUrl = String(url || "").split("?")[0].toLowerCase();
 
   if (cleanUrl.endsWith(".png")) return ".png";
   if (cleanUrl.endsWith(".webp")) return ".webp";
@@ -51,11 +19,11 @@ function extensionFromUrl(url, contentType) {
   return ".jpg";
 }
 
-async function download(url) {
+async function downloadImage(url) {
   const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error(`Download failed ${response.status}`);
+    throw new Error(`Image download failed ${response.status}`);
   }
 
   return {
@@ -64,44 +32,63 @@ async function download(url) {
   };
 }
 
-async function upload(url, collection, handle, variantKey) {
-  if (!client) {
-    throw new Error("Image uploader not initialized.");
+async function uploadProductImages(product) {
+  let imageNumber = 1;
+  const originalToFilename = new Map();
+  const failedImages = [];
+
+  const existingImages = Array.isArray(product.images)
+    ? product.images.filter(Boolean)
+    : [];
+
+  for (const variant of product.variants || []) {
+    const originalImage = String(variant.image || "").trim();
+
+    if (!originalImage) {
+      continue;
+    }
+
+    if (!originalImage.startsWith("http")) {
+      originalToFilename.set(originalImage, originalImage);
+      continue;
+    }
+
+    if (originalToFilename.has(originalImage)) {
+      variant.image = originalToFilename.get(originalImage);
+      continue;
+    }
+
+    try {
+      const file = await downloadImage(originalImage);
+      const ext = extensionFromUrl(originalImage, file.contentType);
+      const filename = `${product.handle}-${imageNumber}${ext}`;
+      const key = imageKey(product.collection, filename);
+
+      if (!(await exists(key))) {
+        await uploadBuffer(key, file.buffer, file.contentType);
+      }
+
+      originalToFilename.set(originalImage, filename);
+      variant.image = filename;
+      imageNumber++;
+    } catch (error) {
+      failedImages.push({
+        handle: product.handle,
+        imageUrl: originalImage,
+        reason: error.message,
+      });
+    }
   }
 
-  const imageUrl = clean(url);
+  const variantImages = (product.variants || [])
+    .map((variant) => variant.image)
+    .filter(Boolean);
 
-  if (!imageUrl || !imageUrl.startsWith("http")) {
-    return "";
-  }
+  product.images = [...new Set([...existingImages, ...variantImages])];
 
-  const file = await download(imageUrl);
-
-  const hash = crypto
-    .createHash("md5")
-    .update(imageUrl)
-    .digest("hex")
-    .slice(0, 12);
-
-  const ext = extensionFromUrl(imageUrl, file.contentType);
-
-  const key = `${slugify(collection)}/${slugify(handle)}-${slugify(
-    variantKey || hash
-  )}-${hash}${ext}`;
-
-  await client.send(
-    new PutObjectCommand({
-      Bucket: bucket,
-      Key: key,
-      Body: file.buffer,
-      ContentType: file.contentType,
-    })
-  );
-
-  return `${publicBase}/${key}`;
+  return failedImages;
 }
 
 module.exports = {
-  initialize,
-  upload,
+  uploadProductImages,
 };

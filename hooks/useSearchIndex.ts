@@ -1,39 +1,57 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { searchProductList, type ProductIndexItem } from "@/lib/products";
+import type { ProductIndexItem } from "@/lib/products";
 
-let cache: ProductIndexItem[] | null = null;
-let loading: Promise<ProductIndexItem[]> | null = null;
-
-async function loadSearchIndex() {
-  if (cache) return cache;
-
-  if (!loading) {
-    loading = fetch("/data/search-index.json")
-      .then((r) => r.json())
-      .then((data: ProductIndexItem[]) => {
-        cache = data;
-        return data;
-      });
-  }
-
-  return loading;
-}
-
-export function useSearchIndex() {
-  const [products, setProducts] = useState<ProductIndexItem[]>(cache || []);
-
-  useEffect(() => {
-    if (cache) return;
-
-    loadSearchIndex().then(setProducts);
-  }, []);
-
-  return products;
-}
+const cache = new Map<string, ProductIndexItem[]>();
 
 export function useSearchResults(query: string, limit?: number) {
-  const products = useSearchIndex();
-  return searchProductList(products, query, limit);
+  const [results, setResults] = useState<ProductIndexItem[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const q = query.trim();
+
+    if (!q) {
+      setResults([]);
+      setLoading(false);
+      return;
+    }
+
+    const timer = setTimeout(async () => {
+      setLoading(true);
+
+      try {
+        const key = q.toLowerCase();
+
+        if (cache.has(key)) {
+          const cached = cache.get(key) || [];
+          setResults(limit ? cached.slice(0, limit) : cached);
+          return;
+        }
+
+        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, {
+          cache: "force-cache",
+        });
+
+        if (!res.ok) {
+          setResults([]);
+          return;
+        }
+
+        const data = (await res.json()) as ProductIndexItem[];
+
+        cache.set(key, data);
+        setResults(limit ? data.slice(0, limit) : data);
+      } catch {
+        setResults([]);
+      } finally {
+        setLoading(false);
+      }
+    }, 250);
+
+    return () => clearTimeout(timer);
+  }, [query, limit]);
+
+  return { results, loading };
 }

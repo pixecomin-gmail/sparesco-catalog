@@ -32,6 +32,7 @@ export type Product = {
   collection: string;
   collectionHandle: string;
   category: string;
+  imageFolder?: string;
   tags: string[];
   images: string[];
   variants: ProductVariant[];

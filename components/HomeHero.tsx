@@ -9,7 +9,7 @@ export default function HomeHero() {
   const router = useRouter();
   const [query, setQuery] = useState("");
 
-  const results = useSearchResults(query, 4);
+  const { results, loading } = useSearchResults(query, 4);
 
   const submitSearch = () => {
     const trimmedQuery = query.trim();
@@ -69,26 +69,29 @@ export default function HomeHero() {
           {results.length > 0 && (
             <div className="hero-search-dropdown">
               <div className="hero-result-list">
-                {results.map((product) => (
+                {results.map((product, index) => (
                   <Link
                     href={`/products/${product.handle}`}
                     className="hero-result-card"
-                    key={product.handle}
+                    key={`${product.handle}-${product.collection}-${product.partNumber}-${index}`}
                   >
                     <div className="hero-result-image">
                       {product.image && (
-                        <img src={product.image} alt={product.title} />
+                        <img
+                          src={`${process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(
+                            /\/$/,
+                            ""
+                          )}/catalog/images/${product.collection}/${product.image}`}
+                          alt={product.title}
+                        />
                       )}
                     </div>
 
                     <div className="hero-result-content">
-                      <strong>{product.title}</strong>
-
+                      <strong>{product.partNumber || product.title}</strong>
                       <span>
                         {product.collection}
-                        {product.variantCount > 1
-                          ? ` • ${product.variantCount} options`
-                          : ""}
+                        {product.variantCount > 1 ? ` • ${product.variantCount} options` : ""}
                       </span>
                     </div>
                   </Link>

@@ -5,7 +5,6 @@ import type { Product } from "@/types/product";
 import { useEnquiry } from "@/context/EnquiryContext";
 import ProductFaqTrustSection from "@/components/ProductFaqTrustSection";
 import RecentlyViewed from "@/components/RecentlyViewed";
-import { productJsonUrl } from "@/lib/r2";
 
 function cleanVariantTitle(title: string) {
   return title
@@ -39,7 +38,9 @@ export default function ProductPageClient({ handle }: { handle: string }) {
   const [descriptionOpen, setDescriptionOpen] = useState(false);
 
   useEffect(() => {
-    fetch(productJsonUrl(handle))
+    fetch(`/api/product/${handle}`, {
+      cache: "no-store",
+    })
       .then((res) => {
         if (!res.ok) throw new Error("Product not found");
         return res.json();
@@ -92,7 +93,21 @@ export default function ProductPageClient({ handle }: { handle: string }) {
 
   if (!activeVariant) return null;
 
-  const activeVariantTitle = activeVariant.title;
+  const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(/\/$/, "");
+  const imageFolder =
+  currentProduct.imageFolder || currentProduct.collection || currentProduct.category || "";
+
+  const imageBase =
+    r2Base && imageFolder
+      ? `${r2Base}/catalog/images/${imageFolder}/`
+      : "";
+
+  function getImageUrl(image: string) {
+    if (!image) return "";
+    return image.startsWith("http") ? image : `${imageBase}${image}`;
+  }
+
+  const activeVariantTitle = cleanVariantTitle(activeVariant.title);
 
   const activePrice =
     activeVariant.price > 0
@@ -125,8 +140,8 @@ export default function ProductPageClient({ handle }: { handle: string }) {
     addItem({
       id: `${currentProduct.handle}-${activeVariant.partNumber}`,
       handle: currentProduct.handle,
-      title: currentProduct.title,
-      image: stickyImage,
+      title: activeVariantTitle,
+      image: getImageUrl(stickyImage),
       partNumber: activeVariant.partNumber,
       vendor: activeVariantTitle,
       price: activeVariant.price,
@@ -141,7 +156,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
             <div className="product-gallery product-gallery-sticky">
               <div className="main-product-image">
                 {activeImage ? (
-                  <img src={activeImage} alt={currentProduct.title} />
+                  <img src={getImageUrl(activeImage)} alt={currentProduct.title} />
                 ) : (
                   <span>Product Image</span>
                 )}
@@ -158,7 +173,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
                       }
                       onClick={() => setActiveImage(image)}
                     >
-                      <img src={image} alt={currentProduct.title} />
+                      <img src={getImageUrl(image)} alt={currentProduct.title} />
                     </button>
                   ))}
                 </div>
@@ -175,7 +190,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
                   <div className="product-top-price">{activePrice}</div>
                 </div>
 
-                <h1 className="product-title">{currentProduct.title}</h1>
+               <h1 className="product-title">{currentProduct.title}</h1>
               </div>
 
               <div className="variant-section">
@@ -272,7 +287,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
           <div className="sticky-selected-variant">
             <div className="sticky-selected-image">
               {stickyImage ? (
-                <img src={stickyImage} alt={activeVariantTitle} />
+                <img src={getImageUrl(stickyImage)} alt={activeVariantTitle} />
               ) : null}
             </div>
 

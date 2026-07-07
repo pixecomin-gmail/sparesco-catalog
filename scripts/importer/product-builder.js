@@ -1,16 +1,5 @@
-// scripts/importer/product-builder.js
-
-function clean(value) {
-  return String(value || "").trim();
-}
-
-function slugify(value) {
-  return clean(value)
-    .toLowerCase()
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
+const { clean, slugify, unique } = require("./utils");
+const { getValue } = require("./excel-reader");
 
 function parsePrice(value) {
   const number = Number(String(value || "").replace(/,/g, ""));
@@ -18,10 +7,7 @@ function parsePrice(value) {
 }
 
 function splitTags(value) {
-  return clean(value)
-    .split(",")
-    .map((item) => clean(item))
-    .filter(Boolean);
+  return unique(clean(value).split(","));
 }
 
 function splitSpecifications(value) {
@@ -30,108 +16,114 @@ function splitSpecifications(value) {
 
   try {
     const parsed = JSON.parse(raw);
-    if (Array.isArray(parsed)) {
-      return parsed.map((item) => clean(item)).filter(Boolean);
-    }
+    if (Array.isArray(parsed)) return unique(parsed);
   } catch {}
 
-  return raw
-    .replace(/^\[|\]$/g, "")
-    .split(/\n|\|/,)
-    .map((item) => clean(item.replace(/^"|"$/g, "")))
-    .filter(Boolean);
+  return unique(
+    raw
+      .replace(/^\[|\]$/g, "")
+      .split(/\n|\|/)
+      .map((item) => item.replace(/^"|"$/g, ""))
+  );
 }
 
-function build(groupedProducts, collectionName) {
-  const products = [];
+function cleanTitle(title) {
+  return clean(title)
+    .split("| Replaces")[0]
+    .split("| replaces")[0]
+    .trim();
+}
+
+function buildProducts(rows, collectionName) {
   const collectionHandle = slugify(collectionName);
+  const map = new Map();
 
-  for (const [, product] of groupedProducts) {
-    const first = product.rows[0];
+  for (const row of rows) {
+    const partNumber = getValue(row, [
+      "Variant Metafield: custom.part_number [single_line_text_field]",
+    ]);
 
-    const productJson = {
-      handle: slugify(first["Handle"]),
-      title: clean(first["Title"]) || clean(first["Handle"]),
-      collection: collectionName,
-      collectionHandle,
-      category: clean(first["Category"]) || collectionName,
-      tags: splitTags(first["Tags"]),
-      images: [],
-      variants: [],
-    };
+    const handle = slugify(getValue(row, ["Handle"]) || partNumber);
+    if (!handle) continue;
 
-    const imageSet = new Set();
+    const option1Value = getValue(row, ["Option1 Value"]);
+    const originalImage = getValue(row, ["Variant Image", "Image Src"]);
 
-    for (const row of product.rows) {
-      const image = clean(row["Variant Image"] || row["Image Src"]);
-
-      if (image && !imageSet.has(image)) {
-        imageSet.add(image);
-        productJson.images.push(image);
-      }
-
-      productJson.variants.push({
-       title:
-        clean(row["Option1 Value"]) ||
-        clean(row["Variant SKU"]) ||
-        clean(row["Variant Metafield: custom.part_number [single_line_text_field]"]) ||
-        clean(row["Title"]) ||
-        productJson.title,
-        sku: clean(row["Variant SKU"]),
-        option1Value: clean(row["Option1 Value"]),
-        image,
-        vendor:
-          clean(
-            row[
-              "Variant Metafield: custom.vendor [single_line_text_field]"
-            ]
-          ) || clean(row["Vendor"]),
-        price: parsePrice(row["Variant Price"]),
-        partNumber: clean(
-          row[
-            "Variant Metafield: custom.part_number [single_line_text_field]"
-          ]
-        ),
-        hsCode: clean(
-          row[
-            "Variant Metafield: custom.hs_code [single_line_text_field]"
-          ]
-        ),
-        countryOfOrigin: clean(
-          row[
-            "Variant Metafield: custom.country_of_origin [single_line_text_field]"
-          ]
-        ),
-        description:
-          clean(
-            row[
-              "Variant Metafield: custom.brand_description [multi_line_text_field]"
-            ]
-          ) || clean(row["Body HTML"]),
-        specifications: splitSpecifications(
-          row[
-            "Variant Metafield: custom.specification [list.single_line_text_field]"
-          ]
-        ),
-        unitWeight: clean(
-          row[
-            "Variant Metafield: custom.unit_weight [single_line_text_field]"
-          ]
-        ),
-        shippingVolume: clean(
-          row[
-            "Variant Metafield: custom.shipping_volume [single_line_text_field]"
-          ]
-        ),
+    if (!map.has(handle)) {
+      map.set(handle, {
+        handle,
+        title: getValue(row, ["Title"]) || partNumber || handle,
+        collection: collectionHandle,
+        category: slugify(getValue(row, ["Category"]) || collectionName),
+        imageFolder: collectionHandle,
+        tags: splitTags(getValue(row, ["Tags"])),
+        images: [],
+        variants: [],
+        __sources: [],
       });
     }
 
-    products.push(productJson);
+    const product = map.get(handle);
+
+    product.__sources.push({
+      excelFile: row.__excelFile,
+      sourceRow: row.__sourceRow,
+    });
+
+    product.variants.push({
+      title: cleanTitle(option1Value) || partNumber || product.title,
+
+      option1Value,
+      image: originalImage,
+
+      vendor: getValue(row, [
+        "Variant Metafield: custom.vendor [single_line_text_field]",
+        "Vendor",
+      ]),
+
+      price: parsePrice(getValue(row, ["Variant Price"])),
+
+      partNumber,
+
+      hsCode: getValue(row, [
+        "Variant Metafield: custom.hs_code [single_line_text_field]",
+      ]),
+
+      countryOfOrigin: getValue(row, [
+        "Variant Metafield: custom.country_of_origin [single_line_text_field]",
+      ]),
+
+      description: getValue(row, [
+        "Variant Metafield: custom.brand_description [multi_line_text_field]",
+        "Body HTML",
+      ]),
+
+      specifications: splitSpecifications(
+        getValue(row, [
+          "Variant Metafield: custom.specification [list.single_line_text_field]",
+        ])
+      ),
+
+      unitWeight: getValue(row, [
+        "Variant Metafield: custom.unit_weight [single_line_text_field]",
+      ]),
+
+      shippingVolume: getValue(row, [
+        "Variant Metafield: custom.shipping_volume [single_line_text_field]",
+      ]),
+
+      __excelFile: row.__excelFile,
+      __sourceRow: row.__sourceRow,
+    });
   }
 
-  return products;
+  for (const product of map.values()) {
+    product.tags = unique([collectionHandle, product.category, ...product.tags]);
+  }
+
+  return Array.from(map.values());
 }
 
 module.exports = {
-  build,
+  buildProducts,
 };

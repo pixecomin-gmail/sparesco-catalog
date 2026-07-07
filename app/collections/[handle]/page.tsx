@@ -1,5 +1,4 @@
 "use client";
-export const runtime = "edge";
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
@@ -13,90 +12,72 @@ type CollectionItem = {
   count: number;
 };
 
-const PAGE_SIZE = 25;
+const PAGE_SIZE = 24;
 
 function CollectionContent() {
   const params = useParams<{ handle: string }>();
   const searchParams = useSearchParams();
 
   const handle = params.handle;
-  const currentPage = Number(searchParams.get("page") || "1");
+  const requestedPage = Number(searchParams.get("page") || "1");
 
   const [collections, setCollections] = useState<CollectionItem[]>([]);
   const [products, setProducts] = useState<ProductIndexItem[]>([]);
   const [loaded, setLoaded] = useState(false);
+
+  const collection = useMemo(
+    () => collections.find((item) => item.handle === handle) || null,
+    [collections, handle]
+  );
+
+  const totalPages = Math.max(
+    1,
+    Math.ceil((collection?.count || 0) / PAGE_SIZE)
+  );
+
+  const safePage = Math.min(Math.max(requestedPage, 1), totalPages);
+  const fetchPage = String(safePage).padStart(4, "0");
 
   useEffect(() => {
     async function loadCollection() {
       if (!handle) return;
 
       setLoaded(false);
-      setProducts([]);
 
       try {
         const [collectionsRes, productsRes] = await Promise.all([
-          fetch("/data/collections.json"),
-          fetch(`/data/collection-products/${handle}.json`),
+          fetch("/api/collections"),
+          fetch(`/api/catalog-page?file=category:${handle}:${fetchPage}`),
         ]);
 
-        const collectionsData = collectionsRes.ok
-          ? ((await collectionsRes.json()) as CollectionItem[])
-          : [];
+        setCollections(
+          collectionsRes.ok
+            ? ((await collectionsRes.json()) as CollectionItem[])
+            : []
+        );
 
-        const productsData = productsRes.ok
-          ? ((await productsRes.json()) as ProductIndexItem[])
-          : [];
-
-        setCollections(collectionsData);
-        setProducts(productsData);
+        setProducts(
+          productsRes.ok
+            ? ((await productsRes.json()) as ProductIndexItem[])
+            : []
+        );
       } catch {
         setCollections([]);
         setProducts([]);
       } finally {
-        setTimeout(() => {
-          setLoaded(true);
-        }, 250);
+        setLoaded(true);
       }
     }
 
     loadCollection();
-  }, [handle]);
-
-  const collection = useMemo(() => {
-    return collections.find((item) => item.handle === handle) || null;
-  }, [collections, handle]);
-
-  const totalPages = Math.max(1, Math.ceil(products.length / PAGE_SIZE));
-  const safePage = Math.min(Math.max(currentPage, 1), totalPages);
-
-  const visibleProducts = products.slice(
-    (safePage - 1) * PAGE_SIZE,
-    safePage * PAGE_SIZE
-  );
+  }, [handle, fetchPage]);
 
   if (!loaded) {
     return (
       <main>
         <section className="section parts-section">
           <div className="container">
-            <div className="skeleton-line skeleton-title" />
-            <div className="skeleton-line" />
-
-            <div className="parts-product-grid">
-              {Array.from({ length: 10 }).map((_, index) => (
-                <article className="parts-product-card" key={index}>
-                  <div className="skeleton-box skeleton-product-image" />
-
-                  <div style={{ padding: 16 }}>
-                    <div className="skeleton-line" />
-                    <div
-                      className="skeleton-line skeleton-short"
-                      style={{ marginBottom: 0 }}
-                    />
-                  </div>
-                </article>
-              ))}
-            </div>
+            <p>Loading products...</p>
           </div>
         </section>
       </main>
@@ -117,67 +98,94 @@ function CollectionContent() {
 
   return (
     <main>
-      <section className="section parts-section">
+      <section className="section parts-section parts-page-section">
         <div className="container">
           <h1 className="page-title">{collection.title}</h1>
 
           <p className="page-intro">
-            Browse {products.length.toLocaleString("en-IN")}{" "}
+            Browse {collection.count.toLocaleString("en-IN")}{" "}
             {collection.title.toLowerCase()} spare parts for construction,
             mining and industrial equipment.
           </p>
 
-          <div className="parts-topbar">
-            <strong>All Products</strong>
-            <span>
-              {products.length.toLocaleString("en-IN")} products found · Page{" "}
-              {safePage} of {totalPages}
-            </span>
-          </div>
+          <div className="parts-layout">
+            <aside className="filters-sidebar">
+              <div className="filters-header">
+                <h3>Filter By</h3>
+              </div>
 
-          <div className="parts-product-grid">
-            {visibleProducts.map((product) => (
-              <CollectionProductCard product={product} key={product.handle} />
-            ))}
-          </div>
+              <div className="filter-block">
+                <h4>Collections</h4>
 
-          {products.length === 0 && (
-            <p className="empty-message">No products found.</p>
-          )}
+                {collections.map((item) => (
+                  <Link
+                    key={item.handle}
+                    href={`/collections/${item.handle}`}
+                    className="filter-option"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={item.handle === handle}
+                      readOnly
+                    />
+                    <span>{item.title}</span>
+                    <em>{item.count.toLocaleString("en-IN")}</em>
+                  </Link>
+                ))}
+              </div>
+            </aside>
 
-          {products.length > PAGE_SIZE && (
-            <div className="pagination">
-              {safePage > 1 ? (
-                <Link
-                  href={`/collections/${handle}?page=${safePage - 1}`}
-                  className="pagination-button"
-                >
-                  Previous
-                </Link>
-              ) : (
-                <span className="pagination-button pagination-button-disabled">
-                  Previous
+            <div className="parts-content">
+              <div className="parts-topbar">
+                <strong>All Products</strong>
+                <span>
+                  {collection.count.toLocaleString("en-IN")} products found ·
+                  Page {safePage} of {totalPages}
                 </span>
+              </div>
+
+              <div className="parts-product-grid parts-product-grid-four">
+                {products.map((product, index) => (
+                  <CollectionProductCard
+                    key={`${product.handle}-${index}`}
+                    product={product}
+                  />
+                ))}
+              </div>
+
+              {products.length === 0 && (
+                <p className="empty-message">No products found.</p>
               )}
 
-              <span className="pagination-status">
-                Page {safePage} of {totalPages}
-              </span>
+              {totalPages > 1 && (
+                <div className="pagination">
+                  <Link
+                    href={`/collections/${handle}?page=${safePage - 1}`}
+                    className={`pagination-button ${
+                      safePage === 1 ? "pagination-button-disabled" : ""
+                    }`}
+                  >
+                    Previous
+                  </Link>
 
-              {safePage < totalPages ? (
-                <Link
-                  href={`/collections/${handle}?page=${safePage + 1}`}
-                  className="pagination-button"
-                >
-                  Next
-                </Link>
-              ) : (
-                <span className="pagination-button pagination-button-disabled">
-                  Next
-                </span>
+                  <span className="pagination-status">
+                    Page {safePage} of {totalPages}
+                  </span>
+
+                  <Link
+                    href={`/collections/${handle}?page=${safePage + 1}`}
+                    className={`pagination-button ${
+                      safePage === totalPages
+                        ? "pagination-button-disabled"
+                        : ""
+                    }`}
+                  >
+                    Next
+                  </Link>
+                </div>
               )}
             </div>
-          )}
+          </div>
         </div>
       </section>
     </main>

@@ -4,6 +4,7 @@ export type ProductIndexItem = {
   category: string;
   collection: string;
   collectionHandle: string;
+  imageFolder?: string;
   image: string;
   partNumber: string;
   vendor: string;
@@ -24,6 +25,8 @@ export type ProductVariant = {
   specifications: string[];
   unitWeight: string;
   shippingVolume: string;
+  collectionTitle?: string;
+  categoryTitle?: string;
 };
 
 export type Product = {
@@ -32,6 +35,7 @@ export type Product = {
   collection: string;
   collectionHandle: string;
   category: string;
+  imageFolder?: string;
   tags: string[];
   images: string[];
   variants: ProductVariant[];

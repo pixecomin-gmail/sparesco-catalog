@@ -1,83 +1,196 @@
 "use client";
-import { useEffect } from "react";
-import { useMemo, useState } from "react";
+
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEnquiry } from "@/context/EnquiryContext";
 import { useSearchResults } from "@/hooks/useSearchIndex";
 
-const megaMenuGroups = [
-  {
-    title: "Air & Process",
-    icon: "💨",
-    items: [
-      ["Air Filter", "air-filters"],
-      ["Compressed Air Filters", "compressed-air-filters"],
-      ["Process Filters", "process-filters"],
-      ["Domnic Hunter", "domnic-hunter"],
-    ],
-  },
-  {
-    title: "Hydraulic",
-    icon: "💧",
-    items: [
-      ["Hydraulic Filters", "hydraulic-filters"],
-      ["Hydac", "hydac"],
-      ["Hy-Pro", "hy-pro"],
-      ["Parker", "parker"],
-      ["Rexroth", "rexroth"],
-      ["Stauff", "stauff"],
-      ["Pall", "pall"],
-      ["Schroeder", "schroeder"],
-      ["MP Filtri", "mp-filtri"],
-      ["Ikron", "ikron"],
-    ],
-  },
-  {
-    title: "Oil & Engine",
-    icon: "🛢️",
-    items: [
-      ["Oil Filters", "oil-filters"],
-      ["Fleetguard", "fleetguard"],
-      ["Mann Filter", "mann-filter"],
-      ["Mahle", "mahle"],
-      ["Hengst", "hengst"],
-      ["UFI", "ufi"],
-      ["Sofima", "sofima"],
-      ["Donaldson", "donaldson"],
-    ],
-  },
-  {
-    title: "Industrial",
-    icon: "🏭",
-    items: [
-      ["Filtration Group", "filtration-group"],
-      ["Filtrec", "filtrec"],
-      ["Granch Filtration", "granch-filtration"],
-      ["Hifi Filter", "hifi-filter"],
-      ["Internormen", "internormen"],
-      ["Eppensteiner", "eppensteiner"],
-      ["Fairey-Arlon", "fairey-arlon"],
-      ["Agro Hytos", "agro-hytos"],
-      ["OMT", "omt"],
-      ["SF Filter", "sf-filter"],
-      ["Microfit", "microfit"],
-      ["Filterfinder", "filterfinder"],
-      ["Parker UCC", "parker-ucc"],
-    ],
-  },
+type Collection = {
+  title?: string;
+  name?: string;
+  handle: string;
+  count?: number;
+  productCount?: number;
+  category?: string;
+  group?: string;
+};
+
+type MegaGroup = {
+  title: string;
+  icon: string;
+  items: {
+    label: string;
+    handle: string;
+    count: number;
+  }[];
+};
+
+const GROUP_ORDER = [
+  "Filters",
+  "Brands",
+  "Industrial",
+  "Hydraulic Brands",
 ];
+
+const GROUP_ICONS: Record<string, string> = {
+  Filters: "▦",
+  Brands: "▤",
+  "Hydraulic Brands": "▣",
+  Industrial: "▥",
+};
+
+function normalizeGroup(collection: Collection) {
+  const handle = collection.handle;
+
+  if (
+    [
+      "air-filters",
+      "compressed-air-filters",
+      "hydraulic-filters",
+      "oil-filters",
+      "process-filters",
+      "granch-filtration",
+    ].includes(handle)
+  ) {
+    return "Filters";
+  }
+
+  if (
+    [
+      "donaldson",
+      "fleetguard",
+      "hengst",
+      "hifi-filter",
+      "mann-filter",
+      "sf-filter",
+      "ufi",
+    ].includes(handle)
+  ) {
+    return "Brands";
+  }
+
+  if (
+    [
+      "argo-hytos",
+      "eppensteiner",
+      "fairey-arlon",
+      "filtrec",
+      "hy-pro",
+      "hydac",
+      "ikron",
+      "internormen",
+      "mp-filtri",
+      "omt",
+      "pall",
+      "parker",
+      "rexroth",
+      "schroeder",
+      "sofima",
+      "stauff",
+    ].includes(handle)
+  ) {
+    return "Hydraulic Brands";
+  }
+
+  return "Industrial";
+}
+
+function getCollectionLabel(collection: Collection) {
+  return collection.title || collection.name || collection.handle;
+}
+
+function getCollectionCount(collection: Collection) {
+  return collection.count || collection.productCount || 0;
+}
 
 export default function SiteHeader() {
   const router = useRouter();
   const { items, hasLoaded, openDrawer } = useEnquiry();
+
+  const [collections, setCollections] = useState<Collection[]>([]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [mobileView, setMobileView] = useState<"main" | "categories" | "group">("main");
-  const [activeGroup, setActiveGroup] = useState<(typeof megaMenuGroups)[0] | null>(null);
+  const [activeGroup, setActiveGroup] = useState<MegaGroup | null>(null);
 
   const totalItems = items.reduce((total, item) => total + item.quantity, 0);
-  const filteredResults = useSearchResults(query, 4);
+  const { results: filteredResults, loading } = useSearchResults(query, 4);
+
+  useEffect(() => {
+    fetch("/api/collections", { cache: "no-store" })
+      .then((res) => {
+        if (!res.ok) throw new Error("collections.json not found");
+        return res.json();
+      })
+      .then((data) => {
+        setCollections(Array.isArray(data) ? data : []);
+      })
+      .catch(() => {
+        setCollections([]);
+      });
+  }, []);
+
+  const megaMenuGroups = useMemo<MegaGroup[]>(() => {
+    const unique = new Map<string, Collection>();
+
+    collections.forEach((collection) => {
+      if (!collection.handle) return;
+      if (!unique.has(collection.handle)) {
+        unique.set(collection.handle, collection);
+      }
+    });
+
+    const grouped = new Map<string, MegaGroup>();
+
+    Array.from(unique.values()).forEach((collection) => {
+      const groupTitle = normalizeGroup(collection);
+
+      if (!grouped.has(groupTitle)) {
+        grouped.set(groupTitle, {
+          title: groupTitle,
+          icon: GROUP_ICONS[groupTitle] || "▦",
+          items: [],
+        });
+      }
+
+      grouped.get(groupTitle)?.items.push({
+        label: getCollectionLabel(collection),
+        handle: collection.handle,
+        count: getCollectionCount(collection),
+      });
+    });
+
+    if (grouped.size === 0 && collections.length > 0) {
+      const fallback: MegaGroup = {
+        title: "All Collections",
+        icon: "▦",
+        items: collections.map((collection) => ({
+          label: getCollectionLabel(collection),
+          handle: collection.handle,
+          count: getCollectionCount(collection),
+        })),
+      };
+
+      return [fallback];
+    }
+
+    return Array.from(grouped.values())
+      .map((group) => ({
+        ...group,
+        items: group.items.sort((a, b) => a.label.localeCompare(b.label)),
+      }))
+      .sort((a, b) => {
+        const aIndex = GROUP_ORDER.indexOf(a.title);
+        const bIndex = GROUP_ORDER.indexOf(b.title);
+
+        if (aIndex === -1 && bIndex === -1) return a.title.localeCompare(b.title);
+        if (aIndex === -1) return 1;
+        if (bIndex === -1) return -1;
+
+        return aIndex - bIndex;
+      });
+  }, [collections]);
 
   const submitSearch = () => {
     const trimmedQuery = query.trim();
@@ -105,7 +218,7 @@ export default function SiteHeader() {
         <div className="container header-inner">
           <button
             className="hamburger-button"
-              onClick={() => {
+            onClick={() => {
               setMobileMenuOpen(true);
               setMobileView("main");
               setActiveGroup(null);
@@ -129,53 +242,35 @@ export default function SiteHeader() {
 
               <div className="mega-menu">
                 <div className="mega-menu-inner">
-
                   <div className="mega-menu-grid">
+                    {megaMenuGroups.map((group) => (
+                      <div
+                        key={group.title}
+                        className={
+                          group.title === "Industrial"
+                            ? "mega-menu-column industrial-column"
+                            : "mega-menu-column"
+                        }
+                      >
+                        <h4>{group.title.toUpperCase()}</h4>
 
-                    <div className="mega-menu-column">
-                      <h4>AIR & PROCESS</h4>
-
-                      {megaMenuGroups[0].items.map(([label, handle]) => (
-                        <Link href={`/collections/${handle}`} key={handle}>
-                          {label}
-                        </Link>
-                      ))}
-                    </div>
-
-                    <div className="mega-menu-column">
-                      <h4>HYDRAULIC</h4>
-
-                      {megaMenuGroups[1].items.map(([label, handle]) => (
-                        <Link href={`/collections/${handle}`} key={handle}>
-                          {label}
-                        </Link>
-                      ))}
-                    </div>
-
-                    <div className="mega-menu-column">
-                      <h4>OIL & ENGINE</h4>
-
-                      {megaMenuGroups[2].items.map(([label, handle]) => (
-                        <Link href={`/collections/${handle}`} key={handle}>
-                          {label}
-                        </Link>
-                      ))}
-                    </div>
-
-                    <div className="mega-menu-column industrial-column">
-                      <h4>INDUSTRIAL</h4>
-
-                      <div className="industrial-grid">
-                        {megaMenuGroups[3].items.map(([label, handle]) => (
-                          <Link href={`/collections/${handle}`} key={handle}>
-                            {label}
-                          </Link>
-                        ))}
+                        <div
+                          className={
+                            group.title === "Hydraulic Brands"
+                              ? "hydra-grid"
+                              : "mega-menu-list"
+                          }
+                        >
+                          {group.items.map((item) => (
+                            <Link href={`/collections/${item.handle}`} key={item.handle}>
+                              <span>{item.label}</span>
+                            
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-
+                    ))}
                   </div>
-
                 </div>
               </div>
             </div>
@@ -207,14 +302,18 @@ export default function SiteHeader() {
 
               {query && (
                 <div className="header-inline-results">
-                  {filteredResults.length > 0 ? (
-                    filteredResults.map((product) => (
+                  {loading ? (
+                    <span>Searching...</span>
+                  ) : filteredResults.length > 0 ? (
+                    filteredResults.map((product, index) => (
                       <Link
                         href={`/products/${product.handle}`}
-                        key={product.handle}
+                        key={`${product.handle}-${product.collection}-${product.partNumber}-${index}`}
                         onClick={() => setQuery("")}
                       >
-                        <strong>{product.title}</strong>
+                        <strong>
+                          {product.partNumber || product.title} - {product.collection}
+                        </strong>
                       </Link>
                     ))
                   ) : (
@@ -251,24 +350,16 @@ export default function SiteHeader() {
         <div className="mobile-menu-overlay" onClick={() => setMobileMenuOpen(false)}>
           <div className="mobile-menu-drawer" onClick={(e) => e.stopPropagation()}>
             <div className="mobile-menu-header">
-              {mobileView === "main" && (
-                <span className="mobile-menu-title"></span>
-              )}
+              {mobileView === "main" && <span className="mobile-menu-title"></span>}
 
               {mobileView === "categories" && (
-                <button
-                  className="mobile-back-button"
-                  onClick={() => setMobileView("main")}
-                >
+                <button className="mobile-back-button" onClick={() => setMobileView("main")}>
                   ← Categories
                 </button>
               )}
 
               {mobileView === "group" && activeGroup && (
-                <button
-                  className="mobile-back-button"
-                  onClick={() => setMobileView("categories")}
-                >
+                <button className="mobile-back-button" onClick={() => setMobileView("categories")}>
                   ← {activeGroup.title}
                 </button>
               )}
@@ -285,10 +376,7 @@ export default function SiteHeader() {
             <nav className="mobile-nav">
               {mobileView === "main" && (
                 <>
-                  <button
-                    className="mobile-nav-link"
-                    onClick={() => setMobileView("categories")}
-                  >
+                  <button className="mobile-nav-link" onClick={() => setMobileView("categories")}>
                     Categories
                     <span>›</span>
                   </button>
@@ -331,13 +419,13 @@ export default function SiteHeader() {
 
               {mobileView === "group" && activeGroup && (
                 <>
-                  {activeGroup.items.map(([label, handle]) => (
+                  {activeGroup.items.map((item) => (
                     <Link
-                      key={handle}
-                      href={`/collections/${handle}`}
+                      key={item.handle}
+                      href={`/collections/${item.handle}`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {label}
+                      {item.label}
                     </Link>
                   ))}
                 </>

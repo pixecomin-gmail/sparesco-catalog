@@ -1,40 +1,52 @@
-// scripts/importer/progress.js
-
-let currentStep = 0;
-let totalSteps = 0;
-
-function start(total) {
-  totalSteps = total;
-  currentStep = 0;
+function line() {
+  console.log("==================================================");
 }
 
-function step(title) {
-  currentStep++;
+function title(text) {
+  line();
+  console.log(text);
+  line();
+}
 
+function section(text) {
   console.log("");
-  console.log(`[${currentStep}/${totalSteps}] ${title}`);
+  console.log("▶ " + text);
 }
 
-function bar(current, total) {
+function success(text) {
+  console.log("✔ " + text);
+}
+
+function info(text) {
+  console.log("ℹ " + text);
+}
+
+function error(text) {
+  console.log("✖ " + text);
+}
+
+function bar(current, total, label = "") {
   const width = 30;
-  const percent = total === 0 ? 0 : current / total;
+  const percent = total ? current / total : 0;
   const filled = Math.round(percent * width);
-  const empty = width - filled;
 
   process.stdout.write(
-    "\r[" +
+    "\r" +
+      label +
+      " [" +
       "█".repeat(filled) +
-      "░".repeat(empty) +
+      "░".repeat(width - filled) +
       `] ${current}/${total}`
   );
 
-  if (current >= total) {
-    process.stdout.write("\n");
-  }
+  if (current >= total) process.stdout.write("\n");
 }
 
 module.exports = {
-  start,
-  step,
+  title,
+  section,
+  success,
+  info,
+  error,
   bar,
 };

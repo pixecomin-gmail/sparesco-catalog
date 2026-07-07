@@ -21,10 +21,13 @@ export default function PopularSparePartsList() {
 
   useEffect(() => {
     async function loadPopularProducts() {
-      const indexRes = await fetch("/data/products-index.json");
+      const indexRes = await fetch("/api/catalog-page?file=0001", {
+        cache: "no-store",
+      });
       if (!indexRes.ok) return;
 
-      const index = (await indexRes.json()) as Product[];
+      const index = await indexRes.json();
+
       setProducts(index.slice(0, 5));
     }
 

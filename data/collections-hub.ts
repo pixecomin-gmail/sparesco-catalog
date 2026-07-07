@@ -26,15 +26,16 @@ export type CollectionSection = {
 
 export const featuredCollections: FeaturedCollection[] = [
   {
-    "title": "Complete Filter Solutions",
-    "description": "Hydraulic, oil, air and process filters for all major equipment brands. OEM and aftermarket options.",
-    "href": "#",
+    "title": "Find a Part",
+    "description":
+      "Can't find the spare part you're looking for? Submit your part number and our team will help identify compatible OEM and aftermarket replacements.",
+    "href": "/spareshunt",
     "svg": "<svg fill=\"none\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 40 40\"> <rect height=\"28\" rx=\"3\" width=\"24\" x=\"8\" y=\"6\"></rect> <line x1=\"8\" x2=\"32\" y1=\"14\" y2=\"14\"></line> <line x1=\"14\" x2=\"26\" y1=\"20\" y2=\"20\"></line> <line x1=\"14\" x2=\"22\" y1=\"24\" y2=\"24\"></line> <path d=\"M28 30 L32 30 M30 28 L32 30 L30 32\"></path> </svg>"
   },
   {
-    "title": "Hydraulic Systems",
-    "description": "Pumps, motors, cylinders, valves and hose assemblies for construction and mining equipment.",
-    "href": "#",
+    "title": "Sell With Sparesco",
+    "description":  "Grow your business by showcasing your spare parts catalogue on Sparesco. Connect with industrial buyers actively searching for replacement parts.",
+    "href": "/sellwithus",
     "svg": "<svg fill=\"none\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 40 40\"> <path d=\"M20 6 L20 14\"></path> <path d=\"M12 10 L28 10\"></path> <rect height=\"20\" rx=\"3\" width=\"20\" x=\"10\" y=\"14\"></rect> <line x1=\"10\" x2=\"30\" y1=\"20\" y2=\"20\"></line> <line x1=\"16\" x2=\"24\" y1=\"24\" y2=\"24\"></line> <line x1=\"16\" x2=\"20\" y1=\"28\" y2=\"28\"></line> </svg>"
   }
 ];

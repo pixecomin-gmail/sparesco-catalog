@@ -4,12 +4,36 @@ import Link from "next/link";
 import type { ProductIndexItem } from "@/lib/products";
 import { useEnquiry } from "@/context/EnquiryContext";
 
+function getImageSrc(product: ProductIndexItem) {
+  const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(/\/$/, "");
+
+  if (!product.image) return "";
+  if (product.image.startsWith("http")) return product.image;
+  if (!r2Base) return "";
+
+  if (product.image.startsWith("catalog/images/")) {
+    return `${r2Base}/${product.image}`;
+  }
+
+    const folder =
+    product.collectionHandle ||
+    product.collection ||
+    product.category ||
+    "";
+
+    if (!folder) return "";
+
+    return `${r2Base}/catalog/images/${folder}/${product.image}`;
+}
+
 export default function CollectionProductCard({
   product,
 }: {
   product: ProductIndexItem;
 }) {
   const { addItem } = useEnquiry();
+
+  const imageSrc = getImageSrc(product);
 
   const hasPrice = typeof product.price === "number" && product.price > 0;
   const hasMultipleOptions = product.variantCount > 1;
@@ -31,8 +55,15 @@ export default function CollectionProductCard({
         className="parts-product-image"
         aria-label={product.title}
       >
-        {product.image ? (
-          <img src={product.image} alt={product.title} />
+        {imageSrc ? (
+          <img
+            src={imageSrc}
+            alt={product.title}
+            loading="lazy"
+            onError={(event) => {
+              event.currentTarget.style.display = "none";
+            }}
+          />
         ) : (
           <span>No Image</span>
         )}
@@ -41,7 +72,7 @@ export default function CollectionProductCard({
       <div className="parts-product-info">
         <h3>
           <Link href={`/products/${product.handle}`}>
-            {product.partNumber || product.title}
+            {product.title}
           </Link>
         </h3>
 
@@ -55,7 +86,7 @@ export default function CollectionProductCard({
               id: product.handle,
               handle: product.handle,
               title: product.title,
-              image: product.image || "",
+              image: imageSrc,
               partNumber: product.partNumber || product.title,
               vendor: product.vendor || product.collection || "",
               price: product.price || 0,

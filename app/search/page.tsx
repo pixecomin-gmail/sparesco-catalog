@@ -11,7 +11,7 @@ function SearchContent() {
   const initialQuery = searchParams.get("q") || "";
   const [query, setQuery] = useState(initialQuery);
 
-  const results = useSearchResults(query);
+  const { results, loading } = useSearchResults(query);
 
   return (
     <main>
@@ -40,12 +40,21 @@ function SearchContent() {
 
           <div className="parts-topbar">
             <strong>Search Results</strong>
-            <span>{results.length.toLocaleString("en-IN")} products found</span>
+            <span>
+              {loading
+                ? "Searching..."
+                : `${results.length.toLocaleString("en-IN")} products found`}
+            </span>
           </div>
 
+          {loading && <p className="empty-message">Searching...</p>}
+
           <div className="parts-product-grid search-product-grid">
-            {results.slice(0, 24).map((product) => (
-              <CollectionProductCard product={product} key={product.handle} />
+            {results.slice(0, 24).map((product, index) => (
+              <CollectionProductCard
+                product={product}
+                key={`${product.handle}-${product.collection}-${product.partNumber}-${index}`}
+              />
             ))}
           </div>
 
@@ -55,7 +64,7 @@ function SearchContent() {
             </p>
           )}
 
-          {query && results.length === 0 && (
+          {!loading && query && results.length === 0 && (
             <p className="empty-message">No products found.</p>
           )}
         </div>

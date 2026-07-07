@@ -13,7 +13,7 @@ export default function CollectionsPage() {
   const [collections, setCollections] = useState<CollectionItem[]>([]);
 
   useEffect(() => {
-    fetch("/data/collections.json")
+    fetch("/api/collections")
       .then((res) => (res.ok ? res.json() : []))
       .then((data: CollectionItem[]) =>
         setCollections(

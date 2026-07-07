@@ -7,7 +7,7 @@ import { useSearchResults } from "@/hooks/useSearchIndex";
 export default function HomeSearch() {
   const [query, setQuery] = useState("");
 
-  const results = useSearchResults(query, 4);
+  const { results, loading } = useSearchResults(query, 4);
 
   return (
     <div className="home-search-wrap">
