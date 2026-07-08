@@ -32,6 +32,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
 
   const [product, setProduct] = useState<Product | null>(null);
   const [loaded, setLoaded] = useState(false);
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
   const [activeImage, setActiveImage] = useState("");
   const [activeVariantIndex, setActiveVariantIndex] = useState(0);
   const [specsOpen, setSpecsOpen] = useState(false);
@@ -47,7 +48,11 @@ export default function ProductPageClient({ handle }: { handle: string }) {
       })
       .then((data: Product) => {
         setProduct(data);
-        setActiveImage(data.images?.[0] || "");
+
+        const images = data.images || [];
+
+        setGalleryImages(images);
+        setActiveImage(images[0] || "");
       })
       .catch(() => setProduct(null))
       .finally(() => setLoaded(true));
@@ -137,14 +142,19 @@ export default function ProductPageClient({ handle }: { handle: string }) {
   );
 
   function addActiveVariantToEnquiry() {
+    const cleanPartNumber = activeVariant.partNumber || "";
+    const cleanVariantName = activeVariantTitle || "";
+
     addItem({
-      id: `${currentProduct.handle}-${activeVariant.partNumber}`,
+      id: `${currentProduct.handle}-${cleanPartNumber}`,
       handle: currentProduct.handle,
-      title: activeVariantTitle,
+      title: cleanVariantName
+        ? `${cleanPartNumber} - ${cleanVariantName}`
+        : cleanPartNumber || currentProduct.title,
       image: getImageUrl(stickyImage),
-      partNumber: activeVariant.partNumber,
-      vendor: activeVariantTitle,
-      price: activeVariant.price,
+      partNumber: cleanPartNumber,
+      vendor: currentProduct.collection || currentProduct.category || "",
+      price: activeVariant.price || 0,
     });
   }
 
@@ -156,15 +166,25 @@ export default function ProductPageClient({ handle }: { handle: string }) {
             <div className="product-gallery product-gallery-sticky">
               <div className="main-product-image">
                 {activeImage ? (
-                  <img src={getImageUrl(activeImage)} alt={currentProduct.title} />
+                  <img
+                    src={getImageUrl(activeImage)}
+                    alt={currentProduct.title}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = "/images/product-placeholder.webp";
+                    }}
+                  />
                 ) : (
-                  <span>Product Image</span>
+                  <img
+                    src="/images/product-placeholder.webp"
+                    alt={currentProduct.title}
+                  />
                 )}
               </div>
 
-              {currentProduct.images.length > 1 && (
+              {galleryImages.length > 0 && (
                 <div className="thumbnail-row">
-                  {currentProduct.images.map((image) => (
+                  {galleryImages.map((image) => (
                     <button
                       key={image}
                       type="button"
@@ -173,7 +193,14 @@ export default function ProductPageClient({ handle }: { handle: string }) {
                       }
                       onClick={() => setActiveImage(image)}
                     >
-                      <img src={getImageUrl(image)} alt={currentProduct.title} />
+                      <img
+                        src={getImageUrl(image)}
+                        alt={currentProduct.title}
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = "/images/product-placeholder.webp";
+                        }}
+                      />
                     </button>
                   ))}
                 </div>
@@ -287,7 +314,14 @@ export default function ProductPageClient({ handle }: { handle: string }) {
           <div className="sticky-selected-variant">
             <div className="sticky-selected-image">
               {stickyImage ? (
-                <img src={getImageUrl(stickyImage)} alt={activeVariantTitle} />
+                <img
+                  src={getImageUrl(stickyImage)}
+                  alt={activeVariantTitle}
+                  onError={(event) => {
+                    event.currentTarget.onerror = null;
+                    event.currentTarget.src = "/images/product-placeholder.webp";
+                  }}
+                />
               ) : null}
             </div>
 

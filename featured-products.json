@@ -1,94 +1,195 @@
 [
   {
-    "handle": "0-14p-1-10q",
-    "title": "0 14P 1 10Q",
-    "collection": "hydraulic-filters",
-    "collectionTitle": "Hydraulic Filters",
-    "category": "hydraulic-filters",
-    "categoryTitle": "Hydraulic Filters",
-    "image": "0-14p-1-10q-1.jpg",
-    "partNumber": "D111C10A",
-    "vendor": "Filtrec",
-    "variantCount": 3,
-    "price": 1600,
-    "tags": [
-      "hydraulic-filters",
-      "Hydraulic Filters",
-      "ff1225"
-    ]
-  },
-  {
-    "handle": "as025-41",
-    "title": "AS025 41",
+    "handle": "hfl92001",
+    "title": "HFL92001",
     "collection": "argo-hytos",
     "collectionTitle": "Argo Hytos",
     "category": "argo-hytos",
     "categoryTitle": "Argo Hytos",
-    "image": "as025-41-1.jpg",
-    "partNumber": "FS120B4T125",
+    "imageFolder": "argo-hytos",
+    "tags": [
+      "argo-hytos",
+      "Argo Hytos",
+      "ff1225",
+      "test"
+    ],
+    "image": "hfl92001-1.jpg",
+    "partNumber": "P761490",
     "vendor": "",
-    "variantCount": 4,
-    "price": 1900,
+    "variantCount": 3,
+    "price": 5400
+  },
+  {
+    "handle": "he120-5",
+    "title": "HE120 5",
+    "collection": "compressed-air-filters",
+    "collectionTitle": "Compressed Air Filters",
+    "category": "compressed-air-filters",
+    "categoryTitle": "Compressed Air Filters",
+    "imageFolder": "compressed-air-filters",
+    "tags": [
+      "compressed-air-filters",
+      "Compressed Air Filters",
+      "ff1225",
+      "test"
+    ],
+    "image": "he120-5-1.jpg",
+    "partNumber": "FF300404C",
+    "vendor": "",
+    "variantCount": 1,
+    "price": 11800
+  },
+  {
+    "handle": "he25-3",
+    "title": "HE25 3",
+    "collection": "compressed-air-filters",
+    "collectionTitle": "Compressed Air Filters",
+    "category": "compressed-air-filters",
+    "categoryTitle": "Compressed Air Filters",
+    "imageFolder": "compressed-air-filters",
+    "tags": [
+      "compressed-air-filters",
+      "Compressed Air Filters",
+      "ff1225",
+      "test"
+    ],
+    "image": "he25-3-1.webp",
+    "partNumber": "FF300385C",
+    "vendor": "",
+    "variantCount": 1,
+    "price": 5400
+  },
+  {
+    "handle": "as01000",
+    "title": "AS01000",
+    "collection": "argo-hytos",
+    "collectionTitle": "Argo Hytos",
+    "category": "argo-hytos",
+    "categoryTitle": "Argo Hytos",
+    "imageFolder": "argo-hytos",
     "tags": [
       "argo-hytos",
       "Argo Hytos",
       "ff1225"
-    ]
+    ],
+    "image": "as01000-1.jpg",
+    "partNumber": "P171865",
+    "vendor": "",
+    "variantCount": 5,
+    "price": 1300
   },
   {
-    "handle": "1-0005g40a000p",
-    "title": "1 0005G40A000P",
-    "collection": "eppensteiner",
-    "collectionTitle": "Eppensteiner",
-    "category": "eppensteiner",
-    "categoryTitle": "Eppensteiner",
-    "image": "1-0005g40a000p-1.jpg",
-    "partNumber": "SH 67959",
+    "handle": "24p550268",
+    "title": "24P550268",
+    "collection": "argo-hytos",
+    "collectionTitle": "Argo Hytos",
+    "category": "argo-hytos",
+    "categoryTitle": "Argo Hytos",
+    "imageFolder": "argo-hytos",
+    "tags": [
+      "argo-hytos",
+      "Argo Hytos",
+      "ff1225"
+    ],
+    "image": "24p550268-1.jpg",
+    "partNumber": "P550268",
     "vendor": "",
     "variantCount": 3,
-    "price": 7400,
-    "tags": [
-      "eppensteiner",
-      "Eppensteiner",
-      "ff1225"
-    ]
+    "price": 1700
   },
   {
-    "handle": "1070z122a",
-    "title": "1070Z122A",
-    "collection": "fairey-arlon",
-    "collectionTitle": "Fairey Arlon",
-    "category": "fairey-arlon",
-    "categoryTitle": "Fairey Arlon",
-    "image": "1070z122a-1.jpg",
-    "partNumber": "SH 53298",
+    "handle": "as02541",
+    "title": "AS02541",
+    "collection": "argo-hytos",
+    "collectionTitle": "Argo Hytos",
+    "category": "argo-hytos",
+    "categoryTitle": "Argo Hytos",
+    "imageFolder": "argo-hytos",
+    "tags": [
+      "argo-hytos",
+      "Argo Hytos",
+      "ff1225"
+    ],
+    "image": "as02541-1.jpg",
+    "partNumber": "FS120B4T125",
+    "vendor": "",
+    "variantCount": 4,
+    "price": 1900
+  },
+  {
+    "handle": "k3-1493-66",
+    "title": "K3 1493 66",
+    "collection": "argo-hytos",
+    "collectionTitle": "Argo Hytos",
+    "category": "argo-hytos",
+    "categoryTitle": "Argo Hytos",
+    "imageFolder": "argo-hytos",
+    "tags": [
+      "argo-hytos",
+      "Argo Hytos",
+      "ff1225"
+    ],
+    "image": "k3-1493-66-1.jpg",
+    "partNumber": "SH 74476 V",
     "vendor": "",
     "variantCount": 3,
-    "price": 61300,
-    "tags": [
-      "fairey-arlon",
-      "Fairey Arlon",
-      "ff1225"
-    ]
+    "price": 168000
   },
   {
-    "handle": "631053",
-    "title": "631053",
-    "collection": "filtration-group",
-    "collectionTitle": "Filtration Group",
-    "category": "filtration-group",
-    "categoryTitle": "Filtration Group",
-    "image": "",
-    "partNumber": "SH 56113",
-    "vendor": "HiFi Filter",
-    "variantCount": 3,
-    "price": 6000,
+    "handle": "k3093962",
+    "title": "K3093962",
+    "collection": "argo-hytos",
+    "collectionTitle": "Argo Hytos",
+    "category": "argo-hytos",
+    "categoryTitle": "Argo Hytos",
+    "imageFolder": "argo-hytos",
     "tags": [
-      "filtration-group",
-      "Filtration",
-      "ff1225",
-      "mahle",
-      "Mahle"
-    ]
+      "argo-hytos",
+      "Argo Hytos",
+      "ff1225"
+    ],
+    "image": "k3093962-1.jpg",
+    "partNumber": "SH 52229",
+    "vendor": "",
+    "variantCount": 5,
+    "price": 8300
+  },
+  {
+    "handle": "k3144966",
+    "title": "K3144966",
+    "collection": "argo-hytos",
+    "collectionTitle": "Argo Hytos",
+    "category": "argo-hytos",
+    "categoryTitle": "Argo Hytos",
+    "imageFolder": "argo-hytos",
+    "tags": [
+      "argo-hytos",
+      "Argo Hytos",
+      "ff1225"
+    ],
+    "image": "k3144966-1.jpg",
+    "partNumber": "RHR1300G10B4/005",
+    "vendor": "",
+    "variantCount": 3,
+    "price": 59000
+  },
+  {
+    "handle": "p2121712",
+    "title": "P2121712",
+    "collection": "argo-hytos",
+    "collectionTitle": "Argo Hytos",
+    "category": "argo-hytos",
+    "categoryTitle": "Argo Hytos",
+    "imageFolder": "argo-hytos",
+    "tags": [
+      "argo-hytos",
+      "Argo Hytos",
+      "ff1225"
+    ],
+    "image": "p2121712-1.jpg",
+    "partNumber": "R660C25",
+    "vendor": "",
+    "variantCount": 3,
+    "price": 2200
   }
 ]

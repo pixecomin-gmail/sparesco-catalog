@@ -134,6 +134,7 @@ export default function EnquiryPage() {
                         </Link>
 
                         <div className="enquiry-item-meta">
+                          {item.partNumber ? `${item.partNumber} | ` : ""}
                           {item.vendor || "Variant"} |{" "}
                           {Number(item.price) > 0
                             ? `₹${Number(item.price).toLocaleString("en-IN")}`

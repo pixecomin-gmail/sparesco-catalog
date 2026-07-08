@@ -26,7 +26,7 @@ function getProductImage(product: Product) {
   if (image.startsWith("http")) return image;
 
   return `${R2_BASE.replace(/\/$/, "")}/catalog/images/${
-    product.collection || "products"
+    (product as any).collectionHandle || product.collection || "products"
   }/${image.replace(/^\/+/, "")}`;
 }
 
@@ -72,16 +72,43 @@ export default function FeaturedProductsSlider() {
     });
   }
 
-  if (!loaded) return null;
+  if (!loaded) {
+    return (
+      <section className="featured-products-section">
+        <div className="container">
+          <div className="featured-products-top">
+            <h2>Featured Products</h2>
+          </div>
+
+          <div className="featured-products-slider">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <article
+                key={index}
+                className="parts-product-card featured-product-card skeleton-card"
+              >
+                <div className="parts-product-image skeleton-box" />
+
+                <div className="parts-product-info">
+                  <div className="skeleton-line skeleton-title" />
+                  <div className="skeleton-line skeleton-price" />
+                  <div className="skeleton-button" />
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+  
   if (!products.length) return null;
 
   return (
     <section className="featured-products-section">
-      <div className="featured-products-container">
+      <div className="container">
         <div className="featured-products-top">
           <div>
-            <p className="featured-products-eyebrow">Featured Products</p>
-            <h2>Popular Spare Parts</h2>
+            <h2>Featured Products</h2>
           </div>
 
           <div className="featured-products-controls">
@@ -106,18 +133,18 @@ export default function FeaturedProductsSlider() {
         <div className="featured-products-slider" ref={sliderRef}>
           {products.map((product) => {
             const image = getProductImage(product);
-            const title = product.partNumber || product.title;
+            const title = product.title;
 
             return (
-              <article key={product.handle} className="featured-product-card">
+              <article key={product.handle} className="parts-product-card featured-product-card">
                 <Link
                   href={`/products/${product.handle}`}
-                  className="featured-product-image"
+                  className="parts-product-image"
                 >
                   {image ? <img src={image} alt={product.title} /> : null}
                 </Link>
 
-                <div className="featured-product-body">
+                <div className="parts-product-info">
                   <p className="featured-product-brand">
                     {product.collectionTitle ||
                       product.vendor ||
@@ -129,7 +156,7 @@ export default function FeaturedProductsSlider() {
                     <Link href={`/products/${product.handle}`}>{title}</Link>
                   </h3>
 
-                  <p className="featured-product-price">
+                  <p className="parts-product-meta">
                     {formatPrice(product.price)}
                     {product.variantCount
                       ? ` • ${product.variantCount} Options`
@@ -138,21 +165,21 @@ export default function FeaturedProductsSlider() {
 
                   <button
                     type="button"
-                    className="featured-product-enquiry"
+                    className="parts-enquiry-button"
                     onClick={() =>
                       addItem({
-                        id: product.handle,
-                        handle: product.handle,
-                        title: product.title,
-                        image,
-                        partNumber: product.partNumber || product.title,
-                        vendor:
-                          product.vendor ||
-                          product.collectionTitle ||
-                          product.collection ||
-                          "Sparesco",
-                        price: product.price || 0,
-                      })
+                          id: product.handle,
+                          handle: product.handle,
+                          title: product.title,
+                          image,
+                          partNumber: product.title,
+                          vendor:
+                            product.vendor ||
+                            product.collectionTitle ||
+                            product.collection ||
+                            "Sparesco",
+                          price: product.price || 0,
+                        })
                     }
                   >
                     Add to Enquiry
