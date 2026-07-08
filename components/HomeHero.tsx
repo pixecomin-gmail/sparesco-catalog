@@ -88,7 +88,7 @@ export default function HomeHero() {
                     </div>
 
                     <div className="hero-result-content">
-                      <strong>{product.partNumber || product.title}</strong>
+                      <strong>{product.title || product.partNumber}</strong>
                       <span>
                         {product.collection}
                         {product.variantCount > 1 ? ` • ${product.variantCount} options` : ""}

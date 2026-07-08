@@ -312,7 +312,7 @@ export default function SiteHeader() {
                         onClick={() => setQuery("")}
                       >
                         <strong>
-                          {product.partNumber || product.title} - {product.collection}
+                          {product.title || product.partNumber} - {product.collection}
                         </strong>
                       </Link>
                     ))
