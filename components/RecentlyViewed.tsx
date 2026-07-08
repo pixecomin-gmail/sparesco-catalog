@@ -1,20 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { useEnquiry } from "@/context/EnquiryContext";
+import CollectionProductCard from "@/components/CollectionProductCard";
+import type { ProductIndexItem } from "@/lib/products";
 import { productJsonUrl } from "@/lib/r2";
-
-type Product = {
-  handle: string;
-  title: string;
-  image?: string;
-  collection?: string;
-  variantCount?: number;
-  partNumber?: string;
-  vendor?: string;
-  price?: number;
-};
 
 type Props = {
   currentHandle: string;
@@ -24,8 +13,7 @@ const STORAGE_KEY = "sparesco_recently_viewed";
 
 export default function RecentlyViewedSlider({ currentHandle }: Props) {
   const sliderRef = useRef<HTMLDivElement | null>(null);
-  const { addItem } = useEnquiry();
-  const [recentProducts, setRecentProducts] = useState<Product[]>([]);
+  const [recentProducts, setRecentProducts] = useState<ProductIndexItem[]>([]);
 
   useEffect(() => {
     async function loadRecentlyViewed() {
@@ -33,32 +21,46 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
         localStorage.getItem(STORAGE_KEY) || "[]"
       ) as string[];
 
-      const productRequests = savedHandles
+      const uniqueHandles = Array.from(new Set(savedHandles))
         .filter((handle) => handle !== currentHandle)
-        .slice(0, 10)
-        .map(async (handle) => {
-          const res = await fetch(productJsonUrl(handle));
-          if (!res.ok) return null;
+        .slice(0, 12);
 
-          const product = await res.json();
+      const products = await Promise.all(
+        uniqueHandles.map(async (handle) => {
+          try {
+            const res = await fetch(productJsonUrl(handle));
+            if (!res.ok) return null;
 
-          return {
-            handle: product.handle,
-            title: product.title,
-            image: product.images?.[0] || "",
-            collection: product.collection,
-            variantCount: product.variants?.length || 1,
-            partNumber: product.variants?.[0]?.partNumber || product.title,
-            vendor: product.variants?.[0]?.vendor || product.collection || "",
-            price: product.variants?.[0]?.price || 0,
-          } as Product;
-      });
-      
-      const items = (await Promise.all(productRequests)).filter(
-        (product): product is Product => product !== null
+            const product = await res.json();
+            const firstVariant = product.variants?.[0];
+
+            return {
+              handle: product.handle,
+              title: product.title,
+              category: product.category || "",
+              collection: product.collection || "",
+              collectionHandle:
+                product.collectionHandle || product.collection || "",
+              image: product.images?.[0] || product.image || "",
+              partNumber:
+                firstVariant?.partNumber || product.partNumber || product.title,
+              vendor:
+                firstVariant?.vendor ||
+                product.vendor ||
+                product.collection ||
+                "",
+              variantCount: product.variants?.length || 1,
+              price: firstVariant?.price || product.price || 0,
+            } as ProductIndexItem;
+          } catch {
+            return null;
+          }
+        })
       );
 
-      setRecentProducts(items);
+      setRecentProducts(
+        products.filter((product): product is ProductIndexItem => !!product)
+      );
 
       const updatedHandles = [
         currentHandle,
@@ -74,26 +76,8 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
   function scrollSlider(direction: "left" | "right") {
     if (!sliderRef.current) return;
 
-    const card = sliderRef.current.querySelector(".featured-product-slide");
-    if (!card) return;
-
-    const cardWidth = card.getBoundingClientRect().width;
-    const gap = 16;
-
-    const visibleCards =
-      window.innerWidth > 1100
-        ? 6
-        : window.innerWidth > 900
-          ? 4
-          : window.innerWidth > 520
-            ? 2
-            : 1;
-
     sliderRef.current.scrollBy({
-      left:
-        direction === "right"
-          ? (cardWidth + gap) * visibleCards
-          : -(cardWidth + gap) * visibleCards,
+      left: direction === "left" ? -320 : 320,
       behavior: "smooth",
     });
   }
@@ -101,27 +85,27 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
   if (!recentProducts.length) return null;
 
   return (
-    <section className="section featured-products-section recently-viewed-products-section">
+    <section className="recently-viewed-products-section">
       <div className="container">
-        <div className="section-heading-row recently-viewed-section">
+        <div className="recently-viewed-top">
           <div className="recently-viewed-heading">
             <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
-            <polyline points="1 4 1 10 7 10" />
-            <polyline points="23 20 23 14 17 14" />
-            <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" />
+              <polyline points="1 4 1 10 7 10" />
+              <polyline points="23 20 23 14 17 14" />
+              <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" />
             </svg>
 
             <h2>Continue Where You Left Off</h2>
-        </div>
+          </div>
 
-          <div className="slider-arrows">
+          <div className="recently-viewed-controls">
             <button type="button" onClick={() => scrollSlider("left")}>
               ←
             </button>
@@ -132,57 +116,11 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
           </div>
         </div>
 
-        <div className="featured-products-viewport" ref={sliderRef}>
+        <div className="recently-viewed-slider" ref={sliderRef}>
           {recentProducts.map((product) => (
-            <article
-              className="featured-product-card featured-product-slide"
-              key={product.handle}
-            >
-              <Link
-                href={`/products/${product.handle}`}
-                className="featured-product-image"
-              >
-                {product.image ? (
-                  <img src={product.image} alt={product.title} />
-                ) : null}
-              </Link>
-
-              <div className="featured-product-info">
-                <h3>
-                  <Link href={`/products/${product.handle}`}>
-                    {product.title}
-                  </Link>
-                </h3>
-
-                <p>
-                  {typeof product.price === "number" && product.price > 0
-                    ? `From ₹${product.price.toLocaleString("en-IN")}`
-                    : "Price On Request"}
-
-                  {(product.variantCount ?? 0) > 1
-                    ? ` • ${product.variantCount} Options`
-                    : ""}
-                </p>
-
-                <button
-                  type="button"
-                  className="featured-enquiry-button"
-                  onClick={() =>
-                    addItem({
-                      id: product.handle,
-                      handle: product.handle,
-                      title: product.title,
-                      image: product.image || "",
-                      partNumber: product.partNumber || product.title,
-                      vendor: product.vendor || product.collection || "",
-                      price: product.price || 0,
-                    })
-                  }
-                >
-                  Add To Enquiry
-                </button>
-              </div>
-            </article>
+            <div key={product.handle} className="recently-viewed-slide">
+              <CollectionProductCard product={product} />
+            </div>
           ))}
         </div>
       </div>
