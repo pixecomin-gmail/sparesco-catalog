@@ -9,26 +9,53 @@ type Product = {
   title: string;
   image?: string;
   collection?: string;
-  variantCount?: number;
-  partNumber?: string;
   vendor?: string;
+  partNumber?: string;
   price?: number;
 };
+
+const R2_BASE = process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(/\/$/, "") || "";
+
+function getImage(product: Product) {
+  if (!product.image) return "";
+  if (product.image.startsWith("http")) return product.image;
+
+  const cleanImage = product.image.replace(/^\/+/, "");
+
+  if (cleanImage.startsWith("catalog/")) {
+    return `${R2_BASE}/${cleanImage}`;
+  }
+
+  return `${R2_BASE}/catalog/images/${product.collection}/${cleanImage}`;
+}
+
+function formatBrand(value?: string) {
+  if (!value) return "Sparesco";
+
+  return value
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
 
 export default function PopularSparePartsList() {
   const { addItem } = useEnquiry();
   const [products, setProducts] = useState<Product[]>([]);
+  const [brokenImages, setBrokenImages] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     async function loadPopularProducts() {
-      const indexRes = await fetch("/api/catalog-page?file=0001", {
-        cache: "no-store",
-      });
-      if (!indexRes.ok) return;
+      try {
+        const res = await fetch("/api/popular-products", {
+          cache: "no-store",
+        });
 
-      const index = await indexRes.json();
+        if (!res.ok) return;
 
-      setProducts(index.slice(0, 5));
+        const data = await res.json();
+        setProducts(Array.isArray(data) ? data.slice(0, 5) : []);
+      } catch {
+        setProducts([]);
+      }
     }
 
     loadPopularProducts();
@@ -47,32 +74,15 @@ export default function PopularSparePartsList() {
               <article className="popular-part-row" key={index}>
                 <div className="popular-part-main">
                   <div className="skeleton-box skeleton-popular-image" />
-
-                  <div
-                    style={{
-                      flex: 1,
-                      marginLeft: 16,
-                    }}
-                  >
+                  <div style={{ flex: 1, marginLeft: 16 }}>
                     <div className="skeleton-line" />
                     <div className="skeleton-line skeleton-short" />
                   </div>
                 </div>
 
-                <div
-                  className="skeleton-line"
-                  style={{ width: 80, marginBottom: 0 }}
-                />
-
-                <div
-                  className="skeleton-line"
-                  style={{ width: 90, marginBottom: 0 }}
-                />
-
-                <div
-                  className="skeleton-line"
-                  style={{ width: 130, height: 40, marginBottom: 0 }}
-                />
+                <div className="skeleton-line" style={{ width: 80, marginBottom: 0 }} />
+                <div className="skeleton-line" style={{ width: 90, marginBottom: 0 }} />
+                <div className="skeleton-line" style={{ width: 130, height: 40, marginBottom: 0 }} />
               </article>
             ))}
           </div>
@@ -91,19 +101,27 @@ export default function PopularSparePartsList() {
 
         <div className="popular-parts-list">
           {products.map((product, index) => {
-            const brand = product.collection || product.vendor || "Sparesco";
+            const brand = formatBrand(product.collection || product.vendor);
+            const image = getImage(product);
+            const imageBroken = brokenImages[product.handle];
 
             return (
               <article className="popular-part-row" key={product.handle}>
-                <Link
-                  href={`/products/${product.handle}`}
-                  className="popular-part-main"
-                >
+                <Link href={`/products/${product.handle}`} className="popular-part-main">
                   <div className="popular-part-image">
-                    {product.image ? (
-                      <img src={product.image} alt={product.title} />
+                    {image && !imageBroken ? (
+                      <img
+                        src={image}
+                        alt={product.title}
+                        onError={() =>
+                          setBrokenImages((prev) => ({
+                            ...prev,
+                            [product.handle]: true,
+                          }))
+                        }
+                      />
                     ) : (
-                      <span>Part</span>
+                      <span>{product.partNumber || product.title}</span>
                     )}
                   </div>
 
@@ -114,13 +132,7 @@ export default function PopularSparePartsList() {
 
                 <div className="popular-part-brand">{brand}</div>
 
-                <div
-                  className={
-                    index === 2
-                      ? "popular-stock-badge low"
-                      : "popular-stock-badge"
-                  }
-                >
+                <div className={index === 2 ? "popular-stock-badge low" : "popular-stock-badge"}>
                   {index === 2 ? "Low Stock" : "In Stock"}
                 </div>
 
@@ -134,7 +146,7 @@ export default function PopularSparePartsList() {
                         : product.handle,
                       handle: product.handle,
                       title: product.title,
-                      image: product.image || "",
+                      image,
                       partNumber: product.partNumber || product.title,
                       vendor: brand,
                       price: product.price || 0,
