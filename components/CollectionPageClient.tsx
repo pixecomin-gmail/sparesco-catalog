@@ -159,29 +159,35 @@ function CollectionContent() {
 
               {totalPages > 1 && (
                 <div className="pagination">
-                  <Link
-                    href={`/collections/${handle}?page=${safePage - 1}`}
-                    className={`pagination-button ${
-                      safePage === 1 ? "pagination-button-disabled" : ""
-                    }`}
-                  >
-                    Previous
-                  </Link>
+                  {safePage > 1 ? (
+                    <Link
+                      href={`/collections/${handle}?page=${safePage - 1}`}
+                      className="pagination-button"
+                    >
+                      Previous
+                    </Link>
+                  ) : (
+                    <span className="pagination-button pagination-button-disabled">
+                      Previous
+                    </span>
+                  )}
 
                   <span className="pagination-status">
                     Page {safePage} of {totalPages}
                   </span>
 
-                  <Link
-                    href={`/collections/${handle}?page=${safePage + 1}`}
-                    className={`pagination-button ${
-                      safePage === totalPages
-                        ? "pagination-button-disabled"
-                        : ""
-                    }`}
-                  >
-                    Next
-                  </Link>
+                  {safePage < totalPages ? (
+                    <Link
+                      href={`/collections/${handle}?page=${safePage + 1}`}
+                      className="pagination-button"
+                    >
+                      Next
+                    </Link>
+                  ) : (
+                    <span className="pagination-button pagination-button-disabled">
+                      Next
+                    </span>
+                  )}
                 </div>
               )}
             </div>

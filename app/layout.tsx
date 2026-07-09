@@ -7,8 +7,7 @@ import EnquiryDrawer from "@/components/EnquiryDrawer";
 import SiteHeader from "@/components/SiteHeader";
 import Breadcrumb from "@/components/Breadcrumb";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,16 +37,50 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Sparesco",
     type: "website",
+    images: [
+      {
+        url: `${siteUrl}/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Sparesco",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sparesco | Industrial Spare Parts Catalogue",
     description:
       "Search and enquire for heavy equipment and industrial spare parts.",
+    images: [`${siteUrl}/logo.png`],
   },
   robots: {
     index: true,
     follow: true,
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Sparesco",
+  url: siteUrl,
+  logo: `${siteUrl}/logo.png`,
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    url: `${siteUrl}/contact`,
+  },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Sparesco",
+  url: siteUrl,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${siteUrl}/search?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
   },
 };
 
@@ -59,6 +92,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+
         <EnquiryProvider>
           <SiteHeader />
           <Breadcrumb />

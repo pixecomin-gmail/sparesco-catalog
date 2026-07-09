@@ -5,21 +5,32 @@ type CollectionItem = {
 };
 
 type ProductIndexItem = {
-  handle: string;
+  handle?: string;
+  h?: string;
 };
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
+const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "";
 
-async function getJson<T>(path: string): Promise<T[]> {
+async function getR2Json<T>(key: string): Promise<T[]> {
+  if (!r2Base) return [];
+
   try {
-    const res = await fetch(`${siteUrl}${path}`, {
+    const res = await fetch(`${r2Base.replace(/\/$/, "")}/${key}`, {
       cache: "force-cache",
     });
 
     if (!res.ok) return [];
 
-    return res.json();
+    const data = await res.json();
+
+    if (Array.isArray(data)) return data;
+
+    if (Array.isArray(data.products)) return data.products;
+    if (Array.isArray(data.collections)) return data.collections;
+    if (Array.isArray(data.items)) return data.items;
+
+    return [];
   } catch {
     return [];
   }
@@ -28,9 +39,9 @@ async function getJson<T>(path: string): Promise<T[]> {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
-  const [collectionsData, productsIndex] = await Promise.all([
-    getJson<CollectionItem>("/data/collections.json"),
-    getJson<ProductIndexItem>("/data/products-index.json"),
+  const [collectionsData, productsData] = await Promise.all([
+    getR2Json<CollectionItem>("catalog/indexes/collections.json"),
+    getR2Json<ProductIndexItem>("catalog/indexes/catalog-index.json"),
   ]);
 
   return [
@@ -82,8 +93,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
-    ...productsIndex.map((product) => ({
-      url: `${siteUrl}/products/${product.handle}`,
+    ...productsData
+    .map((product) => product.handle || product.h)
+    .filter(Boolean)
+    .map((handle) => ({
+    url: `${siteUrl}/products/${handle}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.75,

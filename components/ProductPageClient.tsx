@@ -168,7 +168,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
                 {activeImage ? (
                   <img
                     src={getImageUrl(activeImage)}
-                    alt={currentProduct.title}
+                    alt={activeVariantTitle || currentProduct.title}
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       e.currentTarget.src = "/images/product-placeholder.webp";
@@ -195,7 +195,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
                     >
                       <img
                         src={getImageUrl(image)}
-                        alt={currentProduct.title}
+                        alt={`${activeVariantTitle || currentProduct.title} product image`}
                         onError={(e) => {
                           e.currentTarget.onerror = null;
                           e.currentTarget.src = "/images/product-placeholder.webp";

@@ -58,7 +58,7 @@ export default function CollectionProductCard({
         {imageSrc ? (
           <img
             src={imageSrc}
-            alt={product.title}
+            alt={product.title || product.partNumber || "Spare part"}
             loading="lazy"
             onError={(event) => {
               event.currentTarget.style.display = "none";
