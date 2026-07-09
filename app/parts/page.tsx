@@ -28,6 +28,7 @@ type FilterIndex = {
 function PartsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const [showFilters, setShowFilters] = useState(false);
 
   const [products, setProducts] = useState<ProductIndexItem[]>([]);
   const [meta, setMeta] = useState<CatalogMeta | null>(null);
@@ -135,9 +136,25 @@ function PartsContent() {
           </p>
 
           <div className="parts-layout">
-            <aside className="filters-sidebar">
+            <button
+              className="mobile-filter-button"
+              onClick={() => setShowFilters(true)}
+            >
+              ☰ Filters
+            </button>
+
+            <aside
+              className={`filters-sidebar ${showFilters ? "open" : ""}`}
+            >
               <div className="filters-header">
                 <h3>Filter By</h3>
+
+                <button
+                  className="mobile-filter-close"
+                  onClick={() => setShowFilters(false)}
+                >
+                  ✕
+                </button>
               </div>
 
               <div className="filter-block">

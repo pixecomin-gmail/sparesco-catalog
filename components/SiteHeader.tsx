@@ -376,10 +376,19 @@ export default function SiteHeader() {
             <nav className="mobile-nav">
               {mobileView === "main" && (
                 <>
-                  <button className="mobile-nav-link" onClick={() => setMobileView("categories")}>
-                    Categories
-                    <span>›</span>
-                  </button>
+                  <div className="mobile-nav-split">
+                    <Link href="/collections" onClick={() => setMobileMenuOpen(false)}>
+                      Categories
+                    </Link>
+
+                    <button
+                      type="button"
+                      onClick={() => setMobileView("categories")}
+                      aria-label="Open categories menu"
+                    >
+                      <span>›</span>
+                    </button>
+                  </div>
 
                   <Link href="/parts" onClick={() => setMobileMenuOpen(false)}>
                     Spare Parts

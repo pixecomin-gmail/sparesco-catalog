@@ -97,7 +97,7 @@ export function useSearchResults(query: string, limit?: number) {
         }
 
         const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, {
-          cache: "force-cache",
+          cache: "no-store",
         });
 
         if (!res.ok) {

@@ -27,7 +27,7 @@ export default function HomePopularCategories() {
       <div className="container">
         <div className="section-header-row">
           <h2 className="section-title">Popular Categories</h2>
-          <a href="/categories">View all categories →</a>
+          <a href="/categories">View all  →</a>
         </div>
 
         <div className="popular-categories-grid">

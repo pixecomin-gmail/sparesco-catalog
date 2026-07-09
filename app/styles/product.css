@@ -436,7 +436,7 @@
 
 @media (max-width: 520px) {
   .product-page-section {
-    padding-bottom: 150px;
+    padding-bottom: 0px;
   }
 
   .product-title-price-row {
@@ -449,12 +449,22 @@
   }
 
   .sticky-enquiry-actions {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .sticky-enquiry-actions > strong {
     font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .sticky-enquiry-actions .primary-button {
+    flex: 1;
+    min-width: 0;
+    height: 44px;
+    padding: 0 14px;
   }
 }
 
@@ -779,7 +789,6 @@
 
 .recently-viewed-products-section {
   padding: 42px 0 80px;
-  background: #f7f5ef;
 }
 
 .recently-viewed-top {
@@ -854,8 +863,31 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .recently-viewed-top {
+    margin-bottom: 14px;
+  }
+
+  .recently-viewed-heading h2 {
+    font-size: 18px;
+  }
+
+  .recently-viewed-controls button {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+
+  .recently-viewed-slider {
+    gap: 12px;
+  }
+
   .recently-viewed-slide {
-    flex-basis: 85%;
+    flex: 0 0 calc((100% - 12px) / 2);
+  }
+
+  
+  .recently-viewed-products-section{
+    padding: 42px 0;  
   }
 }

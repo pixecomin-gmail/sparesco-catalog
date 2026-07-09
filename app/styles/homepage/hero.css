@@ -107,11 +107,12 @@
   gap: 14px;
   max-width: 980px;
   margin: 12px 0;
+  column-gap: 6px;
 }
 
 .home-hero .hero-result-card {
   display: grid;
-  grid-template-columns: 74px 1fr;
+  grid-template-columns: 1.1fr 2fr;
   align-items: center;
   gap: 12px;
   min-height: 92px;
@@ -178,4 +179,23 @@
 .button-row a.secondary {
   background: transparent;
   color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .hero-search-clear {
+    top: 20%;
+    right: 30px;
+  }
+
+  .hero-search-dropdown{
+    top: calc(40% + 8px);
+  }
+
+  .home-hero .hero-result-image{
+    width: auto;
+  }
+  
+  .home-hero .hero-result-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

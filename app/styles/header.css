@@ -199,8 +199,8 @@
   }
 
   .site-logo {
-    width: 52px;
-    height: 52px;
+    width: 40px;
+    height: 40px;
   }
 
   .header-actions {
@@ -437,4 +437,46 @@
   .mega-menu {
     display: none;
   }
+}
+
+.mobile-nav-split {
+  width: 100%;
+  min-height: 52px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.mobile-nav-split a {
+  width: auto;
+  min-height: 52px;
+  padding-right: 14px;
+  border-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mobile-nav-split button {
+  flex: 1;
+  height: 52px;
+  border: 0;
+  background: transparent;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.mobile-nav-split button span,
+.mobile-nav-link span {
+  width: 22px;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
 }

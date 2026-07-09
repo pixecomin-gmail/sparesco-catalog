@@ -439,3 +439,48 @@
   color: #fff;
   padding: 10px;
 }
+
+@media (max-width: 900px) {
+  .about-why-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-why-main,
+  .about-brand-cta-box {
+    padding: 22px;
+  }
+
+  .about-why-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .about-brand-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-brand-cta a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 14px 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-brand-cta-box h2,
+  .about-brand-cta h3 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .about-brand-pills span {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .about-why-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

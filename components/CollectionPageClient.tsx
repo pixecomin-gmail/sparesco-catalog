@@ -2,7 +2,7 @@
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import CollectionProductCard from "@/components/CollectionProductCard";
 import type { ProductIndexItem } from "@/lib/products";
 
@@ -12,9 +12,21 @@ type CollectionItem = {
   count: number;
 };
 
+type FilterItem = {
+  handle: string;
+  title: string;
+  count: number;
+};
+
+type FilterIndex = {
+  categories: FilterItem[];
+  brands: FilterItem[];
+};
+
 const PAGE_SIZE = 24;
 
 function CollectionContent() {
+  const router = useRouter();
   const params = useParams<{ handle: string }>();
   const searchParams = useSearchParams();
 
@@ -22,8 +34,13 @@ function CollectionContent() {
   const requestedPage = Number(searchParams.get("page") || "1");
 
   const [collections, setCollections] = useState<CollectionItem[]>([]);
+  const [filters, setFilters] = useState<FilterIndex>({
+    categories: [],
+    brands: [],
+  });
   const [products, setProducts] = useState<ProductIndexItem[]>([]);
   const [loaded, setLoaded] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
 
   const collection = useMemo(
     () => collections.find((item) => item.handle === handle) || null,
@@ -45,8 +62,9 @@ function CollectionContent() {
       setLoaded(false);
 
       try {
-        const [collectionsRes, productsRes] = await Promise.all([
+        const [collectionsRes, filtersRes, productsRes] = await Promise.all([
           fetch("/api/collections"),
+          fetch("/api/catalog-page?file=filters"),
           fetch(`/api/catalog-page?file=category:${handle}:${fetchPage}`),
         ]);
 
@@ -56,6 +74,12 @@ function CollectionContent() {
             : []
         );
 
+        setFilters(
+          filtersRes.ok
+            ? ((await filtersRes.json()) as FilterIndex)
+            : { categories: [], brands: [] }
+        );
+
         setProducts(
           productsRes.ok
             ? ((await productsRes.json()) as ProductIndexItem[])
@@ -63,6 +87,7 @@ function CollectionContent() {
         );
       } catch {
         setCollections([]);
+        setFilters({ categories: [], brands: [] });
         setProducts([]);
       } finally {
         setLoaded(true);
@@ -109,45 +134,59 @@ function CollectionContent() {
           </p>
 
           <div className="parts-layout">
-            <aside className="filters-sidebar">
+            <button
+              className="mobile-filter-button"
+              onClick={() => setShowFilters(true)}
+            >
+              ☰ Filters
+            </button>
+
+            <aside className={`filters-sidebar ${showFilters ? "open" : ""}`}>
               <div className="filters-header">
                 <h3>Filter By</h3>
+
+                <button
+                  className="mobile-filter-close"
+                  onClick={() => setShowFilters(false)}
+                >
+                  ✕
+                </button>
               </div>
 
               <div className="filter-block">
                 <h4>Collections</h4>
 
                 {collections.map((item) => (
-                  <Link
-                    key={item.handle}
-                    href={`/collections/${item.handle}`}
-                    className="filter-option"
-                  >
+                  <label className="filter-option" key={item.handle}>
                     <input
                       type="checkbox"
                       checked={item.handle === handle}
                       readOnly
+                      onClick={() => {
+                        setShowFilters(false);
+                        router.push(`/collections/${item.handle}`);
+                      }}
                     />
                     <span>{item.title}</span>
                     <em>{item.count.toLocaleString("en-IN")}</em>
-                  </Link>
+                  </label>
                 ))}
               </div>
             </aside>
 
             <div className="parts-content">
               <div className="parts-topbar">
-                <strong>All Products</strong>
+                <strong>{collection.title}</strong>
                 <span>
-                  {collection.count.toLocaleString("en-IN")} products found ·
-                  Page {safePage} of {totalPages}
+                  {collection.count.toLocaleString("en-IN")} products · Page{" "}
+                  {safePage} of {totalPages}
                 </span>
               </div>
 
               <div className="parts-product-grid parts-product-grid-four">
                 {products.map((product, index) => (
                   <CollectionProductCard
-                    key={`${product.handle}-${index}`}
+                    key={`${product.handle}-${product.collection}-${product.partNumber}-${index}`}
                     product={product}
                   />
                 ))}

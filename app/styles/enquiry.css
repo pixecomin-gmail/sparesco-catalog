@@ -298,4 +298,45 @@
     width: 100%;
     padding: 20px;
   }
+
+  .enquiry-summary,
+  .enquiry-form {
+    padding: 16px;
+  }
+
+    .enquiry-item-compact {
+    grid-template-columns: 64px 1fr;
+    gap: 12px;
+    align-items: start;
+    position: relative;
+    padding: 14px;
+  }
+
+  .enquiry-item-image {
+    width: 64px;
+    height: 64px;
+  }
+
+  .enquiry-item-title {
+    font-size: 14px;
+    line-height: 1.35;
+    word-break: normal;
+  }
+
+  .enquiry-item-meta {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .qty-control {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 4px;
+  }
+
+  .delete-icon-button {
+    position: absolute;
+    right: 14px;
+    bottom: 20px;
+  }
 }
