@@ -81,8 +81,18 @@ export default function HomeHero() {
                           src={`${process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(
                             /\/$/,
                             ""
-                          )}/catalog/images/${product.collection}/${product.image}`}
+                          )}/catalog/thumbs/${product.collection}/${product.image.replace(
+                            /\.[^.]+$/,
+                            ".webp"
+                          )}`}
                           alt={product.title}
+                          loading="lazy"
+                          onError={(event) => {
+                            event.currentTarget.src = `${process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(
+                              /\/$/,
+                              ""
+                            )}/catalog/images/${product.collection}/${product.image}`;
+                          }}
                         />
                       )}
                     </div>

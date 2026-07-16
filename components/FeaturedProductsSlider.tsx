@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useEnquiry } from "@/context/EnquiryContext";
+import { getCatalogImageUrls } from "@/lib/products";
 
 type Product = {
   handle: string;
@@ -10,25 +11,14 @@ type Product = {
   image?: string;
   images?: string[];
   collection?: string;
+  collectionHandle?: string;
+  imageFolder?: string;
   collectionTitle?: string;
   variantCount?: number;
   partNumber?: string;
   vendor?: string;
   price?: number;
 };
-
-const R2_BASE = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "";
-
-function getProductImage(product: Product) {
-  const image = product.image || product.images?.[0];
-
-  if (!image) return "";
-  if (image.startsWith("http")) return image;
-
-  return `${R2_BASE.replace(/\/$/, "")}/catalog/images/${
-    (product as any).collectionHandle || product.collection || "products"
-  }/${image.replace(/^\/+/, "")}`;
-}
 
 function formatPrice(price?: number) {
   if (!price) return "Price On Request";
@@ -132,7 +122,9 @@ export default function FeaturedProductsSlider() {
 
         <div className="featured-products-slider" ref={sliderRef}>
           {products.map((product) => {
-            const image = getProductImage(product);
+            const sourceImage = product.image || product.images?.[0] || "";
+            const { thumbnail: image, original: originalImage } =
+              getCatalogImageUrls({ ...product, image: sourceImage });
             const title = product.title;
 
             return (
@@ -141,7 +133,24 @@ export default function FeaturedProductsSlider() {
                   href={`/products/${product.handle}`}
                   className="parts-product-image"
                 >
-                  {image ? <img src={image} alt={product.title} /> : null}
+                  {image ? (
+                    <img
+                      src={image}
+                      alt={product.title}
+                      loading="lazy"
+                      onError={(event) => {
+                        if (
+                          originalImage &&
+                          event.currentTarget.src !== originalImage
+                        ) {
+                          event.currentTarget.src = originalImage;
+                          return;
+                        }
+
+                        event.currentTarget.style.display = "none";
+                      }}
+                    />
+                  ) : null}
                 </Link>
 
                 <div className="parts-product-info">

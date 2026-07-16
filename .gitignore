@@ -43,3 +43,5 @@ next-env.d.ts
 # Product data stored in Cloudflare R2
 /public/data/products/
 /public/data/collection-products/
+.import-state/
+*.sqlite

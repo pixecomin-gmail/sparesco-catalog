@@ -1,30 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import type { ProductIndexItem } from "@/lib/products";
+import { getCatalogImageUrls, type ProductIndexItem } from "@/lib/products";
 import { useEnquiry } from "@/context/EnquiryContext";
-
-function getImageSrc(product: ProductIndexItem) {
-  const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(/\/$/, "");
-
-  if (!product.image) return "";
-  if (product.image.startsWith("http")) return product.image;
-  if (!r2Base) return "";
-
-  if (product.image.startsWith("catalog/images/")) {
-    return `${r2Base}/${product.image}`;
-  }
-
-    const folder =
-    product.collectionHandle ||
-    product.collection ||
-    product.category ||
-    "";
-
-    if (!folder) return "";
-
-    return `${r2Base}/catalog/images/${folder}/${product.image}`;
-}
 
 export default function CollectionProductCard({
   product,
@@ -33,7 +11,7 @@ export default function CollectionProductCard({
 }) {
   const { addItem } = useEnquiry();
 
-  const imageSrc = getImageSrc(product);
+  const { thumbnail: imageSrc, original: originalImageSrc } = getCatalogImageUrls(product);
 
   const hasPrice = typeof product.price === "number" && product.price > 0;
   const hasMultipleOptions = product.variantCount > 1;
@@ -55,18 +33,26 @@ export default function CollectionProductCard({
         className="parts-product-image"
         aria-label={product.title}
       >
-        {imageSrc ? (
           <img
-            src={imageSrc}
+            src={imageSrc || originalImageSrc || "/images/product-placeholder.webp"}
             alt={product.title || product.partNumber || "Spare part"}
             loading="lazy"
             onError={(event) => {
-              event.currentTarget.style.display = "none";
+              const img = event.currentTarget;
+
+              if (
+                originalImageSrc &&
+                img.src !== originalImageSrc
+              ) {
+                img.src = originalImageSrc;
+                return;
+              }
+
+              if (!img.src.endsWith("/images/product-placeholder.webp")) {
+                img.src = "/images/product-placeholder.webp";
+              }
             }}
           />
-        ) : (
-          <span>No Image</span>
-        )}
       </Link>
 
       <div className="parts-product-info">
@@ -86,7 +72,9 @@ export default function CollectionProductCard({
               id: product.handle,
               handle: product.handle,
               title: product.title,
-              image: imageSrc,
+              image: imageSrc ||
+                originalImageSrc ||
+                "/images/product-placeholder.webp",
               partNumber: product.partNumber || product.title,
               vendor: product.vendor || product.collection || "",
               price: product.price || 0,

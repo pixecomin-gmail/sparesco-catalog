@@ -100,9 +100,166 @@ function CollectionContent() {
   if (!loaded) {
     return (
       <main>
-        <section className="section parts-section">
+        <section className="section parts-section parts-page-section">
           <div className="container">
-            <p>Loading products...</p>
+            <div
+              style={{
+                width: 280,
+                height: 34,
+                borderRadius: 6,
+                background: "#e7e7e7",
+                marginBottom: 18,
+              }}
+            />
+
+            <div
+              style={{
+                width: "52%",
+                maxWidth: 620,
+                height: 18,
+                borderRadius: 6,
+                background: "#ececec",
+                marginBottom: 34,
+              }}
+            />
+
+            <div className="parts-layout">
+              <button className="mobile-filter-button" disabled>
+                ☰ Filters
+              </button>
+
+              <aside className="filters-sidebar">
+                <div className="filters-header">
+                  <div
+                    style={{
+                      width: 110,
+                      height: 22,
+                      borderRadius: 5,
+                      background: "#e5e5e5",
+                    }}
+                  />
+                </div>
+
+                <div className="filter-block">
+                  <div
+                    style={{
+                      width: 100,
+                      height: 20,
+                      borderRadius: 5,
+                      background: "#e8e8e8",
+                      marginBottom: 24,
+                    }}
+                  />
+
+                  {Array.from({ length: 9 }).map((_, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "22px 1fr 54px",
+                        gap: 12,
+                        alignItems: "center",
+                        marginBottom: 20,
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: 22,
+                          height: 22,
+                          borderRadius: 4,
+                          background: "#e8e8e8",
+                        }}
+                      />
+
+                      <div
+                        style={{
+                          width: `${72 + (index % 3) * 8}%`,
+                          height: 16,
+                          borderRadius: 5,
+                          background: "#ececec",
+                        }}
+                      />
+
+                      <div
+                        style={{
+                          width: 54,
+                          height: 24,
+                          borderRadius: 14,
+                          background: "#edf0f2",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </aside>
+
+              <div className="parts-content">
+                <div className="parts-topbar">
+                  <div
+                    style={{
+                      width: 160,
+                      height: 22,
+                      borderRadius: 5,
+                      background: "#e5e5e5",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      width: 220,
+                      height: 18,
+                      borderRadius: 5,
+                      background: "#ececec",
+                    }}
+                  />
+                </div>
+
+                <div className="parts-product-grid parts-product-grid-four">
+                  {Array.from({ length: PAGE_SIZE }).map((_, index) => (
+                    <article className="parts-product-card" key={index}>
+                      <div
+                        className="parts-product-image"
+                        style={{
+                          minHeight: 228,
+                          background: "#eeeeee",
+                        }}
+                      />
+
+                      <div className="parts-product-info">
+                        <div
+                          style={{
+                            width: "76%",
+                            height: 22,
+                            borderRadius: 5,
+                            background: "#e6e6e6",
+                            marginBottom: 16,
+                          }}
+                        />
+
+                        <div
+                          style={{
+                            width: "58%",
+                            height: 16,
+                            borderRadius: 5,
+                            background: "#ededed",
+                            marginBottom: 24,
+                          }}
+                        />
+
+                        <div
+                          style={{
+                            width: "100%",
+                            height: 52,
+                            borderRadius: 2,
+                            background: "#e2e2e2",
+                          }}
+                        />
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

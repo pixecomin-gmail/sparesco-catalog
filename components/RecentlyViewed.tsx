@@ -14,6 +14,8 @@ const STORAGE_KEY = "sparesco_recently_viewed";
 export default function RecentlyViewedSlider({ currentHandle }: Props) {
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const [recentProducts, setRecentProducts] = useState<ProductIndexItem[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [placeholderCount, setPlaceholderCount] = useState(0);
 
   useEffect(() => {
     async function loadRecentlyViewed() {
@@ -24,6 +26,21 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
       const uniqueHandles = Array.from(new Set(savedHandles))
         .filter((handle) => handle !== currentHandle)
         .slice(0, 12);
+
+      setPlaceholderCount(uniqueHandles.length);
+
+      if (!uniqueHandles.length) {
+        setRecentProducts([]);
+        setLoading(false);
+
+        const updatedHandles = [
+          currentHandle,
+          ...savedHandles.filter((handle) => handle !== currentHandle),
+        ].slice(0, 12);
+
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedHandles));
+        return;
+      }
 
       const products = await Promise.all(
         uniqueHandles.map(async (handle) => {
@@ -68,6 +85,7 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
       ].slice(0, 12);
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedHandles));
+      setLoading(false);
     }
 
     loadRecentlyViewed();
@@ -82,7 +100,9 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
     });
   }
 
-  if (!recentProducts.length) return null;
+  if (!loading && !recentProducts.length) return null;
+
+  if (loading && placeholderCount === 0) return null;
 
   return (
     <section className="recently-viewed-products-section">
@@ -117,11 +137,62 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
         </div>
 
         <div className="recently-viewed-slider" ref={sliderRef}>
-          {recentProducts.map((product) => (
-            <div key={product.handle} className="recently-viewed-slide">
-              <CollectionProductCard product={product} />
-            </div>
-          ))}
+          {loading
+            ? Array.from({ length: Math.min(placeholderCount, 5) }).map(
+                (_, index) => (
+                  <div
+                    key={index}
+                    className="recently-viewed-slide"
+                    aria-hidden="true"
+                  >
+                    <article className="parts-product-card">
+                      <div
+                        className="parts-product-image"
+                        style={{
+                          minHeight: 228,
+                          background: "#eeeeee",
+                        }}
+                      />
+
+                      <div className="parts-product-info">
+                        <div
+                          style={{
+                            width: "76%",
+                            height: 22,
+                            borderRadius: 5,
+                            background: "#e6e6e6",
+                            marginBottom: 16,
+                          }}
+                        />
+
+                        <div
+                          style={{
+                            width: "58%",
+                            height: 16,
+                            borderRadius: 5,
+                            background: "#ededed",
+                            marginBottom: 24,
+                          }}
+                        />
+
+                        <div
+                          style={{
+                            width: "100%",
+                            height: 52,
+                            borderRadius: 2,
+                            background: "#e2e2e2",
+                          }}
+                        />
+                      </div>
+                    </article>
+                  </div>
+                )
+              )
+            : recentProducts.map((product) => (
+                <div key={product.handle} className="recently-viewed-slide">
+                  <CollectionProductCard product={product} />
+                </div>
+              ))}
         </div>
       </div>
     </section>

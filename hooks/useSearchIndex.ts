@@ -5,72 +5,6 @@ import type { ProductIndexItem } from "@/lib/products";
 
 const cache = new Map<string, ProductIndexItem[]>();
 
-function text(value?: string) {
-  return (value || "").toLowerCase();
-}
-
-function compact(value?: string) {
-  return (value || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-}
-
-function scoreProduct(product: ProductIndexItem, query: string) {
-  const q = query.toLowerCase();
-  const cq = compact(query);
-
-  const title = text(product.title);
-  const partNumber = text(product.partNumber);
-  const collection = text(product.collection);
-  const category = text(product.category);
-  const vendor = text(product.vendor);
-
-  const compactTitle = compact(product.title);
-  const compactPartNumber = compact(product.partNumber);
-
-  if (compactTitle === cq) return 2000;
-  if (compactPartNumber === cq) return 1900;
-
-  if (compactTitle.startsWith(cq)) return 1800;
-  if (compactPartNumber.startsWith(cq)) return 1700;
-
-  if (title === q) return 1600;
-  if (partNumber === q) return 1500;
-
-  if (title.startsWith(q)) return 1400;
-  if (partNumber.startsWith(q)) return 1300;
-
-  if (compactTitle.includes(cq)) return 1200;
-  if (compactPartNumber.includes(cq)) return 1100;
-
-  if (title.includes(q)) return 1000;
-  if (partNumber.includes(q)) return 900;
-
-  if (vendor.includes(q)) return 300;
-  if (collection.includes(q)) return 200;
-  if (category.includes(q)) return 100;
-
-  return 0;
-}
-
-function cleanResults(products: ProductIndexItem[], query: string) {
-  const unique = new Map<string, ProductIndexItem>();
-
-  products.forEach((product) => {
-    if (!product.handle) return;
-    if (!unique.has(product.handle)) {
-      unique.set(product.handle, product);
-    }
-  });
-
-  return Array.from(unique.values())
-    .map((product) => ({
-      product,
-      score: scoreProduct(product, query),
-    }))
-    .filter((item) => item.score >= 900)
-    .sort((a, b) => b.score - a.score)
-    .map((item) => item.product);
-}
-
 export function useSearchResults(query: string, limit?: number) {
   const [results, setResults] = useState<ProductIndexItem[]>([]);
   const [loading, setLoading] = useState(false);
@@ -84,40 +18,59 @@ export function useSearchResults(query: string, limit?: number) {
       return;
     }
 
-    const timer = setTimeout(async () => {
+    const key = q.toLowerCase();
+    const cached = cache.get(key);
+
+    if (cached) {
+      setResults(limit ? cached.slice(0, limit) : cached);
+      setLoading(false);
+      return;
+    }
+
+    const controller = new AbortController();
+
+    const timer = window.setTimeout(async () => {
       setLoading(true);
 
       try {
-        const key = q.toLowerCase();
+        const response = await fetch(
+          `/api/search?q=${encodeURIComponent(q)}`,
+          {
+            signal: controller.signal,
+            cache: "force-cache",
+          }
+        );
 
-        if (cache.has(key)) {
-          const cached = cache.get(key) || [];
-          setResults(limit ? cached.slice(0, limit) : cached);
-          return;
-        }
-
-        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, {
-          cache: "no-store",
-        });
-
-        if (!res.ok) {
+        if (!response.ok) {
           setResults([]);
           return;
         }
 
-        const data = (await res.json()) as ProductIndexItem[];
-        const sorted = cleanResults(data, q);
+        const data = (await response.json()) as ProductIndexItem[];
 
-        cache.set(key, sorted);
-        setResults(limit ? sorted.slice(0, limit) : sorted);
-      } catch {
-        setResults([]);
+        const unique = Array.from(
+          new Map(
+            data
+              .filter((product) => product.handle)
+              .map((product) => [product.handle, product])
+          ).values()
+        );
+
+        cache.set(key, unique);
+        setResults(limit ? unique.slice(0, limit) : unique);
+      } catch (error) {
+        if (!(error instanceof DOMException) || error.name !== "AbortError") {
+          setResults([]);
+        }
       } finally {
-        setLoading(false);
+        if (!controller.signal.aborted) setLoading(false);
       }
-    }, 200);
+    }, 250);
 
-    return () => clearTimeout(timer);
+    return () => {
+      window.clearTimeout(timer);
+      controller.abort();
+    };
   }, [query, limit]);
 
   return { results, loading };

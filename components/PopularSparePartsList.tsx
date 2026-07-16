@@ -3,31 +3,19 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useEnquiry } from "@/context/EnquiryContext";
+import { getCatalogImageUrls } from "@/lib/products";
 
 type Product = {
   handle: string;
   title: string;
   image?: string;
   collection?: string;
+  collectionHandle?: string;
+  imageFolder?: string;
   vendor?: string;
   partNumber?: string;
   price?: number;
 };
-
-const R2_BASE = process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(/\/$/, "") || "";
-
-function getImage(product: Product) {
-  if (!product.image) return "";
-  if (product.image.startsWith("http")) return product.image;
-
-  const cleanImage = product.image.replace(/^\/+/, "");
-
-  if (cleanImage.startsWith("catalog/")) {
-    return `${R2_BASE}/${cleanImage}`;
-  }
-
-  return `${R2_BASE}/catalog/images/${product.collection}/${cleanImage}`;
-}
 
 function formatBrand(value?: string) {
   if (!value) return "Sparesco";
@@ -102,7 +90,8 @@ export default function PopularSparePartsList() {
         <div className="popular-parts-list">
           {products.map((product, index) => {
             const brand = formatBrand(product.collection || product.vendor);
-            const image = getImage(product);
+            const { thumbnail: image, original: originalImage } =
+              getCatalogImageUrls(product);
             const imageBroken = brokenImages[product.handle];
 
             return (
@@ -113,12 +102,21 @@ export default function PopularSparePartsList() {
                       <img
                         src={image}
                         alt={product.title}
-                        onError={() =>
+                        loading="lazy"
+                        onError={(event) => {
+                          if (
+                            originalImage &&
+                            event.currentTarget.src !== originalImage
+                          ) {
+                            event.currentTarget.src = originalImage;
+                            return;
+                          }
+
                           setBrokenImages((prev) => ({
                             ...prev,
                             [product.handle]: true,
-                          }))
-                        }
+                          }));
+                        }}
                       />
                     ) : (
                       <span>{product.partNumber || product.title}</span>

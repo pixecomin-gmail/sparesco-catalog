@@ -1,4 +1,4 @@
-const { clean, slugify, unique } = require("./utils");
+const { clean, slugify, canonicalize, unique } = require("./utils");
 const { getValue } = require("./excel-reader");
 
 function parsePrice(value) {
@@ -39,11 +39,16 @@ function buildProducts(rows, collectionName) {
   const map = new Map();
 
   for (const row of rows) {
+    const rawHandle = getValue(row, ["Handle"]);
+
     const partNumber = getValue(row, [
       "Variant Metafield: custom.part_number [single_line_text_field]",
     ]);
 
-    const handle = slugify(getValue(row, ["Handle"]) || partNumber);
+    const handleSource = rawHandle || partNumber;
+    const canonicalSource = rawHandle || partNumber;
+    const handle = slugify(handleSource);
+
     if (!handle) continue;
 
     const option1Value = getValue(row, ["Option1 Value"]);
@@ -52,27 +57,34 @@ function buildProducts(rows, collectionName) {
     if (!map.has(handle)) {
       map.set(handle, {
         handle,
+        canonicalKey: canonicalize(canonicalSource),
         title: getValue(row, ["Title"]) || partNumber || handle,
         collection: collectionHandle,
-        category: slugify(getValue(row, ["Category"]) || collectionName),
+        category: slugify(
+          getValue(row, ["Category"]) || collectionName
+        ),
         imageFolder: collectionHandle,
         tags: splitTags(getValue(row, ["Tags"])),
         images: [],
         variants: [],
-        __sources: [],
+        sources: [],
       });
     }
 
     const product = map.get(handle);
 
-    product.__sources.push({
+    product.sources.push({
+      collectionHandle,
+      collectionName,
       excelFile: row.__excelFile,
       sourceRow: row.__sourceRow,
+      rawHandle,
+      rawPartNumber: partNumber,
+      canonicalKey: canonicalize(canonicalSource),
     });
 
     product.variants.push({
       title: cleanTitle(option1Value) || partNumber || product.title,
-
       option1Value,
       image: originalImage,
 
@@ -82,7 +94,6 @@ function buildProducts(rows, collectionName) {
       ]),
 
       price: parsePrice(getValue(row, ["Variant Price"])),
-
       partNumber,
 
       hsCode: getValue(row, [
@@ -111,19 +122,20 @@ function buildProducts(rows, collectionName) {
       shippingVolume: getValue(row, [
         "Variant Metafield: custom.shipping_volume [single_line_text_field]",
       ]),
-
-      __excelFile: row.__excelFile,
-      __sourceRow: row.__sourceRow,
     });
   }
 
   for (const product of map.values()) {
-    product.tags = unique([collectionHandle, product.category, ...product.tags]);
+    product.tags = unique([
+      collectionHandle,
+      product.category,
+      ...product.tags,
+    ])
+      .map(slugify)
+      .filter(Boolean);
   }
 
   return Array.from(map.values());
 }
 
-module.exports = {
-  buildProducts,
-};
+module.exports = { buildProducts };

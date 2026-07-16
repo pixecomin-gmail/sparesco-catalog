@@ -1,94 +1,189 @@
-const { uploadBuffer, exists } = require("./r2-client");
-const { imageKey } = require("./utils");
+const config = require("./config");
+
+const {
+  uploadBuffer,
+} = require("./r2-client");
+
+const {
+  imageKey,
+  shortHash,
+  slugify,
+  sleep,
+} = require("./utils");
+
+async function mapLimit(items, concurrency, worker) {
+  if (!items.length) return [];
+
+  let cursor = 0;
+  const results = new Array(items.length);
+
+  async function run() {
+    while (true) {
+      const index = cursor++;
+
+      if (index >= items.length) return;
+
+      results[index] = await worker(items[index], index);
+    }
+  }
+
+  await Promise.all(
+    Array.from(
+      {
+        length: Math.min(concurrency, items.length),
+      },
+      () => run()
+    )
+  );
+
+  return results;
+}
 
 function extensionFromUrl(url, contentType) {
-  const cleanUrl = String(url || "").split("?")[0].toLowerCase();
+  const cleanUrl = String(url || "")
+    .split("?")[0]
+    .toLowerCase();
 
   if (cleanUrl.endsWith(".png")) return ".png";
   if (cleanUrl.endsWith(".webp")) return ".webp";
   if (cleanUrl.endsWith(".gif")) return ".gif";
   if (cleanUrl.endsWith(".avif")) return ".avif";
-  if (cleanUrl.endsWith(".jpeg")) return ".jpg";
-  if (cleanUrl.endsWith(".jpg")) return ".jpg";
 
-  if (contentType && contentType.includes("png")) return ".png";
-  if (contentType && contentType.includes("webp")) return ".webp";
-  if (contentType && contentType.includes("gif")) return ".gif";
-  if (contentType && contentType.includes("avif")) return ".avif";
+  if (
+    cleanUrl.endsWith(".jpg") ||
+    cleanUrl.endsWith(".jpeg")
+  ) {
+    return ".jpg";
+  }
+
+  if (contentType?.includes("png")) return ".png";
+  if (contentType?.includes("webp")) return ".webp";
+  if (contentType?.includes("gif")) return ".gif";
+  if (contentType?.includes("avif")) return ".avif";
 
   return ".jpg";
 }
 
 async function downloadImage(url) {
-  const response = await fetch(url);
+  let lastError;
 
-  if (!response.ok) {
-    throw new Error(`Image download failed ${response.status}`);
-  }
-
-  return {
-    buffer: Buffer.from(await response.arrayBuffer()),
-    contentType: response.headers.get("content-type") || "image/jpeg",
-  };
-}
-
-async function uploadProductImages(product) {
-  let imageNumber = 1;
-  const originalToFilename = new Map();
-  const failedImages = [];
-
-  const existingImages = Array.isArray(product.images)
-    ? product.images.filter(Boolean)
-    : [];
-
-  for (const variant of product.variants || []) {
-    const originalImage = String(variant.image || "").trim();
-
-    if (!originalImage) {
-      continue;
-    }
-
-    if (!originalImage.startsWith("http")) {
-      originalToFilename.set(originalImage, originalImage);
-      continue;
-    }
-
-    if (originalToFilename.has(originalImage)) {
-      variant.image = originalToFilename.get(originalImage);
-      continue;
-    }
-
+  for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      const file = await downloadImage(originalImage);
-      const ext = extensionFromUrl(originalImage, file.contentType);
-      const filename = `${product.handle}-${imageNumber}${ext}`;
-      const key = imageKey(product.collection, filename);
+      const response = await fetch(url, {
+        signal: AbortSignal.timeout(30000),
+      });
 
-      if (!(await exists(key))) {
-        await uploadBuffer(key, file.buffer, file.contentType);
+      if (!response.ok) {
+        throw new Error(
+          `Image download failed ${response.status}`
+        );
       }
 
-      originalToFilename.set(originalImage, filename);
-      variant.image = filename;
-      imageNumber++;
+      return {
+        buffer: Buffer.from(await response.arrayBuffer()),
+        contentType:
+          response.headers.get("content-type") ||
+          "image/jpeg",
+      };
     } catch (error) {
-      failedImages.push({
-        handle: product.handle,
-        imageUrl: originalImage,
-        reason: error.message,
-      });
+      lastError = error;
+
+      if (attempt < 3) {
+        await sleep(attempt * 1000);
+      }
     }
   }
 
-  const variantImages = (product.variants || [])
-    .map((variant) => variant.image)
-    .filter(Boolean);
+  throw lastError;
+}
 
-  product.images = [...new Set([...existingImages, ...variantImages])];
+async function uploadProductImages(
+  product,
+  manifests
+) {
+  const folder = slugify(
+    product.imageFolder || product.collection
+  );
 
-  return failedImages;
+  const manifest = manifests.get(folder);
+
+  if (!manifest) {
+    throw new Error(
+      `Image manifest missing for collection: ${folder}`
+    );
+  }
+
+  const urls = [
+    ...new Set(
+      (product.variants || [])
+        .map((variant) =>
+          String(variant.image || "").trim()
+        )
+        .filter((url) => url.startsWith("http"))
+    ),
+  ];
+
+  const resolved = new Map();
+  const failures = [];
+
+  await mapLimit(
+    urls,
+    config.CONCURRENCY.images,
+    async (url) => {
+      try {
+        const file = await downloadImage(url);
+        const ext = extensionFromUrl(
+          url,
+          file.contentType
+        );
+
+        const filename =
+          `${product.handle}-${shortHash(url)}${ext}`;
+
+        const key = imageKey(folder, filename);
+
+        if (!manifest.keys.has(key)) {
+          await uploadBuffer(
+            key,
+            file.buffer,
+            file.contentType
+          );
+
+          manifest.keys.add(key);
+          manifest.changed = true;
+        }
+
+        resolved.set(url, filename);
+      } catch (error) {
+        failures.push({
+          handle: product.handle,
+          imageUrl: url,
+          reason: error.message,
+        });
+      }
+    }
+  );
+
+  for (const variant of product.variants || []) {
+    const original = String(variant.image || "").trim();
+
+    if (resolved.has(original)) {
+      variant.image = resolved.get(original);
+    }
+  }
+
+  product.images = [
+    ...new Set(
+      (product.variants || [])
+        .map((variant) => variant.image)
+        .filter(Boolean)
+    ),
+  ];
+
+  return failures;
 }
 
 module.exports = {
+  mapLimit,
   uploadProductImages,
 };

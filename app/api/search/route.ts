@@ -1,4 +1,4 @@
-﻿export const runtime = "edge";
+export const runtime = "edge";
 
 type SearchItem = {
   h: string;
@@ -10,29 +10,38 @@ type SearchItem = {
   i: string;
   vc: number;
   pr: number;
-  s: string;
+  x: string;
 };
 
-function getShardKeys(query: string) {
-  const clean = query.trim().toLowerCase();
-  const first = clean[0];
-
-  if (!first) return ["a"];
-
-  if (first >= "a" && first <= "z") return [first];
-  if (first >= "0" && first <= "9") return [first];
-
-  return ["other"];
+function compact(value?: string) {
+  return (value || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
-function clean(value: string) {
-  return value.toLowerCase().replace(/[^a-z0-9]/g, "");
+function score(item: SearchItem, query: string) {
+  const title = compact(item.t);
+  const part = compact(item.p);
+  const handle = compact(item.h);
+
+  if (title === query) return 10000;
+  if (part === query) return 9500;
+  if (handle === query) return 9000;
+  if (title.startsWith(query)) return 8500;
+  if (part.startsWith(query)) return 8000;
+  if (handle.startsWith(query)) return 7500;
+  if (title.includes(query)) return 6500;
+  if (part.includes(query)) return 6000;
+  if (handle.includes(query)) return 5500;
+  if ((item.x || "").includes(query)) return 3000;
+
+  return 0;
 }
 
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
-    const q = searchParams.get("q")?.trim().toLowerCase() || "";
+    const query = compact(searchParams.get("q") || "");
+
+    if (query.length < 2) return Response.json([]);
 
     const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
@@ -43,59 +52,29 @@ export async function GET(request: Request) {
       );
     }
 
-    if (!q) return Response.json([]);
-
-    const shard = getShardKeys(q)[0];
+    const shard = query.slice(0, 2);
     const base = r2Base.replace(/\/$/, "");
-    const url = `${base}/catalog/search/${shard}.json`;
+    const url = `${base}/catalog/search-v2/${shard}.json`;
 
-    const res = await fetch(url, { cache: "no-store" });
+    const response = await fetch(url, { cache: "force-cache" });
 
-    if (!res.ok) {
+    if (response.status === 404) return Response.json([]);
+
+    if (!response.ok) {
       return Response.json(
-        { error: "Search shard not found", shard, status: res.status, url },
-        { status: 500 }
+        { error: "Search shard request failed", shard, status: response.status },
+        { status: 502 }
       );
     }
 
-    const items = (await res.json()) as SearchItem[];
-    const query = clean(q);
+    const items = (await response.json()) as SearchItem[];
 
-    const matched = items
-      .map((item) => {
-        const title = clean(item.t || "");
-        const part = clean(item.p || "");
-        const handle = clean(item.h || "");
-        const collection = clean(item.ct || item.c || "");
-        const searchable = clean(
-          `${item.t || ""} ${item.p || ""} ${item.h || ""} ${item.ct || ""} ${
-            item.c || ""
-          } ${item.s || ""}`
-        );
-
-        let score = 0;
-
-        if (title === query) score = 10000;
-        else if (title.startsWith(query)) score = 9000;
-        else if (title.includes(query)) score = 8000;
-        else if (part === query) score = 7000;
-        else if (part.startsWith(query)) score = 6000;
-        else if (part.includes(query)) score = 5000;
-        else if (handle === query) score = 4000;
-        else if (handle.startsWith(query)) score = 3000;
-        else if (handle.includes(query)) score = 2000;
-        else if (collection.includes(query)) score = 1000;
-        else if (searchable.includes(query)) score = 500;
-
-        return { item, score };
-      })
+    const results = items
+      .map((item) => ({ item, score: score(item, query) }))
       .filter((entry) => entry.score > 0)
       .sort((a, b) => b.score - a.score)
-      .slice(0, 50)
-      .map((entry) => entry.item);
-
-    return Response.json(
-      matched.map((item) => ({
+      .slice(0, 100)
+      .map(({ item }) => ({
         handle: item.h,
         title: item.t,
         collection: item.c,
@@ -107,8 +86,14 @@ export async function GET(request: Request) {
         vendor: item.v,
         variantCount: item.vc,
         price: item.pr,
-      }))
-    );
+      }));
+
+    return Response.json(results, {
+      headers: {
+        "Cache-Control":
+          "public, max-age=60, s-maxage=86400, stale-while-revalidate=604800",
+      },
+    });
   } catch (error) {
     return Response.json(
       {
