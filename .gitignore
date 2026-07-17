@@ -45,3 +45,4 @@ next-env.d.ts
 /public/data/collection-products/
 .import-state/
 *.sqlite
+*.sqlite-journal

@@ -23,9 +23,26 @@ type FilterIndex = {
   brands: FilterItem[];
 };
 
+type CollectionPageClientProps = {
+  initialCollections?: CollectionItem[];
+  initialFilters?: FilterIndex;
+  initialProducts?: ProductIndexItem[];
+  initialHandle?: string;
+  initialPage?: number;
+};
+
 const PAGE_SIZE = 24;
 
-function CollectionContent() {
+function CollectionContent({
+  initialCollections = [],
+  initialFilters = {
+    categories: [],
+    brands: [],
+  },
+  initialProducts = [],
+  initialHandle = "",
+  initialPage = 1,
+}: CollectionPageClientProps) {
   const router = useRouter();
   const params = useParams<{ handle: string }>();
   const searchParams = useSearchParams();
@@ -33,13 +50,21 @@ function CollectionContent() {
   const handle = params.handle;
   const requestedPage = Number(searchParams.get("page") || "1");
 
-  const [collections, setCollections] = useState<CollectionItem[]>([]);
-  const [filters, setFilters] = useState<FilterIndex>({
-    categories: [],
-    brands: [],
-  });
-  const [products, setProducts] = useState<ProductIndexItem[]>([]);
-  const [loaded, setLoaded] = useState(false);
+  const [collections, setCollections] =
+  useState<CollectionItem[]>(initialCollections);
+
+  const [filters, setFilters] =
+    useState<FilterIndex>(initialFilters);
+
+  const [products, setProducts] =
+    useState<ProductIndexItem[]>(initialProducts);
+
+  const hasInitialData =
+    initialHandle === handle &&
+    initialPage === requestedPage &&
+    initialCollections.length > 0;
+
+  const [loaded, setLoaded] = useState(hasInitialData);
   const [showFilters, setShowFilters] = useState(false);
 
   const collection = useMemo(
@@ -56,6 +81,8 @@ function CollectionContent() {
   const fetchPage = String(safePage).padStart(4, "0");
 
   useEffect(() => {
+    if (hasInitialData) return;
+
     async function loadCollection() {
       if (!handle) return;
 
@@ -95,7 +122,7 @@ function CollectionContent() {
     }
 
     loadCollection();
-  }, [handle, fetchPage]);
+  }, [handle, fetchPage, hasInitialData]);
 
   if (!loaded) {
     return (
@@ -394,10 +421,12 @@ function CollectionContent() {
   );
 }
 
-export default function CollectionPageClient() {
+export default function CollectionPageClient(
+  props: CollectionPageClientProps
+) {
   return (
     <Suspense fallback={null}>
-      <CollectionContent />
+      <CollectionContent {...props} />
     </Suspense>
   );
 }

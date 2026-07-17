@@ -11,6 +11,10 @@ type ApiCollection = {
   count: number;
 };
 
+type CollectionsHubProps = {
+  initialCollections?: ApiCollection[];
+};
+
 const CATEGORY_MAP: Record<string, string[]> = {
   Filters: [
     "air-filters",
@@ -69,11 +73,18 @@ function getSvg(handle: string) {
   return '<svg fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 40 40"><rect height="24" rx="3" width="24" x="8" y="8"></rect><line x1="14" x2="26" y1="16" y2="16"></line><line x1="14" x2="24" y1="22" y2="22"></line><line x1="14" x2="20" y1="28" y2="28"></line></svg>';
 }
 
-export default function CollectionsHub() {
-  const [apiCollections, setApiCollections] = useState<ApiCollection[]>([]);
+export default function CollectionsHub({
+  initialCollections = [],
+}: CollectionsHubProps) {
+  const [apiCollections, setApiCollections] =
+    useState<ApiCollection[]>(initialCollections);
+
   const [activeTab, setActiveTab] = useState("All");
+  const hasInitialCollections = initialCollections.length > 0;
 
   useEffect(() => {
+    if (hasInitialCollections) return;
+
     async function loadCollections() {
       try {
         const res = await fetch("/api/collections", { cache: "no-store" });
@@ -85,7 +96,7 @@ export default function CollectionsHub() {
     }
 
     loadCollections();
-  }, []);
+  }, [hasInitialCollections]);
 
   const autoSections = useMemo(() => {
     const byHandle = new Map(apiCollections.map((item) => [item.handle, item]));
