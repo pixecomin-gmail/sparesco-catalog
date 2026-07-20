@@ -45,25 +45,29 @@ async function getProduct(
 ): Promise<ProductData | null> {
   if (!r2Base) return null;
 
-  try {
-    const folder = productFolder(handle);
+  const base = r2Base.replace(/\/$/, "");
+  const folder = productFolder(handle);
 
-    const res = await fetch(
-      `${r2Base.replace(
-        /\/$/,
-        ""
-      )}/catalog/products/${folder}/${handle}.json`,
-      {
+  const urls = [
+    `${base}/catalog/products/${folder}/${handle}.json`,
+    `${base}/catalog/products/${handle}.json`,
+  ];
+
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, {
         cache: "force-cache",
-      }
-    );
+      });
 
-    if (!res.ok) return null;
+      if (!res.ok) continue;
 
-    return res.json();
-  } catch {
-    return null;
+      return await res.json();
+    } catch {
+      // Try the next product location.
+    }
   }
+
+  return null;
 }
 
 function cleanText(value?: string) {
