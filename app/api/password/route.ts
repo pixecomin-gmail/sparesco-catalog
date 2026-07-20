@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 const ACCESS_COOKIE = "sparesco_access";
 
 export async function POST(request: Request) {

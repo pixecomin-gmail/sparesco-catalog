@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 const ACCESS_COOKIE = "sparesco_access";
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Password protection is disabled unless SITE_LOCKED=true
