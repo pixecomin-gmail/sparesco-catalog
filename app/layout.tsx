@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import SiteFooter from "@/components/SiteFooter";
 import { EnquiryProvider } from "@/context/EnquiryContext";
-import EnquiryDrawer from "@/components/EnquiryDrawer";
-import SiteHeader from "@/components/SiteHeader";
-import Breadcrumb from "@/components/Breadcrumb";
+import LayoutShell from "@/components/LayoutShell";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
 
@@ -107,11 +104,7 @@ export default function RootLayout({
         />
 
         <EnquiryProvider>
-          <SiteHeader />
-          <Breadcrumb />
-          {children}
-          <SiteFooter />
-          <EnquiryDrawer />
+          <LayoutShell>{children}</LayoutShell>
         </EnquiryProvider>
       </body>
     </html>
