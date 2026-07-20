@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     default: "Sparesco | Heavy Equipment & Industrial Spare Parts Catalogue",
     template: "%s | Sparesco",
   },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   description:
     "Search heavy equipment spare parts, industrial filters, hydraulic components, machinery parts and replacement spares. Send product enquiries directly to Sparesco.",
   keywords: [
