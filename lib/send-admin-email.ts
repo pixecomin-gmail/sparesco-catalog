@@ -1,5 +1,8 @@
 import { Resend } from "resend";
 
+const SITE_URL = "https://sparesco.com";
+const DEFAULT_LOGO_URL = "https://sparesco.com/logo.png";
+
 function escapeHtml(value: unknown) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -9,7 +12,16 @@ function escapeHtml(value: unknown) {
     .replaceAll("'", "&#039;");
 }
 
-function buildRows(data: Record<string, unknown>, excludeKeys: string[] = []) {
+function formatLabel(key: string) {
+  return key
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function buildRows(
+  data: Record<string, unknown>,
+  excludeKeys: string[] = []
+) {
   return Object.entries(data)
     .filter(([key, value]) => {
       return (
@@ -19,37 +31,52 @@ function buildRows(data: Record<string, unknown>, excludeKeys: string[] = []) {
         value !== undefined
       );
     })
-    .map(
-      ([key, value]) => `
+    .map(([key, value]) => {
+      const safeValue = escapeHtml(value).replaceAll("\n", "<br />");
+
+      return `
         <tr>
           <td
+            class="field-label"
+            width="180"
             style="
-              padding:10px 12px;
+              width:180px;
+              padding:14px 16px;
               border-bottom:1px solid #e5e7eb;
               color:#667085;
+              font-family:Arial,sans-serif;
+              font-size:13px;
               font-weight:700;
-              width:34%;
-              text-transform:capitalize;
+              line-height:1.5;
+              text-align:left;
               vertical-align:top;
+              white-space:nowrap;
             "
           >
-            ${escapeHtml(key.replaceAll("_", " "))}
+            ${escapeHtml(formatLabel(key))}
           </td>
 
           <td
+            class="field-value"
             style="
-              padding:10px 12px;
+              padding:14px 16px;
               border-bottom:1px solid #e5e7eb;
               color:#173f4c;
-              white-space:pre-line;
+              font-family:Arial,sans-serif;
+              font-size:14px;
+              font-weight:400;
+              line-height:1.6;
+              text-align:left;
               vertical-align:top;
+              overflow-wrap:anywhere;
+              word-break:break-word;
             "
           >
-            ${escapeHtml(value)}
+            ${safeValue}
           </td>
         </tr>
-      `
-    )
+      `;
+    })
     .join("");
 }
 
@@ -64,106 +91,237 @@ function emailTemplate({
   data: Record<string, unknown>;
   excludeKeys?: string[];
 }) {
-  const logoUrl = process.env.EMAIL_LOGO_URL;
+  const logoUrl =
+    process.env.EMAIL_LOGO_URL || DEFAULT_LOGO_URL;
 
   return `
     <!doctype html>
-    <html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+
+        <style>
+          @media only screen and (max-width: 600px) {
+            .email-container {
+              width: 100% !important;
+            }
+
+            .email-padding {
+              padding: 16px !important;
+            }
+
+            .field-label {
+              width: 115px !important;
+              white-space:normal !important;
+              padding:12px !important;
+            }
+
+            .field-value {
+              padding:12px !important;
+            }
+
+            .email-title {
+              font-size:21px !important;
+            }
+          }
+        </style>
+      </head>
+
       <body
         style="
           margin:0;
           padding:0;
-          background:#f5f5f0;
+          background-color:#f5f5f0;
           font-family:Arial,sans-serif;
+          -webkit-text-size-adjust:100%;
         "
       >
-        <div style="max-width:720px;margin:0 auto;padding:28px 16px;">
-          <div
-            style="
-              background:#173f4c;
-              padding:24px;
-              text-align:center;
-              border-radius:10px 10px 0 0;
-            "
-          >
-            ${
-              logoUrl
-                ? `
-                  <img
-                    src="${escapeHtml(logoUrl)}"
-                    alt="Sparesco"
+        <table
+          role="presentation"
+          width="100%"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          style="
+            width:100%;
+            margin:0;
+            padding:0;
+            background-color:#f5f5f0;
+          "
+        >
+          <tr>
+            <td
+              align="center"
+              style="padding:28px 12px;"
+            >
+              <table
+                role="presentation"
+                class="email-container"
+                width="680"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                style="
+                  width:100%;
+                  max-width:680px;
+                  border-collapse:separate;
+                  border-spacing:0;
+                "
+              >
+                <tr>
+                  <td
+                    align="center"
                     style="
-                      max-height:64px;
-                      max-width:180px;
-                      margin-bottom:12px;
-                    "
-                  />
-                `
-                : `
-                  <h2
-                    style="
-                      margin:0 0 12px;
-                      color:#ffffff;
-                      font-size:28px;
+                      padding:26px 24px 22px;
+                      background-color:#173f4c;
+                      border-radius:12px 12px 0 0;
                     "
                   >
-                    Sparesco
-                  </h2>
-                `
-            }
+                    <a
+                      href="${SITE_URL}"
+                      target="_blank"
+                      style="
+                        display:inline-block;
+                        text-decoration:none;
+                      "
+                    >
+                      <img
+                        src="${escapeHtml(logoUrl)}"
+                        alt="Sparesco"
+                        width="180"
+                        style="
+                          display:block;
+                          width:180px;
+                          max-width:100%;
+                          height:auto;
+                          margin:0 auto 16px;
+                          border:0;
+                        "
+                      />
+                    </a>
 
-            <h1
-              style="
-                margin:0;
-                color:#ffffff;
-                font-size:24px;
-              "
-            >
-              ${escapeHtml(title)}
-            </h1>
-          </div>
+                    <h1
+                      class="email-title"
+                      style="
+                        margin:0;
+                        color:#ffffff;
+                        font-family:Arial,sans-serif;
+                        font-size:24px;
+                        font-weight:700;
+                        line-height:1.3;
+                        text-align:center;
+                      "
+                    >
+                      ${escapeHtml(title)}
+                    </h1>
+                  </td>
+                </tr>
 
-          <div
-            style="
-              background:#ffffff;
-              border:1px solid #dddddd;
-              padding:24px;
-              border-radius:0 0 10px 10px;
-            "
-          >
-            <p
-              style="
-                margin:0 0 18px;
-                color:#475467;
-                font-size:15px;
-                line-height:1.6;
-              "
-            >
-              ${escapeHtml(intro)}
-            </p>
+                <tr>
+                  <td
+                    class="email-padding"
+                    style="
+                      padding:28px;
+                      background-color:#ffffff;
+                      border-right:1px solid #e4e7ec;
+                      border-left:1px solid #e4e7ec;
+                    "
+                  >
+                    <p
+                      style="
+                        margin:0 0 22px;
+                        color:#475467;
+                        font-family:Arial,sans-serif;
+                        font-size:15px;
+                        line-height:1.7;
+                      "
+                    >
+                      ${escapeHtml(intro)}
+                    </p>
 
-            <table
-              style="
-                width:100%;
-                border-collapse:collapse;
-                font-size:14px;
-              "
-            >
-              ${buildRows(data, excludeKeys)}
-            </table>
-          </div>
+                    <table
+                      role="presentation"
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      style="
+                        width:100%;
+                        table-layout:fixed;
+                        border:1px solid #e5e7eb;
+                        border-radius:8px;
+                        border-collapse:separate;
+                        border-spacing:0;
+                        overflow:hidden;
+                      "
+                    >
+                      ${buildRows(data, excludeKeys)}
+                    </table>
+                  </td>
+                </tr>
 
-          <div
-            style="
-              padding:14px;
-              text-align:center;
-              color:#667085;
-              font-size:12px;
-            "
-          >
-            Sparesco Website Notification
-          </div>
-        </div>
+                <tr>
+                  <td
+                    align="center"
+                    style="
+                      padding:22px 20px;
+                      background-color:#ffffff;
+                      border-right:1px solid #e4e7ec;
+                      border-bottom:1px solid #e4e7ec;
+                      border-left:1px solid #e4e7ec;
+                      border-radius:0 0 12px 12px;
+                    "
+                  >
+                    <p
+                      style="
+                        margin:0 0 8px;
+                        color:#667085;
+                        font-family:Arial,sans-serif;
+                        font-size:13px;
+                        line-height:1.5;
+                        text-align:center;
+                      "
+                    >
+                      Heavy equipment spare parts marketplace
+                    </p>
+
+                    <a
+                      href="${SITE_URL}"
+                      target="_blank"
+                      style="
+                        color:#2a8392;
+                        font-family:Arial,sans-serif;
+                        font-size:14px;
+                        font-weight:700;
+                        line-height:1.5;
+                        text-decoration:none;
+                      "
+                    >
+                      Visit sparesco.com
+                    </a>
+
+                    <p
+                      style="
+                        margin:12px 0 0;
+                        color:#98a2b3;
+                        font-family:Arial,sans-serif;
+                        font-size:11px;
+                        line-height:1.5;
+                        text-align:center;
+                      "
+                    >
+                      Sparesco Website Notification
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       </body>
     </html>
   `;
@@ -172,11 +330,15 @@ function emailTemplate({
 function getEmailConfiguration() {
   const apiKey = process.env.RESEND_API_KEY;
   const notifyEmails = process.env.FORM_NOTIFY_EMAIL;
+
   const from =
-    process.env.EMAIL_FROM || "Sparesco <support@sparesco.com>";
+    process.env.EMAIL_FROM ||
+    "Sparesco <support@sparesco.com>";
 
   if (!apiKey) {
-    throw new Error("Missing RESEND_API_KEY environment variable.");
+    throw new Error(
+      "Missing RESEND_API_KEY environment variable."
+    );
   }
 
   return {
@@ -195,10 +357,16 @@ export async function sendAdminEmail({
   title: string;
   data: Record<string, unknown>;
 }) {
-  const { resend, notifyEmails, from } = getEmailConfiguration();
+  const {
+    resend,
+    notifyEmails,
+    from,
+  } = getEmailConfiguration();
 
   if (!notifyEmails) {
-    throw new Error("Missing FORM_NOTIFY_EMAIL environment variable.");
+    throw new Error(
+      "Missing FORM_NOTIFY_EMAIL environment variable."
+    );
   }
 
   const recipients = notifyEmails
@@ -207,8 +375,16 @@ export async function sendAdminEmail({
     .filter(Boolean);
 
   if (recipients.length === 0) {
-    throw new Error("FORM_NOTIFY_EMAIL does not contain a valid email.");
+    throw new Error(
+      "FORM_NOTIFY_EMAIL does not contain a valid email."
+    );
   }
+
+  console.log("Sending admin email:", {
+    from,
+    recipients,
+    subject,
+  });
 
   const result = await resend.emails.send({
     from,
@@ -216,26 +392,32 @@ export async function sendAdminEmail({
     subject,
     html: emailTemplate({
       title,
-      intro: "New submission received from the Sparesco website.",
+      intro:
+        "A new submission has been received from the Sparesco website.",
       data,
     }),
     replyTo:
-      typeof data.email === "string" && data.email
-        ? data.email
+      typeof data.email === "string" &&
+      data.email.trim()
+        ? data.email.trim()
         : undefined,
   });
 
   if (result.error) {
-    console.error("Resend admin email error:", result.error);
+    console.error(
+      "Resend admin email error:",
+      result.error
+    );
 
     throw new Error(
       `Admin email failed: ${
-        result.error.message || "Unknown Resend error."
+        result.error.message ||
+        "Unknown Resend error."
       }`
     );
   }
 
-  console.log("Admin email sent:", {
+  console.log("Admin email accepted by Resend:", {
     id: result.data?.id,
     recipients,
   });
@@ -257,13 +439,22 @@ export async function sendUserEmail({
   title: string;
   data: Record<string, unknown>;
 }) {
-  const { resend, from } = getEmailConfiguration();
+  const { resend, from } =
+    getEmailConfiguration();
 
   const recipient = String(to || "").trim();
 
   if (!recipient) {
-    throw new Error("Customer email address is missing.");
+    throw new Error(
+      "Customer email address is missing."
+    );
   }
+
+  console.log("Sending customer email:", {
+    from,
+    recipient,
+    subject,
+  });
 
   const result = await resend.emails.send({
     from,
@@ -279,19 +470,26 @@ export async function sendUserEmail({
   });
 
   if (result.error) {
-    console.error("Resend customer email error:", result.error);
+    console.error(
+      "Resend customer email error:",
+      result.error
+    );
 
     throw new Error(
       `Customer email failed: ${
-        result.error.message || "Unknown Resend error."
+        result.error.message ||
+        "Unknown Resend error."
       }`
     );
   }
 
-  console.log("Customer email sent:", {
-    id: result.data?.id,
-    recipient,
-  });
+  console.log(
+    "Customer email accepted by Resend:",
+    {
+      id: result.data?.id,
+      recipient,
+    }
+  );
 
   return {
     success: true,
