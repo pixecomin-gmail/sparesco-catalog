@@ -3,6 +3,7 @@ import StatsCounter from "@/components/StatsCounter";
 import FeaturedProductsSlider from "@/components/FeaturedProductsSlider";
 import PopularSparePartsList from "@/components/PopularSparePartsList";
 import HomePopularCategories from "@/components/HomePopularCategories";
+import HomePartnerForm from "@/components/HomePartnerForm";
 
 export default function Home() {
   return (
@@ -103,14 +104,7 @@ export default function Home() {
             </p>
           </div>
 
-          <form className="partner-form-wide">
-            <input placeholder="First Name *" />
-            <input placeholder="Company Name" />
-            <input placeholder="Email *" />
-            <input placeholder="Phone *" />
-            <textarea placeholder="Products to List *" />
-            <button type="submit">Submit Application</button>
-          </form>
+          <HomePartnerForm />
         </div>
       </section>
 

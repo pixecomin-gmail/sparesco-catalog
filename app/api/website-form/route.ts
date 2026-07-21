@@ -29,13 +29,33 @@ export async function POST(request: Request) {
 
     const body = await request.json();
 
+    const formType = String(body.formType || "").trim();
+
     const payload = {
-      form_type: String(body.formType || "").trim(),
+      form_type: formType,
       name: String(body.name || "").trim(),
       email: String(body.email || "").trim().toLowerCase(),
       phone: String(body.phone || "").trim(),
-      role: String(body.role || "").trim(),
-      message: String(body.message || "").trim(),
+
+      role:
+        formType === "contact" || formType === "supplier"
+          ? String(body.role || "").trim()
+          : null,
+
+      message:
+        formType === "contact" || formType === "supplier"
+          ? String(body.message || "").trim()
+          : null,
+
+      company_name:
+        formType === "homepage"
+          ? String(body.companyName || "").trim()
+          : null,
+
+      products_to_list:
+        formType === "homepage"
+          ? String(body.productsToList || "").trim()
+          : null,
     };
 
     if (
@@ -58,6 +78,19 @@ export async function POST(request: Request) {
         {
           success: false,
           error: "Please enter a valid email address.",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (
+      payload.form_type === "homepage" &&
+      !payload.products_to_list
+    ) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Please enter the products you want to list.",
         },
         { status: 400 }
       );
@@ -91,7 +124,9 @@ export async function POST(request: Request) {
       );
     }
 
-    const isSupplier = payload.form_type === "supplier";
+    const isSupplier =
+      payload.form_type === "supplier" ||
+      payload.form_type === "homepage";
 
     const adminEmailResult = await sendAdminEmail({
       subject: isSupplier

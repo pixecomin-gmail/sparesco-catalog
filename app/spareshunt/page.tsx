@@ -178,7 +178,7 @@ export default function SparesHuntPage() {
       }
 
       setSuccessMessage(
-        "Request submitted successfully. Our team will contact you soon."
+        "Our team will contact you soon."
       );
       showNotification();
 

@@ -2,7 +2,6 @@ import { Resend } from "resend";
 
 const SITE_URL = "https://sparesco.com";
 const LOGO_URL = "https://sparesco.com/logo.png";
-const LOGO_CONTENT_ID = "sparesco-logo";
 
 type ProductEmailItem = {
   title?: string;
@@ -521,7 +520,7 @@ function emailTemplate({
                       "
                     >
                       <img
-                        src="cid:${LOGO_CONTENT_ID}"
+                        src="${LOGO_URL}"
                         alt="Sparesco"
                         width="90"
                         style="
@@ -727,13 +726,6 @@ export async function sendAdminEmail({
       "A new submission has been received from the Sparesco website.",
     data,
   }),
-  attachments: [
-    {
-      path: LOGO_URL,
-      filename: "sparesco-logo.png",
-      contentId: LOGO_CONTENT_ID,
-    },
-  ],
   replyTo,
 });
 
