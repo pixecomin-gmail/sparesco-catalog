@@ -181,43 +181,68 @@ function emailTemplate({
                       border-radius:12px 12px 0 0;
                     "
                   >
-                    <a
-                      href="${SITE_URL}"
-                      target="_blank"
-                      style="
-                        display:inline-block;
-                        text-decoration:none;
-                      "
-                    >
-                      <img
-                        src="${escapeHtml(logoUrl)}"
-                        alt="Sparesco"
-                        width="180"
+              
+                  <table
+                    role="presentation"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    style="
+                      margin:0 auto;
+                      border-collapse:collapse;
+                    "
+                  >
+                    <tr>
+                      <td
                         style="
-                          display:block;
-                          width:180px;
-                          max-width:100%;
-                          height:auto;
-                          margin:0 auto 16px;
-                          border:0;
+                          padding:0 16px 0 0;
+                          vertical-align:middle;
                         "
-                      />
-                    </a>
+                      >
+                        <a
+                          href="${SITE_URL}"
+                          target="_blank"
+                          style="
+                            display:block;
+                            text-decoration:none;
+                          "
+                        >
+                          <img
+                            src="${escapeHtml(logoUrl)}"
+                            alt="Sparesco"
+                            width="72"
+                            style="
+                              display:block;
+                              width:72px;
+                              height:auto;
+                              border:0;
+                            "
+                          />
+                        </a>
+                      </td>
 
-                    <h1
-                      class="email-title"
-                      style="
-                        margin:0;
-                        color:#ffffff;
-                        font-family:Arial,sans-serif;
-                        font-size:24px;
-                        font-weight:700;
-                        line-height:1.3;
-                        text-align:center;
-                      "
-                    >
-                      ${escapeHtml(title)}
-                    </h1>
+                      <td
+                        style="
+                          vertical-align:middle;
+                        "
+                      >
+                        <h1
+                          class="email-title"
+                          style="
+                            margin:0;
+                            color:#ffffff;
+                            font-family:Arial,sans-serif;
+                            font-size:24px;
+                            font-weight:700;
+                            line-height:1.3;
+                            text-align:left;
+                          "
+                        >
+                          ${escapeHtml(title)}
+                        </h1>
+                      </td>
+                    </tr>
+                  </table>
                   </td>
                 </tr>
 
@@ -268,7 +293,7 @@ function emailTemplate({
                   <td
                     align="center"
                     style="
-                      padding:22px 20px;
+                      padding:18px 20px 22px;
                       background-color:#ffffff;
                       border-right:1px solid #e4e7ec;
                       border-bottom:1px solid #e4e7ec;
@@ -276,19 +301,6 @@ function emailTemplate({
                       border-radius:0 0 12px 12px;
                     "
                   >
-                    <p
-                      style="
-                        margin:0 0 8px;
-                        color:#667085;
-                        font-family:Arial,sans-serif;
-                        font-size:13px;
-                        line-height:1.5;
-                        text-align:center;
-                      "
-                    >
-                      Heavy equipment spare parts marketplace
-                    </p>
-
                     <a
                       href="${SITE_URL}"
                       target="_blank"
@@ -301,21 +313,8 @@ function emailTemplate({
                         text-decoration:none;
                       "
                     >
-                      Visit sparesco.com
+                      sparesco.com
                     </a>
-
-                    <p
-                      style="
-                        margin:12px 0 0;
-                        color:#98a2b3;
-                        font-family:Arial,sans-serif;
-                        font-size:11px;
-                        line-height:1.5;
-                        text-align:center;
-                      "
-                    >
-                      Sparesco Website Notification
-                    </p>
                   </td>
                 </tr>
               </table>

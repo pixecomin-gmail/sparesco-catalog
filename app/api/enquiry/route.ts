@@ -45,20 +45,38 @@ export async function POST(request: Request) {
       products: itemsSummary,
     };
 
-    await sendAdminEmail({
-      subject: "Product Enquiry - Sparesco",
-      title: "Product Enquiry",
-      data: emailData,
-    });
+   const [adminEmailResult, customerEmailResult] =
+    await Promise.allSettled([
+      sendAdminEmail({
+        subject: "Product Enquiry - Sparesco",
+        title: "Product Enquiry",
+        data: emailData,
+      }),
 
-    await sendUserEmail({
-      to: data.email,
-      subject: "Product Enquiry Received - Sparesco",
-      title: "Product Enquiry Received",
-      data: emailData,
-    });
+      sendUserEmail({
+        to: data.email,
+        subject: "Product Enquiry Received - Sparesco",
+        title: "Product Enquiry Received",
+        data: emailData,
+      }),
+    ]);
 
-    return NextResponse.json({ success: true });
+  console.log("Admin Email:", adminEmailResult);
+  console.log("Customer Email:", customerEmailResult);
+
+  if (adminEmailResult.status === "rejected") {
+    console.error("Admin email error:", adminEmailResult.reason);
+  }
+
+  if (customerEmailResult.status === "rejected") {
+    console.error("Customer email error:", customerEmailResult.reason);
+  }
+
+  return NextResponse.json({
+    success: true,
+    adminEmail: adminEmailResult.status,
+    customerEmail: customerEmailResult.status,
+  });
   } catch (error) {
     return NextResponse.json(
       {
