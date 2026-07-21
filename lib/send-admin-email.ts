@@ -510,46 +510,51 @@ function emailTemplate({
                       border-radius:12px 12px 0 0;
                     "
                   >
-                    <a
-                      href="${SITE_URL}"
-                      target="_blank"
-                      style="
-                        display:inline-block;
-                        margin:0 0 12px;
-                        text-decoration:none;
-                      "
+                    <table
+                      role="presentation"
+                      align="center"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
                     >
-                      <img
-                        src="${LOGO_URL}"
-                        alt="Sparesco"
-                        width="90"
-                        style="
-                          display:block;
-                          width:90px;
-                          max-width:100%;
-                          height:auto;
-                          margin:0 auto;
-                          border:0;
-                          outline:none;
-                          text-decoration:none;
-                        "
-                      />
-                    </a>
+                      <tr>
+                        <td style="padding-right:12px;">
+                          <a
+                            href="${SITE_URL}"
+                            target="_blank"
+                            style="text-decoration:none;"
+                          >
+                            <img
+                              src="${LOGO_URL}"
+                              alt="Sparesco"
+                              width="36"
+                              style="
+                                display:block;
+                                width:36px;
+                                height:auto;
+                                border:0;
+                              "
+                            />
+                          </a>
+                        </td>
 
-                    <h1
-                      class="email-title"
-                      style="
-                        margin:0;
-                        color:#d9f0f3;
-                        font-family:Arial,sans-serif;
-                        font-size:23px;
-                        font-weight:600;
-                        line-height:1.35;
-                        text-align:center;
-                      "
-                    >
-                      ${escapeHtml(title)}
-                    </h1>
+                        <td valign="middle">
+                          <h1
+                            class="email-title"
+                            style="
+                              margin:0;
+                              color:#d9f0f3;
+                              font-family:Arial,sans-serif;
+                              font-size:24px;
+                              font-weight:700;
+                              line-height:1.2;
+                            "
+                          >
+                            ${escapeHtml(title)}
+                          </h1>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
 
@@ -629,20 +634,34 @@ function emailTemplate({
                       border-radius:0 0 12px 12px;
                     "
                   >
-                    <a
-                      href="${SITE_URL}"
-                      target="_blank"
-                      style="
-                        color:#2a8392;
-                        font-family:Arial,sans-serif;
-                        font-size:14px;
-                        font-weight:700;
-                        line-height:1.5;
-                        text-decoration:none;
-                      "
+                    <table
+                      role="presentation"
+                      align="center"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      style="margin:0 auto;"
                     >
-                      sparesco.com
-                    </a>
+                      <tr>
+                        <td align="center">
+                          <a
+                            href="${SITE_URL}"
+                            target="_blank"
+                            style="
+                              display:inline-block;
+                              color:#2a8392;
+                              font-family:Arial,sans-serif;
+                              font-size:14px;
+                              font-weight:700;
+                              line-height:1.5;
+                              text-decoration:none;
+                            "
+                          >
+                            sparesco.com
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
