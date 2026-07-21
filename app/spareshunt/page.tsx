@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -14,6 +14,16 @@ export default function SparesHuntPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const notificationRef = useRef<HTMLDivElement | null>(null);
+
+  const showNotification = () => {
+    window.setTimeout(() => {
+      notificationRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }, 50);
+  };
 
   const [formValues, setFormValues] = useState({
     machineCategory: "",
@@ -50,16 +60,19 @@ export default function SparesHuntPage() {
 
     if (step === 1 && !formValues.machineCategory.trim()) {
       setErrorMessage("Machine category is required.");
+      showNotification();
       return;
     }
 
     if (step === 2 && !formValues.partNumber.trim()) {
       setErrorMessage("Part number is required.");
+      showNotification();
       return;
     }
 
     if (step === 2 && !formValues.quantityRequired.trim()) {
       setErrorMessage("Quantity required is required.");
+      showNotification();
       return;
     }
 
@@ -75,48 +88,56 @@ export default function SparesHuntPage() {
     if (!formValues.machineCategory.trim()) {
       setErrorMessage("Machine category is required.");
       setStep(1);
+      showNotification();
       return;
     }
 
     if (!formValues.partNumber.trim()) {
       setErrorMessage("Part number is required.");
       setStep(2);
+      showNotification();
       return;
     }
 
     if (!formValues.quantityRequired.trim()) {
       setErrorMessage("Quantity required is required.");
       setStep(2);
+      showNotification();
       return;
     }
 
     if (!formValues.name.trim()) {
       setErrorMessage("Name is required.");
       setStep(3);
+      showNotification();
       return;
     }
 
     if (!phone) {
       setErrorMessage("Phone number is required.");
       setStep(3);
+      showNotification();
       return;
     }
 
     if (!isValidPhoneNumber(phone)) {
       setErrorMessage("Please enter a valid phone number.");
       setStep(3);
+      showNotification();
       return;
     }
 
     if (!formValues.email.trim()) {
       setErrorMessage("Email is required.");
       setStep(3);
+      showNotification();
       return;
     }
 
     if (photo && photo.size > 2 * 1024 * 1024) {
       setErrorMessage("Photo size must be less than 2MB.");
       setStep(2);
+      showNotification();
       return;
     }
 
@@ -158,6 +179,7 @@ export default function SparesHuntPage() {
       setSuccessMessage(
         "Request submitted successfully. Our team will contact you soon."
       );
+      showNotification();
 
       setFormValues({
         machineCategory: "",
@@ -189,6 +211,7 @@ export default function SparesHuntPage() {
           ? error.message
           : "Unable to submit request. Please try again."
       );
+      showNotification();
     } finally {
       setIsSubmitting(false);
     }
@@ -518,13 +541,27 @@ export default function SparesHuntPage() {
               )}
             </div>
 
-            {successMessage ? (
-              <p className="hunt-success-message">{successMessage}</p>
-            ) : null}
+            {(successMessage || errorMessage) && (
+              <div ref={notificationRef} className="hunt-notification-wrap">
+                {successMessage ? (
+                  <div
+                    className="contact-form-notification contact-form-notification-success"
+                    role="status"
+                  >
+                    {successMessage}
+                  </div>
+                ) : null}
 
-            {errorMessage ? (
-              <p className="hunt-error-message">{errorMessage}</p>
-            ) : null}
+                {errorMessage ? (
+                  <div
+                    className="contact-form-notification contact-form-notification-error"
+                    role="alert"
+                  >
+                    {errorMessage}
+                  </div>
+                ) : null}
+              </div>
+            )}
 
             <div className="hunt-form-actions">
               <button

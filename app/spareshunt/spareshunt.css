@@ -419,3 +419,13 @@
 .hunt-error-message {
   color: #b42318;
 }
+
+.hunt-notification-wrap {
+  margin: 18px 28px 0;
+}
+
+@media (max-width: 600px) {
+  .hunt-notification-wrap {
+    margin: 16px 18px 0;
+  }
+}
