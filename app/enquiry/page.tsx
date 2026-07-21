@@ -23,11 +23,6 @@ export default function EnquiryPage() {
     setSuccessMessage("");
     setErrorMessage("");
 
-    if (!hasItems) {
-      setErrorMessage("Please add at least one product to enquiry.");
-      return;
-    }
-
     const formData = new FormData(form);
 
     const name = String(formData.get("name") || "").trim();
@@ -212,11 +207,17 @@ export default function EnquiryPage() {
               </label>
 
               {successMessage ? (
-                <p className="form-success-message">{successMessage}</p>
+                <div className="contact-form-notification contact-form-notification-success">
+                  <strong>Enquiry submitted successfully</strong>
+                  <p>{successMessage}</p>
+                </div>
               ) : null}
 
               {errorMessage ? (
-                <p className="form-error-message">{errorMessage}</p>
+                <div className="contact-form-notification contact-form-notification-error">
+                  <strong>Unable to submit enquiry</strong>
+                  <p>{errorMessage}</p>
+                </div>
               ) : null}
 
               <button
