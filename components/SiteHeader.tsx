@@ -262,7 +262,12 @@ export default function SiteHeader() {
                           }
                         >
                           {group.items.map((item) => (
-                            <Link href={`/collections/${item.handle}`} key={item.handle}>
+                            <Link
+                              key={item.handle}
+                              href={`/collections/${item.handle}`}
+                              prefetch={false}
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
                               <span>{item.label}</span>
                             
                             </Link>
@@ -309,6 +314,7 @@ export default function SiteHeader() {
                       <Link
                         href={`/products/${product.handle}`}
                         key={`${product.handle}-${product.collection}-${product.partNumber}-${index}`}
+                        prefetch={false}
                         onClick={() => setQuery("")}
                       >
                         <strong>
@@ -432,6 +438,7 @@ export default function SiteHeader() {
                     <Link
                       key={item.handle}
                       href={`/collections/${item.handle}`}
+                      prefetch={false}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}

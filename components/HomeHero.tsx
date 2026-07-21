@@ -74,6 +74,7 @@ export default function HomeHero() {
                     href={`/products/${product.handle}`}
                     className="hero-result-card"
                     key={`${product.handle}-${product.collection}-${product.partNumber}-${index}`}
+                    prefetch={false}
                   >
                     <div className="hero-result-image">
                       {product.image && (
