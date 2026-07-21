@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { EnquiryProvider } from "@/context/EnquiryContext";
 import LayoutShell from "@/components/LayoutShell";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
 
@@ -110,6 +111,8 @@ export default function RootLayout({
         <EnquiryProvider>
           <LayoutShell>{children}</LayoutShell>
         </EnquiryProvider>
+
+        <GoogleAnalytics gaId="G-6T2ZWVY6G3" />
       </body>
     </html>
   );
