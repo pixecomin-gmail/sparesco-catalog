@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -8,6 +8,7 @@ import "../contact/contact.css";
 import "./sellwithus.css";
 
 export default function BecomeSupplierPage() {
+  const formTopRef = useRef<HTMLDivElement>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -28,6 +29,8 @@ export default function BecomeSupplierPage() {
 
   async function submitForm(e: React.FormEvent) {
     e.preventDefault();
+    setSuccessMessage("");
+    setErrorMessage("");
 
     const newErrors: Record<string, string> = {};
 
@@ -56,11 +59,11 @@ export default function BecomeSupplierPage() {
         },
         body: JSON.stringify({
           formType: "supplier",
-          name: form.name,
-          email: form.email,
+          name: form.name.trim(),
+          email: form.email.trim(),
           phone,
           role: form.role,
-          message: form.message,
+          message: form.message.trim(),
         }),
       });
 
@@ -83,6 +86,15 @@ export default function BecomeSupplierPage() {
       });
 
       setPhone("");
+      setErrors({});
+
+      window.setTimeout(() => {
+        formTopRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+
     } catch (error) {
       setErrorMessage(
         error instanceof Error
@@ -90,6 +102,12 @@ export default function BecomeSupplierPage() {
           : "Unable to submit supplier application."
       );
       setSuccessMessage("");
+      window.setTimeout(() => {
+        formTopRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
     } finally {
       setIsSubmitting(false);
     }
@@ -261,7 +279,28 @@ export default function BecomeSupplierPage() {
             </p>
           </div>
 
-          <form className="supplier-form" onSubmit={submitForm}>
+          <div ref={formTopRef}>
+            {successMessage ? (
+              <div
+                className="contact-form-notification contact-form-notification-success"
+                role="status"
+              >
+                <strong>Form submitted</strong>
+                <p>{successMessage}</p>
+              </div>
+            ) : null}
+
+            {errorMessage ? (
+              <div
+                className="contact-form-notification contact-form-notification-error"
+                role="alert"
+              >
+                <strong>Submission failed</strong>
+                <p>{errorMessage}</p>
+              </div>
+            ) : null}
+
+            <form className="supplier-form" onSubmit={submitForm}>
             <div className="supplier-form-grid">
               <label>
                 <input
@@ -333,18 +372,11 @@ export default function BecomeSupplierPage() {
               onChange={(e) => updateField("message", e.target.value)}
             />
 
-            {successMessage ? (
-              <p className="form-success-message">{successMessage}</p>
-            ) : null}
-
-            {errorMessage ? (
-              <p className="form-error-message">{errorMessage}</p>
-            ) : null}
-
             <button type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Submitting..." : "Submit"}
             </button>
           </form>
+        </div>
         </div>
       </section>
     </main>
