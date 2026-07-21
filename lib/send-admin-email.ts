@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 
 const SITE_URL = "https://sparesco.com";
+const LOGO_URL = "https://sparesco.com/logo.png";
+const LOGO_CONTENT_ID = "sparesco-logo";
 
 type ProductEmailItem = {
   title?: string;
@@ -151,7 +153,7 @@ function buildProductsTable(products: ProductEmailItem[]) {
             href="${productUrl}"
             target="_blank"
             style="
-              color:#2a8392;
+              color:#173f4c;
               font-weight:700;
               text-decoration:none;
             "
@@ -168,7 +170,7 @@ function buildProductsTable(products: ProductEmailItem[]) {
             style="
               padding:13px 10px;
               border-bottom:1px solid #e5e7eb;
-              color:#667085;
+              color:#173f4c;
               font-family:Arial,sans-serif;
               font-size:13px;
               line-height:1.5;
@@ -201,7 +203,7 @@ function buildProductsTable(products: ProductEmailItem[]) {
             style="
               padding:13px 10px;
               border-bottom:1px solid #e5e7eb;
-              color:#475467;
+              color:#173f4c;
               font-family:Arial,sans-serif;
               font-size:13px;
               line-height:1.5;
@@ -218,7 +220,7 @@ function buildProductsTable(products: ProductEmailItem[]) {
             style="
               padding:13px 10px;
               border-bottom:1px solid #e5e7eb;
-              color:#475467;
+              color:#173f4c;
               font-family:Arial,sans-serif;
               font-size:13px;
               line-height:1.5;
@@ -444,10 +446,6 @@ function emailTemplate({
               padding:24px 18px !important;
             }
 
-            .brand-name {
-              font-size:25px !important;
-            }
-
             .email-title {
               font-size:20px !important;
             }
@@ -518,18 +516,25 @@ function emailTemplate({
                       target="_blank"
                       style="
                         display:inline-block;
-                        margin:0 0 10px;
-                        color:#ffffff;
-                        font-family:Arial,sans-serif;
-                        font-size:30px;
-                        font-weight:800;
-                        letter-spacing:2px;
-                        line-height:1.2;
+                        margin:0 0 12px;
                         text-decoration:none;
                       "
-                      class="brand-name"
                     >
-                      SPARESCO
+                      <img
+                        src="cid:${LOGO_CONTENT_ID}"
+                        alt="Sparesco"
+                        width="90"
+                        style="
+                          display:block;
+                          width:90px;
+                          max-width:100%;
+                          height:auto;
+                          margin:0 auto;
+                          border:0;
+                          outline:none;
+                          text-decoration:none;
+                        "
+                      />
                     </a>
 
                     <h1
@@ -713,17 +718,24 @@ export async function sendAdminEmail({
   });
 
   const result = await resend.emails.send({
-    from,
-    to: recipients,
-    subject,
-    html: emailTemplate({
-      title,
-      intro:
-        "A new submission has been received from the Sparesco website.",
-      data,
-    }),
-    replyTo,
-  });
+  from,
+  to: recipients,
+  subject,
+  html: emailTemplate({
+    title,
+    intro:
+      "A new submission has been received from the Sparesco website.",
+    data,
+  }),
+  attachments: [
+    {
+      path: LOGO_URL,
+      filename: "sparesco-logo.png",
+      contentId: LOGO_CONTENT_ID,
+    },
+  ],
+  replyTo,
+});
 
   if (result.error) {
     console.error(
@@ -789,6 +801,13 @@ export async function sendUserEmail({
       data,
       excludeKeys: ["email", "form_type"],
     }),
+    attachments: [
+      {
+        path: LOGO_URL,
+        filename: "sparesco-logo.png",
+        contentId: LOGO_CONTENT_ID,
+      },
+    ],
   });
 
   if (result.error) {
