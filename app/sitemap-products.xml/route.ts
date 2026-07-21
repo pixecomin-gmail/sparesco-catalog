@@ -70,7 +70,7 @@ export async function GET(request: Request) {
 
   const products =
     (await getJson<ProductIndexItem[]>(
-      `${base}/catalog/catalog-pages/${file}.json`
+      `${base}/catalog/indexes/catalog-pages/${file}.json`
     )) || [];
 
   const urls: string[] = [];
