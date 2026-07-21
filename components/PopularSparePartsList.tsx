@@ -96,7 +96,11 @@ export default function PopularSparePartsList() {
 
             return (
               <article className="popular-part-row" key={product.handle}>
-                <Link href={`/products/${product.handle}`} className="popular-part-main">
+                <Link
+                  href={`/products/${product.handle}`}
+                  className="popular-part-main"
+                  prefetch={false}
+                >
                   <div className="popular-part-image">
                     {image && !imageBroken ? (
                       <img

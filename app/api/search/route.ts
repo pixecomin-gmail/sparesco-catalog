@@ -54,7 +54,7 @@ export async function GET(request: Request) {
 
     const shard = query.slice(0, 2);
     const base = r2Base.replace(/\/$/, "");
-    const url = `${base}/catalog/search-v2/${shard}.json`;
+    const url = `${base}/catalog/search/${shard}.json`;
 
     const response = await fetch(url, { cache: "force-cache" });
 

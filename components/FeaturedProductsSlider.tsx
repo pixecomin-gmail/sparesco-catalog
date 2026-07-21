@@ -132,6 +132,7 @@ export default function FeaturedProductsSlider() {
                 <Link
                   href={`/products/${product.handle}`}
                   className="parts-product-image"
+                  prefetch={false}
                 >
                   {image ? (
                     <img
@@ -162,7 +163,12 @@ export default function FeaturedProductsSlider() {
                   </p>
 
                   <h3>
-                    <Link href={`/products/${product.handle}`}>{title}</Link>
+                    <Link
+                      href={`/products/${product.handle}`}
+                      prefetch={false}
+                    >
+                      {title}
+                    </Link>
                   </h3>
 
                   <p className="parts-product-meta">
