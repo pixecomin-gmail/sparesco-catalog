@@ -288,3 +288,39 @@
   font-weight: 700;
   margin-top: 16px;
 }
+
+.contact-form-column {
+  min-width: 0;
+  scroll-margin-top: 110px;
+}
+
+.contact-form-notification {
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.contact-form-notification strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.contact-form-notification p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contact-form-notification-success {
+  color: #14532d;
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.contact-form-notification-error {
+  color: #991b1b;
+  background: #fef2f2;
+  border-color: #fca5a5;
+}

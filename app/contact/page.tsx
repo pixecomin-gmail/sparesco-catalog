@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import "./contact.css";
 
 export default function ContactPage() {
+  const formTopRef = useRef<HTMLDivElement>(null);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -28,18 +30,30 @@ export default function ContactPage() {
   async function submitForm(e: React.FormEvent) {
     e.preventDefault();
 
+    setSuccessMessage("");
+    setErrorMessage("");
+
     const newErrors: Record<string, string> = {};
 
-    if (!form.name.trim()) newErrors.name = "Name is required.";
-    if (!form.email.trim()) newErrors.email = "Email is required.";
-    if (!/^\S+@\S+\.\S+$/.test(form.email)) {
+    if (!form.name.trim()) {
+      newErrors.name = "Name is required.";
+    }
+
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required.";
+    } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
       newErrors.email = "Enter a valid email.";
     }
-    if (!phone) newErrors.phone = "Phone number is required.";
-    if (phone && !isValidPhoneNumber(phone)) {
+
+    if (!phone) {
+      newErrors.phone = "Phone number is required.";
+    } else if (!isValidPhoneNumber(phone)) {
       newErrors.phone = "Enter a valid phone number.";
     }
-    if (!form.role) newErrors.role = "Please select buyer or seller.";
+
+    if (!form.role) {
+      newErrors.role = "Please select buyer or seller.";
+    }
 
     setErrors(newErrors);
 
@@ -55,25 +69,25 @@ export default function ContactPage() {
         },
         body: JSON.stringify({
           formType: "contact",
-          name: form.name,
-          email: form.email,
+          name: form.name.trim(),
+          email: form.email.trim(),
           phone,
           role: form.role,
-          message: form.message,
+          message: form.message.trim(),
         }),
       });
 
       const result = await response.json();
 
       if (!response.ok || !result.success) {
-        throw new Error(result.error || "Unable to submit enquiry.");
+        throw new Error(
+          result.error || "Unable to submit your contact request."
+        );
       }
 
       setSuccessMessage(
-        "Enquiry submitted successfully. Our team will contact you soon."
+        "Thank you! Your contact request has been submitted successfully. Our team will contact you soon."
       );
-
-      setErrorMessage("");
 
       setForm({
         name: "",
@@ -83,14 +97,27 @@ export default function ContactPage() {
       });
 
       setPhone("");
+      setErrors({});
+
+      window.setTimeout(() => {
+        formTopRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
     } catch (error) {
       setErrorMessage(
         error instanceof Error
           ? error.message
-          : "Unable to submit enquiry."
+          : "Unable to submit your contact request."
       );
 
-      setSuccessMessage("");
+      window.setTimeout(() => {
+        formTopRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
     } finally {
       setIsSubmitting(false);
     }
@@ -135,89 +162,104 @@ export default function ContactPage() {
             </div>
           </aside>
 
-          <form className="contact-form" onSubmit={submitForm}>
-            <div className="contact-grid">
-              <label>
-                <input
-                  type="text"
-                  placeholder="Name*"
-                  value={form.name}
-                  onChange={(e) => updateField("name", e.target.value)}
-                />
-                {errors.name && <small>{errors.name}</small>}
-              </label>
-
-              <label>
-                <input
-                  type="email"
-                  placeholder="Email*"
-                  value={form.email}
-                  onChange={(e) => updateField("email", e.target.value)}
-                />
-                {errors.email && <small>{errors.email}</small>}
-              </label>
-
-              <label className="contact-phone-field">
-                <PhoneInput
-                  international
-                  defaultCountry="IN"
-                  value={phone}
-                  onChange={(value) => {
-                    setPhone(value);
-                    setErrors((prev) => ({ ...prev, phone: "" }));
-                  }}
-                  placeholder="Phone number*"
-                  className="contact-phone-input"
-                />
-                {errors.phone && <small>{errors.phone}</small>}
-              </label>
-            </div>
-
-            <div className="contact-role">
-              <span>I am a*</span>
-
-              <label>
-                <input
-                  type="radio"
-                  name="role"
-                  value="Buyer"
-                  checked={form.role === "Buyer"}
-                  onChange={(e) => updateField("role", e.target.value)}
-                />
-                Buyer
-              </label>
-
-              <label>
-                <input
-                  type="radio"
-                  name="role"
-                  value="Seller"
-                  checked={form.role === "Seller"}
-                  onChange={(e) => updateField("role", e.target.value)}
-                />
-                Seller
-              </label>
-
-              {errors.role && <small>{errors.role}</small>}
-            </div>
-
-            <textarea
-              placeholder="Message"
-              value={form.message}
-              onChange={(e) => updateField("message", e.target.value)}
-            />
-
+          <div className="contact-form-column" ref={formTopRef}>
             {successMessage ? (
-              <p className="form-success-message">{successMessage}</p>
+              <div
+                className="contact-form-notification contact-form-notification-success"
+                role="status"
+              >
+                <strong>Form submitted</strong>
+                <p>{successMessage}</p>
+              </div>
             ) : null}
 
             {errorMessage ? (
-              <p className="form-error-message">{errorMessage}</p>
+              <div
+                className="contact-form-notification contact-form-notification-error"
+                role="alert"
+              >
+                <strong>Submission failed</strong>
+                <p>{errorMessage}</p>
+              </div>
             ) : null}
-            <button type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Submitting..." : "Submit"}
-            </button>
-          </form>
+
+            <form className="contact-form" onSubmit={submitForm}>
+              <div className="contact-grid">
+                <label>
+                  <input
+                    type="text"
+                    placeholder="Name*"
+                    value={form.name}
+                    onChange={(e) => updateField("name", e.target.value)}
+                  />
+                  {errors.name && <small>{errors.name}</small>}
+                </label>
+
+                <label>
+                  <input
+                    type="email"
+                    placeholder="Email*"
+                    value={form.email}
+                    onChange={(e) => updateField("email", e.target.value)}
+                  />
+                  {errors.email && <small>{errors.email}</small>}
+                </label>
+
+                <label className="contact-phone-field">
+                  <PhoneInput
+                    international
+                    defaultCountry="IN"
+                    value={phone}
+                    onChange={(value) => {
+                      setPhone(value);
+                      setErrors((prev) => ({ ...prev, phone: "" }));
+                    }}
+                    placeholder="Phone number*"
+                    className="contact-phone-input"
+                  />
+                  {errors.phone && <small>{errors.phone}</small>}
+                </label>
+              </div>
+
+              <div className="contact-role">
+                <span>I am a*</span>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="role"
+                    value="Buyer"
+                    checked={form.role === "Buyer"}
+                    onChange={(e) => updateField("role", e.target.value)}
+                  />
+                  Buyer
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="role"
+                    value="Seller"
+                    checked={form.role === "Seller"}
+                    onChange={(e) => updateField("role", e.target.value)}
+                  />
+                  Seller
+                </label>
+
+                {errors.role && <small>{errors.role}</small>}
+              </div>
+
+              <textarea
+                placeholder="Message"
+                value={form.message}
+                onChange={(e) => updateField("message", e.target.value)}
+              />
+
+              <button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </button>
+            </form>
+          </div>
         </section>
       </div>
     </main>
