@@ -542,14 +542,15 @@ export default function SparesHuntPage() {
               )}
             </div>
 
-            {(successMessage || errorMessage) && (
+           {(successMessage || errorMessage) && (
               <div ref={notificationRef} className="hunt-notification-wrap">
                 {successMessage ? (
                   <div
                     className="contact-form-notification contact-form-notification-success"
                     role="status"
                   >
-                    {successMessage}
+                    <strong>Request submitted successfully</strong>
+                    <p>{successMessage}</p>
                   </div>
                 ) : null}
 
@@ -558,7 +559,8 @@ export default function SparesHuntPage() {
                     className="contact-form-notification contact-form-notification-error"
                     role="alert"
                   >
-                    {errorMessage}
+                    <strong>Please check the form</strong>
+                    <p>{errorMessage}</p>
                   </div>
                 ) : null}
               </div>
