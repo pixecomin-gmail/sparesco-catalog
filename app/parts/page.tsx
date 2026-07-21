@@ -414,7 +414,22 @@ function PartsContent() {
 
 export default function PartsPage() {
   return (
-    <Suspense fallback={null}>
+    <Suspense
+      fallback={
+        <main>
+          <section className="section parts-section parts-page-section">
+            <div className="container">
+              <h1 className="page-title">Browse Spare Parts</h1>
+
+              <p className="page-intro">
+                Explore industrial spare parts by category, collection and
+                brand.
+              </p>
+            </div>
+          </section>
+        </main>
+      }
+    >
       <PartsContent />
     </Suspense>
   );
