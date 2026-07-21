@@ -4,6 +4,7 @@ import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import "../contact/contact.css";
 import "./spareshunt.css";
 
 export default function SparesHuntPage() {
