@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -10,10 +10,21 @@ export default function EnquiryPage() {
   const { items, increaseQty, decreaseQty, removeItem } = useEnquiry();
   const hasItems = items.length > 0;
 
+  const notificationRef = useRef<HTMLDivElement>(null);
+
   const [phone, setPhone] = useState<string | undefined>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+
+  function scrollToNotification() {
+    window.setTimeout(() => {
+      notificationRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 100);
+  }
 
   const submitEnquiry = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -32,11 +43,19 @@ export default function EnquiryPage() {
 
     if (!name || !company || !email || !phone) {
       setErrorMessage("Please fill all required fields.");
+      scrollToNotification();
+      return;
+    }
+
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+      setErrorMessage("Please enter a valid email address.");
+      scrollToNotification();
       return;
     }
 
     if (!isValidPhoneNumber(phone)) {
       setErrorMessage("Please enter a valid phone number.");
+      scrollToNotification();
       return;
     }
 
@@ -67,17 +86,21 @@ export default function EnquiryPage() {
       }
 
       setSuccessMessage(
-        "Enquiry submitted successfully. Our team will contact you soon."
+        "Your enquiry has been submitted successfully. Our team will contact you soon."
       );
 
       form.reset();
       setPhone("");
+
+      scrollToNotification();
     } catch (error) {
       setErrorMessage(
         error instanceof Error
           ? error.message
           : "Unable to submit enquiry. Please try again."
       );
+
+      scrollToNotification();
     } finally {
       setIsSubmitting(false);
     }
@@ -169,65 +192,93 @@ export default function EnquiryPage() {
               </div>
             )}
 
-            <form className="enquiry-form" onSubmit={submitEnquiry}>
-              <div className="form-row">
-                <label className="form-field">
-                  Name *
-                  <input name="name" placeholder="Your full name" />
-                </label>
-
-                <label className="form-field">
-                  Email *
-                  <input name="email" type="email" placeholder="Email address" />
-                </label>
-              </div>
-
-              <div className="form-row">
-                <label className="form-field">
-                  Company *
-                  <input name="company" placeholder="Company name" />
-                </label>
-
-                <label className="form-field">
-                  Phone *
-                  <PhoneInput
-                    international
-                    defaultCountry="IN"
-                    value={phone}
-                    onChange={setPhone}
-                    placeholder="Phone number"
-                    className="phone-input-row"
-                  />
-                </label>
-              </div>
-
-              <label className="form-field">
-                Message
-                <textarea name="message" placeholder="Additional message" />
-              </label>
-
+            <div
+              className="enquiry-form-column"
+              ref={notificationRef}
+              style={{ scrollMarginTop: "110px" }}
+            >
               {successMessage ? (
-                <div className="contact-form-notification contact-form-notification-success">
+                <div
+                  className="contact-form-notification contact-form-notification-success"
+                  role="status"
+                >
                   <strong>Enquiry submitted successfully</strong>
                   <p>{successMessage}</p>
                 </div>
               ) : null}
 
               {errorMessage ? (
-                <div className="contact-form-notification contact-form-notification-error">
+                <div
+                  className="contact-form-notification contact-form-notification-error"
+                  role="alert"
+                >
                   <strong>Unable to submit enquiry</strong>
                   <p>{errorMessage}</p>
                 </div>
               ) : null}
 
-              <button
-                type="submit"
-                className="primary-button"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Submitting..." : "Submit Enquiry"}
-              </button>
-            </form>
+              <form className="enquiry-form" onSubmit={submitEnquiry}>
+                <div className="form-row">
+                  <label className="form-field">
+                    Name *
+                    <input
+                      name="name"
+                      placeholder="Your full name"
+                      autoComplete="name"
+                    />
+                  </label>
+
+                  <label className="form-field">
+                    Email *
+                    <input
+                      name="email"
+                      type="email"
+                      placeholder="Email address"
+                      autoComplete="email"
+                    />
+                  </label>
+                </div>
+
+                <div className="form-row">
+                  <label className="form-field">
+                    Company *
+                    <input
+                      name="company"
+                      placeholder="Company name"
+                      autoComplete="organization"
+                    />
+                  </label>
+
+                  <label className="form-field">
+                    Phone *
+                    <PhoneInput
+                      international
+                      defaultCountry="IN"
+                      value={phone}
+                      onChange={setPhone}
+                      placeholder="Phone number"
+                      className="phone-input-row"
+                    />
+                  </label>
+                </div>
+
+                <label className="form-field">
+                  Message
+                  <textarea
+                    name="message"
+                    placeholder="Additional message"
+                  />
+                </label>
+
+                <button
+                  type="submit"
+                  className="primary-button"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Submitting..." : "Submit Enquiry"}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

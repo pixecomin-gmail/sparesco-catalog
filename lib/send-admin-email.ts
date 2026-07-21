@@ -1,7 +1,15 @@
 import { Resend } from "resend";
 
 const SITE_URL = "https://sparesco.com";
-const DEFAULT_LOGO_URL = "https://sparesco.com/logo.png";
+
+type ProductEmailItem = {
+  title?: string;
+  partNumber?: string;
+  vendor?: string;
+  quantity?: number;
+  price?: number | string;
+  handle?: string;
+};
 
 function escapeHtml(value: unknown) {
   return String(value ?? "")
@@ -18,7 +26,41 @@ function formatLabel(key: string) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function buildRows(
+function formatPrice(value: unknown) {
+  const price = Number(value);
+
+  if (!Number.isFinite(price) || price <= 0) {
+    return "Price on Request";
+  }
+
+  return `₹${price.toLocaleString("en-IN")}`;
+}
+
+function isProductArray(value: unknown): value is ProductEmailItem[] {
+  return (
+    Array.isArray(value) &&
+    value.every(
+      (item) =>
+        typeof item === "object" &&
+        item !== null &&
+        !Array.isArray(item)
+    )
+  );
+}
+
+function shouldDisplayValue(value: unknown) {
+  if (value === "" || value === null || value === undefined) {
+    return false;
+  }
+
+  if (Array.isArray(value) && value.length === 0) {
+    return false;
+  }
+
+  return true;
+}
+
+function buildDetailRows(
   data: Record<string, unknown>,
   excludeKeys: string[] = []
 ) {
@@ -26,23 +68,26 @@ function buildRows(
     .filter(([key, value]) => {
       return (
         !excludeKeys.includes(key) &&
-        value !== "" &&
-        value !== null &&
-        value !== undefined
+        key !== "products" &&
+        key !== "items" &&
+        shouldDisplayValue(value)
       );
     })
     .map(([key, value]) => {
-      const safeValue = escapeHtml(value).replaceAll("\n", "<br />");
+      const safeValue = Array.isArray(value)
+        ? value.map((entry) => escapeHtml(entry)).join("<br />")
+        : escapeHtml(value).replaceAll("\n", "<br />");
 
       return `
         <tr>
           <td
             class="field-label"
-            width="180"
+            width="170"
             style="
-              width:180px;
+              width:170px;
               padding:14px 16px;
               border-bottom:1px solid #e5e7eb;
+              background-color:#f9fafb;
               color:#667085;
               font-family:Arial,sans-serif;
               font-size:13px;
@@ -80,52 +125,343 @@ function buildRows(
     .join("");
 }
 
+function buildProductsTable(products: ProductEmailItem[]) {
+  if (products.length === 0) {
+    return "";
+  }
+
+  const productRows = products
+    .map((product, index) => {
+      const title = escapeHtml(
+        product.title || product.partNumber || `Product ${index + 1}`
+      );
+
+      const partNumber = escapeHtml(product.partNumber || "—");
+      const vendor = escapeHtml(product.vendor || "—");
+      const quantity = escapeHtml(product.quantity || 1);
+      const price = escapeHtml(formatPrice(product.price));
+
+      const productUrl = product.handle
+        ? `${SITE_URL}/products/${encodeURIComponent(product.handle)}`
+        : "";
+
+      const productTitle = productUrl
+        ? `
+          <a
+            href="${productUrl}"
+            target="_blank"
+            style="
+              color:#2a8392;
+              font-weight:700;
+              text-decoration:none;
+            "
+          >
+            ${title}
+          </a>
+        `
+        : title;
+
+      return `
+        <tr>
+          <td
+            class="product-cell product-number"
+            style="
+              padding:13px 10px;
+              border-bottom:1px solid #e5e7eb;
+              color:#667085;
+              font-family:Arial,sans-serif;
+              font-size:13px;
+              line-height:1.5;
+              text-align:center;
+              vertical-align:top;
+            "
+          >
+            ${index + 1}
+          </td>
+
+          <td
+            class="product-cell"
+            style="
+              padding:13px 10px;
+              border-bottom:1px solid #e5e7eb;
+              color:#173f4c;
+              font-family:Arial,sans-serif;
+              font-size:13px;
+              line-height:1.5;
+              text-align:left;
+              vertical-align:top;
+              overflow-wrap:anywhere;
+            "
+          >
+            ${productTitle}
+          </td>
+
+          <td
+            class="product-cell"
+            style="
+              padding:13px 10px;
+              border-bottom:1px solid #e5e7eb;
+              color:#475467;
+              font-family:Arial,sans-serif;
+              font-size:13px;
+              line-height:1.5;
+              text-align:left;
+              vertical-align:top;
+              overflow-wrap:anywhere;
+            "
+          >
+            ${partNumber}
+          </td>
+
+          <td
+            class="product-cell"
+            style="
+              padding:13px 10px;
+              border-bottom:1px solid #e5e7eb;
+              color:#475467;
+              font-family:Arial,sans-serif;
+              font-size:13px;
+              line-height:1.5;
+              text-align:left;
+              vertical-align:top;
+              overflow-wrap:anywhere;
+            "
+          >
+            ${vendor}
+          </td>
+
+          <td
+            class="product-cell"
+            style="
+              padding:13px 10px;
+              border-bottom:1px solid #e5e7eb;
+              color:#173f4c;
+              font-family:Arial,sans-serif;
+              font-size:13px;
+              font-weight:700;
+              line-height:1.5;
+              text-align:center;
+              vertical-align:top;
+            "
+          >
+            ${quantity}
+          </td>
+
+          <td
+            class="product-cell product-price"
+            style="
+              padding:13px 10px;
+              border-bottom:1px solid #e5e7eb;
+              color:#173f4c;
+              font-family:Arial,sans-serif;
+              font-size:13px;
+              font-weight:700;
+              line-height:1.5;
+              text-align:right;
+              vertical-align:top;
+              white-space:nowrap;
+            "
+          >
+            ${price}
+          </td>
+        </tr>
+      `;
+    })
+    .join("");
+
+  return `
+    <div style="margin-top:28px;">
+      <h2
+        style="
+          margin:0 0 12px;
+          color:#173f4c;
+          font-family:Arial,sans-serif;
+          font-size:18px;
+          font-weight:700;
+          line-height:1.4;
+        "
+      >
+        Selected Products
+      </h2>
+
+      <div
+        class="product-table-wrapper"
+        style="
+          width:100%;
+          overflow-x:auto;
+          border:1px solid #e5e7eb;
+          border-radius:8px;
+        "
+      >
+        <table
+          role="presentation"
+          width="100%"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          style="
+            width:100%;
+            min-width:600px;
+            border-collapse:collapse;
+          "
+        >
+          <thead>
+            <tr style="background-color:#f2f4f7;">
+              <th
+                width="42"
+                style="
+                  width:42px;
+                  padding:12px 8px;
+                  color:#475467;
+                  font-family:Arial,sans-serif;
+                  font-size:12px;
+                  font-weight:700;
+                  text-align:center;
+                "
+              >
+                #
+              </th>
+
+              <th
+                style="
+                  padding:12px 10px;
+                  color:#475467;
+                  font-family:Arial,sans-serif;
+                  font-size:12px;
+                  font-weight:700;
+                  text-align:left;
+                "
+              >
+                Product
+              </th>
+
+              <th
+                style="
+                  padding:12px 10px;
+                  color:#475467;
+                  font-family:Arial,sans-serif;
+                  font-size:12px;
+                  font-weight:700;
+                  text-align:left;
+                "
+              >
+                Part No.
+              </th>
+
+              <th
+                style="
+                  padding:12px 10px;
+                  color:#475467;
+                  font-family:Arial,sans-serif;
+                  font-size:12px;
+                  font-weight:700;
+                  text-align:left;
+                "
+              >
+                Brand
+              </th>
+
+              <th
+                width="50"
+                style="
+                  width:50px;
+                  padding:12px 8px;
+                  color:#475467;
+                  font-family:Arial,sans-serif;
+                  font-size:12px;
+                  font-weight:700;
+                  text-align:center;
+                "
+              >
+                Qty
+              </th>
+
+              <th
+                style="
+                  padding:12px 10px;
+                  color:#475467;
+                  font-family:Arial,sans-serif;
+                  font-size:12px;
+                  font-weight:700;
+                  text-align:right;
+                "
+              >
+                Price
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            ${productRows}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
 function emailTemplate({
   title,
   intro,
   data,
   excludeKeys = [],
+  customerEmail = false,
 }: {
   title: string;
   intro: string;
   data: Record<string, unknown>;
   excludeKeys?: string[];
+  customerEmail?: boolean;
 }) {
-  const logoUrl =
-    process.env.EMAIL_LOGO_URL || DEFAULT_LOGO_URL;
+  const productsValue = data.products ?? data.items;
+
+  const products = isProductArray(productsValue)
+    ? productsValue
+    : [];
+
+  const detailsRows = buildDetailRows(data, excludeKeys);
 
   return `
     <!doctype html>
     <html lang="en">
       <head>
         <meta charset="utf-8" />
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
 
         <style>
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width:600px) {
             .email-container {
-              width: 100% !important;
+              width:100% !important;
             }
 
             .email-padding {
-              padding: 16px !important;
+              padding:18px !important;
             }
 
-            .field-label {
-              width: 115px !important;
-              white-space:normal !important;
-              padding:12px !important;
+            .email-header {
+              padding:24px 18px !important;
             }
 
-            .field-value {
-              padding:12px !important;
+            .brand-name {
+              font-size:25px !important;
             }
 
             .email-title {
-              font-size:21px !important;
+              font-size:20px !important;
+            }
+
+            .field-label {
+              width:110px !important;
+              padding:12px 10px !important;
+              white-space:normal !important;
+            }
+
+            .field-value {
+              padding:12px 10px !important;
             }
           }
         </style>
@@ -154,10 +490,7 @@ function emailTemplate({
           "
         >
           <tr>
-            <td
-              align="center"
-              style="padding:28px 12px;"
-            >
+            <td align="center" style="padding:28px 12px;">
               <table
                 role="presentation"
                 class="email-container"
@@ -174,75 +507,47 @@ function emailTemplate({
               >
                 <tr>
                   <td
+                    class="email-header"
                     align="center"
                     style="
-                      padding:26px 24px 22px;
+                      padding:28px 24px 24px;
                       background-color:#173f4c;
                       border-radius:12px 12px 0 0;
                     "
                   >
-              
-                  <table
-                    role="presentation"
-                    cellpadding="0"
-                    cellspacing="0"
-                    border="0"
-                    style="
-                      margin:0 auto;
-                      border-collapse:collapse;
-                    "
-                  >
-                    <tr>
-                      <td
-                        style="
-                          padding:0 16px 0 0;
-                          vertical-align:middle;
-                        "
-                      >
-                        <a
-                          href="${SITE_URL}"
-                          target="_blank"
-                          style="
-                            display:block;
-                            text-decoration:none;
-                          "
-                        >
-                          <img
-                            src="${escapeHtml(logoUrl)}"
-                            alt="Sparesco"
-                            width="72"
-                            style="
-                              display:block;
-                              width:72px;
-                              height:auto;
-                              border:0;
-                            "
-                          />
-                        </a>
-                      </td>
+                    <a
+                      href="${SITE_URL}"
+                      target="_blank"
+                      style="
+                        display:inline-block;
+                        margin:0 0 10px;
+                        color:#ffffff;
+                        font-family:Arial,sans-serif;
+                        font-size:30px;
+                        font-weight:800;
+                        letter-spacing:2px;
+                        line-height:1.2;
+                        text-decoration:none;
+                      "
+                      class="brand-name"
+                    >
+                      SPARESCO
+                    </a>
 
-                      <td
-                        style="
-                          vertical-align:middle;
-                        "
-                      >
-                        <h1
-                          class="email-title"
-                          style="
-                            margin:0;
-                            color:#ffffff;
-                            font-family:Arial,sans-serif;
-                            font-size:24px;
-                            font-weight:700;
-                            line-height:1.3;
-                            text-align:left;
-                          "
-                        >
-                          ${escapeHtml(title)}
-                        </h1>
-                      </td>
-                    </tr>
-                  </table>
+                    <h1
+                      class="email-title"
+                      style="
+                        margin:0;
+                        color:#d9f0f3;
+                        font-family:Arial,sans-serif;
+                        font-size:23px;
+                        font-weight:600;
+                        line-height:1.35;
+                        text-align:center;
+                      "
+                    >
+                      ${escapeHtml(title)}
+                    </h1>
                   </td>
                 </tr>
 
@@ -258,7 +563,7 @@ function emailTemplate({
                   >
                     <p
                       style="
-                        margin:0 0 22px;
+                        margin:0 0 24px;
                         color:#475467;
                         font-family:Arial,sans-serif;
                         font-size:15px;
@@ -268,24 +573,78 @@ function emailTemplate({
                       ${escapeHtml(intro)}
                     </p>
 
-                    <table
-                      role="presentation"
-                      width="100%"
-                      cellpadding="0"
-                      cellspacing="0"
-                      border="0"
-                      style="
-                        width:100%;
-                        table-layout:fixed;
-                        border:1px solid #e5e7eb;
-                        border-radius:8px;
-                        border-collapse:separate;
-                        border-spacing:0;
-                        overflow:hidden;
-                      "
-                    >
-                      ${buildRows(data, excludeKeys)}
-                    </table>
+                    ${
+                      detailsRows
+                        ? `
+                          <h2
+                            style="
+                              margin:0 0 12px;
+                              color:#173f4c;
+                              font-family:Arial,sans-serif;
+                              font-size:18px;
+                              font-weight:700;
+                              line-height:1.4;
+                            "
+                          >
+                            Submission Details
+                          </h2>
+
+                          <table
+                            role="presentation"
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="
+                              width:100%;
+                              table-layout:fixed;
+                              border:1px solid #e5e7eb;
+                              border-radius:8px;
+                              border-collapse:separate;
+                              border-spacing:0;
+                              overflow:hidden;
+                            "
+                          >
+                            ${detailsRows}
+                          </table>
+                        `
+                        : ""
+                    }
+
+                    ${buildProductsTable(products)}
+
+                    ${
+                      customerEmail
+                        ? `
+                          <p
+                            style="
+                              margin:28px 0 0;
+                              color:#475467;
+                              font-family:Arial,sans-serif;
+                              font-size:14px;
+                              line-height:1.7;
+                            "
+                          >
+                            Our team will review your submission and contact you shortly.
+                          </p>
+                        `
+                        : `
+                          <p
+                            style="
+                              margin:28px 0 0;
+                              padding:14px 16px;
+                              background-color:#f0f8f9;
+                              border-left:4px solid #2a8392;
+                              color:#173f4c;
+                              font-family:Arial,sans-serif;
+                              font-size:14px;
+                              line-height:1.6;
+                            "
+                          >
+                            Reply directly to this email to contact the customer.
+                          </p>
+                        `
+                    }
                   </td>
                 </tr>
 
@@ -293,7 +652,7 @@ function emailTemplate({
                   <td
                     align="center"
                     style="
-                      padding:18px 20px 22px;
+                      padding:20px;
                       background-color:#ffffff;
                       border-right:1px solid #e4e7ec;
                       border-bottom:1px solid #e4e7ec;
@@ -301,6 +660,31 @@ function emailTemplate({
                       border-radius:0 0 12px 12px;
                     "
                   >
+                    <p
+                      style="
+                        margin:0 0 5px;
+                        color:#667085;
+                        font-family:Arial,sans-serif;
+                        font-size:13px;
+                        line-height:1.5;
+                      "
+                    >
+                      Thank you,
+                    </p>
+
+                    <p
+                      style="
+                        margin:0 0 8px;
+                        color:#173f4c;
+                        font-family:Arial,sans-serif;
+                        font-size:14px;
+                        font-weight:700;
+                        line-height:1.5;
+                      "
+                    >
+                      Sparesco Team
+                    </p>
+
                     <a
                       href="${SITE_URL}"
                       target="_blank"
@@ -332,7 +716,7 @@ function getEmailConfiguration() {
 
   const from =
     process.env.EMAIL_FROM ||
-    "Sparesco <support@sparesco.com>";
+    "Sparesco Support <support@sparesco.com>";
 
   if (!apiKey) {
     throw new Error(
@@ -356,11 +740,8 @@ export async function sendAdminEmail({
   title: string;
   data: Record<string, unknown>;
 }) {
-  const {
-    resend,
-    notifyEmails,
-    from,
-  } = getEmailConfiguration();
+  const { resend, notifyEmails, from } =
+    getEmailConfiguration();
 
   if (!notifyEmails) {
     throw new Error(
@@ -379,10 +760,16 @@ export async function sendAdminEmail({
     );
   }
 
+  const replyTo =
+    typeof data.email === "string" && data.email.trim()
+      ? data.email.trim()
+      : undefined;
+
   console.log("Sending admin email:", {
     from,
     recipients,
     subject,
+    replyTo,
   });
 
   const result = await resend.emails.send({
@@ -395,11 +782,7 @@ export async function sendAdminEmail({
         "A new submission has been received from the Sparesco website.",
       data,
     }),
-    replyTo:
-      typeof data.email === "string" &&
-      data.email.trim()
-        ? data.email.trim()
-        : undefined,
+    replyTo,
   });
 
   if (result.error) {
@@ -462,9 +845,10 @@ export async function sendUserEmail({
     html: emailTemplate({
       title,
       intro:
-        "We have received your enquiry. Our team will review it and contact you shortly. The details shared by you are listed below.",
+        "We have received your enquiry. The details shared by you are listed below.",
       data,
       excludeKeys: ["email", "form_type"],
+      customerEmail: true,
     }),
   });
 
@@ -482,13 +866,10 @@ export async function sendUserEmail({
     );
   }
 
-  console.log(
-    "Customer email accepted by Resend:",
-    {
-      id: result.data?.id,
-      recipient,
-    }
-  );
+  console.log("Customer email accepted by Resend:", {
+    id: result.data?.id,
+    recipient,
+  });
 
   return {
     success: true,
