@@ -1,22 +1,8 @@
 import { Resend } from "resend";
 
 const SITE_URL = "https://sparesco.com";
+const LOGO_URL = "https://sparesco.com/logo.png";
 const LOGO_CONTENT_ID = "sparesco-logo";
-const LOGO_BASE64 = process.env.EMAIL_LOGO_BASE64;
-
-function getLogoAttachment() {
-  if (!LOGO_BASE64) {
-    throw new Error(
-      "Missing EMAIL_LOGO_BASE64 environment variable."
-    );
-  }
-
-  return {
-    content: LOGO_BASE64,
-    filename: "sparesco-logo.png",
-    contentId: LOGO_CONTENT_ID,
-  };
-}
 
 type ProductEmailItem = {
   title?: string;
@@ -741,7 +727,13 @@ export async function sendAdminEmail({
       "A new submission has been received from the Sparesco website.",
     data,
   }),
-  attachments: [getLogoAttachment()],
+  attachments: [
+    {
+      path: LOGO_URL,
+      filename: "sparesco-logo.png",
+      contentId: LOGO_CONTENT_ID,
+    },
+  ],
   replyTo,
 });
 
@@ -809,7 +801,13 @@ export async function sendUserEmail({
       data,
       excludeKeys: ["email", "form_type"],
     }),
-    attachments: [getLogoAttachment()],
+    attachments: [
+      {
+        path: LOGO_URL,
+        filename: "sparesco-logo.png",
+        contentId: LOGO_CONTENT_ID,
+      },
+    ],
   });
 
   if (result.error) {
