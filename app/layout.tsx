@@ -29,9 +29,6 @@ export const metadata: Metadata = {
     "construction equipment parts",
     "mining equipment parts",
   ],
-  alternates: {
-    canonical: siteUrl,
-  },
   openGraph: {
     title: "Sparesco | Heavy Equipment & Industrial Spare Parts Catalogue",
     description:
