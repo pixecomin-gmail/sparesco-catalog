@@ -793,13 +793,6 @@ export async function sendUserEmail({
       data,
       excludeKeys: ["email", "form_type"],
     }),
-    attachments: [
-      {
-        path: LOGO_URL,
-        filename: "sparesco-logo.png",
-        contentId: LOGO_CONTENT_ID,
-      },
-    ],
   });
 
   if (result.error) {
