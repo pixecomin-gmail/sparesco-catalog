@@ -405,13 +405,11 @@ function emailTemplate({
   intro,
   data,
   excludeKeys = [],
-  customerEmail = false,
 }: {
   title: string;
   intro: string;
   data: Record<string, unknown>;
   excludeKeys?: string[];
-  customerEmail?: boolean;
 }) {
   const productsValue = data.products ?? data.items;
 
@@ -612,39 +610,6 @@ function emailTemplate({
                     }
 
                     ${buildProductsTable(products)}
-
-                    ${
-                      customerEmail
-                        ? `
-                          <p
-                            style="
-                              margin:28px 0 0;
-                              color:#475467;
-                              font-family:Arial,sans-serif;
-                              font-size:14px;
-                              line-height:1.7;
-                            "
-                          >
-                            Our team will review your submission and contact you shortly.
-                          </p>
-                        `
-                        : `
-                          <p
-                            style="
-                              margin:28px 0 0;
-                              padding:14px 16px;
-                              background-color:#f0f8f9;
-                              border-left:4px solid #2a8392;
-                              color:#173f4c;
-                              font-family:Arial,sans-serif;
-                              font-size:14px;
-                              line-height:1.6;
-                            "
-                          >
-                            Reply directly to this email to contact the customer.
-                          </p>
-                        `
-                    }
                   </td>
                 </tr>
 
@@ -660,31 +625,6 @@ function emailTemplate({
                       border-radius:0 0 12px 12px;
                     "
                   >
-                    <p
-                      style="
-                        margin:0 0 5px;
-                        color:#667085;
-                        font-family:Arial,sans-serif;
-                        font-size:13px;
-                        line-height:1.5;
-                      "
-                    >
-                      Thank you,
-                    </p>
-
-                    <p
-                      style="
-                        margin:0 0 8px;
-                        color:#173f4c;
-                        font-family:Arial,sans-serif;
-                        font-size:14px;
-                        font-weight:700;
-                        line-height:1.5;
-                      "
-                    >
-                      Sparesco Team
-                    </p>
-
                     <a
                       href="${SITE_URL}"
                       target="_blank"
@@ -848,7 +788,6 @@ export async function sendUserEmail({
         "We have received your enquiry. The details shared by you are listed below.",
       data,
       excludeKeys: ["email", "form_type"],
-      customerEmail: true,
     }),
   });
 

@@ -340,3 +340,41 @@
     bottom: 20px;
   }
 }
+.enquiry-form-column {
+  min-width: 0;
+}
+
+.contact-form-notification {
+  width: 100%;
+  margin: 0 0 22px;
+  padding: 16px 18px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.contact-form-notification strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.contact-form-notification p {
+  margin: 0;
+}
+
+.contact-form-notification-success {
+  color: #173f4c;
+  background: #edf7f5;
+  border-color: #83bbb4;
+  border-left: 5px solid #2a8392;
+}
+
+.contact-form-notification-error {
+  color: #842029;
+  background: #fff2f2;
+  border-color: #e5a4a9;
+  border-left: 5px solid #b42318;
+}
