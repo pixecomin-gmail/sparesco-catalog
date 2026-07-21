@@ -27,11 +27,19 @@ function getCleanSpecs(specifications: string[]) {
   });
 }
 
-export default function ProductPageClient({ handle }: { handle: string }) {
+export default function ProductPageClient({
+  handle,
+  initialProduct,
+}: {
+  handle: string;
+  initialProduct?: Product | null;
+}) {
   const { addItem } = useEnquiry();
 
-  const [product, setProduct] = useState<Product | null>(null);
-  const [loaded, setLoaded] = useState(false);
+  const [product, setProduct] = useState<Product | null>(
+    initialProduct || null
+  );
+  const [loaded, setLoaded] = useState(Boolean(initialProduct));
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
   const [activeImage, setActiveImage] = useState("");
   const [activeVariantIndex, setActiveVariantIndex] = useState(0);
@@ -39,6 +47,17 @@ export default function ProductPageClient({ handle }: { handle: string }) {
   const [descriptionOpen, setDescriptionOpen] = useState(false);
 
   useEffect(() => {
+    if (initialProduct) {
+      const images = initialProduct.images || [];
+
+      setProduct(initialProduct);
+      setGalleryImages(images);
+      setActiveImage(images[0] || "");
+      setLoaded(true);
+
+      return;
+    }
+
     fetch(`/api/product/${handle}`, {
       cache: "no-store",
     })
@@ -56,7 +75,7 @@ export default function ProductPageClient({ handle }: { handle: string }) {
       })
       .catch(() => setProduct(null))
       .finally(() => setLoaded(true));
-  }, [handle]);
+  }, [handle, initialProduct]);
 
   if (!loaded) {
     return (

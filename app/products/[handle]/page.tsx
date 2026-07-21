@@ -2,26 +2,10 @@ export const runtime = "edge";
 
 import type { Metadata } from "next";
 import ProductPageClient from "@/components/ProductPageClient";
+import type { Product } from "@/types/product";
 
 type ProductPageProps = {
   params: Promise<{ handle: string }>;
-};
-
-type ProductVariant = {
-  title?: string;
-  vendor?: string;
-  price?: number;
-  partNumber?: string;
-  description?: string;
-};
-
-type ProductData = {
-  handle: string;
-  title?: string;
-  collection?: string;
-  category?: string;
-  images?: string[];
-  variants?: ProductVariant[];
 };
 
 const siteUrl =
@@ -42,7 +26,7 @@ function productFolder(handle: string) {
 
 async function getProduct(
   handle: string
-): Promise<ProductData | null> {
+): Promise<Product | null> {
   if (!r2Base) return null;
 
   const base = r2Base.replace(/\/$/, "");
@@ -96,7 +80,7 @@ function titleFromHandle(value?: string) {
     .join(" ");
 }
 
-function getProductImage(product: ProductData) {
+function getProductImage(product: Product) {
   const image = product.images?.[0];
 
   if (!image) return `${siteUrl}/logo.png`;
@@ -115,7 +99,7 @@ function getProductImage(product: ProductData) {
 }
 
 function getSeoData(
-  product: ProductData,
+  product: Product,
   fallbackHandle: string
 ) {
   const variant = product.variants?.[0];
@@ -230,5 +214,12 @@ export default async function ProductPage({
 }: ProductPageProps) {
   const { handle } = await params;
 
-  return <ProductPageClient handle={handle} />;
+  const product = await getProduct(handle);
+
+  return (
+    <ProductPageClient
+      handle={handle}
+      initialProduct={product}
+    />
+  );
 }
