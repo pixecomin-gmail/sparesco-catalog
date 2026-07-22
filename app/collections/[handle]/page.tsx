@@ -17,6 +17,13 @@ type Props = {
   searchParams: Promise<{ page?: string }>;
 };
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://sparesco.com";
+
+function jsonLd(data: unknown) {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 function cleanTitle(handle: string) {
   return handle
     .split("-")
@@ -160,14 +167,47 @@ export default async function CollectionPage({
   const { collections, products, page } =
     await loadCollectionPage(handle, requestedPage);
 
+  const collection =
+    collections.find((item) => item.handle === handle) || null;
+
+  const collectionTitle = collection?.title || cleanTitle(handle);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Collections",
+        item: `${siteUrl}/collections`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: collectionTitle,
+        item: `${siteUrl}/collections/${handle}`,
+      },
+    ],
+  };
+
   return (
-    <Suspense fallback={null}>
-      <CollectionPageClient
-        initialCollections={collections}
-        initialProducts={products}
-        initialHandle={handle}
-        initialPage={page}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLd(breadcrumbSchema),
+        }}
       />
-    </Suspense>
+
+      <Suspense fallback={null}>
+        <CollectionPageClient
+          initialCollections={collections}
+          initialProducts={products}
+          initialHandle={handle}
+          initialPage={page}
+        />
+      </Suspense>
+    </>
   );
 }

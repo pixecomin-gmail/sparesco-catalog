@@ -30,6 +30,7 @@ export default function CollectionProductCard({
     <article className="parts-product-card">
       <Link
         href={`/products/${product.handle}`}
+        prefetch={false}
         className="parts-product-image"
         aria-label={product.title}
       >
