@@ -57,7 +57,10 @@ export default function CollectionProductCard({
 
       <div className="parts-product-info">
         <h3>
-          <Link href={`/products/${product.handle}`}>
+          <Link
+            href={`/products/${product.handle}`}
+            prefetch={false}
+          >
             {product.title}
           </Link>
         </h3>

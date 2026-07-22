@@ -77,26 +77,20 @@ export default function Breadcrumb() {
       }
 
       try {
-        const res = await fetch("/api/catalog-page?file=0001");
+        const res = await fetch(`/api/product/${segments[1]}`, {
+          cache: "no-store",
+        });
+
         if (!res.ok) {
           setProductInfo(null);
           return;
         }
 
-        const data = await res.json();
-
-        const product = data.find(
-          (p: any) => p.handle === segments[1]
-        );
-
-        if (!product) {
-          setProductInfo(null);
-          return;
-        }
+        const product = await res.json();
 
         setProductInfo({
           title: product.title,
-          collection: product.collectionTitle || product.collection,
+          collection: product.collection,
           collectionHandle: product.collection,
         });
       } catch {
@@ -113,14 +107,16 @@ export default function Breadcrumb() {
     const segments = pathname.split("/").filter(Boolean);
 
     if (segments[0] === "products" && segments[1]) {
+      if (!productInfo) {
+        return [];
+      }
       const collection =
         getCollectionByHandle(collections, productInfo?.collectionHandle) ||
         getCollectionByTitle(collections, productInfo?.collection);
 
       if (collection) {
         return [
-          { label: "Home", href: "/" },
-          { label: "Collections", href: "/collections" },
+          { label: "Collections", href: "/collections/all" },
           {
             label: collection.title,
             href: `/collections/${collection.handle}`,
@@ -130,14 +126,13 @@ export default function Breadcrumb() {
       }
 
       return [
-        { label: "Home", href: "/" },
-        { label: "Spare Parts", href: "/collections" },
+        { label: "Collections", href: "/collections/all" },
         { label: productInfo?.title || formatSlug(segments[1]) },
       ];
     }
 
     return [
-      { label: "Home", href: "/" },
+      
       ...segments.map((segment, index) => ({
         label: getStaticLabel(collections, segment),
         href:
@@ -148,7 +143,25 @@ export default function Breadcrumb() {
     ];
   }, [pathname, productInfo, collections]);
 
-  if (!items.length) return null;
+  const isProductPage =
+  pathname.split("/").filter(Boolean)[0] === "products";
+
+  if (!items.length) {
+    if (!isProductPage) return null;
+
+    return (
+      <nav
+        className="breadcrumb-wrap breadcrumb-loading"
+        aria-hidden="true"
+      >
+        <div className="container breadcrumb-inner">
+          <span className="breadcrumb-item">
+            Collections
+          </span>
+        </div>
+      </nav>
+    );
+  }
 
   return (
     <nav className="breadcrumb-wrap" aria-label="Breadcrumb">

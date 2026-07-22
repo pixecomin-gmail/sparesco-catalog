@@ -60,6 +60,13 @@ function cleanText(value?: string) {
     .trim();
 }
 
+function jsonLd(data: unknown) {
+  return JSON.stringify(data).replace(
+    /</g,
+    "\\u003c"
+  );
+}
+
 function cleanProductTitle(value?: string) {
   return cleanText(value)
     .split("| Replaces")[0]
@@ -216,10 +223,139 @@ export default async function ProductPage({
 
   const product = await getProduct(handle);
 
+  if (!product) {
+    return (
+      <ProductPageClient
+        handle={handle}
+        initialProduct={null}
+      />
+    );
+  }
+
+  const seo = getSeoData(product, handle);
+
+  const canonical =
+    `${siteUrl}/products/${handle}`;
+
+  const image = getProductImage(product);
+
+  const firstVariant =
+    product.variants?.[0];
+
+  const price =
+    Number(firstVariant?.price || 0);
+
+  const partNumber =
+    cleanText(firstVariant?.partNumber) ||
+    seo.partNumber;
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: seo.productTitle,
+    description: seo.metaDescription,
+    url: canonical,
+    image: [image],
+    sku: partNumber,
+    mpn: partNumber,
+
+    ...(seo.category
+      ? {
+          category: seo.category,
+        }
+      : {}),
+
+    ...(seo.brand
+      ? {
+          brand: {
+            "@type": "Brand",
+            name: seo.brand,
+          },
+        }
+      : {}),
+
+    ...(price > 0
+      ? {
+          offers: {
+            "@type": "Offer",
+            url: canonical,
+            priceCurrency: "INR",
+            price,
+            itemCondition:
+              "https://schema.org/NewCondition",
+            seller: {
+              "@type": "Organization",
+              name: "Sparesco",
+            },
+          },
+        }
+      : {}),
+  };
+
+  const breadcrumbItems = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: siteUrl,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Spare Parts",
+      item: `${siteUrl}/collections`,
+    },
+  ];
+
+  if (product.collection) {
+    breadcrumbItems.push({
+      "@type": "ListItem",
+      position: 3,
+      name:
+        seo.category ||
+        titleFromHandle(
+          product.collection
+        ),
+      item:
+        `${siteUrl}/collections/${product.collection}`,
+    });
+  }
+
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    position:
+      breadcrumbItems.length + 1,
+    name: seo.productTitle,
+    item: canonical,
+  });
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement:
+      breadcrumbItems,
+  };
+
   return (
-    <ProductPageClient
-      handle={handle}
-      initialProduct={product}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLd(productSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLd(breadcrumbSchema),
+        }}
+      />
+
+      <ProductPageClient
+        handle={handle}
+        initialProduct={product}
+      />
+    </>
   );
 }
