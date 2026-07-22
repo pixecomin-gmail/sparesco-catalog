@@ -80,7 +80,7 @@ export default function HomePartnerForm() {
       }
 
       setSuccessMessage(
-        "Application submitted successfully. Our team will contact you soon."
+        "Our team will contact you soon."
       );
 
       setFormValues({

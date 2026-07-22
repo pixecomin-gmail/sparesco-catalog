@@ -109,7 +109,7 @@ export default function RootLayout({
           <LayoutShell>{children}</LayoutShell>
         </EnquiryProvider>
 
-        <GoogleAnalytics gaId="G-6T2ZWVY6G3" />
+        <GoogleAnalytics gaId="G-4KBYL35VQ5" />
       </body>
     </html>
   );
