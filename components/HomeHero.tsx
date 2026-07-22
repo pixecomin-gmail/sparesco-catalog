@@ -120,7 +120,7 @@ export default function HomeHero() {
         </div>
 
         <div className="button-row">
-          <Link href="/parts">Browse All Parts</Link>
+          <Link href="/collections">Browse All Parts</Link>
 
           <Link href="/enquiry" className="secondary">
             Request a Quote

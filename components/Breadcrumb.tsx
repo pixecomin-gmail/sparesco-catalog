@@ -131,7 +131,7 @@ export default function Breadcrumb() {
 
       return [
         { label: "Home", href: "/" },
-        { label: "Spare Parts", href: "/parts" },
+        { label: "Spare Parts", href: "/collections" },
         { label: productInfo?.title || formatSlug(segments[1]) },
       ];
     }

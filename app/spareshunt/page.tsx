@@ -234,7 +234,7 @@ export default function SparesHuntPage() {
 
           <div className="button-row">
             <a href="#request-form">Submit Request</a>
-            <Link href="/parts" className="secondary">
+            <Link href="/collections" className="secondary">
               Browse Parts
             </Link>
           </div>

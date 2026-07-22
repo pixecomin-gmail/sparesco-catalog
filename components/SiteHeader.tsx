@@ -280,7 +280,7 @@ export default function SiteHeader() {
               </div>
             </div>
 
-            <Link href="/parts">Spare Parts</Link>
+            <Link href="/collections/all">Spare Parts</Link>
             <Link href="/spareshunt">Spares Hunt</Link>
             <Link href="/sellwithus" className="nav-button-new">
               Sell With Us
@@ -396,7 +396,7 @@ export default function SiteHeader() {
                     </button>
                   </div>
 
-                  <Link href="/parts" onClick={() => setMobileMenuOpen(false)}>
+                  <Link href="/collections/all" onClick={() => setMobileMenuOpen(false)}>
                     Spare Parts
                   </Link>
 

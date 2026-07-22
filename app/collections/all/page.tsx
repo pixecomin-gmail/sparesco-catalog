@@ -25,11 +25,11 @@ type FilterIndex = {
   brands: FilterItem[];
 };
 
-function PartsContent() {
+function AllCollectionsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [showFilters, setShowFilters] = useState(false);
 
+  const [showFilters, setShowFilters] = useState(false);
   const [products, setProducts] = useState<ProductIndexItem[]>([]);
   const [meta, setMeta] = useState<CatalogMeta | null>(null);
   const [filters, setFilters] = useState<FilterIndex>({
@@ -38,14 +38,10 @@ function PartsContent() {
   });
   const [loaded, setLoaded] = useState(false);
 
-  const currentPage = Number(searchParams.get("page") || "1");
-  const selectedCategory = searchParams.get("category") || "";
-
-  const selectedCategoryItem = filters.categories.find(
-    (item) => item.handle === selectedCategory
+  const currentPage = Math.max(
+    Number(searchParams.get("page") || "1") || 1,
+    1
   );
-
-  const activeTotalProducts = selectedCategoryItem?.count || meta?.totalProducts || 0;
 
   useEffect(() => {
     async function loadProducts() {
@@ -57,14 +53,24 @@ function PartsContent() {
           fetch("/api/catalog-page?file=filters"),
         ]);
 
-        if (!metaRes.ok) throw new Error("Catalog meta failed");
+        if (!metaRes.ok) {
+          throw new Error("Catalog meta failed");
+        }
 
         const nextMeta = (await metaRes.json()) as CatalogMeta;
         setMeta(nextMeta);
 
         if (filtersRes.ok) {
           const filterData = (await filtersRes.json()) as FilterIndex;
-          setFilters(filterData);
+
+          setFilters({
+            categories: Array.isArray(filterData.categories)
+              ? filterData.categories
+              : [],
+            brands: Array.isArray(filterData.brands)
+              ? filterData.brands
+              : [],
+          });
         }
 
         const catalogPage = Math.ceil(
@@ -72,16 +78,18 @@ function PartsContent() {
         );
 
         const file = String(catalogPage).padStart(4, "0");
+
         const productsRes = await fetch(
-          selectedCategory
-            ? `/api/catalog-page?file=category:${selectedCategory}:${file}`
-            : `/api/catalog-page?file=${file}`
+          `/api/catalog-page?file=${file}`
         );
 
-        if (!productsRes.ok) throw new Error("Catalog page failed");
+        if (!productsRes.ok) {
+          throw new Error("Catalog page failed");
+        }
 
         const data = (await productsRes.json()) as ProductIndexItem[];
-        setProducts(data);
+
+        setProducts(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error(error);
         setProducts([]);
@@ -91,11 +99,19 @@ function PartsContent() {
     }
 
     loadProducts();
-  }, [currentPage, selectedCategory]);
+  }, [currentPage]);
 
-  const totalPages = Math.max(1, Math.ceil(activeTotalProducts / PAGE_SIZE));
+  const totalProducts = meta?.totalProducts || 0;
 
-  const safePage = Math.min(Math.max(currentPage, 1), totalPages);
+  const totalPages = Math.max(
+    1,
+    Math.ceil(totalProducts / PAGE_SIZE)
+  );
+
+  const safePage = Math.min(
+    Math.max(currentPage, 1),
+    totalPages
+  );
 
   const offsetInsideCatalogPage =
     ((safePage - 1) * PAGE_SIZE) % CATALOG_PAGE_SIZE;
@@ -106,11 +122,7 @@ function PartsContent() {
   );
 
   function goToPage(page: number) {
-    router.push(
-      selectedCategory
-        ? `/collections?category=${selectedCategory}&page=${page}`
-        : `/collections?page=${page}`
-    );
+    router.push(`/collections/all?page=${page}`);
   }
 
   if (!loaded) {
@@ -232,7 +244,10 @@ function PartsContent() {
 
                 <div className="parts-product-grid parts-product-grid-four">
                   {Array.from({ length: PAGE_SIZE }).map((_, index) => (
-                    <article className="parts-product-card" key={index}>
+                    <article
+                      className="parts-product-card"
+                      key={index}
+                    >
                       <div
                         className="parts-product-image"
                         style={{
@@ -286,10 +301,11 @@ function PartsContent() {
     <main>
       <section className="section parts-section parts-page-section">
         <div className="container">
-          <h1 className="page-title">Browse Spare Parts</h1>
+          <h1 className="page-title">All Spare Parts</h1>
 
           <p className="page-intro">
-            Explore industrial spare parts by category, collection and brand.
+            Browse industrial spare parts across all categories,
+            collections and brands.
           </p>
 
           <div className="parts-layout">
@@ -301,7 +317,9 @@ function PartsContent() {
             </button>
 
             <aside
-              className={`filters-sidebar ${showFilters ? "open" : ""}`}
+              className={`filters-sidebar ${
+                showFilters ? "open" : ""
+              }`}
             >
               <div className="filters-header">
                 <h3>Filter By</h3>
@@ -309,6 +327,7 @@ function PartsContent() {
                 <button
                   className="mobile-filter-close"
                   onClick={() => setShowFilters(false)}
+                  aria-label="Close filters"
                 >
                   ✕
                 </button>
@@ -320,43 +339,41 @@ function PartsContent() {
                 <label className="filter-option">
                   <input
                     type="checkbox"
-                    checked={!selectedCategory}
+                    checked
                     readOnly
-                    onClick={() => router.push("/collections")}
+                    onClick={() =>
+                      router.push("/collections/all")
+                    }
                   />
+
                   <span>All Categories</span>
-                  <em>{meta?.totalProducts.toLocaleString("en-IN") || 0}</em>
+
+                  <em>
+                    {totalProducts.toLocaleString("en-IN")}
+                  </em>
                 </label>
 
                 {filters.categories.map((item) => (
-                  <label className="filter-option" key={item.handle}>
-                    <input
-                      type="checkbox"
-                      checked={selectedCategory === item.handle}
-                      readOnly
-                      onClick={() => router.push(`/collections?category=${item.handle}`)}
-                    />
-                    <span>{item.title}</span>
-                    <em>{item.count.toLocaleString("en-IN")}</em>
-                  </label>
-                ))}
-              </div>
-
-              <div className="filter-block">
-                <h4>Brand</h4>
-
-                {filters.brands.slice(0, 30).map((item) => (
-                  <label className="filter-option" key={item.handle}>
+                  <label
+                    className="filter-option"
+                    key={item.handle}
+                  >
                     <input
                       type="checkbox"
                       checked={false}
                       readOnly
                       onClick={() =>
-                        router.push(`/search?q=${encodeURIComponent(item.title)}`)
+                        router.push(
+                          `/collections/${item.handle}`
+                        )
                       }
                     />
+
                     <span>{item.title}</span>
-                    <em>{item.count.toLocaleString("en-IN")}</em>
+
+                    <em>
+                      {item.count.toLocaleString("en-IN")}
+                    </em>
                   </label>
                 ))}
               </div>
@@ -367,7 +384,8 @@ function PartsContent() {
                 <strong>All Spare Parts</strong>
 
                 <span>
-                  {activeTotalProducts.toLocaleString("en-IN")} products ·
+                  {totalProducts.toLocaleString("en-IN")} products
+                  {" · "}
                   Page {safePage} of {totalPages}
                 </span>
               </div>
@@ -382,7 +400,9 @@ function PartsContent() {
               </div>
 
               {visibleProducts.length === 0 && (
-                <p className="empty-message">No products found.</p>
+                <p className="empty-message">
+                  No products found.
+                </p>
               )}
 
               <div className="pagination">
@@ -412,25 +432,27 @@ function PartsContent() {
   );
 }
 
-export default function PartsPage() {
+export default function AllCollectionsPage() {
   return (
     <Suspense
       fallback={
         <main>
           <section className="section parts-section parts-page-section">
             <div className="container">
-              <h1 className="page-title">Browse Spare Parts</h1>
+              <h1 className="page-title">
+                All Spare Parts
+              </h1>
 
               <p className="page-intro">
-                Explore industrial spare parts by category, collection and
-                brand.
+                Browse industrial spare parts across all categories,
+                collections and brands.
               </p>
             </div>
           </section>
         </main>
       }
     >
-      <PartsContent />
+      <AllCollectionsContent />
     </Suspense>
   );
 }

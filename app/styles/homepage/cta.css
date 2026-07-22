@@ -38,7 +38,8 @@
   margin-bottom: 22px;
 }
 
-.dark-cta-card button {
+.dark-cta-card button,
+.dark-cta-card a {
   background: #ffffff;
   color: var(--primary);
   border: none;

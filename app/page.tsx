@@ -76,7 +76,7 @@ export default function Home() {
               Build your career with a fast-growing industrial marketplace
               serving construction, mining and heavy equipment industries.
             </p>
-            <button>Apply Now</button>
+            <a href="#">Apply Now</a>
           </div>
 
           <div className="dark-cta-card">
@@ -86,7 +86,7 @@ export default function Home() {
               Looking for a hard-to-find spare part? Our team can help you
               connect with genuine vendors and source the right part faster.
             </p>
-            <button>Contact Us</button>
+            <a href="/contact">Contact Us</a>
           </div>
         </div>
       </section>

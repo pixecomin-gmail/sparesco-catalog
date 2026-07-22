@@ -84,7 +84,7 @@ export default function PopularSparePartsList() {
       <div className="container">
         <div className="section-heading-row popular-parts-heading">
           <h2 className="section-title">Popular Spare Parts</h2>
-          <Link href="/parts">Browse all →</Link>
+          <Link href="/collections">Browse all →</Link>
         </div>
 
         <div className="popular-parts-list">
