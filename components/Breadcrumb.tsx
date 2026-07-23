@@ -176,7 +176,9 @@ export default function Breadcrumb() {
               {isLast || !item.href ? (
                 <span className="breadcrumb-current">{item.label}</span>
               ) : (
-                <Link href={item.href}>{item.label}</Link>
+                <Link href={item.href} prefetch={false}>
+                  {item.label}
+                </Link>
               )}
             </span>
           );

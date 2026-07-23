@@ -79,7 +79,6 @@ export async function GET(request: Request) {
     urls.push(
       siteUrl,
       `${siteUrl}/collections`,
-      `${siteUrl}/collections`,
       `${siteUrl}/spareshunt`,
       `${siteUrl}/sellwithus`,
       `${siteUrl}/contact`,
