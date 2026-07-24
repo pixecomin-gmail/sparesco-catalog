@@ -136,6 +136,7 @@ export default function EnquiryPage() {
                     >
                       <Link
                         href={`/products/${item.handle}`}
+                        prefetch={false}
                         className="enquiry-item-image"
                       >
                         {item.image ? (
@@ -146,6 +147,7 @@ export default function EnquiryPage() {
                       <div className="enquiry-item-content">
                         <Link
                           href={`/products/${item.handle}`}
+                          prefetch={false}
                           className="enquiry-item-title"
                         >
                           {item.title}
