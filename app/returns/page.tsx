@@ -92,8 +92,6 @@ export default function ReturnsPage() {
 
               <p>
                 <strong>returns@sparesco.com</strong>
-                <br />
-                +91 124 456 7890
               </p>
             </section>
           </div>
