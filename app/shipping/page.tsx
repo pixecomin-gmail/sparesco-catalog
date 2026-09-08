@@ -88,8 +88,6 @@ export default function ShippingPage() {
 
               <p>
                 <strong>logistics@sparesco.com</strong>
-                <br />
-                +91 124 456 7890
               </p>
             </section>
           </div>
