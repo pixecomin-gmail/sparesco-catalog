@@ -144,8 +144,6 @@ export default function ContactPage() {
         <section className="contact-layout">
           <aside className="contact-info">
             <div className="contact-info-item">
-              <span>Phone</span>
-              <strong>+91 908 233 0470</strong>
               <p>Mon–Sat, 9:00 AM – 6:00 PM IST</p>
             </div>
 
