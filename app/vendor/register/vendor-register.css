@@ -1,0 +1,125 @@
+.vendor-register-page {
+  min-height: 100vh;
+  background: #f7f5ef;
+  padding: 70px 20px;
+}
+
+.vendor-register-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.vendor-register-header {
+  margin-bottom: 35px;
+}
+
+.vendor-register-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #2a8392;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.vendor-register-header h1 {
+  margin: 0 0 12px;
+  color: #173f4c;
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.vendor-register-header p {
+  margin: 0;
+  max-width: 650px;
+  color: #5c6669;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.vendor-register-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.vendor-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.vendor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vendor-field-full {
+  grid-column: 1 / -1;
+}
+
+.vendor-field label {
+  color: #173f4c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vendor-field input,
+.vendor-field textarea {
+  width: 100%;
+  border: 1px solid #d7dcdd;
+  border-radius: 8px;
+  padding: 13px 14px;
+  font: inherit;
+  background: #ffffff;
+  color: #173f4c;
+  box-sizing: border-box;
+}
+
+.vendor-field input:focus,
+.vendor-field textarea:focus {
+  outline: none;
+  border-color: #2a8392;
+}
+
+.vendor-submit-button {
+  margin-top: 28px;
+  border: 0;
+  border-radius: 8px;
+  padding: 14px 22px;
+  background: #173f4c;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.vendor-submit-button:hover {
+  opacity: 0.92;
+}
+
+@media (max-width: 700px) {
+  .vendor-register-page {
+    padding: 40px 16px;
+  }
+
+  .vendor-register-header h1 {
+    font-size: 32px;
+  }
+
+  .vendor-register-form {
+    padding: 22px;
+  }
+
+  .vendor-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vendor-field-full {
+    grid-column: auto;
+  }
+}
