@@ -6,51 +6,98 @@ const ADMIN_COOKIE = "sparesco_admin";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  const hostname =
+    request.headers.get("host")?.split(":")[0] || "";
+
+  const isAdminDomain = hostname === "admin.sparesco.com";
+
   // --------------------------------------------------
-  // ADMIN PROTECTION
+  // ADMIN DOMAIN
   // --------------------------------------------------
 
-  // Admin login page and login API must remain accessible
-  if (
-    pathname === "/admin/login" ||
-    pathname === "/api/admin/login"
-  ) {
-    return NextResponse.next();
-  }
+  if (isAdminDomain) {
+    // Root admin domain
+    if (pathname === "/") {
+      const adminCookie =
+        request.cookies.get(ADMIN_COOKIE)?.value;
 
-  // Protect admin pages
-  if (pathname.startsWith("/admin/")) {
-    const adminCookie = request.cookies.get(ADMIN_COOKIE)?.value;
+      if (
+        adminCookie &&
+        adminCookie === process.env.ADMIN_SESSION_TOKEN
+      ) {
+        return NextResponse.redirect(
+          new URL("/admin/vendors", request.url)
+        );
+      }
 
+      return NextResponse.redirect(
+        new URL("/admin/login", request.url)
+      );
+    }
+
+    // Allow admin login page and login API
     if (
-      adminCookie &&
-      adminCookie === process.env.ADMIN_SESSION_TOKEN
+      pathname === "/admin/login" ||
+      pathname === "/api/admin/login"
     ) {
       return NextResponse.next();
     }
 
+    // Protect admin pages
+    if (pathname.startsWith("/admin/")) {
+      const adminCookie =
+        request.cookies.get(ADMIN_COOKIE)?.value;
+
+      if (
+        adminCookie &&
+        adminCookie === process.env.ADMIN_SESSION_TOKEN
+      ) {
+        return NextResponse.next();
+      }
+
+      return NextResponse.redirect(
+        new URL("/admin/login", request.url)
+      );
+    }
+
+    // Protect admin APIs
+    if (pathname.startsWith("/api/admin/")) {
+      const adminCookie =
+        request.cookies.get(ADMIN_COOKIE)?.value;
+
+      if (
+        adminCookie &&
+        adminCookie === process.env.ADMIN_SESSION_TOKEN
+      ) {
+        return NextResponse.next();
+      }
+
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Admin authentication required.",
+        },
+        { status: 401 }
+      );
+    }
+
+    // Anything else on admin.sparesco.com
+    // gets sent back to admin
     return NextResponse.redirect(
       new URL("/admin/login", request.url)
     );
   }
 
-  // Protect admin APIs
-  if (pathname.startsWith("/api/admin/")) {
-    const adminCookie = request.cookies.get(ADMIN_COOKIE)?.value;
+  // --------------------------------------------------
+  // BLOCK ADMIN AREA ON NORMAL SPARESCO DOMAIN
+  // --------------------------------------------------
 
-    if (
-      adminCookie &&
-      adminCookie === process.env.ADMIN_SESSION_TOKEN
-    ) {
-      return NextResponse.next();
-    }
-
-    return NextResponse.json(
-      {
-        success: false,
-        error: "Admin authentication required.",
-      },
-      { status: 401 }
+  if (
+    pathname.startsWith("/admin") ||
+    pathname.startsWith("/api/admin")
+  ) {
+    return NextResponse.redirect(
+      new URL("/", request.url)
     );
   }
 
