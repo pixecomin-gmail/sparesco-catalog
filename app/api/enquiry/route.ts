@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { sendAdminEmail, sendUserEmail } from "@/lib/send-admin-email";
+import { getRequestContext } from "@cloudflare/next-on-pages";
 
 export const runtime = "edge";
 
@@ -22,6 +23,118 @@ export async function POST(request: Request) {
       );
     }
 
+    // ---------------------------------------------
+    // SAVE ENQUIRY ITEMS TO D1 + MATCH VENDORS
+    // ---------------------------------------------
+
+    try {
+      const { env } = getRequestContext();
+      const db = (env as any).DB;
+
+      if (db && Array.isArray(data.items)) {
+        for (const item of data.items) {
+          const productName = item.title?.trim() || null;
+          const partNumber = item.partNumber?.trim() || null;
+          const productHandle = item.handle?.trim() || null;
+          const quantity = String(item.quantity || "");
+
+          const enquiryResult = await db
+            .prepare(
+              `
+            INSERT INTO enquiries (
+              customer_name,
+              customer_email,
+              customer_phone,
+              company_name,
+              product_name,
+              part_number,
+              product_handle,
+              quantity,
+              message,
+              status
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'new')
+            `
+            )
+            .bind(
+              data.name,
+              data.email,
+              data.phone || null,
+              data.company || null,
+              productName,
+              partNumber,
+              productHandle,
+              quantity,
+              data.message || null
+            )
+            .run();
+
+          const enquiryId = enquiryResult.meta?.last_row_id;
+
+          if (!enquiryId) {
+            continue;
+          }
+
+          let matchingVendors;
+
+          if (partNumber) {
+            matchingVendors = await db
+              .prepare(
+                `
+              SELECT DISTINCT v.id AS vendor_id
+              FROM vendors v
+              JOIN vendor_products vp
+                ON vp.vendor_id = v.id
+              WHERE v.status = 'approved'
+                AND vp.status = 'approved'
+                AND LOWER(TRIM(vp.part_number)) = LOWER(TRIM(?))
+              `
+              )
+              .bind(partNumber)
+              .all();
+          } else if (productName) {
+            matchingVendors = await db
+              .prepare(
+                `
+              SELECT DISTINCT v.id AS vendor_id
+              FROM vendors v
+              JOIN vendor_products vp
+                ON vp.vendor_id = v.id
+              WHERE v.status = 'approved'
+                AND vp.status = 'approved'
+                AND LOWER(TRIM(vp.product_name)) = LOWER(TRIM(?))
+              `
+              )
+              .bind(productName)
+              .all();
+          }
+
+          const vendors = matchingVendors?.results || [];
+
+          for (const vendor of vendors) {
+            await db
+              .prepare(
+                `
+              INSERT OR IGNORE INTO enquiry_vendors (
+                enquiry_id,
+                vendor_id,
+                status
+              )
+              VALUES (?, ?, 'sent')
+              `
+              )
+              .bind(
+                enquiryId,
+                vendor.vendor_id
+              )
+              .run();
+          }
+        }
+      }
+    } catch (d1Error) {
+      console.error("D1 enquiry matching error:", d1Error);
+    }
+
     const emailData = {
       name: data.name,
       company: data.company,
@@ -30,7 +143,7 @@ export async function POST(request: Request) {
       message: data.message,
       products: Array.isArray(data.items) ? data.items : [],
     };
-   
+
     const [adminEmailResult, customerEmailResult] =
       await Promise.allSettled([
         sendAdminEmail({
