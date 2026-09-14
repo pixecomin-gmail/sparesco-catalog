@@ -16,6 +16,14 @@ export function middleware(request: NextRequest) {
   // --------------------------------------------------
 
   if (isAdminDomain) {
+    if (
+      pathname.startsWith("/_next/") ||
+      pathname === "/favicon.ico" ||
+      pathname.match(/\.(png|jpg|jpeg|svg|webp|gif|ico)$/i)
+    ) {
+      return NextResponse.next();
+    }
+
     // Root admin domain
     if (pathname === "/") {
       const adminCookie =
