@@ -12,10 +12,26 @@ type Vendor = {
   products_submitted: number;
 };
 
+type VendorProduct = {
+  id: number;
+  product_name: string;
+  part_number: string;
+  brand: string;
+  category: string;
+  price: string | null;
+  currency: string | null;
+  stock_status: string | null;
+  lead_time: string | null;
+  status: "pending" | "approved" | "rejected";
+  admin_notes: string | null;
+  created_at: string;
+};
+
 export default function VendorDashboardPage() {
   const router = useRouter();
 
   const [vendor, setVendor] = useState<Vendor | null>(null);
+  const [products, setProducts] = useState<VendorProduct[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,6 +50,17 @@ export default function VendorDashboardPage() {
         }
 
         setVendor(data.vendor);
+
+        const productsResponse = await fetch("/api/vendor/products", {
+          method: "GET",
+          cache: "no-store",
+        });
+
+        const productsData = await productsResponse.json();
+
+        if (productsResponse.ok && productsData.success) {
+          setProducts(productsData.products || []);
+        }
       } catch {
         router.replace("/vendor/login");
       } finally {
@@ -268,7 +295,135 @@ export default function VendorDashboardPage() {
             >
             You have reached your current product submission limit.
             </p>
-        )}
+                )}
+        </section>
+
+        <section
+          style={{
+            background: "#ffffff",
+            border: "1px solid #e1e6e4",
+            borderRadius: "18px",
+            padding: "28px",
+            marginTop: "30px",
+          }}
+        >
+          <h2
+            style={{
+              color: "#173f4c",
+              marginTop: 0,
+              marginBottom: "8px",
+            }}
+          >
+            My Products
+          </h2>
+
+          <p
+            style={{
+              color: "#68797f",
+              marginTop: 0,
+              marginBottom: "24px",
+            }}
+          >
+            Track the approval status of the products you have submitted.
+          </p>
+
+          {products.length === 0 ? (
+            <p
+              style={{
+                color: "#758388",
+                marginBottom: 0,
+              }}
+            >
+              You have not submitted any products yet.
+            </p>
+          ) : (
+            <div style={{ overflowX: "auto" }}>
+              <table
+                style={{
+                  width: "100%",
+                  borderCollapse: "collapse",
+                  minWidth: "750px",
+                }}
+              >
+                <thead>
+                  <tr
+                    style={{
+                      borderBottom: "1px solid #e1e6e4",
+                      textAlign: "left",
+                    }}
+                  >
+                    <th style={{ padding: "12px 10px" }}>Product</th>
+                    <th style={{ padding: "12px 10px" }}>Part Number</th>
+                    <th style={{ padding: "12px 10px" }}>Brand</th>
+                    <th style={{ padding: "12px 10px" }}>Category</th>
+                    <th style={{ padding: "12px 10px" }}>Submitted</th>
+                    <th style={{ padding: "12px 10px" }}>Status</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {products.map((product) => {
+                    const statusLabel =
+                      product.status === "pending"
+                        ? "Under Review"
+                        : product.status === "approved"
+                          ? "Approved"
+                          : "Rejected";
+
+                    return (
+                      <tr
+                        key={product.id}
+                        style={{
+                          borderBottom: "1px solid #eef1f0",
+                        }}
+                      >
+                        <td
+                          style={{
+                            padding: "14px 10px",
+                            fontWeight: 700,
+                            color: "#173f4c",
+                          }}
+                        >
+                          {product.product_name}
+                        </td>
+
+                        <td style={{ padding: "14px 10px" }}>
+                          {product.part_number}
+                        </td>
+
+                        <td style={{ padding: "14px 10px" }}>
+                          {product.brand}
+                        </td>
+
+                        <td style={{ padding: "14px 10px" }}>
+                          {product.category}
+                        </td>
+
+                        <td style={{ padding: "14px 10px" }}>
+                          {new Date(product.created_at).toLocaleDateString()}
+                        </td>
+
+                        <td style={{ padding: "14px 10px" }}>
+                          <strong
+                            style={{
+                              color:
+                                product.status === "approved"
+                                  ? "#26734d"
+                                  : product.status === "rejected"
+                                    ? "#a23c35"
+                                    : "#9a6b00",
+                            }}
+                          >
+                            {statusLabel}
+                          </strong>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
         </section>
     </main>
   );

@@ -29,6 +29,126 @@ function getVendorCookie(request: Request) {
   };
 }
 
+export async function GET(request: Request) {
+  try {
+    const vendorSession = getVendorCookie(request);
+
+    if (!vendorSession) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor login required.",
+        },
+        { status: 401 }
+      );
+    }
+
+    const { env } = getRequestContext();
+    const db = (env as any).DB;
+
+    if (!db) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor database is not configured.",
+        },
+        { status: 500 }
+      );
+    }
+
+    const session = await db
+      .prepare(
+        `
+        SELECT
+          vs.vendor_id,
+          vs.expires_at,
+          v.status
+        FROM vendor_sessions vs
+        JOIN vendors v
+          ON v.id = vs.vendor_id
+        WHERE vs.vendor_id = ?
+          AND vs.session_token = ?
+        LIMIT 1
+        `
+      )
+      .bind(
+        vendorSession.vendorId,
+        vendorSession.sessionToken
+      )
+      .first();
+
+    if (!session) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Invalid vendor session.",
+        },
+        { status: 401 }
+      );
+    }
+
+    if (Date.now() > new Date(session.expires_at).getTime()) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor session has expired.",
+        },
+        { status: 401 }
+      );
+    }
+
+    if (session.status !== "approved") {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor account is not approved.",
+        },
+        { status: 403 }
+      );
+    }
+
+    const productsResult = await db
+      .prepare(
+        `
+        SELECT
+          id,
+          product_name,
+          part_number,
+          brand,
+          category,
+          description,
+          price,
+          currency,
+          stock_status,
+          lead_time,
+          status,
+          admin_notes,
+          created_at
+        FROM vendor_products
+        WHERE vendor_id = ?
+        ORDER BY id DESC
+        `
+      )
+      .bind(session.vendor_id)
+      .all();
+
+    return NextResponse.json({
+      success: true,
+      products: productsResult.results || [],
+    });
+  } catch (error) {
+    console.error("Vendor products fetch error:", error);
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Unable to load vendor products.",
+      },
+      { status: 500 }
+    );
+  }
+}
+
 export async function POST(request: Request) {
   try {
     // ---------------------------------------------
