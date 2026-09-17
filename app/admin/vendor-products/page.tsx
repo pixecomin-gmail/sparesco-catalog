@@ -66,18 +66,13 @@ export default function AdminVendorProductsPage() {
     setError("");
 
     try {
-      const response = await fetch(
-        `/api/admin/vendor-products/${id}`,
-        {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            status,
-          }),
-        }
-      );
+      const response = await fetch(`/api/admin/vendor-products/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ status }),
+      });
 
       const data = await response.json();
 
@@ -86,18 +81,13 @@ export default function AdminVendorProductsPage() {
         return;
       }
 
-      setMessage(data.message || "Product updated.");
-
       setProducts((current) =>
         current.map((product) =>
-          product.id === id
-            ? {
-                ...product,
-                status,
-              }
-            : product
+          product.id === id ? { ...product, status } : product
         )
       );
+
+      setMessage(`Product ${status} successfully.`);
     } catch {
       setError("Unable to update product.");
     } finally {
@@ -106,256 +96,361 @@ export default function AdminVendorProductsPage() {
   };
 
   if (loading) {
-    return (
-      <main style={{ padding: "50px 24px" }}>
-        <p>Loading vendor products...</p>
-      </main>
-    );
+    return <main style={pageStyle}>Loading vendor products...</main>;
   }
 
   return (
-    <main
-      style={{
-        maxWidth: "1400px",
-        margin: "0 auto",
-        padding: "50px 24px",
-      }}
-    >
-      <div style={{ marginBottom: "30px" }}>
-        <span
-          style={{
-            color: "#2a8392",
-            fontSize: "13px",
-            fontWeight: 700,
-            letterSpacing: "0.1em",
-          }}
-        >
-          SPARESCO ADMIN
-        </span>
+    <main style={pageStyle}>
+      <div style={pageHeaderStyle}>
+        <div>
+          <h1 style={titleStyle}>Vendor Products</h1>
+          <p style={subtitleStyle}>
+            Review products submitted by vendors.
+          </p>
+        </div>
 
-        <h1
-          style={{
-            margin: "10px 0 8px",
-            color: "#173f4c",
-          }}
-        >
-          Vendor Products
-        </h1>
-
-        <p
-          style={{
-            margin: 0,
-            color: "#67797f",
-          }}
-        >
-          Review products submitted by approved vendors.
-        </p>
+        <div style={countStyle}>
+          {products.length} {products.length === 1 ? "Product" : "Products"}
+        </div>
       </div>
 
-      {message && (
-        <div
-          style={{
-            marginBottom: "20px",
-            padding: "12px 15px",
-            borderRadius: "10px",
-            background: "#eef8f3",
-            border: "1px solid #d3ebdf",
-            color: "#286647",
-          }}
-        >
-          {message}
-        </div>
-      )}
+      {message && <div style={successStyle}>{message}</div>}
+      {error && <div style={errorStyle}>{error}</div>}
 
-      {error && (
-        <div
-          style={{
-            marginBottom: "20px",
-            padding: "12px 15px",
-            borderRadius: "10px",
-            background: "#fff3f1",
-            border: "1px solid #f2d4d0",
-            color: "#a23c35",
-          }}
-        >
-          {error}
-        </div>
-      )}
+      {products.length === 0 ? (
+        <div style={emptyStyle}>No vendor products submitted yet.</div>
+      ) : (
+        <div style={listStyle}>
+          {products.map((product) => (
+            <section key={product.id} style={cardStyle}>
+              <div style={cardHeaderStyle}>
+                <div>
+                  <h2 style={productTitleStyle}>{product.product_name}</h2>
 
-      <div
-        style={{
-          overflowX: "auto",
-          background: "#ffffff",
-          border: "1px solid #e1e6e4",
-          borderRadius: "16px",
-        }}
-      >
-        <table
-          style={{
-            width: "100%",
-            borderCollapse: "collapse",
-            minWidth: "1100px",
-          }}
-        >
-          <thead>
-            <tr
-              style={{
-                background: "#f7f5ef",
-                textAlign: "left",
-              }}
-            >
-              {[
-                "Product",
-                "Part Number",
-                "Brand",
-                "Category",
-                "Vendor",
-                "Price",
-                "Stock",
-                "Lead Time",
-                "Status",
-                "Actions",
-              ].map((heading) => (
-                <th
-                  key={heading}
-                  style={{
-                    padding: "14px 16px",
-                    color: "#173f4c",
-                    fontSize: "13px",
-                    borderBottom: "1px solid #e1e6e4",
-                  }}
-                >
-                  {heading}
-                </th>
-              ))}
-            </tr>
-          </thead>
+                  <span style={smallTextStyle}>
+                    Product #{product.id}
+                    {product.part_number
+                      ? ` • Part No. ${product.part_number}`
+                      : ""}
+                  </span>
+                </div>
 
-          <tbody>
-            {products.length === 0 ? (
-              <tr>
-                <td
-                  colSpan={10}
-                  style={{
-                    padding: "30px",
-                    textAlign: "center",
-                    color: "#718086",
-                  }}
-                >
-                  No vendor products submitted yet.
-                </td>
-              </tr>
-            ) : (
-              products.map((product) => (
-                <tr key={product.id}>
-                  <td
+                <StatusBadge status={product.status} />
+              </div>
+
+              <div style={detailsGridStyle}>
+                <div>
+                  <h3 style={sectionTitleStyle}>Product Details</h3>
+
+                  <Detail label="Part Number" value={product.part_number || "—"} />
+                  <Detail label="Brand" value={product.brand || "—"} />
+                  <Detail label="Category" value={product.category || "—"} />
+
+                  {product.description && (
+                    <Detail label="Description" value={product.description} />
+                  )}
+                </div>
+
+                <div>
+                  <h3 style={sectionTitleStyle}>Vendor</h3>
+
+                  <Detail label="Company" value={product.company_name} />
+                  <Detail label="Contact" value={product.contact_person} />
+                  <Detail label="Email" value={product.email} />
+                </div>
+
+                <div style={availabilityStyle}>
+                  <h3 style={sectionTitleStyle}>Availability</h3>
+
+                  <Detail
+                    label="Price"
+                    value={
+                      product.price
+                        ? `${product.currency || ""} ${product.price}`
+                        : "—"
+                    }
+                  />
+
+                  <Detail
+                    label="Stock"
+                    value={formatStock(product.stock_status)}
+                  />
+
+                  <Detail
+                    label="Lead Time"
+                    value={product.lead_time || "—"}
+                  />
+                </div>
+              </div>
+
+              <div style={cardFooterStyle}>
+                <span style={footerTextStyle}>
+                  Submitted{" "}
+                  {product.created_at
+                    ? new Date(product.created_at).toLocaleDateString()
+                    : "—"}
+                </span>
+
+                <div style={actionsStyle}>
+                  <button
+                    type="button"
+                    disabled={
+                      updatingId === product.id ||
+                      product.status === "approved"
+                    }
+                    onClick={() => updateProduct(product.id, "approved")}
                     style={{
-                      padding: "16px",
-                      borderBottom: "1px solid #edf0ef",
+                      ...approveButtonStyle,
+                      opacity: product.status === "approved" ? 0.45 : 1,
                     }}
                   >
-                    <strong
-                      style={{
-                        color: "#173f4c",
-                      }}
-                    >
-                      {product.product_name}
-                    </strong>
-                  </td>
+                    Approve
+                  </button>
 
-                  <td style={cellStyle}>
-                    {product.part_number || "—"}
-                  </td>
-
-                  <td style={cellStyle}>
-                    {product.brand || "—"}
-                  </td>
-
-                  <td style={cellStyle}>
-                    {product.category || "—"}
-                  </td>
-
-                  <td style={cellStyle}>
-                    <div>
-                      <strong>{product.company_name}</strong>
-                    </div>
-                    <small>{product.email}</small>
-                  </td>
-
-                  <td style={cellStyle}>
-                    {product.price
-                      ? `${product.currency || ""} ${product.price}`
-                      : "—"}
-                  </td>
-
-                  <td style={cellStyle}>
-                    {product.stock_status || "—"}
-                  </td>
-
-                  <td style={cellStyle}>
-                    {product.lead_time || "—"}
-                  </td>
-
-                  <td style={cellStyle}>
-                    <strong>
-                      {product.status}
-                    </strong>
-                  </td>
-
-                  <td style={cellStyle}>
-                    <div
-                      style={{
-                        display: "flex",
-                        gap: "8px",
-                      }}
-                    >
-                      <button
-                        type="button"
-                        disabled={
-                          updatingId === product.id ||
-                          product.status === "approved"
-                        }
-                        onClick={() =>
-                          updateProduct(
-                            product.id,
-                            "approved"
-                          )
-                        }
-                      >
-                        Approve
-                      </button>
-
-                      <button
-                        type="button"
-                        disabled={
-                          updatingId === product.id ||
-                          product.status === "rejected"
-                        }
-                        onClick={() =>
-                          updateProduct(
-                            product.id,
-                            "rejected"
-                          )
-                        }
-                      >
-                        Reject
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-      </div>
+                  <button
+                    type="button"
+                    disabled={
+                      updatingId === product.id ||
+                      product.status === "rejected"
+                    }
+                    onClick={() => updateProduct(product.id, "rejected")}
+                    style={{
+                      ...rejectButtonStyle,
+                      opacity: product.status === "rejected" ? 0.45 : 1,
+                    }}
+                  >
+                    Reject
+                  </button>
+                </div>
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
     </main>
   );
 }
 
-const cellStyle: React.CSSProperties = {
-  padding: "16px",
+function Detail({
+  label,
+  value,
+}: {
+  label: string;
+  value: React.ReactNode;
+}) {
+  return (
+    <div style={detailRowStyle}>
+      <span style={detailLabelStyle}>{label}</span>
+      <span style={detailValueStyle}>{value}</span>
+    </div>
+  );
+}
+
+function StatusBadge({ status }: { status: string }) {
+  const normalized = status?.toLowerCase();
+
+  let background = "#fff7df";
+  let color = "#886818";
+
+  if (normalized === "approved") {
+    background = "#eaf6ef";
+    color = "#286647";
+  }
+
+  if (normalized === "rejected") {
+    background = "#fff0ee";
+    color = "#a23c35";
+  }
+
+  return (
+    <span
+      style={{
+        padding: "7px 12px",
+        borderRadius: "999px",
+        background,
+        color,
+        fontSize: "12px",
+        fontWeight: 700,
+        textTransform: "capitalize",
+      }}
+    >
+      {status}
+    </span>
+  );
+}
+
+function formatStock(value: string | null) {
+  if (!value) return "—";
+
+  return value
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+const pageStyle: React.CSSProperties = {
+  maxWidth: "1250px",
+  margin: "0 auto",
+  padding: "42px 24px 70px",
+};
+
+const pageHeaderStyle: React.CSSProperties = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "20px",
+  marginBottom: "28px",
+};
+
+const titleStyle: React.CSSProperties = {
+  margin: "0 0 7px",
+  color: "#173f4c",
+  fontSize: "32px",
+};
+
+const subtitleStyle: React.CSSProperties = {
+  margin: 0,
+  color: "#67797f",
+};
+
+const countStyle: React.CSSProperties = {
+  padding: "9px 14px",
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "9px",
+  color: "#173f4c",
+  fontSize: "13px",
+  fontWeight: 700,
+};
+
+const listStyle: React.CSSProperties = {
+  display: "grid",
+  gap: "18px",
+};
+
+const cardStyle: React.CSSProperties = {
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "14px",
+  overflow: "hidden",
+};
+
+const cardHeaderStyle: React.CSSProperties = {
+  padding: "22px 24px",
+  display: "flex",
+  justifyContent: "space-between",
+  gap: "20px",
   borderBottom: "1px solid #edf0ef",
-  color: "#4d6066",
+};
+
+const productTitleStyle: React.CSSProperties = {
+  margin: "0 0 5px",
+  color: "#173f4c",
+  fontSize: "20px",
+};
+
+const smallTextStyle: React.CSSProperties = {
+  color: "#879398",
+  fontSize: "12px",
+};
+
+const detailsGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "1.2fr 1fr 0.8fr",
+  gap: "32px",
+  padding: "24px",
+};
+
+const availabilityStyle: React.CSSProperties = {
+  paddingLeft: "24px",
+  borderLeft: "1px solid #edf0ef",
+};
+
+const sectionTitleStyle: React.CSSProperties = {
+  margin: "0 0 16px",
+  color: "#173f4c",
   fontSize: "14px",
-  verticalAlign: "top",
+};
+
+const detailRowStyle: React.CSSProperties = {
+  marginBottom: "12px",
+};
+
+const detailLabelStyle: React.CSSProperties = {
+  display: "block",
+  color: "#879398",
+  fontSize: "11px",
+  fontWeight: 700,
+  textTransform: "uppercase",
+  marginBottom: "3px",
+};
+
+const detailValueStyle: React.CSSProperties = {
+  color: "#43575d",
+  fontSize: "14px",
+  overflowWrap: "anywhere",
+};
+
+const cardFooterStyle: React.CSSProperties = {
+  padding: "15px 24px",
+  background: "#fbfbf9",
+  borderTop: "1px solid #edf0ef",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "20px",
+};
+
+const footerTextStyle: React.CSSProperties = {
+  color: "#718086",
+  fontSize: "13px",
+};
+
+const actionsStyle: React.CSSProperties = {
+  display: "flex",
+  gap: "9px",
+};
+
+const approveButtonStyle: React.CSSProperties = {
+  border: "none",
+  background: "#173f4c",
+  color: "#ffffff",
+  borderRadius: "7px",
+  padding: "9px 15px",
+  fontWeight: 700,
+  cursor: "pointer",
+};
+
+const rejectButtonStyle: React.CSSProperties = {
+  border: "1px solid #d9dddd",
+  background: "#ffffff",
+  color: "#6c5552",
+  borderRadius: "7px",
+  padding: "9px 15px",
+  fontWeight: 700,
+  cursor: "pointer",
+};
+
+const successStyle: React.CSSProperties = {
+  marginBottom: "18px",
+  padding: "12px 15px",
+  background: "#eef8f3",
+  border: "1px solid #d3ebdf",
+  borderRadius: "9px",
+  color: "#286647",
+};
+
+const errorStyle: React.CSSProperties = {
+  ...successStyle,
+  background: "#fff3f1",
+  border: "1px solid #f2d4d0",
+  color: "#a23c35",
+};
+
+const emptyStyle: React.CSSProperties = {
+  padding: "50px",
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "14px",
+  textAlign: "center",
+  color: "#718086",
 };

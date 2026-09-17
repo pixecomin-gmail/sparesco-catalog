@@ -92,238 +92,443 @@ export default function AdminVendorsPage() {
 
   if (loading) {
     return (
-      <main
-        style={{
-          maxWidth: "1450px",
-          margin: "0 auto",
-          padding: "50px 24px",
-        }}
-      >
+      <main style={pageStyle}>
         <p>Loading vendors...</p>
       </main>
     );
   }
 
   return (
-    <main
-      style={{
-        maxWidth: "1450px",
-        margin: "0 auto",
-        padding: "50px 24px",
-      }}
-    >
-      <div style={{ marginBottom: "30px" }}>
-        <span
-          style={{
-            color: "#2a8392",
-            fontSize: "13px",
-            fontWeight: 700,
-            letterSpacing: "0.1em",
-          }}
-        >
-          SPARESCO ADMIN
-        </span>
+    <main style={pageStyle}>
+      <div style={pageHeaderStyle}>
+        <div>
+          <h1 style={titleStyle}>Vendors</h1>
+          <p style={subtitleStyle}>
+            Review and manage vendor registrations.
+          </p>
+        </div>
 
-        <h1
-          style={{
-            margin: "10px 0 8px",
-            color: "#173f4c",
-          }}
-        >
-          Vendors
-        </h1>
-
-        <p
-          style={{
-            margin: 0,
-            color: "#67797f",
-          }}
-        >
-          Review and manage vendor registrations.
-        </p>
+        <div style={countStyle}>
+          {vendors.length} {vendors.length === 1 ? "Vendor" : "Vendors"}
+        </div>
       </div>
 
-      {message && (
-        <div
-          style={{
-            marginBottom: "20px",
-            padding: "12px 15px",
-            borderRadius: "10px",
-            background: "#eef8f3",
-            border: "1px solid #d3ebdf",
-            color: "#286647",
-          }}
-        >
-          {message}
-        </div>
-      )}
+      {message && <div style={successStyle}>{message}</div>}
+      {error && <div style={errorStyle}>{error}</div>}
 
-      {error && (
-        <div
-          style={{
-            marginBottom: "20px",
-            padding: "12px 15px",
-            borderRadius: "10px",
-            background: "#fff3f1",
-            border: "1px solid #f2d4d0",
-            color: "#a23c35",
-          }}
-        >
-          {error}
-        </div>
-      )}
+      {vendors.length === 0 ? (
+        <div style={emptyStyle}>No vendor applications found.</div>
+      ) : (
+        <div style={listStyle}>
+          {vendors.map((vendor) => (
+            <section key={vendor.id} style={cardStyle}>
+              <div style={cardHeaderStyle}>
+                <div>
+                  <h2 style={companyStyle}>{vendor.company_name}</h2>
 
-      <div
-        style={{
-          overflowX: "auto",
-          background: "#ffffff",
-          border: "1px solid #e1e6e4",
-          borderRadius: "16px",
-        }}
-      >
-        <table
-          style={{
-            width: "100%",
-            borderCollapse: "collapse",
-            minWidth: "1250px",
-          }}
-        >
-          <thead>
-            <tr
-              style={{
-                background: "#f7f5ef",
-                textAlign: "left",
-              }}
-            >
-              {[
-                "Company",
-                "Contact",
-                "Email",
-                "Phone",
-                "Location",
-                "GST / Tax",
-                "Status",
-                "Product Limit",
-                "Submitted",
-                "Created",
-                "Actions",
-              ].map((heading) => (
-                <th
-                  key={heading}
-                  style={{
-                    padding: "14px 16px",
-                    color: "#173f4c",
-                    fontSize: "13px",
-                    borderBottom: "1px solid #e1e6e4",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  {heading}
-                </th>
-              ))}
-            </tr>
-          </thead>
+                  <span style={vendorIdStyle}>
+                    Vendor #{vendor.id}
+                  </span>
+                </div>
 
-          <tbody>
-            {vendors.length === 0 ? (
-              <tr>
-                <td
-                  colSpan={11}
-                  style={{
-                    padding: "30px",
-                    textAlign: "center",
-                    color: "#718086",
-                  }}
-                >
-                  No vendor applications found.
-                </td>
-              </tr>
-            ) : (
-              vendors.map((vendor) => (
-                <tr key={vendor.id}>
-                  <td style={cellStyle}>
-                    <strong style={{ color: "#173f4c" }}>
-                      {vendor.company_name}
-                    </strong>
-                  </td>
+                <StatusBadge status={vendor.status} />
+              </div>
 
-                  <td style={cellStyle}>{vendor.contact_person}</td>
+              <div style={detailsGridStyle}>
+                <div style={detailSectionStyle}>
+                  <h3 style={sectionTitleStyle}>Contact Details</h3>
 
-                  <td style={cellStyle}>{vendor.email}</td>
+                  <Detail
+                    label="Contact Person"
+                    value={vendor.contact_person}
+                  />
 
-                  <td style={cellStyle}>{vendor.phone || "—"}</td>
+                  <Detail label="Email" value={vendor.email} />
 
-                  <td style={cellStyle}>
-                    {[vendor.city, vendor.country]
-                      .filter(Boolean)
-                      .join(", ") || "—"}
-                  </td>
+                  <Detail
+                    label="Phone"
+                    value={vendor.phone || "—"}
+                  />
+                </div>
 
-                  <td style={cellStyle}>{vendor.gst_number || "—"}</td>
+                <div style={detailSectionStyle}>
+                  <h3 style={sectionTitleStyle}>Business Details</h3>
 
-                  <td style={cellStyle}>
-                    <strong>{vendor.status}</strong>
-                  </td>
+                  <Detail
+                    label="Location"
+                    value={
+                      [vendor.city, vendor.country]
+                        .filter(Boolean)
+                        .join(", ") || "—"
+                    }
+                  />
 
-                  <td style={cellStyle}>{vendor.product_limit}</td>
+                  <Detail
+                    label="GST / Tax"
+                    value={vendor.gst_number || "—"}
+                  />
 
-                  <td style={cellStyle}>{vendor.products_submitted}</td>
+                  <Detail
+                    label="Registered"
+                    value={
+                      vendor.created_at
+                        ? new Date(
+                            vendor.created_at
+                          ).toLocaleDateString()
+                        : "—"
+                    }
+                  />
+                </div>
 
-                  <td style={cellStyle}>
-                    {vendor.created_at
-                      ? new Date(vendor.created_at).toLocaleDateString()
-                      : "—"}
-                  </td>
+                <div style={productSectionStyle}>
+                  <h3 style={sectionTitleStyle}>Product Access</h3>
 
-                  <td style={cellStyle}>
+                  <div style={productNumberStyle}>
+                    {vendor.products_submitted}
+                    <span style={productLimitStyle}>
+                      {" "}
+                      / {vendor.product_limit}
+                    </span>
+                  </div>
+
+                  <div style={productTextStyle}>
+                    products submitted
+                  </div>
+
+                  <div style={progressTrackStyle}>
                     <div
                       style={{
-                        display: "flex",
-                        gap: "8px",
+                        ...progressBarStyle,
+                        width: `${Math.min(
+                          100,
+                          vendor.product_limit > 0
+                            ? (vendor.products_submitted /
+                                vendor.product_limit) *
+                                100
+                            : 0
+                        )}%`,
                       }}
-                    >
-                      <button
-                        type="button"
-                        disabled={
-                          updatingId === vendor.id ||
-                          vendor.status === "approved"
-                        }
-                        onClick={() =>
-                          updateVendorStatus(vendor.id, "approved")
-                        }
-                      >
-                        Approve
-                      </button>
+                    />
+                  </div>
+                </div>
+              </div>
 
-                      <button
-                        type="button"
-                        disabled={
-                          updatingId === vendor.id ||
-                          vendor.status === "rejected"
-                        }
-                        onClick={() =>
-                          updateVendorStatus(vendor.id, "rejected")
-                        }
-                      >
-                        Reject
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-      </div>
+              <div style={cardFooterStyle}>
+                <span style={footerTextStyle}>
+                  Application status:{" "}
+                  <strong
+                    style={{
+                      textTransform: "capitalize",
+                      color: "#173f4c",
+                    }}
+                  >
+                    {vendor.status}
+                  </strong>
+                </span>
+
+                <div style={actionsStyle}>
+                  <button
+                    type="button"
+                    disabled={
+                      updatingId === vendor.id ||
+                      vendor.status === "approved"
+                    }
+                    onClick={() =>
+                      updateVendorStatus(vendor.id, "approved")
+                    }
+                    style={{
+                      ...approveButtonStyle,
+                      opacity:
+                        vendor.status === "approved" ? 0.45 : 1,
+                    }}
+                  >
+                    {updatingId === vendor.id
+                      ? "Updating..."
+                      : "Approve"}
+                  </button>
+
+                  <button
+                    type="button"
+                    disabled={
+                      updatingId === vendor.id ||
+                      vendor.status === "rejected"
+                    }
+                    onClick={() =>
+                      updateVendorStatus(vendor.id, "rejected")
+                    }
+                    style={{
+                      ...rejectButtonStyle,
+                      opacity:
+                        vendor.status === "rejected" ? 0.45 : 1,
+                    }}
+                  >
+                    Reject
+                  </button>
+                </div>
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
     </main>
   );
 }
 
-const cellStyle: React.CSSProperties = {
-  padding: "16px",
+function Detail({
+  label,
+  value,
+}: {
+  label: string;
+  value: React.ReactNode;
+}) {
+  return (
+    <div style={detailRowStyle}>
+      <span style={detailLabelStyle}>{label}</span>
+      <span style={detailValueStyle}>{value}</span>
+    </div>
+  );
+}
+
+function StatusBadge({ status }: { status: string }) {
+  const normalized = status?.toLowerCase();
+
+  let background = "#fff7df";
+  let color = "#886818";
+
+  if (normalized === "approved") {
+    background = "#eaf6ef";
+    color = "#286647";
+  }
+
+  if (normalized === "rejected") {
+    background = "#fff0ee";
+    color = "#a23c35";
+  }
+
+  return (
+    <span
+      style={{
+        padding: "7px 12px",
+        borderRadius: "999px",
+        background,
+        color,
+        fontSize: "12px",
+        fontWeight: 700,
+        textTransform: "capitalize",
+      }}
+    >
+      {status}
+    </span>
+  );
+}
+
+const pageStyle: React.CSSProperties = {
+  maxWidth: "1250px",
+  margin: "0 auto",
+  padding: "42px 24px 70px",
+};
+
+const pageHeaderStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  gap: "20px",
+  marginBottom: "28px",
+};
+
+const titleStyle: React.CSSProperties = {
+  margin: "0 0 7px",
+  color: "#173f4c",
+  fontSize: "32px",
+};
+
+const subtitleStyle: React.CSSProperties = {
+  margin: 0,
+  color: "#67797f",
+};
+
+const countStyle: React.CSSProperties = {
+  padding: "9px 14px",
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "9px",
+  color: "#173f4c",
+  fontSize: "13px",
+  fontWeight: 700,
+};
+
+const listStyle: React.CSSProperties = {
+  display: "grid",
+  gap: "18px",
+};
+
+const cardStyle: React.CSSProperties = {
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "14px",
+  overflow: "hidden",
+};
+
+const cardHeaderStyle: React.CSSProperties = {
+  padding: "22px 24px",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "flex-start",
+  gap: "20px",
   borderBottom: "1px solid #edf0ef",
-  color: "#4d6066",
+};
+
+const companyStyle: React.CSSProperties = {
+  margin: "0 0 4px",
+  color: "#173f4c",
+  fontSize: "20px",
+};
+
+const vendorIdStyle: React.CSSProperties = {
+  color: "#879398",
+  fontSize: "12px",
+};
+
+const detailsGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr 0.7fr",
+  gap: "32px",
+  padding: "24px",
+};
+
+const detailSectionStyle: React.CSSProperties = {
+  minWidth: 0,
+};
+
+const productSectionStyle: React.CSSProperties = {
+  minWidth: 0,
+  paddingLeft: "24px",
+  borderLeft: "1px solid #edf0ef",
+};
+
+const sectionTitleStyle: React.CSSProperties = {
+  margin: "0 0 16px",
+  color: "#173f4c",
   fontSize: "14px",
-  verticalAlign: "top",
-  whiteSpace: "nowrap",
+};
+
+const detailRowStyle: React.CSSProperties = {
+  marginBottom: "12px",
+};
+
+const detailLabelStyle: React.CSSProperties = {
+  display: "block",
+  color: "#879398",
+  fontSize: "11px",
+  fontWeight: 700,
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+  marginBottom: "3px",
+};
+
+const detailValueStyle: React.CSSProperties = {
+  display: "block",
+  color: "#43575d",
+  fontSize: "14px",
+  overflowWrap: "anywhere",
+};
+
+const productNumberStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "28px",
+  fontWeight: 800,
+};
+
+const productLimitStyle: React.CSSProperties = {
+  color: "#93a0a4",
+  fontSize: "16px",
+  fontWeight: 600,
+};
+
+const productTextStyle: React.CSSProperties = {
+  color: "#718086",
+  fontSize: "12px",
+  marginTop: "2px",
+};
+
+const progressTrackStyle: React.CSSProperties = {
+  width: "100%",
+  height: "6px",
+  background: "#edf1ef",
+  borderRadius: "10px",
+  overflow: "hidden",
+  marginTop: "15px",
+};
+
+const progressBarStyle: React.CSSProperties = {
+  height: "100%",
+  background: "#2a8392",
+  borderRadius: "10px",
+};
+
+const cardFooterStyle: React.CSSProperties = {
+  padding: "15px 24px",
+  background: "#fbfbf9",
+  borderTop: "1px solid #edf0ef",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "20px",
+};
+
+const footerTextStyle: React.CSSProperties = {
+  color: "#718086",
+  fontSize: "13px",
+};
+
+const actionsStyle: React.CSSProperties = {
+  display: "flex",
+  gap: "9px",
+};
+
+const approveButtonStyle: React.CSSProperties = {
+  border: "none",
+  background: "#173f4c",
+  color: "#ffffff",
+  borderRadius: "7px",
+  padding: "9px 15px",
+  fontWeight: 700,
+  cursor: "pointer",
+};
+
+const rejectButtonStyle: React.CSSProperties = {
+  border: "1px solid #d9dddd",
+  background: "#ffffff",
+  color: "#6c5552",
+  borderRadius: "7px",
+  padding: "9px 15px",
+  fontWeight: 700,
+  cursor: "pointer",
+};
+
+const successStyle: React.CSSProperties = {
+  marginBottom: "18px",
+  padding: "12px 15px",
+  background: "#eef8f3",
+  border: "1px solid #d3ebdf",
+  borderRadius: "9px",
+  color: "#286647",
+};
+
+const errorStyle: React.CSSProperties = {
+  marginBottom: "18px",
+  padding: "12px 15px",
+  background: "#fff3f1",
+  border: "1px solid #f2d4d0",
+  borderRadius: "9px",
+  color: "#a23c35",
+};
+
+const emptyStyle: React.CSSProperties = {
+  padding: "50px",
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "14px",
+  textAlign: "center",
+  color: "#718086",
 };
