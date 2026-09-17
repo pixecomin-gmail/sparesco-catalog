@@ -46,6 +46,8 @@ export default function AdminQuotationsPage() {
   const [error, setError] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
   const [openQuote, setOpenQuote] = useState<number | null>(null);
+  const [updatingId, setUpdatingId] = useState<number | null>(null);
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     loadQuotes();
@@ -62,6 +64,11 @@ export default function AdminQuotationsPage() {
 
       const data = await response.json();
 
+      if (response.status === 401) {
+        window.location.href = "/admin/login";
+        return;
+      }
+
       if (!response.ok) {
         setError(data.error || "Unable to load quotations.");
         return;
@@ -72,6 +79,51 @@ export default function AdminQuotationsPage() {
       setError("Unable to load quotations.");
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function updateQuoteStatus(
+    quoteId: number,
+    status: "accepted" | "rejected"
+  ) {
+    setUpdatingId(quoteId);
+    setMessage("");
+    setError("");
+
+    try {
+      const response = await fetch(`/api/admin/vendor-quotes/${quoteId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ status }),
+      });
+
+      const data = await response.json();
+
+      if (response.status === 401) {
+        window.location.href = "/admin/login";
+        return;
+      }
+
+      if (!response.ok) {
+        setError(data.error || "Unable to update quotation.");
+        return;
+      }
+
+      setQuotes((current) =>
+        current.map((quote) =>
+          quote.id === quoteId
+            ? { ...quote, admin_status: status }
+            : quote
+        )
+      );
+
+      setMessage(data.message || "Quotation updated successfully.");
+    } catch {
+      setError("Unable to update quotation.");
+    } finally {
+      setUpdatingId(null);
     }
   }
 
@@ -103,6 +155,8 @@ export default function AdminQuotationsPage() {
       </div>
 
       {error && <div style={errorStyle}>{error}</div>}
+
+      {message && <div style={successStyle}>{message}</div>}
 
       <div style={filtersStyle}>
         {(["all", "pending", "accepted", "rejected"] as Filter[]).map(
@@ -213,57 +267,71 @@ export default function AdminQuotationsPage() {
                         />
                       </DetailSection>
 
-                      <DetailSection title="Quotation">
-                        <Detail
-                          label="Quoted Quantity"
-                          value={quote.quoted_quantity ?? "—"}
-                        />
-                        <Detail
-                          label="Unit Price"
-                          value={`${quote.currency || ""} ${
-                            quote.unit_price ?? "—"
-                          }`}
-                        />
-                        <Detail
-                          label="Total Price"
-                          value={`${quote.currency || ""} ${
-                            quote.total_price ?? "—"
-                          }`}
-                        />
-                        <Detail
-                          label="Stock Available"
-                          value={quote.stock_available === 1 ? "Yes" : "No"}
-                        />
-                        <Detail
-                          label="Lead Time"
-                          value={quote.lead_time || "—"}
-                        />
-                        <Detail label="MOQ" value={quote.moq ?? "—"} />
-                        <Detail
-                          label="Condition"
-                          value={quote.condition || "—"}
-                        />
-                        <Detail
-                          label="Manufacturer / Brand"
-                          value={quote.manufacturer_brand || "—"}
-                        />
-                        <Detail
-                          label="Country of Origin"
-                          value={quote.country_of_origin || "—"}
-                        />
-                        <Detail
-                          label="Quote Validity"
-                          value={quote.quote_validity || "—"}
-                        />
-                        <Detail
-                          label="Shipping Included"
-                          value={formatYesNo(quote.shipping_included)}
-                        />
-                        <Detail
-                          label="Taxes Included"
-                          value={formatYesNo(quote.taxes_included)}
-                        />
-                      </DetailSection>
+                      <div>
+                        <h3 style={sectionTitleStyle}>Quotation</h3>
+
+                        <div style={quotationGridStyle}>
+                          <Detail
+                            label="Quoted Quantity"
+                            value={quote.quoted_quantity ?? "—"}
+                          />
+
+                          <Detail
+                            label="Unit Price"
+                            value={`${quote.currency || ""} ${quote.unit_price ?? "—"}`}
+                          />
+
+                          <Detail
+                            label="Total Price"
+                            value={`${quote.currency || ""} ${quote.total_price ?? "—"}`}
+                          />
+
+                          <Detail
+                            label="Stock Available"
+                            value={quote.stock_available === 1 ? "Yes" : "No"}
+                          />
+
+                          <Detail
+                            label="Lead Time"
+                            value={quote.lead_time || "—"}
+                          />
+
+                          <Detail
+                            label="MOQ"
+                            value={quote.moq ?? "—"}
+                          />
+
+                          <Detail
+                            label="Condition"
+                            value={quote.condition || "—"}
+                          />
+
+                          <Detail
+                            label="Manufacturer / Brand"
+                            value={quote.manufacturer_brand || "—"}
+                          />
+
+                          <Detail
+                            label="Country of Origin"
+                            value={quote.country_of_origin || "—"}
+                          />
+
+                          <Detail
+                            label="Quote Validity"
+                            value={quote.quote_validity || "—"}
+                          />
+
+                          <Detail
+                            label="Shipping Included"
+                            value={formatYesNo(quote.shipping_included)}
+                          />
+
+                          <Detail
+                            label="Taxes Included"
+                            value={formatYesNo(quote.taxes_included)}
+                          />
+                        </div>
+                      </div>
                     </div>
 
                     {quote.vendor_remarks && (
@@ -274,6 +342,53 @@ export default function AdminQuotationsPage() {
                         </div>
                       </div>
                     )}
+
+                    <div style={quoteActionRowStyle}>
+                      <div>
+                        <span style={labelStyle}>Admin Decision</span>
+                        <StatusBadge status={quote.admin_status} />
+                      </div>
+
+                      <div style={quoteButtonsStyle}>
+                        <button
+                          type="button"
+                          disabled={
+                            updatingId === quote.id ||
+                            quote.admin_status === "accepted"
+                          }
+                          onClick={() => updateQuoteStatus(quote.id, "accepted")}
+                          style={{
+                            ...acceptButtonStyle,
+                            opacity:
+                              updatingId === quote.id ||
+                                quote.admin_status === "accepted"
+                                ? 0.45
+                                : 1,
+                          }}
+                        >
+                          {updatingId === quote.id ? "Updating..." : "Accept"}
+                        </button>
+
+                        <button
+                          type="button"
+                          disabled={
+                            updatingId === quote.id ||
+                            quote.admin_status === "rejected"
+                          }
+                          onClick={() => updateQuoteStatus(quote.id, "rejected")}
+                          style={{
+                            ...rejectButtonStyle,
+                            opacity:
+                              updatingId === quote.id ||
+                                quote.admin_status === "rejected"
+                                ? 0.45
+                                : 1,
+                          }}
+                        >
+                          {updatingId === quote.id ? "Updating..." : "Reject"}
+                        </button>
+                      </div>
+                    </div>
 
                     <div style={submittedStyle}>
                       Submitted: {formatDate(quote.submitted_at)}
@@ -496,8 +611,15 @@ const expandedStyle: React.CSSProperties = {
 
 const detailGridStyle: React.CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr",
-  gap: "35px",
+  gridTemplateColumns: "0.8fr 0.8fr 1.4fr",
+  gap: "40px",
+};
+
+const quotationGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  columnGap: "30px",
+  rowGap: "4px",
 };
 
 const sectionTitleStyle: React.CSSProperties = {
@@ -546,4 +668,48 @@ const emptyStyle: React.CSSProperties = {
   borderRadius: "14px",
   textAlign: "center",
   color: "#718086",
+};
+
+const quoteActionRowStyle: React.CSSProperties = {
+  marginTop: "22px",
+  paddingTop: "20px",
+  borderTop: "1px solid #e4e9e7",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "20px",
+};
+
+const quoteButtonsStyle: React.CSSProperties = {
+  display: "flex",
+  gap: "10px",
+};
+
+const acceptButtonStyle: React.CSSProperties = {
+  border: "none",
+  background: "#173f4c",
+  color: "#ffffff",
+  borderRadius: "7px",
+  padding: "10px 18px",
+  fontWeight: 700,
+  cursor: "pointer",
+};
+
+const rejectButtonStyle: React.CSSProperties = {
+  border: "1px solid #d9dddd",
+  background: "#ffffff",
+  color: "#a23c35",
+  borderRadius: "7px",
+  padding: "10px 18px",
+  fontWeight: 700,
+  cursor: "pointer",
+};
+
+const successStyle: React.CSSProperties = {
+  marginBottom: "18px",
+  padding: "12px 15px",
+  background: "#eef8f3",
+  border: "1px solid #d3ebdf",
+  borderRadius: "9px",
+  color: "#286647",
 };

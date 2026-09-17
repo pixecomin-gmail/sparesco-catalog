@@ -13,10 +13,7 @@ export async function PATCH(
 
     if (!quoteId) {
       return NextResponse.json(
-        {
-          success: false,
-          error: "Invalid quotation ID.",
-        },
+        { error: "Invalid quotation ID." },
         { status: 400 }
       );
     }
@@ -26,10 +23,7 @@ export async function PATCH(
 
     if (!["accepted", "rejected"].includes(status)) {
       return NextResponse.json(
-        {
-          success: false,
-          error: "Invalid quotation status.",
-        },
+        { error: "Invalid quotation status." },
         { status: 400 }
       );
     }
@@ -39,50 +33,34 @@ export async function PATCH(
 
     if (!db) {
       return NextResponse.json(
-        {
-          success: false,
-          error: "Database is not configured.",
-        },
+        { error: "Database binding not found." },
         { status: 500 }
       );
     }
 
     const quote = await db
-      .prepare(
-        `
-        SELECT
-          id,
-          enquiry_id,
-          vendor_id,
-          admin_status
+      .prepare(`
+        SELECT id, enquiry_id, vendor_id, admin_status
         FROM vendor_quotes
         WHERE id = ?
         LIMIT 1
-        `
-      )
+      `)
       .bind(quoteId)
       .first();
 
     if (!quote) {
       return NextResponse.json(
-        {
-          success: false,
-          error: "Quotation not found.",
-        },
+        { error: "Quotation not found." },
         { status: 404 }
       );
     }
 
     await db
-      .prepare(
-        `
+      .prepare(`
         UPDATE vendor_quotes
-        SET
-          admin_status = ?,
-          updated_at = CURRENT_TIMESTAMP
+        SET admin_status = ?, updated_at = CURRENT_TIMESTAMP
         WHERE id = ?
-        `
-      )
+      `)
       .bind(status, quoteId)
       .run();
 
@@ -97,10 +75,7 @@ export async function PATCH(
     console.error("Admin quotation update error:", error);
 
     return NextResponse.json(
-      {
-        success: false,
-        error: "Unable to update quotation.",
-      },
+      { error: "Unable to update quotation." },
       { status: 500 }
     );
   }

@@ -40,6 +40,11 @@ export default function AdminVendorProductsPage() {
 
       const data = await response.json();
 
+      if (response.status === 401) {
+        window.location.href = "/admin/login";
+        return;
+      }
+
       if (!response.ok) {
         setError(data.error || "Unable to load vendor products.");
         return;
@@ -265,13 +270,20 @@ function StatusBadge({ status }: { status: string }) {
   return (
     <span
       style={{
-        padding: "7px 12px",
-        borderRadius: "999px",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "6px 12px",
+        borderRadius: "20px",
         background,
         color,
         fontSize: "12px",
+        lineHeight: "1",
         fontWeight: 700,
         textTransform: "capitalize",
+        whiteSpace: "nowrap",
+        width: "fit-content",
+        height: "fit-content",
       }}
     >
       {status}
@@ -338,6 +350,7 @@ const cardHeaderStyle: React.CSSProperties = {
   padding: "22px 24px",
   display: "flex",
   justifyContent: "space-between",
+  alignItems: "flex-start",
   gap: "20px",
   borderBottom: "1px solid #edf0ef",
 };

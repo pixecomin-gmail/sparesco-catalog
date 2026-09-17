@@ -35,6 +35,11 @@ export default function AdminVendorsPage() {
 
       const data = await response.json();
 
+      if (response.status === 401) {
+        window.location.href = "/admin/login";
+        return;
+      }
+
       if (!response.ok) {
         setError(data.error || "Unable to load vendors.");
         return;
@@ -173,8 +178,8 @@ export default function AdminVendorsPage() {
                     value={
                       vendor.created_at
                         ? new Date(
-                            vendor.created_at
-                          ).toLocaleDateString()
+                          vendor.created_at
+                        ).toLocaleDateString()
                         : "—"
                     }
                   />
@@ -203,8 +208,8 @@ export default function AdminVendorsPage() {
                           100,
                           vendor.product_limit > 0
                             ? (vendor.products_submitted /
-                                vendor.product_limit) *
-                                100
+                              vendor.product_limit) *
+                            100
                             : 0
                         )}%`,
                       }}
