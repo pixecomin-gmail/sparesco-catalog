@@ -9,13 +9,13 @@ export async function PATCH(
 ) {
   try {
     const { id } = await context.params;
-    const quoteId = Number(id);
+    const productId = Number(id);
 
-    if (!quoteId) {
+    if (!productId) {
       return NextResponse.json(
         {
           success: false,
-          error: "Invalid quotation ID.",
+          error: "Invalid product ID.",
         },
         { status: 400 }
       );
@@ -24,11 +24,11 @@ export async function PATCH(
     const body = await request.json();
     const status = body.status;
 
-    if (!["accepted", "rejected"].includes(status)) {
+    if (!["approved", "rejected"].includes(status)) {
       return NextResponse.json(
         {
           success: false,
-          error: "Invalid quotation status.",
+          error: "Invalid product status.",
         },
         { status: 400 }
       );
@@ -47,27 +47,27 @@ export async function PATCH(
       );
     }
 
-    const quote = await db
+    const product = await db
       .prepare(
         `
         SELECT
           id,
-          enquiry_id,
           vendor_id,
-          admin_status
-        FROM vendor_quotes
+          product_name,
+          status
+        FROM vendor_products
         WHERE id = ?
         LIMIT 1
         `
       )
-      .bind(quoteId)
+      .bind(productId)
       .first();
 
-    if (!quote) {
+    if (!product) {
       return NextResponse.json(
         {
           success: false,
-          error: "Quotation not found.",
+          error: "Vendor product not found.",
         },
         { status: 404 }
       );
@@ -76,30 +76,30 @@ export async function PATCH(
     await db
       .prepare(
         `
-        UPDATE vendor_quotes
+        UPDATE vendor_products
         SET
-          admin_status = ?,
+          status = ?,
           updated_at = CURRENT_TIMESTAMP
         WHERE id = ?
         `
       )
-      .bind(status, quoteId)
+      .bind(status, productId)
       .run();
 
     return NextResponse.json({
       success: true,
       message:
-        status === "accepted"
-          ? "Quotation accepted successfully."
-          : "Quotation rejected successfully.",
+        status === "approved"
+          ? "Product approved successfully."
+          : "Product rejected successfully.",
     });
   } catch (error) {
-    console.error("Admin quotation update error:", error);
+    console.error("Admin vendor product update error:", error);
 
     return NextResponse.json(
       {
         success: false,
-        error: "Unable to update quotation.",
+        error: "Unable to update vendor product.",
       },
       { status: 500 }
     );
