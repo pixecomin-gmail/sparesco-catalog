@@ -183,6 +183,38 @@ export async function GET(
                 .run();
         }
 
+        const quote = await db
+            .prepare(
+                `
+        SELECT
+          id,
+          quoted_quantity,
+          unit_price,
+          currency,
+          total_price,
+          stock_available,
+          lead_time,
+          moq,
+          condition,
+          manufacturer_brand,
+          country_of_origin,
+          quote_validity,
+          shipping_included,
+          taxes_included,
+          vendor_remarks,
+          admin_status,
+          submitted_at,
+          updated_at
+        FROM vendor_quotes
+        WHERE enquiry_id = ?
+          AND vendor_id = ?
+        ORDER BY id DESC
+        LIMIT 1
+        `
+            )
+            .bind(enquiryId, session.vendor_id)
+            .first();
+
         return NextResponse.json({
             success: true,
             enquiry: {
@@ -192,6 +224,7 @@ export async function GET(
                     ? enquiry.vendor_status
                     : "viewed",
             },
+            quote: quote || null,
         });
     } catch (error) {
         console.error("Vendor enquiry detail error:", error);
