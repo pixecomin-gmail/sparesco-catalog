@@ -119,15 +119,10 @@ export async function GET(request: Request) {
         `
         SELECT
           e.id,
-          e.customer_name,
-          e.customer_email,
-          e.customer_phone,
-          e.company_name,
           e.product_name,
           e.part_number,
           e.product_handle,
           e.quantity,
-          e.message,
           e.status AS enquiry_status,
           e.created_at,
           ev.status AS vendor_status,

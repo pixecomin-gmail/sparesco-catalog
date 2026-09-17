@@ -29,15 +29,10 @@ type VendorProduct = {
 
 type VendorEnquiry = {
   id: number;
-  customer_name: string;
-  customer_email: string;
-  customer_phone: string | null;
-  company_name: string | null;
   product_name: string | null;
   part_number: string | null;
   product_handle: string | null;
   quantity: string | null;
-  message: string | null;
   enquiry_status: string;
   vendor_status: string;
   created_at: string;
@@ -513,8 +508,6 @@ export default function VendorDashboardPage() {
                   <th style={{ padding: "12px 10px" }}>Product</th>
                   <th style={{ padding: "12px 10px" }}>Part Number</th>
                   <th style={{ padding: "12px 10px" }}>Quantity</th>
-                  <th style={{ padding: "12px 10px" }}>Company</th>
-                  <th style={{ padding: "12px 10px" }}>Customer</th>
                   <th style={{ padding: "12px 10px" }}>Received</th>
                   <th style={{ padding: "12px 10px" }}>Status</th>
                   <th style={{ padding: "12px 10px" }}>Action</th>
@@ -545,14 +538,6 @@ export default function VendorDashboardPage() {
 
                     <td style={{ padding: "14px 10px" }}>
                       {enquiry.quantity || "-"}
-                    </td>
-
-                    <td style={{ padding: "14px 10px" }}>
-                      {enquiry.company_name || "-"}
-                    </td>
-
-                    <td style={{ padding: "14px 10px" }}>
-                      {enquiry.customer_name}
                     </td>
 
                     <td style={{ padding: "14px 10px" }}>
