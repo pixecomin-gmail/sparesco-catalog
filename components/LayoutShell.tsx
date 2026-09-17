@@ -14,7 +14,9 @@ type Props = {
 export default function LayoutShell({ children }: Props) {
   const pathname = usePathname();
 
-  const hideLayout = pathname === "/password";
+  const hideLayout =
+  pathname === "/password" ||
+  pathname.startsWith("/admin");
 
   return (
     <>
