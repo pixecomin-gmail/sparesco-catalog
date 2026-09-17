@@ -517,6 +517,7 @@ export default function VendorDashboardPage() {
                   <th style={{ padding: "12px 10px" }}>Customer</th>
                   <th style={{ padding: "12px 10px" }}>Received</th>
                   <th style={{ padding: "12px 10px" }}>Status</th>
+                  <th style={{ padding: "12px 10px" }}>Action</th>
                 </tr>
               </thead>
 
@@ -571,6 +572,25 @@ export default function VendorDashboardPage() {
                           ? "Responded"
                           : "New"}
                       </strong>
+                    </td>
+
+                    <td style={{ padding: "14px 10px" }}>
+                      <button
+                        type="button"
+                        onClick={() => router.push(`/vendor/enquiries/${enquiry.id}`)}
+                        style={{
+                          padding: "9px 14px",
+                          borderRadius: "8px",
+                          border: "none",
+                          background: "#173f4c",
+                          color: "#ffffff",
+                          fontWeight: 700,
+                          cursor: "pointer",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        View Enquiry
+                      </button>
                     </td>
                   </tr>
                 ))}
