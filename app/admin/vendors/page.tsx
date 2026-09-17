@@ -95,6 +95,49 @@ export default function AdminVendorsPage() {
     }
   };
 
+  const increaseProductLimit = async (vendorId: number) => {
+    setUpdatingId(vendorId);
+    setMessage("");
+    setError("");
+
+    try {
+      const response = await fetch(`/api/admin/vendors/${vendorId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          action: "increase_limit",
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || "Unable to increase product limit.");
+        return;
+      }
+
+      setVendors((current) =>
+        current.map((vendor) =>
+          vendor.id === vendorId
+            ? {
+              ...vendor,
+              product_limit:
+                data.product_limit ?? vendor.product_limit + 10,
+            }
+            : vendor
+        )
+      );
+
+      setMessage("Vendor product limit increased by 10.");
+    } catch {
+      setError("Unable to increase product limit.");
+    } finally {
+      setUpdatingId(null);
+    }
+  };
+
   if (loading) {
     return (
       <main style={pageStyle}>
@@ -215,6 +258,17 @@ export default function AdminVendorsPage() {
                       }}
                     />
                   </div>
+
+                  <button
+                    type="button"
+                    disabled={updatingId === vendor.id}
+                    onClick={() => increaseProductLimit(vendor.id)}
+                    style={increaseLimitButtonStyle}
+                  >
+                    {updatingId === vendor.id
+                      ? "Updating..."
+                      : "+10 Products"}
+                  </button>
                 </div>
               </div>
 
@@ -536,4 +590,16 @@ const emptyStyle: React.CSSProperties = {
   borderRadius: "14px",
   textAlign: "center",
   color: "#718086",
+};
+
+const increaseLimitButtonStyle: React.CSSProperties = {
+  marginTop: "14px",
+  border: "1px solid #2a8392",
+  background: "#ffffff",
+  color: "#2a8392",
+  borderRadius: "7px",
+  padding: "8px 12px",
+  fontSize: "12px",
+  fontWeight: 700,
+  cursor: "pointer",
 };

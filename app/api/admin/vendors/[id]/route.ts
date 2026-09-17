@@ -19,11 +19,14 @@ export async function PATCH(
     }
 
     const body = await request.json();
-    const { status } = body;
+    const { status, action } = body;
 
-    if (!["approved", "rejected"].includes(status)) {
+    if (
+      action !== "increase_limit" &&
+      !["approved", "rejected"].includes(status)
+    ) {
       return NextResponse.json(
-        { success: false, error: "Invalid status." },
+        { success: false, error: "Invalid request." },
         { status: 400 }
       );
     }
@@ -38,15 +41,47 @@ export async function PATCH(
       );
     }
 
+    if (action === "increase_limit") {
+      await db
+        .prepare(
+          `
+      UPDATE vendors
+      SET
+        product_limit = product_limit + 10,
+        updated_at = CURRENT_TIMESTAMP
+      WHERE id = ?
+      `
+        )
+        .bind(vendorId)
+        .run();
+
+      const vendor = await db
+        .prepare(
+          `
+      SELECT product_limit
+      FROM vendors
+      WHERE id = ?
+      `
+        )
+        .bind(vendorId)
+        .first();
+
+      return NextResponse.json({
+        success: true,
+        product_limit: vendor?.product_limit,
+        message: "Product limit increased by 10.",
+      });
+    }
+
     await db
       .prepare(
         `
-        UPDATE vendors
-        SET
-          status = ?,
-          updated_at = CURRENT_TIMESTAMP
-        WHERE id = ?
-        `
+    UPDATE vendors
+    SET
+      status = ?,
+      updated_at = CURRENT_TIMESTAMP
+    WHERE id = ?
+    `
       )
       .bind(status, vendorId)
       .run();
