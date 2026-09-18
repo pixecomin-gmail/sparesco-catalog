@@ -43,10 +43,12 @@ export function middleware(request: NextRequest) {
       );
     }
 
-    // Allow admin login page and login API
+
+    // Allow admin login page and authentication APIs
     if (
       pathname === "/admin/login" ||
-      pathname === "/api/admin/login"
+      pathname === "/api/admin/login" ||
+      pathname === "/api/admin/login/verify-otp"
     ) {
       return NextResponse.next();
     }

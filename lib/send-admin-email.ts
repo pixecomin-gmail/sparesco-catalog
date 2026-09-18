@@ -838,3 +838,127 @@ export async function sendUserEmail({
     id: result.data?.id,
   };
 }
+
+export async function sendAdminOtpEmail({
+  to,
+  otp,
+}: {
+  to: string;
+  otp: string;
+}) {
+  const { resend, from } = getEmailConfiguration();
+
+  const recipient = String(to || "").trim();
+
+  if (!recipient) {
+    throw new Error("Admin email address is missing.");
+  }
+
+  const result = await resend.emails.send({
+    from,
+    to: recipient,
+    subject: "Sparesco Admin Login OTP",
+    html: `
+      <!doctype html>
+      <html lang="en">
+        <body
+          style="
+            margin:0;
+            padding:30px;
+            background:#f5f5f0;
+            font-family:Arial,sans-serif;
+          "
+        >
+          <div
+            style="
+              max-width:480px;
+              margin:0 auto;
+              background:#ffffff;
+              border:1px solid #e5e7eb;
+              border-radius:12px;
+              overflow:hidden;
+            "
+          >
+            <div
+              style="
+                padding:22px;
+                background:#173f4c;
+                color:#ffffff;
+                text-align:center;
+              "
+            >
+              <strong style="font-size:20px;">
+                Sparesco Admin Login
+              </strong>
+            </div>
+
+            <div
+              style="
+                padding:30px;
+                text-align:center;
+              "
+            >
+              <p
+                style="
+                  margin:0 0 20px;
+                  color:#475467;
+                  font-size:14px;
+                "
+              >
+                Your admin login OTP is:
+              </p>
+
+              <div
+                style="
+                  display:inline-block;
+                  padding:14px 24px;
+                  background:#f2f6f5;
+                  border-radius:8px;
+                  color:#173f4c;
+                  font-size:28px;
+                  font-weight:700;
+                  letter-spacing:6px;
+                "
+              >
+                ${escapeHtml(otp)}
+              </div>
+
+              <p
+                style="
+                  margin:20px 0 0;
+                  color:#7d8c91;
+                  font-size:12px;
+                "
+              >
+                This OTP expires in 10 minutes.
+              </p>
+
+              <p
+                style="
+                  margin:8px 0 0;
+                  color:#7d8c91;
+                  font-size:12px;
+                "
+              >
+                If you did not request this login, you can ignore this email.
+              </p>
+            </div>
+          </div>
+        </body>
+      </html>
+    `,
+  });
+
+  if (result.error) {
+    console.error("Admin OTP email error:", result.error);
+
+    throw new Error(
+      result.error.message || "Unable to send admin OTP."
+    );
+  }
+
+  return {
+    success: true,
+    id: result.data?.id,
+  };
+}
