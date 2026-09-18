@@ -10,6 +10,13 @@ const supabase = createClient(
   process.env.SUPABASE_SECRET_KEY!
 );
 
+function normalizePartNumber(value: string | null | undefined) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[\s-]+/g, "")
+    .trim();
+}
+
 export async function POST(request: Request) {
   try {
     const data = await request.json();
@@ -35,6 +42,7 @@ export async function POST(request: Request) {
         for (const item of data.items) {
           const productName = item.title?.trim() || null;
           const partNumber = item.partNumber?.trim() || null;
+          const normalizedPartNumber = normalizePartNumber(partNumber);
           const productHandle = item.handle?.trim() || null;
           const quantity = String(item.quantity || "");
 
@@ -77,20 +85,26 @@ export async function POST(request: Request) {
 
           let matchingVendors;
 
-          if (partNumber) {
+          if (normalizedPartNumber) {
             matchingVendors = await db
               .prepare(
                 `
-              SELECT DISTINCT v.id AS vendor_id
-              FROM vendors v
-              JOIN vendor_products vp
-                ON vp.vendor_id = v.id
-              WHERE v.status = 'approved'
-                AND vp.status = 'approved'
-                AND LOWER(TRIM(vp.part_number)) = LOWER(TRIM(?))
-              `
+      SELECT DISTINCT v.id AS vendor_id
+      FROM vendors v
+      JOIN vendor_products vp
+        ON vp.vendor_id = v.id
+      WHERE v.status = 'approved'
+        AND vp.status = 'approved'
+        AND LOWER(
+          REPLACE(
+            REPLACE(TRIM(vp.part_number), '-', ''),
+            ' ',
+            ''
+          )
+        ) = ?
+      `
               )
-              .bind(partNumber)
+              .bind(normalizedPartNumber)
               .all();
           } else if (productName) {
             matchingVendors = await db
