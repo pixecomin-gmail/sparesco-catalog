@@ -15,7 +15,8 @@ export async function GET() {
       );
     }
 
-    const result = await DB.prepare(`
+       // Get all customer enquiries
+    const enquiryResult = await DB.prepare(`
       SELECT
         e.id,
         e.customer_name,
@@ -48,9 +49,60 @@ export async function GET() {
       ORDER BY e.id DESC
     `).all();
 
+    // Get all vendor quotations
+    const quoteResult = await DB.prepare(`
+      SELECT
+        q.id,
+        q.enquiry_id,
+        q.vendor_id,
+        q.quoted_quantity,
+        q.unit_price,
+        q.currency,
+        q.total_price,
+        q.stock_available,
+        q.lead_time,
+        q.moq,
+        q.condition,
+        q.manufacturer_brand,
+        q.country_of_origin,
+        q.quote_validity,
+        q.shipping_included,
+        q.taxes_included,
+        q.vendor_remarks,
+        q.quotation_pdf,
+        q.admin_status,
+        q.submitted_at,
+        q.updated_at,
+
+        v.company_name AS vendor_company,
+        v.contact_person AS vendor_contact,
+        v.email AS vendor_email,
+        v.phone AS vendor_phone
+
+      FROM vendor_quotes q
+
+      JOIN vendors v
+        ON v.id = q.vendor_id
+
+      ORDER BY q.id DESC
+    `).all();
+
+    const enquiries = enquiryResult.results || [];
+    const quotes = quoteResult.results || [];
+
+    // Put each quotation underneath its respective enquiry
+    const enquiriesWithQuotes = enquiries.map((enquiry: any) => ({
+      ...enquiry,
+
+      quotations: quotes.filter(
+        (quote: any) =>
+          Number(quote.enquiry_id) === Number(enquiry.id)
+      ),
+    }));
+
     return NextResponse.json({
       success: true,
-      enquiries: result.results || [],
+      enquiries: enquiriesWithQuotes,
     });
   } catch (error) {
     console.error("Admin enquiries error:", error);
