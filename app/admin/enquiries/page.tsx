@@ -48,6 +48,13 @@ type Enquiry = {
   quotations: VendorQuote[];
 };
 
+type EnquiryEmailRecipient = {
+  id: number;
+  email: string;
+  is_active: number;
+  created_at: string;
+};
+
 type Filter = "all" | "open" | "closed";
 
 export default function AdminEnquiriesPage() {
@@ -62,6 +69,21 @@ export default function AdminEnquiriesPage() {
 
   const [updatingEnquiryId, setUpdatingEnquiryId] =
     useState<number | null>(null);
+
+  const [emailListEnquiry, setEmailListEnquiry] =
+    useState<Enquiry | null>(null);
+
+  const [emailRecipients, setEmailRecipients] =
+    useState<EnquiryEmailRecipient[]>([]);
+
+  const [selectedRecipientIds, setSelectedRecipientIds] =
+    useState<number[]>([]);
+
+  const [recipientsExpanded, setRecipientsExpanded] =
+    useState(false);
+
+  const [loadingRecipients, setLoadingRecipients] =
+    useState(false);
 
   useEffect(() => {
     loadEnquiries();
@@ -144,6 +166,78 @@ export default function AdminEnquiriesPage() {
     } finally {
       setUpdatingEnquiryId(null);
     }
+  }
+
+  async function openEmailListModal(enquiry: Enquiry) {
+    setEmailListEnquiry(enquiry);
+    setRecipientsExpanded(false);
+    setLoadingRecipients(true);
+    setError("");
+
+    try {
+      const response = await fetch("/api/admin/enquiry-email-list", {
+        cache: "no-store",
+      });
+
+      const data = await response.json();
+
+      if (response.status === 401) {
+        window.location.href = "/admin/login";
+        return;
+      }
+
+      if (!response.ok) {
+        setError(data.error || "Unable to load enquiry email list.");
+        setEmailListEnquiry(null);
+        return;
+      }
+
+      const activeRecipients = (data.recipients || []).filter(
+        (recipient: EnquiryEmailRecipient) =>
+          Number(recipient.is_active) === 1
+      );
+
+      setEmailRecipients(activeRecipients);
+
+      // Everyone is included by default.
+      setSelectedRecipientIds(
+        activeRecipients.map(
+          (recipient: EnquiryEmailRecipient) => recipient.id
+        )
+      );
+    } catch {
+      setError("Unable to load enquiry email list.");
+      setEmailListEnquiry(null);
+    } finally {
+      setLoadingRecipients(false);
+    }
+  }
+
+  function closeEmailListModal() {
+    setEmailListEnquiry(null);
+    setEmailRecipients([]);
+    setSelectedRecipientIds([]);
+    setRecipientsExpanded(false);
+  }
+
+  function toggleEmailRecipient(recipientId: number) {
+    setSelectedRecipientIds((current) =>
+      current.includes(recipientId)
+        ? current.filter((id) => id !== recipientId)
+        : [...current, recipientId]
+    );
+  }
+
+  function confirmEmailRecipients() {
+    if (!emailListEnquiry) return;
+
+    // Email sending will be connected later.
+    setMessage(
+      `${selectedRecipientIds.length} recipient${selectedRecipientIds.length === 1 ? "" : "s"
+      } selected for Enquiry #${emailListEnquiry.id}.`
+    );
+
+    closeEmailListModal();
   }
 
   const visibleEnquiries = useMemo(() => {
@@ -306,13 +400,11 @@ export default function AdminEnquiriesPage() {
                     <EnquiryMetric
                       label="Product"
                       value={enquiry.product_name || "—"}
-                      strong
                     />
 
                     <EnquiryMetric
                       label="Part Number"
                       value={enquiry.part_number || "—"}
-                      strong
                     />
 
                     <EnquiryMetric
@@ -337,7 +429,6 @@ export default function AdminEnquiriesPage() {
                     <EnquiryMetric
                       label="Quotes"
                       value={quotations.length}
-                      strong={quotations.length > 0}
                     />
                   </div>
 
@@ -360,41 +451,51 @@ export default function AdminEnquiriesPage() {
                       )}
                     </div>
 
-                    {isClosed ? (
+                    <div style={enquiryActionsStyle}>
                       <button
                         type="button"
-                        disabled={updatingEnquiryId === enquiry.id}
-                        onClick={() =>
-                          updateEnquiryStatus(enquiry.id, "open")
-                        }
-                        style={{
-                          ...reopenButtonStyle,
-                          opacity:
-                            updatingEnquiryId === enquiry.id ? 0.5 : 1,
-                        }}
+                        onClick={() => openEmailListModal(enquiry)}
+                        style={emailListButtonStyle}
                       >
-                        {updatingEnquiryId === enquiry.id
-                          ? "Updating..."
-                          : "Reopen Enquiry"}
+                        Email Enquiry List
                       </button>
-                    ) : (
-                      <button
-                        type="button"
-                        disabled={updatingEnquiryId === enquiry.id}
-                        onClick={() =>
-                          updateEnquiryStatus(enquiry.id, "closed")
-                        }
-                        style={{
-                          ...closeButtonStyle,
-                          opacity:
-                            updatingEnquiryId === enquiry.id ? 0.5 : 1,
-                        }}
-                      >
-                        {updatingEnquiryId === enquiry.id
-                          ? "Updating..."
-                          : "Close Enquiry"}
-                      </button>
-                    )}
+
+                      {isClosed ? (
+                        <button
+                          type="button"
+                          disabled={updatingEnquiryId === enquiry.id}
+                          onClick={() =>
+                            updateEnquiryStatus(enquiry.id, "open")
+                          }
+                          style={{
+                            ...reopenButtonStyle,
+                            opacity:
+                              updatingEnquiryId === enquiry.id ? 0.5 : 1,
+                          }}
+                        >
+                          {updatingEnquiryId === enquiry.id
+                            ? "Updating..."
+                            : "Reopen Enquiry"}
+                        </button>
+                      ) : (
+                        <button
+                          type="button"
+                          disabled={updatingEnquiryId === enquiry.id}
+                          onClick={() =>
+                            updateEnquiryStatus(enquiry.id, "closed")
+                          }
+                          style={{
+                            ...closeButtonStyle,
+                            opacity:
+                              updatingEnquiryId === enquiry.id ? 0.5 : 1,
+                          }}
+                        >
+                          {updatingEnquiryId === enquiry.id
+                            ? "Updating..."
+                            : "Close Enquiry"}
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
 
@@ -653,6 +754,133 @@ export default function AdminEnquiriesPage() {
               </section>
             );
           })}
+        </div>
+      )}
+
+      {emailListEnquiry && (
+        <div
+          style={modalOverlayStyle}
+          onClick={closeEmailListModal}
+        >
+          <div
+            style={modalStyle}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div style={modalHeaderStyle}>
+              <div>
+                <h2 style={modalTitleStyle}>
+                  Email Enquiry #{emailListEnquiry.id}
+                </h2>
+
+                <p style={modalSubtitleStyle}>
+                  Select who should receive this enquiry.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={closeEmailListModal}
+                style={modalCloseStyle}
+              >
+                ×
+              </button>
+            </div>
+
+            {loadingRecipients ? (
+              <div style={modalLoadingStyle}>
+                Loading recipients...
+              </div>
+            ) : emailRecipients.length === 0 ? (
+              <div style={modalEmptyStyle}>
+                No active recipients are available in the Enquiry Email List.
+              </div>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setRecipientsExpanded((current) => !current)
+                  }
+                  style={recipientAccordionButtonStyle}
+                >
+                  <span>
+                    Recipients
+                    <span style={recipientCountStyle}>
+                      {selectedRecipientIds.length} of{" "}
+                      {emailRecipients.length} selected
+                    </span>
+                  </span>
+
+                  <span style={recipientArrowStyle}>
+                    {recipientsExpanded ? "▲" : "▼"}
+                  </span>
+                </button>
+
+                {recipientsExpanded && (
+                  <div style={recipientListStyle}>
+                    {emailRecipients.map((recipient) => {
+                      const selected =
+                        selectedRecipientIds.includes(recipient.id);
+
+                      return (
+                        <label
+                          key={recipient.id}
+                          style={recipientRowStyle}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selected}
+                            onChange={() =>
+                              toggleEmailRecipient(recipient.id)
+                            }
+                            style={recipientCheckboxStyle}
+                          />
+
+                          <span style={recipientEmailStyle}>
+                            {recipient.email}
+                          </span>
+                        </label>
+                      );
+                    })}
+                  </div>
+                )}
+
+                <div style={selectedSummaryStyle}>
+                  {selectedRecipientIds.length} of{" "}
+                  {emailRecipients.length} recipients selected
+                </div>
+              </>
+            )}
+
+            <div style={modalFooterStyle}>
+              <button
+                type="button"
+                onClick={closeEmailListModal}
+                style={cancelModalButtonStyle}
+              >
+                Cancel
+              </button>
+
+              <button
+                type="button"
+                disabled={
+                  loadingRecipients ||
+                  selectedRecipientIds.length === 0
+                }
+                onClick={confirmEmailRecipients}
+                style={{
+                  ...confirmRecipientsButtonStyle,
+                  opacity:
+                    loadingRecipients ||
+                      selectedRecipientIds.length === 0
+                      ? 0.45
+                      : 1,
+                }}
+              >
+                Confirm Recipients
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </main>
@@ -961,6 +1189,7 @@ const enquiryMetricValueStyle: React.CSSProperties = {
   display: "block",
   color: "#465b61",
   fontSize: "13px",
+  fontWeight: 400,
   overflowWrap: "anywhere",
 };
 
@@ -1287,4 +1516,186 @@ const emptyStyle: React.CSSProperties = {
   borderRadius: "10px",
   textAlign: "center",
   color: "#718086",
+};
+
+const enquiryActionsStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: "8px",
+  flexShrink: 0,
+};
+
+const emailListButtonStyle: React.CSSProperties = {
+  border: "1px solid #bfd3d5",
+  background: "#ffffff",
+  color: "#2a8392",
+  borderRadius: "7px",
+  padding: "8px 13px",
+  fontSize: "11px",
+  fontWeight: 700,
+  cursor: "pointer",
+  whiteSpace: "nowrap",
+};
+
+const modalOverlayStyle: React.CSSProperties = {
+  position: "fixed",
+  inset: 0,
+  zIndex: 1000,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: "24px",
+  background: "rgba(20, 39, 45, 0.42)",
+};
+
+const modalStyle: React.CSSProperties = {
+  width: "100%",
+  maxWidth: "520px",
+  maxHeight: "80vh",
+  overflow: "auto",
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "12px",
+  boxShadow: "0 18px 50px rgba(23,63,76,0.18)",
+};
+
+const modalHeaderStyle: React.CSSProperties = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "flex-start",
+  gap: "20px",
+  padding: "20px 22px 16px",
+  borderBottom: "1px solid #edf1f0",
+};
+
+const modalTitleStyle: React.CSSProperties = {
+  margin: "0 0 4px",
+  color: "#173f4c",
+  fontSize: "18px",
+};
+
+const modalSubtitleStyle: React.CSSProperties = {
+  margin: 0,
+  color: "#718187",
+  fontSize: "12px",
+};
+
+const modalCloseStyle: React.CSSProperties = {
+  border: "none",
+  background: "transparent",
+  color: "#718187",
+  fontSize: "24px",
+  lineHeight: 1,
+  cursor: "pointer",
+};
+
+const modalLoadingStyle: React.CSSProperties = {
+  padding: "30px 22px",
+  color: "#718187",
+  fontSize: "12px",
+  textAlign: "center",
+};
+
+const modalEmptyStyle: React.CSSProperties = {
+  margin: "18px 22px",
+  padding: "20px",
+  border: "1px dashed #d6dfdd",
+  borderRadius: "8px",
+  color: "#879499",
+  fontSize: "12px",
+  textAlign: "center",
+};
+
+const recipientAccordionButtonStyle: React.CSSProperties = {
+  width: "calc(100% - 44px)",
+  margin: "18px 22px 0",
+  padding: "13px 14px",
+  border: "1px solid #dfe6e4",
+  borderRadius: "8px",
+  background: "#f9fbfa",
+  color: "#173f4c",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  textAlign: "left",
+  fontSize: "12px",
+  cursor: "pointer",
+};
+
+const recipientCountStyle: React.CSSProperties = {
+  display: "block",
+  marginTop: "3px",
+  color: "#7d8c91",
+  fontSize: "10px",
+  fontWeight: 400,
+};
+
+const recipientArrowStyle: React.CSSProperties = {
+  color: "#2a8392",
+  fontSize: "10px",
+};
+
+const recipientListStyle: React.CSSProperties = {
+  margin: "8px 22px 0",
+  border: "1px solid #e1e8e6",
+  borderRadius: "8px",
+  overflow: "hidden",
+};
+
+const recipientRowStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: "10px",
+  padding: "11px 13px",
+  borderBottom: "1px solid #edf1f0",
+  cursor: "pointer",
+};
+
+const recipientCheckboxStyle: React.CSSProperties = {
+  width: "15px",
+  height: "15px",
+  accentColor: "#2a8392",
+  cursor: "pointer",
+};
+
+const recipientEmailStyle: React.CSSProperties = {
+  color: "#465b61",
+  fontSize: "12px",
+  overflowWrap: "anywhere",
+};
+
+const selectedSummaryStyle: React.CSSProperties = {
+  padding: "12px 22px 2px",
+  color: "#718187",
+  fontSize: "11px",
+};
+
+const modalFooterStyle: React.CSSProperties = {
+  display: "flex",
+  justifyContent: "flex-end",
+  gap: "8px",
+  marginTop: "18px",
+  padding: "15px 22px",
+  borderTop: "1px solid #edf1f0",
+};
+
+const cancelModalButtonStyle: React.CSSProperties = {
+  border: "1px solid #d9e1df",
+  background: "#ffffff",
+  color: "#617278",
+  borderRadius: "7px",
+  padding: "8px 13px",
+  fontSize: "11px",
+  cursor: "pointer",
+};
+
+const confirmRecipientsButtonStyle: React.CSSProperties = {
+  border: "none",
+  background: "#173f4c",
+  color: "#ffffff",
+  borderRadius: "7px",
+  padding: "8px 14px",
+  fontSize: "11px",
+  fontWeight: 700,
+  cursor: "pointer",
 };

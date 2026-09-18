@@ -58,6 +58,13 @@ export default function AdminHeader() {
             Enquiries
           </Link>
 
+          <Link
+            href="/admin/enquiry-email-list"
+            className={linkClass("/admin/enquiry-email-list")}
+          >
+            Enquiry Email List
+          </Link>
+
           {/*
           <Link
             href="/admin/quotations"
