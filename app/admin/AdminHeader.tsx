@@ -52,6 +52,13 @@ export default function AdminHeader() {
           </Link>
 
           <Link
+            href="/admin/enquiries"
+            className={linkClass("/admin/enquiries")}
+          >
+            Enquiries
+          </Link>
+
+          <Link
             href="/admin/quotations"
             className={linkClass("/admin/quotations")}
           >
