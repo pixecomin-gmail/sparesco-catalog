@@ -56,6 +56,7 @@ export default function AdminEnquiriesPage() {
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
+  const [search, setSearch] = useState("");
 
   const [openQuote, setOpenQuote] = useState<number | null>(null);
 
@@ -146,20 +147,73 @@ export default function AdminEnquiriesPage() {
   }
 
   const visibleEnquiries = useMemo(() => {
-    if (filter === "all") return enquiries;
+    const query = search.trim().toLowerCase();
 
-    if (filter === "closed") {
-      return enquiries.filter(
-        (enquiry) =>
-          enquiry.status?.toLowerCase() === "closed"
+    const normalizeSearch = (value: unknown) =>
+      String(value ?? "")
+        .toLowerCase()
+        .replace(/[\s-]+/g, "");
+
+    const normalizedQuery = normalizeSearch(search);
+
+    return enquiries.filter((enquiry) => {
+      const status = enquiry.status?.toLowerCase();
+
+      const matchesFilter =
+        filter === "all"
+          ? true
+          : filter === "closed"
+            ? status === "closed"
+            : status !== "closed";
+
+      if (!matchesFilter) return false;
+
+      if (!query) return true;
+
+      const enquiryFields = [
+        enquiry.id,
+        enquiry.customer_name,
+        enquiry.customer_email,
+        enquiry.customer_phone,
+        enquiry.company_name,
+        enquiry.product_name,
+        enquiry.part_number,
+        enquiry.product_handle,
+        enquiry.quantity,
+        enquiry.message,
+        enquiry.status,
+      ];
+
+      const quoteFields = (enquiry.quotations || []).flatMap((quote) => [
+        quote.vendor_company,
+        quote.vendor_contact,
+        quote.vendor_email,
+        quote.vendor_phone,
+        quote.manufacturer_brand,
+        quote.country_of_origin,
+        quote.condition,
+        quote.lead_time,
+        quote.vendor_remarks,
+      ]);
+
+      const searchableFields = [
+        ...enquiryFields,
+        ...quoteFields,
+      ];
+
+      const regularMatch = searchableFields.some((field) =>
+        String(field ?? "")
+          .toLowerCase()
+          .includes(query)
       );
-    }
 
-    return enquiries.filter(
-      (enquiry) =>
-        enquiry.status?.toLowerCase() !== "closed"
-    );
-  }, [enquiries, filter]);
+      const normalizedMatch = searchableFields.some((field) =>
+        normalizeSearch(field).includes(normalizedQuery)
+      );
+
+      return regularMatch || normalizedMatch;
+    });
+  }, [enquiries, filter, search]);
 
   if (loading) {
     return <main style={pageStyle}>Loading enquiries...</main>;
@@ -184,6 +238,18 @@ export default function AdminEnquiriesPage() {
 
       {error && <div style={errorStyle}>{error}</div>}
       {message && <div style={successStyle}>{message}</div>}
+
+      <div style={searchWrapStyle}>
+        <span style={searchIconStyle}>⌕</span>
+
+        <input
+          type="search"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+          placeholder="Search enquiry, customer, product, part number, vendor..."
+          style={searchInputStyle}
+        />
+      </div>
 
       <div style={filtersStyle}>
         {(["all", "open", "closed"] as Filter[]).map((item) => (
@@ -778,6 +844,32 @@ const countStyle: React.CSSProperties = {
 /* =========================
    FILTERS
 ========================= */
+const searchWrapStyle: React.CSSProperties = {
+  position: "relative",
+  marginBottom: "12px",
+};
+
+const searchIconStyle: React.CSSProperties = {
+  position: "absolute",
+  left: "13px",
+  top: "50%",
+  transform: "translateY(-50%)",
+  color: "#819095",
+  fontSize: "17px",
+  pointerEvents: "none",
+};
+
+const searchInputStyle: React.CSSProperties = {
+  width: "100%",
+  height: "42px",
+  padding: "0 14px 0 38px",
+  border: "1px solid #d9e1df",
+  borderRadius: "8px",
+  background: "#ffffff",
+  color: "#173f4c",
+  fontSize: "13px",
+  outline: "none",
+};
 
 const filtersStyle: React.CSSProperties = {
   display: "flex",
@@ -976,7 +1068,7 @@ const quoteRowStyle: React.CSSProperties = {
   background: "#ffffff",
   display: "grid",
   gridTemplateColumns:
-  "24px minmax(180px,1.6fr) 130px 130px 120px 120px",
+    "24px minmax(180px,1.6fr) 130px 130px 120px 120px",
   gap: "16px",
   alignItems: "center",
   padding: "13px 15px",
