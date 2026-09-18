@@ -83,43 +83,47 @@ export async function POST(request: Request) {
             continue;
           }
 
+          const normalizedProductName = normalizePartNumber(productName);
+
           let matchingVendors;
 
-          if (normalizedPartNumber) {
+          if (normalizedPartNumber || normalizedProductName) {
             matchingVendors = await db
               .prepare(
                 `
-      SELECT DISTINCT v.id AS vendor_id
-      FROM vendors v
-      JOIN vendor_products vp
-        ON vp.vendor_id = v.id
-      WHERE v.status = 'approved'
-        AND vp.status = 'approved'
-        AND LOWER(
-          REPLACE(
-            REPLACE(TRIM(vp.part_number), '-', ''),
-            ' ',
-            ''
-          )
-        ) = ?
-      `
-              )
-              .bind(normalizedPartNumber)
-              .all();
-          } else if (productName) {
-            matchingVendors = await db
-              .prepare(
+                SELECT DISTINCT v.id AS vendor_id
+                FROM vendors v
+                JOIN vendor_products vp
+                  ON vp.vendor_id = v.id
+                WHERE v.status = 'approved'
+                  AND vp.status = 'approved'
+                  AND (
+                    LOWER(
+                      REPLACE(
+                        REPLACE(TRIM(COALESCE(vp.part_number, '')), '-', ''),
+                        ' ',
+                        ''
+                      )
+                    ) IN (?, ?)
+
+                    OR
+
+                    LOWER(
+                      REPLACE(
+                        REPLACE(TRIM(COALESCE(vp.product_name, '')), '-', ''),
+                        ' ',
+                        ''
+                      )
+                    ) IN (?, ?)
+                  )
                 `
-              SELECT DISTINCT v.id AS vendor_id
-              FROM vendors v
-              JOIN vendor_products vp
-                ON vp.vendor_id = v.id
-              WHERE v.status = 'approved'
-                AND vp.status = 'approved'
-                AND LOWER(TRIM(vp.product_name)) = LOWER(TRIM(?))
-              `
               )
-              .bind(productName)
+              .bind(
+                normalizedPartNumber,
+                normalizedProductName,
+                normalizedPartNumber,
+                normalizedProductName
+              )
               .all();
           }
 

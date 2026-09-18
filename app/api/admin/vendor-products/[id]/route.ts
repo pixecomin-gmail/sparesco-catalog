@@ -3,6 +3,13 @@ import { getRequestContext } from "@cloudflare/next-on-pages";
 
 export const runtime = "edge";
 
+function normalizeMatchValue(value: string | null | undefined) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[\s-]+/g, "")
+    .trim();
+}
+
 export async function PATCH(
   request: Request,
   context: { params: Promise<{ id: string }> }
@@ -54,6 +61,7 @@ export async function PATCH(
           id,
           vendor_id,
           product_name,
+          part_number,
           status
         FROM vendor_products
         WHERE id = ?
@@ -86,12 +94,92 @@ export async function PATCH(
       .bind(status, productId)
       .run();
 
+    // -------------------------------------------------
+    // WHEN PRODUCT IS APPROVED, CHECK OPEN ENQUIRIES
+    // -------------------------------------------------
+
+    let matchedOpenEnquiries = 0;
+
+    if (status === "approved") {
+      const normalizedProductName = normalizeMatchValue(
+        product.product_name as string | null
+      );
+
+      const normalizedPartNumber = normalizeMatchValue(
+        product.part_number as string | null
+      );
+
+      if (normalizedProductName || normalizedPartNumber) {
+        const matchingEnquiries = await db
+          .prepare(
+            `
+        SELECT DISTINCT e.id
+        FROM enquiries e
+        WHERE e.status IN ('new', 'open')
+          AND (
+            LOWER(
+              REPLACE(
+                REPLACE(TRIM(COALESCE(e.product_name, '')), '-', ''),
+                ' ',
+                ''
+              )
+            ) IN (?, ?)
+
+            OR
+
+            LOWER(
+              REPLACE(
+                REPLACE(TRIM(COALESCE(e.part_number, '')), '-', ''),
+                ' ',
+                ''
+              )
+            ) IN (?, ?)
+          )
+        `
+          )
+          .bind(
+            normalizedProductName,
+            normalizedPartNumber,
+            normalizedProductName,
+            normalizedPartNumber
+          )
+          .all();
+
+        const enquiries = matchingEnquiries.results || [];
+
+        for (const enquiry of enquiries) {
+          const result = await db
+            .prepare(
+              `
+          INSERT OR IGNORE INTO enquiry_vendors (
+            enquiry_id,
+            vendor_id,
+            status
+          )
+          VALUES (?, ?, 'sent')
+          `
+            )
+            .bind(
+              enquiry.id,
+              product.vendor_id
+            )
+            .run();
+
+          if ((result.meta?.changes || 0) > 0) {
+            matchedOpenEnquiries++;
+          }
+        }
+      }
+    }
+
     return NextResponse.json({
       success: true,
       message:
         status === "approved"
           ? "Product approved successfully."
           : "Product rejected successfully.",
+      matchedOpenEnquiries:
+        status === "approved" ? matchedOpenEnquiries : 0,
     });
   } catch (error) {
     console.error("Admin vendor product update error:", error);
