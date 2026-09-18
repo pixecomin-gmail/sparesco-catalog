@@ -24,7 +24,6 @@ type VendorQuote = {
   admin_status: string;
   submitted_at: string;
   updated_at: string | null;
-
   vendor_company: string;
   vendor_contact: string;
   vendor_email: string;
@@ -58,7 +57,6 @@ export default function AdminEnquiriesPage() {
   const [message, setMessage] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
 
-  const [openEnquiry, setOpenEnquiry] = useState<number | null>(null);
   const [openQuote, setOpenQuote] = useState<number | null>(null);
 
   const [updatingEnquiryId, setUpdatingEnquiryId] =
@@ -185,9 +183,7 @@ export default function AdminEnquiriesPage() {
 
       setEnquiries((current) =>
         current.map((enquiry) => {
-          if (enquiry.id !== enquiryId) {
-            return enquiry;
-          }
+          if (enquiry.id !== enquiryId) return enquiry;
 
           return {
             ...enquiry,
@@ -211,9 +207,7 @@ export default function AdminEnquiriesPage() {
   }
 
   const visibleEnquiries = useMemo(() => {
-    if (filter === "all") {
-      return enquiries;
-    }
+    if (filter === "all") return enquiries;
 
     if (filter === "closed") {
       return enquiries.filter(
@@ -229,11 +223,7 @@ export default function AdminEnquiriesPage() {
   }, [enquiries, filter]);
 
   if (loading) {
-    return (
-      <main style={pageStyle}>
-        Loading enquiries...
-      </main>
-    );
+    return <main style={pageStyle}>Loading enquiries...</main>;
   }
 
   return (
@@ -243,800 +233,529 @@ export default function AdminEnquiriesPage() {
           <h1 style={titleStyle}>Enquiries</h1>
 
           <p style={subtitleStyle}>
-            Customer enquiries and vendor quotations in one place.
+            Review customer requirements and compare vendor quotations.
           </p>
         </div>
 
         <div style={countStyle}>
           {enquiries.length}{" "}
-          {enquiries.length === 1
-            ? "Enquiry"
-            : "Enquiries"}
+          {enquiries.length === 1 ? "Enquiry" : "Enquiries"}
         </div>
       </div>
 
       {error && <div style={errorStyle}>{error}</div>}
-
-      {message && (
-        <div style={successStyle}>{message}</div>
-      )}
+      {message && <div style={successStyle}>{message}</div>}
 
       <div style={filtersStyle}>
-        {(["all", "open", "closed"] as Filter[]).map(
-          (item) => (
-            <button
-              key={item}
-              type="button"
-              onClick={() => setFilter(item)}
-              style={{
-                ...filterButtonStyle,
-                ...(filter === item
-                  ? activeFilterStyle
-                  : {}),
-              }}
-            >
-              {item.charAt(0).toUpperCase() +
-                item.slice(1)}
-            </button>
-          )
-        )}
+        {(["all", "open", "closed"] as Filter[]).map((item) => (
+          <button
+            key={item}
+            type="button"
+            onClick={() => setFilter(item)}
+            style={{
+              ...filterButtonStyle,
+              ...(filter === item ? activeFilterStyle : {}),
+            }}
+          >
+            {item.charAt(0).toUpperCase() + item.slice(1)}
+          </button>
+        ))}
       </div>
 
       {visibleEnquiries.length === 0 ? (
-        <div style={emptyStyle}>
-          No enquiries found.
-        </div>
+        <div style={emptyStyle}>No enquiries found.</div>
       ) : (
         <div style={listStyle}>
           {visibleEnquiries.map((enquiry) => {
-            const enquiryExpanded =
-              openEnquiry === enquiry.id;
-
             const isClosed =
               enquiry.status?.toLowerCase() === "closed";
 
-            const quotations =
-              enquiry.quotations || [];
+            const quotations = enquiry.quotations || [];
 
             return (
               <section
                 key={enquiry.id}
                 style={{
-                  ...cardStyle,
-                  ...(isClosed
-                    ? closedCardStyle
-                    : {}),
+                  ...enquiryCardStyle,
+                  ...(isClosed ? closedCardStyle : {}),
                 }}
               >
-                {/* CUSTOMER ENQUIRY SUMMARY */}
+                {/* ENQUIRY HEADER */}
 
-                <div style={summaryStyle}>
-                  <div style={enquiryNumberStyle}>
-                    #{enquiry.id}
-                  </div>
-
-                  <div style={mainInfoStyle}>
-                    <strong style={productStyle}>
-                      {enquiry.product_name || "Product"}
-                    </strong>
-
-                    <span style={smallStyle}>
-                      {enquiry.part_number
-                        ? `Part No. ${enquiry.part_number}`
-                        : "No part number"}
-                    </span>
-                  </div>
-
-                  <div style={summaryBlockStyle}>
-                    <span style={labelStyle}>
-                      Customer
-                    </span>
-
-                    <strong>
-                      {enquiry.company_name ||
-                        enquiry.customer_name ||
-                        "—"}
-                    </strong>
-                  </div>
-
-                  <div style={summaryBlockStyle}>
-                    <span style={labelStyle}>
-                      Quantity
-                    </span>
-
-                    <strong>
-                      {enquiry.quantity || "—"}
-                    </strong>
-                  </div>
-
-                  <div style={summaryBlockStyle}>
-                    <span style={labelStyle}>
-                      Vendors
-                    </span>
-
-                    <strong>
-                      {Number(
-                        enquiry.matched_vendors || 0
-                      )}
-                    </strong>
-                  </div>
-
-                  <div style={summaryBlockStyle}>
-                    <span style={labelStyle}>
-                      Quotes
-                    </span>
-
-                    <strong
-                      style={
-                        quotations.length > 0
-                          ? quoteCountHighlightStyle
-                          : undefined
-                      }
-                    >
-                      {quotations.length}
-                    </strong>
-                  </div>
-
-                  <EnquiryStatusBadge
-                    status={enquiry.status}
-                  />
-
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setOpenEnquiry(
-                        enquiryExpanded
-                          ? null
-                          : enquiry.id
-                      );
-
-                      if (enquiryExpanded) {
-                        setOpenQuote(null);
-                      }
-                    }}
-                    style={viewButtonStyle}
-                  >
-                    {enquiryExpanded
-                      ? "Hide Details"
-                      : "View Details"}
-                  </button>
-                </div>
-
-                {/* QUICK QUOTATION PREVIEW */}
-
-                {!enquiryExpanded &&
-                  quotations.length > 0 && (
-                    <div style={quotePreviewBarStyle}>
-                      <span style={quotePreviewLabelStyle}>
-                        {quotations.length}{" "}
-                        {quotations.length === 1
-                          ? "quotation"
-                          : "quotations"}{" "}
-                        received
+                <div style={enquiryHeaderStyle}>
+                  <div style={enquiryTitleRowStyle}>
+                    <div style={enquiryTitleLeftStyle}>
+                      <span style={enquiryIdStyle}>
+                        ENQUIRY #{enquiry.id}
                       </span>
 
-                      {quotations
-                        .slice(0, 3)
-                        .map((quote) => (
-                          <span
-                            key={quote.id}
-                            style={quickQuoteStyle}
-                          >
-                            {quote.vendor_company}:{" "}
-                            <strong>
-                              {formatMoney(
-                                quote.currency,
-                                quote.total_price
-                              )}
-                            </strong>
-                          </span>
-                        ))}
+                      <EnquiryStatusBadge status={enquiry.status} />
+                    </div>
 
-                      {quotations.length > 3 && (
-                        <span style={moreQuotesStyle}>
-                          +{quotations.length - 3} more
-                        </span>
+                    <span style={dateStyle}>
+                      {formatDate(enquiry.created_at)}
+                    </span>
+                  </div>
+
+                  <div style={enquiryMainGridStyle}>
+                    <EnquiryMetric
+                      label="Product"
+                      value={enquiry.product_name || "—"}
+                      strong
+                    />
+
+                    <EnquiryMetric
+                      label="Part Number"
+                      value={enquiry.part_number || "—"}
+                      strong
+                    />
+
+                    <EnquiryMetric
+                      label="Quantity"
+                      value={enquiry.quantity || "—"}
+                    />
+
+                    <EnquiryMetric
+                      label="Customer"
+                      value={
+                        enquiry.company_name ||
+                        enquiry.customer_name ||
+                        "—"
+                      }
+                    />
+
+                    <EnquiryMetric
+                      label="Matched Vendors"
+                      value={Number(enquiry.matched_vendors || 0)}
+                    />
+
+                    <EnquiryMetric
+                      label="Quotes"
+                      value={quotations.length}
+                      strong={quotations.length > 0}
+                    />
+                  </div>
+
+                  <div style={customerStripStyle}>
+                    <div style={customerInfoStyle}>
+                      <span>
+                        <strong>{enquiry.customer_name || "—"}</strong>
+                      </span>
+
+                      <span>{enquiry.customer_email || "—"}</span>
+
+                      {enquiry.customer_phone && (
+                        <span>{enquiry.customer_phone}</span>
                       )}
-                    </div>
-                  )}
 
-                {/* FULL ENQUIRY */}
-
-                {enquiryExpanded && (
-                  <div style={expandedStyle}>
-                    <div style={enquiryTopRowStyle}>
-                      <div>
-                        <h3 style={sectionTitleStyle}>
-                          Customer Details
-                        </h3>
-
-                        <div style={customerGridStyle}>
-                          <Detail
-                            label="Name"
-                            value={
-                              enquiry.customer_name || "—"
-                            }
-                          />
-
-                          <Detail
-                            label="Company"
-                            value={
-                              enquiry.company_name || "—"
-                            }
-                          />
-
-                          <Detail
-                            label="Email"
-                            value={
-                              enquiry.customer_email || "—"
-                            }
-                          />
-
-                          <Detail
-                            label="Phone"
-                            value={
-                              enquiry.customer_phone || "—"
-                            }
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <h3 style={sectionTitleStyle}>
-                          Product Details
-                        </h3>
-
-                        <div style={customerGridStyle}>
-                          <Detail
-                            label="Product"
-                            value={
-                              enquiry.product_name || "—"
-                            }
-                          />
-
-                          <Detail
-                            label="Part Number"
-                            value={
-                              enquiry.part_number || "—"
-                            }
-                          />
-
-                          <Detail
-                            label="Quantity"
-                            value={
-                              enquiry.quantity || "—"
-                            }
-                          />
-
-                          <Detail
-                            label="Received"
-                            value={formatDate(
-                              enquiry.created_at
-                            )}
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    {enquiry.message && (
-                      <div style={messageBoxStyle}>
-                        <span style={labelStyle}>
-                          Customer Message
-                        </span>
-
-                        <div style={messageTextStyle}>
+                      {enquiry.message && (
+                        <span style={customerMessageStyle}>
                           {enquiry.message}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* ENQUIRY STATUS ACTION */}
-
-                    <div style={enquiryActionRowStyle}>
-                      <div style={matchingSummaryStyle}>
-                        <div>
-                          <span style={labelStyle}>
-                            Matched Vendors
-                          </span>
-
-                          <strong>
-                            {Number(
-                              enquiry.matched_vendors || 0
-                            )}
-                          </strong>
-                        </div>
-
-                        <div>
-                          <span style={labelStyle}>
-                            Quotations
-                          </span>
-
-                          <strong>
-                            {quotations.length}
-                          </strong>
-                        </div>
-
-                        <div>
-                          <span style={labelStyle}>
-                            Status
-                          </span>
-
-                          <EnquiryStatusBadge
-                            status={enquiry.status}
-                          />
-                        </div>
-                      </div>
-
-                      {isClosed ? (
-                        <button
-                          type="button"
-                          disabled={
-                            updatingEnquiryId ===
-                            enquiry.id
-                          }
-                          onClick={() =>
-                            updateEnquiryStatus(
-                              enquiry.id,
-                              "open"
-                            )
-                          }
-                          style={{
-                            ...openButtonStyle,
-                            opacity:
-                              updatingEnquiryId ===
-                              enquiry.id
-                                ? 0.5
-                                : 1,
-                          }}
-                        >
-                          {updatingEnquiryId ===
-                          enquiry.id
-                            ? "Updating..."
-                            : "Reopen Enquiry"}
-                        </button>
-                      ) : (
-                        <button
-                          type="button"
-                          disabled={
-                            updatingEnquiryId ===
-                            enquiry.id
-                          }
-                          onClick={() =>
-                            updateEnquiryStatus(
-                              enquiry.id,
-                              "closed"
-                            )
-                          }
-                          style={{
-                            ...closeButtonStyle,
-                            opacity:
-                              updatingEnquiryId ===
-                              enquiry.id
-                                ? 0.5
-                                : 1,
-                          }}
-                        >
-                          {updatingEnquiryId ===
-                          enquiry.id
-                            ? "Updating..."
-                            : "Close Enquiry"}
-                        </button>
+                        </span>
                       )}
                     </div>
 
-                    {/* QUOTATIONS */}
+                    {isClosed ? (
+                      <button
+                        type="button"
+                        disabled={updatingEnquiryId === enquiry.id}
+                        onClick={() =>
+                          updateEnquiryStatus(enquiry.id, "open")
+                        }
+                        style={{
+                          ...reopenButtonStyle,
+                          opacity:
+                            updatingEnquiryId === enquiry.id ? 0.5 : 1,
+                        }}
+                      >
+                        {updatingEnquiryId === enquiry.id
+                          ? "Updating..."
+                          : "Reopen Enquiry"}
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        disabled={updatingEnquiryId === enquiry.id}
+                        onClick={() =>
+                          updateEnquiryStatus(enquiry.id, "closed")
+                        }
+                        style={{
+                          ...closeButtonStyle,
+                          opacity:
+                            updatingEnquiryId === enquiry.id ? 0.5 : 1,
+                        }}
+                      >
+                        {updatingEnquiryId === enquiry.id
+                          ? "Updating..."
+                          : "Close Enquiry"}
+                      </button>
+                    )}
+                  </div>
+                </div>
 
-                    <div style={quotationSectionStyle}>
-                      <div style={quotationHeadingRowStyle}>
-                        <div>
-                          <h2 style={quotationHeadingStyle}>
-                            Vendor Quotations
-                          </h2>
+                {/* QUOTATION SECTION */}
 
-                          <p style={quotationSubtitleStyle}>
-                            Compare prices and open a
-                            quotation to review all details.
-                          </p>
-                        </div>
+                <div style={quotationSectionStyle}>
+                  <div style={quotationHeaderStyle}>
+                    <div>
+                      <span style={quotationTitleStyle}>
+                        Vendor Quotations
+                      </span>
 
-                        <div style={quotationCountStyle}>
-                          {quotations.length} received
-                        </div>
+                      <span style={quotationCountTextStyle}>
+                        {quotations.length} received
+                      </span>
+                    </div>
+
+                    {quotations.length > 0 && (
+                      <span style={instructionStyle}>
+                        Click a quotation to view full details
+                      </span>
+                    )}
+                  </div>
+
+                  {quotations.length === 0 ? (
+                    <div style={noQuotesStyle}>
+                      No vendor quotations received yet.
+                    </div>
+                  ) : (
+                    <>
+                      <div style={quoteTableHeaderStyle}>
+                        <span></span>
+                        <span>Vendor</span>
+                        <span>Unit Price</span>
+                        <span>Total Price</span>
+                        <span>Stock</span>
+                        <span>Lead Time</span>
+                        <span>Status</span>
                       </div>
 
-                      {quotations.length === 0 ? (
-                        <div style={noQuotesStyle}>
-                          No quotations received yet.
-                        </div>
-                      ) : (
-                        <div style={quotationListStyle}>
-                          {quotations.map((quote) => {
-                            const quoteExpanded =
-                              openQuote === quote.id;
+                      <div style={quotationListStyle}>
+                        {quotations.map((quote) => {
+                          const quoteExpanded =
+                            openQuote === quote.id;
 
-                            return (
-                              <div
-                                key={quote.id}
-                                style={quotationCardStyle}
+                          return (
+                            <div
+                              key={quote.id}
+                              style={{
+                                ...quoteCardStyle,
+                                ...(quoteExpanded
+                                  ? activeQuoteCardStyle
+                                  : {}),
+                              }}
+                            >
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setOpenQuote(
+                                    quoteExpanded ? null : quote.id
+                                  )
+                                }
+                                style={quoteRowStyle}
                               >
-                                <button
-                                  type="button"
-                                  onClick={() =>
-                                    setOpenQuote(
-                                      quoteExpanded
-                                        ? null
-                                        : quote.id
-                                    )
-                                  }
-                                  style={quotationSummaryButtonStyle}
-                                >
-                                  <div
-                                    style={quoteArrowStyle}
-                                  >
-                                    {quoteExpanded
-                                      ? "▼"
-                                      : "▶"}
-                                  </div>
+                                <span style={arrowStyle}>
+                                  {quoteExpanded ? "▼" : "▶"}
+                                </span>
 
-                                  <div
-                                    style={quoteVendorStyle}
-                                  >
-                                    <span
-                                      style={labelStyle}
-                                    >
-                                      Vendor
-                                    </span>
+                                <strong style={vendorNameStyle}>
+                                  {quote.vendor_company || "Vendor"}
+                                </strong>
 
-                                    <strong>
-                                      {quote.vendor_company}
-                                    </strong>
-                                  </div>
+                                <strong style={priceStyle}>
+                                  {formatMoney(
+                                    quote.currency,
+                                    quote.unit_price
+                                  )}
+                                </strong>
 
-                                  <QuoteMetric
-                                    label="Unit Price"
-                                    value={formatMoney(
-                                      quote.currency,
-                                      quote.unit_price
-                                    )}
-                                    highlight
-                                  />
+                                <strong style={priceStyle}>
+                                  {formatMoney(
+                                    quote.currency,
+                                    quote.total_price
+                                  )}
+                                </strong>
 
-                                  <QuoteMetric
-                                    label="Total"
-                                    value={formatMoney(
-                                      quote.currency,
-                                      quote.total_price
-                                    )}
-                                    highlight
-                                  />
+                                <StockBadge
+                                  available={quote.stock_available}
+                                />
 
-                                  <QuoteMetric
-                                    label="Stock"
-                                    value={
-                                      quote.stock_available ===
-                                      1
-                                        ? "Available"
-                                        : "Not Available"
-                                    }
-                                  />
+                                <span style={leadTimeStyle}>
+                                  {quote.lead_time || "—"}
+                                </span>
 
-                                  <QuoteMetric
-                                    label="Lead Time"
-                                    value={
-                                      quote.lead_time ||
-                                      "—"
-                                    }
-                                  />
+                                <QuoteStatusBadge
+                                  status={quote.admin_status}
+                                />
+                              </button>
 
-                                  <QuoteStatusBadge
-                                    status={
-                                      quote.admin_status
-                                    }
-                                  />
-                                </button>
+                              {quoteExpanded && (
+                                <div style={quoteExpandedStyle}>
+                                  {/* IMPORTANT QUOTE METRICS */}
 
-                                {quoteExpanded && (
-                                  <div
-                                    style={
-                                      quotationExpandedStyle
-                                    }
-                                  >
-                                    <div
-                                      style={
-                                        quotationDetailGridStyle
+                                  <div style={highlightGridStyle}>
+                                    <HighlightMetric
+                                      label="Unit Price"
+                                      value={formatMoney(
+                                        quote.currency,
+                                        quote.unit_price
+                                      )}
+                                    />
+
+                                    <HighlightMetric
+                                      label="Total Price"
+                                      value={formatMoney(
+                                        quote.currency,
+                                        quote.total_price
+                                      )}
+                                    />
+
+                                    <HighlightMetric
+                                      label="Stock"
+                                      value={
+                                        quote.stock_available === 1
+                                          ? "Available"
+                                          : "Not Available"
                                       }
-                                    >
-                                      <DetailSection title="Vendor">
-                                        <Detail
-                                          label="Company"
-                                          value={
-                                            quote.vendor_company
-                                          }
-                                        />
+                                    />
 
-                                        <Detail
-                                          label="Contact"
-                                          value={
-                                            quote.vendor_contact ||
-                                            "—"
-                                          }
-                                        />
+                                    <HighlightMetric
+                                      label="Lead Time"
+                                      value={quote.lead_time || "—"}
+                                    />
+                                  </div>
 
-                                        <Detail
-                                          label="Email"
-                                          value={
-                                            quote.vendor_email ||
-                                            "—"
-                                          }
-                                        />
+                                  {/* DETAILS */}
 
-                                        <Detail
-                                          label="Phone"
-                                          value={
-                                            quote.vendor_phone ||
-                                            "—"
-                                          }
-                                        />
-                                      </DetailSection>
+                                  <div style={detailsGridStyle}>
+                                    <DetailSection title="Vendor">
+                                      <Detail
+                                        label="Company"
+                                        value={quote.vendor_company || "—"}
+                                      />
 
-                                      <DetailSection title="Price & Availability">
-                                        <Detail
-                                          label="Quoted Quantity"
-                                          value={
-                                            quote.quoted_quantity ??
-                                            "—"
-                                          }
-                                        />
+                                      <Detail
+                                        label="Contact Person"
+                                        value={quote.vendor_contact || "—"}
+                                      />
 
-                                        <Detail
-                                          label="Unit Price"
-                                          value={formatMoney(
-                                            quote.currency,
-                                            quote.unit_price
-                                          )}
-                                        />
+                                      <Detail
+                                        label="Email"
+                                        value={quote.vendor_email || "—"}
+                                      />
 
-                                        <Detail
-                                          label="Total Price"
-                                          value={formatMoney(
-                                            quote.currency,
-                                            quote.total_price
-                                          )}
-                                        />
+                                      <Detail
+                                        label="Phone"
+                                        value={quote.vendor_phone || "—"}
+                                      />
+                                    </DetailSection>
 
-                                        <Detail
-                                          label="Stock Available"
-                                          value={
-                                            quote.stock_available ===
-                                            1
-                                              ? "Yes"
-                                              : "No"
-                                          }
-                                        />
+                                    <DetailSection title="Product & Supply">
+                                      <Detail
+                                        label="Manufacturer / Brand"
+                                        value={
+                                          quote.manufacturer_brand || "—"
+                                        }
+                                      />
 
-                                        <Detail
-                                          label="Lead Time"
-                                          value={
-                                            quote.lead_time ||
-                                            "—"
-                                          }
-                                        />
+                                      <Detail
+                                        label="Condition"
+                                        value={quote.condition || "—"}
+                                      />
 
-                                        <Detail
-                                          label="MOQ"
-                                          value={
-                                            quote.moq ?? "—"
-                                          }
-                                        />
-                                      </DetailSection>
+                                      <Detail
+                                        label="Country of Origin"
+                                        value={
+                                          quote.country_of_origin || "—"
+                                        }
+                                      />
 
-                                      <DetailSection title="Product & Terms">
-                                        <Detail
-                                          label="Condition"
-                                          value={
-                                            quote.condition ||
-                                            "—"
-                                          }
-                                        />
+                                      <Detail
+                                        label="Quoted Quantity"
+                                        value={
+                                          quote.quoted_quantity ?? "—"
+                                        }
+                                      />
+                                    </DetailSection>
 
-                                        <Detail
-                                          label="Manufacturer / Brand"
-                                          value={
-                                            quote.manufacturer_brand ||
-                                            "—"
-                                          }
-                                        />
+                                    <DetailSection title="Commercial Terms">
+                                      <Detail
+                                        label="MOQ"
+                                        value={quote.moq ?? "—"}
+                                      />
 
-                                        <Detail
-                                          label="Country of Origin"
-                                          value={
-                                            quote.country_of_origin ||
-                                            "—"
-                                          }
-                                        />
+                                      <Detail
+                                        label="Quote Validity"
+                                        value={quote.quote_validity || "—"}
+                                      />
 
-                                        <Detail
-                                          label="Quote Validity"
-                                          value={
-                                            quote.quote_validity ||
-                                            "—"
-                                          }
-                                        />
+                                      <Detail
+                                        label="Shipping Included"
+                                        value={formatYesNo(
+                                          quote.shipping_included
+                                        )}
+                                      />
 
-                                        <Detail
-                                          label="Shipping Included"
-                                          value={formatYesNo(
-                                            quote.shipping_included
-                                          )}
-                                        />
+                                      <Detail
+                                        label="Taxes Included"
+                                        value={formatYesNo(
+                                          quote.taxes_included
+                                        )}
+                                      />
+                                    </DetailSection>
+                                  </div>
 
-                                        <Detail
-                                          label="Taxes Included"
-                                          value={formatYesNo(
-                                            quote.taxes_included
-                                          )}
-                                        />
-                                      </DetailSection>
+                                  {quote.vendor_remarks && (
+                                    <div style={remarksStyle}>
+                                      <span style={labelStyle}>
+                                        Vendor Remarks
+                                      </span>
+
+                                      <div style={remarksTextStyle}>
+                                        {quote.vendor_remarks}
+                                      </div>
                                     </div>
+                                  )}
 
-                                    {quote.vendor_remarks && (
-                                      <div
-                                        style={remarksStyle}
-                                      >
-                                        <span
-                                          style={labelStyle}
-                                        >
-                                          Vendor Remarks
-                                        </span>
-
-                                        <div
-                                          style={
-                                            messageTextStyle
-                                          }
-                                        >
-                                          {
-                                            quote.vendor_remarks
-                                          }
-                                        </div>
-                                      </div>
-                                    )}
-
-                                    {quote.quotation_pdf && (
-                                      <div
-                                        style={pdfRowStyle}
-                                      >
-                                        <span
-                                          style={labelStyle}
-                                        >
-                                          Quotation PDF
-                                        </span>
-
-                                        <a
-                                          href={
-                                            quote.quotation_pdf
-                                          }
-                                          target="_blank"
-                                          rel="noreferrer"
-                                          style={pdfLinkStyle}
-                                        >
-                                          Open Quotation PDF
-                                        </a>
-                                      </div>
-                                    )}
-
-                                    <div
-                                      style={quoteActionRowStyle}
-                                    >
+                                  <div style={quoteFooterStyle}>
+                                    <div style={footerLeftStyle}>
                                       <div>
-                                        <span
-                                          style={labelStyle}
-                                        >
+                                        <span style={labelStyle}>
                                           Submitted
                                         </span>
 
-                                        <span
-                                          style={
-                                            valueStyle
-                                          }
-                                        >
-                                          {formatDate(
-                                            quote.submitted_at
-                                          )}
+                                        <span style={detailValueStyle}>
+                                          {formatDate(quote.submitted_at)}
                                         </span>
                                       </div>
 
-                                      <div
-                                        style={
-                                          quoteDecisionStyle
+                                      {quote.quotation_pdf && (
+                                        <a
+                                          href={quote.quotation_pdf}
+                                          target="_blank"
+                                          rel="noreferrer"
+                                          style={pdfButtonStyle}
+                                        >
+                                          View Quotation PDF
+                                        </a>
+                                      )}
+                                    </div>
+
+                                    <div style={decisionStyle}>
+                                      <QuoteStatusBadge
+                                        status={quote.admin_status}
+                                      />
+
+                                      <button
+                                        type="button"
+                                        disabled={
+                                          updatingQuoteId === quote.id ||
+                                          quote.admin_status === "rejected"
                                         }
+                                        onClick={() =>
+                                          updateQuoteStatus(
+                                            enquiry.id,
+                                            quote.id,
+                                            "rejected"
+                                          )
+                                        }
+                                        style={{
+                                          ...rejectButtonStyle,
+                                          opacity:
+                                            updatingQuoteId === quote.id ||
+                                            quote.admin_status ===
+                                              "rejected"
+                                              ? 0.45
+                                              : 1,
+                                        }}
                                       >
-                                        <QuoteStatusBadge
-                                          status={
-                                            quote.admin_status
-                                          }
-                                        />
+                                        Reject
+                                      </button>
 
-                                        <button
-                                          type="button"
-                                          disabled={
-                                            updatingQuoteId ===
-                                              quote.id ||
+                                      <button
+                                        type="button"
+                                        disabled={
+                                          updatingQuoteId === quote.id ||
+                                          quote.admin_status === "accepted"
+                                        }
+                                        onClick={() =>
+                                          updateQuoteStatus(
+                                            enquiry.id,
+                                            quote.id,
+                                            "accepted"
+                                          )
+                                        }
+                                        style={{
+                                          ...acceptButtonStyle,
+                                          opacity:
+                                            updatingQuoteId === quote.id ||
                                             quote.admin_status ===
                                               "accepted"
-                                          }
-                                          onClick={() =>
-                                            updateQuoteStatus(
-                                              enquiry.id,
-                                              quote.id,
-                                              "accepted"
-                                            )
-                                          }
-                                          style={{
-                                            ...acceptButtonStyle,
-                                            opacity:
-                                              updatingQuoteId ===
-                                                quote.id ||
-                                              quote.admin_status ===
-                                                "accepted"
-                                                ? 0.45
-                                                : 1,
-                                          }}
-                                        >
-                                          {updatingQuoteId ===
-                                          quote.id
-                                            ? "Updating..."
-                                            : "Accept"}
-                                        </button>
-
-                                        <button
-                                          type="button"
-                                          disabled={
-                                            updatingQuoteId ===
-                                              quote.id ||
-                                            quote.admin_status ===
-                                              "rejected"
-                                          }
-                                          onClick={() =>
-                                            updateQuoteStatus(
-                                              enquiry.id,
-                                              quote.id,
-                                              "rejected"
-                                            )
-                                          }
-                                          style={{
-                                            ...rejectButtonStyle,
-                                            opacity:
-                                              updatingQuoteId ===
-                                                quote.id ||
-                                              quote.admin_status ===
-                                                "rejected"
-                                                ? 0.45
-                                                : 1,
-                                          }}
-                                        >
-                                          {updatingQuoteId ===
-                                          quote.id
-                                            ? "Updating..."
-                                            : "Reject"}
-                                        </button>
-                                      </div>
+                                              ? 0.45
+                                              : 1,
+                                        }}
+                                      >
+                                        {updatingQuoteId === quote.id
+                                          ? "Updating..."
+                                          : "Accept Quote"}
+                                      </button>
                                     </div>
                                   </div>
-                                )}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </>
+                  )}
+                </div>
               </section>
             );
           })}
         </div>
       )}
     </main>
+  );
+}
+
+function EnquiryMetric({
+  label,
+  value,
+  strong = false,
+}: {
+  label: string;
+  value: React.ReactNode;
+  strong?: boolean;
+}) {
+  return (
+    <div style={enquiryMetricStyle}>
+      <span style={labelStyle}>{label}</span>
+
+      <span
+        style={{
+          ...enquiryMetricValueStyle,
+          ...(strong ? enquiryMetricStrongStyle : {}),
+        }}
+      >
+        {value}
+      </span>
+    </div>
+  );
+}
+
+function HighlightMetric({
+  label,
+  value,
+}: {
+  label: string;
+  value: React.ReactNode;
+}) {
+  return (
+    <div style={highlightMetricStyle}>
+      <span style={highlightLabelStyle}>{label}</span>
+      <strong style={highlightValueStyle}>{value}</strong>
+    </div>
   );
 }
 
@@ -1049,7 +768,7 @@ function DetailSection({
 }) {
   return (
     <div>
-      <h3 style={sectionTitleStyle}>{title}</h3>
+      <h3 style={detailSectionTitleStyle}>{title}</h3>
       {children}
     </div>
   );
@@ -1063,35 +782,9 @@ function Detail({
   value: React.ReactNode;
 }) {
   return (
-    <div style={detailStyle}>
+    <div style={detailRowStyle}>
       <span style={labelStyle}>{label}</span>
-      <span style={valueStyle}>{value}</span>
-    </div>
-  );
-}
-
-function QuoteMetric({
-  label,
-  value,
-  highlight = false,
-}: {
-  label: string;
-  value: React.ReactNode;
-  highlight?: boolean;
-}) {
-  return (
-    <div style={quoteMetricStyle}>
-      <span style={labelStyle}>{label}</span>
-
-      <strong
-        style={
-          highlight
-            ? quoteMetricHighlightStyle
-            : quoteMetricValueStyle
-        }
-      >
-        {value}
-      </strong>
+      <span style={detailValueStyle}>{value}</span>
     </div>
   );
 }
@@ -1107,17 +800,9 @@ function EnquiryStatusBadge({
   return (
     <span
       style={{
-        padding: "7px 12px",
-        borderRadius: "999px",
-        background: closed
-          ? "#fff0ee"
-          : "#eaf6ef",
-        color: closed
-          ? "#a23c35"
-          : "#286647",
-        fontSize: "12px",
-        fontWeight: 700,
-        whiteSpace: "nowrap",
+        ...statusBadgeBaseStyle,
+        background: closed ? "#fff0ee" : "#eaf6ef",
+        color: closed ? "#a23c35" : "#286647",
       }}
     >
       {closed ? "Closed" : "Open"}
@@ -1149,17 +834,33 @@ function QuoteStatusBadge({
   return (
     <span
       style={{
-        padding: "7px 11px",
-        borderRadius: "999px",
+        ...statusBadgeBaseStyle,
         background,
         color,
-        fontSize: "11px",
-        fontWeight: 700,
         textTransform: "capitalize",
-        whiteSpace: "nowrap",
       }}
     >
       {normalized}
+    </span>
+  );
+}
+
+function StockBadge({
+  available,
+}: {
+  available: number | null;
+}) {
+  const inStock = available === 1;
+
+  return (
+    <span
+      style={{
+        fontSize: "12px",
+        fontWeight: 700,
+        color: inStock ? "#286647" : "#a23c35",
+      }}
+    >
+      {inStock ? "Available" : "Not Available"}
     </span>
   );
 }
@@ -1168,24 +869,25 @@ function formatMoney(
   currency: string | null,
   amount: number | null
 ) {
-  if (
-    amount === null ||
-    amount === undefined
-  ) {
-    return "—";
-  }
+  if (amount === null || amount === undefined) return "—";
 
   return `${currency || ""} ${amount}`.trim();
 }
 
-function formatYesNo(
-  value: string | null
-) {
+function formatYesNo(value: string | null) {
   if (!value) return "—";
 
-  return value.toLowerCase() === "yes"
-    ? "Yes"
-    : "No";
+  const normalized = value.toLowerCase();
+
+  if (
+    normalized === "yes" ||
+    normalized === "true" ||
+    normalized === "1"
+  ) {
+    return "Yes";
+  }
+
+  return "No";
 }
 
 function formatDate(value: string) {
@@ -1194,10 +896,14 @@ function formatDate(value: string) {
   return new Date(value).toLocaleString();
 }
 
+/* =========================
+   PAGE
+========================= */
+
 const pageStyle: React.CSSProperties = {
-  maxWidth: "1300px",
+  maxWidth: "1380px",
   margin: "0 auto",
-  padding: "42px 24px 70px",
+  padding: "36px 24px 70px",
 };
 
 const pageHeaderStyle: React.CSSProperties = {
@@ -1205,43 +911,48 @@ const pageHeaderStyle: React.CSSProperties = {
   justifyContent: "space-between",
   alignItems: "center",
   gap: "20px",
-  marginBottom: "24px",
+  marginBottom: "22px",
 };
 
 const titleStyle: React.CSSProperties = {
-  margin: "0 0 7px",
+  margin: "0 0 5px",
   color: "#173f4c",
-  fontSize: "32px",
+  fontSize: "30px",
 };
 
 const subtitleStyle: React.CSSProperties = {
   margin: 0,
-  color: "#67797f",
+  color: "#718187",
+  fontSize: "14px",
 };
 
 const countStyle: React.CSSProperties = {
-  padding: "9px 14px",
-  background: "#ffffff",
+  padding: "8px 13px",
   border: "1px solid #dfe6e4",
-  borderRadius: "9px",
+  borderRadius: "8px",
+  background: "#ffffff",
   color: "#173f4c",
-  fontSize: "13px",
-  fontWeight: 700,
+  fontSize: "12px",
+  fontWeight: 800,
 };
+
+/* =========================
+   FILTERS
+========================= */
 
 const filtersStyle: React.CSSProperties = {
   display: "flex",
   gap: "8px",
-  flexWrap: "wrap",
-  marginBottom: "20px",
+  marginBottom: "18px",
 };
 
 const filterButtonStyle: React.CSSProperties = {
   border: "1px solid #d9e1df",
   background: "#ffffff",
   color: "#617278",
-  borderRadius: "8px",
-  padding: "8px 14px",
+  borderRadius: "7px",
+  padding: "8px 15px",
+  fontSize: "12px",
   fontWeight: 700,
   cursor: "pointer",
 };
@@ -1252,179 +963,334 @@ const activeFilterStyle: React.CSSProperties = {
   color: "#ffffff",
 };
 
+/* =========================
+   ENQUIRY
+========================= */
+
 const listStyle: React.CSSProperties = {
   display: "grid",
-  gap: "14px",
+  gap: "20px",
 };
 
-const cardStyle: React.CSSProperties = {
+const enquiryCardStyle: React.CSSProperties = {
   background: "#ffffff",
-  border: "1px solid #dfe6e4",
+  border: "1px solid #dbe3e1",
   borderRadius: "12px",
   overflow: "hidden",
+  boxShadow: "0 2px 8px rgba(23,63,76,0.04)",
 };
 
 const closedCardStyle: React.CSSProperties = {
-  opacity: 0.78,
+  opacity: 0.76,
 };
 
-const summaryStyle: React.CSSProperties = {
-  padding: "18px 20px",
+const enquiryHeaderStyle: React.CSSProperties = {
+  padding: "18px 22px 16px",
+};
+
+const enquiryTitleRowStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  gap: "20px",
+  marginBottom: "16px",
+};
+
+const enquiryTitleLeftStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: "10px",
+};
+
+const enquiryIdStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "12px",
+  fontWeight: 800,
+  letterSpacing: "0.04em",
+};
+
+const dateStyle: React.CSSProperties = {
+  color: "#8a989c",
+  fontSize: "11px",
+};
+
+const enquiryMainGridStyle: React.CSSProperties = {
   display: "grid",
   gridTemplateColumns:
-    "50px minmax(170px, 1.5fr) minmax(130px, 1fr) 70px 70px 65px auto auto",
-  alignItems: "center",
-  gap: "16px",
+    "minmax(150px,1.4fr) minmax(120px,1fr) 80px minmax(150px,1.3fr) 100px 70px",
+  gap: "22px",
+  alignItems: "start",
 };
 
-const enquiryNumberStyle: React.CSSProperties = {
-  color: "#2a8392",
-  fontWeight: 800,
-};
-
-const mainInfoStyle: React.CSSProperties = {
+const enquiryMetricStyle: React.CSSProperties = {
   minWidth: 0,
 };
 
-const productStyle: React.CSSProperties = {
+const enquiryMetricValueStyle: React.CSSProperties = {
   display: "block",
-  color: "#173f4c",
-  marginBottom: "4px",
-};
-
-const smallStyle: React.CSSProperties = {
-  color: "#879398",
-  fontSize: "12px",
-};
-
-const summaryBlockStyle: React.CSSProperties = {
-  color: "#43575d",
-  fontSize: "13px",
-};
-
-const labelStyle: React.CSSProperties = {
-  display: "block",
-  color: "#879398",
-  fontSize: "10px",
-  fontWeight: 700,
-  textTransform: "uppercase",
-  letterSpacing: "0.04em",
-  marginBottom: "3px",
-};
-
-const quoteCountHighlightStyle: React.CSSProperties = {
-  color: "#2a8392",
-  fontSize: "15px",
-};
-
-const viewButtonStyle: React.CSSProperties = {
-  border: "1px solid #ccd7d8",
-  background: "#ffffff",
-  color: "#173f4c",
-  borderRadius: "7px",
-  padding: "8px 12px",
-  fontWeight: 700,
-  cursor: "pointer",
-  whiteSpace: "nowrap",
-};
-
-const quotePreviewBarStyle: React.CSSProperties = {
-  borderTop: "1px solid #edf0ef",
-  padding: "10px 20px",
-  display: "flex",
-  alignItems: "center",
-  gap: "16px",
-  flexWrap: "wrap",
-  background: "#fafbf9",
-  fontSize: "12px",
-};
-
-const quotePreviewLabelStyle: React.CSSProperties = {
-  color: "#2a8392",
-  fontWeight: 800,
-};
-
-const quickQuoteStyle: React.CSSProperties = {
-  color: "#52666c",
-};
-
-const moreQuotesStyle: React.CSSProperties = {
-  color: "#879398",
-};
-
-const expandedStyle: React.CSSProperties = {
-  borderTop: "1px solid #edf0ef",
-  padding: "24px",
-  background: "#fbfbf9",
-};
-
-const enquiryTopRowStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "50px",
-};
-
-const customerGridStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "4px 30px",
-};
-
-const sectionTitleStyle: React.CSSProperties = {
-  margin: "0 0 16px",
-  color: "#173f4c",
-  fontSize: "14px",
-};
-
-const detailStyle: React.CSSProperties = {
-  marginBottom: "12px",
-};
-
-const valueStyle: React.CSSProperties = {
-  color: "#43575d",
+  color: "#465b61",
   fontSize: "13px",
   overflowWrap: "anywhere",
 };
 
-const messageBoxStyle: React.CSSProperties = {
-  marginTop: "20px",
-  padding: "15px",
-  background: "#ffffff",
-  border: "1px solid #e4e9e7",
-  borderRadius: "8px",
+const enquiryMetricStrongStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontWeight: 800,
+  fontSize: "14px",
 };
 
-const messageTextStyle: React.CSSProperties = {
-  marginTop: "6px",
-  color: "#43575d",
-  whiteSpace: "pre-wrap",
-  lineHeight: 1.6,
-};
-
-const enquiryActionRowStyle: React.CSSProperties = {
-  marginTop: "22px",
-  paddingTop: "20px",
-  borderTop: "1px solid #e4e9e7",
+const customerStripStyle: React.CSSProperties = {
+  marginTop: "16px",
+  paddingTop: "13px",
+  borderTop: "1px solid #edf1f0",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   gap: "20px",
 };
 
-const matchingSummaryStyle: React.CSSProperties = {
+const customerInfoStyle: React.CSSProperties = {
   display: "flex",
   alignItems: "center",
-  gap: "35px",
+  gap: "14px",
+  flexWrap: "wrap",
+  color: "#6a7a80",
+  fontSize: "11px",
 };
 
-const openButtonStyle: React.CSSProperties = {
-  border: "none",
-  background: "#173f4c",
-  color: "#ffffff",
-  borderRadius: "7px",
-  padding: "10px 18px",
+const customerMessageStyle: React.CSSProperties = {
+  color: "#849196",
+  fontStyle: "italic",
+};
+
+/* =========================
+   QUOTATION LIST
+========================= */
+
+const quotationSectionStyle: React.CSSProperties = {
+  background: "#f8faf9",
+  borderTop: "1px solid #e2e9e7",
+  padding: "16px 22px 20px",
+};
+
+const quotationHeaderStyle: React.CSSProperties = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "20px",
+  marginBottom: "12px",
+};
+
+const quotationTitleStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "12px",
+  fontWeight: 800,
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+};
+
+const quotationCountTextStyle: React.CSSProperties = {
+  marginLeft: "10px",
+  color: "#2a8392",
+  fontSize: "11px",
   fontWeight: 700,
+};
+
+const instructionStyle: React.CSSProperties = {
+  color: "#8a979b",
+  fontSize: "10px",
+};
+
+const quoteTableHeaderStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns:
+    "24px minmax(150px,1.4fr) 120px 120px 110px 110px 100px",
+  gap: "16px",
+  padding: "0 15px 7px",
+  color: "#8a979b",
+  fontSize: "9px",
+  fontWeight: 800,
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+};
+
+const quotationListStyle: React.CSSProperties = {
+  display: "grid",
+  gap: "7px",
+};
+
+const quoteCardStyle: React.CSSProperties = {
+  background: "#ffffff",
+  border: "1px solid #dfe6e4",
+  borderRadius: "8px",
+  overflow: "hidden",
+};
+
+const activeQuoteCardStyle: React.CSSProperties = {
+  borderColor: "#b8d1d4",
+  boxShadow: "0 3px 10px rgba(23,63,76,0.05)",
+};
+
+const quoteRowStyle: React.CSSProperties = {
+  width: "100%",
+  border: "none",
+  background: "#ffffff",
+  display: "grid",
+  gridTemplateColumns:
+    "24px minmax(150px,1.4fr) 120px 120px 110px 110px 100px",
+  gap: "16px",
+  alignItems: "center",
+  padding: "13px 15px",
+  textAlign: "left",
   cursor: "pointer",
+};
+
+const arrowStyle: React.CSSProperties = {
+  color: "#2a8392",
+  fontSize: "10px",
+};
+
+const vendorNameStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "13px",
+};
+
+const priceStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "13px",
+};
+
+const leadTimeStyle: React.CSSProperties = {
+  color: "#52656b",
+  fontSize: "12px",
+};
+
+/* =========================
+   EXPANDED QUOTE
+========================= */
+
+const quoteExpandedStyle: React.CSSProperties = {
+  borderTop: "1px solid #e5ebe9",
+  background: "#ffffff",
+  padding: "20px",
+};
+
+const highlightGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(4, 1fr)",
+  gap: "10px",
+  marginBottom: "24px",
+};
+
+const highlightMetricStyle: React.CSSProperties = {
+  padding: "14px 16px",
+  border: "1px solid #e1e8e6",
+  borderRadius: "8px",
+  background: "#f9fbfa",
+};
+
+const highlightLabelStyle: React.CSSProperties = {
+  display: "block",
+  color: "#8a979b",
+  fontSize: "9px",
+  fontWeight: 800,
+  textTransform: "uppercase",
+  letterSpacing: "0.05em",
+  marginBottom: "5px",
+};
+
+const highlightValueStyle: React.CSSProperties = {
+  display: "block",
+  color: "#173f4c",
+  fontSize: "17px",
+};
+
+const detailsGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr 1fr",
+  gap: "50px",
+};
+
+const detailSectionTitleStyle: React.CSSProperties = {
+  margin: "0 0 15px",
+  paddingBottom: "8px",
+  borderBottom: "1px solid #edf1f0",
+  color: "#173f4c",
+  fontSize: "12px",
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+};
+
+const detailRowStyle: React.CSSProperties = {
+  marginBottom: "12px",
+};
+
+const detailValueStyle: React.CSSProperties = {
+  color: "#465b61",
+  fontSize: "12px",
+  overflowWrap: "anywhere",
+};
+
+const remarksStyle: React.CSSProperties = {
+  marginTop: "20px",
+  padding: "14px 16px",
+  background: "#f9fbfa",
+  border: "1px solid #e2e9e7",
+  borderRadius: "8px",
+};
+
+const remarksTextStyle: React.CSSProperties = {
+  color: "#465b61",
+  fontSize: "12px",
+  lineHeight: 1.6,
+  whiteSpace: "pre-wrap",
+};
+
+const quoteFooterStyle: React.CSSProperties = {
+  marginTop: "20px",
+  paddingTop: "18px",
+  borderTop: "1px solid #e5ebe9",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "20px",
+};
+
+const footerLeftStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: "24px",
+};
+
+const decisionStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: "9px",
+};
+
+/* =========================
+   COMMON
+========================= */
+
+const labelStyle: React.CSSProperties = {
+  display: "block",
+  color: "#8a979b",
+  fontSize: "9px",
+  fontWeight: 800,
+  textTransform: "uppercase",
+  letterSpacing: "0.045em",
+  marginBottom: "4px",
+};
+
+const statusBadgeBaseStyle: React.CSSProperties = {
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: "5px 9px",
+  borderRadius: "999px",
+  fontSize: "10px",
+  fontWeight: 800,
+  whiteSpace: "nowrap",
 };
 
 const closeButtonStyle: React.CSSProperties = {
@@ -1432,151 +1298,21 @@ const closeButtonStyle: React.CSSProperties = {
   background: "#ffffff",
   color: "#a23c35",
   borderRadius: "7px",
-  padding: "10px 18px",
+  padding: "8px 13px",
+  fontSize: "11px",
   fontWeight: 700,
   cursor: "pointer",
 };
 
-const quotationSectionStyle: React.CSSProperties = {
-  marginTop: "30px",
-  paddingTop: "26px",
-  borderTop: "2px solid #e1e8e6",
-};
-
-const quotationHeadingRowStyle: React.CSSProperties = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  gap: "20px",
-  marginBottom: "16px",
-};
-
-const quotationHeadingStyle: React.CSSProperties = {
-  margin: "0 0 4px",
-  color: "#173f4c",
-  fontSize: "18px",
-};
-
-const quotationSubtitleStyle: React.CSSProperties = {
-  margin: 0,
-  color: "#7b898e",
-  fontSize: "12px",
-};
-
-const quotationCountStyle: React.CSSProperties = {
-  padding: "7px 11px",
-  background: "#eef6f6",
-  color: "#2a8392",
-  borderRadius: "999px",
-  fontSize: "11px",
-  fontWeight: 800,
-};
-
-const noQuotesStyle: React.CSSProperties = {
-  padding: "24px",
-  border: "1px dashed #d5dfdc",
-  borderRadius: "9px",
-  color: "#7b898e",
-  textAlign: "center",
-  background: "#ffffff",
-};
-
-const quotationListStyle: React.CSSProperties = {
-  display: "grid",
-  gap: "9px",
-};
-
-const quotationCardStyle: React.CSSProperties = {
-  background: "#ffffff",
-  border: "1px solid #dfe6e4",
-  borderRadius: "9px",
-  overflow: "hidden",
-};
-
-const quotationSummaryButtonStyle: React.CSSProperties = {
-  width: "100%",
+const reopenButtonStyle: React.CSSProperties = {
   border: "none",
-  background: "#ffffff",
-  padding: "14px 16px",
-  display: "grid",
-  gridTemplateColumns:
-    "20px minmax(140px, 1.3fr) 110px 110px 100px 100px auto",
-  gap: "16px",
-  alignItems: "center",
-  textAlign: "left",
-  cursor: "pointer",
-};
-
-const quoteArrowStyle: React.CSSProperties = {
-  color: "#2a8392",
+  background: "#173f4c",
+  color: "#ffffff",
+  borderRadius: "7px",
+  padding: "8px 13px",
   fontSize: "11px",
-};
-
-const quoteVendorStyle: React.CSSProperties = {
-  color: "#173f4c",
-  minWidth: 0,
-};
-
-const quoteMetricStyle: React.CSSProperties = {
-  minWidth: 0,
-};
-
-const quoteMetricValueStyle: React.CSSProperties = {
-  display: "block",
-  color: "#43575d",
-  fontSize: "12px",
-};
-
-const quoteMetricHighlightStyle: React.CSSProperties = {
-  display: "block",
-  color: "#173f4c",
-  fontSize: "13px",
-};
-
-const quotationExpandedStyle: React.CSSProperties = {
-  borderTop: "1px solid #edf0ef",
-  padding: "20px",
-  background: "#fbfbf9",
-};
-
-const quotationDetailGridStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr",
-  gap: "40px",
-};
-
-const remarksStyle: React.CSSProperties = {
-  marginTop: "18px",
-  padding: "14px",
-  background: "#ffffff",
-  border: "1px solid #e4e9e7",
-  borderRadius: "8px",
-};
-
-const pdfRowStyle: React.CSSProperties = {
-  marginTop: "16px",
-};
-
-const pdfLinkStyle: React.CSSProperties = {
-  color: "#2a8392",
-  fontSize: "13px",
   fontWeight: 700,
-};
-
-const quoteActionRowStyle: React.CSSProperties = {
-  marginTop: "20px",
-  paddingTop: "18px",
-  borderTop: "1px solid #e4e9e7",
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  gap: "20px",
-};
-
-const quoteDecisionStyle: React.CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  gap: "9px",
+  cursor: "pointer",
 };
 
 const acceptButtonStyle: React.CSSProperties = {
@@ -1585,18 +1321,42 @@ const acceptButtonStyle: React.CSSProperties = {
   color: "#ffffff",
   borderRadius: "7px",
   padding: "9px 16px",
-  fontWeight: 700,
+  fontSize: "11px",
+  fontWeight: 800,
   cursor: "pointer",
 };
 
 const rejectButtonStyle: React.CSSProperties = {
-  border: "1px solid #d9dddd",
+  border: "1px solid #e0c8c4",
   background: "#ffffff",
   color: "#a23c35",
   borderRadius: "7px",
   padding: "9px 16px",
+  fontSize: "11px",
   fontWeight: 700,
   cursor: "pointer",
+};
+
+const pdfButtonStyle: React.CSSProperties = {
+  display: "inline-block",
+  padding: "8px 12px",
+  border: "1px solid #c9d9da",
+  borderRadius: "7px",
+  color: "#2a8392",
+  background: "#ffffff",
+  fontSize: "11px",
+  fontWeight: 800,
+  textDecoration: "none",
+};
+
+const noQuotesStyle: React.CSSProperties = {
+  padding: "18px",
+  border: "1px dashed #d6dfdd",
+  borderRadius: "8px",
+  background: "#ffffff",
+  color: "#879499",
+  textAlign: "center",
+  fontSize: "12px",
 };
 
 const errorStyle: React.CSSProperties = {
@@ -1604,7 +1364,7 @@ const errorStyle: React.CSSProperties = {
   padding: "12px 15px",
   background: "#fff3f1",
   border: "1px solid #f2d4d0",
-  borderRadius: "9px",
+  borderRadius: "8px",
   color: "#a23c35",
 };
 
@@ -1613,15 +1373,15 @@ const successStyle: React.CSSProperties = {
   padding: "12px 15px",
   background: "#eef8f3",
   border: "1px solid #d3ebdf",
-  borderRadius: "9px",
+  borderRadius: "8px",
   color: "#286647",
 };
 
 const emptyStyle: React.CSSProperties = {
-  padding: "50px",
+  padding: "45px",
   background: "#ffffff",
   border: "1px solid #dfe6e4",
-  borderRadius: "14px",
+  borderRadius: "10px",
   textAlign: "center",
   color: "#718086",
 };
