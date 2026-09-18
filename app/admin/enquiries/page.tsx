@@ -85,6 +85,8 @@ export default function AdminEnquiriesPage() {
   const [loadingRecipients, setLoadingRecipients] =
     useState(false);
 
+  const [recipientSearch, setRecipientSearch] = useState("");
+
   useEffect(() => {
     loadEnquiries();
   }, []);
@@ -171,6 +173,7 @@ export default function AdminEnquiriesPage() {
   async function openEmailListModal(enquiry: Enquiry) {
     setEmailListEnquiry(enquiry);
     setRecipientsExpanded(false);
+    setRecipientSearch("");
     setLoadingRecipients(true);
     setError("");
 
@@ -218,6 +221,7 @@ export default function AdminEnquiriesPage() {
     setEmailRecipients([]);
     setSelectedRecipientIds([]);
     setRecipientsExpanded(false);
+    setRecipientSearch("");
   }
 
   function toggleEmailRecipient(recipientId: number) {
@@ -239,6 +243,18 @@ export default function AdminEnquiriesPage() {
 
     closeEmailListModal();
   }
+
+  const visibleEmailRecipients = useMemo(() => {
+    const query = recipientSearch.trim().toLowerCase();
+
+    if (!query) {
+      return emailRecipients;
+    }
+
+    return emailRecipients.filter((recipient) =>
+      recipient.email.toLowerCase().includes(query)
+    );
+  }, [emailRecipients, recipientSearch]);
 
   const visibleEnquiries = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -817,32 +833,54 @@ export default function AdminEnquiriesPage() {
                 </button>
 
                 {recipientsExpanded && (
-                  <div style={recipientListStyle}>
-                    {emailRecipients.map((recipient) => {
-                      const selected =
-                        selectedRecipientIds.includes(recipient.id);
+                  <>
+                    <div style={recipientSearchWrapStyle}>
+                      <span style={recipientSearchIconStyle}>⌕</span>
 
-                      return (
-                        <label
-                          key={recipient.id}
-                          style={recipientRowStyle}
-                        >
-                          <input
-                            type="checkbox"
-                            checked={selected}
-                            onChange={() =>
-                              toggleEmailRecipient(recipient.id)
-                            }
-                            style={recipientCheckboxStyle}
-                          />
+                      <input
+                        type="search"
+                        value={recipientSearch}
+                        onChange={(event) =>
+                          setRecipientSearch(event.target.value)
+                        }
+                        placeholder="Search email..."
+                        style={recipientSearchInputStyle}
+                      />
+                    </div>
 
-                          <span style={recipientEmailStyle}>
-                            {recipient.email}
-                          </span>
-                        </label>
-                      );
-                    })}
-                  </div>
+                    <div style={recipientListStyle}>
+                      {visibleEmailRecipients.length === 0 ? (
+                        <div style={recipientSearchEmptyStyle}>
+                          No email found.
+                        </div>
+                      ) : (
+                        visibleEmailRecipients.map((recipient) => {
+                          const selected =
+                            selectedRecipientIds.includes(recipient.id);
+
+                          return (
+                            <label
+                              key={recipient.id}
+                              style={recipientRowStyle}
+                            >
+                              <input
+                                type="checkbox"
+                                checked={selected}
+                                onChange={() =>
+                                  toggleEmailRecipient(recipient.id)
+                                }
+                                style={recipientCheckboxStyle}
+                              />
+
+                              <span style={recipientEmailStyle}>
+                                {recipient.email}
+                              </span>
+                            </label>
+                          );
+                        })
+                      )}
+                    </div>
+                  </>
                 )}
 
                 <div style={selectedSummaryStyle}>
@@ -1639,7 +1677,9 @@ const recipientListStyle: React.CSSProperties = {
   margin: "8px 22px 0",
   border: "1px solid #e1e8e6",
   borderRadius: "8px",
-  overflow: "hidden",
+  overflowY: "auto",
+  overflowX: "hidden",
+  maxHeight: "240px",
 };
 
 const recipientRowStyle: React.CSSProperties = {
@@ -1698,4 +1738,39 @@ const confirmRecipientsButtonStyle: React.CSSProperties = {
   fontSize: "11px",
   fontWeight: 700,
   cursor: "pointer",
+};
+
+const recipientSearchWrapStyle: React.CSSProperties = {
+  position: "relative",
+  margin: "10px 22px 0",
+};
+
+const recipientSearchIconStyle: React.CSSProperties = {
+  position: "absolute",
+  left: "12px",
+  top: "50%",
+  transform: "translateY(-50%)",
+  color: "#819095",
+  fontSize: "15px",
+  pointerEvents: "none",
+};
+
+const recipientSearchInputStyle: React.CSSProperties = {
+  width: "100%",
+  height: "38px",
+  padding: "0 12px 0 35px",
+  border: "1px solid #d9e1df",
+  borderRadius: "7px",
+  background: "#ffffff",
+  color: "#173f4c",
+  fontSize: "12px",
+  outline: "none",
+  boxSizing: "border-box",
+};
+
+const recipientSearchEmptyStyle: React.CSSProperties = {
+  padding: "20px",
+  color: "#879499",
+  fontSize: "12px",
+  textAlign: "center",
 };
