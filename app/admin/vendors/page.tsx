@@ -128,10 +128,10 @@ export default function AdminVendorsPage() {
         current.map((vendor) =>
           vendor.id === vendorId
             ? {
-                ...vendor,
-                product_limit:
-                  data.product_limit ?? vendor.product_limit + 10,
-              }
+              ...vendor,
+              product_limit:
+                data.product_limit ?? vendor.product_limit + 10,
+            }
             : vendor
         )
       );
@@ -178,8 +178,15 @@ export default function AdminVendorsPage() {
             ? b.products_submitted / b.product_limit
             : 0;
 
+        // Highest percentage of product limit used first.
         if (bUsage !== aUsage) {
           return bUsage - aUsage;
+        }
+
+        // If percentage is the same, vendor using more
+        // product slots appears first.
+        if (b.products_submitted !== a.products_submitted) {
+          return b.products_submitted - a.products_submitted;
         }
       }
 
@@ -269,13 +276,13 @@ export default function AdminVendorsPage() {
               const usage =
                 vendor.product_limit > 0
                   ? Math.min(
-                      100,
-                      Math.round(
-                        (vendor.products_submitted /
-                          vendor.product_limit) *
-                          100
-                      )
+                    100,
+                    Math.round(
+                      (vendor.products_submitted /
+                        vendor.product_limit) *
+                      100
                     )
+                  )
                   : 0;
 
               return (
@@ -326,41 +333,7 @@ export default function AdminVendorsPage() {
 
                   {isOpen && (
                     <div style={expandedStyle}>
-                      <div style={productAccessStripStyle}>
-                        <span style={productAccessTitleStyle}>
-                          Product Access
-                        </span>
 
-                        <strong style={productAccessNumberStyle}>
-                          {vendor.products_submitted} / {vendor.product_limit}
-                        </strong>
-
-                        <div style={compactProgressTrackStyle}>
-                          <div
-                            style={{
-                              ...compactProgressBarStyle,
-                              width: `${usage}%`,
-                            }}
-                          />
-                        </div>
-
-                        <strong style={percentageStyle}>{usage}%</strong>
-
-                        <button
-                          type="button"
-                          disabled={updatingId === vendor.id}
-                          onClick={() => increaseProductLimit(vendor.id)}
-                          style={{
-                            ...increaseLimitButtonStyle,
-                            opacity:
-                              updatingId === vendor.id ? 0.5 : 1,
-                          }}
-                        >
-                          {updatingId === vendor.id
-                            ? "Updating..."
-                            : "+10 Products"}
-                        </button>
-                      </div>
 
                       <div style={detailsGridStyle}>
                         <div>
@@ -405,11 +378,50 @@ export default function AdminVendorsPage() {
                             value={
                               vendor.created_at
                                 ? new Date(
-                                    vendor.created_at
-                                  ).toLocaleDateString()
+                                  vendor.created_at
+                                ).toLocaleDateString()
                                 : "—"
                             }
                           />
+                        </div>
+
+                        <div style={productAccessSectionStyle}>
+                          <h3 style={sectionTitleStyle}>
+                            Product Access
+                          </h3>
+
+                          <div style={productAccessTopStyle}>
+                            <strong style={productAccessNumberStyle}>
+                              {vendor.products_submitted} / {vendor.product_limit}
+                            </strong>
+
+                            <strong style={percentageStyle}>
+                              {usage}%
+                            </strong>
+                          </div>
+
+                          <div style={compactProgressTrackStyle}>
+                            <div
+                              style={{
+                                ...compactProgressBarStyle,
+                                width: `${usage}%`,
+                              }}
+                            />
+                          </div>
+
+                          <button
+                            type="button"
+                            disabled={updatingId === vendor.id}
+                            onClick={() => increaseProductLimit(vendor.id)}
+                            style={{
+                              ...increaseLimitButtonStyle,
+                              opacity: updatingId === vendor.id ? 0.5 : 1,
+                            }}
+                          >
+                            {updatingId === vendor.id
+                              ? "Updating..."
+                              : "+10 Products"}
+                          </button>
                         </div>
                       </div>
 
@@ -522,6 +534,10 @@ function StatusBadge({ status }: { status: string }) {
   return (
     <span
       style={{
+        display: "inline-flex",
+        width: "fit-content",
+        justifySelf: "start",
+        alignItems: "center",
         padding: "6px 10px",
         borderRadius: "999px",
         background,
@@ -702,22 +718,17 @@ const expandedStyle: React.CSSProperties = {
   background: "#fbfcfb",
 };
 
-const productAccessStripStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "120px 70px minmax(140px, 1fr) 45px auto",
-  gap: "14px",
-  alignItems: "center",
-  padding: "14px 18px",
-  borderBottom: "1px solid #e7ecea",
-  background: "#f7faf9",
+const productAccessSectionStyle: React.CSSProperties = {
+  paddingLeft: "24px",
+  borderLeft: "1px solid #e2e8e6",
 };
 
-const productAccessTitleStyle: React.CSSProperties = {
-  color: "#173f4c",
-  fontSize: "10px",
-  fontWeight: 800,
-  textTransform: "uppercase",
-  letterSpacing: "0.04em",
+const productAccessTopStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  gap: "12px",
+  marginBottom: "8px",
 };
 
 const productAccessNumberStyle: React.CSSProperties = {
@@ -745,6 +756,7 @@ const percentageStyle: React.CSSProperties = {
 };
 
 const increaseLimitButtonStyle: React.CSSProperties = {
+  marginTop: "12px",
   border: "1px solid #2a8392",
   background: "#ffffff",
   color: "#2a8392",
@@ -758,9 +770,10 @@ const increaseLimitButtonStyle: React.CSSProperties = {
 
 const detailsGridStyle: React.CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "60px",
-  padding: "20px 18px 12px",
+  gridTemplateColumns: "1fr 1fr 280px",
+  gap: "48px",
+  padding: "20px 18px 16px",
+  alignItems: "start",
 };
 
 const sectionTitleStyle: React.CSSProperties = {
