@@ -62,9 +62,6 @@ export default function AdminEnquiriesPage() {
   const [updatingEnquiryId, setUpdatingEnquiryId] =
     useState<number | null>(null);
 
-  const [updatingQuoteId, setUpdatingQuoteId] =
-    useState<number | null>(null);
-
   useEffect(() => {
     loadEnquiries();
   }, []);
@@ -145,64 +142,6 @@ export default function AdminEnquiriesPage() {
       setError("Unable to update enquiry.");
     } finally {
       setUpdatingEnquiryId(null);
-    }
-  }
-
-  async function updateQuoteStatus(
-    enquiryId: number,
-    quoteId: number,
-    status: "accepted" | "rejected"
-  ) {
-    setUpdatingQuoteId(quoteId);
-    setError("");
-    setMessage("");
-
-    try {
-      const response = await fetch(
-        `/api/admin/vendor-quotes/${quoteId}`,
-        {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ status }),
-        }
-      );
-
-      const data = await response.json();
-
-      if (response.status === 401) {
-        window.location.href = "/admin/login";
-        return;
-      }
-
-      if (!response.ok) {
-        setError(data.error || "Unable to update quotation.");
-        return;
-      }
-
-      setEnquiries((current) =>
-        current.map((enquiry) => {
-          if (enquiry.id !== enquiryId) return enquiry;
-
-          return {
-            ...enquiry,
-            quotations: enquiry.quotations.map((quote) =>
-              quote.id === quoteId
-                ? { ...quote, admin_status: status }
-                : quote
-            ),
-          };
-        })
-      );
-
-      setMessage(
-        data.message || "Quotation updated successfully."
-      );
-    } catch {
-      setError("Unable to update quotation.");
-    } finally {
-      setUpdatingQuoteId(null);
     }
   }
 
@@ -427,7 +366,6 @@ export default function AdminEnquiriesPage() {
                         <span>Total Price</span>
                         <span>Stock</span>
                         <span>Lead Time</span>
-                        <span>Status</span>
                       </div>
 
                       <div style={quotationListStyle}>
@@ -483,10 +421,6 @@ export default function AdminEnquiriesPage() {
                                 <span style={leadTimeStyle}>
                                   {quote.lead_time || "—"}
                                 </span>
-
-                                <QuoteStatusBadge
-                                  status={quote.admin_status}
-                                />
                               </button>
 
                               {quoteExpanded && (
@@ -640,66 +574,6 @@ export default function AdminEnquiriesPage() {
                                         </a>
                                       )}
                                     </div>
-
-                                    <div style={decisionStyle}>
-                                      <QuoteStatusBadge
-                                        status={quote.admin_status}
-                                      />
-
-                                      <button
-                                        type="button"
-                                        disabled={
-                                          updatingQuoteId === quote.id ||
-                                          quote.admin_status === "rejected"
-                                        }
-                                        onClick={() =>
-                                          updateQuoteStatus(
-                                            enquiry.id,
-                                            quote.id,
-                                            "rejected"
-                                          )
-                                        }
-                                        style={{
-                                          ...rejectButtonStyle,
-                                          opacity:
-                                            updatingQuoteId === quote.id ||
-                                            quote.admin_status ===
-                                              "rejected"
-                                              ? 0.45
-                                              : 1,
-                                        }}
-                                      >
-                                        Reject
-                                      </button>
-
-                                      <button
-                                        type="button"
-                                        disabled={
-                                          updatingQuoteId === quote.id ||
-                                          quote.admin_status === "accepted"
-                                        }
-                                        onClick={() =>
-                                          updateQuoteStatus(
-                                            enquiry.id,
-                                            quote.id,
-                                            "accepted"
-                                          )
-                                        }
-                                        style={{
-                                          ...acceptButtonStyle,
-                                          opacity:
-                                            updatingQuoteId === quote.id ||
-                                            quote.admin_status ===
-                                              "accepted"
-                                              ? 0.45
-                                              : 1,
-                                        }}
-                                      >
-                                        {updatingQuoteId === quote.id
-                                          ? "Updating..."
-                                          : "Accept Quote"}
-                                      </button>
-                                    </div>
                                   </div>
                                 </div>
                               )}
@@ -806,41 +680,6 @@ function EnquiryStatusBadge({
       }}
     >
       {closed ? "Closed" : "Open"}
-    </span>
-  );
-}
-
-function QuoteStatusBadge({
-  status,
-}: {
-  status: string;
-}) {
-  const normalized =
-    status?.toLowerCase() || "pending";
-
-  let background = "#fff7df";
-  let color = "#886818";
-
-  if (normalized === "accepted") {
-    background = "#eaf6ef";
-    color = "#286647";
-  }
-
-  if (normalized === "rejected") {
-    background = "#fff0ee";
-    color = "#a23c35";
-  }
-
-  return (
-    <span
-      style={{
-        ...statusBadgeBaseStyle,
-        background,
-        color,
-        textTransform: "capitalize",
-      }}
-    >
-      {normalized}
     </span>
   );
 }
@@ -1017,7 +856,7 @@ const dateStyle: React.CSSProperties = {
 const enquiryMainGridStyle: React.CSSProperties = {
   display: "grid",
   gridTemplateColumns:
-    "minmax(150px,1.4fr) minmax(120px,1fr) 80px minmax(150px,1.3fr) 100px 70px",
+    "minmax(170px,1.5fr) minmax(130px,1fr) 80px minmax(160px,1.3fr) 110px 70px",
   gap: "22px",
   alignItems: "start",
 };
@@ -1104,7 +943,7 @@ const instructionStyle: React.CSSProperties = {
 const quoteTableHeaderStyle: React.CSSProperties = {
   display: "grid",
   gridTemplateColumns:
-    "24px minmax(150px,1.4fr) 120px 120px 110px 110px 100px",
+    "24px minmax(180px,1.6fr) 130px 130px 120px 120px",
   gap: "16px",
   padding: "0 15px 7px",
   color: "#8a979b",
@@ -1137,7 +976,7 @@ const quoteRowStyle: React.CSSProperties = {
   background: "#ffffff",
   display: "grid",
   gridTemplateColumns:
-    "24px minmax(150px,1.4fr) 120px 120px 110px 110px 100px",
+  "24px minmax(180px,1.6fr) 130px 130px 120px 120px",
   gap: "16px",
   alignItems: "center",
   padding: "13px 15px",
@@ -1262,12 +1101,6 @@ const footerLeftStyle: React.CSSProperties = {
   gap: "24px",
 };
 
-const decisionStyle: React.CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  gap: "9px",
-};
-
 /* =========================
    COMMON
 ========================= */
@@ -1310,28 +1143,6 @@ const reopenButtonStyle: React.CSSProperties = {
   color: "#ffffff",
   borderRadius: "7px",
   padding: "8px 13px",
-  fontSize: "11px",
-  fontWeight: 700,
-  cursor: "pointer",
-};
-
-const acceptButtonStyle: React.CSSProperties = {
-  border: "none",
-  background: "#173f4c",
-  color: "#ffffff",
-  borderRadius: "7px",
-  padding: "9px 16px",
-  fontSize: "11px",
-  fontWeight: 800,
-  cursor: "pointer",
-};
-
-const rejectButtonStyle: React.CSSProperties = {
-  border: "1px solid #e0c8c4",
-  background: "#ffffff",
-  color: "#a23c35",
-  borderRadius: "7px",
-  padding: "9px 16px",
   fontSize: "11px",
   fontWeight: 700,
   cursor: "pointer",

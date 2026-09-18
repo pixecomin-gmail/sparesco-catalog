@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Vendor = {
   id: number;
@@ -17,12 +17,18 @@ type Vendor = {
   created_at: string;
 };
 
+type SortOption = "newest" | "product_limit";
+
 export default function AdminVendorsPage() {
   const [vendors, setVendors] = useState<Vendor[]>([]);
   const [loading, setLoading] = useState(true);
   const [updatingId, setUpdatingId] = useState<number | null>(null);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+
+  const [search, setSearch] = useState("");
+  const [sortBy, setSortBy] = useState<SortOption>("newest");
+  const [openVendor, setOpenVendor] = useState<number | null>(null);
 
   const loadVendors = async () => {
     setLoading(true);
@@ -122,10 +128,10 @@ export default function AdminVendorsPage() {
         current.map((vendor) =>
           vendor.id === vendorId
             ? {
-              ...vendor,
-              product_limit:
-                data.product_limit ?? vendor.product_limit + 10,
-            }
+                ...vendor,
+                product_limit:
+                  data.product_limit ?? vendor.product_limit + 10,
+              }
             : vendor
         )
       );
@@ -137,6 +143,56 @@ export default function AdminVendorsPage() {
       setUpdatingId(null);
     }
   };
+
+  const visibleVendors = useMemo(() => {
+    const query = search.trim().toLowerCase();
+
+    const filtered = vendors.filter((vendor) => {
+      if (!query) return true;
+
+      const searchable = [
+        vendor.company_name,
+        vendor.contact_person,
+        vendor.email,
+        vendor.phone,
+        vendor.city,
+        vendor.country,
+        vendor.gst_number,
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+
+      return searchable.includes(query);
+    });
+
+    return [...filtered].sort((a, b) => {
+      if (sortBy === "product_limit") {
+        const aUsage =
+          a.product_limit > 0
+            ? a.products_submitted / a.product_limit
+            : 0;
+
+        const bUsage =
+          b.product_limit > 0
+            ? b.products_submitted / b.product_limit
+            : 0;
+
+        if (bUsage !== aUsage) {
+          return bUsage - aUsage;
+        }
+      }
+
+      const aTime = new Date(a.created_at).getTime() || 0;
+      const bTime = new Date(b.created_at).getTime() || 0;
+
+      if (bTime !== aTime) {
+        return bTime - aTime;
+      }
+
+      return b.id - a.id;
+    });
+  }, [vendors, search, sortBy]);
 
   if (loading) {
     return (
@@ -164,170 +220,269 @@ export default function AdminVendorsPage() {
       {message && <div style={successStyle}>{message}</div>}
       {error && <div style={errorStyle}>{error}</div>}
 
-      {vendors.length === 0 ? (
-        <div style={emptyStyle}>No vendor applications found.</div>
-      ) : (
-        <div style={listStyle}>
-          {vendors.map((vendor) => (
-            <section key={vendor.id} style={cardStyle}>
-              <div style={cardHeaderStyle}>
-                <div>
-                  <h2 style={companyStyle}>{vendor.company_name}</h2>
+      <div style={toolbarStyle}>
+        <div style={searchWrapStyle}>
+          <span style={searchIconStyle}>⌕</span>
 
-                  <span style={vendorIdStyle}>
-                    Vendor #{vendor.id}
-                  </span>
-                </div>
-
-                <StatusBadge status={vendor.status} />
-              </div>
-
-              <div style={detailsGridStyle}>
-                <div style={detailSectionStyle}>
-                  <h3 style={sectionTitleStyle}>Contact Details</h3>
-
-                  <Detail
-                    label="Contact Person"
-                    value={vendor.contact_person}
-                  />
-
-                  <Detail label="Email" value={vendor.email} />
-
-                  <Detail
-                    label="Phone"
-                    value={vendor.phone || "—"}
-                  />
-                </div>
-
-                <div style={detailSectionStyle}>
-                  <h3 style={sectionTitleStyle}>Business Details</h3>
-
-                  <Detail
-                    label="Location"
-                    value={
-                      [vendor.city, vendor.country]
-                        .filter(Boolean)
-                        .join(", ") || "—"
-                    }
-                  />
-
-                  <Detail
-                    label="GST / Tax"
-                    value={vendor.gst_number || "—"}
-                  />
-
-                  <Detail
-                    label="Registered"
-                    value={
-                      vendor.created_at
-                        ? new Date(
-                          vendor.created_at
-                        ).toLocaleDateString()
-                        : "—"
-                    }
-                  />
-                </div>
-
-                <div style={productSectionStyle}>
-                  <h3 style={sectionTitleStyle}>Product Access</h3>
-
-                  <div style={productNumberStyle}>
-                    {vendor.products_submitted}
-                    <span style={productLimitStyle}>
-                      {" "}
-                      / {vendor.product_limit}
-                    </span>
-                  </div>
-
-                  <div style={productTextStyle}>
-                    products submitted
-                  </div>
-
-                  <div style={progressTrackStyle}>
-                    <div
-                      style={{
-                        ...progressBarStyle,
-                        width: `${Math.min(
-                          100,
-                          vendor.product_limit > 0
-                            ? (vendor.products_submitted /
-                              vendor.product_limit) *
-                            100
-                            : 0
-                        )}%`,
-                      }}
-                    />
-                  </div>
-
-                  <button
-                    type="button"
-                    disabled={updatingId === vendor.id}
-                    onClick={() => increaseProductLimit(vendor.id)}
-                    style={increaseLimitButtonStyle}
-                  >
-                    {updatingId === vendor.id
-                      ? "Updating..."
-                      : "+10 Products"}
-                  </button>
-                </div>
-              </div>
-
-              <div style={cardFooterStyle}>
-                <span style={footerTextStyle}>
-                  Application status:{" "}
-                  <strong
-                    style={{
-                      textTransform: "capitalize",
-                      color: "#173f4c",
-                    }}
-                  >
-                    {vendor.status}
-                  </strong>
-                </span>
-
-                <div style={actionsStyle}>
-                  <button
-                    type="button"
-                    disabled={
-                      updatingId === vendor.id ||
-                      vendor.status === "approved"
-                    }
-                    onClick={() =>
-                      updateVendorStatus(vendor.id, "approved")
-                    }
-                    style={{
-                      ...approveButtonStyle,
-                      opacity:
-                        vendor.status === "approved" ? 0.45 : 1,
-                    }}
-                  >
-                    {updatingId === vendor.id
-                      ? "Updating..."
-                      : "Approve"}
-                  </button>
-
-                  <button
-                    type="button"
-                    disabled={
-                      updatingId === vendor.id ||
-                      vendor.status === "rejected"
-                    }
-                    onClick={() =>
-                      updateVendorStatus(vendor.id, "rejected")
-                    }
-                    style={{
-                      ...rejectButtonStyle,
-                      opacity:
-                        vendor.status === "rejected" ? 0.45 : 1,
-                    }}
-                  >
-                    Reject
-                  </button>
-                </div>
-              </div>
-            </section>
-          ))}
+          <input
+            type="search"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+            placeholder="Search vendor details..."
+            style={searchInputStyle}
+          />
         </div>
+
+        <select
+          value={sortBy}
+          onChange={(event) =>
+            setSortBy(event.target.value as SortOption)
+          }
+          style={sortSelectStyle}
+        >
+          <option value="newest">Newest First</option>
+          <option value="product_limit">Product Limit</option>
+        </select>
+      </div>
+
+      {visibleVendors.length === 0 ? (
+        <div style={emptyStyle}>
+          {search
+            ? "No vendors match your search."
+            : "No vendor applications found."}
+        </div>
+      ) : (
+        <>
+          <div style={tableHeaderStyle}>
+            <span></span>
+            <span>Vendor</span>
+            <span>Contact</span>
+            <span>Location</span>
+            <span>Product Limit</span>
+            <span>Status</span>
+          </div>
+
+          <div style={listStyle}>
+            {visibleVendors.map((vendor) => {
+              const isOpen = openVendor === vendor.id;
+
+              const usage =
+                vendor.product_limit > 0
+                  ? Math.min(
+                      100,
+                      Math.round(
+                        (vendor.products_submitted /
+                          vendor.product_limit) *
+                          100
+                      )
+                    )
+                  : 0;
+
+              return (
+                <section
+                  key={vendor.id}
+                  style={{
+                    ...cardStyle,
+                    ...(isOpen ? openCardStyle : {}),
+                  }}
+                >
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenVendor(isOpen ? null : vendor.id)
+                    }
+                    style={vendorRowStyle}
+                  >
+                    <span style={arrowStyle}>
+                      {isOpen ? "▼" : "▶"}
+                    </span>
+
+                    <div style={vendorSummaryStyle}>
+                      <strong style={companyStyle}>
+                        {vendor.company_name}
+                      </strong>
+
+                      <span style={vendorIdStyle}>
+                        Vendor #{vendor.id}
+                      </span>
+                    </div>
+
+                    <span style={summaryTextStyle}>
+                      {vendor.contact_person || "—"}
+                    </span>
+
+                    <span style={summaryTextStyle}>
+                      {[vendor.city, vendor.country]
+                        .filter(Boolean)
+                        .join(", ") || "—"}
+                    </span>
+
+                    <strong style={limitSummaryStyle}>
+                      {vendor.products_submitted}/{vendor.product_limit}
+                    </strong>
+
+                    <StatusBadge status={vendor.status} />
+                  </button>
+
+                  {isOpen && (
+                    <div style={expandedStyle}>
+                      <div style={productAccessStripStyle}>
+                        <span style={productAccessTitleStyle}>
+                          Product Access
+                        </span>
+
+                        <strong style={productAccessNumberStyle}>
+                          {vendor.products_submitted} / {vendor.product_limit}
+                        </strong>
+
+                        <div style={compactProgressTrackStyle}>
+                          <div
+                            style={{
+                              ...compactProgressBarStyle,
+                              width: `${usage}%`,
+                            }}
+                          />
+                        </div>
+
+                        <strong style={percentageStyle}>{usage}%</strong>
+
+                        <button
+                          type="button"
+                          disabled={updatingId === vendor.id}
+                          onClick={() => increaseProductLimit(vendor.id)}
+                          style={{
+                            ...increaseLimitButtonStyle,
+                            opacity:
+                              updatingId === vendor.id ? 0.5 : 1,
+                          }}
+                        >
+                          {updatingId === vendor.id
+                            ? "Updating..."
+                            : "+10 Products"}
+                        </button>
+                      </div>
+
+                      <div style={detailsGridStyle}>
+                        <div>
+                          <h3 style={sectionTitleStyle}>
+                            Contact Details
+                          </h3>
+
+                          <Detail
+                            label="Contact Person"
+                            value={vendor.contact_person}
+                          />
+
+                          <Detail label="Email" value={vendor.email} />
+
+                          <Detail
+                            label="Phone"
+                            value={vendor.phone || "—"}
+                          />
+                        </div>
+
+                        <div>
+                          <h3 style={sectionTitleStyle}>
+                            Business Details
+                          </h3>
+
+                          <Detail
+                            label="Location"
+                            value={
+                              [vendor.city, vendor.country]
+                                .filter(Boolean)
+                                .join(", ") || "—"
+                            }
+                          />
+
+                          <Detail
+                            label="GST / Tax"
+                            value={vendor.gst_number || "—"}
+                          />
+
+                          <Detail
+                            label="Registered"
+                            value={
+                              vendor.created_at
+                                ? new Date(
+                                    vendor.created_at
+                                  ).toLocaleDateString()
+                                : "—"
+                            }
+                          />
+                        </div>
+                      </div>
+
+                      <div style={cardFooterStyle}>
+                        <span style={footerTextStyle}>
+                          Application status:{" "}
+                          <strong
+                            style={{
+                              textTransform: "capitalize",
+                              color: "#173f4c",
+                            }}
+                          >
+                            {vendor.status}
+                          </strong>
+                        </span>
+
+                        <div style={actionsStyle}>
+                          <button
+                            type="button"
+                            disabled={
+                              updatingId === vendor.id ||
+                              vendor.status === "approved"
+                            }
+                            onClick={() =>
+                              updateVendorStatus(
+                                vendor.id,
+                                "approved"
+                              )
+                            }
+                            style={{
+                              ...approveButtonStyle,
+                              opacity:
+                                vendor.status === "approved"
+                                  ? 0.45
+                                  : 1,
+                            }}
+                          >
+                            {updatingId === vendor.id
+                              ? "Updating..."
+                              : "Approve"}
+                          </button>
+
+                          <button
+                            type="button"
+                            disabled={
+                              updatingId === vendor.id ||
+                              vendor.status === "rejected"
+                            }
+                            onClick={() =>
+                              updateVendorStatus(
+                                vendor.id,
+                                "rejected"
+                              )
+                            }
+                            style={{
+                              ...rejectButtonStyle,
+                              opacity:
+                                vendor.status === "rejected"
+                                  ? 0.45
+                                  : 1,
+                            }}
+                          >
+                            Reject
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </section>
+              );
+            })}
+          </div>
+        </>
       )}
     </main>
   );
@@ -367,13 +522,14 @@ function StatusBadge({ status }: { status: string }) {
   return (
     <span
       style={{
-        padding: "7px 12px",
+        padding: "6px 10px",
         borderRadius: "999px",
         background,
         color,
-        fontSize: "12px",
+        fontSize: "11px",
         fontWeight: 700,
         textTransform: "capitalize",
+        whiteSpace: "nowrap",
       }}
     >
       {status}
@@ -392,7 +548,7 @@ const pageHeaderStyle: React.CSSProperties = {
   alignItems: "center",
   justifyContent: "space-between",
   gap: "20px",
-  marginBottom: "28px",
+  marginBottom: "22px",
 };
 
 const titleStyle: React.CSSProperties = {
@@ -416,118 +572,229 @@ const countStyle: React.CSSProperties = {
   fontWeight: 700,
 };
 
+const toolbarStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: "10px",
+  marginBottom: "18px",
+};
+
+const searchWrapStyle: React.CSSProperties = {
+  flex: 1,
+  position: "relative",
+};
+
+const searchIconStyle: React.CSSProperties = {
+  position: "absolute",
+  left: "13px",
+  top: "50%",
+  transform: "translateY(-50%)",
+  color: "#819095",
+  fontSize: "17px",
+  pointerEvents: "none",
+};
+
+const searchInputStyle: React.CSSProperties = {
+  width: "100%",
+  height: "42px",
+  padding: "0 14px 0 38px",
+  border: "1px solid #d9e1df",
+  borderRadius: "8px",
+  background: "#ffffff",
+  color: "#173f4c",
+  fontSize: "13px",
+  outline: "none",
+};
+
+const sortSelectStyle: React.CSSProperties = {
+  height: "42px",
+  minWidth: "165px",
+  padding: "0 12px",
+  border: "1px solid #d9e1df",
+  borderRadius: "8px",
+  background: "#ffffff",
+  color: "#173f4c",
+  fontSize: "12px",
+  fontWeight: 700,
+  cursor: "pointer",
+};
+
+const tableHeaderStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns:
+    "24px minmax(220px,1.7fr) minmax(140px,1fr) minmax(140px,1fr) 110px 100px",
+  gap: "16px",
+  padding: "0 18px 8px",
+  color: "#879398",
+  fontSize: "9px",
+  fontWeight: 800,
+  textTransform: "uppercase",
+  letterSpacing: "0.05em",
+};
+
 const listStyle: React.CSSProperties = {
   display: "grid",
-  gap: "18px",
+  gap: "9px",
 };
 
 const cardStyle: React.CSSProperties = {
   background: "#ffffff",
   border: "1px solid #dfe6e4",
-  borderRadius: "14px",
+  borderRadius: "10px",
   overflow: "hidden",
 };
 
-const cardHeaderStyle: React.CSSProperties = {
-  padding: "22px 24px",
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "flex-start",
-  gap: "20px",
-  borderBottom: "1px solid #edf0ef",
+const openCardStyle: React.CSSProperties = {
+  borderColor: "#bfd3d5",
+  boxShadow: "0 3px 12px rgba(23,63,76,0.05)",
+};
+
+const vendorRowStyle: React.CSSProperties = {
+  width: "100%",
+  border: "none",
+  background: "#ffffff",
+  display: "grid",
+  gridTemplateColumns:
+    "24px minmax(220px,1.7fr) minmax(140px,1fr) minmax(140px,1fr) 110px 100px",
+  gap: "16px",
+  alignItems: "center",
+  padding: "14px 18px",
+  textAlign: "left",
+  cursor: "pointer",
+};
+
+const arrowStyle: React.CSSProperties = {
+  color: "#2a8392",
+  fontSize: "10px",
+};
+
+const vendorSummaryStyle: React.CSSProperties = {
+  minWidth: 0,
 };
 
 const companyStyle: React.CSSProperties = {
-  margin: "0 0 4px",
-  color: "#173f4c",
-  fontSize: "20px",
-};
-
-const vendorIdStyle: React.CSSProperties = {
-  color: "#879398",
-  fontSize: "12px",
-};
-
-const detailsGridStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr 0.7fr",
-  gap: "32px",
-  padding: "24px",
-};
-
-const detailSectionStyle: React.CSSProperties = {
-  minWidth: 0,
-};
-
-const productSectionStyle: React.CSSProperties = {
-  minWidth: 0,
-  paddingLeft: "24px",
-  borderLeft: "1px solid #edf0ef",
-};
-
-const sectionTitleStyle: React.CSSProperties = {
-  margin: "0 0 16px",
-  color: "#173f4c",
-  fontSize: "14px",
-};
-
-const detailRowStyle: React.CSSProperties = {
-  marginBottom: "12px",
-};
-
-const detailLabelStyle: React.CSSProperties = {
   display: "block",
-  color: "#879398",
-  fontSize: "11px",
-  fontWeight: 700,
-  textTransform: "uppercase",
-  letterSpacing: "0.04em",
-  marginBottom: "3px",
-};
-
-const detailValueStyle: React.CSSProperties = {
-  display: "block",
-  color: "#43575d",
-  fontSize: "14px",
+  color: "#173f4c",
+  fontSize: "13px",
   overflowWrap: "anywhere",
 };
 
-const productNumberStyle: React.CSSProperties = {
-  color: "#173f4c",
-  fontSize: "28px",
-  fontWeight: 800,
-};
-
-const productLimitStyle: React.CSSProperties = {
-  color: "#93a0a4",
-  fontSize: "16px",
-  fontWeight: 600,
-};
-
-const productTextStyle: React.CSSProperties = {
-  color: "#718086",
-  fontSize: "12px",
+const vendorIdStyle: React.CSSProperties = {
+  display: "block",
   marginTop: "2px",
+  color: "#93a0a4",
+  fontSize: "9px",
 };
 
-const progressTrackStyle: React.CSSProperties = {
+const summaryTextStyle: React.CSSProperties = {
+  color: "#53666c",
+  fontSize: "12px",
+  overflowWrap: "anywhere",
+};
+
+const limitSummaryStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "13px",
+};
+
+const expandedStyle: React.CSSProperties = {
+  borderTop: "1px solid #e5ebe9",
+  background: "#fbfcfb",
+};
+
+const productAccessStripStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "120px 70px minmax(140px, 1fr) 45px auto",
+  gap: "14px",
+  alignItems: "center",
+  padding: "14px 18px",
+  borderBottom: "1px solid #e7ecea",
+  background: "#f7faf9",
+};
+
+const productAccessTitleStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "10px",
+  fontWeight: 800,
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+};
+
+const productAccessNumberStyle: React.CSSProperties = {
+  color: "#173f4c",
+  fontSize: "14px",
+};
+
+const compactProgressTrackStyle: React.CSSProperties = {
   width: "100%",
-  height: "6px",
-  background: "#edf1ef",
+  height: "5px",
+  background: "#e4ebe9",
   borderRadius: "10px",
   overflow: "hidden",
-  marginTop: "15px",
 };
 
-const progressBarStyle: React.CSSProperties = {
+const compactProgressBarStyle: React.CSSProperties = {
   height: "100%",
   background: "#2a8392",
   borderRadius: "10px",
 };
 
+const percentageStyle: React.CSSProperties = {
+  color: "#718086",
+  fontSize: "11px",
+};
+
+const increaseLimitButtonStyle: React.CSSProperties = {
+  border: "1px solid #2a8392",
+  background: "#ffffff",
+  color: "#2a8392",
+  borderRadius: "7px",
+  padding: "7px 11px",
+  fontSize: "11px",
+  fontWeight: 700,
+  cursor: "pointer",
+  whiteSpace: "nowrap",
+};
+
+const detailsGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  gap: "60px",
+  padding: "20px 18px 12px",
+};
+
+const sectionTitleStyle: React.CSSProperties = {
+  margin: "0 0 14px",
+  color: "#173f4c",
+  fontSize: "12px",
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+};
+
+const detailRowStyle: React.CSSProperties = {
+  marginBottom: "11px",
+};
+
+const detailLabelStyle: React.CSSProperties = {
+  display: "block",
+  color: "#879398",
+  fontSize: "9px",
+  fontWeight: 700,
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+  marginBottom: "2px",
+};
+
+const detailValueStyle: React.CSSProperties = {
+  display: "block",
+  color: "#43575d",
+  fontSize: "12px",
+  overflowWrap: "anywhere",
+};
+
 const cardFooterStyle: React.CSSProperties = {
-  padding: "15px 24px",
-  background: "#fbfbf9",
+  padding: "13px 18px",
+  background: "#ffffff",
   borderTop: "1px solid #edf0ef",
   display: "flex",
   justifyContent: "space-between",
@@ -537,7 +804,7 @@ const cardFooterStyle: React.CSSProperties = {
 
 const footerTextStyle: React.CSSProperties = {
   color: "#718086",
-  fontSize: "13px",
+  fontSize: "11px",
 };
 
 const actionsStyle: React.CSSProperties = {
@@ -550,7 +817,8 @@ const approveButtonStyle: React.CSSProperties = {
   background: "#173f4c",
   color: "#ffffff",
   borderRadius: "7px",
-  padding: "9px 15px",
+  padding: "8px 14px",
+  fontSize: "11px",
   fontWeight: 700,
   cursor: "pointer",
 };
@@ -560,7 +828,8 @@ const rejectButtonStyle: React.CSSProperties = {
   background: "#ffffff",
   color: "#6c5552",
   borderRadius: "7px",
-  padding: "9px 15px",
+  padding: "8px 14px",
+  fontSize: "11px",
   fontWeight: 700,
   cursor: "pointer",
 };
@@ -587,19 +856,7 @@ const emptyStyle: React.CSSProperties = {
   padding: "50px",
   background: "#ffffff",
   border: "1px solid #dfe6e4",
-  borderRadius: "14px",
+  borderRadius: "12px",
   textAlign: "center",
   color: "#718086",
-};
-
-const increaseLimitButtonStyle: React.CSSProperties = {
-  marginTop: "14px",
-  border: "1px solid #2a8392",
-  background: "#ffffff",
-  color: "#2a8392",
-  borderRadius: "7px",
-  padding: "8px 12px",
-  fontSize: "12px",
-  fontWeight: 700,
-  cursor: "pointer",
 };

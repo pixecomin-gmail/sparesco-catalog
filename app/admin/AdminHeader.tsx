@@ -58,12 +58,14 @@ export default function AdminHeader() {
             Enquiries
           </Link>
 
+          {/*
           <Link
             href="/admin/quotations"
             className={linkClass("/admin/quotations")}
           >
             Quotations
           </Link>
+          */}
 
           <button
             type="button"
