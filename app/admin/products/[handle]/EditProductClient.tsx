@@ -42,6 +42,35 @@ type Product = {
     sources?: ProductSource[];
 };
 
+function getOriginalImageUrl({
+    image,
+    imageFolder,
+    collection,
+}: {
+    image?: string;
+    imageFolder?: string;
+    collection?: string;
+}) {
+    if (!image) return "";
+
+    if (image.startsWith("http")) {
+        return image;
+    }
+
+    const base =
+        process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "";
+
+    const folder =
+        imageFolder ||
+        collection ||
+        "products";
+
+    return `${base.replace(
+        /\/$/,
+        ""
+    )}/catalog/images/${folder}/${image}`;
+}
+
 export default function EditProductClient({
     handle,
 }: {
@@ -231,33 +260,73 @@ export default function EditProductClient({
 
                     <h1>Edit Product</h1>
 
-                    <p>
-                        {product.title}
-                    </p>
+                    <p>{product.title}</p>
                 </div>
 
-                <button
-                    type="button"
-                    className="admin-primary-button"
-                    onClick={saveProduct}
-                    disabled={saving || !product}
-                >
-                    {saving ? "Saving..." : "Save Product"}
-                </button>
+                <div className="admin-edit-actions">
+                    <a
+                        href={`https://sparesco.com/products/${encodeURIComponent(
+                            product.handle
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="admin-secondary-button"
+                    >
+                        View Product ↗
+                    </a>
 
-                {saveMessage && (
-                    <p className="admin-save-success">
-                        {saveMessage}
-                    </p>
-                )}
-
-                {saveError && (
-                    <p className="admin-save-error">
-                        {saveError}
-                    </p>
-                )}
-
+                    <button
+                        type="button"
+                        className="admin-primary-button"
+                        onClick={saveProduct}
+                        disabled={saving || !product}
+                    >
+                        {saving ? "Saving..." : "Save Product"}
+                    </button>
+                </div>
             </div>
+
+            {saveMessage && (
+                <div
+                    className="admin-save-banner admin-save-banner-success"
+                    role="status"
+                >
+                    <div>
+                        <strong>Product saved successfully</strong>
+                        <span>
+                            Your changes have been saved to the product.
+                        </span>
+                    </div>
+
+                    <button
+                        type="button"
+                        onClick={() => setSaveMessage("")}
+                        aria-label="Dismiss notification"
+                    >
+                        ×
+                    </button>
+                </div>
+            )}
+
+            {saveError && (
+                <div
+                    className="admin-save-banner admin-save-banner-error"
+                    role="alert"
+                >
+                    <div>
+                        <strong>Product could not be saved</strong>
+                        <span>{saveError}</span>
+                    </div>
+
+                    <button
+                        type="button"
+                        onClick={() => setSaveError("")}
+                        aria-label="Dismiss notification"
+                    >
+                        ×
+                    </button>
+                </div>
+            )}
 
             <section className="admin-edit-card">
                 <h2>Product</h2>
@@ -365,7 +434,25 @@ export default function EditProductClient({
                                         collection:
                                             product.collection,
                                     })}
-                                    alt=""
+                                    alt={product.title}
+                                    onError={(event) => {
+                                        const original =
+                                            getOriginalImageUrl({
+                                                image,
+                                                imageFolder:
+                                                    product.imageFolder,
+                                                collection:
+                                                    product.collection,
+                                            });
+
+                                        if (
+                                            event.currentTarget.src !==
+                                            original
+                                        ) {
+                                            event.currentTarget.src =
+                                                original;
+                                        }
+                                    }}
                                 />
 
                                 <span>
@@ -427,14 +514,32 @@ export default function EditProductClient({
                                                 <div className="admin-variant-image-row">
                                                     <img
                                                         src={getCatalogThumbnailUrl({
-                                                            image:
-                                                                variant.image,
+                                                            image: variant.image,
                                                             imageFolder:
                                                                 product.imageFolder,
                                                             collection:
                                                                 product.collection,
                                                         })}
-                                                        alt=""
+                                                        alt={variant.title || product.title}
+                                                        onError={(event) => {
+                                                            const original =
+                                                                getOriginalImageUrl({
+                                                                    image:
+                                                                        variant.image,
+                                                                    imageFolder:
+                                                                        product.imageFolder,
+                                                                    collection:
+                                                                        product.collection,
+                                                                });
+
+                                                            if (
+                                                                event.currentTarget.src !==
+                                                                original
+                                                            ) {
+                                                                event.currentTarget.src =
+                                                                    original;
+                                                            }
+                                                        }}
                                                     />
 
                                                     <span>
@@ -742,6 +847,28 @@ export default function EditProductClient({
                             </div>
                         )
                     )}
+                </div>
+
+                <div className="admin-bottom-actions">
+                    <a
+                        href={`https://sparesco.com/products/${encodeURIComponent(
+                            product.handle
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="admin-secondary-button"
+                    >
+                        View Product ↗
+                    </a>
+
+                    <button
+                        type="button"
+                        className="admin-primary-button"
+                        onClick={saveProduct}
+                        disabled={saving}
+                    >
+                        {saving ? "Saving..." : "Save Product"}
+                    </button>
                 </div>
             </section>
         </main>
