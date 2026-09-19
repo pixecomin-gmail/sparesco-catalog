@@ -180,8 +180,6 @@ export function middleware(request: NextRequest) {
   // LOCAL DEVELOPMENT
   // --------------------------------------------------
 
-  // Allow localhost directly so we can develop/test
-  // the admin without production-domain restrictions.
   if (isLocalhost) {
     return NextResponse.next();
   }
@@ -191,10 +189,19 @@ export function middleware(request: NextRequest) {
   // --------------------------------------------------
 
   if (isAdminDomain) {
+    // Allow Next.js/static assets
     if (
       pathname.startsWith("/_next/") ||
       pathname === "/favicon.ico" ||
       pathname.match(/\.(png|jpg|jpeg|svg|webp|gif|ico)$/i)
+    ) {
+      return NextResponse.next();
+    }
+
+    // Allow catalogue APIs required by Admin Products
+    if (
+      pathname === "/api/search" ||
+      pathname.startsWith("/api/product/")
     ) {
       return NextResponse.next();
     }
