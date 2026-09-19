@@ -33,6 +33,16 @@ type CollectionPageClientProps = {
 
 const PAGE_SIZE = 24;
 
+function replaceFilterFinder(value?: string) {
+  if (!value) return "";
+
+  return String(value)
+    .replace(/\bfilter\s*finder\b/gi, "Sparesco")
+    .replace(/\bfilterfinder\b/gi, "Sparesco")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function CollectionContent({
   initialCollections = [],
   initialFilters = {
@@ -71,6 +81,8 @@ function CollectionContent({
     () => collections.find((item) => item.handle === handle) || null,
     [collections, handle]
   );
+
+  const collectionTitle = replaceFilterFinder(collection?.title);
 
   const totalPages = Math.max(
     1,
@@ -309,11 +321,11 @@ function CollectionContent({
     <main>
       <section className="section parts-section parts-page-section">
         <div className="container">
-          <h1 className="page-title">{collection.title}</h1>
+          <h1 className="page-title">{collectionTitle}</h1>
 
           <p className="page-intro">
             Browse {collection.count.toLocaleString("en-IN")}{" "}
-            {collection.title.toLowerCase()} spare parts for construction,
+            {collectionTitle.toLowerCase()} spare parts for construction,
             mining and industrial equipment.
           </p>
 
@@ -351,7 +363,7 @@ function CollectionContent({
                         router.push(`/collections/${item.handle}`);
                       }}
                     />
-                    <span>{item.title}</span>
+                    <span>{replaceFilterFinder(item.title)}</span>
                     <em>{item.count.toLocaleString("en-IN")}</em>
                   </label>
                 ))}
@@ -360,7 +372,7 @@ function CollectionContent({
 
             <div className="parts-content">
               <div className="parts-topbar">
-                <strong>{collection.title}</strong>
+                <strong>{collectionTitle}</strong>
                 <span>
                   {collection.count.toLocaleString("en-IN")} products · Page{" "}
                   {safePage} of {totalPages}

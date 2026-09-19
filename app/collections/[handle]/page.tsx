@@ -31,6 +31,16 @@ function cleanTitle(handle: string) {
     .join(" ");
 }
 
+function replaceFilterFinder(value?: string) {
+  if (!value) return "";
+
+  return String(value)
+    .replace(/\bfilter\s*finder\b/gi, "Sparesco")
+    .replace(/\bfilterfinder\b/gi, "Sparesco")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 async function getBaseUrl() {
   const headerStore = await headers();
 
@@ -116,7 +126,9 @@ export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { handle } = await params;
-  const title = cleanTitle(handle);
+  const title = replaceFilterFinder(
+    cleanTitle(handle)
+  );
 
   const metaTitle = `${title} Filters, Spare Parts & Cross Reference`;
   const metaDescription = `Browse ${title} filters, spare parts and cross reference products. View specifications and send enquiries to Sparesco.`;
@@ -170,7 +182,9 @@ export default async function CollectionPage({
   const collection =
     collections.find((item) => item.handle === handle) || null;
 
-  const collectionTitle = collection?.title || cleanTitle(handle);
+  const collectionTitle = replaceFilterFinder(
+    collection?.title || cleanTitle(handle)
+  );
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

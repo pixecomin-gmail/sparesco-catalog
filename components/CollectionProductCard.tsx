@@ -4,12 +4,28 @@ import Link from "next/link";
 import { getCatalogImageUrls, type ProductIndexItem } from "@/lib/products";
 import { useEnquiry } from "@/context/EnquiryContext";
 
+function replaceFilterFinder(value?: string) {
+  if (!value) return "";
+
+  return String(value)
+    .replace(/\bfilter\s*finder\b/gi, "Sparesco")
+    .replace(/\bfilterfinder\b/gi, "Sparesco")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export default function CollectionProductCard({
   product,
 }: {
   product: ProductIndexItem;
 }) {
   const { addItem } = useEnquiry();
+
+  const safeTitle = replaceFilterFinder(product.title);
+  const safePartNumber = replaceFilterFinder(product.partNumber);
+  const safeVendor = replaceFilterFinder(
+    product.vendor || product.collection || ""
+  );
 
   const { thumbnail: imageSrc, original: originalImageSrc } = getCatalogImageUrls(product);
 
@@ -32,28 +48,28 @@ export default function CollectionProductCard({
         href={`/products/${product.handle}`}
         prefetch={false}
         className="parts-product-image"
-        aria-label={product.title}
+        aria-label={safeTitle}
       >
-          <img
-            src={imageSrc || originalImageSrc || "/images/product-placeholder.webp"}
-            alt={product.title || product.partNumber || "Spare part"}
-            loading="lazy"
-            onError={(event) => {
-              const img = event.currentTarget;
+        <img
+          src={imageSrc || originalImageSrc || "/images/product-placeholder.webp"}
+          alt={safeTitle || safePartNumber || "Spare part"}
+          loading="lazy"
+          onError={(event) => {
+            const img = event.currentTarget;
 
-              if (
-                originalImageSrc &&
-                img.src !== originalImageSrc
-              ) {
-                img.src = originalImageSrc;
-                return;
-              }
+            if (
+              originalImageSrc &&
+              img.src !== originalImageSrc
+            ) {
+              img.src = originalImageSrc;
+              return;
+            }
 
-              if (!img.src.endsWith("/images/product-placeholder.webp")) {
-                img.src = "/images/product-placeholder.webp";
-              }
-            }}
-          />
+            if (!img.src.endsWith("/images/product-placeholder.webp")) {
+              img.src = "/images/product-placeholder.webp";
+            }
+          }}
+        />
       </Link>
 
       <div className="parts-product-info">
@@ -62,7 +78,7 @@ export default function CollectionProductCard({
             href={`/products/${product.handle}`}
             prefetch={false}
           >
-            {product.title}
+            {safeTitle}
           </Link>
         </h3>
 
@@ -75,12 +91,13 @@ export default function CollectionProductCard({
             addItem({
               id: product.handle,
               handle: product.handle,
-              title: product.title,
-              image: imageSrc ||
+              title: safeTitle,
+              image:
+                imageSrc ||
                 originalImageSrc ||
                 "/images/product-placeholder.webp",
-              partNumber: product.partNumber || product.title,
-              vendor: product.vendor || product.collection || "",
+              partNumber: safePartNumber || safeTitle,
+              vendor: safeVendor,
               price: product.price || 0,
             })
           }

@@ -27,6 +27,69 @@ function getCleanSpecs(specifications: string[]) {
   });
 }
 
+function cleanText(value?: string) {
+  return (value || "").replace(/\s+/g, " ").trim();
+}
+
+function replaceFilterFinder(value?: string) {
+  if (!value) return "";
+
+  let text = String(value);
+
+  // Remove sentences that would create false distributor/authorisation claims
+  text = text.replace(
+    /[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*[.!?]?/gi,
+    " "
+  );
+
+  text = text.replace(
+    /[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*[.!?]?/gi,
+    " "
+  );
+
+  // Replace FilterFinder URLs with Sparesco
+  text = text.replace(
+    /https?:\/\/(?:www\.)?filterfinder\.[^\s]+/gi,
+    "https://sparesco.com"
+  );
+
+  text = text.replace(
+    /www\.filterfinder\.[^\s]+/gi,
+    "sparesco.com"
+  );
+
+  // Replace normal brand-name references
+  text = text.replace(/\bfilter\s*finder\b/gi, "Sparesco");
+  text = text.replace(/\bfilterfinder\b/gi, "Sparesco");
+
+  return text
+    .replace(/\s+/g, " ")
+    .replace(/\s+([.,;:!?])/g, "$1")
+    .trim();
+}
+
+function getProductImageAlt(
+  productTitle: string,
+  variantTitle: string,
+  vendor: string,
+  partNumber: string
+) {
+  const reference = cleanText(productTitle).toUpperCase();
+  const cleanVendor = cleanText(vendor);
+  const cleanPartNumber = cleanText(partNumber);
+  const cleanTitle = cleanText(variantTitle);
+
+  const details = [
+    cleanVendor,
+    cleanPartNumber,
+    cleanTitle,
+  ].filter(Boolean);
+
+  if (!details.length) return reference || "Spare part";
+
+  return `${reference} replacement - ${details.join(" ")}`;
+}
+
 export default function ProductPageClient({
   handle,
   initialProduct,
@@ -119,7 +182,7 @@ export default function ProductPageClient({
 
   const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL?.replace(/\/$/, "");
   const imageFolder =
-  currentProduct.imageFolder || currentProduct.collection || currentProduct.category || "";
+    currentProduct.imageFolder || currentProduct.collection || currentProduct.category || "";
 
   const imageBase =
     r2Base && imageFolder
@@ -131,7 +194,20 @@ export default function ProductPageClient({
     return image.startsWith("http") ? image : `${imageBase}${image}`;
   }
 
-  const activeVariantTitle = cleanVariantTitle(activeVariant.title);
+  const activeVariantTitle = replaceFilterFinder(
+    cleanVariantTitle(activeVariant.title)
+  );
+
+  const productReference = replaceFilterFinder(
+    cleanText(currentProduct.title || currentProduct.handle)
+  );
+
+  const productImageAlt = getProductImageAlt(
+    productReference,
+    activeVariantTitle,
+    activeVariant.vendor,
+    activeVariant.partNumber
+  );
 
   const activePrice =
     activeVariant.price > 0
@@ -155,7 +231,9 @@ export default function ProductPageClient({
         activeVariant.shippingVolume
           ? `Shipping Volume: ${activeVariant.shippingVolume}`
           : "",
-        ...getCleanSpecs(activeVariant.specifications || []),
+        ...getCleanSpecs(activeVariant.specifications || []).map((spec) =>
+          replaceFilterFinder(spec)
+        ),
       ].filter(Boolean)
     )
   );
@@ -172,7 +250,11 @@ export default function ProductPageClient({
         : cleanPartNumber || currentProduct.title,
       image: getImageUrl(stickyImage),
       partNumber: cleanPartNumber,
-      vendor: currentProduct.collection || currentProduct.category || "",
+      vendor:
+        activeVariant.vendor ||
+        currentProduct.collection ||
+        currentProduct.category ||
+        "",
       price: activeVariant.price || 0,
     });
   }
@@ -187,7 +269,7 @@ export default function ProductPageClient({
                 {activeImage ? (
                   <img
                     src={getImageUrl(activeImage)}
-                    alt={activeVariantTitle || currentProduct.title}
+                    alt={productImageAlt}
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       e.currentTarget.src = "/images/product-placeholder.webp";
@@ -196,7 +278,7 @@ export default function ProductPageClient({
                 ) : (
                   <img
                     src="/images/product-placeholder.webp"
-                    alt={currentProduct.title}
+                    alt={productImageAlt}
                   />
                 )}
               </div>
@@ -214,7 +296,7 @@ export default function ProductPageClient({
                     >
                       <img
                         src={getImageUrl(image)}
-                        alt={`${activeVariantTitle || currentProduct.title} product image`}
+                        alt={`${productImageAlt} product image`}
                         onError={(e) => {
                           e.currentTarget.onerror = null;
                           e.currentTarget.src = "/images/product-placeholder.webp";
@@ -236,7 +318,9 @@ export default function ProductPageClient({
                   <div className="product-top-price">{activePrice}</div>
                 </div>
 
-               <h1 className="product-title">{currentProduct.title}</h1>
+                <h1 className="product-title">
+                  {replaceFilterFinder(currentProduct.title)}
+                </h1>
               </div>
 
               <div className="variant-section">
@@ -257,7 +341,9 @@ export default function ProductPageClient({
                         if (variant.image) setActiveImage(variant.image);
                       }}
                     >
-                      <span>{cleanVariantTitle(variant.title)}</span>
+                      <span>
+                        {replaceFilterFinder(cleanVariantTitle(variant.title))}
+                      </span>
                     </button>
                   ))}
                 </div>
@@ -315,11 +401,13 @@ export default function ProductPageClient({
                   }
                 >
                   <p>
-                    {activeVariant.description || "Description not available."}
+                    {replaceFilterFinder(activeVariant.description) ||
+                      "Description not available."}
                   </p>
 
                   {!descriptionOpen && <div className="description-fade" />}
                 </div>
+
               </div>
             </div>
           </div>
@@ -335,7 +423,7 @@ export default function ProductPageClient({
               {stickyImage ? (
                 <img
                   src={getImageUrl(stickyImage)}
-                  alt={activeVariantTitle}
+                  alt={productImageAlt}
                   onError={(event) => {
                     event.currentTarget.onerror = null;
                     event.currentTarget.src = "/images/product-placeholder.webp";

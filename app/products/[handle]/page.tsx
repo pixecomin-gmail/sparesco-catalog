@@ -60,6 +60,43 @@ function cleanText(value?: string) {
     .trim();
 }
 
+function replaceFilterFinder(value?: string) {
+  if (!value) return "";
+
+  let text = String(value);
+
+  // Remove sentences that would create false claims about Sparesco
+  text = text.replace(
+    /[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*[.!?]?/gi,
+    " "
+  );
+
+  text = text.replace(
+    /[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*[.!?]?/gi,
+    " "
+  );
+
+  // Replace FilterFinder URLs
+  text = text.replace(
+    /https?:\/\/(?:www\.)?filterfinder\.[^\s]+/gi,
+    "https://sparesco.com"
+  );
+
+  text = text.replace(
+    /www\.filterfinder\.[^\s]+/gi,
+    "sparesco.com"
+  );
+
+  // Replace normal FilterFinder references
+  text = text.replace(/\bfilter\s*finder\b/gi, "Sparesco");
+  text = text.replace(/\bfilterfinder\b/gi, "Sparesco");
+
+  return text
+    .replace(/\s+/g, " ")
+    .replace(/\s+([.,;:!?])/g, "$1")
+    .trim();
+}
+
 function jsonLd(data: unknown) {
   return JSON.stringify(data).replace(
     /</g,
@@ -68,7 +105,7 @@ function jsonLd(data: unknown) {
 }
 
 function cleanProductTitle(value?: string) {
-  return cleanText(value)
+  return replaceFilterFinder(cleanText(value))
     .split("| Replaces")[0]
     .split("| replaces")[0]
     .split(" Replaces")[0]
@@ -121,10 +158,14 @@ function getSeoData(
       partNumber
   );
 
-  const brand = cleanText(variant?.vendor);
+  const brand = replaceFilterFinder(
+    cleanText(variant?.vendor)
+  );
 
-  const category = titleFromHandle(
-    product.collection || product.category
+  const category = replaceFilterFinder(
+    titleFromHandle(
+      product.collection || product.category
+    )
   );
 
   const replacements =
