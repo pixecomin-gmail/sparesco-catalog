@@ -46,3 +46,6 @@ next-env.d.ts
 .import-state/
 *.sqlite
 *.sqlite-journal
+
+admin-products-files.txt
+filterfinder-results.txt

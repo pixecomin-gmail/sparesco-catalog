@@ -114,7 +114,7 @@ export async function POST(
         secure: true,
         sameSite: "strict",
         path: "/",
-        maxAge: 60 * 30,
+        maxAge: 60 * 30 *24,
       }
     );
 

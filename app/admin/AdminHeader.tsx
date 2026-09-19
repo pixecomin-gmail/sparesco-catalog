@@ -25,64 +25,158 @@ export default function AdminHeader() {
     router.refresh();
   };
 
-  const linkClass = (path: string) =>
-    pathname === path ? "admin-nav-link active" : "admin-nav-link";
+  const isHome = pathname === "/admin";
+
+  const isProducts =
+    pathname === "/admin/products" ||
+    pathname.startsWith("/admin/products/") ||
+    pathname === "/admin/collections" ||
+    pathname.startsWith("/admin/collections/");
+
+  const isVendors =
+    pathname === "/admin/vendors" ||
+    pathname.startsWith("/admin/vendors/") ||
+    pathname === "/admin/vendor-products" ||
+    pathname.startsWith("/admin/vendor-products/") ||
+    pathname === "/admin/enquiries" ||
+    pathname.startsWith("/admin/enquiries/") ||
+    pathname === "/admin/enquiry-email-list" ||
+    pathname.startsWith("/admin/enquiry-email-list/") ||
+    pathname === "/admin/quotations" ||
+    pathname.startsWith("/admin/quotations/");
+
+  const subLinkClass = (path: string) =>
+    pathname === path
+      ? "admin-subnav-link active"
+      : "admin-subnav-link";
 
   return (
-    <header className="admin-header">
-      <div className="admin-header-inner">
-        <Link href="/admin/vendors" className="admin-brand">
-          <span className="admin-brand-small">SPARESCO</span>
-          <span className="admin-brand-title">Admin Panel</span>
-        </Link>
+    <>
+      <aside className="admin-sidebar">
+        <div className="admin-sidebar-inner">
+          <Link href="/admin" className="admin-brand">
+            <span className="admin-brand-small">
+              SPARESCO
+            </span>
 
-        <nav className="admin-nav">
-          <Link
-            href="/admin/vendors"
-            className={linkClass("/admin/vendors")}
-          >
-            Vendors
+            <span className="admin-brand-title">
+              Admin Panel
+            </span>
           </Link>
 
-          <Link
-            href="/admin/vendor-products"
-            className={linkClass("/admin/vendor-products")}
-          >
-            Vendor Products
-          </Link>
+          <nav className="admin-main-nav">
+            <Link
+              href="/admin"
+              className={`admin-main-nav-link ${
+                isHome ? "active" : ""
+              }`}
+            >
+              Home
+            </Link>
 
-          <Link
-            href="/admin/enquiries"
-            className={linkClass("/admin/enquiries")}
-          >
-            Enquiries
-          </Link>
+            <Link
+              href="/admin/products"
+              className={`admin-main-nav-link ${
+                isProducts ? "active" : ""
+              }`}
+            >
+              Products
+            </Link>
 
-          <Link
-            href="/admin/enquiry-email-list"
-            className={linkClass("/admin/enquiry-email-list")}
-          >
-            Enquiry Email List
-          </Link>
+            <Link
+              href="/admin/vendors"
+              className={`admin-main-nav-link ${
+                isVendors ? "active" : ""
+              }`}
+            >
+              Vendors
+            </Link>
 
-          {/*
-          <Link
-            href="/admin/quotations"
-            className={linkClass("/admin/quotations")}
-          >
-            Quotations
-          </Link>
-          */}
+            <button
+              type="button"
+              onClick={logout}
+              className="admin-main-nav-link admin-sidebar-logout"
+            >
+              Logout
+            </button>
+          </nav>
+        </div>
+      </aside>
 
-          <button
-            type="button"
-            onClick={logout}
-            className="admin-logout"
-          >
-            Logout
-          </button>
-        </nav>
-      </div>
-    </header>
+      <header className="admin-header">
+        <div className="admin-header-inner">
+          {isProducts && (
+            <nav className="admin-subnav">
+              <Link
+                href="/admin/products"
+                className={subLinkClass(
+                  "/admin/products"
+                )}
+              >
+                All Products
+              </Link>
+
+              <Link
+                href="/admin/products/new"
+                className={subLinkClass(
+                  "/admin/products/new"
+                )}
+              >
+                Add Product
+              </Link>
+
+              <Link
+                href="/admin/collections"
+                className={subLinkClass(
+                  "/admin/collections"
+                )}
+              >
+                Collections
+              </Link>
+            </nav>
+          )}
+
+          {isVendors && (
+            <nav className="admin-subnav">
+              <Link
+                href="/admin/vendors"
+                className={subLinkClass(
+                  "/admin/vendors"
+                )}
+              >
+                Vendors
+              </Link>
+
+              <Link
+                href="/admin/vendor-products"
+                className={subLinkClass(
+                  "/admin/vendor-products"
+                )}
+              >
+                Vendor Products
+              </Link>
+
+              <Link
+                href="/admin/enquiries"
+                className={subLinkClass(
+                  "/admin/enquiries"
+                )}
+              >
+                Enquiries
+              </Link>
+
+              <Link
+                href="/admin/enquiry-email-list"
+                className={subLinkClass(
+                  "/admin/enquiry-email-list"
+                )}
+              >
+                Enquiry Email List
+              </Link>
+            </nav>
+          )}
+        </div>
+      </header>
+    </>
   );
 }
