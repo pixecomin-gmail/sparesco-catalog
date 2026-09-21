@@ -8,6 +8,7 @@ import {
 } from "react";
 
 import { productJsonUrl } from "@/lib/r2";
+import { getCatalogImageUrls, type ProductIndexItem } from "@/lib/products";
 
 export type EnquiryItem = {
   id: string;
@@ -75,6 +76,36 @@ async function refreshEnquiryItem(
         ? product.variants
         : [];
 
+    const firstVariant = variants[0] || {};
+
+    const imageProduct = {
+      handle: product.handle,
+      title: product.title,
+      category: product.category || "",
+      collection: product.collection || "",
+      collectionHandle:
+        product.collectionHandle || product.collection || "",
+      image: product.images?.[0] || product.image || "",
+      imageFolder: product.imageFolder || product.collection || "",
+      partNumber:
+        firstVariant.partNumber || product.title || "",
+      vendor:
+        firstVariant.vendor || product.collection || "",
+      variantCount: variants.length || 1,
+      price: Number(firstVariant.price || 0),
+    } as ProductIndexItem;
+
+    const {
+      thumbnail: currentThumbnail,
+      original: currentOriginal,
+    } = getCatalogImageUrls(imageProduct);
+
+    const currentImage =
+      currentThumbnail ||
+      currentOriginal ||
+      item.image ||
+      "/images/product-placeholder.webp";
+
     /*
      * Keep the exact variant the customer selected.
      *
@@ -119,11 +150,7 @@ async function refreshEnquiryItem(
         title:
           product.title ||
           item.title,
-
-        image:
-          product.images?.[0] ||
-          product.image ||
-          item.image,
+        image: currentImage,
       };
     }
 
@@ -149,11 +176,7 @@ async function refreshEnquiryItem(
         product.title ||
         item.title,
 
-      image:
-        variant.image ||
-        product.images?.[0] ||
-        product.image ||
-        item.image,
+      image: currentImage,
 
       partNumber:
         variant.partNumber ||
@@ -168,9 +191,9 @@ async function refreshEnquiryItem(
       price:
         Number(
           variant.price ??
-            product.price ??
-            item.price ??
-            0
+          product.price ??
+          item.price ??
+          0
         ),
     };
   } catch {
@@ -345,11 +368,11 @@ export function EnquiryProvider({
           (item) =>
             item.id === id
               ? {
-                  ...item,
-                  quantity:
-                    item.quantity +
-                    1,
-                }
+                ...item,
+                quantity:
+                  item.quantity +
+                  1,
+              }
               : item
         )
     );
@@ -362,15 +385,15 @@ export function EnquiryProvider({
           (item) =>
             item.id === id
               ? {
-                  ...item,
+                ...item,
 
-                  quantity:
-                    Math.max(
-                      1,
-                      item.quantity -
-                        1
-                    ),
-                }
+                quantity:
+                  Math.max(
+                    1,
+                    item.quantity -
+                    1
+                  ),
+              }
               : item
         )
     );
