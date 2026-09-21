@@ -1,23 +1,11 @@
 import { getRequestContext } from "@cloudflare/next-on-pages";
 
+import {
+  syncExistingProduct,
+  type R2BucketLike,
+} from "@/lib/admin/product-sync";
+
 export const runtime = "edge";
-
-type R2BucketLike = {
-  get(key: string): Promise<{
-    text(): Promise<string>;
-  } | null>;
-
-  put(
-    key: string,
-    value: string,
-    options?: {
-      httpMetadata?: {
-        contentType?: string;
-        cacheControl?: string;
-      };
-    }
-  ): Promise<unknown>;
-};
 
 function productFolder(handle: string) {
   let hash = 0;
@@ -225,12 +213,20 @@ export async function PUT(
       }
     );
 
+    const syncResult =
+      await syncExistingProduct(
+        bucket,
+        existing,
+        product
+      );
+
     return Response.json({
       success: true,
       message: "Product saved.",
       handle: safeHandle,
       key,
       product,
+      synchronizedFiles: syncResult.updatedFiles,
     });
   } catch (error) {
     console.error("Admin product PUT error:", error);
