@@ -45,7 +45,12 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
       const products = await Promise.all(
         uniqueHandles.map(async (handle) => {
           try {
-            const res = await fetch(productJsonUrl(handle));
+            const res = await fetch(
+              `${productJsonUrl(handle)}?v=${Date.now()}`,
+              {
+                cache: "no-store",
+              }
+            );
             if (!res.ok) return null;
 
             const product = await res.json();
@@ -139,60 +144,60 @@ export default function RecentlyViewedSlider({ currentHandle }: Props) {
         <div className="recently-viewed-slider" ref={sliderRef}>
           {loading
             ? Array.from({ length: Math.min(placeholderCount, 5) }).map(
-                (_, index) => (
-                  <div
-                    key={index}
-                    className="recently-viewed-slide"
-                    aria-hidden="true"
-                  >
-                    <article className="parts-product-card">
+              (_, index) => (
+                <div
+                  key={index}
+                  className="recently-viewed-slide"
+                  aria-hidden="true"
+                >
+                  <article className="parts-product-card">
+                    <div
+                      className="parts-product-image"
+                      style={{
+                        minHeight: 228,
+                        background: "#eeeeee",
+                      }}
+                    />
+
+                    <div className="parts-product-info">
                       <div
-                        className="parts-product-image"
                         style={{
-                          minHeight: 228,
-                          background: "#eeeeee",
+                          width: "76%",
+                          height: 22,
+                          borderRadius: 5,
+                          background: "#e6e6e6",
+                          marginBottom: 16,
                         }}
                       />
 
-                      <div className="parts-product-info">
-                        <div
-                          style={{
-                            width: "76%",
-                            height: 22,
-                            borderRadius: 5,
-                            background: "#e6e6e6",
-                            marginBottom: 16,
-                          }}
-                        />
+                      <div
+                        style={{
+                          width: "58%",
+                          height: 16,
+                          borderRadius: 5,
+                          background: "#ededed",
+                          marginBottom: 24,
+                        }}
+                      />
 
-                        <div
-                          style={{
-                            width: "58%",
-                            height: 16,
-                            borderRadius: 5,
-                            background: "#ededed",
-                            marginBottom: 24,
-                          }}
-                        />
-
-                        <div
-                          style={{
-                            width: "100%",
-                            height: 52,
-                            borderRadius: 2,
-                            background: "#e2e2e2",
-                          }}
-                        />
-                      </div>
-                    </article>
-                  </div>
-                )
-              )
-            : recentProducts.map((product) => (
-                <div key={product.handle} className="recently-viewed-slide">
-                  <CollectionProductCard product={product} />
+                      <div
+                        style={{
+                          width: "100%",
+                          height: 52,
+                          borderRadius: 2,
+                          background: "#e2e2e2",
+                        }}
+                      />
+                    </div>
+                  </article>
                 </div>
-              ))}
+              )
+            )
+            : recentProducts.map((product) => (
+              <div key={product.handle} className="recently-viewed-slide">
+                <CollectionProductCard product={product} />
+              </div>
+            ))}
         </div>
       </div>
     </section>
