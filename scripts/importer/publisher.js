@@ -192,7 +192,7 @@ async function publishAll(products) {
   const catalogPages =
     Math.ceil(
       catalog.length /
-        config.PAGE_SIZE.catalog
+      config.PAGE_SIZE.catalog
     );
 
   catalogJobs.push({
@@ -213,18 +213,23 @@ async function publishAll(products) {
     index < catalogPages;
     index++
   ) {
+    const page =
+      pageNumber(index);
+
+    const pageItems =
+      catalog.slice(
+        index *
+        config.PAGE_SIZE.catalog,
+        (index + 1) *
+        config.PAGE_SIZE.catalog
+      );
+
     catalogJobs.push({
       key:
         `catalog/indexes/catalog-pages/` +
-        `${pageNumber(index)}.json`,
+        `${page}.json`,
 
-      data:
-        catalog.slice(
-          index *
-            config.PAGE_SIZE.catalog,
-          (index + 1) *
-            config.PAGE_SIZE.catalog
-        ),
+      data: pageItems,
     });
   }
 
@@ -264,7 +269,7 @@ async function publishAll(products) {
     const totalPages =
       Math.ceil(
         items.length /
-          config.PAGE_SIZE.category
+        config.PAGE_SIZE.category
       );
 
     categoryMeta[handle] = {
@@ -288,18 +293,23 @@ async function publishAll(products) {
       index < totalPages;
       index++
     ) {
+      const page =
+        pageNumber(index);
+
+      const pageItems =
+        items.slice(
+          index *
+          config.PAGE_SIZE.category,
+          (index + 1) *
+          config.PAGE_SIZE.category
+        );
+
       categoryJobs.push({
         key:
           `catalog/indexes/category-pages/` +
-          `${handle}/${pageNumber(index)}.json`,
+          `${handle}/${page}.json`,
 
-        data:
-          items.slice(
-            index *
-              config.PAGE_SIZE.category,
-            (index + 1) *
-              config.PAGE_SIZE.category
-          ),
+        data: pageItems,
       });
     }
   }
@@ -461,30 +471,30 @@ async function publishAll(products) {
 
     const shard =
       first >= "0" &&
-      first <= "9"
+        first <= "9"
         ? first
         : first >= "a" &&
           first <= "z"
-        ? first
-        : "other";
+          ? first
+          : "other";
 
     registryShards
       .get(shard)[
-        product.handle
-      ] = {
-        handle:
-          product.handle,
-        sources:
-          product.sources || [],
-        tags:
-          unique(
-            product.tags || []
-          )
-            .map(slugify)
-            .filter(Boolean),
-        updatedAt:
-          new Date().toISOString(),
-      };
+      product.handle
+    ] = {
+      handle:
+        product.handle,
+      sources:
+        product.sources || [],
+      tags:
+        unique(
+          product.tags || []
+        )
+          .map(slugify)
+          .filter(Boolean),
+      updatedAt:
+        new Date().toISOString(),
+    };
   }
 
   const registryJobs = [];
@@ -528,7 +538,7 @@ async function publishAll(products) {
                 sum +
                 Number(
                   item.variantCount ||
-                    0
+                  0
                 ),
               0
             ),

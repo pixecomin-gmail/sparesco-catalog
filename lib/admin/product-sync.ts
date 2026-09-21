@@ -36,7 +36,9 @@ function unique<T>(values: T[]) {
 function titleFromHandle(value: unknown) {
   return String(value || "")
     .replace(/[-_]+/g, " ")
-    .replace(/\b\w/g, (character) => character.toUpperCase());
+    .replace(/\b\w/g, (character) =>
+      character.toUpperCase()
+    );
 }
 
 function compact(value: unknown) {
@@ -47,10 +49,14 @@ function compact(value: unknown) {
 
 function lowestPrice(variants: any[]) {
   const prices = (variants || [])
-    .map((variant) => Number(variant?.price || 0))
+    .map((variant) =>
+      Number(variant?.price || 0)
+    )
     .filter((price) => price > 0);
 
-  return prices.length ? Math.min(...prices) : 0;
+  return prices.length
+    ? Math.min(...prices)
+    : 0;
 }
 
 function prefixOf(value: unknown) {
@@ -61,8 +67,27 @@ function prefixOf(value: unknown) {
     : "";
 }
 
-export function summarizeProduct(product: any) {
-  const firstVariant = product.variants?.[0] || {};
+function pageNumber(index: number) {
+  return String(index + 1).padStart(
+    4,
+    "0"
+  );
+}
+
+function compareTitles(
+  first: unknown,
+  second: unknown
+) {
+  return String(first || "").localeCompare(
+    String(second || "")
+  );
+}
+
+export function summarizeProduct(
+  product: any
+) {
+  const firstVariant =
+    product.variants?.[0] || {};
 
   return {
     handle: product.handle,
@@ -70,23 +95,29 @@ export function summarizeProduct(product: any) {
     collection: product.collection,
 
     collectionTitle:
-      titleFromHandle(product.collection),
+      titleFromHandle(
+        product.collection
+      ),
 
     category: product.category,
 
     categoryTitle:
-      titleFromHandle(product.category),
+      titleFromHandle(
+        product.category
+      ),
 
     imageFolder:
       product.imageFolder ||
       product.collection ||
       "",
 
-    tags: unique(product.tags || [])
-      .map(slugify)
-      .filter(Boolean),
+    tags:
+      unique(product.tags || [])
+        .map(slugify)
+        .filter(Boolean),
 
-    image: product.images?.[0] || "",
+    image:
+      product.images?.[0] || "",
 
     partNumber:
       firstVariant.partNumber || "",
@@ -98,17 +129,18 @@ export function summarizeProduct(product: any) {
       product.variants?.length || 0,
 
     price:
-      lowestPrice(product.variants || []),
+      lowestPrice(
+        product.variants || []
+      ),
   };
 }
 
-/*
- * Exact Search V2 structure used by
- * scripts/importer/publish-search-v2.js
- */
 function buildSearchV2(product: any) {
-  const variants = product.variants || [];
-  const firstVariant = variants[0] || {};
+  const variants =
+    product.variants || [];
+
+  const firstVariant =
+    variants[0] || {};
 
   const searchValues = unique([
     product.handle,
@@ -117,12 +149,14 @@ function buildSearchV2(product: any) {
     product.category,
     ...(product.tags || []),
 
-    ...variants.flatMap((variant: any) => [
-      variant.title,
-      variant.partNumber,
-      variant.vendor,
-      variant.option1Value,
-    ]),
+    ...variants.flatMap(
+      (variant: any) => [
+        variant.title,
+        variant.partNumber,
+        variant.vendor,
+        variant.option1Value,
+      ]
+    ),
   ]);
 
   return {
@@ -170,7 +204,8 @@ async function readJson(
   bucket: R2BucketLike,
   key: string
 ): Promise<any | null> {
-  const object = await bucket.get(key);
+  const object =
+    await bucket.get(key);
 
   if (!object) return null;
 
@@ -199,35 +234,26 @@ async function writeJson(
   );
 }
 
-function replaceProductInArray(
-  data: unknown,
+function replaceProduct(
+  products: any[],
   handle: string,
-  replacement: any
+  summary: any
 ) {
-  if (!Array.isArray(data)) {
-    return {
-      changed: false,
-      data,
-    };
-  }
-
   let changed = false;
 
   const updated =
-    data.map((item) => {
+    products.map((item) => {
       if (
-        item &&
-        typeof item === "object" &&
-        String(
-          (item as any).handle || ""
-        ).toLowerCase() ===
-          handle.toLowerCase()
+        String(item?.handle || "")
+          .trim()
+          .toLowerCase() ===
+        handle
       ) {
         changed = true;
 
         return {
-          ...(item as any),
-          ...replacement,
+          ...item,
+          ...summary,
         };
       }
 
@@ -236,67 +262,222 @@ function replaceProductInArray(
 
   return {
     changed,
-    data: updated,
+    products: updated,
   };
 }
 
-async function updateArrayFile(
+/*
+ * Find a product inside a sorted group of pages
+ * without scanning every page.
+ */
+async function findAndUpdateSortedPage(
   bucket: R2BucketLike,
-  key: string,
-  handle: string,
-  summary: any
-) {
-  const data =
-    await readJson(bucket, key);
+  options: {
+    basePath: string;
+    totalPages: number;
+    handle: string;
+    title: string;
+    summary: any;
+  }
+): Promise<string | null> {
+  const {
+    basePath,
+    totalPages,
+    handle,
+    title,
+    summary,
+  } = options;
 
-  if (!data) return false;
-
-  const result =
-    replaceProductInArray(
-      data,
-      handle,
-      summary
-    );
-
-  if (!result.changed) {
-    return false;
+  if (totalPages <= 0) {
+    return null;
   }
 
-  await writeJson(
-    bucket,
-    key,
-    result.data
-  );
+  let low = 0;
+  let high = totalPages - 1;
 
-  return true;
-}
+  const checked =
+    new Set<number>();
 
-function pageNumber(index: number) {
-  return String(index + 1)
-    .padStart(4, "0");
+  async function checkPage(
+    index: number
+  ): Promise<{
+    found: boolean;
+    relation: number;
+    key: string;
+  }> {
+    checked.add(index);
+
+    const page =
+      pageNumber(index);
+
+    const key =
+      `${basePath}/${page}.json`;
+
+    const data =
+      await readJson(
+        bucket,
+        key
+      );
+
+    const products =
+      Array.isArray(data)
+        ? data
+        : [];
+
+    if (!products.length) {
+      return {
+        found: false,
+        relation: 0,
+        key,
+      };
+    }
+
+    const result =
+      replaceProduct(
+        products,
+        handle,
+        summary
+      );
+
+    if (result.changed) {
+      await writeJson(
+        bucket,
+        key,
+        result.products
+      );
+
+      return {
+        found: true,
+        relation: 0,
+        key,
+      };
+    }
+
+    const firstTitle =
+      products[0]?.title || "";
+
+    const lastTitle =
+      products[
+        products.length - 1
+      ]?.title || "";
+
+    if (
+      compareTitles(
+        title,
+        firstTitle
+      ) < 0
+    ) {
+      return {
+        found: false,
+        relation: -1,
+        key,
+      };
+    }
+
+    if (
+      compareTitles(
+        title,
+        lastTitle
+      ) > 0
+    ) {
+      return {
+        found: false,
+        relation: 1,
+        key,
+      };
+    }
+
+    /*
+     * Title falls inside this page's range but the
+     * handle was not found. This can happen when
+     * duplicate titles cross a page boundary.
+     */
+    return {
+      found: false,
+      relation: 0,
+      key,
+    };
+  }
+
+  while (low <= high) {
+    const middle =
+      Math.floor(
+        (low + high) / 2
+      );
+
+    const result =
+      await checkPage(middle);
+
+    if (result.found) {
+      return result.key;
+    }
+
+    if (result.relation < 0) {
+      high = middle - 1;
+    } else if (
+      result.relation > 0
+    ) {
+      low = middle + 1;
+    } else {
+      /*
+       * Possible duplicate-title boundary.
+       * Check neighbouring pages only.
+       */
+      const neighbours = [
+        middle - 1,
+        middle + 1,
+      ].filter(
+        (index) =>
+          index >= 0 &&
+          index < totalPages &&
+          !checked.has(index)
+      );
+
+      for (
+        const index
+        of neighbours
+      ) {
+        const neighbour =
+          await checkPage(index);
+
+        if (neighbour.found) {
+          return neighbour.key;
+        }
+      }
+
+      return null;
+    }
+  }
+
+  return null;
 }
 
 /*
- * --------------------------------------------------
- * CATALOGUE / COLLECTION / HOMEPAGE
- * --------------------------------------------------
+ * Catalogue + collection summaries.
  */
-async function syncSummaryFiles(
+async function syncSummaryPages(
   bucket: R2BucketLike,
-  product: any
+  existingProduct: any,
+  updatedProduct: any
 ) {
   const handle =
-    String(product.handle || "")
-      .trim()
-      .toLowerCase();
+    clean(
+      updatedProduct.handle
+    ).toLowerCase();
+
+  const title =
+    existingProduct.title;
 
   const summary =
-    summarizeProduct(product);
+    summarizeProduct(
+      updatedProduct
+    );
 
-  const updatedFiles: string[] = [];
+  const updatedFiles: string[] =
+    [];
 
   /*
-   * Catalogue pages
+   * ALL PRODUCTS
    */
   const catalogMeta =
     await readJson(
@@ -304,36 +485,35 @@ async function syncSummaryFiles(
       "catalog/indexes/catalog-meta.json"
     );
 
-  const catalogTotalPages =
+  const catalogPages =
     Number(
       catalogMeta?.totalPages || 0
     );
 
-  for (
-    let index = 0;
-    index < catalogTotalPages;
-    index++
-  ) {
-    const key =
-      `catalog/indexes/catalog-pages/` +
-      `${pageNumber(index)}.json`;
+  const catalogFile =
+    await findAndUpdateSortedPage(
+      bucket,
+      {
+        basePath:
+          "catalog/indexes/catalog-pages",
 
-    const changed =
-      await updateArrayFile(
-        bucket,
-        key,
+        totalPages:
+          catalogPages,
+
         handle,
-        summary
-      );
+        title,
+        summary,
+      }
+    );
 
-    if (changed) {
-      updatedFiles.push(key);
-      break;
-    }
+  if (catalogFile) {
+    updatedFiles.push(
+      catalogFile
+    );
   }
 
   /*
-   * Collection/category pages
+   * COLLECTION / TAG PAGES
    */
   const categoryMeta =
     await readJson(
@@ -341,80 +521,107 @@ async function syncSummaryFiles(
       "catalog/indexes/category-meta.json"
     );
 
+  const tags =
+    unique(
+      existingProduct.tags || []
+    )
+      .map(slugify)
+      .filter(Boolean);
+
+  const categoryResults =
+    await Promise.all(
+      tags.map(
+        async (tag) => {
+          const totalPages =
+            Number(
+              categoryMeta?.[tag]
+                ?.totalPages || 0
+            );
+
+          if (!totalPages) {
+            return null;
+          }
+
+          return (
+            findAndUpdateSortedPage(
+              bucket,
+              {
+                basePath:
+                  `catalog/indexes/` +
+                  `category-pages/${tag}`,
+
+                totalPages,
+
+                handle,
+                title,
+                summary,
+              }
+            )
+          );
+        }
+      )
+    );
+
   for (
-    const tag of summary.tags || []
+    const key
+    of categoryResults
   ) {
-    const totalPages =
-      Number(
-        categoryMeta?.[tag]
-          ?.totalPages || 0
-      );
-
-    for (
-      let index = 0;
-      index < totalPages;
-      index++
-    ) {
-      const key =
-        `catalog/indexes/category-pages/` +
-        `${tag}/` +
-        `${pageNumber(index)}.json`;
-
-      const changed =
-        await updateArrayFile(
-          bucket,
-          key,
-          handle,
-          summary
-        );
-
-      if (changed) {
-        updatedFiles.push(key);
-        break;
-      }
+    if (key) {
+      updatedFiles.push(key);
     }
   }
 
   /*
-   * Featured products.
-   * Product is replaced only if it
-   * already exists in this list.
+   * HOMEPAGE CURATED LISTS
    */
-  const featuredKey =
-    "catalog/featured-products/" +
-    "featured-products.json";
+  const curatedFiles = [
+    "catalog/featured-products/featured-products.json",
+    "catalog/popular-products/popular-products.json",
+  ];
 
-  if (
-    await updateArrayFile(
-      bucket,
-      featuredKey,
-      handle,
-      summary
-    )
-  ) {
-    updatedFiles.push(
-      featuredKey
+  const curatedResults =
+    await Promise.all(
+      curatedFiles.map(
+        async (key) => {
+          const data =
+            await readJson(
+              bucket,
+              key
+            );
+
+          if (!Array.isArray(data)) {
+            return null;
+          }
+
+          const result =
+            replaceProduct(
+              data,
+              handle,
+              summary
+            );
+
+          if (!result.changed) {
+            return null;
+          }
+
+          await writeJson(
+            bucket,
+            key,
+            result.products
+          );
+
+          return key;
+        }
+      )
     );
-  }
 
-  /*
-   * Popular products.
-   */
-  const popularKey =
-    "catalog/popular-products/" +
-    "popular-products.json";
-
-  if (
-    await updateArrayFile(
-      bucket,
-      popularKey,
-      handle,
-      summary
-    )
+  for (
+    const key
+    of curatedResults
   ) {
-    updatedFiles.push(
-      popularKey
-    );
+    if (key) {
+      updatedFiles.push(key);
+    }
   }
 
   return {
@@ -424,19 +631,7 @@ async function syncSummaryFiles(
 }
 
 /*
- * --------------------------------------------------
- * SEARCH V2
- * --------------------------------------------------
- *
- * A product can exist in several 2-character shards.
- *
- * We therefore:
- *
- * 1. Calculate OLD prefixes.
- * 2. Calculate NEW prefixes.
- * 3. Take the union.
- * 4. Remove the product from every affected shard.
- * 5. Add the updated item back only to NEW shards.
+ * Search V2
  */
 async function syncSearchV2(
   bucket: R2BucketLike,
@@ -444,10 +639,14 @@ async function syncSearchV2(
   updatedProduct: any
 ) {
   const oldSearch =
-    buildSearchV2(existingProduct);
+    buildSearchV2(
+      existingProduct
+    );
 
   const newSearch =
-    buildSearchV2(updatedProduct);
+    buildSearchV2(
+      updatedProduct
+    );
 
   const affectedPrefixes =
     unique([
@@ -456,114 +655,114 @@ async function syncSearchV2(
     ]);
 
   const newPrefixSet =
-    new Set(newSearch.prefixes);
+    new Set(
+      newSearch.prefixes
+    );
 
   const handle =
-    String(updatedProduct.handle || "")
-      .trim()
-      .toLowerCase();
+    clean(
+      updatedProduct.handle
+    ).toLowerCase();
 
-  const updatedFiles: string[] = [];
+  const results =
+    await Promise.all(
+      affectedPrefixes.map(
+        async (prefix) => {
+          const key =
+            `catalog/search-v2/` +
+            `${prefix}.json`;
 
-  for (
-    const prefix of affectedPrefixes
-  ) {
-    const key =
-      `catalog/search-v2/` +
-      `${prefix}.json`;
+          const current =
+            await readJson(
+              bucket,
+              key
+            );
 
-    const current =
-      await readJson(bucket, key);
+          const shard =
+            Array.isArray(current)
+              ? current
+              : [];
 
-    /*
-     * Some NEW prefixes may not have
-     * existed before.
-     */
-    const shard =
-      Array.isArray(current)
-        ? current
-        : [];
+          const withoutProduct =
+            shard.filter(
+              (item: any) =>
+                clean(
+                  item?.h
+                ).toLowerCase() !==
+                handle
+            );
 
-    /*
-     * Always remove the old copy.
-     */
-    const withoutProduct =
-      shard.filter(
-        (item: any) =>
-          String(item?.h || "")
-            .trim()
-            .toLowerCase() !==
-          handle
-      );
+          if (
+            newPrefixSet.has(
+              prefix
+            )
+          ) {
+            withoutProduct.push(
+              newSearch.item
+            );
+          }
 
-    /*
-     * Put updated product back only
-     * when this is still one of its
-     * current prefixes.
-     */
-    if (
-      newPrefixSet.has(prefix)
-    ) {
-      withoutProduct.push(
-        newSearch.item
-      );
-    }
+          withoutProduct.sort(
+            (a: any, b: any) =>
+              String(a?.t || "")
+                .localeCompare(
+                  String(
+                    b?.t || ""
+                  )
+                )
+          );
 
-    /*
-     * Keep shard deterministic.
-     */
-    withoutProduct.sort(
-      (a: any, b: any) =>
-        String(a?.t || "")
-          .localeCompare(
-            String(b?.t || "")
-          )
+          await writeJson(
+            bucket,
+            key,
+            withoutProduct
+          );
+
+          return key;
+        }
+      )
     );
-
-    await writeJson(
-      bucket,
-      key,
-      withoutProduct
-    );
-
-    updatedFiles.push(key);
-  }
 
   return {
-    updatedFiles,
+    updatedFiles:
+      results,
   };
 }
 
 /*
- * --------------------------------------------------
- * PUBLIC SYNC FUNCTION
- * --------------------------------------------------
+ * Main Admin synchronization.
  */
 export async function syncExistingProduct(
   bucket: R2BucketLike,
   existingProduct: any,
   updatedProduct: any
 ) {
-  const summaryResult =
-    await syncSummaryFiles(
-      bucket,
-      updatedProduct
-    );
+  const [
+    summaryResult,
+    searchResult,
+  ] =
+    await Promise.all([
+      syncSummaryPages(
+        bucket,
+        existingProduct,
+        updatedProduct
+      ),
 
-  const searchResult =
-    await syncSearchV2(
-      bucket,
-      existingProduct,
-      updatedProduct
-    );
+      syncSearchV2(
+        bucket,
+        existingProduct,
+        updatedProduct
+      ),
+    ]);
 
   return {
     summary:
       summaryResult.summary,
 
-    updatedFiles: unique([
-      ...summaryResult.updatedFiles,
-      ...searchResult.updatedFiles,
-    ]),
+    updatedFiles:
+      unique([
+        ...summaryResult.updatedFiles,
+        ...searchResult.updatedFiles,
+      ]),
   };
 }
