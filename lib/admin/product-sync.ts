@@ -737,32 +737,21 @@ export async function syncExistingProduct(
   existingProduct: any,
   updatedProduct: any
 ) {
-  const [
-    summaryResult,
-    searchResult,
-  ] =
-    await Promise.all([
-      syncSummaryPages(
-        bucket,
-        existingProduct,
-        updatedProduct
-      ),
-
-      syncSearchV2(
-        bucket,
-        existingProduct,
-        updatedProduct
-      ),
-    ]);
+  /*
+   * TEMPORARY DIAGNOSTIC:
+   * Test catalogue/category/homepage synchronization
+   * without Search V2.
+   */
+  const summaryResult =
+    await syncSummaryPages(
+      bucket,
+      existingProduct,
+      updatedProduct
+    );
 
   return {
-    summary:
-      summaryResult.summary,
-
+    summary: summaryResult.summary,
     updatedFiles:
-      unique([
-        ...summaryResult.updatedFiles,
-        ...searchResult.updatedFiles,
-      ]),
+      summaryResult.updatedFiles,
   };
 }
