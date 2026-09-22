@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 import "./vendor-register.css";
 
 type VendorForm = {
@@ -31,16 +33,6 @@ const emptyForm: VendorForm = {
 
 function isValidEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
-}
-
-function normalizePhone(value: string) {
-  return value.replace(/[\s\-().]/g, "");
-}
-
-function isValidInternationalPhone(value: string) {
-  const normalized = normalizePhone(value);
-
-  return /^\+[1-9]\d{7,14}$/.test(normalized);
 }
 
 function isIndia(value: string) {
@@ -95,8 +87,8 @@ export default function VendorRegisterPage() {
       return "Contact Number is required.";
     }
 
-    if (!isValidInternationalPhone(form.phone)) {
-      return "Enter the contact number with country code, for example +91 98765 43210.";
+    if (!isValidPhoneNumber(form.phone)) {
+      return "Please enter a valid contact number.";
     }
 
     if (!form.gst_number.trim()) {
@@ -254,28 +246,24 @@ export default function VendorRegisterPage() {
               />
             </div>
 
-            <div className="vendor-field">
-              <label htmlFor="vendor-phone">
-                Contact Number <span>*</span>
-              </label>
+           <div className="vendor-field vendor-phone-field">
+            <label>
+              Contact Number <span>*</span>
+            </label>
 
-              <input
-                id="vendor-phone"
-                type="tel"
-                value={form.phone}
-                onChange={(e) =>
-                  updateField("phone", e.target.value)
-                }
-                placeholder="+91 98765 43210"
-                autoComplete="tel"
-                inputMode="tel"
-                required
-              />
+            <PhoneInput
+              international
+              defaultCountry="IN"
+              value={form.phone || undefined}
+              onChange={(value) =>
+                updateField("phone", value || "")
+              }
+              placeholder="Phone number"
+              className="vendor-phone-input"
+            />
 
-              <small>
-                Include country code, for example +91.
-              </small>
-            </div>
+            <small>Select the country code and enter the contact number.</small>
+          </div>
 
             <div className="vendor-field">
               <label htmlFor="vendor-gst">

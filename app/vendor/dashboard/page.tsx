@@ -4,6 +4,10 @@ import "./dashboard.css";
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import PhoneInput, {
+  isValidPhoneNumber,
+} from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 type Tab = "enquiries" | "products" | "add" | "profile";
 
@@ -100,6 +104,36 @@ export default function VendorDashboardPage() {
 
   const [detailLoading, setDetailLoading] = useState<number | null>(null);
 
+  const [productForm, setProductForm] = useState({
+    product_name: "",
+    part_number: "",
+    brand: "",
+    category: "",
+    description: "",
+    price: "",
+    currency: "USD",
+    stock_status: "",
+    lead_time: "",
+  });
+
+  const [productSubmitting, setProductSubmitting] = useState(false);
+  const [productMessage, setProductMessage] = useState("");
+  const [productError, setProductError] = useState("");
+
+  const [profileForm, setProfileForm] = useState({
+    contact_person: "",
+    phone: "",
+    address: "",
+    city: "",
+    state: "",
+    country: "",
+    website: "",
+  });
+
+  const [profileSaving, setProfileSaving] = useState(false);
+  const [profileMessage, setProfileMessage] = useState("");
+  const [profileError, setProfileError] = useState("");
+
   useEffect(() => {
     const checkSession = async () => {
       try {
@@ -116,6 +150,16 @@ export default function VendorDashboardPage() {
         }
 
         setVendor(data.vendor);
+
+        setProfileForm({
+          contact_person: data.vendor.contact_person || "",
+          phone: data.vendor.phone || "",
+          address: data.vendor.address || "",
+          city: data.vendor.city || "",
+          state: data.vendor.state || "",
+          country: data.vendor.country || "",
+          website: data.vendor.website || "",
+        });
 
         const productsResponse = await fetch("/api/vendor/products", {
           method: "GET",
@@ -183,10 +227,10 @@ export default function VendorDashboardPage() {
           current.map((item) =>
             item.id === enquiryId
               ? {
-                  ...item,
-                  vendor_status: data.enquiry.vendor_status,
-                  viewed_at: data.enquiry.viewed_at,
-                }
+                ...item,
+                vendor_status: data.enquiry.vendor_status,
+                viewed_at: data.enquiry.viewed_at,
+              }
               : item
           )
         );
@@ -195,6 +239,181 @@ export default function VendorDashboardPage() {
       console.error("Unable to load enquiry details:", error);
     } finally {
       setDetailLoading(null);
+    }
+  }
+
+  function updateProductField(
+    event:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+      | React.ChangeEvent<HTMLSelectElement>
+  ) {
+    const { name, value } = event.target;
+
+    setProductForm((current) => ({
+      ...current,
+      [name]: value,
+    }));
+
+    setProductError("");
+    setProductMessage("");
+  }
+
+  async function submitProduct(
+    event: React.FormEvent<HTMLFormElement>
+  ) {
+    event.preventDefault();
+
+    setProductError("");
+    setProductMessage("");
+    setProductSubmitting(true);
+
+    try {
+      const response = await fetch("/api/vendor/products", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(productForm),
+      });
+
+      const data = await response.json();
+
+      if (response.status === 401) {
+        router.replace("/vendor/login");
+        return;
+      }
+
+      if (!response.ok || !data.success) {
+        setProductError(
+          data.error || "Unable to submit product."
+        );
+        return;
+      }
+
+      setProductMessage(
+        "Product submitted successfully and is pending admin approval."
+      );
+
+      setProductForm({
+        product_name: "",
+        part_number: "",
+        brand: "",
+        category: "",
+        description: "",
+        price: "",
+        currency: "USD",
+        stock_status: "",
+        lead_time: "",
+      });
+
+      const productsResponse = await fetch("/api/vendor/products", {
+        method: "GET",
+        cache: "no-store",
+      });
+
+      const productsData = await productsResponse.json();
+
+      if (productsResponse.ok && productsData.success) {
+        const refreshedProducts = productsData.products || [];
+
+        setProducts(refreshedProducts);
+
+        setVendor((current) =>
+          current
+            ? {
+              ...current,
+              products_submitted: refreshedProducts.length,
+            }
+            : current
+        );
+      }
+    } catch {
+      setProductError(
+        "Unable to submit product. Please try again."
+      );
+    } finally {
+      setProductSubmitting(false);
+    }
+  }
+
+  function updateProfileField(
+    name: keyof typeof profileForm,
+    value: string
+  ) {
+    setProfileForm((current) => ({
+      ...current,
+      [name]: value,
+    }));
+
+    setProfileError("");
+    setProfileMessage("");
+  }
+
+  async function saveProfile(
+    event: React.FormEvent<HTMLFormElement>
+  ) {
+    event.preventDefault();
+
+    setProfileError("");
+    setProfileMessage("");
+
+    if (!profileForm.contact_person.trim()) {
+      setProfileError("Contact Person is required.");
+      return;
+    }
+
+    if (!profileForm.phone) {
+      setProfileError("Contact Number is required.");
+      return;
+    }
+
+    if (!isValidPhoneNumber(profileForm.phone)) {
+      setProfileError("Please enter a valid contact number.");
+      return;
+    }
+
+    setProfileSaving(true);
+
+    try {
+      const response = await fetch("/api/vendor/session", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(profileForm),
+      });
+
+      const data = await response.json();
+
+      if (response.status === 401) {
+        router.replace("/vendor/login");
+        return;
+      }
+
+      if (!response.ok || !data.success) {
+        setProfileError(
+          data.error || "Unable to update profile."
+        );
+        return;
+      }
+
+      setVendor((current) =>
+        current
+          ? {
+            ...current,
+            ...data.vendor,
+          }
+          : current
+      );
+
+      setProfileMessage("Profile updated successfully.");
+    } catch {
+      setProfileError(
+        "Unable to update profile. Please try again."
+      );
+    } finally {
+      setProfileSaving(false);
     }
   }
 
@@ -286,9 +505,9 @@ export default function VendorDashboardPage() {
   const capacityPercent =
     vendor.product_limit > 0
       ? Math.min(
-          (vendor.products_submitted / vendor.product_limit) * 100,
-          100
-        )
+        (vendor.products_submitted / vendor.product_limit) * 100,
+        100
+      )
       : 0;
 
   const showSearch =
@@ -392,9 +611,8 @@ export default function VendorDashboardPage() {
                 return (
                   <article
                     key={enquiry.id}
-                    className={`vendor-accordion ${
-                      isOpen ? "is-open" : ""
-                    }`}
+                    className={`vendor-accordion ${isOpen ? "is-open" : ""
+                      }`}
                   >
                     <button
                       type="button"
@@ -420,10 +638,20 @@ export default function VendorDashboardPage() {
                           </strong>
                         </span>
 
+                        {quote && (
+                          <span className="vendor-quote-summary">
+                            {formatMoney(
+                              quote.unit_price,
+                              quote.currency
+                            )}
+                            {" / unit"}
+                          </span>
+                        )}
+
                         <StatusBadge
                           status={responded ? "success" : "warning"}
                         >
-                          {responded ? "Responded" : "New"}
+                          {responded ? "Quotation Submitted" : "New"}
                         </StatusBadge>
 
                         <span className="vendor-chevron" aria-hidden="true">
@@ -469,11 +697,11 @@ export default function VendorDashboardPage() {
                                 <div className="vendor-section-row">
                                   <div>
                                     <span className="vendor-mini-heading">
-                                      Quotation
+                                      Your Quotation
                                     </span>
 
                                     <h3 className="vendor-quotation-heading">
-                                      Quotation Submitted
+                                      Your Submitted Quotation
                                     </h3>
                                   </div>
 
@@ -645,9 +873,8 @@ export default function VendorDashboardPage() {
                 return (
                   <article
                     key={product.id}
-                    className={`vendor-accordion ${
-                      isOpen ? "is-open" : ""
-                    }`}
+                    className={`vendor-accordion ${isOpen ? "is-open" : ""
+                      }`}
                   >
                     <button
                       type="button"
@@ -805,29 +1032,163 @@ export default function VendorDashboardPage() {
             </div>
           </div>
 
-          <div className="vendor-add-product-card">
-            <h3>Submit a Product</h3>
-
-            <p>
-              Add product details for review. Once approved, the product
-              can be matched with relevant customer enquiries.
-            </p>
-
-            <button
-              type="button"
-              className="vendor-primary-button"
-              onClick={() => router.push("/vendor/products/new")}
-              disabled={remainingProducts <= 0}
+          {remainingProducts > 0 ? (
+            <form
+              className="vendor-dashboard-product-form"
+              onSubmit={submitProduct}
             >
-              Add Product
-            </button>
+              <div className="vendor-form-heading">
+                <h3>Product Details</h3>
 
-            {remainingProducts <= 0 && (
+                <p>
+                  Add product details for review. Once approved, the
+                  product can be matched with relevant customer enquiries.
+                </p>
+              </div>
+
+              <div className="vendor-dashboard-form-grid">
+                <DashboardField label="Product Name *">
+                  <input
+                    type="text"
+                    name="product_name"
+                    value={productForm.product_name}
+                    onChange={updateProductField}
+                    placeholder="Example: Hydraulic Filter"
+                    required
+                  />
+                </DashboardField>
+
+                <DashboardField label="Part Number *">
+                  <input
+                    type="text"
+                    name="part_number"
+                    value={productForm.part_number}
+                    onChange={updateProductField}
+                    placeholder="Example: HC9600FKS13H"
+                    required
+                  />
+                </DashboardField>
+
+                <DashboardField label="Brand *">
+                  <input
+                    type="text"
+                    name="brand"
+                    value={productForm.brand}
+                    onChange={updateProductField}
+                    placeholder="Example: Pall"
+                    required
+                  />
+                </DashboardField>
+
+                <DashboardField label="Category *">
+                  <input
+                    type="text"
+                    name="category"
+                    value={productForm.category}
+                    onChange={updateProductField}
+                    placeholder="Example: Hydraulic Filters"
+                    required
+                  />
+                </DashboardField>
+
+                <DashboardField label="Price">
+                  <input
+                    type="text"
+                    name="price"
+                    value={productForm.price}
+                    onChange={updateProductField}
+                    placeholder="Example: 125.00"
+                  />
+                </DashboardField>
+
+                <DashboardField label="Currency">
+                  <select
+                    name="currency"
+                    value={productForm.currency}
+                    onChange={updateProductField}
+                  >
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AED">AED</option>
+                  </select>
+                </DashboardField>
+
+                <DashboardField label="Stock Status">
+                  <select
+                    name="stock_status"
+                    value={productForm.stock_status}
+                    onChange={updateProductField}
+                  >
+                    <option value="">Select</option>
+                    <option value="in_stock">In Stock</option>
+                    <option value="limited_stock">
+                      Limited Stock
+                    </option>
+                    <option value="out_of_stock">
+                      Out of Stock
+                    </option>
+                    <option value="on_request">
+                      Available on Request
+                    </option>
+                  </select>
+                </DashboardField>
+
+                <DashboardField label="Lead Time">
+                  <input
+                    type="text"
+                    name="lead_time"
+                    value={productForm.lead_time}
+                    onChange={updateProductField}
+                    placeholder="Example: 7-10 days"
+                  />
+                </DashboardField>
+
+                <div className="vendor-dashboard-field vendor-form-full">
+                  <label>Description</label>
+
+                  <textarea
+                    name="description"
+                    value={productForm.description}
+                    onChange={updateProductField}
+                    rows={4}
+                    placeholder="Add product details, specifications or other useful information..."
+                  />
+                </div>
+              </div>
+
+              {productMessage && (
+                <div className="vendor-dashboard-success">
+                  {productMessage}
+                </div>
+              )}
+
+              {productError && (
+                <div className="vendor-dashboard-error">
+                  {productError}
+                </div>
+              )}
+
+              <div className="vendor-dashboard-form-actions">
+                <button
+                  type="submit"
+                  className="vendor-primary-button"
+                  disabled={productSubmitting}
+                >
+                  {productSubmitting
+                    ? "Submitting..."
+                    : "Submit Product"}
+                </button>
+              </div>
+            </form>
+          ) : (
+            <div className="vendor-add-product-card">
               <p className="vendor-limit-warning">
                 You have reached your current product submission limit.
               </p>
-            )}
-          </div>
+            </div>
+          )}
         </section>
       )}
 
@@ -835,85 +1196,189 @@ export default function VendorDashboardPage() {
         <section>
           <SectionHeading
             title="Profile"
-            description="Registration details associated with your vendor account."
+            description="View your company details and update your contact information."
           />
 
-          <div className="vendor-profile-card">
+          <form
+            className="vendor-profile-card"
+            onSubmit={saveProfile}
+          >
             <div className="vendor-profile-section">
               <span className="vendor-mini-heading">
                 Company Details
               </span>
 
-              <div className="vendor-profile-grid">
-                <Detail
+              <div className="vendor-dashboard-form-grid">
+                <DashboardField
                   label="Company Name"
-                  value={vendor.company_name}
-                />
+                  readOnly
+                >
+                  <input
+                    type="text"
+                    value={vendor.company_name}
+                    readOnly
+                  />
+                </DashboardField>
 
-                <Detail
-                  label="Contact Person"
-                  value={vendor.contact_person}
-                />
+                <DashboardField label="Email" readOnly>
+                  <input
+                    type="email"
+                    value={vendor.email}
+                    readOnly
+                  />
+                </DashboardField>
 
-                <Detail label="Email" value={vendor.email} />
-
-                <Detail label="Phone" value={vendor.phone} />
-
-                <Detail
+                <DashboardField
                   label="GST / Tax Number"
-                  value={vendor.gst_number}
-                />
+                  readOnly
+                >
+                  <input
+                    type="text"
+                    value={vendor.gst_number || ""}
+                    readOnly
+                  />
+                </DashboardField>
 
-                <Detail
-                  label="Website"
-                  value={vendor.website}
-                />
+                <DashboardField label="Vendor Status" readOnly>
+                  <input
+                    type="text"
+                    value={
+                      vendor.status
+                        ? capitalize(vendor.status)
+                        : "Approved"
+                    }
+                    readOnly
+                  />
+                </DashboardField>
               </div>
             </div>
 
             <div className="vendor-divider" />
 
             <div className="vendor-profile-section">
-              <span className="vendor-mini-heading">Address</span>
+              <span className="vendor-mini-heading">
+                Contact & Address
+              </span>
 
-              <div className="vendor-profile-grid">
-                <Detail
-                  label="Address"
-                  value={vendor.address}
-                />
+              <div className="vendor-dashboard-form-grid">
+                <DashboardField label="Contact Person *">
+                  <input
+                    type="text"
+                    value={profileForm.contact_person}
+                    onChange={(event) =>
+                      updateProfileField(
+                        "contact_person",
+                        event.target.value
+                      )
+                    }
+                    required
+                  />
+                </DashboardField>
 
-                <Detail label="City" value={vendor.city} />
+                <DashboardField label="Contact Number *">
+                  <PhoneInput
+                    international
+                    defaultCountry="IN"
+                    value={profileForm.phone || undefined}
+                    onChange={(value) =>
+                      updateProfileField("phone", value || "")
+                    }
+                    className="vendor-dashboard-phone"
+                  />
+                </DashboardField>
 
-                <Detail label="State" value={vendor.state} />
+                <DashboardField label="Address">
+                  <input
+                    type="text"
+                    value={profileForm.address}
+                    onChange={(event) =>
+                      updateProfileField(
+                        "address",
+                        event.target.value
+                      )
+                    }
+                  />
+                </DashboardField>
 
-                <Detail
-                  label="Country"
-                  value={vendor.country}
-                />
+                <DashboardField label="City">
+                  <input
+                    type="text"
+                    value={profileForm.city}
+                    onChange={(event) =>
+                      updateProfileField(
+                        "city",
+                        event.target.value
+                      )
+                    }
+                  />
+                </DashboardField>
+
+                <DashboardField label="State">
+                  <input
+                    type="text"
+                    value={profileForm.state}
+                    onChange={(event) =>
+                      updateProfileField(
+                        "state",
+                        event.target.value
+                      )
+                    }
+                  />
+                </DashboardField>
+
+                <DashboardField label="Country">
+                  <input
+                    type="text"
+                    value={profileForm.country}
+                    onChange={(event) =>
+                      updateProfileField(
+                        "country",
+                        event.target.value
+                      )
+                    }
+                  />
+                </DashboardField>
+
+                <DashboardField label="Website">
+                  <input
+                    type="url"
+                    value={profileForm.website}
+                    onChange={(event) =>
+                      updateProfileField(
+                        "website",
+                        event.target.value
+                      )
+                    }
+                    placeholder="https://example.com"
+                  />
+                </DashboardField>
               </div>
             </div>
 
-            <div className="vendor-divider" />
-
-            <div className="vendor-profile-section">
-              <span className="vendor-mini-heading">Account</span>
-
-              <div className="vendor-profile-grid">
-                <Detail
-                  label="Vendor Status"
-                  value={
-                    vendor.status
-                      ? capitalize(vendor.status)
-                      : "Approved"
-                  }
-                />
+            {profileMessage && (
+              <div className="vendor-dashboard-success">
+                {profileMessage}
               </div>
-            </div>
+            )}
 
-            <p className="vendor-profile-note">
-              Profile information is currently view-only.
-            </p>
-          </div>
+            {profileError && (
+              <div className="vendor-dashboard-error">
+                {profileError}
+              </div>
+            )}
+
+            <div className="vendor-dashboard-form-actions">
+              <button
+                type="submit"
+                className="vendor-primary-button"
+                disabled={profileSaving}
+              >
+                {profileSaving
+                  ? "Saving..."
+                  : "Save Changes"}
+              </button>
+            </div>
+          </form>
         </section>
       )}
     </main>
@@ -955,6 +1420,26 @@ function SectionHeading({
   );
 }
 
+function DashboardField({
+  label,
+  readOnly = false,
+  children,
+}: {
+  label: string;
+  readOnly?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <div
+      className={`vendor-dashboard-field ${readOnly ? "is-readonly" : ""
+        }`}
+    >
+      <label>{label}</label>
+      {children}
+    </div>
+  );
+}
+
 function Detail({
   label,
   value,
@@ -964,8 +1449,8 @@ function Detail({
 }) {
   const displayValue =
     value === null ||
-    value === undefined ||
-    String(value).trim() === ""
+      value === undefined ||
+      String(value).trim() === ""
       ? "—"
       : String(value);
 
