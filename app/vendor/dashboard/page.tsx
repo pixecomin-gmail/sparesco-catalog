@@ -13,12 +13,11 @@ type Vendor = {
   contact_person: string;
   email: string;
   phone?: string | null;
-  gst_no?: string | null;
+  gst_number?: string | null;
   address?: string | null;
   city?: string | null;
   state?: string | null;
   country?: string | null;
-  pincode?: string | null;
   website?: string | null;
   status?: string | null;
   product_limit: number;
@@ -861,8 +860,8 @@ export default function VendorDashboardPage() {
                 <Detail label="Phone" value={vendor.phone} />
 
                 <Detail
-                  label="GST Number"
-                  value={vendor.gst_no}
+                  label="GST / Tax Number"
+                  value={vendor.gst_number}
                 />
 
                 <Detail
@@ -890,11 +889,6 @@ export default function VendorDashboardPage() {
                 <Detail
                   label="Country"
                   value={vendor.country}
-                />
-
-                <Detail
-                  label="Pincode"
-                  value={vendor.pincode}
                 />
               </div>
             </div>

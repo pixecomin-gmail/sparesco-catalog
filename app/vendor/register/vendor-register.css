@@ -1,114 +1,188 @@
 .vendor-register-page {
   min-height: 100vh;
+  padding: 36px 20px 55px;
   background: #f7f5ef;
-  padding: 70px 20px;
 }
 
 .vendor-register-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
+/* Header */
+
 .vendor-register-header {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .vendor-register-tag {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
   color: #2a8392;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .vendor-register-header h1 {
-  margin: 0 0 12px;
+  margin: 0 0 7px;
   color: #173f4c;
-  font-size: 42px;
-  line-height: 1.15;
+  font-size: 34px;
+  line-height: 1.12;
 }
 
 .vendor-register-header p {
+  max-width: 720px;
   margin: 0;
-  max-width: 650px;
   color: #5c6669;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
+/* Form */
+
 .vendor-register-form {
+  padding: 24px 28px;
+  border: 1px solid #e4e6e2;
+  border-radius: 14px;
   background: #ffffff;
-  padding: 35px;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 22px rgba(23, 63, 76, 0.05);
 }
 
 .vendor-form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
+  gap: 15px 24px;
 }
 
 .vendor-field {
   display: flex;
+  min-width: 0;
   flex-direction: column;
-  gap: 8px;
-}
-
-.vendor-field-full {
-  grid-column: 1 / -1;
+  gap: 6px;
 }
 
 .vendor-field label {
   color: #173f4c;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 650;
 }
 
-.vendor-field input,
-.vendor-field textarea {
+.vendor-field label span {
+  color: #b4463d;
+}
+
+.vendor-field input {
   width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 10px 12px;
   border: 1px solid #d7dcdd;
-  border-radius: 8px;
-  padding: 13px 14px;
-  font: inherit;
+  border-radius: 7px;
+  outline: none;
   background: #ffffff;
   color: #173f4c;
-  box-sizing: border-box;
+  font: inherit;
+  font-size: 14px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-.vendor-field input:focus,
-.vendor-field textarea:focus {
-  outline: none;
+.vendor-field input::placeholder {
+  color: #a0aaad;
+}
+
+.vendor-field input:focus {
   border-color: #2a8392;
+  box-shadow: 0 0 0 3px rgba(42, 131, 146, 0.08);
+}
+
+.vendor-field small {
+  min-height: 14px;
+  color: #7b878b;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+/* Messages */
+
+.vendor-form-message {
+  margin-top: 18px;
+  padding: 11px 13px;
+  border: 1px solid;
+  border-radius: 7px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.vendor-form-error {
+  border-color: #efcbc7;
+  background: #fff5f3;
+  color: #a23c35;
+}
+
+.vendor-form-success {
+  border-color: #cce8d8;
+  background: #f0f9f4;
+  color: #26734d;
+}
+
+/* Footer */
+
+.vendor-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0ee;
+}
+
+.vendor-form-footer p {
+  margin: 0;
+  color: #7b878b;
+  font-size: 11px;
+}
+
+.vendor-form-footer p strong {
+  color: #b4463d;
 }
 
 .vendor-submit-button {
-  margin-top: 28px;
+  flex: 0 0 auto;
+  min-width: 220px;
+  padding: 12px 20px;
   border: 0;
   border-radius: 8px;
-  padding: 14px 22px;
   background: #173f4c;
   color: #ffffff;
-  font-size: 15px;
+  font-family: inherit;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
+  transition:
+    background 0.15s ease,
+    opacity 0.15s ease;
 }
 
-.vendor-submit-button:hover {
-  opacity: 0.92;
+.vendor-submit-button:hover:not(:disabled) {
+  background: #205666;
 }
 
-@media (max-width: 700px) {
+.vendor-submit-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* Tablet */
+
+@media (max-width: 760px) {
   .vendor-register-page {
-    padding: 40px 16px;
-  }
-
-  .vendor-register-header h1 {
-    font-size: 32px;
+    padding: 30px 18px 50px;
   }
 
   .vendor-register-form {
@@ -116,10 +190,56 @@
   }
 
   .vendor-form-grid {
-    grid-template-columns: 1fr;
+    gap: 14px 18px;
   }
 
-  .vendor-field-full {
-    grid-column: auto;
+  .vendor-register-header h1 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .vendor-register-page {
+    padding: 26px 14px 45px;
+  }
+
+  .vendor-register-header {
+    margin-bottom: 17px;
+  }
+
+  .vendor-register-header h1 {
+    font-size: 27px;
+  }
+
+  .vendor-register-header p {
+    font-size: 13px;
+  }
+
+  .vendor-register-form {
+    padding: 18px 16px;
+    border-radius: 11px;
+  }
+
+  .vendor-form-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .vendor-field input {
+    height: 43px;
+    font-size: 16px;
+  }
+
+  .vendor-form-footer {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .vendor-submit-button {
+    width: 100%;
+    min-width: 0;
   }
 }

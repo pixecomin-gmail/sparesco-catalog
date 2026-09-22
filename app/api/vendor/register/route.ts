@@ -3,36 +3,115 @@ import { getRequestContext } from "@cloudflare/next-on-pages";
 
 export const runtime = "edge";
 
+function clean(value: unknown) {
+  return String(value ?? "").trim();
+}
+
+function isValidEmail(value: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+function normalizePhone(value: string) {
+  return value.replace(/[\s\-().]/g, "");
+}
+
+function isValidInternationalPhone(value: string) {
+  return /^\+[1-9]\d{7,14}$/.test(normalizePhone(value));
+}
+
+function isIndia(value: string) {
+  return value.trim().toLowerCase() === "india";
+}
+
+function isValidIndianGst(value: string) {
+  return /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$/.test(
+    value.trim().toUpperCase()
+  );
+}
+
+function isValidWebsite(value: string) {
+  if (!value) {
+    return true;
+  }
+
+  try {
+    const url = new URL(value);
+
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    const {
-      company_name,
-      contact_person,
-      email,
-      phone,
-      address,
-      city,
-      state,
-      country,
-      gst_number,
-      website,
-    } = body;
+    const company_name = clean(body.company_name);
+    const contact_person = clean(body.contact_person);
+    const email = clean(body.email).toLowerCase();
+    const phone = clean(body.phone);
+    const gst_number = clean(body.gst_number).toUpperCase();
 
-    // Required fields
+    const address = clean(body.address);
+    const city = clean(body.city);
+    const state = clean(body.state);
+    const country = clean(body.country);
+    const website = clean(body.website);
+
     if (
-      !company_name?.trim() ||
-      !contact_person?.trim() ||
-      !email?.trim() ||
-      !phone?.trim() ||
-      !gst_number?.trim()
+      !company_name ||
+      !contact_person ||
+      !email ||
+      !phone ||
+      !gst_number
     ) {
       return NextResponse.json(
         {
           success: false,
           error:
             "Company name, contact person, email, contact number and GST / Tax Number are required.",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (!isValidEmail(email)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Please enter a valid email address.",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (!isValidInternationalPhone(phone)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "Please enter the contact number with country code, for example +91 98765 43210.",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (isIndia(country) && !isValidIndianGst(gst_number)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Please enter a valid 15-character Indian GSTIN.",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (!isValidWebsite(website)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Please enter a valid website URL.",
         },
         { status: 400 }
       );
@@ -73,16 +152,16 @@ export async function POST(request: Request) {
         `
       )
       .bind(
-        company_name.trim(),
-        contact_person.trim(),
-        email.trim().toLowerCase(),
-        phone.trim(),
-        address?.trim() || null,
-        city?.trim() || null,
-        state?.trim() || null,
-        country?.trim() || null,
-        gst_number.trim(),
-        website?.trim() || null
+        company_name,
+        contact_person,
+        email,
+        phone,
+        address || null,
+        city || null,
+        state || null,
+        country || null,
+        gst_number,
+        website || null
       )
       .run();
 
