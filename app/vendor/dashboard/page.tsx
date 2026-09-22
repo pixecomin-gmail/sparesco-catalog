@@ -1,13 +1,26 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import "./dashboard.css";
+
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+
+type Tab = "enquiries" | "products" | "add" | "profile";
 
 type Vendor = {
   id: number;
   company_name: string;
   contact_person: string;
   email: string;
+  phone?: string | null;
+  gst_no?: string | null;
+  address?: string | null;
+  city?: string | null;
+  state?: string | null;
+  country?: string | null;
+  pincode?: string | null;
+  website?: string | null;
+  status?: string | null;
   product_limit: number;
   products_submitted: number;
 };
@@ -18,6 +31,7 @@ type VendorProduct = {
   part_number: string;
   brand: string;
   category: string;
+  description?: string | null;
   price: string | null;
   currency: string | null;
   stock_status: string | null;
@@ -41,6 +55,32 @@ type VendorEnquiry = {
   responded_at: string | null;
 };
 
+type VendorQuote = {
+  id: number;
+  quoted_quantity: string | number | null;
+  unit_price: string | number | null;
+  currency: string | null;
+  total_price: string | number | null;
+  stock_available: string | null;
+  lead_time: string | null;
+  moq: string | number | null;
+  condition: string | null;
+  manufacturer_brand: string | null;
+  country_of_origin: string | null;
+  quote_validity: string | null;
+  shipping_included: string | null;
+  taxes_included: string | null;
+  vendor_remarks: string | null;
+  admin_status: string | null;
+  submitted_at: string | null;
+  updated_at: string | null;
+};
+
+type EnquiryDetail = {
+  enquiry: VendorEnquiry;
+  quote: VendorQuote | null;
+};
+
 export default function VendorDashboardPage() {
   const router = useRouter();
 
@@ -48,6 +88,18 @@ export default function VendorDashboardPage() {
   const [products, setProducts] = useState<VendorProduct[]>([]);
   const [enquiries, setEnquiries] = useState<VendorEnquiry[]>([]);
   const [loading, setLoading] = useState(true);
+
+  const [activeTab, setActiveTab] = useState<Tab>("enquiries");
+  const [search, setSearch] = useState("");
+
+  const [openEnquiry, setOpenEnquiry] = useState<number | null>(null);
+  const [openProduct, setOpenProduct] = useState<number | null>(null);
+
+  const [enquiryDetails, setEnquiryDetails] = useState<
+    Record<number, EnquiryDetail>
+  >({});
+
+  const [detailLoading, setDetailLoading] = useState<number | null>(null);
 
   useEffect(() => {
     const checkSession = async () => {
@@ -97,10 +149,128 @@ export default function VendorDashboardPage() {
     checkSession();
   }, [router]);
 
+  async function toggleEnquiry(enquiryId: number) {
+    if (openEnquiry === enquiryId) {
+      setOpenEnquiry(null);
+      return;
+    }
+
+    setOpenEnquiry(enquiryId);
+
+    if (enquiryDetails[enquiryId]) {
+      return;
+    }
+
+    try {
+      setDetailLoading(enquiryId);
+
+      const response = await fetch(`/api/vendor/enquiries/${enquiryId}`, {
+        method: "GET",
+        cache: "no-store",
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setEnquiryDetails((current) => ({
+          ...current,
+          [enquiryId]: {
+            enquiry: data.enquiry,
+            quote: data.quote || null,
+          },
+        }));
+
+        setEnquiries((current) =>
+          current.map((item) =>
+            item.id === enquiryId
+              ? {
+                  ...item,
+                  vendor_status: data.enquiry.vendor_status,
+                  viewed_at: data.enquiry.viewed_at,
+                }
+              : item
+          )
+        );
+      }
+    } catch (error) {
+      console.error("Unable to load enquiry details:", error);
+    } finally {
+      setDetailLoading(null);
+    }
+  }
+
+  const filteredEnquiries = useMemo(() => {
+    const query = normalizeSearch(search);
+
+    if (!query) {
+      return enquiries;
+    }
+
+    return enquiries.filter((enquiry) => {
+      const quote = enquiryDetails[enquiry.id]?.quote;
+
+      const values = [
+        enquiry.product_name,
+        enquiry.part_number,
+        enquiry.product_handle,
+        enquiry.quantity,
+        enquiry.enquiry_status,
+        enquiry.vendor_status,
+        quote?.quoted_quantity,
+        quote?.unit_price,
+        quote?.currency,
+        quote?.total_price,
+        quote?.stock_available,
+        quote?.lead_time,
+        quote?.moq,
+        quote?.condition,
+        quote?.manufacturer_brand,
+        quote?.country_of_origin,
+        quote?.quote_validity,
+        quote?.shipping_included,
+        quote?.taxes_included,
+        quote?.vendor_remarks,
+        quote?.admin_status,
+      ];
+
+      return values.some((value) =>
+        normalizeSearch(value).includes(query)
+      );
+    });
+  }, [enquiries, enquiryDetails, search]);
+
+  const filteredProducts = useMemo(() => {
+    const query = normalizeSearch(search);
+
+    if (!query) {
+      return products;
+    }
+
+    return products.filter((product) => {
+      const values = [
+        product.product_name,
+        product.part_number,
+        product.brand,
+        product.category,
+        product.description,
+        product.price,
+        product.currency,
+        product.stock_status,
+        product.lead_time,
+        product.status,
+        product.admin_notes,
+      ];
+
+      return values.some((value) =>
+        normalizeSearch(value).includes(query)
+      );
+    });
+  }, [products, search]);
+
   if (loading) {
     return (
-      <main style={{ padding: "60px 24px" }}>
-        <p>Loading vendor dashboard...</p>
+      <main className="vendor-dashboard">
+        <p className="vendor-loading">Loading vendor portal...</p>
       </main>
     );
   }
@@ -109,481 +279,801 @@ export default function VendorDashboardPage() {
     return null;
   }
 
-  const remainingProducts =
-    vendor.product_limit - vendor.products_submitted;
+  const remainingProducts = Math.max(
+    vendor.product_limit - vendor.products_submitted,
+    0
+  );
+
+  const capacityPercent =
+    vendor.product_limit > 0
+      ? Math.min(
+          (vendor.products_submitted / vendor.product_limit) * 100,
+          100
+        )
+      : 0;
+
+  const showSearch =
+    activeTab === "enquiries" || activeTab === "products";
+
+  function changeTab(tab: Tab) {
+    setActiveTab(tab);
+    setSearch("");
+  }
 
   return (
-    <main
-      style={{
-        maxWidth: "1180px",
-        margin: "0 auto",
-        padding: "60px 24px",
-      }}
-    >
-      <div style={{ marginBottom: "40px" }}>
-        <span
-          style={{
-            color: "#2a8392",
-            fontWeight: 700,
-            fontSize: "13px",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-          }}
-        >
-          Sparesco Vendor Portal
-        </span>
+    <main className="vendor-dashboard">
+      <header className="vendor-portal-header">
+        <span className="vendor-eyebrow">Sparesco Vendor Portal</span>
 
-        <h1
-          style={{
-            color: "#173f4c",
-            fontSize: "42px",
-            margin: "12px 0 8px",
-          }}
-        >
-          Welcome, {vendor.company_name}
-        </h1>
+        <h1>Welcome, {vendor.company_name}</h1>
 
-        <p
-          style={{
-            color: "#63767c",
-            margin: 0,
-          }}
-        >
-          Signed in as {vendor.email}
-        </p>
-      </div>
+        <p>Signed in as {vendor.email}</p>
+      </header>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "20px",
-          marginBottom: "40px",
-        }}
-      >
-        <div
-          style={{
-            background: "#fff",
-            border: "1px solid #e1e6e4",
-            borderRadius: "16px",
-            padding: "24px",
-          }}
-        >
-          <p
-            style={{
-              margin: 0,
-              color: "#758388",
-              fontSize: "13px",
-            }}
-          >
-            Product Limit
-          </p>
-
-          <strong
-            style={{
-              display: "block",
-              marginTop: "8px",
-              fontSize: "32px",
-              color: "#173f4c",
-            }}
-          >
-            {vendor.product_limit}
-          </strong>
-        </div>
-
-        <div
-          style={{
-            background: "#fff",
-            border: "1px solid #e1e6e4",
-            borderRadius: "16px",
-            padding: "24px",
-          }}
-        >
-          <p
-            style={{
-              margin: 0,
-              color: "#758388",
-              fontSize: "13px",
-            }}
-          >
-            Products Submitted
-          </p>
-
-          <strong
-            style={{
-              display: "block",
-              marginTop: "8px",
-              fontSize: "32px",
-              color: "#173f4c",
-            }}
-          >
-            {vendor.products_submitted}
-          </strong>
-        </div>
-
-        <div
-          style={{
-            background: "#fff",
-            border: "1px solid #e1e6e4",
-            borderRadius: "16px",
-            padding: "24px",
-          }}
-        >
-          <p
-            style={{
-              margin: 0,
-              color: "#758388",
-              fontSize: "13px",
-            }}
-          >
-            Remaining Slots
-          </p>
-
-          <strong
-            style={{
-              display: "block",
-              marginTop: "8px",
-              fontSize: "32px",
-              color: "#173f4c",
-            }}
-          >
-            {remainingProducts}
-          </strong>
-        </div>
-      </div>
-
-      <section
-        style={{
-          background: "#ffffff",
-          border: "1px solid #e1e6e4",
-          borderRadius: "18px",
-          padding: "28px",
-        }}
-      >
-        <h2
-          style={{
-            color: "#173f4c",
-            marginTop: 0,
-          }}
-        >
-          Vendor Actions
-        </h2>
-
-        <p
-          style={{
-            color: "#68797f",
-            marginBottom: "24px",
-          }}
-        >
-          Submit products, view enquiries and send quotations.
-        </p>
-
-        <div
-          style={{
-            display: "flex",
-            gap: "12px",
-            flexWrap: "wrap",
-          }}
-        >
-          <button
-            type="button"
-            onClick={() =>
-              router.push("/vendor/products/new")
-            }
-            disabled={remainingProducts <= 0}
-            style={{
-              border: 0,
-              borderRadius: "10px",
-              background: "#173f4c",
-              color: "#ffffff",
-              padding: "12px 20px",
-              fontWeight: 700,
-              cursor:
-                remainingProducts > 0
-                  ? "pointer"
-                  : "not-allowed",
-              opacity:
-                remainingProducts > 0 ? 1 : 0.5,
-            }}
-          >
-            Add Product
-          </button>
-        </div>
-
-        {remainingProducts <= 0 && (
-          <p
-            style={{
-              marginTop: "16px",
-              marginBottom: 0,
-              color: "#a23c35",
-              fontSize: "13px",
-            }}
-          >
-            You have reached your current product submission limit.
-          </p>
-        )}
-      </section>
-
-      <section
-        style={{
-          background: "#ffffff",
-          border: "1px solid #e1e6e4",
-          borderRadius: "18px",
-          padding: "28px",
-          marginTop: "30px",
-        }}
-      >
-        <h2
-          style={{
-            color: "#173f4c",
-            marginTop: 0,
-            marginBottom: "8px",
-          }}
-        >
-          My Products
-        </h2>
-
-        <p
-          style={{
-            color: "#68797f",
-            marginTop: 0,
-            marginBottom: "24px",
-          }}
-        >
-          Track the approval status of the products you have submitted.
-        </p>
-
-        {products.length === 0 ? (
-          <p
-            style={{
-              color: "#758388",
-              marginBottom: 0,
-            }}
-          >
-            You have not submitted any products yet.
-          </p>
-        ) : (
-          <div style={{ overflowX: "auto" }}>
-            <table
-              style={{
-                width: "100%",
-                borderCollapse: "collapse",
-                minWidth: "750px",
-              }}
-            >
-              <thead>
-                <tr
-                  style={{
-                    borderBottom: "1px solid #e1e6e4",
-                    textAlign: "left",
-                  }}
-                >
-                  <th style={{ padding: "12px 10px" }}>Product</th>
-                  <th style={{ padding: "12px 10px" }}>Part Number</th>
-                  <th style={{ padding: "12px 10px" }}>Brand</th>
-                  <th style={{ padding: "12px 10px" }}>Category</th>
-                  <th style={{ padding: "12px 10px" }}>Submitted</th>
-                  <th style={{ padding: "12px 10px" }}>Status</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                {products.map((product) => {
-                  const statusLabel =
-                    product.status === "pending"
-                      ? "Under Review"
-                      : product.status === "approved"
-                        ? "Approved"
-                        : "Rejected";
-
-                  return (
-                    <tr
-                      key={product.id}
-                      style={{
-                        borderBottom: "1px solid #eef1f0",
-                      }}
-                    >
-                      <td
-                        style={{
-                          padding: "14px 10px",
-                          fontWeight: 700,
-                          color: "#173f4c",
-                        }}
-                      >
-                        {product.product_name}
-                      </td>
-
-                      <td style={{ padding: "14px 10px" }}>
-                        {product.part_number}
-                      </td>
-
-                      <td style={{ padding: "14px 10px" }}>
-                        {product.brand}
-                      </td>
-
-                      <td style={{ padding: "14px 10px" }}>
-                        {product.category}
-                      </td>
-
-                      <td style={{ padding: "14px 10px" }}>
-                        {new Date(product.created_at).toLocaleDateString()}
-                      </td>
-
-                      <td style={{ padding: "14px 10px" }}>
-                        <strong
-                          style={{
-                            color:
-                              product.status === "approved"
-                                ? "#26734d"
-                                : product.status === "rejected"
-                                  ? "#a23c35"
-                                  : "#9a6b00",
-                          }}
-                        >
-                          {statusLabel}
-                        </strong>
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </section>
-      <section
-        style={{
-          background: "#ffffff",
-          border: "1px solid #e1e6e4",
-          borderRadius: "18px",
-          padding: "28px",
-          marginTop: "30px",
-        }}
-      >
-        <h2
-          style={{
-            color: "#173f4c",
-            marginTop: 0,
-            marginBottom: "8px",
-          }}
+      <nav className="vendor-tabs" aria-label="Vendor portal">
+        <TabButton
+          active={activeTab === "enquiries"}
+          onClick={() => changeTab("enquiries")}
         >
           My Enquiries
-        </h2>
+        </TabButton>
 
-        <p
-          style={{
-            color: "#68797f",
-            marginTop: 0,
-            marginBottom: "24px",
-          }}
+        <TabButton
+          active={activeTab === "products"}
+          onClick={() => changeTab("products")}
         >
-          View customer enquiries matched to your approved products.
-        </p>
+          My Products
+        </TabButton>
 
-        {enquiries.length === 0 ? (
-          <p
-            style={{
-              color: "#758388",
-              marginBottom: 0,
-            }}
-          >
-            No enquiries have been assigned to you yet.
-          </p>
-        ) : (
-          <div style={{ overflowX: "auto" }}>
-            <table
-              style={{
-                width: "100%",
-                borderCollapse: "collapse",
-                minWidth: "900px",
-              }}
-            >
-              <thead>
-                <tr
-                  style={{
-                    borderBottom: "1px solid #e1e6e4",
-                    textAlign: "left",
-                  }}
-                >
-                  <th style={{ padding: "12px 10px" }}>Product</th>
-                  <th style={{ padding: "12px 10px" }}>Part Number</th>
-                  <th style={{ padding: "12px 10px" }}>Quantity</th>
-                  <th style={{ padding: "12px 10px" }}>Received</th>
-                  <th style={{ padding: "12px 10px" }}>Status</th>
-                  <th style={{ padding: "12px 10px" }}>Action</th>
-                </tr>
-              </thead>
+        <TabButton
+          active={activeTab === "add"}
+          onClick={() => changeTab("add")}
+        >
+          Add Product
+        </TabButton>
 
-              <tbody>
-                {enquiries.map((enquiry) => (
-                  <tr
+        <TabButton
+          active={activeTab === "profile"}
+          onClick={() => changeTab("profile")}
+        >
+          Profile
+        </TabButton>
+      </nav>
+
+      {showSearch && (
+        <div className="vendor-search">
+          <span className="vendor-search-icon" aria-hidden="true">
+            ⌕
+          </span>
+
+          <input
+            type="search"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+            placeholder={
+              activeTab === "enquiries"
+                ? "Search enquiries and quotations..."
+                : "Search your products..."
+            }
+          />
+
+          {search && (
+            <button type="button" onClick={() => setSearch("")}>
+              Clear
+            </button>
+          )}
+        </div>
+      )}
+
+      {activeTab === "enquiries" && (
+        <section>
+          <SectionHeading
+            title="My Enquiries"
+            description="View enquiries matched to your approved products and manage quotations."
+          />
+
+          {filteredEnquiries.length === 0 ? (
+            <EmptyState>
+              {search
+                ? "No enquiries match your search."
+                : "No enquiries have been assigned to you yet."}
+            </EmptyState>
+          ) : (
+            <div className="vendor-accordion-list">
+              {filteredEnquiries.map((enquiry) => {
+                const isOpen = openEnquiry === enquiry.id;
+                const detail = enquiryDetails[enquiry.id];
+                const quote = detail?.quote || null;
+
+                const responded =
+                  enquiry.vendor_status === "responded" ||
+                  Boolean(enquiry.responded_at) ||
+                  Boolean(quote);
+
+                return (
+                  <article
                     key={enquiry.id}
-                    style={{
-                      borderBottom: "1px solid #eef1f0",
-                    }}
+                    className={`vendor-accordion ${
+                      isOpen ? "is-open" : ""
+                    }`}
                   >
-                    <td
-                      style={{
-                        padding: "14px 10px",
-                        fontWeight: 700,
-                        color: "#173f4c",
-                      }}
+                    <button
+                      type="button"
+                      className="vendor-accordion-header"
+                      onClick={() => toggleEnquiry(enquiry.id)}
+                      aria-expanded={isOpen}
                     >
-                      {enquiry.product_name || "-"}
-                    </td>
+                      <div className="vendor-accordion-primary">
+                        <strong>
+                          {enquiry.product_name || "Product Enquiry"}
+                        </strong>
 
-                    <td style={{ padding: "14px 10px" }}>
-                      {enquiry.part_number || "-"}
-                    </td>
+                        <span>
+                          Part No. {enquiry.part_number || "—"}
+                        </span>
+                      </div>
 
-                    <td style={{ padding: "14px 10px" }}>
-                      {enquiry.quantity || "-"}
-                    </td>
+                      <div className="vendor-accordion-meta">
+                        <span>
+                          Qty{" "}
+                          <strong>
+                            {enquiry.quantity || "—"}
+                          </strong>
+                        </span>
 
-                    <td style={{ padding: "14px 10px" }}>
-                      {new Date(enquiry.created_at).toLocaleDateString()}
-                    </td>
+                        <StatusBadge
+                          status={responded ? "success" : "warning"}
+                        >
+                          {responded ? "Responded" : "New"}
+                        </StatusBadge>
 
-                    <td style={{ padding: "14px 10px" }}>
-                      <strong
-                        style={{
-                          color:
-                            enquiry.vendor_status === "responded"
-                              ? "#26734d"
-                              : "#9a6b00",
-                        }}
-                      >
-                        {enquiry.vendor_status === "responded"
-                          ? "Responded"
-                          : "New"}
-                      </strong>
-                    </td>
+                        <span className="vendor-chevron" aria-hidden="true">
+                          {isOpen ? "▲" : "▼"}
+                        </span>
+                      </div>
+                    </button>
 
-                    <td style={{ padding: "14px 10px" }}>
-                      <button
-                        type="button"
-                        onClick={() => router.push(`/vendor/enquiries/${enquiry.id}`)}
-                        style={{
-                          padding: "9px 14px",
-                          borderRadius: "8px",
-                          border: "none",
-                          background: "#173f4c",
-                          color: "#ffffff",
-                          fontWeight: 700,
-                          cursor: "pointer",
-                          whiteSpace: "nowrap",
-                        }}
-                      >
-                        View Enquiry
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                    {isOpen && (
+                      <div className="vendor-accordion-body">
+                        {detailLoading === enquiry.id && !detail ? (
+                          <p className="vendor-muted">
+                            Loading enquiry...
+                          </p>
+                        ) : (
+                          <>
+                            <div className="vendor-detail-grid">
+                              <Detail
+                                label="Product"
+                                value={enquiry.product_name}
+                              />
+
+                              <Detail
+                                label="Part Number"
+                                value={enquiry.part_number}
+                              />
+
+                              <Detail
+                                label="Quantity"
+                                value={enquiry.quantity}
+                              />
+
+                              <Detail
+                                label="Received"
+                                value={formatDate(enquiry.created_at)}
+                              />
+                            </div>
+
+                            <div className="vendor-divider" />
+
+                            {quote ? (
+                              <div>
+                                <div className="vendor-section-row">
+                                  <div>
+                                    <span className="vendor-mini-heading">
+                                      Quotation
+                                    </span>
+
+                                    <h3 className="vendor-quotation-heading">
+                                      Quotation Submitted
+                                    </h3>
+                                  </div>
+
+                                  <StatusBadge status="success">
+                                    Submitted
+                                  </StatusBadge>
+                                </div>
+
+                                <div className="vendor-detail-grid">
+                                  <Detail
+                                    label="Quoted Quantity"
+                                    value={quote.quoted_quantity}
+                                  />
+
+                                  <Detail
+                                    label="Unit Price"
+                                    value={formatMoney(
+                                      quote.unit_price,
+                                      quote.currency
+                                    )}
+                                  />
+
+                                  <Detail
+                                    label="Total Price"
+                                    value={formatMoney(
+                                      quote.total_price,
+                                      quote.currency
+                                    )}
+                                  />
+
+                                  <Detail
+                                    label="Stock Available"
+                                    value={quote.stock_available}
+                                  />
+
+                                  <Detail
+                                    label="Lead Time"
+                                    value={quote.lead_time}
+                                  />
+
+                                  <Detail label="MOQ" value={quote.moq} />
+
+                                  <Detail
+                                    label="Condition"
+                                    value={quote.condition}
+                                  />
+
+                                  <Detail
+                                    label="Manufacturer / Brand"
+                                    value={quote.manufacturer_brand}
+                                  />
+
+                                  <Detail
+                                    label="Country of Origin"
+                                    value={quote.country_of_origin}
+                                  />
+
+                                  <Detail
+                                    label="Quote Validity"
+                                    value={quote.quote_validity}
+                                  />
+
+                                  <Detail
+                                    label="Shipping Included"
+                                    value={quote.shipping_included}
+                                  />
+
+                                  <Detail
+                                    label="Taxes Included"
+                                    value={quote.taxes_included}
+                                  />
+
+                                  <Detail
+                                    label="Submitted"
+                                    value={formatDateTime(
+                                      quote.submitted_at
+                                    )}
+                                  />
+
+                                  <Detail
+                                    label="Quotation Status"
+                                    value={quote.admin_status || "Pending"}
+                                  />
+                                </div>
+
+                                {quote.vendor_remarks && (
+                                  <div className="vendor-remarks">
+                                    <span className="vendor-detail-label">
+                                      Remarks
+                                    </span>
+
+                                    <p>{quote.vendor_remarks}</p>
+                                  </div>
+                                )}
+                              </div>
+                            ) : (
+                              <div className="vendor-section-row">
+                                <div>
+                                  <span className="vendor-mini-heading">
+                                    Quotation
+                                  </span>
+
+                                  <h3 className="vendor-quotation-heading">
+                                    Not submitted
+                                  </h3>
+
+                                  <p className="vendor-muted vendor-no-quote-text">
+                                    Submit your quotation for this enquiry.
+                                  </p>
+                                </div>
+
+                                <button
+                                  type="button"
+                                  className="vendor-primary-button"
+                                  onClick={() =>
+                                    router.push(
+                                      `/vendor/enquiries/${enquiry.id}`
+                                    )
+                                  }
+                                >
+                                  Add Quotation
+                                </button>
+                              </div>
+                            )}
+                          </>
+                        )}
+                      </div>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      )}
+
+      {activeTab === "products" && (
+        <section>
+          <SectionHeading
+            title="My Products"
+            description="View your submitted products and their approval status."
+          />
+
+          {filteredProducts.length === 0 ? (
+            <EmptyState>
+              {search
+                ? "No products match your search."
+                : "You have not submitted any products yet."}
+            </EmptyState>
+          ) : (
+            <div className="vendor-accordion-list">
+              {filteredProducts.map((product) => {
+                const isOpen = openProduct === product.id;
+
+                const statusLabel =
+                  product.status === "pending"
+                    ? "Under Review"
+                    : product.status === "approved"
+                      ? "Approved"
+                      : "Rejected";
+
+                const statusType =
+                  product.status === "approved"
+                    ? "success"
+                    : product.status === "rejected"
+                      ? "danger"
+                      : "warning";
+
+                return (
+                  <article
+                    key={product.id}
+                    className={`vendor-accordion ${
+                      isOpen ? "is-open" : ""
+                    }`}
+                  >
+                    <button
+                      type="button"
+                      className="vendor-accordion-header"
+                      onClick={() =>
+                        setOpenProduct(isOpen ? null : product.id)
+                      }
+                      aria-expanded={isOpen}
+                    >
+                      <div className="vendor-accordion-primary">
+                        <strong>
+                          {product.product_name || "Product"}
+                        </strong>
+
+                        <span>
+                          Part No. {product.part_number || "—"}
+                        </span>
+                      </div>
+
+                      <div className="vendor-accordion-meta">
+                        <span>{product.brand || "No brand"}</span>
+
+                        <StatusBadge status={statusType}>
+                          {statusLabel}
+                        </StatusBadge>
+
+                        <span className="vendor-chevron" aria-hidden="true">
+                          {isOpen ? "▲" : "▼"}
+                        </span>
+                      </div>
+                    </button>
+
+                    {isOpen && (
+                      <div className="vendor-accordion-body">
+                        <div className="vendor-detail-grid">
+                          <Detail
+                            label="Product Name"
+                            value={product.product_name}
+                          />
+
+                          <Detail
+                            label="Part Number"
+                            value={product.part_number}
+                          />
+
+                          <Detail
+                            label="Brand"
+                            value={product.brand}
+                          />
+
+                          <Detail
+                            label="Category"
+                            value={product.category}
+                          />
+
+                          <Detail
+                            label="Price"
+                            value={formatMoney(
+                              product.price,
+                              product.currency
+                            )}
+                          />
+
+                          <Detail
+                            label="Stock Status"
+                            value={product.stock_status}
+                          />
+
+                          <Detail
+                            label="Lead Time"
+                            value={product.lead_time}
+                          />
+
+                          <Detail
+                            label="Submitted"
+                            value={formatDate(product.created_at)}
+                          />
+
+                          <Detail
+                            label="Approval Status"
+                            value={statusLabel}
+                          />
+                        </div>
+
+                        {product.description && (
+                          <div className="vendor-remarks">
+                            <span className="vendor-detail-label">
+                              Description
+                            </span>
+
+                            <p>{product.description}</p>
+                          </div>
+                        )}
+
+                        {product.admin_notes && (
+                          <div className="vendor-remarks">
+                            <span className="vendor-detail-label">
+                              Admin Notes
+                            </span>
+
+                            <p>{product.admin_notes}</p>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      )}
+
+      {activeTab === "add" && (
+        <section>
+          <SectionHeading
+            title="Add Product"
+            description="Submit a new product for admin review."
+          />
+
+          <div className="vendor-capacity-card">
+            <div className="vendor-capacity-top">
+              <div>
+                <span className="vendor-mini-heading">
+                  Product Capacity
+                </span>
+
+                <p>
+                  <strong>
+                    {vendor.products_submitted} of {vendor.product_limit}
+                  </strong>{" "}
+                  products submitted
+                </p>
+              </div>
+
+              <strong className="vendor-slots">
+                {remainingProducts}{" "}
+                <span>
+                  {remainingProducts === 1 ? "slot" : "slots"} left
+                </span>
+              </strong>
+            </div>
+
+            <div
+              className="vendor-progress-track"
+              role="progressbar"
+              aria-valuemin={0}
+              aria-valuemax={vendor.product_limit}
+              aria-valuenow={vendor.products_submitted}
+            >
+              <div
+                className="vendor-progress-fill"
+                style={{ width: `${capacityPercent}%` }}
+              />
+            </div>
           </div>
-        )}
-      </section>
+
+          <div className="vendor-add-product-card">
+            <h3>Submit a Product</h3>
+
+            <p>
+              Add product details for review. Once approved, the product
+              can be matched with relevant customer enquiries.
+            </p>
+
+            <button
+              type="button"
+              className="vendor-primary-button"
+              onClick={() => router.push("/vendor/products/new")}
+              disabled={remainingProducts <= 0}
+            >
+              Add Product
+            </button>
+
+            {remainingProducts <= 0 && (
+              <p className="vendor-limit-warning">
+                You have reached your current product submission limit.
+              </p>
+            )}
+          </div>
+        </section>
+      )}
+
+      {activeTab === "profile" && (
+        <section>
+          <SectionHeading
+            title="Profile"
+            description="Registration details associated with your vendor account."
+          />
+
+          <div className="vendor-profile-card">
+            <div className="vendor-profile-section">
+              <span className="vendor-mini-heading">
+                Company Details
+              </span>
+
+              <div className="vendor-profile-grid">
+                <Detail
+                  label="Company Name"
+                  value={vendor.company_name}
+                />
+
+                <Detail
+                  label="Contact Person"
+                  value={vendor.contact_person}
+                />
+
+                <Detail label="Email" value={vendor.email} />
+
+                <Detail label="Phone" value={vendor.phone} />
+
+                <Detail
+                  label="GST Number"
+                  value={vendor.gst_no}
+                />
+
+                <Detail
+                  label="Website"
+                  value={vendor.website}
+                />
+              </div>
+            </div>
+
+            <div className="vendor-divider" />
+
+            <div className="vendor-profile-section">
+              <span className="vendor-mini-heading">Address</span>
+
+              <div className="vendor-profile-grid">
+                <Detail
+                  label="Address"
+                  value={vendor.address}
+                />
+
+                <Detail label="City" value={vendor.city} />
+
+                <Detail label="State" value={vendor.state} />
+
+                <Detail
+                  label="Country"
+                  value={vendor.country}
+                />
+
+                <Detail
+                  label="Pincode"
+                  value={vendor.pincode}
+                />
+              </div>
+            </div>
+
+            <div className="vendor-divider" />
+
+            <div className="vendor-profile-section">
+              <span className="vendor-mini-heading">Account</span>
+
+              <div className="vendor-profile-grid">
+                <Detail
+                  label="Vendor Status"
+                  value={
+                    vendor.status
+                      ? capitalize(vendor.status)
+                      : "Approved"
+                  }
+                />
+              </div>
+            </div>
+
+            <p className="vendor-profile-note">
+              Profile information is currently view-only.
+            </p>
+          </div>
+        </section>
+      )}
     </main>
   );
+}
+
+function TabButton({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      className={`vendor-tab ${active ? "is-active" : ""}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+}
+
+function SectionHeading({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="vendor-section-heading">
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </div>
+  );
+}
+
+function Detail({
+  label,
+  value,
+}: {
+  label: string;
+  value: unknown;
+}) {
+  const displayValue =
+    value === null ||
+    value === undefined ||
+    String(value).trim() === ""
+      ? "—"
+      : String(value);
+
+  return (
+    <div className="vendor-detail">
+      <span className="vendor-detail-label">{label}</span>
+      <span className="vendor-detail-value">{displayValue}</span>
+    </div>
+  );
+}
+
+function StatusBadge({
+  status,
+  children,
+}: {
+  status: "success" | "warning" | "danger";
+  children: React.ReactNode;
+}) {
+  return (
+    <span className={`vendor-status vendor-status-${status}`}>
+      {children}
+    </span>
+  );
+}
+
+function EmptyState({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div className="vendor-empty-state">{children}</div>;
+}
+
+function normalizeSearch(value: unknown) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replace(/[\s-]+/g, "")
+    .trim();
+}
+
+function formatDate(value: string | null | undefined) {
+  if (!value) {
+    return "—";
+  }
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleDateString();
+}
+
+function formatDateTime(value: string | null | undefined) {
+  if (!value) {
+    return "—";
+  }
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleString();
+}
+
+function formatMoney(
+  value: string | number | null | undefined,
+  currency: string | null | undefined
+) {
+  if (
+    value === null ||
+    value === undefined ||
+    String(value).trim() === ""
+  ) {
+    return "—";
+  }
+
+  const code = currency || "INR";
+  const amount = Number(value);
+
+  if (!Number.isFinite(amount)) {
+    return `${code} ${value}`;
+  }
+
+  try {
+    return new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: code,
+      maximumFractionDigits: 2,
+    }).format(amount);
+  } catch {
+    return `${code} ${amount}`;
+  }
+}
+
+function capitalize(value: string) {
+  if (!value) {
+    return value;
+  }
+
+  return value.charAt(0).toUpperCase() + value.slice(1);
 }
