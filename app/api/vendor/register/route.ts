@@ -130,6 +130,71 @@ export async function POST(request: Request) {
       );
     }
 
+    /*
+ * Prevent duplicate accounts using the same email address.
+ * Different people from the same company may register separately.
+ */
+    const existingVendor = await db
+      .prepare(
+        `
+    SELECT
+      id,
+      email,
+      status
+    FROM vendors
+    WHERE LOWER(TRIM(email)) = ?
+    LIMIT 1
+    `
+      )
+      .bind(email)
+      .first();
+
+    if (existingVendor) {
+      const status = clean(existingVendor.status).toLowerCase();
+
+      if (status === "approved") {
+        return NextResponse.json(
+          {
+            success: false,
+            error:
+              "A vendor account already exists with this email address. Please log in to your vendor account.",
+          },
+          { status: 409 }
+        );
+      }
+
+      if (status === "pending") {
+        return NextResponse.json(
+          {
+            success: false,
+            error:
+              "A vendor registration with this email address is already pending approval.",
+          },
+          { status: 409 }
+        );
+      }
+
+      if (status === "rejected") {
+        return NextResponse.json(
+          {
+            success: false,
+            error:
+              "A previous vendor registration already exists with this email address. Please contact Sparesco for assistance.",
+          },
+          { status: 409 }
+        );
+      }
+
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "A vendor account already exists with this email address.",
+        },
+        { status: 409 }
+      );
+    }
+
     const result = await db
       .prepare(
         `

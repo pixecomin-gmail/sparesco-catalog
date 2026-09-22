@@ -288,3 +288,23 @@
 .vendor-phone-input .PhoneInputCountrySelect {
   cursor: pointer;
 }
+
+.vendor-register-login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: #68797f;
+  font-size: 13px;
+}
+
+.vendor-register-login a {
+  color: #2a8392;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.vendor-register-login a:hover {
+  text-decoration: underline;
+}

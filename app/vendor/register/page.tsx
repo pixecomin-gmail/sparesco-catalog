@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import "./vendor-register.css";
@@ -185,6 +186,14 @@ export default function VendorRegisterPage() {
                 you can add your first 10 products.
               </p>
             </div>
+
+            <div className="vendor-register-login">
+              <span>Already registered?</span>
+
+              <Link href="/vendor/login">
+                Log in to Vendor Portal
+              </Link>
+            </div>
           </div>
         </header>
 
@@ -246,24 +255,24 @@ export default function VendorRegisterPage() {
               />
             </div>
 
-           <div className="vendor-field vendor-phone-field">
-            <label>
-              Contact Number <span>*</span>
-            </label>
+            <div className="vendor-field vendor-phone-field">
+              <label>
+                Contact Number <span>*</span>
+              </label>
 
-            <PhoneInput
-              international
-              defaultCountry="IN"
-              value={form.phone || undefined}
-              onChange={(value) =>
-                updateField("phone", value || "")
-              }
-              placeholder="Phone number"
-              className="vendor-phone-input"
-            />
+              <PhoneInput
+                international
+                defaultCountry="IN"
+                value={form.phone || undefined}
+                onChange={(value) =>
+                  updateField("phone", value || "")
+                }
+                placeholder="Phone number"
+                className="vendor-phone-input"
+              />
 
-            <small>Select the country code and enter the contact number.</small>
-          </div>
+              <small>Select the country code and enter the contact number.</small>
+            </div>
 
             <div className="vendor-field">
               <label htmlFor="vendor-gst">

@@ -91,6 +91,7 @@ export default function VendorDashboardPage() {
   const [products, setProducts] = useState<VendorProduct[]>([]);
   const [enquiries, setEnquiries] = useState<VendorEnquiry[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loggingOut, setLoggingOut] = useState(false);
 
   const [activeTab, setActiveTab] = useState<Tab>("enquiries");
   const [search, setSearch] = useState("");
@@ -191,6 +192,25 @@ export default function VendorDashboardPage() {
 
     checkSession();
   }, [router]);
+
+  async function logoutVendor() {
+    if (loggingOut) {
+      return;
+    }
+
+    setLoggingOut(true);
+
+    try {
+      await fetch("/api/vendor/session", {
+        method: "DELETE",
+      });
+    } catch (error) {
+      console.error("Vendor logout error:", error);
+    } finally {
+      router.replace("/vendor/login");
+      router.refresh();
+    }
+  }
 
   async function toggleEnquiry(enquiryId: number) {
     if (openEnquiry === enquiryId) {
@@ -521,11 +541,26 @@ export default function VendorDashboardPage() {
   return (
     <main className="vendor-dashboard">
       <header className="vendor-portal-header">
-        <span className="vendor-eyebrow">Sparesco Vendor Portal</span>
+        <div className="vendor-portal-header-row">
+          <div>
+            <span className="vendor-eyebrow">
+              Sparesco Vendor Portal
+            </span>
 
-        <h1>Welcome, {vendor.company_name}</h1>
+            <h1>Welcome, {vendor.company_name}</h1>
 
-        <p>Signed in as {vendor.email}</p>
+            <p>Signed in as {vendor.email}</p>
+          </div>
+
+          <button
+            type="button"
+            className="vendor-logout-button"
+            onClick={logoutVendor}
+            disabled={loggingOut}
+          >
+            {loggingOut ? "Logging out..." : "Logout"}
+          </button>
+        </div>
       </header>
 
       <nav className="vendor-tabs" aria-label="Vendor portal">

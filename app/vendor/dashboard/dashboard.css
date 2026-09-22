@@ -31,6 +31,41 @@
   color: #63767c;
 }
 
+.vendor-portal-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.vendor-logout-button {
+  flex: 0 0 auto;
+  margin-top: 4px;
+  padding: 9px 15px;
+  border: 1px solid #d7dfdd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #173f4c;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.vendor-logout-button:hover:not(:disabled) {
+  border-color: #2a8392;
+  background: #f7faf9;
+}
+
+.vendor-logout-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 /* Tabs */
 
 .vendor-tabs {
@@ -115,7 +150,7 @@
   color: #9aa7ab;
 }
 
-.vendor-search > button {
+.vendor-search>button {
   padding: 5px;
   border: 0;
   background: transparent;
@@ -197,14 +232,14 @@
   gap: 4px;
 }
 
-.vendor-accordion-primary > strong {
+.vendor-accordion-primary>strong {
   overflow: hidden;
   color: #173f4c;
   font-size: 14px;
   text-overflow: ellipsis;
 }
 
-.vendor-accordion-primary > span {
+.vendor-accordion-primary>span {
   color: #758388;
   font-size: 12px;
 }
@@ -219,7 +254,7 @@
   font-size: 12px;
 }
 
-.vendor-accordion-meta > span:first-child strong {
+.vendor-accordion-meta>span:first-child strong {
   color: #173f4c;
 }
 
@@ -463,7 +498,7 @@
   font-size: 18px;
 }
 
-.vendor-add-product-card > p {
+.vendor-add-product-card>p {
   max-width: 650px;
   margin: 0 0 18px;
   color: #68797f;
@@ -732,6 +767,14 @@
     font-size: 29px;
   }
 
+  .vendor-portal-header-row {
+    gap: 14px;
+  }
+
+  .vendor-logout-button {
+    padding: 8px 12px;
+  }
+
   .vendor-tabs {
     gap: 18px;
     margin-right: -16px;
@@ -759,7 +802,7 @@
     gap: 8px;
   }
 
-  .vendor-accordion-meta > span:first-child {
+  .vendor-accordion-meta>span:first-child {
     width: 100%;
     text-align: right;
   }
@@ -792,7 +835,8 @@
   .vendor-slots {
     font-size: 17px;
   }
-    .vendor-dashboard-form-grid {
+
+  .vendor-dashboard-form-grid {
     grid-template-columns: 1fr;
     gap: 14px;
   }

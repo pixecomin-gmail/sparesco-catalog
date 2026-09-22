@@ -366,3 +366,73 @@ export async function PATCH(request: Request) {
     );
   }
 }
+
+export async function DELETE(request: Request) {
+  try {
+    const cookieHeader = request.headers.get("cookie") || "";
+
+    const vendorCookie = cookieHeader
+      .split(";")
+      .map((item) => item.trim())
+      .find((item) => item.startsWith("sparesco_vendor="));
+
+    if (vendorCookie) {
+      const cookieValue = decodeURIComponent(
+        vendorCookie.split("=")[1] || ""
+      );
+
+      const [vendorIdRaw, sessionToken] = cookieValue.split(":");
+      const vendorId = Number(vendorIdRaw);
+
+      if (vendorId && sessionToken) {
+        const { env } = getRequestContext();
+        const db = (env as any).DB;
+
+        if (db) {
+          await db
+            .prepare(
+              `
+              DELETE FROM vendor_sessions
+              WHERE vendor_id = ?
+                AND session_token = ?
+              `
+            )
+            .bind(vendorId, sessionToken)
+            .run();
+        }
+      }
+    }
+
+    const response = NextResponse.json({
+      success: true,
+      message: "Logged out successfully.",
+    });
+
+    response.cookies.set("sparesco_vendor", "", {
+      httpOnly: true,
+      secure: true,
+      sameSite: "lax",
+      path: "/",
+      maxAge: 0,
+    });
+
+    return response;
+  } catch (error) {
+    console.error("Vendor logout error:", error);
+
+    const response = NextResponse.json({
+      success: true,
+      message: "Logged out successfully.",
+    });
+
+    response.cookies.set("sparesco_vendor", "", {
+      httpOnly: true,
+      secure: true,
+      sameSite: "lax",
+      path: "/",
+      maxAge: 0,
+    });
+
+    return response;
+  }
+}
