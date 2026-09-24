@@ -17,6 +17,24 @@ function normalizePartNumber(value: string | null | undefined) {
     .trim();
 }
 
+function getIndiaDateParts() {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Kolkata",
+    day: "2-digit",
+    month: "2-digit",
+    year: "2-digit",
+  }).formatToParts(new Date());
+
+  const day = parts.find((part) => part.type === "day")?.value || "";
+  const month = parts.find((part) => part.type === "month")?.value || "";
+  const year = parts.find((part) => part.type === "year")?.value || "";
+
+  return {
+    year,
+    dayMonth: `${day}${month}`,
+  };
+}
+
 export async function POST(request: Request) {
   try {
     const data = await request.json();
@@ -38,8 +56,40 @@ export async function POST(request: Request) {
       const { env } = getRequestContext();
       const db = (env as any).DB;
 
-      if (db && Array.isArray(data.items)) {
-        for (const item of data.items) {
+      if (db && Array.isArray(data.items) && data.items.length > 0) {
+        const { year, dayMonth } = getIndiaDateParts();
+
+        const todayPattern = `SPCQ-${year}%${dayMonth}`;
+
+        const sequenceResult = await db
+          .prepare(
+            `
+      SELECT COUNT(DISTINCT batch_reference) AS total
+      FROM enquiries
+      WHERE batch_reference LIKE ?
+      `
+          )
+          .bind(todayPattern)
+          .first();
+
+        const dailySequence =
+          Number(sequenceResult?.total || 0) + 1;
+
+        const batchReference =
+          `SPCQ-${year}${dailySequence}${dayMonth}`;
+
+        const isBundle = data.items.length > 1;
+
+        for (
+          let itemIndex = 0;
+          itemIndex < data.items.length;
+          itemIndex++
+        ) {
+          const item = data.items[itemIndex];
+
+          const enquiryReference = isBundle
+            ? `${batchReference}-${itemIndex + 1}`
+            : batchReference;
           const productName = item.title?.trim() || null;
           const partNumber = item.partNumber?.trim() || null;
           const normalizedPartNumber = normalizePartNumber(partNumber);
@@ -49,20 +99,22 @@ export async function POST(request: Request) {
           const enquiryResult = await db
             .prepare(
               `
-            INSERT INTO enquiries (
-              customer_name,
-              customer_email,
-              customer_phone,
-              company_name,
-              product_name,
-              part_number,
-              product_handle,
-              quantity,
-              message,
-              status
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'new')
-            `
+    INSERT INTO enquiries (
+      customer_name,
+      customer_email,
+      customer_phone,
+      company_name,
+      product_name,
+      part_number,
+      product_handle,
+      quantity,
+      message,
+      enquiry_reference,
+      batch_reference,
+      status
+    )
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'new')
+    `
             )
             .bind(
               data.name,
@@ -73,7 +125,9 @@ export async function POST(request: Request) {
               partNumber,
               productHandle,
               quantity,
-              data.message || null
+              data.message || null,
+              enquiryReference,
+              batchReference
             )
             .run();
 

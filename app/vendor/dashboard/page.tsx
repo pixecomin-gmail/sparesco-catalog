@@ -48,6 +48,8 @@ type VendorProduct = {
 
 type VendorEnquiry = {
   id: number;
+  enquiry_reference: string | null;
+  batch_reference: string | null;
   product_name: string | null;
   part_number: string | null;
   product_handle: string | null;
@@ -460,6 +462,8 @@ export default function VendorDashboardPage() {
       const quote = enquiryDetails[enquiry.id]?.quote;
 
       const values = [
+        enquiry.enquiry_reference,
+        enquiry.batch_reference,
         enquiry.product_name,
         enquiry.part_number,
         enquiry.product_handle,
@@ -670,6 +674,10 @@ export default function VendorDashboardPage() {
                       aria-expanded={isOpen}
                     >
                       <div className="vendor-accordion-primary">
+                        <span>
+                          {enquiry.enquiry_reference || `Enquiry #${enquiry.id}`}
+                        </span>
+
                         <strong>
                           {enquiry.product_name || "Product Enquiry"}
                         </strong>

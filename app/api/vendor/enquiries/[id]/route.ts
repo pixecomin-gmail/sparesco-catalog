@@ -136,6 +136,8 @@ export async function GET(
                 `
         SELECT
           e.id,
+          e.enquiry_reference,
+          e.batch_reference,
           e.product_name,
           e.part_number,
           e.product_handle,

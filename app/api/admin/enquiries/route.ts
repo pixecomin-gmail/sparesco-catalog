@@ -19,6 +19,8 @@ export async function GET() {
     const enquiryResult = await DB.prepare(`
       SELECT
         e.id,
+        e.enquiry_reference,
+        e.batch_reference,
         e.customer_name,
         e.customer_email,
         e.customer_phone,

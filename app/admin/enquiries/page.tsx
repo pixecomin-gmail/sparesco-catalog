@@ -32,6 +32,8 @@ type VendorQuote = {
 
 type Enquiry = {
   id: number;
+  enquiry_reference: string | null;
+  batch_reference: string | null;
   customer_name: string;
   customer_email: string;
   customer_phone: string | null;
@@ -236,9 +238,13 @@ export default function AdminEnquiriesPage() {
     if (!emailListEnquiry) return;
 
     // Email sending will be connected later.
+    const enquiryLabel =
+      emailListEnquiry.enquiry_reference ||
+      `Enquiry #${emailListEnquiry.id}`;
+
     setMessage(
       `${selectedRecipientIds.length} recipient${selectedRecipientIds.length === 1 ? "" : "s"
-      } selected for Enquiry #${emailListEnquiry.id}.`
+      } selected for ${enquiryLabel}.`
     );
 
     closeEmailListModal();
@@ -282,6 +288,8 @@ export default function AdminEnquiriesPage() {
 
       const enquiryFields = [
         enquiry.id,
+        enquiry.enquiry_reference,
+        enquiry.batch_reference,
         enquiry.customer_name,
         enquiry.customer_email,
         enquiry.customer_phone,
@@ -401,7 +409,7 @@ export default function AdminEnquiriesPage() {
                   <div style={enquiryTitleRowStyle}>
                     <div style={enquiryTitleLeftStyle}>
                       <span style={enquiryIdStyle}>
-                        ENQUIRY #{enquiry.id}
+                        {enquiry.enquiry_reference || `ENQUIRY #${enquiry.id}`}
                       </span>
 
                       <EnquiryStatusBadge status={enquiry.status} />
@@ -785,7 +793,9 @@ export default function AdminEnquiriesPage() {
             <div style={modalHeaderStyle}>
               <div>
                 <h2 style={modalTitleStyle}>
-                  Email Enquiry #{emailListEnquiry.id}
+                  Email{" "}
+                  {emailListEnquiry.enquiry_reference ||
+                    `Enquiry #${emailListEnquiry.id}`}
                 </h2>
 
                 <p style={modalSubtitleStyle}>
