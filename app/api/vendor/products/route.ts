@@ -118,12 +118,14 @@ export async function GET(request: Request) {
           category,
           description,
           price,
-          currency,
-          stock_status,
-          lead_time,
-          status,
-          admin_notes,
-          created_at
+currency,
+stock_quantity,
+application,
+godown_location,
+lead_time,
+status,
+admin_notes,
+created_at
         FROM vendor_products
         WHERE vendor_id = ?
         ORDER BY id DESC
@@ -278,9 +280,31 @@ export async function POST(request: Request) {
 
     const description = body.description?.trim() || null;
     const price = body.price?.trim() || null;
-    const currency = body.currency?.trim() || null;
-    const stockStatus = body.stock_status?.trim() || null;
+    const currency = body.currency?.trim() || "INR";
+
+    const stockQuantity =
+      body.stock_quantity === "" ||
+        body.stock_quantity === null ||
+        body.stock_quantity === undefined
+        ? null
+        : Number(body.stock_quantity);
+
+    const application = body.application?.trim() || null;
+    const godownLocation = body.godown_location?.trim() || null;
     const leadTime = body.lead_time?.trim() || null;
+
+    if (
+      stockQuantity !== null &&
+      (!Number.isInteger(stockQuantity) || stockQuantity < 0)
+    ) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Stock quantity must be a whole number of 0 or more.",
+        },
+        { status: 400 }
+      );
+    }
 
     if (
       !productName ||
@@ -305,21 +329,23 @@ export async function POST(request: Request) {
     const result = await db
       .prepare(
         `
-        INSERT INTO vendor_products (
-          vendor_id,
-          product_name,
-          part_number,
-          brand,
-          category,
-          description,
-          price,
-          currency,
-          stock_status,
-          lead_time,
-          status
-        )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')
-        `
+    INSERT INTO vendor_products (
+      vendor_id,
+      product_name,
+      part_number,
+      brand,
+      category,
+      description,
+      price,
+      currency,
+      stock_quantity,
+      application,
+      godown_location,
+      lead_time,
+      status
+    )
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')
+    `
       )
       .bind(
         session.vendor_id,
@@ -330,7 +356,9 @@ export async function POST(request: Request) {
         description,
         price,
         currency,
-        stockStatus,
+        stockQuantity,
+        application,
+        godownLocation,
         leadTime
       )
       .run();

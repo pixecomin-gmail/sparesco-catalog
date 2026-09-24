@@ -37,7 +37,9 @@ type VendorProduct = {
   description?: string | null;
   price: string | null;
   currency: string | null;
-  stock_status: string | null;
+  stock_quantity: number | null;
+  application: string | null;
+  godown_location: string | null;
   lead_time: string | null;
   status: "pending" | "approved" | "rejected";
   admin_notes: string | null;
@@ -112,8 +114,10 @@ export default function VendorDashboardPage() {
     category: "",
     description: "",
     price: "",
-    currency: "USD",
-    stock_status: "",
+    currency: "INR",
+    stock_quantity: "",
+    application: "",
+    godown_location: "",
     lead_time: "",
   });
 
@@ -170,7 +174,13 @@ export default function VendorDashboardPage() {
         const productsData = await productsResponse.json();
 
         if (productsResponse.ok && productsData.success) {
-          setProducts(productsData.products || []);
+          const loadedProducts = productsData.products || [];
+
+          setProducts(loadedProducts);
+
+          if (loadedProducts.length === 0) {
+            setActiveTab("add");
+          }
         }
 
         const enquiriesResponse = await fetch("/api/vendor/enquiries", {
@@ -322,8 +332,10 @@ export default function VendorDashboardPage() {
         category: "",
         description: "",
         price: "",
-        currency: "USD",
-        stock_status: "",
+        currency: "INR",
+        stock_quantity: "",
+        application: "",
+        godown_location: "",
         lead_time: "",
       });
 
@@ -493,7 +505,9 @@ export default function VendorDashboardPage() {
         product.description,
         product.price,
         product.currency,
-        product.stock_status,
+        product.stock_quantity,
+        product.application,
+        product.godown_location,
         product.lead_time,
         product.status,
         product.admin_notes,
@@ -974,8 +988,18 @@ export default function VendorDashboardPage() {
                           />
 
                           <Detail
-                            label="Stock Status"
-                            value={product.stock_status}
+                            label="Stock Quantity"
+                            value={product.stock_quantity}
+                          />
+
+                          <Detail
+                            label="Application"
+                            value={product.application}
+                          />
+
+                          <Detail
+                            label="Godown Location"
+                            value={product.godown_location}
                           />
 
                           <Detail
@@ -1150,24 +1174,36 @@ export default function VendorDashboardPage() {
                   </select>
                 </DashboardField>
 
-                <DashboardField label="Stock Status">
-                  <select
-                    name="stock_status"
-                    value={productForm.stock_status}
+                <DashboardField label="Stock Quantity">
+                  <input
+                    type="number"
+                    name="stock_quantity"
+                    value={productForm.stock_quantity}
                     onChange={updateProductField}
-                  >
-                    <option value="">Select</option>
-                    <option value="in_stock">In Stock</option>
-                    <option value="limited_stock">
-                      Limited Stock
-                    </option>
-                    <option value="out_of_stock">
-                      Out of Stock
-                    </option>
-                    <option value="on_request">
-                      Available on Request
-                    </option>
-                  </select>
+                    min="0"
+                    step="1"
+                    placeholder="Example: 25"
+                  />
+                </DashboardField>
+
+                <DashboardField label="Application">
+                  <input
+                    type="text"
+                    name="application"
+                    value={productForm.application}
+                    onChange={updateProductField}
+                    placeholder="Example: Hitachi EX100"
+                  />
+                </DashboardField>
+
+                <DashboardField label="Godown Location">
+                  <input
+                    type="text"
+                    name="godown_location"
+                    value={productForm.godown_location}
+                    onChange={updateProductField}
+                    placeholder="Example: Mumbai"
+                  />
                 </DashboardField>
 
                 <DashboardField label="Lead Time">

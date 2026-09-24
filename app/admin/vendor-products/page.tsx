@@ -12,7 +12,9 @@ type VendorProduct = {
   description: string | null;
   price: string | null;
   currency: string | null;
-  stock_status: string | null;
+  stock_quantity: number | null;
+  application: string | null;
+  godown_location: string | null;
   lead_time: string | null;
   status: string;
   admin_notes: string | null;
@@ -112,7 +114,7 @@ export default function AdminVendorProductsPage() {
     }
   };
 
-  const normalizeSearch = (value: string | null | undefined) => {
+  const normalizeSearch = (value: unknown) => {
     return String(value || "")
       .toLowerCase()
       .replace(/[\s-]+/g, "");
@@ -133,7 +135,9 @@ export default function AdminVendorProductsPage() {
         product.description,
         product.price,
         product.currency,
-        product.stock_status,
+        product.stock_quantity,
+        product.application,
+        product.godown_location,
         product.lead_time,
         product.status,
         product.company_name,
@@ -409,10 +413,22 @@ export default function AdminVendorProductsPage() {
                                     />
 
                                     <Detail
-                                      label="Stock"
-                                      value={formatStock(
-                                        product.stock_status
-                                      )}
+                                      label="Stock Quantity"
+                                      value={
+                                        product.stock_quantity !== null
+                                          ? product.stock_quantity
+                                          : "—"
+                                      }
+                                    />
+
+                                    <Detail
+                                      label="Application"
+                                      value={product.application || "—"}
+                                    />
+
+                                    <Detail
+                                      label="Godown Location"
+                                      value={product.godown_location || "—"}
                                     />
 
                                     <Detail
@@ -427,8 +443,8 @@ export default function AdminVendorProductsPage() {
                                     Submitted{" "}
                                     {product.created_at
                                       ? new Date(
-                                          product.created_at
-                                        ).toLocaleDateString()
+                                        product.created_at
+                                      ).toLocaleDateString()
                                       : "—"}
                                   </span>
 
@@ -550,14 +566,6 @@ function StatusBadge({ status }: { status: string }) {
       {status}
     </span>
   );
-}
-
-function formatStock(value: string | null) {
-  if (!value) return "—";
-
-  return value
-    .replaceAll("_", " ")
-    .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
 const pageStyle: React.CSSProperties = {
