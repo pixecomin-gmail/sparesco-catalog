@@ -17,8 +17,8 @@ type VendorQuote = {
   manufacturer_brand: string | null;
   country_of_origin: string | null;
   quote_validity: string | null;
-  shipping_included: string | null;
-  taxes_included: string | null;
+  godown_location: string | null;
+  tax_included_percent: string | null;
   vendor_remarks: string | null;
   quotation_pdf: string | null;
   admin_status: string;
@@ -715,17 +715,17 @@ export default function AdminEnquiriesPage() {
                                       />
 
                                       <Detail
-                                        label="Shipping Included"
-                                        value={formatYesNo(
-                                          quote.shipping_included
-                                        )}
+                                        label="Godown Location"
+                                        value={quote.godown_location || "—"}
                                       />
 
                                       <Detail
-                                        label="Taxes Included"
-                                        value={formatYesNo(
-                                          quote.taxes_included
-                                        )}
+                                        label="Tax Included %"
+                                        value={
+                                          quote.tax_included_percent
+                                            ? `${quote.tax_included_percent}%`
+                                            : "—"
+                                        }
                                       />
                                     </DetailSection>
                                   </div>
@@ -1053,22 +1053,6 @@ function formatMoney(
   if (amount === null || amount === undefined) return "—";
 
   return `${currency || ""} ${amount}`.trim();
-}
-
-function formatYesNo(value: string | null) {
-  if (!value) return "—";
-
-  const normalized = value.toLowerCase();
-
-  if (
-    normalized === "yes" ||
-    normalized === "true" ||
-    normalized === "1"
-  ) {
-    return "Yes";
-  }
-
-  return "No";
 }
 
 function formatDate(value: string) {

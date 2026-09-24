@@ -192,13 +192,13 @@ export async function POST(
           manufacturer_brand,
           country_of_origin,
           quote_validity,
-          shipping_included,
-          taxes_included,
+          godown_location,
+          tax_included_percent,
           vendor_remarks,
           quotation_pdf,
           admin_status
-        )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')
+          )
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')
         `
       )
       .bind(
@@ -215,8 +215,8 @@ export async function POST(
         data.manufacturer_brand || null,
         data.country_of_origin || null,
         data.quote_validity || null,
-        data.shipping_included || "no",
-        data.taxes_included || "no",
+        data.godown_location || null,
+        data.tax_included_percent || null,
         data.vendor_remarks || null,
         null
       )

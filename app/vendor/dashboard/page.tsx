@@ -75,8 +75,8 @@ type VendorQuote = {
   manufacturer_brand: string | null;
   country_of_origin: string | null;
   quote_validity: string | null;
-  shipping_included: string | null;
-  taxes_included: string | null;
+  godown_location: string | null;
+  tax_included_percent: string | null;
   vendor_remarks: string | null;
   admin_status: string | null;
   submitted_at: string | null;
@@ -481,8 +481,8 @@ export default function VendorDashboardPage() {
         quote?.manufacturer_brand,
         quote?.country_of_origin,
         quote?.quote_validity,
-        quote?.shipping_included,
-        quote?.taxes_included,
+        quote?.godown_location,
+        quote?.tax_included_percent,
         quote?.vendor_remarks,
         quote?.admin_status,
       ];
@@ -822,13 +822,17 @@ export default function VendorDashboardPage() {
                                   />
 
                                   <Detail
-                                    label="Shipping Included"
-                                    value={quote.shipping_included}
+                                    label="Godown Location"
+                                    value={quote.godown_location}
                                   />
 
                                   <Detail
-                                    label="Taxes Included"
-                                    value={quote.taxes_included}
+                                    label="Tax Included %"
+                                    value={
+                                      quote.tax_included_percent
+                                        ? `${quote.tax_included_percent}%`
+                                        : null
+                                    }
                                   />
 
                                   <Detail

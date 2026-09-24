@@ -32,8 +32,8 @@ type VendorQuote = {
   manufacturer_brand: string | null;
   country_of_origin: string | null;
   quote_validity: string | null;
-  shipping_included: string | null;
-  taxes_included: string | null;
+  godown_location: string | null;
+  tax_included_percent: string | null;
   vendor_remarks: string | null;
   admin_status: string;
   submitted_at: string;
@@ -59,8 +59,9 @@ export default function VendorEnquiryPage() {
   const [manufacturerBrand, setManufacturerBrand] = useState("");
   const [countryOfOrigin, setCountryOfOrigin] = useState("");
   const [quoteValidity, setQuoteValidity] = useState("");
-  const [shippingIncluded, setShippingIncluded] = useState("no");
-  const [taxesIncluded, setTaxesIncluded] = useState("no");
+  const [godownLocation, setGodownLocation] = useState("");
+  const [taxIncludedPercent, setTaxIncludedPercent] = useState("");
+  const [otherTaxPercent, setOtherTaxPercent] = useState("");
   const [vendorRemarks, setVendorRemarks] = useState("");
 
   const [submitting, setSubmitting] = useState(false);
@@ -132,8 +133,11 @@ export default function VendorEnquiryPage() {
             manufacturer_brand: manufacturerBrand,
             country_of_origin: countryOfOrigin,
             quote_validity: quoteValidity,
-            shipping_included: shippingIncluded,
-            taxes_included: taxesIncluded,
+            godown_location: godownLocation,
+            tax_included_percent:
+              taxIncludedPercent === "Others"
+                ? otherTaxPercent
+                : taxIncludedPercent,
             vendor_remarks: vendorRemarks,
           }),
         }
@@ -330,7 +334,7 @@ export default function VendorEnquiryPage() {
                   <strong>
                     {quote.admin_status
                       ? quote.admin_status.charAt(0).toUpperCase() +
-                        quote.admin_status.slice(1)
+                      quote.admin_status.slice(1)
                       : "Pending"}
                   </strong>
                 </div>
@@ -405,16 +409,16 @@ export default function VendorEnquiryPage() {
                 </div>
 
                 <div style={detailStyle}>
-                  <strong>Shipping Included</strong>
-                  <p>
-                    {quote.shipping_included === "yes" ? "Yes" : "No"}
-                  </p>
+                  <strong>Godown Location</strong>
+                  <p>{quote.godown_location || "-"}</p>
                 </div>
 
                 <div style={detailStyle}>
-                  <strong>Taxes Included</strong>
+                  <strong>Tax Included %</strong>
                   <p>
-                    {quote.taxes_included === "yes" ? "Yes" : "No"}
+                    {quote.tax_included_percent
+                      ? `${quote.tax_included_percent}%`
+                      : "-"}
                   </p>
                 </div>
 
@@ -423,8 +427,8 @@ export default function VendorEnquiryPage() {
                   <p>
                     {quote.submitted_at
                       ? new Date(
-                          quote.submitted_at
-                        ).toLocaleDateString()
+                        quote.submitted_at
+                      ).toLocaleDateString()
                       : "-"}
                   </p>
                 </div>
@@ -617,33 +621,57 @@ export default function VendorEnquiryPage() {
                     />
                   </label>
 
+
                   <label style={labelStyle}>
-                    Shipping Included
-                    <select
-                      value={shippingIncluded}
+                    Godown Location
+                    <input
+                      type="text"
+                      placeholder="e.g. Mumbai, Maharashtra"
+                      value={godownLocation}
                       onChange={(e) =>
-                        setShippingIncluded(e.target.value)
+                        setGodownLocation(e.target.value)
                       }
                       style={fieldStyle}
-                    >
-                      <option value="no">No</option>
-                      <option value="yes">Yes</option>
-                    </select>
+                    />
                   </label>
 
                   <label style={labelStyle}>
-                    Taxes Included
+                    Tax Included %
                     <select
-                      value={taxesIncluded}
-                      onChange={(e) =>
-                        setTaxesIncluded(e.target.value)
-                      }
+                      value={taxIncludedPercent}
+                      onChange={(e) => {
+                        setTaxIncludedPercent(e.target.value);
+
+                        if (e.target.value !== "Others") {
+                          setOtherTaxPercent("");
+                        }
+                      }}
                       style={fieldStyle}
                     >
-                      <option value="no">No</option>
-                      <option value="yes">Yes</option>
+                      <option value="">Select Tax %</option>
+                      <option value="5">5%</option>
+                      <option value="18">18%</option>
+                      <option value="28">28%</option>
+                      <option value="Others">Others</option>
                     </select>
                   </label>
+
+                  {taxIncludedPercent === "Others" && (
+                    <label style={labelStyle}>
+                      Other Tax %
+                      <input
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        placeholder="Enter tax %"
+                        value={otherTaxPercent}
+                        onChange={(e) =>
+                          setOtherTaxPercent(e.target.value)
+                        }
+                        style={fieldStyle}
+                      />
+                    </label>
+                  )}
                 </div>
 
                 <label
