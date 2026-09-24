@@ -50,11 +50,19 @@ type Enquiry = {
   quotations: VendorQuote[];
 };
 
+type EnquiryEmailCategory = {
+  id: number;
+  name: string;
+  is_active: number;
+  created_at: string;
+};
+
 type EnquiryEmailRecipient = {
   id: number;
   email: string;
   is_active: number;
   created_at: string;
+  category_ids: number[];
 };
 
 type Filter = "all" | "open" | "closed";
@@ -78,7 +86,10 @@ export default function AdminEnquiriesPage() {
   const [emailRecipients, setEmailRecipients] =
     useState<EnquiryEmailRecipient[]>([]);
 
-  const [selectedRecipientIds, setSelectedRecipientIds] =
+  const [emailCategories, setEmailCategories] =
+    useState<EnquiryEmailCategory[]>([]);
+
+  const [selectedCategoryIds, setSelectedCategoryIds] =
     useState<number[]>([]);
 
   const [recipientsExpanded, setRecipientsExpanded] =
@@ -176,6 +187,7 @@ export default function AdminEnquiriesPage() {
     setEmailListEnquiry(enquiry);
     setRecipientsExpanded(false);
     setRecipientSearch("");
+    setSelectedCategoryIds([]);
     setLoadingRecipients(true);
     setError("");
 
@@ -202,14 +214,13 @@ export default function AdminEnquiriesPage() {
           Number(recipient.is_active) === 1
       );
 
-      setEmailRecipients(activeRecipients);
-
-      // Everyone is included by default.
-      setSelectedRecipientIds(
-        activeRecipients.map(
-          (recipient: EnquiryEmailRecipient) => recipient.id
-        )
+      const activeCategories = (data.categories || []).filter(
+        (category: EnquiryEmailCategory) =>
+          Number(category.is_active) === 1
       );
+
+      setEmailRecipients(activeRecipients);
+      setEmailCategories(activeCategories);
     } catch {
       setError("Unable to load enquiry email list.");
       setEmailListEnquiry(null);
@@ -221,30 +232,68 @@ export default function AdminEnquiriesPage() {
   function closeEmailListModal() {
     setEmailListEnquiry(null);
     setEmailRecipients([]);
-    setSelectedRecipientIds([]);
+    setEmailCategories([]);
+    setSelectedCategoryIds([]);
     setRecipientsExpanded(false);
     setRecipientSearch("");
   }
 
-  function toggleEmailRecipient(recipientId: number) {
-    setSelectedRecipientIds((current) =>
-      current.includes(recipientId)
-        ? current.filter((id) => id !== recipientId)
-        : [...current, recipientId]
+  function toggleEmailCategory(categoryId: number) {
+    setSelectedCategoryIds((current) =>
+      current.includes(categoryId)
+        ? current.filter((id) => id !== categoryId)
+        : [...current, categoryId]
     );
   }
+
+  const selectedEmailRecipients = useMemo(() => {
+    if (selectedCategoryIds.length === 0) {
+      return [];
+    }
+
+    const matchingRecipients = emailRecipients.filter((recipient) =>
+      (recipient.category_ids || []).some((categoryId) =>
+        selectedCategoryIds.includes(Number(categoryId))
+      )
+    );
+
+    const uniqueByEmail = new Map<
+      string,
+      EnquiryEmailRecipient
+    >();
+
+    matchingRecipients.forEach((recipient) => {
+      const normalizedEmail = recipient.email
+        .trim()
+        .toLowerCase();
+
+      if (!uniqueByEmail.has(normalizedEmail)) {
+        uniqueByEmail.set(normalizedEmail, recipient);
+      }
+    });
+
+    return Array.from(uniqueByEmail.values());
+  }, [emailRecipients, selectedCategoryIds]);
 
   function confirmEmailRecipients() {
     if (!emailListEnquiry) return;
 
-    // Email sending will be connected later.
+    // Actual email sending will be connected in the email integration stage.
     const enquiryLabel =
       emailListEnquiry.enquiry_reference ||
       `Enquiry #${emailListEnquiry.id}`;
 
+    const selectedCategoryNames = emailCategories
+      .filter((category) =>
+        selectedCategoryIds.includes(category.id)
+      )
+      .map((category) => category.name);
+
     setMessage(
-      `${selectedRecipientIds.length} recipient${selectedRecipientIds.length === 1 ? "" : "s"
-      } selected for ${enquiryLabel}.`
+      `${selectedEmailRecipients.length} unique recipient${selectedEmailRecipients.length === 1 ? "" : "s"
+      } selected for ${enquiryLabel} via ${selectedCategoryNames.length
+      } categor${selectedCategoryNames.length === 1 ? "y" : "ies"
+      }.`
     );
 
     closeEmailListModal();
@@ -254,13 +303,13 @@ export default function AdminEnquiriesPage() {
     const query = recipientSearch.trim().toLowerCase();
 
     if (!query) {
-      return emailRecipients;
+      return selectedEmailRecipients;
     }
 
-    return emailRecipients.filter((recipient) =>
+    return selectedEmailRecipients.filter((recipient) =>
       recipient.email.toLowerCase().includes(query)
     );
-  }, [emailRecipients, recipientSearch]);
+  }, [selectedEmailRecipients, recipientSearch]);
 
   const visibleEnquiries = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -799,7 +848,7 @@ export default function AdminEnquiriesPage() {
                 </h2>
 
                 <p style={modalSubtitleStyle}>
-                  Select who should receive this enquiry.
+                  Select one or more categories to receive this enquiry.
                 </p>
               </div>
 
@@ -814,89 +863,159 @@ export default function AdminEnquiriesPage() {
 
             {loadingRecipients ? (
               <div style={modalLoadingStyle}>
-                Loading recipients...
+                Loading categories...
               </div>
-            ) : emailRecipients.length === 0 ? (
+            ) : emailCategories.length === 0 ? (
               <div style={modalEmptyStyle}>
-                No active recipients are available in the Enquiry Email List.
+                No active categories are available in the Enquiry Email
+                List.
               </div>
             ) : (
               <>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setRecipientsExpanded((current) => !current)
-                  }
-                  style={recipientAccordionButtonStyle}
-                >
-                  <span>
-                    Recipients
-                    <span style={recipientCountStyle}>
-                      {selectedRecipientIds.length} of{" "}
-                      {emailRecipients.length} selected
-                    </span>
+                <div style={emailCategorySectionStyle}>
+                  <span style={emailCategoryHeadingStyle}>
+                    Select Categories
                   </span>
 
-                  <span style={recipientArrowStyle}>
-                    {recipientsExpanded ? "▲" : "▼"}
-                  </span>
-                </button>
+                  <div style={emailCategoryGridStyle}>
+                    {emailCategories.map((category) => {
+                      const selected =
+                        selectedCategoryIds.includes(category.id);
 
-                {recipientsExpanded && (
+                      const categoryRecipientCount =
+                        emailRecipients.filter((recipient) =>
+                          (recipient.category_ids || []).includes(
+                            category.id
+                          )
+                        ).length;
+
+                      return (
+                        <label
+                          key={category.id}
+                          style={{
+                            ...emailCategoryOptionStyle,
+                            ...(selected
+                              ? emailCategorySelectedStyle
+                              : {}),
+                          }}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selected}
+                            onChange={() =>
+                              toggleEmailCategory(category.id)
+                            }
+                            style={recipientCheckboxStyle}
+                          />
+
+                          <span style={emailCategoryOptionTextStyle}>
+                            <strong>{category.name}</strong>
+
+                            <small style={emailCategoryCountStyle}>
+                              {categoryRecipientCount}{" "}
+                              {categoryRecipientCount === 1
+                                ? "recipient"
+                                : "recipients"}
+                            </small>
+                          </span>
+                        </label>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {selectedCategoryIds.length === 0 ? (
+                  <div style={categorySelectionHintStyle}>
+                    Select at least one category to continue.
+                  </div>
+                ) : selectedEmailRecipients.length === 0 ? (
+                  <div style={categorySelectionHintStyle}>
+                    No active recipients are assigned to the selected
+                    category
+                    {selectedCategoryIds.length === 1 ? "" : "ies"}.
+                  </div>
+                ) : (
                   <>
-                    <div style={recipientSearchWrapStyle}>
-                      <span style={recipientSearchIconStyle}>⌕</span>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setRecipientsExpanded(
+                          (current) => !current
+                        )
+                      }
+                      style={recipientAccordionButtonStyle}
+                    >
+                      <span>
+                        Recipients
 
-                      <input
-                        type="search"
-                        value={recipientSearch}
-                        onChange={(event) =>
-                          setRecipientSearch(event.target.value)
-                        }
-                        placeholder="Search email..."
-                        style={recipientSearchInputStyle}
-                      />
-                    </div>
+                        <span style={recipientCountStyle}>
+                          {selectedEmailRecipients.length} unique{" "}
+                          {selectedEmailRecipients.length === 1
+                            ? "recipient"
+                            : "recipients"}
+                        </span>
+                      </span>
 
-                    <div style={recipientListStyle}>
-                      {visibleEmailRecipients.length === 0 ? (
-                        <div style={recipientSearchEmptyStyle}>
-                          No email found.
+                      <span style={recipientArrowStyle}>
+                        {recipientsExpanded ? "▲" : "▼"}
+                      </span>
+                    </button>
+
+                    {recipientsExpanded && (
+                      <>
+                        <div style={recipientSearchWrapStyle}>
+                          <span style={recipientSearchIconStyle}>
+                            ⌕
+                          </span>
+
+                          <input
+                            type="search"
+                            value={recipientSearch}
+                            onChange={(event) =>
+                              setRecipientSearch(
+                                event.target.value
+                              )
+                            }
+                            placeholder="Search email..."
+                            style={recipientSearchInputStyle}
+                          />
                         </div>
-                      ) : (
-                        visibleEmailRecipients.map((recipient) => {
-                          const selected =
-                            selectedRecipientIds.includes(recipient.id);
 
-                          return (
-                            <label
-                              key={recipient.id}
-                              style={recipientRowStyle}
-                            >
-                              <input
-                                type="checkbox"
-                                checked={selected}
-                                onChange={() =>
-                                  toggleEmailRecipient(recipient.id)
-                                }
-                                style={recipientCheckboxStyle}
-                              />
+                        <div style={recipientListStyle}>
+                          {visibleEmailRecipients.length === 0 ? (
+                            <div style={recipientSearchEmptyStyle}>
+                              No email found.
+                            </div>
+                          ) : (
+                            visibleEmailRecipients.map(
+                              (recipient) => (
+                                <div
+                                  key={recipient.id}
+                                  style={recipientPreviewRowStyle}
+                                >
+                                  <span style={recipientEmailStyle}>
+                                    {recipient.email}
+                                  </span>
+                                </div>
+                              )
+                            )
+                          )}
+                        </div>
+                      </>
+                    )}
 
-                              <span style={recipientEmailStyle}>
-                                {recipient.email}
-                              </span>
-                            </label>
-                          );
-                        })
-                      )}
+                    <div style={selectedSummaryStyle}>
+                      {selectedCategoryIds.length}{" "}
+                      {selectedCategoryIds.length === 1
+                        ? "category"
+                        : "categories"}{" "}
+                      selected · {selectedEmailRecipients.length} unique{" "}
+                      {selectedEmailRecipients.length === 1
+                        ? "recipient"
+                        : "recipients"}
                     </div>
                   </>
                 )}
-
-                <div style={selectedSummaryStyle}>
-                  {selectedRecipientIds.length} of{" "}
-                  {emailRecipients.length} recipients selected
-                </div>
               </>
             )}
 
@@ -913,14 +1032,16 @@ export default function AdminEnquiriesPage() {
                 type="button"
                 disabled={
                   loadingRecipients ||
-                  selectedRecipientIds.length === 0
+                  selectedCategoryIds.length === 0 ||
+                  selectedEmailRecipients.length === 0
                 }
                 onClick={confirmEmailRecipients}
                 style={{
                   ...confirmRecipientsButtonStyle,
                   opacity:
                     loadingRecipients ||
-                      selectedRecipientIds.length === 0
+                      selectedCategoryIds.length === 0 ||
+                      selectedEmailRecipients.length === 0
                       ? 0.45
                       : 1,
                 }}
@@ -1676,15 +1797,6 @@ const recipientListStyle: React.CSSProperties = {
   maxHeight: "240px",
 };
 
-const recipientRowStyle: React.CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  gap: "10px",
-  padding: "11px 13px",
-  borderBottom: "1px solid #edf1f0",
-  cursor: "pointer",
-};
-
 const recipientCheckboxStyle: React.CSSProperties = {
   width: "15px",
   height: "15px",
@@ -1767,4 +1879,75 @@ const recipientSearchEmptyStyle: React.CSSProperties = {
   color: "#879499",
   fontSize: "12px",
   textAlign: "center",
+};
+
+const emailCategorySectionStyle: React.CSSProperties = {
+  padding: "18px 22px 4px",
+};
+
+const emailCategoryHeadingStyle: React.CSSProperties = {
+  display: "block",
+  marginBottom: "10px",
+  color: "#173f4c",
+  fontSize: "11px",
+  fontWeight: 800,
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+};
+
+const emailCategoryGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  gap: "8px",
+};
+
+const emailCategoryOptionStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: "9px",
+  padding: "11px 12px",
+  border: "1px solid #dfe6e4",
+  borderRadius: "8px",
+  background: "#ffffff",
+  color: "#465b61",
+  cursor: "pointer",
+};
+
+const emailCategorySelectedStyle: React.CSSProperties = {
+  borderColor: "#9fc8cc",
+  background: "#eef7f7",
+  color: "#173f4c",
+};
+
+const emailCategoryOptionTextStyle: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: "2px",
+  fontSize: "12px",
+};
+
+const emailCategoryCountStyle: React.CSSProperties = {
+  color: "#819095",
+  fontSize: "9px",
+  fontWeight: 400,
+};
+
+const categorySelectionHintStyle: React.CSSProperties = {
+  margin: "14px 22px 0",
+  padding: "12px 14px",
+  border: "1px dashed #d6dfdd",
+  borderRadius: "8px",
+  background: "#fafcfc",
+  color: "#7b898e",
+  fontSize: "11px",
+  textAlign: "center",
+};
+
+const recipientPreviewRowStyle: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  minHeight: "40px",
+  padding: "10px 13px",
+  borderBottom: "1px solid #edf1f0",
+  background: "#ffffff",
 };
