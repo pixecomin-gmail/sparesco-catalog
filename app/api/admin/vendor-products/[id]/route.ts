@@ -29,6 +29,62 @@ export async function PATCH(
     }
 
     const body = await request.json();
+
+    if (body.action === "cancel_delete") {
+      const { env } = getRequestContext();
+      const db = (env as any).DB;
+
+      if (!db) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: "Database is not configured.",
+          },
+          { status: 500 }
+        );
+      }
+
+      const product = await db
+        .prepare(
+          `
+          SELECT id
+          FROM vendor_products
+          WHERE id = ?
+          LIMIT 1
+          `
+        )
+        .bind(productId)
+        .first();
+
+      if (!product) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: "Vendor product not found.",
+          },
+          { status: 404 }
+        );
+      }
+
+      await db
+        .prepare(
+          `
+          UPDATE vendor_products
+          SET
+            delete_requested = 0,
+            updated_at = CURRENT_TIMESTAMP
+          WHERE id = ?
+          `
+        )
+        .bind(productId)
+        .run();
+
+      return NextResponse.json({
+        success: true,
+        message: "Deletion request declined. The product has been kept.",
+      });
+    }
+
     const status = body.status;
 
     if (!["approved", "rejected"].includes(status)) {
@@ -188,6 +244,119 @@ export async function PATCH(
       {
         success: false,
         error: "Unable to update vendor product.",
+      },
+      { status: 500 }
+    );
+  }
+}
+
+export async function DELETE(
+  request: Request,
+  context: { params: Promise<{ id: string }> }
+) {
+  try {
+    const { id } = await context.params;
+    const productId = Number(id);
+
+    if (!productId) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Invalid product ID.",
+        },
+        { status: 400 }
+      );
+    }
+
+    const { env } = getRequestContext();
+    const db = (env as any).DB;
+
+    if (!db) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Database is not configured.",
+        },
+        { status: 500 }
+      );
+    }
+
+    const product = await db
+      .prepare(
+        `
+        SELECT
+          id,
+          vendor_id,
+          product_name,
+          delete_requested
+        FROM vendor_products
+        WHERE id = ?
+        LIMIT 1
+        `
+      )
+      .bind(productId)
+      .first();
+
+    if (!product) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor product not found.",
+        },
+        { status: 404 }
+      );
+    }
+
+    if (Number(product.delete_requested) !== 1) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "This product does not have a pending deletion request.",
+        },
+        { status: 400 }
+      );
+    }
+
+    const vendorId = Number(product.vendor_id);
+
+    await db
+      .prepare(
+        `
+        DELETE FROM vendor_products
+        WHERE id = ?
+        `
+      )
+      .bind(productId)
+      .run();
+
+    await db
+      .prepare(
+        `
+        UPDATE vendors
+        SET
+          products_submitted = (
+            SELECT COUNT(*)
+            FROM vendor_products
+            WHERE vendor_id = ?
+          ),
+          updated_at = CURRENT_TIMESTAMP
+        WHERE id = ?
+        `
+      )
+      .bind(vendorId, vendorId)
+      .run();
+
+    return NextResponse.json({
+      success: true,
+      message: "Product deleted successfully.",
+    });
+  } catch (error) {
+    console.error("Admin vendor product deletion error:", error);
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Unable to delete vendor product.",
       },
       { status: 500 }
     );

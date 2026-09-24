@@ -43,6 +43,7 @@ type VendorProduct = {
   lead_time: string | null;
   status: "pending" | "approved" | "rejected";
   admin_notes: string | null;
+  delete_requested: number;
   created_at: string;
 };
 
@@ -126,6 +127,8 @@ export default function VendorDashboardPage() {
   const [productSubmitting, setProductSubmitting] = useState(false);
   const [productMessage, setProductMessage] = useState("");
   const [productError, setProductError] = useState("");
+  const [deletingProductId, setDeletingProductId] =
+    useState<number | null>(null);
 
   const [profileForm, setProfileForm] = useState({
     contact_person: "",
@@ -371,6 +374,73 @@ export default function VendorDashboardPage() {
     }
   }
 
+    async function requestProductDeletion(product: VendorProduct) {
+    if (Number(product.delete_requested) === 1) {
+      return;
+    }
+
+    const confirmed = window.confirm(
+      `Request deletion of "${product.product_name}"?\n\n` +
+        "This product will remain available until your deletion request is reviewed by Sparesco Admin."
+    );
+
+    if (!confirmed) {
+      return;
+    }
+
+    setDeletingProductId(product.id);
+    setProductError("");
+    setProductMessage("");
+
+    try {
+      const response = await fetch("/api/vendor/products", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          action: "request_delete",
+          product_id: product.id,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.status === 401) {
+        router.replace("/vendor/login");
+        return;
+      }
+
+      if (!response.ok || !data.success) {
+        setProductError(
+          data.error || "Unable to submit deletion request."
+        );
+        return;
+      }
+
+      setProducts((current) =>
+        current.map((item) =>
+          item.id === product.id
+            ? {
+                ...item,
+                delete_requested: 1,
+              }
+            : item
+        )
+      );
+
+      setProductMessage(
+        "Deletion request submitted. Your request has been sent for admin review."
+      );
+    } catch {
+      setProductError(
+        "Unable to submit deletion request. Please try again."
+      );
+    } finally {
+      setDeletingProductId(null);
+    }
+  }
+
   function updateProfileField(
     name: keyof typeof profileForm,
     value: string
@@ -515,6 +585,9 @@ export default function VendorDashboardPage() {
         product.lead_time,
         product.status,
         product.admin_notes,
+        Number(product.delete_requested) === 1
+          ? "deletion requested"
+          : "",
       ];
 
       return values.some((value) =>
@@ -900,13 +973,25 @@ export default function VendorDashboardPage() {
       )}
 
       {activeTab === "products" && (
-        <section>
-          <SectionHeading
-            title="My Products"
-            description="View your submitted products and their approval status."
-          />
+  <section>
+    <SectionHeading
+      title="My Products"
+      description="View your submitted products and their approval status."
+    />
 
-          {filteredProducts.length === 0 ? (
+    {productMessage && (
+      <div className="vendor-dashboard-success">
+        {productMessage}
+      </div>
+    )}
+
+    {productError && (
+      <div className="vendor-dashboard-error">
+        {productError}
+      </div>
+    )}
+
+    {filteredProducts.length === 0 ? (
             <EmptyState>
               {search
                 ? "No products match your search."
@@ -958,9 +1043,15 @@ export default function VendorDashboardPage() {
                       <div className="vendor-accordion-meta">
                         <span>{product.brand || "No brand"}</span>
 
-                        <StatusBadge status={statusType}>
+                                                <StatusBadge status={statusType}>
                           {statusLabel}
                         </StatusBadge>
+
+                        {Number(product.delete_requested) === 1 && (
+                          <StatusBadge status="warning">
+                            Deletion Requested
+                          </StatusBadge>
+                        )}
 
                         <span className="vendor-chevron" aria-hidden="true">
                           {isOpen ? "▲" : "▼"}
@@ -1049,6 +1140,58 @@ export default function VendorDashboardPage() {
                             <p>{product.admin_notes}</p>
                           </div>
                         )}
+
+                                                <div
+                          style={{
+                            marginTop: "18px",
+                            paddingTop: "16px",
+                            borderTop: "1px solid #e7ecea",
+                            display: "flex",
+                            justifyContent: "flex-end",
+                          }}
+                        >
+                          {Number(product.delete_requested) === 1 ? (
+                            <div
+                              style={{
+                                padding: "10px 14px",
+                                borderRadius: "8px",
+                                background: "#fff7df",
+                                color: "#886818",
+                                fontSize: "12px",
+                                fontWeight: 700,
+                              }}
+                            >
+                              Deletion Requested — Awaiting Admin Review
+                            </div>
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={() =>
+                                requestProductDeletion(product)
+                              }
+                              disabled={
+                                deletingProductId === product.id
+                              }
+                              style={{
+                                border: "1px solid #e3c4c0",
+                                background: "#fff",
+                                color: "#a23c35",
+                                borderRadius: "8px",
+                                padding: "9px 13px",
+                                fontSize: "12px",
+                                fontWeight: 700,
+                                cursor:
+                                  deletingProductId === product.id
+                                    ? "not-allowed"
+                                    : "pointer",
+                              }}
+                            >
+                              {deletingProductId === product.id
+                                ? "Submitting..."
+                                : "🗑 Request Product Deletion"}
+                            </button>
+                          )}
+                        </div>
                       </div>
                     )}
                   </article>

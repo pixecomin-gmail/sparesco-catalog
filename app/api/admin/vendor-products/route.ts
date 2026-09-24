@@ -37,6 +37,7 @@ export async function GET() {
           vp.lead_time,
           vp.status,
           vp.admin_notes,
+          vp.delete_requested,
           vp.created_at,
           v.company_name,
           v.contact_person,

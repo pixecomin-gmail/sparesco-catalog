@@ -125,6 +125,7 @@ godown_location,
 lead_time,
 status,
 admin_notes,
+delete_requested,
 created_at
         FROM vendor_products
         WHERE vendor_id = ?
@@ -397,6 +398,191 @@ export async function POST(request: Request) {
       {
         success: false,
         error: "Unable to submit product.",
+      },
+      { status: 500 }
+    );
+  }
+}
+
+export async function PATCH(request: Request) {
+  try {
+    const vendorSession = getVendorCookie(request);
+
+    if (!vendorSession) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor login required.",
+        },
+        { status: 401 }
+      );
+    }
+
+    const { env } = getRequestContext();
+    const db = (env as any).DB;
+
+    if (!db) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor database is not configured.",
+        },
+        { status: 500 }
+      );
+    }
+
+    // ---------------------------------------------
+    // VALIDATE VENDOR SESSION
+    // ---------------------------------------------
+
+    const session = await db
+      .prepare(
+        `
+        SELECT
+          vs.vendor_id,
+          vs.expires_at,
+          v.status
+        FROM vendor_sessions vs
+        JOIN vendors v
+          ON v.id = vs.vendor_id
+        WHERE vs.vendor_id = ?
+          AND vs.session_token = ?
+        LIMIT 1
+        `
+      )
+      .bind(
+        vendorSession.vendorId,
+        vendorSession.sessionToken
+      )
+      .first();
+
+    if (!session) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Invalid vendor session.",
+        },
+        { status: 401 }
+      );
+    }
+
+    if (Date.now() > new Date(session.expires_at).getTime()) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor session has expired.",
+        },
+        { status: 401 }
+      );
+    }
+
+    if (session.status !== "approved") {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Vendor account is not approved.",
+        },
+        { status: 403 }
+      );
+    }
+
+    // ---------------------------------------------
+    // READ REQUEST
+    // ---------------------------------------------
+
+    const body = await request.json();
+
+    const productId = Number(body.product_id);
+    const action = body.action;
+
+    if (!productId) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Invalid product ID.",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (action !== "request_delete") {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Invalid product action.",
+        },
+        { status: 400 }
+      );
+    }
+
+    // ---------------------------------------------
+    // MAKE SURE PRODUCT BELONGS TO THIS VENDOR
+    // ---------------------------------------------
+
+    const product = await db
+      .prepare(
+        `
+        SELECT
+          id,
+          product_name,
+          delete_requested
+        FROM vendor_products
+        WHERE id = ?
+          AND vendor_id = ?
+        LIMIT 1
+        `
+      )
+      .bind(productId, session.vendor_id)
+      .first();
+
+    if (!product) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Product not found.",
+        },
+        { status: 404 }
+      );
+    }
+
+    if (Number(product.delete_requested) === 1) {
+      return NextResponse.json({
+        success: true,
+        message:
+          "A deletion request for this product is already awaiting admin review.",
+      });
+    }
+
+    // ---------------------------------------------
+    // REQUEST DELETION
+    // ---------------------------------------------
+
+    await db
+      .prepare(
+        `
+        UPDATE vendor_products
+        SET
+          delete_requested = 1,
+          updated_at = CURRENT_TIMESTAMP
+        WHERE id = ?
+          AND vendor_id = ?
+        `
+      )
+      .bind(productId, session.vendor_id)
+      .run();
+
+    return NextResponse.json({
+      success: true,
+      message:
+        "Deletion request submitted. The product will remain available until the request is reviewed by admin.",
+    });
+  } catch (error) {
+    console.error("Vendor product deletion request error:", error);
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Unable to submit deletion request.",
       },
       { status: 500 }
     );

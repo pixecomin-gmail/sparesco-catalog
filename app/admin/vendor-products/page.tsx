@@ -18,6 +18,7 @@ type VendorProduct = {
   lead_time: string | null;
   status: string;
   admin_notes: string | null;
+  delete_requested: number;
   created_at: string;
   company_name: string;
   contact_person: string;
@@ -114,6 +115,97 @@ export default function AdminVendorProductsPage() {
     }
   };
 
+    const approveProductDeletion = async (product: VendorProduct) => {
+    const confirmed = window.confirm(
+      `Permanently delete "${product.product_name}"?\n\n` +
+        "This action cannot be undone."
+    );
+
+    if (!confirmed) {
+      return;
+    }
+
+    setUpdatingId(product.id);
+    setMessage("");
+    setError("");
+
+    try {
+      const response = await fetch(
+        `/api/admin/vendor-products/${product.id}`,
+        {
+          method: "DELETE",
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        setError(data.error || "Unable to delete product.");
+        return;
+      }
+
+      setProducts((current) =>
+        current.filter((item) => item.id !== product.id)
+      );
+
+      setOpenProduct(null);
+      setMessage("Product deleted successfully.");
+    } catch {
+      setError("Unable to delete product.");
+    } finally {
+      setUpdatingId(null);
+    }
+  };
+
+  const keepProduct = async (product: VendorProduct) => {
+    setUpdatingId(product.id);
+    setMessage("");
+    setError("");
+
+    try {
+      const response = await fetch(
+        `/api/admin/vendor-products/${product.id}`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            action: "cancel_delete",
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        setError(
+          data.error || "Unable to decline deletion request."
+        );
+        return;
+      }
+
+      setProducts((current) =>
+        current.map((item) =>
+          item.id === product.id
+            ? {
+                ...item,
+                delete_requested: 0,
+              }
+            : item
+        )
+      );
+
+      setMessage(
+        "Deletion request declined. The product has been kept."
+      );
+    } catch {
+      setError("Unable to decline deletion request.");
+    } finally {
+      setUpdatingId(null);
+    }
+  };
+
   const normalizeSearch = (value: unknown) => {
     return String(value || "")
       .toLowerCase()
@@ -140,6 +232,9 @@ export default function AdminVendorProductsPage() {
         product.godown_location,
         product.lead_time,
         product.status,
+        Number(product.delete_requested) === 1
+          ? "deletion requested"
+          : "",
         product.company_name,
         product.contact_person,
         product.email,
@@ -237,6 +332,10 @@ export default function AdminVendorProductsPage() {
               (product) => product.status?.toLowerCase() === "rejected"
             ).length;
 
+            const deletionRequestCount = vendor.products.filter(
+              (product) => Number(product.delete_requested) === 1
+            ).length;
+
             return (
               <section key={vendor.vendor_id} style={vendorCardStyle}>
                 <button
@@ -287,6 +386,18 @@ export default function AdminVendorProductsPage() {
                     {rejectedCount > 0 && (
                       <span>
                         <strong>{rejectedCount}</strong> Rejected
+                      </span>
+                    )}
+
+                                        {deletionRequestCount > 0 && (
+                      <span
+                        style={{
+                          color: "#a23c35",
+                          fontWeight: 700,
+                        }}
+                      >
+                        <strong>{deletionRequestCount}</strong>{" "}
+                        Deletion Requested
                       </span>
                     )}
                   </div>
@@ -343,7 +454,34 @@ export default function AdminVendorProductsPage() {
                                 {product.brand || "—"}
                               </span>
 
-                              <StatusBadge status={product.status} />
+                                                            <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: "6px",
+                                  flexWrap: "wrap",
+                                }}
+                              >
+                                <StatusBadge status={product.status} />
+
+                                {Number(product.delete_requested) === 1 && (
+                                  <span
+                                    style={{
+                                      display: "inline-flex",
+                                      width: "fit-content",
+                                      padding: "6px 10px",
+                                      borderRadius: "999px",
+                                      background: "#fff0ee",
+                                      color: "#a23c35",
+                                      fontSize: "10px",
+                                      fontWeight: 700,
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    Deletion Requested
+                                  </span>
+                                )}
+                              </div>
                             </button>
 
                             {productOpen && (
@@ -449,6 +587,55 @@ export default function AdminVendorProductsPage() {
                                   </span>
 
                                   <div style={actionsStyle}>
+                                                                        {Number(product.delete_requested) === 1 && (
+                                      <>
+                                        <button
+                                          type="button"
+                                          disabled={
+                                            updatingId === product.id
+                                          }
+                                          onClick={() =>
+                                            keepProduct(product)
+                                          }
+                                          style={{
+                                            border: "1px solid #d9dddd",
+                                            background: "#ffffff",
+                                            color: "#53666c",
+                                            borderRadius: "7px",
+                                            padding: "8px 14px",
+                                            fontSize: "11px",
+                                            fontWeight: 700,
+                                            cursor: "pointer",
+                                          }}
+                                        >
+                                          Keep Product
+                                        </button>
+
+                                        <button
+                                          type="button"
+                                          disabled={
+                                            updatingId === product.id
+                                          }
+                                          onClick={() =>
+                                            approveProductDeletion(product)
+                                          }
+                                          style={{
+                                            border: "none",
+                                            background: "#a23c35",
+                                            color: "#ffffff",
+                                            borderRadius: "7px",
+                                            padding: "8px 14px",
+                                            fontSize: "11px",
+                                            fontWeight: 700,
+                                            cursor: "pointer",
+                                          }}
+                                        >
+                                          {updatingId === product.id
+                                            ? "Deleting..."
+                                            : "Delete Product"}
+                                        </button>
+                                      </>
+                                    )}
                                     <button
                                       type="button"
                                       disabled={
