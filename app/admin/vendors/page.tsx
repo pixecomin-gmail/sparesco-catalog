@@ -26,6 +26,9 @@ export default function AdminVendorsPage() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
+  const [approvalRequired, setApprovalRequired] = useState(false);
+  const [approvalUpdating, setApprovalUpdating] = useState(false);
+
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("newest");
   const [openVendor, setOpenVendor] = useState<number | null>(null);
@@ -52,6 +55,7 @@ export default function AdminVendorsPage() {
       }
 
       setVendors(data.vendors || []);
+      setApprovalRequired(Boolean(data.approvalRequired));
     } catch {
       setError("Unable to load vendors.");
     } finally {
@@ -144,6 +148,47 @@ export default function AdminVendorsPage() {
     }
   };
 
+  const toggleApprovalRequirement = async () => {
+    const nextValue = !approvalRequired;
+
+    setApprovalUpdating(true);
+    setMessage("");
+    setError("");
+
+    try {
+      const response = await fetch("/api/admin/vendors", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          approvalRequired: nextValue,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        setError(
+          data.error || "Unable to update vendor approval setting."
+        );
+        return;
+      }
+
+      setApprovalRequired(Boolean(data.approvalRequired));
+
+      setMessage(
+        data.approvalRequired
+          ? "Vendor registration approval is now required."
+          : "Vendor registration approval is now skipped."
+      );
+    } catch {
+      setError("Unable to update vendor approval setting.");
+    } finally {
+      setApprovalUpdating(false);
+    }
+  };
+
   const visibleVendors = useMemo(() => {
     const query = search.trim().toLowerCase();
 
@@ -222,6 +267,68 @@ export default function AdminVendorsPage() {
         <div style={countStyle}>
           {vendors.length} {vendors.length === 1 ? "Vendor" : "Vendors"}
         </div>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "20px",
+          padding: "16px 18px",
+          marginBottom: "18px",
+          background: "#ffffff",
+          border: "1px solid #dfe6e4",
+          borderRadius: "10px",
+        }}
+      >
+        <div>
+          <strong
+            style={{
+              display: "block",
+              color: "#173f4c",
+              fontSize: "13px",
+              marginBottom: "4px",
+            }}
+          >
+            Vendor Registration Approval
+          </strong>
+
+          <span
+            style={{
+              color: "#718086",
+              fontSize: "11px",
+            }}
+          >
+            {approvalRequired
+              ? "New vendors require admin approval before accessing the vendor portal."
+              : "New vendors are automatically approved after registration."}
+          </span>
+        </div>
+
+        <button
+          type="button"
+          onClick={toggleApprovalRequirement}
+          disabled={approvalUpdating}
+          style={{
+            minWidth: "72px",
+            padding: "8px 14px",
+            border: "none",
+            borderRadius: "999px",
+            background: approvalRequired ? "#173f4c" : "#dfe6e4",
+            color: approvalRequired ? "#ffffff" : "#53666c",
+            fontSize: "11px",
+            fontWeight: 800,
+            cursor: approvalUpdating ? "not-allowed" : "pointer",
+            opacity: approvalUpdating ? 0.6 : 1,
+          }}
+        >
+          {approvalUpdating
+            ? "..."
+            : approvalRequired
+              ? "ON"
+              : "OFF"}
+        </button>
       </div>
 
       {message && <div style={successStyle}>{message}</div>}

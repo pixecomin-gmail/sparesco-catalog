@@ -195,6 +195,25 @@ export async function POST(request: Request) {
       );
     }
 
+    const approvalSetting = await db
+      .prepare(
+        `
+    SELECT setting_value
+    FROM platform_settings
+    WHERE setting_key = ?
+    LIMIT 1
+    `
+      )
+      .bind("vendor_registration_approval_required")
+      .first();
+
+    const approvalRequired =
+      approvalSetting?.setting_value === "1";
+
+    const initialStatus = approvalRequired
+      ? "pending"
+      : "approved";
+
     const result = await db
       .prepare(
         `
@@ -213,7 +232,7 @@ export async function POST(request: Request) {
           product_limit,
           products_submitted
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', 10, 0)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 10, 0)
         `
       )
       .bind(
@@ -226,14 +245,19 @@ export async function POST(request: Request) {
         state || null,
         country || null,
         gst_number,
-        website || null
+        website || null,
+        initialStatus
       )
       .run();
 
     return NextResponse.json({
       success: true,
       vendorId: result.meta?.last_row_id,
-      message: "Vendor application submitted successfully.",
+      status: initialStatus,
+      approvalRequired,
+      message: approvalRequired
+        ? "Vendor application submitted successfully and is pending approval."
+        : "Vendor registration completed successfully.",
     });
   } catch (error) {
     console.error("Vendor registration error:", error);
