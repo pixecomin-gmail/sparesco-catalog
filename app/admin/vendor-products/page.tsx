@@ -19,6 +19,7 @@ type VendorProduct = {
   status: string;
   admin_notes: string | null;
   delete_requested: number;
+  is_on_site: boolean | null;
   created_at: string;
   company_name: string;
   contact_person: string;
@@ -115,10 +116,10 @@ export default function AdminVendorProductsPage() {
     }
   };
 
-    const approveProductDeletion = async (product: VendorProduct) => {
+  const approveProductDeletion = async (product: VendorProduct) => {
     const confirmed = window.confirm(
       `Permanently delete "${product.product_name}"?\n\n` +
-        "This action cannot be undone."
+      "This action cannot be undone."
     );
 
     if (!confirmed) {
@@ -189,9 +190,9 @@ export default function AdminVendorProductsPage() {
         current.map((item) =>
           item.id === product.id
             ? {
-                ...item,
-                delete_requested: 0,
-              }
+              ...item,
+              delete_requested: 0,
+            }
             : item
         )
       );
@@ -389,7 +390,7 @@ export default function AdminVendorProductsPage() {
                       </span>
                     )}
 
-                                        {deletionRequestCount > 0 && (
+                    {deletionRequestCount > 0 && (
                       <span
                         style={{
                           color: "#a23c35",
@@ -454,7 +455,7 @@ export default function AdminVendorProductsPage() {
                                 {product.brand || "—"}
                               </span>
 
-                                                            <div
+                              <div
                                 style={{
                                   display: "flex",
                                   alignItems: "center",
@@ -463,6 +464,24 @@ export default function AdminVendorProductsPage() {
                                 }}
                               >
                                 <StatusBadge status={product.status} />
+
+                                {product.is_on_site === false && (
+                                  <span
+                                    style={{
+                                      display: "inline-flex",
+                                      width: "fit-content",
+                                      padding: "6px 10px",
+                                      borderRadius: "999px",
+                                      background: "#eef4f6",
+                                      color: "#173f4c",
+                                      fontSize: "10px",
+                                      fontWeight: 800,
+                                      whiteSpace: "nowrap",
+                                    }}
+                                  >
+                                    NOT ON SITE
+                                  </span>
+                                )}
 
                                 {Number(product.delete_requested) === 1 && (
                                   <span
@@ -587,7 +606,7 @@ export default function AdminVendorProductsPage() {
                                   </span>
 
                                   <div style={actionsStyle}>
-                                                                        {Number(product.delete_requested) === 1 && (
+                                    {Number(product.delete_requested) === 1 && (
                                       <>
                                         <button
                                           type="button"
