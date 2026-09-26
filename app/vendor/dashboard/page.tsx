@@ -374,14 +374,14 @@ export default function VendorDashboardPage() {
     }
   }
 
-    async function requestProductDeletion(product: VendorProduct) {
+  async function requestProductDeletion(product: VendorProduct) {
     if (Number(product.delete_requested) === 1) {
       return;
     }
 
     const confirmed = window.confirm(
       `Request deletion of "${product.product_name}"?\n\n` +
-        "This product will remain available until your deletion request is reviewed by Sparesco Admin."
+      "This product will remain available until your deletion request is reviewed by Sparesco Admin."
     );
 
     if (!confirmed) {
@@ -422,9 +422,9 @@ export default function VendorDashboardPage() {
         current.map((item) =>
           item.id === product.id
             ? {
-                ...item,
-                delete_requested: 1,
-              }
+              ...item,
+              delete_requested: 1,
+            }
             : item
         )
       );
@@ -461,22 +461,6 @@ export default function VendorDashboardPage() {
 
     setProfileError("");
     setProfileMessage("");
-
-    if (!profileForm.contact_person.trim()) {
-      setProfileError("Contact Person is required.");
-      return;
-    }
-
-    if (!profileForm.phone) {
-      setProfileError("Contact Number is required.");
-      return;
-    }
-
-    if (!isValidPhoneNumber(profileForm.phone)) {
-      setProfileError("Please enter a valid contact number.");
-      return;
-    }
-
     setProfileSaving(true);
 
     try {
@@ -973,25 +957,25 @@ export default function VendorDashboardPage() {
       )}
 
       {activeTab === "products" && (
-  <section>
-    <SectionHeading
-      title="My Products"
-      description="View your submitted products and their approval status."
-    />
+        <section>
+          <SectionHeading
+            title="My Products"
+            description="View your submitted products and their approval status."
+          />
 
-    {productMessage && (
-      <div className="vendor-dashboard-success">
-        {productMessage}
-      </div>
-    )}
+          {productMessage && (
+            <div className="vendor-dashboard-success">
+              {productMessage}
+            </div>
+          )}
 
-    {productError && (
-      <div className="vendor-dashboard-error">
-        {productError}
-      </div>
-    )}
+          {productError && (
+            <div className="vendor-dashboard-error">
+              {productError}
+            </div>
+          )}
 
-    {filteredProducts.length === 0 ? (
+          {filteredProducts.length === 0 ? (
             <EmptyState>
               {search
                 ? "No products match your search."
@@ -1043,7 +1027,7 @@ export default function VendorDashboardPage() {
                       <div className="vendor-accordion-meta">
                         <span>{product.brand || "No brand"}</span>
 
-                                                <StatusBadge status={statusType}>
+                        <StatusBadge status={statusType}>
                           {statusLabel}
                         </StatusBadge>
 
@@ -1141,7 +1125,7 @@ export default function VendorDashboardPage() {
                           </div>
                         )}
 
-                                                <div
+                        <div
                           style={{
                             marginTop: "18px",
                             paddingTop: "16px",
@@ -1487,36 +1471,30 @@ export default function VendorDashboardPage() {
               </span>
 
               <div className="vendor-dashboard-form-grid">
-                <DashboardField label="Contact Person *">
+                <DashboardField label="Contact Person" readOnly>
                   <input
                     type="text"
-                    value={profileForm.contact_person}
-                    onChange={(event) =>
-                      updateProfileField(
-                        "contact_person",
-                        event.target.value
-                      )
-                    }
-                    required
+                    value={vendor.contact_person || ""}
+                    readOnly
                   />
                 </DashboardField>
 
-                <DashboardField label="Contact Number *">
-                  <PhoneInput
-                    international
-                    defaultCountry="IN"
-                    value={profileForm.phone || undefined}
-                    onChange={(value) =>
-                      updateProfileField("phone", value || "")
-                    }
-                    className="vendor-dashboard-phone"
+                <DashboardField label="Contact Number" readOnly>
+                  <input
+                    type="text"
+                    value={vendor.phone || ""}
+                    readOnly
                   />
                 </DashboardField>
 
-                <DashboardField label="Address">
+                <DashboardField
+                  label="Address"
+                  readOnly={Boolean(vendor.address?.trim())}
+                >
                   <input
                     type="text"
                     value={profileForm.address}
+                    readOnly={Boolean(vendor.address?.trim())}
                     onChange={(event) =>
                       updateProfileField(
                         "address",
@@ -1526,10 +1504,14 @@ export default function VendorDashboardPage() {
                   />
                 </DashboardField>
 
-                <DashboardField label="City">
+                <DashboardField
+                  label="City"
+                  readOnly={Boolean(vendor.city?.trim())}
+                >
                   <input
                     type="text"
                     value={profileForm.city}
+                    readOnly={Boolean(vendor.city?.trim())}
                     onChange={(event) =>
                       updateProfileField(
                         "city",
@@ -1539,10 +1521,14 @@ export default function VendorDashboardPage() {
                   />
                 </DashboardField>
 
-                <DashboardField label="State">
+                <DashboardField
+                  label="State"
+                  readOnly={Boolean(vendor.state?.trim())}
+                >
                   <input
                     type="text"
                     value={profileForm.state}
+                    readOnly={Boolean(vendor.state?.trim())}
                     onChange={(event) =>
                       updateProfileField(
                         "state",
@@ -1552,10 +1538,14 @@ export default function VendorDashboardPage() {
                   />
                 </DashboardField>
 
-                <DashboardField label="Country">
+                <DashboardField
+                  label="Country"
+                  readOnly={Boolean(vendor.country?.trim())}
+                >
                   <input
                     type="text"
                     value={profileForm.country}
+                    readOnly={Boolean(vendor.country?.trim())}
                     onChange={(event) =>
                       updateProfileField(
                         "country",
@@ -1565,10 +1555,14 @@ export default function VendorDashboardPage() {
                   />
                 </DashboardField>
 
-                <DashboardField label="Website">
+                <DashboardField
+                  label="Website"
+                  readOnly={Boolean(vendor.website?.trim())}
+                >
                   <input
                     type="url"
                     value={profileForm.website}
+                    readOnly={Boolean(vendor.website?.trim())}
                     onChange={(event) =>
                       updateProfileField(
                         "website",

@@ -113,6 +113,7 @@ export default function SiteHeader() {
   const [query, setQuery] = useState("");
   const [mobileView, setMobileView] = useState<"main" | "categories" | "group">("main");
   const [activeGroup, setActiveGroup] = useState<MegaGroup | null>(null);
+  const [desktopMegaClosed, setDesktopMegaClosed] = useState(false);
 
   const totalItems = items.reduce((total, item) => total + item.quantity, 0);
   const { results: filteredResults, loading } = useSearchResults(query, 4);
@@ -235,7 +236,10 @@ export default function SiteHeader() {
           </Link>
 
           <nav className="desktop-nav">
-            <div className="nav-mega-wrap">
+            <div
+              className={`nav-mega-wrap ${desktopMegaClosed ? "mega-closed" : ""}`}
+              onMouseLeave={() => setDesktopMegaClosed(false)}
+            >
               <Link href="/collections" className="nav-mega-trigger">
                 Categories <span>▾</span>
               </Link>
@@ -266,10 +270,9 @@ export default function SiteHeader() {
                               key={item.handle}
                               href={`/collections/${item.handle}`}
                               prefetch={false}
-                              onClick={() => setMobileMenuOpen(false)}
+                              onClick={() => setDesktopMegaClosed(true)}
                             >
                               <span>{item.label}</span>
-                            
                             </Link>
                           ))}
                         </div>

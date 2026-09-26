@@ -56,30 +56,30 @@ export async function GET(request: Request) {
     const session = await db
       .prepare(
         `
-        SELECT
-          vs.id,
-          vs.vendor_id,
-          vs.expires_at,
-          v.company_name,
-          v.contact_person,
-          v.email,
-          v.phone,
-          v.gst_number,
-          v.address,
-          v.city,
-          v.state,
-          v.country,
-          v.website,
-          v.status,
-          v.product_limit,
-          v.products_submitted
-        FROM vendor_sessions vs
-        JOIN vendors v
-          ON v.id = vs.vendor_id
-        WHERE vs.vendor_id = ?
-          AND vs.session_token = ?
-        LIMIT 1
-        `
+    SELECT
+      vs.id,
+      vs.vendor_id,
+      vs.expires_at,
+      v.company_name,
+      v.contact_person,
+      v.email,
+      v.phone,
+      v.gst_number,
+      v.address,
+      v.city,
+      v.state,
+      v.country,
+      v.website,
+      v.status,
+      v.product_limit,
+      v.products_submitted
+    FROM vendor_sessions vs
+    JOIN vendors v
+      ON v.id = vs.vendor_id
+    WHERE vs.vendor_id = ?
+      AND vs.session_token = ?
+    LIMIT 1
+    `
       )
       .bind(vendorId, sessionToken)
       .first();
@@ -210,18 +210,25 @@ export async function PATCH(request: Request) {
     const session = await db
       .prepare(
         `
-        SELECT
-          vs.id,
-          vs.vendor_id,
-          vs.expires_at,
-          v.status
-        FROM vendor_sessions vs
-        JOIN vendors v
-          ON v.id = vs.vendor_id
-        WHERE vs.vendor_id = ?
-          AND vs.session_token = ?
-        LIMIT 1
-        `
+    SELECT
+      vs.id,
+      vs.vendor_id,
+      vs.expires_at,
+      v.status,
+      v.contact_person,
+      v.phone,
+      v.address,
+      v.city,
+      v.state,
+      v.country,
+      v.website
+    FROM vendor_sessions vs
+    JOIN vendors v
+      ON v.id = vs.vendor_id
+    WHERE vs.vendor_id = ?
+      AND vs.session_token = ?
+    LIMIT 1
+    `
       )
       .bind(vendorId, sessionToken)
       .first();
@@ -260,32 +267,61 @@ export async function PATCH(request: Request) {
 
     const body = await request.json();
 
-    const contactPerson = String(
-      body.contact_person || ""
-    ).trim();
+    const clean = (value: unknown) =>
+      String(value ?? "").trim();
 
-    const phone = String(body.phone || "").trim();
-    const address = String(body.address || "").trim();
-    const city = String(body.city || "").trim();
-    const state = String(body.state || "").trim();
-    const country = String(body.country || "").trim();
-    const website = String(body.website || "").trim();
+    const existingContactPerson = clean(session.contact_person);
+    const existingPhone = clean(session.phone);
+    const existingAddress = clean(session.address);
+    const existingCity = clean(session.city);
+    const existingState = clean(session.state);
+    const existingCountry = clean(session.country);
+    const existingWebsite = clean(session.website);
 
-    if (!contactPerson) {
+    const submittedAddress = clean(body.address);
+    const submittedCity = clean(body.city);
+    const submittedState = clean(body.state);
+    const submittedCountry = clean(body.country);
+    const submittedWebsite = clean(body.website);
+
+    /*
+      Write-once profile rule:
+      - Contact person and phone were supplied at registration,
+        so they cannot be changed by the vendor.
+      - Optional fields may be added only while currently blank.
+      - Once an optional field has a value, it becomes read-only.
+    */
+
+    const address =
+      existingAddress || submittedAddress;
+
+    const city =
+      existingCity || submittedCity;
+
+    const state =
+      existingState || submittedState;
+
+    const country =
+      existingCountry || submittedCountry;
+
+    const website =
+      existingWebsite || submittedWebsite;
+
+    if (!existingContactPerson) {
       return NextResponse.json(
         {
           success: false,
-          error: "Contact person is required.",
+          error: "Vendor contact person is missing.",
         },
         { status: 400 }
       );
     }
 
-    if (!phone) {
+    if (!existingPhone) {
       return NextResponse.json(
         {
           success: false,
-          error: "Contact number is required.",
+          error: "Vendor contact number is missing.",
         },
         { status: 400 }
       );
@@ -316,22 +352,18 @@ export async function PATCH(request: Request) {
     await db
       .prepare(
         `
-        UPDATE vendors
-        SET
-          contact_person = ?,
-          phone = ?,
-          address = ?,
-          city = ?,
-          state = ?,
-          country = ?,
-          website = ?,
-          updated_at = CURRENT_TIMESTAMP
-        WHERE id = ?
-        `
+    UPDATE vendors
+    SET
+      address = ?,
+      city = ?,
+      state = ?,
+      country = ?,
+      website = ?,
+      updated_at = CURRENT_TIMESTAMP
+    WHERE id = ?
+    `
       )
       .bind(
-        contactPerson,
-        phone,
         address || null,
         city || null,
         state || null,
@@ -345,8 +377,8 @@ export async function PATCH(request: Request) {
       success: true,
       message: "Profile updated successfully.",
       vendor: {
-        contact_person: contactPerson,
-        phone,
+        contact_person: existingContactPerson,
+        phone: existingPhone,
         address: address || null,
         city: city || null,
         state: state || null,

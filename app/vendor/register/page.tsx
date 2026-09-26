@@ -155,11 +155,16 @@ export default function VendorRegisterPage() {
         return;
       }
 
-      setSuccess(
-        "Vendor application submitted successfully. Your application is pending admin approval."
-      );
+      if (data.approvalRequired) {
+        setSuccess(
+          "Vendor registration submitted successfully. Your application is pending admin approval."
+        );
 
-      setForm(emptyForm);
+        setForm(emptyForm);
+        return;
+      }
+
+      window.location.href = "/vendor/login";
     } catch (error) {
       console.error("Vendor registration error:", error);
 
@@ -182,8 +187,8 @@ export default function VendorRegisterPage() {
               <h1>Register your company</h1>
 
               <p>
-                Submit your company details for approval. Once approved,
-                you can add your first 10 products.
+                Register your company to access the Sparesco Vendor Portal
+                and start adding your products.
               </p>
             </div>
 

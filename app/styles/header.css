@@ -480,3 +480,7 @@
   line-height: 1;
   font-weight: 700;
 }
+
+.nav-mega-wrap.mega-closed .mega-menu {
+  display: none;
+}
