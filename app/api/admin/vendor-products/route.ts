@@ -27,6 +27,8 @@ type VendorProductRow = {
 };
 
 type SearchItem = {
+  h?: string;
+  t?: string;
   p?: string;
 };
 
@@ -88,8 +90,7 @@ export async function GET() {
     const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
     /*
-     * If R2 is unavailable, don't incorrectly label every product
-     * as NOT ON SITE.
+     * If R2 is unavailable, don't incorrectly show NOT ON SITE.
      */
     if (!r2Base) {
       return NextResponse.json({
@@ -104,23 +105,40 @@ export async function GET() {
     const base = r2Base.replace(/\/$/, "");
 
     /*
-     * Group the vendor products by the same 2-character shard
-     * used by catalog/search-v2.
+     * Collect search shards for BOTH vendor identifiers:
+     *
+     * - product_name
+     * - part_number
+     *
+     * Example:
+     * product_name = P761490
+     * part_number  = HFL92001
+     *
+     * We therefore inspect both "p7" and "hf".
      */
     const shardNames = new Set<string>();
 
     for (const product of products) {
-      const normalizedPartNumber = compact(product.part_number);
+      const identifiers = [
+        compact(product.product_name),
+        compact(product.part_number),
+      ];
 
-      if (normalizedPartNumber.length >= 2) {
-        shardNames.add(normalizedPartNumber.slice(0, 2));
+      for (const identifier of identifiers) {
+        if (identifier.length >= 2) {
+          shardNames.add(identifier.slice(0, 2));
+        }
       }
     }
 
     /*
-     * Load each unique R2 shard only once.
+     * Load every required shard only once.
+     *
+     * null means the shard could not be checked.
+     * This prevents a failed R2 request from being interpreted
+     * as "NOT ON SITE".
      */
-    const shardPartNumbers = new Map<string, Set<string>>();
+    const shardItems = new Map<string, SearchItem[] | null>();
 
     await Promise.all(
       Array.from(shardNames).map(async (shard) => {
@@ -132,48 +150,98 @@ export async function GET() {
             }
           );
 
+          if (response.status === 404) {
+            shardItems.set(shard, []);
+            return;
+          }
+
           if (!response.ok) {
-            shardPartNumbers.set(shard, new Set());
+            shardItems.set(shard, null);
             return;
           }
 
           const items = (await response.json()) as SearchItem[];
 
-          const partNumbers = new Set(
-            items
-              .map((item) => compact(item.p))
-              .filter(Boolean)
-          );
-
-          shardPartNumbers.set(shard, partNumbers);
+          shardItems.set(shard, items);
         } catch {
-          /*
-           * Don't mark products as NOT ON SITE when the R2
-           * lookup itself failed.
-           */
-          shardPartNumbers.set(shard, new Set());
+          shardItems.set(shard, null);
         }
       })
     );
 
     const productsWithSiteStatus = products.map((product) => {
-      const normalizedPartNumber = compact(product.part_number);
+      const vendorIdentifiers = new Set(
+        [
+          compact(product.product_name),
+          compact(product.part_number),
+        ].filter(Boolean)
+      );
 
-      if (normalizedPartNumber.length < 2) {
+      if (vendorIdentifiers.size === 0) {
         return {
           ...product,
           is_on_site: false,
         };
       }
 
-      const shard = normalizedPartNumber.slice(0, 2);
-      const partNumbers = shardPartNumbers.get(shard);
+      const relevantShards = new Set<string>();
 
+      for (const identifier of vendorIdentifiers) {
+        if (identifier.length >= 2) {
+          relevantShards.add(identifier.slice(0, 2));
+        }
+      }
+
+      let lookupFailed = false;
+      let found = false;
+
+      for (const shard of relevantShards) {
+        const items = shardItems.get(shard);
+
+        if (items === null || items === undefined) {
+          lookupFailed = true;
+          continue;
+        }
+
+        for (const item of items) {
+          const websiteIdentifiers = [
+            compact(item.p),
+            compact(item.t),
+            compact(item.h),
+          ];
+
+          const matches = websiteIdentifiers.some(
+            (websiteIdentifier) =>
+              websiteIdentifier &&
+              vendorIdentifiers.has(websiteIdentifier)
+          );
+
+          if (matches) {
+            found = true;
+            break;
+          }
+        }
+
+        if (found) {
+          break;
+        }
+      }
+
+      /*
+       * If we found an exact identifier match, it is on site.
+       *
+       * If we couldn't complete the R2 lookup, return null so
+       * the UI doesn't falsely label the product NOT ON SITE.
+       *
+       * Otherwise it genuinely wasn't found.
+       */
       return {
         ...product,
-        is_on_site: partNumbers
-          ? partNumbers.has(normalizedPartNumber)
-          : null,
+        is_on_site: found
+          ? true
+          : lookupFailed
+            ? null
+            : false,
       };
     });
 
