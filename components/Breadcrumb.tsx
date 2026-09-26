@@ -55,6 +55,10 @@ function getStaticLabel(collections: CollectionItem[], segment: string) {
 export default function Breadcrumb() {
   const pathname = usePathname();
 
+  const hideBreadcrumb =
+    pathname === "/vendor" ||
+    pathname.startsWith("/vendor/");
+
   const [collections, setCollections] = useState<CollectionItem[]>([]);
   const [productInfo, setProductInfo] = useState<ProductBreadcrumbInfo | null>(
     null
@@ -145,6 +149,10 @@ export default function Breadcrumb() {
 
   const isProductPage =
   pathname.split("/").filter(Boolean)[0] === "products";
+
+  if (hideBreadcrumb) {
+    return null;
+  }
 
   if (!items.length) {
     if (!isProductPage) return null;
