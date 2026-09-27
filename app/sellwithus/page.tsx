@@ -7,6 +7,7 @@ import "react-phone-number-input/style.css";
 import "../contact/contact.css";
 import "./sellwithus.css";
 
+
 export default function BecomeSupplierPage() {
   const formTopRef = useRef<HTMLDivElement>(null);
   const [form, setForm] = useState({
@@ -21,6 +22,33 @@ export default function BecomeSupplierPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+
+  const [vendorTab, setVendorTab] = useState<"register" | "login">(
+    "register"
+  );
+
+  const [vendorForm, setVendorForm] = useState({
+    company_name: "",
+    contact_person: "",
+    email: "",
+    phone: "",
+    gst_number: "",
+    country: "",
+    address: "",
+    city: "",
+    state: "",
+    website: "",
+  });
+
+  const [vendorError, setVendorError] = useState("");
+  const [vendorSuccess, setVendorSuccess] = useState("");
+  const [vendorSubmitting, setVendorSubmitting] = useState(false);
+  const [vendorLoginEmail, setVendorLoginEmail] = useState("");
+  const [vendorOtp, setVendorOtp] = useState("");
+  const [vendorOtpSent, setVendorOtpSent] = useState(false);
+  const [vendorLoginLoading, setVendorLoginLoading] = useState(false);
+  const [vendorLoginMessage, setVendorLoginMessage] = useState("");
+  const [vendorLoginError, setVendorLoginError] = useState("");
 
   function updateField(name: string, value: string) {
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -110,6 +138,256 @@ export default function BecomeSupplierPage() {
       }, 100);
     } finally {
       setIsSubmitting(false);
+    }
+  }
+
+  function updateVendorField(name: string, value: string) {
+    setVendorForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    setVendorError("");
+    setVendorSuccess("");
+  }
+
+  function isValidVendorEmail(value: string) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+  }
+
+  function isIndiaVendor(value: string) {
+    return value.trim().toLowerCase() === "india";
+  }
+
+  function isValidIndianVendorGst(value: string) {
+    return /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$/.test(
+      value.trim().toUpperCase()
+    );
+  }
+
+  async function submitVendorRegistration(
+    e: React.FormEvent<HTMLFormElement>
+  ) {
+    e.preventDefault();
+
+    setVendorError("");
+    setVendorSuccess("");
+
+    if (!vendorForm.company_name.trim()) {
+      setVendorError("Company Name is required.");
+      return;
+    }
+
+    if (!vendorForm.contact_person.trim()) {
+      setVendorError("Contact Person is required.");
+      return;
+    }
+
+    if (!vendorForm.email.trim()) {
+      setVendorError("Email is required.");
+      return;
+    }
+
+    if (!isValidVendorEmail(vendorForm.email)) {
+      setVendorError("Please enter a valid email address.");
+      return;
+    }
+
+    if (!vendorForm.phone.trim()) {
+      setVendorError("Contact Number is required.");
+      return;
+    }
+
+    if (!isValidPhoneNumber(vendorForm.phone)) {
+      setVendorError("Please enter a valid contact number.");
+      return;
+    }
+
+    if (!vendorForm.gst_number.trim()) {
+      setVendorError("GST / Tax Number is required.");
+      return;
+    }
+
+    if (
+      isIndiaVendor(vendorForm.country) &&
+      !isValidIndianVendorGst(vendorForm.gst_number)
+    ) {
+      setVendorError(
+        "Please enter a valid 15-character Indian GSTIN."
+      );
+      return;
+    }
+
+    if (
+      vendorForm.website.trim() &&
+      !/^https?:\/\/.+/i.test(vendorForm.website.trim())
+    ) {
+      setVendorError(
+        "Website must begin with http:// or https://"
+      );
+      return;
+    }
+
+    try {
+      setVendorSubmitting(true);
+
+      const response = await fetch("/api/vendor/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...vendorForm,
+          company_name: vendorForm.company_name.trim(),
+          contact_person: vendorForm.contact_person.trim(),
+          email: vendorForm.email.trim().toLowerCase(),
+          phone: vendorForm.phone.trim(),
+          gst_number: vendorForm.gst_number.trim().toUpperCase(),
+          country: vendorForm.country.trim(),
+          address: vendorForm.address.trim(),
+          city: vendorForm.city.trim(),
+          state: vendorForm.state.trim(),
+          website: vendorForm.website.trim(),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setVendorError(
+          data.error || "Unable to submit vendor application."
+        );
+        return;
+      }
+
+      if (data.approvalRequired) {
+        setVendorSuccess(
+          "Vendor registration submitted successfully. Your application is pending admin approval."
+        );
+
+        setVendorForm({
+          company_name: "",
+          contact_person: "",
+          email: "",
+          phone: "",
+          gst_number: "",
+          country: "",
+          address: "",
+          city: "",
+          state: "",
+          website: "",
+        });
+
+        return;
+      }
+
+      setVendorTab("login");
+    } catch (error) {
+      console.error("Vendor registration error:", error);
+
+      setVendorError(
+        "Something went wrong. Please try again."
+      );
+    } finally {
+      setVendorSubmitting(false);
+    }
+  }
+
+  async function sendVendorOtp() {
+    setVendorLoginError("");
+    setVendorLoginMessage("");
+
+    const cleanEmail = vendorLoginEmail.trim().toLowerCase();
+
+    if (!cleanEmail) {
+      setVendorLoginError(
+        "Please enter your registered email."
+      );
+      return;
+    }
+
+    setVendorLoginLoading(true);
+
+    try {
+      const response = await fetch(
+        "/api/vendor/login/request-otp",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: cleanEmail,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setVendorLoginError(
+          data.error || "Unable to send OTP."
+        );
+        return;
+      }
+
+      setVendorOtpSent(true);
+      setVendorLoginMessage(
+        "OTP sent to your registered email."
+      );
+    } catch {
+      setVendorLoginError(
+        "Unable to send OTP. Please try again."
+      );
+    } finally {
+      setVendorLoginLoading(false);
+    }
+  }
+
+  async function verifyVendorOtp() {
+    setVendorLoginError("");
+    setVendorLoginMessage("");
+
+    if (!/^\d{6}$/.test(vendorOtp.trim())) {
+      setVendorLoginError(
+        "Please enter the 6-digit OTP."
+      );
+      return;
+    }
+
+    setVendorLoginLoading(true);
+
+    try {
+      const response = await fetch(
+        "/api/vendor/login/verify-otp",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: vendorLoginEmail.trim().toLowerCase(),
+            otp: vendorOtp.trim(),
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setVendorLoginError(
+          data.error || "Unable to verify OTP."
+        );
+        return;
+      }
+
+      window.location.href = "/vendor/dashboard";
+    } catch {
+      setVendorLoginError(
+        "Unable to verify OTP. Please try again."
+      );
+    } finally {
+      setVendorLoginLoading(false);
     }
   }
 
@@ -269,7 +547,7 @@ export default function BecomeSupplierPage() {
         </div>
       </section>
 
-      <section className="supplier-form-section" id="supplier-form">
+      {/* <section className="supplier-form-section" id="supplier-form">
         <div className="container">
           <div className="about-section-heading">
             <h2>Supplier Registration</h2>
@@ -377,6 +655,297 @@ export default function BecomeSupplierPage() {
             </button>
           </form>
         </div>
+        </div>
+      </section> */}
+
+      <section className="supplier-form-section" id="supplier-form">
+        <div className="container">
+          <div className="about-section-heading">
+            <h2>Vendor Account</h2>
+            <p>
+              Create a vendor account to start selling with Sparesco,
+              or sign in if you are already registered.
+            </p>
+          </div>
+
+          <div className="vendor-account-box">
+            <div className="vendor-account-tabs">
+              <button
+                type="button"
+                className={
+                  vendorTab === "register"
+                    ? "vendor-account-tab active"
+                    : "vendor-account-tab"
+                }
+                onClick={() => setVendorTab("register")}
+              >
+                Create Account
+              </button>
+
+              <button
+                type="button"
+                className={
+                  vendorTab === "login"
+                    ? "vendor-account-tab active"
+                    : "vendor-account-tab"
+                }
+                onClick={() => setVendorTab("login")}
+              >
+                Sign In
+              </button>
+            </div>
+
+            <div className="vendor-account-content">
+              {vendorTab === "register" ? (
+                <form
+                  className="supplier-form"
+                  onSubmit={submitVendorRegistration}
+                  noValidate
+                >
+                  <div className="supplier-form-grid">
+
+                    <input
+                      type="text"
+                      placeholder="Company Name *"
+                      value={vendorForm.company_name}
+                      onChange={(e) =>
+                        updateVendorField("company_name", e.target.value)
+                      }
+                    />
+
+                    <input
+                      type="text"
+                      placeholder="Contact Person *"
+                      value={vendorForm.contact_person}
+                      onChange={(e) =>
+                        updateVendorField("contact_person", e.target.value)
+                      }
+                    />
+
+                    <input
+                      type="email"
+                      placeholder="Email Address *"
+                      value={vendorForm.email}
+                      onChange={(e) =>
+                        updateVendorField("email", e.target.value)
+                      }
+                    />
+
+                    <div className="vendor-tab-phone">
+                      <PhoneInput
+                        international
+                        defaultCountry="IN"
+                        value={vendorForm.phone || undefined}
+                        onChange={(value) =>
+                          updateVendorField("phone", value || "")
+                        }
+                        placeholder="Contact Number *"
+                      />
+                    </div>
+
+                    <input
+                      type="text"
+                      placeholder="GST / Tax Number *"
+                      value={vendorForm.gst_number}
+                      onChange={(e) =>
+                        updateVendorField("gst_number", e.target.value)
+                      }
+                    />
+
+                    <input
+                      type="text"
+                      placeholder="Country"
+                      value={vendorForm.country}
+                      onChange={(e) =>
+                        updateVendorField("country", e.target.value)
+                      }
+                    />
+
+                    <input
+                      type="text"
+                      placeholder="Address"
+                      value={vendorForm.address}
+                      onChange={(e) =>
+                        updateVendorField("address", e.target.value)
+                      }
+                    />
+
+                    <input
+                      type="text"
+                      placeholder="City"
+                      value={vendorForm.city}
+                      onChange={(e) =>
+                        updateVendorField("city", e.target.value)
+                      }
+                    />
+
+                    <input
+                      type="text"
+                      placeholder="State"
+                      value={vendorForm.state}
+                      onChange={(e) =>
+                        updateVendorField("state", e.target.value)
+                      }
+                    />
+
+                    <input
+                      type="url"
+                      placeholder="Website (https://...)"
+                      value={vendorForm.website}
+                      onChange={(e) =>
+                        updateVendorField("website", e.target.value)
+                      }
+                    />
+
+                  </div>
+
+                  {vendorError && (
+                    <div className="vendor-tab-message vendor-tab-error">
+                      {vendorError}
+                    </div>
+                  )}
+
+                  {vendorSuccess && (
+                    <div className="vendor-tab-message vendor-tab-success">
+                      {vendorSuccess}
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={vendorSubmitting}
+                  >
+                    {vendorSubmitting
+                      ? "Submitting..."
+                      : "Submit Vendor Application"}
+                  </button>
+                </form>
+              ) : (
+                <div className="vendor-tab-login">
+
+                  <div className="vendor-tab-login-heading">
+                    <h3>
+                      {vendorOtpSent
+                        ? "Enter your OTP"
+                        : "Welcome back"}
+                    </h3>
+
+                    <p>
+                      {vendorOtpSent
+                        ? `We sent a 6-digit OTP to ${vendorLoginEmail}.`
+                        : "Enter your registered email address to securely access your vendor account."}
+                    </p>
+                  </div>
+
+                  <div className="vendor-tab-login-form">
+
+                    <label htmlFor="vendor-login-email">
+                      Registered Email
+                    </label>
+
+                    <input
+                      id="vendor-login-email"
+                      type="email"
+                      value={vendorLoginEmail}
+                      disabled={vendorOtpSent}
+                      onChange={(e) =>
+                        setVendorLoginEmail(e.target.value)
+                      }
+                      placeholder="name@company.com"
+                      autoComplete="email"
+                    />
+
+                    {!vendorOtpSent && (
+                      <button
+                        type="button"
+                        className="vendor-login-submit"
+                        onClick={sendVendorOtp}
+                        disabled={vendorLoginLoading}
+                      >
+                        {vendorLoginLoading
+                          ? "Sending OTP..."
+                          : "Send OTP"}
+                      </button>
+                    )}
+
+                    {vendorOtpSent && (
+                      <>
+                        <label
+                          htmlFor="vendor-login-otp"
+                          className="vendor-otp-label"
+                        >
+                          6-Digit OTP
+                        </label>
+
+                        <input
+                          id="vendor-login-otp"
+                          type="text"
+                          inputMode="numeric"
+                          maxLength={6}
+                          value={vendorOtp}
+                          onChange={(e) =>
+                            setVendorOtp(
+                              e.target.value.replace(/\D/g, "")
+                            )
+                          }
+                          placeholder="000000"
+                          autoComplete="one-time-code"
+                          className="vendor-otp-input"
+                        />
+
+                        <button
+                          type="button"
+                          className="vendor-login-submit"
+                          onClick={verifyVendorOtp}
+                          disabled={vendorLoginLoading}
+                        >
+                          {vendorLoginLoading
+                            ? "Verifying..."
+                            : "Verify & Sign In"}
+                        </button>
+
+                        <div className="vendor-login-secondary-actions">
+                          <button
+                            type="button"
+                            onClick={sendVendorOtp}
+                            disabled={vendorLoginLoading}
+                          >
+                            Resend OTP
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setVendorOtpSent(false);
+                              setVendorOtp("");
+                              setVendorLoginMessage("");
+                              setVendorLoginError("");
+                            }}
+                          >
+                            Change Email
+                          </button>
+                        </div>
+                      </>
+                    )}
+
+                    {vendorLoginMessage && (
+                      <div className="vendor-tab-message vendor-tab-success">
+                        {vendorLoginMessage}
+                      </div>
+                    )}
+
+                    {vendorLoginError && (
+                      <div className="vendor-tab-message vendor-tab-error">
+                        {vendorLoginError}
+                      </div>
+                    )}
+
+                  </div>
+
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </section>
     </main>
