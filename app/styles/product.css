@@ -934,3 +934,8 @@
     padding: 42px 0;  
   }
 }
+
+.variant-section-heading {
+    display: none;
+}
+
