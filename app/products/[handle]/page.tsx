@@ -40,7 +40,7 @@ const getProduct = cache(
     for (const url of urls) {
       try {
         const res = await fetch(url, {
-          cache: "force-cache",
+          cache: "no-store",
         });
 
         if (!res.ok) continue;
