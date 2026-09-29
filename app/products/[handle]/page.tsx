@@ -161,6 +161,25 @@ function getSeoData(
     partNumber
   );
 
+  const primaryPartNumber = cleanText(
+    variant?.partNumber
+  );
+
+  const titleIncludesReference =
+    productTitle
+      .replace(/[\s-]/g, "")
+      .toLowerCase()
+      .includes(
+        partNumber
+          .replace(/[\s-]/g, "")
+          .toLowerCase()
+      );
+
+  const seoTitle =
+    titleIncludesReference
+      ? productTitle
+      : `${partNumber} | ${productTitle}`;
+
   const brand = replaceFilterFinder(
     cleanText(variant?.vendor)
   );
@@ -193,15 +212,17 @@ function getSeoData(
   const replacementText =
     replacementReferences.join(", ");
 
-  const metaTitle = productTitle;
+  const metaTitle = seoTitle;
 
   const metaDescription =
     replacementReferences.length > 0
-      ? `${productTitle}. Reference ${partNumber}. Alternative references include ${replacementText}. View specifications and enquire for pricing and availability.`
-      : `${productTitle}. Reference ${partNumber}. View technical specifications and enquire with Sparesco for pricing and availability.`;
+      ? `${partNumber} - ${productTitle}. Primary part number ${primaryPartNumber || partNumber}. Cross references include ${replacementText}. View specifications and enquire for pricing and availability.`
+      : `${partNumber} - ${productTitle}. Part number ${primaryPartNumber || partNumber}. View technical specifications and enquire with Sparesco for pricing and availability.`;
+
   return {
     variant,
     partNumber,
+    primaryPartNumber,
     brand,
     productTitle,
     category,
@@ -299,9 +320,8 @@ export default async function ProductPage({
   const price =
     Number(firstVariant?.price || 0);
 
-  const partNumber =
-    cleanText(firstVariant?.partNumber) ||
-    seo.partNumber;
+  const primaryPartNumber =
+    cleanText(firstVariant?.partNumber);
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -310,8 +330,13 @@ export default async function ProductPage({
     description: seo.metaDescription,
     url: canonical,
     image: [image],
-    sku: partNumber,
-    mpn: partNumber,
+    sku: cleanText(firstVariant?.sku) || seo.partNumber,
+
+    ...(primaryPartNumber
+      ? {
+        mpn: primaryPartNumber,
+      }
+      : {}),
 
     ...(seo.category
       ? {

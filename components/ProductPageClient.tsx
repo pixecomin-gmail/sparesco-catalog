@@ -87,7 +87,7 @@ function getProductImageAlt(
 
   if (!details.length) return reference || "Spare part";
 
-  return `${reference} replacement - ${details.join(" ")}`;
+  return `${reference} - ${details.join(" ")}`;
 }
 
 export default function ProductPageClient({
@@ -331,16 +331,25 @@ export default function ProductPageClient({
                 </div>
 
                 <h1 className="product-title">
-                  {primaryVariantTitle}
+                  {productReference}
+                  {primaryVariantTitle &&
+                    !primaryVariantTitle
+                      .replace(/[\s-]/g, "")
+                      .toLowerCase()
+                      .includes(
+                        productReference
+                          .replace(/[\s-]/g, "")
+                          .toLowerCase()
+                      )
+                    ? ` – ${primaryVariantTitle}`
+                    : ""}
                 </h1>
               </div>
 
               <div className="variant-section">
                 {currentProduct.variants.length > 1 && (
                   <div className="variant-section-heading">
-                    Available References for{" "}
-                    {primaryVariant?.partNumber ||
-                      currentProduct.title}
+                    Cross References for {productReference}
                   </div>
                 )}
 
@@ -362,12 +371,25 @@ export default function ProductPageClient({
                       }}
                     >
                       <span>
-                        {replaceFilterFinder(cleanVariantTitle(variant.title))}
+                        <strong>
+                          {variant.partNumber ||
+                            replaceFilterFinder(
+                              cleanVariantTitle(variant.title)
+                            )}
+                        </strong>
+
+                        {variant.partNumber && (
+                          <small className="variant-reference-name">
+                            {replaceFilterFinder(
+                              cleanVariantTitle(variant.title)
+                            )}
+                          </small>
+                        )}
 
                         <small className="variant-reference-type">
                           {index === 0
                             ? "Primary Reference"
-                            : "Alternative Reference"}
+                            : "Cross Reference"}
                         </small>
                       </span>
                     </button>
