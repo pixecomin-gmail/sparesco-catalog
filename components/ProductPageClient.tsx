@@ -331,26 +331,17 @@ export default function ProductPageClient({
                 </div>
 
                 <h1 className="product-title">
-                  {productReference}
-                  {primaryVariantTitle &&
-                    !primaryVariantTitle
-                      .replace(/[\s-]/g, "")
-                      .toLowerCase()
-                      .includes(
-                        productReference
-                          .replace(/[\s-]/g, "")
-                          .toLowerCase()
-                      )
-                    ? ` – ${primaryVariantTitle}`
-                    : ""}
-                </h1>
+  {primaryVariantTitle}
+</h1>
               </div>
 
               <div className="variant-section">
                 {currentProduct.variants.length > 1 && (
                   <div className="variant-section-heading">
-                    Cross References for {productReference}
-                  </div>
+  Available References for{" "}
+  {primaryVariant?.partNumber ||
+    currentProduct.title}
+</div>
                 )}
 
                 <div className="variant-list variant-list-two-column">
