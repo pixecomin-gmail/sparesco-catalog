@@ -63,6 +63,11 @@ function replaceFilterFinder(value?: string) {
   text = text.replace(/\bfilterfinder\b/gi, "Sparesco");
 
   return text
+    .replace(/â€™/g, "’")
+    .replace(/â€œ/g, "“")
+    .replace(/â€/g, "”")
+    .replace(/â€“/g, "–")
+    .replace(/â€”/g, "—")
     .replace(/\s+/g, " ")
     .replace(/\s+([.,;:!?])/g, "$1")
     .trim();
@@ -103,8 +108,13 @@ export default function ProductPageClient({
     initialProduct || null
   );
   const [loaded, setLoaded] = useState(Boolean(initialProduct));
-  const [galleryImages, setGalleryImages] = useState<string[]>([]);
-  const [activeImage, setActiveImage] = useState("");
+  const [galleryImages, setGalleryImages] = useState<string[]>(
+    initialProduct?.images || []
+  );
+
+  const [activeImage, setActiveImage] = useState(
+    initialProduct?.images?.[0] || ""
+  );
   const [activeVariantIndex, setActiveVariantIndex] = useState(0);
   const [specsOpen, setSpecsOpen] = useState(false);
   const [descriptionOpen, setDescriptionOpen] = useState(false);
@@ -331,17 +341,17 @@ export default function ProductPageClient({
                 </div>
 
                 <h1 className="product-title">
-  {primaryVariantTitle}
-</h1>
+                  {primaryVariantTitle}
+                </h1>
               </div>
 
               <div className="variant-section">
                 {currentProduct.variants.length > 1 && (
                   <div className="variant-section-heading">
-  Available References for{" "}
-  {primaryVariant?.partNumber ||
-    currentProduct.title}
-</div>
+                    Available References for{" "}
+                    {primaryVariant?.partNumber ||
+                      currentProduct.title}
+                  </div>
                 )}
 
                 <div className="variant-list variant-list-two-column">
