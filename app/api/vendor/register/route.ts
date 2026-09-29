@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import { getRequestContext } from "@cloudflare/next-on-pages";
 
+import {
+  sendNewVendorAdminEmail,
+  sendVendorRegistrationEmail,
+} from "@/lib/send-admin-email";
+
 export const runtime = "edge";
 
 function clean(value: unknown) {
@@ -247,12 +252,46 @@ export async function POST(request: Request) {
         gst_number,
         website || null,
         initialStatus
-      )
+          )
       .run();
+
+    const vendorId = result.meta?.last_row_id;
+
+    /*
+     * Registration has already been saved successfully.
+     * Email failures must NOT cause the vendor registration to fail.
+     */
+    try {
+      const emailData = {
+        vendorId,
+        companyName: company_name,
+        contactPerson: contact_person,
+        email,
+        phone,
+        gstNumber: gst_number,
+        country,
+        address,
+        city,
+        state,
+        website,
+        status: initialStatus,
+        registeredAt: new Date().toISOString(),
+      };
+
+      await Promise.all([
+        sendVendorRegistrationEmail(emailData),
+        sendNewVendorAdminEmail(emailData),
+      ]);
+    } catch (emailError) {
+      console.error(
+        "Vendor registration email error:",
+        emailError
+      );
+    }
 
     return NextResponse.json({
       success: true,
-      vendorId: result.meta?.last_row_id,
+      vendorId,
       status: initialStatus,
       approvalRequired,
       message: approvalRequired

@@ -46,6 +46,7 @@ export async function POST(request: Request) {
         SELECT
           id,
           company_name,
+          contact_person,
           email,
           status
         FROM vendors
@@ -159,33 +160,272 @@ export async function POST(request: Request) {
     const resend = new Resend(resendApiKey);
 
     await resend.emails.send({
-      from: "Sparesco <support@sparesco.com>",
+      from: "Sparesco Support <support@sparesco.com>",
       to: email,
-      subject: "Your Sparesco Vendor Login OTP",
+      subject: "Your Sparesco Vendor Login Code",
       html: `
-        <div style="font-family:Arial,sans-serif;max-width:520px;margin:auto;">
-          <h2>Vendor Login</h2>
+    <!DOCTYPE html>
+    <html>
+      <body
+        style="
+          margin:0;
+          padding:0;
+          background:#f7f5ef;
+          font-family:Arial,sans-serif;
+          color:#173f4c;
+        "
+      >
+        <table
+          role="presentation"
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          style="background:#f7f5ef;padding:32px 16px;"
+        >
+          <tr>
+            <td align="center">
 
-          <p>Hello ${vendor.company_name || "Vendor"},</p>
+              <table
+                role="presentation"
+                width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                style="
+                  max-width:600px;
+                  background:#ffffff;
+                  border-radius:12px;
+                  overflow:hidden;
+                  border:1px solid #e7e4dc;
+                "
+              >
 
-          <p>Your Sparesco login OTP is:</p>
+                <!-- LOGO -->
+                <tr>
+                  <td
+                    align="center"
+                    style="padding:30px 30px 24px;"
+                  >
+                    <a
+                      href="https://sparesco.com"
+                      style="text-decoration:none;"
+                    >
+                      <img
+                        src="https://sparesco.com/logo.png"
+                        alt="Sparesco"
+                        width="180"
+                        style="
+                          display:block;
+                          max-width:180px;
+                          height:auto;
+                          border:0;
+                        "
+                      />
+                    </a>
+                  </td>
+                </tr>
 
-          <div style="
-            font-size:32px;
-            font-weight:700;
-            letter-spacing:6px;
-            margin:24px 0;
-          ">
-            ${otp}
-          </div>
+                <!-- CONTENT -->
+                <tr>
+                  <td
+                    style="
+                      padding:8px 40px 38px;
+                    "
+                  >
+                    <h1
+                      style="
+                        margin:0 0 24px;
+                        font-size:26px;
+                        line-height:1.3;
+                        color:#173f4c;
+                        font-weight:700;
+                      "
+                    >
+                      Sign in to your Vendor Account
+                    </h1>
 
-          <p>This OTP is valid for 10 minutes.</p>
+                    <p
+                      style="
+                        margin:0 0 18px;
+                        font-size:15px;
+                        line-height:1.7;
+                        color:#475467;
+                      "
+                    >
+                      Hi <strong>${vendor.contact_person || vendor.company_name || "Vendor"}</strong>,
+                    </p>
 
-          <p>If you did not request this login, you can ignore this email.</p>
+                    <p
+                      style="
+                        margin:0 0 18px;
+                        font-size:15px;
+                        line-height:1.7;
+                        color:#475467;
+                      "
+                    >
+                      We received a request to sign in to your
+                      Sparesco Vendor Account.
+                    </p>
 
-          <p>Regards,<br />Sparesco</p>
-        </div>
-      `,
+                    <p
+                      style="
+                        margin:0 0 24px;
+                        font-size:15px;
+                        line-height:1.7;
+                        color:#475467;
+                      "
+                    >
+                      Use the verification code below to continue:
+                    </p>
+
+                    <!-- OTP -->
+                    <div
+                      style="
+                        background:#f7f5ef;
+                        border:1px solid #e1ded5;
+                        border-radius:10px;
+                        padding:24px;
+                        text-align:center;
+                        margin:0 0 24px;
+                      "
+                    >
+                      <div
+                        style="
+                          font-size:12px;
+                          line-height:1.4;
+                          text-transform:uppercase;
+                          letter-spacing:1.2px;
+                          color:#667085;
+                          font-weight:700;
+                          margin-bottom:10px;
+                        "
+                      >
+                        Your verification code
+                      </div>
+
+                      <div
+                        style="
+                          font-size:36px;
+                          line-height:1.2;
+                          letter-spacing:8px;
+                          color:#173f4c;
+                          font-weight:700;
+                        "
+                      >
+                        ${otp}
+                      </div>
+                    </div>
+
+                    <p
+                      style="
+                        margin:0 0 20px;
+                        text-align:center;
+                        font-size:14px;
+                        line-height:1.6;
+                        color:#475467;
+                      "
+                    >
+                      This code will expire in
+                      <strong>10 minutes</strong>.
+                    </p>
+
+                    <p
+                      style="
+                        margin:0 0 18px;
+                        font-size:14px;
+                        line-height:1.7;
+                        color:#475467;
+                      "
+                    >
+                      For your security, please do not share this
+                      code with anyone. Sparesco will never ask you
+                      to provide your verification code by email or
+                      phone.
+                    </p>
+
+                    <p
+                      style="
+                        margin:0 0 24px;
+                        font-size:14px;
+                        line-height:1.7;
+                        color:#475467;
+                      "
+                    >
+                      If you did not request this code, you can
+                      safely ignore this email.
+                    </p>
+
+                    <p
+                      style="
+                        margin:0;
+                        font-size:14px;
+                        line-height:1.7;
+                        color:#475467;
+                      "
+                    >
+                      Regards,<br />
+                      <strong style="color:#173f4c;">
+                        Team Sparesco
+                      </strong>
+                    </p>
+                  </td>
+                </tr>
+
+                <!-- FOOTER -->
+                <tr>
+                  <td
+                    align="center"
+                    style="
+                      background:#173f4c;
+                      padding:24px 30px;
+                    "
+                  >
+                    <a
+                      href="https://sparesco.com"
+                      style="
+                        color:#ffffff;
+                        font-size:14px;
+                        font-weight:700;
+                        text-decoration:none;
+                      "
+                    >
+                      sparesco.com
+                    </a>
+
+                    <p
+                      style="
+                        margin:12px auto 0;
+                        max-width:420px;
+                        font-size:12px;
+                        line-height:1.6;
+                        color:#d5e0e3;
+                      "
+                    >
+                      This is an automated security email sent for
+                      your Sparesco Vendor Account.
+                    </p>
+
+                    <p
+                      style="
+                        margin:8px 0 0;
+                        font-size:12px;
+                        color:#aebfc4;
+                      "
+                    >
+                      &copy; Sparesco
+                    </p>
+                  </td>
+                </tr>
+
+              </table>
+
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+  `,
     });
 
     return NextResponse.json({

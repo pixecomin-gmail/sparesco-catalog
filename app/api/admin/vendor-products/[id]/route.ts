@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
 import { getRequestContext } from "@cloudflare/next-on-pages";
 
+import {
+  sendVendorProductApprovedEmail,
+  sendVendorProductApprovedAdminEmail,
+  sendVendorProductRejectedEmail,
+  sendVendorProductRejectedAdminEmail,
+} from "@/lib/send-admin-email";
+
 export const runtime = "edge";
 
 function normalizeMatchValue(value: string | null | undefined) {
@@ -114,13 +121,32 @@ export async function PATCH(
       .prepare(
         `
         SELECT
-          id,
-          vendor_id,
-          product_name,
-          part_number,
-          status
-        FROM vendor_products
-        WHERE id = ?
+          vp.id,
+          vp.vendor_id,
+          vp.product_name,
+          vp.part_number,
+          vp.brand,
+          vp.category,
+          vp.description,
+          vp.price,
+          vp.currency,
+          vp.stock_quantity,
+          vp.application,
+          vp.godown_location,
+          vp.lead_time,
+          vp.status,
+
+          v.company_name,
+          v.contact_person,
+          v.email,
+          v.phone
+
+        FROM vendor_products vp
+
+        LEFT JOIN vendors v
+          ON v.id = vp.vendor_id
+
+        WHERE vp.id = ?
         LIMIT 1
         `
       )
@@ -226,6 +252,66 @@ export async function PATCH(
           }
         }
       }
+    }
+
+    /*
+ * Product status has already been updated successfully.
+ * Email failures must NOT cause approval/rejection to fail.
+ */
+    try {
+      const emailData = {
+        vendorId: Number(product.vendor_id),
+        companyName: String(product.company_name || ""),
+        contactPerson: String(product.contact_person || ""),
+        email: String(product.email || ""),
+        phone: String(product.phone || ""),
+
+        productId: Number(product.id),
+        productName: String(product.product_name || ""),
+        partNumber: String(product.part_number || ""),
+        brand: String(product.brand || ""),
+        category: String(product.category || ""),
+        description: product.description
+          ? String(product.description)
+          : null,
+        price:
+          product.price !== null &&
+            product.price !== undefined
+            ? String(product.price)
+            : null,
+        currency: String(product.currency || "INR"),
+        stockQuantity:
+          product.stock_quantity !== null &&
+            product.stock_quantity !== undefined
+            ? Number(product.stock_quantity)
+            : null,
+        application: product.application
+          ? String(product.application)
+          : null,
+        godownLocation: product.godown_location
+          ? String(product.godown_location)
+          : null,
+        leadTime: product.lead_time
+          ? String(product.lead_time)
+          : null,
+      };
+
+      if (status === "approved") {
+        await Promise.all([
+          sendVendorProductApprovedEmail(emailData),
+          sendVendorProductApprovedAdminEmail(emailData),
+        ]);
+      } else {
+        await Promise.all([
+          sendVendorProductRejectedEmail(emailData),
+          sendVendorProductRejectedAdminEmail(emailData),
+        ]);
+      }
+    } catch (emailError) {
+      console.error(
+        "Vendor product status email error:",
+        emailError
+      );
     }
 
     return NextResponse.json({

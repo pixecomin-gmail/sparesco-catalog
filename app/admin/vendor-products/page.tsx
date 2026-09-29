@@ -35,6 +35,9 @@ type VendorGroup = {
 };
 
 export default function AdminVendorProductsPage() {
+  const [targetVendorId, setTargetVendorId] = useState(0);
+  const [targetProductId, setTargetProductId] = useState(0);
+
   const [products, setProducts] = useState<VendorProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [updatingId, setUpdatingId] = useState<number | null>(null);
@@ -77,6 +80,58 @@ export default function AdminVendorProductsPage() {
   useEffect(() => {
     loadProducts();
   }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(
+      window.location.search
+    );
+
+    setTargetVendorId(
+      Number(params.get("vendor")) || 0
+    );
+
+    setTargetProductId(
+      Number(params.get("product")) || 0
+    );
+  }, []);
+
+  useEffect(() => {
+    if (
+      !targetVendorId ||
+      !targetProductId ||
+      products.length === 0
+    ) {
+      return;
+    }
+
+    const targetProduct = products.find(
+      (product) =>
+        Number(product.id) === targetProductId &&
+        Number(product.vendor_id) === targetVendorId
+    );
+
+    if (!targetProduct) {
+      return;
+    }
+
+    setOpenVendor(targetVendorId);
+    setOpenProduct(targetProductId);
+
+    window.setTimeout(() => {
+      document
+        .getElementById(
+          `admin-vendor-product-${targetProductId}`
+        )
+        ?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+    }, 100);
+  }, [
+    products,
+    targetVendorId,
+    targetProductId,
+  ]);
 
   const updateProduct = async (
     id: number,
@@ -422,6 +477,7 @@ export default function AdminVendorProductsPage() {
                         return (
                           <section
                             key={product.id}
+                            id={`admin-vendor-product-${product.id}`}
                             style={productCardStyle}
                           >
                             <button

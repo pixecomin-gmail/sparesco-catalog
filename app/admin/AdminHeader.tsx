@@ -34,6 +34,8 @@ export default function AdminHeader() {
     pathname.startsWith("/admin/collections/");
 
   const isVendors =
+    pathname === "/admin/pending-actions" ||
+    pathname.startsWith("/admin/pending-actions/") ||
     pathname === "/admin/vendors" ||
     pathname.startsWith("/admin/vendors/") ||
     pathname === "/admin/vendor-products" ||
@@ -67,29 +69,26 @@ export default function AdminHeader() {
           <nav className="admin-main-nav">
             <Link
               href="/admin"
-              className={`admin-main-nav-link ${
-                isHome ? "active" : ""
-              }`}
+              className={`admin-main-nav-link ${isHome ? "active" : ""
+                }`}
             >
               Home
             </Link>
 
             <Link
               href="/admin/products"
-              className={`admin-main-nav-link ${
-                isProducts ? "active" : ""
-              }`}
+              className={`admin-main-nav-link ${isProducts ? "active" : ""
+                }`}
             >
               Products
             </Link>
 
-            <Link
-              href="/admin/vendors"
-              className={`admin-main-nav-link ${
-                isVendors ? "active" : ""
-              }`}
-            >
-              Vendors
+            <Link 
+              href="/admin/pending-actions" 
+              className={`admin-main-nav-link ${isVendors ? "active" : "" 
+                }`} 
+            > 
+              Vendors 
             </Link>
 
             <button
@@ -138,6 +137,15 @@ export default function AdminHeader() {
 
           {isVendors && (
             <nav className="admin-subnav">
+              <Link
+                href="/admin/pending-actions"
+                className={subLinkClass(
+                  "/admin/pending-actions"
+                )}
+              >
+                Pending Actions
+              </Link>
+
               <Link
                 href="/admin/vendors"
                 className={subLinkClass(

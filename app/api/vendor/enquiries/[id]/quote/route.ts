@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import { getRequestContext } from "@cloudflare/next-on-pages";
 
+import {
+  sendVendorQuotationSubmittedAdminEmail,
+  sendVendorQuotationSubmittedEmail,
+} from "@/lib/send-admin-email";
+
 export const runtime = "edge";
 
 export async function POST(
@@ -116,6 +121,29 @@ export async function POST(
         { status: 404 }
       );
     }
+
+    const emailContext = await db
+      .prepare(
+        `
+    SELECT
+      v.company_name,
+      v.contact_person,
+      v.email,
+      v.phone,
+      e.enquiry_reference,
+      e.batch_reference,
+      e.product_name,
+      e.part_number,
+      e.quantity
+    FROM vendors v
+    JOIN enquiries e
+      ON e.id = ?
+    WHERE v.id = ?
+    LIMIT 1
+    `
+      )
+      .bind(enquiryId, vendorId)
+      .first();
 
     const data = await request.json();
 
@@ -236,6 +264,112 @@ export async function POST(
       .bind(enquiryId, vendorId)
       .run();
 
+    /*
+* Quotation is already saved at this point.
+* Email failure must not cause quotation submission to fail.
+*/
+    if (emailContext) {
+      try {
+        const quotationEmailData = {
+          enquiryId,
+
+          enquiryReference: String(
+            emailContext.enquiry_reference ||
+            emailContext.batch_reference ||
+            `Enquiry #${enquiryId}`
+          ),
+
+          vendorId,
+
+          companyName: String(
+            emailContext.company_name || ""
+          ),
+
+          contactPerson: String(
+            emailContext.contact_person || ""
+          ),
+
+          email: String(
+            emailContext.email || ""
+          ),
+
+          phone: emailContext.phone
+            ? String(emailContext.phone)
+            : null,
+
+          productName: String(
+            emailContext.product_name || "Not Provided"
+          ),
+
+          partNumber: String(
+            emailContext.part_number || "Not Provided"
+          ),
+
+          requiredQuantity: String(
+            emailContext.quantity ?? "Not Provided"
+          ),
+
+          quotedQuantity,
+          unitPrice,
+          currency: String(data.currency),
+          totalPrice,
+
+          stockAvailable: Boolean(
+            data.stock_available
+          ),
+
+          leadTime: data.lead_time || null,
+
+          moq,
+
+          condition: data.condition || null,
+
+          manufacturerBrand:
+            data.manufacturer_brand || null,
+
+          countryOfOrigin:
+            data.country_of_origin || null,
+
+          quoteValidity:
+            data.quote_validity || null,
+
+          godownLocation:
+            data.godown_location || null,
+
+          taxIncludedPercent:
+            data.tax_included_percent || null,
+
+          vendorRemarks:
+            data.vendor_remarks || null,
+        };
+
+        const emailResults =
+          await Promise.allSettled([
+            sendVendorQuotationSubmittedEmail(
+              quotationEmailData
+            ),
+            sendVendorQuotationSubmittedAdminEmail(
+              quotationEmailData
+            ),
+          ]);
+
+        emailResults.forEach((result, index) => {
+          if (result.status === "rejected") {
+            console.error(
+              index === 0
+                ? "Vendor quotation confirmation email error:"
+                : "Vendor quotation admin email error:",
+              result.reason
+            );
+          }
+        });
+      } catch (emailError) {
+        console.error(
+          "Vendor quotation email error:",
+          emailError
+        );
+      }
+    }
     return NextResponse.json({
       success: true,
       message: "Quotation submitted successfully.",

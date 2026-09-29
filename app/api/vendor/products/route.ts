@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import { getRequestContext } from "@cloudflare/next-on-pages";
 
+import {
+  sendVendorProductSubmittedEmail,
+  sendVendorProductSubmittedAdminEmail,
+} from "@/lib/send-admin-email";
+
 export const runtime = "edge";
 
 function getVendorCookie(request: Request) {
@@ -365,7 +370,7 @@ export async function POST(request: Request) {
       .run();
 
     // Keep vendor counter synchronized with actual submissions
-    await db
+       await db
       .prepare(
         `
         UPDATE vendors
@@ -385,10 +390,65 @@ export async function POST(request: Request) {
       )
       .run();
 
+    /*
+     * Product has already been saved successfully.
+     * Email failures must NOT cause product submission to fail.
+     */
+    try {
+      const vendor = await db
+        .prepare(
+          `
+          SELECT
+            id,
+            company_name,
+            contact_person,
+            email,
+            phone
+          FROM vendors
+          WHERE id = ?
+          LIMIT 1
+          `
+        )
+        .bind(session.vendor_id)
+        .first();
+
+      if (vendor) {
+        const emailData = {
+          vendorId: Number(vendor.id),
+          companyName: String(vendor.company_name || ""),
+          contactPerson: String(vendor.contact_person || ""),
+          email: String(vendor.email || ""),
+          phone: String(vendor.phone || ""),
+
+          productId: Number(result.meta?.last_row_id || 0),
+          productName,
+          partNumber,
+          brand,
+          category,
+          description,
+          price,
+          currency,
+          stockQuantity,
+          application,
+          godownLocation,
+          leadTime,
+        };
+
+        await Promise.all([
+          sendVendorProductSubmittedEmail(emailData),
+          sendVendorProductSubmittedAdminEmail(emailData),
+        ]);
+      }
+    } catch (emailError) {
+      console.error(
+        "Vendor product submission email error:",
+        emailError
+      );
+    }
+
     return NextResponse.json({
       success: true,
-      message:
-        "Product submitted successfully and is pending admin approval.",
+      message: "Product submitted successfully and is pending approval.",
       productId: result.meta?.last_row_id,
     });
   } catch (error) {

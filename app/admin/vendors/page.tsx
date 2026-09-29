@@ -20,6 +20,8 @@ type Vendor = {
 type SortOption = "newest" | "product_limit";
 
 export default function AdminVendorsPage() {
+  const [targetVendorId, setTargetVendorId] = useState(0);
+
   const [vendors, setVendors] = useState<Vendor[]>([]);
   const [loading, setLoading] = useState(true);
   const [updatingId, setUpdatingId] = useState<number | null>(null);
@@ -66,6 +68,44 @@ export default function AdminVendorsPage() {
   useEffect(() => {
     loadVendors();
   }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(
+      window.location.search
+    );
+
+    setTargetVendorId(
+      Number(params.get("vendor")) || 0
+    );
+  }, []);
+
+  useEffect(() => {
+    if (!targetVendorId || vendors.length === 0) {
+      return;
+    }
+
+    const targetVendor = vendors.find(
+      (vendor) =>
+        Number(vendor.id) === targetVendorId
+    );
+
+    if (!targetVendor) {
+      return;
+    }
+
+    setOpenVendor(targetVendorId);
+
+    window.setTimeout(() => {
+      document
+        .getElementById(
+          `admin-vendor-${targetVendorId}`
+        )
+        ?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+    }, 100);
+  }, [vendors, targetVendorId]);
 
   const updateVendorStatus = async (
     vendorId: number,
@@ -395,6 +435,7 @@ export default function AdminVendorsPage() {
               return (
                 <section
                   key={vendor.id}
+                  id={`admin-vendor-${vendor.id}`}
                   style={{
                     ...cardStyle,
                     ...(isOpen ? openCardStyle : {}),

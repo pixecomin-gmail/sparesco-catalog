@@ -262,7 +262,7 @@ export default function BecomeSupplierPage() {
 
       if (data.approvalRequired) {
         setVendorSuccess(
-          "Vendor registration submitted successfully. Your application is pending admin approval."
+          "Thank you for registering with Sparesco. Your vendor account is currently pending approval. We will notify you once your account has been approved."
         );
 
         setVendorForm({
@@ -802,6 +802,25 @@ export default function BecomeSupplierPage() {
                   {vendorError && (
                     <div className="vendor-tab-message vendor-tab-error">
                       {vendorError}
+
+                      {vendorError.includes("already exists") && (
+                        <>
+                          {" "}
+                          <button
+                            type="button"
+                            className="vendor-error-login-link"
+                            onClick={() => {
+                              setVendorTab("login");
+                              setVendorLoginEmail(
+                                vendorForm.email.trim().toLowerCase()
+                              );
+                              setVendorError("");
+                            }}
+                          >
+                            Sign in here
+                          </button>
+                        </>
+                      )}
                     </div>
                   )}
 

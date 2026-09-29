@@ -68,6 +68,9 @@ type EnquiryEmailRecipient = {
 type Filter = "all" | "open" | "closed";
 
 export default function AdminEnquiriesPage() {
+  const [targetEnquiryId, setTargetEnquiryId] = useState(0);
+  const [targetQuoteId, setTargetQuoteId] = useState(0);
+
   const [enquiries, setEnquiries] = useState<Enquiry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -103,6 +106,57 @@ export default function AdminEnquiriesPage() {
   useEffect(() => {
     loadEnquiries();
   }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(
+      window.location.search
+    );
+
+    setTargetEnquiryId(
+      Number(params.get("enquiry")) || 0
+    );
+
+    setTargetQuoteId(
+      Number(params.get("quote")) || 0
+    );
+  }, []);
+
+  useEffect(() => {
+    if (!targetQuoteId || enquiries.length === 0) {
+      return;
+    }
+
+    const targetEnquiry = enquiries.find(
+      (enquiry) =>
+        Number(enquiry.id) === targetEnquiryId
+    );
+
+    const targetQuote = targetEnquiry?.quotations?.find(
+      (quote) =>
+        Number(quote.id) === targetQuoteId
+    );
+
+    if (!targetEnquiry || !targetQuote) {
+      return;
+    }
+
+    setOpenQuote(targetQuoteId);
+
+    window.setTimeout(() => {
+      document
+        .getElementById(
+          `admin-enquiry-${targetEnquiryId}`
+        )
+        ?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+    }, 100);
+  }, [
+    enquiries,
+    targetEnquiryId,
+    targetQuoteId,
+  ]);
 
   async function loadEnquiries() {
     setLoading(true);
@@ -275,28 +329,61 @@ export default function AdminEnquiriesPage() {
     return Array.from(uniqueByEmail.values());
   }, [emailRecipients, selectedCategoryIds]);
 
-  function confirmEmailRecipients() {
+  async function confirmEmailRecipients() {
     if (!emailListEnquiry) return;
 
-    // Actual email sending will be connected in the email integration stage.
-    const enquiryLabel =
-      emailListEnquiry.enquiry_reference ||
-      `Enquiry #${emailListEnquiry.id}`;
+    if (selectedCategoryIds.length === 0) {
+      setError("Please select at least one category.");
+      return;
+    }
 
-    const selectedCategoryNames = emailCategories
-      .filter((category) =>
-        selectedCategoryIds.includes(category.id)
-      )
-      .map((category) => category.name);
+    setLoadingRecipients(true);
+    setError("");
+    setMessage("");
 
-    setMessage(
-      `${selectedEmailRecipients.length} unique recipient${selectedEmailRecipients.length === 1 ? "" : "s"
-      } selected for ${enquiryLabel} via ${selectedCategoryNames.length
-      } categor${selectedCategoryNames.length === 1 ? "y" : "ies"
-      }.`
-    );
+    try {
+      const response = await fetch(
+        "/api/admin/enquiry-email-list/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            enquiry_id: emailListEnquiry.id,
+            category_ids: selectedCategoryIds,
+          }),
+        }
+      );
 
-    closeEmailListModal();
+      const data = await response.json();
+
+      if (response.status === 401) {
+        window.location.href = "/admin/login";
+        return;
+      }
+
+      if (!response.ok) {
+        setError(
+          data.error ||
+          "Unable to send enquiry to the email list."
+        );
+        return;
+      }
+
+      setMessage(
+        data.message ||
+        "Enquiry sent successfully."
+      );
+
+      closeEmailListModal();
+    } catch {
+      setError(
+        "Unable to send enquiry to the email list."
+      );
+    } finally {
+      setLoadingRecipients(false);
+    }
   }
 
   const visibleEmailRecipients = useMemo(() => {
@@ -447,6 +534,7 @@ export default function AdminEnquiriesPage() {
             return (
               <section
                 key={enquiry.id}
+                id={`admin-enquiry-${enquiry.id}`}
                 style={{
                   ...enquiryCardStyle,
                   ...(isClosed ? closedCardStyle : {}),
@@ -1046,7 +1134,7 @@ export default function AdminEnquiriesPage() {
                       : 1,
                 }}
               >
-                Confirm Recipients
+                {loadingRecipients ? "Sending..." : "Send Enquiry"}
               </button>
             </div>
           </div>

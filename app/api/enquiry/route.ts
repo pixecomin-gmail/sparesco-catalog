@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
-import { sendAdminEmail, sendUserEmail } from "@/lib/send-admin-email";
+import {
+  sendAdminEmail,
+  sendUserEmail,
+  sendVendorEnquiryEmail,
+} from "@/lib/send-admin-email";
 import { getRequestContext } from "@cloudflare/next-on-pages";
 
 export const runtime = "edge";
@@ -51,6 +55,25 @@ export async function POST(request: Request) {
     // ---------------------------------------------
     // SAVE ENQUIRY ITEMS TO D1 + MATCH VENDORS
     // ---------------------------------------------
+
+    const vendorEmailMatches = new Map<
+      number,
+      {
+        vendorId: number;
+        companyName: string;
+        contactPerson: string;
+        email: string;
+        batchReference: string;
+        customerCompany: string | null;
+        matchedItems: {
+          enquiryId: number;
+          enquiryReference: string;
+          productName: string;
+          partNumber: string;
+          quantity: string;
+        }[];
+      }
+    >();
 
     try {
       const { env } = getRequestContext();
@@ -137,74 +160,125 @@ export async function POST(request: Request) {
             continue;
           }
 
-          const normalizedProductName = normalizePartNumber(productName);
-
           let matchingVendors;
 
-          if (normalizedPartNumber || normalizedProductName) {
+          if (normalizedPartNumber) {
             matchingVendors = await db
               .prepare(
                 `
-                SELECT DISTINCT v.id AS vendor_id
+                SELECT DISTINCT
+                  v.id AS vendor_id,
+                  v.company_name,
+                  v.contact_person,
+                  v.email
                 FROM vendors v
                 JOIN vendor_products vp
                   ON vp.vendor_id = v.id
                 WHERE v.status = 'approved'
                   AND vp.status = 'approved'
-                  AND (
-                    LOWER(
+                  AND LOWER(
+                    REPLACE(
                       REPLACE(
-                        REPLACE(TRIM(COALESCE(vp.part_number, '')), '-', ''),
-                        ' ',
+                        TRIM(COALESCE(vp.part_number, '')),
+                        '-',
                         ''
-                      )
-                    ) IN (?, ?)
-
-                    OR
-
-                    LOWER(
-                      REPLACE(
-                        REPLACE(TRIM(COALESCE(vp.product_name, '')), '-', ''),
-                        ' ',
-                        ''
-                      )
-                    ) IN (?, ?)
-                  )
+                      ),
+                      ' ',
+                      ''
+                    )
+                  ) = ?
                 `
               )
-              .bind(
-                normalizedPartNumber,
-                normalizedProductName,
-                normalizedPartNumber,
-                normalizedProductName
-              )
+              .bind(normalizedPartNumber)
               .all();
           }
 
           const vendors = matchingVendors?.results || [];
 
           for (const vendor of vendors) {
-            await db
+            const vendorId = Number(vendor.vendor_id);
+
+            const assignmentResult = await db
               .prepare(
                 `
-              INSERT OR IGNORE INTO enquiry_vendors (
-                enquiry_id,
-                vendor_id,
-                status
+                INSERT OR IGNORE INTO enquiry_vendors (
+                  enquiry_id,
+                  vendor_id,
+                  status
+                )
+                VALUES (?, ?, 'sent')
+                `
               )
-              VALUES (?, ?, 'sent')
-              `
-              )
-              .bind(
-                enquiryId,
-                vendor.vendor_id
-              )
+              .bind(enquiryId, vendorId)
               .run();
+
+            /*
+             * Only collect this match for email when the
+             * enquiry/vendor assignment was newly created.
+             * This prevents duplicate notification emails.
+             */
+            if (assignmentResult.meta?.changes) {
+              const existingVendor =
+                vendorEmailMatches.get(vendorId);
+
+              const matchedItem = {
+                enquiryId: Number(enquiryId),
+                enquiryReference,
+                productName: productName || "Not Provided",
+                partNumber: partNumber || "Not Provided",
+                quantity,
+              };
+
+              if (existingVendor) {
+                existingVendor.matchedItems.push(matchedItem);
+              } else {
+                vendorEmailMatches.set(vendorId, {
+                  vendorId,
+                  companyName:
+                    String(vendor.company_name || ""),
+                  contactPerson:
+                    String(vendor.contact_person || ""),
+                  email: String(vendor.email || ""),
+                  batchReference,
+                  customerCompany:
+                    data.company?.trim() || null,
+                  matchedItems: [matchedItem],
+                });
+              }
+            }
           }
         }
       }
     } catch (d1Error) {
       console.error("D1 enquiry matching error:", d1Error);
+    }
+
+    // ---------------------------------------------
+    // EMAIL MATCHED VENDORS
+    // One consolidated email per vendor
+    // ---------------------------------------------
+
+    if (vendorEmailMatches.size > 0) {
+      const matchedVendors = Array.from(
+        vendorEmailMatches.values()
+      );
+
+      const vendorEmailResults = await Promise.allSettled(
+        matchedVendors.map((vendorMatch) =>
+          sendVendorEnquiryEmail(vendorMatch)
+        )
+      );
+
+      vendorEmailResults.forEach((result, index) => {
+        const vendorMatch = matchedVendors[index];
+
+        if (result.status === "rejected") {
+          console.error(
+            `Vendor enquiry email error for vendor ${vendorMatch.vendorId}:`,
+            result.reason
+          );
+        }
+      });
     }
 
     const emailData = {

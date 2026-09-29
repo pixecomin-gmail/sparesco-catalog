@@ -19,11 +19,10 @@ export async function PATCH(
     }
 
     const body = await request.json();
-    const status = body.status;
 
-    if (!["accepted", "rejected"].includes(status)) {
+    if (body.action !== "mark_viewed") {
       return NextResponse.json(
-        { error: "Invalid quotation status." },
+        { error: "Invalid quotation action." },
         { status: 400 }
       );
     }
@@ -39,12 +38,16 @@ export async function PATCH(
     }
 
     const quote = await db
-      .prepare(`
-        SELECT id, enquiry_id, vendor_id, admin_status
+      .prepare(
+        `
+        SELECT
+          id,
+          admin_viewed_at
         FROM vendor_quotes
         WHERE id = ?
         LIMIT 1
-      `)
+        `
+      )
       .bind(quoteId)
       .first();
 
@@ -55,24 +58,34 @@ export async function PATCH(
       );
     }
 
-    await db
-      .prepare(`
-        UPDATE vendor_quotes
-        SET admin_status = ?, updated_at = CURRENT_TIMESTAMP
-        WHERE id = ?
-      `)
-      .bind(status, quoteId)
-      .run();
+    /*
+     * Keep the original viewed time if this quotation
+     * has already been opened by Admin.
+     */
+    if (!quote.admin_viewed_at) {
+      await db
+        .prepare(
+          `
+          UPDATE vendor_quotes
+          SET
+            admin_viewed_at = CURRENT_TIMESTAMP,
+            updated_at = CURRENT_TIMESTAMP
+          WHERE id = ?
+          `
+        )
+        .bind(quoteId)
+        .run();
+    }
 
     return NextResponse.json({
       success: true,
-      message:
-        status === "accepted"
-          ? "Quotation accepted successfully."
-          : "Quotation rejected successfully.",
+      message: "Quotation marked as viewed.",
     });
   } catch (error) {
-    console.error("Admin quotation update error:", error);
+    console.error(
+      "Admin quotation viewed update error:",
+      error
+    );
 
     return NextResponse.json(
       { error: "Unable to update quotation." },

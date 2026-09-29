@@ -37,6 +37,7 @@ export async function GET() {
         q.vendor_remarks,
         q.quotation_pdf,
         q.admin_status,
+        q.admin_viewed_at,
         q.submitted_at,
         q.updated_at,
 

@@ -670,3 +670,18 @@
   outline: none !important;
   box-shadow: none !important;
 }
+
+.vendor-error-login-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.vendor-error-login-link:hover {
+  color: var(--primary);
+}

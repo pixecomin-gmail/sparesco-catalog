@@ -157,7 +157,7 @@ export default function VendorRegisterPage() {
 
       if (data.approvalRequired) {
         setSuccess(
-          "Vendor registration submitted successfully. Your application is pending admin approval."
+          "Thank you for registering with Sparesco. Your vendor account is currently pending approval. We will notify you once your account has been approved."
         );
 
         setForm(emptyForm);
