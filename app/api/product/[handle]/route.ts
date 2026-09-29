@@ -34,7 +34,7 @@ export async function GET(
 
   for (const url of urls) {
     const res = await fetch(url, {
-      cache: "force-cache",
+      cache: "no-store",
     });
 
     if (res.ok) {
