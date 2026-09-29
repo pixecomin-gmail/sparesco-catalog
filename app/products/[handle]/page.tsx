@@ -150,13 +150,15 @@ function getSeoData(
   const variant = product.variants?.[0];
 
   const partNumber = cleanText(
-    product.handle || fallbackHandle
+    product.title ||
+    product.handle ||
+    fallbackHandle
   );
 
   const productTitle = cleanProductTitle(
     variant?.title ||
-      product.title ||
-      partNumber
+    product.title ||
+    partNumber
   );
 
   const brand = replaceFilterFinder(
@@ -169,24 +171,34 @@ function getSeoData(
     )
   );
 
-  const replacements =
+  const replacementReferences =
     product.variants
-      ?.map((item) =>
-        cleanProductTitle(item.title)
-      )
-      .filter(Boolean)
-      .join(", ") || "";
+      ?.slice(1)
+      .map((item) => {
+        const vendor = replaceFilterFinder(
+          cleanText(item.vendor)
+        );
+
+        const replacementPartNumber =
+          cleanText(item.partNumber);
+
+        if (!replacementPartNumber) return "";
+
+        return vendor
+          ? `${vendor} ${replacementPartNumber}`
+          : replacementPartNumber;
+      })
+      .filter(Boolean) || [];
+
+  const replacementText =
+    replacementReferences.join(", ");
 
   const metaTitle = productTitle;
 
-  const variantCount =
-    product.variants?.length || 0;
-
   const metaDescription =
-    variantCount <= 1
-      ? `${productTitle} spare part. View technical specifications, product details and send an enquiry to Sparesco for pricing and availability.`
-      : `${partNumber.toUpperCase()} replacement references include ${replacements}. View technical specifications, product details and send an enquiry to Sparesco for pricing and availability.`;
-
+    replacementReferences.length > 0
+      ? `${productTitle}. Reference ${partNumber}. Alternative references include ${replacementText}. View specifications and enquire for pricing and availability.`
+      : `${productTitle}. Reference ${partNumber}. View technical specifications and enquire with Sparesco for pricing and availability.`;
   return {
     variant,
     partNumber,
@@ -303,34 +315,34 @@ export default async function ProductPage({
 
     ...(seo.category
       ? {
-          category: seo.category,
-        }
+        category: seo.category,
+      }
       : {}),
 
     ...(seo.brand
       ? {
-          brand: {
-            "@type": "Brand",
-            name: seo.brand,
-          },
-        }
+        brand: {
+          "@type": "Brand",
+          name: seo.brand,
+        },
+      }
       : {}),
 
     ...(price > 0
       ? {
-          offers: {
-            "@type": "Offer",
-            url: canonical,
-            priceCurrency: "INR",
-            price,
-            itemCondition:
-              "https://schema.org/NewCondition",
-            seller: {
-              "@type": "Organization",
-              name: "Sparesco",
-            },
+        offers: {
+          "@type": "Offer",
+          url: canonical,
+          priceCurrency: "INR",
+          price,
+          itemCondition:
+            "https://schema.org/NewCondition",
+          seller: {
+            "@type": "Organization",
+            name: "Sparesco",
           },
-        }
+        },
+      }
       : {}),
   };
 

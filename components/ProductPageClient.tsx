@@ -194,6 +194,18 @@ export default function ProductPageClient({
     return image.startsWith("http") ? image : `${imageBase}${image}`;
   }
 
+  const primaryVariant =
+    currentProduct.variants?.[0];
+
+  const primaryVariantTitle =
+    replaceFilterFinder(
+      cleanVariantTitle(
+        primaryVariant?.title ||
+        currentProduct.title ||
+        currentProduct.handle
+      )
+    );
+
   const activeVariantTitle = replaceFilterFinder(
     cleanVariantTitle(activeVariant.title)
   );
@@ -312,18 +324,26 @@ export default function ProductPageClient({
               <div className="product-heading-block">
                 <div className="product-title-price-row">
                   <div className="selected-variant-name">
-                    {activeVariantTitle}
+                    {activeVariant.partNumber || activeVariantTitle}
                   </div>
 
                   <div className="product-top-price">{activePrice}</div>
                 </div>
 
                 <h1 className="product-title">
-                  {replaceFilterFinder(currentProduct.title)}
+                  {primaryVariantTitle}
                 </h1>
               </div>
 
               <div className="variant-section">
+                {currentProduct.variants.length > 1 && (
+                  <div className="variant-section-heading">
+                    Available References for{" "}
+                    {primaryVariant?.partNumber ||
+                      currentProduct.title}
+                  </div>
+                )}
+
                 <div className="variant-list variant-list-two-column">
                   {currentProduct.variants.map((variant, index) => (
                     <button
@@ -343,6 +363,12 @@ export default function ProductPageClient({
                     >
                       <span>
                         {replaceFilterFinder(cleanVariantTitle(variant.title))}
+
+                        <small className="variant-reference-type">
+                          {index === 0
+                            ? "Primary Reference"
+                            : "Alternative Reference"}
+                        </small>
                       </span>
                     </button>
                   ))}
