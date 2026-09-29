@@ -371,19 +371,8 @@ export default function ProductPageClient({
                       }}
                     >
                       <span>
-                        <strong>
-                          {variant.partNumber ||
-                            replaceFilterFinder(
-                              cleanVariantTitle(variant.title)
-                            )}
-                        </strong>
-
-                        {variant.partNumber && (
-                          <small className="variant-reference-name">
-                            {replaceFilterFinder(
-                              cleanVariantTitle(variant.title)
-                            )}
-                          </small>
+                        {replaceFilterFinder(
+                          cleanVariantTitle(variant.title)
                         )}
 
                         <small className="variant-reference-type">
