@@ -1,5 +1,6 @@
 export const runtime = "edge";
 
+import { cache } from "react";
 import type { Metadata } from "next";
 import ProductPageClient from "@/components/ProductPageClient";
 import type { Product } from "@/types/product";
@@ -24,35 +25,35 @@ function productFolder(handle: string) {
   return (hash % 256).toString(16).padStart(2, "0");
 }
 
-async function getProduct(
-  handle: string
-): Promise<Product | null> {
-  if (!r2Base) return null;
+const getProduct = cache(
+  async (handle: string): Promise<Product | null> => {
+    if (!r2Base) return null;
 
-  const base = r2Base.replace(/\/$/, "");
-  const folder = productFolder(handle);
+    const base = r2Base.replace(/\/$/, "");
+    const folder = productFolder(handle);
 
-  const urls = [
-    `${base}/catalog/products/${folder}/${handle}.json`,
-    `${base}/catalog/products/${handle}.json`,
-  ];
+    const urls = [
+      `${base}/catalog/products/${folder}/${handle}.json`,
+      `${base}/catalog/products/${handle}.json`,
+    ];
 
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, {
-        cache: "no-store",
-      });
+    for (const url of urls) {
+      try {
+        const res = await fetch(url, {
+          cache: "force-cache",
+        });
 
-      if (!res.ok) continue;
+        if (!res.ok) continue;
 
-      return await res.json();
-    } catch {
-      // Try the next product location.
+        return (await res.json()) as Product;
+      } catch {
+        // Try the next product location.
+      }
     }
-  }
 
-  return null;
-}
+    return null;
+  }
+);
 
 function cleanText(value?: string) {
   return String(value || "")
