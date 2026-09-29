@@ -374,12 +374,6 @@ export default function ProductPageClient({
                         {replaceFilterFinder(
                           cleanVariantTitle(variant.title)
                         )}
-
-                        <small className="variant-reference-type">
-                          {index === 0
-                            ? "Primary Reference"
-                            : "Cross Reference"}
-                        </small>
                       </span>
                     </button>
                   ))}
