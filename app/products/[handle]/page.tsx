@@ -317,8 +317,17 @@ export default async function ProductPage({
   const firstVariant =
     product.variants?.[0];
 
+    const prices =
+    product.variants
+      ?.map((variant) =>
+        Number(variant.price || 0)
+      )
+      .filter((value) => value > 0) || [];
+
   const price =
-    Number(firstVariant?.price || 0);
+    prices.length > 0
+      ? Math.min(...prices)
+      : 0;
 
   const primaryPartNumber =
     cleanText(firstVariant?.partNumber);
