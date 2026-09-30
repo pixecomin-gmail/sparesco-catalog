@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 export default function AdminCollectionsPage() {
   return (
     <main className="admin-dashboard">

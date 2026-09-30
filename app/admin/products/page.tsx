@@ -1,7 +1,5 @@
 import AdminProductsClient from "./AdminProductsClient";
 
-export const runtime = "edge";
-
 export default function AdminProductsPage() {
   return (
     <main className="admin-dashboard">
