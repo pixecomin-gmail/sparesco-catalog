@@ -1231,3 +1231,50 @@
     width: 100%;
   }
 }
+
+/* Add Product - final component alignment */
+
+.admin-add-product-page .admin-stat-card > strong {
+  display: block;
+  margin: 0;
+  color: #173f4c;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.admin-add-variant-image-heading {
+  margin: 0 0 6px;
+  color: #173f4c;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.admin-add-helper-text {
+  margin: 0 0 14px;
+  color: #71858b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.admin-add-product-page .admin-secondary-button {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid #173f4c;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #173f4c;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-add-product-page .admin-secondary-button:hover {
+  background: #f3f5f4;
+}
+
+.admin-add-product-page .admin-add-product-actions .admin-primary-button {
+  width: auto;
+  min-width: 160px;
+}

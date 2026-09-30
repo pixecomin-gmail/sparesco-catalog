@@ -930,346 +930,14 @@ export default function AddProductClient() {
 
             {activeMode === "manual" && (
                 <>
-            <div
-                className="admin-stat-card"
-                style={{
-                    marginBottom: 20,
-                }}
-            >
-                <h2>Product Information</h2>
-
-                <div
-                    style={{
-                        display: "grid",
-                        gridTemplateColumns:
-                            "repeat(auto-fit, minmax(260px, 1fr))",
-                        gap: 16,
-                    }}
-                >
-                    <label>
-                        <strong>Title *</strong>
-
-                        <input
-                            type="text"
-                            value={product.title}
-                            onChange={(event) =>
-                                handleTitleChange(
-                                    event.target.value
-                                )
-                            }
-                            placeholder="Example: SA 16056"
-                        />
-                    </label>
-
-                    <label>
-                        <strong>Handle *</strong>
-
-                        <input
-                            type="text"
-                            value={product.handle}
-                            onChange={(event) =>
-                                handleHandleChange(
-                                    event.target.value
-                                )
-                            }
-                            placeholder="sa-16056"
-                        />
-                    </label>
-
-                    <label>
-                        <strong>Category</strong>
-
-                        <input
-                            type="text"
-                            value={product.category}
-                            onChange={(event) =>
-                                updateProduct(
-                                    "category",
-                                    slugify(
-                                        event.target.value
-                                    )
-                                )
-                            }
-                            placeholder="air-filter"
-                        />
-                    </label>
-                </div>
-            </div>
-
-            <div
-                className="admin-stat-card"
-                style={{
-                    marginBottom: 20,
-                }}
-            >
-                <h2>Collections / Tags</h2>
-
-                <p>
-                    A product can appear in multiple
-                    collections. Collection membership
-                    is controlled by tags.
-                </p>
-
-                <div
-                    style={{
-                        display: "flex",
-                        gap: 8,
-                        flexWrap: "wrap",
-                        marginBottom: 12,
-                    }}
-                >
-                    {product.tags.map((tag) => (
-                        <button
-                            key={tag}
-                            type="button"
-                            onClick={() =>
-                                removeTag(tag)
-                            }
-                        >
-                            {tag} ×
-                        </button>
-                    ))}
-                </div>
-
-                <div
-                    style={{
-                        display: "flex",
-                        gap: 10,
-                        maxWidth: 600,
-                    }}
-                >
-                    <input
-                        type="text"
-                        value={tagInput}
-                        onChange={(event) =>
-                            setTagInput(
-                                event.target.value
-                            )
-                        }
-                        onKeyDown={(event) => {
-                            if (
-                                event.key === "Enter"
-                            ) {
-                                event.preventDefault();
-                                addTag();
-                            }
-                        }}
-                        placeholder="Enter collection/tag"
-                    />
-
-                    <button
-                        type="button"
-                        onClick={addTag}
-                    >
-                        + Add
-                    </button>
-                </div>
-
-                {product.collection && (
-                    <p
-                        style={{
-                            marginTop: 12,
-                            opacity: 0.7,
-                        }}
-                    >
-                        Primary collection / image
-                        folder:{" "}
-                        <strong>
-                            {product.collection}
-                        </strong>
-                    </p>
-                )}
-            </div>
-
-            <div
-                className="admin-stat-card"
-                style={{
-                    marginBottom: 20,
-                }}
-            >
-                <h2>Images</h2>
-
-                <p>
-                    The first image is the primary
-                    product image and will also be used
-                    for the catalogue thumbnail.
-                </p>
-
-                <input
-                    ref={imageInputRef}
-                    type="file"
-                    accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
-                    multiple
-                    hidden
-                    onChange={selectImages}
-                />
-
-                <button
-                    type="button"
-                    onClick={() =>
-                        imageInputRef.current?.click()
-                    }
-                >
-                    + Add Images
-                </button>
-
-                {!!previewUrls.length && (
                     <div
+                        className="admin-stat-card"
                         style={{
-                            display: "grid",
-                            gridTemplateColumns:
-                                "repeat(auto-fill, minmax(160px, 1fr))",
-                            gap: 16,
-                            marginTop: 18,
+                            marginBottom: 20,
                         }}
                     >
-                        {previewUrls.map(
-                            ({ file, url }, index) => (
-                                <div
-                                    key={`${file.name}-${index}`}
-                                    style={{
-                                        border:
-                                            "1px solid #ddd",
-                                        borderRadius: 8,
-                                        padding: 10,
-                                    }}
-                                >
-                                    <img
-                                        src={url}
-                                        alt={file.name}
-                                        style={{
-                                            width: "100%",
-                                            height: 140,
-                                            objectFit: "contain",
-                                        }}
-                                    />
+                        <h2>Product Information</h2>
 
-                                    <div
-                                        style={{
-                                            fontSize: 12,
-                                            marginTop: 8,
-                                            wordBreak:
-                                                "break-word",
-                                        }}
-                                    >
-                                        {file.name}
-                                    </div>
-
-                                    {index === 0 ? (
-                                        <div
-                                            style={{
-                                                marginTop: 8,
-                                                fontWeight: 600,
-                                            }}
-                                        >
-                                            Primary
-                                        </div>
-                                    ) : (
-                                        <button
-                                            type="button"
-                                            onClick={() =>
-                                                makePrimaryImage(
-                                                    index
-                                                )
-                                            }
-                                            style={{
-                                                marginTop: 8,
-                                            }}
-                                        >
-                                            Make Primary
-                                        </button>
-                                    )}
-
-                                    <button
-                                        type="button"
-                                        onClick={() =>
-                                            removePendingImage(
-                                                index
-                                            )
-                                        }
-                                        style={{
-                                            marginTop: 8,
-                                            marginLeft:
-                                                index === 0
-                                                    ? 0
-                                                    : 8,
-                                        }}
-                                    >
-                                        Remove
-                                    </button>
-                                </div>
-                            )
-                        )}
-                    </div>
-                )}
-            </div>
-
-            <div
-                className="admin-stat-card"
-                style={{
-                    marginBottom: 20,
-                }}
-            >
-                <div
-                    style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent:
-                            "space-between",
-                        gap: 12,
-                    }}
-                >
-                    <div>
-                        <h2>Variants</h2>
-
-                        <p>
-                            Add all replacement,
-                            equivalent or brand variants
-                            for this product.
-                        </p>
-                    </div>
-
-                    <button
-                        type="button"
-                        onClick={addVariant}
-                    >
-                        + Add Variant
-                    </button>
-                </div>
-
-                <div
-                    style={{
-                        display: "flex",
-                        gap: 8,
-                        flexWrap: "wrap",
-                        marginBottom: 20,
-                    }}
-                >
-                    {product.variants.map(
-                        (item, index) => (
-                            <button
-                                key={index}
-                                type="button"
-                                onClick={() =>
-                                    setActiveVariant(index)
-                                }
-                                style={{
-                                    fontWeight:
-                                        activeVariant === index
-                                            ? 700
-                                            : 400,
-                                }}
-                            >
-                                {item.partNumber ||
-                                    item.title ||
-                                    `Variant ${index + 1}`}
-                            </button>
-                        )
-                    )}
-                </div>
-
-                {variant && (
-                    <div>
                         <div
                             style={{
                                 display: "grid",
@@ -1279,753 +947,1078 @@ export default function AddProductClient() {
                             }}
                         >
                             <label>
-                                <strong>
-                                    Variant Title *
-                                </strong>
+                                <strong>Title *</strong>
 
                                 <input
                                     type="text"
-                                    value={variant.title}
+                                    value={product.title}
                                     onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "title",
+                                        handleTitleChange(
                                             event.target.value
                                         )
                                     }
+                                    placeholder="Example: SA 16056"
                                 />
                             </label>
 
                             <label>
-                                <strong>
-                                    Option1 Value
-                                </strong>
+                                <strong>Handle *</strong>
 
                                 <input
                                     type="text"
-                                    value={
-                                        variant.option1Value
-                                    }
+                                    value={product.handle}
                                     onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "option1Value",
+                                        handleHandleChange(
                                             event.target.value
                                         )
                                     }
+                                    placeholder="sa-16056"
                                 />
                             </label>
 
                             <label>
-                                <strong>
-                                    Part Number *
-                                </strong>
+                                <strong>Category</strong>
 
                                 <input
                                     type="text"
-                                    value={
-                                        variant.partNumber
-                                    }
+                                    value={product.category}
                                     onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "partNumber",
-                                            event.target.value
-                                        )
-                                    }
-                                />
-                            </label>
-
-                            <label>
-                                <strong>
-                                    Vendor / Brand
-                                </strong>
-
-                                <input
-                                    type="text"
-                                    value={variant.vendor}
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "vendor",
-                                            event.target.value
-                                        )
-                                    }
-                                />
-                            </label>
-
-                            <label>
-                                <strong>Price</strong>
-
-                                <input
-                                    type="number"
-                                    min="0"
-                                    step="0.01"
-                                    value={variant.price}
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "price",
-                                            Number(
+                                        updateProduct(
+                                            "category",
+                                            slugify(
                                                 event.target.value
-                                            ) || 0
+                                            )
                                         )
                                     }
+                                    placeholder="air-filter"
                                 />
                             </label>
+                        </div>
+                    </div>
 
-                            <label>
-                                <strong>HS Code</strong>
+                    <div
+                        className="admin-stat-card"
+                        style={{
+                            marginBottom: 20,
+                        }}
+                    >
+                        <h2>Collections / Tags</h2>
 
-                                <input
-                                    type="text"
-                                    value={variant.hsCode}
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "hsCode",
-                                            event.target.value
-                                        )
+                        <p>
+                            A product can appear in multiple
+                            collections. Collection membership
+                            is controlled by tags.
+                        </p>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                gap: 8,
+                                flexWrap: "wrap",
+                                marginBottom: 12,
+                            }}
+                        >
+                            {product.tags.map((tag) => (
+                                <button
+                                    key={tag}
+                                    type="button"
+                                    onClick={() =>
+                                        removeTag(tag)
                                     }
-                                />
-                            </label>
-
-                            <label>
-                                <strong>
-                                    Country of Origin
-                                </strong>
-
-                                <input
-                                    type="text"
-                                    value={
-                                        variant.countryOfOrigin
-                                    }
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "countryOfOrigin",
-                                            event.target.value
-                                        )
-                                    }
-                                />
-                            </label>
-
-                            <label>
-                                <strong>
-                                    Unit Weight
-                                </strong>
-
-                                <input
-                                    type="text"
-                                    value={
-                                        variant.unitWeight
-                                    }
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "unitWeight",
-                                            event.target.value
-                                        )
-                                    }
-                                />
-                            </label>
-
-                            <label>
-                                <strong>
-                                    Shipping Volume
-                                </strong>
-
-                                <input
-                                    type="text"
-                                    value={
-                                        variant.shippingVolume
-                                    }
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "shippingVolume",
-                                            event.target.value
-                                        )
-                                    }
-                                />
-                            </label>
+                                >
+                                    {tag} ×
+                                </button>
+                            ))}
                         </div>
 
                         <div
                             style={{
-                                marginTop: 16,
+                                display: "flex",
+                                gap: 10,
+                                maxWidth: 600,
                             }}
                         >
-                            <label>
-                                <strong>Description</strong>
+                            <input
+                                type="text"
+                                value={tagInput}
+                                onChange={(event) =>
+                                    setTagInput(
+                                        event.target.value
+                                    )
+                                }
+                                onKeyDown={(event) => {
+                                    if (
+                                        event.key === "Enter"
+                                    ) {
+                                        event.preventDefault();
+                                        addTag();
+                                    }
+                                }}
+                                placeholder="Enter collection/tag"
+                            />
 
-                                <textarea
-                                    value={
-                                        variant.description
-                                    }
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "description",
-                                            event.target.value
-                                        )
-                                    }
-                                    rows={5}
-                                />
-                            </label>
+                            <button
+                                type="button"
+                                onClick={addTag}
+                            >
+                                + Add
+                            </button>
                         </div>
 
-                        <div
-                            style={{
-                                marginTop: 16,
-                            }}
-                        >
-                            <label>
+                        {product.collection && (
+                            <p
+                                style={{
+                                    marginTop: 12,
+                                    opacity: 0.7,
+                                }}
+                            >
+                                Primary collection / image
+                                folder:{" "}
                                 <strong>
-                                    Specifications
+                                    {product.collection}
                                 </strong>
-
-                                <textarea
-                                    value={
-                                        variant.specifications.join(
-                                            "\n"
-                                        )
-                                    }
-                                    onChange={(event) =>
-                                        updateVariant(
-                                            activeVariant,
-                                            "specifications",
-                                            event.target.value
-                                                .split("\n")
-                                                .map((item) =>
-                                                    item.trim()
-                                                )
-                                                .filter(Boolean)
-                                        )
-                                    }
-                                    rows={6}
-                                    placeholder={
-                                        "Enter one specification per line"
-                                    }
-                                />
-                            </label>
-                        </div>
-
-                        <div
-                            style={{
-                                marginTop: 16,
-                            }}
-                        >
-                            <strong>
-                                Variant Image
-                            </strong>
-
-                            <p>
-                                Select one of the product
-                                images for this variant.
                             </p>
+                        )}
+                    </div>
 
-                            {!previewUrls.length ? (
+                    <div
+                        className="admin-stat-card"
+                        style={{
+                            marginBottom: 20,
+                        }}
+                    >
+                        <h2>Images</h2>
+
+                        <p>
+                            The first image is the primary
+                            product image and will also be used
+                            for the catalogue thumbnail.
+                        </p>
+
+                        <input
+                            ref={imageInputRef}
+                            type="file"
+                            accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
+                            multiple
+                            hidden
+                            onChange={selectImages}
+                        />
+
+                        <button
+                            type="button"
+                            className="admin-secondary-button"
+                            onClick={() => imageInputRef.current?.click()}
+                        >
+                            + Add Images
+                        </button>
+
+                        {!!previewUrls.length && (
+                            <div
+                                style={{
+                                    display: "grid",
+                                    gridTemplateColumns:
+                                        "repeat(auto-fill, minmax(160px, 1fr))",
+                                    gap: 16,
+                                    marginTop: 18,
+                                }}
+                            >
+                                {previewUrls.map(
+                                    ({ file, url }, index) => (
+                                        <div
+                                            key={`${file.name}-${index}`}
+                                            style={{
+                                                border:
+                                                    "1px solid #ddd",
+                                                borderRadius: 8,
+                                                padding: 10,
+                                            }}
+                                        >
+                                            <img
+                                                src={url}
+                                                alt={file.name}
+                                                style={{
+                                                    width: "100%",
+                                                    height: 140,
+                                                    objectFit: "contain",
+                                                }}
+                                            />
+
+                                            <div
+                                                style={{
+                                                    fontSize: 12,
+                                                    marginTop: 8,
+                                                    wordBreak:
+                                                        "break-word",
+                                                }}
+                                            >
+                                                {file.name}
+                                            </div>
+
+                                            {index === 0 ? (
+                                                <div
+                                                    style={{
+                                                        marginTop: 8,
+                                                        fontWeight: 600,
+                                                    }}
+                                                >
+                                                    Primary
+                                                </div>
+                                            ) : (
+                                                <button
+                                                    type="button"
+                                                    onClick={() =>
+                                                        makePrimaryImage(
+                                                            index
+                                                        )
+                                                    }
+                                                    style={{
+                                                        marginTop: 8,
+                                                    }}
+                                                >
+                                                    Make Primary
+                                                </button>
+                                            )}
+
+                                            <button
+                                                type="button"
+                                                onClick={() =>
+                                                    removePendingImage(
+                                                        index
+                                                    )
+                                                }
+                                                style={{
+                                                    marginTop: 8,
+                                                    marginLeft:
+                                                        index === 0
+                                                            ? 0
+                                                            : 8,
+                                                }}
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    )
+                                )}
+                            </div>
+                        )}
+                    </div>
+
+                    <div
+                        className="admin-stat-card"
+                        style={{
+                            marginBottom: 20,
+                        }}
+                    >
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent:
+                                    "space-between",
+                                gap: 12,
+                            }}
+                        >
+                            <div>
+                                <h2>Variants</h2>
+
                                 <p>
-                                    Add product images above
-                                    first.
+                                    Add all replacement,
+                                    equivalent or brand variants
+                                    for this product.
                                 </p>
-                            ) : (
+                            </div>
+
+                            <button
+                                type="button"
+                                onClick={addVariant}
+                            >
+                                + Add Variant
+                            </button>
+                        </div>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                gap: 8,
+                                flexWrap: "wrap",
+                                marginBottom: 20,
+                            }}
+                        >
+                            {product.variants.map(
+                                (item, index) => (
+                                    <button
+                                        key={index}
+                                        type="button"
+                                        onClick={() =>
+                                            setActiveVariant(index)
+                                        }
+                                        style={{
+                                            fontWeight:
+                                                activeVariant === index
+                                                    ? 700
+                                                    : 400,
+                                        }}
+                                    >
+                                        {item.partNumber ||
+                                            item.title ||
+                                            `Variant ${index + 1}`}
+                                    </button>
+                                )
+                            )}
+                        </div>
+
+                        {variant && (
+                            <div>
                                 <div
                                     style={{
-                                        display: "flex",
-                                        gap: 12,
-                                        flexWrap: "wrap",
+                                        display: "grid",
+                                        gridTemplateColumns:
+                                            "repeat(auto-fit, minmax(260px, 1fr))",
+                                        gap: 16,
                                     }}
                                 >
-                                    {previewUrls.map(
-                                        (
-                                            { file, url },
-                                            index
-                                        ) => (
+                                    <label>
+                                        <strong>
+                                            Variant Title *
+                                        </strong>
+
+                                        <input
+                                            type="text"
+                                            value={variant.title}
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "title",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>
+                                            Option1 Value
+                                        </strong>
+
+                                        <input
+                                            type="text"
+                                            value={
+                                                variant.option1Value
+                                            }
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "option1Value",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>
+                                            Part Number *
+                                        </strong>
+
+                                        <input
+                                            type="text"
+                                            value={
+                                                variant.partNumber
+                                            }
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "partNumber",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>
+                                            Vendor / Brand
+                                        </strong>
+
+                                        <input
+                                            type="text"
+                                            value={variant.vendor}
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "vendor",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>Price</strong>
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            step="0.01"
+                                            value={variant.price}
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "price",
+                                                    Number(
+                                                        event.target.value
+                                                    ) || 0
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>HS Code</strong>
+
+                                        <input
+                                            type="text"
+                                            value={variant.hsCode}
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "hsCode",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>
+                                            Country of Origin
+                                        </strong>
+
+                                        <input
+                                            type="text"
+                                            value={
+                                                variant.countryOfOrigin
+                                            }
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "countryOfOrigin",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>
+                                            Unit Weight
+                                        </strong>
+
+                                        <input
+                                            type="text"
+                                            value={
+                                                variant.unitWeight
+                                            }
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "unitWeight",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+
+                                    <label>
+                                        <strong>
+                                            Shipping Volume
+                                        </strong>
+
+                                        <input
+                                            type="text"
+                                            value={
+                                                variant.shippingVolume
+                                            }
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "shippingVolume",
+                                                    event.target.value
+                                                )
+                                            }
+                                        />
+                                    </label>
+                                </div>
+
+                                <div
+                                    style={{
+                                        marginTop: 16,
+                                    }}
+                                >
+                                    <label>
+                                        <strong>Description</strong>
+
+                                        <textarea
+                                            value={
+                                                variant.description
+                                            }
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "description",
+                                                    event.target.value
+                                                )
+                                            }
+                                            rows={5}
+                                        />
+                                    </label>
+                                </div>
+
+                                <div
+                                    style={{
+                                        marginTop: 16,
+                                    }}
+                                >
+                                    <label>
+                                        <strong>
+                                            Specifications
+                                        </strong>
+
+                                        <textarea
+                                            value={
+                                                variant.specifications.join(
+                                                    "\n"
+                                                )
+                                            }
+                                            onChange={(event) =>
+                                                updateVariant(
+                                                    activeVariant,
+                                                    "specifications",
+                                                    event.target.value
+                                                        .split("\n")
+                                                        .map((item) =>
+                                                            item.trim()
+                                                        )
+                                                        .filter(Boolean)
+                                                )
+                                            }
+                                            rows={6}
+                                            placeholder={
+                                                "Enter one specification per line"
+                                            }
+                                        />
+                                    </label>
+                                </div>
+
+                                <div
+                                    style={{
+                                        marginTop: 16,
+                                    }}
+                                >
+                                    <div className="admin-add-variant-image-heading">
+                                        Variant Image
+                                    </div>
+
+                                    <p className="admin-add-helper-text">
+                                        Select one of the product images for this variant.
+                                    </p>
+
+                                    {!previewUrls.length ? (
+                                        <p>
+                                            Add product images above
+                                            first.
+                                        </p>
+                                    ) : (
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                gap: 12,
+                                                flexWrap: "wrap",
+                                            }}
+                                        >
+                                            {previewUrls.map(
+                                                (
+                                                    { file, url },
+                                                    index
+                                                ) => (
+                                                    <button
+                                                        key={`${file.name}-${index}`}
+                                                        type="button"
+                                                        onClick={() =>
+                                                            updateVariant(
+                                                                activeVariant,
+                                                                "image",
+                                                                file.name
+                                                            )
+                                                        }
+                                                        style={{
+                                                            padding: 6,
+                                                            border:
+                                                                variant.image ===
+                                                                    file.name
+                                                                    ? "2px solid #173f4c"
+                                                                    : "1px solid #ddd",
+                                                        }}
+                                                    >
+                                                        <img
+                                                            src={url}
+                                                            alt={file.name}
+                                                            style={{
+                                                                width: 80,
+                                                                height: 80,
+                                                                objectFit:
+                                                                    "contain",
+                                                            }}
+                                                        />
+                                                    </button>
+                                                )
+                                            )}
+                                        </div>
+                                    )}
+
+                                    {variant.image && (
+                                        <p>
+                                            Selected:{" "}
+                                            <strong>
+                                                {variant.image}
+                                            </strong>{" "}
                                             <button
-                                                key={`${file.name}-${index}`}
                                                 type="button"
                                                 onClick={() =>
                                                     updateVariant(
                                                         activeVariant,
                                                         "image",
-                                                        file.name
+                                                        ""
                                                     )
                                                 }
-                                                style={{
-                                                    padding: 6,
-                                                    border:
-                                                        variant.image ===
-                                                            file.name
-                                                            ? "2px solid #173f4c"
-                                                            : "1px solid #ddd",
-                                                }}
                                             >
-                                                <img
-                                                    src={url}
-                                                    alt={file.name}
-                                                    style={{
-                                                        width: 80,
-                                                        height: 80,
-                                                        objectFit:
-                                                            "contain",
-                                                    }}
-                                                />
+                                                Remove
                                             </button>
-                                        )
+                                        </p>
                                     )}
                                 </div>
-                            )}
 
-                            {variant.image && (
-                                <p>
-                                    Selected:{" "}
-                                    <strong>
-                                        {variant.image}
-                                    </strong>{" "}
+                                <div
+                                    style={{
+                                        marginTop: 24,
+                                    }}
+                                >
                                     <button
                                         type="button"
                                         onClick={() =>
-                                            updateVariant(
-                                                activeVariant,
-                                                "image",
-                                                ""
+                                            removeVariant(
+                                                activeVariant
                                             )
                                         }
+                                        disabled={
+                                            product.variants.length <=
+                                            1
+                                        }
                                     >
-                                        Remove
+                                        Remove Variant
                                     </button>
-                                </p>
-                            )}
-                        </div>
-
-                        <div
-                            style={{
-                                marginTop: 24,
-                            }}
-                        >
-                            <button
-                                type="button"
-                                onClick={() =>
-                                    removeVariant(
-                                        activeVariant
-                                    )
-                                }
-                                disabled={
-                                    product.variants.length <=
-                                    1
-                                }
-                            >
-                                Remove Variant
-                            </button>
-                        </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
-                )}
-            </div>
 
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "flex-end",
-                    paddingBottom: 40,
-                }}
-            >
-                <button
-                    type="button"
-                    onClick={createProduct}
-                    disabled={isCreating}
-                >
-                    {isCreating
-                        ? "Creating Product..."
-                        : "Create Product"}
-                </button>
-            </div>
+                    <div className="admin-add-product-actions">
+                        <button
+                            type="button"
+                            className="admin-primary-button"
+                            onClick={createProduct}
+                            disabled={isCreating}
+                        >
+                            {isCreating
+                                ? "Creating Product..."
+                                : "Create Product"}
+                        </button>
+                    </div>
                 </>
             )}
 
             {activeMode === "excel" && (
                 <>
-            <div
-                className="admin-stat-card"
-                style={{
-                    marginBottom: 20,
-                }}
-            >
-                <h2>Import from Excel</h2>
-
-                <p>
-                    Upload a Matrixify-style Excel file
-                    to create multiple products and
-                    variants.
-                </p>
-
-                <input
-                    type="file"
-                    accept=".xlsx,.xls"
-                    onChange={selectExcelFile}
-                    disabled={isParsingExcel}
-                />
-
-                {isParsingExcel && (
-                    <p
+                    <div
+                        className="admin-stat-card"
                         style={{
-                            marginTop: 12,
+                            marginBottom: 20,
                         }}
                     >
-                        Reading Excel file...
-                    </p>
-                )}
+                        <h2>Import from Excel</h2>
 
-                {excelError && (
-                    <p
-                        style={{
-                            marginTop: 12,
-                            fontWeight: 600,
-                        }}
-                    >
-                        {excelError}
-                    </p>
-                )}
+                        <p>
+                            Upload a Matrixify-style Excel file
+                            to create multiple products and
+                            variants.
+                        </p>
 
-                {excelFile &&
-                    !isParsingExcel &&
-                    !excelError &&
-                    excelProducts.length > 0 && (
-                        <div
-                            style={{
-                                marginTop: 18,
-                            }}
-                        >
-                            <p>
-                                <strong>
-                                    {excelFile.name}
-                                </strong>
-                            </p>
+                        <input
+                            type="file"
+                            accept=".xlsx,.xls"
+                            onChange={selectExcelFile}
+                            disabled={isParsingExcel}
+                        />
 
-                            <p>
-                                Products found:{" "}
-                                <strong>
-                                    {
-                                        excelProducts.length
-                                    }
-                                </strong>
-                            </p>
-
-                            <p>
-                                Variants found:{" "}
-                                <strong>
-                                    {excelProducts.reduce(
-                                        (
-                                            total,
-                                            item
-                                        ) =>
-                                            total +
-                                            item
-                                                .variants
-                                                .length,
-                                        0
-                                    )}
-                                </strong>
-                            </p>
-
-                            <div
+                        {isParsingExcel && (
+                            <p
                                 style={{
-                                    marginTop: 16,
-                                    overflowX: "auto",
+                                    marginTop: 12,
                                 }}
                             >
-                                <table
-                                    style={{
-                                        width: "100%",
-                                        borderCollapse:
-                                            "collapse",
-                                    }}
-                                >
-                                    <thead>
-                                        <tr>
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Handle
-                                            </th>
+                                Reading Excel file...
+                            </p>
+                        )}
 
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Title
-                                            </th>
-
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Collections
-                                            </th>
-
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Variants
-                                            </th>
-
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Images
-                                            </th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        {excelProducts
-                                            .slice(0, 20)
-                                            .map(
-                                                (
-                                                    item
-                                                ) => (
-                                                    <tr
-                                                        key={
-                                                            item.handle
-                                                        }
-                                                    >
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item.handle
-                                                            }
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item.title
-                                                            }
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {item.tags.join(
-                                                                ", "
-                                                            )}
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item
-                                                                    .variants
-                                                                    .length
-                                                            }
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item
-                                                                    .images
-                                                                    .length
-                                                            }
-                                                        </td>
-                                                    </tr>
-                                                )
-                                            )}
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            {excelProducts.length >
-                                20 && (
-                                    <p
-                                        style={{
-                                            marginTop: 12,
-                                            opacity: 0.7,
-                                        }}
-                                    >
-                                        Showing first 20
-                                        products.
-                                    </p>
-                                )}
-
-                            <div
+                        {excelError && (
+                            <p
                                 style={{
-                                    marginTop: 20,
-                                    paddingTop: 20,
-                                    borderTop:
-                                        "1px solid #e5e5e5",
+                                    marginTop: 12,
+                                    fontWeight: 600,
                                 }}
                             >
+                                {excelError}
+                            </p>
+                        )}
+
+                        {excelFile &&
+                            !isParsingExcel &&
+                            !excelError &&
+                            excelProducts.length > 0 && (
                                 <div
                                     style={{
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: 12,
-                                        flexWrap: "wrap",
+                                        marginTop: 18,
                                     }}
                                 >
-                                    <button
-                                        type="button"
-                                        onClick={
-                                            importExcelProducts
-                                        }
-                                        disabled={
-                                            isImportingExcel
-                                        }
-                                        className="admin-primary-button"
-                                    >
-                                        {isImportingExcel
-                                            ? "Importing Products..."
-                                            : `Import ${excelProducts.length} Products`}
-                                    </button>
+                                    <p>
+                                        <strong>
+                                            {excelFile.name}
+                                        </strong>
+                                    </p>
 
-                                    <span
-                                        style={{
-                                            fontSize: 13,
-                                            opacity: 0.7,
-                                        }}
-                                    >
-                                        Existing product
-                                        handles will be
-                                        skipped.
-                                    </span>
-                                </div>
+                                    <p>
+                                        Products found:{" "}
+                                        <strong>
+                                            {
+                                                excelProducts.length
+                                            }
+                                        </strong>
+                                    </p>
 
-                                {excelImportResult && (
+                                    <p>
+                                        Variants found:{" "}
+                                        <strong>
+                                            {excelProducts.reduce(
+                                                (
+                                                    total,
+                                                    item
+                                                ) =>
+                                                    total +
+                                                    item
+                                                        .variants
+                                                        .length,
+                                                0
+                                            )}
+                                        </strong>
+                                    </p>
+
                                     <div
                                         style={{
-                                            marginTop: 18,
-                                            padding: 16,
-                                            border:
-                                                "1px solid #d8d8d8",
-                                            borderRadius: 8,
-                                            background:
-                                                "#fafafa",
+                                            marginTop: 16,
+                                            overflowX: "auto",
                                         }}
                                     >
-                                        <strong>
-                                            Import Complete
-                                        </strong>
+                                        <table
+                                            style={{
+                                                width: "100%",
+                                                borderCollapse:
+                                                    "collapse",
+                                            }}
+                                        >
+                                            <thead>
+                                                <tr>
+                                                    <th
+                                                        style={{
+                                                            textAlign:
+                                                                "left",
+                                                            padding: 8,
+                                                        }}
+                                                    >
+                                                        Handle
+                                                    </th>
 
+                                                    <th
+                                                        style={{
+                                                            textAlign:
+                                                                "left",
+                                                            padding: 8,
+                                                        }}
+                                                    >
+                                                        Title
+                                                    </th>
+
+                                                    <th
+                                                        style={{
+                                                            textAlign:
+                                                                "left",
+                                                            padding: 8,
+                                                        }}
+                                                    >
+                                                        Collections
+                                                    </th>
+
+                                                    <th
+                                                        style={{
+                                                            textAlign:
+                                                                "left",
+                                                            padding: 8,
+                                                        }}
+                                                    >
+                                                        Variants
+                                                    </th>
+
+                                                    <th
+                                                        style={{
+                                                            textAlign:
+                                                                "left",
+                                                            padding: 8,
+                                                        }}
+                                                    >
+                                                        Images
+                                                    </th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                {excelProducts
+                                                    .slice(0, 20)
+                                                    .map(
+                                                        (
+                                                            item
+                                                        ) => (
+                                                            <tr
+                                                                key={
+                                                                    item.handle
+                                                                }
+                                                            >
+                                                                <td
+                                                                    style={{
+                                                                        padding: 8,
+                                                                    }}
+                                                                >
+                                                                    {
+                                                                        item.handle
+                                                                    }
+                                                                </td>
+
+                                                                <td
+                                                                    style={{
+                                                                        padding: 8,
+                                                                    }}
+                                                                >
+                                                                    {
+                                                                        item.title
+                                                                    }
+                                                                </td>
+
+                                                                <td
+                                                                    style={{
+                                                                        padding: 8,
+                                                                    }}
+                                                                >
+                                                                    {item.tags.join(
+                                                                        ", "
+                                                                    )}
+                                                                </td>
+
+                                                                <td
+                                                                    style={{
+                                                                        padding: 8,
+                                                                    }}
+                                                                >
+                                                                    {
+                                                                        item
+                                                                            .variants
+                                                                            .length
+                                                                    }
+                                                                </td>
+
+                                                                <td
+                                                                    style={{
+                                                                        padding: 8,
+                                                                    }}
+                                                                >
+                                                                    {
+                                                                        item
+                                                                            .images
+                                                                            .length
+                                                                    }
+                                                                </td>
+                                                            </tr>
+                                                        )
+                                                    )}
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    {excelProducts.length >
+                                        20 && (
+                                            <p
+                                                style={{
+                                                    marginTop: 12,
+                                                    opacity: 0.7,
+                                                }}
+                                            >
+                                                Showing first 20
+                                                products.
+                                            </p>
+                                        )}
+
+                                    <div
+                                        style={{
+                                            marginTop: 20,
+                                            paddingTop: 20,
+                                            borderTop:
+                                                "1px solid #e5e5e5",
+                                        }}
+                                    >
                                         <div
                                             style={{
-                                                marginTop: 10,
                                                 display: "flex",
-                                                gap: 20,
+                                                alignItems: "center",
+                                                gap: 12,
                                                 flexWrap: "wrap",
                                             }}
                                         >
-                                            <span>
-                                                Imported:{" "}
-                                                <strong>
-                                                    {
-                                                        excelImportResult
-                                                            .importedCount
-                                                    }
-                                                </strong>
-                                            </span>
+                                            <button
+                                                type="button"
+                                                onClick={
+                                                    importExcelProducts
+                                                }
+                                                disabled={
+                                                    isImportingExcel
+                                                }
+                                                className="admin-primary-button"
+                                            >
+                                                {isImportingExcel
+                                                    ? "Importing Products..."
+                                                    : `Import ${excelProducts.length} Products`}
+                                            </button>
 
-                                            <span>
-                                                Existing products
-                                                skipped:{" "}
-                                                <strong>
-                                                    {
-                                                        excelImportResult
-                                                            .skippedCount
-                                                    }
-                                                </strong>
+                                            <span
+                                                style={{
+                                                    fontSize: 13,
+                                                    opacity: 0.7,
+                                                }}
+                                            >
+                                                Existing product
+                                                handles will be
+                                                skipped.
                                             </span>
                                         </div>
 
-                                        {excelImportResult
-                                            .skipped.length >
-                                            0 && (
-                                                <details
+                                        {excelImportResult && (
+                                            <div
+                                                style={{
+                                                    marginTop: 18,
+                                                    padding: 16,
+                                                    border:
+                                                        "1px solid #d8d8d8",
+                                                    borderRadius: 8,
+                                                    background:
+                                                        "#fafafa",
+                                                }}
+                                            >
+                                                <strong>
+                                                    Import Complete
+                                                </strong>
+
+                                                <div
                                                     style={{
-                                                        marginTop: 12,
+                                                        marginTop: 10,
+                                                        display: "flex",
+                                                        gap: 20,
+                                                        flexWrap: "wrap",
                                                     }}
                                                 >
-                                                    <summary
-                                                        style={{
-                                                            cursor:
-                                                                "pointer",
-                                                            fontWeight:
-                                                                600,
-                                                        }}
-                                                    >
-                                                        View skipped
-                                                        handles
-                                                    </summary>
+                                                    <span>
+                                                        Imported:{" "}
+                                                        <strong>
+                                                            {
+                                                                excelImportResult
+                                                                    .importedCount
+                                                            }
+                                                        </strong>
+                                                    </span>
 
-                                                    <div
-                                                        style={{
-                                                            marginTop: 10,
-                                                            maxHeight: 200,
-                                                            overflowY:
-                                                                "auto",
-                                                            fontSize: 13,
-                                                            lineHeight:
-                                                                1.6,
-                                                        }}
-                                                    >
-                                                        {excelImportResult
-                                                            .skipped.map(
-                                                                (
-                                                                    handle
-                                                                ) => (
-                                                                    <div
-                                                                        key={
+                                                    <span>
+                                                        Existing products
+                                                        skipped:{" "}
+                                                        <strong>
+                                                            {
+                                                                excelImportResult
+                                                                    .skippedCount
+                                                            }
+                                                        </strong>
+                                                    </span>
+                                                </div>
+
+                                                {excelImportResult
+                                                    .skipped.length >
+                                                    0 && (
+                                                        <details
+                                                            style={{
+                                                                marginTop: 12,
+                                                            }}
+                                                        >
+                                                            <summary
+                                                                style={{
+                                                                    cursor:
+                                                                        "pointer",
+                                                                    fontWeight:
+                                                                        600,
+                                                                }}
+                                                            >
+                                                                View skipped
+                                                                handles
+                                                            </summary>
+
+                                                            <div
+                                                                style={{
+                                                                    marginTop: 10,
+                                                                    maxHeight: 200,
+                                                                    overflowY:
+                                                                        "auto",
+                                                                    fontSize: 13,
+                                                                    lineHeight:
+                                                                        1.6,
+                                                                }}
+                                                            >
+                                                                {excelImportResult
+                                                                    .skipped.map(
+                                                                        (
                                                                             handle
-                                                                        }
-                                                                    >
-                                                                        {
-                                                                            handle
-                                                                        }
-                                                                    </div>
-                                                                )
-                                                            )}
-                                                    </div>
-                                                </details>
-                                            )}
+                                                                        ) => (
+                                                                            <div
+                                                                                key={
+                                                                                    handle
+                                                                                }
+                                                                            >
+                                                                                {
+                                                                                    handle
+                                                                                }
+                                                                            </div>
+                                                                        )
+                                                                    )}
+                                                            </div>
+                                                        </details>
+                                                    )}
+                                            </div>
+                                        )}
                                     </div>
-                                )}
-                            </div>
-                        </div>
-                    )}
-            </div>
+                                </div>
+                            )}
+                    </div>
 
                 </>
             )}
