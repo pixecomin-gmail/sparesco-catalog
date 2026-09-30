@@ -61,6 +61,12 @@ function cleanText(value?: string) {
     .trim();
 }
 
+function normalizePartNumber(value?: string) {
+  return cleanText(value)
+    .replace(/[\s-]/g, "")
+    .toLowerCase();
+}
+
 function replaceFilterFinder(value?: string) {
   if (!value) return "";
 
@@ -147,23 +153,41 @@ function getSeoData(
   product: Product,
   fallbackHandle: string
 ) {
-  const variant = product.variants?.[0];
-
   const partNumber = cleanText(
     product.title ||
     product.handle ||
     fallbackHandle
   );
 
-  const productTitle = cleanProductTitle(
-    variant?.title ||
-    product.title ||
-    partNumber
-  );
+  const referenceKey =
+    normalizePartNumber(partNumber);
 
-  const primaryPartNumber = cleanText(
-    variant?.partNumber
-  );
+  const matchingVariant =
+    product.variants?.find(
+      (item) =>
+        normalizePartNumber(
+          item.partNumber
+        ) === referenceKey
+    );
+
+  const variant =
+    matchingVariant ||
+    product.variants?.[0];
+
+  const isReferenceProduct =
+    Boolean(matchingVariant);
+
+  const productTitle = isReferenceProduct
+    ? cleanProductTitle(
+        variant?.title ||
+        product.title ||
+        partNumber
+      )
+    : `${partNumber} Replacement Filter`;
+
+  const primaryPartNumber = isReferenceProduct
+    ? cleanText(variant?.partNumber)
+    : partNumber;
 
   const titleIncludesReference =
     productTitle
@@ -175,14 +199,17 @@ function getSeoData(
           .toLowerCase()
       );
 
-  const seoTitle =
-    titleIncludesReference
+  const seoTitle = isReferenceProduct
+    ? titleIncludesReference
       ? productTitle
-      : `${partNumber} | ${productTitle}`;
+      : `${partNumber} | ${productTitle}`
+    : `${partNumber} Replacement Filter`;
 
-  const brand = replaceFilterFinder(
-    cleanText(variant?.vendor)
-  );
+  const brand = isReferenceProduct
+    ? replaceFilterFinder(
+        cleanText(variant?.vendor)
+      )
+    : "";
 
   const category = replaceFilterFinder(
     titleFromHandle(
@@ -192,7 +219,18 @@ function getSeoData(
 
   const replacementReferences =
     product.variants
-      ?.slice(1)
+      ?.filter((item) => {
+        if (!isReferenceProduct) {
+          return true;
+        }
+
+        return (
+          normalizePartNumber(item.partNumber) !==
+          normalizePartNumber(
+            variant?.partNumber
+          )
+        );
+      })
       .map((item) => {
         const vendor = replaceFilterFinder(
           cleanText(item.vendor)
@@ -201,7 +239,9 @@ function getSeoData(
         const replacementPartNumber =
           cleanText(item.partNumber);
 
-        if (!replacementPartNumber) return "";
+        if (!replacementPartNumber) {
+          return "";
+        }
 
         return vendor
           ? `${vendor} ${replacementPartNumber}`
@@ -215,10 +255,14 @@ function getSeoData(
   const metaTitle = seoTitle;
 
   const metaDescription =
-    replacementReferences.length > 0
-      ? `${partNumber} - ${productTitle}. Primary part number ${primaryPartNumber || partNumber}. Cross references include ${replacementText}. View specifications and enquire for pricing and availability.`
-      : `${partNumber} - ${productTitle}. Part number ${primaryPartNumber || partNumber}. View technical specifications and enquire with Sparesco for pricing and availability.`;
-
+    isReferenceProduct
+      ? replacementReferences.length > 0
+        ? `${partNumber} - ${productTitle}. Primary part number ${primaryPartNumber}. Cross references include ${replacementText}. View specifications and enquire for pricing and availability.`
+        : `${partNumber} - ${productTitle}. Part number ${primaryPartNumber}. View technical specifications and enquire with Sparesco for pricing and availability.`
+      : replacementReferences.length > 0
+        ? `${partNumber} replacement filter reference. Cross references include ${replacementText}. View specifications and enquire for pricing and availability.`
+        : `${partNumber} replacement filter reference. View specifications and enquire with Sparesco for pricing and availability.`;
+        
   return {
     variant,
     partNumber,
@@ -228,6 +272,7 @@ function getSeoData(
     category,
     metaTitle,
     metaDescription,
+    isReferenceProduct,
   };
 }
 
@@ -314,71 +359,99 @@ export default async function ProductPage({
 
   const image = getProductImage(product);
 
-  const firstVariant =
-    product.variants?.[0];
+  const schemaVariant = seo.variant;
 
-    const prices =
-    product.variants
-      ?.map((variant) =>
-        Number(variant.price || 0)
-      )
-      .filter((value) => value > 0) || [];
+  const schemaPrice =
+    Number(schemaVariant?.price || 0);
 
-  const price =
-    prices.length > 0
-      ? Math.min(...prices)
-      : 0;
+  const schemaPartNumber =
+    cleanText(schemaVariant?.partNumber);
 
-  const primaryPartNumber =
-    cleanText(firstVariant?.partNumber);
-
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: seo.productTitle,
-    description: seo.metaDescription,
-    url: canonical,
-    image: [image],
-    sku: cleanText(firstVariant?.sku) || seo.partNumber,
-
-    ...(primaryPartNumber
+  const productSchema =
+    seo.isReferenceProduct
       ? {
-        mpn: primaryPartNumber,
-      }
-      : {}),
+        "@context":
+          "https://schema.org",
+        "@type": "Product",
 
-    ...(seo.category
-      ? {
-        category: seo.category,
-      }
-      : {}),
+        name: seo.productTitle,
+        description:
+          seo.metaDescription,
+        url: canonical,
+        image: [image],
 
-    ...(seo.brand
-      ? {
-        brand: {
-          "@type": "Brand",
-          name: seo.brand,
-        },
-      }
-      : {}),
+        sku:
+          cleanText(
+            schemaVariant?.sku
+          ) || seo.partNumber,
 
-    ...(price > 0
-      ? {
-        offers: {
-          "@type": "Offer",
-          url: canonical,
-          priceCurrency: "INR",
-          price,
-          itemCondition:
-            "https://schema.org/NewCondition",
-          seller: {
-            "@type": "Organization",
-            name: "Sparesco",
-          },
-        },
+        ...(schemaPartNumber
+          ? {
+            mpn:
+              schemaPartNumber,
+          }
+          : {}),
+
+        ...(seo.category
+          ? {
+            category:
+              seo.category,
+          }
+          : {}),
+
+        ...(seo.brand
+          ? {
+            brand: {
+              "@type": "Brand",
+              name: seo.brand,
+            },
+          }
+          : {}),
+
+        ...(schemaPrice > 0
+          ? {
+            offers: {
+              "@type": "Offer",
+              url: canonical,
+              priceCurrency:
+                "INR",
+              price:
+                schemaPrice,
+              itemCondition:
+                "https://schema.org/NewCondition",
+              seller: {
+                "@type":
+                  "Organization",
+                name: "Sparesco",
+              },
+            },
+          }
+          : {}),
       }
-      : {}),
-  };
+      : {
+        "@context":
+          "https://schema.org",
+        "@type": "Product",
+
+        name: `${seo.partNumber} Replacement Filter`,
+
+        description:
+          seo.metaDescription,
+
+        url: canonical,
+        image: [image],
+
+        sku: seo.partNumber,
+
+        mpn: seo.partNumber,
+
+        ...(seo.category
+          ? {
+            category:
+              seo.category,
+          }
+          : {}),
+      };
 
   const breadcrumbItems = [
     {
