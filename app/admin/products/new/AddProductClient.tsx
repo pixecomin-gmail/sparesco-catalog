@@ -62,6 +62,80 @@ function emptyVariant(): ProductVariant {
     };
 }
 
+let excelLibraryPromise: Promise<void> | null = null;
+
+function loadExcelLibrary(): Promise<void> {
+    if (typeof window === "undefined") {
+        return Promise.reject(
+            new Error(
+                "Excel import is only available in the browser."
+            )
+        );
+    }
+
+    if (window.XLSX) {
+        return Promise.resolve();
+    }
+
+    if (excelLibraryPromise) {
+        return excelLibraryPromise;
+    }
+
+    excelLibraryPromise =
+        new Promise<void>((resolve, reject) => {
+            const existing =
+                document.querySelector<HTMLScriptElement>(
+                    'script[data-sparesco-xlsx="true"]'
+                );
+
+            if (existing) {
+                existing.addEventListener(
+                    "load",
+                    () => resolve(),
+                    { once: true }
+                );
+
+                existing.addEventListener(
+                    "error",
+                    () =>
+                        reject(
+                            new Error(
+                                "Unable to load the Excel reader."
+                            )
+                        ),
+                    { once: true }
+                );
+
+                return;
+            }
+
+            const script =
+                document.createElement("script");
+
+            script.src =
+                "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
+
+            script.async = true;
+
+            script.dataset.sparescoXlsx =
+                "true";
+
+            script.onload = () =>
+                resolve();
+
+            script.onerror = () =>
+                reject(
+                    new Error(
+                        "Unable to load the Excel reader."
+                    )
+                );
+
+            document.head.appendChild(script);
+        });
+
+    return excelLibraryPromise;
+}
+
 export default function AddProductClient() {
     const [product, setProduct] =
         useState<NewProduct>({
@@ -366,6 +440,8 @@ export default function AddProductClient() {
         setIsParsingExcel(true);
 
         try {
+            await loadExcelLibrary();
+
             const {
                 parseProductExcel,
             } = await import(
