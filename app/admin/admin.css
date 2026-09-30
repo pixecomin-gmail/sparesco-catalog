@@ -945,6 +945,7 @@
         align-items: flex-start;
     }
 }
+
 /* =========================
    ADD PRODUCT PAGE
 ========================= */
@@ -955,65 +956,74 @@
 
 /* Tabs */
 
-.admin-add-product-tabs {
-  display: inline-flex;
+.admin-add-product-page > div:nth-of-type(2) {
+  display: inline-flex !important;
   align-items: center;
-  gap: 4px;
-  margin-bottom: 24px;
-  padding: 4px;
-  background: #ffffff;
-  border: 1px solid #e3e3dd;
-  border-radius: 10px;
+  gap: 6px !important;
+  width: auto !important;
+  margin-bottom: 26px !important;
+  padding: 4px !important;
+  border: 1px solid #dfe3df !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
 }
 
-.admin-add-product-tab {
+.admin-add-product-page > div:nth-of-type(2) .admin-primary-button,
+.admin-add-product-page > div:nth-of-type(2) .admin-secondary-button {
   min-height: 40px;
+  width: auto;
   padding: 0 18px;
-  border: 0;
   border-radius: 7px;
-  background: transparent;
-  color: #657b82;
-  font-family: inherit;
   font-size: 13px;
   font-weight: 800;
-  cursor: pointer;
-  transition:
-    background 0.15s ease,
-    color 0.15s ease;
 }
 
-.admin-add-product-tab:hover {
-  background: #f3f5f4;
-  color: #173f4c;
-}
-
-.admin-add-product-tab.active {
+.admin-add-product-page > div:nth-of-type(2) .admin-primary-button {
+  border: 1px solid #173f4c;
   background: #173f4c;
   color: #ffffff;
 }
 
-/* Cards */
-
-.admin-add-product-page .admin-stat-card {
-  margin-bottom: 20px;
-  padding: 24px;
+.admin-add-product-page > div:nth-of-type(2) .admin-secondary-button {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #526970;
 }
 
-.admin-add-product-page .admin-stat-card > h2 {
+.admin-add-product-page > div:nth-of-type(2) .admin-secondary-button:hover {
+  border-color: transparent;
+  background: #f3f5f4;
+  color: #173f4c;
+}
+
+/* Main cards */
+
+.admin-add-product-page .admin-stat-card {
+  margin-bottom: 20px !important;
+  padding: 24px;
+  border: 1px solid #e3e3dd;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.admin-add-product-page .admin-stat-card > h2,
+.admin-add-product-page .admin-stat-card > div > div > h2 {
   margin: 0 0 6px;
   color: #173f4c;
   font-size: 18px;
   line-height: 1.3;
+  font-weight: 800;
 }
 
-.admin-add-product-page .admin-stat-card > p {
+.admin-add-product-page .admin-stat-card > p,
+.admin-add-product-page .admin-stat-card > div > div > p {
   margin: 0 0 20px;
   color: #71858b;
   font-size: 13px;
   line-height: 1.5;
 }
 
-/* Fields */
+/* Labels */
 
 .admin-add-product-page .admin-stat-card label {
   display: block;
@@ -1025,28 +1035,42 @@
 
 .admin-add-product-page .admin-stat-card label > strong {
   display: block;
-  margin-bottom: 7px;
+  margin: 0 0 7px;
   color: #526970;
   font-size: 12px;
+  line-height: 1.4;
+  font-weight: 800;
 }
+
+/* Form fields */
 
 .admin-add-product-page .admin-stat-card input[type="text"],
 .admin-add-product-page .admin-stat-card input[type="number"],
 .admin-add-product-page .admin-stat-card textarea {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 7px;
+  margin-top: 0;
   border: 1px solid #d8dedc;
   border-radius: 8px;
   background: #ffffff;
   padding: 11px 12px;
   color: #173f4c;
-  font: inherit;
+  font-family: inherit;
   font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
   outline: none;
   transition:
     border-color 0.15s ease,
     box-shadow 0.15s ease;
+}
+
+.admin-add-product-page .admin-stat-card input[type="text"] {
+  min-height: 42px;
+}
+
+.admin-add-product-page .admin-stat-card input[type="number"] {
+  min-height: 42px;
 }
 
 .admin-add-product-page .admin-stat-card textarea {
@@ -1062,40 +1086,11 @@
   box-shadow: 0 0 0 2px rgba(42, 131, 146, 0.1);
 }
 
-/* File upload */
-
-.admin-add-product-page .admin-stat-card input[type="file"] {
-  max-width: 100%;
-  color: #526970;
-  font-family: inherit;
-  font-size: 13px;
-}
-
-.admin-add-product-page
-  .admin-stat-card
-  input[type="file"]::file-selector-button {
-  margin-right: 12px;
-  border: 1px solid #d4d9d7;
-  border-radius: 7px;
-  background: #ffffff;
-  padding: 9px 14px;
-  color: #173f4c;
-  font-family: inherit;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.admin-add-product-page
-  .admin-stat-card
-  input[type="file"]::file-selector-button:hover {
-  background: #f3f5f4;
-}
-
-/* Secondary buttons */
+/* General buttons inside cards */
 
 .admin-add-product-page .admin-stat-card button {
-  min-height: 38px;
   box-sizing: border-box;
+  min-height: 38px;
   border: 1px solid #d4d9d7;
   border-radius: 7px;
   background: #ffffff;
@@ -1104,15 +1099,14 @@
   font-family: inherit;
   font-size: 12px;
   font-weight: 700;
+  line-height: 1.2;
   cursor: pointer;
   transition:
     background 0.15s ease,
     border-color 0.15s ease;
 }
 
-.admin-add-product-page
-  .admin-stat-card
-  button:hover:not(:disabled) {
+.admin-add-product-page .admin-stat-card button:hover:not(:disabled) {
   border-color: #2a8392;
   background: #f4f8f8;
 }
@@ -1122,35 +1116,133 @@
   cursor: not-allowed;
 }
 
-/* Primary buttons */
+/* Collection/tag input row */
 
-.admin-add-product-page
-  .admin-stat-card
-  .admin-primary-button {
-  min-height: 44px;
-  border: 0;
-  border-radius: 9px;
+.admin-add-product-page .admin-stat-card > div > input[type="text"] {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Product image uploader */
+
+.admin-add-image-input {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+
+.admin-add-image-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  box-sizing: border-box;
+  padding: 0 17px;
+  border: 1px solid #173f4c;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #173f4c !important;
+  font-family: inherit;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.admin-add-image-button:hover {
   background: #173f4c;
-  padding: 0 20px;
-  color: #ffffff;
-  font-size: 14px;
+  color: #ffffff !important;
 }
 
-.admin-add-product-page
-  .admin-stat-card
-  .admin-primary-button:hover:not(:disabled) {
-  background: #2a8392;
-}
-
-/* Images */
+/* Uploaded image previews */
 
 .admin-add-product-page .admin-stat-card img {
   border-radius: 7px;
 }
 
+.admin-add-product-page .admin-stat-card img + div {
+  color: #657b82;
+}
+
+/* Variant section */
+
+.admin-add-variant-image-heading {
+  margin: 0 0 5px;
+  color: #173f4c;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+.admin-add-helper-text {
+  margin: 0 0 14px !important;
+  color: #71858b !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+.admin-add-product-page .admin-stat-card .admin-add-helper-text + p {
+  margin: 0 0 18px;
+  color: #71858b;
+  font-size: 13px;
+}
+
+/* Stop dashboard stat-card typography leaking into Add Product */
+
+.admin-add-product-page .admin-stat-card strong {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.admin-add-product-page .admin-stat-card p strong,
+.admin-add-product-page .admin-stat-card span strong,
+.admin-add-product-page .admin-stat-card div strong {
+  display: inline;
+  margin: 0;
+}
+
+/* Excel file field */
+
+.admin-add-product-page .admin-stat-card input[type="file"]:not(.admin-add-image-input) {
+  max-width: 100%;
+  color: #526970;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.admin-add-product-page
+  .admin-stat-card
+  input[type="file"]:not(.admin-add-image-input)::file-selector-button {
+  margin-right: 12px;
+  border: 1px solid #173f4c;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 10px 15px;
+  color: #173f4c;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-add-product-page
+  .admin-stat-card
+  input[type="file"]:not(.admin-add-image-input)::file-selector-button:hover {
+  background: #f3f5f4;
+}
+
 /* Excel table */
 
 .admin-add-product-page .admin-stat-card table {
+  width: 100%;
   color: #334e57;
   font-size: 13px;
 }
@@ -1167,15 +1259,37 @@
   border-bottom: 1px solid #ecece7;
 }
 
+/* Primary buttons inside cards */
+
+.admin-add-product-page .admin-stat-card .admin-primary-button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 9px;
+  background: #173f4c;
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.admin-add-product-page
+  .admin-stat-card
+  .admin-primary-button:hover:not(:disabled) {
+  background: #2a8392;
+}
+
 /* Create Product */
 
 .admin-add-product-actions {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 4px 0 40px;
 }
 
 .admin-add-product-actions .admin-primary-button {
+  width: auto;
+  min-width: 170px;
   min-height: 46px;
   border: 0;
   border-radius: 9px;
@@ -1189,13 +1303,11 @@
   transition: background 0.15s ease;
 }
 
-.admin-add-product-actions
-  .admin-primary-button:hover:not(:disabled) {
+.admin-add-product-actions .admin-primary-button:hover:not(:disabled) {
   background: #2a8392;
 }
 
-.admin-add-product-actions
-  .admin-primary-button:disabled {
+.admin-add-product-actions .admin-primary-button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
@@ -1203,16 +1315,6 @@
 /* Responsive */
 
 @media (max-width: 760px) {
-  .admin-add-product-tabs {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .admin-add-product-tab {
-    flex: 1;
-  }
-
   .admin-add-product-page .admin-stat-card {
     padding: 18px;
   }
@@ -1223,6 +1325,16 @@
     font-size: 16px;
   }
 
+  .admin-add-product-page > div:nth-of-type(2) {
+    display: flex !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .admin-add-product-page > div:nth-of-type(2) button {
+    flex: 1;
+  }
+
   .admin-add-product-actions {
     padding-bottom: 24px;
   }
@@ -1230,51 +1342,4 @@
   .admin-add-product-actions .admin-primary-button {
     width: 100%;
   }
-}
-
-/* Add Product - final component alignment */
-
-.admin-add-product-page .admin-stat-card > strong {
-  display: block;
-  margin: 0;
-  color: #173f4c;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.admin-add-variant-image-heading {
-  margin: 0 0 6px;
-  color: #173f4c;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1.4;
-}
-
-.admin-add-helper-text {
-  margin: 0 0 14px;
-  color: #71858b;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.admin-add-product-page .admin-secondary-button {
-  min-height: 40px;
-  padding: 0 16px;
-  border: 1px solid #173f4c;
-  border-radius: 8px;
-  background: #ffffff;
-  color: #173f4c;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.admin-add-product-page .admin-secondary-button:hover {
-  background: #f3f5f4;
-}
-
-.admin-add-product-page .admin-add-product-actions .admin-primary-button {
-  width: auto;
-  min-width: 160px;
 }

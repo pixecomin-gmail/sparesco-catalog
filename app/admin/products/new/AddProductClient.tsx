@@ -1096,21 +1096,21 @@ export default function AddProductClient() {
                         </p>
 
                         <input
+                            id="admin-product-image-upload"
                             ref={imageInputRef}
                             type="file"
                             accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
                             multiple
-                            hidden
+                            className="admin-add-image-input"
                             onChange={selectImages}
                         />
 
-                        <button
-                            type="button"
-                            className="admin-secondary-button"
-                            onClick={() => imageInputRef.current?.click()}
+                        <label
+                            htmlFor="admin-product-image-upload"
+                            className="admin-add-image-button"
                         >
                             + Add Images
-                        </button>
+                        </label>
 
                         {!!previewUrls.length && (
                             <div
