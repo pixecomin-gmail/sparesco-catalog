@@ -7,9 +7,8 @@ import {
     useState,
 } from "react";
 
-import {
+import type {
     ImportedProduct,
-    parseProductExcel,
 } from "@/lib/admin/excel-product-import";
 
 type ProductVariant = {
@@ -367,6 +366,12 @@ export default function AddProductClient() {
         setIsParsingExcel(true);
 
         try {
+            const {
+                parseProductExcel,
+            } = await import(
+                "@/lib/admin/excel-product-import"
+            );
+
             const products =
                 await parseProductExcel(file);
 
