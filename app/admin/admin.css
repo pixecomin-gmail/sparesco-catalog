@@ -786,3 +786,162 @@
   margin-top: 20px;
   padding-bottom: 20px;
 }
+
+.admin-image-section-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.admin-image-section-heading h2 {
+    margin-bottom: 4px;
+}
+
+.admin-manage-image-card {
+    position: relative;
+}
+
+.admin-manage-image-preview {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.admin-manage-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.admin-image-filename {
+    display: block;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.admin-image-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.admin-image-assign-button,
+.admin-image-remove-button {
+    border: 0;
+    background: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.admin-image-assign-button {
+    color: #173f4c;
+}
+
+.admin-image-remove-button {
+    color: #b42318;
+}
+
+.admin-variant-image-manager {
+    margin-bottom: 24px;
+}
+
+.admin-variant-image-manager > label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.admin-current-variant-image {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.admin-current-variant-image img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.admin-current-variant-image > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.admin-current-variant-image span {
+    max-width: 400px;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.admin-variant-no-image {
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px dashed #d5d5d5;
+    border-radius: 8px;
+    color: #666;
+    font-size: 13px;
+}
+
+.admin-variant-image-label {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-variant-image-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.admin-variant-image-option {
+    width: 72px;
+    height: 72px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.admin-variant-image-option:hover {
+    border-color: #2a8392;
+}
+
+.admin-variant-image-option-selected {
+    border: 2px solid #173f4c;
+}
+
+.admin-variant-image-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+    .admin-image-section-heading {
+        flex-direction: column;
+    }
+
+    .admin-current-variant-image {
+        align-items: flex-start;
+    }
+}

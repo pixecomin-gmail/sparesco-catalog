@@ -1,6 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {
+    ChangeEvent,
+    useEffect,
+    useRef,
+    useState,
+} from "react";
 import Link from "next/link";
 import { getCatalogThumbnailUrl } from "@/lib/catalog/thumbnail";
 
@@ -92,6 +97,15 @@ export default function EditProductClient({
     const [saveMessage, setSaveMessage] = useState("");
     const [saveError, setSaveError] = useState("");
 
+    const [uploadingImages, setUploadingImages] =
+        useState(false);
+
+    const [imageError, setImageError] =
+        useState("");
+
+    const productImageInputRef =
+        useRef<HTMLInputElement | null>(null);
+
     useEffect(() => {
         async function loadProduct() {
             try {
@@ -176,6 +190,193 @@ export default function EditProductClient({
                 )
                 : [...current, index]
         );
+    }
+
+    async function uploadImages(
+        event: ChangeEvent<HTMLInputElement>
+    ) {
+        const files = Array.from(
+            event.target.files || []
+        );
+
+        event.target.value = "";
+
+        if (
+            files.length === 0 ||
+            !product ||
+            uploadingImages
+        ) {
+            return;
+        }
+
+        setUploadingImages(true);
+        setImageError("");
+
+        try {
+            const formData = new FormData();
+
+            for (const file of files) {
+                formData.append("files", file);
+            }
+
+            formData.append(
+                "imageFolder",
+                product.imageFolder ||
+                product.collection
+            );
+
+            const response = await fetch(
+                `/api/admin/products/${encodeURIComponent(
+                    product.handle
+                )}/images`,
+                {
+                    method: "POST",
+                    body: formData,
+                }
+            );
+
+            const data = await response.json();
+
+            if (!response.ok || !data.success) {
+                throw new Error(
+                    data.error ||
+                    "Unable to upload images."
+                );
+            }
+
+            const filenames = (
+                data.uploaded || []
+            )
+                .map(
+                    (item: {
+                        filename?: string;
+                    }) => item.filename
+                )
+                .filter(Boolean) as string[];
+
+            if (filenames.length === 0) {
+                throw new Error(
+                    "No images were uploaded."
+                );
+            }
+
+            setProduct((current) => {
+                if (!current) return current;
+
+                return {
+                    ...current,
+
+                    images: [
+                        ...new Set([
+                            ...(current.images || []),
+                            ...filenames,
+                        ]),
+                    ],
+                };
+            });
+        } catch (error) {
+            setImageError(
+                error instanceof Error
+                    ? error.message
+                    : "Unable to upload images."
+            );
+        } finally {
+            setUploadingImages(false);
+        }
+    }
+
+    function removeProductImage(
+        image: string
+    ) {
+        if (!product) return;
+
+        const usedByVariants =
+            product.variants.some(
+                (variant) =>
+                    variant.image === image
+            );
+
+        if (usedByVariants) {
+            const confirmed =
+                window.confirm(
+                    "This image is currently assigned to one or more variants. Remove it from the product and those variants?"
+                );
+
+            if (!confirmed) return;
+        }
+
+        setProduct((current) => {
+            if (!current) return current;
+
+            return {
+                ...current,
+
+                images: current.images.filter(
+                    (item) => item !== image
+                ),
+
+                variants:
+                    current.variants.map(
+                        (variant) =>
+                            variant.image === image
+                                ? {
+                                    ...variant,
+                                    image: "",
+                                }
+                                : variant
+                    ),
+            };
+        });
+    }
+
+    function assignImageToVariant(
+        variantIndex: number,
+        image: string
+    ) {
+        updateVariant(
+            variantIndex,
+            "image",
+            image
+        );
+    }
+
+    function removeVariantImage(
+        variantIndex: number
+    ) {
+        updateVariant(
+            variantIndex,
+            "image",
+            ""
+        );
+    }
+
+    function assignImageToAllVariants(
+        image: string
+    ) {
+        if (!product) return;
+
+        const confirmed =
+            window.confirm(
+                "Assign this image to all variants?"
+            );
+
+        if (!confirmed) return;
+
+        setProduct((current) => {
+            if (!current) return current;
+
+            return {
+                ...current,
+
+                variants:
+                    current.variants.map(
+                        (variant) => ({
+                            ...variant,
+                            image,
+                        })
+                    ),
+            };
+        });
     }
 
     if (loading) {
@@ -415,53 +616,129 @@ export default function EditProductClient({
             </section>
 
             <section className="admin-edit-card">
-                <h2>
-                    Images ({product.images.length})
-                </h2>
+                <div className="admin-image-section-heading">
+                    <div>
+                        <h2>
+                            Images ({product.images.length})
+                        </h2>
 
-                <div className="admin-edit-images">
-                    {product.images.map(
-                        (image, index) => (
-                            <div
-                                key={`${image}-${index}`}
-                                className="admin-edit-image-card"
-                            >
-                                <img
-                                    src={getCatalogThumbnailUrl({
-                                        image,
-                                        imageFolder:
-                                            product.imageFolder,
-                                        collection:
-                                            product.collection,
-                                    })}
-                                    alt={product.title}
-                                    onError={(event) => {
-                                        const original =
-                                            getOriginalImageUrl({
+                        <p className="admin-section-note">
+                            Add product images, remove images or
+                            assign an image to all variants.
+                        </p>
+                    </div>
+
+                    <div>
+                        <input
+                            ref={productImageInputRef}
+                            type="file"
+                            accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
+                            multiple
+                            hidden
+                            onChange={uploadImages}
+                        />
+
+                        <button
+                            type="button"
+                            className="admin-secondary-button"
+                            disabled={uploadingImages}
+                            onClick={() =>
+                                productImageInputRef.current?.click()
+                            }
+                        >
+                            {uploadingImages
+                                ? "Uploading..."
+                                : "+ Add Images"}
+                        </button>
+                    </div>
+                </div>
+
+                {imageError && (
+                    <div className="admin-form-error">
+                        {imageError}
+                    </div>
+                )}
+
+                {product.images.length === 0 ? (
+                    <div className="admin-product-empty">
+                        No product images.
+                    </div>
+                ) : (
+                    <div className="admin-edit-images">
+                        {product.images.map(
+                            (image, index) => (
+                                <div
+                                    key={`${image}-${index}`}
+                                    className="admin-edit-image-card admin-manage-image-card"
+                                >
+                                    <div className="admin-manage-image-preview">
+                                        <img
+                                            src={getCatalogThumbnailUrl({
                                                 image,
                                                 imageFolder:
                                                     product.imageFolder,
                                                 collection:
                                                     product.collection,
-                                            });
+                                            })}
+                                            alt={product.title}
+                                            onError={(event) => {
+                                                const original =
+                                                    getOriginalImageUrl({
+                                                        image,
+                                                        imageFolder:
+                                                            product.imageFolder,
+                                                        collection:
+                                                            product.collection,
+                                                    });
 
-                                        if (
-                                            event.currentTarget.src !==
-                                            original
-                                        ) {
-                                            event.currentTarget.src =
-                                                original;
-                                        }
-                                    }}
-                                />
+                                                if (
+                                                    event.currentTarget.src !==
+                                                    original
+                                                ) {
+                                                    event.currentTarget.src =
+                                                        original;
+                                                }
+                                            }}
+                                        />
+                                    </div>
 
-                                <span>
-                                    {image}
-                                </span>
-                            </div>
-                        )
-                    )}
-                </div>
+                                    <span
+                                        className="admin-image-filename"
+                                        title={image}
+                                    >
+                                        {image}
+                                    </span>
+
+                                    <div className="admin-image-actions">
+                                        <button
+                                            type="button"
+                                            className="admin-image-assign-button"
+                                            onClick={() =>
+                                                assignImageToAllVariants(
+                                                    image
+                                                )
+                                            }
+                                        >
+                                            Assign to all
+                                        </button>
+
+                                        <button
+                                            type="button"
+                                            className="admin-image-remove-button"
+                                            onClick={() =>
+                                                removeProductImage(
+                                                    image
+                                                )
+                                            }
+                                        >
+                                            Remove
+                                        </button>
+                                    </div>
+                                </div>
+                            )
+                        )}
+                    </div>
+                )}
             </section>
 
             <section className="admin-edit-card">
@@ -510,43 +787,133 @@ export default function EditProductClient({
 
                                     {isOpen && (
                                         <div className="admin-variant-body">
-                                            {variant.image && (
-                                                <div className="admin-variant-image-row">
-                                                    <img
-                                                        src={getCatalogThumbnailUrl({
-                                                            image: variant.image,
-                                                            imageFolder:
-                                                                product.imageFolder,
-                                                            collection:
-                                                                product.collection,
-                                                        })}
-                                                        alt={variant.title || product.title}
-                                                        onError={(event) => {
-                                                            const original =
-                                                                getOriginalImageUrl({
-                                                                    image:
-                                                                        variant.image,
-                                                                    imageFolder:
-                                                                        product.imageFolder,
-                                                                    collection:
-                                                                        product.collection,
-                                                                });
+                                            <div className="admin-variant-image-manager">
+                                                <label>Variant Image</label>
 
-                                                            if (
-                                                                event.currentTarget.src !==
-                                                                original
-                                                            ) {
-                                                                event.currentTarget.src =
-                                                                    original;
+                                                {variant.image ? (
+                                                    <div className="admin-current-variant-image">
+                                                        <img
+                                                            src={getCatalogThumbnailUrl({
+                                                                image: variant.image,
+                                                                imageFolder:
+                                                                    product.imageFolder,
+                                                                collection:
+                                                                    product.collection,
+                                                            })}
+                                                            alt={
+                                                                variant.title ||
+                                                                product.title
                                                             }
-                                                        }}
-                                                    />
+                                                            onError={(event) => {
+                                                                const original =
+                                                                    getOriginalImageUrl({
+                                                                        image:
+                                                                            variant.image,
+                                                                        imageFolder:
+                                                                            product.imageFolder,
+                                                                        collection:
+                                                                            product.collection,
+                                                                    });
 
-                                                    <span>
-                                                        {variant.image}
-                                                    </span>
-                                                </div>
-                                            )}
+                                                                if (
+                                                                    event.currentTarget.src !==
+                                                                    original
+                                                                ) {
+                                                                    event.currentTarget.src =
+                                                                        original;
+                                                                }
+                                                            }}
+                                                        />
+
+                                                        <div>
+                                                            <span>
+                                                                {variant.image}
+                                                            </span>
+
+                                                            <button
+                                                                type="button"
+                                                                className="admin-image-remove-button"
+                                                                onClick={() =>
+                                                                    removeVariantImage(
+                                                                        index
+                                                                    )
+                                                                }
+                                                            >
+                                                                Remove from variant
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                ) : (
+                                                    <div className="admin-variant-no-image">
+                                                        No image assigned to this variant.
+                                                    </div>
+                                                )}
+
+                                                {product.images.length > 0 && (
+                                                    <>
+                                                        <div className="admin-variant-image-label">
+                                                            Select product image
+                                                        </div>
+
+                                                        <div className="admin-variant-image-picker">
+                                                            {product.images.map(
+                                                                (image) => (
+                                                                    <button
+                                                                        key={image}
+                                                                        type="button"
+                                                                        className={
+                                                                            variant.image ===
+                                                                                image
+                                                                                ? "admin-variant-image-option admin-variant-image-option-selected"
+                                                                                : "admin-variant-image-option"
+                                                                        }
+                                                                        onClick={() =>
+                                                                            assignImageToVariant(
+                                                                                index,
+                                                                                image
+                                                                            )
+                                                                        }
+                                                                        title="Assign this image to this variant"
+                                                                    >
+                                                                        <img
+                                                                            src={getCatalogThumbnailUrl({
+                                                                                image,
+                                                                                imageFolder:
+                                                                                    product.imageFolder,
+                                                                                collection:
+                                                                                    product.collection,
+                                                                            })}
+                                                                            alt=""
+                                                                            onError={(
+                                                                                event
+                                                                            ) => {
+                                                                                const original =
+                                                                                    getOriginalImageUrl({
+                                                                                        image,
+                                                                                        imageFolder:
+                                                                                            product.imageFolder,
+                                                                                        collection:
+                                                                                            product.collection,
+                                                                                    });
+
+                                                                                if (
+                                                                                    event
+                                                                                        .currentTarget
+                                                                                        .src !==
+                                                                                    original
+                                                                                ) {
+                                                                                    event.currentTarget.src =
+                                                                                        original;
+                                                                                }
+                                                                            }}
+                                                                        />
+                                                                    </button>
+                                                                )
+                                                            )}
+                                                        </div>
+                                                    </>
+                                                )}
+                                            </div>
 
                                             <div className="admin-form-grid">
                                                 <div className="admin-field admin-field-full">
