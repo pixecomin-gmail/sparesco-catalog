@@ -137,6 +137,9 @@ function loadExcelLibrary(): Promise<void> {
 }
 
 export default function AddProductClient() {
+    const [activeMode, setActiveMode] =
+        useState<"manual" | "excel">("manual");
+
     const [product, setProduct] =
         useState<NewProduct>({
             handle: "",
@@ -889,6 +892,45 @@ export default function AddProductClient() {
             </div>
 
             <div
+                style={{
+                    display: "flex",
+                    gap: 8,
+                    marginBottom: 24,
+                    padding: 4,
+                    width: "fit-content",
+                    background: "#ffffff",
+                    border: "1px solid #dfe5e7",
+                    borderRadius: 10,
+                }}
+            >
+                <button
+                    type="button"
+                    onClick={() => setActiveMode("manual")}
+                    className={
+                        activeMode === "manual"
+                            ? "admin-primary-button"
+                            : "admin-secondary-button"
+                    }
+                >
+                    Add Product
+                </button>
+
+                <button
+                    type="button"
+                    onClick={() => setActiveMode("excel")}
+                    className={
+                        activeMode === "excel"
+                            ? "admin-primary-button"
+                            : "admin-secondary-button"
+                    }
+                >
+                    Import from Excel
+                </button>
+            </div>
+
+            {activeMode === "manual" && (
+                <>
+            <div
                 className="admin-stat-card"
                 style={{
                     marginBottom: 20,
@@ -952,387 +994,6 @@ export default function AddProductClient() {
                         />
                     </label>
                 </div>
-            </div>
-
-            <div
-                className="admin-stat-card"
-                style={{
-                    marginBottom: 20,
-                }}
-            >
-                <h2>Import from Excel</h2>
-
-                <p>
-                    Upload a Matrixify-style Excel file
-                    to create multiple products and
-                    variants.
-                </p>
-
-                <input
-                    type="file"
-                    accept=".xlsx,.xls"
-                    onChange={selectExcelFile}
-                    disabled={isParsingExcel}
-                />
-
-                {isParsingExcel && (
-                    <p
-                        style={{
-                            marginTop: 12,
-                        }}
-                    >
-                        Reading Excel file...
-                    </p>
-                )}
-
-                {excelError && (
-                    <p
-                        style={{
-                            marginTop: 12,
-                            fontWeight: 600,
-                        }}
-                    >
-                        {excelError}
-                    </p>
-                )}
-
-                {excelFile &&
-                    !isParsingExcel &&
-                    !excelError &&
-                    excelProducts.length > 0 && (
-                        <div
-                            style={{
-                                marginTop: 18,
-                            }}
-                        >
-                            <p>
-                                <strong>
-                                    {excelFile.name}
-                                </strong>
-                            </p>
-
-                            <p>
-                                Products found:{" "}
-                                <strong>
-                                    {
-                                        excelProducts.length
-                                    }
-                                </strong>
-                            </p>
-
-                            <p>
-                                Variants found:{" "}
-                                <strong>
-                                    {excelProducts.reduce(
-                                        (
-                                            total,
-                                            item
-                                        ) =>
-                                            total +
-                                            item
-                                                .variants
-                                                .length,
-                                        0
-                                    )}
-                                </strong>
-                            </p>
-
-                            <div
-                                style={{
-                                    marginTop: 16,
-                                    overflowX: "auto",
-                                }}
-                            >
-                                <table
-                                    style={{
-                                        width: "100%",
-                                        borderCollapse:
-                                            "collapse",
-                                    }}
-                                >
-                                    <thead>
-                                        <tr>
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Handle
-                                            </th>
-
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Title
-                                            </th>
-
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Collections
-                                            </th>
-
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Variants
-                                            </th>
-
-                                            <th
-                                                style={{
-                                                    textAlign:
-                                                        "left",
-                                                    padding: 8,
-                                                }}
-                                            >
-                                                Images
-                                            </th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        {excelProducts
-                                            .slice(0, 20)
-                                            .map(
-                                                (
-                                                    item
-                                                ) => (
-                                                    <tr
-                                                        key={
-                                                            item.handle
-                                                        }
-                                                    >
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item.handle
-                                                            }
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item.title
-                                                            }
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {item.tags.join(
-                                                                ", "
-                                                            )}
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item
-                                                                    .variants
-                                                                    .length
-                                                            }
-                                                        </td>
-
-                                                        <td
-                                                            style={{
-                                                                padding: 8,
-                                                            }}
-                                                        >
-                                                            {
-                                                                item
-                                                                    .images
-                                                                    .length
-                                                            }
-                                                        </td>
-                                                    </tr>
-                                                )
-                                            )}
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            {excelProducts.length >
-                                20 && (
-                                    <p
-                                        style={{
-                                            marginTop: 12,
-                                            opacity: 0.7,
-                                        }}
-                                    >
-                                        Showing first 20
-                                        products.
-                                    </p>
-                                )}
-
-                            <div
-                                style={{
-                                    marginTop: 20,
-                                    paddingTop: 20,
-                                    borderTop:
-                                        "1px solid #e5e5e5",
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: 12,
-                                        flexWrap: "wrap",
-                                    }}
-                                >
-                                    <button
-                                        type="button"
-                                        onClick={
-                                            importExcelProducts
-                                        }
-                                        disabled={
-                                            isImportingExcel
-                                        }
-                                        className="admin-primary-button"
-                                    >
-                                        {isImportingExcel
-                                            ? "Importing Products..."
-                                            : `Import ${excelProducts.length} Products`}
-                                    </button>
-
-                                    <span
-                                        style={{
-                                            fontSize: 13,
-                                            opacity: 0.7,
-                                        }}
-                                    >
-                                        Existing product
-                                        handles will be
-                                        skipped.
-                                    </span>
-                                </div>
-
-                                {excelImportResult && (
-                                    <div
-                                        style={{
-                                            marginTop: 18,
-                                            padding: 16,
-                                            border:
-                                                "1px solid #d8d8d8",
-                                            borderRadius: 8,
-                                            background:
-                                                "#fafafa",
-                                        }}
-                                    >
-                                        <strong>
-                                            Import Complete
-                                        </strong>
-
-                                        <div
-                                            style={{
-                                                marginTop: 10,
-                                                display: "flex",
-                                                gap: 20,
-                                                flexWrap: "wrap",
-                                            }}
-                                        >
-                                            <span>
-                                                Imported:{" "}
-                                                <strong>
-                                                    {
-                                                        excelImportResult
-                                                            .importedCount
-                                                    }
-                                                </strong>
-                                            </span>
-
-                                            <span>
-                                                Existing products
-                                                skipped:{" "}
-                                                <strong>
-                                                    {
-                                                        excelImportResult
-                                                            .skippedCount
-                                                    }
-                                                </strong>
-                                            </span>
-                                        </div>
-
-                                        {excelImportResult
-                                            .skipped.length >
-                                            0 && (
-                                                <details
-                                                    style={{
-                                                        marginTop: 12,
-                                                    }}
-                                                >
-                                                    <summary
-                                                        style={{
-                                                            cursor:
-                                                                "pointer",
-                                                            fontWeight:
-                                                                600,
-                                                        }}
-                                                    >
-                                                        View skipped
-                                                        handles
-                                                    </summary>
-
-                                                    <div
-                                                        style={{
-                                                            marginTop: 10,
-                                                            maxHeight: 200,
-                                                            overflowY:
-                                                                "auto",
-                                                            fontSize: 13,
-                                                            lineHeight:
-                                                                1.6,
-                                                        }}
-                                                    >
-                                                        {excelImportResult
-                                                            .skipped.map(
-                                                                (
-                                                                    handle
-                                                                ) => (
-                                                                    <div
-                                                                        key={
-                                                                            handle
-                                                                        }
-                                                                    >
-                                                                        {
-                                                                            handle
-                                                                        }
-                                                                    </div>
-                                                                )
-                                                            )}
-                                                    </div>
-                                                </details>
-                                            )}
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-                    )}
             </div>
 
             <div
@@ -1980,6 +1641,394 @@ export default function AddProductClient() {
                         : "Create Product"}
                 </button>
             </div>
+                </>
+            )}
+
+            {activeMode === "excel" && (
+                <>
+            <div
+                className="admin-stat-card"
+                style={{
+                    marginBottom: 20,
+                }}
+            >
+                <h2>Import from Excel</h2>
+
+                <p>
+                    Upload a Matrixify-style Excel file
+                    to create multiple products and
+                    variants.
+                </p>
+
+                <input
+                    type="file"
+                    accept=".xlsx,.xls"
+                    onChange={selectExcelFile}
+                    disabled={isParsingExcel}
+                />
+
+                {isParsingExcel && (
+                    <p
+                        style={{
+                            marginTop: 12,
+                        }}
+                    >
+                        Reading Excel file...
+                    </p>
+                )}
+
+                {excelError && (
+                    <p
+                        style={{
+                            marginTop: 12,
+                            fontWeight: 600,
+                        }}
+                    >
+                        {excelError}
+                    </p>
+                )}
+
+                {excelFile &&
+                    !isParsingExcel &&
+                    !excelError &&
+                    excelProducts.length > 0 && (
+                        <div
+                            style={{
+                                marginTop: 18,
+                            }}
+                        >
+                            <p>
+                                <strong>
+                                    {excelFile.name}
+                                </strong>
+                            </p>
+
+                            <p>
+                                Products found:{" "}
+                                <strong>
+                                    {
+                                        excelProducts.length
+                                    }
+                                </strong>
+                            </p>
+
+                            <p>
+                                Variants found:{" "}
+                                <strong>
+                                    {excelProducts.reduce(
+                                        (
+                                            total,
+                                            item
+                                        ) =>
+                                            total +
+                                            item
+                                                .variants
+                                                .length,
+                                        0
+                                    )}
+                                </strong>
+                            </p>
+
+                            <div
+                                style={{
+                                    marginTop: 16,
+                                    overflowX: "auto",
+                                }}
+                            >
+                                <table
+                                    style={{
+                                        width: "100%",
+                                        borderCollapse:
+                                            "collapse",
+                                    }}
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th
+                                                style={{
+                                                    textAlign:
+                                                        "left",
+                                                    padding: 8,
+                                                }}
+                                            >
+                                                Handle
+                                            </th>
+
+                                            <th
+                                                style={{
+                                                    textAlign:
+                                                        "left",
+                                                    padding: 8,
+                                                }}
+                                            >
+                                                Title
+                                            </th>
+
+                                            <th
+                                                style={{
+                                                    textAlign:
+                                                        "left",
+                                                    padding: 8,
+                                                }}
+                                            >
+                                                Collections
+                                            </th>
+
+                                            <th
+                                                style={{
+                                                    textAlign:
+                                                        "left",
+                                                    padding: 8,
+                                                }}
+                                            >
+                                                Variants
+                                            </th>
+
+                                            <th
+                                                style={{
+                                                    textAlign:
+                                                        "left",
+                                                    padding: 8,
+                                                }}
+                                            >
+                                                Images
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        {excelProducts
+                                            .slice(0, 20)
+                                            .map(
+                                                (
+                                                    item
+                                                ) => (
+                                                    <tr
+                                                        key={
+                                                            item.handle
+                                                        }
+                                                    >
+                                                        <td
+                                                            style={{
+                                                                padding: 8,
+                                                            }}
+                                                        >
+                                                            {
+                                                                item.handle
+                                                            }
+                                                        </td>
+
+                                                        <td
+                                                            style={{
+                                                                padding: 8,
+                                                            }}
+                                                        >
+                                                            {
+                                                                item.title
+                                                            }
+                                                        </td>
+
+                                                        <td
+                                                            style={{
+                                                                padding: 8,
+                                                            }}
+                                                        >
+                                                            {item.tags.join(
+                                                                ", "
+                                                            )}
+                                                        </td>
+
+                                                        <td
+                                                            style={{
+                                                                padding: 8,
+                                                            }}
+                                                        >
+                                                            {
+                                                                item
+                                                                    .variants
+                                                                    .length
+                                                            }
+                                                        </td>
+
+                                                        <td
+                                                            style={{
+                                                                padding: 8,
+                                                            }}
+                                                        >
+                                                            {
+                                                                item
+                                                                    .images
+                                                                    .length
+                                                            }
+                                                        </td>
+                                                    </tr>
+                                                )
+                                            )}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            {excelProducts.length >
+                                20 && (
+                                    <p
+                                        style={{
+                                            marginTop: 12,
+                                            opacity: 0.7,
+                                        }}
+                                    >
+                                        Showing first 20
+                                        products.
+                                    </p>
+                                )}
+
+                            <div
+                                style={{
+                                    marginTop: 20,
+                                    paddingTop: 20,
+                                    borderTop:
+                                        "1px solid #e5e5e5",
+                                }}
+                            >
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: 12,
+                                        flexWrap: "wrap",
+                                    }}
+                                >
+                                    <button
+                                        type="button"
+                                        onClick={
+                                            importExcelProducts
+                                        }
+                                        disabled={
+                                            isImportingExcel
+                                        }
+                                        className="admin-primary-button"
+                                    >
+                                        {isImportingExcel
+                                            ? "Importing Products..."
+                                            : `Import ${excelProducts.length} Products`}
+                                    </button>
+
+                                    <span
+                                        style={{
+                                            fontSize: 13,
+                                            opacity: 0.7,
+                                        }}
+                                    >
+                                        Existing product
+                                        handles will be
+                                        skipped.
+                                    </span>
+                                </div>
+
+                                {excelImportResult && (
+                                    <div
+                                        style={{
+                                            marginTop: 18,
+                                            padding: 16,
+                                            border:
+                                                "1px solid #d8d8d8",
+                                            borderRadius: 8,
+                                            background:
+                                                "#fafafa",
+                                        }}
+                                    >
+                                        <strong>
+                                            Import Complete
+                                        </strong>
+
+                                        <div
+                                            style={{
+                                                marginTop: 10,
+                                                display: "flex",
+                                                gap: 20,
+                                                flexWrap: "wrap",
+                                            }}
+                                        >
+                                            <span>
+                                                Imported:{" "}
+                                                <strong>
+                                                    {
+                                                        excelImportResult
+                                                            .importedCount
+                                                    }
+                                                </strong>
+                                            </span>
+
+                                            <span>
+                                                Existing products
+                                                skipped:{" "}
+                                                <strong>
+                                                    {
+                                                        excelImportResult
+                                                            .skippedCount
+                                                    }
+                                                </strong>
+                                            </span>
+                                        </div>
+
+                                        {excelImportResult
+                                            .skipped.length >
+                                            0 && (
+                                                <details
+                                                    style={{
+                                                        marginTop: 12,
+                                                    }}
+                                                >
+                                                    <summary
+                                                        style={{
+                                                            cursor:
+                                                                "pointer",
+                                                            fontWeight:
+                                                                600,
+                                                        }}
+                                                    >
+                                                        View skipped
+                                                        handles
+                                                    </summary>
+
+                                                    <div
+                                                        style={{
+                                                            marginTop: 10,
+                                                            maxHeight: 200,
+                                                            overflowY:
+                                                                "auto",
+                                                            fontSize: 13,
+                                                            lineHeight:
+                                                                1.6,
+                                                        }}
+                                                    >
+                                                        {excelImportResult
+                                                            .skipped.map(
+                                                                (
+                                                                    handle
+                                                                ) => (
+                                                                    <div
+                                                                        key={
+                                                                            handle
+                                                                        }
+                                                                    >
+                                                                        {
+                                                                            handle
+                                                                        }
+                                                                    </div>
+                                                                )
+                                                            )}
+                                                    </div>
+                                                </details>
+                                            )}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    )}
+            </div>
+
+                </>
+            )}
         </main>
     );
 }
