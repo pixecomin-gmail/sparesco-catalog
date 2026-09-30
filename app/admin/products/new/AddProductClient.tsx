@@ -879,7 +879,7 @@ export default function AddProductClient() {
         ] || product.variants[0];
 
     return (
-        <main className="admin-dashboard">
+        <main className="admin-dashboard admin-add-product-page">
             <div className="admin-page-heading">
                 <div>
                     <h1>Add Product</h1>
