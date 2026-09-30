@@ -945,3 +945,214 @@
         align-items: flex-start;
     }
 }
+
+/* =========================
+   ADD PRODUCT PAGE
+========================= */
+
+.admin-dashboard .admin-stat-card {
+  margin-bottom: 20px;
+}
+
+.admin-dashboard .admin-stat-card > h2 {
+  margin: 0 0 6px;
+  color: #173f4c;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.admin-dashboard .admin-stat-card > p {
+  margin: 0 0 20px;
+  color: #71858b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Labels */
+
+.admin-dashboard .admin-stat-card label {
+  display: block;
+  min-width: 0;
+  color: #526970;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.admin-dashboard .admin-stat-card label > strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+/* Inputs */
+
+.admin-dashboard .admin-stat-card input[type="text"],
+.admin-dashboard .admin-stat-card input[type="number"],
+.admin-dashboard .admin-stat-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 7px;
+  border: 1px solid #d8dedc;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 11px 12px;
+  color: #173f4c;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.admin-dashboard .admin-stat-card textarea {
+  min-height: 110px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.admin-dashboard .admin-stat-card input[type="text"]:focus,
+.admin-dashboard .admin-stat-card input[type="number"]:focus,
+.admin-dashboard .admin-stat-card textarea:focus {
+  border-color: #2a8392;
+  box-shadow: 0 0 0 2px rgba(42, 131, 146, 0.1);
+}
+
+/* File inputs */
+
+.admin-dashboard .admin-stat-card input[type="file"] {
+  max-width: 100%;
+  color: #526970;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.admin-dashboard .admin-stat-card input[type="file"]::file-selector-button {
+  margin-right: 12px;
+  border: 1px solid #d4d9d7;
+  border-radius: 7px;
+  background: #ffffff;
+  padding: 8px 13px;
+  color: #173f4c;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-dashboard .admin-stat-card input[type="file"]::file-selector-button:hover {
+  background: #f3f5f4;
+}
+
+/* General buttons inside Add Product cards */
+
+.admin-dashboard .admin-stat-card button {
+  min-height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #d4d9d7;
+  border-radius: 7px;
+  background: #ffffff;
+  padding: 8px 13px;
+  color: #173f4c;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.admin-dashboard .admin-stat-card button:hover:not(:disabled) {
+  border-color: #2a8392;
+  background: #f4f8f8;
+}
+
+.admin-dashboard .admin-stat-card button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Keep primary actions primary */
+
+.admin-dashboard .admin-stat-card .admin-primary-button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 9px;
+  background: #173f4c;
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.admin-dashboard .admin-stat-card .admin-primary-button:hover:not(:disabled) {
+  background: #2a8392;
+}
+
+/* Tags */
+
+.admin-dashboard .admin-stat-card button[type="button"] {
+  white-space: nowrap;
+}
+
+/* Image previews */
+
+.admin-dashboard .admin-stat-card img {
+  border-radius: 7px;
+}
+
+/* Final Create Product button */
+
+.admin-dashboard > div:last-child > button {
+  min-height: 46px;
+  border: 0;
+  border-radius: 9px;
+  background: #173f4c;
+  padding: 0 24px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.admin-dashboard > div:last-child > button:hover:not(:disabled) {
+  background: #2a8392;
+}
+
+.admin-dashboard > div:last-child > button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Excel preview table */
+
+.admin-dashboard .admin-stat-card table {
+  color: #334e57;
+  font-size: 13px;
+}
+
+.admin-dashboard .admin-stat-card th {
+  border-bottom: 1px solid #dfe3df;
+  color: #657b82;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.admin-dashboard .admin-stat-card td {
+  border-bottom: 1px solid #ecece7;
+}
+
+/* Responsive */
+
+@media (max-width: 760px) {
+  .admin-dashboard .admin-stat-card {
+    padding: 18px;
+  }
+
+  .admin-dashboard .admin-stat-card input[type="text"],
+  .admin-dashboard .admin-stat-card input[type="number"],
+  .admin-dashboard .admin-stat-card textarea {
+    font-size: 16px;
+  }
+}
