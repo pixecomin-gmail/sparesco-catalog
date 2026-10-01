@@ -777,24 +777,53 @@ async function writePagedItems(
 
   const updatedFiles: string[] = [];
 
-  for (
-    let index = 0;
-    index < totalPages;
-    index++
-  ) {
-    const key =
-      `${basePath}/${pageNumber(index)}.json`;
+  /*
+   * R2 writes used to happen one-by-one.
+   *
+   * With a large catalogue this meant thousands
+   * of sequential network operations during one
+   * admin request.
+   *
+   * Keep the exact same pages and ordering, but
+   * write them in controlled parallel batches.
+   */
+  const WRITE_BATCH_SIZE = 25;
 
-    await writeJson(
-      bucket,
-      key,
-      items.slice(
-        index * pageSize,
-        (index + 1) * pageSize
-      )
+  for (
+    let startIndex = 0;
+    startIndex < totalPages;
+    startIndex += WRITE_BATCH_SIZE
+  ) {
+    const endIndex = Math.min(
+      startIndex + WRITE_BATCH_SIZE,
+      totalPages
     );
 
-    updatedFiles.push(key);
+    const batch: Promise<void>[] = [];
+
+    for (
+      let index = startIndex;
+      index < endIndex;
+      index++
+    ) {
+      const key =
+        `${basePath}/${pageNumber(index)}.json`;
+
+      updatedFiles.push(key);
+
+      batch.push(
+        writeJson(
+          bucket,
+          key,
+          items.slice(
+            index * pageSize,
+            (index + 1) * pageSize
+          )
+        )
+      );
+    }
+
+    await Promise.all(batch);
   }
 
   return {
