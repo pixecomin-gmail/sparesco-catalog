@@ -24,6 +24,7 @@ export default function AdminProductsClient() {
     const [loading, setLoading] = useState(false);
     const [searched, setSearched] = useState(false);
     const [error, setError] = useState("");
+    const [deletingHandle, setDeletingHandle] = useState("");
 
     const searchProducts = async (event: FormEvent) => {
         event.preventDefault();
@@ -59,6 +60,65 @@ export default function AdminProductsClient() {
             setError("Unable to search products.");
         } finally {
             setLoading(false);
+        }
+    };
+
+    const deleteProduct = async (product: ProductResult) => {
+        const confirmed = window.confirm(
+            `Delete "${product.title}"?\n\n` +
+            `Handle: ${product.handle}\n\n` +
+            `This will remove the product from the catalogue, collections and search.`
+        );
+
+        if (!confirmed) {
+            return;
+        }
+
+        setDeletingHandle(product.handle);
+        setError("");
+
+        try {
+            const response = await fetch(
+                `/api/admin/products/${encodeURIComponent(product.handle)}`,
+                {
+                    method: "DELETE",
+                }
+            );
+
+            const contentType =
+                response.headers.get("content-type") || "";
+
+            let data: any = null;
+
+            if (contentType.includes("application/json")) {
+                data = await response.json();
+            }
+
+            if (!response.ok || !data?.success) {
+                throw new Error(
+                    data?.error ||
+                    data?.message ||
+                    `Unable to delete product (${response.status}).`
+                );
+            }
+
+            setProducts((current) =>
+                current.filter(
+                    (item) => item.handle !== product.handle
+                )
+            );
+
+            alert(`"${product.title}" deleted successfully.`);
+        } catch (error) {
+            console.error("Delete product error:", error);
+
+            setError(
+                error instanceof Error
+                    ? error.message
+                    : "Unable to delete product."
+            );
+        } finally {
+            setDeletingHandle("");
         }
     };
 
@@ -124,59 +184,112 @@ export default function AdminProductsClient() {
                             </thead>
 
                             <tbody>
-                                {products.map((product) => (
-                                    <tr key={product.handle}>
-                                        <td>
-                                            <div className="admin-product-name-cell">
-                                                {product.image ? (
-                                                    <img
-                                                        src={getCatalogThumbnailUrl({
-                                                            image: product.image,
-                                                            collection: product.collection,
-                                                        })}
-                                                        alt=""
-                                                        className="admin-product-thumb"
-                                                    />
-                                                ) : (
-                                                    <div className="admin-product-thumb-placeholder" />
-                                                )}
+                                {products.map((product) => {
+                                    const isDeleting =
+                                        deletingHandle === product.handle;
 
-                                                <div>
-                                                    <strong>{product.title}</strong>
+                                    return (
+                                        <tr key={product.handle}>
+                                            <td>
+                                                <div className="admin-product-name-cell">
+                                                    {product.image ? (
+                                                        <img
+                                                            src={getCatalogThumbnailUrl({
+                                                                image: product.image,
+                                                                collection:
+                                                                    product.collection,
+                                                            })}
+                                                            alt=""
+                                                            className="admin-product-thumb"
+                                                        />
+                                                    ) : (
+                                                        <div className="admin-product-thumb-placeholder" />
+                                                    )}
 
-                                                    <span>{product.handle}</span>
+                                                    <div>
+                                                        <strong>
+                                                            {product.title}
+                                                        </strong>
+
+                                                        <span>
+                                                            {product.handle}
+                                                        </span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
+                                            </td>
 
-                                        <td>
-                                            {product.partNumber || "—"}
-                                        </td>
+                                            <td>
+                                                {product.partNumber || "—"}
+                                            </td>
 
-                                        <td>
-                                            {product.vendor || "—"}
-                                        </td>
+                                            <td>
+                                                {product.vendor || "—"}
+                                            </td>
 
-                                        <td>
-                                            {product.collectionTitle ||
-                                                product.collection ||
-                                                "—"}
-                                        </td>
+                                            <td>
+                                                {product.collectionTitle ||
+                                                    product.collection ||
+                                                    "—"}
+                                            </td>
 
-                                        <td>
-                                            {product.variantCount || 1}
-                                        </td>
+                                            <td>
+                                                {product.variantCount || 1}
+                                            </td>
 
-                                        <td className="admin-product-action-cell">
-                                            <Link
-                                                href={`/admin/products/${product.handle}`}
-                                                className="admin-edit-link"
-                                            >
-                                                Edit
-                                            </Link>
-                                        </td>
-                                    </tr>
-                                ))}
+                                            <td className="admin-product-action-cell">
+                                                <div
+                                                    style={{
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                        justifyContent:
+                                                            "flex-end",
+                                                        gap: 12,
+                                                    }}
+                                                >
+                                                    <Link
+                                                        href={`/admin/products/${product.handle}`}
+                                                        className="admin-edit-link"
+                                                    >
+                                                        Edit
+                                                    </Link>
+
+                                                    <button
+                                                        type="button"
+                                                        onClick={() =>
+                                                            deleteProduct(product)
+                                                        }
+                                                        disabled={
+                                                            Boolean(
+                                                                deletingHandle
+                                                            )
+                                                        }
+                                                        style={{
+                                                            border: 0,
+                                                            padding: 0,
+                                                            background:
+                                                                "transparent",
+                                                            color: "#b42318",
+                                                            font: "inherit",
+                                                            fontWeight: 600,
+                                                            cursor: isDeleting
+                                                                ? "wait"
+                                                                : "pointer",
+                                                            opacity:
+                                                                deletingHandle &&
+                                                                !isDeleting
+                                                                    ? 0.5
+                                                                    : 1,
+                                                        }}
+                                                    >
+                                                        {isDeleting
+                                                            ? "Deleting..."
+                                                            : "Delete"}
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    );
+                                })}
                             </tbody>
                         </table>
                     </div>

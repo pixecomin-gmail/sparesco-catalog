@@ -1,6 +1,7 @@
 import { getRequestContext } from "@cloudflare/next-on-pages";
 
 import {
+  deleteProduct,
   syncExistingProduct,
   type R2BucketLike,
 } from "@/lib/admin/product-sync";
@@ -390,6 +391,99 @@ export async function PUT(
           error instanceof Error
             ? error.message
             : "Unable to save product.",
+      },
+      { status: 500 }
+    );
+  }
+}
+
+export async function DELETE(
+  _request: Request,
+  context: {
+    params: Promise<{
+      handle: string;
+    }>;
+  }
+) {
+  try {
+    const { handle } =
+      await context.params;
+
+    const safeHandle =
+      String(handle || "")
+        .trim()
+        .toLowerCase();
+
+    if (!safeHandle) {
+      return Response.json(
+        {
+          success: false,
+          error:
+            "Missing product handle.",
+        },
+        { status: 400 }
+      );
+    }
+
+    const bucket =
+      getBucket();
+
+    /*
+     * Remove catalogue/search/index
+     * references first.
+     *
+     * This works even when the master
+     * product JSON is already missing.
+     */
+    const result =
+      await deleteProduct(
+        bucket,
+        safeHandle
+      );
+
+    /*
+     * Remove master JSON if it exists.
+     */
+
+    const folder =
+      productFolder(
+        safeHandle
+      );
+
+    const key =
+      `catalog/products/` +
+      `${folder}/${safeHandle}.json`;
+
+    await bucket.delete(
+      key
+    );
+
+    return Response.json({
+      success: true,
+
+      message:
+        `Product "${safeHandle}" deleted.`,
+
+      handle:
+        safeHandle,
+
+      synchronizedFiles:
+        result.updatedFiles,
+    });
+  } catch (error) {
+    console.error(
+      "Admin product DELETE error:",
+      error
+    );
+
+    return Response.json(
+      {
+        success: false,
+
+        error:
+          error instanceof Error
+            ? error.message
+            : "Unable to delete product.",
       },
       { status: 500 }
     );
