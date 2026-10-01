@@ -82,6 +82,21 @@ export default function AdminProductsClient() {
                 `/api/admin/products/${encodeURIComponent(product.handle)}`,
                 {
                     method: "DELETE",
+
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+
+                    body: JSON.stringify({
+                        handle: product.handle,
+                        title: product.title,
+                        collection: product.collection,
+                        category: product.category,
+                        partNumber: product.partNumber,
+                        vendor: product.vendor,
+                        variantCount: product.variantCount,
+                        image: product.image,
+                    }),
                 }
             );
 
@@ -276,7 +291,7 @@ export default function AdminProductsClient() {
                                                                 : "pointer",
                                                             opacity:
                                                                 deletingHandle &&
-                                                                !isDeleting
+                                                                    !isDeleting
                                                                     ? 0.5
                                                                     : 1,
                                                         }}

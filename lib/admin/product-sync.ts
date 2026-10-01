@@ -935,7 +935,8 @@ async function appendPagedItem(
 
 export async function deleteProduct(
   bucket: R2BucketLike,
-  rawHandle: string
+  rawHandle: string,
+  fallbackProduct?: any
 ) {
   const handle =
     clean(rawHandle).toLowerCase();
@@ -994,9 +995,50 @@ export async function deleteProduct(
   const existingSummary =
     existingIndex >= 0
       ? catalogIndex[
-          existingIndex
-        ]
-      : null;
+      existingIndex
+      ]
+      : fallbackProduct
+        ? {
+          handle,
+
+          title:
+            fallbackProduct.title || "",
+
+          collection:
+            fallbackProduct.collection || "",
+
+          category:
+            fallbackProduct.category || "",
+
+          tags:
+            unique([
+              ...(Array.isArray(
+                fallbackProduct.tags
+              )
+                ? fallbackProduct.tags
+                : []),
+
+              fallbackProduct.collection,
+              fallbackProduct.category,
+            ])
+              .map(slugify)
+              .filter(Boolean),
+
+          image:
+            fallbackProduct.image || "",
+
+          partNumber:
+            fallbackProduct.partNumber || "",
+
+          vendor:
+            fallbackProduct.vendor || "",
+
+          variantCount:
+            Number(
+              fallbackProduct.variantCount || 0
+            ),
+        }
+        : null;
 
   /*
    * It may already be partially
@@ -1132,7 +1174,7 @@ export async function deleteProduct(
     const expectedPage =
       Math.floor(
         existingIndex /
-          catalogPageSize
+        catalogPageSize
       );
 
     const candidates =
@@ -1144,7 +1186,7 @@ export async function deleteProduct(
         (index) =>
           index >= 0 &&
           index <
-            catalogTotalPages
+          catalogTotalPages
       );
 
     for (
@@ -1342,7 +1384,7 @@ export async function deleteProduct(
               (index) =>
                 index >= 0 &&
                 index <
-                  totalPages
+                totalPages
             );
 
           for (
@@ -1397,7 +1439,7 @@ export async function deleteProduct(
           collectionIndex
         ] = {
           ...collections[
-            collectionIndex
+          collectionIndex
           ],
 
           count:
@@ -1548,8 +1590,8 @@ export async function deleteProduct(
       images:
         existingSummary.image
           ? [
-              existingSummary.image,
-            ]
+            existingSummary.image,
+          ]
           : [],
 
       variants: [
@@ -1626,7 +1668,7 @@ export async function deleteProduct(
 
   const registryShard =
     first >= "0" &&
-    first <= "9"
+      first <= "9"
       ? first
       : first >= "a" &&
         first <= "z"
@@ -1697,7 +1739,7 @@ export async function deleteProduct(
           Number(
             stats?.variants || 0
           ) -
-            variantsToRemove
+          variantsToRemove
         ),
 
       collections:

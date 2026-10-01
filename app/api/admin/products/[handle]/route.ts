@@ -205,7 +205,7 @@ export async function PUT(
       String(incoming.handle)
         .trim()
         .toLowerCase() !==
-        safeHandle
+      safeHandle
     ) {
       return Response.json(
         {
@@ -428,6 +428,15 @@ export async function DELETE(
     const bucket =
       getBucket();
 
+    let fallbackProduct: any = null;
+
+    try {
+      fallbackProduct =
+        await _request.json();
+    } catch {
+      fallbackProduct = null;
+    }
+
     /*
      * Remove catalogue/search/index
      * references first.
@@ -438,7 +447,8 @@ export async function DELETE(
     const result =
       await deleteProduct(
         bucket,
-        safeHandle
+        safeHandle,
+        fallbackProduct
       );
 
     /*
