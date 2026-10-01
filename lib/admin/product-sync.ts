@@ -842,6 +842,93 @@ function sortSummaries(items: any[]) {
   );
 }
 
+async function appendPagedItem(
+  bucket: R2BucketLike,
+  basePath: string,
+  item: any,
+  pageSize: number,
+  totalPages: number
+) {
+  /*
+   * Empty collection/catalogue:
+   * create page 0001.
+   */
+  if (totalPages <= 0) {
+    const key =
+      `${basePath}/${pageNumber(0)}.json`;
+
+    await writeJson(
+      bucket,
+      key,
+      [item]
+    );
+
+    return {
+      totalPages: 1,
+      updatedFiles: [key],
+    };
+  }
+
+  const lastPageIndex =
+    totalPages - 1;
+
+  const lastPageKey =
+    `${basePath}/${pageNumber(lastPageIndex)}.json`;
+
+  const existingPage =
+    await readJson(
+      bucket,
+      lastPageKey
+    );
+
+  const items =
+    Array.isArray(existingPage)
+      ? [...existingPage]
+      : [];
+
+  /*
+   * There is still room on the
+   * existing final page.
+   */
+  if (items.length < pageSize) {
+    items.push(item);
+
+    await writeJson(
+      bucket,
+      lastPageKey,
+      items
+    );
+
+    return {
+      totalPages,
+      updatedFiles: [
+        lastPageKey,
+      ],
+    };
+  }
+
+  /*
+   * Final page is full.
+   * Create exactly one new page.
+   */
+  const newPageKey =
+    `${basePath}/${pageNumber(totalPages)}.json`;
+
+  await writeJson(
+    bucket,
+    newPageKey,
+    [item]
+  );
+
+  return {
+    totalPages:
+      totalPages + 1,
+
+    updatedFiles: [
+      newPageKey,
+    ],
+  };
+}
 export async function createNewProduct(
   bucket: R2BucketLike,
   product: any
@@ -900,56 +987,79 @@ export async function createNewProduct(
       catalogMeta?.totalPages || 0
     );
 
-  const existingCatalog =
-    await readPagedItems(
+  /*
+   * Keep catalog-index.json synchronized,
+   * but do not read/rewrite every
+   * catalogue page.
+   */
+  const catalogIndexRaw =
+    await readJson(
       bucket,
-      "catalog/indexes/catalog-pages",
-      catalogTotalPages
+      catalogIndexKey
     );
 
-  if (
-    existingCatalog.some(
+  const catalogIndex =
+    Array.isArray(catalogIndexRaw)
+      ? [...catalogIndexRaw]
+      : [];
+
+  const alreadyInCatalog =
+    catalogIndex.some(
       (item: any) =>
         clean(item?.handle)
-          .toLowerCase() === handle
-    )
-  ) {
+          .toLowerCase() ===
+        handle
+    );
+
+  if (alreadyInCatalog) {
     throw new Error(
       `Product "${handle}" already exists.`
     );
   }
 
-  const nextCatalog =
-    sortSummaries([
-      ...existingCatalog,
-      summary,
-    ]);
+  catalogIndex.push(summary);
 
   /*
-   * Keep full catalog-index.json
-   * synchronized as well.
+   * Keep the full index sorted.
+   * Numbered pages intentionally use
+   * incremental append so one product
+   * does not rewrite thousands of pages.
    */
+  const nextCatalogIndex =
+    sortSummaries(
+      catalogIndex
+    );
+
   await writeJson(
     bucket,
     catalogIndexKey,
-    nextCatalog
+    nextCatalogIndex
   );
 
   updatedFiles.push(
     catalogIndexKey
   );
 
-  const catalogPagesResult =
-    await writePagedItems(
+  const catalogPageResult =
+    await appendPagedItem(
       bucket,
       "catalog/indexes/catalog-pages",
-      nextCatalog,
-      catalogPageSize
+      summary,
+      catalogPageSize,
+      catalogTotalPages
     );
 
   updatedFiles.push(
-    ...catalogPagesResult.updatedFiles
+    ...catalogPageResult.updatedFiles
   );
+
+  const totalProducts =
+    Number(
+      catalogMeta?.totalProducts ||
+      (
+        nextCatalogIndex.length - 1
+      )
+    ) + 1;
 
   await writeJson(
     bucket,
@@ -957,14 +1067,13 @@ export async function createNewProduct(
     {
       ...catalogMeta,
 
-      totalProducts:
-        nextCatalog.length,
+      totalProducts,
 
       pageSize:
         catalogPageSize,
 
       totalPages:
-        catalogPagesResult.totalPages,
+        catalogPageResult.totalPages,
     }
   );
 
@@ -1018,46 +1127,32 @@ export async function createNewProduct(
         oldMeta?.totalPages || 0
       );
 
-    const currentItems =
-      totalPages > 0
-        ? await readPagedItems(
-            bucket,
-            `catalog/indexes/category-pages/${tag}`,
-            totalPages
-          )
-        : [];
-
-    const alreadyExists =
-      currentItems.some(
-        (item: any) =>
-          clean(item?.handle)
-            .toLowerCase() ===
-          handle
+    const currentTotal =
+      Number(
+        oldMeta?.totalProducts || 0
       );
 
-    const nextItems =
-      alreadyExists
-        ? currentItems
-        : sortSummaries([
-            ...currentItems,
-            summary,
-          ]);
-
     const pageResult =
-      await writePagedItems(
+      await appendPagedItem(
         bucket,
         `catalog/indexes/category-pages/${tag}`,
-        nextItems,
-        pageSize
+        summary,
+        pageSize,
+        totalPages
       );
 
     updatedFiles.push(
       ...pageResult.updatedFiles
     );
 
+    const nextTotal =
+      currentTotal + 1;
+
     categoryMeta[tag] = {
+      ...oldMeta,
+
       totalProducts:
-        nextItems.length,
+        nextTotal,
 
       pageSize,
 
@@ -1081,7 +1176,7 @@ export async function createNewProduct(
         tag,
 
       count:
-        nextItems.length,
+        nextTotal,
     };
 
     if (
@@ -1093,6 +1188,7 @@ export async function createNewProduct(
         ...collections[
           collectionIndex
         ],
+
         ...collectionEntry,
       };
     } else {
@@ -1110,17 +1206,19 @@ export async function createNewProduct(
         )
   );
 
-  await writeJson(
-    bucket,
-    categoryMetaKey,
-    categoryMeta
-  );
+  await Promise.all([
+    writeJson(
+      bucket,
+      categoryMetaKey,
+      categoryMeta
+    ),
 
-  await writeJson(
-    bucket,
-    collectionsKey,
-    collections
-  );
+    writeJson(
+      bucket,
+      collectionsKey,
+      collections
+    ),
+  ]);
 
   updatedFiles.push(
     categoryMetaKey,
@@ -1139,43 +1237,61 @@ export async function createNewProduct(
       filterIndexKey
     )) || {};
 
-  const brandCounts =
-    new Map<string, number>();
+  const existingBrands =
+    Array.isArray(
+      existingFilter?.brands
+    )
+      ? [...existingFilter.brands]
+      : [];
 
-  for (
-    const item of nextCatalog
-  ) {
-    const vendor =
-      clean(item?.vendor);
+  const vendor =
+    clean(summary?.vendor);
 
-    if (!vendor) continue;
+  if (vendor) {
+    const brandIndex =
+      existingBrands.findIndex(
+        (item: any) =>
+          clean(item?.title) ===
+          vendor
+      );
 
-    brandCounts.set(
-      vendor,
-      (
-        brandCounts.get(vendor) ||
-        0
-      ) + 1
+    if (brandIndex >= 0) {
+      existingBrands[
+        brandIndex
+      ] = {
+        ...existingBrands[
+          brandIndex
+        ],
+
+        count:
+          Number(
+            existingBrands[
+              brandIndex
+            ]?.count || 0
+          ) + 1,
+      };
+    } else {
+      existingBrands.push({
+        handle:
+          vendor,
+
+        title:
+          vendor,
+
+        count: 1,
+      });
+    }
+
+    existingBrands.sort(
+      (a: any, b: any) =>
+        String(a?.title || "")
+          .localeCompare(
+            String(
+              b?.title || ""
+            )
+          )
     );
   }
-
-  const brands =
-    Array.from(
-      brandCounts.entries()
-    )
-      .map(
-        ([title, count]) => ({
-          handle: title,
-          title,
-          count,
-        })
-      )
-      .sort(
-        (a, b) =>
-          a.title.localeCompare(
-            b.title
-          )
-      );
 
   await writeJson(
     bucket,
@@ -1186,7 +1302,8 @@ export async function createNewProduct(
       categories:
         collections,
 
-      brands,
+      brands:
+        existingBrands,
     }
   );
 
@@ -1198,10 +1315,6 @@ export async function createNewProduct(
    * --------------------------------
    * SEARCH V2
    * --------------------------------
-   *
-   * Pass an empty old product so the
-   * existing helper behaves as an
-   * insertion.
    */
 
   const searchResult =
@@ -1296,7 +1409,7 @@ export async function createNewProduct(
       ...stats,
 
       products:
-        nextCatalog.length,
+        totalProducts,
 
       variants:
         Number(
@@ -1314,6 +1427,7 @@ export async function createNewProduct(
 
   return {
     summary,
+
     updatedFiles:
       unique(updatedFiles),
   };

@@ -353,12 +353,12 @@ export async function POST(
          * before committing the master
          * product JSON.
          */
-        const syncResult =
-            await createNewProduct(
-                bucket,
-                product
-            );
-
+        /*
+ * Commit the master product first.
+ *
+ * This guarantees that once catalogue/search
+ * synchronization begins, the PDP source exists.
+ */
         await bucket.put(
             key,
             JSON.stringify(product),
@@ -372,6 +372,24 @@ export async function POST(
                 },
             }
         );
+
+        let syncResult;
+
+        try {
+            syncResult =
+                await createNewProduct(
+                    bucket,
+                    product
+                );
+        } catch (error) {
+            /*
+             * Master JSON deliberately remains in R2.
+             * Retrying the synchronization is safer
+             * than exposing search/collection entries
+             * whose PDP does not exist.
+             */
+            throw error;
+        }
 
         return Response.json({
             success: true,
