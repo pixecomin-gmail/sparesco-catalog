@@ -938,8 +938,7 @@ export async function deleteProduct(
   rawHandle: string
 ) {
   const handle =
-    clean(rawHandle)
-      .toLowerCase();
+    clean(rawHandle).toLowerCase();
 
   if (!handle) {
     throw new Error(
@@ -968,7 +967,9 @@ export async function deleteProduct(
     "catalog/indexes/stats.json";
 
   /*
-   * FULL CATALOGUE INDEX
+   * --------------------------------
+   * LOAD MAIN INDEX
+   * --------------------------------
    */
 
   const catalogIndexRaw =
@@ -979,16 +980,29 @@ export async function deleteProduct(
 
   const catalogIndex =
     Array.isArray(catalogIndexRaw)
-      ? catalogIndexRaw
+      ? [...catalogIndexRaw]
       : [];
 
-  const existingSummary =
-    catalogIndex.find(
+  const existingIndex =
+    catalogIndex.findIndex(
       (item: any) =>
         clean(item?.handle)
           .toLowerCase() ===
         handle
     );
+
+  const existingSummary =
+    existingIndex >= 0
+      ? catalogIndex[
+          existingIndex
+        ]
+      : null;
+
+  /*
+   * It may already be partially
+   * deleted. Keep deletion safe to
+   * run again.
+   */
 
   const nextCatalog =
     catalogIndex.filter(
@@ -998,21 +1012,37 @@ export async function deleteProduct(
         handle
     );
 
-  await writeJson(
-    bucket,
-    catalogIndexKey,
-    nextCatalog
-  );
+  if (
+    nextCatalog.length !==
+    catalogIndex.length
+  ) {
+    await writeJson(
+      bucket,
+      catalogIndexKey,
+      nextCatalog
+    );
 
-  updatedFiles.push(
-    catalogIndexKey
-  );
+    updatedFiles.push(
+      catalogIndexKey
+    );
+  }
 
   /*
-   * CATALOGUE PAGES
+   * --------------------------------
+   * CATALOGUE PAGE
+   * --------------------------------
    *
-   * Only rewrite a page when that page
-   * actually contains this handle.
+   * New manually-created products are
+   * appended to the final page.
+   *
+   * Older products are in sorted pages.
+   *
+   * Therefore:
+   * 1. check final page
+   * 2. check calculated sorted page
+   * 3. check its immediate neighbours
+   *
+   * No full catalogue scan.
    */
 
   const catalogMeta =
@@ -1026,13 +1056,21 @@ export async function deleteProduct(
       catalogMeta?.totalPages || 0
     );
 
-  for (
-    let index = 0;
-    index < catalogTotalPages;
-    index++
+  const catalogPageSize =
+    Number(
+      catalogMeta?.pageSize || 24
+    );
+
+  async function removeFromPage(
+    basePath: string,
+    pageIndex: number
   ) {
+    if (pageIndex < 0) {
+      return false;
+    }
+
     const key =
-      `catalog/indexes/catalog-pages/${pageNumber(index)}.json`;
+      `${basePath}/${pageNumber(pageIndex)}.json`;
 
     const raw =
       await readJson(
@@ -1041,7 +1079,7 @@ export async function deleteProduct(
       );
 
     if (!Array.isArray(raw)) {
-      continue;
+      return false;
     }
 
     const filtered =
@@ -1053,26 +1091,88 @@ export async function deleteProduct(
       );
 
     if (
-      filtered.length !==
+      filtered.length ===
       raw.length
     ) {
-      await writeJson(
-        bucket,
-        key,
-        filtered
+      return false;
+    }
+
+    await writeJson(
+      bucket,
+      key,
+      filtered
+    );
+
+    updatedFiles.push(key);
+
+    return true;
+  }
+
+  let removedFromCatalogPage =
+    false;
+
+  if (catalogTotalPages > 0) {
+    /*
+     * Check append location first.
+     */
+    removedFromCatalogPage =
+      await removeFromPage(
+        "catalog/indexes/catalog-pages",
+        catalogTotalPages - 1
+      );
+  }
+
+  if (
+    !removedFromCatalogPage &&
+    existingIndex >= 0
+  ) {
+    /*
+     * Older sorted catalogue location.
+     */
+    const expectedPage =
+      Math.floor(
+        existingIndex /
+          catalogPageSize
       );
 
-      updatedFiles.push(
-        key
+    const candidates =
+      unique([
+        expectedPage,
+        expectedPage - 1,
+        expectedPage + 1,
+      ]).filter(
+        (index) =>
+          index >= 0 &&
+          index <
+            catalogTotalPages
       );
+
+    for (
+      const pageIndex
+      of candidates
+    ) {
+      const removed =
+        await removeFromPage(
+          "catalog/indexes/catalog-pages",
+          pageIndex
+        );
+
+      if (removed) {
+        removedFromCatalogPage =
+          true;
+        break;
+      }
     }
   }
 
   /*
-   * CATEGORY PAGES
+   * --------------------------------
+   * COLLECTION / TAG PAGES
+   * --------------------------------
    *
-   * Scan categories because orphaned
-   * products may not have a master JSON.
+   * The catalogue summary already
+   * contains the product's tags, so
+   * only those collections are touched.
    */
 
   const categoryMeta =
@@ -1092,123 +1192,227 @@ export async function deleteProduct(
       ? [...collectionsRaw]
       : [];
 
-  const affectedTags =
-    new Set<string>();
+  const tags =
+    unique([
+      ...(
+        Array.isArray(
+          existingSummary?.tags
+        )
+          ? existingSummary.tags
+          : []
+      ),
 
-  for (
-    const [
-      tag,
-      meta,
-    ] of Object.entries(
-      categoryMeta
-    )
-  ) {
-    const totalPages =
-      Number(
-        (meta as any)
-          ?.totalPages || 0
-      );
+      existingSummary?.collection,
+      existingSummary?.category,
+    ])
+      .map(slugify)
+      .filter(Boolean);
 
-    let removedCount = 0;
+  for (const tag of tags) {
+    const meta =
+      categoryMeta?.[tag];
 
-    for (
-      let index = 0;
-      index < totalPages;
-      index++
-    ) {
-      const key =
-        `catalog/indexes/category-pages/${tag}/${pageNumber(index)}.json`;
-
-      const raw =
-        await readJson(
-          bucket,
-          key
-        );
-
-      if (!Array.isArray(raw)) {
-        continue;
-      }
-
-      const filtered =
-        raw.filter(
-          (item: any) =>
-            clean(item?.handle)
-              .toLowerCase() !==
-            handle
-        );
-
-      const removed =
-        raw.length -
-        filtered.length;
-
-      if (!removed) {
-        continue;
-      }
-
-      removedCount +=
-        removed;
-
-      await writeJson(
-        bucket,
-        key,
-        filtered
-      );
-
-      updatedFiles.push(
-        key
-      );
-    }
-
-    if (!removedCount) {
+    if (!meta) {
       continue;
     }
 
-    affectedTags.add(
-      tag
-    );
-
-    const oldTotal =
+    const totalPages =
       Number(
-        (meta as any)
-          ?.totalProducts || 0
+        meta?.totalPages || 0
       );
 
-    categoryMeta[tag] = {
-      ...(meta as any),
+    if (!totalPages) {
+      continue;
+    }
 
-      totalProducts:
-        Math.max(
-          0,
-          oldTotal -
-          removedCount
-        ),
-    };
+    /*
+     * Manual products are appended,
+     * therefore final page first.
+     */
 
-    const collectionIndex =
-      collections.findIndex(
-        (item: any) =>
-          slugify(
-            item?.handle
-          ) ===
-          slugify(tag)
+    let removed =
+      await removeFromPage(
+        `catalog/indexes/category-pages/${tag}`,
+        totalPages - 1
       );
+
+    /*
+     * If this is an older sorted
+     * product, locate it using title
+     * ranges instead of scanning every
+     * collection page.
+     */
 
     if (
-      collectionIndex >= 0
+      !removed &&
+      existingSummary?.title
     ) {
-      collections[
-        collectionIndex
-      ] = {
-        ...collections[
-        collectionIndex
-        ],
+      let low = 0;
+      let high =
+        totalPages - 1;
 
-        count:
-          categoryMeta[tag]
-            .totalProducts,
+      while (
+        low <= high &&
+        !removed
+      ) {
+        const middle =
+          Math.floor(
+            (low + high) / 2
+          );
+
+        const key =
+          `catalog/indexes/category-pages/${tag}/${pageNumber(middle)}.json`;
+
+        const raw =
+          await readJson(
+            bucket,
+            key
+          );
+
+        const page =
+          Array.isArray(raw)
+            ? raw
+            : [];
+
+        if (!page.length) {
+          break;
+        }
+
+        const filtered =
+          page.filter(
+            (item: any) =>
+              clean(item?.handle)
+                .toLowerCase() !==
+              handle
+          );
+
+        if (
+          filtered.length !==
+          page.length
+        ) {
+          await writeJson(
+            bucket,
+            key,
+            filtered
+          );
+
+          updatedFiles.push(
+            key
+          );
+
+          removed = true;
+          break;
+        }
+
+        const firstTitle =
+          page[0]?.title || "";
+
+        const lastTitle =
+          page[
+            page.length - 1
+          ]?.title || "";
+
+        if (
+          compareTitles(
+            existingSummary.title,
+            firstTitle
+          ) < 0
+        ) {
+          high =
+            middle - 1;
+        } else if (
+          compareTitles(
+            existingSummary.title,
+            lastTitle
+          ) > 0
+        ) {
+          low =
+            middle + 1;
+        } else {
+          /*
+           * Same-title boundary:
+           * check immediate neighbours.
+           */
+
+          const neighbours =
+            [
+              middle - 1,
+              middle + 1,
+            ].filter(
+              (index) =>
+                index >= 0 &&
+                index <
+                  totalPages
+            );
+
+          for (
+            const neighbour
+            of neighbours
+          ) {
+            const found =
+              await removeFromPage(
+                `catalog/indexes/category-pages/${tag}`,
+                neighbour
+              );
+
+            if (found) {
+              removed = true;
+              break;
+            }
+          }
+
+          break;
+        }
+      }
+    }
+
+    if (removed) {
+      const oldTotal =
+        Number(
+          meta?.totalProducts || 0
+        );
+
+      categoryMeta[tag] = {
+        ...meta,
+
+        totalProducts:
+          Math.max(
+            0,
+            oldTotal - 1
+          ),
       };
+
+      const collectionIndex =
+        collections.findIndex(
+          (item: any) =>
+            slugify(
+              item?.handle
+            ) === tag
+        );
+
+      if (
+        collectionIndex >= 0
+      ) {
+        collections[
+          collectionIndex
+        ] = {
+          ...collections[
+            collectionIndex
+          ],
+
+          count:
+            categoryMeta[tag]
+              .totalProducts,
+        };
+      }
     }
   }
+
+  /*
+   * --------------------------------
+   * META + COLLECTIONS
+   * --------------------------------
+   */
 
   await Promise.all([
     writeJson(
@@ -1222,37 +1426,29 @@ export async function deleteProduct(
       collectionsKey,
       collections
     ),
+
+    writeJson(
+      bucket,
+      catalogMetaKey,
+      {
+        ...catalogMeta,
+
+        totalProducts:
+          nextCatalog.length,
+      }
+    ),
   ]);
 
   updatedFiles.push(
     categoryMetaKey,
-    collectionsKey
-  );
-
-  /*
-   * CATALOG META
-   */
-
-  await writeJson(
-    bucket,
-    catalogMetaKey,
-    {
-      ...catalogMeta,
-
-      totalProducts:
-        nextCatalog.length,
-    }
-  );
-
-  updatedFiles.push(
+    collectionsKey,
     catalogMetaKey
   );
 
   /*
+   * --------------------------------
    * FILTER INDEX
-   *
-   * Recalculate from the authoritative
-   * full catalogue index.
+   * --------------------------------
    */
 
   const existingFilter =
@@ -1320,66 +1516,109 @@ export async function deleteProduct(
   );
 
   /*
+   * --------------------------------
    * SEARCH V2
+   * --------------------------------
    *
-   * We do not know all prefixes for an
-   * orphaned product, so inspect every
-   * possible prefix shard and remove
-   * matching handle wherever found.
+   * Reconstruct enough product data
+   * from catalog-index.json to obtain
+   * the exact same two-character
+   * Search V2 prefixes.
    */
 
-  const searchPrefixes = [
-    ..."0123456789",
-    ..."abcdefghijklmnopqrstuvwxyz",
-    "other",
-  ];
+  if (existingSummary) {
+    const searchProduct = {
+      handle,
 
-  await Promise.all(
-    searchPrefixes.map(
-      async (prefix) => {
-        const key =
-          `catalog/search-v2/${prefix}.json`;
+      title:
+        existingSummary.title ||
+        "",
 
-        const raw =
-          await readJson(
+      collection:
+        existingSummary.collection ||
+        "",
+
+      category:
+        existingSummary.category ||
+        "",
+
+      tags:
+        existingSummary.tags || [],
+
+      images:
+        existingSummary.image
+          ? [
+              existingSummary.image,
+            ]
+          : [],
+
+      variants: [
+        {
+          partNumber:
+            existingSummary.partNumber ||
+            "",
+
+          vendor:
+            existingSummary.vendor ||
+            "",
+        },
+      ],
+    };
+
+    const search =
+      buildSearchV2(
+        searchProduct
+      );
+
+    await Promise.all(
+      search.prefixes.map(
+        async (prefix) => {
+          const key =
+            `catalog/search-v2/${prefix}.json`;
+
+          const raw =
+            await readJson(
+              bucket,
+              key
+            );
+
+          if (!Array.isArray(raw)) {
+            return;
+          }
+
+          const filtered =
+            raw.filter(
+              (item: any) =>
+                clean(item?.h)
+                  .toLowerCase() !==
+                handle
+            );
+
+          if (
+            filtered.length ===
+            raw.length
+          ) {
+            return;
+          }
+
+          await writeJson(
             bucket,
+            key,
+            filtered
+          );
+
+          updatedFiles.push(
             key
           );
-
-        if (!Array.isArray(raw)) {
-          return;
         }
-
-        const filtered =
-          raw.filter(
-            (item: any) =>
-              clean(item?.h)
-                .toLowerCase() !==
-              handle
-          );
-
-        if (
-          filtered.length ===
-          raw.length
-        ) {
-          return;
-        }
-
-        await writeJson(
-          bucket,
-          key,
-          filtered
-        );
-
-        updatedFiles.push(
-          key
-        );
-      }
-    )
-  );
+      )
+    );
+  }
 
   /*
+   * --------------------------------
    * HANDLE REGISTRY
+   * --------------------------------
    */
 
   const first =
@@ -1387,7 +1626,7 @@ export async function deleteProduct(
 
   const registryShard =
     first >= "0" &&
-      first <= "9"
+    first <= "9"
       ? first
       : first >= "a" &&
         first <= "z"
@@ -1426,7 +1665,9 @@ export async function deleteProduct(
   }
 
   /*
+   * --------------------------------
    * STATS
+   * --------------------------------
    */
 
   const stats =
@@ -1434,6 +1675,12 @@ export async function deleteProduct(
       bucket,
       statsKey
     )) || {};
+
+  const variantsToRemove =
+    Number(
+      existingSummary
+        ?.variantCount || 0
+    );
 
   await writeJson(
     bucket,
@@ -1443,6 +1690,15 @@ export async function deleteProduct(
 
       products:
         nextCatalog.length,
+
+      variants:
+        Math.max(
+          0,
+          Number(
+            stats?.variants || 0
+          ) -
+            variantsToRemove
+        ),
 
       collections:
         collections.length,
@@ -1458,8 +1714,7 @@ export async function deleteProduct(
 
     found:
       Boolean(
-        existingSummary ||
-        affectedTags.size
+        existingSummary
       ),
 
     updatedFiles:
