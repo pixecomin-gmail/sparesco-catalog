@@ -325,35 +325,33 @@ export default function AddProductClient() {
     }
 
     function addTag() {
-        const tag = slugify(tagInput);
+        const newTags = tagInput
+            .split(",")
+            .map((item) => slugify(item))
+            .filter(Boolean);
 
-        if (!tag) return;
+        if (!newTags.length) return;
 
         setProduct((current) => {
-            if (current.tags.includes(tag)) {
-                return current;
-            }
+            const tags = Array.from(
+                new Set([
+                    ...current.tags,
+                    ...newTags,
+                ])
+            );
 
-            const tags = [
-                ...current.tags,
-                tag,
-            ];
+            const primaryTag =
+                current.collection ||
+                tags[0] ||
+                "";
 
-            /*
-             * Keep collection/imageFolder for
-             * compatibility with the existing
-             * catalogue and image structure.
-             *
-             * The first tag becomes the primary
-             * collection unless one already exists.
-             */
             return {
                 ...current,
                 tags,
-                collection:
-                    current.collection || tag,
+                collection: primaryTag,
                 imageFolder:
-                    current.imageFolder || tag,
+                    current.imageFolder ||
+                    primaryTag,
             };
         });
 
@@ -1107,15 +1105,26 @@ export default function AddProductClient() {
                             }}
                         >
                             {product.tags.map((tag) => (
-                                <button
+                                <span
                                     key={tag}
-                                    type="button"
-                                    onClick={() =>
-                                        removeTag(tag)
-                                    }
+                                    className="admin-tag-chip"
                                 >
-                                    {tag} ×
-                                </button>
+                                    <span className="admin-tag-chip-text">
+                                        {tag}
+                                    </span>
+
+                                    <button
+                                        type="button"
+                                        className="admin-tag-chip-remove"
+                                        onClick={() =>
+                                            removeTag(tag)
+                                        }
+                                        aria-label={`Remove ${tag}`}
+                                        title={`Remove ${tag}`}
+                                    >
+                                        ×
+                                    </button>
+                                </span>
                             ))}
                         </div>
 

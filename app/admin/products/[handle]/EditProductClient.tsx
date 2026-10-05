@@ -175,6 +175,9 @@ export default function EditProductClient({
     const [imageError, setImageError] =
         useState("");
 
+    const [tagInput, setTagInput] =
+        useState("");
+
     const productImageInputRef =
         useRef<HTMLInputElement | null>(null);
 
@@ -238,6 +241,101 @@ export default function EditProductClient({
         });
     }
 
+    function addTag() {
+        const newTags = tagInput
+            .split(",")
+            .map((tag) => tag.trim())
+            .filter(Boolean);
+
+        if (!newTags.length) return;
+
+        setProduct((current) => {
+            if (!current) return current;
+
+            const tags = Array.from(
+                new Set([
+                    ...current.tags,
+                    ...newTags,
+                ])
+            );
+
+            return {
+                ...current,
+                tags,
+            };
+        });
+
+        setTagInput("");
+    }
+
+    function removeTag(tag: string) {
+        setProduct((current) => {
+            if (!current) return current;
+
+            return {
+                ...current,
+                tags: current.tags.filter(
+                    (item) => item !== tag
+                ),
+            };
+        });
+    }
+
+    function addVariant() {
+        if (!product) return;
+
+        const newIndex =
+            product.variants.length;
+
+        const newVariant: ProductVariant = {
+            title: "",
+            option1Value: "",
+            partNumber: "",
+            sku: "",
+            barcode: "",
+            image: "",
+            vendor: "",
+            price: 0,
+            compareAtPrice: 0,
+            cost: 0,
+            inventoryQty: 0,
+            inventoryTracker: "",
+            inventoryPolicy: "",
+            countryOfOrigin: "",
+            hsCode: "",
+            weight: 0,
+            weightUnit: "",
+            unitWeight: "",
+            shippingVolume: "",
+            shippingProfile: "",
+            taxCode: "",
+            taxable: true,
+            requiresShipping: true,
+            description: "",
+            specifications: [],
+            position: newIndex + 1,
+        };
+
+        setProduct((current) => {
+            if (!current) return current;
+
+            return {
+                ...current,
+                variants: [
+                    ...current.variants,
+                    newVariant,
+                ],
+            };
+        });
+
+        setOpenVariants((current) => [
+            ...current.filter(
+                (item) => item !== newIndex
+            ),
+            newIndex,
+        ]);
+    }
+
     function updateVariant(
         index: number,
         field: keyof ProductVariant,
@@ -255,9 +353,9 @@ export default function EditProductClient({
                     (variant, variantIndex) =>
                         variantIndex === index
                             ? {
-                                  ...variant,
-                                  [field]: value,
-                              }
+                                ...variant,
+                                [field]: value,
+                            }
                             : variant
                 );
 
@@ -274,8 +372,8 @@ export default function EditProductClient({
         setOpenVariants((current) =>
             current.includes(index)
                 ? current.filter(
-                      (item) => item !== index
-                  )
+                    (item) => item !== index
+                )
                 : [...current, index]
         );
     }
@@ -310,7 +408,7 @@ export default function EditProductClient({
             formData.append(
                 "imageFolder",
                 product.imageFolder ||
-                    product.collection
+                product.collection
             );
 
             const response = await fetch(
@@ -328,7 +426,7 @@ export default function EditProductClient({
             if (!response.ok || !data.success) {
                 throw new Error(
                     data.error ||
-                        "Unable to upload images."
+                    "Unable to upload images."
                 );
             }
 
@@ -408,9 +506,9 @@ export default function EditProductClient({
                         (variant) =>
                             variant.image === image
                                 ? {
-                                      ...variant,
-                                      image: "",
-                                  }
+                                    ...variant,
+                                    image: "",
+                                }
                                 : variant
                     ),
             };
@@ -436,35 +534,6 @@ export default function EditProductClient({
             "image",
             ""
         );
-    }
-
-    function assignImageToAllVariants(
-        image: string
-    ) {
-        if (!product) return;
-
-        const confirmed =
-            window.confirm(
-                "Assign this image to all variants?"
-            );
-
-        if (!confirmed) return;
-
-        setProduct((current) => {
-            if (!current) return current;
-
-            return {
-                ...current,
-
-                variants:
-                    current.variants.map(
-                        (variant) => ({
-                            ...variant,
-                            image,
-                        })
-                    ),
-            };
-        });
     }
 
     if (loading) {
@@ -499,10 +568,10 @@ export default function EditProductClient({
         const confirmed =
             window.confirm(
                 `Delete "${product.title}"?\n\n` +
-                    `Handle: ${product.handle}\n\n` +
-                    `This permanently removes the product from ` +
-                    `the catalogue, collections and search.\n\n` +
-                    `This cannot be undone.`
+                `Handle: ${product.handle}\n\n` +
+                `This permanently removes the product from ` +
+                `the catalogue, collections and search.\n\n` +
+                `This cannot be undone.`
             );
 
         if (!confirmed) {
@@ -562,8 +631,8 @@ export default function EditProductClient({
             ) {
                 throw new Error(
                     data.error ||
-                        data.message ||
-                        "Unable to delete product."
+                    data.message ||
+                    "Unable to delete product."
                 );
             }
 
@@ -587,9 +656,8 @@ export default function EditProductClient({
         if (!product || saving) return;
 
         const confirmed = window.confirm(
-            `Save changes to ${
-                product.title ||
-                product.handle
+            `Save changes to ${product.title ||
+            product.handle
             }?`
         );
 
@@ -624,8 +692,8 @@ export default function EditProductClient({
             try {
                 data = responseText
                     ? JSON.parse(
-                          responseText
-                      )
+                        responseText
+                    )
                     : {};
             } catch {
                 throw new Error(
@@ -641,7 +709,7 @@ export default function EditProductClient({
             ) {
                 throw new Error(
                     data.error ||
-                        "Unable to save product."
+                    "Unable to save product."
                 );
             }
 
@@ -664,7 +732,7 @@ export default function EditProductClient({
             setSaving(false);
         }
     }
-        return (
+    return (
         <main className="admin-dashboard">
             <div className="admin-page-heading admin-edit-heading">
                 <div>
@@ -790,24 +858,6 @@ export default function EditProductClient({
 
                     <div className="admin-field">
                         <label>
-                            Collection
-                        </label>
-
-                        <input
-                            value={
-                                product.collection
-                            }
-                            onChange={(e) =>
-                                updateProduct(
-                                    "collection",
-                                    e.target.value
-                                )
-                            }
-                        />
-                    </div>
-
-                    <div className="admin-field">
-                        <label>
                             Category
                         </label>
 
@@ -825,27 +875,76 @@ export default function EditProductClient({
                     </div>
 
                     <div className="admin-field admin-field-full">
-                        <label>Tags</label>
+                        <label>Collections / Tags</label>
 
-                        <input
-                            value={product.tags.join(
-                                ", "
-                            )}
-                            onChange={(e) =>
-                                updateProduct(
-                                    "tags",
-                                    e.target.value
-                                        .split(",")
-                                        .map((tag) =>
-                                            tag.trim()
-                                        )
-                                        .filter(
-                                            Boolean
-                                        )
-                                )
-                            }
-                            placeholder="tag-one, tag-two"
-                        />
+                        {product.tags.length > 0 && (
+                            <div
+                                style={{
+                                    display: "flex",
+                                    flexWrap: "wrap",
+                                    gap: "8px",
+                                    marginBottom: "10px",
+                                }}
+                            >
+                                {product.tags.map((tag) => (
+                                    <span
+                                        key={tag}
+                                        className="admin-tag-chip"
+                                    >
+                                        <span className="admin-tag-chip-text">
+                                            {tag}
+                                        </span>
+
+                                        <button
+                                            type="button"
+                                            className="admin-tag-chip-remove"
+                                            onClick={() =>
+                                                removeTag(tag)
+                                            }
+                                            aria-label={`Remove ${tag}`}
+                                            title={`Remove ${tag}`}
+                                        >
+                                            ×
+                                        </button>
+                                    </span>
+                                ))}
+                            </div>
+                        )}
+
+                        <div
+                            style={{
+                                display: "flex",
+                                gap: "8px",
+                            }}
+                        >
+                            <input
+                                value={tagInput}
+                                onChange={(e) =>
+                                    setTagInput(
+                                        e.target.value
+                                    )
+                                }
+                                placeholder="Add collection/tag"
+                                onKeyDown={(e) => {
+                                    if (e.key === "Enter") {
+                                        e.preventDefault();
+                                        addTag();
+                                    }
+                                }}
+                            />
+
+                            <button
+                                type="button"
+                                className="admin-secondary-button"
+                                onClick={addTag}
+                            >
+                                + Add
+                            </button>
+                        </div>
+
+                        <span className="admin-add-helper-text">
+                            Separate multiple tags with commas.
+                        </span>
                     </div>
                 </div>
             </section>
@@ -861,9 +960,9 @@ export default function EditProductClient({
                         </h2>
 
                         <p className="admin-section-note">
-                            Add product images,
-                            remove images or assign
-                            an image to all variants.
+                            Add or remove product images.
+                            Variant images can be selected
+                            in the Variants section below.
                         </p>
                     </div>
 
@@ -905,7 +1004,7 @@ export default function EditProductClient({
                 )}
 
                 {product.images.length ===
-                0 ? (
+                    0 ? (
                     <div className="admin-product-empty">
                         No product images.
                     </div>
@@ -961,38 +1060,17 @@ export default function EditProductClient({
                                         />
                                     </div>
 
-                                    <span
-                                        className="admin-image-filename"
-                                        title={image}
+                                    <button
+                                        type="button"
+                                        className="admin-media-remove"
+                                        onClick={() =>
+                                            removeProductImage(image)
+                                        }
+                                        aria-label="Remove image"
+                                        title="Remove image"
                                     >
-                                        {image}
-                                    </span>
-
-                                    <div className="admin-image-actions">
-                                        <button
-                                            type="button"
-                                            className="admin-image-assign-button"
-                                            onClick={() =>
-                                                assignImageToAllVariants(
-                                                    image
-                                                )
-                                            }
-                                        >
-                                            Assign to all
-                                        </button>
-
-                                        <button
-                                            type="button"
-                                            className="admin-image-remove-button"
-                                            onClick={() =>
-                                                removeProductImage(
-                                                    image
-                                                )
-                                            }
-                                        >
-                                            Remove
-                                        </button>
-                                    </div>
+                                        ×
+                                    </button>
                                 </div>
                             )
                         )}
@@ -1003,10 +1081,25 @@ export default function EditProductClient({
             {/* VARIANTS */}
 
             <section className="admin-edit-card">
-                <h2>
-                    Variants (
-                    {product.variants.length})
-                </h2>
+                <div className="admin-image-section-heading">
+                    <div>
+                        <h2>
+                            Variants ({product.variants.length})
+                        </h2>
+
+                        <p className="admin-section-note">
+                            Manage product variants and their details.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        className="admin-secondary-button"
+                        onClick={addVariant}
+                    >
+                        + Add Variant
+                    </button>
+                </div>
 
                 <div className="admin-variant-list">
                     {product.variants.map(
@@ -1036,9 +1129,8 @@ export default function EditProductClient({
                                         <div>
                                             <strong>
                                                 {variant.title ||
-                                                    `Variant ${
-                                                        index +
-                                                        1
+                                                    `Variant ${index +
+                                                    1
                                                     }`}
                                             </strong>
 
@@ -1143,79 +1235,79 @@ export default function EditProductClient({
                                                     .images
                                                     .length >
                                                     0 && (
-                                                    <>
-                                                        <div className="admin-variant-image-label">
-                                                            Select
-                                                            product
-                                                            image
-                                                        </div>
+                                                        <>
+                                                            <div className="admin-variant-image-label">
+                                                                Select
+                                                                product
+                                                                image
+                                                            </div>
 
-                                                        <div className="admin-variant-image-picker">
-                                                            {product.images.map(
-                                                                (
-                                                                    image
-                                                                ) => (
-                                                                    <button
-                                                                        key={
-                                                                            image
-                                                                        }
-                                                                        type="button"
-                                                                        className={
-                                                                            variant.image ===
-                                                                            image
-                                                                                ? "admin-variant-image-option admin-variant-image-option-selected"
-                                                                                : "admin-variant-image-option"
-                                                                        }
-                                                                        onClick={() =>
-                                                                            assignImageToVariant(
-                                                                                index,
+                                                            <div className="admin-variant-image-picker">
+                                                                {product.images.map(
+                                                                    (
+                                                                        image
+                                                                    ) => (
+                                                                        <button
+                                                                            key={
                                                                                 image
-                                                                            )
-                                                                        }
-                                                                        title="Assign this image to this variant"
-                                                                    >
-                                                                        <img
-                                                                            src={getCatalogThumbnailUrl(
-                                                                                {
-                                                                                    image,
-                                                                                    imageFolder:
-                                                                                        product.imageFolder,
-                                                                                    collection:
-                                                                                        product.collection,
-                                                                                }
-                                                                            )}
-                                                                            alt=""
-                                                                            onError={(
-                                                                                event
-                                                                            ) => {
-                                                                                const original =
-                                                                                    getOriginalImageUrl(
-                                                                                        {
-                                                                                            image,
-                                                                                            imageFolder:
-                                                                                                product.imageFolder,
-                                                                                            collection:
-                                                                                                product.collection,
-                                                                                        }
-                                                                                    );
-
-                                                                                if (
+                                                                            }
+                                                                            type="button"
+                                                                            className={
+                                                                                variant.image ===
+                                                                                    image
+                                                                                    ? "admin-variant-image-option admin-variant-image-option-selected"
+                                                                                    : "admin-variant-image-option"
+                                                                            }
+                                                                            onClick={() =>
+                                                                                assignImageToVariant(
+                                                                                    index,
+                                                                                    image
+                                                                                )
+                                                                            }
+                                                                            title="Assign this image to this variant"
+                                                                        >
+                                                                            <img
+                                                                                src={getCatalogThumbnailUrl(
+                                                                                    {
+                                                                                        image,
+                                                                                        imageFolder:
+                                                                                            product.imageFolder,
+                                                                                        collection:
+                                                                                            product.collection,
+                                                                                    }
+                                                                                )}
+                                                                                alt=""
+                                                                                onError={(
                                                                                     event
-                                                                                        .currentTarget
-                                                                                        .src !==
-                                                                                    original
-                                                                                ) {
-                                                                                    event.currentTarget.src =
-                                                                                        original;
-                                                                                }
-                                                                            }}
-                                                                        />
-                                                                    </button>
-                                                                )
-                                                            )}
-                                                        </div>
-                                                    </>
-                                                )}
+                                                                                ) => {
+                                                                                    const original =
+                                                                                        getOriginalImageUrl(
+                                                                                            {
+                                                                                                image,
+                                                                                                imageFolder:
+                                                                                                    product.imageFolder,
+                                                                                                collection:
+                                                                                                    product.collection,
+                                                                                            }
+                                                                                        );
+
+                                                                                    if (
+                                                                                        event
+                                                                                            .currentTarget
+                                                                                            .src !==
+                                                                                        original
+                                                                                    ) {
+                                                                                        event.currentTarget.src =
+                                                                                            original;
+                                                                                    }
+                                                                                }}
+                                                                            />
+                                                                        </button>
+                                                                    )
+                                                                )}
+                                                            </div>
+                                                        </>
+                                                    )}
                                             </div>
 
                                             <div className="admin-form-grid">
@@ -1244,154 +1336,19 @@ export default function EditProductClient({
                                                     />
                                                 </div>
 
-                                                <div className="admin-field">
-                                                    <label>
-                                                        Option
-                                                        1 Name
-                                                    </label>
-
-                                                    <input
-                                                        value={
-                                                            variant.option1Name ||
-                                                            ""
-                                                        }
-                                                        placeholder="e.g. Model"
-                                                        onChange={(
-                                                            e
-                                                        ) =>
-                                                            updateVariant(
-                                                                index,
-                                                                "option1Name",
-                                                                e
-                                                                    .target
-                                                                    .value
-                                                            )
-                                                        }
-                                                    />
-                                                </div>
-
-                                                <div className="admin-field">
-                                                    <label>
-                                                        Option
-                                                        1 Value
-                                                    </label>
+                                                <div className="admin-field admin-field-full">
+                                                    <label>Option</label>
 
                                                     <input
                                                         value={
                                                             variant.option1Value ||
                                                             ""
                                                         }
-                                                        onChange={(
-                                                            e
-                                                        ) =>
+                                                        onChange={(e) =>
                                                             updateVariant(
                                                                 index,
                                                                 "option1Value",
-                                                                e
-                                                                    .target
-                                                                    .value
-                                                            )
-                                                        }
-                                                    />
-                                                </div>
-
-                                                <div className="admin-field">
-                                                    <label>
-                                                        Option
-                                                        2 Name
-                                                    </label>
-
-                                                    <input
-                                                        value={
-                                                            variant.option2Name ||
-                                                            ""
-                                                        }
-                                                        placeholder="e.g. Size"
-                                                        onChange={(
-                                                            e
-                                                        ) =>
-                                                            updateVariant(
-                                                                index,
-                                                                "option2Name",
-                                                                e
-                                                                    .target
-                                                                    .value
-                                                            )
-                                                        }
-                                                    />
-                                                </div>
-
-                                                <div className="admin-field">
-                                                    <label>
-                                                        Option
-                                                        2 Value
-                                                    </label>
-
-                                                    <input
-                                                        value={
-                                                            variant.option2Value ||
-                                                            ""
-                                                        }
-                                                        onChange={(
-                                                            e
-                                                        ) =>
-                                                            updateVariant(
-                                                                index,
-                                                                "option2Value",
-                                                                e
-                                                                    .target
-                                                                    .value
-                                                            )
-                                                        }
-                                                    />
-                                                </div>
-
-                                                <div className="admin-field">
-                                                    <label>
-                                                        Option
-                                                        3 Name
-                                                    </label>
-
-                                                    <input
-                                                        value={
-                                                            variant.option3Name ||
-                                                            ""
-                                                        }
-                                                        placeholder="e.g. Material"
-                                                        onChange={(
-                                                            e
-                                                        ) =>
-                                                            updateVariant(
-                                                                index,
-                                                                "option3Name",
-                                                                e
-                                                                    .target
-                                                                    .value
-                                                            )
-                                                        }
-                                                    />
-                                                </div>
-
-                                                <div className="admin-field">
-                                                    <label>
-                                                        Option
-                                                        3 Value
-                                                    </label>
-
-                                                    <input
-                                                        value={
-                                                            variant.option3Value ||
-                                                            ""
-                                                        }
-                                                        onChange={(
-                                                            e
-                                                        ) =>
-                                                            updateVariant(
-                                                                index,
-                                                                "option3Value",
-                                                                e
-                                                                    .target
-                                                                    .value
+                                                                e.target.value
                                                             )
                                                         }
                                                     />
@@ -1469,7 +1426,7 @@ export default function EditProductClient({
                                                         }
                                                     />
                                                 </div>
-                                                                                                <div className="admin-field">
+                                                <div className="admin-field">
                                                     <label>
                                                         Vendor / Brand
                                                     </label>
@@ -1517,10 +1474,10 @@ export default function EditProductClient({
                                                                     ""
                                                                     ? 0
                                                                     : Number(
-                                                                          e
-                                                                              .target
-                                                                              .value
-                                                                      )
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
                                                         }
                                                     />
@@ -1551,10 +1508,10 @@ export default function EditProductClient({
                                                                     ""
                                                                     ? 0
                                                                     : Number(
-                                                                          e
-                                                                              .target
-                                                                              .value
-                                                                      )
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
                                                         }
                                                     />
@@ -1584,10 +1541,10 @@ export default function EditProductClient({
                                                                     ""
                                                                     ? 0
                                                                     : Number(
-                                                                          e
-                                                                              .target
-                                                                              .value
-                                                                      )
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
                                                         }
                                                     />
@@ -1617,10 +1574,10 @@ export default function EditProductClient({
                                                                     ""
                                                                     ? 0
                                                                     : Number(
-                                                                          e
-                                                                              .target
-                                                                              .value
-                                                                      )
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
                                                         }
                                                     />
@@ -1762,10 +1719,10 @@ export default function EditProductClient({
                                                                     ""
                                                                     ? 0
                                                                     : Number(
-                                                                          e
-                                                                              .target
-                                                                              .value
-                                                                      )
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
                                                         }
                                                     />
@@ -1923,7 +1880,7 @@ export default function EditProductClient({
                                                     <select
                                                         value={
                                                             variant.taxable ===
-                                                            false
+                                                                false
                                                                 ? "false"
                                                                 : "true"
                                                         }
@@ -1936,7 +1893,7 @@ export default function EditProductClient({
                                                                 e
                                                                     .target
                                                                     .value ===
-                                                                    "true"
+                                                                "true"
                                                             )
                                                         }
                                                     >
@@ -1959,7 +1916,7 @@ export default function EditProductClient({
                                                     <select
                                                         value={
                                                             variant.requiresShipping ===
-                                                            false
+                                                                false
                                                                 ? "false"
                                                                 : "true"
                                                         }
@@ -1972,7 +1929,7 @@ export default function EditProductClient({
                                                                 e
                                                                     .target
                                                                     .value ===
-                                                                    "true"
+                                                                "true"
                                                             )
                                                         }
                                                     >
@@ -2067,72 +2024,61 @@ export default function EditProductClient({
             {product.sources &&
                 product.sources.length > 0 && (
                     <section className="admin-edit-card">
-                        <h2>
-                            Source Information
-                        </h2>
+                        <div className="admin-source-heading">
+                            <div>
+                                <h2>Source Information</h2>
 
-                        <div className="admin-source-list">
-                            {product.sources.map(
-                                (
-                                    source,
-                                    index
-                                ) => (
-                                    <div
-                                        className="admin-source-card"
-                                        key={
-                                            index
-                                        }
-                                    >
-                                        <div>
-                                            <strong>
-                                                Collection
-                                            </strong>
+                                <p className="admin-section-note">
+                                    Original catalogue import records
+                                    associated with this product.
+                                </p>
+                            </div>
+                        </div>
 
-                                            <span>
-                                                {source.collectionName ||
-                                                    source.collectionHandle ||
-                                                    "—"}
-                                            </span>
-                                        </div>
+                        <div className="admin-source-table-wrap">
+                            <table className="admin-source-table">
+                                <thead>
+                                    <tr>
+                                        <th>Collection</th>
+                                        <th>Excel File</th>
+                                        <th>Source Row</th>
+                                        <th>Raw Part Number</th>
+                                    </tr>
+                                </thead>
 
-                                        <div>
-                                            <strong>
-                                                Excel
-                                                File
-                                            </strong>
+                                <tbody>
+                                    {product.sources.map(
+                                        (source, index) => (
+                                            <tr key={index}>
+                                                <td>
+                                                    {source.collectionName ||
+                                                        source.collectionHandle ||
+                                                        "—"}
+                                                </td>
 
-                                            <span>
-                                                {source.excelFile ||
-                                                    "—"}
-                                            </span>
-                                        </div>
+                                                <td>
+                                                    <span className="admin-source-file">
+                                                        {source.excelFile ||
+                                                            "—"}
+                                                    </span>
+                                                </td>
 
-                                        <div>
-                                            <strong>
-                                                Source
-                                                Row
-                                            </strong>
+                                                <td>
+                                                    {source.sourceRow ??
+                                                        "—"}
+                                                </td>
 
-                                            <span>
-                                                {source.sourceRow ??
-                                                    "—"}
-                                            </span>
-                                        </div>
-
-                                        <div>
-                                            <strong>
-                                                Raw Part
-                                                Number
-                                            </strong>
-
-                                            <span>
-                                                {source.rawPartNumber ||
-                                                    "—"}
-                                            </span>
-                                        </div>
-                                    </div>
-                                )
-                            )}
+                                                <td>
+                                                    <strong>
+                                                        {source.rawPartNumber ||
+                                                            "—"}
+                                                    </strong>
+                                                </td>
+                                            </tr>
+                                        )
+                                    )}
+                                </tbody>
+                            </table>
                         </div>
                     </section>
                 )}
