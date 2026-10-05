@@ -1,4 +1,6 @@
-import { getRequestContext } from "@cloudflare/next-on-pages";
+import {
+  getRequestContext,
+} from "@cloudflare/next-on-pages";
 
 import {
   deleteProduct,
@@ -6,20 +8,13 @@ import {
   type R2BucketLike,
 } from "@/lib/admin/product-sync";
 
+import {
+  normalizeAdminProduct,
+  productKeys,
+  validateAdminProduct,
+} from "@/lib/admin/product-normalize";
+
 export const runtime = "edge";
-
-function productFolder(handle: string) {
-  let hash = 0;
-
-  for (let i = 0; i < handle.length; i++) {
-    hash =
-      (hash * 31 + handle.charCodeAt(i)) >>> 0;
-  }
-
-  return (hash % 256)
-    .toString(16)
-    .padStart(2, "0");
-}
 
 function getBucket() {
   const context =
@@ -39,6 +34,38 @@ function getBucket() {
   return env.CATALOG_BUCKET;
 }
 
+function safeHandle(
+  value: unknown
+) {
+  return String(
+    value || ""
+  )
+    .trim()
+    .toLowerCase();
+}
+
+async function findProductObject(
+  bucket: R2BucketLike,
+  handle: string
+) {
+  const keys =
+    productKeys(handle);
+
+  for (const key of keys) {
+    const object =
+      await bucket.get(key);
+
+    if (object) {
+      return {
+        key,
+        object,
+      };
+    }
+  }
+
+  return null;
+}
+
 export async function GET(
   _request: Request,
   context: {
@@ -51,50 +78,69 @@ export async function GET(
     const { handle } =
       await context.params;
 
-    const safeHandle =
-      String(handle || "")
-        .trim()
-        .toLowerCase();
+    const handleValue =
+      safeHandle(handle);
 
-    if (!safeHandle) {
+    if (!handleValue) {
       return Response.json(
         {
           success: false,
           error:
             "Missing product handle.",
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
     const bucket =
       getBucket();
 
-    const folder =
-      productFolder(safeHandle);
+    const found =
+      await findProductObject(
+        bucket,
+        handleValue
+      );
 
-    const key =
-      `catalog/products/` +
-      `${folder}/${safeHandle}.json`;
-
-    const object =
-      await bucket.get(key);
-
-    if (!object) {
+    if (!found) {
       return Response.json(
         {
           success: false,
           error:
             "Product not found.",
-          key,
         },
-        { status: 404 }
+        {
+          status: 404,
+        }
       );
     }
 
-    const product =
+    const {
+      key,
+      object,
+    } = found;
+
+    const rawProduct =
       JSON.parse(
         await object.text()
+      );
+
+    /*
+     * Normalize on read so older products
+     * that only contain the original
+     * Sparesco fields can immediately be
+     * edited by the expanded admin UI.
+     *
+     * This does NOT write anything to R2.
+     */
+    const product =
+      normalizeAdminProduct(
+        rawProduct,
+        {
+          existing:
+            rawProduct,
+        }
       );
 
     return Response.json({
@@ -116,7 +162,9 @@ export async function GET(
             ? error.message
             : "Unable to load product.",
       },
-      { status: 500 }
+      {
+        status: 500,
+      }
     );
   }
 }
@@ -133,19 +181,19 @@ export async function PUT(
     const { handle } =
       await context.params;
 
-    const safeHandle =
-      String(handle || "")
-        .trim()
-        .toLowerCase();
+    const handleValue =
+      safeHandle(handle);
 
-    if (!safeHandle) {
+    if (!handleValue) {
       return Response.json(
         {
           success: false,
           error:
             "Missing product handle.",
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
@@ -154,7 +202,8 @@ export async function PUT(
 
     if (
       !incoming ||
-      typeof incoming !== "object"
+      typeof incoming !==
+      "object"
     ) {
       return Response.json(
         {
@@ -162,19 +211,20 @@ export async function PUT(
           error:
             "Invalid product data.",
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
     /*
-     * Handle changes remain blocked.
+     * Product handles remain immutable.
      */
     if (
       incoming.handle &&
-      String(incoming.handle)
-        .trim()
-        .toLowerCase() !==
-      safeHandle
+      safeHandle(
+        incoming.handle
+      ) !== handleValue
     ) {
       return Response.json(
         {
@@ -182,85 +232,117 @@ export async function PUT(
           error:
             "Product handle cannot be changed.",
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
     const bucket =
       getBucket();
 
-    const folder =
-      productFolder(safeHandle);
+    const found =
+      await findProductObject(
+        bucket,
+        handleValue
+      );
 
-    const key =
-      `catalog/products/` +
-      `${folder}/${safeHandle}.json`;
-
-    const existingObject =
-      await bucket.get(key);
-
-    if (!existingObject) {
+    if (!found) {
       return Response.json(
         {
           success: false,
           error:
             "Product not found.",
-          key,
         },
-        { status: 404 }
+        {
+          status: 404,
+        }
       );
     }
+
+    const {
+      key,
+      object: existingObject,
+    } = found;
 
     const existing =
       JSON.parse(
         await existingObject.text()
       );
 
-    const product = {
+    /*
+     * Merge first so fields not exposed by
+     * the current editor are not silently
+     * destroyed.
+     */
+    const merged = {
       ...existing,
       ...incoming,
 
-      handle: safeHandle,
+      handle:
+        handleValue,
 
       canonicalKey:
-        existing.canonicalKey ||
-        safeHandle,
-
-      imageFolder:
-        incoming.imageFolder ||
-        existing.imageFolder ||
-        incoming.collection ||
-        existing.collection ||
-        "",
+        existing
+          .canonicalKey ||
+        handleValue,
 
       sources:
-        existing.sources || [],
+        existing.sources ||
+        incoming.sources ||
+        [],
     };
 
-    if (
-      !product.title ||
-      !product.collection ||
-      !Array.isArray(
-        product.variants
-      )
-    ) {
+    const product =
+      normalizeAdminProduct(
+        merged,
+        {
+          existing,
+        }
+      );
+
+    /*
+     * Explicitly preserve the immutable
+     * handle/canonical identity.
+     */
+    product.handle =
+      handleValue;
+
+    product.canonicalKey =
+      existing
+        .canonicalKey ||
+      handleValue;
+
+    product.sources =
+      existing.sources ||
+      product.sources ||
+      [];
+
+    const validationError =
+      validateAdminProduct(
+        product
+      );
+
+    if (validationError) {
       return Response.json(
         {
           success: false,
           error:
-            "Product title, collection and variants are required.",
+            validationError,
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
-    
-
     /*
-     * Synchronize lightweight website indexes first.
+     * Synchronize catalogue/search/
+     * collection structures before
+     * replacing the master JSON.
      *
-     * If synchronization fails, the master product
-     * is NOT changed.
+     * If synchronization fails, the
+     * master product remains unchanged.
      */
     const syncResult =
       await syncExistingProduct(
@@ -269,13 +351,11 @@ export async function PUT(
         product
       );
 
-    /*
-     * Only commit the master product after the
-     * required synchronization succeeds.
-     */
     await bucket.put(
       key,
-      JSON.stringify(product),
+      JSON.stringify(
+        product
+      ),
       {
         httpMetadata: {
           contentType:
@@ -289,11 +369,15 @@ export async function PUT(
 
     return Response.json({
       success: true,
+
       message:
         "Product saved.",
 
-      handle: safeHandle,
+      handle:
+        handleValue,
+
       key,
+
       product,
 
       synchronizedFiles:
@@ -314,13 +398,15 @@ export async function PUT(
             ? error.message
             : "Unable to save product.",
       },
-      { status: 500 }
+      {
+        status: 500,
+      }
     );
   }
 }
 
 export async function DELETE(
-  _request: Request,
+  request: Request,
   context: {
     params: Promise<{
       handle: string;
@@ -331,73 +417,71 @@ export async function DELETE(
     const { handle } =
       await context.params;
 
-    const safeHandle =
-      String(handle || "")
-        .trim()
-        .toLowerCase();
+    const handleValue =
+      safeHandle(handle);
 
-    if (!safeHandle) {
+    if (!handleValue) {
       return Response.json(
         {
           success: false,
           error:
             "Missing product handle.",
         },
-        { status: 400 }
+        {
+          status: 400,
+        }
       );
     }
 
     const bucket =
       getBucket();
 
-    let fallbackProduct: any = null;
+    let fallbackProduct:
+      any = null;
 
     try {
       fallbackProduct =
-        await _request.json();
+        await request.json();
     } catch {
-      fallbackProduct = null;
+      fallbackProduct =
+        null;
     }
 
     /*
-     * Remove catalogue/search/index
-     * references first.
-     *
-     * This works even when the master
-     * product JSON is already missing.
+     * Remove all catalogue/search/
+     * collection/index references using
+     * the existing synchronization engine.
      */
     const result =
       await deleteProduct(
         bucket,
-        safeHandle,
+        handleValue,
         fallbackProduct
       );
 
     /*
-     * Remove master JSON if it exists.
-     */
-
-    const folder =
-      productFolder(
-        safeHandle
+* Then remove every possible master JSON.
+*
+* Normally only one exists, but deleting both
+* prevents an old legacy copy from surviving.
+*/
+    const keys =
+      productKeys(
+        handleValue
       );
 
-    const key =
-      `catalog/products/` +
-      `${folder}/${safeHandle}.json`;
-
-    await bucket.delete(
-      key
-    );
+    for (const key of keys) {
+      await bucket.delete(key);
+    }
 
     return Response.json({
       success: true,
 
       message:
-        `Product "${safeHandle}" deleted.`,
+        `Product "${handleValue}" deleted.`,
 
       handle:
-        safeHandle,
+        handleValue,
 
       synchronizedFiles:
         result.updatedFiles,
@@ -417,7 +501,9 @@ export async function DELETE(
             ? error.message
             : "Unable to delete product.",
       },
-      { status: 500 }
+      {
+        status: 500,
+      }
     );
   }
 }

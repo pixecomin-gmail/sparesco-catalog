@@ -7,64 +7,31 @@ import {
     type R2BucketLike,
 } from "@/lib/admin/product-sync";
 
+import {
+    normalizeAdminProduct,
+    productKey,
+    productKeys,
+    validateAdminProduct,
+} from "@/lib/admin/product-normalize";
+
 export const runtime = "edge";
 
-function clean(value: unknown) {
-    return String(
-        value ?? ""
-    ).trim();
-}
+function getBucket() {
+    const context =
+        getRequestContext();
 
-function slugify(value: unknown) {
-    return String(value || "")
-        .trim()
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "");
-}
+    const env =
+        context.env as unknown as {
+            CATALOG_BUCKET?: R2BucketLike;
+        };
 
-function unique(
-    values: string[]
-) {
-    return Array.from(
-        new Set(values)
-    );
-}
-
-function productFolder(
-    handle: string
-) {
-    let hash = 0;
-
-    for (
-        let index = 0;
-        index < handle.length;
-        index++
-    ) {
-        hash =
-            (
-                (hash << 5) -
-                hash +
-                handle.charCodeAt(index)
-            ) | 0;
+    if (!env.CATALOG_BUCKET) {
+        throw new Error(
+            "CATALOG_BUCKET binding is not configured."
+        );
     }
 
-    return (
-        Math.abs(hash)
-            .toString(16)
-            .padStart(2, "0")
-            .slice(0, 2)
-    );
-}
-
-function productKey(
-    handle: string
-) {
-    return (
-        `catalog/products/` +
-        `${productFolder(handle)}/` +
-        `${handle}.json`
-    );
+    return env.CATALOG_BUCKET;
 }
 
 export async function POST(
@@ -74,294 +41,123 @@ export async function POST(
         const body =
             await request.json();
 
-        const title =
-            clean(body?.title);
-
-        const handle =
-            slugify(body?.handle);
-
-        const tags =
-            unique(
-                (
-                    Array.isArray(body?.tags)
-                        ? body.tags
-                        : []
-                )
-                    .map(slugify)
-                    .filter(Boolean)
-            );
-
-        const category =
-            slugify(
-                body?.category
-            );
-
-        const variants =
-            Array.isArray(
-                body?.variants
-            )
-                ? body.variants
-                : [];
-
-        if (!title) {
-            return Response.json(
-                {
-                    error:
-                        "Product title is required.",
-                },
-                {
-                    status: 400,
-                }
-            );
-        }
-
-        if (!handle) {
-            return Response.json(
-                {
-                    error:
-                        "Product handle is required.",
-                },
-                {
-                    status: 400,
-                }
-            );
-        }
-
-        if (!tags.length) {
-            return Response.json(
-                {
-                    error:
-                        "Add at least one tag / collection.",
-                },
-                {
-                    status: 400,
-                }
-            );
-        }
-
-        if (!variants.length) {
-            return Response.json(
-                {
-                    error:
-                        "Add at least one variant.",
-                },
-                {
-                    status: 400,
-                }
-            );
-        }
-
-        for (
-            let index = 0;
-            index < variants.length;
-            index++
+        if (
+            !body ||
+            typeof body !== "object"
         ) {
-            const variant =
-                variants[index];
-
-            if (
-                !clean(
-                    variant?.partNumber
-                )
-            ) {
-                return Response.json(
-                    {
-                        error:
-                            `Variant ${index + 1}: ` +
-                            `Part number is required.`,
-                    },
-                    {
-                        status: 400,
-                    }
-                );
-            }
-
-            if (
-                !clean(
-                    variant?.title
-                )
-            ) {
-                return Response.json(
-                    {
-                        error:
-                            `Variant ${index + 1}: ` +
-                            `title is required.`,
-                    },
-                    {
-                        status: 400,
-                    }
-                );
-            }
+            return Response.json(
+                {
+                    success: false,
+                    error:
+                        "Invalid product data.",
+                },
+                {
+                    status: 400,
+                }
+            );
         }
 
-        const primaryCollection =
-            tags[0];
-
-        const product = {
-            handle,
-            canonicalKey:
-                handle,
-
-            title,
-
-            collection:
-                primaryCollection,
-
-            category:
-                category ||
-                primaryCollection,
-
-            imageFolder:
-                primaryCollection,
-
-            tags,
-
-            images:
-                Array.isArray(
-                    body?.images
-                )
-                    ? body.images
-                        .map(clean)
-                        .filter(Boolean)
-                    : [],
-
-            variants:
-                variants.map(
-                    (variant: any) => ({
-                        title:
-                            clean(
-                                variant?.title
-                            ),
-
-                        option1Value:
-                            clean(
-                                variant?.option1Value
-                            ),
-
-                        image:
-                            clean(
-                                variant?.image
-                            ),
-
-                        vendor:
-                            clean(
-                                variant?.vendor
-                            ),
-
-                        price:
-                            Number(
-                                variant?.price || 0
-                            ),
-
-                        partNumber:
-                            clean(
-                                variant?.partNumber
-                            ),
-
-                        hsCode:
-                            clean(
-                                variant?.hsCode
-                            ),
-
-                        countryOfOrigin:
-                            clean(
-                                variant?.countryOfOrigin
-                            ),
-
-                        description:
-                            clean(
-                                variant?.description
-                            ),
-
-                        specifications:
-                            Array.isArray(
-                                variant
-                                    ?.specifications
-                            )
-                                ? variant
-                                    .specifications
-                                    .map(clean)
-                                    .filter(Boolean)
-                                : [],
-
-                        unitWeight:
-                            clean(
-                                variant?.unitWeight
-                            ),
-
-                        shippingVolume:
-                            clean(
-                                variant
-                                    ?.shippingVolume
-                            ),
-                    })
-                ),
-
-            sources: [
+        /*
+         * Normalize every admin-created
+         * product through the same model used
+         * by Excel import and the editor.
+         */
+        const product =
+            normalizeAdminProduct(
+                body,
                 {
                     source:
                         "admin",
+                }
+            );
 
-                    createdAt:
-                        new Date()
-                            .toISOString(),
+        const validationError =
+            validateAdminProduct(
+                product
+            );
+
+        if (validationError) {
+            return Response.json(
+                {
+                    success: false,
+                    error:
+                        validationError,
                 },
-            ],
-        };
-
-        const context =
-            getRequestContext();
-
-        const env =
-            context.env as unknown as {
-                CATALOG_BUCKET?: R2BucketLike;
-            };
-
-        if (!env.CATALOG_BUCKET) {
-            throw new Error(
-                "CATALOG_BUCKET binding is not configured."
+                {
+                    status: 400,
+                }
             );
         }
 
         const bucket =
-            env.CATALOG_BUCKET;
+            getBucket();
 
         const key =
-            productKey(handle);
+            productKey(
+                product.handle
+            );
 
         /*
-         * Never overwrite an existing
-         * master product.
+         * Never overwrite an existing product.
+         *
+         * Check both the current canonical path
+         * and the legacy admin path.
          */
-        const existing =
-            await bucket.get(key);
-
-        if (existing) {
-            return Response.json(
-                {
-                    error:
-                        `Product "${handle}" already exists.`,
-                },
-                {
-                    status: 409,
-                }
+        const possibleKeys =
+            productKeys(
+                product.handle
             );
+
+        for (const existingKey of possibleKeys) {
+            const existing =
+                await bucket.get(
+                    existingKey
+                );
+
+            if (existing) {
+                return Response.json(
+                    {
+                        error:
+                            `Product "${product.handle}" already exists.`,
+                    },
+                    {
+                        status: 409,
+                    }
+                );
+            }
         }
 
         /*
-         * Synchronize catalogue indexes
-         * before committing the master
-         * product JSON.
+         * Add provenance only after
+         * normalization so the source array
+         * remains additive metadata.
          */
+        product.sources = [
+            {
+                source:
+                    "admin",
+
+                createdAt:
+                    new Date()
+                        .toISOString(),
+            },
+        ];
+
         /*
- * Commit the master product first.
- *
- * This guarantees that once catalogue/search
- * synchronization begins, the PDP source exists.
- */
+         * IMPORTANT:
+         *
+         * Write the master product first.
+         *
+         * Public catalogue/search
+         * synchronization may create
+         * references to this handle, so the
+         * PDP source must already exist.
+         */
         await bucket.put(
             key,
-            JSON.stringify(product),
+            JSON.stringify(
+                product
+            ),
             {
                 httpMetadata: {
                     contentType:
@@ -383,10 +179,13 @@ export async function POST(
                 );
         } catch (error) {
             /*
-             * Master JSON deliberately remains in R2.
-             * Retrying the synchronization is safer
-             * than exposing search/collection entries
-             * whose PDP does not exist.
+             * Deliberately keep the master
+             * JSON if synchronization fails.
+             *
+             * That is safer than creating
+             * catalogue/search references to
+             * a product whose PDP source does
+             * not exist.
              */
             throw error;
         }
@@ -397,7 +196,8 @@ export async function POST(
             message:
                 "Product created successfully.",
 
-            handle,
+            handle:
+                product.handle,
 
             key,
 
@@ -414,6 +214,8 @@ export async function POST(
 
         return Response.json(
             {
+                success: false,
+
                 error:
                     "Failed to create product.",
 

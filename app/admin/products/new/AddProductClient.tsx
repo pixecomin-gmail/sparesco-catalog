@@ -12,28 +12,94 @@ import type {
 } from "@/lib/admin/excel-product-import";
 
 type ProductVariant = {
+    id?: string;
+
     title: string;
+
+    option1Name?: string;
     option1Value: string;
+
+    option2Name?: string;
+    option2Value?: string;
+
+    option3Name?: string;
+    option3Value?: string;
+
+    position?: number;
+
+    sku?: string;
+    barcode?: string;
+
     image: string;
+
+    weight?: number;
+    weightUnit?: string;
+
     vendor: string;
+
     price: number;
+    compareAtPrice?: number;
+    cost?: number;
+
+    taxable?: boolean;
+    taxCode?: string;
+
+    inventoryTracker?: string;
+    inventoryPolicy?: string;
+    inventoryQty?: number;
+
+    requiresShipping?: boolean;
+    shippingProfile?: string;
+
     partNumber: string;
+
     hsCode: string;
     countryOfOrigin: string;
+
     description: string;
     specifications: string[];
+
     unitWeight: string;
     shippingVolume: string;
 };
 
+type ProductMedia = {
+    src: string;
+    position: number;
+    altText: string;
+};
+
 type NewProduct = {
     handle: string;
+
     title: string;
+    bodyHtml?: string;
+
+    vendor?: string;
+    type?: string;
+
     collection: string;
     category: string;
+
+    categoryId?: string;
+    categoryName?: string;
+
     imageFolder: string;
+
     tags: string[];
+    customCollections?: string[];
+
+    status?: string;
+
+    published?: boolean;
+    publishedAt?: string;
+
+    templateSuffix?: string;
+    giftCard?: boolean;
+
     images: string[];
+    media?: ProductMedia[];
+
     variants: ProductVariant[];
 };
 
@@ -184,8 +250,11 @@ export default function AddProductClient() {
 
     const [excelImportResult, setExcelImportResult] =
         useState<{
-            importedCount: number;
+            createdCount: number;
+            updatedCount: number;
             skippedCount: number;
+            created: string[];
+            updated: string[];
             skipped: string[];
         } | null>(null);
 
@@ -482,7 +551,7 @@ export default function AddProductClient() {
 
         const confirmed =
             window.confirm(
-                `Import ${excelProducts.length} products from ${excelFile.name}? Existing product handles will be skipped.`
+                `Import ${excelProducts.length} products from ${excelFile.name}?\n\nNew handles will be created.\nExisting handles will be updated.`
             );
 
         if (!confirmed) {
@@ -496,8 +565,11 @@ export default function AddProductClient() {
         try {
             const BATCH_SIZE = 100;
 
-            let importedCount = 0;
+            let createdCount = 0;
+            let updatedCount = 0;
             let skippedCount = 0;
+            const created: string[] = [];
+            const updated: string[] = [];
             const skipped: string[] = [];
 
             for (
@@ -551,15 +623,28 @@ export default function AddProductClient() {
                     );
                 }
 
-                importedCount +=
+                createdCount +=
                     Number(
-                        data.importedCount || 0
+                        data.createdCount || 0
+                    );
+
+                updatedCount +=
+                    Number(
+                        data.updatedCount || 0
                     );
 
                 skippedCount +=
                     Number(
                         data.skippedCount || 0
                     );
+
+                if (Array.isArray(data.created)) {
+                    created.push(...data.created);
+                }
+
+                if (Array.isArray(data.updated)) {
+                    updated.push(...data.updated);
+                }
 
                 if (
                     Array.isArray(
@@ -573,13 +658,16 @@ export default function AddProductClient() {
             }
 
             setExcelImportResult({
-                importedCount,
+                createdCount,
+                updatedCount,
                 skippedCount,
+                created,
+                updated,
                 skipped,
             });
 
             alert(
-                `Excel import complete.\n\nImported: ${importedCount}\nSkipped existing: ${skippedCount}`
+                `Excel import complete.\n\nCreated: ${createdCount}\nUpdated: ${updatedCount}\nSkipped: ${skippedCount}`
             );
         } catch (error) {
             console.error(
@@ -1911,9 +1999,8 @@ export default function AddProductClient() {
                                                     opacity: 0.7,
                                                 }}
                                             >
-                                                Existing product
-                                                handles will be
-                                                skipped.
+                                                New products will be created.
+                                                Existing products will be updated.
                                             </span>
                                         </div>
 
@@ -1942,18 +2029,27 @@ export default function AddProductClient() {
                                                     }}
                                                 >
                                                     <span>
-                                                        Imported:{" "}
+                                                        Created:{" "}
                                                         <strong>
                                                             {
                                                                 excelImportResult
-                                                                    .importedCount
+                                                                    .createdCount
                                                             }
                                                         </strong>
                                                     </span>
 
                                                     <span>
-                                                        Existing products
-                                                        skipped:{" "}
+                                                        Updated:{" "}
+                                                        <strong>
+                                                            {
+                                                                excelImportResult
+                                                                    .updatedCount
+                                                            }
+                                                        </strong>
+                                                    </span>
+
+                                                    <span>
+                                                        Skipped:{" "}
                                                         <strong>
                                                             {
                                                                 excelImportResult

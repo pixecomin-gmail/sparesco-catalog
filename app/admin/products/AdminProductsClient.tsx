@@ -24,11 +24,9 @@ export default function AdminProductsClient() {
     const [loading, setLoading] = useState(false);
     const [searched, setSearched] = useState(false);
     const [error, setError] = useState("");
-    const [deletingHandle, setDeletingHandle] = useState("");
 
     const searchProducts = async (event: FormEvent) => {
         event.preventDefault();
-
         const value = query.trim();
 
         if (value.length < 2) {
@@ -51,7 +49,6 @@ export default function AdminProductsClient() {
             }
 
             const data = (await response.json()) as ProductResult[];
-
             setProducts(data);
             setSearched(true);
         } catch {
@@ -63,86 +60,9 @@ export default function AdminProductsClient() {
         }
     };
 
-    const deleteProduct = async (product: ProductResult) => {
-        const confirmed = window.confirm(
-            `Delete "${product.title}"?\n\n` +
-            `Handle: ${product.handle}\n\n` +
-            `This will remove the product from the catalogue, collections and search.`
-        );
-
-        if (!confirmed) {
-            return;
-        }
-
-        setDeletingHandle(product.handle);
-        setError("");
-
-        try {
-            const response = await fetch(
-                `/api/admin/products/${encodeURIComponent(product.handle)}`,
-                {
-                    method: "DELETE",
-
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-
-                    body: JSON.stringify({
-                        handle: product.handle,
-                        title: product.title,
-                        collection: product.collection,
-                        category: product.category,
-                        partNumber: product.partNumber,
-                        vendor: product.vendor,
-                        variantCount: product.variantCount,
-                        image: product.image,
-                    }),
-                }
-            );
-
-            const contentType =
-                response.headers.get("content-type") || "";
-
-            let data: any = null;
-
-            if (contentType.includes("application/json")) {
-                data = await response.json();
-            }
-
-            if (!response.ok || !data?.success) {
-                throw new Error(
-                    data?.error ||
-                    data?.message ||
-                    `Unable to delete product (${response.status}).`
-                );
-            }
-
-            setProducts((current) =>
-                current.filter(
-                    (item) => item.handle !== product.handle
-                )
-            );
-
-            alert(`"${product.title}" deleted successfully.`);
-        } catch (error) {
-            console.error("Delete product error:", error);
-
-            setError(
-                error instanceof Error
-                    ? error.message
-                    : "Unable to delete product."
-            );
-        } finally {
-            setDeletingHandle("");
-        }
-    };
-
     return (
         <div>
-            <form
-                className="admin-product-search"
-                onSubmit={searchProducts}
-            >
+            <form className="admin-product-search" onSubmit={searchProducts}>
                 <input
                     type="text"
                     value={query}
@@ -160,11 +80,7 @@ export default function AdminProductsClient() {
                 </button>
             </form>
 
-            {error && (
-                <div className="admin-form-error">
-                    {error}
-                </div>
-            )}
+            {error && <div className="admin-form-error">{error}</div>}
 
             {!searched && (
                 <div className="admin-product-empty">
@@ -173,9 +89,7 @@ export default function AdminProductsClient() {
             )}
 
             {searched && !loading && products.length === 0 && !error && (
-                <div className="admin-product-empty">
-                    No products found.
-                </div>
+                <div className="admin-product-empty">No products found.</div>
             )}
 
             {products.length > 0 && (
@@ -194,18 +108,23 @@ export default function AdminProductsClient() {
                                     <th>Brand</th>
                                     <th>Collection</th>
                                     <th>Variants</th>
-                                    <th></th>
+                                    <th />
                                 </tr>
                             </thead>
 
                             <tbody>
-                                {products.map((product) => {
-                                    const isDeleting =
-                                        deletingHandle === product.handle;
-
-                                    return (
-                                        <tr key={product.handle}>
-                                            <td>
+                                {products.map((product) => (
+                                    <tr key={product.handle}>
+                                        <td>
+                                            <Link
+                                                href={`/admin/products/${encodeURIComponent(
+                                                    product.handle
+                                                )}`}
+                                                style={{
+                                                    color: "inherit",
+                                                    textDecoration: "none",
+                                                }}
+                                            >
                                                 <div className="admin-product-name-cell">
                                                     {product.image ? (
                                                         <img
@@ -225,86 +144,34 @@ export default function AdminProductsClient() {
                                                         <strong>
                                                             {product.title}
                                                         </strong>
-
                                                         <span>
                                                             {product.handle}
                                                         </span>
                                                     </div>
                                                 </div>
-                                            </td>
+                                            </Link>
+                                        </td>
 
-                                            <td>
-                                                {product.partNumber || "—"}
-                                            </td>
-
-                                            <td>
-                                                {product.vendor || "—"}
-                                            </td>
-
-                                            <td>
-                                                {product.collectionTitle ||
-                                                    product.collection ||
-                                                    "—"}
-                                            </td>
-
-                                            <td>
-                                                {product.variantCount || 1}
-                                            </td>
-
-                                            <td className="admin-product-action-cell">
-                                                <div
-                                                    style={{
-                                                        display: "flex",
-                                                        alignItems: "center",
-                                                        justifyContent:
-                                                            "flex-end",
-                                                        gap: 12,
-                                                    }}
-                                                >
-                                                    <Link
-                                                        href={`/admin/products/${product.handle}`}
-                                                        className="admin-edit-link"
-                                                    >
-                                                        Edit
-                                                    </Link>
-
-                                                    <button
-                                                        type="button"
-                                                        onClick={() =>
-                                                            deleteProduct(product)
-                                                        }
-                                                        disabled={
-                                                            Boolean(
-                                                                deletingHandle
-                                                            )
-                                                        }
-                                                        style={{
-                                                            border: 0,
-                                                            padding: 0,
-                                                            background:
-                                                                "transparent",
-                                                            color: "#b42318",
-                                                            font: "inherit",
-                                                            fontWeight: 600,
-                                                            cursor: isDeleting
-                                                                ? "wait"
-                                                                : "pointer",
-                                                            opacity:
-                                                                deletingHandle &&
-                                                                    !isDeleting
-                                                                    ? 0.5
-                                                                    : 1,
-                                                        }}
-                                                    >
-                                                        {isDeleting
-                                                            ? "Deleting..."
-                                                            : "Delete"}
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    );
-                                })}
+                                        <td>{product.partNumber || "—"}</td>
+                                        <td>{product.vendor || "—"}</td>
+                                        <td>
+                                            {product.collectionTitle ||
+                                                product.collection ||
+                                                "—"}
+                                        </td>
+                                        <td>{product.variantCount || 1}</td>
+                                        <td className="admin-product-action-cell">
+                                            <Link
+                                                href={`/admin/products/${encodeURIComponent(
+                                                    product.handle
+                                                )}`}
+                                                className="admin-edit-link"
+                                            >
+                                                Open
+                                            </Link>
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>

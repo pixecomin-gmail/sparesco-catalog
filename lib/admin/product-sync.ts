@@ -1505,75 +1505,7 @@ export async function deleteProduct(
     catalogMetaKey
   );
 
-  /*
-   * --------------------------------
-   * FILTER INDEX
-   * --------------------------------
-   */
-
-  const existingFilter =
-    (await readJson(
-      bucket,
-      filterIndexKey
-    )) || {};
-
-  const brandCounts =
-    new Map<string, number>();
-
-  for (
-    const item of nextCatalog
-  ) {
-    const vendor =
-      clean(item?.vendor);
-
-    if (!vendor) {
-      continue;
-    }
-
-    brandCounts.set(
-      vendor,
-      (
-        brandCounts.get(
-          vendor
-        ) || 0
-      ) + 1
-    );
-  }
-
-  const brands =
-    Array.from(
-      brandCounts.entries()
-    )
-      .map(
-        ([title, count]) => ({
-          handle: title,
-          title,
-          count,
-        })
-      )
-      .sort(
-        (a, b) =>
-          a.title.localeCompare(
-            b.title
-          )
-      );
-
-  await writeJson(
-    bucket,
-    filterIndexKey,
-    {
-      ...existingFilter,
-
-      categories:
-        collections,
-
-      brands,
-    }
-  );
-
-  updatedFiles.push(
-    filterIndexKey
-  );
+   
 
   /*
    * --------------------------------
@@ -2461,32 +2393,34 @@ export async function syncExistingProduct(
       ? [...catalogIndexRaw]
       : [];
 
-  const catalogIndexResult =
-    replaceProduct(
-      catalogIndex,
-      handle,
-      summary
+    const catalogIndexPosition =
+    catalogIndex.findIndex(
+      (item: any) =>
+        clean(item?.handle)
+          .toLowerCase() ===
+        handle
     );
 
-  let nextCatalog =
-    catalogIndexResult.products;
-
-  if (
-    catalogIndexResult.changed
-  ) {
+  if (catalogIndexPosition >= 0) {
     /*
-     * catalog-index.json itself is kept sorted.
-     * Numbered pages do NOT need full repagination.
+     * Update only this product.
+     *
+     * Do NOT sort the entire 100k+ product
+     * catalogue during an Admin Save.
      */
-    nextCatalog =
-      sortSummaries(
-        catalogIndexResult.products
-      );
+    catalogIndex[
+      catalogIndexPosition
+    ] = {
+      ...catalogIndex[
+        catalogIndexPosition
+      ],
+      ...summary,
+    };
 
     await writeJson(
       bucket,
       catalogIndexKey,
-      nextCatalog
+      catalogIndex
     );
 
     updatedFiles.push(
@@ -2998,12 +2932,13 @@ export async function syncExistingProduct(
     collectionsKey
   );
 
-  /*
+    /*
    * ------------------------------------------------
    * FILTER INDEX
    * ------------------------------------------------
    *
-   * Rebuild brands from the updated catalogue.
+   * Update only the old/new vendor counts.
+   * Do not rebuild brands from the full catalogue.
    */
   const filterIndexKey =
     "catalog/indexes/filter-index.json";
@@ -3014,57 +2949,114 @@ export async function syncExistingProduct(
       filterIndexKey
     )) || {};
 
-  const brandCounts =
-    new Map<string, number>();
+  const brands =
+    Array.isArray(
+      existingFilter?.brands
+    )
+      ? [...existingFilter.brands]
+      : [];
 
-  for (
-    const item
-    of nextCatalog
-  ) {
-    const vendor =
-      clean(item?.vendor);
+  const oldVendor =
+    clean(
+      existingProduct
+        ?.variants?.[0]
+        ?.vendor
+    );
 
-    if (!vendor) {
-      continue;
+  const newVendor =
+    clean(
+      updatedProduct
+        ?.variants?.[0]
+        ?.vendor
+    );
+
+  if (oldVendor !== newVendor) {
+    if (oldVendor) {
+      const oldVendorIndex =
+        brands.findIndex(
+          (item: any) =>
+            clean(item?.title) ===
+            oldVendor
+        );
+
+      if (oldVendorIndex >= 0) {
+        const nextCount =
+          Math.max(
+            0,
+            Number(
+              brands[
+                oldVendorIndex
+              ]?.count || 0
+            ) - 1
+          );
+
+        if (nextCount === 0) {
+          brands.splice(
+            oldVendorIndex,
+            1
+          );
+        } else {
+          brands[
+            oldVendorIndex
+          ] = {
+            ...brands[
+              oldVendorIndex
+            ],
+            count: nextCount,
+          };
+        }
+      }
     }
 
-    brandCounts.set(
-      vendor,
-      (
-        brandCounts.get(
-          vendor
-        ) || 0
-      ) + 1
-    );
-  }
+    if (newVendor) {
+      const newVendorIndex =
+        brands.findIndex(
+          (item: any) =>
+            clean(item?.title) ===
+            newVendor
+        );
 
-  const brands =
-    Array.from(
-      brandCounts.entries()
-    )
-      .map(
-        ([title, count]) => ({
-          handle: title,
-          title,
-          count,
-        })
-      )
-      .sort(
-        (a, b) =>
-          a.title.localeCompare(
-            b.title
+      if (newVendorIndex >= 0) {
+        brands[
+          newVendorIndex
+        ] = {
+          ...brands[
+            newVendorIndex
+          ],
+          count:
+            Number(
+              brands[
+                newVendorIndex
+              ]?.count || 0
+            ) + 1,
+        };
+      } else {
+        brands.push({
+          handle: newVendor,
+          title: newVendor,
+          count: 1,
+        });
+      }
+
+      brands.sort(
+        (a: any, b: any) =>
+          String(
+            a?.title || ""
+          ).localeCompare(
+            String(
+              b?.title || ""
+            )
           )
       );
+    }
+  }
 
   await writeJson(
     bucket,
     filterIndexKey,
     {
       ...existingFilter,
-
-      categories:
-        collections,
-
+      categories: collections,
       brands,
     }
   );

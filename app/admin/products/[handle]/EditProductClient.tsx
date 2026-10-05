@@ -7,21 +7,65 @@ import {
     useState,
 } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { getCatalogThumbnailUrl } from "@/lib/catalog/thumbnail";
 
 type ProductVariant = {
+    id?: string;
+
     title: string;
+
+    option1Name?: string;
     option1Value?: string;
+
+    option2Name?: string;
+    option2Value?: string;
+
+    option3Name?: string;
+    option3Value?: string;
+
+    position?: number;
+
+    sku?: string;
+    barcode?: string;
+
     image?: string;
+
+    weight?: number;
+    weightUnit?: string;
+
     vendor?: string;
+
     price?: number;
+    compareAtPrice?: number;
+    cost?: number;
+
+    taxable?: boolean;
+    taxCode?: string;
+
+    inventoryTracker?: string;
+    inventoryPolicy?: string;
+    inventoryQty?: number;
+
+    requiresShipping?: boolean;
+    shippingProfile?: string;
+
     partNumber?: string;
+
     hsCode?: string;
     countryOfOrigin?: string;
+
     description?: string;
     specifications?: string[];
+
     unitWeight?: string;
     shippingVolume?: string;
+};
+
+type ProductMedia = {
+    src: string;
+    position: number;
+    altText: string;
 };
 
 type ProductSource = {
@@ -37,13 +81,37 @@ type ProductSource = {
 type Product = {
     handle: string;
     canonicalKey?: string;
+
     title: string;
+    bodyHtml?: string;
+
+    vendor?: string;
+    type?: string;
+
     collection: string;
     category: string;
+
+    categoryId?: string;
+    categoryName?: string;
+
     imageFolder?: string;
+
     tags: string[];
+    customCollections?: string[];
+
+    status?: string;
+
+    published?: boolean;
+    publishedAt?: string;
+
+    templateSuffix?: string;
+    giftCard?: boolean;
+
     images: string[];
+    media?: ProductMedia[];
+
     variants: ProductVariant[];
+
     sources?: ProductSource[];
 };
 
@@ -81,6 +149,8 @@ export default function EditProductClient({
 }: {
     handle: string;
 }) {
+    const router = useRouter();
+
     const [product, setProduct] =
         useState<Product | null>(null);
 
@@ -94,6 +164,8 @@ export default function EditProductClient({
         useState<number[]>([0]);
 
     const [saving, setSaving] = useState(false);
+    const [deleting, setDeleting] =
+        useState(false);
     const [saveMessage, setSaveMessage] = useState("");
     const [saveError, setSaveError] = useState("");
 
@@ -113,19 +185,31 @@ export default function EditProductClient({
                 setError("");
 
                 const response = await fetch(
-                    `/api/product/${encodeURIComponent(handle)}`
+                    `/api/admin/products/${encodeURIComponent(
+                        handle
+                    )}`,
+                    {
+                        cache: "no-store",
+                    }
                 );
 
-                if (!response.ok) {
+                const data =
+                    await response.json();
+
+                if (
+                    !response.ok ||
+                    !data.success ||
+                    !data.product
+                ) {
                     throw new Error(
+                        data.error ||
                         "Unable to load product."
                     );
                 }
 
-                const data =
-                    (await response.json()) as Product;
-
-                setProduct(data);
+                setProduct(
+                    data.product as Product
+                );
             } catch {
                 setError(
                     "Unable to load product."
@@ -157,7 +241,11 @@ export default function EditProductClient({
     function updateVariant(
         index: number,
         field: keyof ProductVariant,
-        value: string | number | string[]
+        value:
+            | string
+            | number
+            | boolean
+            | string[]
     ) {
         setProduct((current) => {
             if (!current) return current;
@@ -167,9 +255,9 @@ export default function EditProductClient({
                     (variant, variantIndex) =>
                         variantIndex === index
                             ? {
-                                ...variant,
-                                [field]: value,
-                            }
+                                  ...variant,
+                                  [field]: value,
+                              }
                             : variant
                 );
 
@@ -186,8 +274,8 @@ export default function EditProductClient({
         setOpenVariants((current) =>
             current.includes(index)
                 ? current.filter(
-                    (item) => item !== index
-                )
+                      (item) => item !== index
+                  )
                 : [...current, index]
         );
     }
@@ -222,7 +310,7 @@ export default function EditProductClient({
             formData.append(
                 "imageFolder",
                 product.imageFolder ||
-                product.collection
+                    product.collection
             );
 
             const response = await fetch(
@@ -240,7 +328,7 @@ export default function EditProductClient({
             if (!response.ok || !data.success) {
                 throw new Error(
                     data.error ||
-                    "Unable to upload images."
+                        "Unable to upload images."
                 );
             }
 
@@ -320,9 +408,9 @@ export default function EditProductClient({
                         (variant) =>
                             variant.image === image
                                 ? {
-                                    ...variant,
-                                    image: "",
-                                }
+                                      ...variant,
+                                      image: "",
+                                  }
                                 : variant
                     ),
             };
@@ -399,11 +487,110 @@ export default function EditProductClient({
         );
     }
 
+    async function deleteCurrentProduct() {
+        if (
+            !product ||
+            deleting ||
+            saving
+        ) {
+            return;
+        }
+
+        const confirmed =
+            window.confirm(
+                `Delete "${product.title}"?\n\n` +
+                    `Handle: ${product.handle}\n\n` +
+                    `This permanently removes the product from ` +
+                    `the catalogue, collections and search.\n\n` +
+                    `This cannot be undone.`
+            );
+
+        if (!confirmed) {
+            return;
+        }
+
+        setDeleting(true);
+        setSaveMessage("");
+        setSaveError("");
+
+        try {
+            const response =
+                await fetch(
+                    `/api/admin/products/${encodeURIComponent(
+                        product.handle
+                    )}`,
+                    {
+                        method: "DELETE",
+
+                        headers: {
+                            "Content-Type":
+                                "application/json",
+                        },
+
+                        /*
+                         * Send the full product as fallback
+                         * information for catalogue cleanup.
+                         */
+                        body:
+                            JSON.stringify(
+                                product
+                            ),
+                    }
+                );
+
+            const responseText =
+                await response.text();
+
+            let data: any = {};
+
+            if (responseText) {
+                try {
+                    data =
+                        JSON.parse(
+                            responseText
+                        );
+                } catch {
+                    throw new Error(
+                        `Delete failed with HTTP ${response.status}.`
+                    );
+                }
+            }
+
+            if (
+                !response.ok ||
+                !data.success
+            ) {
+                throw new Error(
+                    data.error ||
+                        data.message ||
+                        "Unable to delete product."
+                );
+            }
+
+            router.push(
+                "/admin/products"
+            );
+
+            router.refresh();
+        } catch (error) {
+            setSaveError(
+                error instanceof Error
+                    ? error.message
+                    : "Unable to delete product."
+            );
+
+            setDeleting(false);
+        }
+    }
+
     async function saveProduct() {
         if (!product || saving) return;
 
         const confirmed = window.confirm(
-            `Save changes to ${product.title || product.handle}?`
+            `Save changes to ${
+                product.title ||
+                product.handle
+            }?`
         );
 
         if (!confirmed) return;
@@ -414,29 +601,59 @@ export default function EditProductClient({
 
         try {
             const response = await fetch(
-                `/api/admin/products/${encodeURIComponent(product.handle)}`,
+                `/api/admin/products/${encodeURIComponent(
+                    product.handle
+                )}`,
                 {
                     method: "PUT",
                     headers: {
-                        "Content-Type": "application/json",
+                        "Content-Type":
+                            "application/json",
                     },
-                    body: JSON.stringify(product),
+                    body: JSON.stringify(
+                        product
+                    ),
                 }
             );
 
-            const data = await response.json();
+            const responseText =
+                await response.text();
 
-            if (!response.ok || !data.success) {
+            let data: any = {};
+
+            try {
+                data = responseText
+                    ? JSON.parse(
+                          responseText
+                      )
+                    : {};
+            } catch {
                 throw new Error(
-                    data.error || "Unable to save product."
+                    response.ok
+                        ? "The server returned an invalid response."
+                        : `Save failed with HTTP ${response.status}.`
+                );
+            }
+
+            if (
+                !response.ok ||
+                !data.success
+            ) {
+                throw new Error(
+                    data.error ||
+                        "Unable to save product."
                 );
             }
 
             if (data.product) {
-                setProduct(data.product);
+                setProduct(
+                    data.product
+                );
             }
 
-            setSaveMessage("Product saved successfully.");
+            setSaveMessage(
+                "Product saved successfully."
+            );
         } catch (error) {
             setSaveError(
                 error instanceof Error
@@ -447,8 +664,7 @@ export default function EditProductClient({
             setSaving(false);
         }
     }
-
-    return (
+        return (
         <main className="admin-dashboard">
             <div className="admin-page-heading admin-edit-heading">
                 <div>
@@ -482,7 +698,9 @@ export default function EditProductClient({
                         onClick={saveProduct}
                         disabled={saving || !product}
                     >
-                        {saving ? "Saving..." : "Save Product"}
+                        {saving
+                            ? "Saving..."
+                            : "Save Product"}
                     </button>
                 </div>
             </div>
@@ -493,15 +711,21 @@ export default function EditProductClient({
                     role="status"
                 >
                     <div>
-                        <strong>Product saved successfully</strong>
+                        <strong>
+                            Product saved successfully
+                        </strong>
+
                         <span>
-                            Your changes have been saved to the product.
+                            Your changes have been
+                            saved to the product.
                         </span>
                     </div>
 
                     <button
                         type="button"
-                        onClick={() => setSaveMessage("")}
+                        onClick={() =>
+                            setSaveMessage("")
+                        }
                         aria-label="Dismiss notification"
                     >
                         ×
@@ -515,19 +739,26 @@ export default function EditProductClient({
                     role="alert"
                 >
                     <div>
-                        <strong>Product could not be saved</strong>
+                        <strong>
+                            Product could not be saved
+                        </strong>
+
                         <span>{saveError}</span>
                     </div>
 
                     <button
                         type="button"
-                        onClick={() => setSaveError("")}
+                        onClick={() =>
+                            setSaveError("")
+                        }
                         aria-label="Dismiss notification"
                     >
                         ×
                     </button>
                 </div>
             )}
+
+            {/* PRODUCT DETAILS */}
 
             <section className="admin-edit-card">
                 <h2>Product</h2>
@@ -548,9 +779,7 @@ export default function EditProductClient({
                     </div>
 
                     <div className="admin-field">
-                        <label>
-                            Handle
-                        </label>
+                        <label>Handle</label>
 
                         <input
                             value={product.handle}
@@ -565,7 +794,9 @@ export default function EditProductClient({
                         </label>
 
                         <input
-                            value={product.collection}
+                            value={
+                                product.collection
+                            }
                             onChange={(e) =>
                                 updateProduct(
                                     "collection",
@@ -581,7 +812,9 @@ export default function EditProductClient({
                         </label>
 
                         <input
-                            value={product.category}
+                            value={
+                                product.category
+                            }
                             onChange={(e) =>
                                 updateProduct(
                                     "category",
@@ -592,12 +825,12 @@ export default function EditProductClient({
                     </div>
 
                     <div className="admin-field admin-field-full">
-                        <label>
-                            Tags
-                        </label>
+                        <label>Tags</label>
 
                         <input
-                            value={product.tags.join(", ")}
+                            value={product.tags.join(
+                                ", "
+                            )}
                             onChange={(e) =>
                                 updateProduct(
                                     "tags",
@@ -606,7 +839,9 @@ export default function EditProductClient({
                                         .map((tag) =>
                                             tag.trim()
                                         )
-                                        .filter(Boolean)
+                                        .filter(
+                                            Boolean
+                                        )
                                 )
                             }
                             placeholder="tag-one, tag-two"
@@ -615,33 +850,43 @@ export default function EditProductClient({
                 </div>
             </section>
 
+            {/* IMAGES */}
+
             <section className="admin-edit-card">
                 <div className="admin-image-section-heading">
                     <div>
                         <h2>
-                            Images ({product.images.length})
+                            Images (
+                            {product.images.length})
                         </h2>
 
                         <p className="admin-section-note">
-                            Add product images, remove images or
-                            assign an image to all variants.
+                            Add product images,
+                            remove images or assign
+                            an image to all variants.
                         </p>
                     </div>
 
                     <div>
                         <input
-                            ref={productImageInputRef}
+                            ref={
+                                productImageInputRef
+                            }
                             type="file"
                             accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
                             multiple
                             hidden
-                            onChange={uploadImages}
+                            onChange={
+                                uploadImages
+                            }
                         />
 
                         <button
                             type="button"
                             className="admin-secondary-button"
-                            disabled={uploadingImages}
+                            disabled={
+                                uploadingImages
+                            }
                             onClick={() =>
                                 productImageInputRef.current?.click()
                             }
@@ -659,40 +904,54 @@ export default function EditProductClient({
                     </div>
                 )}
 
-                {product.images.length === 0 ? (
+                {product.images.length ===
+                0 ? (
                     <div className="admin-product-empty">
                         No product images.
                     </div>
                 ) : (
                     <div className="admin-edit-images">
                         {product.images.map(
-                            (image, index) => (
+                            (
+                                image,
+                                index
+                            ) => (
                                 <div
                                     key={`${image}-${index}`}
                                     className="admin-edit-image-card admin-manage-image-card"
                                 >
                                     <div className="admin-manage-image-preview">
                                         <img
-                                            src={getCatalogThumbnailUrl({
-                                                image,
-                                                imageFolder:
-                                                    product.imageFolder,
-                                                collection:
-                                                    product.collection,
-                                            })}
-                                            alt={product.title}
-                                            onError={(event) => {
+                                            src={getCatalogThumbnailUrl(
+                                                {
+                                                    image,
+                                                    imageFolder:
+                                                        product.imageFolder,
+                                                    collection:
+                                                        product.collection,
+                                                }
+                                            )}
+                                            alt={
+                                                product.title
+                                            }
+                                            onError={(
+                                                event
+                                            ) => {
                                                 const original =
-                                                    getOriginalImageUrl({
-                                                        image,
-                                                        imageFolder:
-                                                            product.imageFolder,
-                                                        collection:
-                                                            product.collection,
-                                                    });
+                                                    getOriginalImageUrl(
+                                                        {
+                                                            image,
+                                                            imageFolder:
+                                                                product.imageFolder,
+                                                            collection:
+                                                                product.collection,
+                                                        }
+                                                    );
 
                                                 if (
-                                                    event.currentTarget.src !==
+                                                    event
+                                                        .currentTarget
+                                                        .src !==
                                                     original
                                                 ) {
                                                     event.currentTarget.src =
@@ -741,9 +1000,12 @@ export default function EditProductClient({
                 )}
             </section>
 
+            {/* VARIANTS */}
+
             <section className="admin-edit-card">
                 <h2>
-                    Variants ({product.variants.length})
+                    Variants (
+                    {product.variants.length})
                 </h2>
 
                 <div className="admin-variant-list">
@@ -757,19 +1019,27 @@ export default function EditProductClient({
                             return (
                                 <div
                                     className="admin-variant-card"
-                                    key={index}
+                                    key={
+                                        variant.id ||
+                                        `${variant.partNumber || "variant"}-${index}`
+                                    }
                                 >
                                     <button
                                         type="button"
                                         className="admin-variant-header"
                                         onClick={() =>
-                                            toggleVariant(index)
+                                            toggleVariant(
+                                                index
+                                            )
                                         }
                                     >
                                         <div>
                                             <strong>
                                                 {variant.title ||
-                                                    `Variant ${index + 1}`}
+                                                    `Variant ${
+                                                        index +
+                                                        1
+                                                    }`}
                                             </strong>
 
                                             <span>
@@ -788,35 +1058,47 @@ export default function EditProductClient({
                                     {isOpen && (
                                         <div className="admin-variant-body">
                                             <div className="admin-variant-image-manager">
-                                                <label>Variant Image</label>
+                                                <label>
+                                                    Variant
+                                                    Image
+                                                </label>
 
                                                 {variant.image ? (
                                                     <div className="admin-current-variant-image">
                                                         <img
-                                                            src={getCatalogThumbnailUrl({
-                                                                image: variant.image,
-                                                                imageFolder:
-                                                                    product.imageFolder,
-                                                                collection:
-                                                                    product.collection,
-                                                            })}
+                                                            src={getCatalogThumbnailUrl(
+                                                                {
+                                                                    image:
+                                                                        variant.image,
+                                                                    imageFolder:
+                                                                        product.imageFolder,
+                                                                    collection:
+                                                                        product.collection,
+                                                                }
+                                                            )}
                                                             alt={
                                                                 variant.title ||
                                                                 product.title
                                                             }
-                                                            onError={(event) => {
+                                                            onError={(
+                                                                event
+                                                            ) => {
                                                                 const original =
-                                                                    getOriginalImageUrl({
-                                                                        image:
-                                                                            variant.image,
-                                                                        imageFolder:
-                                                                            product.imageFolder,
-                                                                        collection:
-                                                                            product.collection,
-                                                                    });
+                                                                    getOriginalImageUrl(
+                                                                        {
+                                                                            image:
+                                                                                variant.image,
+                                                                            imageFolder:
+                                                                                product.imageFolder,
+                                                                            collection:
+                                                                                product.collection,
+                                                                        }
+                                                                    );
 
                                                                 if (
-                                                                    event.currentTarget.src !==
+                                                                    event
+                                                                        .currentTarget
+                                                                        .src !==
                                                                     original
                                                                 ) {
                                                                     event.currentTarget.src =
@@ -827,7 +1109,9 @@ export default function EditProductClient({
 
                                                         <div>
                                                             <span>
-                                                                {variant.image}
+                                                                {
+                                                                    variant.image
+                                                                }
                                                             </span>
 
                                                             <button
@@ -839,31 +1123,46 @@ export default function EditProductClient({
                                                                     )
                                                                 }
                                                             >
-                                                                Remove from variant
+                                                                Remove
+                                                                from
+                                                                variant
                                                             </button>
                                                         </div>
                                                     </div>
                                                 ) : (
                                                     <div className="admin-variant-no-image">
-                                                        No image assigned to this variant.
+                                                        No
+                                                        image
+                                                        assigned
+                                                        to this
+                                                        variant.
                                                     </div>
                                                 )}
 
-                                                {product.images.length > 0 && (
+                                                {product
+                                                    .images
+                                                    .length >
+                                                    0 && (
                                                     <>
                                                         <div className="admin-variant-image-label">
-                                                            Select product image
+                                                            Select
+                                                            product
+                                                            image
                                                         </div>
 
                                                         <div className="admin-variant-image-picker">
                                                             {product.images.map(
-                                                                (image) => (
+                                                                (
+                                                                    image
+                                                                ) => (
                                                                     <button
-                                                                        key={image}
+                                                                        key={
+                                                                            image
+                                                                        }
                                                                         type="button"
                                                                         className={
                                                                             variant.image ===
-                                                                                image
+                                                                            image
                                                                                 ? "admin-variant-image-option admin-variant-image-option-selected"
                                                                                 : "admin-variant-image-option"
                                                                         }
@@ -876,25 +1175,29 @@ export default function EditProductClient({
                                                                         title="Assign this image to this variant"
                                                                     >
                                                                         <img
-                                                                            src={getCatalogThumbnailUrl({
-                                                                                image,
-                                                                                imageFolder:
-                                                                                    product.imageFolder,
-                                                                                collection:
-                                                                                    product.collection,
-                                                                            })}
+                                                                            src={getCatalogThumbnailUrl(
+                                                                                {
+                                                                                    image,
+                                                                                    imageFolder:
+                                                                                        product.imageFolder,
+                                                                                    collection:
+                                                                                        product.collection,
+                                                                                }
+                                                                            )}
                                                                             alt=""
                                                                             onError={(
                                                                                 event
                                                                             ) => {
                                                                                 const original =
-                                                                                    getOriginalImageUrl({
-                                                                                        image,
-                                                                                        imageFolder:
-                                                                                            product.imageFolder,
-                                                                                        collection:
-                                                                                            product.collection,
-                                                                                    });
+                                                                                    getOriginalImageUrl(
+                                                                                        {
+                                                                                            image,
+                                                                                            imageFolder:
+                                                                                                product.imageFolder,
+                                                                                            collection:
+                                                                                                product.collection,
+                                                                                        }
+                                                                                    );
 
                                                                                 if (
                                                                                     event
@@ -918,7 +1221,8 @@ export default function EditProductClient({
                                             <div className="admin-form-grid">
                                                 <div className="admin-field admin-field-full">
                                                     <label>
-                                                        Variant Title
+                                                        Variant
+                                                        Title
                                                     </label>
 
                                                     <input
@@ -926,31 +1230,15 @@ export default function EditProductClient({
                                                             variant.title ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "title",
-                                                                e.target.value
-                                                            )
-                                                        }
-                                                    />
-                                                </div>
-
-                                                <div className="admin-field admin-field-full">
-                                                    <label>
-                                                        Option Title
-                                                    </label>
-
-                                                    <input
-                                                        value={
-                                                            variant.option1Value ||
-                                                            ""
-                                                        }
-                                                        onChange={(e) =>
-                                                            updateVariant(
-                                                                index,
-                                                                "option1Value",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
@@ -958,7 +1246,161 @@ export default function EditProductClient({
 
                                                 <div className="admin-field">
                                                     <label>
-                                                        Part Number
+                                                        Option
+                                                        1 Name
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.option1Name ||
+                                                            ""
+                                                        }
+                                                        placeholder="e.g. Model"
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "option1Name",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Option
+                                                        1 Value
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.option1Value ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "option1Value",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Option
+                                                        2 Name
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.option2Name ||
+                                                            ""
+                                                        }
+                                                        placeholder="e.g. Size"
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "option2Name",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Option
+                                                        2 Value
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.option2Value ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "option2Value",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Option
+                                                        3 Name
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.option3Name ||
+                                                            ""
+                                                        }
+                                                        placeholder="e.g. Material"
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "option3Name",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Option
+                                                        3 Value
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.option3Value ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "option3Value",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Part
+                                                        Number
                                                     </label>
 
                                                     <input
@@ -966,11 +1408,86 @@ export default function EditProductClient({
                                                             variant.partNumber ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "partNumber",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        SKU
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.sku ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "sku",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Barcode
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.barcode ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "barcode",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+                                                                                                <div className="admin-field">
+                                                    <label>
+                                                        Vendor / Brand
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.vendor ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "vendor",
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
@@ -983,23 +1500,27 @@ export default function EditProductClient({
 
                                                     <input
                                                         type="number"
+                                                        step="any"
                                                         value={
                                                             variant.price ??
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "price",
-                                                                e.target
+                                                                e
+                                                                    .target
                                                                     .value ===
                                                                     ""
                                                                     ? 0
                                                                     : Number(
-                                                                        e
-                                                                            .target
-                                                                            .value
-                                                                    )
+                                                                          e
+                                                                              .target
+                                                                              .value
+                                                                      )
                                                             )
                                                         }
                                                     />
@@ -1007,19 +1528,125 @@ export default function EditProductClient({
 
                                                 <div className="admin-field">
                                                     <label>
-                                                        Vendor / Brand
+                                                        Compare
+                                                        At Price
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        step="any"
+                                                        value={
+                                                            variant.compareAtPrice ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "compareAtPrice",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                          e
+                                                                              .target
+                                                                              .value
+                                                                      )
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Cost
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        step="any"
+                                                        value={
+                                                            variant.cost ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "cost",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                          e
+                                                                              .target
+                                                                              .value
+                                                                      )
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Inventory
+                                                        Quantity
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        value={
+                                                            variant.inventoryQty ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "inventoryQty",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                          e
+                                                                              .target
+                                                                              .value
+                                                                      )
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Inventory
+                                                        Tracker
                                                     </label>
 
                                                     <input
                                                         value={
-                                                            variant.vendor ||
+                                                            variant.inventoryTracker ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        placeholder="shopify"
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
-                                                                "vendor",
-                                                                e.target.value
+                                                                "inventoryTracker",
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
@@ -1027,7 +1654,45 @@ export default function EditProductClient({
 
                                                 <div className="admin-field">
                                                     <label>
-                                                        Country of Origin
+                                                        Inventory
+                                                        Policy
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.inventoryPolicy ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "inventoryPolicy",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="">
+                                                            Not set
+                                                        </option>
+
+                                                        <option value="deny">
+                                                            Deny
+                                                        </option>
+
+                                                        <option value="continue">
+                                                            Continue
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Country
+                                                        of Origin
                                                     </label>
 
                                                     <input
@@ -1035,11 +1700,15 @@ export default function EditProductClient({
                                                             variant.countryOfOrigin ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "countryOfOrigin",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
@@ -1055,11 +1724,15 @@ export default function EditProductClient({
                                                             variant.hsCode ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "hsCode",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
@@ -1067,7 +1740,86 @@ export default function EditProductClient({
 
                                                 <div className="admin-field">
                                                     <label>
-                                                        Unit Weight
+                                                        Weight
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        step="any"
+                                                        value={
+                                                            variant.weight ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "weight",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                          e
+                                                                              .target
+                                                                              .value
+                                                                      )
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Weight
+                                                        Unit
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.weightUnit ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "weightUnit",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="">
+                                                            Not set
+                                                        </option>
+
+                                                        <option value="kg">
+                                                            kg
+                                                        </option>
+
+                                                        <option value="g">
+                                                            g
+                                                        </option>
+
+                                                        <option value="lb">
+                                                            lb
+                                                        </option>
+
+                                                        <option value="oz">
+                                                            oz
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Unit
+                                                        Weight
                                                     </label>
 
                                                     <input
@@ -1075,11 +1827,15 @@ export default function EditProductClient({
                                                             variant.unitWeight ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "unitWeight",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
@@ -1087,7 +1843,8 @@ export default function EditProductClient({
 
                                                 <div className="admin-field">
                                                     <label>
-                                                        Shipping Volume
+                                                        Shipping
+                                                        Volume
                                                     </label>
 
                                                     <input
@@ -1095,14 +1852,138 @@ export default function EditProductClient({
                                                             variant.shippingVolume ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "shippingVolume",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Shipping
+                                                        Profile
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.shippingProfile ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "shippingProfile",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Tax Code
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.taxCode ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "taxCode",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Taxable
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.taxable ===
+                                                            false
+                                                                ? "false"
+                                                                : "true"
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "taxable",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    "true"
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="true">
+                                                            Yes
+                                                        </option>
+
+                                                        <option value="false">
+                                                            No
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Requires
+                                                        Shipping
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.requiresShipping ===
+                                                            false
+                                                                ? "false"
+                                                                : "true"
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "requiresShipping",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    "true"
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="true">
+                                                            Yes
+                                                        </option>
+
+                                                        <option value="false">
+                                                            No
+                                                        </option>
+                                                    </select>
                                                 </div>
 
                                                 <div className="admin-field admin-field-full">
@@ -1111,16 +1992,20 @@ export default function EditProductClient({
                                                     </label>
 
                                                     <textarea
-                                                        rows={6}
+                                                        rows={5}
                                                         value={
                                                             variant.description ||
                                                             ""
                                                         }
-                                                        onChange={(e) =>
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "description",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
                                                             )
                                                         }
                                                     />
@@ -1132,16 +2017,22 @@ export default function EditProductClient({
                                                     </label>
 
                                                     <textarea
-                                                        rows={5}
+                                                        rows={6}
                                                         value={(
                                                             variant.specifications ||
                                                             []
-                                                        ).join("\n")}
-                                                        onChange={(e) =>
+                                                        ).join(
+                                                            "\n"
+                                                        )}
+                                                        onChange={(
+                                                            e
+                                                        ) =>
                                                             updateVariant(
                                                                 index,
                                                                 "specifications",
-                                                                e.target.value
+                                                                e
+                                                                    .target
+                                                                    .value
                                                                     .split(
                                                                         "\n"
                                                                     )
@@ -1156,12 +2047,10 @@ export default function EditProductClient({
                                                                     )
                                                             )
                                                         }
+                                                        placeholder={
+                                                            "One specification per line"
+                                                        }
                                                     />
-
-                                                    <small>
-                                                        One specification per
-                                                        line.
-                                                    </small>
                                                 </div>
                                             </div>
                                         </div>
@@ -1173,68 +2062,111 @@ export default function EditProductClient({
                 </div>
             </section>
 
-            <section className="admin-edit-card">
-                <h2>
-                    Source Information
-                </h2>
+            {/* SOURCE INFORMATION */}
 
-                <p className="admin-section-note">
-                    Internal import information.
-                    Read only.
-                </p>
+            {product.sources &&
+                product.sources.length > 0 && (
+                    <section className="admin-edit-card">
+                        <h2>
+                            Source Information
+                        </h2>
 
-                <div className="admin-source-list">
-                    {(product.sources || []).map(
-                        (source, index) => (
-                            <div
-                                key={index}
-                                className="admin-source-row"
-                            >
-                                <strong>
-                                    {source.collectionName ||
-                                        source.collectionHandle ||
-                                        "Source"}
-                                </strong>
+                        <div className="admin-source-list">
+                            {product.sources.map(
+                                (
+                                    source,
+                                    index
+                                ) => (
+                                    <div
+                                        className="admin-source-card"
+                                        key={
+                                            index
+                                        }
+                                    >
+                                        <div>
+                                            <strong>
+                                                Collection
+                                            </strong>
 
-                                <span>
-                                    {source.excelFile ||
-                                        "—"}
-                                </span>
+                                            <span>
+                                                {source.collectionName ||
+                                                    source.collectionHandle ||
+                                                    "—"}
+                                            </span>
+                                        </div>
 
-                                <span>
-                                    Row{" "}
-                                    {source.sourceRow ??
-                                        "—"}
-                                </span>
+                                        <div>
+                                            <strong>
+                                                Excel
+                                                File
+                                            </strong>
 
-                                <span>
-                                    {source.rawPartNumber ||
-                                        "—"}
-                                </span>
-                            </div>
-                        )
-                    )}
-                </div>
+                                            <span>
+                                                {source.excelFile ||
+                                                    "—"}
+                                            </span>
+                                        </div>
 
-                <div className="admin-bottom-actions">
-                    <a
-                        href={`https://sparesco.com/products/${encodeURIComponent(
-                            product.handle
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="admin-secondary-button"
-                    >
-                        View Product ↗
-                    </a>
+                                        <div>
+                                            <strong>
+                                                Source
+                                                Row
+                                            </strong>
+
+                                            <span>
+                                                {source.sourceRow ??
+                                                    "—"}
+                                            </span>
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Raw Part
+                                                Number
+                                            </strong>
+
+                                            <span>
+                                                {source.rawPartNumber ||
+                                                    "—"}
+                                            </span>
+                                        </div>
+                                    </div>
+                                )
+                            )}
+                        </div>
+                    </section>
+                )}
+
+            {/* DELETE PRODUCT */}
+
+            <section className="admin-edit-card admin-danger-card">
+                <div className="admin-danger-card-content">
+                    <div>
+                        <h2>
+                            Delete Product
+                        </h2>
+
+                        <p>
+                            Permanently remove this
+                            product from the
+                            catalogue, collections
+                            and search.
+                        </p>
+                    </div>
 
                     <button
                         type="button"
-                        className="admin-primary-button"
-                        onClick={saveProduct}
-                        disabled={saving}
+                        className="admin-danger-button"
+                        onClick={
+                            deleteCurrentProduct
+                        }
+                        disabled={
+                            deleting || saving
+                        }
                     >
-                        {saving ? "Saving..." : "Save Product"}
+                        {deleting
+                            ? "Deleting..."
+                            : "Delete Product"}
                     </button>
                 </div>
             </section>

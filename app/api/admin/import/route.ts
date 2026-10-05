@@ -4,216 +4,62 @@ import {
 
 import {
     createNewProductsBulk,
+    syncExistingProduct,
     type R2BucketLike,
 } from "@/lib/admin/product-sync";
 
+import {
+    normalizeAdminProduct,
+    productKey,
+    productKeys,
+    validateAdminProduct,
+    type AdminProduct,
+} from "@/lib/admin/product-normalize";
+
 export const runtime = "edge";
 
-function clean(value: unknown) {
+type ImportResult = {
+    created: string[];
+    updated: string[];
+    skipped: string[];
+    errors: Array<{
+        handle: string;
+        error: string;
+    }>;
+};
+
+function getBucket() {
+    const context =
+        getRequestContext();
+
+    const env =
+        context.env as unknown as {
+            CATALOG_BUCKET?: R2BucketLike;
+        };
+
+    if (!env.CATALOG_BUCKET) {
+        throw new Error(
+            "CATALOG_BUCKET binding is not configured."
+        );
+    }
+
+    return env.CATALOG_BUCKET;
+}
+
+function clean(
+    value: unknown
+) {
     return String(
         value ?? ""
     ).trim();
 }
 
-function slugify(value: unknown) {
-    return clean(value)
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "");
-}
-
-function unique(
-    values: string[]
+async function readJson(
+    object: any
 ) {
-    return Array.from(
-        new Set(values)
+    return JSON.parse(
+        await object.text()
     );
-}
-
-function productFolder(
-    handle: string
-) {
-    let hash = 0;
-
-    for (
-        let index = 0;
-        index < handle.length;
-        index++
-    ) {
-        hash =
-            (
-                (hash << 5) -
-                hash +
-                handle.charCodeAt(index)
-            ) | 0;
-    }
-
-    return Math.abs(hash)
-        .toString(16)
-        .padStart(2, "0")
-        .slice(0, 2);
-}
-
-function productKey(
-    handle: string
-) {
-    return (
-        `catalog/products/` +
-        `${productFolder(handle)}/` +
-        `${handle}.json`
-    );
-}
-
-function normalizeProduct(
-    raw: any
-) {
-    const handle =
-        slugify(raw?.handle);
-
-    const title =
-        clean(raw?.title);
-
-    const tags =
-        unique(
-            (
-                Array.isArray(raw?.tags)
-                    ? raw.tags
-                    : []
-            )
-                .map(slugify)
-                .filter(Boolean)
-        );
-
-    const primaryCollection =
-        tags[0] || "";
-
-    const variants =
-        (
-            Array.isArray(raw?.variants)
-                ? raw.variants
-                : []
-        ).map(
-            (variant: any) => ({
-                title:
-                    clean(
-                        variant?.title
-                    ),
-
-                option1Value:
-                    clean(
-                        variant?.option1Value
-                    ),
-
-                image:
-                    clean(
-                        variant?.image
-                    ),
-
-                vendor:
-                    clean(
-                        variant?.vendor
-                    ),
-
-                price:
-                    Number(
-                        variant?.price || 0
-                    ),
-
-                partNumber:
-                    clean(
-                        variant?.partNumber
-                    ),
-
-                hsCode:
-                    clean(
-                        variant?.hsCode
-                    ),
-
-                countryOfOrigin:
-                    clean(
-                        variant?.countryOfOrigin
-                    ),
-
-                description:
-                    clean(
-                        variant?.description
-                    ),
-
-                specifications:
-                    Array.isArray(
-                        variant?.specifications
-                    )
-                        ? variant
-                            .specifications
-                            .map(clean)
-                            .filter(Boolean)
-                        : [],
-
-                unitWeight:
-                    clean(
-                        variant?.unitWeight
-                    ),
-
-                shippingVolume:
-                    clean(
-                        variant?.shippingVolume
-                    ),
-            })
-        );
-
-    const images =
-        unique(
-            (
-                Array.isArray(raw?.images)
-                    ? raw.images
-                    : []
-            )
-                .map(clean)
-                .filter(Boolean)
-        );
-
-    return {
-        handle,
-
-        canonicalKey:
-            handle,
-
-        title,
-
-        collection:
-            primaryCollection,
-
-        category:
-            slugify(
-                raw?.category
-            ) ||
-            primaryCollection,
-
-        imageFolder:
-            primaryCollection,
-
-        tags,
-
-        images,
-
-        variants,
-
-        sources: [
-            {
-                source:
-                    "admin-excel",
-
-                excelFile:
-                    clean(
-                        raw?.excelFile
-                    ),
-
-                importedAt:
-                    new Date()
-                        .toISOString(),
-            },
-        ],
-    };
 }
 
 export async function POST(
@@ -224,17 +70,20 @@ export async function POST(
             await request.json();
 
         const rawProducts =
-            Array.isArray(
-                body?.products
-            )
-                ? body.products
-                : [];
+            Array.isArray(body)
+                ? body
+                : Array.isArray(
+                    body?.products
+                )
+                    ? body.products
+                    : [];
 
         if (!rawProducts.length) {
             return Response.json(
                 {
+                    success: false,
                     error:
-                        "No products were supplied.",
+                        "No products supplied for import.",
                 },
                 {
                     status: 400,
@@ -242,253 +91,746 @@ export async function POST(
             );
         }
 
-        const products =
-            rawProducts.map(
-                normalizeProduct
-            );
+        const bucket =
+            getBucket();
+
+        const result: ImportResult = {
+            created: [],
+            updated: [],
+            skipped: [],
+            errors: [],
+        };
+
+        /*
+         * -------------------------------------------------
+         * NORMALIZE + VALIDATE
+         * -------------------------------------------------
+         */
+
+        const normalizedProducts:
+            AdminProduct[] = [];
+
+        const seenHandles =
+            new Set<string>();
 
         for (
             let index = 0;
-            index < products.length;
+            index <
+            rawProducts.length;
             index++
         ) {
-            const product =
-                products[index];
+            const raw =
+                rawProducts[index];
 
-            if (!product.handle) {
-                return Response.json(
-                    {
+            try {
+                const product =
+                    normalizeAdminProduct(
+                        raw,
+                        {
+                            source:
+                                "excel",
+                        }
+                    );
+
+                if (!product.handle) {
+                    result.skipped.push(
+                        `row-${index + 1}`
+                    );
+
+                    result.errors.push({
+                        handle:
+                            `row-${index + 1}`,
+
                         error:
-                            `Product ${index + 1}: ` +
-                            `handle is required.`,
-                    },
-                    {
-                        status: 400,
-                    }
-                );
-            }
+                            "Missing product handle.",
+                    });
 
-            if (!product.title) {
-                return Response.json(
-                    {
+                    continue;
+                }
+
+                /*
+                 * The client parser should
+                 * already combine repeated
+                 * Shopify rows into one
+                 * product.
+                 *
+                 * Protect the API from
+                 * accidental duplicates
+                 * anyway.
+                 */
+                if (
+                    seenHandles.has(
+                        product.handle
+                    )
+                ) {
+                    result.skipped.push(
+                        product.handle
+                    );
+
+                    result.errors.push({
+                        handle:
+                            product.handle,
+
                         error:
-                            `${product.handle}: ` +
-                            `title is required.`,
-                    },
-                    {
-                        status: 400,
-                    }
-                );
-            }
+                            "Duplicate product handle in this import batch.",
+                    });
 
-            if (!product.tags.length) {
-                return Response.json(
-                    {
-                        error:
-                            `${product.handle}: ` +
-                            `at least one tag / collection is required.`,
-                    },
-                    {
-                        status: 400,
-                    }
-                );
-            }
+                    continue;
+                }
 
-            if (!product.variants.length) {
-                return Response.json(
-                    {
-                        error:
-                            `${product.handle}: ` +
-                            `at least one variant is required.`,
-                    },
-                    {
-                        status: 400,
-                    }
+                seenHandles.add(
+                    product.handle
                 );
-            }
 
-            for (
-                let variantIndex = 0;
-                variantIndex <
-                product.variants.length;
-                variantIndex++
-            ) {
-                const variant =
-                    product.variants[
-                    variantIndex
-                    ];
+                const validationError =
+                    validateAdminProduct(
+                        product
+                    );
 
                 if (
-                    !variant.partNumber
+                    validationError
                 ) {
-                    return Response.json(
-                        {
-                            error:
-                                `${product.handle}, variant ` +
-                                `${variantIndex + 1}: ` +
-                                `part number is required.`,
-                        },
-                        {
-                            status: 400,
-                        }
-                    );
-                }
-
-                if (!variant.title) {
-                    return Response.json(
-                        {
-                            error:
-                                `${product.handle}, variant ` +
-                                `${variantIndex + 1}: ` +
-                                `title is required.`,
-                        },
-                        {
-                            status: 400,
-                        }
-                    );
-                }
-            }
-        }
-
-        const context =
-            getRequestContext();
-
-        const env =
-            context.env as unknown as {
-                CATALOG_BUCKET?: R2BucketLike;
-            };
-
-        if (!env.CATALOG_BUCKET) {
-            throw new Error(
-                "CATALOG_BUCKET binding is not configured."
-            );
-        }
-
-        const bucket =
-            env.CATALOG_BUCKET;
-
-        /*
-         * Check master product JSON first.
-         * Never overwrite an existing product.
-         */
-        const existingMasterHandles: string[] =
-            [];
-
-        const productsToImport: typeof products =
-            [];
-
-        for (const product of products) {
-            const existingMaster =
-                await bucket.get(
-                    productKey(
+                    result.skipped.push(
                         product.handle
-                    )
-                );
+                    );
 
-            if (existingMaster) {
-                existingMasterHandles.push(
-                    product.handle
-                );
-            } else {
-                productsToImport.push(
+                    result.errors.push({
+                        handle:
+                            product.handle,
+
+                        error:
+                            validationError,
+                    });
+
+                    continue;
+                }
+
+                normalizedProducts.push(
                     product
                 );
+            } catch (error) {
+                const handle =
+                    clean(
+                        raw?.handle
+                    ) ||
+                    `row-${index + 1}`;
+
+                result.skipped.push(
+                    handle
+                );
+
+                result.errors.push({
+                    handle,
+
+                    error:
+                        error instanceof Error
+                            ? error.message
+                            : String(error),
+                });
             }
         }
 
-        const result =
-            productsToImport.length
-                ? await createNewProductsBulk(
-                    bucket,
-                    productsToImport
-                )
-                : {
-                    imported: [] as string[],
-                    skipped: [] as string[],
-                    updatedFiles: [] as string[],
-                };
+        if (
+            !normalizedProducts.length
+        ) {
+            return Response.json(
+                {
+                    success: false,
 
-        const allSkipped =
-            unique([
-                ...existingMasterHandles,
-                ...result.skipped,
-            ]);
+                    createdCount: 0,
+                    updatedCount: 0,
+                    skippedCount:
+                        result.skipped
+                            .length,
 
-        const importedSet =
-            new Set(
-                result.imported
+                    created:
+                        result.created,
+
+                    updated:
+                        result.updated,
+
+                    skipped:
+                        result.skipped,
+
+                    errors:
+                        result.errors,
+
+                    error:
+                        "No valid products were found in this import batch.",
+                },
+                {
+                    status: 400,
+                }
             );
+        }
 
         /*
-         * Write master product JSON only for
-         * products accepted by the bulk sync.
+         * -------------------------------------------------
+         * CLASSIFY PRODUCTS
+         * -------------------------------------------------
+         *
+         * Existing handle => UPDATE
+         * Missing handle  => CREATE
          */
-        const importedProducts =
-            products.filter(
-                (product: ReturnType<typeof normalizeProduct>) =>
-                    importedSet.has(
-                        product.handle
-                    )
-            );
+
+        const productsToCreate:
+            AdminProduct[] = [];
+
+        const productsToUpdate:
+            Array<{
+                key: string;
+                existing: any;
+                product: AdminProduct;
+            }> = [];
 
         for (
-            const product
-            of importedProducts
+            const incoming of
+            normalizedProducts
         ) {
-            const key =
-                productKey(
+            try {
+                let key = "";
+                let existingObject:
+                    any = null;
+
+                const possibleKeys =
+                    productKeys(
+                        incoming.handle
+                    );
+
+                for (
+                    const possibleKey of
+                    possibleKeys
+                ) {
+                    const object =
+                        await bucket.get(
+                            possibleKey
+                        );
+
+                    if (object) {
+                        key =
+                            possibleKey;
+
+                        existingObject =
+                            object;
+
+                        break;
+                    }
+                }
+
+                if (!existingObject) {
+                    productsToCreate.push(
+                        incoming
+                    );
+
+                    continue;
+                }
+
+                const existing =
+                    await readJson(
+                        existingObject
+                    );
+
+                /*
+                 * Merge existing first so
+                 * unknown/additional catalogue
+                 * metadata is not silently
+                 * destroyed by Excel import.
+                 */
+                const merged = {
+                    ...existing,
+                    ...incoming,
+
+                    handle:
+                        existing.handle ||
+                        incoming.handle,
+
+                    canonicalKey:
+                        existing
+                            .canonicalKey ||
+                        incoming
+                            .canonicalKey ||
+                        incoming.handle,
+
+                    sources:
+                        existing.sources ||
+                        incoming.sources ||
+                        [],
+                };
+
+                const product =
+                    normalizeAdminProduct(
+                        merged,
+                        {
+                            existing,
+                            source:
+                                "excel",
+                        }
+                    );
+
+                product.handle =
+                    incoming.handle;
+
+                product.canonicalKey =
+                    existing
+                        .canonicalKey ||
+                    incoming.handle;
+
+                product.sources =
+                    existing.sources ||
+                    [];
+
+                const validationError =
+                    validateAdminProduct(
+                        product
+                    );
+
+                if (
+                    validationError
+                ) {
+                    result.skipped.push(
+                        incoming.handle
+                    );
+
+                    result.errors.push({
+                        handle:
+                            incoming.handle,
+
+                        error:
+                            validationError,
+                    });
+
+                    continue;
+                }
+
+                productsToUpdate.push({
+                    key,
+                    existing,
+                    product,
+                });
+            } catch (error) {
+                result.skipped.push(
+                    incoming.handle
+                );
+
+                result.errors.push({
+                    handle:
+                        incoming.handle,
+
+                    error:
+                        error instanceof Error
+                            ? error.message
+                            : String(error),
+                });
+            }
+        }
+
+        /*
+         * -------------------------------------------------
+         * UPDATE EXISTING PRODUCTS
+         * -------------------------------------------------
+         *
+         * Synchronize first.
+         *
+         * Only replace the master JSON after
+         * catalogue/search synchronization
+         * succeeds.
+         */
+
+        for (
+            const item of
+            productsToUpdate
+        ) {
+            try {
+                await syncExistingProduct(
+                    bucket,
+                    item.existing,
+                    item.product
+                );
+
+                await bucket.put(
+                    item.key,
+                    JSON.stringify(
+                        item.product
+                    ),
+                    {
+                        httpMetadata: {
+                            contentType:
+                                "application/json",
+
+                            cacheControl:
+                                "public, max-age=300",
+                        },
+                    }
+                );
+
+                result.updated.push(
+                    item.product.handle
+                );
+            } catch (error) {
+                result.skipped.push(
+                    item.product.handle
+                );
+
+                result.errors.push({
+                    handle:
+                        item.product
+                            .handle,
+
+                    error:
+                        error instanceof Error
+                            ? error.message
+                            : String(error),
+                });
+            }
+        }
+
+        /*
+         * -------------------------------------------------
+         * CREATE NEW PRODUCTS
+         * -------------------------------------------------
+         *
+         * IMPORTANT SAFETY CHANGE:
+         *
+         * The previous import flow called
+         * createNewProductsBulk() before
+         * writing the master product JSON.
+         *
+         * We now write the master JSON FIRST,
+         * matching the safe single-product
+         * creation flow.
+         */
+
+        const preparedCreates:
+            AdminProduct[] = [];
+
+        for (
+            const product of
+            productsToCreate
+        ) {
+            try {
+                const key =
+                    productKey(
+                        product.handle
+                    );
+
+                /*
+                 * Re-check immediately before
+                 * writing in case a duplicate
+                 * appeared between
+                 * classification and commit.
+                 */
+                let existing:
+                    any = null;
+
+                const possibleKeys =
+                    productKeys(
+                        product.handle
+                    );
+
+                for (
+                    const possibleKey of
+                    possibleKeys
+                ) {
+                    const object =
+                        await bucket.get(
+                            possibleKey
+                        );
+
+                    if (object) {
+                        existing =
+                            object;
+
+                        break;
+                    }
+                }
+
+                if (existing) {
+                    result.skipped.push(
+                        product.handle
+                    );
+
+                    result.errors.push({
+                        handle:
+                            product.handle,
+
+                        error:
+                            "Product already exists.",
+                    });
+
+                    continue;
+                }
+
+                product.sources = [
+                    {
+                        source:
+                            "excel",
+
+                        importedAt:
+                            new Date()
+                                .toISOString(),
+                    },
+                ];
+
+                await bucket.put(
+                    key,
+                    JSON.stringify(
+                        product
+                    ),
+                    {
+                        httpMetadata: {
+                            contentType:
+                                "application/json",
+
+                            cacheControl:
+                                "public, max-age=300",
+                        },
+                    }
+                );
+
+                preparedCreates.push(
+                    product
+                );
+            } catch (error) {
+                result.skipped.push(
                     product.handle
                 );
 
-            await bucket.put(
-                key,
-                JSON.stringify(
-                    product
-                ),
-                {
-                    httpMetadata: {
-                        contentType:
-                            "application/json",
+                result.errors.push({
+                    handle:
+                        product.handle,
 
-                        cacheControl:
-                            "public, max-age=300",
-                    },
-                }
-            );
+                    error:
+                        error instanceof Error
+                            ? error.message
+                            : String(error),
+                });
+            }
         }
 
+        /*
+         * Bulk-sync only products whose
+         * master JSON now exists.
+         */
+        if (
+            preparedCreates.length
+        ) {
+            try {
+                const createResult =
+                    await createNewProductsBulk(
+                        bucket,
+                        preparedCreates
+                    );
+
+                /*
+                 * product-sync returns created
+                 * and skipped handles. Use its
+                 * result when available.
+                 */
+                const createdHandles =
+                    Array.isArray(
+                        (
+                            createResult as any
+                        )?.imported
+                    )
+                        ? (
+                            createResult as any
+                        ).imported.map(
+                            (
+                                value: unknown
+                            ) =>
+                                clean(
+                                    value
+                                )
+                        )
+                        : preparedCreates.map(
+                            (product) =>
+                                product.handle
+                        );
+
+                const skippedHandles =
+                    Array.isArray(
+                        (
+                            createResult as any
+                        )?.skipped
+                    )
+                        ? (
+                            createResult as any
+                        ).skipped.map(
+                            (
+                                value: unknown
+                            ) =>
+                                clean(
+                                    value
+                                )
+                        )
+                        : [];
+
+                for (
+                    const product of
+                    preparedCreates
+                ) {
+                    if (
+                        skippedHandles.includes(
+                            product.handle
+                        )
+                    ) {
+                        result.skipped.push(
+                            product.handle
+                        );
+
+                        result.errors.push({
+                            handle:
+                                product.handle,
+
+                            error:
+                                "Catalogue synchronization skipped this product.",
+                        });
+
+                        continue;
+                    }
+
+                    if (
+                        createdHandles.includes(
+                            product.handle
+                        )
+                    ) {
+                        result.created.push(
+                            product.handle
+                        );
+
+                        continue;
+                    }
+
+                    /*
+                     * Some older
+                     * createNewProductsBulk()
+                     * implementations do not
+                     * expose per-handle arrays.
+                     *
+                     * Successful completion
+                     * still means these
+                     * prepared products were
+                     * processed.
+                     */
+                    result.created.push(
+                        product.handle
+                    );
+                }
+            } catch (error) {
+                /*
+                 * The master JSON deliberately
+                 * remains available if bulk
+                 * synchronization fails.
+                 *
+                 * Report each affected handle
+                 * so the admin knows exactly
+                 * what needs attention.
+                 */
+                for (
+                    const product of
+                    preparedCreates
+                ) {
+                    result.skipped.push(
+                        product.handle
+                    );
+
+                    result.errors.push({
+                        handle:
+                            product.handle,
+
+                        error:
+                            error instanceof Error
+                                ? error.message
+                                : String(
+                                    error
+                                ),
+                    });
+                }
+            }
+        }
+
+        /*
+         * De-duplicate response arrays.
+         */
+        result.created =
+            Array.from(
+                new Set(
+                    result.created
+                )
+            );
+
+        result.updated =
+            Array.from(
+                new Set(
+                    result.updated
+                )
+            );
+
+        result.skipped =
+            Array.from(
+                new Set(
+                    result.skipped
+                )
+            ).filter(
+                (handle) =>
+                    !result.created.includes(
+                        handle
+                    ) &&
+                    !result.updated.includes(
+                        handle
+                    )
+            );
+
         return Response.json({
-            success: true,
+            success:
+                result.created.length >
+                0 ||
+                result.updated.length >
+                0,
 
-            imported:
-                result.imported,
-            skipped:
-                allSkipped,
+            createdCount:
+                result.created.length,
 
-            importedCount:
-                result.imported.length,
+            updatedCount:
+                result.updated.length,
 
             skippedCount:
-                allSkipped.length,
+                result.skipped.length,
 
-            synchronizedFiles:
-                result.updatedFiles,
+            created:
+                result.created,
+
+            updated:
+                result.updated,
+
+            skipped:
+                result.skipped,
+
+            errors:
+                result.errors,
         });
     } catch (error) {
         console.error(
-            "Excel product import failed:",
+            "Admin Excel import failed:",
             error
         );
 
         return Response.json(
             {
-                error:
-                    "Failed to import products.",
+                success: false,
 
-                message:
+                createdCount: 0,
+                updatedCount: 0,
+                skippedCount: 0,
+
+                created: [],
+                updated: [],
+                skipped: [],
+
+                error:
                     error instanceof Error
                         ? error.message
-                        : String(error),
+                        : "Excel import failed.",
             },
             {
                 status: 500,
