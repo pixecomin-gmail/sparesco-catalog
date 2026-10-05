@@ -2270,30 +2270,398 @@ export async function createNewProduct(
   };
 }
 
+
 /*
  * Main Admin synchronization.
+ *
+ * Normal edits update the existing catalogue entries
+ * in place.
+ *
+ * Title/tag changes can change the physical location
+ * of a product inside catalogue/category pages, so
+ * those edits use the existing delete + create
+ * synchronization flow.
+ *
+ * Handle changes remain unsupported.
  */
 export async function syncExistingProduct(
   bucket: R2BucketLike,
   existingProduct: any,
   updatedProduct: any
 ) {
+  const handle =
+    clean(updatedProduct?.handle)
+      .toLowerCase();
+
+  if (!handle) {
+    throw new Error(
+      "Product handle is required."
+    );
+  }
+
+  const oldHandle =
+    clean(existingProduct?.handle)
+      .toLowerCase();
+
+  if (
+    oldHandle &&
+    oldHandle !== handle
+  ) {
+    throw new Error(
+      "Product handle cannot be changed."
+    );
+  }
+
+  const oldTitle =
+    clean(existingProduct?.title);
+
+  const newTitle =
+    clean(updatedProduct?.title);
+
+  const oldTags =
+    unique(
+      Array.isArray(existingProduct?.tags)
+        ? existingProduct.tags
+        : []
+    )
+      .map(slugify)
+      .filter(Boolean)
+      .sort();
+
+  const newTags =
+    unique(
+      Array.isArray(updatedProduct?.tags)
+        ? updatedProduct.tags
+        : []
+    )
+      .map(slugify)
+      .filter(Boolean)
+      .sort();
+
+  const titleChanged =
+    oldTitle !== newTitle;
+
+  const tagsChanged =
+    JSON.stringify(oldTags) !==
+    JSON.stringify(newTags);
+
   /*
-   * TEMPORARY DIAGNOSTIC:
-   * Test catalogue/category/homepage synchronization
-   * without Search V2.
+   * ------------------------------------------------
+   * STRUCTURAL EDIT
+   * ------------------------------------------------
+   *
+   * A title change can move the product to another
+   * sorted catalogue position.
+   *
+   * A tag change can move the product between
+   * collection/category pages.
+   *
+   * Re-use the already-tested delete/create
+   * synchronization machinery so every dependent
+   * index is updated consistently.
    */
-  const summaryResult =
-    await syncSummaryPages(
+  if (
+    titleChanged ||
+    tagsChanged
+  ) {
+    const deleted =
+      await deleteProduct(
+        bucket,
+        handle,
+        existingProduct
+      );
+
+    const created =
+      await createNewProduct(
+        bucket,
+        updatedProduct
+      );
+
+    /*
+     * deleteProduct/createNewProduct handle the
+     * catalogue, collections, filters, Search V2,
+     * handle registry and statistics.
+     *
+     * Curated homepage files are intentionally
+     * preserved by deletion, so refresh their
+     * product summary here.
+     */
+    const summary =
+      summarizeProduct(
+        updatedProduct
+      );
+
+    const curatedFiles = [
+      "catalog/featured-products/featured-products.json",
+      "catalog/popular-products/popular-products.json",
+    ];
+
+    const curatedResults =
+      await Promise.all(
+        curatedFiles.map(
+          async (key) => {
+            const data =
+              await readJson(
+                bucket,
+                key
+              );
+
+            if (
+              !Array.isArray(data)
+            ) {
+              return null;
+            }
+
+            const result =
+              replaceProduct(
+                data,
+                handle,
+                summary
+              );
+
+            if (
+              !result.changed
+            ) {
+              return null;
+            }
+
+            await writeJson(
+              bucket,
+              key,
+              result.products
+            );
+
+            return key;
+          }
+        )
+      );
+
+    return {
+      summary,
+
+      updatedFiles:
+        unique([
+          ...deleted.updatedFiles,
+          ...created.updatedFiles,
+          ...curatedResults.filter(
+            (
+              key
+            ): key is string =>
+              Boolean(key)
+          ),
+        ]),
+    };
+  }
+
+  /*
+   * ------------------------------------------------
+   * NORMAL EDIT
+   * ------------------------------------------------
+   *
+   * Price, vendor, part number, category, collection,
+   * images, descriptions, specifications and other
+   * non-placement fields can be updated in place.
+   */
+  const [
+    summaryResult,
+    searchResult,
+  ] = await Promise.all([
+    syncSummaryPages(
       bucket,
       existingProduct,
       updatedProduct
+    ),
+
+    syncSearchV2(
+      bucket,
+      existingProduct,
+      updatedProduct
+    ),
+  ]);
+
+  /*
+   * Keep catalog-index.json synchronized as well.
+   */
+  const catalogIndexKey =
+    "catalog/indexes/catalog-index.json";
+
+  const catalogIndexRaw =
+    await readJson(
+      bucket,
+      catalogIndexKey
     );
 
+  const catalogIndex =
+    Array.isArray(
+      catalogIndexRaw
+    )
+      ? catalogIndexRaw
+      : [];
+
+  const summary =
+    summarizeProduct(
+      updatedProduct
+    );
+
+  const indexResult =
+    replaceProduct(
+      catalogIndex,
+      handle,
+      summary
+    );
+
+  const indexFiles: string[] =
+    [];
+
+  if (indexResult.changed) {
+    await writeJson(
+      bucket,
+      catalogIndexKey,
+      indexResult.products
+    );
+
+    indexFiles.push(
+      catalogIndexKey
+    );
+  }
+
+  /*
+   * Vendor/brand edits affect the filter index.
+   * Rebuild brand counts from the catalogue index.
+   */
+  const filterIndexKey =
+    "catalog/indexes/filter-index.json";
+
+  const existingFilter =
+    (await readJson(
+      bucket,
+      filterIndexKey
+    )) || {};
+
+  const nextCatalog =
+    indexResult.changed
+      ? indexResult.products
+      : catalogIndex;
+
+  const brandCounts =
+    new Map<string, number>();
+
+  for (
+    const item of nextCatalog
+  ) {
+    const vendor =
+      clean(item?.vendor);
+
+    if (!vendor) {
+      continue;
+    }
+
+    brandCounts.set(
+      vendor,
+      (
+        brandCounts.get(
+          vendor
+        ) || 0
+      ) + 1
+    );
+  }
+
+  const brands =
+    Array.from(
+      brandCounts.entries()
+    )
+      .map(
+        ([title, count]) => ({
+          handle: title,
+          title,
+          count,
+        })
+      )
+      .sort(
+        (a, b) =>
+          a.title.localeCompare(
+            b.title
+          )
+      );
+
+  await writeJson(
+    bucket,
+    filterIndexKey,
+    {
+      ...existingFilter,
+      brands,
+    }
+  );
+
+  /*
+   * Variant-count edits affect statistics.
+   */
+  const oldVariantCount =
+    Array.isArray(
+      existingProduct?.variants
+    )
+      ? existingProduct
+          .variants.length
+      : 0;
+
+  const newVariantCount =
+    Array.isArray(
+      updatedProduct?.variants
+    )
+      ? updatedProduct
+          .variants.length
+      : 0;
+
+  const statsFiles: string[] =
+    [];
+
+  if (
+    oldVariantCount !==
+    newVariantCount
+  ) {
+    const statsKey =
+      "catalog/indexes/stats.json";
+
+    const stats =
+      (await readJson(
+        bucket,
+        statsKey
+      )) || {};
+
+    await writeJson(
+      bucket,
+      statsKey,
+      {
+        ...stats,
+
+        variants:
+          Math.max(
+            0,
+            Number(
+              stats?.variants || 0
+            ) -
+              oldVariantCount +
+              newVariantCount
+          ),
+      }
+    );
+
+    statsFiles.push(
+      statsKey
+    );
+  }
+
   return {
-    summary: summaryResult.summary,
+    summary,
+
     updatedFiles:
-      summaryResult.updatedFiles,
+      unique([
+        ...summaryResult.updatedFiles,
+        ...searchResult.updatedFiles,
+        ...indexFiles,
+        filterIndexKey,
+        ...statsFiles,
+      ]),
   };
 }
 

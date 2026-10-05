@@ -39,37 +39,6 @@ function getBucket() {
   return env.CATALOG_BUCKET;
 }
 
-function normalizedTags(
-  value: unknown
-) {
-  if (!Array.isArray(value)) {
-    return [];
-  }
-
-  return value
-    .map((item) =>
-      String(item || "")
-        .trim()
-        .toLowerCase()
-    )
-    .filter(Boolean)
-    .sort();
-}
-
-function sameTags(
-  first: unknown,
-  second: unknown
-) {
-  return (
-    JSON.stringify(
-      normalizedTags(first)
-    ) ===
-    JSON.stringify(
-      normalizedTags(second)
-    )
-  );
-}
-
 export async function GET(
   _request: Request,
   context: {
@@ -285,54 +254,7 @@ export async function PUT(
       );
     }
 
-    /*
-     * STRUCTURAL CHANGES
-     *
-     * These can physically move a product between
-     * catalogue/category pages.
-     *
-     * We block them until the structural repagination
-     * operation is added. This prevents the catalogue
-     * from becoming inconsistent.
-     */
-    const titleChanged =
-      String(existing.title || "")
-        .trim() !==
-      String(product.title || "")
-        .trim();
-
-    const collectionChanged =
-      String(
-        existing.collection || ""
-      )
-        .trim()
-        .toLowerCase() !==
-      String(
-        product.collection || ""
-      )
-        .trim()
-        .toLowerCase();
-
-    const tagsChanged =
-      !sameTags(
-        existing.tags,
-        product.tags
-      );
-
-    if (
-      titleChanged ||
-      collectionChanged ||
-      tagsChanged
-    ) {
-      return Response.json(
-        {
-          success: false,
-          error:
-            "Title, collection and tags cannot be changed yet because they affect catalogue placement. Other product fields can be edited normally.",
-        },
-        { status: 400 }
-      );
-    }
+    
 
     /*
      * Synchronize lightweight website indexes first.
