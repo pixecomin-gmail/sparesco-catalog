@@ -402,6 +402,24 @@ async function findAndUpdateSortedPage(
     };
   }
 
+    /*
+   * Manually-created/admin-edited products may live
+   * on the final page rather than their theoretical
+   * sorted page. Always check that page first.
+   */
+  const finalPage =
+    totalPages - 1;
+
+  const finalResult =
+    await checkPage(finalPage);
+
+  if (finalResult.found) {
+    return finalResult.key;
+  }
+
+  high =
+    totalPages - 2;
+
   while (low <= high) {
     const middle =
       Math.floor(
@@ -2312,179 +2330,124 @@ export async function syncExistingProduct(
     );
   }
 
-  const oldTitle =
-    clean(existingProduct?.title);
+  const summary =
+    summarizeProduct(
+      updatedProduct
+    );
 
-  const newTitle =
-    clean(updatedProduct?.title);
+  const updatedFiles: string[] =
+    [];
 
   const oldTags =
     unique(
-      Array.isArray(existingProduct?.tags)
+      Array.isArray(
+        existingProduct?.tags
+      )
         ? existingProduct.tags
         : []
     )
       .map(slugify)
-      .filter(Boolean)
-      .sort();
+      .filter(Boolean);
 
   const newTags =
     unique(
-      Array.isArray(updatedProduct?.tags)
+      Array.isArray(
+        updatedProduct?.tags
+      )
         ? updatedProduct.tags
         : []
     )
       .map(slugify)
-      .filter(Boolean)
-      .sort();
+      .filter(Boolean);
 
-  const titleChanged =
-    oldTitle !== newTitle;
+  if (!newTags.length) {
+    throw new Error(
+      "At least one tag is required."
+    );
+  }
 
-  const tagsChanged =
-    JSON.stringify(oldTags) !==
-    JSON.stringify(newTags);
+  const oldTagSet =
+    new Set(oldTags);
+
+  const newTagSet =
+    new Set(newTags);
+
+  const removedTags =
+    oldTags.filter(
+      (tag) =>
+        !newTagSet.has(tag)
+    );
+
+  const addedTags =
+    newTags.filter(
+      (tag) =>
+        !oldTagSet.has(tag)
+    );
+
+  const unchangedTags =
+    newTags.filter(
+      (tag) =>
+        oldTagSet.has(tag)
+    );
 
   /*
    * ------------------------------------------------
-   * STRUCTURAL EDIT
+   * CATALOGUE SUMMARY
    * ------------------------------------------------
    *
-   * A title change can move the product to another
-   * sorted catalogue position.
-   *
-   * A tag change can move the product between
-   * collection/category pages.
-   *
-   * Re-use the already-tested delete/create
-   * synchronization machinery so every dependent
-   * index is updated consistently.
+   * Update the existing numbered catalogue page.
+   * This also works for title changes because lookup
+   * uses the OLD title while writing the NEW summary.
    */
-  if (
-    titleChanged ||
-    tagsChanged
-  ) {
-    const deleted =
-      await deleteProduct(
-        bucket,
+  const catalogMetaKey =
+    "catalog/indexes/catalog-meta.json";
+
+  const catalogIndexKey =
+    "catalog/indexes/catalog-index.json";
+
+  const catalogMeta =
+    (await readJson(
+      bucket,
+      catalogMetaKey
+    )) || {};
+
+  const catalogTotalPages =
+    Number(
+      catalogMeta?.totalPages || 0
+    );
+
+  const catalogFile =
+    await findAndUpdateSortedPage(
+      bucket,
+      {
+        basePath:
+          "catalog/indexes/catalog-pages",
+
+        totalPages:
+          catalogTotalPages,
+
         handle,
-        existingProduct
-      );
 
-    const created =
-      await createNewProduct(
-        bucket,
-        updatedProduct
-      );
+        title:
+          existingProduct?.title ||
+          updatedProduct?.title ||
+          "",
 
-    /*
-     * deleteProduct/createNewProduct handle the
-     * catalogue, collections, filters, Search V2,
-     * handle registry and statistics.
-     *
-     * Curated homepage files are intentionally
-     * preserved by deletion, so refresh their
-     * product summary here.
-     */
-    const summary =
-      summarizeProduct(
-        updatedProduct
-      );
+        summary,
+      }
+    );
 
-    const curatedFiles = [
-      "catalog/featured-products/featured-products.json",
-      "catalog/popular-products/popular-products.json",
-    ];
-
-    const curatedResults =
-      await Promise.all(
-        curatedFiles.map(
-          async (key) => {
-            const data =
-              await readJson(
-                bucket,
-                key
-              );
-
-            if (
-              !Array.isArray(data)
-            ) {
-              return null;
-            }
-
-            const result =
-              replaceProduct(
-                data,
-                handle,
-                summary
-              );
-
-            if (
-              !result.changed
-            ) {
-              return null;
-            }
-
-            await writeJson(
-              bucket,
-              key,
-              result.products
-            );
-
-            return key;
-          }
-        )
-      );
-
-    return {
-      summary,
-
-      updatedFiles:
-        unique([
-          ...deleted.updatedFiles,
-          ...created.updatedFiles,
-          ...curatedResults.filter(
-            (
-              key
-            ): key is string =>
-              Boolean(key)
-          ),
-        ]),
-    };
+  if (catalogFile) {
+    updatedFiles.push(
+      catalogFile
+    );
   }
 
   /*
    * ------------------------------------------------
-   * NORMAL EDIT
+   * FULL CATALOG INDEX
    * ------------------------------------------------
-   *
-   * Price, vendor, part number, category, collection,
-   * images, descriptions, specifications and other
-   * non-placement fields can be updated in place.
    */
-  const [
-    summaryResult,
-    searchResult,
-  ] = await Promise.all([
-    syncSummaryPages(
-      bucket,
-      existingProduct,
-      updatedProduct
-    ),
-
-    syncSearchV2(
-      bucket,
-      existingProduct,
-      updatedProduct
-    ),
-  ]);
-
-  /*
-   * Keep catalog-index.json synchronized as well.
-   */
-  const catalogIndexKey =
-    "catalog/indexes/catalog-index.json";
-
   const catalogIndexRaw =
     await readJson(
       bucket,
@@ -2495,39 +2458,552 @@ export async function syncExistingProduct(
     Array.isArray(
       catalogIndexRaw
     )
-      ? catalogIndexRaw
+      ? [...catalogIndexRaw]
       : [];
 
-  const summary =
-    summarizeProduct(
-      updatedProduct
-    );
-
-  const indexResult =
+  const catalogIndexResult =
     replaceProduct(
       catalogIndex,
       handle,
       summary
     );
 
-  const indexFiles: string[] =
-    [];
+  let nextCatalog =
+    catalogIndexResult.products;
 
-  if (indexResult.changed) {
+  if (
+    catalogIndexResult.changed
+  ) {
+    /*
+     * catalog-index.json itself is kept sorted.
+     * Numbered pages do NOT need full repagination.
+     */
+    nextCatalog =
+      sortSummaries(
+        catalogIndexResult.products
+      );
+
     await writeJson(
       bucket,
       catalogIndexKey,
-      indexResult.products
+      nextCatalog
     );
 
-    indexFiles.push(
+    updatedFiles.push(
       catalogIndexKey
     );
   }
 
   /*
-   * Vendor/brand edits affect the filter index.
-   * Rebuild brand counts from the catalogue index.
+   * ------------------------------------------------
+   * COLLECTION / TAG DATA
+   * ------------------------------------------------
+   */
+  const categoryMetaKey =
+    "catalog/indexes/category-meta.json";
+
+  const collectionsKey =
+    "catalog/indexes/collections.json";
+
+  const categoryMeta =
+    (await readJson(
+      bucket,
+      categoryMetaKey
+    )) || {};
+
+  const collectionsRaw =
+    await readJson(
+      bucket,
+      collectionsKey
+    );
+
+  const collections =
+    Array.isArray(
+      collectionsRaw
+    )
+      ? [...collectionsRaw]
+      : [];
+
+  /*
+   * Locate and remove a product from one tag.
+   *
+   * Returns TRUE only when the product was
+   * physically present and removed.
+   *
+   * This is important for recovery from a
+   * partially-completed previous save.
+   */
+  async function removeFromTag(
+    tag: string
+  ) {
+    const meta =
+      categoryMeta?.[tag];
+
+    if (!meta) {
+      return false;
+    }
+
+    const totalPages =
+      Number(
+        meta?.totalPages || 0
+      );
+
+    if (!totalPages) {
+      return false;
+    }
+
+    const basePath =
+      `catalog/indexes/category-pages/${tag}`;
+
+    async function removePage(
+      pageIndex: number
+    ) {
+      if (
+        pageIndex < 0 ||
+        pageIndex >= totalPages
+      ) {
+        return false;
+      }
+
+      const key =
+        `${basePath}/${pageNumber(
+          pageIndex
+        )}.json`;
+
+      const raw =
+        await readJson(
+          bucket,
+          key
+        );
+
+      if (!Array.isArray(raw)) {
+        return false;
+      }
+
+      const filtered =
+        raw.filter(
+          (item: any) =>
+            clean(
+              item?.handle
+            ).toLowerCase() !==
+            handle
+        );
+
+      if (
+        filtered.length ===
+        raw.length
+      ) {
+        return false;
+      }
+
+      await writeJson(
+        bucket,
+        key,
+        filtered
+      );
+
+      updatedFiles.push(key);
+
+      return true;
+    }
+
+    /*
+     * Admin/manual products may have been
+     * appended to the final page.
+     */
+    let removed =
+      await removePage(
+        totalPages - 1
+      );
+
+    /*
+     * Otherwise locate the older sorted page
+     * using the old title.
+     */
+    if (!removed) {
+      let low = 0;
+      let high =
+        totalPages - 2;
+
+      const oldTitle =
+        existingProduct?.title ||
+        "";
+
+      while (
+        low <= high &&
+        !removed
+      ) {
+        const middle =
+          Math.floor(
+            (low + high) / 2
+          );
+
+        const key =
+          `${basePath}/${pageNumber(
+            middle
+          )}.json`;
+
+        const raw =
+          await readJson(
+            bucket,
+            key
+          );
+
+        const page =
+          Array.isArray(raw)
+            ? raw
+            : [];
+
+        if (!page.length) {
+          break;
+        }
+
+        const filtered =
+          page.filter(
+            (item: any) =>
+              clean(
+                item?.handle
+              ).toLowerCase() !==
+              handle
+          );
+
+        if (
+          filtered.length !==
+          page.length
+        ) {
+          await writeJson(
+            bucket,
+            key,
+            filtered
+          );
+
+          updatedFiles.push(key);
+
+          removed = true;
+          break;
+        }
+
+        const firstTitle =
+          page[0]?.title || "";
+
+        const lastTitle =
+          page[
+            page.length - 1
+          ]?.title || "";
+
+        if (
+          compareTitles(
+            oldTitle,
+            firstTitle
+          ) < 0
+        ) {
+          high =
+            middle - 1;
+        } else if (
+          compareTitles(
+            oldTitle,
+            lastTitle
+          ) > 0
+        ) {
+          low =
+            middle + 1;
+        } else {
+          /*
+           * Duplicate-title boundary.
+           */
+          const neighbours =
+            unique([
+              middle - 1,
+              middle + 1,
+            ]).filter(
+              (index) =>
+                index >= 0 &&
+                index <
+                  totalPages - 1
+            );
+
+          for (
+            const neighbour
+            of neighbours
+          ) {
+            removed =
+              await removePage(
+                neighbour
+              );
+
+            if (removed) {
+              break;
+            }
+          }
+
+          break;
+        }
+      }
+    }
+
+    /*
+     * Only reduce counts if something was
+     * ACTUALLY removed.
+     *
+     * This makes retries safe.
+     */
+    if (removed) {
+      const nextTotal =
+        Math.max(
+          0,
+          Number(
+            meta?.totalProducts ||
+              0
+          ) - 1
+        );
+
+      categoryMeta[tag] = {
+        ...meta,
+
+        totalProducts:
+          nextTotal,
+      };
+
+      const collectionIndex =
+        collections.findIndex(
+          (item: any) =>
+            slugify(
+              item?.handle
+            ) === tag
+        );
+
+      if (
+        collectionIndex >= 0
+      ) {
+        collections[
+          collectionIndex
+        ] = {
+          ...collections[
+            collectionIndex
+          ],
+
+          count:
+            nextTotal,
+        };
+      }
+    }
+
+    return removed;
+  }
+
+  /*
+   * Update summaries inside tags that remain
+   * attached to the product.
+   */
+  for (
+    const tag
+    of unchangedTags
+  ) {
+    const totalPages =
+      Number(
+        categoryMeta?.[tag]
+          ?.totalPages || 0
+      );
+
+    if (!totalPages) {
+      continue;
+    }
+
+    const key =
+      await findAndUpdateSortedPage(
+        bucket,
+        {
+          basePath:
+            `catalog/indexes/category-pages/${tag}`,
+
+          totalPages,
+
+          handle,
+
+          title:
+            existingProduct?.title ||
+            updatedProduct?.title ||
+            "",
+
+          summary,
+        }
+      );
+
+    if (key) {
+      updatedFiles.push(key);
+    }
+  }
+
+  /*
+   * Remove from tags that the admin deleted.
+   */
+  for (
+    const tag
+    of removedTags
+  ) {
+    await removeFromTag(tag);
+  }
+
+  /*
+   * Add to newly-added tags.
+   *
+   * First check whether the product already exists
+   * there. This makes retries safe.
+   */
+  for (
+    const tag
+    of addedTags
+  ) {
+    const oldMeta =
+      categoryMeta?.[tag] || {};
+
+    const pageSize =
+      Number(
+        oldMeta?.pageSize || 24
+      );
+
+    const totalPages =
+      Number(
+        oldMeta?.totalPages || 0
+      );
+
+    let alreadyExists =
+      false;
+
+    /*
+     * New/admin products normally live on the
+     * final page, so check there first.
+     */
+    if (totalPages > 0) {
+      const lastPageKey =
+        `catalog/indexes/category-pages/${tag}/${pageNumber(
+          totalPages - 1
+        )}.json`;
+
+      const lastPage =
+        await readJson(
+          bucket,
+          lastPageKey
+        );
+
+      alreadyExists =
+        Array.isArray(lastPage) &&
+        lastPage.some(
+          (item: any) =>
+            clean(
+              item?.handle
+            ).toLowerCase() ===
+            handle
+        );
+    }
+
+    if (!alreadyExists) {
+      const pageResult =
+        await appendPagedItem(
+          bucket,
+          `catalog/indexes/category-pages/${tag}`,
+          summary,
+          pageSize,
+          totalPages
+        );
+
+      updatedFiles.push(
+        ...pageResult.updatedFiles
+      );
+
+      const nextTotal =
+        Number(
+          oldMeta?.totalProducts ||
+            0
+        ) + 1;
+
+      categoryMeta[tag] = {
+        ...oldMeta,
+
+        totalProducts:
+          nextTotal,
+
+        pageSize,
+
+        totalPages:
+          pageResult.totalPages,
+      };
+
+      const collectionIndex =
+        collections.findIndex(
+          (item: any) =>
+            slugify(
+              item?.handle
+            ) === tag
+        );
+
+      const collectionEntry = {
+        title:
+          titleFromHandle(tag),
+
+        handle:
+          tag,
+
+        count:
+          nextTotal,
+      };
+
+      if (
+        collectionIndex >= 0
+      ) {
+        collections[
+          collectionIndex
+        ] = {
+          ...collections[
+            collectionIndex
+          ],
+
+          ...collectionEntry,
+        };
+      } else {
+        collections.push(
+          collectionEntry
+        );
+      }
+    }
+  }
+
+  collections.sort(
+    (a: any, b: any) =>
+      String(
+        a?.title || ""
+      ).localeCompare(
+        String(
+          b?.title || ""
+        )
+      )
+  );
+
+  await Promise.all([
+    writeJson(
+      bucket,
+      categoryMetaKey,
+      categoryMeta
+    ),
+
+    writeJson(
+      bucket,
+      collectionsKey,
+      collections
+    ),
+  ]);
+
+  updatedFiles.push(
+    categoryMetaKey,
+    collectionsKey
+  );
+
+  /*
+   * ------------------------------------------------
+   * FILTER INDEX
+   * ------------------------------------------------
+   *
+   * Rebuild brands from the updated catalogue.
    */
   const filterIndexKey =
     "catalog/indexes/filter-index.json";
@@ -2538,16 +3014,12 @@ export async function syncExistingProduct(
       filterIndexKey
     )) || {};
 
-  const nextCatalog =
-    indexResult.changed
-      ? indexResult.products
-      : catalogIndex;
-
   const brandCounts =
     new Map<string, number>();
 
   for (
-    const item of nextCatalog
+    const item
+    of nextCatalog
   ) {
     const vendor =
       clean(item?.vendor);
@@ -2589,12 +3061,137 @@ export async function syncExistingProduct(
     filterIndexKey,
     {
       ...existingFilter,
+
+      categories:
+        collections,
+
       brands,
     }
   );
 
+  updatedFiles.push(
+    filterIndexKey
+  );
+
   /*
-   * Variant-count edits affect statistics.
+   * ------------------------------------------------
+   * SEARCH V2
+   * ------------------------------------------------
+   */
+  const searchResult =
+    await syncSearchV2(
+      bucket,
+      existingProduct,
+      updatedProduct
+    );
+
+  updatedFiles.push(
+    ...searchResult.updatedFiles
+  );
+
+  /*
+   * ------------------------------------------------
+   * HANDLE REGISTRY
+   * ------------------------------------------------
+   */
+  const first =
+    handle[0];
+
+  const registryShard =
+    first >= "0" &&
+    first <= "9"
+      ? first
+      : first >= "a" &&
+          first <= "z"
+        ? first
+        : "other";
+
+  const registryKey =
+    `catalog/handles/${registryShard}.json`;
+
+  const registry =
+    (await readJson(
+      bucket,
+      registryKey
+    )) || {};
+
+  registry[handle] = {
+    handle,
+
+    sources:
+      updatedProduct?.sources ||
+      existingProduct?.sources ||
+      [],
+
+    tags:
+      newTags,
+
+    updatedAt:
+      new Date()
+        .toISOString(),
+  };
+
+  await writeJson(
+    bucket,
+    registryKey,
+    registry
+  );
+
+  updatedFiles.push(
+    registryKey
+  );
+
+  /*
+   * ------------------------------------------------
+   * HOMEPAGE CURATED PRODUCTS
+   * ------------------------------------------------
+   */
+  const curatedFiles = [
+    "catalog/featured-products/featured-products.json",
+    "catalog/popular-products/popular-products.json",
+  ];
+
+  for (
+    const key
+    of curatedFiles
+  ) {
+    const data =
+      await readJson(
+        bucket,
+        key
+      );
+
+    if (!Array.isArray(data)) {
+      continue;
+    }
+
+    const result =
+      replaceProduct(
+        data,
+        handle,
+        summary
+      );
+
+    if (!result.changed) {
+      continue;
+    }
+
+    await writeJson(
+      bucket,
+      key,
+      result.products
+    );
+
+    updatedFiles.push(key);
+  }
+
+  /*
+   * ------------------------------------------------
+   * STATS
+   * ------------------------------------------------
+   *
+   * Product count does not change during an edit.
+   * Only variant count may change.
    */
   const oldVariantCount =
     Array.isArray(
@@ -2611,9 +3208,6 @@ export async function syncExistingProduct(
       ? updatedProduct
           .variants.length
       : 0;
-
-  const statsFiles: string[] =
-    [];
 
   if (
     oldVariantCount !==
@@ -2643,10 +3237,13 @@ export async function syncExistingProduct(
               oldVariantCount +
               newVariantCount
           ),
+
+        collections:
+          collections.length,
       }
     );
 
-    statsFiles.push(
+    updatedFiles.push(
       statsKey
     );
   }
@@ -2655,13 +3252,7 @@ export async function syncExistingProduct(
     summary,
 
     updatedFiles:
-      unique([
-        ...summaryResult.updatedFiles,
-        ...searchResult.updatedFiles,
-        ...indexFiles,
-        filterIndexKey,
-        ...statsFiles,
-      ]),
+      unique(updatedFiles),
   };
 }
 
