@@ -3,6 +3,7 @@ export const runtime = "edge";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Suspense } from "react";
+import { permanentRedirect } from "next/navigation";
 import CollectionPageClient from "@/components/CollectionPageClient";
 import type { ProductIndexItem } from "@/lib/products";
 
@@ -10,8 +11,10 @@ type CollectionItem = {
   title: string;
   handle: string;
   count: number;
+  description?: string;
+  seoTitle?: string;
+  seoDescription?: string;
 };
-
 type Props = {
   params: Promise<{ handle: string }>;
   searchParams: Promise<{ page?: string }>;
@@ -57,6 +60,42 @@ async function getBaseUrl() {
   }
 
   return `${protocol}://${host}`;
+}
+
+async function getCollectionRedirect(
+  handle: string
+) {
+  try {
+    const baseUrl =
+      await getBaseUrl();
+
+    if (!baseUrl) {
+      return "";
+    }
+
+    const response =
+      await fetch(
+        `${baseUrl}/api/collection-redirect/${encodeURIComponent(
+          handle
+        )}`,
+        {
+          cache: "no-store",
+        }
+      );
+
+    if (!response.ok) {
+      return "";
+    }
+
+    const data =
+      await response.json();
+
+    return String(
+      data?.redirect || ""
+    ).trim();
+  } catch {
+    return "";
+  }
 }
 
 async function loadCollectionPage(handle: string, requestedPage: number) {
@@ -126,13 +165,59 @@ export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { handle } = await params;
-  const title = replaceFilterFinder(
-    cleanTitle(handle)
+
+  const redirectHandle =
+    await getCollectionRedirect(
+      handle
+    );
+
+  if (
+    redirectHandle &&
+    redirectHandle !== handle
+  ) {
+    permanentRedirect(
+      `/collections/${encodeURIComponent(
+        redirectHandle
+      )}`
+    );
+  }
+
+  const {
+    collections,
+  } = await loadCollectionPage(
+    handle,
+    1
   );
 
-  const metaTitle = `${title} Filters, Spare Parts & Cross Reference`;
-  const metaDescription = `Browse ${title} filters, spare parts and cross reference products. View specifications and send enquiries to Sparesco.`;
-  const canonical = `/collections/${handle}`;
+  const collection =
+    collections.find(
+      (item) =>
+        item.handle === handle
+    ) || null;
+
+  const title =
+    replaceFilterFinder(
+      collection?.title ||
+      cleanTitle(handle)
+    );
+
+  const metaTitle =
+    replaceFilterFinder(
+      collection?.seoTitle
+    ) ||
+    `${title} Filters, Spare Parts & Cross Reference`;
+
+  const metaDescription =
+    replaceFilterFinder(
+      collection?.seoDescription
+    ) ||
+    replaceFilterFinder(
+      collection?.description
+    ) ||
+    `Browse ${title} filters, spare parts and cross reference products. View specifications and send enquiries to Sparesco.`;
+
+  const canonical =
+    `/collections/${handle}`;
 
   return {
     title: metaTitle,
@@ -170,6 +255,31 @@ export default async function CollectionPage({
 }: Props) {
   const { handle } = await params;
   const resolvedSearchParams = await searchParams;
+
+  const redirectHandle =
+    await getCollectionRedirect(
+      handle
+    );
+
+  if (
+    redirectHandle &&
+    redirectHandle !== handle
+  ) {
+    const page =
+      resolvedSearchParams.page;
+
+    permanentRedirect(
+      `/collections/${encodeURIComponent(
+        redirectHandle
+      )}${page &&
+        page !== "1"
+        ? `?page=${encodeURIComponent(
+          page
+        )}`
+        : ""
+      }`
+    );
+  }
 
   const requestedPage = Math.max(
     Number(resolvedSearchParams.page || "1") || 1,

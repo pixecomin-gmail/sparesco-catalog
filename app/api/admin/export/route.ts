@@ -830,10 +830,22 @@ function buildRows(
     return rows;
 }
 
-export async function GET() {
+export async function GET(request: Request) {
     try {
         const bucket =
             getBucket();
+
+        const url =
+            new URL(request.url);
+
+        const requestedHandles =
+            url.searchParams
+                .get("handles")
+                ?.split(",")
+                .map((handle) =>
+                    handle.trim().toLowerCase()
+                )
+                .filter(Boolean) || [];
 
         /*
          * The catalogue index is used only
@@ -865,10 +877,18 @@ export async function GET() {
                 indexObject
             );
 
-        const handles =
+        const allHandles =
             extractHandles(
                 indexJson
             );
+
+        const handles =
+            requestedHandles.length > 0
+                ? requestedHandles.filter(
+                      (handle) =>
+                          allHandles.includes(handle)
+                  )
+                : allHandles;
 
         if (!handles.length) {
             return Response.json({
