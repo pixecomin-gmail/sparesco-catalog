@@ -1343,3 +1343,71 @@
     width: 100%;
   }
 }
+/* =========================
+   PRODUCT DELETE / DANGER ZONE
+========================= */
+
+.admin-danger-card {
+  border-color: #efc7c3;
+  background: #fffafa;
+}
+
+.admin-danger-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.admin-danger-card-content h2 {
+  margin: 0 0 7px;
+  color: #9f2d24;
+  font-size: 18px;
+}
+
+.admin-danger-card-content p {
+  margin: 0;
+  max-width: 650px;
+  color: #7c6663;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.admin-danger-button {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid #b42318;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #b42318;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.admin-danger-button:hover:not(:disabled) {
+  background: #b42318;
+  color: #ffffff;
+}
+
+.admin-danger-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .admin-danger-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-danger-button {
+    width: 100%;
+  }
+}
