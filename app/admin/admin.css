@@ -2205,3 +2205,42 @@
     flex-direction: column;
   }
 }
+
+.admin-collection-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 18px 0 4px;
+}
+
+.admin-collection-pagination span {
+  min-width: 110px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #173f4c;
+}
+
+.admin-collection-pagination .admin-secondary-button {
+  min-width: 90px;
+}
+
+.admin-collection-pagination .admin-secondary-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .admin-collection-pagination {
+    gap: 10px;
+  }
+
+  .admin-collection-pagination span {
+    min-width: auto;
+  }
+
+  .admin-collection-pagination .admin-secondary-button {
+    min-width: auto;
+  }
+}

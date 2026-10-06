@@ -107,6 +107,13 @@ export default function AdminCollectionPage() {
     ] = useState("");
 
     const [
+        productPage,
+        setProductPage,
+    ] = useState(1);
+
+    const PRODUCTS_PER_PAGE = 24;
+
+    const [
         browseOpen,
         setBrowseOpen,
     ] = useState(false);
@@ -312,6 +319,36 @@ export default function AdminCollectionPage() {
         }, [
             productSearch,
             products,
+        ]);
+
+    const totalProductPages =
+        Math.max(
+            1,
+            Math.ceil(
+                filteredProducts.length /
+                PRODUCTS_PER_PAGE
+            )
+        );
+
+    const safeProductPage =
+        Math.min(
+            productPage,
+            totalProductPages
+        );
+
+    const paginatedProducts =
+        useMemo(() => {
+            const start =
+                (safeProductPage - 1) *
+                PRODUCTS_PER_PAGE;
+
+            return filteredProducts.slice(
+                start,
+                start + PRODUCTS_PER_PAGE
+            );
+        }, [
+            filteredProducts,
+            safeProductPage,
         ]);
 
     async function searchBrowseProducts() {
@@ -1214,14 +1251,13 @@ export default function AdminCollectionPage() {
                                         value={
                                             productSearch
                                         }
-                                        onChange={(
-                                            event
-                                        ) =>
+                                        onChange={(event) => {
                                             setProductSearch(
-                                                event.target
-                                                    .value
-                                            )
-                                        }
+                                                event.target.value
+                                            );
+
+                                            setProductPage(1);
+                                        }}
                                         placeholder="Search products in this collection"
                                     />
                                 </div>
@@ -1229,7 +1265,7 @@ export default function AdminCollectionPage() {
                                 <div className="admin-collection-products">
                                     {filteredProducts.length >
                                         0 ? (
-                                        filteredProducts.map(
+                                        paginatedProducts.map(
                                             (
                                                 product,
                                                 index
@@ -1352,6 +1388,54 @@ export default function AdminCollectionPage() {
                                         </div>
                                     )}
                                 </div>
+                                {filteredProducts.length >
+                                    PRODUCTS_PER_PAGE ? (
+                                    <div className="admin-collection-pagination">
+                                        <button
+                                            type="button"
+                                            className="admin-secondary-button"
+                                            disabled={
+                                                safeProductPage <= 1
+                                            }
+                                            onClick={() =>
+                                                setProductPage(
+                                                    Math.max(
+                                                        1,
+                                                        safeProductPage - 1
+                                                    )
+                                                )
+                                            }
+                                        >
+                                            Previous
+                                        </button>
+
+                                        <span>
+                                            Page{" "}
+                                            {safeProductPage.toLocaleString()}{" "}
+                                            of{" "}
+                                            {totalProductPages.toLocaleString()}
+                                        </span>
+
+                                        <button
+                                            type="button"
+                                            className="admin-secondary-button"
+                                            disabled={
+                                                safeProductPage >=
+                                                totalProductPages
+                                            }
+                                            onClick={() =>
+                                                setProductPage(
+                                                    Math.min(
+                                                        totalProductPages,
+                                                        safeProductPage + 1
+                                                    )
+                                                )
+                                            }
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+                                ) : null}
                             </>
                         ) : (
                             <div className="admin-collection-empty-products">
