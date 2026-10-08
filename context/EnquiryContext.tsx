@@ -147,9 +147,7 @@ async function refreshEnquiryItem(
     ) {
       return {
         ...item,
-        title:
-          product.title ||
-          item.title,
+        title: item.title,
         image: currentImage,
       };
     }
@@ -172,9 +170,21 @@ async function refreshEnquiryItem(
       /*
        * Refresh catalogue-controlled data.
        */
-      title:
-        product.title ||
-        item.title,
+            title: (() => {
+        const productName = String(
+          product.title || item.handle
+        ).trim();
+
+        const variantReference = String(
+          variant.partNumber || item.partNumber || ""
+        ).trim();
+
+        return variantReference &&
+          variantReference.toLowerCase() !==
+            productName.toLowerCase()
+          ? `${productName} - ${variantReference}`
+          : productName || item.title;
+      })(),
 
       image: currentImage,
 

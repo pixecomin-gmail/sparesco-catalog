@@ -224,6 +224,17 @@ export default function ProductPageClient({
     cleanText(currentProduct.title || currentProduct.handle)
   );
 
+  const selectedVariantReference =
+    cleanText(activeVariant.partNumber) ||
+    activeVariantTitle;
+
+  const displayProductTitle =
+    selectedVariantReference &&
+      selectedVariantReference.toLowerCase() !==
+      productReference.toLowerCase()
+      ? `${productReference} - ${selectedVariantReference}`
+      : productReference;
+
   const productImageAlt = getProductImageAlt(
     productReference,
     activeVariantTitle,
@@ -261,15 +272,13 @@ export default function ProductPageClient({
   );
 
   function addActiveVariantToEnquiry() {
-    const cleanPartNumber = activeVariant.partNumber || "";
+    const cleanPartNumber = activeVariant.partNumber || ""
     const cleanVariantName = activeVariantTitle || "";
 
     addItem({
       id: `${currentProduct.handle}-${cleanPartNumber}`,
       handle: currentProduct.handle,
-      title: cleanVariantName
-        ? `${cleanPartNumber} - ${cleanVariantName}`
-        : cleanPartNumber || currentProduct.title,
+      title: displayProductTitle,
       image: getImageUrl(stickyImage),
       partNumber: cleanPartNumber,
       vendor:
@@ -341,7 +350,7 @@ export default function ProductPageClient({
                 </div>
 
                 <h1 className="product-title">
-                  {primaryVariantTitle}
+                  {displayProductTitle}
                 </h1>
               </div>
 
@@ -466,7 +475,7 @@ export default function ProductPageClient({
 
             <div>
               <span>Selected Variant</span>
-              <strong>{activeVariantTitle}</strong>
+              <strong>{displayProductTitle}</strong>
             </div>
           </div>
 
