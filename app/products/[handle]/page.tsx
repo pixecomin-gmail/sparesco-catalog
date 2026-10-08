@@ -38,16 +38,28 @@ const getProduct = cache(
     ];
 
     for (const url of urls) {
+      let res: Response;
+
       try {
-        const res = await fetch(url, {
+        res = await fetch(url, {
           cache: "no-store",
         });
+      } catch (error) {
+        console.error("Product R2 request failed", error);
+        throw new Error("Product data temporarily unavailable");
+      }
 
-        if (!res.ok) continue;
+      if (res.status === 404) continue;
 
+      if (!res.ok) {
+        throw new Error(`Product R2 HTTP ${res.status}`);
+      }
+
+      try {
         return (await res.json()) as Product;
-      } catch {
-        // Try the next product location.
+      } catch (error) {
+        console.error("Invalid product JSON", error);
+        throw new Error("Product data temporarily unavailable");
       }
     }
 
@@ -179,10 +191,10 @@ function getSeoData(
 
   const productTitle = isReferenceProduct
     ? cleanProductTitle(
-        variant?.title ||
-        product.title ||
-        partNumber
-      )
+      variant?.title ||
+      product.title ||
+      partNumber
+    )
     : `${partNumber} Replacement Filter`;
 
   const primaryPartNumber = isReferenceProduct
@@ -207,8 +219,8 @@ function getSeoData(
 
   const brand = isReferenceProduct
     ? replaceFilterFinder(
-        cleanText(variant?.vendor)
-      )
+      cleanText(variant?.vendor)
+    )
     : "";
 
   const category = replaceFilterFinder(
@@ -262,7 +274,7 @@ function getSeoData(
       : replacementReferences.length > 0
         ? `${partNumber} replacement filter reference. Cross references include ${replacementText}. View specifications and enquire for pricing and availability.`
         : `${partNumber} replacement filter reference. View specifications and enquire with Sparesco for pricing and availability.`;
-        
+
   return {
     variant,
     partNumber,

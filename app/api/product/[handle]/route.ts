@@ -33,19 +33,59 @@ export async function GET(
   ];
 
   for (const url of urls) {
-    const res = await fetch(url, {
-      cache: "no-store",
-    });
+    let res: Response;
 
-    if (res.ok) {
+    try {
+      res = await fetch(url, {
+        cache: "no-store",
+      });
+    } catch (error) {
+      console.error("Product API R2 request failed", error);
+
+      return Response.json(
+        { error: "Product temporarily unavailable" },
+        {
+          status: 503,
+          headers: { "Cache-Control": "no-store" },
+        }
+      );
+    }
+
+    if (res.status === 404) continue;
+
+    if (!res.ok) {
+      console.error("Product API R2 HTTP", res.status);
+
+      return Response.json(
+        { error: "Product temporarily unavailable" },
+        {
+          status: 503,
+          headers: { "Cache-Control": "no-store" },
+        }
+      );
+    }
+
+    try {
       const data = await res.text();
+      JSON.parse(data);
 
       return new Response(data, {
         headers: {
           "content-type": "application/json",
-          "cache-control": "public, max-age=300, stale-while-revalidate=86400",
+          "cache-control":
+            "public, max-age=300, stale-while-revalidate=86400",
         },
       });
+    } catch (error) {
+      console.error("Product API invalid JSON", error);
+
+      return Response.json(
+        { error: "Product temporarily unavailable" },
+        {
+          status: 503,
+          headers: { "Cache-Control": "no-store" },
+        }
+      );
     }
   }
 

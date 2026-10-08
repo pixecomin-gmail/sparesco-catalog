@@ -21,7 +21,14 @@ function xmlResponse(xml: string) {
 }
 
 export async function GET() {
-  let totalPages = 1;
+  if (!r2Base) {
+    return new Response("Catalogue configuration unavailable", {
+      status: 503,
+      headers: { "Cache-Control": "no-store" },
+    });
+  }
+
+  let totalPages: number;
 
   try {
     const response = await fetch(
@@ -29,16 +36,24 @@ export async function GET() {
       { cache: "no-store" }
     );
 
-    if (response.ok) {
-      const meta = (await response.json()) as CatalogMeta;
+    if (!response.ok) {
+      throw new Error(`R2 metadata returned ${response.status}`);
+    }
 
-      totalPages =
-        meta.totalPages ||
-        Math.ceil((meta.totalProducts || 0) / 1000) ||
-        1;
+    const meta = (await response.json()) as CatalogMeta;
+
+    totalPages =
+      Number(meta.totalPages) ||
+      Math.ceil(Number(meta.totalProducts) / 1000);
+
+    if (!Number.isSafeInteger(totalPages) || totalPages < 1) {
+      throw new Error("Invalid catalogue page count");
     }
   } catch {
-    totalPages = 1;
+    return new Response("Catalogue sitemap temporarily unavailable", {
+      status: 503,
+      headers: { "Cache-Control": "no-store" },
+    });
   }
 
   const sitemapEntries = Array.from(

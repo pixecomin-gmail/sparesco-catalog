@@ -195,6 +195,7 @@ export default function AdminCollectionsPage() {
                           href={`/admin/collections/${encodeURIComponent(
                             collection.handle
                           )}`}
+                          prefetch={false}
                           className="admin-collection-link"
                         >
                           <strong>

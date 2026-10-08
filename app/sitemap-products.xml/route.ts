@@ -40,18 +40,14 @@ function xmlResponse(xml: string) {
   });
 }
 
-async function getJson<T>(url: string): Promise<T | null> {
-  try {
-    const response = await fetch(url, {
-      cache: "no-store",
-    });
+async function getJson<T>(url: string): Promise<T> {
+  const response = await fetch(url, { cache: "no-store" });
 
-    if (!response.ok) return null;
-
-    return (await response.json()) as T;
-  } catch {
-    return null;
+  if (!response.ok) {
+    throw new Error(`R2 HTTP ${response.status}`);
   }
+
+  return (await response.json()) as T;
 }
 
 export async function GET(request: Request) {
@@ -68,10 +64,29 @@ export async function GET(request: Request) {
   const file = String(page).padStart(4, "0");
   const base = r2Base.replace(/\/$/, "");
 
-  const products =
-    (await getJson<ProductIndexItem[]>(
+  if (!r2Base) {
+    return new Response("R2 unavailable", {
+      status: 503,
+      headers: { "Cache-Control": "no-store" },
+    });
+  }
+
+  let products: ProductIndexItem[];
+
+  try {
+    products = await getJson<ProductIndexItem[]>(
       `${base}/catalog/indexes/catalog-pages/${file}.json`
-    )) || [];
+    );
+
+    if (!Array.isArray(products)) {
+      throw new Error("Invalid product sitemap data");
+    }
+  } catch {
+    return new Response("Product sitemap temporarily unavailable", {
+      status: 503,
+      headers: { "Cache-Control": "no-store" },
+    });
+  }
 
   const urls: string[] = [];
 
@@ -85,10 +100,22 @@ export async function GET(request: Request) {
       `${siteUrl}/about`
     );
 
-    const collections =
-      (await getJson<CollectionItem[]>(
+    let collections: CollectionItem[];
+
+    try {
+      collections = await getJson<CollectionItem[]>(
         `${base}/catalog/indexes/collections.json`
-      )) || [];
+      );
+
+      if (!Array.isArray(collections)) {
+        throw new Error("Invalid collections data");
+      }
+    } catch {
+      return new Response("Collections sitemap temporarily unavailable", {
+        status: 503,
+        headers: { "Cache-Control": "no-store" },
+      });
+    }
 
     for (const collection of collections) {
       if (collection.handle) {
