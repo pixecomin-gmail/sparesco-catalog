@@ -3,6 +3,8 @@
 export const runtime = "edge";
 
 import Link from "next/link";
+import { getCatalogThumbnailUrl } from "@/lib/catalog/thumbnail";
+
 import {
     useEffect,
     useMemo,
@@ -114,6 +116,11 @@ export default function AdminCollectionPage() {
     const PRODUCTS_PER_PAGE = 24;
 
     const [
+        productsComplete,
+        setProductsComplete,
+    ] = useState(false);
+
+    const [
         browseOpen,
         setBrowseOpen,
     ] = useState(false);
@@ -190,7 +197,7 @@ export default function AdminCollectionPage() {
                     await fetch(
                         `/api/admin/collections/${encodeURIComponent(
                             routeHandle
-                        )}`,
+                        )}?page=1`,
                         {
                             cache: "no-store",
                         }
@@ -225,7 +232,7 @@ export default function AdminCollectionPage() {
                         ? data.products
                         : []
                 );
-
+                setProductsComplete(false);
                 setTitle(
                     nextCollection.title ||
                     ""
@@ -273,6 +280,78 @@ export default function AdminCollectionPage() {
             cancelled = true;
         };
     }, [routeHandle]);
+
+    useEffect(() => {
+        if (
+            !routeHandle ||
+            !collection ||
+            productsComplete ||
+            (
+                productPage === 1 &&
+                !productSearch.trim() &&
+                !browseOpen
+            )
+        ) {
+            return;
+        }
+
+        let cancelled = false;
+
+        async function loadAllProducts() {
+            try {
+                const response = await fetch(
+                    `/api/admin/collections/${encodeURIComponent(
+                        routeHandle
+                    )}`,
+                    {
+                        cache: "no-store",
+                    }
+                );
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(
+                        data?.error ||
+                        "Unable to load collection products."
+                    );
+                }
+
+                if (cancelled) {
+                    return;
+                }
+
+                setProducts(
+                    Array.isArray(data.products)
+                        ? data.products
+                        : []
+                );
+
+                setProductsComplete(true);
+            } catch (error) {
+                if (!cancelled) {
+                    setError(
+                        error instanceof Error
+                            ? error.message
+                            : "Unable to load collection products."
+                    );
+                }
+            }
+        }
+
+        loadAllProducts();
+
+        return () => {
+            cancelled = true;
+        };
+    }, [
+        routeHandle,
+        collection,
+        productsComplete,
+        productPage,
+        productSearch,
+        browseOpen,
+    ]);
 
     const filteredProducts =
         useMemo(() => {
@@ -325,8 +404,15 @@ export default function AdminCollectionPage() {
         Math.max(
             1,
             Math.ceil(
-                filteredProducts.length /
-                PRODUCTS_PER_PAGE
+                (
+                    productsComplete
+                        ? filteredProducts.length
+                        : (
+                            productSearch.trim()
+                                ? filteredProducts.length
+                                : collection?.count || 0
+                        )
+                ) / PRODUCTS_PER_PAGE
             )
         );
 
@@ -382,9 +468,41 @@ export default function AdminCollectionPage() {
             const data =
                 (await response.json()) as Product[];
 
+            let membershipProducts = products;
+
+            if (!productsComplete) {
+                const membershipResponse = await fetch(
+                    `/api/admin/collections/${encodeURIComponent(
+                        routeHandle
+                    )}`,
+                    {
+                        cache: "no-store",
+                    }
+                );
+
+                const membershipData =
+                    await membershipResponse.json();
+
+                if (!membershipResponse.ok) {
+                    throw new Error(
+                        membershipData?.error ||
+                        "Unable to check collection products."
+                    );
+                }
+
+                membershipProducts = Array.isArray(
+                    membershipData.products
+                )
+                    ? membershipData.products
+                    : [];
+
+                setProducts(membershipProducts);
+                setProductsComplete(true);
+            }
+
             const currentHandles =
                 new Set(
-                    products
+                    membershipProducts
                         .map((product) =>
                             value(
                                 product.handle,
@@ -505,6 +623,8 @@ export default function AdminCollectionPage() {
                     ? refreshedData.products
                     : []
             );
+
+            setProductsComplete(true);
 
             if (action === "add") {
                 setBrowseResults(
@@ -1312,9 +1432,10 @@ export default function AdminCollectionPage() {
                                                         <div className="admin-collection-product-image">
                                                             {image ? (
                                                                 <img
-                                                                    src={
-                                                                        image
-                                                                    }
+                                                                    src={getCatalogThumbnailUrl({
+                                                                        image,
+                                                                        collection: collection.handle,
+                                                                    })}
                                                                     alt=""
                                                                 />
                                                             ) : (
@@ -1330,6 +1451,7 @@ export default function AdminCollectionPage() {
                                                                     href={`/admin/products/${encodeURIComponent(
                                                                         productHandle
                                                                     )}`}
+                                                                    prefetch={false}
                                                                 >
                                                                     {
                                                                         productTitle
@@ -1388,8 +1510,7 @@ export default function AdminCollectionPage() {
                                         </div>
                                     )}
                                 </div>
-                                {filteredProducts.length >
-                                    PRODUCTS_PER_PAGE ? (
+                                {totalProductPages > 1 ? (
                                     <div className="admin-collection-pagination">
                                         <button
                                             type="button"

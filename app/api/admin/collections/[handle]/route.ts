@@ -12,6 +12,7 @@ import {
   finalizeCollectionMigration,
   getCollection,
   getCollectionProducts,
+  getCollectionProductsPage,
   migrateCollectionProduct,
   prepareCollectionMigration,
   removeProductFromCollection,
@@ -39,7 +40,7 @@ function getBucket() {
 }
 
 export async function GET(
-  _request: Request,
+  request: Request,
   context: {
     params: Promise<{
       handle: string;
@@ -59,30 +60,35 @@ export async function GET(
     const bucket =
       getBucket();
 
-    const collection =
-      await getCollection(
-        bucket,
-        handle
-      );
+    const requestedUrl = new URL(request.url);
+    const pageParam = requestedUrl.searchParams.get("page");
+
+    const [collection, result] = await Promise.all([
+      getCollection(bucket, handle),
+      pageParam
+        ? getCollectionProductsPage(
+          bucket,
+          handle,
+          Number(pageParam)
+        )
+        : getCollectionProducts(bucket, handle),
+    ]);
+
+    const products = Array.isArray(result)
+      ? result
+      : result.products;
 
     if (!collection) {
       return Response.json(
         {
           success: false,
-          error:
-            "Collection not found.",
+          error: "Collection not found.",
         },
         {
           status: 404,
         }
       );
     }
-
-    const products =
-      await getCollectionProducts(
-        bucket,
-        handle
-      );
 
     return Response.json({
       success: true,
@@ -254,15 +260,15 @@ export async function POST(
     const result =
       action === "add"
         ? await addProductToCollection(
-            bucket,
-            handle,
-            productHandle
-          )
+          bucket,
+          handle,
+          productHandle
+        )
         : await removeProductFromCollection(
-            bucket,
-            handle,
-            productHandle
-          );
+          bucket,
+          handle,
+          productHandle
+        );
 
     return Response.json({
       success: true,
@@ -332,7 +338,7 @@ export async function PUT(
     if (
       !body ||
       typeof body !==
-        "object"
+      "object"
     ) {
       return Response.json(
         {
@@ -355,7 +361,7 @@ export async function PUT(
     const requestedHandle =
       String(
         body.handle ||
-          currentHandle
+        currentHandle
       )
         .trim()
         .toLowerCase();
@@ -436,8 +442,8 @@ export async function PUT(
           )
             ? 404
             : message.includes(
-                  "required"
-                )
+              "required"
+            )
               ? 400
               : 500,
       }
@@ -498,8 +504,8 @@ export async function DELETE(
           )
             ? 404
             : message.includes(
-                  "cannot be deleted"
-                )
+              "cannot be deleted"
+            )
               ? 409
               : 500,
       }

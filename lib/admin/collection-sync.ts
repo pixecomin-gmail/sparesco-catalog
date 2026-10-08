@@ -438,6 +438,73 @@ export async function getCollection(
   };
 }
 
+
+export async function getCollectionProductsPage(
+  bucket: R2BucketLike,
+  rawHandle: string,
+  rawPage: number = 1
+) {
+  const handle = collectionHandle(rawHandle);
+
+  if (!handle) {
+    throw new Error("Collection handle is required.");
+  }
+
+  const categoryMeta =
+    (await readJson(
+      bucket,
+      "catalog/indexes/category-meta.json"
+    )) || {};
+
+  const meta = categoryMeta?.[handle];
+
+  const totalPages = Math.max(
+    0,
+    Number(meta?.totalPages || 0)
+  );
+
+  const totalProducts = Math.max(
+    0,
+    Number(meta?.totalProducts || 0)
+  );
+
+  const pageSize = Math.max(
+    1,
+    Number(meta?.pageSize || 24)
+  );
+
+  const page = Math.max(
+    1,
+    Math.floor(Number(rawPage) || 1)
+  );
+
+  if (page > totalPages) {
+    return {
+      products: [],
+      page,
+      pageSize,
+      totalPages,
+      totalProducts,
+    };
+  }
+
+  const pageNumber = String(page).padStart(4, "0");
+
+  const raw = await readJson(
+    bucket,
+    `catalog/indexes/category-pages/${handle}/${pageNumber}.json`
+  );
+
+  return {
+    products: Array.isArray(raw) ? raw : [],
+    page,
+    pageSize,
+    totalPages,
+    totalProducts,
+  };
+}
+
+
 export async function getCollectionProducts(
   bucket: R2BucketLike,
   rawHandle: string
