@@ -279,6 +279,7 @@ export default function ProductPageClient({
       id: `${currentProduct.handle}-${cleanPartNumber}`,
       handle: currentProduct.handle,
       title: displayProductTitle,
+      variantDescription: activeVariantTitle,
       image: getImageUrl(stickyImage),
       partNumber: cleanPartNumber,
       vendor:

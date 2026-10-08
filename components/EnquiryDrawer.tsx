@@ -36,14 +36,28 @@ export default function EnquiryDrawer() {
                 {item.image ? <img src={item.image} alt={item.title} /> : null}
               </Link>
 
-              <div className="enquiry-item-content">
+                            <div className="enquiry-item-content">
                 <Link
                   href={`/products/${item.handle}`}
                   className="enquiry-item-title"
                   onClick={closeDrawer}
+                  style={{ fontWeight: 400 }}
                 >
                   {item.title}
                 </Link>
+
+                {item.variantDescription && (
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      color: "#777",
+                      marginTop: "4px",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {item.variantDescription}
+                  </div>
+                )}
               </div>
 
               <div className="qty-control">

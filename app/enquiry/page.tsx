@@ -145,13 +145,27 @@ export default function EnquiryPage() {
                       </Link>
 
                       <div className="enquiry-item-content">
-                        <Link
+                                                <Link
                           href={`/products/${item.handle}`}
                           prefetch={false}
                           className="enquiry-item-title"
+                          style={{ fontWeight: 400 }}
                         >
                           {item.title}
                         </Link>
+
+                        {item.variantDescription && (
+                          <div
+                            style={{
+                              fontSize: "12px",
+                              color: "#777",
+                              marginTop: "4px",
+                              lineHeight: 1.4,
+                            }}
+                          >
+                            {item.variantDescription}
+                          </div>
+                        )}
 
                         <div className="enquiry-item-meta">
                           {item.partNumber ? `${item.partNumber} | ` : ""}

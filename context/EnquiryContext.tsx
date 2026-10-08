@@ -14,6 +14,7 @@ export type EnquiryItem = {
   id: string;
   handle: string;
   title: string;
+  variantDescription?: string;
   image: string;
   partNumber: string;
   vendor: string;
@@ -170,7 +171,7 @@ async function refreshEnquiryItem(
       /*
        * Refresh catalogue-controlled data.
        */
-            title: (() => {
+      title: (() => {
         const productName = String(
           product.title || item.handle
         ).trim();
@@ -181,10 +182,18 @@ async function refreshEnquiryItem(
 
         return variantReference &&
           variantReference.toLowerCase() !==
-            productName.toLowerCase()
+          productName.toLowerCase()
           ? `${productName} - ${variantReference}`
           : productName || item.title;
       })(),
+
+      variantDescription:
+        String(variant.title || item.variantDescription || "")
+          .split("| Replaces")[0]
+          .split("| replaces")[0]
+          .split(" Replaces")[0]
+          .split(" replaces")[0]
+          .trim(),
 
       image: currentImage,
 
