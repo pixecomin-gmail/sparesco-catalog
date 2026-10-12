@@ -1,6 +1,7 @@
 export const runtime = "edge";
 
 import { cache } from "react";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ProductPageClient from "@/components/ProductPageClient";
 import type { Product } from "@/types/product";
@@ -356,12 +357,7 @@ export default async function ProductPage({
   const product = await getProduct(handle);
 
   if (!product) {
-    return (
-      <ProductPageClient
-        handle={handle}
-        initialProduct={null}
-      />
-    );
+    notFound();
   }
 
   const seo = getSeoData(product, handle);
@@ -373,8 +369,21 @@ export default async function ProductPage({
 
   const schemaVariant = seo.variant;
 
+  const rawSchemaPrice =
+    schemaVariant?.price;
+
+  const parsedSchemaPrice =
+    rawSchemaPrice === null ||
+      rawSchemaPrice === undefined ||
+      String(rawSchemaPrice).trim() === ""
+      ? NaN
+      : Number(rawSchemaPrice);
+
   const schemaPrice =
-    Number(schemaVariant?.price || 0);
+    Number.isFinite(parsedSchemaPrice) &&
+      parsedSchemaPrice > 0
+      ? parsedSchemaPrice
+      : null;
 
   const schemaPartNumber =
     cleanText(schemaVariant?.partNumber);
@@ -420,7 +429,7 @@ export default async function ProductPage({
           }
           : {}),
 
-        ...(schemaPrice > 0
+        ...(schemaPrice !== null
           ? {
             offers: {
               "@type": "Offer",

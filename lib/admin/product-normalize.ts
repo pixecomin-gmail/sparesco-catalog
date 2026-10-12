@@ -369,6 +369,8 @@ function normalizeVariant(
             .join(" / ");
 
     return {
+        ...(raw && typeof raw === "object" ? raw : {}),
+
         id:
             clean(
                 raw?.id
@@ -585,23 +587,25 @@ export function normalizeAdminProduct(
      * Tags remain Sparesco's collection
      * source of truth.
      */
-    const tags =
-        unique([
-            ...incomingTags,
-            ...incomingCollections,
-            requestedCollection,
-            requestedCategory,
-        ])
-            .map(slugify)
-            .filter(Boolean);
+    const tags = unique(
+        Array.isArray(raw?.tags)
+            ? incomingTags
+            : [
+                ...incomingCollections,
+                requestedCollection,
+                requestedCategory,
+            ]
+    )
+        .map(slugify)
+        .filter(Boolean);
 
     const primaryCollection =
-        tags[0] ||
-        requestedCollection ||
-        requestedCategory ||
-        slugify(
-            existing?.collection
-        );
+        (
+            requestedCollection &&
+                tags.includes(requestedCollection)
+                ? requestedCollection
+                : tags[0]
+        ) || "";
 
     const images =
         unique(
@@ -613,35 +617,46 @@ export function normalizeAdminProduct(
                     : Array.isArray(
                         existing?.images
                     )
-                    ? existing.images
-                    : []
+                        ? existing.images
+                        : []
             )
                 .map(clean)
                 .filter(Boolean)
         );
 
+    const allowedImages =
+        new Set(images);
+
     const media =
         normalizeMedia(
-            raw?.media ??
-                existing?.media,
+            (
+                Array.isArray(raw?.media)
+                    ? raw.media
+                    : Array.isArray(existing?.media)
+                        ? existing.media
+                        : []
+            ).filter(
+                (item: any) =>
+                    allowedImages.has(
+                        clean(
+                            item?.src ||
+                            item?.image ||
+                            item?.url
+                        )
+                    )
+            ),
             images
         );
 
     const orderedImages =
-        unique([
-            ...media.map(
-                (item) =>
-                    item.src
-            ),
-            ...images,
-        ]);
+        unique(images);
 
-const rawVariants: any[] =
-    Array.isArray(
-        raw?.variants
-    )
-        ? raw.variants
-        : [];
+    const rawVariants: any[] =
+        Array.isArray(
+            raw?.variants
+        )
+            ? raw.variants
+            : [];
 
     const variants =
         rawVariants.map(
@@ -663,12 +678,12 @@ const rawVariants: any[] =
             : Array.isArray(
                 raw?.sources
             )
-            ? raw.sources
-            : [];
+                ? raw.sources
+                : [];
 
     return {
         ...(existing &&
-        typeof existing ===
+            typeof existing ===
             "object"
             ? existing
             : {}),
@@ -708,8 +723,10 @@ const rawVariants: any[] =
             primaryCollection,
 
         category:
-            requestedCategory ||
-            primaryCollection,
+            requestedCategory &&
+                tags.includes(requestedCategory)
+                ? requestedCategory
+                : primaryCollection,
 
         categoryId:
             clean(
@@ -825,7 +842,7 @@ export function validateAdminProduct(
     ) {
         const variant =
             product.variants[
-                index
+            index
             ];
 
         if (

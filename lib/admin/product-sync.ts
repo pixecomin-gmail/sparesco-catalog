@@ -402,11 +402,11 @@ async function findAndUpdateSortedPage(
     };
   }
 
-    /*
-   * Manually-created/admin-edited products may live
-   * on the final page rather than their theoretical
-   * sorted page. Always check that page first.
-   */
+  /*
+ * Manually-created/admin-edited products may live
+ * on the final page rather than their theoretical
+ * sorted page. Always check that page first.
+ */
   const finalPage =
     totalPages - 1;
 
@@ -466,7 +466,28 @@ async function findAndUpdateSortedPage(
         }
       }
 
-      return null;
+      break;
+    }
+  }
+
+  /*
+   * Sorted lookup may fail after an earlier
+   * title edit or incremental page append.
+   * Scan only as a fallback.
+   */
+  for (
+    let index = 0;
+    index < totalPages;
+    index++
+  ) {
+    if (checked.has(index)) {
+      continue;
+    }
+
+    const result = await checkPage(index);
+
+    if (result.found) {
+      return result.key;
     }
   }
 
@@ -669,6 +690,15 @@ async function syncSearchV2(
       updatedProduct
     );
 
+  if (
+    JSON.stringify(oldSearch) ===
+    JSON.stringify(newSearch)
+  ) {
+    return {
+      updatedFiles: [] as string[],
+    };
+  }
+
   const affectedPrefixes =
     unique([
       ...oldSearch.prefixes,
@@ -704,6 +734,13 @@ async function syncSearchV2(
               ? current
               : [];
 
+          if (
+            !Array.isArray(current) &&
+            !newPrefixSet.has(prefix)
+          ) {
+            return null;
+          }
+
           const withoutProduct =
             shard.filter(
               (item: any) =>
@@ -733,6 +770,13 @@ async function syncSearchV2(
                 )
           );
 
+          if (
+            JSON.stringify(shard) ===
+            JSON.stringify(withoutProduct)
+          ) {
+            return null;
+          }
+
           await writeJson(
             bucket,
             key,
@@ -746,7 +790,10 @@ async function syncSearchV2(
 
   return {
     updatedFiles:
-      results,
+      results.filter(
+        (key): key is string =>
+          key !== null
+      ),
   };
 }
 
@@ -1255,15 +1302,19 @@ export async function deleteProduct(
   const tags =
     unique([
       ...(
-        Array.isArray(
-          existingSummary?.tags
-        )
+        Array.isArray(existingSummary?.tags)
           ? existingSummary.tags
           : []
       ),
-
+      ...(
+        Array.isArray(fallbackProduct?.tags)
+          ? fallbackProduct.tags
+          : []
+      ),
       existingSummary?.collection,
       existingSummary?.category,
+      fallbackProduct?.collection,
+      fallbackProduct?.category,
     ])
       .map(slugify)
       .filter(Boolean);
@@ -1505,7 +1556,7 @@ export async function deleteProduct(
     catalogMetaKey
   );
 
-   
+
 
   /*
    * --------------------------------
@@ -1559,7 +1610,10 @@ export async function deleteProduct(
 
     const search =
       buildSearchV2(
-        searchProduct
+        fallbackProduct?.handle === handle &&
+          Array.isArray(fallbackProduct?.variants)
+          ? fallbackProduct
+          : searchProduct
       );
 
     await Promise.all(
@@ -2369,11 +2423,14 @@ export async function syncExistingProduct(
       }
     );
 
-  if (catalogFile) {
-    updatedFiles.push(
-      catalogFile
+  if (!catalogFile) {
+    throw new Error(
+      `Catalogue page not found for product "${handle}". ` +
+      "Product synchronization was stopped."
     );
   }
+
+  updatedFiles.push(catalogFile);
 
   /*
    * ------------------------------------------------
@@ -2393,13 +2450,19 @@ export async function syncExistingProduct(
       ? [...catalogIndexRaw]
       : [];
 
-    const catalogIndexPosition =
+  const catalogIndexPosition =
     catalogIndex.findIndex(
       (item: any) =>
         clean(item?.handle)
           .toLowerCase() ===
         handle
     );
+
+  if (catalogIndexPosition < 0) {
+    throw new Error(
+      `Product "${handle}" is missing from catalog-index.json.`
+    );
+  }
 
   if (catalogIndexPosition >= 0) {
     /*
@@ -2412,15 +2475,23 @@ export async function syncExistingProduct(
       catalogIndexPosition
     ] = {
       ...catalogIndex[
-        catalogIndexPosition
+      catalogIndexPosition
       ],
       ...summary,
     };
 
+    const nextCatalogIndex =
+      compareTitles(
+        existingProduct?.title,
+        updatedProduct?.title
+      ) !== 0
+        ? sortSummaries(catalogIndex)
+        : catalogIndex;
+
     await writeJson(
       bucket,
       catalogIndexKey,
-      catalogIndex
+      nextCatalogIndex
     );
 
     updatedFiles.push(
@@ -2653,7 +2724,7 @@ export async function syncExistingProduct(
               (index) =>
                 index >= 0 &&
                 index <
-                  totalPages - 1
+                totalPages - 1
             );
 
           for (
@@ -2675,6 +2746,21 @@ export async function syncExistingProduct(
       }
     }
 
+    if (!removed) {
+      for (
+        let index = 0;
+        index < totalPages;
+        index++
+      ) {
+        removed =
+          await removePage(index);
+
+        if (removed) {
+          break;
+        }
+      }
+    }
+
     /*
      * Only reduce counts if something was
      * ACTUALLY removed.
@@ -2687,7 +2773,7 @@ export async function syncExistingProduct(
           0,
           Number(
             meta?.totalProducts ||
-              0
+            0
           ) - 1
         );
 
@@ -2713,7 +2799,7 @@ export async function syncExistingProduct(
           collectionIndex
         ] = {
           ...collections[
-            collectionIndex
+          collectionIndex
           ],
 
           count:
@@ -2740,7 +2826,9 @@ export async function syncExistingProduct(
       );
 
     if (!totalPages) {
-      continue;
+      throw new Error(
+        `Collection "${tag}" has no indexed pages for product "${handle}".`
+      );
     }
 
     const key =
@@ -2763,9 +2851,14 @@ export async function syncExistingProduct(
         }
       );
 
-    if (key) {
-      updatedFiles.push(key);
+    if (!key) {
+      throw new Error(
+        `Unable to locate product "${handle}" ` +
+        `inside collection "${tag}".`
+      );
     }
+
+    updatedFiles.push(key);
   }
 
   /*
@@ -2832,6 +2925,32 @@ export async function syncExistingProduct(
     }
 
     if (!alreadyExists) {
+      for (
+        let index = 0;
+        index < totalPages - 1;
+        index++
+      ) {
+        const key =
+          `catalog/indexes/category-pages/${tag}/${pageNumber(index)}.json`;
+
+        const page =
+          await readJson(bucket, key);
+
+        if (
+          Array.isArray(page) &&
+          page.some(
+            (item: any) =>
+              clean(item?.handle)
+                .toLowerCase() === handle
+          )
+        ) {
+          alreadyExists = true;
+          break;
+        }
+      }
+    }
+
+    if (!alreadyExists) {
       const pageResult =
         await appendPagedItem(
           bucket,
@@ -2848,7 +2967,7 @@ export async function syncExistingProduct(
       const nextTotal =
         Number(
           oldMeta?.totalProducts ||
-            0
+          0
         ) + 1;
 
       categoryMeta[tag] = {
@@ -2889,7 +3008,7 @@ export async function syncExistingProduct(
           collectionIndex
         ] = {
           ...collections[
-            collectionIndex
+          collectionIndex
           ],
 
           ...collectionEntry,
@@ -2932,14 +3051,14 @@ export async function syncExistingProduct(
     collectionsKey
   );
 
-    /*
-   * ------------------------------------------------
-   * FILTER INDEX
-   * ------------------------------------------------
-   *
-   * Update only the old/new vendor counts.
-   * Do not rebuild brands from the full catalogue.
-   */
+  /*
+ * ------------------------------------------------
+ * FILTER INDEX
+ * ------------------------------------------------
+ *
+ * Update only the old/new vendor counts.
+ * Do not rebuild brands from the full catalogue.
+ */
   const filterIndexKey =
     "catalog/indexes/filter-index.json";
 
@@ -3000,7 +3119,7 @@ export async function syncExistingProduct(
             oldVendorIndex
           ] = {
             ...brands[
-              oldVendorIndex
+            oldVendorIndex
             ],
             count: nextCount,
           };
@@ -3021,7 +3140,7 @@ export async function syncExistingProduct(
           newVendorIndex
         ] = {
           ...brands[
-            newVendorIndex
+          newVendorIndex
           ],
           count:
             Number(
@@ -3091,10 +3210,10 @@ export async function syncExistingProduct(
 
   const registryShard =
     first >= "0" &&
-    first <= "9"
+      first <= "9"
       ? first
       : first >= "a" &&
-          first <= "z"
+        first <= "z"
         ? first
         : "other";
 
@@ -3190,7 +3309,7 @@ export async function syncExistingProduct(
       existingProduct?.variants
     )
       ? existingProduct
-          .variants.length
+        .variants.length
       : 0;
 
   const newVariantCount =
@@ -3198,7 +3317,7 @@ export async function syncExistingProduct(
       updatedProduct?.variants
     )
       ? updatedProduct
-          .variants.length
+        .variants.length
       : 0;
 
   if (
@@ -3226,8 +3345,8 @@ export async function syncExistingProduct(
             Number(
               stats?.variants || 0
             ) -
-              oldVariantCount +
-              newVariantCount
+            oldVariantCount +
+            newVariantCount
           ),
 
         collections:
