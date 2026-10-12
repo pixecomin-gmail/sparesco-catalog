@@ -122,6 +122,39 @@ export async function POST(
       );
     }
 
+    // Do not accept quotations for closed enquiries.
+    const enquiryStatus = await db
+      .prepare(
+        `
+        SELECT status
+        FROM enquiries
+        WHERE id = ?
+        LIMIT 1
+        `
+      )
+      .bind(enquiryId)
+      .first();
+
+    if (!enquiryStatus) {
+      return NextResponse.json(
+        { success: false, error: "Enquiry not found." },
+        { status: 404 }
+      );
+    }
+
+    if (
+      String(enquiryStatus.status || "").toLowerCase() === "closed"
+    ) {
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "This enquiry has been closed. Quotations are no longer being accepted.",
+        },
+        { status: 403 }
+      );
+    }
+
     const emailContext = await db
       .prepare(
         `

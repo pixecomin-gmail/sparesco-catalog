@@ -722,6 +722,9 @@ export default function VendorDashboardPage() {
                   Boolean(enquiry.responded_at) ||
                   Boolean(quote);
 
+                const isClosed =
+                  enquiry.enquiry_status?.toLowerCase() === "closed";
+
                 return (
                   <article
                     key={enquiry.id}
@@ -767,9 +770,19 @@ export default function VendorDashboardPage() {
                         )}
 
                         <StatusBadge
-                          status={responded ? "success" : "warning"}
+                          status={
+                            responded
+                              ? "success"
+                              : isClosed
+                                ? "danger"
+                                : "warning"
+                          }
                         >
-                          {responded ? "Quotation Submitted" : "New"}
+                          {responded
+                            ? "Quotation Submitted"
+                            : isClosed
+                              ? "Closed"
+                              : "New"}
                         </StatusBadge>
 
                         <span className="vendor-chevron" aria-hidden="true">
@@ -931,20 +944,33 @@ export default function VendorDashboardPage() {
                                   </h3>
 
                                   <p className="vendor-muted vendor-no-quote-text">
-                                    Submit your quotation for this enquiry.
+                                    {isClosed
+                                      ? "This enquiry has been closed. Quotations are no longer being accepted."
+                                      : "Submit your quotation for this enquiry."}
                                   </p>
                                 </div>
 
                                 <button
                                   type="button"
                                   className="vendor-primary-button"
-                                  onClick={() =>
-                                    router.push(
-                                      `/vendor/enquiries/${enquiry.id}`
-                                    )
+                                  disabled={isClosed}
+                                  onClick={() => {
+                                    if (!isClosed) {
+                                      router.push(`/vendor/enquiries/${enquiry.id}`);
+                                    }
+                                  }}
+                                  style={
+                                    isClosed
+                                      ? {
+                                          background: "#e5e7eb",
+                                          color: "#6b7280",
+                                          cursor: "not-allowed",
+                                          opacity: 0.75,
+                                        }
+                                      : undefined
                                   }
                                 >
-                                  Add Quotation
+                                  {isClosed ? "Enquiry Closed" : "Add Quotation"}
                                 </button>
                               </div>
                             )}

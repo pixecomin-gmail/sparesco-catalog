@@ -456,6 +456,23 @@ export default function VendorEnquiryPage() {
                 </div>
               )}
             </>
+          ) : enquiry.enquiry_status?.toLowerCase() === "closed" ? (
+            <div
+              style={{
+                padding: "20px",
+                background: "#f3f4f6",
+                border: "1px solid #d1d5db",
+                borderRadius: "10px",
+                color: "#4b5563",
+              }}
+            >
+              <h2 style={{ marginTop: 0 }}>
+                Enquiry Closed
+              </h2>
+              <p style={{ marginBottom: 0 }}>
+                This enquiry has been closed. Quotations are no longer being accepted.
+              </p>
+            </div>
           ) : (
             <>
               <h2 style={{ color: "#173f4c", marginTop: 0 }}>
@@ -570,7 +587,7 @@ export default function VendorEnquiryPage() {
                     />
                   </label>
 
-                  <label style={labelStyle}>
+                  {/* <label style={labelStyle}>
                     Condition
                     <select
                       value={condition}
@@ -581,6 +598,17 @@ export default function VendorEnquiryPage() {
                       <option value="Unused">Unused</option>
                       <option value="Refurbished">Refurbished</option>
                       <option value="Used">Used</option>
+                    </select>
+                  </label> */}
+
+                  <label style={labelStyle}>
+                    Condition
+                    <select
+                      value={condition}
+                      onChange={(e) => setCondition(e.target.value)}
+                      style={fieldStyle}
+                    >
+                      <option value="New">New</option>
                     </select>
                   </label>
 
