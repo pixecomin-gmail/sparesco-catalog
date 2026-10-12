@@ -28,68 +28,14 @@ type VendorProductRow = {
 
 type SearchItem = {
   h?: string;
-  x?: string;
+  t?: string;
+  p?: string;
 };
 
 function compact(value?: string | null) {
   return (value || "")
     .toLowerCase()
     .replace(/[^a-z0-9]/g, "");
-}
-
-type CatalogProduct = {
-  variants?: Array<{
-    partNumber?: string | null;
-  }>;
-};
-
-function productFolder(handle: string) {
-  let hash = 0;
-
-  for (let i = 0; i < handle.length; i++) {
-    hash = (hash * 31 + handle.charCodeAt(i)) >>> 0;
-  }
-
-  return (hash % 256).toString(16).padStart(2, "0");
-}
-
-async function fetchCatalogProduct(
-  base: string,
-  handle: string
-): Promise<CatalogProduct | null> {
-  const folder = productFolder(handle);
-
-  const urls = [
-    `${base}/catalog/products/${folder}/${handle}.json`,
-    `${base}/catalog/products/${handle}.json`,
-  ];
-
-  for (const url of urls) {
-    const response = await fetch(url, {
-      cache: "no-store",
-    });
-
-    if (response.status === 404) continue;
-
-    if (!response.ok) {
-      throw new Error(
-        `Product lookup failed: ${handle}`
-      );
-    }
-
-    const product =
-      (await response.json()) as CatalogProduct;
-
-    if (!Array.isArray(product.variants)) {
-      throw new Error(
-        `Product variants missing: ${handle}`
-      );
-    }
-
-    return product;
-  }
-
-  return null;
 }
 
 export async function GET() {
@@ -159,17 +105,29 @@ export async function GET() {
     const base = r2Base.replace(/\/$/, "");
 
     /*
-    * Collect search shards using vendor part numbers only.
-    * Product names, titles, brands and handles are not
-    * used to determine whether a product is on site.
-    */
+     * Collect search shards for BOTH vendor identifiers:
+     *
+     * - product_name
+     * - part_number
+     *
+     * Example:
+     * product_name = P761490
+     * part_number  = HFL92001
+     *
+     * We therefore inspect both "p7" and "hf".
+     */
     const shardNames = new Set<string>();
 
     for (const product of products) {
-      const partNumber = compact(product.part_number);
+      const identifiers = [
+        compact(product.product_name),
+        compact(product.part_number),
+      ];
 
-      if (partNumber.length >= 2) {
-        shardNames.add(partNumber.slice(0, 2));
+      for (const identifier of identifiers) {
+        if (identifier.length >= 2) {
+          shardNames.add(identifier.slice(0, 2));
+        }
       }
     }
 
@@ -211,100 +169,86 @@ export async function GET() {
       })
     );
 
-    const productCache = new Map<
-      string,
-      Promise<CatalogProduct | null>
-    >();
+    const productsWithSiteStatus = products.map((product) => {
+      const vendorIdentifiers = new Set(
+        [
+          compact(product.product_name),
+          compact(product.part_number),
+        ].filter(Boolean)
+      );
 
-    function getProduct(handle: string) {
-      if (!productCache.has(handle)) {
-        productCache.set(
-          handle,
-          fetchCatalogProduct(base, handle)
-        );
-      }
-
-      return productCache.get(handle)!;
-    }
-
-    const productsWithSiteStatus = await Promise.all(
-      products.map(async (product) => {
-        const partNumber = compact(product.part_number);
-
-        if (!partNumber) {
-          return {
-            ...product,
-            is_on_site: false,
-          };
-        }
-
-        // Search V2 uses two-character prefixes.
-        if (partNumber.length < 2) {
-          return {
-            ...product,
-            is_on_site: null,
-          };
-        }
-
-        const items = shardItems.get(
-          partNumber.slice(0, 2)
-        );
-
-        if (!items) {
-          return {
-            ...product,
-            is_on_site: null,
-          };
-        }
-
-        // Search keywords identify candidates only.
-        // They are never accepted as proof of a match.
-        const candidates = items.filter((item) =>
-          (item.x || "")
-            .split(/\s+/)
-            .includes(partNumber)
-        );
-
-        let lookupFailed = false;
-
-        for (const candidate of candidates) {
-          if (!candidate.h) {
-            lookupFailed = true;
-            continue;
-          }
-
-          try {
-            const catalogProduct = await getProduct(
-              candidate.h
-            );
-
-            if (!catalogProduct) {
-              lookupFailed = true;
-              continue;
-            }
-
-            const found = catalogProduct.variants?.some(
-              (variant) =>
-                compact(variant.partNumber) === partNumber
-            );
-
-            if (found) {
-              return {
-                ...product,
-                is_on_site: true,
-              };
-            }
-          } catch {
-            lookupFailed = true;
-          }
-        }
-
+      if (vendorIdentifiers.size === 0) {
         return {
           ...product,
-          is_on_site: lookupFailed ? null : false,
+          is_on_site: false,
         };
-      })
-    );
+      }
+
+      const relevantShards = new Set<string>();
+
+      for (const identifier of vendorIdentifiers) {
+        if (identifier.length >= 2) {
+          relevantShards.add(identifier.slice(0, 2));
+        }
+      }
+
+      let lookupFailed = false;
+      let found = false;
+
+      for (const shard of relevantShards) {
+        const items = shardItems.get(shard);
+
+        if (items === null || items === undefined) {
+          lookupFailed = true;
+          continue;
+        }
+
+        for (const item of items) {
+          const websiteIdentifiers = [
+            compact(item.p),
+            compact(item.t),
+            compact(item.h),
+          ];
+
+          const matches = websiteIdentifiers.some(
+            (websiteIdentifier) =>
+              websiteIdentifier &&
+              vendorIdentifiers.has(websiteIdentifier)
+          );
+
+          if (matches) {
+            found = true;
+            break;
+          }
+        }
+
+        if (found) {
+          break;
+        }
+      }
+
+      /*
+       * If we found an exact identifier match, it is on site.
+       *
+       * If we couldn't complete the R2 lookup, return null so
+       * the UI doesn't falsely label the product NOT ON SITE.
+       *
+       * Otherwise it genuinely wasn't found.
+       */
+      return {
+        ...product,
+        is_on_site: found
+          ? true
+          : lookupFailed
+            ? null
+            : false,
+      };
+    });
+
+    return NextResponse.json({
+      success: true,
+      products: productsWithSiteStatus,
+    });
   } catch (error) {
     console.error("Admin vendor products error:", error);
 
