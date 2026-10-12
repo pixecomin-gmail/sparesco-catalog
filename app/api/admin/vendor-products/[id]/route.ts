@@ -6,6 +6,7 @@ import {
   sendVendorProductApprovedAdminEmail,
   sendVendorProductRejectedEmail,
   sendVendorProductRejectedAdminEmail,
+  sendVendorEnquiryEmail,
 } from "@/lib/send-admin-email";
 
 export const runtime = "edge";
@@ -199,75 +200,142 @@ export async function PATCH(
 
     let matchedOpenEnquiries = 0;
 
-    if (status === "approved") {
-      const normalizedProductName = normalizeMatchValue(
-        product.product_name as string | null
-      );
+    type MatchedEnquiry = {
+      id: number;
+      enquiry_reference: string | null;
+      batch_reference: string | null;
+      product_name: string | null;
+      part_number: string | null;
+      quantity: string | number | null;
+    };
 
+    const newlyMatchedEnquiries: MatchedEnquiry[] = [];
+
+    if (status === "approved") {
       const normalizedPartNumber = normalizeMatchValue(
         product.part_number as string | null
       );
 
-      if (normalizedProductName || normalizedPartNumber) {
+      if (normalizedPartNumber) {
         const matchingEnquiries = await db
           .prepare(
             `
-        SELECT DISTINCT e.id
-        FROM enquiries e
-        WHERE e.status IN ('new', 'open')
-          AND (
-            LOWER(
-              REPLACE(
-                REPLACE(TRIM(COALESCE(e.product_name, '')), '-', ''),
-                ' ',
-                ''
-              )
-            ) IN (?, ?)
-
-            OR
-
-            LOWER(
-              REPLACE(
-                REPLACE(TRIM(COALESCE(e.part_number, '')), '-', ''),
-                ' ',
-                ''
-              )
-            ) IN (?, ?)
+            SELECT
+              e.id,
+              e.enquiry_reference,
+              e.batch_reference,
+              e.product_name,
+              e.part_number,
+              e.quantity
+            FROM enquiries e
+            WHERE e.status IN ('new', 'open')
+              AND LOWER(
+                REPLACE(
+                  REPLACE(
+                    TRIM(COALESCE(e.part_number, '')),
+                    '-',
+                    ''
+                  ),
+                  ' ',
+                  ''
+                )
+              ) = ?
+            ORDER BY e.id DESC
+            `
           )
-        `
-          )
-          .bind(
-            normalizedProductName,
-            normalizedPartNumber,
-            normalizedProductName,
-            normalizedPartNumber
-          )
+          .bind(normalizedPartNumber)
           .all();
 
-        const enquiries = matchingEnquiries.results || [];
+        const enquiries =
+          (matchingEnquiries.results || []) as MatchedEnquiry[];
 
         for (const enquiry of enquiries) {
-          const result = await db
+          const assignmentResult = await db
             .prepare(
               `
-          INSERT OR IGNORE INTO enquiry_vendors (
-            enquiry_id,
-            vendor_id,
-            status
-          )
-          VALUES (?, ?, 'sent')
-          `
+              INSERT OR IGNORE INTO enquiry_vendors (
+                enquiry_id,
+                vendor_id,
+                status
+              )
+              VALUES (?, ?, 'sent')
+              `
             )
-            .bind(
-              enquiry.id,
-              product.vendor_id
-            )
+            .bind(enquiry.id, product.vendor_id)
             .run();
 
-          if ((result.meta?.changes || 0) > 0) {
+          if ((assignmentResult.meta?.changes || 0) > 0) {
             matchedOpenEnquiries++;
+            newlyMatchedEnquiries.push(enquiry);
           }
         }
+      }
+    }
+
+    // -------------------------------------------------
+    // NOTIFY VENDOR ABOUT NEWLY MATCHED OPEN ENQUIRIES
+    // -------------------------------------------------
+
+    if (newlyMatchedEnquiries.length > 0) {
+      try {
+        const enquiryGroups = new Map<
+          string,
+          MatchedEnquiry[]
+        >();
+
+        for (const enquiry of newlyMatchedEnquiries) {
+          const reference = String(
+            enquiry.batch_reference ||
+            enquiry.enquiry_reference ||
+            enquiry.id
+          );
+
+          const existing = enquiryGroups.get(reference);
+
+          if (existing) {
+            existing.push(enquiry);
+          } else {
+            enquiryGroups.set(reference, [enquiry]);
+          }
+        }
+
+        for (const [batchReference, enquiries] of enquiryGroups) {
+          try {
+            await sendVendorEnquiryEmail({
+              vendorId: Number(product.vendor_id),
+              companyName: String(product.company_name || ""),
+              contactPerson: String(product.contact_person || ""),
+              email: String(product.email || ""),
+              batchReference,
+              customerCompany: null,
+              matchedItems: enquiries.map((enquiry) => ({
+                enquiryId: Number(enquiry.id),
+                enquiryReference: String(
+                  enquiry.enquiry_reference ||
+                  batchReference
+                ),
+                productName: String(
+                  enquiry.product_name || "Not Provided"
+                ),
+                partNumber: String(
+                  enquiry.part_number || "Not Provided"
+                ),
+                quantity: String(enquiry.quantity ?? ""),
+              })),
+            });
+          } catch (emailError) {
+            console.error(
+              "Existing enquiry vendor notification failed:",
+              batchReference,
+              emailError
+            );
+          }
+        }
+      } catch (notificationError) {
+        console.error(
+          "Existing enquiry notification error:",
+          notificationError
+        );
       }
     }
 

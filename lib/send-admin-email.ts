@@ -2568,10 +2568,6 @@ export async function sendVendorEnquiryEmail(
       data.batchReference
     ),
     vendorDetailRow(
-      "Customer Company",
-      data.customerCompany || "Not Provided"
-    ),
-    vendorDetailRow(
       "Matched Products",
       data.matchedItems.length
     ),
