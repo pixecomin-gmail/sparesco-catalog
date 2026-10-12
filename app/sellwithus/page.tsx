@@ -203,12 +203,8 @@ export default function BecomeSupplierPage() {
       return;
     }
 
-    if (!vendorForm.gst_number.trim()) {
-      setVendorError("GST / Tax Number is required.");
-      return;
-    }
-
     if (
+      vendorForm.gst_number.trim() &&
       isIndiaVendor(vendorForm.country) &&
       !isValidIndianVendorGst(vendorForm.gst_number)
     ) {
@@ -745,7 +741,7 @@ export default function BecomeSupplierPage() {
 
                     <input
                       type="text"
-                      placeholder="GST / Tax Number *"
+                      placeholder="GST / Tax Number (Optional)"
                       value={vendorForm.gst_number}
                       onChange={(e) =>
                         updateVendorField("gst_number", e.target.value)
