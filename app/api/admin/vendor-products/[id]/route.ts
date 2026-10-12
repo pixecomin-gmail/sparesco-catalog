@@ -176,6 +176,23 @@ export async function PATCH(
       .bind(status, productId)
       .run();
 
+    await db
+      .prepare(
+        `
+    UPDATE vendors
+    SET
+      products_submitted = (
+        SELECT COUNT(*)
+        FROM vendor_products
+        WHERE vendor_id = ?
+          AND status IN ('pending', 'approved')
+      ),
+      updated_at = CURRENT_TIMESTAMP
+    WHERE id = ?
+    `
+      )
+      .bind(product.vendor_id, product.vendor_id)
+      .run();
     // -------------------------------------------------
     // WHEN PRODUCT IS APPROVED, CHECK OPEN ENQUIRIES
     // -------------------------------------------------
@@ -418,16 +435,17 @@ export async function DELETE(
     await db
       .prepare(
         `
-        UPDATE vendors
-        SET
-          products_submitted = (
-            SELECT COUNT(*)
-            FROM vendor_products
-            WHERE vendor_id = ?
-          ),
-          updated_at = CURRENT_TIMESTAMP
-        WHERE id = ?
-        `
+    UPDATE vendors
+    SET
+      products_submitted = (
+        SELECT COUNT(*)
+        FROM vendor_products
+        WHERE vendor_id = ?
+          AND status IN ('pending', 'approved')
+      ),
+      updated_at = CURRENT_TIMESTAMP
+    WHERE id = ?
+    `
       )
       .bind(vendorId, vendorId)
       .run();

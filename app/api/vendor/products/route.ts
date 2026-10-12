@@ -251,6 +251,7 @@ export async function POST(request: Request) {
         SELECT COUNT(*) AS total
         FROM vendor_products
         WHERE vendor_id = ?
+          AND status IN ('pending', 'approved')
         `
       )
       .bind(session.vendor_id)
@@ -379,6 +380,7 @@ export async function POST(request: Request) {
             SELECT COUNT(*)
             FROM vendor_products
             WHERE vendor_id = ?
+              AND status IN ('pending', 'approved')
           ),
           updated_at = CURRENT_TIMESTAMP
         WHERE id = ?

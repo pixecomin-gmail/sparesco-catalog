@@ -359,9 +359,13 @@ export default function VendorDashboardPage() {
         setVendor((current) =>
           current
             ? {
-              ...current,
-              products_submitted: refreshedProducts.length,
-            }
+                ...current,
+                products_submitted: (refreshedProducts as VendorProduct[]).filter(
+                  (product) =>
+                    product.status === "pending" ||
+                    product.status === "approved"
+                ).length,
+              }
             : current
         );
       }
@@ -1211,7 +1215,7 @@ export default function VendorDashboardPage() {
               <strong className="vendor-slots">
                 {remainingProducts}{" "}
                 <span>
-                  {remainingProducts === 1 ? "slot" : "slots"} left
+                  {remainingProducts === 1 ? "product" : "products"} left
                 </span>
               </strong>
             </div>
