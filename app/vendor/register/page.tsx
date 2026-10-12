@@ -92,11 +92,11 @@ export default function VendorRegisterPage() {
       return "Please enter a valid contact number.";
     }
 
-    if (!form.gst_number.trim()) {
-      return "GST / Tax Number is required.";
-    }
-
-    if (isIndia(form.country) && !isValidIndianGst(form.gst_number)) {
+    if (
+      form.gst_number.trim() &&
+      isIndia(form.country) &&
+      !isValidIndianGst(form.gst_number)
+    ) {
       return "Please enter a valid 15-character Indian GSTIN.";
     }
 
@@ -281,7 +281,7 @@ export default function VendorRegisterPage() {
 
             <div className="vendor-field">
               <label htmlFor="vendor-gst">
-                GST / Tax Number <span>*</span>
+                GST / Tax Number (Optional)
               </label>
 
               <input
@@ -297,7 +297,6 @@ export default function VendorRegisterPage() {
                     : "GST / VAT / Tax Number"
                 }
                 autoCapitalize="characters"
-                required
               />
 
               {isIndia(form.country) && (

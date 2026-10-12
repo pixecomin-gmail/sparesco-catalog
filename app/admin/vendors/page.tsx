@@ -145,6 +145,72 @@ export default function AdminVendorsPage() {
     }
   };
 
+
+  const deleteVendor = async (vendor: Vendor) => {
+    const email = vendor.email.trim().toLowerCase();
+
+    const confirmed = window.confirm(
+      `Permanently delete vendor ${email}?\n\n` +
+      `This will delete the vendor account, products, ` +
+      `quotations, enquiry assignments, login sessions, ` +
+      `and login OTPs.\n\n` +
+      `This action cannot be undone.`
+    );
+
+    if (!confirmed) return;
+
+    const typedEmail = window.prompt(
+      `Type ${email} to confirm permanent deletion:`
+    );
+
+    if (typedEmail === null) return;
+
+    if (typedEmail.trim().toLowerCase() !== email) {
+      setError("Email confirmation did not match.");
+      return;
+    }
+
+    setUpdatingId(vendor.id);
+    setMessage("");
+    setError("");
+
+    try {
+      const response = await fetch(
+        `/api/admin/vendors/${vendor.id}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.status === 401) {
+        window.location.href = "/admin/login";
+        return;
+      }
+
+      if (!response.ok || !data.success) {
+        setError(data.error || "Unable to delete vendor.");
+        return;
+      }
+
+      setOpenVendor(null);
+      setTargetVendorId(0);
+      setSearch("");
+      setMessage(data.message || "Vendor deleted successfully.");
+
+      await loadVendors();
+    } catch {
+      setError("Unable to delete vendor.");
+    } finally {
+      setUpdatingId(null);
+    }
+  };
+
   const increaseProductLimit = async (vendorId: number) => {
     setUpdatingId(vendorId);
     setMessage("");
@@ -634,6 +700,23 @@ export default function AdminVendorsPage() {
                           >
                             Reject
                           </button>
+
+
+                          <button
+                            type="button"
+                            disabled={updatingId !== null}
+                            onClick={() => deleteVendor(vendor)}
+                            style={{
+                              ...rejectButtonStyle,
+                              borderColor: "#d9a5a0",
+                              color: "#a23c35",
+                              opacity: updatingId !== null ? 0.5 : 1,
+                              cursor: updatingId !== null ? "not-allowed" : "pointer",
+                            }}
+                          >
+                            {updatingId === vendor.id ? "Processing..." : "Delete"}
+                          </button>
+
                         </div>
                       </div>
                     </div>

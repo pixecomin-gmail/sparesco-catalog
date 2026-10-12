@@ -168,3 +168,109 @@ export async function PATCH(
     );
   }
 }
+
+
+export async function DELETE(
+  request: Request,
+  context: { params: Promise<{ id: string }> }
+) {
+  try {
+    const { id } = await context.params;
+    const vendorId = Number(id);
+
+    if (!Number.isSafeInteger(vendorId) || vendorId <= 0) {
+      return NextResponse.json(
+        { success: false, error: "Invalid vendor ID." },
+        { status: 400 }
+      );
+    }
+
+    const { env } = getRequestContext();
+    const db = (env as any).DB;
+
+    if (!db) {
+      return NextResponse.json(
+        { success: false, error: "Vendor database is not configured." },
+        { status: 500 }
+      );
+    }
+
+    const body = await request.json().catch(() => null);
+    const email = String(body?.email || "").trim().toLowerCase();
+
+    if (!email) {
+      return NextResponse.json(
+        { success: false, error: "Vendor email is required." },
+        { status: 400 }
+      );
+    }
+
+    const vendor = await db
+      .prepare(
+        `SELECT email FROM vendors WHERE id = ? LIMIT 1`
+      )
+      .bind(vendorId)
+      .first();
+
+    if (
+      !vendor ||
+      String(vendor.email || "").trim().toLowerCase() !== email
+    ) {
+      return NextResponse.json(
+        { success: false, error: "Vendor email does not match." },
+        { status: 409 }
+      );
+    }
+
+    const matchingVendors = `
+      SELECT id FROM vendors
+      WHERE LOWER(TRIM(email)) = ?
+    `;
+
+    const statements = [
+      db.prepare(
+        `DELETE FROM vendor_quotes
+         WHERE vendor_id IN (${matchingVendors})`
+      ).bind(email),
+
+      db.prepare(
+        `DELETE FROM enquiry_vendors
+         WHERE vendor_id IN (${matchingVendors})`
+      ).bind(email),
+
+      db.prepare(
+        `DELETE FROM vendor_products
+         WHERE vendor_id IN (${matchingVendors})`
+      ).bind(email),
+
+      db.prepare(
+        `DELETE FROM vendor_sessions
+         WHERE vendor_id IN (${matchingVendors})`
+      ).bind(email),
+
+      db.prepare(
+        `DELETE FROM vendor_login_otps
+         WHERE vendor_id IN (${matchingVendors})`
+      ).bind(email),
+
+      db.prepare(
+        `DELETE FROM vendors
+         WHERE LOWER(TRIM(email)) = ?`
+      ).bind(email),
+    ];
+
+    await db.batch(statements);
+
+    return NextResponse.json({
+      success: true,
+      message: `Vendor ${email} and associated records deleted successfully.`,
+    });
+  } catch (error) {
+    console.error("Vendor deletion error:", error);
+
+    return NextResponse.json(
+      { success: false, error: "Unable to delete vendor." },
+      { status: 500 }
+    );
+  }
+}

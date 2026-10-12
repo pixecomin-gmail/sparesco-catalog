@@ -68,14 +68,13 @@ export async function POST(request: Request) {
       !company_name ||
       !contact_person ||
       !email ||
-      !phone ||
-      !gst_number
+      !phone
     ) {
       return NextResponse.json(
         {
           success: false,
           error:
-            "Company name, contact person, email, contact number and GST / Tax Number are required.",
+            "Company name, contact person, email and contact number are required.",
         },
         { status: 400 }
       );
@@ -102,7 +101,7 @@ export async function POST(request: Request) {
       );
     }
 
-    if (isIndia(country) && !isValidIndianGst(gst_number)) {
+    if (gst_number && isIndia(country) && !isValidIndianGst(gst_number)) {
       return NextResponse.json(
         {
           success: false,
@@ -249,10 +248,10 @@ export async function POST(request: Request) {
         city || null,
         state || null,
         country || null,
-        gst_number,
+        gst_number || null,
         website || null,
         initialStatus
-          )
+      )
       .run();
 
     const vendorId = result.meta?.last_row_id;
