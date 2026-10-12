@@ -105,22 +105,14 @@ export async function GET() {
     const base = r2Base.replace(/\/$/, "");
 
     /*
-     * Collect search shards for BOTH vendor identifiers:
-     *
-     * - product_name
-     * - part_number
-     *
-     * Example:
-     * product_name = P761490
-     * part_number  = HFL92001
-     *
-     * We therefore inspect both "p7" and "hf".
-     */
+    * Collect search shards using vendor part numbers only.
+    * Product names, titles, brands and handles are not
+    * used to determine whether a product is on site.
+    */
     const shardNames = new Set<string>();
 
     for (const product of products) {
       const identifiers = [
-        compact(product.product_name),
         compact(product.part_number),
       ];
 
@@ -171,10 +163,7 @@ export async function GET() {
 
     const productsWithSiteStatus = products.map((product) => {
       const vendorIdentifiers = new Set(
-        [
-          compact(product.product_name),
-          compact(product.part_number),
-        ].filter(Boolean)
+        [compact(product.part_number)].filter(Boolean)
       );
 
       if (vendorIdentifiers.size === 0) {
@@ -206,8 +195,6 @@ export async function GET() {
         for (const item of items) {
           const websiteIdentifiers = [
             compact(item.p),
-            compact(item.t),
-            compact(item.h),
           ];
 
           const matches = websiteIdentifiers.some(
