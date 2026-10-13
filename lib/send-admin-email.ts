@@ -622,17 +622,14 @@ function emailTemplate({
                 </tr>
 
                 <tr>
-                  <td
-                    align="center"
-                    style="
-                      padding:20px;
-                      background-color:#ffffff;
-                      border-right:1px solid #e4e7ec;
-                      border-bottom:1px solid #e4e7ec;
-                      border-left:1px solid #e4e7ec;
-                      border-radius:0 0 12px 12px;
-                    "
-                  >
+                    <td
+                      align="center"
+                      style="
+                        padding:24px 20px;
+                        background-color:#173f4c;
+                        border-radius:0 0 12px 12px;
+                      "
+                    >
                     <table
                       role="presentation"
                       align="center"
@@ -648,7 +645,7 @@ function emailTemplate({
                             target="_blank"
                             style="
                               display:inline-block;
-                              color:#2a8392;
+                              color:#ffffff;
                               font-family:Arial,sans-serif;
                               font-size:14px;
                               font-weight:700;
@@ -851,29 +848,6 @@ export async function sendAdminOtpEmail({
     throw new Error("Admin email address is missing.");
   }
 
-  const otpBoxes = Array.from(String(otp))
-    .map(
-      (digit) => `
-        <td style="padding:0 4px;">
-          <div style="
-            width:40px;
-            padding:12px 0;
-            background:#f2f6f5;
-            border:1px solid #dce7e7;
-            border-radius:7px;
-            color:#173f4c;
-            font-family:Arial,sans-serif;
-            font-size:26px;
-            font-weight:700;
-            text-align:center;
-          ">
-            ${escapeHtml(digit)}
-          </div>
-        </td>
-      `
-    )
-    .join("");
-
   const result = await resend.emails.send({
     from,
     to: recipient,
@@ -899,38 +873,17 @@ export async function sendAdminOtpEmail({
               overflow:hidden;
             "
           >
-                        <div style="
-              padding:26px 16px;
-              background:#173f4c;
-              text-align:center;
-            ">
-              <table
-                role="presentation"
-                cellpadding="0"
-                cellspacing="0"
-                border="0"
-                align="center"
-              >
-                <tr>
-                  <td style="padding-right:14px;vertical-align:middle;">
-                    <img
-                      src="${LOGO_URL}"
-                      alt="Sparesco"
-                      width="42"
-                      style="display:block;width:42px;height:auto;"
-                    />
-                  </td>
-                  <td style="
-                    color:#d9f0f3;
-                    font-family:Arial,sans-serif;
-                    font-size:24px;
-                    font-weight:700;
-                    vertical-align:middle;
-                  ">
-                    Sparesco Admin Login
-                  </td>
-                </tr>
-              </table>
+            <div
+              style="
+                padding:22px;
+                background:#173f4c;
+                color:#ffffff;
+                text-align:center;
+              "
+            >
+              <strong style="font-size:20px;">
+                Sparesco Admin Login
+              </strong>
             </div>
 
             <div
@@ -949,29 +902,19 @@ export async function sendAdminOtpEmail({
                 Your admin login OTP is:
               </p>
 
-                            <table
-                role="presentation"
-                cellpadding="0"
-                cellspacing="0"
-                border="0"
-                align="center"
-                style="margin:0 auto;"
+              <div
+                style="
+                  display:inline-block;
+                  padding:14px 24px;
+                  background:#f2f6f5;
+                  border-radius:8px;
+                  color:#173f4c;
+                  font-size:28px;
+                  font-weight:700;
+                  letter-spacing:6px;
+                "
               >
-                <tr>
-                  ${otpBoxes}
-                </tr>
-              </table>
-
-              <div style="
-                margin-top:12px;
-                color:#667085;
-                font-family:Arial,sans-serif;
-                font-size:12px;
-                text-align:center;
-              ">
-                <span style="font-size:1px;color:#ffffff;">
-                  ${escapeHtml(otp)}
-                </span>
+                ${escapeHtml(otp)}
               </div>
 
               <p
@@ -1233,23 +1176,20 @@ function vendorRegistrationTemplate({
                 </tr>
 
                 <tr>
-                  <td
-                    align="center"
-                    style="
-                      padding:20px;
-                      background-color:#ffffff;
-                      border-right:1px solid #e4e7ec;
-                      border-bottom:1px solid #e4e7ec;
-                      border-left:1px solid #e4e7ec;
-                      border-radius:0 0 12px 12px;
-                    "
-                  >
+                    <td
+                      align="center"
+                      style="
+                        padding:24px 20px;
+                        background-color:#173f4c;
+                        border-radius:0 0 12px 12px;
+                      "
+                    >
                     <a
                       href="${SITE_URL}"
                       target="_blank"
                       style="
                         display:inline-block;
-                        color:#2a8392;
+                        color:#ffffff;
                         font-family:Arial,sans-serif;
                         font-size:14px;
                         font-weight:700;

@@ -201,28 +201,61 @@ export async function POST(request: Request) {
                 "
               >
 
-                <!-- LOGO -->
+                <!-- HEADER -->
                 <tr>
                   <td
                     align="center"
-                    style="padding:30px 30px 24px;"
+                    style="
+                      padding:28px 24px;
+                      background-color:#173f4c;
+                    "
                   >
-                    <a
-                      href="https://sparesco.com"
-                      style="text-decoration:none;"
+                    <table
+                      role="presentation"
+                      align="center"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
                     >
-                      <img
-                        src="https://sparesco.com/logo.png"
-                        alt="Sparesco"
-                        width="180"
-                        style="
-                          display:block;
-                          max-width:180px;
-                          height:auto;
-                          border:0;
-                        "
-                      />
-                    </a>
+                      <tr>
+                        <td
+                          valign="middle"
+                          style="padding-right:12px;"
+                        >
+                          <a
+                            href="https://sparesco.com"
+                            style="text-decoration:none;"
+                          >
+                            <img
+                              src="https://sparesco.com/logo.png"
+                              alt="Sparesco"
+                              width="36"
+                              style="
+                                display:block;
+                                width:36px;
+                                height:auto;
+                                border:0;
+                              "
+                            />
+                          </a>
+                        </td>
+
+                        <td valign="middle">
+                          <h1
+                            style="
+                              margin:0;
+                              color:#d9f0f3;
+                              font-family:Arial,sans-serif;
+                              font-size:24px;
+                              font-weight:700;
+                              line-height:1.3;
+                            "
+                          >
+                            Sign in to your Vendor Account
+                          </h1>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
 
@@ -230,20 +263,9 @@ export async function POST(request: Request) {
                 <tr>
                   <td
                     style="
-                      padding:8px 40px 38px;
+                      padding:32px 40px 38px;
                     "
                   >
-                    <h1
-                      style="
-                        margin:0 0 24px;
-                        font-size:26px;
-                        line-height:1.3;
-                        color:#173f4c;
-                        font-weight:700;
-                      "
-                    >
-                      Sign in to your Vendor Account
-                    </h1>
 
                     <p
                       style="
@@ -304,17 +326,39 @@ export async function POST(request: Request) {
                         Your verification code
                       </div>
 
-                      <div
-                        style="
-                          font-size:36px;
-                          line-height:1.2;
-                          letter-spacing:8px;
-                          color:#173f4c;
-                          font-weight:700;
-                        "
+                      <table
+                        role="presentation"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="4"
+                        border="0"
+                        style="margin:0 auto;"
                       >
-                        ${otp}
-                      </div>
+                        <tr>
+                          ${otp.split("").map((digit) => `
+                            <td
+                              align="center"
+                              valign="middle"
+                              width="40"
+                              height="48"
+                              style="
+                                width:40px;
+                                height:48px;
+                                background:#ffffff;
+                                border:1px solid #d5e0e3;
+                                border-radius:6px;
+                                color:#173f4c;
+                                font-family:Arial,sans-serif;
+                                font-size:24px;
+                                font-weight:700;
+                                line-height:48px;
+                              "
+                            >
+                              ${digit}
+                            </td>
+                          `).join("")}
+                        </tr>
+                      </table>
                     </div>
 
                     <p
