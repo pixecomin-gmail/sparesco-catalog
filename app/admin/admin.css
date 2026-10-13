@@ -2567,8 +2567,9 @@
 
 .admin-variant-remove-row {
   position: absolute;
-  top: 14px;
-  right: 78px;
+  top: 50%;
+  right: 86px;
+  transform: translateY(-50%);
   z-index: 2;
   display: flex;
   align-items: center;
@@ -2624,4 +2625,29 @@
 
 .admin-variant-header:hover > span:last-child {
   background: #c9e3e5;
+}
+
+.admin-variant-header {
+  padding-right: 250px;
+}
+
+.admin-variant-header > span:last-child {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 640px) {
+  .admin-variant-header {
+    padding-right: 200px;
+  }
+
+  .admin-variant-remove-row {
+    right: 68px;
+  }
+
+  .admin-variant-header > span:last-child {
+    right: 14px;
+  }
 }
