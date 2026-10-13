@@ -2747,10 +2747,6 @@ export async function sendEnquiryListEmail(
       "Required Quantity",
       data.quantity
     ),
-    vendorDetailRow(
-      "Customer / Company",
-      data.companyName || data.customerName
-    ),
   ].join("");
 
   const result = await resend.emails.send({
