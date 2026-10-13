@@ -75,12 +75,24 @@ export default function AdminHeader() {
               Home
             </Link>
 
-            <Link
+                        <Link
               href="/admin/products"
               className={`admin-main-nav-link ${isProducts ? "active" : ""
                 }`}
             >
               Products
+            </Link>
+
+            <Link
+              href="/admin/product-studio"
+              className={`admin-main-nav-link ${
+                pathname === "/admin/product-studio" ||
+                pathname.startsWith("/admin/product-studio/")
+                  ? "active"
+                  : ""
+              }`}
+            >
+              Product Studio
             </Link>
 
             <Link 
