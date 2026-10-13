@@ -2370,284 +2370,96 @@
   padding: 0 10px;
 }
 
-.admin-variant-card {
-  border-radius: 10px;
-}
-
-.admin-variant-header {
-  min-height: 58px;
-  padding: 14px 18px;
-}
-
-.admin-variant-body {
-  padding: 20px;
-}
-
-.admin-add-product-page .admin-stat-card {
-  padding: 22px;
-}
-
-.admin-add-product-page .admin-stat-card > div > input[type="text"] {
-  min-width: 0;
-}
-
-.admin-add-product-page .admin-stat-card button {
-  font-size: 13px;
-}
-
-.admin-add-product-page .admin-stat-card img {
-  object-fit: contain;
-}
-
-.admin-add-product-page .admin-stat-card .admin-tag-chip-remove {
-  min-height: 20px;
-}
-
-@media (max-width: 760px) {
-  .admin-dashboard {
-    padding: 22px 16px 45px;
-  }
-
-  .admin-products-toolbar .admin-product-search {
-    width: 100%;
-  }
-
-  .admin-products-toolbar > select {
-    flex: 1;
-    min-width: 130px;
-  }
-
-  .admin-edit-images {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* =========================
-   IMAGE GALLERY AND EDIT POPUP
-========================= */
-
-.admin-edit-image-card.admin-manage-image-card {
-  width: auto;
-}
-
-.admin-media-open {
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-}
-
-.admin-media-open:hover {
-  background: #eef5f4;
-}
-
-.admin-media-edit-hint {
-  padding: 10px 8px;
-  color: #657b82;
-  font-size: 12px;
-  text-align: center;
-}
-
-.admin-media-modal-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background: rgba(18, 35, 41, 0.55);
-}
-
-.admin-media-modal {
-  width: min(760px, 100%);
-  max-height: 90vh;
-  overflow-y: auto;
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.2);
-}
-
-.admin-media-modal-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 24px;
-  border-bottom: 1px solid #e3e8e6;
-}
-
-.admin-media-modal-heading h2 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.admin-media-modal-heading button {
-  width: 32px;
-  height: 32px;
-  border: 0;
-  border-radius: 7px;
-  background: #f2f4f3;
-  color: #173f4c;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.admin-media-modal-content {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 24px;
-  padding: 24px;
-}
-
-.admin-media-modal-preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 250px;
-  border: 1px solid #e3e8e6;
-  border-radius: 10px;
-  background: #f8f9f8;
-}
-
-.admin-media-modal-preview img {
-  width: 100%;
-  max-height: 320px;
-  object-fit: contain;
-}
-
-.admin-media-modal-fields {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.admin-media-modal-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 16px 24px;
-  border-top: 1px solid #e3e8e6;
-}
-
-@media (max-width: 640px) {
-  .admin-media-modal-content {
-    grid-template-columns: 1fr;
-  }
-
-  .admin-media-modal-preview {
-    min-height: 180px;
-  }
-}
-
-.admin-add-media-preview-button {
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: 1px solid #d8dedc;
-  border-radius: 9px;
-  background: #f8f9f8;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.admin-add-media-preview-button:hover {
-  border-color: #2a8392;
-  box-shadow: 0 0 0 2px rgba(42, 131, 146, 0.12);
-}
-
-.admin-add-media-preview-button img {
-  display: block;
-  width: 100%;
-  object-fit: contain;
-}
+/* Variant accordion toolbar */
 
 .admin-variant-card {
   position: relative;
+  overflow: hidden;
 }
 
-.admin-variant-remove-row {
-  position: absolute;
-  top: 50%;
-  right: 86px;
-  transform: translateY(-50%);
-  z-index: 2;
+.admin-variant-toolbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 80px;
+  padding: 14px 18px;
+  background: #f5f6f2;
+}
+
+.admin-variant-toolbar .admin-variant-header {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
   padding: 0;
   border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
 }
 
-.admin-variant-header {
-  padding-right: 60px;
+.admin-variant-toolbar .admin-variant-header > div {
+  min-width: 0;
 }
 
-.admin-variant-remove-row .admin-secondary-button {
+.admin-variant-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-variant-actions .admin-secondary-button {
   min-height: 36px;
   padding: 7px 14px;
   font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-@media (max-width: 640px) {
-  .admin-variant-remove-row {
-    top: 16px;
-    right: 60px;
-  }
-
-  .admin-variant-remove-row .admin-secondary-button {
-    padding: 6px 8px;
-    font-size: 11px;
-  }
-}
-
-.admin-variant-remove-row .admin-secondary-button {
-  min-height: 36px;
-  padding: 7px 14px;
-  font-size: 12px;
-}
-
-/* Variant accordion expand/collapse icon */
-
-.admin-variant-header > span:last-child {
+.admin-variant-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 36px;
   width: 36px;
   height: 36px;
-  min-width: 36px;
+  padding: 0;
+  border: 0;
   border-radius: 50%;
   background: #e3efef;
   color: #173f4c;
+  font: inherit;
   font-size: 26px;
   font-weight: 700;
   line-height: 1;
-  transition: background 0.2s ease;
+  cursor: pointer;
 }
 
-.admin-variant-header:hover > span:last-child {
+.admin-variant-toggle:hover {
   background: #c9e3e5;
 }
 
-.admin-variant-header {
-  padding-right: 250px;
-}
-
-.admin-variant-header > span:last-child {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 @media (max-width: 640px) {
-  .admin-variant-header {
-    padding-right: 200px;
+  .admin-variant-toolbar {
+    gap: 8px;
+    padding: 12px;
   }
 
-  .admin-variant-remove-row {
-    right: 68px;
+  .admin-variant-actions {
+    gap: 8px;
   }
 
-  .admin-variant-header > span:last-child {
-    right: 14px;
+  .admin-variant-actions .admin-secondary-button {
+    min-height: 32px;
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  .admin-variant-toggle {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
   }
 }

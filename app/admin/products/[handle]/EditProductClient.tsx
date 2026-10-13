@@ -1348,54 +1348,61 @@ export default function EditProductClient({
                                         `${variant.partNumber || "variant"}-${index}`
                                     }
                                 >
-                                    <button
-                                        type="button"
-                                        className="admin-variant-header"
-                                        onClick={() =>
-                                            toggleVariant(
-                                                index
-                                            )
-                                        }
-                                    >
-                                        <div>
-                                            <strong>
-                                                {variant.title ||
-                                                    `Variant ${index +
-                                                    1
-                                                    }`}
-                                            </strong>
+                                                                        <div className="admin-variant-toolbar">
+                                        <button
+                                            type="button"
+                                            className="admin-variant-header"
+                                            onClick={() => toggleVariant(index)}
+                                            aria-expanded={isOpen}
+                                        >
+                                            <div>
+                                                <strong>
+                                                    {variant.title ||
+                                                        `Variant ${index + 1}`}
+                                                </strong>
 
-                                            <span>
-                                                {variant.partNumber ||
-                                                    "No part number"}
-                                            </span>
-                                        </div>
-                                        <span>
-                                            {isOpen ? "−" : "+"}
-                                        </span>
-                                    </button>
+                                                <span>
+                                                    {variant.partNumber ||
+                                                        "No part number"}
+                                                </span>
+                                            </div>
+                                        </button>
 
-                                    {product.variants.length > 1 && (
-                                        <div className="admin-variant-remove-row">
+                                        <div className="admin-variant-actions">
+                                            {product.variants.length > 1 && (
+                                                <button
+                                                    type="button"
+                                                    className="admin-secondary-button"
+                                                    onClick={() => {
+                                                        if (
+                                                            window.confirm(
+                                                                "Remove this variant?"
+                                                            )
+                                                        ) {
+                                                            removeVariant(index);
+                                                        }
+                                                    }}
+                                                    disabled={saving || uploadingImages}
+                                                >
+                                                    Remove Variant
+                                                </button>
+                                            )}
+
                                             <button
                                                 type="button"
-                                                className="admin-secondary-button"
-                                                onClick={() => {
-                                                    if (
-                                                        window.confirm(
-                                                            "Remove this variant?"
-                                                        )
-                                                    ) {
-                                                        removeVariant(index);
-                                                    }
-                                                }}
-                                                disabled={saving || uploadingImages}
+                                                className="admin-variant-toggle"
+                                                onClick={() => toggleVariant(index)}
+                                                aria-label={
+                                                    isOpen
+                                                        ? "Collapse variant"
+                                                        : "Expand variant"
+                                                }
+                                                aria-expanded={isOpen}
                                             >
-                                                Remove Variant
+                                                {isOpen ? "−" : "+"}
                                             </button>
                                         </div>
-                                    )}
-
+                                    </div>
                                     {isOpen && (
                                         <div className="admin-variant-body">
                                             <div className="admin-variant-image-manager">
