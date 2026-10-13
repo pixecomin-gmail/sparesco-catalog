@@ -261,47 +261,9 @@ export async function POST(request: Request) {
 
                 <!-- CONTENT -->
                 <tr>
-                  <td
-                    style="
-                      padding:32px 40px 38px;
-                    "
-                  >
+                  <td style="padding:32px 40px 38px;">
 
-                    <p
-                      style="
-                        margin:0 0 18px;
-                        font-size:15px;
-                        line-height:1.7;
-                        color:#475467;
-                      "
-                    >
-                      Hi <strong>${vendor.contact_person || vendor.company_name || "Vendor"}</strong>,
-                    </p>
-
-                    <p
-                      style="
-                        margin:0 0 18px;
-                        font-size:15px;
-                        line-height:1.7;
-                        color:#475467;
-                      "
-                    >
-                      We received a request to sign in to your
-                      Sparesco Vendor Account.
-                    </p>
-
-                    <p
-                      style="
-                        margin:0 0 24px;
-                        font-size:15px;
-                        line-height:1.7;
-                        color:#475467;
-                      "
-                    >
-                      Use the verification code below to continue:
-                    </p>
-
-                    <!-- OTP -->
+                    <!-- OTP FIRST -->
                     <div
                       style="
                         background:#f7f5ef;
@@ -320,99 +282,63 @@ export async function POST(request: Request) {
                           letter-spacing:1.2px;
                           color:#667085;
                           font-weight:700;
-                          margin-bottom:10px;
+                          margin-bottom:12px;
                         "
                       >
                         Your verification code
                       </div>
 
-                      <table
-                        role="presentation"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="4"
-                        border="0"
-                        style="margin:0 auto;"
+                      <div
+                        style="
+                          font-family:Arial,sans-serif;
+                          font-size:36px;
+                          font-weight:700;
+                          letter-spacing:4px;
+                          line-height:1.4;
+                          color:#173f4c;
+                          text-align:center;
+                        "
+                      >${otp}</div>
+
+                      <p
+                        style="
+                          margin:14px 0 0;
+                          font-size:14px;
+                          line-height:1.6;
+                          color:#475467;
+                        "
                       >
-                        <tr>
-                          ${otp.split("").map((digit) => `
-                            <td
-                              align="center"
-                              valign="middle"
-                              width="40"
-                              height="48"
-                              style="
-                                width:40px;
-                                height:48px;
-                                background:#ffffff;
-                                border:1px solid #d5e0e3;
-                                border-radius:6px;
-                                color:#173f4c;
-                                font-family:Arial,sans-serif;
-                                font-size:24px;
-                                font-weight:700;
-                                line-height:48px;
-                              "
-                            >
-                              ${digit}
-                            </td>
-                          `).join("")}
-                        </tr>
-                      </table>
+                        This code will expire in <strong>10 minutes</strong>.
+                      </p>
                     </div>
 
-                    <p
-                      style="
-                        margin:0 0 20px;
-                        text-align:center;
-                        font-size:14px;
-                        line-height:1.6;
-                        color:#475467;
-                      "
-                    >
-                      This code will expire in
-                      <strong>10 minutes</strong>.
+                    <p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#475467;">
+                      Hi <strong>${vendor.contact_person || vendor.company_name || "Vendor"}</strong>,
                     </p>
 
-                    <p
-                      style="
-                        margin:0 0 18px;
-                        font-size:14px;
-                        line-height:1.7;
-                        color:#475467;
-                      "
-                    >
-                      For your security, please do not share this
-                      code with anyone. Sparesco will never ask you
-                      to provide your verification code by email or
-                      phone.
+                    <p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#475467;">
+                      We received a request to sign in to your Sparesco Vendor Account.
                     </p>
 
-                    <p
-                      style="
-                        margin:0 0 24px;
-                        font-size:14px;
-                        line-height:1.7;
-                        color:#475467;
-                      "
-                    >
-                      If you did not request this code, you can
-                      safely ignore this email.
+                    <p style="margin:0 0 24px;font-size:15px;line-height:1.7;color:#475467;">
+                      Use the verification code above to continue.
                     </p>
 
-                    <p
-                      style="
-                        margin:0;
-                        font-size:14px;
-                        line-height:1.7;
-                        color:#475467;
-                      "
-                    >
+                    <p style="margin:0 0 18px;font-size:14px;line-height:1.7;color:#475467;">
+                      For your security, please do not share this code with anyone.
+                      Sparesco will never ask you to provide your verification code
+                      by email or phone.
+                    </p>
+
+                    <p style="margin:0 0 24px;font-size:14px;line-height:1.7;color:#475467;">
+                      If you did not request this code, you can safely ignore this email.
+                    </p>
+
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:#475467;">
                       Regards,<br />
-                      <strong style="color:#173f4c;">
-                        Team Sparesco
-                      </strong>
+                      <strong style="color:#173f4c;">Team Sparesco</strong>
                     </p>
+
                   </td>
                 </tr>
 
