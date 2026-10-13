@@ -276,6 +276,13 @@ export default function EditProductClient({
                 (item) => item !== tag
             );
 
+            if (!tags.length) {
+                setSaveError(
+                    "At least one collection/tag is required."
+                );
+                return current;
+            }
+
             return {
                 ...current,
                 tags,
@@ -283,14 +290,6 @@ export default function EditProductClient({
                     (current.customCollections || []).filter(
                         (item) => item !== tag
                     ),
-                collection:
-                    current.collection === tag
-                        ? tags[0] || ""
-                        : current.collection,
-                category:
-                    current.category === tag
-                        ? tags[0] || ""
-                        : current.category,
             };
         });
     }
@@ -508,6 +507,41 @@ export default function EditProductClient({
         } finally {
             setUploadingImages(false);
         }
+    }
+
+        function updateProductMedia(
+        image: string,
+        field: "position" | "altText",
+        value: number | string
+    ) {
+        setProduct((current) => {
+            if (!current) return current;
+
+            const media = current.images.map(
+                (src, index) => {
+                    const existing =
+                        current.media?.find(
+                            (item) => item.src === src
+                        );
+
+                    const item = {
+                        src,
+                        position:
+                            existing?.position ?? index + 1,
+                        altText: existing?.altText ?? "",
+                    };
+
+                    return src === image
+                        ? { ...item, [field]: value }
+                        : item;
+                }
+            );
+
+            return {
+                ...current,
+                media,
+            };
+        });
     }
 
     function removeProductImage(
@@ -937,30 +971,6 @@ export default function EditProductClient({
                         />
                     </div>
 
-                    <div className="admin-field">
-                        <label>Status</label>
-                        <select
-                            value={product.status || "active"}
-                            onChange={(e) =>
-                                updateProduct("status", e.target.value)
-                            }
-                        >
-                            <option value="active">Active</option>
-                            <option value="draft">Draft</option>
-                            <option value="archived">Archived</option>
-                        </select>
-                    </div>
-
-                    <div className="admin-field">
-                        <label>Published</label>
-                        <input
-                            type="checkbox"
-                            checked={product.published ?? true}
-                            onChange={(e) =>
-                                updateProduct("published", e.target.checked)
-                            }
-                        />
-                    </div>
                     <div className="admin-field admin-field-full">
                         <label>Description (HTML supported)</label>
                         <textarea
@@ -1146,6 +1156,47 @@ export default function EditProductClient({
                                                 original;
                                         }
                                     }}
+                                />
+                            </div>
+
+                                                        <div className="admin-field">
+                                <label>Position</label>
+                                <input
+                                    type="number"
+                                    min={1}
+                                    value={
+                                        product.media?.find(
+                                            (item) => item.src === image
+                                        )?.position ?? index + 1
+                                    }
+                                    onChange={(e) =>
+                                        updateProductMedia(
+                                            image,
+                                            "position",
+                                            Math.max(
+                                                1,
+                                                Number(e.target.value) || 1
+                                            )
+                                        )
+                                    }
+                                />
+                            </div>
+
+                            <div className="admin-field">
+                                <label>Image Alt Text</label>
+                                <input
+                                    value={
+                                        product.media?.find(
+                                            (item) => item.src === image
+                                        )?.altText ?? ""
+                                    }
+                                    onChange={(e) =>
+                                        updateProductMedia(
+                                            image,
+                                            "altText",
+                                            e.target.value
+                                        )
+                                    }
                                 />
                             </div>
 
@@ -1443,23 +1494,30 @@ export default function EditProductClient({
                                             />
                                         </div>
 
-                                        <div className="admin-field admin-field-full">
-                                            <label>Option</label>
-
-                                            <input
-                                                value={
-                                                    variant.option1Value ||
-                                                    ""
-                                                }
-                                                onChange={(e) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "option1Value",
-                                                        e.target.value
-                                                    )
-                                                }
-                                            />
-                                        </div>
+                                                                                {(
+                                            [
+                                                ["option1Value", "Option 1"],
+                                                ["option2Value", "Option 2"],
+                                                ["option3Value", "Option 3"],
+                                            ] as const
+                                        ).map(([field, label]) => (
+                                            <div
+                                                className="admin-field"
+                                                key={field}
+                                            >
+                                                <label>{label}</label>
+                                                <input
+                                                    value={variant[field] || ""}
+                                                    onChange={(e) =>
+                                                        updateVariant(
+                                                            index,
+                                                            field,
+                                                            e.target.value
+                                                        )
+                                                    }
+                                                />
+                                            </div>
+                                        ))}
 
                                         <div className="admin-field">
                                             <label>

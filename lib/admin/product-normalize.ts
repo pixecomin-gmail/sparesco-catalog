@@ -600,12 +600,9 @@ export function normalizeAdminProduct(
         .filter(Boolean);
 
     const primaryCollection =
-        (
-            requestedCollection &&
-                tags.includes(requestedCollection)
-                ? requestedCollection
-                : tags[0]
-        ) || "";
+        requestedCollection ||
+        tags[0] ||
+        "";
 
     const images =
         unique(
@@ -723,10 +720,8 @@ export function normalizeAdminProduct(
             primaryCollection,
 
         category:
-            requestedCategory &&
-                tags.includes(requestedCategory)
-                ? requestedCategory
-                : primaryCollection,
+            requestedCategory ||
+            primaryCollection,
 
         categoryId:
             clean(

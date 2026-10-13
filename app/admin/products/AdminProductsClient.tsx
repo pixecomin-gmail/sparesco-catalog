@@ -40,6 +40,20 @@ export default function AdminProductsClient() {
     const [query, setQuery] =
         useState("");
 
+    const [brandFilter, setBrandFilter] =
+        useState("all");
+
+    const [collectionFilter, setCollectionFilter] =
+        useState("all");
+
+    const [sortOrder, setSortOrder] =
+        useState("title-asc");
+
+    const [currentPage, setCurrentPage] =
+        useState(1);
+
+    const pageSize = 25;
+
     const [products, setProducts] =
         useState<ProductResult[]>([]);
 
@@ -67,22 +81,77 @@ export default function AdminProductsClient() {
         setExportError,
     ] = useState("");
 
-    const allVisibleSelected =
-        useMemo(() => {
-            if (!products.length) {
-                return false;
+    const brands = useMemo(
+        () =>
+            Array.from(
+                new Set(
+                    products
+                        .map((p) => p.vendor)
+                        .filter(Boolean)
+                )
+            ).sort(),
+        [products]
+    );
+
+    const collections = useMemo(
+        () =>
+            Array.from(
+                new Set(
+                    products
+                        .map((p) => p.collection)
+                        .filter(Boolean)
+                )
+            ).sort(),
+        [products]
+    );
+
+    const filteredProducts = useMemo(() => {
+        const result = products.filter(
+            (product) =>
+                (brandFilter === "all" ||
+                    product.vendor === brandFilter) &&
+                (collectionFilter === "all" ||
+                    product.collection === collectionFilter)
+        );
+
+        return result.sort((a, b) => {
+            if (sortOrder === "title-desc") {
+                return b.title.localeCompare(a.title);
             }
 
-            return products.every(
-                (product) =>
-                    selectedHandles.includes(
-                        product.handle
-                    )
+            if (sortOrder === "price-asc") {
+                return a.price - b.price;
+            }
+
+            if (sortOrder === "price-desc") {
+                return b.price - a.price;
+            }
+
+            return a.title.localeCompare(b.title);
+        });
+    }, [
+        products,
+        brandFilter,
+        collectionFilter,
+        sortOrder,
+    ]);
+
+    const totalPages = Math.max(
+        1,
+        Math.ceil(filteredProducts.length / pageSize)
+    );
+
+    const paginatedProducts = filteredProducts.slice(
+        (currentPage - 1) * pageSize,
+        currentPage * pageSize
+    );
+
+    const allVisibleSelected = useMemo(() => {
+        return paginatedProducts.length > 0 &&
+            paginatedProducts.every((product) =>
+                selectedHandles.includes(product.handle)
             );
-        }, [
-            products,
-            selectedHandles,
-        ]);
+    }, [paginatedProducts, selectedHandles]);
 
     const searchProducts = async (
         event: FormEvent
@@ -93,14 +162,16 @@ export default function AdminProductsClient() {
             query.trim();
 
         if (value.length < 2) {
-            setError(
-                "Enter at least 2 characters."
-            );
+            setError("Enter at least 2 characters.");
             setProducts([]);
             setSelectedHandles([]);
             setSearched(false);
             return;
         }
+
+        setBrandFilter("all");
+        setCollectionFilter("all");
+        setCurrentPage(1);
 
         setLoading(true);
         setError("");
@@ -161,33 +232,23 @@ export default function AdminProductsClient() {
     }
 
     function toggleAllVisible() {
-        if (allVisibleSelected) {
-            setSelectedHandles(
-                (current) =>
-                    current.filter(
-                        (handle) =>
-                            !products.some(
-                                (product) =>
-                                    product.handle ===
-                                    handle
-                            )
-                    )
-            );
+        const visibleHandles = paginatedProducts.map(
+            (product) => product.handle
+        );
 
+        if (allVisibleSelected) {
+            setSelectedHandles((current) =>
+                current.filter(
+                    (handle) => !visibleHandles.includes(handle)
+                )
+            );
             return;
         }
 
-        setSelectedHandles(
-            (current) =>
-                Array.from(
-                    new Set([
-                        ...current,
-                        ...products.map(
-                            (product) =>
-                                product.handle
-                        ),
-                    ])
-                )
+        setSelectedHandles((current) =>
+            Array.from(
+                new Set([...current, ...visibleHandles])
+            )
         );
     }
 
@@ -200,10 +261,10 @@ export default function AdminProductsClient() {
         try {
             const params =
                 handles &&
-                handles.length > 0
+                    handles.length > 0
                     ? `?handles=${encodeURIComponent(
-                          handles.join(",")
-                      )}`
+                        handles.join(",")
+                    )}`
                     : "";
 
             const response =
@@ -220,7 +281,7 @@ export default function AdminProductsClient() {
             ) {
                 throw new Error(
                     data.error ||
-                        "Unable to export products."
+                    "Unable to export products."
                 );
             }
 
@@ -257,7 +318,7 @@ export default function AdminProductsClient() {
 
             const suffix =
                 handles &&
-                handles.length > 0
+                    handles.length > 0
                     ? "selected"
                     : "all";
 
@@ -331,6 +392,53 @@ export default function AdminProductsClient() {
                 </button>
             </div>
 
+            {products.length > 0 && (
+                <div className="admin-products-toolbar">
+                    <select
+                        value={brandFilter}
+                        onChange={(e) => {
+                            setBrandFilter(e.target.value);
+                            setCurrentPage(1);
+                        }}
+                    >
+                        <option value="all">All brands</option>
+                        {brands.map((brand) => (
+                            <option key={brand} value={brand}>
+                                {brand}
+                            </option>
+                        ))}
+                    </select>
+
+                    <select
+                        value={collectionFilter}
+                        onChange={(e) => {
+                            setCollectionFilter(e.target.value);
+                            setCurrentPage(1);
+                        }}
+                    >
+                        <option value="all">All collections</option>
+                        {collections.map((collection) => (
+                            <option key={collection} value={collection}>
+                                {collection}
+                            </option>
+                        ))}
+                    </select>
+
+                    <select
+                        value={sortOrder}
+                        onChange={(e) => {
+                            setSortOrder(e.target.value);
+                            setCurrentPage(1);
+                        }}
+                    >
+                        <option value="title-asc">Title A–Z</option>
+                        <option value="title-desc">Title Z–A</option>
+                        <option value="price-asc">Price low to high</option>
+                        <option value="price-desc">Price high to low</option>
+                    </select>
+                </div>
+            )}
+
             {error && (
                 <div className="admin-form-error">
                     {error}
@@ -353,7 +461,7 @@ export default function AdminProductsClient() {
             {searched &&
                 !loading &&
                 products.length ===
-                    0 &&
+                0 &&
                 !error && (
                     <div className="admin-product-empty">
                         No products found.
@@ -362,212 +470,251 @@ export default function AdminProductsClient() {
 
             {products.length >
                 0 && (
-                <>
-                    <div className="admin-product-results-toolbar">
-                        <div className="admin-product-results-summary">
-                            {
-                                products.length
-                            }{" "}
-                            product
-                            {products.length ===
-                            1
-                                ? ""
-                                : "s"}{" "}
-                            found
+                    <>
+                        <div className="admin-product-results-toolbar">
+                            <div className="admin-product-results-summary">
+                                {filteredProducts.length} of{" "}
+                                {products.length} products
+                            </div>
+
+                            {selectedHandles.length >
+                                0 && (
+                                    <div className="admin-product-selection-actions">
+                                        <span>
+                                            {
+                                                selectedHandles.length
+                                            }{" "}
+                                            selected
+                                        </span>
+
+                                        <button
+                                            type="button"
+                                            className="admin-primary-button"
+                                            disabled={
+                                                exporting
+                                            }
+                                            onClick={() =>
+                                                downloadExport(
+                                                    selectedHandles
+                                                )
+                                            }
+                                        >
+                                            {exporting
+                                                ? "Exporting..."
+                                                : `Export selected (${selectedHandles.length})`}
+                                        </button>
+                                    </div>
+                                )}
                         </div>
 
-                        {selectedHandles.length >
-                            0 && (
-                            <div className="admin-product-selection-actions">
+                        <div className="admin-product-table-wrap">
+                            <table className="admin-product-table">
+                                <thead>
+                                    <tr>
+                                        <th className="admin-product-checkbox-cell">
+                                            <input
+                                                type="checkbox"
+                                                checked={
+                                                    allVisibleSelected
+                                                }
+                                                onChange={
+                                                    toggleAllVisible
+                                                }
+                                                aria-label="Select all search results"
+                                            />
+                                        </th>
+
+                                        <th>
+                                            Product
+                                        </th>
+
+                                        <th>
+                                            Part Number
+                                        </th>
+
+                                        <th>
+                                            Brand
+                                        </th>
+
+                                        <th>
+                                            Collection
+                                        </th>
+                                        <th>
+                                            Variants
+                                        </th>
+
+                                        <th>
+                                            Price
+                                        </th>
+
+                                        <th />
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    {paginatedProducts.map(
+                                        (
+                                            product
+                                        ) => {
+                                            const selected =
+                                                selectedHandles.includes(
+                                                    product.handle
+                                                );
+
+                                            return (
+                                                <tr
+                                                    key={
+                                                        product.handle
+                                                    }
+                                                    className={
+                                                        selected
+                                                            ? "admin-product-row-selected"
+                                                            : ""
+                                                    }
+                                                >
+                                                    <td className="admin-product-checkbox-cell">
+                                                        <input
+                                                            type="checkbox"
+                                                            checked={
+                                                                selected
+                                                            }
+                                                            onChange={() =>
+                                                                toggleProduct(
+                                                                    product.handle
+                                                                )
+                                                            }
+                                                            aria-label={`Select ${product.title}`}
+                                                        />
+                                                    </td>
+
+                                                    <td>
+                                                        <Link
+                                                            href={`/admin/products/${encodeURIComponent(
+                                                                product.handle
+                                                            )}`}
+                                                            style={{
+                                                                color: "inherit",
+                                                                textDecoration:
+                                                                    "none",
+                                                            }}
+                                                        >
+                                                            <div className="admin-product-name-cell">
+                                                                {product.image ? (
+                                                                    <img
+                                                                        src={getCatalogThumbnailUrl(
+                                                                            {
+                                                                                image: product.image,
+                                                                                collection:
+                                                                                    product.collection,
+                                                                            }
+                                                                        )}
+                                                                        alt=""
+                                                                        className="admin-product-thumb"
+                                                                    />
+                                                                ) : (
+                                                                    <div className="admin-product-thumb-placeholder" />
+                                                                )}
+
+                                                                <div>
+                                                                    <strong>
+                                                                        {
+                                                                            product.title
+                                                                        }
+                                                                    </strong>
+
+                                                                    <span>
+                                                                        {
+                                                                            product.handle
+                                                                        }
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </Link>
+                                                    </td>
+
+                                                    <td>
+                                                        {product.partNumber ||
+                                                            "—"}
+                                                    </td>
+
+                                                    <td>
+                                                        {product.vendor ||
+                                                            "—"}
+                                                    </td>
+
+                                                    <td>
+                                                        {product.collectionTitle ||
+                                                            product.collection ||
+                                                            "—"}
+                                                    </td>
+
+                                                    <td>
+                                                        {product.variantCount || 1}
+                                                    </td>
+
+                                                    <td>
+                                                        {product.price > 0
+                                                            ? `₹${product.price.toLocaleString("en-IN")}`
+                                                            : "Price on request"}
+                                                    </td>
+
+                                                    <td className="admin-product-action-cell">
+                                                        <Link
+                                                            href={`/admin/products/${encodeURIComponent(
+                                                                product.handle
+                                                            )}`}
+                                                            className="admin-edit-link"
+                                                        >
+                                                            Open
+                                                        </Link>
+                                                    </td>
+                                                </tr>
+                                            );
+                                        }
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        {totalPages > 1 && (
+                            <div
+                                className="admin-products-toolbar"
+                                style={{
+                                    justifyContent: "space-between",
+                                    marginTop: 16,
+                                }}
+                            >
                                 <span>
-                                    {
-                                        selectedHandles.length
-                                    }{" "}
-                                    selected
+                                    Page {currentPage} of {totalPages}
                                 </span>
 
-                                <button
-                                    type="button"
-                                    className="admin-primary-button"
-                                    disabled={
-                                        exporting
-                                    }
-                                    onClick={() =>
-                                        downloadExport(
-                                            selectedHandles
-                                        )
-                                    }
-                                >
-                                    {exporting
-                                        ? "Exporting..."
-                                        : `Export selected (${selectedHandles.length})`}
-                                </button>
+                                <div style={{ display: "flex", gap: 8 }}>
+                                    <button
+                                        type="button"
+                                        className="admin-secondary-button"
+                                        disabled={currentPage === 1}
+                                        onClick={() =>
+                                            setCurrentPage((p) => p - 1)
+                                        }
+                                    >
+                                        Previous
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        className="admin-secondary-button"
+                                        disabled={currentPage >= totalPages}
+                                        onClick={() =>
+                                            setCurrentPage((p) => p + 1)
+                                        }
+                                    >
+                                        Next
+                                    </button>
+                                </div>
                             </div>
                         )}
-                    </div>
-
-                    <div className="admin-product-table-wrap">
-                        <table className="admin-product-table">
-                            <thead>
-                                <tr>
-                                    <th className="admin-product-checkbox-cell">
-                                        <input
-                                            type="checkbox"
-                                            checked={
-                                                allVisibleSelected
-                                            }
-                                            onChange={
-                                                toggleAllVisible
-                                            }
-                                            aria-label="Select all search results"
-                                        />
-                                    </th>
-
-                                    <th>
-                                        Product
-                                    </th>
-
-                                    <th>
-                                        Part Number
-                                    </th>
-
-                                    <th>
-                                        Brand
-                                    </th>
-
-                                    <th>
-                                        Collection
-                                    </th>
-
-                                    <th>
-                                        Variants
-                                    </th>
-
-                                    <th />
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                {products.map(
-                                    (
-                                        product
-                                    ) => {
-                                        const selected =
-                                            selectedHandles.includes(
-                                                product.handle
-                                            );
-
-                                        return (
-                                            <tr
-                                                key={
-                                                    product.handle
-                                                }
-                                                className={
-                                                    selected
-                                                        ? "admin-product-row-selected"
-                                                        : ""
-                                                }
-                                            >
-                                                <td className="admin-product-checkbox-cell">
-                                                    <input
-                                                        type="checkbox"
-                                                        checked={
-                                                            selected
-                                                        }
-                                                        onChange={() =>
-                                                            toggleProduct(
-                                                                product.handle
-                                                            )
-                                                        }
-                                                        aria-label={`Select ${product.title}`}
-                                                    />
-                                                </td>
-
-                                                <td>
-                                                    <Link
-                                                        href={`/admin/products/${encodeURIComponent(
-                                                            product.handle
-                                                        )}`}
-                                                        style={{
-                                                            color: "inherit",
-                                                            textDecoration:
-                                                                "none",
-                                                        }}
-                                                    >
-                                                        <div className="admin-product-name-cell">
-                                                            {product.image ? (
-                                                                <img
-                                                                    src={getCatalogThumbnailUrl(
-                                                                        {
-                                                                            image: product.image,
-                                                                            collection:
-                                                                                product.collection,
-                                                                        }
-                                                                    )}
-                                                                    alt=""
-                                                                    className="admin-product-thumb"
-                                                                />
-                                                            ) : (
-                                                                <div className="admin-product-thumb-placeholder" />
-                                                            )}
-
-                                                            <div>
-                                                                <strong>
-                                                                    {
-                                                                        product.title
-                                                                    }
-                                                                </strong>
-
-                                                                <span>
-                                                                    {
-                                                                        product.handle
-                                                                    }
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </Link>
-                                                </td>
-
-                                                <td>
-                                                    {product.partNumber ||
-                                                        "—"}
-                                                </td>
-
-                                                <td>
-                                                    {product.vendor ||
-                                                        "—"}
-                                                </td>
-
-                                                <td>
-                                                    {product.collectionTitle ||
-                                                        product.collection ||
-                                                        "—"}
-                                                </td>
-
-                                                <td>
-                                                    {product.variantCount ||
-                                                        1}
-                                                </td>
-
-                                                <td className="admin-product-action-cell">
-                                                    <Link
-                                                        href={`/admin/products/${encodeURIComponent(
-                                                            product.handle
-                                                        )}`}
-                                                        className="admin-edit-link"
-                                                    >
-                                                        Open
-                                                    </Link>
-                                                </td>
-                                            </tr>
-                                        );
-                                    }
-                                )}
-                            </tbody>
-                        </table>
-                    </div>
-                </>
-            )}
+                    </>
+                )}
         </div>
     );
 }

@@ -854,41 +854,29 @@ export async function GET(request: Request) {
          * The actual export data always comes
          * from each master product JSON.
          */
-        const indexObject =
-            await bucket.get(
+        let handles: string[];
+
+        if (requestedHandles.length > 0) {
+            handles = [...new Set(requestedHandles)];
+        } else {
+            const indexObject = await bucket.get(
                 "catalog/indexes/catalog-index.json"
             );
 
-        if (!indexObject) {
-            return Response.json(
-                {
-                    success: false,
-                    error:
-                        "Catalog index not found.",
-                },
-                {
-                    status: 404,
-                }
-            );
+            if (!indexObject) {
+                return Response.json(
+                    {
+                        success: false,
+                        error: "Catalog index not found.",
+                    },
+                    { status: 404 }
+                );
+            }
+
+            const indexJson = await readJson(indexObject);
+
+            handles = extractHandles(indexJson);
         }
-
-        const indexJson =
-            await readJson(
-                indexObject
-            );
-
-        const allHandles =
-            extractHandles(
-                indexJson
-            );
-
-        const handles =
-            requestedHandles.length > 0
-                ? requestedHandles.filter(
-                      (handle) =>
-                          allHandles.includes(handle)
-                  )
-                : allHandles;
 
         if (!handles.length) {
             return Response.json({

@@ -715,19 +715,29 @@ async function syncSearchV2(
       updatedProduct.handle
     ).toLowerCase();
 
-  const results =
-    await Promise.all(
-      affectedPrefixes.map(
-        async (prefix) => {
+  const results: Array<string | null> = [];
+
+  const SEARCH_BATCH_SIZE = 3;
+
+  for (
+    let i = 0;
+    i < affectedPrefixes.length;
+    i += SEARCH_BATCH_SIZE
+  ) {
+    const batch =
+      affectedPrefixes.slice(
+        i,
+        i + SEARCH_BATCH_SIZE
+      );
+
+    const batchResults =
+      await Promise.all(
+        batch.map(async (prefix) => {
           const key =
-            `catalog/search-v2/` +
-            `${prefix}.json`;
+            `catalog/search-v2/${prefix}.json`;
 
           const current =
-            await readJson(
-              bucket,
-              key
-            );
+            await readJson(bucket, key);
 
           const shard =
             Array.isArray(current)
@@ -744,17 +754,11 @@ async function syncSearchV2(
           const withoutProduct =
             shard.filter(
               (item: any) =>
-                clean(
-                  item?.h
-                ).toLowerCase() !==
+                clean(item?.h).toLowerCase() !==
                 handle
             );
 
-          if (
-            newPrefixSet.has(
-              prefix
-            )
-          ) {
+          if (newPrefixSet.has(prefix)) {
             withoutProduct.push(
               newSearch.item
             );
@@ -764,9 +768,7 @@ async function syncSearchV2(
             (a: any, b: any) =>
               String(a?.t || "")
                 .localeCompare(
-                  String(
-                    b?.t || ""
-                  )
+                  String(b?.t || "")
                 )
           );
 
@@ -784,9 +786,11 @@ async function syncSearchV2(
           );
 
           return key;
-        }
-      )
-    );
+        })
+      );
+
+    results.push(...batchResults);
+  }
 
   return {
     updatedFiles:
@@ -2369,13 +2373,57 @@ export async function syncExistingProduct(
       (tag) =>
         !oldTagSet.has(tag)
     );
-
   const unchangedTags =
     newTags.filter(
       (tag) =>
         oldTagSet.has(tag)
     );
 
+  const oldSummary =
+    summarizeProduct(existingProduct);
+
+  const newSummary =
+    summarizeProduct(updatedProduct);
+
+  const summaryChanged =
+    JSON.stringify(oldSummary) !==
+    JSON.stringify(newSummary);
+
+  const searchChanged =
+    JSON.stringify(
+      buildSearchV2(existingProduct)
+    ) !==
+    JSON.stringify(
+      buildSearchV2(updatedProduct)
+    );
+
+  const tagsChanged =
+    removedTags.length > 0 ||
+    addedTags.length > 0;
+
+    if (
+    !summaryChanged &&
+    !tagsChanged
+  ) {
+    if (!searchChanged) {
+      return {
+        summary,
+        updatedFiles: [] as string[],
+      };
+    }
+
+    const searchResult = await syncSearchV2(
+      bucket,
+      existingProduct,
+      updatedProduct
+    );
+
+    return {
+      summary,
+      updatedFiles: searchResult.updatedFiles,
+    };
+  }
+  
   /*
    * ------------------------------------------------
    * CATALOGUE SUMMARY
@@ -2924,29 +2972,29 @@ export async function syncExistingProduct(
         );
     }
 
-    if (!alreadyExists) {
-      for (
-        let index = 0;
-        index < totalPages - 1;
-        index++
-      ) {
-        const key =
-          `catalog/indexes/category-pages/${tag}/${pageNumber(index)}.json`;
+    if (
+      !alreadyExists &&
+      totalPages > 1
+    ) {
+      const existingKey =
+        await findAndUpdateSortedPage(
+          bucket,
+          {
+            basePath:
+              `catalog/indexes/category-pages/${tag}`,
+            totalPages,
+            handle,
+            title:
+              updatedProduct?.title ||
+              existingProduct?.title ||
+              "",
+            summary,
+          }
+        );
 
-        const page =
-          await readJson(bucket, key);
-
-        if (
-          Array.isArray(page) &&
-          page.some(
-            (item: any) =>
-              clean(item?.handle)
-                .toLowerCase() === handle
-          )
-        ) {
-          alreadyExists = true;
-          break;
-        }
+      if (existingKey) {
+        alreadyExists = true;
+        updatedFiles.push(existingKey);
       }
     }
 
@@ -3032,24 +3080,26 @@ export async function syncExistingProduct(
       )
   );
 
-  await Promise.all([
-    writeJson(
-      bucket,
+    if (tagsChanged) {
+    await Promise.all([
+      writeJson(
+        bucket,
+        categoryMetaKey,
+        categoryMeta
+      ),
+
+      writeJson(
+        bucket,
+        collectionsKey,
+        collections
+      ),
+    ]);
+
+    updatedFiles.push(
       categoryMetaKey,
-      categoryMeta
-    ),
-
-    writeJson(
-      bucket,
-      collectionsKey,
-      collections
-    ),
-  ]);
-
-  updatedFiles.push(
-    categoryMetaKey,
-    collectionsKey
-  );
+      collectionsKey
+    );
+  }
 
   /*
  * ------------------------------------------------
@@ -3170,19 +3220,24 @@ export async function syncExistingProduct(
     }
   }
 
-  await writeJson(
-    bucket,
-    filterIndexKey,
-    {
-      ...existingFilter,
-      categories: collections,
-      brands,
-    }
-  );
+   if (
+    tagsChanged ||
+    oldVendor !== newVendor
+  ) {
+    await writeJson(
+      bucket,
+      filterIndexKey,
+      {
+        ...existingFilter,
+        categories: collections,
+        brands,
+      }
+    );
 
-  updatedFiles.push(
-    filterIndexKey
-  );
+    updatedFiles.push(
+      filterIndexKey
+    );
+  }
 
   /*
    * ------------------------------------------------
@@ -3226,31 +3281,36 @@ export async function syncExistingProduct(
       registryKey
     )) || {};
 
-  registry[handle] = {
-    handle,
+    const oldSources =
+    existingProduct?.sources || [];
 
-    sources:
-      updatedProduct?.sources ||
-      existingProduct?.sources ||
-      [],
+  const newSources =
+    updatedProduct?.sources ||
+    oldSources;
 
-    tags:
-      newTags,
+  const sourcesChanged =
+    JSON.stringify(oldSources) !==
+    JSON.stringify(newSources);
 
-    updatedAt:
-      new Date()
-        .toISOString(),
-  };
+  if (tagsChanged || sourcesChanged) {
+    registry[handle] = {
+      handle,
+      sources: newSources,
+      tags: newTags,
+      updatedAt:
+        new Date().toISOString(),
+    };
 
-  await writeJson(
-    bucket,
-    registryKey,
-    registry
-  );
+    await writeJson(
+      bucket,
+      registryKey,
+      registry
+    );
 
-  updatedFiles.push(
-    registryKey
-  );
+    updatedFiles.push(
+      registryKey
+    );
+  }
 
   /*
    * ------------------------------------------------

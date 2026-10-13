@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AdminProductsClient from "./AdminProductsClient";
 
 export default function AdminProductsPage() {
@@ -6,10 +7,15 @@ export default function AdminProductsPage() {
       <div className="admin-page-heading">
         <div>
           <h1>Products</h1>
-          <p>
-            Search and manage products in the Sparesco catalogue.
-          </p>
+          <p>Manage your product catalogue.</p>
         </div>
+
+        <Link
+          href="/admin/products/new"
+          className="admin-primary-button"
+        >
+          Add product
+        </Link>
       </div>
 
       <AdminProductsClient />

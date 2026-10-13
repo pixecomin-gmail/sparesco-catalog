@@ -336,13 +336,15 @@ export async function PUT(
       );
     }
 
-    /*
-     * Synchronize catalogue/search/
-     * collection structures before
-     * replacing the master JSON.
+        /*
+     * Synchronization updates multiple R2 objects.
+     * These writes are not atomic.
      *
-     * If synchronization fails, the
-     * master product remains unchanged.
+     * If synchronization fails, the master product
+     * remains unchanged, but some indexes may
+     * already have been updated.
+     *
+     * Do not treat a failed request as a rollback.
      */
     const syncResult =
       await syncExistingProduct(
