@@ -1,13 +1,11 @@
 'use client';
-
 import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { getCatalogThumbnailUrl } from '@/lib/catalog/thumbnail';
 import { parseProductExcel } from '@/lib/admin/excel-product-import';
 import './studio.css';
-
+import './export-popup.css';
 type Item = { handle: string; title: string; image?: string; imageFolder?: string; partNumber?: string; vendor?: string; collection?: string; variantCount?: number; price?: number };
-
 export default function Studio() {
   const importRef = useRef<HTMLInputElement>(null);
   const [transferring, setTransferring] = useState(false);
@@ -19,7 +17,8 @@ export default function Studio() {
   const [searched, setSearched] = useState(false);
   const [page, setPage] = useState(1);
   const [selected, setSelected] = useState<string[]>([]);
-
+  const [showExport, setShowExport] = useState(false);
+  const [exportScope, setExportScope] = useState<'selected' | 'search'>('selected');
   async function search(e: React.FormEvent) {
     e.preventDefault();
     if (q.trim().length < 2) { setError('Enter at least 2 characters.'); return; }
@@ -33,13 +32,13 @@ export default function Studio() {
     } catch (e) { setError(e instanceof Error ? e.message : 'Search failed'); }
     finally { setLoading(false); }
   }
-
-  async function exportExcel() {
-    const handlesToExport = [...new Set(selected)];
-    if (!handlesToExport.length) { setError('Select products from your search results first.'); return; }
+  async function exportExcel(scope: 'selected' | 'search') {
+    const handlesToExport = [...new Set(scope === 'search' ? searchHandles : selected)];
+    setShowExport(false);
+    if (!handlesToExport.length) { setError('No products available for this export option.'); return; }
     setTransferring(true);
     setError('');
-    setTransferNotice(`Preparing ${handlesToExport.length} selected products…`);
+    setTransferNotice(`Preparing ${handlesToExport.length} products…`);
     try {
       const allRows: Record<string, string | number>[] = [];
       const failures: string[] = [];
@@ -58,7 +57,7 @@ export default function Studio() {
         allRows.push(...data.rows);
         failures.push(...data.failedHandles);
         productCount += data.productCount;
-        setTransferNotice(`Exporting selected products: ${Math.min(i + batch.length, handlesToExport.length)} / ${handlesToExport.length} processed…`);
+        setTransferNotice(`Exporting products: ${Math.min(i + batch.length, handlesToExport.length)} / ${handlesToExport.length} processed…`);
       }
       if (failures.length) throw Error(`${failures.length} products could not be read. No incomplete file was saved. Examples: ${failures.slice(0, 5).join(', ')}`);
       if (!allRows.length) throw Error('No products available to export.');
@@ -67,14 +66,13 @@ export default function Studio() {
       const XLSX = await import('xlsx');
       const workbook = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(workbook, XLSX.utils.json_to_sheet(allRows), 'Products');
-      XLSX.writeFile(workbook, 'sparesco-selected-products.xlsx');
+      XLSX.writeFile(workbook, scope === 'search' ? 'sparesco-search-results.xlsx' : 'sparesco-selected-products.xlsx');
       setTransferNotice(`Exported ${productCount.toLocaleString('en-IN')} products (${allRows.length.toLocaleString('en-IN')} Excel rows).`);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Export failed');
       setTransferNotice('');
     } finally { setTransferring(false); }
   }
-
   async function importExcel(file?: File) {
     if (!file) return;
     setTransferring(true); setError(''); setTransferNotice('Reading Excel file…');
@@ -94,7 +92,6 @@ export default function Studio() {
     } catch (e) { setError(e instanceof Error ? e.message : 'Import failed'); }
     finally { setTransferring(false); if (importRef.current) importRef.current.value = ''; }
   }
-
   const visible = rows.slice((page - 1) * 25, page * 25);
   const pages = Math.max(1, Math.ceil(rows.length / 25));
   const visibleHandles = visible.map(p => p.handle);
@@ -107,14 +104,13 @@ export default function Studio() {
   function toggleHandle(handle: string) {
     setSelected(old => old.includes(handle) ? old.filter(h => h !== handle) : [...old, handle]);
   }
-
   return <main className="studio">
     <header className="studio-head">
       <div><div className="studio-eyebrow">SPARESCO / CATALOGUE</div><h1>Product Studio</h1><p>A separate workspace for catalogue management.</p></div>
       <div className="studio-actions">
         <input ref={importRef} type="file" accept=".xlsx,.xls" style={{ display: 'none' }} onChange={e => void importExcel(e.target.files?.[0])} />
         <button type="button" className="studio-secondary" disabled={transferring} onClick={() => importRef.current?.click()}>Import Excel</button>
-        <button type="button" className="studio-secondary" disabled={transferring || !selected.length} onClick={() => void exportExcel()}>Export Excel</button>
+        <button type="button" className="studio-secondary" disabled={transferring || (!selected.length && !searchHandles.length)} onClick={() => { setExportScope(selected.length ? 'selected' : 'search'); setShowExport(true); }}>Export Excel</button>
         <Link className="studio-primary" href="/admin/product-studio/new">+ Add product</Link>
       </div>
     </header>
@@ -122,13 +118,9 @@ export default function Studio() {
       {transferNotice && <div className="studio-notice" role="status">{transferNotice}</div>}
       <form className="studio-search" onSubmit={search}><input aria-label="Search products" value={q} onChange={e => setQ(e.target.value)} placeholder="Search by product name, SKU or part number" /><button disabled={loading}>{loading ? 'Searching…' : 'Search'}</button></form>
       {error && <div className="studio-error" role="alert">{error}</div>}
-      {searched && searchHandles.length > 0 && <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap', padding: '12px 18px' }}>
-        <button type="button" className="studio-secondary" disabled={transferring || allSearchSelected} onClick={() => setSelected(searchHandles)}>Select all {searchHandles.length} search results</button>
-        <span style={{ fontSize: 12, color: '#64748b' }}>Selects every result returned by this search, across all displayed pages.</span>
-      </div>}
       {selected.length > 0 && <div className="studio-notice" style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
         <strong>{selected.length} selected</strong>
-        <button type="button" className="studio-secondary" disabled={transferring} onClick={() => void exportExcel()}>Export selected</button>
+        <button type="button" className="studio-secondary" disabled={transferring} onClick={() => { setExportScope('selected'); setShowExport(true); }}>Export selected</button>
         <button type="button" className="studio-secondary" onClick={() => setSelected([])}>Clear selection</button>
       </div>}
       <div className="studio-tablewrap"><table className="studio-table"><thead><tr>
@@ -141,6 +133,21 @@ export default function Studio() {
       </tr>)}</tbody></table></div>
       {!loading && visible.length === 0 && <div className="studio-empty">{searched ? 'No products found. Try another search.' : 'Search the catalogue to find and manage products.'}</div>}
       {rows.length > 25 && <footer className="studio-pager"><span>{rows.length} results · Page {page} of {pages}</span><div><button disabled={page === 1} onClick={() => setPage(p => p - 1)}>Previous</button><button disabled={page === pages} onClick={() => setPage(p => p + 1)}>Next</button></div></footer>}
-    </section>
-  </main>;
+         </section>
+     {showExport && <div className="studio-export-overlay" role="presentation" onMouseDown={e => { if (e.target === e.currentTarget) setShowExport(false); }}>
+       <div className="studio-export-dialog" role="dialog" aria-modal="true" aria-labelledby="studio-export-title">
+         <h2 id="studio-export-title">Export products</h2>
+         <p>Download an Excel (.xlsx) file.</p>
+         <div className="studio-export-options">
+           <label className="studio-export-option"><input type="radio" name="studio-export-scope" checked={exportScope === 'selected'} disabled={!selected.length} onChange={() => setExportScope('selected')} /><span>Selected products ({selected.length})</span></label>
+           <label className="studio-export-option"><input type="radio" name="studio-export-scope" checked={exportScope === 'search'} disabled={!searchHandles.length} onChange={() => setExportScope('search')} /><span>All {searchHandles.length} search results</span></label>
+         </div>
+         <p className="studio-export-help">Search results include only products returned by the current search.</p>
+         <div className="studio-actions" style={{justifyContent:'flex-end'}}>
+           <button type="button" className="studio-secondary" onClick={() => setShowExport(false)}>Cancel</button>
+           <button type="button" className="studio-primary" disabled={transferring || (exportScope === 'selected' ? !selected.length : !searchHandles.length)} onClick={() => void exportExcel(exportScope)}>Export Excel</button>
+         </div>
+       </div>
+     </div>}
+   </main>;
 }
