@@ -7,6 +7,8 @@ import {
     useState,
 } from "react";
 
+import { createPortal } from "react-dom";
+
 import type {
     ImportedProduct,
 } from "@/lib/admin/excel-product-import";
@@ -1497,150 +1499,54 @@ export default function AddProductClient() {
                     </div>
 
                     {editingPendingImage !== null &&
-                        previewUrls[editingPendingImage] && (
+                        previewUrls[editingPendingImage] &&
+                        createPortal(
                             <div
                                 className="admin-media-modal-backdrop"
-                                style={{
-                                    position: "fixed",
-                                    inset: 0,
-                                    zIndex: 10000,
-                                    background: "rgba(12, 29, 36, 0.65)",
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    padding: 20,
-                                    overflowY: "auto",
-                                }}
-                                onClick={() =>
-                                    setEditingPendingImage(null)
-                                }
+                                onClick={() => setEditingPendingImage(null)}
                             >
                                 <div
                                     className="admin-media-modal"
                                     role="dialog"
                                     aria-modal="true"
                                     aria-label="Edit image"
-                                    style={{
-                                        width: "100%",
-                                        maxWidth: 760,
-                                        maxHeight: "90vh",
-                                        overflowY: "auto",
-                                        background: "#ffffff",
-                                        borderRadius: 14,
-                                        boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
-                                        padding: 24,
-                                        boxSizing: "border-box",
-                                    }}
-                                    onClick={(event) =>
-                                        event.stopPropagation()
-                                    }
+                                    onClick={(event) => event.stopPropagation()}
                                 >
-                                    <div
-                                        className="admin-media-modal-heading"
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "space-between",
-                                            alignItems: "center",
-                                            paddingBottom: 16,
-                                            marginBottom: 20,
-                                            borderBottom: "1px solid #e5e9eb",
-                                        }}
-                                    >
-                                        <h2 style={{ margin: 0, fontSize: 20 }}>
-                                            Edit image
-                                        </h2>
+                                    <div className="admin-media-modal-heading">
+                                        <h2>Edit image</h2>
                                         <button
                                             type="button"
-                                            onClick={() =>
-                                                setEditingPendingImage(null)
-                                            }
                                             aria-label="Close"
-                                            style={{
-                                                width: 34,
-                                                height: 34,
-                                                border: "1px solid #dce3e6",
-                                                borderRadius: 8,
-                                                background: "#fff",
-                                                cursor: "pointer",
-                                                fontSize: 22,
-                                                lineHeight: 1,
-                                            }}
+                                            onClick={() => setEditingPendingImage(null)}
                                         >
                                             ×
                                         </button>
                                     </div>
 
-                                    <div
-                                        className="admin-media-modal-content"
-                                        style={{
-                                            display: "grid",
-                                            gridTemplateColumns: "minmax(0, 1fr)",
-                                            gap: 20,
-                                        }}
-                                    >
-                                        <div
-                                            className="admin-media-modal-preview"
-                                            style={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                alignItems: "center",
-                                                minHeight: 220,
-                                                maxHeight: 320,
-                                                padding: 16,
-                                                background: "#f7f8f9",
-                                                border: "1px solid #e5e9eb",
-                                                borderRadius: 10,
-                                                overflow: "hidden",
-                                            }}
-                                        >
+                                    <div className="admin-media-modal-content">
+                                        <div className="admin-media-modal-preview">
                                             <img
-                                                style={{
-                                                    display: "block",
-                                                    maxWidth: "100%",
-                                                    maxHeight: 280,
-                                                    objectFit: "contain",
-                                                }}
-                                                src={
-                                                    previewUrls[
-                                                        editingPendingImage
-                                                    ].url
-                                                }
-                                                alt={
-                                                    previewUrls[
-                                                        editingPendingImage
-                                                    ].file.name
-                                                }
+                                                src={previewUrls[editingPendingImage].url}
+                                                alt={previewUrls[editingPendingImage].file.name}
                                             />
                                         </div>
 
-                                        <div
-                                            className="admin-media-modal-fields"
-                                            style={{
-                                                display: "grid",
-                                                gap: 16,
-                                            }}
-                                        >
+                                        <div className="admin-media-modal-fields">
                                             <div className="admin-field">
                                                 <label>Image Alt Text</label>
                                                 <input
                                                     value={
-                                                        pendingImageAlt[
-                                                        editingPendingImage
-                                                        ] || ""
+                                                        pendingImageAlt[editingPendingImage] || ""
                                                     }
                                                     onChange={(event) => {
-                                                        const value =
-                                                            event.target.value;
+                                                        const value = event.target.value;
 
-                                                        setPendingImageAlt(
-                                                            (current) =>
-                                                                current.map(
-                                                                    (alt, index) =>
-                                                                        index ===
-                                                                            editingPendingImage
-                                                                            ? value
-                                                                            : alt
-                                                                )
+                                                        setPendingImageAlt((current) =>
+                                                            current.map((alt, index) =>
+                                                                index === editingPendingImage
+                                                                    ? value
+                                                                    : alt
+                                                            )
                                                         );
                                                     }}
                                                     placeholder="Describe this image"
@@ -1650,42 +1556,30 @@ export default function AddProductClient() {
                                             <div className="admin-field">
                                                 <label>Position</label>
                                                 <input
-                                                    value={
-                                                        editingPendingImage + 1
-                                                    }
+                                                    value={editingPendingImage + 1}
                                                     readOnly
                                                     className="admin-readonly-input"
                                                 />
                                                 <small>
-                                                    Use Make Primary in the gallery
-                                                    to change the first image.
+                                                    Use Make Primary in the gallery to change
+                                                    the first image.
                                                 </small>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div
-                                        className="admin-media-modal-footer"
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "flex-end",
-                                            paddingTop: 20,
-                                            marginTop: 20,
-                                            borderTop: "1px solid #e5e9eb",
-                                        }}
-                                    >
+                                    <div className="admin-media-modal-footer">
                                         <button
                                             type="button"
                                             className="admin-primary-button"
-                                            onClick={() =>
-                                                setEditingPendingImage(null)
-                                            }
+                                            onClick={() => setEditingPendingImage(null)}
                                         >
                                             Done
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </div>,
+                            document.body
                         )}
 
                     <div
