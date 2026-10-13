@@ -10,3 +10,8 @@
 .studio [role="dialog"] h2 { margin: 0 0 8px; font-size: 23px; }
 .studio [role="dialog"] p { line-height: 1.5; }
 .studio [role="dialog"] .studio-actions { margin-top: 22px; flex-wrap: wrap; }
+
+/* Compact Product Studio export status and selection controls */
+.studio-transfer-status{display:inline-flex;max-width:calc(100% - 24px);margin:10px 12px 2px;padding:6px 10px;border:1px solid #d2e8e5;border-radius:7px;background:#f3faf9;color:#276d68;font-size:12px;line-height:1.4}
+.studio-selection-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 12px;padding:6px 10px;border:1px solid #e2e8e9;border-radius:8px;background:#f8faf9;font-size:12px}
+.studio-selection-bar .studio-secondary{padding:6px 10px;font-size:12px}

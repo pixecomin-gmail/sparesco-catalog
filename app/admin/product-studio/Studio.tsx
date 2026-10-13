@@ -115,10 +115,10 @@ export default function Studio() {
       </div>
     </header>
     <section className="studio-panel">
-      {transferNotice && <div className="studio-notice" role="status">{transferNotice}</div>}
+      {transferNotice && <div className="studio-transfer-status" role="status">{transferNotice}</div>}
       <form className="studio-search" onSubmit={search}><input aria-label="Search products" value={q} onChange={e => setQ(e.target.value)} placeholder="Search by product name, SKU or part number" /><button disabled={loading}>{loading ? 'Searching…' : 'Search'}</button></form>
       {error && <div className="studio-error" role="alert">{error}</div>}
-      {selected.length > 0 && <div className="studio-notice" style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+      {selected.length > 0 && <div className="studio-selection-bar">
         <strong>{selected.length} selected</strong>
         <button type="button" className="studio-secondary" disabled={transferring} onClick={() => { setExportScope('selected'); setShowExport(true); }}>Export selected</button>
         <button type="button" className="studio-secondary" onClick={() => setSelected([])}>Clear selection</button>
