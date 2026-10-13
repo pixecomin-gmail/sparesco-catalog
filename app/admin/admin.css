@@ -2561,11 +2561,41 @@
   object-fit: contain;
 }
 
+.admin-variant-card {
+  position: relative;
+}
+
 .admin-variant-remove-row {
+  position: absolute;
+  top: 14px;
+  right: 78px;
+  z-index: 2;
   display: flex;
-  justify-content: flex-end;
-  padding: 10px 18px;
-  border-top: 1px solid #e3e8e6;
+  align-items: center;
+  padding: 0;
+  border: 0;
+}
+
+.admin-variant-header {
+  padding-right: 60px;
+}
+
+.admin-variant-remove-row .admin-secondary-button {
+  min-height: 36px;
+  padding: 7px 14px;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .admin-variant-remove-row {
+    top: 16px;
+    right: 60px;
+  }
+
+  .admin-variant-remove-row .admin-secondary-button {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
 }
 
 .admin-variant-remove-row .admin-secondary-button {
