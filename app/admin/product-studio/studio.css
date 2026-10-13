@@ -2,3 +2,11 @@
 
 .studio-image-missing { background: #f3f5f6; min-height: 110px; }
 .studio-image-missing::before { content: "Image unavailable"; display: block; padding: 12px 6px; font-size: 12px; color: #64748b; text-align: center; }
+
+.studio input[type="checkbox"], .studio input[type="radio"] { width: 17px; height: 17px; min-width: 17px; padding: 0; margin: 0; accent-color: #173f4c; cursor: pointer; }
+.studio-export-option { display: flex; align-items: center; gap: 12px; margin: 12px 0; padding: 12px 14px; border: 1px solid #d4dadd; border-radius: 9px; font-size: 14px; cursor: pointer; }
+.studio-export-option:has(input:checked) { border-color: #2a8392; background: #eff8f8; }
+.studio-export-option:has(input:disabled) { opacity: .5; cursor: not-allowed; }
+.studio [role="dialog"] h2 { margin: 0 0 8px; font-size: 23px; }
+.studio [role="dialog"] p { line-height: 1.5; }
+.studio [role="dialog"] .studio-actions { margin-top: 22px; flex-wrap: wrap; }

@@ -38,24 +38,82 @@ export default function Studio() {
   }
 
   async function exportExcel(exportScope: ExportScope) {
-    if (exportScope === 'selected' && selected.length === 0) { setError('Select at least one product.'); return; }
-    setShowExport(false); setTransferring(true); setError('');
-    setTransferNotice(exportScope === 'all' ? 'Preparing full catalogue Excel export…' : `Preparing ${selected.length} selected products…`);
+    if (exportScope === 'selected' && selected.length === 0) {
+      setError('Select at least one product.');
+      return;
+    }
+    setShowExport(false);
+    setTransferring(true);
+    setError('');
+    setTransferNotice('Preparing Excel export…');
     try {
-      const endpoint = exportScope === 'selected'
-        ? '/api/admin/export?handles=' + encodeURIComponent(selected.join(','))
-        : '/api/admin/export';
-      const response = await fetch(endpoint);
-      const data = await response.json();
-      if (!response.ok || !data.success) throw Error(data.error || 'Export failed');
-      if (!Array.isArray(data.rows) || !data.rows.length) throw Error('No products to export');
+      const allRows: Record<string, string | number>[] = [];
+      const failures: string[] = [];
+      const batchSize = 25;
+      let processed = 0;
+      let total = exportScope === 'selected' ? selected.length : 0;
+      let productCount = 0;
+
+      async function fetchBatch(url: string) {
+        const response = await fetch(url, { cache: 'no-store' });
+        const contentType = response.headers.get('content-type') || '';
+        if (!contentType.toLowerCase().includes('application/json')) {
+          throw Error(`Export server returned HTTP ${response.status} (${contentType || 'unknown content type'}), not JSON. Check Cloudflare logs.`);
+        }
+        const data = await response.json();
+        if (!response.ok || !data.success) throw Error(data.error || `Export failed (HTTP ${response.status})`);
+        if (!Array.isArray(data.rows) || !Array.isArray(data.failedHandles)) {
+          throw Error('Export server returned an unexpected response.');
+        }
+        return data as { total: number; processed: number; nextOffset: number | null; productCount: number; rows: Record<string, string | number>[]; failedHandles: string[] };
+      }
+
+      if (exportScope === 'selected') {
+        for (let i = 0; i < selected.length; i += batchSize) {
+          const handles = selected.slice(i, i + batchSize);
+          const data = await fetchBatch('/api/admin/export?limit=25&handles=' + encodeURIComponent(handles.join(',')));
+          allRows.push(...data.rows);
+          failures.push(...data.failedHandles);
+          productCount += data.productCount;
+          processed += handles.length;
+          setTransferNotice(`Exporting selected products: ${processed} / ${total} processed…`);
+        }
+      } else {
+        let offset = 0;
+        while (true) {
+          const data = await fetchBatch(`/api/admin/export?offset=${offset}&limit=${batchSize}`);
+          if (!Number.isSafeInteger(data.total) || data.total < 0 || !Number.isSafeInteger(data.processed) || data.processed < offset || data.processed > data.total) {
+            throw Error('Invalid export progress returned by server.');
+          }
+          total = data.total;
+          processed = data.processed;
+          allRows.push(...data.rows);
+          failures.push(...data.failedHandles);
+          productCount += data.productCount;
+          setTransferNotice(`Exporting catalogue: ${processed.toLocaleString('en-IN')} / ${total.toLocaleString('en-IN')} products processed…`);
+          if (data.nextOffset === null) break;
+          if (!Number.isSafeInteger(data.nextOffset) || data.nextOffset <= offset) throw Error('Export pagination did not advance.');
+          offset = data.nextOffset;
+        }
+      }
+
+      if (failures.length) {
+        throw Error(`${failures.length} products could not be read from R2. No incomplete Excel file was saved. Examples: ${failures.slice(0, 5).join(', ')}`);
+      }
+      if (!allRows.length) throw Error('No products available to export.');
+      if (allRows.length > 1048575) throw Error('Export exceeds the Excel worksheet row limit. No file was saved.');
+      setTransferNotice(`Creating Excel file (${allRows.length.toLocaleString('en-IN')} rows)…`);
       const XLSX = await import('xlsx');
       const workbook = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(workbook, XLSX.utils.json_to_sheet(data.rows), 'Products');
+      XLSX.utils.book_append_sheet(workbook, XLSX.utils.json_to_sheet(allRows), 'Products');
       XLSX.writeFile(workbook, exportScope === 'all' ? 'sparesco-all-products.xlsx' : 'sparesco-selected-products.xlsx');
-      setTransferNotice(`Exported ${data.productCount ?? 'selected'} products (${data.rows.length} Excel rows).`);
-    } catch (e) { setError(e instanceof Error ? e.message : 'Export failed'); setTransferNotice(''); }
-    finally { setTransferring(false); }
+      setTransferNotice(`Exported ${productCount.toLocaleString('en-IN')} products (${allRows.length.toLocaleString('en-IN')} Excel rows).`);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Export failed');
+      setTransferNotice('');
+    } finally {
+      setTransferring(false);
+    }
   }
 
   async function importExcel(file?: File) {
@@ -122,9 +180,9 @@ export default function Studio() {
     {showExport && <div role="presentation" style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.45)', zIndex: 1000, display: 'grid', placeItems: 'center', padding: 16 }}>
       <div role="dialog" aria-modal="true" aria-label="Export products" className="studio-panel" style={{ width: '100%', maxWidth: 430, padding: 24 }}>
         <h2>Export products</h2><p>Download an Excel (.xlsx) file.</p>
-        <label style={{ display: 'block', margin: '16px 0' }}><input type="radio" name="export-scope" checked={scope === 'selected'} disabled={!selected.length} onChange={() => setScope('selected')} /> Selected products ({selected.length})</label>
-        <label style={{ display: 'block', margin: '16px 0' }}><input type="radio" name="export-scope" checked={scope === 'all'} onChange={() => setScope('all')} /> All products in catalogue</label>
-        <p style={{ fontSize: 12 }}>Full catalogue exports may time out on large catalogues with the current API.</p>
+        <label className="studio-export-option"><input type="radio" name="export-scope" checked={scope === 'selected'} disabled={!selected.length} onChange={() => setScope('selected')} /> Selected products ({selected.length})</label>
+        <label className="studio-export-option"><input type="radio" name="export-scope" checked={scope === 'all'} onChange={() => setScope('all')} /> All products in catalogue</label>
+        <p style={{ fontSize: 12 }}>Large exports are processed in batches. Keep this tab open until the Excel file is ready.</p>
         <div className="studio-actions" style={{ justifyContent: 'flex-end' }}><button type="button" className="studio-secondary" onClick={() => setShowExport(false)}>Cancel</button><button type="button" className="studio-primary" onClick={() => void exportExcel(scope)}>Export Excel</button></div>
       </div>
     </div>}
