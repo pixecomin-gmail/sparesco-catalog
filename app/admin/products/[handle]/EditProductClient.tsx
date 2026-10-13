@@ -175,6 +175,9 @@ export default function EditProductClient({
     const [imageError, setImageError] =
         useState("");
 
+    const [editingImage, setEditingImage] =
+        useState<string | null>(null);
+
     const [tagInput, setTagInput] =
         useState("");
 
@@ -509,7 +512,7 @@ export default function EditProductClient({
         }
     }
 
-        function updateProductMedia(
+    function updateProductMedia(
         image: string,
         field: "position" | "altText",
         value: number | string
@@ -1010,133 +1013,122 @@ export default function EditProductClient({
                             </div>
                         )}
 
-                    <div
-                        style={{
-                            display: "flex",
-                            gap: "8px",
-                        }}
-                    >
-                        <input
-                            value={tagInput}
-                            onChange={(e) =>
-                                setTagInput(
-                                    e.target.value
-                                )
-                            }
-                            placeholder="Add collection/tag"
-                            onKeyDown={(e) => {
-                                if (e.key === "Enter") {
-                                    e.preventDefault();
-                                    addTag();
-                                }
+                        <div
+                            style={{
+                                display: "flex",
+                                gap: "8px",
                             }}
+                        >
+                            <input
+                                value={tagInput}
+                                onChange={(e) =>
+                                    setTagInput(
+                                        e.target.value
+                                    )
+                                }
+                                placeholder="Add collection/tag"
+                                onKeyDown={(e) => {
+                                    if (e.key === "Enter") {
+                                        e.preventDefault();
+                                        addTag();
+                                    }
+                                }}
+                            />
+
+                            <button
+                                type="button"
+                                className="admin-secondary-button"
+                                onClick={addTag}
+                            >
+                                + Add
+                            </button>
+                        </div>
+
+                        <span className="admin-add-helper-text">
+                            Separate multiple tags with commas.
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            {/* IMAGES */}
+
+            <section className="admin-edit-card">
+                <div className="admin-image-section-heading">
+                    <div>
+                        <h2>
+                            Images (
+                            {product.images.length})
+                        </h2>
+
+                        <p className="admin-section-note">
+                            Add or remove product images.
+                            Variant images can be selected
+                            in the Variants section below.
+                        </p>
+                    </div>
+
+                    <div>
+                        <input
+                            ref={
+                                productImageInputRef
+                            }
+                            type="file"
+                            accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
+                            multiple
+                            hidden
+                            onChange={
+                                uploadImages
+                            }
                         />
 
                         <button
                             type="button"
                             className="admin-secondary-button"
-                            onClick={addTag}
+                            disabled={
+                                uploadingImages || saving
+                            }
+                            onClick={() =>
+                                productImageInputRef.current?.click()
+                            }
                         >
-                            + Add
+                            {uploadingImages
+                                ? "Uploading..."
+                                : "+ Add Images"}
                         </button>
                     </div>
-
-                    <span className="admin-add-helper-text">
-                        Separate multiple tags with commas.
-                    </span>
                 </div>
-            </div>
-        </section>
 
-            {/* IMAGES */ }
+                {imageError && (
+                    <div className="admin-form-error">
+                        {imageError}
+                    </div>
+                )}
 
-    <section className="admin-edit-card">
-        <div className="admin-image-section-heading">
-            <div>
-                <h2>
-                    Images (
-                    {product.images.length})
-                </h2>
-
-                <p className="admin-section-note">
-                    Add or remove product images.
-                    Variant images can be selected
-                    in the Variants section below.
-                </p>
-            </div>
-
-            <div>
-                <input
-                    ref={
-                        productImageInputRef
-                    }
-                    type="file"
-                    accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
-                    multiple
-                    hidden
-                    onChange={
-                        uploadImages
-                    }
-                />
-
-                <button
-                    type="button"
-                    className="admin-secondary-button"
-                    disabled={
-                        uploadingImages || saving
-                    }
-                    onClick={() =>
-                        productImageInputRef.current?.click()
-                    }
-                >
-                    {uploadingImages
-                        ? "Uploading..."
-                        : "+ Add Images"}
-                </button>
-            </div>
-        </div>
-
-        {imageError && (
-            <div className="admin-form-error">
-                {imageError}
-            </div>
-        )}
-
-        {product.images.length ===
-            0 ? (
-            <div className="admin-product-empty">
-                No product images.
-            </div>
-        ) : (
-            <div className="admin-edit-images">
-                {product.images.map(
-                    (
-                        image,
-                        index
-                    ) => (
-                        <div
-                            key={`${image}-${index}`}
-                            className="admin-edit-image-card admin-manage-image-card"
-                        >
-                            <div className="admin-manage-image-preview">
-                                <img
-                                    src={getCatalogThumbnailUrl(
-                                        {
-                                            image,
-                                            imageFolder:
-                                                product.imageFolder,
-                                            collection:
-                                                product.collection,
-                                        }
-                                    )}
-                                    alt={
-                                        product.title
-                                    }
-                                    onError={(
-                                        event
-                                    ) => {
-                                        const original =
-                                            getOriginalImageUrl(
+                {product.images.length ===
+                    0 ? (
+                    <div className="admin-product-empty">
+                        No product images.
+                    </div>
+                ) : (
+                    <div className="admin-edit-images">
+                        {product.images.map(
+                            (
+                                image,
+                                index
+                            ) => (
+                                <div
+                                    key={`${image}-${index}`}
+                                    className="admin-edit-image-card admin-manage-image-card"
+                                >
+                                    <button
+                                        type="button"
+                                        className="admin-manage-image-preview admin-media-open"
+                                        onClick={() => setEditingImage(image)}
+                                        title="Edit image details"
+                                    >
+                                        <img
+                                            src={getCatalogThumbnailUrl(
                                                 {
                                                     image,
                                                     imageFolder:
@@ -1144,197 +1136,282 @@ export default function EditProductClient({
                                                     collection:
                                                         product.collection,
                                                 }
-                                            );
-
-                                        if (
-                                            event
-                                                .currentTarget
-                                                .src !==
-                                            original
-                                        ) {
-                                            event.currentTarget.src =
-                                                original;
-                                        }
-                                    }}
-                                />
-                            </div>
-
-                                                        <div className="admin-field">
-                                <label>Position</label>
-                                <input
-                                    type="number"
-                                    min={1}
-                                    value={
-                                        product.media?.find(
-                                            (item) => item.src === image
-                                        )?.position ?? index + 1
-                                    }
-                                    onChange={(e) =>
-                                        updateProductMedia(
-                                            image,
-                                            "position",
-                                            Math.max(
-                                                1,
-                                                Number(e.target.value) || 1
-                                            )
-                                        )
-                                    }
-                                />
-                            </div>
-
-                            <div className="admin-field">
-                                <label>Image Alt Text</label>
-                                <input
-                                    value={
-                                        product.media?.find(
-                                            (item) => item.src === image
-                                        )?.altText ?? ""
-                                    }
-                                    onChange={(e) =>
-                                        updateProductMedia(
-                                            image,
-                                            "altText",
-                                            e.target.value
-                                        )
-                                    }
-                                />
-                            </div>
-
-                            <button
-                                type="button"
-                                className="admin-media-remove"
-                                onClick={() =>
-                                    removeProductImage(image)
-                                }
-                                aria-label="Remove image"
-                                title="Remove image"
-                            >
-                                ×
-                            </button>
-                        </div>
-                    )
-                )}
-            </div>
-        )}
-    </section>
-
-    {/* VARIANTS */ }
-
-    <section className="admin-edit-card">
-        <div className="admin-image-section-heading">
-            <div>
-                <h2>
-                    Variants ({product.variants.length})
-                </h2>
-
-                <p className="admin-section-note">
-                    Manage product variants and their details.
-                </p>
-            </div>
-
-            <button
-                type="button"
-                className="admin-secondary-button"
-                onClick={addVariant}
-            >
-                + Add Variant
-            </button>
-        </div>
-
-        <div className="admin-variant-list">
-            {product.variants.map(
-                (variant, index) => {
-                    const isOpen =
-                        openVariants.includes(
-                            index
-                        );
-
-                    return (
-                        <div
-                            className="admin-variant-card"
-                            key={
-                                variant.id ||
-                                `${variant.partNumber || "variant"}-${index}`
-                            }
-                        >
-                            <button
-                                type="button"
-                                className="admin-variant-header"
-                                onClick={() =>
-                                    toggleVariant(
-                                        index
-                                    )
-                                }
-                            >
-                                <div>
-                                    <strong>
-                                        {variant.title ||
-                                            `Variant ${index +
-                                            1
-                                            }`}
-                                    </strong>
-
-                                    <span>
-                                        {variant.partNumber ||
-                                            "No part number"}
-                                    </span>
-                                </div>
-
-                                <span>
-                                    {isOpen
-                                        ? "−"
-                                        : "+"}
-                                </span>
-                            </button>
-
-                            {isOpen && (
-                                <div className="admin-variant-body">
-                                    {product.variants.length > 1 && (
-                                        <button
-                                            type="button"
-                                            className="admin-secondary-button"
-                                            onClick={() => {
-                                                if (
-                                                    window.confirm(
-                                                        "Remove this variant?"
-                                                    )
-                                                ) {
-                                                    removeVariant(index);
-                                                }
-                                            }}
-                                            disabled={saving || uploadingImages}
-                                        >
-                                            Remove Variant
-                                        </button>
-                                    )}
-                                    <div className="admin-variant-image-manager">
-                                        <label>
-                                            Variant
-                                            Image
-                                        </label>
-
-                                        {variant.image ? (
-                                            <div className="admin-current-variant-image">
-                                                <img
-                                                    src={getCatalogThumbnailUrl(
+                                            )}
+                                            alt={
+                                                product.title
+                                            }
+                                            onError={(
+                                                event
+                                            ) => {
+                                                const original =
+                                                    getOriginalImageUrl(
                                                         {
-                                                            image:
-                                                                variant.image,
+                                                            image,
                                                             imageFolder:
                                                                 product.imageFolder,
                                                             collection:
                                                                 product.collection,
                                                         }
-                                                    )}
-                                                    alt={
-                                                        variant.title ||
-                                                        product.title
-                                                    }
-                                                    onError={(
-                                                        event
-                                                    ) => {
-                                                        const original =
-                                                            getOriginalImageUrl(
+                                                    );
+
+                                                if (
+                                                    event
+                                                        .currentTarget
+                                                        .src !==
+                                                    original
+                                                ) {
+                                                    event.currentTarget.src =
+                                                        original;
+                                                }
+                                            }}
+                                        />
+                                    </button>
+
+                                    <div className="admin-media-edit-hint">
+                                        Click to edit image
+                                    </div>
+
+                                    <div className="admin-field">
+                                        <label>Image Alt Text</label>
+                                        <input
+                                            value={
+                                                product.media?.find(
+                                                    (item) => item.src === image
+                                                )?.altText ?? ""
+                                            }
+                                            onChange={(e) =>
+                                                updateProductMedia(
+                                                    image,
+                                                    "altText",
+                                                    e.target.value
+                                                )
+                                            }
+                                        />
+                                    </div>
+
+                                    <button
+                                        type="button"
+                                        className="admin-media-remove"
+                                        onClick={() =>
+                                            removeProductImage(image)
+                                        }
+                                        aria-label="Remove image"
+                                        title="Remove image"
+                                    >
+                                        ×
+                                    </button>
+                                </div>
+                            )
+                        )}
+                    </div>
+                )}
+            </section>
+
+            {editingImage && (
+                <div
+                    className="admin-media-modal-backdrop"
+                    onClick={() => setEditingImage(null)}
+                >
+                    <div
+                        className="admin-media-modal"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label="Edit image"
+                        onClick={(event) => event.stopPropagation()}
+                    >
+                        <div className="admin-media-modal-heading">
+                            <h2>Edit image</h2>
+                            <button
+                                type="button"
+                                onClick={() => setEditingImage(null)}
+                                aria-label="Close"
+                            >
+                                ×
+                            </button>
+                        </div>
+
+                        <div className="admin-media-modal-content">
+                            <div className="admin-media-modal-preview">
+                                <img
+                                    src={getCatalogThumbnailUrl({
+                                        image: editingImage,
+                                        imageFolder: product.imageFolder,
+                                        collection: product.collection,
+                                    })}
+                                    alt={product.title}
+                                />
+                            </div>
+
+                            <div className="admin-media-modal-fields">
+                                <div className="admin-field">
+                                    <label>Image Alt Text</label>
+                                    <input
+                                        value={
+                                            product.media?.find(
+                                                (item) => item.src === editingImage
+                                            )?.altText ?? ""
+                                        }
+                                        onChange={(event) =>
+                                            updateProductMedia(
+                                                editingImage,
+                                                "altText",
+                                                event.target.value
+                                            )
+                                        }
+                                        placeholder="Describe this image"
+                                    />
+                                    <small>
+                                        Describe the image for accessibility.
+                                    </small>
+                                </div>
+
+                                <div className="admin-field">
+                                    <label>Position</label>
+                                    <input
+                                        type="number"
+                                        min={1}
+                                        value={
+                                            product.media?.find(
+                                                (item) => item.src === editingImage
+                                            )?.position ??
+                                            product.images.indexOf(editingImage) + 1
+                                        }
+                                        onChange={(event) =>
+                                            updateProductMedia(
+                                                editingImage,
+                                                "position",
+                                                Math.max(
+                                                    1,
+                                                    Number(event.target.value) || 1
+                                                )
+                                            )
+                                        }
+                                    />
+                                </div>
+
+                                <div className="admin-field">
+                                    <label>Filename</label>
+                                    <input
+                                        value={editingImage}
+                                        readOnly
+                                        className="admin-readonly-input"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="admin-media-modal-footer">
+                            <button
+                                type="button"
+                                className="admin-primary-button"
+                                onClick={() => setEditingImage(null)}
+                            >
+                                Done
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* VARIANTS */}
+
+            <section className="admin-edit-card">
+                <div className="admin-image-section-heading">
+                    <div>
+                        <h2>
+                            Variants ({product.variants.length})
+                        </h2>
+
+                        <p className="admin-section-note">
+                            Manage product variants and their details.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        className="admin-secondary-button"
+                        onClick={addVariant}
+                    >
+                        + Add Variant
+                    </button>
+                </div>
+
+                <div className="admin-variant-list">
+                    {product.variants.map(
+                        (variant, index) => {
+                            const isOpen =
+                                openVariants.includes(
+                                    index
+                                );
+
+                            return (
+                                <div
+                                    className="admin-variant-card"
+                                    key={
+                                        variant.id ||
+                                        `${variant.partNumber || "variant"}-${index}`
+                                    }
+                                >
+                                    <button
+                                        type="button"
+                                        className="admin-variant-header"
+                                        onClick={() =>
+                                            toggleVariant(
+                                                index
+                                            )
+                                        }
+                                    >
+                                        <div>
+                                            <strong>
+                                                {variant.title ||
+                                                    `Variant ${index +
+                                                    1
+                                                    }`}
+                                            </strong>
+
+                                            <span>
+                                                {variant.partNumber ||
+                                                    "No part number"}
+                                            </span>
+                                        </div>
+
+                                        <span>
+                                            {isOpen
+                                                ? "−"
+                                                : "+"}
+                                        </span>
+                                    </button>
+
+                                    {isOpen && (
+                                        <div className="admin-variant-body">
+                                            {product.variants.length > 1 && (
+                                                <button
+                                                    type="button"
+                                                    className="admin-secondary-button"
+                                                    onClick={() => {
+                                                        if (
+                                                            window.confirm(
+                                                                "Remove this variant?"
+                                                            )
+                                                        ) {
+                                                            removeVariant(index);
+                                                        }
+                                                    }}
+                                                    disabled={saving || uploadingImages}
+                                                >
+                                                    Remove Variant
+                                                </button>
+                                            )}
+                                            <div className="admin-variant-image-manager">
+                                                <label>
+                                                    Variant
+                                                    Image
+                                                </label>
+
+                                                {variant.image ? (
+                                                    <div className="admin-current-variant-image">
+                                                        <img
+                                                            src={getCatalogThumbnailUrl(
                                                                 {
                                                                     image:
                                                                         variant.image,
@@ -1343,103 +1420,107 @@ export default function EditProductClient({
                                                                     collection:
                                                                         product.collection,
                                                                 }
-                                                            );
+                                                            )}
+                                                            alt={
+                                                                variant.title ||
+                                                                product.title
+                                                            }
+                                                            onError={(
+                                                                event
+                                                            ) => {
+                                                                const original =
+                                                                    getOriginalImageUrl(
+                                                                        {
+                                                                            image:
+                                                                                variant.image,
+                                                                            imageFolder:
+                                                                                product.imageFolder,
+                                                                            collection:
+                                                                                product.collection,
+                                                                        }
+                                                                    );
 
-                                                        if (
-                                                            event
-                                                                .currentTarget
-                                                                .src !==
-                                                            original
-                                                        ) {
-                                                            event.currentTarget.src =
-                                                                original;
-                                                        }
-                                                    }}
-                                                />
+                                                                if (
+                                                                    event
+                                                                        .currentTarget
+                                                                        .src !==
+                                                                    original
+                                                                ) {
+                                                                    event.currentTarget.src =
+                                                                        original;
+                                                                }
+                                                            }}
+                                                        />
 
-                                                <div>
-                                                    <span>
-                                                        {
-                                                            variant.image
-                                                        }
-                                                    </span>
+                                                        <div>
+                                                            <span>
+                                                                {
+                                                                    variant.image
+                                                                }
+                                                            </span>
 
-                                                    <button
-                                                        type="button"
-                                                        className="admin-image-remove-button"
-                                                        onClick={() =>
-                                                            removeVariantImage(
-                                                                index
-                                                            )
-                                                        }
-                                                    >
-                                                        Remove
-                                                        from
-                                                        variant
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        ) : (
-                                            <div className="admin-variant-no-image">
-                                                No
-                                                image
-                                                assigned
-                                                to this
-                                                variant.
-                                            </div>
-                                        )}
-
-                                        {product
-                                            .images
-                                            .length >
-                                            0 && (
-                                                <>
-                                                    <div className="admin-variant-image-label">
-                                                        Select
-                                                        product
-                                                        image
+                                                            <button
+                                                                type="button"
+                                                                className="admin-image-remove-button"
+                                                                onClick={() =>
+                                                                    removeVariantImage(
+                                                                        index
+                                                                    )
+                                                                }
+                                                            >
+                                                                Remove
+                                                                from
+                                                                variant
+                                                            </button>
+                                                        </div>
                                                     </div>
+                                                ) : (
+                                                    <div className="admin-variant-no-image">
+                                                        No
+                                                        image
+                                                        assigned
+                                                        to this
+                                                        variant.
+                                                    </div>
+                                                )}
 
-                                                    <div className="admin-variant-image-picker">
-                                                        {product.images.map(
-                                                            (
+                                                {product
+                                                    .images
+                                                    .length >
+                                                    0 && (
+                                                        <>
+                                                            <div className="admin-variant-image-label">
+                                                                Select
+                                                                product
                                                                 image
-                                                            ) => (
-                                                                <button
-                                                                    key={
+                                                            </div>
+
+                                                            <div className="admin-variant-image-picker">
+                                                                {product.images.map(
+                                                                    (
                                                                         image
-                                                                    }
-                                                                    type="button"
-                                                                    className={
-                                                                        variant.image ===
-                                                                            image
-                                                                            ? "admin-variant-image-option admin-variant-image-option-selected"
-                                                                            : "admin-variant-image-option"
-                                                                    }
-                                                                    onClick={() =>
-                                                                        assignImageToVariant(
-                                                                            index,
-                                                                            image
-                                                                        )
-                                                                    }
-                                                                    title="Assign this image to this variant"
-                                                                >
-                                                                    <img
-                                                                        src={getCatalogThumbnailUrl(
-                                                                            {
-                                                                                image,
-                                                                                imageFolder:
-                                                                                    product.imageFolder,
-                                                                                collection:
-                                                                                    product.collection,
+                                                                    ) => (
+                                                                        <button
+                                                                            key={
+                                                                                image
                                                                             }
-                                                                        )}
-                                                                        alt=""
-                                                                        onError={(
-                                                                            event
-                                                                        ) => {
-                                                                            const original =
-                                                                                getOriginalImageUrl(
+                                                                            type="button"
+                                                                            className={
+                                                                                variant.image ===
+                                                                                    image
+                                                                                    ? "admin-variant-image-option admin-variant-image-option-selected"
+                                                                                    : "admin-variant-image-option"
+                                                                            }
+                                                                            onClick={() =>
+                                                                                assignImageToVariant(
+                                                                                    index,
+                                                                                    image
+                                                                                )
+                                                                            }
+                                                                            title="Assign this image to this variant"
+                                                                        >
+                                                                            <img
+                                                                                src={getCatalogThumbnailUrl(
                                                                                     {
                                                                                         image,
                                                                                         imageFolder:
@@ -1447,842 +1528,856 @@ export default function EditProductClient({
                                                                                         collection:
                                                                                             product.collection,
                                                                                     }
-                                                                                );
+                                                                                )}
+                                                                                alt=""
+                                                                                onError={(
+                                                                                    event
+                                                                                ) => {
+                                                                                    const original =
+                                                                                        getOriginalImageUrl(
+                                                                                            {
+                                                                                                image,
+                                                                                                imageFolder:
+                                                                                                    product.imageFolder,
+                                                                                                collection:
+                                                                                                    product.collection,
+                                                                                            }
+                                                                                        );
 
-                                                                            if (
-                                                                                event
-                                                                                    .currentTarget
-                                                                                    .src !==
-                                                                                original
-                                                                            ) {
-                                                                                event.currentTarget.src =
-                                                                                    original;
-                                                                            }
-                                                                        }}
-                                                                    />
-                                                                </button>
-                                                            )
-                                                        )}
-                                                    </div>
-                                                </>
-                                            )}
-                                    </div>
-
-                                    <div className="admin-form-grid">
-                                        <div className="admin-field admin-field-full">
-                                            <label>
-                                                Variant
-                                                Title
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.title ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "title",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                                                                {(
-                                            [
-                                                ["option1Value", "Option 1"],
-                                                ["option2Value", "Option 2"],
-                                                ["option3Value", "Option 3"],
-                                            ] as const
-                                        ).map(([field, label]) => (
-                                            <div
-                                                className="admin-field"
-                                                key={field}
-                                            >
-                                                <label>{label}</label>
-                                                <input
-                                                    value={variant[field] || ""}
-                                                    onChange={(e) =>
-                                                        updateVariant(
-                                                            index,
-                                                            field,
-                                                            e.target.value
-                                                        )
-                                                    }
-                                                />
+                                                                                    if (
+                                                                                        event
+                                                                                            .currentTarget
+                                                                                            .src !==
+                                                                                        original
+                                                                                    ) {
+                                                                                        event.currentTarget.src =
+                                                                                            original;
+                                                                                    }
+                                                                                }}
+                                                                            />
+                                                                        </button>
+                                                                    )
+                                                                )}
+                                                            </div>
+                                                        </>
+                                                    )}
                                             </div>
-                                        ))}
 
-                                        <div className="admin-field">
-                                            <label>
-                                                Part
-                                                Number
-                                            </label>
+                                            <div className="admin-form-grid">
+                                                <div className="admin-field admin-field-full">
+                                                    <label>
+                                                        Variant
+                                                        Title
+                                                    </label>
 
-                                            <input
-                                                value={
-                                                    variant.partNumber ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "partNumber",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                SKU
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.sku ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "sku",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Barcode
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.barcode ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "barcode",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-                                        <div className="admin-field">
-                                            <label>
-                                                Vendor / Brand
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.vendor ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "vendor",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Price
-                                            </label>
-
-                                            <input
-                                                type="number"
-                                                step="any"
-                                                value={
-                                                    variant.price ??
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "price",
-                                                        e
-                                                            .target
-                                                            .value ===
+                                                    <input
+                                                        value={
+                                                            variant.title ||
                                                             ""
-                                                            ? 0
-                                                            : Number(
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "title",
                                                                 e
                                                                     .target
                                                                     .value
                                                             )
-                                                    )
-                                                }
-                                            />
-                                        </div>
+                                                        }
+                                                    />
+                                                </div>
 
-                                        <div className="admin-field">
-                                            <label>
-                                                Compare
-                                                At Price
-                                            </label>
+                                                {(
+                                                    [
+                                                        ["option1Value", "Option 1"],
+                                                        ["option2Value", "Option 2"],
+                                                        ["option3Value", "Option 3"],
+                                                    ] as const
+                                                ).map(([field, label]) => (
+                                                    <div
+                                                        className="admin-field"
+                                                        key={field}
+                                                    >
+                                                        <label>{label}</label>
+                                                        <input
+                                                            value={variant[field] || ""}
+                                                            onChange={(e) =>
+                                                                updateVariant(
+                                                                    index,
+                                                                    field,
+                                                                    e.target.value
+                                                                )
+                                                            }
+                                                        />
+                                                    </div>
+                                                ))}
 
-                                            <input
-                                                type="number"
-                                                step="any"
-                                                value={
-                                                    variant.compareAtPrice ??
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "compareAtPrice",
-                                                        e
-                                                            .target
-                                                            .value ===
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Part
+                                                        Number
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.partNumber ||
                                                             ""
-                                                            ? 0
-                                                            : Number(
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "partNumber",
                                                                 e
                                                                     .target
                                                                     .value
                                                             )
-                                                    )
-                                                }
-                                            />
-                                        </div>
+                                                        }
+                                                    />
+                                                </div>
 
-                                        <div className="admin-field">
-                                            <label>
-                                                Cost
-                                            </label>
+                                                <div className="admin-field">
+                                                    <label>
+                                                        SKU
+                                                    </label>
 
-                                            <input
-                                                type="number"
-                                                step="any"
-                                                value={
-                                                    variant.cost ??
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "cost",
-                                                        e
-                                                            .target
-                                                            .value ===
+                                                    <input
+                                                        value={
+                                                            variant.sku ||
                                                             ""
-                                                            ? 0
-                                                            : Number(
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "sku",
                                                                 e
                                                                     .target
                                                                     .value
                                                             )
-                                                    )
-                                                }
-                                            />
-                                        </div>
+                                                        }
+                                                    />
+                                                </div>
 
-                                        <div className="admin-field">
-                                            <label>
-                                                Inventory
-                                                Quantity
-                                            </label>
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Barcode
+                                                    </label>
 
-                                            <input
-                                                type="number"
-                                                value={
-                                                    variant.inventoryQty ??
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "inventoryQty",
-                                                        e
-                                                            .target
-                                                            .value ===
+                                                    <input
+                                                        value={
+                                                            variant.barcode ||
                                                             ""
-                                                            ? 0
-                                                            : Number(
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "barcode",
                                                                 e
                                                                     .target
                                                                     .value
                                                             )
-                                                    )
-                                                }
-                                            />
-                                        </div>
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Vendor / Brand
+                                                    </label>
 
-                                        <div className="admin-field">
-                                            <label>
-                                                Inventory
-                                                Tracker
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.inventoryTracker ||
-                                                    ""
-                                                }
-                                                placeholder="shopify"
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "inventoryTracker",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Inventory
-                                                Policy
-                                            </label>
-
-                                            <select
-                                                value={
-                                                    variant.inventoryPolicy ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "inventoryPolicy",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            >
-                                                <option value="">
-                                                    Not set
-                                                </option>
-
-                                                <option value="deny">
-                                                    Deny
-                                                </option>
-
-                                                <option value="continue">
-                                                    Continue
-                                                </option>
-                                            </select>
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Country
-                                                of Origin
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.countryOfOrigin ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "countryOfOrigin",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                HS Code
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.hsCode ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "hsCode",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Weight
-                                            </label>
-
-                                            <input
-                                                type="number"
-                                                step="any"
-                                                value={
-                                                    variant.weight ??
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "weight",
-                                                        e
-                                                            .target
-                                                            .value ===
+                                                    <input
+                                                        value={
+                                                            variant.vendor ||
                                                             ""
-                                                            ? 0
-                                                            : Number(
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "vendor",
                                                                 e
                                                                     .target
                                                                     .value
                                                             )
-                                                    )
-                                                }
-                                            />
-                                        </div>
+                                                        }
+                                                    />
+                                                </div>
 
-                                        <div className="admin-field">
-                                            <label>
-                                                Weight
-                                                Unit
-                                            </label>
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Price
+                                                    </label>
 
-                                            <select
-                                                value={
-                                                    variant.weightUnit ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "weightUnit",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            >
-                                                <option value="">
-                                                    Not set
-                                                </option>
-
-                                                <option value="kg">
-                                                    kg
-                                                </option>
-
-                                                <option value="g">
-                                                    g
-                                                </option>
-
-                                                <option value="lb">
-                                                    lb
-                                                </option>
-
-                                                <option value="oz">
-                                                    oz
-                                                </option>
-                                            </select>
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Unit
-                                                Weight
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.unitWeight ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "unitWeight",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Shipping
-                                                Volume
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.shippingVolume ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "shippingVolume",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Shipping
-                                                Profile
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.shippingProfile ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "shippingProfile",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Tax Code
-                                            </label>
-
-                                            <input
-                                                value={
-                                                    variant.taxCode ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "taxCode",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Taxable
-                                            </label>
-
-                                            <select
-                                                value={
-                                                    variant.taxable ===
-                                                        false
-                                                        ? "false"
-                                                        : "true"
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "taxable",
-                                                        e
-                                                            .target
-                                                            .value ===
-                                                        "true"
-                                                    )
-                                                }
-                                            >
-                                                <option value="true">
-                                                    Yes
-                                                </option>
-
-                                                <option value="false">
-                                                    No
-                                                </option>
-                                            </select>
-                                        </div>
-
-                                        <div className="admin-field">
-                                            <label>
-                                                Requires
-                                                Shipping
-                                            </label>
-
-                                            <select
-                                                value={
-                                                    variant.requiresShipping ===
-                                                        false
-                                                        ? "false"
-                                                        : "true"
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "requiresShipping",
-                                                        e
-                                                            .target
-                                                            .value ===
-                                                        "true"
-                                                    )
-                                                }
-                                            >
-                                                <option value="true">
-                                                    Yes
-                                                </option>
-
-                                                <option value="false">
-                                                    No
-                                                </option>
-                                            </select>
-                                        </div>
-
-                                        <div className="admin-field admin-field-full">
-                                            <label>
-                                                Description
-                                            </label>
-
-                                            <textarea
-                                                rows={5}
-                                                value={
-                                                    variant.description ||
-                                                    ""
-                                                }
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "description",
-                                                        e
-                                                            .target
-                                                            .value
-                                                    )
-                                                }
-                                            />
-                                        </div>
-
-                                        <div className="admin-field admin-field-full">
-                                            <label>
-                                                Specifications
-                                            </label>
-
-                                            <textarea
-                                                rows={6}
-                                                value={(
-                                                    variant.specifications ||
-                                                    []
-                                                ).join(
-                                                    "\n"
-                                                )}
-                                                onChange={(
-                                                    e
-                                                ) =>
-                                                    updateVariant(
-                                                        index,
-                                                        "specifications",
-                                                        e
-                                                            .target
-                                                            .value
-                                                            .split(
-                                                                "\n"
+                                                    <input
+                                                        type="number"
+                                                        step="any"
+                                                        value={
+                                                            variant.price ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "price",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
-                                                            .map(
-                                                                (
-                                                                    item
-                                                                ) =>
-                                                                    item.trim()
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Compare
+                                                        At Price
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        step="any"
+                                                        value={
+                                                            variant.compareAtPrice ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "compareAtPrice",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
-                                                            .filter(
-                                                                Boolean
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Cost
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        step="any"
+                                                        value={
+                                                            variant.cost ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "cost",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
                                                             )
-                                                    )
-                                                }
-                                                placeholder={
-                                                    "One specification per line"
-                                                }
-                                            />
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Inventory
+                                                        Quantity
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        value={
+                                                            variant.inventoryQty ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "inventoryQty",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Inventory
+                                                        Tracker
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.inventoryTracker ||
+                                                            ""
+                                                        }
+                                                        placeholder="shopify"
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "inventoryTracker",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Inventory
+                                                        Policy
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.inventoryPolicy ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "inventoryPolicy",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="">
+                                                            Not set
+                                                        </option>
+
+                                                        <option value="deny">
+                                                            Deny
+                                                        </option>
+
+                                                        <option value="continue">
+                                                            Continue
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Country
+                                                        of Origin
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.countryOfOrigin ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "countryOfOrigin",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        HS Code
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.hsCode ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "hsCode",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Weight
+                                                    </label>
+
+                                                    <input
+                                                        type="number"
+                                                        step="any"
+                                                        value={
+                                                            variant.weight ??
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "weight",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                    ""
+                                                                    ? 0
+                                                                    : Number(
+                                                                        e
+                                                                            .target
+                                                                            .value
+                                                                    )
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Weight
+                                                        Unit
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.weightUnit ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "weightUnit",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="">
+                                                            Not set
+                                                        </option>
+
+                                                        <option value="kg">
+                                                            kg
+                                                        </option>
+
+                                                        <option value="g">
+                                                            g
+                                                        </option>
+
+                                                        <option value="lb">
+                                                            lb
+                                                        </option>
+
+                                                        <option value="oz">
+                                                            oz
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Unit
+                                                        Weight
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.unitWeight ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "unitWeight",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Shipping
+                                                        Volume
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.shippingVolume ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "shippingVolume",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Shipping
+                                                        Profile
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.shippingProfile ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "shippingProfile",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Tax Code
+                                                    </label>
+
+                                                    <input
+                                                        value={
+                                                            variant.taxCode ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "taxCode",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Taxable
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.taxable ===
+                                                                false
+                                                                ? "false"
+                                                                : "true"
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "taxable",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                "true"
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="true">
+                                                            Yes
+                                                        </option>
+
+                                                        <option value="false">
+                                                            No
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="admin-field">
+                                                    <label>
+                                                        Requires
+                                                        Shipping
+                                                    </label>
+
+                                                    <select
+                                                        value={
+                                                            variant.requiresShipping ===
+                                                                false
+                                                                ? "false"
+                                                                : "true"
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "requiresShipping",
+                                                                e
+                                                                    .target
+                                                                    .value ===
+                                                                "true"
+                                                            )
+                                                        }
+                                                    >
+                                                        <option value="true">
+                                                            Yes
+                                                        </option>
+
+                                                        <option value="false">
+                                                            No
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="admin-field admin-field-full">
+                                                    <label>
+                                                        Description
+                                                    </label>
+
+                                                    <textarea
+                                                        rows={5}
+                                                        value={
+                                                            variant.description ||
+                                                            ""
+                                                        }
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "description",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
+
+                                                <div className="admin-field admin-field-full">
+                                                    <label>
+                                                        Specifications
+                                                    </label>
+
+                                                    <textarea
+                                                        rows={6}
+                                                        value={(
+                                                            variant.specifications ||
+                                                            []
+                                                        ).join(
+                                                            "\n"
+                                                        )}
+                                                        onChange={(
+                                                            e
+                                                        ) =>
+                                                            updateVariant(
+                                                                index,
+                                                                "specifications",
+                                                                e
+                                                                    .target
+                                                                    .value
+                                                                    .split(
+                                                                        "\n"
+                                                                    )
+                                                                    .map(
+                                                                        (
+                                                                            item
+                                                                        ) =>
+                                                                            item.trim()
+                                                                    )
+                                                                    .filter(
+                                                                        Boolean
+                                                                    )
+                                                            )
+                                                        }
+                                                        placeholder={
+                                                            "One specification per line"
+                                                        }
+                                                    />
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    )}
                                 </div>
-                            )}
-                        </div>
-                    );
-                }
-            )}
-        </div>
-    </section>
-
-    {/* SOURCE INFORMATION */ }
-
-    {
-        product.sources &&
-        product.sources.length > 0 && (
-            <section className="admin-edit-card">
-                <div className="admin-source-heading">
-                    <div>
-                        <h2>Source Information</h2>
-
-                        <p className="admin-section-note">
-                            Original catalogue import records
-                            associated with this product.
-                        </p>
-                    </div>
-                </div>
-
-                <div className="admin-source-table-wrap">
-                    <table className="admin-source-table">
-                        <thead>
-                            <tr>
-                                <th>Collection</th>
-                                <th>Excel File</th>
-                                <th>Source Row</th>
-                                <th>Raw Part Number</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            {product.sources.map(
-                                (source, index) => (
-                                    <tr key={index}>
-                                        <td>
-                                            {source.collectionName ||
-                                                source.collectionHandle ||
-                                                "—"}
-                                        </td>
-
-                                        <td>
-                                            <span className="admin-source-file">
-                                                {source.excelFile ||
-                                                    "—"}
-                                            </span>
-                                        </td>
-
-                                        <td>
-                                            {source.sourceRow ??
-                                                "—"}
-                                        </td>
-
-                                        <td>
-                                            <strong>
-                                                {source.rawPartNumber ||
-                                                    "—"}
-                                            </strong>
-                                        </td>
-                                    </tr>
-                                )
-                            )}
-                        </tbody>
-                    </table>
+                            );
+                        }
+                    )}
                 </div>
             </section>
-        )
-    }
 
-    {/* DELETE PRODUCT */ }
+            {/* SOURCE INFORMATION */}
 
-    <section className="admin-edit-card admin-danger-card">
-        <div className="admin-danger-card-content">
-            <div>
-                <h2>
-                    Delete Product
-                </h2>
+            {
+                product.sources &&
+                product.sources.length > 0 && (
+                    <section className="admin-edit-card">
+                        <div className="admin-source-heading">
+                            <div>
+                                <h2>Source Information</h2>
 
-                <p>
-                    Permanently remove this
-                    product from the
-                    catalogue, collections
-                    and search.
-                </p>
-            </div>
+                                <p className="admin-section-note">
+                                    Original catalogue import records
+                                    associated with this product.
+                                </p>
+                            </div>
+                        </div>
 
-            <button
-                type="button"
-                className="admin-danger-button"
-                onClick={
-                    deleteCurrentProduct
-                }
-                disabled={
-                    deleting || saving || uploadingImages
-                }
-            >
-                {deleting
-                    ? "Deleting..."
-                    : "Delete Product"}
-            </button>
-        </div>
-    </section>
+                        <div className="admin-source-table-wrap">
+                            <table className="admin-source-table">
+                                <thead>
+                                    <tr>
+                                        <th>Collection</th>
+                                        <th>Excel File</th>
+                                        <th>Source Row</th>
+                                        <th>Raw Part Number</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    {product.sources.map(
+                                        (source, index) => (
+                                            <tr key={index}>
+                                                <td>
+                                                    {source.collectionName ||
+                                                        source.collectionHandle ||
+                                                        "—"}
+                                                </td>
+
+                                                <td>
+                                                    <span className="admin-source-file">
+                                                        {source.excelFile ||
+                                                            "—"}
+                                                    </span>
+                                                </td>
+
+                                                <td>
+                                                    {source.sourceRow ??
+                                                        "—"}
+                                                </td>
+
+                                                <td>
+                                                    <strong>
+                                                        {source.rawPartNumber ||
+                                                            "—"}
+                                                    </strong>
+                                                </td>
+                                            </tr>
+                                        )
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                )
+            }
+
+            {/* DELETE PRODUCT */}
+
+            <section className="admin-edit-card admin-danger-card">
+                <div className="admin-danger-card-content">
+                    <div>
+                        <h2>
+                            Delete Product
+                        </h2>
+
+                        <p>
+                            Permanently remove this
+                            product from the
+                            catalogue, collections
+                            and search.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        className="admin-danger-button"
+                        onClick={
+                            deleteCurrentProduct
+                        }
+                        disabled={
+                            deleting || saving || uploadingImages
+                        }
+                    >
+                        {deleting
+                            ? "Deleting..."
+                            : "Delete Product"}
+                    </button>
+                </div>
+            </section>
         </main >
     );
 }

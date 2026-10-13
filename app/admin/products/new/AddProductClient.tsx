@@ -227,8 +227,14 @@ export default function AddProductClient() {
     const [activeVariant, setActiveVariant] =
         useState(0);
 
-    const [pendingImages, setPendingImages] =
+        const [pendingImages, setPendingImages] =
         useState<File[]>([]);
+
+    const [pendingImageAlt, setPendingImageAlt] =
+        useState<string[]>([]);
+
+    const [editingPendingImage, setEditingPendingImage] =
+        useState<number | null>(null);
 
     const [isCreating, setIsCreating] =
         useState(false);
@@ -453,9 +459,14 @@ export default function AddProductClient() {
 
         if (!files.length) return;
 
-        setPendingImages((current) => [
+                setPendingImages((current) => [
             ...current,
             ...files,
+        ]);
+
+        setPendingImageAlt((current) => [
+            ...current,
+            ...files.map(() => ""),
         ]);
 
         event.target.value = "";
@@ -464,10 +475,15 @@ export default function AddProductClient() {
     function removePendingImage(
         index: number
     ) {
-        setPendingImages((current) =>
+                setPendingImages((current) =>
             current.filter(
-                (_, imageIndex) =>
-                    imageIndex !== index
+                (_, imageIndex) => imageIndex !== index
+            )
+        );
+
+        setPendingImageAlt((current) =>
+            current.filter(
+                (_, imageIndex) => imageIndex !== index
             )
         );
     }
@@ -487,7 +503,14 @@ export default function AddProductClient() {
             const [selected] =
                 next.splice(index, 1);
 
-            next.unshift(selected);
+                        next.unshift(selected);
+
+            setPendingImageAlt((current) => {
+                const nextAlt = [...current];
+                const [selectedAlt] = nextAlt.splice(index, 1);
+                nextAlt.unshift(selectedAlt || "");
+                return nextAlt;
+            });
 
             return next;
         });
@@ -889,11 +912,15 @@ export default function AddProductClient() {
             const payload = {
                 ...product,
 
-                images:
-                    uploadedImages,
+                                images: uploadedImages,
 
-                variants:
-                    finalVariants,
+                media: uploadedImages.map((src, index) => ({
+                    src,
+                    position: index + 1,
+                    altText: pendingImageAlt[index] || "",
+                })),
+
+                variants: finalVariants,
             };
 
             const response =
@@ -1230,15 +1257,23 @@ export default function AddProductClient() {
                                                 padding: 10,
                                             }}
                                         >
-                                            <img
-                                                src={url}
-                                                alt={file.name}
-                                                style={{
-                                                    width: "100%",
-                                                    height: 140,
-                                                    objectFit: "contain",
-                                                }}
-                                            />
+                                                                                        <button
+                                                type="button"
+                                                className="admin-add-media-preview-button"
+                                                onClick={() =>
+                                                    setEditingPendingImage(index)
+                                                }
+                                            >
+                                                <img
+                                                    src={url}
+                                                    alt={file.name}
+                                                    style={{
+                                                        width: "100%",
+                                                        height: 140,
+                                                        objectFit: "contain",
+                                                    }}
+                                                />
+                                            </button>
 
                                             <div
                                                 style={{
@@ -1299,6 +1334,112 @@ export default function AddProductClient() {
                             </div>
                         )}
                     </div>
+
+                                        {editingPendingImage !== null &&
+                        previewUrls[editingPendingImage] && (
+                            <div
+                                className="admin-media-modal-backdrop"
+                                onClick={() =>
+                                    setEditingPendingImage(null)
+                                }
+                            >
+                                <div
+                                    className="admin-media-modal"
+                                    role="dialog"
+                                    aria-modal="true"
+                                    aria-label="Edit image"
+                                    onClick={(event) =>
+                                        event.stopPropagation()
+                                    }
+                                >
+                                    <div className="admin-media-modal-heading">
+                                        <h2>Edit image</h2>
+                                        <button
+                                            type="button"
+                                            onClick={() =>
+                                                setEditingPendingImage(null)
+                                            }
+                                            aria-label="Close"
+                                        >
+                                            ×
+                                        </button>
+                                    </div>
+
+                                    <div className="admin-media-modal-content">
+                                        <div className="admin-media-modal-preview">
+                                            <img
+                                                src={
+                                                    previewUrls[
+                                                        editingPendingImage
+                                                    ].url
+                                                }
+                                                alt={
+                                                    previewUrls[
+                                                        editingPendingImage
+                                                    ].file.name
+                                                }
+                                            />
+                                        </div>
+
+                                        <div className="admin-media-modal-fields">
+                                            <div className="admin-field">
+                                                <label>Image Alt Text</label>
+                                                <input
+                                                    value={
+                                                        pendingImageAlt[
+                                                            editingPendingImage
+                                                        ] || ""
+                                                    }
+                                                    onChange={(event) => {
+                                                        const value =
+                                                            event.target.value;
+
+                                                        setPendingImageAlt(
+                                                            (current) =>
+                                                                current.map(
+                                                                    (alt, index) =>
+                                                                        index ===
+                                                                        editingPendingImage
+                                                                            ? value
+                                                                            : alt
+                                                                )
+                                                        );
+                                                    }}
+                                                    placeholder="Describe this image"
+                                                />
+                                            </div>
+
+                                            <div className="admin-field">
+                                                <label>Position</label>
+                                                <input
+                                                    value={
+                                                        editingPendingImage + 1
+                                                    }
+                                                    readOnly
+                                                    className="admin-readonly-input"
+                                                />
+                                                <small>
+                                                    Use Make Primary in the gallery
+                                                    to change the first image.
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="admin-media-modal-footer">
+                                        <button
+                                            type="button"
+                                            className="admin-primary-button"
+                                            onClick={() =>
+                                                setEditingPendingImage(null)
+                                            }
+                                        >
+                                            Done
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
 
                     <div
                         className="admin-stat-card"
