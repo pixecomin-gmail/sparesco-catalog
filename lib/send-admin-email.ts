@@ -580,9 +580,8 @@ function emailTemplate({
                       ${escapeHtml(intro)}
                     </p>
 
-                    ${
-                      detailsRows
-                        ? `
+                    ${detailsRows
+      ? `
                           <h2
                             style="
                               margin:0 0 12px;
@@ -615,8 +614,8 @@ function emailTemplate({
                             ${detailsRows}
                           </table>
                         `
-                        : ""
-                    }
+      : ""
+    }
 
                     ${buildProductsTable(products)}
                   </td>
@@ -736,17 +735,17 @@ export async function sendAdminEmail({
   });
 
   const result = await resend.emails.send({
-  from,
-  to: recipients,
-  subject,
-  html: emailTemplate({
-    title,
-    intro:
-      "A new submission has been received from the Sparesco website.",
-    data,
-  }),
-  replyTo,
-});
+    from,
+    to: recipients,
+    subject,
+    html: emailTemplate({
+      title,
+      intro:
+        "A new submission has been received from the Sparesco website.",
+      data,
+    }),
+    replyTo,
+  });
 
   if (result.error) {
     console.error(
@@ -755,9 +754,8 @@ export async function sendAdminEmail({
     );
 
     throw new Error(
-      `Admin email failed: ${
-        result.error.message ||
-        "Unknown Resend error."
+      `Admin email failed: ${result.error.message ||
+      "Unknown Resend error."
       }`
     );
   }
@@ -821,9 +819,8 @@ export async function sendUserEmail({
     );
 
     throw new Error(
-      `Customer email failed: ${
-        result.error.message ||
-        "Unknown Resend error."
+      `Customer email failed: ${result.error.message ||
+      "Unknown Resend error."
       }`
     );
   }
@@ -854,6 +851,29 @@ export async function sendAdminOtpEmail({
     throw new Error("Admin email address is missing.");
   }
 
+  const otpBoxes = Array.from(String(otp))
+    .map(
+      (digit) => `
+        <td style="padding:0 4px;">
+          <div style="
+            width:40px;
+            padding:12px 0;
+            background:#f2f6f5;
+            border:1px solid #dce7e7;
+            border-radius:7px;
+            color:#173f4c;
+            font-family:Arial,sans-serif;
+            font-size:26px;
+            font-weight:700;
+            text-align:center;
+          ">
+            ${escapeHtml(digit)}
+          </div>
+        </td>
+      `
+    )
+    .join("");
+
   const result = await resend.emails.send({
     from,
     to: recipient,
@@ -879,17 +899,38 @@ export async function sendAdminOtpEmail({
               overflow:hidden;
             "
           >
-            <div
-              style="
-                padding:22px;
-                background:#173f4c;
-                color:#ffffff;
-                text-align:center;
-              "
-            >
-              <strong style="font-size:20px;">
-                Sparesco Admin Login
-              </strong>
+                        <div style="
+              padding:26px 16px;
+              background:#173f4c;
+              text-align:center;
+            ">
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                align="center"
+              >
+                <tr>
+                  <td style="padding-right:14px;vertical-align:middle;">
+                    <img
+                      src="${LOGO_URL}"
+                      alt="Sparesco"
+                      width="42"
+                      style="display:block;width:42px;height:auto;"
+                    />
+                  </td>
+                  <td style="
+                    color:#d9f0f3;
+                    font-family:Arial,sans-serif;
+                    font-size:24px;
+                    font-weight:700;
+                    vertical-align:middle;
+                  ">
+                    Sparesco Admin Login
+                  </td>
+                </tr>
+              </table>
             </div>
 
             <div
@@ -908,19 +949,29 @@ export async function sendAdminOtpEmail({
                 Your admin login OTP is:
               </p>
 
-              <div
-                style="
-                  display:inline-block;
-                  padding:14px 24px;
-                  background:#f2f6f5;
-                  border-radius:8px;
-                  color:#173f4c;
-                  font-size:28px;
-                  font-weight:700;
-                  letter-spacing:6px;
-                "
+                            <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                align="center"
+                style="margin:0 auto;"
               >
-                ${escapeHtml(otp)}
+                <tr>
+                  ${otpBoxes}
+                </tr>
+              </table>
+
+              <div style="
+                margin-top:12px;
+                color:#667085;
+                font-family:Arial,sans-serif;
+                font-size:12px;
+                text-align:center;
+              ">
+                <span style="font-size:1px;color:#ffffff;">
+                  ${escapeHtml(otp)}
+                </span>
               </div>
 
               <p
@@ -1153,9 +1204,8 @@ function vendorRegistrationTemplate({
 
                     ${content}
 
-                    ${
-                      actionLabel && actionUrl
-                        ? `
+                    ${actionLabel && actionUrl
+      ? `
                           <div style="margin-top:28px;">
                             <a
                               href="${actionUrl}"
@@ -1177,8 +1227,8 @@ function vendorRegistrationTemplate({
                             </a>
                           </div>
                         `
-                        : ""
-                    }
+      : ""
+    }
                   </td>
                 </tr>
 
@@ -1223,8 +1273,8 @@ function vendorRegistrationTemplate({
 function vendorDetailRow(label: string, value: unknown) {
   const displayValue =
     value === null ||
-    value === undefined ||
-    String(value).trim() === ""
+      value === undefined ||
+      String(value).trim() === ""
       ? "Not Provided"
       : String(value);
 
@@ -1376,7 +1426,7 @@ export async function sendVendorRegistrationEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send vendor registration email."
+      "Unable to send vendor registration email."
     );
   }
 
@@ -1469,7 +1519,7 @@ export async function sendNewVendorAdminEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send new vendor admin email."
+      "Unable to send new vendor admin email."
     );
   }
 
@@ -1578,7 +1628,7 @@ export async function sendVendorApprovedEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send vendor approval email."
+      "Unable to send vendor approval email."
     );
   }
 
@@ -1684,7 +1734,7 @@ export async function sendVendorApprovedAdminEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send vendor approval admin email."
+      "Unable to send vendor approval admin email."
     );
   }
 
@@ -1788,7 +1838,7 @@ export async function sendVendorRejectedEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send vendor rejection email."
+      "Unable to send vendor rejection email."
     );
   }
 
@@ -1880,7 +1930,7 @@ export async function sendVendorRejectedAdminEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send vendor rejection admin email."
+      "Unable to send vendor rejection admin email."
     );
   }
 
@@ -2044,7 +2094,7 @@ export async function sendVendorProductSubmittedEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send product submission email."
+      "Unable to send product submission email."
     );
   }
 
@@ -2157,7 +2207,7 @@ export async function sendVendorProductSubmittedAdminEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send product submission admin email."
+      "Unable to send product submission admin email."
     );
   }
 
@@ -2231,7 +2281,7 @@ export async function sendVendorProductApprovedEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send product approval email."
+      "Unable to send product approval email."
     );
   }
 
@@ -2329,7 +2379,7 @@ export async function sendVendorProductApprovedAdminEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send product approval admin email."
+      "Unable to send product approval admin email."
     );
   }
 
@@ -2425,7 +2475,7 @@ export async function sendVendorProductRejectedEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send product rejection email."
+      "Unable to send product rejection email."
     );
   }
 
@@ -2523,7 +2573,7 @@ export async function sendVendorProductRejectedAdminEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send product rejection admin email."
+      "Unable to send product rejection admin email."
     );
   }
 
@@ -2592,9 +2642,8 @@ export async function sendVendorEnquiryEmail(
 
       return `
         <div style="${index > 0 ? "margin-top:18px;" : ""}">
-          ${
-            data.matchedItems.length > 1
-              ? `
+          ${data.matchedItems.length > 1
+          ? `
                 <div
                   style="
                     margin:0 0 8px;
@@ -2607,8 +2656,8 @@ export async function sendVendorEnquiryEmail(
                   Product ${index + 1}
                 </div>
               `
-              : ""
-          }
+          : ""
+        }
 
           ${vendorDetailsTable(productRows)}
         </div>
@@ -2626,10 +2675,9 @@ export async function sendVendorEnquiryEmail(
         Hi <strong>${escapeHtml(data.contactPerson)}</strong>,<br /><br />
 
         You have received a new enquiry on Sparesco matching
-        ${
-          data.matchedItems.length === 1
-            ? "one of your approved products"
-            : "multiple approved products"
+        ${data.matchedItems.length === 1
+          ? "one of your approved products"
+          : "multiple approved products"
         }.<br /><br />
 
         Please review the enquiry and submit your quotation
@@ -2698,7 +2746,7 @@ export async function sendVendorEnquiryEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send vendor enquiry email."
+      "Unable to send vendor enquiry email."
     );
   }
 
@@ -2779,9 +2827,8 @@ export async function sendEnquiryListEmail(
 
         ${vendorDetailsTable(enquiryRows)}
 
-        ${
-          data.message
-            ? `
+        ${data.message
+          ? `
               <div
                 style="
                   margin-top:22px;
@@ -2815,7 +2862,7 @@ export async function sendEnquiryListEmail(
                 </div>
               </div>
             `
-            : ""
+          : ""
         }
 
         <p
@@ -2850,7 +2897,7 @@ export async function sendEnquiryListEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send enquiry email."
+      "Unable to send enquiry email."
     );
   }
 
@@ -2896,11 +2943,11 @@ export async function sendEnquiryListAdminSummaryEmail(
           "
         >
           ${data.successfulEmails
-            .map(
-              (email) =>
-                `<li>${escapeHtml(email)}</li>`
-            )
-            .join("")}
+        .map(
+          (email) =>
+            `<li>${escapeHtml(email)}</li>`
+        )
+        .join("")}
         </ol>
       `
       : `
@@ -2930,11 +2977,11 @@ export async function sendEnquiryListAdminSummaryEmail(
           "
         >
           ${data.failedEmails
-            .map(
-              (email) =>
-                `<li>${escapeHtml(email)}</li>`
-            )
-            .join("")}
+        .map(
+          (email) =>
+            `<li>${escapeHtml(email)}</li>`
+        )
+        .join("")}
         </ol>
       `
       : "";
@@ -2949,8 +2996,7 @@ export async function sendEnquiryListAdminSummaryEmail(
         The enquiry email-list send has been completed.<br /><br />
 
         <strong>${data.successfulEmails.length}</strong>
-        recipient${
-          data.successfulEmails.length === 1 ? "" : "s"
+        recipient${data.successfulEmails.length === 1 ? "" : "s"
         } received the enquiry successfully.
       `,
       content: `
@@ -2967,25 +3013,25 @@ export async function sendEnquiryListAdminSummaryEmail(
         </h2>
 
         ${vendorDetailsTable(
-          [
-            vendorDetailRow(
-              "Enquiry Reference",
-              data.enquiryReference
-            ),
-            vendorDetailRow(
-              "Product",
-              data.productName
-            ),
-            vendorDetailRow(
-              "Part Number",
-              data.partNumber
-            ),
-            vendorDetailRow(
-              "Quantity",
-              data.quantity
-            ),
-          ].join("")
-        )}
+        [
+          vendorDetailRow(
+            "Enquiry Reference",
+            data.enquiryReference
+          ),
+          vendorDetailRow(
+            "Product",
+            data.productName
+          ),
+          vendorDetailRow(
+            "Part Number",
+            data.partNumber
+          ),
+          vendorDetailRow(
+            "Quantity",
+            data.quantity
+          ),
+        ].join("")
+      )}
 
         <h2
           style="
@@ -3002,9 +3048,8 @@ export async function sendEnquiryListAdminSummaryEmail(
 
         ${successfulList}
 
-        ${
-          data.failedEmails.length > 0
-            ? `
+        ${data.failedEmails.length > 0
+          ? `
               <h2
                 style="
                   margin:28px 0 8px;
@@ -3020,7 +3065,7 @@ export async function sendEnquiryListAdminSummaryEmail(
 
               ${failedList}
             `
-            : ""
+          : ""
         }
 
         <p
@@ -3042,7 +3087,7 @@ export async function sendEnquiryListAdminSummaryEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send admin enquiry-list summary."
+      "Unable to send admin enquiry-list summary."
     );
   }
 
@@ -3264,7 +3309,7 @@ export async function sendVendorQuotationSubmittedEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send quotation confirmation email."
+      "Unable to send quotation confirmation email."
     );
   }
 
@@ -3422,7 +3467,7 @@ export async function sendVendorQuotationSubmittedAdminEmail(
   if (result.error) {
     throw new Error(
       result.error.message ||
-        "Unable to send quotation admin email."
+      "Unable to send quotation admin email."
     );
   }
 
