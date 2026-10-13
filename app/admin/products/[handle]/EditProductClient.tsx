@@ -1171,24 +1171,6 @@ export default function EditProductClient({
                                         Click to edit image
                                     </div>
 
-                                    <div className="admin-field">
-                                        <label>Image Alt Text</label>
-                                        <input
-                                            value={
-                                                product.media?.find(
-                                                    (item) => item.src === image
-                                                )?.altText ?? ""
-                                            }
-                                            onChange={(e) =>
-                                                updateProductMedia(
-                                                    image,
-                                                    "altText",
-                                                    e.target.value
-                                                )
-                                            }
-                                        />
-                                    </div>
-
                                     <button
                                         type="button"
                                         className="admin-media-remove"
@@ -1239,6 +1221,20 @@ export default function EditProductClient({
                                         collection: product.collection,
                                     })}
                                     alt={product.title}
+                                    onError={(event) => {
+                                        const original = getOriginalImageUrl({
+                                            image: editingImage,
+                                            imageFolder: product.imageFolder,
+                                            collection: product.collection,
+                                        });
+
+                                        if (
+                                            original &&
+                                            event.currentTarget.src !== original
+                                        ) {
+                                            event.currentTarget.src = original;
+                                        }
+                                    }}
                                 />
                             </div>
 
@@ -1374,34 +1370,34 @@ export default function EditProductClient({
                                                     "No part number"}
                                             </span>
                                         </div>
-
                                         <span>
-                                            {isOpen
-                                                ? "−"
-                                                : "+"}
+                                            {isOpen ? "−" : "+"}
                                         </span>
                                     </button>
 
+                                    {product.variants.length > 1 && (
+                                        <div className="admin-variant-remove-row">
+                                            <button
+                                                type="button"
+                                                className="admin-secondary-button"
+                                                onClick={() => {
+                                                    if (
+                                                        window.confirm(
+                                                            "Remove this variant?"
+                                                        )
+                                                    ) {
+                                                        removeVariant(index);
+                                                    }
+                                                }}
+                                                disabled={saving || uploadingImages}
+                                            >
+                                                Remove Variant
+                                            </button>
+                                        </div>
+                                    )}
+
                                     {isOpen && (
                                         <div className="admin-variant-body">
-                                            {product.variants.length > 1 && (
-                                                <button
-                                                    type="button"
-                                                    className="admin-secondary-button"
-                                                    onClick={() => {
-                                                        if (
-                                                            window.confirm(
-                                                                "Remove this variant?"
-                                                            )
-                                                        ) {
-                                                            removeVariant(index);
-                                                        }
-                                                    }}
-                                                    disabled={saving || uploadingImages}
-                                                >
-                                                    Remove Variant
-                                                </button>
-                                            )}
                                             <div className="admin-variant-image-manager">
                                                 <label>
                                                     Variant
