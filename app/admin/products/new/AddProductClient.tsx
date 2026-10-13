@@ -69,6 +69,25 @@ type ProductMedia = {
     altText: string;
 };
 
+type CreationEvent = {
+    stage: string;
+    status: "started" | "completed" | "failed";
+    message: string;
+    handle?: string;
+    synchronizedFiles?: string[];
+};
+
+const creationStages = [
+    { id: "images", label: "Upload images" },
+    { id: "master", label: "Save product" },
+    { id: "catalogue", label: "Catalogue" },
+    { id: "collections", label: "Collections" },
+    { id: "filters", label: "Filters" },
+    { id: "search", label: "Search" },
+    { id: "registry", label: "Handle registry" },
+    { id: "statistics", label: "Statistics" },
+] as const;
+
 type NewProduct = {
     handle: string;
 
@@ -227,7 +246,7 @@ export default function AddProductClient() {
     const [activeVariant, setActiveVariant] =
         useState(0);
 
-        const [pendingImages, setPendingImages] =
+    const [pendingImages, setPendingImages] =
         useState<File[]>([]);
 
     const [pendingImageAlt, setPendingImageAlt] =
@@ -237,6 +256,21 @@ export default function AddProductClient() {
         useState<number | null>(null);
 
     const [isCreating, setIsCreating] =
+        useState(false);
+
+    const [creationEvents, setCreationEvents] =
+        useState<CreationEvent[]>([]);
+
+    const [creationError, setCreationError] =
+        useState("");
+
+    const [retryAvailable, setRetryAvailable] =
+        useState(false);
+
+    const [savedHandle, setSavedHandle] =
+        useState("");
+
+    const [creationFinished, setCreationFinished] =
         useState(false);
 
     const [excelFile, setExcelFile] =
@@ -459,7 +493,7 @@ export default function AddProductClient() {
 
         if (!files.length) return;
 
-                setPendingImages((current) => [
+        setPendingImages((current) => [
             ...current,
             ...files,
         ]);
@@ -475,7 +509,7 @@ export default function AddProductClient() {
     function removePendingImage(
         index: number
     ) {
-                setPendingImages((current) =>
+        setPendingImages((current) =>
             current.filter(
                 (_, imageIndex) => imageIndex !== index
             )
@@ -503,7 +537,7 @@ export default function AddProductClient() {
             const [selected] =
                 next.splice(index, 1);
 
-                        next.unshift(selected);
+            next.unshift(selected);
 
             setPendingImageAlt((current) => {
                 const nextAlt = [...current];
@@ -749,6 +783,157 @@ export default function AddProductClient() {
         return "";
     }
 
+    async function runCreationRequest(
+        payload: NewProduct | {
+            handle: string;
+            retrySync: true;
+        }
+    ) {
+        const response = await fetch(
+            "/api/admin/products",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            }
+        );
+
+        if (!response.ok) {
+            const data = await response.json().catch(
+                () => null
+            );
+
+            throw new Error(
+                data?.error ||
+                data?.message ||
+                `Request failed (${response.status}).`
+            );
+        }
+
+        if (!response.body) {
+            throw new Error(
+                "The server did not return a progress stream."
+            );
+        }
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+
+        let buffer = "";
+        let finished = false;
+        let failed = false;
+
+        const processLine = (line: string) => {
+            if (!line.trim()) return;
+
+            const event =
+                JSON.parse(line) as CreationEvent;
+
+            setCreationEvents((current) => [
+                ...current,
+                event,
+            ]);
+
+            if (event.stage === "master" &&
+                event.status === "completed" &&
+                event.handle) {
+                setSavedHandle(event.handle);
+            }
+
+            if (event.stage === "retry-available") {
+                setRetryAvailable(true);
+            }
+
+            if (event.status === "failed") {
+                failed = true;
+                setCreationError(
+                    `${event.stage}: ${event.message}`
+                );
+            }
+
+            if (event.stage === "finished" &&
+                event.status === "completed") {
+                finished = true;
+                setCreationFinished(true);
+                setRetryAvailable(false);
+                setCreationError("");
+            }
+        };
+
+        try {
+            while (true) {
+                const { done, value } =
+                    await reader.read();
+
+                if (done) break;
+
+                buffer += decoder.decode(
+                    value,
+                    { stream: true }
+                );
+
+                const lines = buffer.split("\n");
+                buffer = lines.pop() || "";
+
+                for (const line of lines) {
+                    processLine(line);
+                }
+            }
+
+            buffer += decoder.decode();
+
+            if (buffer.trim()) {
+                processLine(buffer);
+            }
+        } finally {
+            reader.releaseLock();
+        }
+
+        if (!finished && !failed) {
+            throw new Error(
+                "The progress stream ended before synchronization completed. Check the product before retrying."
+            );
+        }
+
+        if (finished) {
+            window.location.href =
+                `/admin/products/${encodeURIComponent(
+                    "handle" in payload
+                        ? payload.handle
+                        : product.handle
+                )}`;
+        }
+    }
+
+    async function retrySynchronization() {
+        if (isCreating || !savedHandle) return;
+
+        setIsCreating(true);
+        setCreationError("");
+        setRetryAvailable(false);
+        setCreationFinished(false);
+        setCreationEvents([]);
+
+        try {
+            await runCreationRequest({
+                handle: savedHandle,
+                retrySync: true,
+            });
+        } catch (error) {
+            setCreationError(
+                error instanceof Error
+                    ? error.message
+                    : "Unable to retry synchronization."
+            );
+
+            setRetryAvailable(true);
+        } finally {
+            setIsCreating(false);
+        }
+    }
+
     async function createProduct() {
         const error =
             validateProduct();
@@ -763,6 +948,17 @@ export default function AddProductClient() {
         }
 
         setIsCreating(true);
+        setCreationEvents([]);
+        setCreationError("");
+        setRetryAvailable(false);
+        setSavedHandle("");
+        setCreationFinished(false);
+
+        setCreationEvents([{
+            stage: "images",
+            status: "started",
+            message: "Uploading product images.",
+        }]);
 
         try {
             /*
@@ -869,6 +1065,17 @@ export default function AddProductClient() {
                 }
             }
 
+            setCreationEvents((current) => [
+                ...current,
+                {
+                    stage: "images",
+                    status: "completed",
+                    message: pendingImages.length
+                        ? "Images uploaded."
+                        : "No images to upload.",
+                },
+            ]);
+
             /*
              * --------------------------------
              * 2. REPLACE LOCAL IMAGE NAMES
@@ -912,7 +1119,7 @@ export default function AddProductClient() {
             const payload = {
                 ...product,
 
-                                images: uploadedImages,
+                images: uploadedImages,
 
                 media: uploadedImages.map((src, index) => ({
                     src,
@@ -923,60 +1130,14 @@ export default function AddProductClient() {
                 variants: finalVariants,
             };
 
-            const response =
-                await fetch(
-                    "/api/admin/products",
-                    {
-                        method: "POST",
-
-                        headers: {
-                            "Content-Type":
-                                "application/json",
-                        },
-
-                        body:
-                            JSON.stringify(
-                                payload
-                            ),
-                    }
-                );
-
-            const data =
-                await response.json();
-
-            if (
-                !response.ok ||
-                !data?.success
-            ) {
-                throw new Error(
-                    data?.error ||
-                    data?.message ||
-                    "Unable to create product."
-                );
-            }
-
-            /*
-             * --------------------------------
-             * 4. SUCCESS
-             * --------------------------------
-             */
-
-            alert(
-                "Product created successfully."
-            );
-
-            window.location.href =
-                `/admin/products/${encodeURIComponent(
-                    data.handle ||
-                    product.handle
-                )}`;
+            await runCreationRequest(payload);
         } catch (error) {
             console.error(
                 "Create product error:",
                 error
             );
 
-            alert(
+            setCreationError(
                 error instanceof Error
                     ? error.message
                     : "Unable to create product."
@@ -1257,7 +1418,7 @@ export default function AddProductClient() {
                                                 padding: 10,
                                             }}
                                         >
-                                                                                        <button
+                                            <button
                                                 type="button"
                                                 className="admin-add-media-preview-button"
                                                 onClick={() =>
@@ -1335,10 +1496,21 @@ export default function AddProductClient() {
                         )}
                     </div>
 
-                                        {editingPendingImage !== null &&
+                    {editingPendingImage !== null &&
                         previewUrls[editingPendingImage] && (
                             <div
                                 className="admin-media-modal-backdrop"
+                                style={{
+                                    position: "fixed",
+                                    inset: 0,
+                                    zIndex: 10000,
+                                    background: "rgba(12, 29, 36, 0.65)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    padding: 20,
+                                    overflowY: "auto",
+                                }}
                                 onClick={() =>
                                     setEditingPendingImage(null)
                                 }
@@ -1348,26 +1520,86 @@ export default function AddProductClient() {
                                     role="dialog"
                                     aria-modal="true"
                                     aria-label="Edit image"
+                                    style={{
+                                        width: "100%",
+                                        maxWidth: 760,
+                                        maxHeight: "90vh",
+                                        overflowY: "auto",
+                                        background: "#ffffff",
+                                        borderRadius: 14,
+                                        boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
+                                        padding: 24,
+                                        boxSizing: "border-box",
+                                    }}
                                     onClick={(event) =>
                                         event.stopPropagation()
                                     }
                                 >
-                                    <div className="admin-media-modal-heading">
-                                        <h2>Edit image</h2>
+                                    <div
+                                        className="admin-media-modal-heading"
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                            paddingBottom: 16,
+                                            marginBottom: 20,
+                                            borderBottom: "1px solid #e5e9eb",
+                                        }}
+                                    >
+                                        <h2 style={{ margin: 0, fontSize: 20 }}>
+                                            Edit image
+                                        </h2>
                                         <button
                                             type="button"
                                             onClick={() =>
                                                 setEditingPendingImage(null)
                                             }
                                             aria-label="Close"
+                                            style={{
+                                                width: 34,
+                                                height: 34,
+                                                border: "1px solid #dce3e6",
+                                                borderRadius: 8,
+                                                background: "#fff",
+                                                cursor: "pointer",
+                                                fontSize: 22,
+                                                lineHeight: 1,
+                                            }}
                                         >
                                             ×
                                         </button>
                                     </div>
 
-                                    <div className="admin-media-modal-content">
-                                        <div className="admin-media-modal-preview">
+                                    <div
+                                        className="admin-media-modal-content"
+                                        style={{
+                                            display: "grid",
+                                            gridTemplateColumns: "minmax(0, 1fr)",
+                                            gap: 20,
+                                        }}
+                                    >
+                                        <div
+                                            className="admin-media-modal-preview"
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center",
+                                                minHeight: 220,
+                                                maxHeight: 320,
+                                                padding: 16,
+                                                background: "#f7f8f9",
+                                                border: "1px solid #e5e9eb",
+                                                borderRadius: 10,
+                                                overflow: "hidden",
+                                            }}
+                                        >
                                             <img
+                                                style={{
+                                                    display: "block",
+                                                    maxWidth: "100%",
+                                                    maxHeight: 280,
+                                                    objectFit: "contain",
+                                                }}
                                                 src={
                                                     previewUrls[
                                                         editingPendingImage
@@ -1381,13 +1613,19 @@ export default function AddProductClient() {
                                             />
                                         </div>
 
-                                        <div className="admin-media-modal-fields">
+                                        <div
+                                            className="admin-media-modal-fields"
+                                            style={{
+                                                display: "grid",
+                                                gap: 16,
+                                            }}
+                                        >
                                             <div className="admin-field">
                                                 <label>Image Alt Text</label>
                                                 <input
                                                     value={
                                                         pendingImageAlt[
-                                                            editingPendingImage
+                                                        editingPendingImage
                                                         ] || ""
                                                     }
                                                     onChange={(event) => {
@@ -1399,7 +1637,7 @@ export default function AddProductClient() {
                                                                 current.map(
                                                                     (alt, index) =>
                                                                         index ===
-                                                                        editingPendingImage
+                                                                            editingPendingImage
                                                                             ? value
                                                                             : alt
                                                                 )
@@ -1426,7 +1664,16 @@ export default function AddProductClient() {
                                         </div>
                                     </div>
 
-                                    <div className="admin-media-modal-footer">
+                                    <div
+                                        className="admin-media-modal-footer"
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "flex-end",
+                                            paddingTop: 20,
+                                            marginTop: 20,
+                                            borderTop: "1px solid #e5e9eb",
+                                        }}
+                                    >
                                         <button
                                             type="button"
                                             className="admin-primary-button"
@@ -1865,13 +2112,197 @@ export default function AddProductClient() {
                             type="button"
                             className="admin-primary-button"
                             onClick={createProduct}
-                            disabled={isCreating}
+                            disabled={
+                                isCreating ||
+                                retryAvailable ||
+                                !!savedHandle ||
+                                creationFinished
+                            }
                         >
                             {isCreating
-                                ? "Creating Product..."
+                                ? "Processing..."
                                 : "Create Product"}
                         </button>
+
+                        {retryAvailable && savedHandle && (
+                            <button
+                                type="button"
+                                className="admin-secondary-button"
+                                onClick={retrySynchronization}
+                                disabled={isCreating}
+                            >
+                                Retry Synchronization
+                            </button>
+                        )}
                     </div>
+
+                    {(isCreating ||
+                        creationEvents.length > 0 ||
+                        creationError) && (
+                            <div
+                                className="admin-stat-card"
+                                role="status"
+                                aria-live="polite"
+                                style={{
+                                    marginTop: 20,
+                                    padding: 20,
+                                }}
+                            >
+                                <h2>Product Creation Progress</h2>
+
+                                {(() => {
+                                    const completedStages =
+                                        new Set(
+                                            creationEvents
+                                                .filter(
+                                                    (event) =>
+                                                        event.status ===
+                                                        "completed"
+                                                )
+                                                .map(
+                                                    (event) =>
+                                                        event.stage
+                                                )
+                                        );
+
+                                    const percentage =
+                                        Math.round(
+                                            (creationStages.filter(
+                                                (stage) =>
+                                                    completedStages.has(
+                                                        stage.id
+                                                    )
+                                            ).length /
+                                                creationStages.length) *
+                                            100
+                                        );
+
+                                    return (
+                                        <>
+                                            <div
+                                                style={{
+                                                    fontWeight: 700,
+                                                    marginBottom: 8,
+                                                }}
+                                            >
+                                                {percentage}% complete
+                                            </div>
+
+                                            <div
+                                                role="progressbar"
+                                                aria-valuenow={percentage}
+                                                aria-valuemin={0}
+                                                aria-valuemax={100}
+                                                style={{
+                                                    height: 12,
+                                                    borderRadius: 8,
+                                                    background: "#e5e9eb",
+                                                    overflow: "hidden",
+                                                }}
+                                            >
+                                                <div
+                                                    style={{
+                                                        width: `${percentage}%`,
+                                                        height: "100%",
+                                                        background: "#2a8392",
+                                                        transition:
+                                                            "width 250ms ease",
+                                                    }}
+                                                />
+                                            </div>
+
+                                            <div
+                                                style={{
+                                                    display: "grid",
+                                                    gap: 8,
+                                                    marginTop: 18,
+                                                }}
+                                            >
+                                                {creationStages.map(
+                                                    (stage) => {
+                                                        const events =
+                                                            creationEvents.filter(
+                                                                (event) =>
+                                                                    event.stage ===
+                                                                    stage.id
+                                                            );
+
+                                                        const latest =
+                                                            events[
+                                                            events.length - 1
+                                                            ];
+
+                                                        const done =
+                                                            completedStages.has(
+                                                                stage.id
+                                                            );
+
+                                                        return (
+                                                            <div
+                                                                key={stage.id}
+                                                                style={{
+                                                                    display: "flex",
+                                                                    gap: 10,
+                                                                    alignItems:
+                                                                        "center",
+                                                                }}
+                                                            >
+                                                                <span>
+                                                                    {done
+                                                                        ? "✓"
+                                                                        : latest?.status ===
+                                                                            "failed"
+                                                                            ? "✕"
+                                                                            : latest?.status ===
+                                                                                "started"
+                                                                                ? "…"
+                                                                                : "○"}
+                                                                </span>
+
+                                                                <span>
+                                                                    {stage.label}
+                                                                </span>
+                                                            </div>
+                                                        );
+                                                    }
+                                                )}
+                                            </div>
+                                        </>
+                                    );
+                                })()}
+
+                                {creationError && (
+                                    <p
+                                        style={{
+                                            marginTop: 16,
+                                            color: "#b42318",
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        {creationError}
+                                    </p>
+                                )}
+
+                                {creationFinished && (
+                                    <p
+                                        style={{
+                                            marginTop: 16,
+                                            fontWeight: 600,
+                                        }}
+                                    >
+                                        Product synchronized successfully.
+                                    </p>
+                                )}
+
+                                {retryAvailable && (
+                                    <p style={{ marginTop: 12 }}>
+                                        The product master record is saved.
+                                        Retry will resume synchronization
+                                        without uploading images again.
+                                    </p>
+                                )}
+                            </div>
+                        )}
                 </>
             )}
 

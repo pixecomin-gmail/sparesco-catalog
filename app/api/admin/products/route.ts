@@ -16,6 +16,30 @@ import {
 
 export const runtime = "edge";
 
+type ProgressEvent = {
+    stage: string;
+    status: "started" | "completed" | "failed";
+    message: string;
+    handle?: string;
+    synchronizedFiles?: string[];
+};
+
+function progressResponse(
+    stream: ReadableStream<Uint8Array>
+) {
+    return new Response(stream, {
+        status: 200,
+        headers: {
+            "Content-Type":
+                "application/x-ndjson; charset=utf-8",
+            "Cache-Control":
+                "no-cache, no-transform",
+            "X-Content-Type-Options":
+                "nosniff",
+        },
+    });
+}
+
 function getBucket() {
     const context =
         getRequestContext();
@@ -37,196 +61,348 @@ function getBucket() {
 export async function POST(
     request: Request
 ) {
+    let body: any;
+
     try {
-        const body =
-            await request.json();
+        body = await request.json();
+    } catch {
+        return Response.json(
+            {
+                success: false,
+                error: "Invalid JSON request.",
+            },
+            { status: 400 }
+        );
+    }
 
-        if (
-            !body ||
-            typeof body !== "object"
-        ) {
-            return Response.json(
-                {
-                    success: false,
-                    error:
-                        "Invalid product data.",
-                },
-                {
-                    status: 400,
-                }
-            );
-        }
+    if (
+        !body ||
+        typeof body !== "object" ||
+        Array.isArray(body)
+    ) {
+        return Response.json(
+            {
+                success: false,
+                error: "Invalid product data.",
+            },
+            { status: 400 }
+        );
+    }
 
-        /*
-         * Normalize every admin-created
-         * product through the same model used
-         * by Excel import and the editor.
-         */
-        const product =
-            normalizeAdminProduct(
-                body,
-                {
-                    source:
-                        "admin",
-                }
-            );
+    const retrySync =
+        body.retrySync === true;
+
+    const retryHandle =
+        String(body.handle || "")
+            .trim()
+            .toLowerCase();
+
+    let product: any;
+
+    try {
+        product = normalizeAdminProduct(
+            body,
+            { source: "admin" }
+        );
 
         const validationError =
-            validateAdminProduct(
-                product
-            );
+            retrySync
+                ? ""
+                : validateAdminProduct(product);
 
         if (validationError) {
             return Response.json(
                 {
                     success: false,
-                    error:
-                        validationError,
+                    error: validationError,
                 },
-                {
-                    status: 400,
-                }
+                { status: 400 }
             );
         }
-
-        const bucket =
-            getBucket();
-
-        const key =
-            productKey(
-                product.handle
-            );
-
-        /*
-         * Never overwrite an existing product.
-         *
-         * Check both the current canonical path
-         * and the legacy admin path.
-         */
-        const possibleKeys =
-            productKeys(
-                product.handle
-            );
-
-        for (const existingKey of possibleKeys) {
-            const existing =
-                await bucket.get(
-                    existingKey
-                );
-
-            if (existing) {
-                return Response.json(
-                    {
-                        error:
-                            `Product "${product.handle}" already exists.`,
-                    },
-                    {
-                        status: 409,
-                    }
-                );
-            }
-        }
-
-        /*
-         * Add provenance only after
-         * normalization so the source array
-         * remains additive metadata.
-         */
-        product.sources = [
-            {
-                source:
-                    "admin",
-
-                createdAt:
-                    new Date()
-                        .toISOString(),
-            },
-        ];
-
-        /*
-         * IMPORTANT:
-         *
-         * Write the master product first.
-         *
-         * Public catalogue/search
-         * synchronization may create
-         * references to this handle, so the
-         * PDP source must already exist.
-         */
-        await bucket.put(
-            key,
-            JSON.stringify(
-                product
-            ),
-            {
-                httpMetadata: {
-                    contentType:
-                        "application/json",
-
-                    cacheControl:
-                        "public, max-age=300",
-                },
-            }
-        );
-
-        let syncResult;
-
-        try {
-            syncResult =
-                await createNewProduct(
-                    bucket,
-                    product
-                );
-        } catch (error) {
-            /*
-             * Deliberately keep the master
-             * JSON if synchronization fails.
-             *
-             * That is safer than creating
-             * catalogue/search references to
-             * a product whose PDP source does
-             * not exist.
-             */
-            throw error;
-        }
-
-        return Response.json({
-            success: true,
-
-            message:
-                "Product created successfully.",
-
-            handle:
-                product.handle,
-
-            key,
-
-            product,
-
-            synchronizedFiles:
-                syncResult.updatedFiles,
-        });
     } catch (error) {
-        console.error(
-            "Create admin product failed:",
-            error
-        );
-
         return Response.json(
             {
                 success: false,
-
                 error:
-                    "Failed to create product.",
-
-                message:
                     error instanceof Error
                         ? error.message
-                        : String(error),
+                        : "Invalid product data.",
             },
-            {
-                status: 500,
-            }
+            { status: 400 }
         );
     }
+
+    const encoder =
+        new TextEncoder();
+
+    const stream =
+        new ReadableStream<Uint8Array>({
+            async start(controller) {
+                let currentStage =
+                    "initialization";
+
+                let masterSaved = false;
+
+                const emit = (
+                    event: ProgressEvent
+                ) => {
+                    controller.enqueue(
+                        encoder.encode(
+                            JSON.stringify(event) +
+                            "\n"
+                        )
+                    );
+                };
+
+                const started = (
+                    stage: string,
+                    message: string
+                ) => {
+                    currentStage = stage;
+
+                    emit({
+                        stage,
+                        status: "started",
+                        message,
+                        handle: product.handle,
+                    });
+                };
+
+                const completed = (
+                    stage: string,
+                    message: string
+                ) => {
+                    emit({
+                        stage,
+                        status: "completed",
+                        message,
+                        handle: product.handle,
+                    });
+                };
+
+                try {
+                    started(
+                        "master",
+                        "Checking product record."
+                    );
+
+                    const bucket =
+                        getBucket();
+
+                    const key =
+                        productKey(
+                            product.handle
+                        );
+
+                    const possibleKeys =
+                        productKeys(
+                            product.handle
+                        );
+
+                    let existingKey:
+                        | string
+                        | null = null;
+
+                    let existingProduct:
+                        | any
+                        | null = null;
+
+                    for (
+                        const candidate
+                        of possibleKeys
+                    ) {
+                        const object =
+                            await bucket.get(
+                                candidate
+                            );
+
+                        if (object) {
+                            existingKey =
+                                candidate;
+
+                            existingProduct =
+                                JSON.parse(
+                                    await object.text()
+                                );
+
+                            break;
+                        }
+                    }
+
+                    if (existingProduct) {
+                        if (!retrySync) {
+                            throw new Error(
+                                `Product "${product.handle}" already exists.`
+                            );
+                        }
+
+                        const savedHandle =
+                            String(existingProduct.handle || "")
+                                .trim()
+                                .toLowerCase();
+
+                        const createdByAdmin =
+                            Array.isArray(existingProduct.sources) &&
+                            existingProduct.sources.some(
+                                (source: any) =>
+                                    source?.source === "admin"
+                            );
+
+                        if (
+                            !retryHandle ||
+                            savedHandle !== retryHandle ||
+                            !createdByAdmin
+                        ) {
+                            throw new Error(
+                                "Synchronization retry rejected: product record does not match an admin-created product."
+                            );
+                        }
+
+                        /*
+                         * Retry uses the saved
+                         * master record, not the
+                         * incoming form values.
+                         *
+                         * Never overwrite an
+                         * existing product.
+                         */
+                        product =
+                            existingProduct;
+                        masterSaved = true;
+
+                        completed(
+                            "master",
+                            "Existing product loaded for synchronization retry."
+                        );
+                    } else {
+                        if (retrySync) {
+                            throw new Error(
+                                "Cannot retry synchronization: product master record was not found."
+                            );
+                        }
+
+                        product.sources = [
+                            {
+                                source: "admin",
+                                createdAt:
+                                    new Date()
+                                        .toISOString(),
+                            },
+                        ];
+
+                        await bucket.put(
+                            key,
+                            JSON.stringify(
+                                product
+                            ),
+                            {
+                                httpMetadata: {
+                                    contentType:
+                                        "application/json",
+                                    cacheControl:
+                                        "public, max-age=300",
+                                },
+                            }
+                        );
+
+                        masterSaved = true;
+
+                        completed(
+                            "master",
+                            "Product master record saved."
+                        );
+                    }
+
+                    started(
+                        "synchronization",
+                        "Synchronizing catalogue indexes."
+                    );
+
+                    const syncResult =
+                        await createNewProduct(
+                            bucket,
+                            product,
+                            (stage) => {
+                                const [
+                                    name,
+                                    state,
+                                ] = stage.split(
+                                    ":"
+                                );
+
+                                                                if (
+                                    state ===
+                                    "completed"
+                                ) {
+                                    completed(
+                                        name,
+                                        `${name} synchronized.`
+                                    );
+
+                                    const nextStage: Record<string, string> = {
+                                        catalogue: "collections",
+                                        collections: "filters",
+                                        filters: "search",
+                                        search: "registry",
+                                        registry: "statistics",
+                                        statistics: "finished",
+                                    };
+
+                                    currentStage =
+                                        nextStage[name] || name;
+                                }
+                            }
+                        );
+
+                    emit({
+                        stage: "finished",
+                        status: "completed",
+                        message:
+                            "Product created and synchronized successfully.",
+                        handle:
+                            product.handle,
+                        synchronizedFiles:
+                            syncResult.updatedFiles,
+                    });
+                } catch (error) {
+                    console.error(
+                        "Create admin product failed:",
+                        error
+                    );
+
+                    emit({
+                        stage:
+                            currentStage,
+                        status: "failed",
+                        message:
+                            error instanceof Error
+                                ? error.message
+                                : String(error),
+                        handle:
+                            product.handle,
+                    });
+
+                    /*
+                     * A retry is allowed only
+                     * after a master record
+                     * has been saved.
+                     */
+                    if (masterSaved) {
+                        emit({
+                            stage:
+                                "retry-available",
+                            status: "completed",
+                            message:
+                                "Master product exists. Synchronization can be retried.",
+                            handle:
+                                product.handle,
+                        });
+                    }
+                } finally {
+                    controller.close();
+                }
+            },
+        });
+
+    return progressResponse(stream);
 }

@@ -1776,8 +1776,12 @@ export async function deleteProduct(
 
 export async function createNewProduct(
   bucket: R2BucketLike,
-  product: any
+  product: any,
+  onProgress?: (stage: string) => void
 ) {
+  const report = (stage: string) => {
+    onProgress?.(stage);
+  };
   const handle =
     clean(product?.handle)
       .toLowerCase();
@@ -1856,13 +1860,16 @@ export async function createNewProduct(
         handle
     );
 
-  if (alreadyInCatalog) {
-    throw new Error(
-      `Product "${handle}" already exists.`
+  if (!alreadyInCatalog) {
+    catalogIndex.push(summary);
+  } else {
+    const index = catalogIndex.findIndex(
+      (item: any) =>
+        clean(item?.handle).toLowerCase() === handle
     );
-  }
 
-  catalogIndex.push(summary);
+    catalogIndex[index] = summary;
+  }
 
   /*
    * Keep the full index sorted.
@@ -1885,26 +1892,47 @@ export async function createNewProduct(
     catalogIndexKey
   );
 
-  const catalogPageResult =
-    await appendPagedItem(
+  const catalogBasePath =
+    "catalog/indexes/catalog-pages";
+
+  let catalogPageResult: {
+    totalPages: number;
+    updatedFiles: string[];
+  };
+
+  const existingPageKey =
+    await findAndUpdateSortedPage(
       bucket,
-      "catalog/indexes/catalog-pages",
+      {
+        basePath: catalogBasePath,
+        totalPages: catalogTotalPages,
+        handle,
+        title: product.title,
+        summary,
+      }
+    );
+
+  if (existingPageKey) {
+    catalogPageResult = {
+      totalPages: catalogTotalPages,
+      updatedFiles: [existingPageKey],
+    };
+  } else {
+    catalogPageResult = await appendPagedItem(
+      bucket,
+      catalogBasePath,
       summary,
       catalogPageSize,
       catalogTotalPages
     );
+  }
 
   updatedFiles.push(
     ...catalogPageResult.updatedFiles
   );
 
   const totalProducts =
-    Number(
-      catalogMeta?.totalProducts ||
-      (
-        nextCatalogIndex.length - 1
-      )
-    ) + 1;
+    nextCatalogIndex.length;
 
   await writeJson(
     bucket,
@@ -1925,6 +1953,8 @@ export async function createNewProduct(
   updatedFiles.push(
     catalogMetaKey
   );
+
+  report("catalogue:completed");
 
   /*
    * --------------------------------
@@ -1972,15 +2002,29 @@ export async function createNewProduct(
         oldMeta?.totalPages || 0
       );
 
-    const currentTotal =
-      Number(
-        oldMeta?.totalProducts || 0
+    const categoryPath =
+      `catalog/indexes/category-pages/${tag}`;
+
+    const existingCategoryPage =
+      await findAndUpdateSortedPage(
+        bucket,
+        {
+          basePath: categoryPath,
+          totalPages,
+          handle,
+          title: product.title,
+          summary,
+        }
       );
 
-    const pageResult =
-      await appendPagedItem(
+    const pageResult = existingCategoryPage
+      ? {
+        totalPages,
+        updatedFiles: [existingCategoryPage],
+      }
+      : await appendPagedItem(
         bucket,
-        `catalog/indexes/category-pages/${tag}`,
+        categoryPath,
         summary,
         pageSize,
         totalPages
@@ -1990,8 +2034,15 @@ export async function createNewProduct(
       ...pageResult.updatedFiles
     );
 
+    const categoryItems =
+      await readPagedItems(
+        bucket,
+        categoryPath,
+        pageResult.totalPages
+      );
+
     const nextTotal =
-      currentTotal + 1;
+      categoryItems.length;
 
     categoryMeta[tag] = {
       ...oldMeta,
@@ -2070,6 +2121,8 @@ export async function createNewProduct(
     collectionsKey
   );
 
+  report("collections:completed");
+
   /*
    * --------------------------------
    * FILTER INDEX
@@ -2092,6 +2145,13 @@ export async function createNewProduct(
   const vendor =
     clean(summary?.vendor);
 
+  const vendorProductCount = vendor
+    ? nextCatalogIndex.filter(
+      (item: any) =>
+        clean(item?.vendor) === vendor
+    ).length
+    : 0;
+
   if (vendor) {
     const brandIndex =
       existingBrands.findIndex(
@@ -2109,11 +2169,7 @@ export async function createNewProduct(
         ],
 
         count:
-          Number(
-            existingBrands[
-              brandIndex
-            ]?.count || 0
-          ) + 1,
+          vendorProductCount,
       };
     } else {
       existingBrands.push({
@@ -2123,7 +2179,7 @@ export async function createNewProduct(
         title:
           vendor,
 
-        count: 1,
+        count: vendorProductCount,
       });
     }
 
@@ -2156,6 +2212,8 @@ export async function createNewProduct(
     filterIndexKey
   );
 
+  report("filters:completed");
+
   /*
    * --------------------------------
    * SEARCH V2
@@ -2176,6 +2234,8 @@ export async function createNewProduct(
   updatedFiles.push(
     ...searchResult.updatedFiles
   );
+
+  report("search:completed");
 
   /*
    * --------------------------------
@@ -2226,6 +2286,8 @@ export async function createNewProduct(
     registryKey
   );
 
+  report("registry:completed");
+
   /*
    * --------------------------------
    * STATS
@@ -2241,12 +2303,6 @@ export async function createNewProduct(
       statsKey
     )) || {};
 
-  const variantCount =
-    Number(
-      product?.variants?.length ||
-      0
-    );
-
   await writeJson(
     bucket,
     statsKey,
@@ -2257,9 +2313,12 @@ export async function createNewProduct(
         totalProducts,
 
       variants:
-        Number(
-          stats?.variants || 0
-        ) + variantCount,
+        nextCatalogIndex.reduce(
+          (total: number, item: any) =>
+            total +
+            Number(item?.variantCount || 0),
+          0
+        ),
 
       collections:
         collections.length,
@@ -2269,6 +2328,8 @@ export async function createNewProduct(
   updatedFiles.push(
     statsKey
   );
+
+  report("statistics:completed");
 
   return {
     summary,
@@ -2401,7 +2462,7 @@ export async function syncExistingProduct(
     removedTags.length > 0 ||
     addedTags.length > 0;
 
-    if (
+  if (
     !summaryChanged &&
     !tagsChanged
   ) {
@@ -2423,7 +2484,7 @@ export async function syncExistingProduct(
       updatedFiles: searchResult.updatedFiles,
     };
   }
-  
+
   /*
    * ------------------------------------------------
    * CATALOGUE SUMMARY
@@ -3080,7 +3141,7 @@ export async function syncExistingProduct(
       )
   );
 
-    if (tagsChanged) {
+  if (tagsChanged) {
     await Promise.all([
       writeJson(
         bucket,
@@ -3220,7 +3281,7 @@ export async function syncExistingProduct(
     }
   }
 
-   if (
+  if (
     tagsChanged ||
     oldVendor !== newVendor
   ) {
@@ -3281,7 +3342,7 @@ export async function syncExistingProduct(
       registryKey
     )) || {};
 
-    const oldSources =
+  const oldSources =
     existingProduct?.sources || [];
 
   const newSources =
