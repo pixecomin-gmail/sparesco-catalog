@@ -7,7 +7,6 @@ import { parseProductExcel } from '@/lib/admin/excel-product-import';
 import './studio.css';
 
 type Item = { handle: string; title: string; image?: string; imageFolder?: string; partNumber?: string; vendor?: string; collection?: string; variantCount?: number; price?: number };
-type ExportScope = 'selected' | 'all';
 
 export default function Studio() {
   const importRef = useRef<HTMLInputElement>(null);
@@ -20,8 +19,6 @@ export default function Studio() {
   const [searched, setSearched] = useState(false);
   const [page, setPage] = useState(1);
   const [selected, setSelected] = useState<string[]>([]);
-  const [showExport, setShowExport] = useState(false);
-  const [scope, setScope] = useState<ExportScope>('selected');
 
   async function search(e: React.FormEvent) {
     e.preventDefault();
@@ -37,83 +34,45 @@ export default function Studio() {
     finally { setLoading(false); }
   }
 
-  async function exportExcel(exportScope: ExportScope) {
-    if (exportScope === 'selected' && selected.length === 0) {
-      setError('Select at least one product.');
-      return;
-    }
-    setShowExport(false);
+  async function exportExcel() {
+    const handlesToExport = [...new Set(selected)];
+    if (!handlesToExport.length) { setError('Select products from your search results first.'); return; }
     setTransferring(true);
     setError('');
-    setTransferNotice('Preparing Excel export…');
+    setTransferNotice(`Preparing ${handlesToExport.length} selected products…`);
     try {
       const allRows: Record<string, string | number>[] = [];
       const failures: string[] = [];
-      const batchSize = 25;
-      let processed = 0;
-      let total = exportScope === 'selected' ? selected.length : 0;
       let productCount = 0;
-
-      async function fetchBatch(url: string) {
-        const response = await fetch(url, { cache: 'no-store' });
+      const batchSize = 25;
+      for (let i = 0; i < handlesToExport.length; i += batchSize) {
+        const batch = handlesToExport.slice(i, i + batchSize);
+        const response = await fetch('/api/admin/export?limit=25&handles=' + encodeURIComponent(batch.join(',')), { cache: 'no-store' });
         const contentType = response.headers.get('content-type') || '';
         if (!contentType.toLowerCase().includes('application/json')) {
-          throw Error(`Export server returned HTTP ${response.status} (${contentType || 'unknown content type'}), not JSON. Check Cloudflare logs.`);
+          throw Error(`Export server returned HTTP ${response.status} (${contentType || 'unknown content type'}), not JSON.`);
         }
         const data = await response.json();
         if (!response.ok || !data.success) throw Error(data.error || `Export failed (HTTP ${response.status})`);
-        if (!Array.isArray(data.rows) || !Array.isArray(data.failedHandles)) {
-          throw Error('Export server returned an unexpected response.');
-        }
-        return data as { total: number; processed: number; nextOffset: number | null; productCount: number; rows: Record<string, string | number>[]; failedHandles: string[] };
+        if (!Array.isArray(data.rows) || !Array.isArray(data.failedHandles)) throw Error('Unexpected export response.');
+        allRows.push(...data.rows);
+        failures.push(...data.failedHandles);
+        productCount += data.productCount;
+        setTransferNotice(`Exporting selected products: ${Math.min(i + batch.length, handlesToExport.length)} / ${handlesToExport.length} processed…`);
       }
-
-      if (exportScope === 'selected') {
-        for (let i = 0; i < selected.length; i += batchSize) {
-          const handles = selected.slice(i, i + batchSize);
-          const data = await fetchBatch('/api/admin/export?limit=25&handles=' + encodeURIComponent(handles.join(',')));
-          allRows.push(...data.rows);
-          failures.push(...data.failedHandles);
-          productCount += data.productCount;
-          processed += handles.length;
-          setTransferNotice(`Exporting selected products: ${processed} / ${total} processed…`);
-        }
-      } else {
-        let offset = 0;
-        while (true) {
-          const data = await fetchBatch(`/api/admin/export?offset=${offset}&limit=${batchSize}`);
-          if (!Number.isSafeInteger(data.total) || data.total < 0 || !Number.isSafeInteger(data.processed) || data.processed < offset || data.processed > data.total) {
-            throw Error('Invalid export progress returned by server.');
-          }
-          total = data.total;
-          processed = data.processed;
-          allRows.push(...data.rows);
-          failures.push(...data.failedHandles);
-          productCount += data.productCount;
-          setTransferNotice(`Exporting catalogue: ${processed.toLocaleString('en-IN')} / ${total.toLocaleString('en-IN')} products processed…`);
-          if (data.nextOffset === null) break;
-          if (!Number.isSafeInteger(data.nextOffset) || data.nextOffset <= offset) throw Error('Export pagination did not advance.');
-          offset = data.nextOffset;
-        }
-      }
-
-      if (failures.length) {
-        throw Error(`${failures.length} products could not be read from R2. No incomplete Excel file was saved. Examples: ${failures.slice(0, 5).join(', ')}`);
-      }
+      if (failures.length) throw Error(`${failures.length} products could not be read. No incomplete file was saved. Examples: ${failures.slice(0, 5).join(', ')}`);
       if (!allRows.length) throw Error('No products available to export.');
-      if (allRows.length > 1048575) throw Error('Export exceeds the Excel worksheet row limit. No file was saved.');
+      if (allRows.length > 1048575) throw Error('Export exceeds the Excel worksheet row limit.');
       setTransferNotice(`Creating Excel file (${allRows.length.toLocaleString('en-IN')} rows)…`);
       const XLSX = await import('xlsx');
       const workbook = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(workbook, XLSX.utils.json_to_sheet(allRows), 'Products');
-      XLSX.writeFile(workbook, exportScope === 'all' ? 'sparesco-all-products.xlsx' : 'sparesco-selected-products.xlsx');
+      XLSX.writeFile(workbook, 'sparesco-selected-products.xlsx');
       setTransferNotice(`Exported ${productCount.toLocaleString('en-IN')} products (${allRows.length.toLocaleString('en-IN')} Excel rows).`);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Export failed');
       setTransferNotice('');
-    } finally {
-      setTransferring(false);
-    }
+    } finally { setTransferring(false); }
   }
 
   async function importExcel(file?: File) {
@@ -140,6 +99,8 @@ export default function Studio() {
   const pages = Math.max(1, Math.ceil(rows.length / 25));
   const visibleHandles = visible.map(p => p.handle);
   const allPageSelected = visibleHandles.length > 0 && visibleHandles.every(h => selected.includes(h));
+  const searchHandles = [...new Set(rows.map(p => p.handle).filter(Boolean))];
+  const allSearchSelected = searchHandles.length > 0 && searchHandles.every(h => selected.includes(h));
   function togglePage() {
     setSelected(old => allPageSelected ? old.filter(h => !visibleHandles.includes(h)) : [...new Set([...old, ...visibleHandles])]);
   }
@@ -153,7 +114,7 @@ export default function Studio() {
       <div className="studio-actions">
         <input ref={importRef} type="file" accept=".xlsx,.xls" style={{ display: 'none' }} onChange={e => void importExcel(e.target.files?.[0])} />
         <button type="button" className="studio-secondary" disabled={transferring} onClick={() => importRef.current?.click()}>Import Excel</button>
-        <button type="button" className="studio-secondary" disabled={transferring} onClick={() => { setScope(selected.length ? 'selected' : 'all'); setShowExport(true); }}>Export Excel</button>
+        <button type="button" className="studio-secondary" disabled={transferring || !selected.length} onClick={() => void exportExcel()}>Export Excel</button>
         <Link className="studio-primary" href="/admin/product-studio/new">+ Add product</Link>
       </div>
     </header>
@@ -161,9 +122,13 @@ export default function Studio() {
       {transferNotice && <div className="studio-notice" role="status">{transferNotice}</div>}
       <form className="studio-search" onSubmit={search}><input aria-label="Search products" value={q} onChange={e => setQ(e.target.value)} placeholder="Search by product name, SKU or part number" /><button disabled={loading}>{loading ? 'Searching…' : 'Search'}</button></form>
       {error && <div className="studio-error" role="alert">{error}</div>}
+      {searched && searchHandles.length > 0 && <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap', padding: '12px 18px' }}>
+        <button type="button" className="studio-secondary" disabled={transferring || allSearchSelected} onClick={() => setSelected(searchHandles)}>Select all {searchHandles.length} search results</button>
+        <span style={{ fontSize: 12, color: '#64748b' }}>Selects every result returned by this search, across all displayed pages.</span>
+      </div>}
       {selected.length > 0 && <div className="studio-notice" style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
         <strong>{selected.length} selected</strong>
-        <button type="button" className="studio-secondary" disabled={transferring} onClick={() => { setScope('selected'); setShowExport(true); }}>Export selected</button>
+        <button type="button" className="studio-secondary" disabled={transferring} onClick={() => void exportExcel()}>Export selected</button>
         <button type="button" className="studio-secondary" onClick={() => setSelected([])}>Clear selection</button>
       </div>}
       <div className="studio-tablewrap"><table className="studio-table"><thead><tr>
@@ -177,14 +142,5 @@ export default function Studio() {
       {!loading && visible.length === 0 && <div className="studio-empty">{searched ? 'No products found. Try another search.' : 'Search the catalogue to find and manage products.'}</div>}
       {rows.length > 25 && <footer className="studio-pager"><span>{rows.length} results · Page {page} of {pages}</span><div><button disabled={page === 1} onClick={() => setPage(p => p - 1)}>Previous</button><button disabled={page === pages} onClick={() => setPage(p => p + 1)}>Next</button></div></footer>}
     </section>
-    {showExport && <div role="presentation" style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.45)', zIndex: 1000, display: 'grid', placeItems: 'center', padding: 16 }}>
-      <div role="dialog" aria-modal="true" aria-label="Export products" className="studio-panel" style={{ width: '100%', maxWidth: 430, padding: 24 }}>
-        <h2>Export products</h2><p>Download an Excel (.xlsx) file.</p>
-        <label className="studio-export-option"><input type="radio" name="export-scope" checked={scope === 'selected'} disabled={!selected.length} onChange={() => setScope('selected')} /> Selected products ({selected.length})</label>
-        <label className="studio-export-option"><input type="radio" name="export-scope" checked={scope === 'all'} onChange={() => setScope('all')} /> All products in catalogue</label>
-        <p style={{ fontSize: 12 }}>Large exports are processed in batches. Keep this tab open until the Excel file is ready.</p>
-        <div className="studio-actions" style={{ justifyContent: 'flex-end' }}><button type="button" className="studio-secondary" onClick={() => setShowExport(false)}>Cancel</button><button type="button" className="studio-primary" onClick={() => void exportExcel(scope)}>Export Excel</button></div>
-      </div>
-    </div>}
   </main>;
 }
