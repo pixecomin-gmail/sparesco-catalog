@@ -27,12 +27,6 @@ export default function AdminHeader() {
 
   const isHome = pathname === "/admin";
 
-  const isProducts =
-    pathname === "/admin/products" ||
-    pathname.startsWith("/admin/products/") ||
-    pathname === "/admin/collections" ||
-    pathname.startsWith("/admin/collections/");
-
   const isVendors =
     pathname === "/admin/pending-actions" ||
     pathname.startsWith("/admin/pending-actions/") ||
@@ -75,25 +69,6 @@ export default function AdminHeader() {
               Home
             </Link>
 
-                        <Link
-              href="/admin/products"
-              className={`admin-main-nav-link ${isProducts ? "active" : ""
-                }`}
-            >
-              Products
-            </Link>
-
-            <Link
-              href="/admin/product-studio"
-              className={`admin-main-nav-link ${
-                pathname === "/admin/product-studio" ||
-                pathname.startsWith("/admin/product-studio/")
-                  ? "active"
-                  : ""
-              }`}
-            >
-              Product Studio
-            </Link>
 
             <Link 
               href="/admin/pending-actions" 
@@ -116,37 +91,6 @@ export default function AdminHeader() {
 
       <header className="admin-header">
         <div className="admin-header-inner">
-          {isProducts && (
-            <nav className="admin-subnav">
-              <Link
-                href="/admin/products"
-                className={subLinkClass(
-                  "/admin/products"
-                )}
-              >
-                All Products
-              </Link>
-
-              <Link
-                href="/admin/products/new"
-                className={subLinkClass(
-                  "/admin/products/new"
-                )}
-              >
-                Add Product
-              </Link>
-
-              <Link
-                href="/admin/collections"
-                className={subLinkClass(
-                  "/admin/collections"
-                )}
-              >
-                Collections
-              </Link>
-            </nav>
-          )}
-
           {isVendors && (
             <nav className="admin-subnav">
               <Link

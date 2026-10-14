@@ -1,0 +1,4 @@
+import {NextRequest,NextResponse} from 'next/server';import {getProduct,removeProduct} from '@/lib/v2/store';import {writeEnabled} from '@/lib/v2/db';
+export const runtime='nodejs';export const dynamic='force-dynamic';
+export async function GET(_r:NextRequest,{params}:{params:Promise<{handle:string}>}){try{const p=await getProduct((await params).handle);return p?NextResponse.json(p,{headers:{'Cache-Control':'no-store'}}):NextResponse.json({error:'Not found'},{status:404})}catch(e){return NextResponse.json({error:String(e)},{status:500})}}
+export async function DELETE(_r:NextRequest,{params}:{params:Promise<{handle:string}>}){if(!writeEnabled())return NextResponse.json({error:'Local-only'},{status:403});try{await removeProduct((await params).handle);return NextResponse.json({ok:true})}catch(e){return NextResponse.json({error:String(e)},{status:500})}}

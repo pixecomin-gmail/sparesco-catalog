@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS v2_products (handle TEXT PRIMARY KEY, title TEXT NOT NULL, body_html TEXT NOT NULL DEFAULT '', vendor TEXT NOT NULL DEFAULT '', product_type TEXT NOT NULL DEFAULT '', tags TEXT NOT NULL DEFAULT '[]', collection_handle TEXT NOT NULL DEFAULT 'test-collection', images TEXT NOT NULL DEFAULT '[]', variants TEXT NOT NULL DEFAULT '[]', raw_rows TEXT NOT NULL DEFAULT '[]', created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE INDEX IF NOT EXISTS v2_collection_idx ON v2_products(collection_handle);
+CREATE INDEX IF NOT EXISTS v2_title_idx ON v2_products(title);

@@ -1,0 +1,1 @@
+Only V2 paths. Uses original ProductPageClient.tsx markup, isolated enquiry storage, and existing global Sparesco layout. The V2 recently viewed card still uses isolated V2 data and may not be pixel-identical. No live routes changed. Run npm run build before testing.
