@@ -853,6 +853,13 @@ export default function EditProductClient({
                 </div>
             </div>
 
+            {saving && (
+                <div className="admin-save-progress" role="status" aria-live="polite">
+                    <span>Saving product and synchronizing catalogue…</span>
+                    <div className="admin-save-progress-track"><div className="admin-save-progress-indicator" /></div>
+                </div>
+            )}
+
             {saveMessage && (
                 <div
                     className="admin-save-banner admin-save-banner-success"

@@ -2589,13 +2589,29 @@ export async function syncExistingProduct(
       ...summary,
     };
 
-    const nextCatalogIndex =
+    // Preserve title order without sorting the entire 100k+ catalogue.
+    // Remove the edited entry and insert it using binary search.
+    let nextCatalogIndex = catalogIndex;
+    if (
       compareTitles(
         existingProduct?.title,
         updatedProduct?.title
       ) !== 0
-        ? sortSummaries(catalogIndex)
-        : catalogIndex;
+    ) {
+      const [edited] = catalogIndex.splice(catalogIndexPosition, 1);
+      let low = 0;
+      let high = catalogIndex.length;
+      while (low < high) {
+        const mid = Math.floor((low + high) / 2);
+        if (compareTitles(catalogIndex[mid]?.title, edited?.title) <= 0) {
+          low = mid + 1;
+        } else {
+          high = mid;
+        }
+      }
+      catalogIndex.splice(low, 0, edited);
+      nextCatalogIndex = catalogIndex;
+    }
 
     await writeJson(
       bucket,

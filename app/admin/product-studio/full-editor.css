@@ -2566,3 +2566,8 @@
     font-size: 22px;
   }
 }
+/* Indeterminate progress: server does not expose percentage completion. */
+.admin-save-progress { margin: 12px 0; font-size: 13px; }
+.admin-save-progress-track { height: 5px; margin-top: 7px; background: #dce6e8; overflow: hidden; border-radius: 5px; }
+.admin-save-progress-indicator { width: 35%; height: 100%; background: #2a8392; animation: admin-save-slide 1.4s ease-in-out infinite alternate; }
+@keyframes admin-save-slide { from { transform: translateX(-100%); } to { transform: translateX(285%); } }
