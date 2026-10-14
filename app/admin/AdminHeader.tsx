@@ -26,6 +26,7 @@ export default function AdminHeader() {
   };
 
   const isHome = pathname === "/admin";
+  const isProducts = pathname === "/admin/products" || pathname.startsWith("/admin/products/");
 
   const isVendors =
     pathname === "/admin/pending-actions" ||
@@ -61,6 +62,10 @@ export default function AdminHeader() {
           </Link>
 
           <nav className="admin-main-nav">
+            <Link href="/admin/products" className={`admin-main-nav-link ${isProducts ? "active" : ""}`}>
+              Products
+            </Link>
+
             <Link
               href="/admin"
               className={`admin-main-nav-link ${isHome ? "active" : ""
