@@ -1,8 +1,0 @@
-import {NextRequest,NextResponse} from 'next/server';
-import {listProducts,allProducts,upsertProduct,bulkUpsert} from '@/lib/v2/store';
-import {writeEnabled} from '@/lib/v2/db';
-import type {Product} from '@/lib/v2/types';
-export const runtime='nodejs';export const dynamic='force-dynamic';
-const valid=(p:Product)=>/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.handle||'')&&!!p.title?.trim()&&Array.isArray(p.variants)&&Array.isArray(p.images);
-export async function GET(req:NextRequest){try{const u=req.nextUrl.searchParams;const p=u.get('all')==='1'?await allProducts():await listProducts(u.get('q')||'',u.get('collection')||'',Number(u.get('limit')||100),Number(u.get('offset')||0));return NextResponse.json({products:p},{headers:{'Cache-Control':'no-store'}})}catch(e){return NextResponse.json({error:String(e)},{status:500})}}
-export async function POST(req:NextRequest){if(!writeEnabled())return NextResponse.json({error:'V2 local-only writes disabled in production'},{status:403});try{const body=await req.json();if(Array.isArray(body.products)){const ps=body.products as Product[];if(ps.length>25||!ps.every(valid))return NextResponse.json({error:'Batch limited to 25 valid products'},{status:400});const n=await bulkUpsert(ps);return NextResponse.json({ok:true,count:n})}const p=body as Product;if(!valid(p))return NextResponse.json({error:'Valid handle, title, variants and images required'},{status:400});await upsertProduct(p,typeof body.previousHandle==='string'?body.previousHandle:undefined);return NextResponse.json({ok:true,handle:p.handle})}catch(e){return NextResponse.json({error:String(e)},{status:500})}}

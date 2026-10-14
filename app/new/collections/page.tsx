@@ -1,5 +1,0 @@
-import {listCollections} from '@/lib/v2/store';
-import {allV2Collections} from '@/lib/v2/collections';
-import Link from 'next/link';
-export const runtime='nodejs';export const dynamic='force-dynamic';
-export default async function Page(){const [handles,defined]=await Promise.all([listCollections(),allV2Collections()]);const byHandle=new Map(defined.map(c=>[c.handle,c]));return <><div className="v2sectionHead"><h1>All Collections</h1><span>{handles.length} collections</span></div><div className="v2cards">{handles.map(handle=>{const c=byHandle.get(handle);return <Link className="v2collectionCard" key={handle} href={'/new/collections/'+encodeURIComponent(handle)}>{c?.imageUrl?.startsWith('https://')?<img src={c.imageUrl} alt={c.title} style={{width:'100%',height:150,objectFit:'contain'}}/>:<div className="v2collectionIcon">⚙</div>}<strong>{c?.title||handle.replace(/-/g,' ')}</strong>{c?.description&&<span>{c.description.slice(0,110)}</span>}<span>View products →</span></Link>})}</div></>}
