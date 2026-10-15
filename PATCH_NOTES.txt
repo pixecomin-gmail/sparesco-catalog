@@ -1,0 +1,1 @@
+Cloudflare Pages display-only patch. Replaces only 10 incompatible /new and /api/new routes. Dashboard app/new/admin/products and CSS/images are not changed. Existing Node.js local-storage endpoints become 503. Other /new pages redirect to dashboard. Back up originals before copying. No authentication added. Test Cloudflare preview before promoting to production.
