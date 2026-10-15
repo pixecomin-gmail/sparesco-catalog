@@ -15,6 +15,35 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+    async redirects() {
+    return [
+      {
+        source: "/new",
+        destination: "/new/admin/products",
+        permanent: false,
+      },
+      {
+        source: "/new/search",
+        destination: "/new/admin/products",
+        permanent: false,
+      },
+      {
+        source: "/new/collections",
+        destination: "/new/admin/products",
+        permanent: false,
+      },
+      {
+        source: "/new/collections/:handle",
+        destination: "/new/admin/products",
+        permanent: false,
+      },
+      {
+        source: "/new/products/:handle",
+        destination: "/new/admin/products",
+        permanent: false,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
