@@ -1,0 +1,25 @@
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:63  function replaceFilterFinder(value?: string) {
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:70  /[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*[.!?]?/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:75  /[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*[.!?]?/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:79  // Replace FilterFinder URLs
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:81  /https?:\/\/(?:www\.)?filterfinder\.[^\s]+/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:86  /www\.filterfinder\.[^\s]+/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:90  // Replace normal FilterFinder references
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:92  text = text.replace(/\bfilterfinder\b/gi, "Sparesco");
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:108  return replaceFilterFinder(cleanText(value))
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:161  const brand = replaceFilterFinder(
+C:\Users\dhwan\Desktop\sparesco-catalog-main\app\products\[handle]\page.tsx:165  const category = replaceFilterFinder(
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\CollectionsHub.tsx:25  "filterfinder",
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:34  function replaceFilterFinder(value?: string) {
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:41  /[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*[.!?]?/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:46  /[^.!?]*(?:approved|authorised|authorized|official)\s+(?:distributor|dealer|supplier|partner)[^.!?]*(?:filter\s*finder|filterfinder)[^.!?]*[.!?]?/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:50  // Replace FilterFinder URLs with Sparesco
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:52  /https?:\/\/(?:www\.)?filterfinder\.[^\s]+/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:57  /www\.filterfinder\.[^\s]+/gi,
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:63  text = text.replace(/\bfilterfinder\b/gi, "Sparesco");
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:197  const activeVariantTitle = replaceFilterFinder(
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:201  const productReference = replaceFilterFinder(
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:235  replaceFilterFinder(spec)
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:322  {replaceFilterFinder(currentProduct.title)}
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:345  {replaceFilterFinder(cleanVariantTitle(variant.title))}
+C:\Users\dhwan\Desktop\sparesco-catalog-main\components\ProductPageClient.tsx:404  {replaceFilterFinder(activeVariant.description) ||
