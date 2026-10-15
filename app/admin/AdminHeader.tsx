@@ -29,9 +29,7 @@ export default function AdminHeader() {
 
   const isProducts =
     pathname === "/admin/products" ||
-    pathname.startsWith("/admin/products/") ||
-    pathname === "/admin/collections" ||
-    pathname.startsWith("/admin/collections/");
+    pathname.startsWith("/admin/products/");
 
   const isVendors =
     pathname === "/admin/pending-actions" ||
@@ -115,23 +113,6 @@ export default function AdminHeader() {
                 All Products
               </Link>
 
-              <Link
-                href="/admin/products/new"
-                className={subLinkClass(
-                  "/admin/products/new"
-                )}
-              >
-                Add Product
-              </Link>
-
-              <Link
-                href="/admin/collections"
-                className={subLinkClass(
-                  "/admin/collections"
-                )}
-              >
-                Collections
-              </Link>
             </nav>
           )}
 
