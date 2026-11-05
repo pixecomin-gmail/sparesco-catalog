@@ -66,7 +66,7 @@ export default function PendingActionsPage() {
                     fetch("/api/admin/vendors", {
                         cache: "no-store",
                     }),
-                    fetch("/api/admin/vendor-products", {
+                    fetch("/api/admin/vendor-products?pendingActions=1", {
                         cache: "no-store",
                     }),
                     fetch("/api/admin/vendor-quotes", {
@@ -83,32 +83,25 @@ export default function PendingActionsPage() {
                 return;
             }
 
-            const [vendorData, productData, quoteData] =
-                await Promise.all([
-                    vendorResponse.json(),
-                    productResponse.json(),
-                    quoteResponse.json(),
-                ]);
-
-            if (!vendorResponse.ok) {
-                throw new Error(
-                    vendorData.error || "Unable to load vendors."
-                );
+            // Handle HTML error pages (e.g. an edge timeout) without
+            // throwing the misleading "Unexpected token <" JSON error.
+            async function readApiResponse(response: Response, fallback: string) {
+                const contentType = response.headers.get("content-type") || "";
+                if (!contentType.toLowerCase().includes("application/json")) {
+                    throw new Error(`${fallback} (HTTP ${response.status}).`);
+                }
+                const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(data?.error || fallback);
+                }
+                return data;
             }
 
-            if (!productResponse.ok) {
-                throw new Error(
-                    productData.error ||
-                    "Unable to load vendor products."
-                );
-            }
-
-            if (!quoteResponse.ok) {
-                throw new Error(
-                    quoteData.error ||
-                    "Unable to load vendor quotations."
-                );
-            }
+            const [vendorData, productData, quoteData] = await Promise.all([
+                readApiResponse(vendorResponse, "Unable to load vendors"),
+                readApiResponse(productResponse, "Unable to load vendor products"),
+                readApiResponse(quoteResponse, "Unable to load vendor quotations"),
+            ]);
 
             setVendors(vendorData.vendors || []);
             setProducts(productData.products || []);
@@ -184,12 +177,17 @@ export default function PendingActionsPage() {
                 }
             );
 
-            const data = await response.json();
-
             if (response.status === 401) {
                 window.location.href = "/admin/login";
                 return;
             }
+
+            const contentType = response.headers.get("content-type") || "";
+            if (!contentType.toLowerCase().includes("application/json")) {
+                setError(`Unable to open quotation (HTTP ${response.status}).`);
+                return;
+            }
+            const data = await response.json();
 
             if (!response.ok) {
                 setError(

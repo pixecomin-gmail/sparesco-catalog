@@ -95,7 +95,7 @@ async function fetchCatalogProduct(
   return null;
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
     const { env } = getRequestContext();
     const db = (env as any).DB;
@@ -143,6 +143,12 @@ export async function GET() {
       .all();
 
     const products = (result.results || []) as VendorProductRow[];
+
+    // Pending Actions only reads status/delete_requested; catalogue lookups
+    // are unnecessary and can exceed the edge request time budget.
+    if (new URL(request.url).searchParams.get("pendingActions") === "1") {
+      return NextResponse.json({ success: true, products });
+    }
 
     const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
