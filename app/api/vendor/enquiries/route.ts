@@ -41,7 +41,7 @@ export async function GET(request: Request) {
     }
 
     const { env } = getRequestContext();
-    const db = (env as any).DB;
+    const db = (env as any).PRODUCTS_DB;
 
     if (!db) {
       return NextResponse.json(
