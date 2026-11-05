@@ -66,7 +66,7 @@ export default function PendingActionsPage() {
                     fetch("/api/admin/vendors", {
                         cache: "no-store",
                     }),
-                    fetch("/api/admin/vendor-products", {
+                    fetch("/api/admin/vendor-products?pending_actions=1", {
                         cache: "no-store",
                     }),
                     fetch("/api/admin/vendor-quotes", {
@@ -83,11 +83,29 @@ export default function PendingActionsPage() {
                 return;
             }
 
+            // A Worker or proxy can return an HTML error page instead of JSON.
+            // Validate the response before parsing so the UI shows a useful error.
+            async function readApiJson(response: Response, label: string) {
+                const contentType = response.headers.get("content-type") || "";
+                if (!contentType.toLowerCase().includes("application/json")) {
+                    throw new Error(
+                        `${label} returned an unexpected response (HTTP ${response.status}). Please try again.`
+                    );
+                }
+                try {
+                    return await response.json();
+                } catch {
+                    throw new Error(
+                        `${label} returned invalid JSON (HTTP ${response.status}). Please try again.`
+                    );
+                }
+            }
+
             const [vendorData, productData, quoteData] =
                 await Promise.all([
-                    vendorResponse.json(),
-                    productResponse.json(),
-                    quoteResponse.json(),
+                    readApiJson(vendorResponse, "Vendors"),
+                    readApiJson(productResponse, "Vendor products"),
+                    readApiJson(quoteResponse, "Vendor quotations"),
                 ]);
 
             if (!vendorResponse.ok) {

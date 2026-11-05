@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { getRequestContext } from "@cloudflare/next-on-pages";
+import { getCloudflareContext } from "@opennextjs/cloudflare";
+const getRequestContext = getCloudflareContext;
 
-export const runtime = "edge";
 
 type VendorProductRow = {
   id: number;
@@ -95,7 +95,7 @@ async function fetchCatalogProduct(
   return null;
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
     const { env } = getRequestContext();
     const db = (env as any).DB;
@@ -143,6 +143,12 @@ export async function GET() {
       .all();
 
     const products = (result.results || []) as VendorProductRow[];
+
+    // Pending Actions only displays approval and deletion status.
+    // Skip catalogue lookups for this view; preserve the default API unchanged.
+    if (new URL(request.url).searchParams.get("pending_actions") === "1") {
+      return NextResponse.json({ success: true, products });
+    }
 
     const r2Base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
